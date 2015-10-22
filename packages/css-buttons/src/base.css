@@ -1,0 +1,77 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-btn-color: var(--zd-color-dark-gray);
+  --zd-btn-font-size: var(--zd-font-size-zeta);
+  --zd-btn-font-weight: var(--zd-font-weight-semibold);
+  --zd-btn-background-color: var(--zd-color-white);
+  --zd-btn-border-color: var(--zd-color-gainsboro);
+  --zd-btn-border-radius: 4px;
+  --zd-btn-border-width: 1px;
+  --zd-btn-line-height: 2.34;
+  --zd-btn-padding: 2.25em;
+  --zd-btn-min-width: calc(5.17em + calc(var(--zd-btn-padding) * 2));
+  --zd-btn-transition:
+    background-color .12s ease-in-out,
+    border-color .12s ease-in-out,
+    color .15s ease-in-out;
+  --zd-btn-active-background-color: var(--zd-color-anti-flash-white);
+  --zd-btn-active-border-color: var(--zd-color-iron);
+  --zd-btn-active-box-shadow: inset 0 1px 0 0 color(var(--zd-color-black) alpha(15%));
+  --zd-btn-active-color: var(--zd-color-oil);
+  --zd-btn-focused-background-color: var(--zd-color-snow);
+  --zd-btn-focused-border-color: var(--zd-color-iron);
+  --zd-btn-focused-color: var(--zd-color-oil);
+}
+
+.c-btn {
+  display: inline-block;
+  transition: var(--zd-btn-transition);
+  margin: 0;
+  border: var(--zd-btn-border-width) solid var(--zd-btn-border-color);
+  border-radius: var(--zd-btn-border-radius);
+  background-color: var(--zd-btn-background-color);
+  cursor: pointer;
+  padding: 0 var(--zd-btn-padding);
+  min-width: var(--zd-btn-min-width);
+  overflow: visible; /* IE inner spacing fix. */
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none; /* Anchor tag reset. */
+  line-height: var(--zd-btn-line-height);
+  white-space: nowrap;
+  color: var(--zd-btn-color);
+  font-family: inherit; /* Override for <input> & <button> elements. */
+  font-size: var(--zd-btn-font-size);
+  font-weight: var(--zd-btn-font-weight);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.c-btn::-moz-focus-inner {
+  /* FF <input type="submit"> fix. */
+  border: 0;
+  padding: 0;
+}
+
+@custom-selector :--focused :hover, :focus, .is-focused;
+
+.c-btn:--focused {
+  outline: none;
+  border-color: var(--zd-btn-focused-border-color);
+  background-color: var(--zd-btn-focused-background-color);
+  text-decoration: none; /* Anchor tag reset. */
+  color: var(--zd-btn-focused-color);
+}
+
+@custom-selector :--active :active, :active:hover, .is-active, .is-active:hover, .is-active:focus;
+
+.c-btn:--active {
+  border-color: var(--zd-btn-active-border-color);
+  box-shadow: var(--zd-btn-active-box-shadow);
+  background-color: var(--zd-btn-active-background-color);
+  text-decoration: none; /* Anchor tag reset. */
+  color: var(--zd-btn-active-color);
+}

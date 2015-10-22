@@ -1,0 +1,14 @@
+{
+  "name": "zd-css-buttons",
+  "version": "0.1.0",
+  "main": "dist/index.css",
+  "private": true,
+  "devDependencies": {
+    "cssnext": "^1.8.4",
+    "stylelint": "^2.0.0"
+  },
+  "scripts": {
+    "build": "cssnext --compress src/index.css dist/index.css",
+    "lint": "stylelint src/*.css"
+  }
+}
