@@ -1,0 +1,56 @@
+/* davidwalsh.name/sass-color-variables-dont-suck
+ * name-of-color.com */
+
+:root {
+  --zd-color-affair: rgb(115, 73, 136);
+  --zd-color-aluminum: rgb(153, 153, 153);
+  --zd-color-anti-flash-white: rgb(243, 243, 243);
+  --zd-color-apple-green: rgb(120, 163, 0);
+  --zd-color-black: rgb(0, 0, 0);
+  --zd-color-blue-chalk: rgb(229, 214, 237);
+  --zd-color-buff: rgb(246, 222, 134);
+  --zd-color-ce-soir: rgb(150, 119, 166);
+  --zd-color-cg-red: rgb(224, 59, 48);
+  --zd-color-coral-candy: rgb(239, 203, 201);
+  --zd-color-curious-blue: rgb(53, 143, 178);
+  --zd-color-dark-gray: rgb(85, 85, 85);
+  --zd-color-dark-pastel-red: rgb(191, 48, 38);
+  --zd-color-deep-lilac: rgb(150, 90, 182);
+  --zd-color-denim: rgb(20, 110, 170);
+  --zd-color-east-side: rgb(176, 131, 200);
+  --zd-color-festival: rgb(242, 206, 74);
+  --zd-color-gainsboro: rgb(221, 221, 221);
+  --zd-color-indian-red: rgb(207, 100, 92);
+  --zd-color-iron: rgb(204, 204, 204);
+  --zd-color-jonquil: rgb(255, 221, 95);
+  --zd-color-lemon-chiffon: rgb(255, 243, 202);
+  --zd-color-lily-white: rgb(235, 235, 235);
+  --zd-color-lola: rgb(185, 164, 195);
+  --zd-color-mabel: rgb(204, 227, 236);
+  --zd-color-malibu: rgb(94, 187, 222);
+  --zd-color-moon-yellow: rgb(237, 190, 14);
+  --zd-color-moonstone-blue: rgb(106, 171, 196);
+  --zd-color-non-photo-blue: rgb(165, 220, 242);
+  --zd-color-oasis: rgb(250, 239, 195);
+  --zd-color-oil: rgb(51, 51, 51);
+  --zd-color-orange-peel: rgb(255, 161, 0);
+  --zd-color-patterns-blue: rgb(210, 238, 249);
+  --zd-color-perfume: rgb(202, 172, 218);
+  --zd-color-petite-orchid: rgb(223, 151, 146);
+  --zd-color-picasso: rgb(255, 232, 148);
+  --zd-color-platinum: rgb(238, 238, 238);
+  --zd-color-regent-st-blue: rgb(154, 199, 216);
+  --zd-color-remy: rgb(247, 206, 203);
+  --zd-color-sky-blue: rgb(120, 205, 236);
+  --zd-color-snow: rgb(251, 251, 251);
+  --zd-color-sunglow: rgb(255, 209, 42);
+  --zd-color-terra-cotta: rgb(232, 108, 100);
+  --zd-color-titan-white: rgb(220, 209, 225);
+  --zd-color-wewak: rgb(239, 157, 151);
+  --zd-color-white: rgb(255, 255, 255);
+  --zd-color-white-smoke: rgb(248, 248, 248);
+
+  /* Aliases */
+  --zd-color-zendesk-green: var(--zd-color-apple-green);
+  --zd-color-promo-orange: var(--zd-color-orange-peel);
+}
