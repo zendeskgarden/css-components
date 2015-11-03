@@ -1,0 +1,23 @@
+{
+  "name": "zd-css-_template_",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/index.css",
+  "style": "src/index.css",
+  "devDependencies": {
+    "cssnext": "^1.8.4",
+    "pre-commit": "^1.1.2",
+    "stylelint": "^2.0.0",
+    "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git",
+    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git"
+  },
+  "scripts": {
+    "build": "cssnext --compress src/index.css dist/index.css",
+    "lint": "stylelint src/*.css",
+    "test": "npm run lint"
+  },
+  "pre-commit": [
+    "build",
+    "test"
+  ]
+}
