@@ -1,0 +1,29 @@
+{
+  "name": "zd-css-tabs",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/index.css",
+  "style": "src/index.css",
+  "devDependencies": {
+    "cssnano": "^3.3.2",
+    "live-server": "^0.8.2",
+    "postcss-cli": "^2.3.2",
+    "postcss-cssnext": "^2.2.0",
+    "postcss-import": "^7.1.0",
+    "pre-commit": "^1.1.2",
+    "stylelint": "^2.0.0",
+    "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git",
+    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git"
+  },
+  "scripts": {
+    "build": "postcss --config .postcss.json",
+    "lint": "stylelint src/*.css",
+    "start": "npm run watch & live-server demo",
+    "test": "npm run lint",
+    "watch": "npm run build -- --watch"
+  },
+  "pre-commit": [
+    "build",
+    "test"
+  ]
+}

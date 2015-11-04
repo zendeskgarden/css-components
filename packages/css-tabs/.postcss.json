@@ -1,0 +1,9 @@
+{
+  "input": "src/index.css",
+  "output": "dist/index.css",
+  "use": [
+    "postcss-import",
+    "postcss-cssnext",
+    "cssnano"
+  ]
+}
