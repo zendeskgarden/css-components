@@ -6,6 +6,7 @@
   "style": "src/index.css",
   "devDependencies": {
     "cssnano": "^3.3.2",
+    "live-server": "^0.8.2",
     "postcss-cli": "^2.3.2",
     "postcss-cssnext": "^2.2.0",
     "postcss-import": "^7.1.0",
@@ -15,9 +16,11 @@
     "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git"
   },
   "scripts": {
-    "build": "postcss --config postcss.json",
+    "build": "postcss --config .postcss.json",
     "lint": "stylelint src/*.css",
-    "test": "npm run lint"
+    "start": "npm run watch & live-server demo",
+    "test": "npm run lint",
+    "watch": "npm run build -- --watch"
   },
   "pre-commit": [
     "build",

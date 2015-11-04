@@ -1,4 +1,4 @@
-# CSS Template Components [![Build Status](https://magnum.travis-ci.com/zendeskgarden/css-_template_.svg?token=_template_&branch=master)](https://magnum.travis-ci.com/zendeskgarden/css-_template_)
+# Template Component CSS [![Build Status](https://magnum.travis-ci.com/zendeskgarden/css-_template_.svg?token=_template_&branch=master)](https://magnum.travis-ci.com/zendeskgarden/css-_template_)
 
 The `css-_template_` package. Use a copy of this repo to bootstrap a new
 CSS component.
