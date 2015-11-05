@@ -6,6 +6,7 @@
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
+  <h1>Default Tabs</h1>
   <zd-tabs class="c-tab">
     <zd-tablist class="c-tab__list" role="tablist">
       <zd-tab
@@ -36,7 +37,7 @@
     <zd-tabpanel
       aria-hidden="false"
       aria-labelledby="tab1"
-      class="c_tab__panel"
+      class="c-tab__panel"
       id="panel1"
       role="tabpanel">Bitters biodiesel hammock actually, artisan yuccie direct
       trade fanny pack street art cardigan selfies church-key shoreditch. Tacos
@@ -52,14 +53,73 @@
     <zd-tabpanel
       aria-hidden="true"
       aria-labelledby="tab2"
-      class="c_tab__panel"
+      class="c-tab__panel"
       id="panel2"
       role="tabpanel"
       style="display: none;">PANEL TWO</zd-tabpanel>
     <zd-tabpanel
       aria-hidden="true"
       aria-labelledby="tab3"
-      class="c_tab__panel"
+      class="c-tab__panel"
+      id="panel3"
+      role="tabpanel"
+      style="display: none;">PANEL THREE</zd-tabpanel>
+  </zd-tabs>
+  <h1>Block Tabs</h1>
+  <zd-tabs class="c-tab c-tab--block">
+    <zd-tablist class="c-tab__list" role="tablist">
+      <zd-tab
+        aria-controls="panel1"
+        aria-expanded="true"
+        aria-selected="true"
+        class="c-tab__list__item is-active"
+        id="tab1"
+        role="tab"
+        tabindex="0">One</zd-tab
+      ><zd-tab
+        aria-controls="panel2"
+        aria-expanded="false"
+        aria-selected="false"
+        class="c-tab__list__item"
+        id="tab2"
+        role="tab"
+        tabindex="-1">Two</zd-tab
+      ><zd-tab
+        aria-controls="panel3"
+        aria-expanded="false"
+        aria-selected="false"
+        class="c-tab__list__item"
+        id="tab3"
+        role="tab"
+        tabindex="-1">Three</zd-tab>
+    </zd-tablist
+    ><zd-tabpanel
+      aria-hidden="false"
+      aria-labelledby="tab1"
+      class="c-tab__panel"
+      id="panel1"
+      role="tabpanel">Bitters biodiesel hammock actually, artisan yuccie direct
+      trade fanny pack street art cardigan selfies church-key shoreditch. Tacos
+      yr bespoke you probably haven't heard of them, vinyl readymade butcher
+      typewriter. Stumptown marfa slow-carb poutine pinterest cronut, banjo
+      PBR&B cardigan swag hella distillery. Shoreditch authentic gluten-free
+      forage, chartreuse knausgaard bicycle rights quinoa kombucha. Cliche
+      lo-fi ethical, cardigan vegan master cleanse keffiyeh locavore next
+      level. Chillwave four loko typewriter cronut, biodiesel blue bottle
+      austin kogi kinfolk food truck PBR&B brunch kale chips occupy you
+      probably haven't heard of them. Paleo leggings tacos pour-over pickled
+      cornhole.</zd-tabpanel>
+    <zd-tabpanel
+      aria-hidden="true"
+      aria-labelledby="tab2"
+      class="c-tab__panel"
+      id="panel2"
+      role="tabpanel"
+      style="display: none;">PANEL TWO</zd-tabpanel>
+    <zd-tabpanel
+      aria-hidden="true"
+      aria-labelledby="tab3"
+      class="c-tab__panel"
       id="panel3"
       role="tabpanel"
       style="display: none;">PANEL THREE</zd-tabpanel>

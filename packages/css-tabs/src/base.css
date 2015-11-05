@@ -7,9 +7,6 @@
   --zd-tab__list-margin-bottom: 20px;
   --zd-tab__list__item-border-width: 3px;
   --zd-tab__list__item-margin-left: 40px;
-  --zd-tab__list__item-active-border-color: currentColor;
-  --zd-tab__list__item-active-font-weight: var(--zd-font-weight-semibold);
-  --zd-tab__list__item-focused-border-color: var(--zd-color-lily-white);
 }
 
 .c-tab {
@@ -50,25 +47,6 @@
 
 .c-tab__list__item:first-of-type {
   margin-left: 0;
-}
-
-@custom-selector :--focused :hover, :focus, .is-focused;
-
-.c-tab__list__item:--focused {
-  border-color: var(--zd-tab__list__item-focused-border-color);
-}
-
-@custom-selector :--activating :active, :active:hover;
-
-.c-tab__list__item:--activating {
-  font-weight: var(--zd-tab__list__item-active-font-weight);
-}
-
-@custom-selector :--active .is-active, .is-active:hover, .is-active:focus;
-
-.c-tab__list__item:--active {
-  border-color: var(--zd-tab__list__item-active-border-color);
-  font-weight: var(--zd-tab__list__item-active-font-weight);
 }
 
 .c-tab__panel {

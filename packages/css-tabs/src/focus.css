@@ -1,0 +1,11 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-tab__list__item-focused-border-color: var(--zd-color-lily-white);
+}
+
+@custom-selector :--focused :hover, :focus, .is-focused;
+
+.c-tab__list__item:--focused {
+  border-color: var(--zd-tab__list__item-focused-border-color);
+}

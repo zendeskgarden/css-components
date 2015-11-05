@@ -1,0 +1,19 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-tab__list__item-active-border-color: currentColor;
+  --zd-tab__list__item-active-font-weight: var(--zd-font-weight-semibold);
+}
+
+@custom-selector :--activating :active, :active:hover;
+
+.c-tab__list__item:--activating {
+  font-weight: var(--zd-tab__list__item-active-font-weight);
+}
+
+@custom-selector :--active .is-active, .is-active:hover, .is-active:focus;
+
+.c-tab__list__item:--active {
+  border-color: var(--zd-tab__list__item-active-border-color);
+  font-weight: var(--zd-tab__list__item-active-font-weight);
+}
