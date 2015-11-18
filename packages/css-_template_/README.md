@@ -9,7 +9,7 @@ CSS component.
 
 ## Usage
 
-Template components ...
+[TODO]
 
 ## Tests
 
