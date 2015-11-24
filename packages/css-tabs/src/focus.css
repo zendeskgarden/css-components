@@ -2,10 +2,11 @@
 
 :root {
   --zd-tab__list__item-focused-border-color: var(--zd-color-lily-white);
+  --zd-tab__list__item-focused-color: var(--zd-color-dark-gray);
 }
 
 @custom-selector :--focused :hover, :focus, .is-focused;
 
 .c-tab__list__item:--focused {
-  border-color: var(--zd-tab__list__item-focused-border-color);
+  color: var(--zd-tab__list__item-focused-color);
 }

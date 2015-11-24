@@ -5,5 +5,9 @@
     "postcss-import",
     "postcss-cssnext",
     "cssnano"
-  ]
+  ],
+  "cssnano": {
+    "core": false,
+    "discardComments": { "removeAll": true }
+  }
 }

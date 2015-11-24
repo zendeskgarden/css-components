@@ -11,39 +11,39 @@ The `css-tabs` package provides styling for tab components.
 Tab CSS classes are intended to support the following component structure.
 
 ```html
-<zd-tabs class="c-tab">
-  <zd-tablist class="c-tab__list" role="tablist">
-    <zd-tab
+<nav class="c-tab">
+  <ul class="c-tab__list" role="tablist">
+    <li
       aria-controls="panel1"
       aria-expanded="true"
       aria-selected="true"
       class="c-tab__list__item is-active"
       id="tab1"
       role="tab"
-      tabindex="0">One</zd-tab
-    ><zd-tab
+      tabindex="0">One</li
+    ><li
       aria-controls="panel2"
       aria-expanded="false"
       aria-selected="false"
       class="c-tab__list__item"
       id="tab2"
       role="tab"
-      tabindex="-1">Two</zd-tab>
-  </zd-tablist>
-  <zd-tabpanel
+      tabindex="-1">Two</li>
+  </ul>
+  <div
     aria-hidden="false"
     aria-labelledby="tab1"
     class="c-tab__panel"
     id="panel1"
-    role="tabpanel">PANEL ONE</zd-tabpanel>
-  <zd-tabpanel
+    role="tabpanel">PANEL ONE</div>
+  <div
     aria-hidden="true"
     aria-labelledby="tab2"
     class="c-tab__panel"
     id="panel2"
     role="tabpanel"
-    style="display: none;">PANEL TWO</zd-tabpanel>
-</zd-tabs>
+    style="display: none;">PANEL TWO</div>
+</nav>
 ```
 
 ### Accessibility
@@ -57,22 +57,22 @@ navigation.
 The same structure can be styled vertically via the following:
 
 ```html
-<zd-tabs class="c-tab c-tab--block">
+<nav class="c-tab c-tab--block">
   ...
-</zd-tabs>
+</nav>
 ```
 
 HTML for anchored tabs should be structured like this:
 
 ```html
-<zd-tab
+<li
   aria-controls="panel1"
   aria-expanded="true"
   aria-labelledby="anchor1"
   aria-selected="true"
   class="c-tab__list__item is-active"
   id="tab1"
-  role="tab"><a href="#" id="anchor1" role="presentation" tabindex="-1">One</a></zd-tab>
+  role="tab"><a href="#" id="anchor1" role="presentation" tabindex="-1">One</a></li>
 ```
 
 ### Behavior

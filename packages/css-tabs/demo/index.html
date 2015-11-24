@@ -2,39 +2,38 @@
 <html>
 <head>
   <title>Tab CSS Demo</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
   <h1>Default Tabs</h1>
-  <zd-tabs class="c-tab">
-    <zd-tablist class="c-tab__list" role="tablist">
-      <zd-tab
+  <nav class="c-tab">
+    <ul class="c-tab__list" role="tablist">
+      <li
         aria-controls="panel1"
         aria-expanded="true"
         aria-selected="true"
         class="c-tab__list__item is-active"
         id="tab1"
         role="tab"
-        tabindex="0">One</zd-tab
-      ><zd-tab
+        tabindex="0">One</li
+      ><li
         aria-controls="panel2"
         aria-expanded="false"
         aria-selected="false"
         class="c-tab__list__item"
         id="tab2"
         role="tab"
-        tabindex="-1">Two</zd-tab
-      ><zd-tab
+        tabindex="-1">Two</li
+      ><li
         aria-controls="panel3"
         aria-expanded="false"
         aria-selected="false"
         class="c-tab__list__item"
         id="tab3"
         role="tab"
-        tabindex="-1">Three</zd-tab>
-    </zd-tablist>
-    <zd-tabpanel
+        tabindex="-1">Three</li>
+    </ul>
+    <div
       aria-hidden="false"
       aria-labelledby="tab1"
       class="c-tab__panel"
@@ -49,80 +48,77 @@
       level. Chillwave four loko typewriter cronut, biodiesel blue bottle
       austin kogi kinfolk food truck PBR&B brunch kale chips occupy you
       probably haven't heard of them. Paleo leggings tacos pour-over pickled
-      cornhole.</zd-tabpanel>
-    <zd-tabpanel
+      cornhole.</div>
+    <div
       aria-hidden="true"
       aria-labelledby="tab2"
       class="c-tab__panel"
       id="panel2"
       role="tabpanel"
-      style="display: none;">PANEL TWO</zd-tabpanel>
-    <zd-tabpanel
+      style="display: none;">PANEL TWO</div>
+    <div
       aria-hidden="true"
       aria-labelledby="tab3"
       class="c-tab__panel"
       id="panel3"
       role="tabpanel"
-      style="display: none;">PANEL THREE</zd-tabpanel>
-  </zd-tabs>
+      style="display: none;">PANEL THREE</div>
+  </nav>
   <h1>Block Tabs</h1>
-  <zd-tabs class="c-tab c-tab--block">
-    <zd-tablist class="c-tab__list" role="tablist">
-      <zd-tab
+  <nav class="c-tab c-tab--block">
+    <ul class="c-tab__list" role="tablist">
+      <li
         aria-controls="panel1"
         aria-expanded="true"
         aria-selected="true"
         class="c-tab__list__item is-active"
         id="tab1"
         role="tab"
-        tabindex="0">One</zd-tab
-      ><zd-tab
+        tabindex="0">One</li
+      ><li
         aria-controls="panel2"
         aria-expanded="false"
         aria-selected="false"
         class="c-tab__list__item"
         id="tab2"
         role="tab"
-        tabindex="-1">Two</zd-tab
-      ><zd-tab
+        tabindex="-1">Two</li
+      ><li
         aria-controls="panel3"
         aria-expanded="false"
         aria-selected="false"
         class="c-tab__list__item"
         id="tab3"
         role="tab"
-        tabindex="-1">Three</zd-tab>
-    </zd-tablist
-    ><zd-tabpanel
+        tabindex="-1">Three</li>
+    </ul
+    ><div
       aria-hidden="false"
       aria-labelledby="tab1"
       class="c-tab__panel"
       id="panel1"
-      role="tabpanel">Bitters biodiesel hammock actually, artisan yuccie direct
-      trade fanny pack street art cardigan selfies church-key shoreditch. Tacos
-      yr bespoke you probably haven't heard of them, vinyl readymade butcher
-      typewriter. Stumptown marfa slow-carb poutine pinterest cronut, banjo
-      PBR&B cardigan swag hella distillery. Shoreditch authentic gluten-free
-      forage, chartreuse knausgaard bicycle rights quinoa kombucha. Cliche
-      lo-fi ethical, cardigan vegan master cleanse keffiyeh locavore next
-      level. Chillwave four loko typewriter cronut, biodiesel blue bottle
-      austin kogi kinfolk food truck PBR&B brunch kale chips occupy you
-      probably haven't heard of them. Paleo leggings tacos pour-over pickled
-      cornhole.</zd-tabpanel>
-    <zd-tabpanel
+      role="tabpanel">Wolf mlkshk truffaut meggings DIY knausgaard.
+      Intelligentsia raw denim hammock, heirloom slow-carb tumblr cornhole art
+      party flexitarian small batch hella schlitz food truck franzen taxidermy.
+      Hoodie single-origin coffee XOXO keffiyeh twee, kickstarter knausgaard.
+      Chartreuse occupy twee biodiesel plaid tousled scenester, drinking
+      vinegar kickstarter DIY single-origin coffee williamsburg raw denim lo-fi
+      blue bottle. Lo-fi cardigan pour-over, tofu kale chips yuccie godard
+      chambray DIY put a bird on it iPhone mixtape swag.</div>
+    <div
       aria-hidden="true"
       aria-labelledby="tab2"
       class="c-tab__panel"
       id="panel2"
       role="tabpanel"
-      style="display: none;">PANEL TWO</zd-tabpanel>
-    <zd-tabpanel
+      style="display: none;">PANEL TWO</div>
+    <div
       aria-hidden="true"
       aria-labelledby="tab3"
       class="c-tab__panel"
       id="panel3"
       role="tabpanel"
-      style="display: none;">PANEL THREE</zd-tabpanel>
-  </zd-tabs>
+      style="display: none;">PANEL THREE</div>
+  </nav>
 </body>
 </html>
