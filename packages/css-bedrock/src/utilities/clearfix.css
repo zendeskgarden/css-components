@@ -1,0 +1,6 @@
+/* css-101.org/articles/clearfix/latest-new-clearfix-so-far.php */
+.u-cf:after {
+  display: table;
+  clear: both;
+  content: '';
+}

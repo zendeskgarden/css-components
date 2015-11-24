@@ -1,0 +1,64 @@
+@import '../variables';
+@import 'zd-css-variables';
+
+:root {
+  --zd-din-next-medium-italic-cyrillic-woff: din-next-medium-italic-cyrillic.49848d8b0400bd8a1f3396d40195c6d5.woff;
+  --zd-din-next-medium-italic-cyrillic-woff2: din-next-medium-italic-cyrillic.7a21e08b827d11dcfda99fbc0cfecd8f.woff2;
+  --zd-din-next-medium-italic-fallback-woff: din-next-medium-italic-fallback.d29d893190cdaa11584fbb4ee6052a84.woff;
+  --zd-din-next-medium-italic-fallback-woff2: din-next-medium-italic-fallback.d2977912282288cd92c81d60b97e7db6.woff2;
+  --zd-din-next-medium-italic-greek-woff: din-next-medium-italic-greek.10a88517a7b7ed1ca41b1bac11400b75.woff;
+  --zd-din-next-medium-italic-greek-woff2: din-next-medium-italic-greek.e9b53f91bc655ddb78160579f7872de1.woff2;
+  --zd-din-next-medium-italic-latin-ext-woff: din-next-medium-italic-latin-ext.23485fed06f5ee75fc8f15964cd984ee.woff;
+  --zd-din-next-medium-italic-latin-ext-woff2: din-next-medium-italic-latin-ext.33406c9ae1d6ac5ba6188bafde4c2e9c.woff2;
+  --zd-din-next-medium-italic-latin-woff: din-next-medium-italic-latin.047a49b473e78c35eeb0509ed4a3864b.woff;
+  --zd-din-next-medium-italic-latin-woff2: din-next-medium-italic-latin.2fd62f3a9b253086dc04a23218c18d04.woff2;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-fallback-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-fallback-woff)) format('woff');
+  font-weight: var(--zd-font-weight-medium);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-greek-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-greek-woff)) format('woff');
+  font-weight: var(--zd-font-weight-medium);
+  unicode-range: var(--zd-unicode-range-greek);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-cyrillic-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-cyrillic-woff)) format('woff');
+  font-weight: var(--zd-font-weight-medium);
+  unicode-range: var(--zd-unicode-range-cyrillic);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-latin-ext-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-latin-ext-woff)) format('woff');
+  font-weight: var(--zd-font-weight-medium);
+  unicode-range: var(--zd-unicode-range-latin-ext);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-latin-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-medium-italic-latin-woff)) format('woff');
+  font-weight: var(--zd-font-weight-medium);
+  unicode-range: var(--zd-unicode-range-latin);
+  font-style: italic;
+}

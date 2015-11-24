@@ -1,0 +1,37 @@
+@import '../variables';
+@import 'zd-css-variables';
+
+:root {
+  --zd-din-next-rounded-regular-fallback-woff: din-next-rounded-regular-fallback.4b3e2c90b70c842b3fb6614b52ad26aa.woff;
+  --zd-din-next-rounded-regular-fallback-woff2: din-next-rounded-regular-fallback.f6de738be1051a6622a60da78c720080.woff2;
+  --zd-din-next-rounded-regular-latin-ext-woff: din-next-rounded-regular-latin-ext.d9d897268c1374c737e26983a476487d.woff;
+  --zd-din-next-rounded-regular-latin-ext-woff2: din-next-rounded-regular-latin-ext.b9c6e33ace3d478b8e8cf46e289a4b26.woff2;
+  --zd-din-next-rounded-regular-latin-woff: din-next-rounded-regular-latin.f6102c394d4b1a6ddf12055413bcf4b4.woff;
+  --zd-din-next-rounded-regular-latin-woff2: din-next-rounded-regular-latin.c44df79f1dbba812f04cb03d208995c8.woff2;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next-rounded);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-rounded-regular-fallback-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-rounded-regular-fallback-woff)) format('woff');
+  font-weight: var(--zd-font-weight-regular);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next-rounded);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-rounded-regular-latin-ext-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-rounded-regular-latin-ext-woff)) format('woff');
+  font-weight: var(--zd-font-weight-regular);
+  unicode-range: var(--zd-unicode-range-latin-ext);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next-rounded);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-rounded-regular-latin-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-rounded-regular-latin-woff)) format('woff');
+  font-weight: var(--zd-font-weight-regular);
+  unicode-range: var(--zd-unicode-range-latin);
+}

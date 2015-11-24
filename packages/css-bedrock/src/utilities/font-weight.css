@@ -1,0 +1,21 @@
+/* stylelint-disable declaration-no-important */
+.u-thin { font-weight: var(--zd-font-weight-thin) !important; }
+
+.u-light { font-weight: var(--zd-font-weight-light) !important; }
+
+.u-regular { font-weight: var(--zd-font-weight-regular) !important; }
+
+.u-semibold { font-weight: var(--zd-font-weight-semibold) !important; }
+
+.u-bold { font-weight: var(--zd-font-weight-bold) !important; }
+
+.u-extrabold { font-weight: var(--zd-font-weight-extrabold) !important; }
+
+.u-black { font-weight: var(--zd-font-weight-black) !important; }
+
+.u-ultralight { font-weight: var(--zd-font-weight-ultralight) !important; }
+
+.u-medium { font-weight: var(--zd-font-weight-medium) !important; }
+
+.u-heavy { font-weight: var(--zd-font-weight-heavy) !important; }
+/* stylelint-enable */

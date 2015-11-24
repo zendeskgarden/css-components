@@ -1,0 +1,92 @@
+@import 'fonts/variables';
+@import 'normalize.css';
+@import 'zd-css-variables';
+
+:root {
+  --zd-html-background-color: var(--zd-color-white);
+  --zd-html-box-sizing: border-box;
+  --zd-html-font-family: var(--zd-font-family-din-next-rounded), sans-serif;
+  --zd-html-font-feature-settings: 'kern';
+  --zd-html-font-kerning: normal;
+  --zd-html-font-size: 14px;
+  --zd-html-font-smoothing-moz-osx: grayscale;
+  --zd-html-font-smoothing-webkit: antialiased;
+  --zd-html-line-height: 1.42857;
+  --zd-html-text-color: var(--zd-color-dark-gray);
+  --zd-html-text-rendering: optimizeLegibility;
+}
+
+/* 1. Ensure the page always fills at least the entire viewport height.
+ * 2. Force visible scrollbars to prevent awkard jumps when navigating between
+ * pages that do/don't have enough content to produce natural scrollbars. */
+html {
+  min-height: 100%; /* [1] */
+  box-sizing: var(--zd-html-box-sizing);
+  background-color: var(--zd-html-background-color);
+  overflow-y: scroll; /* [2] */
+  text-rendering: var(--zd-html-text-rendering);
+  line-height: var(--zd-html-line-height);
+  color: var(--zd-html-text-color);
+  font-feature-settings: var(--zd-html-font-feature-settings);
+  font-kerning: var(--zd-html-font-kerning);
+  font-family: var(--zd-html-font-family);
+  font-size: var(--zd-html-font-size);
+  -moz-osx-font-smoothing: var(--zd-html-font-smoothing-moz-osx);
+  -webkit-font-smoothing: var(--zd-html-font-smoothing-webkit);
+}
+
+/* 1. normalize.css override. */
+*,
+*::before,
+*::after,
+input[type='search'] /* [1] */ { box-sizing: inherit; }
+
+* { font-weight: inherit; }
+
+button { padding: 0; }
+
+fieldset,
+iframe { border: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-size: inherit; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+fieldset,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid;
+}
+
+ol,
+ul { list-style: none; }
+
+img { max-width: 100%; }
+
+svg { max-height: 100%; }
+
+/* stylelint-disable declaration-no-important */
+[tabindex='-1']:focus { outline: none !important; }
+/* stylelint-enable */

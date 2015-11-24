@@ -1,0 +1,17 @@
+:root {
+  --zd-font-family-din-next: din-next;
+  --zd-font-family-din-next-rounded: din-next-rounded;
+  --zd-font-family-proxima-nova: proxima-nova;
+  --zd-font-source-path: 'fonts';
+
+  /* Based on http://www.google.com/fonts character sets.
+   * See http://fonts.googleapis.com/css?family=Alef|Amiri|Gurajada|Hanuman|Open+Sans (in Chrome)
+   * http://caniuse.com/#feat=font-unicode-range */
+  --zd-unicode-range-arabic: U+0600-06FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE80-FEFC;
+  --zd-unicode-range-brahmic: U+02BC, U+0900-097F, U+0C00-0C7F, U+1780-17FF, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  --zd-unicode-range-cyrillic: U+0400-052F, U+20B4, U+2116, U+2DE0-2DFF, U+A640-A69F;
+  --zd-unicode-range-greek: U+0370-03FF, U+1F00-1FFF;
+  --zd-unicode-range-hebrew: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+  --zd-unicode-range-latin: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  --zd-unicode-range-latin-ext: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}

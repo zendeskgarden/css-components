@@ -1,0 +1,59 @@
+@import '../variables';
+@import 'zd-css-variables';
+
+:root {
+  --zd-proxima-nova-thin-cyrillic-woff: proxima-nova-thin-cyrillic.a7d88ae6b8003483b800564f3dc0ac9c.woff;
+  --zd-proxima-nova-thin-cyrillic-woff2: proxima-nova-thin-cyrillic.64c05ef01c6e088b0996d30b2a89832a.woff2;
+  --zd-proxima-nova-thin-fallback-woff: proxima-nova-thin-fallback.69a8f8d66a20e5b0a0b8337c1c1c8441.woff;
+  --zd-proxima-nova-thin-fallback-woff2: proxima-nova-thin-fallback.f2d2ff4853e29157c1c9265464f34a49.woff2;
+  --zd-proxima-nova-thin-greek-woff: proxima-nova-thin-greek.e0f727e51a9c879b9e634626223df901.woff;
+  --zd-proxima-nova-thin-greek-woff2: proxima-nova-thin-greek.7b236aa096535f483e9dfbb70d1feb2e.woff2;
+  --zd-proxima-nova-thin-latin-ext-woff: proxima-nova-thin-latin-ext.ce49dadec5dad57bf108f34adee33aa5.woff;
+  --zd-proxima-nova-thin-latin-ext-woff2: proxima-nova-thin-latin-ext.2565e34c95fbc3901cc516369d6b7390.woff2;
+  --zd-proxima-nova-thin-latin-woff: proxima-nova-thin-latin.74a2cc1112597396e1850cfb725d0392.woff;
+  --zd-proxima-nova-thin-latin-woff2: proxima-nova-thin-latin.f0d351f5c1f86c95b1fb2ea5f89a1509.woff2;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-proxima-nova);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-fallback-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-fallback-woff)) format('woff');
+  font-weight: var(--zd-font-weight-thin);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-proxima-nova);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-greek-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-greek-woff)) format('woff');
+  font-weight: var(--zd-font-weight-thin);
+  unicode-range: var(--zd-unicode-range-greek);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-proxima-nova);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-cyrillic-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-cyrillic-woff)) format('woff');
+  font-weight: var(--zd-font-weight-thin);
+  unicode-range: var(--zd-unicode-range-cyrillic);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-proxima-nova);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-latin-ext-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-latin-ext-woff)) format('woff');
+  font-weight: var(--zd-font-weight-thin);
+  unicode-range: var(--zd-unicode-range-latin-ext);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-proxima-nova);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-latin-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-proxima-nova-thin-latin-woff)) format('woff');
+  font-weight: var(--zd-font-weight-thin);
+  unicode-range: var(--zd-unicode-range-latin);
+}

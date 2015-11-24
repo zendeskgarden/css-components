@@ -1,0 +1,318 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+    gensubsets
+    ~~~~~~~~~~
+
+    Generate font subset files from a fonts.com self-host kit.
+"""
+
+
+from __future__ import print_function
+from argparse import ArgumentParser, FileType
+from hashlib import md5
+from os import makedirs, rename
+from os.path import basename, dirname, exists, join as pathjoin, splitext
+from sys import argv
+from xml.dom.minidom import parse
+
+try:
+    from fontTools.subset import (load_font, Logger, Options, parse_unicodes,
+            save_font, Subsetter)
+    from fontTools.ttLib import TTLibError
+except ImportError:
+    exit("Missing Dependency: pip install FontTools")  # NOQA
+
+
+SUBSETS = {
+    "arabic": "U+0600-06FF,U+200C-200E,U+2010-2011,U+FB50-FDFF,U+FE80-FEFC",
+    "brahmic": "U+02BC,U+0900-097F,U+0C00-0C7F,U+1780-17FF,U+1CD0-1CF6,U+1CF8-1CF9,U+200B-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FB",  # NOQA
+    "cyrillic": "U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F",
+    "greek": "U+0370-03FF,U+1F00-1FFF",
+    "latin": "U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000",  # NOQA
+    "latin-ext": "U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF"  # NOQA
+}
+
+WEIGHTS = {
+    "din-next": {
+        "100": "ultralight",
+        "200": "light",
+        "400": "regular",
+        "500": "medium",
+        "700": "bold",
+        "800": "heavy",
+        "900": "black"
+    },
+    "proxima-nova": {
+        "100": "thin",
+        "200": "light",
+        "400": "regular",
+        "600": "semibold",
+        "700": "bold",
+        "800": "extrabold",
+        "900": "black"
+    }
+}
+
+WEIGHTS["din-next-rounded"] = WEIGHTS["din-next"]
+
+
+def fallback_range(unicode_ranges):
+    """Get the fallback unicode range value.
+
+    :param unicode_ranges: Unicode ranges to exclude from the fallback range.
+    """
+    ret_val = ''
+    unicodes = parse_unicodes("U+0000-FFFF")
+    unicode_set = set(unicodes)
+
+    for unicode_range in unicode_ranges:
+        unicodes = parse_unicodes(unicode_range)
+        unicode_set -= set(unicodes)
+
+    unicode_list = list(unicode_set)
+    index = 0
+
+    while index < len(unicode_list):
+        start = unicode_list[index]
+        next = start + 1
+
+        while next in unicode_set:
+            next += 1
+            index += 1
+        else:
+            stop = unicode_list[index]
+            index += 1
+
+        start = hex(start)[2:].zfill(4).upper()
+        stop = hex(stop)[2:].zfill(4).upper()
+
+        if start == stop:
+            text = "U+{}".format(start)
+        else:
+            text = "U+{}-{}".format(start, stop)
+
+        if ret_val:
+            ret_val = "{},{}".format(ret_val, text)
+        else:
+            ret_val = text
+
+    return ret_val
+
+
+def get_arguments():
+    """Get command-line arguments.
+    """
+    prog = basename(argv[0])
+    parser = ArgumentParser(prog=prog)
+    parser.add_argument("input", metavar="<fontlist.xml>", type=FileType('r'))
+    default = ["woff", "woff2"]
+    parser.add_argument("-f", "--format", default=default, nargs='*',
+            help="subset the selected font formats (default: {})".format(' '.join(default)))  # NOQA
+    parser.add_argument("-m", "--minimum", default=10, type=int,
+            help="minimum number of glyphs required to generate a subset (default: %(default)s)")  # NOQA
+    parser.add_argument("-n", "--no-digest", action="store_true",
+            help="prevent MD5 fingerprint from being added to generated files")
+    parser.add_argument("-o", "--output",
+            help="output folder (default: [FORMAT])")
+    parser.add_argument("-v", "--verbose", action="store_true",
+            help="display verbose information")
+
+    return parser.parse_args()
+
+
+def subset(element, format, unicode_block, unicode_range, args):
+    """Subset the given font file.
+
+    :param element: The element to subset.
+    :param format: Font output format.
+    :param unicode_block: Unicode block name.
+    :param unicode_range: Unicode range to subset.
+    :param args: Command-line arguments.
+    """
+    input = to_input(element, args)
+    output = to_output(element, unicode_block, format, args.destination)
+    options = Options(flavor=format)
+
+    try:
+        font = load_font(input, options)
+
+        if args.verbose:
+            log = Logger(verbose=True)
+        else:
+            log = None
+
+        subsetter = Subsetter(options, log=log)
+        unicodes = parse_unicodes(unicode_range)
+        subsetter.populate(unicodes=unicodes)
+        subsetter.subset(font)
+        glyphs = set(subsetter.glyphs_all)
+        glyphs.remove(".notdef")
+        length = len(glyphs)
+
+        if length >= args.minimum:
+            save_font(font, output, options)
+            prefix = '+'
+
+            if args.no_digest:
+                ret_val = output
+            else:
+                with open(output, "rb") as file:
+                    digest = md5(file.read()).hexdigest()
+
+                root, extension = splitext(output)
+                destination = "{}.{}{}".format(root, digest, extension)
+                rename(output, destination)
+                ret_val = output = destination
+        else:
+            ret_val = None
+            prefix = '-'
+
+        print("{} {} ({} glyphs)".format(prefix, output, length))
+    except TTLibError as error:
+        ret_val = None
+        print("e {} ({})".format(output, error))
+
+    return ret_val
+
+
+def to_face(element):
+    """Convert the given element to a font face name.
+
+    :param element: The element to convert.
+    """
+    ret_val = to_weight(element)
+    stretch = element.attributes["FontStretch"].value
+    style = element.attributes["FontStyle"].value
+
+    if "condensed" in stretch:
+        ret_val = "{}-condensed".format(ret_val)
+
+    if style == "italic":
+        ret_val = "{}-italic".format(ret_val)
+
+    return ret_val
+
+
+def to_input(element, args):
+    """Convert the given element to an input filename.
+
+    :param element: The element to convert.
+    :param args: Command-line arguments.
+    """
+    directory = dirname(args.input.name)
+    filename = element.attributes["ttf"].value
+
+    return pathjoin(directory, "Fonts", filename)
+
+
+def to_key(element, unicode_block, format):
+    """Convert the given element to a key name.
+
+    :param element: The element to convert.
+    :unicode_block: Unicode block name.
+    :format: Font format.
+    :param destination: Destination folder. Default `''`.
+    """
+    return "{}-{}-{}".format(to_name(element), unicode_block, format)
+
+
+def to_name(element):
+    """Convert the given element to a name.
+
+    :param element: The element to convert.
+    """
+    name = to_slug(element)
+    face = to_face(element)
+
+    return "{}-{}".format(name, face)
+
+
+def to_output(element, unicode_block, format, destination=''):
+    """Convert the given element to an output filename.
+
+    :param element: The element to convert.
+    :unicode_block: Unicode block name.
+    :format: Font format.
+    :param destination: Destination folder. Default `''`.
+    """
+    filename = "{}-{}.{}".format(to_name(element), unicode_block, format)
+
+    return pathjoin(destination, filename)
+
+
+def to_slug(element):
+    """Convert the given element to a slug.
+
+    :param element: The element to convert.
+    """
+    name = element.attributes["FamilyName"].value
+    css = element.attributes["CssFamilyName"].value
+
+    ret_val = '-'.join(name.encode("ascii", "ignore").split()).lower()
+
+    if "Rounded" in css:
+        ret_val = "{}-rounded".format(ret_val)
+
+    return ret_val
+
+
+def to_weight(element):
+    """Convert the given element to the associated weight.
+
+    :param element: The element to convert.
+    """
+    name = element.attributes["psName"].value
+
+    if "Black" in name:
+        weight = "900"
+    else:
+        weight = element.attributes["FontWeight"].value
+
+    slug = to_slug(element)
+
+    return WEIGHTS[slug].get(weight, "???")
+
+
+if __name__ == "__main__":
+    files = {}
+    args = get_arguments()
+    xml = parse(args.input)
+    root = xml.getElementsByTagName("fonts")[0]
+
+    for format in args.format:
+        print("\n>>> GENERATING {} FILES...\n".format(format.upper()))
+        args.destination = args.output or format
+
+        if not exists(args.destination):
+            makedirs(args.destination)
+
+        for element in root.getElementsByTagName("font"):
+            print(to_input(element, args))
+            unicode_ranges = []
+
+            for unicode_block, unicode_range in SUBSETS.iteritems():
+                file = subset(element, format, unicode_block, unicode_range,
+                    args)
+
+                if file:
+                    unicode_ranges.append(unicode_range)
+                    key = to_key(element, unicode_block, format)
+                    files[key] = basename(file)
+
+            unicode_range = fallback_range(unicode_ranges)
+            file = subset(element, format, "fallback", unicode_range, args)
+
+            if file:
+                key = to_key(element, "fallback", format)
+                files[key] = basename(file)
+
+    print("\n>>> GENERATED FILES CSS...\n")
+    print(":root {")
+
+    key = lambda x: (x[0].upper(), x[1].upper()) if "italic" not in x[0] else x
+
+    for (key, value) in sorted(files.iteritems(), key=key):
+        print("  --zd-{}: {};".format(key, value))
+
+    print('}')

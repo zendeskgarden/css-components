@@ -1,0 +1,25 @@
+/* stylelint-disable declaration-no-important */
+.u-giga { font-size: 36px !important; }
+
+.u-mega { font-size: 28px !important; }
+
+.u-kilo { font-size: 25px !important; }
+
+.u-alpha { font-size: 22px !important; }
+
+.u-beta { font-size: 20px !important; }
+
+.u-gamma { font-size: 18px !important; }
+
+.u-delta { font-size: 16px !important; }
+
+.u-epsilon { font-size: 14px !important; }
+
+.u-zeta { font-size: 12px !important; }
+
+.u-milli { font-size: 11px !important; }
+
+.u-micro { font-size: 10px !important; }
+
+.u-nano { font-size: 9px !important; }
+/* stylelint-enable */

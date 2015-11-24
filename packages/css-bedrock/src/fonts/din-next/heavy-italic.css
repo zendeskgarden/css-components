@@ -1,0 +1,64 @@
+@import '../variables';
+@import 'zd-css-variables';
+
+:root {
+  --zd-din-next-heavy-italic-cyrillic-woff: din-next-heavy-italic-cyrillic.7c880d37647a097247af26537c462f2c.woff;
+  --zd-din-next-heavy-italic-cyrillic-woff2: din-next-heavy-italic-cyrillic.85a8bcb221a26b09633be1e653920412.woff2;
+  --zd-din-next-heavy-italic-fallback-woff: din-next-heavy-italic-fallback.0f5a0b9da8ff85026643b19ea7e390df.woff;
+  --zd-din-next-heavy-italic-fallback-woff2: din-next-heavy-italic-fallback.cf2d62cf1e6df5322c5b0ae8ef519041.woff2;
+  --zd-din-next-heavy-italic-greek-woff: din-next-heavy-italic-greek.2047f1659b23499eff1d7c528fb9e4c5.woff;
+  --zd-din-next-heavy-italic-greek-woff2: din-next-heavy-italic-greek.98ee563a18a10fa15477b2ef40b91b0b.woff2;
+  --zd-din-next-heavy-italic-latin-ext-woff: din-next-heavy-italic-latin-ext.a091832a3f1408a39c5ad2e8aa6ff6bd.woff;
+  --zd-din-next-heavy-italic-latin-ext-woff2: din-next-heavy-italic-latin-ext.8c761886bd4e4da41e718adcd2fb1660.woff2;
+  --zd-din-next-heavy-italic-latin-woff: din-next-heavy-italic-latin.919abaf3678523b74138acf6d54e8e31.woff;
+  --zd-din-next-heavy-italic-latin-woff2: din-next-heavy-italic-latin.3482506d517ce4a123847f7c08b60b14.woff2;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-fallback-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-fallback-woff)) format('woff');
+  font-weight: var(--zd-font-weight-heavy);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-greek-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-greek-woff)) format('woff');
+  font-weight: var(--zd-font-weight-heavy);
+  unicode-range: var(--zd-unicode-range-greek);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-cyrillic-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-cyrillic-woff)) format('woff');
+  font-weight: var(--zd-font-weight-heavy);
+  unicode-range: var(--zd-unicode-range-cyrillic);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-latin-ext-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-latin-ext-woff)) format('woff');
+  font-weight: var(--zd-font-weight-heavy);
+  unicode-range: var(--zd-unicode-range-latin-ext);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-latin-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-heavy-italic-latin-woff)) format('woff');
+  font-weight: var(--zd-font-weight-heavy);
+  unicode-range: var(--zd-unicode-range-latin);
+  font-style: italic;
+}

@@ -1,0 +1,59 @@
+@import '../variables';
+@import 'zd-css-variables';
+
+:root {
+  --zd-din-next-light-cyrillic-woff: din-next-light-cyrillic.3c53fdb0abf26fc9bca585074a1e3576.woff;
+  --zd-din-next-light-cyrillic-woff2: din-next-light-cyrillic.5a57b99aa2f7b70052f0e257956abd3b.woff2;
+  --zd-din-next-light-fallback-woff: din-next-light-fallback.37d77c59b3569cbe4f3e1997bb342110.woff;
+  --zd-din-next-light-fallback-woff2: din-next-light-fallback.feef42b46df54e55d8aff6399e503b27.woff2;
+  --zd-din-next-light-greek-woff: din-next-light-greek.d5097ea21d79a19401cd3c7d3410eca8.woff;
+  --zd-din-next-light-greek-woff2: din-next-light-greek.32e0d35eb5407c9e051ebeae4dac3b86.woff2;
+  --zd-din-next-light-latin-ext-woff: din-next-light-latin-ext.aaee7f36a5ef6f3a97b60e99189095cf.woff;
+  --zd-din-next-light-latin-ext-woff2: din-next-light-latin-ext.9204814b7a539fe6a84d5ad60fe8b28f.woff2;
+  --zd-din-next-light-latin-woff: din-next-light-latin.ec2d173efc5037db896cc0a327835c20.woff;
+  --zd-din-next-light-latin-woff2: din-next-light-latin.12f147cedff625bd92ffb3a553629b12.woff2;
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-fallback-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-fallback-woff)) format('woff');
+  font-weight: var(--zd-font-weight-light);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-greek-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-greek-woff)) format('woff');
+  font-weight: var(--zd-font-weight-light);
+  unicode-range: var(--zd-unicode-range-greek);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-cyrillic-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-cyrillic-woff)) format('woff');
+  font-weight: var(--zd-font-weight-light);
+  unicode-range: var(--zd-unicode-range-cyrillic);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-latin-ext-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-latin-ext-woff)) format('woff');
+  font-weight: var(--zd-font-weight-light);
+  unicode-range: var(--zd-unicode-range-latin-ext);
+}
+
+@font-face {
+  font-family: var(--zd-font-family-din-next);
+  src:
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-latin-woff2)) format('woff2'),
+    url(var(--zd-font-source-path)/var(--zd-din-next-light-latin-woff)) format('woff');
+  font-weight: var(--zd-font-weight-light);
+  unicode-range: var(--zd-unicode-range-latin);
+}
