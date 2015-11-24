@@ -1,6 +1,6 @@
 {
   "name": "zd-css-tabs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "main": "dist/index.css",
   "style": "src/index.css",
@@ -13,7 +13,7 @@
     "pre-commit": "^1.1.2",
     "stylelint": "^2.0.0",
     "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git",
-    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git"
+    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.1.0"
   },
   "scripts": {
     "build": "postcss --config .postcss.json",
