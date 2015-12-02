@@ -1,0 +1,24 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-btn--accent-background-color: #2db1ba; /* Override this variable with your product's accent color */
+  --zd-btn--accent-color: var(--zd-color-white);
+  --zd-btn--accent-active-background-color: color(var(--zd-btn--accent-background-color) blackness(+14%));
+  --zd-btn--accent-focused-background-color: color(var(--zd-btn--accent-background-color) whiteness(+16%));
+}
+
+.c-btn--accent {
+  border-color: transparent;
+  background-color: var(--zd-btn--accent-background-color);
+  color: color(var(--zd-btn--accent-color) alpha(70%));
+}
+
+.c-btn--accent:--focused {
+  background-color: var(--zd-btn--accent-focused-background-color);
+  color: var(--zd-btn--accent-color);
+}
+
+.c-btn--accent:--active {
+  background-color: var(--zd-btn--accent-active-background-color);
+  color: var(--zd-btn--accent-color);
+}

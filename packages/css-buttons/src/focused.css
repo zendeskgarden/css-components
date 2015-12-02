@@ -1,0 +1,15 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-btn-focused-background-color: var(--zd-color-white);
+  --zd-btn-focused-color: var(--zd-color-oil);
+}
+
+@custom-selector :--focused :hover, :focus, .is-focused;
+
+.c-btn:--focused {
+  outline: none;
+  background-color: var(--zd-btn-focused-background-color);
+  text-decoration: none; /* Anchor tag reset. */
+  color: var(--zd-btn-focused-color);
+}

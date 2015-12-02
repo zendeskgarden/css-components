@@ -1,14 +1,29 @@
 {
   "name": "zd-css-buttons",
   "version": "0.1.0",
-  "main": "dist/index.css",
   "private": true,
+  "main": "dist/index.css",
+  "style": "src/index.css",
   "devDependencies": {
-    "cssnext": "^1.8.4",
-    "stylelint": "^2.0.0"
+    "cssnano": "^3.3.2",
+    "live-server": "^0.8.2",
+    "postcss-cli": "^2.3.2",
+    "postcss-cssnext": "^2.2.0",
+    "postcss-import": "^7.1.3",
+    "pre-commit": "^1.1.2",
+    "stylelint": "^2.3.5",
+    "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#0.1.0",
+    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.1.0"
   },
   "scripts": {
-    "build": "cssnext --compress src/index.css dist/index.css",
-    "lint": "stylelint src/*.css"
-  }
+    "build": "postcss --config .postcss.json",
+    "lint": "stylelint src/*.css",
+    "start": "npm run watch & live-server demo",
+    "test": "npm run lint",
+    "watch": "npm run build -- --watch"
+  },
+  "pre-commit": [
+    "build",
+    "test"
+  ]
 }

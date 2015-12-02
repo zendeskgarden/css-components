@@ -1,0 +1,24 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-btn--promo-background-color: var(--zd-color-orange-peel);
+  --zd-btn--promo-color: var(--zd-color-white);
+  --zd-btn--promo-active-background-color: color(var(--zd-btn--promo-background-color) blackness(+11%));
+  --zd-btn--promo-focused-background-color: color(var(--zd-btn--promo-background-color) whiteness(+27%));
+}
+
+.c-btn--promo {
+  border-color: transparent;
+  background-color: var(--zd-btn--promo-background-color);
+  color: color(var(--zd-btn--promo-color) alpha(70%));
+}
+
+.c-btn--promo:--focused {
+  background-color: var(--zd-btn--promo-focused-background-color);
+  color: var(--zd-btn--promo-color);
+}
+
+.c-btn--promo:--active {
+  background-color: var(--zd-btn--promo-active-background-color);
+  color: var(--zd-btn--promo-color);
+}

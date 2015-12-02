@@ -1,0 +1,15 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-btn--large-font-size: var(--zd-font-size-epsilon);
+  --zd-btn--large-line-height: 3.43;
+  --zd-btn--large-padding: 1.9286em;
+  --zd-btn--large-min-width: calc(6.1429em + calc(var(--zd-btn--large-padding) * 2));
+}
+
+.c-btn--large {
+  padding: 0 var(--zd-btn--large-padding);
+  min-width: var(--zd-btn--large-min-width);
+  line-height: var(--zd-btn--large-line-height);
+  font-size: var(--zd-btn--large-font-size);
+}

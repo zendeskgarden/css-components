@@ -1,6 +1,5 @@
 :root {
   --zd-btn-disabled-background-color: var(--zd-color-gainsboro);
-  --zd-btn-disabled-border-color: var(--zd-color-gainsboro);
   --zd-btn-disabled-color: var(--zd-color-white);
 }
 
@@ -9,8 +8,7 @@
 .c-btn:--disabled,
 .c-btn:--disabled:--focused,
 .c-btn:--disabled:--active {
-  border-color: var(--zd-btn-disabled-border-color);
-  box-shadow: none;
+  border-color: transparent;
   background-color: var(--zd-btn-disabled-background-color);
   cursor: default;
   color: var(--zd-btn-disabled-color);
