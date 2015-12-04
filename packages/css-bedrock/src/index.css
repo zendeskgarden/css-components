@@ -10,7 +10,9 @@
 @import 'layouts/grid';
 @import 'layouts/wrapper';
 @import 'utilities/clearfix';
+@import 'utilities/color';
 @import 'utilities/font-size';
 @import 'utilities/font-weight';
+@import 'utilities/jitterfix';
 @import 'utilities/width';
 @import 'utilities/spacing';

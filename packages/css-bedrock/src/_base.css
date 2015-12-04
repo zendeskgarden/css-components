@@ -5,13 +5,13 @@
 :root {
   --zd-html-background-color: var(--zd-color-white);
   --zd-html-box-sizing: border-box;
-  --zd-html-font-family: var(--zd-font-family-din-next-rounded), sans-serif;
+  --zd-html-font-family: var(--zd-font-family-proxima-nova), sans-serif;
   --zd-html-font-feature-settings: 'kern';
   --zd-html-font-kerning: normal;
   --zd-html-font-size: 14px;
   --zd-html-font-smoothing-moz-osx: grayscale;
   --zd-html-font-smoothing-webkit: antialiased;
-  --zd-html-line-height: 1.42857;
+  --zd-html-line-height: var(--zd-spacing);
   --zd-html-text-color: var(--zd-color-dark-gray);
   --zd-html-text-rendering: optimizeLegibility;
 }
@@ -42,6 +42,12 @@ html {
 input[type='search'] /* [1] */ { box-sizing: inherit; }
 
 * { font-weight: inherit; }
+
+a,
+ins,
+u {
+  text-decoration: none;
+}
 
 button { padding: 0; }
 
