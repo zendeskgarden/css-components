@@ -1,3 +1,4 @@
-@import 'color';
-@import 'font-size';
-@import 'font-weight';
+@import '_color';
+@import '_font-size';
+@import '_font-weight';
+@import '_spacing';
