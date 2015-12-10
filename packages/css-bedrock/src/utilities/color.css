@@ -4,201 +4,201 @@
 
 /* Background Colors */
 
-.u-bg--affair { background-color: var(--zd-color-affair) !important; }
+.u-bg-affair { background-color: var(--zd-color-affair) !important; }
 
-.u-bg--aluminum { background-color: var(--zd-color-aluminum) !important; }
+.u-bg-aluminum { background-color: var(--zd-color-aluminum) !important; }
 
-.u-bg--anti-flash-white { background-color: var(--zd-color-anti-flash-white) !important; }
+.u-bg-anti-flash-white { background-color: var(--zd-color-anti-flash-white) !important; }
 
-.u-bg--apple-green { background-color: var(--zd-color-apple-green) !important; }
+.u-bg-apple-green { background-color: var(--zd-color-apple-green) !important; }
 
-.u-bg--black { background-color: var(--zd-color-black) !important; }
+.u-bg-black { background-color: var(--zd-color-black) !important; }
 
-.u-bg--blue-chalk { background-color: var(--zd-color-blue-chalk) !important; }
+.u-bg-blue-chalk { background-color: var(--zd-color-blue-chalk) !important; }
 
-.u-bg--buff { background-color: var(--zd-color-buff) !important; }
+.u-bg-buff { background-color: var(--zd-color-buff) !important; }
 
-.u-bg--ce-soir { background-color: var(--zd-color-ce-soir) !important; }
+.u-bg-ce-soir { background-color: var(--zd-color-ce-soir) !important; }
 
-.u-bg--cg-red { background-color: var(--zd-color-cg-red) !important; }
+.u-bg-cg-red { background-color: var(--zd-color-cg-red) !important; }
 
-.u-bg--coral-candy { background-color: var(--zd-color-coral-candy) !important; }
+.u-bg-coral-candy { background-color: var(--zd-color-coral-candy) !important; }
 
-.u-bg--curious-blue { background-color: var(--zd-color-curious-blue) !important; }
+.u-bg-curious-blue { background-color: var(--zd-color-curious-blue) !important; }
 
-.u-bg--current-color { background-color: currentColor !important; }
+.u-bg-current-color { background-color: currentColor !important; }
 
-.u-bg--dark-gray { background-color: var(--zd-color-dark-gray) !important; }
+.u-bg-dark-gray { background-color: var(--zd-color-dark-gray) !important; }
 
-.u-bg--dark-pastel-red { background-color: var(--zd-color-dark-pastel-red) !important; }
+.u-bg-dark-pastel-red { background-color: var(--zd-color-dark-pastel-red) !important; }
 
-.u-bg--deep-lilac { background-color: var(--zd-color-deep-lilac) !important; }
+.u-bg-deep-lilac { background-color: var(--zd-color-deep-lilac) !important; }
 
-.u-bg--denim { background-color: var(--zd-color-denim) !important; }
+.u-bg-denim { background-color: var(--zd-color-denim) !important; }
 
-.u-bg--east-side { background-color: var(--zd-color-east-side) !important; }
+.u-bg-east-side { background-color: var(--zd-color-east-side) !important; }
 
-.u-bg--festival { background-color: var(--zd-color-festival) !important; }
+.u-bg-festival { background-color: var(--zd-color-festival) !important; }
 
-.u-bg--gainsboro { background-color: var(--zd-color-gainsboro) !important; }
+.u-bg-gainsboro { background-color: var(--zd-color-gainsboro) !important; }
 
-.u-bg--indian-red { background-color: var(--zd-color-indian-red) !important; }
+.u-bg-indian-red { background-color: var(--zd-color-indian-red) !important; }
 
-.u-bg--inherit { background-color: inherit !important; }
+.u-bg-inherit { background-color: inherit !important; }
 
-.u-bg--iron { background-color: var(--zd-color-iron) !important; }
+.u-bg-iron { background-color: var(--zd-color-iron) !important; }
 
-.u-bg--jonquil { background-color: var(--zd-color-jonquil) !important; }
+.u-bg-jonquil { background-color: var(--zd-color-jonquil) !important; }
 
-.u-bg--lemon-chiffon { background-color: var(--zd-color-lemon-chiffon) !important; }
+.u-bg-lemon-chiffon { background-color: var(--zd-color-lemon-chiffon) !important; }
 
-.u-bg--lily-white { background-color: var(--zd-color-lily-white) !important; }
+.u-bg-lily-white { background-color: var(--zd-color-lily-white) !important; }
 
-.u-bg--lola { background-color: var(--zd-color-lola) !important; }
+.u-bg-lola { background-color: var(--zd-color-lola) !important; }
 
-.u-bg--mabel { background-color: var(--zd-color-mabel) !important; }
+.u-bg-mabel { background-color: var(--zd-color-mabel) !important; }
 
-.u-bg--malibu { background-color: var(--zd-color-malibu) !important; }
+.u-bg-malibu { background-color: var(--zd-color-malibu) !important; }
 
-.u-bg--moon-yellow { background-color: var(--zd-color-moon-yellow) !important; }
+.u-bg-moon-yellow { background-color: var(--zd-color-moon-yellow) !important; }
 
-.u-bg--moonstone-blue { background-color: var(--zd-color-moonstone-blue) !important; }
+.u-bg-moonstone-blue { background-color: var(--zd-color-moonstone-blue) !important; }
 
-.u-bg--non-photo-blue { background-color: var(--zd-color-non-photo-blue) !important; }
+.u-bg-non-photo-blue { background-color: var(--zd-color-non-photo-blue) !important; }
 
-.u-bg--oasis { background-color: var(--zd-color-oasis) !important; }
+.u-bg-oasis { background-color: var(--zd-color-oasis) !important; }
 
-.u-bg--oil { background-color: var(--zd-color-oil) !important; }
+.u-bg-oil { background-color: var(--zd-color-oil) !important; }
 
-.u-bg--orange-peel { background-color: var(--zd-color-orange-peel) !important; }
+.u-bg-orange-peel { background-color: var(--zd-color-orange-peel) !important; }
 
-.u-bg--patterns-blue { background-color: var(--zd-color-patterns-blue) !important; }
+.u-bg-patterns-blue { background-color: var(--zd-color-patterns-blue) !important; }
 
-.u-bg--perfume { background-color: var(--zd-color-perfume) !important; }
+.u-bg-perfume { background-color: var(--zd-color-perfume) !important; }
 
-.u-bg--petite-orchid { background-color: var(--zd-color-petite-orchid) !important; }
+.u-bg-petite-orchid { background-color: var(--zd-color-petite-orchid) !important; }
 
-.u-bg--picasso { background-color: var(--zd-color-picasso) !important; }
+.u-bg-picasso { background-color: var(--zd-color-picasso) !important; }
 
-.u-bg--platinum { background-color: var(--zd-color-platinum) !important; }
+.u-bg-platinum { background-color: var(--zd-color-platinum) !important; }
 
-.u-bg--regent-st-blue { background-color: var(--zd-color-regent-st-blue) !important; }
+.u-bg-regent-st-blue { background-color: var(--zd-color-regent-st-blue) !important; }
 
-.u-bg--remy { background-color: var(--zd-color-remy) !important; }
+.u-bg-remy { background-color: var(--zd-color-remy) !important; }
 
-.u-bg--sky-blue { background-color: var(--zd-color-sky-blue) !important; }
+.u-bg-sky-blue { background-color: var(--zd-color-sky-blue) !important; }
 
-.u-bg--snow { background-color: var(--zd-color-snow) !important; }
+.u-bg-snow { background-color: var(--zd-color-snow) !important; }
 
-.u-bg--sunglow { background-color: var(--zd-color-sunglow) !important; }
+.u-bg-sunglow { background-color: var(--zd-color-sunglow) !important; }
 
-.u-bg--terra-cotta { background-color: var(--zd-color-terra-cotta) !important; }
+.u-bg-terra-cotta { background-color: var(--zd-color-terra-cotta) !important; }
 
-.u-bg--titan-white { background-color: var(--zd-color-titan-white) !important; }
+.u-bg-titan-white { background-color: var(--zd-color-titan-white) !important; }
 
-.u-bg--transparent { background-color: transparent !important; }
+.u-bg-transparent { background-color: transparent !important; }
 
-.u-bg--wewak { background-color: var(--zd-color-wewak) !important; }
+.u-bg-wewak { background-color: var(--zd-color-wewak) !important; }
 
-.u-bg--white { background-color: var(--zd-color-white) !important; }
+.u-bg-white { background-color: var(--zd-color-white) !important; }
 
-.u-bg--white-smoke { background-color: var(--zd-color-white-smoke) !important; }
+.u-bg-white-smoke { background-color: var(--zd-color-white-smoke) !important; }
 
 /* Foreground Colors */
 
-.u-fg--affair { color: var(--zd-color-affair) !important; }
+.u-fg-affair { color: var(--zd-color-affair) !important; }
 
-.u-fg--aluminum { color: var(--zd-color-aluminum) !important; }
+.u-fg-aluminum { color: var(--zd-color-aluminum) !important; }
 
-.u-fg--anti-flash-white { color: var(--zd-color-anti-flash-white) !important; }
+.u-fg-anti-flash-white { color: var(--zd-color-anti-flash-white) !important; }
 
-.u-fg--apple-green { color: var(--zd-color-apple-green) !important; }
+.u-fg-apple-green { color: var(--zd-color-apple-green) !important; }
 
-.u-fg--black { color: var(--zd-color-black) !important; }
+.u-fg-black { color: var(--zd-color-black) !important; }
 
-.u-fg--blue-chalk { color: var(--zd-color-blue-chalk) !important; }
+.u-fg-blue-chalk { color: var(--zd-color-blue-chalk) !important; }
 
-.u-fg--buff { color: var(--zd-color-buff) !important; }
+.u-fg-buff { color: var(--zd-color-buff) !important; }
 
-.u-fg--ce-soir { color: var(--zd-color-ce-soir) !important; }
+.u-fg-ce-soir { color: var(--zd-color-ce-soir) !important; }
 
-.u-fg--cg-red { color: var(--zd-color-cg-red) !important; }
+.u-fg-cg-red { color: var(--zd-color-cg-red) !important; }
 
-.u-fg--coral-candy { color: var(--zd-color-coral-candy) !important; }
+.u-fg-coral-candy { color: var(--zd-color-coral-candy) !important; }
 
-.u-fg--curious-blue { color: var(--zd-color-curious-blue) !important; }
+.u-fg-curious-blue { color: var(--zd-color-curious-blue) !important; }
 
-.u-fg--dark-gray { color: var(--zd-color-dark-gray) !important; }
+.u-fg-dark-gray { color: var(--zd-color-dark-gray) !important; }
 
-.u-fg--dark-pastel-red { color: var(--zd-color-dark-pastel-red) !important; }
+.u-fg-dark-pastel-red { color: var(--zd-color-dark-pastel-red) !important; }
 
-.u-fg--deep-lilac { color: var(--zd-color-deep-lilac) !important; }
+.u-fg-deep-lilac { color: var(--zd-color-deep-lilac) !important; }
 
-.u-fg--denim { color: var(--zd-color-denim) !important; }
+.u-fg-denim { color: var(--zd-color-denim) !important; }
 
-.u-fg--east-side { color: var(--zd-color-east-side) !important; }
+.u-fg-east-side { color: var(--zd-color-east-side) !important; }
 
-.u-fg--festival { color: var(--zd-color-festival) !important; }
+.u-fg-festival { color: var(--zd-color-festival) !important; }
 
-.u-fg--gainsboro { color: var(--zd-color-gainsboro) !important; }
+.u-fg-gainsboro { color: var(--zd-color-gainsboro) !important; }
 
-.u-fg--indian-red { color: var(--zd-color-indian-red) !important; }
+.u-fg-indian-red { color: var(--zd-color-indian-red) !important; }
 
-.u-fg--inherit { color: inherit !important; }
+.u-fg-inherit { color: inherit !important; }
 
-.u-fg--iron { color: var(--zd-color-iron) !important; }
+.u-fg-iron { color: var(--zd-color-iron) !important; }
 
-.u-fg--jonquil { color: var(--zd-color-jonquil) !important; }
+.u-fg-jonquil { color: var(--zd-color-jonquil) !important; }
 
-.u-fg--lemon-chiffon { color: var(--zd-color-lemon-chiffon) !important; }
+.u-fg-lemon-chiffon { color: var(--zd-color-lemon-chiffon) !important; }
 
-.u-fg--lily-white { color: var(--zd-color-lily-white) !important; }
+.u-fg-lily-white { color: var(--zd-color-lily-white) !important; }
 
-.u-fg--lola { color: var(--zd-color-lola) !important; }
+.u-fg-lola { color: var(--zd-color-lola) !important; }
 
-.u-fg--mabel { color: var(--zd-color-mabel) !important; }
+.u-fg-mabel { color: var(--zd-color-mabel) !important; }
 
-.u-fg--malibu { color: var(--zd-color-malibu) !important; }
+.u-fg-malibu { color: var(--zd-color-malibu) !important; }
 
-.u-fg--moon-yellow { color: var(--zd-color-moon-yellow) !important; }
+.u-fg-moon-yellow { color: var(--zd-color-moon-yellow) !important; }
 
-.u-fg--moonstone-blue { color: var(--zd-color-moonstone-blue) !important; }
+.u-fg-moonstone-blue { color: var(--zd-color-moonstone-blue) !important; }
 
-.u-fg--non-photo-blue { color: var(--zd-color-non-photo-blue) !important; }
+.u-fg-non-photo-blue { color: var(--zd-color-non-photo-blue) !important; }
 
-.u-fg--oasis { color: var(--zd-color-oasis) !important; }
+.u-fg-oasis { color: var(--zd-color-oasis) !important; }
 
-.u-fg--oil { color: var(--zd-color-oil) !important; }
+.u-fg-oil { color: var(--zd-color-oil) !important; }
 
-.u-fg--orange-peel { color: var(--zd-color-orange-peel) !important; }
+.u-fg-orange-peel { color: var(--zd-color-orange-peel) !important; }
 
-.u-fg--patterns-blue { color: var(--zd-color-patterns-blue) !important; }
+.u-fg-patterns-blue { color: var(--zd-color-patterns-blue) !important; }
 
-.u-fg--perfume { color: var(--zd-color-perfume) !important; }
+.u-fg-perfume { color: var(--zd-color-perfume) !important; }
 
-.u-fg--petite-orchid { color: var(--zd-color-petite-orchid) !important; }
+.u-fg-petite-orchid { color: var(--zd-color-petite-orchid) !important; }
 
-.u-fg--picasso { color: var(--zd-color-picasso) !important; }
+.u-fg-picasso { color: var(--zd-color-picasso) !important; }
 
-.u-fg--platinum { color: var(--zd-color-platinum) !important; }
+.u-fg-platinum { color: var(--zd-color-platinum) !important; }
 
-.u-fg--regent-st-blue { color: var(--zd-color-regent-st-blue) !important; }
+.u-fg-regent-st-blue { color: var(--zd-color-regent-st-blue) !important; }
 
-.u-fg--remy { color: var(--zd-color-remy) !important; }
+.u-fg-remy { color: var(--zd-color-remy) !important; }
 
-.u-fg--sky-blue { color: var(--zd-color-sky-blue) !important; }
+.u-fg-sky-blue { color: var(--zd-color-sky-blue) !important; }
 
-.u-fg--snow { color: var(--zd-color-snow) !important; }
+.u-fg-snow { color: var(--zd-color-snow) !important; }
 
-.u-fg--sunglow { color: var(--zd-color-sunglow) !important; }
+.u-fg-sunglow { color: var(--zd-color-sunglow) !important; }
 
-.u-fg--terra-cotta { color: var(--zd-color-terra-cotta) !important; }
+.u-fg-terra-cotta { color: var(--zd-color-terra-cotta) !important; }
 
-.u-fg--titan-white { color: var(--zd-color-titan-white) !important; }
+.u-fg-titan-white { color: var(--zd-color-titan-white) !important; }
 
-.u-fg--wewak { color: var(--zd-color-wewak) !important; }
+.u-fg-wewak { color: var(--zd-color-wewak) !important; }
 
-.u-fg--white { color: var(--zd-color-white) !important; }
+.u-fg-white { color: var(--zd-color-white) !important; }
 
-.u-fg--white-smoke { color: var(--zd-color-white-smoke) !important; }
+.u-fg-white-smoke { color: var(--zd-color-white-smoke) !important; }
 /* stylelint-enable */
