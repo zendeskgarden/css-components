@@ -4,4 +4,5 @@
   --zd-spacing-sm: calc(var(--zd-spacing) / 2);
   --zd-spacing-xl: calc(var(--zd-spacing) * 2);
   --zd-spacing-xs: calc(var(--zd-spacing) / 4);
+  --zd-spacing-xxs: calc(var(--zd-spacing) / 10);
 }
