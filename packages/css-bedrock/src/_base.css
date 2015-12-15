@@ -3,6 +3,8 @@
 @import 'zd-css-variables';
 
 :root {
+  --zd-anchor-color: var(--zd-color-malibu);
+  --zd-anchor-color-hover: var(--zd-color-curious-blue);
   --zd-html-background-color: var(--zd-color-white);
   --zd-html-box-sizing: border-box;
   --zd-html-font-family: var(--zd-font-family-proxima-nova), sans-serif;
@@ -42,6 +44,14 @@ html {
 input[type='search'] /* [1] */ { box-sizing: inherit; }
 
 * { font-weight: inherit; }
+
+a {
+  color: var(--zd-anchor-color);
+}
+
+a:hover {
+  color: var(--zd-anchor-color-hover);
+}
 
 a,
 ins,

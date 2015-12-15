@@ -9,11 +9,14 @@
 @import '_base';
 @import 'layouts/grid';
 @import 'layouts/wrapper';
+@import 'utilities/border-radius';
 @import 'utilities/clearfix';
 @import 'utilities/color';
+@import 'utilities/display';
 @import 'utilities/font-size';
 @import 'utilities/font-weight';
 @import 'utilities/jitterfix';
 @import 'utilities/spacing';
 @import 'utilities/text-align';
+@import 'utilities/truncate';
 @import 'utilities/width';

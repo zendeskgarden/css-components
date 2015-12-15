@@ -1,0 +1,37 @@
+/* stylelint-disable declaration-no-important */
+.u-display-block {
+  display: block !important;
+}
+
+.u-display-inherit {
+  display: inherit !important;
+}
+
+.u-display-inline {
+  display: inline !important;
+}
+
+.u-display-inline-block {
+  display: inline-block !important;
+}
+
+.u-display-list-item {
+  display: list-item !important;
+}
+
+.u-display-none {
+  display: none !important;
+}
+
+.u-display-table {
+  display: table !important;
+}
+
+.u-display-table-cell {
+  display: table-cell !important;
+}
+
+.u-display-table-row {
+  display: table-row !important;
+}
+/* stylelint-enable */
