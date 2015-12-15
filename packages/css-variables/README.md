@@ -1,4 +1,4 @@
-# CSS Variables
+# CSS Variables [![Build Status](https://travis-ci.com/zendeskgarden/css-variables.svg?token=dDt9s6smCMgz269xNbpz)](https://travis-ci.com/zendeskgarden/css-variables)
 
 The `css-variables` package contains common variables used by the rest
 of the framework.
