@@ -73,10 +73,11 @@ $zd-font-weight-ultralight: $zd-font-weight-thin !default;
 $zd-font-weight-medium: $zd-font-weight-semibold !default;
 $zd-font-weight-heavy: $zd-font-weight-extrabold !default;
 $zd-spacing: 20px !default;
-$zd-spacing-lg: ($zd-spacing + ($zd-spacing / 2)) !default;
+$zd-spacing-lg: ($zd-spacing * 1.5) !default;
 $zd-spacing-sm: ($zd-spacing / 2) !default;
 $zd-spacing-xl: ($zd-spacing * 2) !default;
 $zd-spacing-xs: ($zd-spacing / 4) !default;
+$zd-spacing-xxs: ($zd-spacing / 10) !default;
 
 // Custom Media Query Variables
 
