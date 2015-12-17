@@ -13,6 +13,7 @@
 @import 'utilities/clearfix';
 @import 'utilities/color';
 @import 'utilities/display';
+@import 'utilities/float';
 @import 'utilities/font-size';
 @import 'utilities/font-weight';
 @import 'utilities/jitterfix';
