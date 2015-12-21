@@ -1,0 +1,27 @@
+.l-flag {
+  display: table;
+  width: 100%;
+}
+
+.l-flag__body,
+.l-flag__figure {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.l-flag__body { width: 100%; }
+
+.l-flag__figure > * {
+  display: block;
+  max-width: none;
+}
+
+.l-flag--bottom > .l-flag__body,
+.l-flag--bottom > .l-flag__figure {
+  vertical-align: bottom;
+}
+
+.l-flag--top > .l-flag__body,
+.l-flag--top > .l-flag__figure {
+  vertical-align: top;
+}

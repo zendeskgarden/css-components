@@ -7,7 +7,9 @@
 @import 'fonts/proxima-nova/thin';
 @import 'fonts/proxima-nova/thin-italic';
 @import '_base';
+@import 'layouts/flag';
 @import 'layouts/grid';
+@import 'layouts/media';
 @import 'layouts/wrapper';
 @import 'utilities/border';
 @import 'utilities/border-radius';

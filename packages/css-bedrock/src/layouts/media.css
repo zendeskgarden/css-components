@@ -1,0 +1,14 @@
+.l-media { display: block; }
+
+.l-media:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.l-media__body {
+  display: block;
+  overflow: hidden;
+}
+
+.l-media__figure { float: left; }
