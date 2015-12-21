@@ -22,9 +22,9 @@
  * 2. Force visible scrollbars to prevent awkard jumps when navigating between
  * pages that do/don't have enough content to produce natural scrollbars. */
 html {
+  background-color: var(--zd-html-background-color);
   min-height: 100%; /* [1] */
   box-sizing: var(--zd-html-box-sizing);
-  background-color: var(--zd-html-background-color);
   overflow-y: scroll; /* [2] */
   text-rendering: var(--zd-html-text-rendering);
   line-height: var(--zd-html-line-height);

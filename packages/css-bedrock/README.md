@@ -3,6 +3,11 @@
 The `css-bedrock` package contains foundational CSS for Garden fonts,
 typography, resets, layouts, and utilities.
 
+**Note** – Bedrock CSS is not recommended for production until OPS
+provides a CDN for custom fonts
+[OP-15908](https://zendesk.atlassian.net/browse/OP-15908). The component
+will be updated and tagged 0.1.0 when that work has been completed.
+
 ## Installation
 
     $ npm install --save git+ssh://git@github.com:zendeskgarden/css-bedrock.git
@@ -33,10 +38,10 @@ best bet for discovering the styling classes that Bedrock CSS provides.
 
 ### Fonts
 
-A special note regarding font usage... *Each project must secure vendor
-payment for the faces that are needed. Please contact the Creative
-department to verify that Zendesk has arranged payments for the fonts
-you are planning to use.*
+A special note regarding font usage... *Each product must secure vendor
+payment for the faces that are needed. Please email
+support@creative.zendesk.com to verify that payment has been arranged
+for the fonts you are planning to use.*
 
 Bedrock @font-face CSS declarations are matched by means of [style
 linking](http://www.fontspring.com/support/troubleshooting/style-linking).

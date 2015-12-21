@@ -5,28 +5,36 @@
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
-  <header class="u-bg-oil u-fg-white u-mb--lg">
+  <header class="u-bg-oil u-fg-white u-mb-lg">
     <div class="l-wrapper">
       <h1 class="u-alpha u-pv u-semibold">
         <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
-        /
+        <span>/</span>
         <a class="u-fg-inherit" href="index.html">Bedrock CSS</a>
-        / Grid
+        <span>/ Grid</span>
       </h1>
     </div>
   </header>
   <main class="l-wrapper">
     <h1 class="u-beta u-mb">Grid</h1>
     <p class="u-mb">Grid layout is achieved via a top-level <code
-      class="u-bg-platinum u-br--sm u-ph--xs u-pv--xxs">.l-grid</code> class.
-    Each column within the grid is a <code class="u-bg-platinum u-br--sm
-      u-ph--xs u-pv--xxs">.l-grid__item</code> along with a width utility
+      class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.l-grid</code> class.
+    Each column within the grid is a <code class="u-bg-platinum u-br-sm
+      u-ph-xs u-pv-xxs">.l-grid__item</code> along with a width utility
     class. Bedrock CSS surfaces the following width units.</p>
+    <p class="u-mb">There are several options available for producing
+    fractional grid column widths. Many of these involve collapsing the space
+    between column elements via use of negative margins. There are situations
+    where this approach is unreliable or causes unanticipated side effects. The
+    Bedrock grid assumes that column elements are side-by-side, eliminating
+    whitespace.</p>
+
+    <h2 class="u-gamma u-mb">Units</h2>
 
     <div class="u-mb">
-      <h2 class="u-gamma u-mb--sm">Halves</h2>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-1/2</code
+      <h3 class="u-delta u-mb-sm">Halves</h3>
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-1/2</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-1/2 u-bg-platinum">&nbsp;</span
@@ -35,7 +43,7 @@
         </div>
       </div>
       <div class="l-grid">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-2/2</code
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-2/2</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-2/2 u-bg-platinum">&nbsp;</span>
@@ -45,9 +53,9 @@
     </div>
 
     <div class="u-mb">
-      <h2 class="u-gamma u-mb--sm">Thirds</h2>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-1/3</code
+      <h3 class="u-delta u-mb-sm">Thirds</h3>
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-1/3</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-1/3 u-bg-platinum">&nbsp;</span
@@ -55,8 +63,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-2/3</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-2/3</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-2/3 u-bg-platinum">&nbsp;</span
@@ -65,7 +73,7 @@
         </div>
       </div>
       <div class="l-grid">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-3/3</code
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-3/3</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-3/3 u-bg-platinum">&nbsp;</span>
@@ -75,9 +83,9 @@
     </div>
 
     <div class="u-mb">
-      <h2 class="u-gamma u-mb--sm">Fourths</h2>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-1/4</code
+      <h3 class="u-delta u-mb-sm">Fourths</h3>
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-1/4</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-1/4 u-bg-platinum">&nbsp;</span
@@ -85,8 +93,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-2/4</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-2/4</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-2/4 u-bg-platinum">&nbsp;</span
@@ -94,8 +102,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-3/4</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-3/4</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-3/4 u-bg-platinum">&nbsp;</span
@@ -104,7 +112,7 @@
         </div>
       </div>
       <div class="l-grid">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-4/4</code
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-4/4</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-4/4 u-bg-platinum">&nbsp;</span>
@@ -114,9 +122,9 @@
     </div>
 
     <div class="u-mb">
-      <h2 class="u-gamma u-mb--sm">Fifths</h2>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-1/5</code
+      <h3 class="u-delta u-mb-sm">Fifths</h3>
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-1/5</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-1/5 u-bg-platinum">&nbsp;</span
@@ -124,8 +132,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-2/5</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-2/5</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-2/5 u-bg-platinum">&nbsp;</span
@@ -133,8 +141,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-3/5</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-3/5</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-3/5 u-bg-platinum">&nbsp;</span
@@ -142,8 +150,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-4/5</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-4/5</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-4/5 u-bg-platinum">&nbsp;</span
@@ -152,7 +160,7 @@
         </div>
       </div>
       <div class="l-grid">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-5/5</code
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-5/5</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-5/5 u-bg-platinum">&nbsp;</span>
@@ -162,9 +170,9 @@
     </div>
 
     <div class="u-mb">
-      <h2 class="u-gamma u-mb--sm">Sixths</h2>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-1/6</code
+      <h3 class="u-delta u-mb-sm">Sixths</h3>
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-1/6</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-1/6 u-bg-platinum">&nbsp;</span
@@ -172,8 +180,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-2/6</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-2/6</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-2/6 u-bg-platinum">&nbsp;</span
@@ -181,8 +189,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-3/6</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-3/6</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-3/6 u-bg-platinum">&nbsp;</span
@@ -190,8 +198,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-4/6</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-4/6</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-4/6 u-bg-platinum">&nbsp;</span
@@ -199,8 +207,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-5/6</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-5/6</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-5/6 u-bg-platinum">&nbsp;</span
@@ -209,7 +217,7 @@
         </div>
       </div>
       <div class="l-grid">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-6/6</code
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-6/6</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-6/6 u-bg-platinum">&nbsp;</span>
@@ -219,9 +227,9 @@
     </div>
 
     <div class="u-mb">
-      <h2 class="u-gamma u-mb--sm">Eighths</h2>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-1/8</code
+      <h3 class="u-delta u-mb-sm">Eighths</h3>
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-1/8</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-1/8 u-bg-platinum">&nbsp;</span
@@ -229,8 +237,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-2/8</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-2/8</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-2/8 u-bg-platinum">&nbsp;</span
@@ -238,8 +246,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-3/8</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-3/8</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-3/8 u-bg-platinum">&nbsp;</span
@@ -247,8 +255,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-4/8</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-4/8</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-4/8 u-bg-platinum">&nbsp;</span
@@ -256,8 +264,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-5/8</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-5/8</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-5/8 u-bg-platinum">&nbsp;</span
@@ -265,8 +273,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-6/8</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-6/8</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-6/8 u-bg-platinum">&nbsp;</span
@@ -274,8 +282,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-7/8</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-7/8</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-7/8 u-bg-platinum">&nbsp;</span
@@ -284,7 +292,7 @@
         </div>
       </div>
       <div class="l-grid">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-8/8</code
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-8/8</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-8/8 u-bg-platinum">&nbsp;</span>
@@ -294,9 +302,9 @@
     </div>
 
     <div class="u-mb">
-      <h2 class="u-gamma u-mb--sm">Twelfths</h2>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-1/12</code
+      <h3 class="u-delta u-mb-sm">Twelfths</h3>
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-1/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-1/12 u-bg-platinum">&nbsp;</span
@@ -304,8 +312,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-2/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-2/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-2/12 u-bg-platinum">&nbsp;</span
@@ -313,8 +321,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-3/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-3/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-3/12 u-bg-platinum">&nbsp;</span
@@ -322,8 +330,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-4/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-4/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-4/12 u-bg-platinum">&nbsp;</span
@@ -331,8 +339,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-5/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-5/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-5/12 u-bg-platinum">&nbsp;</span
@@ -340,8 +348,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-6/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-6/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-6/12 u-bg-platinum">&nbsp;</span
@@ -349,8 +357,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-7/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-7/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-7/12 u-bg-platinum">&nbsp;</span
@@ -358,8 +366,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-8/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-8/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-8/12 u-bg-platinum">&nbsp;</span
@@ -367,8 +375,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-9/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-9/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-9/12 u-bg-platinum">&nbsp;</span
@@ -376,8 +384,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-10/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-10/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-10/12 u-bg-platinum">&nbsp;</span
@@ -385,8 +393,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-11/12</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-11/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-11/12 u-bg-platinum">&nbsp;</span
@@ -395,7 +403,7 @@
         </div>
       </div>
       <div class="l-grid">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-12/12</code
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-12/12</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-12/12 u-bg-platinum">&nbsp;</span>
@@ -405,9 +413,9 @@
     </div>
 
     <div class="u-mb">
-      <h2 class="u-gamma u-mb--sm">Twenty-fourths</h2>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-1/24</code
+      <h3 class="u-delta u-mb-sm">Twenty-fourths</h3>
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-1/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-1/24 u-bg-platinum">&nbsp;</span
@@ -415,8 +423,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-2/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-2/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-2/24 u-bg-platinum">&nbsp;</span
@@ -424,8 +432,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-3/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-3/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-3/24 u-bg-platinum">&nbsp;</span
@@ -433,8 +441,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-4/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-4/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-4/24 u-bg-platinum">&nbsp;</span
@@ -442,8 +450,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-5/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-5/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-5/24 u-bg-platinum">&nbsp;</span
@@ -451,8 +459,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-6/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-6/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-6/24 u-bg-platinum">&nbsp;</span
@@ -460,8 +468,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-7/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-7/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-7/24 u-bg-platinum">&nbsp;</span
@@ -469,8 +477,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-8/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-8/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-8/24 u-bg-platinum">&nbsp;</span
@@ -478,8 +486,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-9/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-9/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-9/24 u-bg-platinum">&nbsp;</span
@@ -487,8 +495,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-10/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-10/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-10/24 u-bg-platinum">&nbsp;</span
@@ -496,8 +504,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-11/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-11/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-11/24 u-bg-platinum">&nbsp;</span
@@ -505,8 +513,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-12/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-12/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-12/24 u-bg-platinum">&nbsp;</span
@@ -514,8 +522,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-13/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-13/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-13/24 u-bg-platinum">&nbsp;</span
@@ -523,8 +531,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-14/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-14/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-14/24 u-bg-platinum">&nbsp;</span
@@ -532,8 +540,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-15/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-15/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-15/24 u-bg-platinum">&nbsp;</span
@@ -541,8 +549,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-16/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-16/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-16/24 u-bg-platinum">&nbsp;</span
@@ -550,8 +558,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-17/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-17/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-17/24 u-bg-platinum">&nbsp;</span
@@ -559,8 +567,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-18/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-18/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-18/24 u-bg-platinum">&nbsp;</span
@@ -568,8 +576,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-19/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-19/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-19/24 u-bg-platinum">&nbsp;</span
@@ -577,8 +585,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-20/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-20/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-20/24 u-bg-platinum">&nbsp;</span
@@ -586,8 +594,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-21/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-21/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-21/24 u-bg-platinum">&nbsp;</span
@@ -595,8 +603,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-22/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-22/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-22/24 u-bg-platinum">&nbsp;</span
@@ -604,8 +612,8 @@
           </div>
         </div>
       </div>
-      <div class="l-grid u-mb--xs">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-23/24</code
+      <div class="l-grid u-mb-xs">
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-23/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-23/24 u-bg-platinum">&nbsp;</span
@@ -614,12 +622,80 @@
         </div>
       </div>
       <div class="l-grid">
-        <code class="l-grid__item u-1/8 u-pr--sm u-text-align-right">.u-24/24</code
+        <code class="l-grid__item u-1/8 u-pr-sm u-text-align-right">.u-24/24</code
         ><div class="l-grid__item u-7/8">
           <div class="l-grid">
             <span class="l-grid__item u-24/24 u-bg-platinum">&nbsp;</span>
           </div>
         </div>
+      </div>
+    </div>
+
+    <h2 class="u-gamma u-mb">Sizes</h2>
+
+    <div class="u-mb">
+      <h3 class="u-delta u-display-inline-block u-mb-sm">Zero</h3>
+      <code class="u-bg-gainsboro u-br u-ml-xs u-ph-xs u-pv-xxs u-zeta">.l-grid--0</code>
+      <div class="l-grid l-grid--0">
+        <span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span>
+      </div>
+    </div>
+
+    <div class="u-mb">
+      <h3 class="u-delta u-display-inline-block u-mb-sm">Extra-Small</h3>
+      <code class="u-bg-gainsboro u-br u-ml-xs u-ph-xs u-pv-xxs u-zeta">.l-grid--xs</code>
+      <div class="l-grid l-grid--xs">
+        <span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span>
+      </div>
+    </div>
+
+    <div class="u-mb">
+      <h3 class="u-delta u-display-inline-block u-mb-sm">Small</h3>
+      <code class="u-bg-gainsboro u-br u-ml-xs u-ph-xs u-pv-xxs u-zeta">.l-grid--sm</code>
+      <div class="l-grid l-grid--sm">
+        <span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span>
+      </div>
+    </div>
+
+    <div class="u-mb">
+      <h3 class="u-delta u-display-inline-block u-mb-sm">Medium</h3>
+      <code class="u-bg-gainsboro u-br u-ml-xs u-ph-xs u-pv-xxs u-zeta">.l-grid</code>
+      <div class="l-grid">
+        <span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span>
+      </div>
+    </div>
+
+    <div class="u-mb">
+      <h3 class="u-delta u-display-inline-block u-mb-sm">Large</h3>
+      <code class="u-bg-gainsboro u-br u-ml-xs u-ph-xs u-pv-xxs u-zeta">.l-grid--lg</code>
+      <div class="l-grid l-grid--lg">
+        <span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span>
+      </div>
+    </div>
+
+    <div class="u-mb">
+      <h3 class="u-delta u-display-inline-block u-mb-sm">Extra-Large</h3>
+      <code class="u-bg-gainsboro u-br u-ml-xs u-ph-xs u-pv-xxs u-zeta">.l-grid--xl</code>
+      <div class="l-grid l-grid--xl">
+        <span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span
+        ><span class="l-grid__item u-1/4"><p class="u-bg-platinum">&nbsp;</p></span>
       </div>
     </div>
   </main>

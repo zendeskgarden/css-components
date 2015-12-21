@@ -9,6 +9,7 @@
 @import '_base';
 @import 'layouts/grid';
 @import 'layouts/wrapper';
+@import 'utilities/border';
 @import 'utilities/border-radius';
 @import 'utilities/clearfix';
 @import 'utilities/color';
