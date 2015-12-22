@@ -1037,6 +1037,8 @@ svg{ max-height:100%; }
 
 .u-fg-titan-white{ color:#dcd1e1 !important; }
 
+.u-fg-transparent{ color:transparent !important; }
+
 .u-fg-wewak{ color:#ef9d97 !important; }
 
 .u-fg-white{ color:#fff !important; }
@@ -1134,6 +1136,8 @@ svg{ max-height:100%; }
 .u-bc-terra-cotta{ border-color:#e86c64 !important; }
 
 .u-bc-titan-white{ border-color:#dcd1e1 !important; }
+
+.u-bc-transparent{ border-color:transparent !important; }
 
 .u-bc-wewak{ border-color:#ef9d97 !important; }
 

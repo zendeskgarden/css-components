@@ -196,6 +196,8 @@
 
 .u-fg-titan-white { color: var(--zd-color-titan-white) !important; }
 
+.u-fg-transparent { color: transparent !important; }
+
 .u-fg-wewak { color: var(--zd-color-wewak) !important; }
 
 .u-fg-white { color: var(--zd-color-white) !important; }
@@ -295,6 +297,8 @@
 .u-bc-terra-cotta { border-color: var(--zd-color-terra-cotta) !important; }
 
 .u-bc-titan-white { border-color: var(--zd-color-titan-white) !important; }
+
+.u-bc-transparent { border-color: transparent !important; }
 
 .u-bc-wewak { border-color: var(--zd-color-wewak) !important; }
 
