@@ -37,7 +37,7 @@
   font-family: inherit; /* Override for <input> & <button> elements. */
   font-size: var(--zd-btn-font-size);
   font-weight: var(--zd-btn-font-weight);
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
   box-sizing: border-box;
   user-select: none;
   -webkit-touch-callout: none;
@@ -47,4 +47,20 @@
   /* FF <input type="submit"> fix. */
   border: 0;
   padding: 0;
+}
+
+.l-btn-group > .c-btn {
+  margin-left: calc(var(--zd-btn-border-width) * -1);
+  border-radius: 0;
+}
+
+.l-btn-group > .c-btn:first-of-type {
+  margin-left: 0;
+  border-top-left-radius: var(--zd-btn-border-radius);
+  border-bottom-left-radius: var(--zd-btn-border-radius);
+}
+
+.l-btn-group > .c-btn:last-of-type {
+  border-top-right-radius: var(--zd-btn-border-radius);
+  border-bottom-right-radius: var(--zd-btn-border-radius);
 }

@@ -1,4 +1,4 @@
-# Button CSS
+# Button Component CSS
 
 The `css-buttons` component contains basic `.c-btn` styling.
 
@@ -8,3 +8,12 @@ The `css-buttons` component contains basic `.c-btn` styling.
 
 ## Usage
 
+[TODO]
+
+## Tests
+
+    $ npm test
+
+## Demo
+
+    $ npm start
