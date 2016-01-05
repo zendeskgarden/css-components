@@ -1,4 +1,4 @@
-# Button Component CSS
+# Button Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-buttons.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-buttons)
 
 The `css-buttons` component contains basic `.c-btn` styling.
 
@@ -8,7 +8,33 @@ The `css-buttons` component contains basic `.c-btn` styling.
 
 ## Usage
 
-[TODO]
+Button CSS is intended to enhance the following HTML.
+
+```html
+<button class="c-btn">CLICK ME</button>
+```
+
+### Accessibility
+
+If you are unable to use a native HTML `<button>`, be sure to add
+the appropriate `role` attribute.
+
+```html
+<a class="c-btn" href="#" role="button">LINK BUTTON</a>
+```
+
+Also note that the element must be able to receive focus and can be
+activated using either the `enter` or `space` keys. Conversely, a
+disabled button should not be able to receive focus.
+
+```html
+<a class="c-btn is-disabled" href="#" role="button" tabindex="-1">DISABLED LINK BUTTON</a>
+```
+
+### Modifications
+
+See http://zendeskgarden.github.io/css-buttons/ for various button
+modification classes.
 
 ## Tests
 
