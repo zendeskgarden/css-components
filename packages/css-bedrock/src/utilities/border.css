@@ -1,21 +1,11 @@
 /* stylelint-disable declaration-no-important */
-.u-border {
-  border: 1px solid !important;
-}
+.u-border { border: 1px solid !important; }
 
-.u-border-b {
-  border-bottom: 1px solid !important;
-}
+.u-border-b { border-bottom: 1px solid !important; }
 
-.u-border-l {
-  border-left: 1px solid !important;
-}
+.u-border-l { border-left: 1px solid !important; }
 
-.u-border-r {
-  border-right: 1px solid !important;
-}
+.u-border-r { border-right: 1px solid !important; }
 
-.u-border-t {
-  border-top: 1px solid !important;
-}
+.u-border-t { border-top: 1px solid !important; }
 /* stylelint-enable */
