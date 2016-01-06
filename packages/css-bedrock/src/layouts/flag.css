@@ -11,6 +11,8 @@
 
 .l-flag__body { width: 100%; }
 
+.l-flag__body > * { vertical-align: inherit; }
+
 .l-flag__figure > * {
   display: block;
   max-width: none;
