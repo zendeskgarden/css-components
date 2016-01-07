@@ -630,11 +630,20 @@ svg{ max-height:100%; }
 
 .u-border-b{ border-bottom:1px solid !important; }
 
-.u-border-l{ border-left:1px solid !important; }
+.u-border-h{
+  border-right:1px solid !important;
+}
+
+.u-border-h,.u-border-l{
+  border-left:1px solid !important;}
 
 .u-border-r{ border-right:1px solid !important; }
 
-.u-border-t{ border-top:1px solid !important; }
+.u-border-t,.u-border-v{ border-top:1px solid !important;}
+
+.u-border-v{
+  border-bottom:1px solid !important;
+}
 .u-br{
   border-radius:4px !important;
 }
@@ -1639,6 +1648,25 @@ svg{ max-height:100%; }
   text-overflow:ellipsis;
   white-space:nowrap;
 }
+.u-va-baseline{ vertical-align:baseline !important; }
+
+.u-va-bottom{ vertical-align:bottom !important; }
+
+.u-va-inherit{ vertical-align:inherit !important; }
+
+.u-va-initial{ vertical-align:baseline !important; vertical-align:initial !important; }
+
+.u-va-middle{ vertical-align:middle !important; }
+
+.u-va-sub{ vertical-align:sub !important; }
+
+.u-va-super{ vertical-align:super !important; }
+
+.u-va-text-bottom{ vertical-align:text-bottom !important; }
+
+.u-va-text-top{ vertical-align:text-top !important; }
+
+.u-va-top{ vertical-align:top !important; }
 .u-1\/1,.u-2\/2,.u-3\/3,.u-4\/4,.u-5\/5,.u-6\/6,.u-8\/8,.u-12\/12,.u-24\/24{ width:100% !important; }
 
 .u-1\/5{ width:20% !important; }
