@@ -1634,15 +1634,15 @@ svg{ max-height:100%; }
   margin-top:-2px !important;
   margin-bottom:-2px !important;
 }
-.u-text-align-center{ text-align:center !important; }
+.u-ta-center{ text-align:center !important; }
 
-.u-text-align-inherit{ text-align:inherit !important; }
+.u-ta-inherit{ text-align:inherit !important; }
 
-.u-text-align-justify{ text-align:justify !important; }
+.u-ta-justify{ text-align:justify !important; }
 
-.u-text-align-left{ text-align:left !important; }
+.u-ta-left{ text-align:left !important; }
 
-.u-text-align-right{ text-align:right !important; }
+.u-ta-right{ text-align:right !important; }
 .u-truncate{
   overflow:hidden;
   text-overflow:ellipsis;
