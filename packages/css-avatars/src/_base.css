@@ -1,0 +1,34 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-avatar-border: 1px transparent solid;
+  --zd-avatar-border-radius: 50%;
+  --zd-avatar-size: 34px;
+  --zd-avatar-transition: background-color .3s;
+  --zd-avatar__img-background-color: var(--zd-color-white);
+  --zd-avatar__img-border: 1px solid var(--zd-color-gainsboro) solid;
+  --zd-avatar__img-border-radius: 50%;
+  --zd-avatar__img-transition: all .3s;
+}
+
+.c-avatar {
+  display: inline-block;
+  transition: var(--zd-avatar-transition);
+  border: var(--zd-avatar-border);
+  border-radius: var(--zd-avatar-border-radius);
+  width: var(--zd-avatar-size);
+  height: var(--zd-avatar-size);
+  box-sizing: border-box;
+}
+
+.c-avatar__img,
+.c-avatar > img {
+  transition: var(--zd-avatar__img-transition);
+  border: var(--zd-avatar__img-border);
+  border-radius: var(--zd-avatar__img-border-radius);
+  background-color: var(--zd-avatar__img-background-color);
+  width: 100%;
+  height: 100%;
+  box-sizing: inherit;
+  vertical-align: bottom;
+}

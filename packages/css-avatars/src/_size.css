@@ -1,0 +1,18 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-avatar--large-border-width: 2px;
+  --zd-avatar--large-size: 54px;
+  --zd-avatar--small-size: 26px;
+}
+
+.c-avatar--large {
+  border-width: var(--zd-avatar--large-border-width);
+  width: var(--zd-avatar--large-size);
+  height: var(--zd-avatar--large-size);
+}
+
+.c-avatar--small {
+  width: var(--zd-avatar--small-size);
+  height: var(--zd-avatar--small-size);
+}
