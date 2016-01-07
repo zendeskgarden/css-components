@@ -1,0 +1,41 @@
+@import 'zd-css-variables';
+
+:root {
+  /* --zd-menu-* variables go here */
+}
+
+.c-menu {
+  /* base menu component per http://j.mp/1THW6WV */
+}
+
+.c-menu--n {
+  /* menu positioned directly north of caron */
+}
+
+.c-menu--ne {
+  /* menu positioned northeast of caron */
+}
+
+.c-menu--nw {
+  /* menu positioned northwest of caron */
+}
+
+.c-menu--s {
+  /* menu positioned directly south of caret */
+}
+
+.c-menu--se {
+  /* menu positioned southeast of caret */
+}
+
+.c-menu--sw {
+  /* menu positioned southwest of caret */
+}
+
+.c-menu--e {
+  /* menu positioned directly east of pointer */
+}
+
+.c-menu-w {
+  /* menu positioned directly west of pointer */
+}

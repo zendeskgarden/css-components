@@ -1,0 +1,23 @@
+@import 'zd-css-variables';
+
+:root {
+  /* --zd-menu__item-* variables go here */
+}
+
+.c-menu__item {
+  /* base menu item component */
+}
+
+.c-menu__item--disabled {
+  /* menu item disabled modifier */
+}
+
+.c-menu__item--header {
+  /* menu item header modifier */
+}
+
+@custom-selector :--focused :hover, :focus, .is-focused;
+
+.c-menu__item:--focused {
+  /* menu item .is-focused modifier */
+}
