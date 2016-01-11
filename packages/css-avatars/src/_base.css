@@ -26,6 +26,7 @@
   transition: var(--zd-avatar__img-transition);
   border: var(--zd-avatar__img-border);
   border-radius: var(--zd-avatar__img-border-radius);
+  background-clip: content-box;
   background-color: var(--zd-avatar__img-background-color);
   width: 100%;
   height: 100%;
