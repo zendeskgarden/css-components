@@ -5,6 +5,7 @@
 .c-tab__list{
   display:block;
   margin-top:0;
+  margin-bottom:20px;
   border-bottom:1px solid #ebebeb;
   padding:0;
   line-height:1.43;
