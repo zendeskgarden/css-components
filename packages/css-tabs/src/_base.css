@@ -1,12 +1,10 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-tab-margin-bottom: 20px;
   --zd-tab__list-border-color: var(--zd-color-lily-white);
   --zd-tab__list-color: var(--zd-color-aluminum);
   --zd-tab__list-font-size: var(--zd-font-size-epsilon);
   --zd-tab__list-line-height: 1.43;
-  --zd-tab__list-margin-bottom: 20px;
   --zd-tab__list__item-border-width: 3px;
   --zd-tab__list__item-margin-left: 50px;
   --zd-tab__list__item-padding: 0 .3571em;
@@ -14,7 +12,6 @@
 
 .c-tab {
   display: block;
-  margin-bottom: var(--zd-tab-margin-bottom);
   overflow: hidden;
 }
 
@@ -22,7 +19,6 @@
 .c-tab__list {
   display: block;
   margin-top: 0; /* [1] */
-  margin-bottom: var(--zd-tab__list-margin-bottom);
   border-bottom: 1px solid var(--zd-tab__list-border-color);
   padding: 0; /* [1] */
   line-height: var(--zd-tab__list-line-height);

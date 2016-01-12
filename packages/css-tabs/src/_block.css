@@ -1,7 +1,7 @@
 :root {
   --zd-tab--block__list__item-margin-bottom: 10px;
   --zd-tab--block__list__item-padding: 0 0 0 .7143em;
-  --zd-tab--block__panel-margin-left: 40px;
+  --zd-tab--block__panel-margin-left: var(--zd-spacing-lg);
 }
 
 .c-tab--block {

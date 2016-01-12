@@ -1,4 +1,4 @@
-# Tab Component CSS [![Build Status](https://magnum.travis-ci.com/zendeskgarden/css-tabs.svg?token=tabs&branch=master)](https://magnum.travis-ci.com/zendeskgarden/css-tabs)
+# Tab Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-tabs.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-tabs)
 
 The `css-tabs` package provides styling for tab components.
 
@@ -73,6 +73,16 @@ HTML for anchored tabs should be structured like this:
   class="c-tab__list__item is-active"
   id="tab1"
   role="tab"><a href="#" id="anchor1" role="presentation" tabindex="-1">One</a></li>
+```
+
+See the `accent.css` source file for sample CSS needed to format tabs
+according to your product's accent color. This CSS is not included in
+the package distribution. Upon inclusion, corresponding HTML would be:
+
+```html
+<ul class="c-tab__list c-tab__list--accent" role="tablist">
+  ...
+</ul>
 ```
 
 ### Behavior

@@ -1,10 +1,9 @@
 .c-tab{
+  display:block;
   overflow:hidden;
 }
-.c-tab,.c-tab__list{
-  display:block;
-  margin-bottom:20px;}
 .c-tab__list{
+  display:block;
   margin-top:0;
   border-bottom:1px solid #ebebeb;
   padding:0;
@@ -69,7 +68,7 @@
 
 .c-tab--block .c-tab__panel{
   display:inline-block;
-  margin-left:40px;
+  margin-left:30px;
   vertical-align:top;
 }
 

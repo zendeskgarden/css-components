@@ -1,0 +1,18 @@
+@import 'zd-css-variables';
+
+:root {
+  /* Override this variable with your product's accent color */
+  --zd-tab__list--accent-color: #2db1ba;
+}
+
+.c-tab__list--accent > .c-tab__list__item:--activating {
+  border-color: color(var(--zd-tab__list--accent-color) alpha(25%));
+}
+
+.c-tab__list--accent > .c-tab__list__item:--active {
+  color: var(--zd-tab__list--accent-color);
+}
+
+.c-tab__list--accent > .c-tab__list__item:--focused {
+  color: var(--zd-tab__list--accent-color);
+}

@@ -1,4 +1,4 @@
-@import 'base';
-@import 'block';
-@import 'focus';
-@import 'active';
+@import '_base';
+@import '_block';
+@import '_focused';
+@import '_active';

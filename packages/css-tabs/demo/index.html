@@ -1,124 +1,143 @@
 <!doctype html>
 <html>
 <head>
-  <title>Tab CSS Demo</title>
+  <title>Zendesk Garden / Tabs</title>
+  <link href="bedrock.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Default Tabs</h1>
-  <nav class="c-tab">
-    <ul class="c-tab__list" role="tablist">
-      <li
-        aria-controls="panel1"
-        aria-expanded="true"
-        aria-selected="true"
-        class="c-tab__list__item is-active"
-        id="tab1"
-        role="tab"
-        tabindex="0">One</li
-      ><li
-        aria-controls="panel2"
-        aria-expanded="false"
-        aria-selected="false"
-        class="c-tab__list__item"
-        id="tab2"
-        role="tab"
-        tabindex="-1">Two</li
-      ><li
-        aria-controls="panel3"
-        aria-expanded="false"
-        aria-selected="false"
-        class="c-tab__list__item"
-        id="tab3"
-        role="tab"
-        tabindex="-1">Three</li>
-    </ul>
-    <div
-      aria-hidden="false"
-      aria-labelledby="tab1"
-      class="c-tab__panel"
-      id="panel1"
-      role="tabpanel">Bitters biodiesel hammock actually, artisan yuccie direct
-      trade fanny pack street art cardigan selfies church-key shoreditch. Tacos
-      yr bespoke you probably haven't heard of them, vinyl readymade butcher
-      typewriter. Stumptown marfa slow-carb poutine pinterest cronut, banjo
-      PBR&B cardigan swag hella distillery. Shoreditch authentic gluten-free
-      forage, chartreuse knausgaard bicycle rights quinoa kombucha. Cliche
-      lo-fi ethical, cardigan vegan master cleanse keffiyeh locavore next
-      level. Chillwave four loko typewriter cronut, biodiesel blue bottle
-      austin kogi kinfolk food truck PBR&B brunch kale chips occupy you
-      probably haven't heard of them. Paleo leggings tacos pour-over pickled
-      cornhole.</div>
-    <div
-      aria-hidden="true"
-      aria-labelledby="tab2"
-      class="c-tab__panel"
-      id="panel2"
-      role="tabpanel"
-      style="display: none;">PANEL TWO</div>
-    <div
-      aria-hidden="true"
-      aria-labelledby="tab3"
-      class="c-tab__panel"
-      id="panel3"
-      role="tabpanel"
-      style="display: none;">PANEL THREE</div>
-  </nav>
-  <h1>Block Tabs</h1>
-  <nav class="c-tab c-tab--block">
-    <ul class="c-tab__list" role="tablist">
-      <li
-        aria-controls="panel1"
-        aria-expanded="true"
-        aria-selected="true"
-        class="c-tab__list__item is-active"
-        id="tab1"
-        role="tab"
-        tabindex="0">One</li
-      ><li
-        aria-controls="panel2"
-        aria-expanded="false"
-        aria-selected="false"
-        class="c-tab__list__item"
-        id="tab2"
-        role="tab"
-        tabindex="-1">Two</li
-      ><li
-        aria-controls="panel3"
-        aria-expanded="false"
-        aria-selected="false"
-        class="c-tab__list__item"
-        id="tab3"
-        role="tab"
-        tabindex="-1">Three</li>
-    </ul
-    ><div
-      aria-hidden="false"
-      aria-labelledby="tab1"
-      class="c-tab__panel"
-      id="panel1"
-      role="tabpanel">Wolf mlkshk truffaut meggings DIY knausgaard.
-      Intelligentsia raw denim hammock, heirloom slow-carb tumblr cornhole art
-      party flexitarian small batch hella schlitz food truck franzen taxidermy.
-      Hoodie single-origin coffee XOXO keffiyeh twee, kickstarter knausgaard.
-      Chartreuse occupy twee biodiesel plaid tousled scenester, drinking
-      vinegar kickstarter DIY single-origin coffee williamsburg raw denim lo-fi
-      blue bottle. Lo-fi cardigan pour-over, tofu kale chips yuccie godard
-      chambray DIY put a bird on it iPhone mixtape swag.</div>
-    <div
-      aria-hidden="true"
-      aria-labelledby="tab2"
-      class="c-tab__panel"
-      id="panel2"
-      role="tabpanel"
-      style="display: none;">PANEL TWO</div>
-    <div
-      aria-hidden="true"
-      aria-labelledby="tab3"
-      class="c-tab__panel"
-      id="panel3"
-      role="tabpanel"
-      style="display: none;">PANEL THREE</div>
-  </nav>
+  <header class="u-bg-oil u-fg-white u-mb-lg">
+    <div class="l-wrapper">
+      <h1 class="u-alpha u-pv u-semibold">
+        <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
+        <span>/ Tabs</span>
+      </h1>
+    </div>
+  </header>
+  <main class="l-wrapper">
+    <h1 class="u-beta u-mb">Tabs</h1>
+    <p class="u-mb-lg">Use the
+      <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-tab</code>
+      components for consistent tab styling.</p>
+    <h2 class="u-gamma u-mb">Default Layout
+      <code class="u-bg-platinum u-br-sm u-epsilon u-ph-xs u-pv-xxs">.c-tab</code>
+    </h2>
+    <nav class="c-tab u-mb-lg">
+      <ul class="c-tab__list u-mb" role="tablist">
+        <li
+          aria-controls="panel1"
+          aria-expanded="true"
+          aria-selected="true"
+          class="c-tab__list__item is-active"
+          id="tab1"
+          role="tab"
+          tabindex="0">One</li
+        ><li
+          aria-controls="panel2"
+          aria-expanded="false"
+          aria-selected="false"
+          class="c-tab__list__item"
+          id="tab2"
+          role="tab"
+          tabindex="-1">Two</li
+        ><li
+          aria-controls="panel3"
+          aria-expanded="false"
+          aria-selected="false"
+          class="c-tab__list__item"
+          id="tab3"
+          role="tab"
+          tabindex="-1">Three</li>
+      </ul>
+      <p
+        aria-hidden="false"
+        aria-labelledby="tab1"
+        class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
+        id="panel1"
+        role="tabpanel">Bitters biodiesel hammock actually, artisan yuccie direct
+        trade fanny pack street art cardigan selfies church-key shoreditch. Tacos
+        yr bespoke you probably haven't heard of them, vinyl readymade butcher
+        typewriter. Stumptown marfa slow-carb poutine pinterest cronut, banjo
+        PBR&B cardigan swag hella distillery. Shoreditch authentic gluten-free
+        forage, chartreuse knausgaard bicycle rights quinoa kombucha. Cliche
+        lo-fi ethical, cardigan vegan master cleanse keffiyeh locavore next
+        level. Chillwave four loko typewriter cronut, biodiesel blue bottle
+        austin kogi kinfolk food truck PBR&B brunch kale chips occupy you
+        probably haven't heard of them. Paleo leggings tacos pour-over pickled
+        cornhole.</p>
+      <p
+        aria-hidden="true"
+        aria-labelledby="tab2"
+        class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
+        id="panel2"
+        role="tabpanel"
+        style="display: none;">PANEL TWO</p>
+      <p
+        aria-hidden="true"
+        aria-labelledby="tab3"
+        class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
+        id="panel3"
+        role="tabpanel"
+        style="display: none;">PANEL THREE</p>
+    </nav>
+    <h2 class="u-gamma u-mb">Block Layout
+      <code class="u-bg-platinum u-br-sm u-epsilon u-ph-xs u-pv-xxs">.c-tab .c-tab--block</code>
+    </h2>
+    <nav class="c-tab c-tab--block u-mb-lg">
+      <ul class="c-tab__list" role="tablist">
+        <li
+          aria-controls="panel1"
+          aria-expanded="true"
+          aria-selected="true"
+          class="c-tab__list__item is-active"
+          id="tab1"
+          role="tab"
+          tabindex="0">One</li
+        ><li
+          aria-controls="panel2"
+          aria-expanded="false"
+          aria-selected="false"
+          class="c-tab__list__item"
+          id="tab2"
+          role="tab"
+          tabindex="-1">Two</li
+        ><li
+          aria-controls="panel3"
+          aria-expanded="false"
+          aria-selected="false"
+          class="c-tab__list__item"
+          id="tab3"
+          role="tab"
+          tabindex="-1">Three</li>
+      </ul>
+      <p
+        aria-hidden="false"
+        aria-labelledby="tab1"
+        class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
+        id="panel1"
+        role="tabpanel">Wolf mlkshk truffaut meggings DIY knausgaard.
+        Intelligentsia raw denim hammock, heirloom slow-carb tumblr cornhole art
+        party flexitarian small batch hella schlitz food truck franzen taxidermy.
+        Hoodie single-origin coffee XOXO keffiyeh twee, kickstarter knausgaard.
+        Chartreuse occupy twee biodiesel plaid tousled scenester, drinking
+        vinegar kickstarter DIY single-origin coffee williamsburg raw denim lo-fi
+        blue bottle. Lo-fi cardigan pour-over, tofu kale chips yuccie godard
+        chambray DIY put a bird on it iPhone mixtape swag.</p>
+      <p
+        aria-hidden="true"
+        aria-labelledby="tab2"
+        class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
+        id="panel2"
+        role="tabpanel"
+        style="display: none;">PANEL TWO</p>
+      <p
+        aria-hidden="true"
+        aria-labelledby="tab3"
+        class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
+        id="panel3"
+        role="tabpanel"
+        style="display: none;">PANEL THREE</p>
+    </nav>
+  </main>
 </body>
 </html>
