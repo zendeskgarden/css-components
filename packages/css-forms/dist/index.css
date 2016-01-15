@@ -1,0 +1,63 @@
+
+.c-chk{
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+  display:inline-block;
+  position:relative;
+  border:1px solid #ddd;
+  border-radius:4px;
+  background-color:#fff;
+  cursor:pointer;
+  width:14px;
+  height:14px;
+}
+
+.c-chk.is-focused,.c-chk:focus,.c-chk:hover{
+  outline:none;
+  border-color:#ddd;
+  box-shadow:0 0 1px 2px #eee;
+}
+
+.c-chk.is-focused.is-active,.c-chk.is-focused.is-active:focus,.c-chk.is-focused.is-active:hover,.c-chk.is-focused:active,.c-chk.is-focused:active:hover,.c-chk:focus.is-active,.c-chk:focus.is-active:focus,.c-chk:focus.is-active:hover,.c-chk:focus:active,.c-chk:focus:active:hover,.c-chk:hover.is-active,.c-chk:hover.is-active:focus,.c-chk:hover.is-active:hover,.c-chk:hover:active,.c-chk:hover:active:hover{
+  border-color:#999;
+  box-shadow:0 0 1px 2px #ccc;
+}
+
+.c-chk.is-active,.c-chk.is-active:focus,.c-chk.is-active:hover,.c-chk:active,.c-chk:active:hover{
+  border-color:#999;
+}
+
+.c-chk.is-checked,.c-chk:checked{
+  background-color:#999;
+  border-color:#999;
+  color:#fff;
+}
+
+.c-chk.is-checked.is-focused,.c-chk.is-checked:focus,.c-chk.is-checked:hover,.c-chk:checked.is-focused,.c-chk:checked:focus,.c-chk:checked:hover{
+  box-shadow:0 0 1px 2px #ccc;
+}
+
+.c-chk.is-checked:after,.c-chk:checked:after{
+  position:absolute;
+  top:-1px;
+  left:-1px;
+  width:inherit;
+  height:inherit;
+  text-align:center;
+  line-height:14px;
+  color:#fff;
+  font-size:10px;
+  font-weight:400;
+  content:'\2714';
+}
+
+.c-chk.is-disabled,.c-chk.is-disabled.is-active,.c-chk.is-disabled.is-active:focus,.c-chk.is-disabled.is-active:hover,.c-chk.is-disabled.is-checked,.c-chk.is-disabled.is-focused,.c-chk.is-disabled:active,.c-chk.is-disabled:active:hover,.c-chk.is-disabled:checked,.c-chk.is-disabled:focus,.c-chk.is-disabled:hover,.c-chk[disabled],.c-chk[disabled].is-active,.c-chk[disabled].is-active:focus,.c-chk[disabled].is-active:hover,.c-chk[disabled].is-checked,.c-chk[disabled].is-focused,.c-chk[disabled]:active,.c-chk[disabled]:active:hover,.c-chk[disabled]:checked,.c-chk[disabled]:focus,.c-chk[disabled]:hover{
+  background-color:#ddd;
+  border-color:#ddd;
+  cursor:default;
+}
+
+.c-chk.is-disabled.is-checked.is-focused,.c-chk.is-disabled.is-checked:focus,.c-chk.is-disabled.is-checked:hover,.c-chk.is-disabled:checked.is-focused,.c-chk.is-disabled:checked:focus,.c-chk.is-disabled:checked:hover,.c-chk[disabled].is-checked.is-focused,.c-chk[disabled].is-checked:focus,.c-chk[disabled].is-checked:hover,.c-chk[disabled]:checked.is-focused,.c-chk[disabled]:checked:focus,.c-chk[disabled]:checked:hover{
+  box-shadow:0 0 1px 2px #eee;
+}

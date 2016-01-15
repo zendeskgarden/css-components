@@ -1,0 +1,24 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-chk-focused-border-color: var(--zd-chk-border-color);
+  --zd-chk-focused-box-shadow-blur-radius: 1px;
+  --zd-chk-focused-box-shadow-color: var(--zd-color-platinum);
+  --zd-chk-focused-box-shadow-spread-radius: 2px;
+
+  --zd-chk-focused-active-border-color: var(--zd-chk-active-border-color);
+  --zd-chk-focused-active-box-shadow-color: var(--zd-color-iron);
+}
+
+@custom-selector :--focused :hover, :focus, .is-focused;
+
+.c-chk:--focused {
+  outline: none;
+  border-color: var(--zd-chk-focused-border-color);
+  box-shadow: 0 0 var(--zd-chk-focused-box-shadow-blur-radius) var(--zd-chk-focused-box-shadow-spread-radius) var(--zd-chk-focused-box-shadow-color);
+}
+
+.c-chk:--focused:--active {
+  border-color: var(--zd-chk-focused-active-border-color);
+  box-shadow: 0 0 var(--zd-chk-focused-box-shadow-blur-radius) var(--zd-chk-focused-box-shadow-spread-radius) var(--zd-chk-focused-active-box-shadow-color);
+}

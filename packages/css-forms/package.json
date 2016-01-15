@@ -1,0 +1,32 @@
+{
+  "name": "zd-css-forms",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.css",
+  "style": "src/index.css",
+  "devDependencies": {
+    "cssnano": "^3.4.0",
+    "gh-pages": "^0.8.0",
+    "live-server": "^0.9.0",
+    "postcss-cli": "^2.3.3",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-import": "^7.1.3",
+    "pre-commit": "^1.1.2",
+    "stylelint": "^3.2.2",
+    "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#1.0.2",
+    "zd-css-bedrock": "git+ssh://git@github.com/zendeskgarden/css-bedrock.git#0.0.2",
+    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.2.2"
+  },
+  "scripts": {
+    "build": "postcss --config .postcss.json",
+    "lint": "stylelint src/*.css",
+    "publish": "gh-pages -d demo",
+    "start": "npm run watch & live-server demo",
+    "test": "npm run lint",
+    "watch": "npm run build -- --watch"
+  },
+  "pre-commit": [
+    "build",
+    "test"
+  ]
+}

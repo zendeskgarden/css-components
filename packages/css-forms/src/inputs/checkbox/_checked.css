@@ -1,0 +1,35 @@
+:root {
+  --zd-chk-checked-background-color: var(--zd-color-aluminum);
+  --zd-chk-checked-border-color: var(--zd-chk-checked-background-color);
+  --zd-chk-checked-color: var(--zd-color-white);
+  --zd-chk-checked-content: '\2714';
+  --zd-chk-checked-font-size: calc(var(--zd-chk-size) / 1.4);
+  --zd-chk-checked-font-weight: var(--zd-font-weight-regular);
+  --zd-chk-checked-focused-box-shadow-color: var(--zd-chk-focused-active-box-shadow-color);
+}
+
+@custom-selector :--checked :checked, .is-checked;
+
+.c-chk:--checked {
+  background-color: var(--zd-chk-checked-background-color);
+  border-color: var(--zd-chk-checked-border-color);
+  color: var(--zd-chk-checked-color);
+}
+
+.c-chk:--checked:--focused {
+  box-shadow: 0 0 var(--zd-chk-focused-box-shadow-blur-radius) var(--zd-chk-focused-box-shadow-spread-radius) var(--zd-chk-checked-focused-box-shadow-color);
+}
+
+.c-chk:--checked:after {
+  position: absolute;
+  top: -var(--zd-chk-border-width);
+  left: -var(--zd-chk-border-width);
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  line-height: var(--zd-chk-size);
+  color: var(--zd-chk-checked-color);
+  font-size: var(--zd-chk-checked-font-size);
+  font-weight: var(--zd-chk-checked-font-weight);
+  content: var(--zd-chk-checked-content);
+}

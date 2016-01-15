@@ -1,0 +1,21 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-chk-background-color: var(--zd-color-white);
+  --zd-chk-border-color: var(--zd-color-gainsboro);
+  --zd-chk-border-radius: 4px;
+  --zd-chk-border-width: 1px;
+  --zd-chk-size: var(--zd-font-size-epsilon); /* TODO: Should this size come from the containing element? Should I make .large etc? */
+}
+
+.c-chk {
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  border: var(--zd-chk-border-width) solid var(--zd-chk-border-color);
+  border-radius: var(--zd-chk-border-radius);
+  background-color: var(--zd-chk-background-color);
+  cursor: pointer;
+  width: var(--zd-chk-size);
+  height: var(--zd-chk-size);
+}
