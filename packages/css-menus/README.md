@@ -8,7 +8,17 @@ The `css-menus` package contains `.c-menu` styling.
 
 ## Usage
 
-[TODO]
+Menu CSS classes are intended to support the following component structure.
+
+```html
+<ul class="c-menu role="menu" aria-hidden="true">
+  <li class="c-menu__item" role="menuitem" tabindex="0">Profile</li>
+  <li class="c-menu__separator" role="separator"></li>
+  <li class="c-menu__item c-menu__item--disabled" role="menuitem" aria-disabled="true">Settings</li>
+  <li class="c-menu__separator" role="separator"></li>
+  <li class="c-menu__item" role="menuitem" tabindex="0">Sign Out</li>
+</ul>
+```
 
 ## Tests
 

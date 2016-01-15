@@ -1,11 +1,22 @@
 @import 'zd-css-variables';
 
 :root {
-  /* --zd-menu-* variables go here */
+  --zd-menu-color: var(--zd-color-anti-flash-white);
+  --zd-menu-border-color: var(--zd-color-anti-flash-white);
+  --zd-menu-background-color: var(--zd-color-white);
+  --zd-menu-border: 1px solid var(--zd-menu-border-color);
+  --zd-menu-border-radius: 4px;
+  --zd-menu-box-shadow:
+    0 0 4px 0 var(--zd-menu-border-color),
+    0 4px 10px 0 var(--zd-menu-border-color);
 }
 
 .c-menu {
-  /* base menu component per http://j.mp/1THW6WV */
+  display: inline-block;
+  border: var(--zd-menu-border);
+  border-radius: var(--zd-menu-border-radius);
+  box-shadow: var(--zd-menu-box-shadow);
+  background-color: var(--zd-menu-background-color);
 }
 
 .c-menu--n {

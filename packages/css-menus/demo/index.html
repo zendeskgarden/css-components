@@ -16,11 +16,26 @@
   </header>
   <main class="l-wrapper">
     <h1 class="u-beta u-mb">Menus</h1>
-    <ul class="c-menu">
-      <li class="c-menu__item">Profile</li>
-      <li class="c-menu__item">Settings</li>
-      <li class="c-menu__item">Sign Out</li>
-    </ul>
+    <div class="l-grid">
+      <div class="l-grid__item u-2/8">
+        <nav class="c-menu">
+          <a class="c-menu__item" href="#" role="menuitem" tabindex="0">First</a>
+          <a class="c-menu__item" href="#" role="menuitem" tabindex="0">Second</a>
+          <div class="c-menu__separator" role="separator" tabindex="-1"></div>
+          <a class="c-menu__item" href="#" role="menuitem" tabindex="0">Third</a>
+        </nav>
+      </div>
+      <div class="l-grid__item u-2/8">
+        <ul class="c-menu" role="menu">
+          <li class="c-menu__item" role="menuitem" tabindex="0">Profile</li>
+          <li class="c-menu__item" role="menuitem" tabindex="0">Settings</li>
+          <li class="c-menu__item c-menu__item--disabled" role="menuitem" aria-disabled="true">Theme Editor</li>
+          <li class="c-menu__separator" role="separator"></li>
+          <li class="c-menu__item" role="menuitem" tabindex="0">Article Editor</li>
+          <li class="c-menu__item" role="menuitem" tabindex="0">Sign Out</li>
+        </ul>
+      </div>
+    </div>
   </main>
 </body>
 </html>

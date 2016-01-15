@@ -1,0 +1,15 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-menu__separator-border: 1px solid var(--zd-menu__separator-color);
+  --zd-menu__separator-color: var(--zd-color-anti-flash-white);
+  --zd-menu__separator-font-size: var(--zd-font-size-epsilon);
+  --zd-menu__separator-margin: .357em 0;
+}
+
+.c-menu__separator {
+  display: block;
+  margin: var(--zd-menu__separator-margin);
+  border-bottom: var(--zd-menu__separator-border);
+  font-size: var(--zd-menu__separator-font-size);
+}

@@ -1,23 +1,49 @@
 @import 'zd-css-variables';
 
 :root {
-  /* --zd-menu__item-* variables go here */
+  --zd-menu__item-color: var(--zd-color-aluminum);
+  --zd-menu__item-font-size: var(--zd-font-size-epsilon);
+  --zd-menu__item-font-weigth: var(--zd-font-weight-regular);
+  --zd-menu__item-line-height: 2.86;
+  --zd-menu__item-padding: 0 1.429em;
+  --zd-menu__item-margin: .714em;
+  --zd-menu__item--focused-color: var(--zd-color-dark-gray);
+  --zd-menu__item--focused-background-color: var(--zd-color-anti-flash-white);
+  --zd-menu__item--disabled-color: var(--zd-color-gainsboro);
 }
 
 .c-menu__item {
-  /* base menu item component */
+  display: block;
+  cursor: pointer;
+  padding: var(--zd-menu__item-padding);
+  line-height: var(--zd-menu__item-line-height);
+  color: var(--zd-menu__item-color);
+  font-size: var(--zd-menu__item-font-size);
+  font-weight: var(--zd-menu__item-font-weigth);
+  user-select: none;
+}
+
+.c-menu__item:first-child {
+  margin-top: var(--zd-menu__item-margin);
+}
+
+.c-menu__item:last-child {
+  margin-bottom: var(--zd-menu__item-margin);
 }
 
 .c-menu__item--disabled {
-  /* menu item disabled modifier */
-}
-
-.c-menu__item--header {
-  /* menu item header modifier */
+  color: var(--zd-menu__item--disabled-color);
 }
 
 @custom-selector :--focused :hover, :focus, .is-focused;
 
 .c-menu__item:--focused {
-  /* menu item .is-focused modifier */
+  background-color: var(--zd-menu__item--focused-background-color);
+  color: var(--zd-menu__item--focused-color);
+}
+
+.c-menu__item--disabled:--focused {
+  background-color: inherit;
+  cursor: default;
+  color: var(--zd-menu__item--disabled-color);
 }
