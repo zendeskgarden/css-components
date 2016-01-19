@@ -4,19 +4,32 @@
   <title>Zendesk Garden / Avatars</title>
   <link href="bedrock.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <style>
+  html {
+    transition:
+      background-color .4s,
+      color .4s
+  }
+  </style>
 </head>
 <body>
   <header class="u-bg-oil u-fg-white u-mb-lg">
     <div class="l-wrapper">
-      <h1 class="u-alpha u-pv u-semibold">
+      <h1 class="u-alpha u-display-inline-block u-pv u-semibold">
         <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
         <span>/ Avatars</span>
       </h1>
+      <label class="u-delta u-ml u-semibold">
+        <input class="js-dark" type="checkbox">
+        <span>Dark</span>
+      </label>
     </div>
   </header>
   <main class="l-wrapper">
     <h1 class="u-beta u-mb">Avatars</h1>
-    <p class="u-mb">Component classes for styling your avatars.</p>
+    <p class="u-mb">Component classes for styling your avatars. Checking "Dark" adds the
+      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-avatar--borderless</code>
+      class for improved avatar display on a dark background.</p>
     <h2 class="u-gamma u-mb-sm">Types</h2>
     <ul class="u-mb">
       <li class="l-flag u-mb-sm">
@@ -26,7 +39,7 @@
           </figure>
         </div>
         <div class="l-flag__body">
-          <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar</code>
+          <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar</code>
         </div>
       </li>
       <li class="l-flag u-mb-sm">
@@ -36,7 +49,7 @@
           </figure>
         </div>
         <div class="l-flag__body">
-          <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--system</code>
+          <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--system</code>
         </div>
       </li>
     </ul>
@@ -50,7 +63,7 @@
             </figure>
           </div>
           <div class="l-flag__body">
-            <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small</code>
+            <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small</code>
           </div>
         </div
         ><div class="l-flag l-grid__item u-1/2">
@@ -60,7 +73,7 @@
             </figure>
           </div>
           <div class="l-flag__body">
-            <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small .c-avatar--system</code>
+            <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small .c-avatar--system</code>
           </div>
         </div>
       </li>
@@ -72,7 +85,7 @@
             </figure>
           </div>
           <div class="l-flag__body">
-            <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large</code>
+            <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large</code>
           </div>
         </div
         ><div class="l-flag l-grid__item u-1/2">
@@ -82,7 +95,7 @@
             </figure>
           </div>
           <div class="l-flag__body">
-            <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large .c-avatar--system</code>
+            <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large .c-avatar--system</code>
           </div>
         </div>
       </li>
@@ -99,7 +112,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small .is-active</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small .is-active</code>
             </div>
           </div
           ><div class="l-flag l-grid__item u-1/2">
@@ -109,7 +122,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm u-zeta">.c-avatar .c-avatar--small .c-avatar--system .is-active</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm u-zeta">.c-avatar .c-avatar--small .c-avatar--system .is-active</code>
             </div>
           </div>
         </li>
@@ -121,7 +134,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .is-active</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .is-active</code>
             </div>
           </div
           ><div class="l-flag l-grid__item u-1/2">
@@ -131,7 +144,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--system .is-active</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--system .is-active</code>
             </div>
           </div>
         </li>
@@ -143,7 +156,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large .is-active</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large .is-active</code>
             </div>
           </div
           ><div class="l-flag l-grid__item u-1/2">
@@ -153,7 +166,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm u-milli">.c-avatar .c-avatar--large .c-avatar--system .is-active</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm u-milli">.c-avatar .c-avatar--large .c-avatar--system .is-active</code>
             </div>
           </div>
         </li>
@@ -168,7 +181,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small .is-in</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small .is-in</code>
             </div>
           </div
           ><div class="l-flag l-grid__item u-1/2">
@@ -178,7 +191,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm u-zeta">.c-avatar .c-avatar--small .c-avatar--system .is-in</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm u-zeta">.c-avatar .c-avatar--small .c-avatar--system .is-in</code>
             </div>
           </div>
         </li>
@@ -190,7 +203,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .is-in</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .is-in</code>
             </div>
           </div
           ><div class="l-flag l-grid__item u-1/2">
@@ -200,7 +213,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--system .is-in</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--system .is-in</code>
             </div>
           </div>
         </li>
@@ -212,7 +225,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large .is-in</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large .is-in</code>
             </div>
           </div
           ><div class="l-flag l-grid__item u-1/2">
@@ -222,7 +235,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm u-zeta">.c-avatar .c-avatar--large .c-avatar--system .is-in</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm u-zeta">.c-avatar .c-avatar--large .c-avatar--system .is-in</code>
             </div>
           </div>
         </li>
@@ -237,7 +250,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small .is-out</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--small .is-out</code>
             </div>
           </div
           ><div class="l-flag l-grid__item u-1/2">
@@ -247,7 +260,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm u-zeta">.c-avatar .c-avatar--small .c-avatar--system .is-out</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm u-zeta">.c-avatar .c-avatar--small .c-avatar--system .is-out</code>
             </div>
           </div>
         </li>
@@ -259,7 +272,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .is-out</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .is-out</code>
             </div>
           </div
           ><div class="l-flag l-grid__item u-1/2">
@@ -269,7 +282,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--system .is-out</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--system .is-out</code>
             </div>
           </div>
         </li>
@@ -281,7 +294,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large .is-out</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm">.c-avatar .c-avatar--large .is-out</code>
             </div>
           </div
           ><div class="l-flag l-grid__item u-1/2">
@@ -291,7 +304,7 @@
               </figure>
             </div>
             <div class="l-flag__body">
-              <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs u-ml-sm u-milli">.c-avatar .c-avatar--large .c-avatar--system .is-out</code>
+              <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs u-ml-sm u-milli">.c-avatar .c-avatar--large .c-avatar--system .is-out</code>
             </div>
           </div>
         </li>
@@ -339,5 +352,7 @@
       </li>
     </ul>
   </main>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

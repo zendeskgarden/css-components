@@ -57,6 +57,10 @@
   opacity:.5;
 }
 
+.c-avatar--borderless .c-avatar__img,.c-avatar--borderless>img{
+  border-color:transparent;
+}
+
 .c-avatar--system{
   border-radius:4px;
 }
