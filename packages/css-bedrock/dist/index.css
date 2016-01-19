@@ -484,8 +484,6 @@ html{
           font-kerning:normal;
   font-family:proxima-nova,sans-serif;
   font-size:14px;
-  -moz-osx-font-smoothing:grayscale;
-  -webkit-font-smoothing:antialiased;
 }
 *,:after,:before,input[type=search]{ box-sizing:inherit; }
 

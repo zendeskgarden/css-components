@@ -11,8 +11,6 @@
   --zd-html-font-feature-settings: 'kern';
   --zd-html-font-kerning: normal;
   --zd-html-font-size: 14px;
-  --zd-html-font-smoothing-moz-osx: grayscale;
-  --zd-html-font-smoothing-webkit: antialiased;
   --zd-html-line-height: var(--zd-spacing);
   --zd-html-text-color: var(--zd-color-dark-gray);
   --zd-html-text-rendering: optimizeLegibility;
@@ -33,8 +31,6 @@ html {
   font-kerning: var(--zd-html-font-kerning);
   font-family: var(--zd-html-font-family);
   font-size: var(--zd-html-font-size);
-  -moz-osx-font-smoothing: var(--zd-html-font-smoothing-moz-osx);
-  -webkit-font-smoothing: var(--zd-html-font-smoothing-webkit);
 }
 
 /* 1. normalize.css override. */
