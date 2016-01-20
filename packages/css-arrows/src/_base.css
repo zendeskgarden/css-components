@@ -1,0 +1,14 @@
+@import 'zd-css-variables';
+
+:root {
+  /* --zd-menu-* variables go here */
+}
+
+.c-arrow {
+  /* base arrow component */
+}
+
+.c-arrow--tl {
+  /* top-left modifier (syntax consistent with
+  http://zendeskgarden.github.io/css-bedrock/border-radius.html) */
+}
