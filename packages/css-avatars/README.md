@@ -1,4 +1,4 @@
-# Avatar Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-avatars.svg?token=dDt9s6smCMgz269xNbpz)](https://travis-ci.com/zendeskgarden/css-avatars)
+# Avatar Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-avatars.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-avatars)
 
 The `css-avatars` component contains basic `.c-avatar` styling.
 
