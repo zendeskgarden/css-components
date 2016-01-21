@@ -7,8 +7,8 @@
   --zd-menu-border: 1px solid var(--zd-menu-border-color);
   --zd-menu-border-radius: 4px;
   --zd-menu-box-shadow:
-    0 0 4px 0 var(--zd-menu-border-color),
-    0 4px 10px 0 var(--zd-menu-border-color);
+    0 0 4px 0 rgba(0, 0, 0, .15),
+    0 4px 10px 0 rgba(0, 0, 0, .1);
 }
 
 .c-menu {

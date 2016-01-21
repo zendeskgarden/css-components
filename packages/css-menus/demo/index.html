@@ -8,16 +8,20 @@
 <body>
   <header class="u-bg-oil u-fg-white u-mb-lg">
     <div class="l-wrapper">
-      <h1 class="u-alpha u-pv u-semibold">
+      <h1 class="u-alpha u-display-inline-block u-pv u-semibold">
         <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
         <span>/ Menus</span>
       </h1>
+      <label class="u-delta u-ml u-semibold">
+        <input class="js-dark" type="checkbox">
+        <span>Dark</span>
+      </label>
     </div>
   </header>
   <main class="l-wrapper">
     <h1 class="u-beta u-mb">Menus</h1>
     <div class="l-grid">
-      <div class="l-grid__item u-2/8">
+      <div class="l-grid__item u-2/8 u-p">
         <nav class="c-menu">
           <a class="c-menu__item" href="#" role="menuitem" tabindex="0">First</a>
           <a class="c-menu__item" href="#" role="menuitem" tabindex="0">Second</a>
@@ -25,7 +29,7 @@
           <a class="c-menu__item" href="#" role="menuitem" tabindex="0">Third</a>
         </nav>
       </div>
-      <div class="l-grid__item u-2/8">
+      <div class="l-grid__item u-2/8 u-p">
         <ul class="c-menu" role="menu">
           <li class="c-menu__item" role="menuitem" tabindex="0">Profile</li>
           <li class="c-menu__item" role="menuitem" tabindex="0">Settings</li>
@@ -37,5 +41,7 @@
       </div>
     </div>
   </main>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
