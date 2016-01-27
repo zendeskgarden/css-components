@@ -8,6 +8,7 @@
   ],
   "cssnano": {
     "core": false,
-    "discardComments": { "removeAll": true }
+    "discardComments": { "removeAll": true },
+    "zindex": false
   }
 }
