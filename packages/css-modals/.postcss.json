@@ -1,0 +1,17 @@
+{
+  "input": "src/index.css",
+  "output": "dist/index.css",
+  "use": [
+    "postcss-import",
+    "postcss-cssnext",
+    "cssnano"
+  ],
+  "cssnano": {
+    "core": false,
+    "discardComments": { "removeAll": true },
+    "zindex": false
+  },
+  "postcss-cssnext": {
+    "features": { "colorRgba": false }
+  }
+}
