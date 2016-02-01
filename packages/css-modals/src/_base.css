@@ -1,1 +1,59 @@
 @import 'zd-css-variables';
+
+:root {
+  --zd-dialog-background-color: var(--zd-color-white);
+  --zd-dialog-border-radius: 4px;
+  --zd-dialog-box-shadow:
+    0 6px 18px 0 color(var(--zd-color-black) alpha(10%)),
+    0 0 4px 0 color(var(--zd-color-black) alpha(15%));
+  --zd-dialog-padding: var(--zd-spacing-xl);
+  --zd-dialog-width: 600px;
+  --zd-dialog--center-margin: var(--zd-spacing);
+}
+
+.c-dialog {
+  position: relative;
+  border-radius: var(--zd-dialog-border-radius);
+  box-shadow: var(--zd-dialog-box-shadow);
+  background-color: var(--zd-dialog-background-color);
+  padding: var(--zd-dialog-padding);
+  width: var(--zd-dialog-width);
+}
+
+.c-dialog--center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Custom media width is:
+ * `calc(var(--zd-dialog-width) + (var(--zd-dialog--center-margin) * 2));`
+ * PSA: custom property usage is not valid within a media query.
+ */
+@custom-media --zd-dialog-viewport-small-height (height < 400px);
+@custom-media --zd-dialog-viewport-small-width (width < 640px);
+@custom-media --zd-dialog-viewport-small (height < 400px) and (width < 640px);
+
+@media (--zd-dialog-viewport-small-height) {
+  .c-dialog--center {
+    top: 0;
+    transform: translate(-50%, 0);
+    margin: var(--zd-dialog--center-margin) 0;
+  }
+}
+
+@media (--zd-dialog-viewport-small-width) {
+  .c-dialog--center {
+    left: 0;
+    transform: translate(0, -50%);
+    margin: 0 var(--zd-dialog--center-margin);
+  }
+}
+
+@media (--zd-dialog-viewport-small) {
+  .c-dialog--center {
+    transform: translate(0, 0);
+    margin: var(--zd-dialog--center-margin);
+  }
+}

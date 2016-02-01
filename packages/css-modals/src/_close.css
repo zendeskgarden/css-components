@@ -1,0 +1,42 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-dialog__close-color: var(--zd-color-gainsboro);
+  --zd-dialog__close-font-family: 'Courier New', monospace;
+  --zd-dialog__close-font-size: 14px;
+  --zd-dialog__close-size: var(--zd-spacing-xl);
+  --zd-dialog__close-hover-color: var(--zd-color-dark-gray);
+  --zd-dialog__close-svg-size: var(--zd-spacing);
+}
+
+/* Dialog close styling supports the use of a
+ * [multiplication X](http://graphemica.com/%E2%9C%95) (U+2715) although the
+ * recommended treatment is to use a child SVG.
+ *
+ * 1.Reset for <button> element.
+ */
+.c-dialog__close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none; /* [1] */
+  background-color: inherit; /* [1] */
+  width: var(--zd-dialog__close-size);
+  text-align: center;
+  text-decoration: none;
+  line-height: var(--zd-dialog__close-size);
+  color: var(--zd-dialog__close-color);
+  font-family: var(--zd-dialog__close-font-family);
+  font-size: var(--zd-dialog__close-font-size);
+}
+
+.c-dialog__close:hover {
+  color: var(--zd-dialog__close-hover-color);
+}
+
+.c-dialog__close > svg {
+  width: var(--zd-dialog__close-svg-size);
+  height: var(--zd-dialog__close-svg-size);
+  vertical-align: middle;
+}

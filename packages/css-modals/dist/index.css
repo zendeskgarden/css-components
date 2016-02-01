@@ -1,1 +1,106 @@
+.l-backdrop{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:400;
+  background-color:hsla(0,0%,100%,.8);
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+}
 
+.l-backdrop--lightbox{
+  background-color:rgba(0,0,0,.8);
+}
+
+.l-backdrop--transparent{
+  background-color:transparent;
+  overflow:hidden;
+}
+
+.c-dialog{
+  position:relative;
+  border-radius:4px;
+  box-shadow:0 6px 18px 0 rgba(0,0,0,.1),0 0 4px 0 rgba(0,0,0,.15);
+  background-color:#fff;
+  padding:40px;
+  width:600px;
+}
+
+.c-dialog--center{
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
+}
+
+@media (max-height:399px){
+  .c-dialog--center{
+    top:0;
+    -webkit-transform:translate(-50%);
+            transform:translate(-50%);
+    margin:20px 0;
+  }
+}
+
+@media (max-width:639px){
+  .c-dialog--center{
+    left:0;
+    -webkit-transform:translateY(-50%);
+            transform:translateY(-50%);
+    margin:0 20px;
+  }
+}
+
+@media (max-height:399px) and (max-width:639px){
+  .c-dialog--center{
+    -webkit-transform:translate(0);
+            transform:translate(0);
+    margin:20px;
+  }
+}
+.c-dialog__close{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  border:none;
+  background-color:inherit;
+  width:40px;
+  text-align:center;
+  text-decoration:none;
+  line-height:40px;
+  color:#ddd;
+  font-family:Courier New,monospace;
+  font-size:14px;
+}
+
+.c-dialog__close:hover{
+  color:#555;
+}
+
+.c-dialog__close>svg{
+  width:20px;
+  height:20px;
+  vertical-align:middle;
+}
+
+.c-dialog__header{
+  margin-bottom:20px;
+  line-height:1.11111;
+  color:#333;
+  font-size:18px;
+}
+
+.c-dialog__body{
+  line-height:1.42857;
+  color:#999;
+  font-size:14px;
+}
+
+.c-dialog__footer{
+  margin-top:30px;
+  text-align:right;
+}

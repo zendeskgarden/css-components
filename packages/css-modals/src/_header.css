@@ -1,0 +1,15 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-dialog__header-color: var(--zd-color-oil);
+  --zd-dialog__header-font-size: var(--zd-font-size-gamma);
+  --zd-dialog__header-line-height: 1.11111;
+  --zd-dialog__header-margin-bottom: var(--zd-spacing);
+}
+
+.c-dialog__header {
+  margin-bottom: var(--zd-dialog__header-margin-bottom);
+  line-height: var(--zd-dialog__header-line-height);
+  color: var(--zd-dialog__header-color);
+  font-size: var(--zd-dialog__header-font-size);
+}

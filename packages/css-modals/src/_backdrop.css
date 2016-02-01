@@ -1,0 +1,30 @@
+@import 'zd-css-variables';
+
+/* stylelint-disable max-line-length */
+:root {
+  --zd-backdrop-background-color: color(var(--zd-color-white) alpha(80%));
+  --zd-backdrop-z-index: 400;
+  --zd-backdrop--lightbox-background-color: color(var(--zd-color-black) alpha(80%));
+}
+/* stylelint-enable */
+
+.l-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: var(--zd-backdrop-z-index);
+  background-color: var(--zd-backdrop-background-color);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
+}
+
+.l-backdrop--lightbox {
+  background-color: var(--zd-backdrop--lightbox-background-color);
+}
+
+.l-backdrop--transparent {
+  background-color: transparent;
+  overflow: hidden;
+}
