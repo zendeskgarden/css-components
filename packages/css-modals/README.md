@@ -20,7 +20,8 @@ Canonical markup for a dialog is structured as follows.
          tabindex="-1">
   <header>
     <h1 class="c-dialog__header" id="dialog-title">Dialog Title</h1>
-    <button class="c-dialog__close">
+    <button aria-label="close"
+            class="c-dialog__close">
       <svg>
         <use xlink:href="index.svg#zd-svg-icon-14-remove">
       </svg>
