@@ -48,7 +48,7 @@ Use the backdrop layout class to give a dialog a modal treatment.
 ```html
 <div class="l-backdrop"
      tabindex="-1">
-  <section class="c-dialog c-dialog--modal"
+  <section class="c-dialog c-dialog--center"
            ...>
   </section>
 </div>
