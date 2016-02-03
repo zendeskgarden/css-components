@@ -14,7 +14,7 @@
     "pre-commit": "^1.1.2",
     "stylelint": "^3.2.2",
     "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#1.0.2",
-    "zd-css-bedrock": "git+ssh://git@github.com/zendeskgarden/css-bedrock.git#0.0.2",
+    "zd-css-bedrock": "git+ssh://git@github.com/zendeskgarden/css-bedrock.git#0.0.3",
     "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.2.2"
   },
   "scripts": {

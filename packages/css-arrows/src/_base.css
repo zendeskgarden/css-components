@@ -1,14 +1,139 @@
 @import 'zd-css-variables';
 
 :root {
-  /* --zd-menu-* variables go here */
+  --zd-arrow-box-shadow: 0 0 4px 0 color(var(--zd-color-black) alpha(15%));
+  --zd-arrow-scale-factor: 1em;
+  --zd-arrow-rotate: rotate(45deg);
+  --zd-arrow-positive-spacer: calc(var(--zd-arrow-scale-factor) / 2);
+  --zd-arrow-negative-spacer: calc(var(--zd-arrow-positive-spacer) * -1);
 }
+
+/* Base properties for the arrow element */
 
 .c-arrow {
-  /* base arrow component */
+  /* set base positioning for an arrow */
+  position: relative;
 }
 
-.c-arrow--tl {
-  /* top-left modifier (syntax consistent with
-  http://zendeskgarden.github.io/css-bedrock/border-radius.html) */
+.c-arrow:before,
+.c-arrow:after {
+  /* apply shared position and sizing properties to :before and :after */
+  position: absolute;
+  transform: var(--zd-arrow-rotate);
+  background-color: inherit;
+  width: var(--zd-arrow-scale-factor);
+  height: var(--zd-arrow-scale-factor);
+  content: '';
+}
+
+.c-arrow:after {
+  /* styling and z-space positioning for arrow :after. Border styling and
+  box-shadow will be automatically inheritted from the parent element */
+  z-index: -1;
+  margin: -1px;
+  border: inherit;
+  box-shadow: inherit;
+  box-sizing: content-box;
+  background-clip: content-box;
+  background-color: inherit;
+}
+
+/* Modifier classes for arrow position relative to the parent element */
+
+.c-arrow--t:before,
+.c-arrow--t:after {
+  /* Positions an arrow at the top(v) center(h) of the parent element */
+  top: var(--zd-arrow-negative-spacer);
+  left: 50%;
+}
+
+.c-arrow--t:before {
+  /* margin position for :before for top positioning class */
+  margin-left: var(--zd-arrow-negative-spacer);
+}
+
+.c-arrow--t:after {
+  /* margin positioning for :after to correctly center for border affordance */
+  margin-left: calc(var(--zd-arrow-negative-spacer) - 1px);
+}
+
+.c-arrow--tl:before,
+.c-arrow--tl:after {
+  /* Positions an arrow at the top(v) left(h) of the parent element */
+  top: var(--zd-arrow-negative-spacer);
+  left: calc(var(--zd-arrow-positive-spacer) * 2);
+}
+
+.c-arrow--tr:before,
+.c-arrow--tr:after {
+  /* Positions an arrow at the top(v) right(h) of the parent element */
+  top: var(--zd-arrow-negative-spacer);
+  right: calc(var(--zd-arrow-positive-spacer) * 2);
+}
+
+.c-arrow--r:before,
+.c-arrow--r:after {
+  /* Positions an arrow at the center(v) right(h) of the parent element */
+  top: 50%;
+  right: var(--zd-arrow-negative-spacer);
+}
+
+.c-arrow--r:before {
+  /* margin position for :before for center right positioning class */
+  margin-top: var(--zd-arrow-negative-spacer);
+}
+
+.c-arrow--r:after {
+  /* margin positioning for :after to correctly center for border affordance */
+  margin-top: calc(var(--zd-arrow-negative-spacer) - 1px);
+}
+
+.c-arrow--l:before,
+.c-arrow--l:after {
+  /* Positions an arrow at the center(v) left(h) of the parent element */
+  top: 50%;
+  left: var(--zd-arrow-negative-spacer);
+  margin-top: var(--zd-arrow-negative-spacer);
+}
+
+.c-arrow--l:before {
+  /* margin position for :before for center left positioning class */
+  margin-top: var(--zd-arrow-negative-spacer);
+}
+
+.c-arrow--l:after {
+  /* margin positioning for :after to correctly center for border affordance */
+  margin-top: calc(var(--zd-arrow-negative-spacer) - 1px);
+}
+
+.c-arrow--b:before,
+.c-arrow--b:after {
+  /* Positions an arrow at the bottom(v) center(h) of the parent element */
+  bottom: var(--zd-arrow-negative-spacer);
+  left: 50%;
+  margin-left: var(--zd-arrow-negative-spacer);
+}
+
+.c-arrow--b:before {
+  /* margin position for :before for bottom positioning class */
+  margin-left: var(--zd-arrow-negative-spacer);
+}
+
+.c-arrow--b:after {
+  /* margin positioning for :after to correctly center for border affordance */
+  margin-left: calc(var(--zd-arrow-negative-spacer) - 1px);
+}
+
+.c-arrow--bl:before,
+.c-arrow--bl:after {
+  /* Positions an arrow at the bottom(v) left(h) of the parent element */
+  bottom: var(--zd-arrow-negative-spacer);
+  left: calc(var(--zd-arrow-positive-spacer) * 2);
+}
+
+.c-arrow--br:before,
+.c-arrow--br:after {
+  /* Positions an arrow at the bottom(v) right(h) of the parent element */
+  right: calc(var(--zd-arrow-positive-spacer) * 2);
+  bottom: var(--zd-arrow-negative-spacer);
 }

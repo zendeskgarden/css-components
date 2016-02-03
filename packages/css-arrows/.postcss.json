@@ -9,5 +9,13 @@
   "cssnano": {
     "core": false,
     "discardComments": { "removeAll": true }
+  },
+  "postcss-cssnext": {
+    "browsers": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR",
+      "Explorer 9"
+    ]
   }
 }
