@@ -46,8 +46,7 @@ this package).
 Use the backdrop layout class to give a dialog a modal treatment.
 
 ```html
-<div class="l-backdrop"
-     tabindex="-1">
+<div class="l-backdrop">
   <section class="c-dialog c-dialog--center"
            ...>
   </section>
@@ -57,7 +56,7 @@ Use the backdrop layout class to give a dialog a modal treatment.
 ### Accessibility
 
 The sample HTML incorporates `aria-*` and `role` attributes expected by
-assistive technology. The use of `tabindex` supports keyboard
+assistive technology. The use of `tabindex` supports focus and keyboard
 navigation.
 
 ### Modifications
