@@ -21,7 +21,9 @@
   top: 0;
   right: 0;
   border: none; /* [1] */
+  border-radius: inherit;
   background-color: inherit; /* [1] */
+  cursor: pointer;
   width: var(--zd-dialog__close-size);
   text-align: center;
   text-decoration: none;
@@ -29,6 +31,7 @@
   color: var(--zd-dialog__close-color);
   font-family: var(--zd-dialog__close-font-family);
   font-size: var(--zd-dialog__close-font-size);
+  user-select: none;
 }
 
 .c-dialog__close:hover {

@@ -20,12 +20,17 @@
 }
 
 .c-dialog{
+  display:inline-block;
   position:relative;
   border-radius:4px;
   box-shadow:0 6px 18px 0 rgba(0,0,0,.1),0 0 4px 0 rgba(0,0,0,.15);
   background-color:#fff;
   padding:40px;
   width:600px;
+}
+
+.c-dialog:focus{
+  outline:none;
 }
 
 .c-dialog--center{
@@ -67,7 +72,9 @@
   top:0;
   right:0;
   border:none;
+  border-radius:inherit;
   background-color:inherit;
+  cursor:pointer;
   width:40px;
   text-align:center;
   text-decoration:none;
@@ -75,6 +82,10 @@
   color:#ddd;
   font-family:Courier New,monospace;
   font-size:14px;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
 }
 
 .c-dialog__close:hover{
@@ -88,6 +99,7 @@
 }
 
 .c-dialog__header{
+  display:block;
   margin-bottom:20px;
   line-height:1.11111;
   color:#333;
@@ -95,12 +107,14 @@
 }
 
 .c-dialog__body{
+  display:block;
   line-height:1.42857;
   color:#999;
   font-size:14px;
 }
 
 .c-dialog__footer{
+  display:block;
   margin-top:30px;
   text-align:right;
 }

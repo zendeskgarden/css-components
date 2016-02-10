@@ -8,6 +8,7 @@
 }
 
 .c-dialog__header {
+  display: block;
   margin-bottom: var(--zd-dialog__header-margin-bottom);
   line-height: var(--zd-dialog__header-line-height);
   color: var(--zd-dialog__header-color);

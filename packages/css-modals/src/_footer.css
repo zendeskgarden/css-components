@@ -6,6 +6,7 @@
 }
 
 .c-dialog__footer {
+  display: block;
   margin-top: var(--zd-dialog__footer-margin-top);
   text-align: var(--zd-dialog__footer-text-align);
 }

@@ -12,12 +12,17 @@
 }
 
 .c-dialog {
+  display: inline-block;
   position: relative;
   border-radius: var(--zd-dialog-border-radius);
   box-shadow: var(--zd-dialog-box-shadow);
   background-color: var(--zd-dialog-background-color);
   padding: var(--zd-dialog-padding);
   width: var(--zd-dialog-width);
+}
+
+.c-dialog:focus {
+  outline: none;
 }
 
 .c-dialog--center {
