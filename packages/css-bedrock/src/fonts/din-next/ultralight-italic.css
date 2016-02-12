@@ -2,16 +2,16 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-din-next-ultralight-italic-cyrillic-woff: din-next-ultralight-italic-cyrillic.63425a18502fd3e6c0230324aac5b7e8.woff;
-  --zd-din-next-ultralight-italic-cyrillic-woff2: din-next-ultralight-italic-cyrillic.78aedd4e44f29e3fe159b4845e136004.woff2;
-  --zd-din-next-ultralight-italic-fallback-woff: din-next-ultralight-italic-fallback.b4b25aa422246e77ce062477d6177876.woff;
-  --zd-din-next-ultralight-italic-fallback-woff2: din-next-ultralight-italic-fallback.1a392db385eb9caad08832f25f4a3570.woff2;
-  --zd-din-next-ultralight-italic-greek-woff: din-next-ultralight-italic-greek.f7ba5ee1d228743c40565094468b713e.woff;
-  --zd-din-next-ultralight-italic-greek-woff2: din-next-ultralight-italic-greek.dee6b3cd6ee69bf557738c93cb441b3a.woff2;
-  --zd-din-next-ultralight-italic-latin-ext-woff: din-next-ultralight-italic-latin-ext.f2ea1db9d8da5e5c1862e5e7eae80ec5.woff;
-  --zd-din-next-ultralight-italic-latin-ext-woff2: din-next-ultralight-italic-latin-ext.a7996c196fa9ec23fefc24022f884d7c.woff2;
-  --zd-din-next-ultralight-italic-latin-woff: din-next-ultralight-italic-latin.cb9cdb69d05231948980ba4ce1437d22.woff;
-  --zd-din-next-ultralight-italic-latin-woff2: din-next-ultralight-italic-latin.a68a532d6b393978b254b876d9bbdf83.woff2;
+  --zd-din-next-ultralight-italic-cyrillic-woff: 63425a18502fd3e6c0230324aac5b7e8.woff;
+  --zd-din-next-ultralight-italic-cyrillic-woff2: 78aedd4e44f29e3fe159b4845e136004.woff2;
+  --zd-din-next-ultralight-italic-fallback-woff: b4b25aa422246e77ce062477d6177876.woff;
+  --zd-din-next-ultralight-italic-fallback-woff2: 1a392db385eb9caad08832f25f4a3570.woff2;
+  --zd-din-next-ultralight-italic-greek-woff: f7ba5ee1d228743c40565094468b713e.woff;
+  --zd-din-next-ultralight-italic-greek-woff2: dee6b3cd6ee69bf557738c93cb441b3a.woff2;
+  --zd-din-next-ultralight-italic-latin-ext-woff: f2ea1db9d8da5e5c1862e5e7eae80ec5.woff;
+  --zd-din-next-ultralight-italic-latin-ext-woff2: a7996c196fa9ec23fefc24022f884d7c.woff2;
+  --zd-din-next-ultralight-italic-latin-woff: cb9cdb69d05231948980ba4ce1437d22.woff;
+  --zd-din-next-ultralight-italic-latin-woff2: a68a532d6b393978b254b876d9bbdf83.woff2;
 }
 
 @font-face {

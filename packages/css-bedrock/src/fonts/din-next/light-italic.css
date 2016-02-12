@@ -2,16 +2,16 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-din-next-light-italic-cyrillic-woff: din-next-light-italic-cyrillic.3a23400050634d4a8347b04d13b72c1b.woff;
-  --zd-din-next-light-italic-cyrillic-woff2: din-next-light-italic-cyrillic.e5fbf126c378542434b6333e97b00eb2.woff2;
-  --zd-din-next-light-italic-fallback-woff: din-next-light-italic-fallback.a57b9cba5bc1cf654c26137db707962e.woff;
-  --zd-din-next-light-italic-fallback-woff2: din-next-light-italic-fallback.4ef2e04026020333805b8018d0aed109.woff2;
-  --zd-din-next-light-italic-greek-woff: din-next-light-italic-greek.c285bd55ecd8084a72e554c33a72fc3a.woff;
-  --zd-din-next-light-italic-greek-woff2: din-next-light-italic-greek.1c08d29a5c7dc64987187f4e903e8007.woff2;
-  --zd-din-next-light-italic-latin-ext-woff: din-next-light-italic-latin-ext.fcc01b93b1eca1625379b630d50280fc.woff;
-  --zd-din-next-light-italic-latin-ext-woff2: din-next-light-italic-latin-ext.af95cdf6a19758e65fb72b21b1930d5d.woff2;
-  --zd-din-next-light-italic-latin-woff: din-next-light-italic-latin.ea0cf06649017889ebdc2afcb30eb431.woff;
-  --zd-din-next-light-italic-latin-woff2: din-next-light-italic-latin.5a22df464bb76ead0cafe114954c2153.woff2;
+  --zd-din-next-light-italic-cyrillic-woff: 3a23400050634d4a8347b04d13b72c1b.woff;
+  --zd-din-next-light-italic-cyrillic-woff2: e5fbf126c378542434b6333e97b00eb2.woff2;
+  --zd-din-next-light-italic-fallback-woff: a57b9cba5bc1cf654c26137db707962e.woff;
+  --zd-din-next-light-italic-fallback-woff2: 4ef2e04026020333805b8018d0aed109.woff2;
+  --zd-din-next-light-italic-greek-woff: c285bd55ecd8084a72e554c33a72fc3a.woff;
+  --zd-din-next-light-italic-greek-woff2: 1c08d29a5c7dc64987187f4e903e8007.woff2;
+  --zd-din-next-light-italic-latin-ext-woff: fcc01b93b1eca1625379b630d50280fc.woff;
+  --zd-din-next-light-italic-latin-ext-woff2: af95cdf6a19758e65fb72b21b1930d5d.woff2;
+  --zd-din-next-light-italic-latin-woff: ea0cf06649017889ebdc2afcb30eb431.woff;
+  --zd-din-next-light-italic-latin-woff2: 5a22df464bb76ead0cafe114954c2153.woff2;
 }
 
 @font-face {

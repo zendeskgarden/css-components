@@ -3,7 +3,7 @@
   --zd-font-family-din-next: din-next;
   --zd-font-family-din-next-rounded: din-next-rounded;
   --zd-font-family-proxima-nova: proxima-nova;
-  --zd-font-source-path: 'https://s3-us-west-1.amazonaws.com/garden.zendesk.com/fonts';
+  --zd-font-source-path: 'https://d17777qwi045j6.cloudfront.net/fonts';
 
   /* Based on http://www.google.com/fonts character sets.
    * See http://fonts.googleapis.com/css?family=Alef|Amiri|Gurajada|Hanuman|Open+Sans (in Chrome)

@@ -2,16 +2,16 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-proxima-nova-bold-cyrillic-woff: proxima-nova-bold-cyrillic.2691da852a142c755d5bdb6b7752be57.woff;
-  --zd-proxima-nova-bold-cyrillic-woff2: proxima-nova-bold-cyrillic.43de3a662f327b63f79315d77f030a84.woff2;
-  --zd-proxima-nova-bold-fallback-woff: proxima-nova-bold-fallback.49bbdd1e552de8837d1051b395f59726.woff;
-  --zd-proxima-nova-bold-fallback-woff2: proxima-nova-bold-fallback.2ac34f9809b1452fee722bdc9d5f2b82.woff2;
-  --zd-proxima-nova-bold-greek-woff: proxima-nova-bold-greek.db975c9f5c1083dc2cc92f869bf592fe.woff;
-  --zd-proxima-nova-bold-greek-woff2: proxima-nova-bold-greek.6b54761cc0462dc47a95ed3f99588669.woff2;
-  --zd-proxima-nova-bold-latin-ext-woff: proxima-nova-bold-latin-ext.acb233649f1643384613efcd0e78edf9.woff;
-  --zd-proxima-nova-bold-latin-ext-woff2: proxima-nova-bold-latin-ext.7f3158ca3b4b0027d897ecbb7413d3c2.woff2;
-  --zd-proxima-nova-bold-latin-woff: proxima-nova-bold-latin.dd4c9033fbc4a643d49598341e9fba01.woff;
-  --zd-proxima-nova-bold-latin-woff2: proxima-nova-bold-latin.3c941acda7f5be8bbd0a2fde3f9e23c3.woff2;
+  --zd-proxima-nova-bold-cyrillic-woff: 2691da852a142c755d5bdb6b7752be57.woff;
+  --zd-proxima-nova-bold-cyrillic-woff2: 43de3a662f327b63f79315d77f030a84.woff2;
+  --zd-proxima-nova-bold-fallback-woff: 49bbdd1e552de8837d1051b395f59726.woff;
+  --zd-proxima-nova-bold-fallback-woff2: 2ac34f9809b1452fee722bdc9d5f2b82.woff2;
+  --zd-proxima-nova-bold-greek-woff: db975c9f5c1083dc2cc92f869bf592fe.woff;
+  --zd-proxima-nova-bold-greek-woff2: 6b54761cc0462dc47a95ed3f99588669.woff2;
+  --zd-proxima-nova-bold-latin-ext-woff: acb233649f1643384613efcd0e78edf9.woff;
+  --zd-proxima-nova-bold-latin-ext-woff2: 7f3158ca3b4b0027d897ecbb7413d3c2.woff2;
+  --zd-proxima-nova-bold-latin-woff: dd4c9033fbc4a643d49598341e9fba01.woff;
+  --zd-proxima-nova-bold-latin-woff2: 3c941acda7f5be8bbd0a2fde3f9e23c3.woff2;
 }
 
 @font-face {

@@ -2,16 +2,16 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-din-next-ultralight-cyrillic-woff: din-next-ultralight-cyrillic.aaa47f4e0e0d758961f0356fe0dc0311.woff;
-  --zd-din-next-ultralight-cyrillic-woff2: din-next-ultralight-cyrillic.ff3bbf43cd16a36076a33ebdba8e8a0c.woff2;
-  --zd-din-next-ultralight-fallback-woff: din-next-ultralight-fallback.0bc19787ddfc5c662fad885fb35b7ef3.woff;
-  --zd-din-next-ultralight-fallback-woff2: din-next-ultralight-fallback.270344a729fa8914d0c79a1f04265a8a.woff2;
-  --zd-din-next-ultralight-greek-woff: din-next-ultralight-greek.414483fab4e88d0595f3ed51668d612e.woff;
-  --zd-din-next-ultralight-greek-woff2: din-next-ultralight-greek.8c85e600940536142fab974a7d956da0.woff2;
-  --zd-din-next-ultralight-latin-ext-woff: din-next-ultralight-latin-ext.c090b4377d8566feac73e32a79fc0281.woff;
-  --zd-din-next-ultralight-latin-ext-woff2: din-next-ultralight-latin-ext.2abfc621ebd83ac4d807fdc039440b48.woff2;
-  --zd-din-next-ultralight-latin-woff: din-next-ultralight-latin.7c183d1f0422ec364766339b1908d1a6.woff;
-  --zd-din-next-ultralight-latin-woff2: din-next-ultralight-latin.fb91db29b079eb0d75e217e1e8a8776a.woff2;
+  --zd-din-next-ultralight-cyrillic-woff: aaa47f4e0e0d758961f0356fe0dc0311.woff;
+  --zd-din-next-ultralight-cyrillic-woff2: ff3bbf43cd16a36076a33ebdba8e8a0c.woff2;
+  --zd-din-next-ultralight-fallback-woff: 0bc19787ddfc5c662fad885fb35b7ef3.woff;
+  --zd-din-next-ultralight-fallback-woff2: 270344a729fa8914d0c79a1f04265a8a.woff2;
+  --zd-din-next-ultralight-greek-woff: 414483fab4e88d0595f3ed51668d612e.woff;
+  --zd-din-next-ultralight-greek-woff2: 8c85e600940536142fab974a7d956da0.woff2;
+  --zd-din-next-ultralight-latin-ext-woff: c090b4377d8566feac73e32a79fc0281.woff;
+  --zd-din-next-ultralight-latin-ext-woff2: 2abfc621ebd83ac4d807fdc039440b48.woff2;
+  --zd-din-next-ultralight-latin-woff: 7c183d1f0422ec364766339b1908d1a6.woff;
+  --zd-din-next-ultralight-latin-woff2: fb91db29b079eb0d75e217e1e8a8776a.woff2;
 }
 
 @font-face {

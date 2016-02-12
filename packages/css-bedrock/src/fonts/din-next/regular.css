@@ -2,16 +2,16 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-din-next-regular-cyrillic-woff: din-next-regular-cyrillic.c1c393cc914f6bf74751968e269bd602.woff;
-  --zd-din-next-regular-cyrillic-woff2: din-next-regular-cyrillic.fff8c24b6f49e51211abec19495a928e.woff2;
-  --zd-din-next-regular-fallback-woff: din-next-regular-fallback.3bd47adab227d31b63953e2887435750.woff;
-  --zd-din-next-regular-fallback-woff2: din-next-regular-fallback.2732de01a3bd494cd604b43903a470fa.woff2;
-  --zd-din-next-regular-greek-woff: din-next-regular-greek.43bcdc0102b07c5313daf2787545165d.woff;
-  --zd-din-next-regular-greek-woff2: din-next-regular-greek.f9f4892eb62095797aa77bb1aa32b236.woff2;
-  --zd-din-next-regular-latin-ext-woff: din-next-regular-latin-ext.ec7551337acb197cb100d13b09353792.woff;
-  --zd-din-next-regular-latin-ext-woff2: din-next-regular-latin-ext.f25327b23c83f8bb124fd4e69d2ebcbf.woff2;
-  --zd-din-next-regular-latin-woff: din-next-regular-latin.295b4b276111c3c9109cfb5a93bb4016.woff;
-  --zd-din-next-regular-latin-woff2: din-next-regular-latin.7b8ff5531106a174a36f3e1fc1231ae5.woff2;
+  --zd-din-next-regular-cyrillic-woff: c1c393cc914f6bf74751968e269bd602.woff;
+  --zd-din-next-regular-cyrillic-woff2: fff8c24b6f49e51211abec19495a928e.woff2;
+  --zd-din-next-regular-fallback-woff: 3bd47adab227d31b63953e2887435750.woff;
+  --zd-din-next-regular-fallback-woff2: 2732de01a3bd494cd604b43903a470fa.woff2;
+  --zd-din-next-regular-greek-woff: 43bcdc0102b07c5313daf2787545165d.woff;
+  --zd-din-next-regular-greek-woff2: f9f4892eb62095797aa77bb1aa32b236.woff2;
+  --zd-din-next-regular-latin-ext-woff: ec7551337acb197cb100d13b09353792.woff;
+  --zd-din-next-regular-latin-ext-woff2: f25327b23c83f8bb124fd4e69d2ebcbf.woff2;
+  --zd-din-next-regular-latin-woff: 295b4b276111c3c9109cfb5a93bb4016.woff;
+  --zd-din-next-regular-latin-woff2: 7b8ff5531106a174a36f3e1fc1231ae5.woff2;
 }
 
 @font-face {

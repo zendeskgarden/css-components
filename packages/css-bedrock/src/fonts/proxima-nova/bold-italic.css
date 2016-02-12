@@ -2,16 +2,16 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-proxima-nova-bold-italic-cyrillic-woff: proxima-nova-bold-italic-cyrillic.ffbe92c607fc2e3c81c7f7d6f6b9ab4f.woff;
-  --zd-proxima-nova-bold-italic-cyrillic-woff2: proxima-nova-bold-italic-cyrillic.f7b87ff681ca44a95e38313a04eb2fa0.woff2;
-  --zd-proxima-nova-bold-italic-fallback-woff: proxima-nova-bold-italic-fallback.9bbebb2184d56f3d9d593bdbf56ee6b9.woff;
-  --zd-proxima-nova-bold-italic-fallback-woff2: proxima-nova-bold-italic-fallback.baed1533e6b84eade093734bb49a8466.woff2;
-  --zd-proxima-nova-bold-italic-greek-woff: proxima-nova-bold-italic-greek.8a86d9c6a4bc2ab53effd14a18c13b92.woff;
-  --zd-proxima-nova-bold-italic-greek-woff2: proxima-nova-bold-italic-greek.ec810d8c79c46ebe004bdeeffa023815.woff2;
-  --zd-proxima-nova-bold-italic-latin-ext-woff: proxima-nova-bold-italic-latin-ext.feedce977ec1bdefb0ad64c1aad5aa20.woff;
-  --zd-proxima-nova-bold-italic-latin-ext-woff2: proxima-nova-bold-italic-latin-ext.5865237af50ff6b7780f8c0f4ac8fbc7.woff2;
-  --zd-proxima-nova-bold-italic-latin-woff: proxima-nova-bold-italic-latin.035031820c2b89994fef4cc7530d98d7.woff;
-  --zd-proxima-nova-bold-italic-latin-woff2: proxima-nova-bold-italic-latin.c275b8e7ea30baea8a1bf963f3377c0c.woff2;
+  --zd-proxima-nova-bold-italic-cyrillic-woff: ffbe92c607fc2e3c81c7f7d6f6b9ab4f.woff;
+  --zd-proxima-nova-bold-italic-cyrillic-woff2: f7b87ff681ca44a95e38313a04eb2fa0.woff2;
+  --zd-proxima-nova-bold-italic-fallback-woff: 9bbebb2184d56f3d9d593bdbf56ee6b9.woff;
+  --zd-proxima-nova-bold-italic-fallback-woff2: baed1533e6b84eade093734bb49a8466.woff2;
+  --zd-proxima-nova-bold-italic-greek-woff: 8a86d9c6a4bc2ab53effd14a18c13b92.woff;
+  --zd-proxima-nova-bold-italic-greek-woff2: ec810d8c79c46ebe004bdeeffa023815.woff2;
+  --zd-proxima-nova-bold-italic-latin-ext-woff: feedce977ec1bdefb0ad64c1aad5aa20.woff;
+  --zd-proxima-nova-bold-italic-latin-ext-woff2: 5865237af50ff6b7780f8c0f4ac8fbc7.woff2;
+  --zd-proxima-nova-bold-italic-latin-woff: 035031820c2b89994fef4cc7530d98d7.woff;
+  --zd-proxima-nova-bold-italic-latin-woff2: c275b8e7ea30baea8a1bf963f3377c0c.woff2;
 }
 
 @font-face {

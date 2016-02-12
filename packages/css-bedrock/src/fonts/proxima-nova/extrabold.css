@@ -2,16 +2,16 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-proxima-nova-extrabold-cyrillic-woff: proxima-nova-extrabold-cyrillic.79adba93d4379456551cec411327e957.woff;
-  --zd-proxima-nova-extrabold-cyrillic-woff2: proxima-nova-extrabold-cyrillic.33794f53e30375c24105ca2286f5c098.woff2;
-  --zd-proxima-nova-extrabold-fallback-woff: proxima-nova-extrabold-fallback.64a3a4404e9a1f89fa9f7a6dd21a3608.woff;
-  --zd-proxima-nova-extrabold-fallback-woff2: proxima-nova-extrabold-fallback.74a103d76aec78affba060bd6a21b816.woff2;
-  --zd-proxima-nova-extrabold-greek-woff: proxima-nova-extrabold-greek.84d77563d8345032e4339b9e809d450c.woff;
-  --zd-proxima-nova-extrabold-greek-woff2: proxima-nova-extrabold-greek.7d57c7e4abd8a82246c5856bbc8ad62b.woff2;
-  --zd-proxima-nova-extrabold-latin-ext-woff: proxima-nova-extrabold-latin-ext.60efdb9e1750f1b082a8fafa459b487a.woff;
-  --zd-proxima-nova-extrabold-latin-ext-woff2: proxima-nova-extrabold-latin-ext.9dd787cf5dd22ed9f8832e75c1d9bc3f.woff2;
-  --zd-proxima-nova-extrabold-latin-woff: proxima-nova-extrabold-latin.686062318006ae4bba3b1065546b6c7f.woff;
-  --zd-proxima-nova-extrabold-latin-woff2: proxima-nova-extrabold-latin.5d14b23219e5bb31db9626959ee0f1f8.woff2;
+  --zd-proxima-nova-extrabold-cyrillic-woff: 79adba93d4379456551cec411327e957.woff;
+  --zd-proxima-nova-extrabold-cyrillic-woff2: 33794f53e30375c24105ca2286f5c098.woff2;
+  --zd-proxima-nova-extrabold-fallback-woff: 64a3a4404e9a1f89fa9f7a6dd21a3608.woff;
+  --zd-proxima-nova-extrabold-fallback-woff2: 74a103d76aec78affba060bd6a21b816.woff2;
+  --zd-proxima-nova-extrabold-greek-woff: 84d77563d8345032e4339b9e809d450c.woff;
+  --zd-proxima-nova-extrabold-greek-woff2: 7d57c7e4abd8a82246c5856bbc8ad62b.woff2;
+  --zd-proxima-nova-extrabold-latin-ext-woff: 60efdb9e1750f1b082a8fafa459b487a.woff;
+  --zd-proxima-nova-extrabold-latin-ext-woff2: 9dd787cf5dd22ed9f8832e75c1d9bc3f.woff2;
+  --zd-proxima-nova-extrabold-latin-woff: 686062318006ae4bba3b1065546b6c7f.woff;
+  --zd-proxima-nova-extrabold-latin-woff2: 5d14b23219e5bb31db9626959ee0f1f8.woff2;
 }
 
 @font-face {
