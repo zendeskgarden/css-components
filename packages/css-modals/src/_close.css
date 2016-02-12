@@ -22,7 +22,7 @@
   right: 0;
   border: none; /* [1] */
   border-radius: inherit;
-  background-color: inherit; /* [1] */
+  background-color: transparent; /* [1] */
   cursor: pointer;
   width: var(--zd-dialog__close-size);
   text-align: center;
