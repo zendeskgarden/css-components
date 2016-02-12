@@ -161,9 +161,11 @@ def subset(element, format, unicode_block, unicode_range, args):
                     digest = md5(file.read()).hexdigest()
 
                 root, extension = splitext(output)
-                destination = "{}.{}{}".format(root, digest, extension)
+                filename = "{}{}".format(digest, extension)
+                destination = pathjoin(args.destination, filename)
                 rename(output, destination)
-                ret_val = output = destination
+                output = "{} >> {}{}".format(root, digest, extension)
+                ret_val = destination
         else:
             ret_val = None
             prefix = '-'
