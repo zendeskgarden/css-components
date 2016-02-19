@@ -122,3 +122,19 @@
   text-overflow:ellipsis;
 }
 .c-btn--pill{ border-radius:100px; }
+
+.c-btn--basic{
+  border-color:transparent;
+  background-color:transparent;
+  color:#999;
+}
+
+.c-btn--basic.is-focused,.c-btn--basic:focus,.c-btn--basic:hover{
+  background-color:#f3f3f3;
+  color:#333;
+}
+
+.c-btn--basic.is-active,.c-btn--basic.is-active:focus,.c-btn--basic.is-active:hover,.c-btn--basic:active,.c-btn--basic:active:hover{
+  background-color:#eee;
+  color:#333;
+}

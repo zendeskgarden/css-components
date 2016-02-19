@@ -1,0 +1,24 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-btn--basic-background-color: transparent;
+  --zd-btn--basic-color: var(--zd-color-aluminum);
+  --zd-btn--basic-active-background-color: var(--zd-color-platinum);
+  --zd-btn--basic-focused-background-color: var(--zd-color-anti-flash-white);
+}
+
+.c-btn--basic {
+  border-color: transparent;
+  background-color: var(--zd-btn--basic-background-color);
+  color: var(--zd-btn--basic-color);
+}
+
+.c-btn--basic:--focused {
+  background-color: var(--zd-btn--basic-focused-background-color);
+  color: var(--zd-color-oil);
+}
+
+.c-btn--basic:--active {
+  background-color: var(--zd-btn--basic-active-background-color);
+  color: var(--zd-color-oil);
+}
