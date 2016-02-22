@@ -6,7 +6,12 @@
   --zd-btn-active-color: var(--zd-color-oil);
 }
 
-@custom-selector :--active :active, :active:hover, .is-active, .is-active:hover, .is-active:focus;
+@custom-selector :--active
+  :active,
+  :active:hover,
+  .is-active,
+  .is-active:hover,
+  .is-active:focus;
 
 .c-btn:--active {
   background-color: var(--zd-btn-active-background-color);

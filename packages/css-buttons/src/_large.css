@@ -1,10 +1,12 @@
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length */
   --zd-btn--large-font-size: var(--zd-font-size-epsilon);
   --zd-btn--large-line-height: 3.43;
   --zd-btn--large-padding: 1.9286em;
   --zd-btn--large-min-width: calc(6.1429em + calc(var(--zd-btn--large-padding) * 2));
+  /* stylelint-enable max-line-length */
 }
 
 .c-btn--large {

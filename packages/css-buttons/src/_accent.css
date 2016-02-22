@@ -1,10 +1,12 @@
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length */
   --zd-btn--accent-background-color: #2db1ba; /* Override this variable with your product's accent color */
   --zd-btn--accent-color: var(--zd-color-white);
   --zd-btn--accent-active-background-color: color(var(--zd-btn--accent-background-color) blackness(+14%));
   --zd-btn--accent-focused-background-color: color(var(--zd-btn--accent-background-color) whiteness(+16%));
+  /* stylelint-enable max-line-length */
 }
 
 .c-btn--accent {

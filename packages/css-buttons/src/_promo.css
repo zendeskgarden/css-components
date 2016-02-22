@@ -1,10 +1,12 @@
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length */
   --zd-btn--promo-background-color: var(--zd-color-orange-peel);
   --zd-btn--promo-color: var(--zd-color-white);
   --zd-btn--promo-active-background-color: color(var(--zd-btn--promo-background-color) blackness(+11%));
   --zd-btn--promo-focused-background-color: color(var(--zd-btn--promo-background-color) whiteness(+27%));
+  /* stylelint-enable max-line-length */
 }
 
 .c-btn--promo {
