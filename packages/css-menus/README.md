@@ -11,14 +11,58 @@ The `css-menus` package contains `.c-menu` styling.
 Menu CSS classes are intended to support the following component structure.
 
 ```html
-<ul class="c-menu role="menu" aria-hidden="true">
-  <li class="c-menu__item" role="menuitem" tabindex="0">Profile</li>
-  <li class="c-menu__separator" role="separator"></li>
-  <li class="c-menu__item c-menu__item--disabled" role="menuitem" aria-disabled="true">Settings</li>
-  <li class="c-menu__separator" role="separator"></li>
-  <li class="c-menu__item" role="menuitem" tabindex="0">Sign Out</li>
+<ul aria-hidden="true"
+    class="c-menu"
+    role="menu">
+  <li class="c-menu__item"
+      role="menuitem">Enabled Item</li>
+  <li aria-disabled="true"
+      class="c-menu__item c-menu__item--disabled"
+      role="menuitem">Disabled Item</li>
+  <li class="c-menu__separator"
+      role="separator"></li>
+  <li class="c-menu__item"
+      role="menuitem">Another Enabled Item</li>
 </ul>
 ```
+
+## Accessibility
+
+The sample HTML incorporates `aria-*` and `role` attributes expected by
+assistive technology.
+
+## Modifications
+
+### RTL
+
+Use the following modifier class to support RTL text direction:
+
+```html
+<ul aria-hidden="true"
+    class="c-menu c-menu--rtl"
+    role="menu">
+  ...
+</ul>
+```
+
+### Accent
+
+See the `accent.css` source file for sample CSS needed to format menus
+according to your product's accent color. This CSS is not included in
+the package distribution. Upon inclusion, corresponding HTML would be:
+
+```html
+<ul aria-hidden="true"
+    class="c-menu c-menu--accent"
+    role="menu">
+  ...
+</ul>
+```
+
+## Behavior
+
+See [js-menus](https://github.com/zendeskgarden/js-menus) for reference
+JavaScript support for menus.
 
 ## Tests
 

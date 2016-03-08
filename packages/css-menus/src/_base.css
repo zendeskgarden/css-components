@@ -1,52 +1,38 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-menu-color: var(--zd-color-anti-flash-white);
-  --zd-menu-border-color: var(--zd-color-anti-flash-white);
   --zd-menu-background-color: var(--zd-color-white);
-  --zd-menu-border: 1px solid var(--zd-menu-border-color);
+  --zd-menu-border: 1px solid transparent;
   --zd-menu-border-radius: 4px;
   --zd-menu-box-shadow:
-    0 0 4px 0 rgba(0, 0, 0, .15),
-    0 4px 10px 0 rgba(0, 0, 0, .1);
+    0 0 4px -1px color(var(--zd-color-black) alpha(15%)),
+    0 4px 10px -1px color(var(--zd-color-black) alpha(10%));
+  --zd-menu-font-size: var(--zd-font-size-epsilon);
+  --zd-menu-font-weight: var(--zd-font-weight-regular);
+  --zd-menu-min-width: 140px;
+  --zd-menu--large-min-width: 270px;
 }
 
+/* 1. Positioned relative to controlling item.
+ * 2. List element reset.
+ * 3. Compatible with css-arrows.
+ * 4. Prevent border from interfering with item background. */
 .c-menu {
   display: inline-block;
-  border: var(--zd-menu-border);
+  position: absolute; /* [1] */
+  margin: 0; /* [2] */
+  border: var(--zd-menu-border); /* [3] */
+  box-sizing: border-box;
   border-radius: var(--zd-menu-border-radius);
   box-shadow: var(--zd-menu-box-shadow);
+  background-clip: padding-box; /* [4] */
   background-color: var(--zd-menu-background-color);
+  padding: 0; /* [2] */
+  min-width: var(--zd-menu-min-width);
+  font-size: var(--zd-menu-font-size);
+  font-weight: var(--zd-menu-font-weight);
 }
 
-.c-menu--n {
-  /* menu positioned directly north of caron */
-}
-
-.c-menu--ne {
-  /* menu positioned northeast of caron */
-}
-
-.c-menu--nw {
-  /* menu positioned northwest of caron */
-}
-
-.c-menu--s {
-  /* menu positioned directly south of caret */
-}
-
-.c-menu--se {
-  /* menu positioned southeast of caret */
-}
-
-.c-menu--sw {
-  /* menu positioned southwest of caret */
-}
-
-.c-menu--e {
-  /* menu positioned directly east of pointer */
-}
-
-.c-menu-w {
-  /* menu positioned directly west of pointer */
+.c-menu--large {
+  min-width: var(--zd-menu--large-min-width);
 }

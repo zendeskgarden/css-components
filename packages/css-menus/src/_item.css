@@ -2,24 +2,24 @@
 
 :root {
   --zd-menu__item-color: var(--zd-color-aluminum);
-  --zd-menu__item-font-size: var(--zd-font-size-epsilon);
-  --zd-menu__item-font-weigth: var(--zd-font-weight-regular);
   --zd-menu__item-line-height: 2.86;
   --zd-menu__item-padding: 0 1.429em;
-  --zd-menu__item-margin: .714em;
+  --zd-menu__item-margin: 10px;
   --zd-menu__item--focused-color: var(--zd-color-dark-gray);
   --zd-menu__item--focused-background-color: var(--zd-color-anti-flash-white);
   --zd-menu__item--disabled-color: var(--zd-color-gainsboro);
 }
 
+/* 1. Allows an item to contain a positioned sub-menu.
+ * 2. Reset stacking context for sub-menu css-arrows. */
 .c-menu__item {
   display: block;
+  position: relative; /* [1] */
+  z-index: 0; /* [2] */
   cursor: pointer;
   padding: var(--zd-menu__item-padding);
   line-height: var(--zd-menu__item-line-height);
   color: var(--zd-menu__item-color);
-  font-size: var(--zd-menu__item-font-size);
-  font-weight: var(--zd-menu__item-font-weigth);
   user-select: none;
 }
 

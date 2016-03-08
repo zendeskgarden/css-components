@@ -1,19 +1,31 @@
 .c-menu{
   display:inline-block;
-  border:1px solid #f3f3f3;
+  position:absolute;
+  margin:0;
+  border:1px solid transparent;
+  box-sizing:border-box;
   border-radius:4px;
-  box-shadow:0 0 4px 0 rgba(0,0,0,.15),0 4px 10px 0 rgba(0,0,0,.1);
+  box-shadow:0 0 4px -1px rgba(0,0,0,.15),0 4px 10px -1px rgba(0,0,0,.1);
+  background-clip:padding-box;
   background-color:#fff;
+  padding:0;
+  min-width:140px;
+  font-size:14px;
+  font-weight:400;
+}
+
+.c-menu--large{
+  min-width:270px;
 }
 
 .c-menu__item{
   display:block;
+  position:relative;
+  z-index:0;
   cursor:pointer;
   padding:0 1.429em;
   line-height:2.86;
   color:#999;
-  font-size:14px;
-  font-weight:400;
   -webkit-user-select:none;
      -moz-user-select:none;
       -ms-user-select:none;
@@ -21,11 +33,11 @@
 }
 
 .c-menu__item:first-child{
-  margin-top:.714em;
+  margin-top:10px;
 }
 
 .c-menu__item:last-child{
-  margin-bottom:.714em;
+  margin-bottom:10px;
 }
 
 .c-menu__item--disabled{
@@ -43,9 +55,12 @@
   color:#ddd;
 }
 
+.c-menu--rtl{
+  direction:rtl;
+}
+
 .c-menu__separator{
   display:block;
-  margin:.357em 0;
+  margin:5px 0;
   border-bottom:1px solid #f3f3f3;
-  font-size:14px;
 }
