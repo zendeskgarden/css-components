@@ -3,8 +3,28 @@
 <head>
   <title>Zendesk Garden / Arrows</title>
   <link href="bedrock.css" rel="stylesheet">
+  <link href="menus.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
-  <link href="demo.css" rel="stylesheet">
+  <style>
+  html {
+    background-color: #f3f3f3;
+    transition:
+      background-color .4s,
+      color .4s
+  }
+
+  .c-menu {
+    transition: box-shadow .4s;
+  }
+
+  .u-menu-border {
+    border: 1px solid #378EF4 !important;
+  }
+
+  .u-menu-no-shadow {
+    box-shadow: none !important;
+  }
+  </style>
 </head>
 <body>
   <header class="u-bg-oil u-fg-white" style="position: fixed; width: 100%; top: 0; z-index: 100;">
@@ -179,7 +199,7 @@
       </div>
     </div>
   </main>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="arrows.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
