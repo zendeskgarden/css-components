@@ -16,7 +16,8 @@
 /* 1. Positioned relative to controlling item.
  * 2. List element reset.
  * 3. Compatible with css-arrows.
- * 4. Prevent border from interfering with item background. */
+ * 4. Prevent border from interfering with item background (webkit-only).
+ * 5. Prevent controlling item cursor inheritance. */
 .c-menu {
   display: inline-block;
   position: absolute; /* [1] */
@@ -25,8 +26,11 @@
   box-sizing: border-box;
   border-radius: var(--zd-menu-border-radius);
   box-shadow: var(--zd-menu-box-shadow);
-  background-clip: padding-box; /* [4] */
+  /* stylelint-disable property-no-vendor-prefix */
+  -webkit-background-clip: padding-box; /* [4] */
+  /* stylelint-enable */
   background-color: var(--zd-menu-background-color);
+  cursor: default; /* [5] */
   padding: 0; /* [2] */
   min-width: var(--zd-menu-min-width);
   font-size: var(--zd-menu-font-size);

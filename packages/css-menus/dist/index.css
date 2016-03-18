@@ -6,8 +6,9 @@
   box-sizing:border-box;
   border-radius:4px;
   box-shadow:0 0 4px -1px rgba(0,0,0,.15),0 4px 10px -1px rgba(0,0,0,.1);
-  background-clip:padding-box;
+  -webkit-background-clip:padding-box;
   background-color:#fff;
+  cursor:default;
   padding:0;
   min-width:140px;
   font-size:14px;
