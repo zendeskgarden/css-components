@@ -24,7 +24,6 @@
     "lint": "stylelint src/*.css src/**/*.css",
     "publish": "gh-pages -d demo",
     "start": "npm run watch & live-server demo",
-    "sync": "aws s3 sync --include *.woff* s3://zendesk-garden/fonts",
     "test": "npm run lint",
     "watch": "npm run build -- --watch"
   },
