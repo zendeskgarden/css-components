@@ -2,11 +2,10 @@
 
 :root {
   --zd-menu-background-color: var(--zd-color-white);
-  --zd-menu-border: 1px solid transparent;
   --zd-menu-border-radius: 4px;
   --zd-menu-box-shadow:
-    0 0 4px -1px color(var(--zd-color-black) alpha(15%)),
-    0 4px 10px -1px color(var(--zd-color-black) alpha(10%));
+    0 0 4px 0 color(var(--zd-color-black) alpha(15%)),
+    0 4px 10px 0 color(var(--zd-color-black) alpha(10%));
   --zd-menu-font-size: var(--zd-font-size-epsilon);
   --zd-menu-font-weight: var(--zd-font-weight-regular);
   --zd-menu-min-width: 140px;
@@ -15,24 +14,19 @@
 
 /* 1. Positioned relative to controlling item.
  * 2. List element reset.
- * 3. Compatible with css-arrows.
- * 4. Prevent border from interfering with item background (webkit-only).
- * 5. Prevent controlling item cursor inheritance. */
+ * 3. Prevent controlling item cursor inheritance. */
 .c-menu {
   display: inline-block;
   position: absolute; /* [1] */
   margin: 0; /* [2] */
-  border: var(--zd-menu-border); /* [3] */
   box-sizing: border-box;
   border-radius: var(--zd-menu-border-radius);
   box-shadow: var(--zd-menu-box-shadow);
-  /* stylelint-disable property-no-vendor-prefix */
-  -webkit-background-clip: padding-box; /* [4] */
-  /* stylelint-enable */
   background-color: var(--zd-menu-background-color);
-  cursor: default; /* [5] */
+  cursor: default; /* [3] */
   padding: 0; /* [2] */
   min-width: var(--zd-menu-min-width);
+  white-space: nowrap;
   font-size: var(--zd-menu-font-size);
   font-weight: var(--zd-menu-font-weight);
 }

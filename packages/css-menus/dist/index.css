@@ -2,15 +2,14 @@
   display:inline-block;
   position:absolute;
   margin:0;
-  border:1px solid transparent;
   box-sizing:border-box;
   border-radius:4px;
-  box-shadow:0 0 4px -1px rgba(0,0,0,.15),0 4px 10px -1px rgba(0,0,0,.1);
-  -webkit-background-clip:padding-box;
+  box-shadow:0 0 4px 0 rgba(0,0,0,.15),0 4px 10px 0 rgba(0,0,0,.1);
   background-color:#fff;
   cursor:default;
   padding:0;
   min-width:140px;
+  white-space:nowrap;
   font-size:14px;
   font-weight:400;
 }
