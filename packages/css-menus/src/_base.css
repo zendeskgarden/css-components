@@ -26,6 +26,7 @@
   cursor: default; /* [3] */
   padding: 0; /* [2] */
   min-width: var(--zd-menu-min-width);
+  text-align: left;
   white-space: nowrap;
   font-size: var(--zd-menu-font-size);
   font-weight: var(--zd-menu-font-weight);
@@ -33,4 +34,9 @@
 
 .c-menu--large {
   min-width: var(--zd-menu--large-min-width);
+}
+
+.c-menu.is-rtl {
+  direction: rtl;
+  text-align: right;
 }

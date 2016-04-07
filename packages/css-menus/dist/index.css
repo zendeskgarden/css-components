@@ -9,6 +9,7 @@
   cursor:default;
   padding:0;
   min-width:140px;
+  text-align:left;
   white-space:nowrap;
   font-size:14px;
   font-weight:400;
@@ -16,6 +17,11 @@
 
 .c-menu--large{
   min-width:270px;
+}
+
+.c-menu.is-rtl{
+  direction:rtl;
+  text-align:right;
 }
 
 .c-menu__item{
@@ -40,23 +46,19 @@
   margin-bottom:10px;
 }
 
-.c-menu__item--disabled{
+.c-menu__item.is-disabled,.c-menu__item[disabled]{
   color:#ddd;
 }
 
-.c-menu__item.is-focused,.c-menu__item:focus,.c-menu__item:hover{
+.c-menu__item.is-focused,.c-menu__item.is-selected,.c-menu__item:focus,.c-menu__item:hover{
   background-color:#f3f3f3;
   color:#555;
 }
 
-.c-menu__item--disabled.is-focused,.c-menu__item--disabled:focus,.c-menu__item--disabled:hover{
+.c-menu__item.is-disabled.is-focused,.c-menu__item.is-disabled.is-selected,.c-menu__item.is-disabled:focus,.c-menu__item.is-disabled:hover,.c-menu__item[disabled].is-focused,.c-menu__item[disabled].is-selected,.c-menu__item[disabled]:focus,.c-menu__item[disabled]:hover{
   background-color:inherit;
   cursor:default;
   color:#ddd;
-}
-
-.c-menu--rtl{
-  direction:rtl;
 }
 
 .c-menu__separator{

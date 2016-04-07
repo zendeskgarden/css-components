@@ -17,7 +17,7 @@ Menu CSS classes are intended to support the following component structure.
   <li class="c-menu__item"
       role="menuitem">Enabled Item</li>
   <li aria-disabled="true"
-      class="c-menu__item c-menu__item--disabled"
+      class="c-menu__item is-disabled"
       role="menuitem">Disabled Item</li>
   <li class="c-menu__separator"
       role="separator"></li>
@@ -33,13 +33,25 @@ assistive technology.
 
 ## Modifications
 
-### RTL
+### Large
 
-Use the following modifier class to support RTL text direction:
+Use the following modifier class to support wider menu layouts:
 
 ```html
 <ul aria-hidden="true"
-    class="c-menu c-menu--rtl"
+    class="c-menu c-menu__large"
+    role="menu">
+  ...
+</ul>
+```
+
+### RTL
+
+Use the following state class to support RTL text direction:
+
+```html
+<ul aria-hidden="true"
+    class="c-menu is-rtl"
     role="menu">
   ...
 </ul>

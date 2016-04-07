@@ -31,18 +31,20 @@
   margin-bottom: var(--zd-menu__item-margin);
 }
 
-.c-menu__item--disabled {
+@custom-selector :--disabled [disabled], .is-disabled;
+
+.c-menu__item:--disabled {
   color: var(--zd-menu__item--disabled-color);
 }
 
-@custom-selector :--focused :hover, :focus, .is-focused;
+@custom-selector :--focused :hover, :focus, .is-focused, .is-selected;
 
 .c-menu__item:--focused {
   background-color: var(--zd-menu__item--focused-background-color);
   color: var(--zd-menu__item--focused-color);
 }
 
-.c-menu__item--disabled:--focused {
+.c-menu__item:--disabled:--focused {
   background-color: inherit;
   cursor: default;
   color: var(--zd-menu__item--disabled-color);
