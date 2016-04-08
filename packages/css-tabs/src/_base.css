@@ -7,13 +7,17 @@
   --zd-tab__list-line-height: 1.43;
   --zd-tab__list-margin-bottom: var(--zd-spacing);
   --zd-tab__list__item-border-width: 3px;
-  --zd-tab__list__item-margin-left: 50px;
+  --zd-tab__list__item-margin: 50px;
   --zd-tab__list__item-padding: 0 .3571em;
 }
 
 .c-tab {
   display: block;
   overflow: hidden;
+}
+
+.c-tab.is-rtl {
+  direction: rtl;
 }
 
 /* 1. List element reset. */
@@ -34,7 +38,7 @@
  * 3. Anchor element reset. */
 .c-tab__list__item {
   display: inline-block;
-  margin-left: var(--zd-tab__list__item-margin-left);
+  margin-left: var(--zd-tab__list__item-margin);
   border-width: var(--zd-tab__list__item-border-width);
   border-bottom-style: solid;
   border-bottom-color: transparent;
@@ -50,6 +54,14 @@
 }
 
 .c-tab__list__item:first-of-type {
+  margin-left: 0;
+}
+
+.is-rtl .c-tab__list__item:first-of-type {
+  margin-left: var(--zd-tab__list__item-margin);
+}
+
+.is-rtl .c-tab__list__item:last-of-type {
   margin-left: 0;
 }
 

@@ -2,6 +2,11 @@
   display:block;
   overflow:hidden;
 }
+
+.c-tab.is-rtl{
+  direction:rtl;
+}
+
 .c-tab__list{
   display:block;
   margin-top:0;
@@ -13,6 +18,7 @@
   color:#999;
   font-size:14px;
 }
+
 .c-tab__list__item{
   display:inline-block;
   margin-left:50px;
@@ -34,6 +40,14 @@
 }
 
 .c-tab__list__item:first-of-type{
+  margin-left:0;
+}
+
+.is-rtl .c-tab__list__item:first-of-type{
+  margin-left:50px;
+}
+
+.is-rtl .c-tab__list__item:last-of-type{
   margin-left:0;
 }
 
@@ -67,10 +81,24 @@
   margin-bottom:0;
 }
 
+.c-tab--block.is-rtl .c-tab__list__item{
+  margin-left:0;
+  border-left:0;
+  border-right-style:solid;
+  border-right-color:transparent;
+  padding:0 .7143em 0 0;
+  text-align:right;
+}
+
 .c-tab--block .c-tab__panel{
   display:inline-block;
   margin-left:30px;
   vertical-align:top;
+}
+
+.c-tab--block.is-rtl .c-tab__panel{
+  margin-right:30px;
+  margin-left:0;
 }
 
 .c-tab__list__item.is-focused,.c-tab__list__item:focus,.c-tab__list__item:hover{
@@ -81,7 +109,7 @@
   border-color:#ebebeb;
 }
 
-.c-tab__list__item.is-active,.c-tab__list__item.is-active:focus,.c-tab__list__item.is-active:hover{
+.c-tab__list__item.is-active,.c-tab__list__item.is-active:focus,.c-tab__list__item.is-active:hover,.is-rtl .c-tab__list__item.is-active,.is-rtl .c-tab__list__item.is-active:focus,.is-rtl .c-tab__list__item.is-active:hover{
   border-color:currentColor;
   color:#555;
 }

@@ -14,7 +14,8 @@
 
 @custom-selector :--active .is-active, .is-active:hover, .is-active:focus;
 
-.c-tab__list__item:--active {
+.c-tab__list__item:--active,
+.is-rtl .c-tab__list__item:--active {
   border-color: var(--zd-tab__list__item-active-border-color);
   color: var(--zd-tab__list__item-active-color);
 }

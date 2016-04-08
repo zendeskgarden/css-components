@@ -8,10 +8,14 @@
 <body>
   <header class="u-bg-oil u-fg-white u-mb-lg">
     <div class="l-wrapper">
-      <h1 class="u-alpha u-pv u-semibold">
+      <h1 class="u-alpha u-pv u-display-inline-block">
         <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
         <span>/ Tabs</span>
       </h1>
+      <label class="u-ml">
+          <input class="js-rtl" type="checkbox">
+          <span class="u-epsilon">RTL</span>
+      </label>
     </div>
   </header>
   <main class="l-wrapper">
@@ -20,7 +24,7 @@
       <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-tab</code>
       components for consistent tab styling.</p>
     <h2 class="u-gamma u-mb">Default Layout
-      <code class="u-bg-platinum u-br-sm u-epsilon u-ph-xs u-pv-xxs">.c-tab</code>
+      <code class="u-bg-platinum u-br-sm u-epsilon u-ph-xs u-pv-xxs">.c-tab<span class="js-rtl-class u-display-none">.is-rtl</span></code>
     </h2>
     <nav class="c-tab u-mb-lg">
       <ul class="c-tab__list" role="tablist">
@@ -81,7 +85,7 @@
         style="display: none;">PANEL THREE</p>
     </nav>
     <h2 class="u-gamma u-mb">Block Layout
-      <code class="u-bg-platinum u-br-sm u-epsilon u-ph-xs u-pv-xxs">.c-tab .c-tab--block</code>
+      <code class="u-bg-platinum u-br-sm u-epsilon u-ph-xs u-pv-xxs">.c-tab<span class="js-rtl-class u-display-none">.is-rtl</span>.c-tab--block</code>
     </h2>
     <nav class="c-tab c-tab--block u-mb-lg">
       <ul class="c-tab__list" role="tablist">
@@ -139,5 +143,7 @@
         style="display: none;">PANEL THREE</p>
     </nav>
   </main>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
