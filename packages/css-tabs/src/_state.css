@@ -1,0 +1,52 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-tab__list__item-active-border-color: var(--zd-color-lily-white);
+  --zd-tab__list__item-focused-box-shadow: inset 0 0 0 2px #eee;
+  --zd-tab__list__item-hovered-color: var(--zd-color-dark-gray);
+  --zd-tab__list__item-selected-border-color: currentColor;
+  --zd-tab__list__item-selected-color: var(--zd-color-dark-gray);
+}
+
+/* 1. Specificity hack for border color. */
+
+@custom-selector :--hovered .is-hovered, :hover;
+
+.c-tab__list__item:--hovered {
+  color: var(--zd-tab__list__item-hovered-color);
+}
+
+@custom-selector :--focused .is-focused, :focus;
+
+.c-tab__list__item:--focused {
+  outline: none;
+  box-shadow: var(--zd-tab__list__item-focused-box-shadow);
+}
+
+@custom-selector :--active .is-active, :active;
+
+.c-tab__list__item.c-tab__list__item:--active { /* [1] */
+  border-color: var(--zd-tab__list__item-active-border-color);
+  box-shadow: none;
+}
+
+@custom-selector :--selected .is-selected, [aria-selected='true'];
+
+.c-tab__list__item.c-tab__list__item:--selected { /* [1] */
+  border-color: var(--zd-tab__list__item-selected-border-color);
+  color: var(--zd-tab__list__item-selected-color);
+}
+
+@custom-selector :--disabled .is-disabled, [disabled], [aria-disabled='true'];
+
+.c-tab__list__item.c-tab__list__item:--disabled {
+  border-color: transparent;
+  cursor: default;
+  color: inherit;
+}
+
+@custom-selector :--hidden .is-hidden, [aria-hidden='true'];
+
+.c-tab__panel:--hidden {
+  display: none;
+}

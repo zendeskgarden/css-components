@@ -32,7 +32,7 @@
           aria-controls="panel1"
           aria-expanded="true"
           aria-selected="true"
-          class="c-tab__list__item is-active"
+          class="c-tab__list__item is-selected"
           id="tab1"
           role="tab"
           tabindex="0">One</li
@@ -74,15 +74,13 @@
         aria-labelledby="tab2"
         class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
         id="panel2"
-        role="tabpanel"
-        style="display: none;">PANEL TWO</p>
+        role="tabpanel">PANEL TWO</p>
       <p
         aria-hidden="true"
         aria-labelledby="tab3"
         class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
         id="panel3"
-        role="tabpanel"
-        style="display: none;">PANEL THREE</p>
+        role="tabpanel">PANEL THREE</p>
     </nav>
     <h2 class="u-gamma u-mb">Block Layout
       <code class="u-bg-platinum u-br-sm u-epsilon u-ph-xs u-pv-xxs">.c-tab<span class="js-rtl-class u-display-none">.is-rtl</span>.c-tab--block</code>
@@ -93,7 +91,7 @@
           aria-controls="panel1"
           aria-expanded="true"
           aria-selected="true"
-          class="c-tab__list__item is-active"
+          class="c-tab__list__item is-selected"
           id="tab1"
           role="tab"
           tabindex="0">One</li
@@ -132,15 +130,98 @@
         aria-labelledby="tab2"
         class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
         id="panel2"
-        role="tabpanel"
-        style="display: none;">PANEL TWO</p>
+        role="tabpanel">PANEL TWO</p>
       <p
         aria-hidden="true"
         aria-labelledby="tab3"
         class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
         id="panel3"
-        role="tabpanel"
-        style="display: none;">PANEL THREE</p>
+        role="tabpanel">PANEL THREE</p>
+    </nav>
+    <h2 class="u-gamma u-mb">Tab State</h2>
+    <nav class="c-tab u-mb-lg">
+      <ul class="c-tab__list c-tab__list--accent" role="tablist">
+        <li
+          class="c-tab__list__item"
+          aria-selected="false"
+          role="tab"
+          tabindex="0">default</li
+        ><li
+          class="c-tab__list__item is-hovered"
+          aria-selected="false"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-hovered</li
+        ><li
+          class="c-tab__list__item is-focused"
+          aria-selected="false"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-focused</li
+        ><li
+          class="c-tab__list__item is-active"
+          aria-selected="false"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-active</li
+        ><li
+          class="c-tab__list__item is-disabled"
+          aria-selected="false"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-disabled</li
+        ><li
+          class="c-tab__list__item is-selected"
+          aria-selected="true"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-selected</li>
+      </ul>
+    </nav>
+    <nav class="c-tab c-tab--block u-mb-lg">
+      <ul class="c-tab__list c-tab__list--accent" role="tablist">
+        <li
+          class="c-tab__list__item"
+          aria-selected="false"
+          role="tab"
+          tabindex="0">default</li
+        ><li
+          class="c-tab__list__item is-hovered"
+          aria-selected="false"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-hovered</li
+        ><li
+          class="c-tab__list__item is-focused"
+          aria-selected="false"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-focused</li
+        ><li
+          class="c-tab__list__item is-active"
+          aria-selected="false"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-active</li
+        ><li
+          class="c-tab__list__item is-disabled"
+          aria-selected="false"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-disabled</li
+        ><li
+          class="c-tab__list__item is-selected"
+          aria-selected="true"
+          dir="ltr"
+          role="tab"
+          tabindex="0">.is-selected</li>
+      </ul>
+      <p
+        aria-hidden="false"
+        aria-labelledby="tab2"
+        class="c-tab__panel u-bc-anti-flash-white u-bg-snow u-border u-br u-p"
+        id="panel2"
+        role="tabpanel">TAB PANEL</p>
     </nav>
   </main>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
