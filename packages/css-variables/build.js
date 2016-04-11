@@ -11,7 +11,10 @@ var cssnext = require('postcss-cssnext')({
     rem: false
   }
 });
-var cssnano = require('cssnano')({ convertValues: false });
+var cssnano = require('cssnano')({
+  autoprefixer: false,
+  convertValues: false
+});
 var css2scss = require('css-scss');
 var source = path.join(__dirname, 'src', 'index.css');
 var destination = path.join(__dirname, 'dist', 'index.scss');
