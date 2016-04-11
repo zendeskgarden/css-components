@@ -17,7 +17,7 @@ Tab CSS classes are intended to support the following component structure.
       aria-controls="panel1"
       aria-expanded="true"
       aria-selected="true"
-      class="c-tab__list__item is-active"
+      class="c-tab__list__item is-selected"
       id="tab1"
       role="tab"
       tabindex="0">One</li
@@ -70,7 +70,7 @@ HTML for anchored tabs should be structured like this:
   aria-expanded="true"
   aria-labelledby="anchor1"
   aria-selected="true"
-  class="c-tab__list__item is-active"
+  class="c-tab__list__item is-selected"
   id="tab1"
   role="tab"><a href="#" id="anchor1" role="presentation" tabindex="-1">One</a></li>
 ```
