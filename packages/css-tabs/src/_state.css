@@ -11,7 +11,9 @@
   /* stylelint-enable max-line-length */
 }
 
-/* 1. Specificity hack for border color. */
+/* 1. Specificity hack for border color.
+ * 2. No [aria-selected] styling due to behavioral timing delay between
+ *    selection and expansion. */
 
 @custom-selector :--hovered .is-hovered, :hover;
 
@@ -33,7 +35,7 @@
   box-shadow: none;
 }
 
-@custom-selector :--selected .is-selected, [aria-selected='true'];
+@custom-selector :--selected .is-selected; /* [2] */
 
 .c-tab__list__item.c-tab__list__item:--selected { /* [1] */
   border-color: var(--zd-tab__list__item-selected-border-color);

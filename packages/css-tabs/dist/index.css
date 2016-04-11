@@ -113,7 +113,7 @@
   box-shadow:none;
 }
 
-.c-tab__list__item.c-tab__list__item.is-selected,.c-tab__list__item.c-tab__list__item[aria-selected=true]{
+.c-tab__list__item.c-tab__list__item.is-selected{
   border-color:currentColor;
   color:#333;
 }
