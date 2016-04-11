@@ -1,5 +1,5 @@
 :root {
-  --zd-tab--block__list__item-margin-bottom: 10px;
+  --zd-tab--block__list__item-margin-bottom: 20px;
   --zd-tab--block__list__item-padding: 0 .7143em;
   --zd-tab--block__panel-margin: var(--zd-spacing-lg);
 }
