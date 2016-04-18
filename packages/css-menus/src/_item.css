@@ -1,13 +1,10 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-menu__item-color: var(--zd-color-aluminum);
+  --zd-menu__item-color: var(--zd-color-steel);
   --zd-menu__item-line-height: 2.86;
   --zd-menu__item-padding: 0 1.429em;
   --zd-menu__item-margin: 10px;
-  --zd-menu__item--focused-color: var(--zd-color-dark-gray);
-  --zd-menu__item--focused-background-color: var(--zd-color-anti-flash-white);
-  --zd-menu__item--disabled-color: var(--zd-color-gainsboro);
 }
 
 /* 1. Allows an item to contain a positioned sub-menu.
@@ -29,23 +26,4 @@
 
 .c-menu__item:last-child {
   margin-bottom: var(--zd-menu__item-margin);
-}
-
-@custom-selector :--disabled [disabled], .is-disabled;
-
-.c-menu__item:--disabled {
-  color: var(--zd-menu__item--disabled-color);
-}
-
-@custom-selector :--focused :hover, :focus, .is-focused, .is-selected;
-
-.c-menu__item:--focused {
-  background-color: var(--zd-menu__item--focused-background-color);
-  color: var(--zd-menu__item--focused-color);
-}
-
-.c-menu__item:--disabled:--focused {
-  background-color: inherit;
-  cursor: default;
-  color: var(--zd-menu__item--disabled-color);
 }
