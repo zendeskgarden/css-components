@@ -2,13 +2,12 @@
 <html>
 <head>
   <title>Zendesk Garden / Forms</title>
-  <link href="bedrock.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
   <header class="u-bg-oil u-fg-white u-mb-lg">
     <div class="l-wrapper">
-      <h1 class="u-alpha u-pv u-semibold">
+      <h1 class="u-alpha u-pv">
         <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
         <span>/ Forms</span>
       </h1>
@@ -20,6 +19,20 @@
 
     <section class="u-mb">
       <h2 class="u-gamma u-mb">Checkboxes</h2>
+      <fieldset class="c-chk">
+        <input checked class="c-chk__input" id="box" type="checkbox" />
+        <label class="c-chk__label" for="box">Label-y</label>
+      </fieldset>
+      <fieldset class="c-chk is-disabled">
+        <input class="c-chk__input" id="boy" type="checkbox" />
+        <label class="c-chk__label" for="boy">Label-x</label>
+        <span>Test</span>
+      </fieldset>
+      <fieldset class="">
+        <input checked class="" id="boz" type="checkbox" />
+        <label class="" for="boz">Label-z</label>
+      </fieldset>
+      <span class="c-chk"></span>
       <div class="u-mb">
         <h3 class="u-delta u-mb">Default</h3>
         <div class="u-mb">
@@ -71,5 +84,7 @@
       </div>
     </section>
   </main>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

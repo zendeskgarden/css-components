@@ -2,20 +2,54 @@
 
 :root {
   --zd-chk-background-color: var(--zd-color-white);
-  --zd-chk-border-color: var(--zd-color-gainsboro);
+  --zd-chk-border: 1px solid var(--zd-color-gainsboro);
   --zd-chk-border-radius: 4px;
-  --zd-chk-border-width: 1px;
-  --zd-chk-size: var(--zd-font-size-epsilon); /* TODO: Should this size come from the containing element? Should I make .large etc? */
+  --zd-chk-font-size: var(--zd-font-size-epsilon);
+  --zd-chk-size: var(--zd-chk-font-size);
+  --zd-chk__label-padding: calc(var(--zd-chk-size) + var(--zd-spacing-sm));
 }
 
+/* 1. Reset for <fieldset> element.
+   2. Hide <input type="checkbox"> but retain accessibility
+   3. Vertical centering (with slight upward nudge). */
+
 .c-chk {
-  appearance: none;
-  display: inline-block;
+  margin: 0; /* [1] */
+  border: 0; /* [1] */
+  padding: 0; /* [1] */
+  font-size: var(--zd-chk-font-size);
+}
+
+.c-chk__input {
+  position: absolute; /* [2] */
+  clip: rect(1px, 1px, 1px, 1px); /* [2] */
+}
+
+.c-chk__label {
   position: relative;
-  border: var(--zd-chk-border-width) solid var(--zd-chk-border-color);
-  border-radius: var(--zd-chk-border-radius);
-  background-color: var(--zd-chk-background-color);
   cursor: pointer;
+  padding-left: var(--zd-chk__label-padding);
+  user-select: none;
+}
+
+.c-chk__label:before,
+.c-chk__label:after {
+  position: absolute;
+  top: 45%; /* [3] */
+  left: 0;
+  margin-top: calc(var(--zd-chk-size) / 2 * -1); /* [3] */
+  border: var(--zd-chk-border);
+  border-radius: var(--zd-chk-border-radius);
   width: var(--zd-chk-size);
   height: var(--zd-chk-size);
+  box-sizing: border-box;
+  content: '';
+}
+
+.c-chk__label:before {
+  background-color: var(--zd-chk-background-color);
+}
+
+.c-chk__label:after {
+  border-color: transparent;
 }

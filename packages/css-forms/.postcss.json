@@ -7,7 +7,9 @@
     "cssnano"
   ],
   "cssnano": {
+    "autoprefixer": false,
     "core": false,
-    "discardComments": { "removeAll": true }
+    "discardComments": { "removeAll": true },
+    "zindex": false
   }
 }

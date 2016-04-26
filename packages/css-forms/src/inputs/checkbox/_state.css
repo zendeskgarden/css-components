@@ -1,0 +1,45 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-chk-active-border-color: var(--zd-color-aluminum);
+  --zd-chk-checked-background:
+    no-repeat
+    center/100%
+    url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.5%22%20d%3D%22M4.5%207.19L6.76%209.5l2.744-5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E')
+    var(--zd-color-gainsboro);
+  --zd-chk-disabled-background: var(--zd-color-gainsboro);
+  --zd-chk-focused-box-shadow: 0 0 1px 2px var(--zd-color-platinum);
+}
+
+@custom-selector :--focused
+  .c-chk.is-focused > .c-chk__label:after;
+
+:--focused {
+  outline: none;
+  box-shadow: var(--zd-chk-focused-box-shadow);
+}
+
+@custom-selector :--active
+  .c-chk.is-active > .c-chk__label:after,
+  .c-chk__label:active:after;
+
+:--active {
+  border-color: var(--zd-chk-active-border-color);
+  box-shadow: none;
+}
+
+@custom-selector :--checked
+  .c-chk.is-checked > .c-chk__label:after,
+  .c-chk__input:checked ~ .c-chk__label:after;
+
+:--checked {
+  background: var(--zd-chk-checked-background);
+}
+
+@custom-selector :--disabled
+  .c-chk.is-disabled > .c-chk__label:after,
+  .c-chk__input:disabled ~ .c-chk__label:after;
+
+:--disabled {
+  background: var(--zd-chk-disabled-background);
+}
