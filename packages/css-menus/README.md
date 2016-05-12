@@ -39,7 +39,7 @@ Use the following modifier class to support wider menu layouts:
 
 ```html
 <ul aria-hidden="true"
-    class="c-menu c-menu__large"
+    class="c-menu c-menu--large"
     role="menu">
   ...
 </ul>
