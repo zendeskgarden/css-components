@@ -2,8 +2,9 @@
 
 :root {
   --zd-chk-background-color: var(--zd-color-white);
-  --zd-chk-border: 1px solid var(--zd-color-aluminum);
+  --zd-chk-border: 1px solid currentColor;
   --zd-chk-border-radius: 4px;
+  --zd-chk-color: var(--zd-color-aluminum);
   --zd-chk-font-size: var(--zd-font-size-zeta);
   --zd-chk-line-height: var(--zd-spacing);
   --zd-chk-size: var(--zd-font-size-epsilon);
@@ -45,6 +46,7 @@
   width: var(--zd-chk-size);
   height: var(--zd-chk-size);
   box-sizing: border-box;
+  color: var(--zd-chk-color);
   content: '';
 }
 

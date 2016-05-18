@@ -2,62 +2,65 @@
 
 :root {
   --zd-chk-active-background-color: var(--zd-color-anti-flash-white);
-  --zd-chk-active-border-color: var(--zd-color-aluminum);
   --zd-chk-checked-background:
     no-repeat
     center/100%
     url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.5%22%20d%3D%22M4.5%207.19L6.76%209.5l2.744-5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E')
-    var(--zd-color-aluminum);
+    currentColor;
   --zd-chk-checked-active-background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23999%22%20stroke-width%3D%221.5%22%20d%3D%22M4.5%207.19L6.76%209.5l2.744-5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
   --zd-chk-disabled-background-color: var(--zd-color-gainsboro);
+  --zd-chk-disabled-color: var(--zd-color-iron);
   --zd-chk-focused-box-shadow: 0 0 0 2px var(--zd-color-gainsboro);
 }
 
-@custom-selector :--checked
-  .c-chk.is-checked > .c-chk__label:after,
-  .c-chk__input:checked ~ .c-chk__label:after;
+/* stylelint-disable no-descending-specificity */
 
-:--checked {
+@custom-selector :--checked
+  .c-chk.is-checked > .c-chk__label,
+  .c-chk > .c-chk__input:checked ~ .c-chk__label;
+
+:--checked:after {
   background: var(--zd-chk-checked-background);
 }
 
 /* No `.c-chk__input:focus ~ .c-chk__label:after` styling, since it prevents
  * mimicking browser behavior which is focus-on-keyboard, blur-on-mouse. */
 @custom-selector :--focused
-  .c-chk.is-focused > .c-chk__label:after;
+  .c-chk.is-focused > .c-chk__label;
 
-:--focused {
+:--focused:after {
   outline: none;
   box-shadow: var(--zd-chk-focused-box-shadow);
 }
 
-/* Double-chain specificity hack. */
+/* Class-chain specificity hack. */
 @custom-selector :--active
-  .c-chk.is-active.is-active > .c-chk__label:after,
-  .c-chk__label:active.c-chk__label:active:after;
+  .c-chk.is-active.is-active > .c-chk__label,
+  .c-chk > .c-chk__label:active.c-chk__label:active;
 
-:--active {
-  border-color: var(--zd-chk-active-border-color);
+:--active:after {
+  border-color: currentColor;
   background-color: var(--zd-chk-active-background-color);
 }
 
 @custom-selector :--checked-active
-  .c-chk.is-checked.is-active:not(.is-disabled) > .c-chk__label:after,
-  .c-chk.is-active > .c-chk__input:enabled:checked ~ .c-chk__label:after,
+  .c-chk.is-checked.is-active:not(.is-disabled) > .c-chk__label,
+  .c-chk.is-active > .c-chk__input:enabled:checked ~ .c-chk__label,
   .c-chk:not(.is-disabled) >
-  .c-chk__input:enabled:checked ~ .c-chk__label:active:after;
+  .c-chk__input:enabled:checked ~ .c-chk__label:active;
 
-:--checked-active {
+:--checked-active:after {
   background-image: var(--zd-chk-checked-active-background-image);
 }
 
-/* Double-chain specificity hack. */
+/* Class-chain specificity hack. */
 @custom-selector :--disabled
-  .c-chk.is-disabled.is-disabled > .c-chk__label,
-  .c-chk__input:disabled.c-chk__input:disabled ~ .c-chk__label;
+  .c-chk.is-disabled.is-disabled.is-disabled > .c-chk__label,
+  .c-chk > .c-chk__input:disabled.c-chk__input:disabled ~ .c-chk__label;
 
 :--disabled {
   cursor: default;
+  color: var(--zd-chk-disabled-color);
 }
 
 :--disabled:after {
@@ -65,3 +68,4 @@
   box-shadow: none;
   background-color: var(--zd-chk-disabled-background-color);
 }
+/* stylelint-enable no-descending-specificity */

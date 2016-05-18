@@ -26,11 +26,12 @@
   top:50%;
   left:0;
   margin-top:-7px;
-  border:1px solid #999;
+  border:1px solid currentColor;
   border-radius:4px;
   width:14px;
   height:14px;
   box-sizing:border-box;
+  color:#999;
   content:'';
 }
 
@@ -42,8 +43,8 @@
   border-color:transparent;
 }
 
-.c-chk.is-checked>.c-chk__label:after,.c-chk__input:checked~.c-chk__label:after{
-  background:no-repeat 50%/100% url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") #999;
+.c-chk.is-checked>.c-chk__label:after,.c-chk>.c-chk__input:checked~.c-chk__label:after{
+  background:no-repeat 50%/100% url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") currentColor;
 }
 
 .c-chk.is-focused>.c-chk__label:after{
@@ -51,8 +52,8 @@
   box-shadow:0 0 0 2px #ddd;
 }
 
-.c-chk.is-active.is-active>.c-chk__label:after,.c-chk__label:active.c-chk__label:active:after{
-  border-color:#999;
+.c-chk.is-active.is-active>.c-chk__label:after,.c-chk>.c-chk__label:active.c-chk__label:active:after{
+  border-color:currentColor;
   background-color:#f3f3f3;
 }
 
@@ -60,11 +61,12 @@
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23999' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
-.c-chk.is-disabled.is-disabled>.c-chk__label,.c-chk__input:disabled.c-chk__input:disabled~.c-chk__label{
+.c-chk.is-disabled.is-disabled.is-disabled>.c-chk__label,.c-chk>.c-chk__input:disabled.c-chk__input:disabled~.c-chk__label{
   cursor:default;
+  color:#ccc;
 }
 
-.c-chk.is-disabled.is-disabled>.c-chk__label:after,.c-chk__input:disabled.c-chk__input:disabled~.c-chk__label:after{
+.c-chk.is-disabled.is-disabled.is-disabled>.c-chk__label:after,.c-chk>.c-chk__input:disabled.c-chk__input:disabled~.c-chk__label:after{
   border-color:transparent;
   box-shadow:none;
   background-color:#ddd;
