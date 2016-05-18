@@ -32,6 +32,7 @@
   position: relative;
   cursor: pointer;
   padding-left: var(--zd-chk__label-padding);
+  color: var(--zd-chk-color);
   user-select: none;
 }
 
@@ -46,7 +47,7 @@
   width: var(--zd-chk-size);
   height: var(--zd-chk-size);
   box-sizing: border-box;
-  color: var(--zd-chk-color);
+  color: inherit;
   content: '';
 }
 

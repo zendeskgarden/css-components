@@ -15,6 +15,7 @@
   position:relative;
   cursor:pointer;
   padding-left:22px;
+  color:#999;
   -webkit-user-select:none;
      -moz-user-select:none;
       -ms-user-select:none;
@@ -31,7 +32,7 @@
   width:14px;
   height:14px;
   box-sizing:border-box;
-  color:#999;
+  color:inherit;
   content:'';
 }
 
