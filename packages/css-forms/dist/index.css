@@ -1,10 +1,9 @@
-
-
 .c-chk{
   margin:0;
   border:0;
   padding:0;
-  font-size:14px;
+  line-height:20px;
+  font-size:12px;
 }
 
 .c-chk__input{
@@ -15,7 +14,7 @@
 .c-chk__label{
   position:relative;
   cursor:pointer;
-  padding-left:24px;
+  padding-left:22px;
   -webkit-user-select:none;
      -moz-user-select:none;
       -ms-user-select:none;
@@ -24,10 +23,10 @@
 
 .c-chk__label:after,.c-chk__label:before{
   position:absolute;
-  top:45%;
+  top:50%;
   left:0;
   margin-top:-7px;
-  border:1px solid #ddd;
+  border:1px solid #999;
   border-radius:4px;
   width:14px;
   height:14px;
@@ -43,20 +42,30 @@
   border-color:transparent;
 }
 
+.c-chk.is-checked>.c-chk__label:after,.c-chk__input:checked~.c-chk__label:after{
+  background:no-repeat 50%/100% url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") #999;
+}
+
 .c-chk.is-focused>.c-chk__label:after{
   outline:none;
-  box-shadow:0 0 1px 2px #eee;
+  box-shadow:0 0 0 2px #ddd;
 }
 
-.c-chk.is-active>.c-chk__label:after,.c-chk__label:active:after{
+.c-chk.is-active.is-active>.c-chk__label:after,.c-chk__label:active.c-chk__label:active:after{
   border-color:#999;
+  background-color:#f3f3f3;
+}
+
+.c-chk.is-active>.c-chk__input:enabled:checked~.c-chk__label:after,.c-chk.is-checked.is-active:not(.is-disabled)>.c-chk__label:after,.c-chk:not(.is-disabled)>.c-chk__input:enabled:checked~.c-chk__label:active:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23999' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.c-chk.is-disabled.is-disabled>.c-chk__label,.c-chk__input:disabled.c-chk__input:disabled~.c-chk__label{
+  cursor:default;
+}
+
+.c-chk.is-disabled.is-disabled>.c-chk__label:after,.c-chk__input:disabled.c-chk__input:disabled~.c-chk__label:after{
+  border-color:transparent;
   box-shadow:none;
-}
-
-.c-chk.is-checked>.c-chk__label:after,.c-chk__input:checked~.c-chk__label:after{
-  background:no-repeat 50%/100% url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") #ddd;
-}
-
-.c-chk.is-disabled>.c-chk__label:after,.c-chk__input:disabled~.c-chk__label:after{
-  background:#ddd;
+  background-color:#ddd;
 }
