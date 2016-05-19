@@ -11,4 +11,8 @@ $(document).ready(function() {
   }).blur(function() {
     $(this).parent('.c-chk').removeClass('is-focused');
   });
+
+  $('.js-rtl').click(function() {
+    $('.c-chk').toggleClass('is-rtl');
+  });
 });

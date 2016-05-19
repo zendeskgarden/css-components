@@ -1,3 +1,5 @@
+
+
 .c-chk{
   margin:0;
   border:0;
@@ -42,6 +44,20 @@
 
 .c-chk__label:after{
   border-color:transparent;
+}
+
+.c-chk.is-rtl{
+  direction:rtl;
+}
+
+.c-chk.is-rtl>.c-chk__label{
+  padding-right:22px;
+  padding-left:0;
+}
+
+.c-chk.is-rtl>.c-chk__label:after,.c-chk.is-rtl>.c-chk__label:before{
+  right:0;
+  left:auto;
 }
 
 .c-chk.is-checked>.c-chk__label:after,.c-chk>.c-chk__input:checked~.c-chk__label:after{

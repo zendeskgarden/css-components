@@ -58,3 +58,18 @@
 .c-chk__label:after {
   border-color: transparent;
 }
+
+.c-chk.is-rtl {
+  direction: rtl;
+}
+
+.c-chk.is-rtl > .c-chk__label {
+  padding-right: var(--zd-chk__label-padding);
+  padding-left: 0;
+}
+
+.c-chk.is-rtl > .c-chk__label:before,
+.c-chk.is-rtl > .c-chk__label:after {
+  right: 0;
+  left: auto;
+}
