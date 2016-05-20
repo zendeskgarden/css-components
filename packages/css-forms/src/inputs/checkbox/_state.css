@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 @import 'zd-css-variables';
 
 :root {
@@ -13,7 +14,9 @@
   --zd-chk-focused-box-shadow: 0 0 0 2px var(--zd-color-gainsboro);
 }
 
-/* stylelint-disable no-descending-specificity */
+/* 1. No `.c-chk__input:focus` styling, since it prevents mimicking
+ *    "focus-on-keyboard; blur-on-mouse" browser behavior.
+ * 2. Class-chain specificity hack. */
 
 @custom-selector :--checked
   .c-chk.is-checked > .c-chk__label,
@@ -23,9 +26,7 @@
   background: var(--zd-chk-checked-background);
 }
 
-/* No `.c-chk__input:focus ~ .c-chk__label:after` styling, since it prevents
- * mimicking browser behavior which is focus-on-keyboard, blur-on-mouse. */
-@custom-selector :--focused
+@custom-selector :--focused /* [1] */
   .c-chk.is-focused > .c-chk__label;
 
 :--focused:after {
@@ -33,8 +34,7 @@
   box-shadow: var(--zd-chk-focused-box-shadow);
 }
 
-/* Class-chain specificity hack. */
-@custom-selector :--active
+@custom-selector :--active /* [2] */
   .c-chk.is-active.is-active > .c-chk__label,
   .c-chk > .c-chk__label:active.c-chk__label:active;
 
@@ -53,8 +53,7 @@
   background-image: var(--zd-chk-checked-active-background-image);
 }
 
-/* Class-chain specificity hack. */
-@custom-selector :--disabled
+@custom-selector :--disabled /* [2] */
   .c-chk.is-disabled.is-disabled.is-disabled > .c-chk__label,
   .c-chk > .c-chk__input:disabled.c-chk__input:disabled ~ .c-chk__label;
 
