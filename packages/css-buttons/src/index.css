@@ -1,11 +1,5 @@
 @import '_base';
-@import '_focused';
-@import '_active';
-@import '_disabled';
+@import '_state';
+@import '_basic';
 @import '_primary';
 @import '_promo';
-@import '_medium';
-@import '_large';
-@import '_full';
-@import '_pill';
-@import '_basic';

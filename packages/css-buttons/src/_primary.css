@@ -5,7 +5,7 @@
   --zd-btn--primary-background-color: var(--zd-color-oil);
   --zd-btn--primary-color: var(--zd-color-white);
   --zd-btn--primary-active-background-color: color(var(--zd-btn--primary-background-color) blackness(+20%));
-  --zd-btn--primary-focused-background-color: color(var(--zd-btn--primary-background-color) whiteness(+20%));
+  --zd-btn--primary-hovered-background-color: color(var(--zd-btn--primary-background-color) whiteness(+20%));
   /* stylelint-enable max-line-length */
 }
 
@@ -15,8 +15,8 @@
   color: color(var(--zd-btn--primary-color) alpha(70%));
 }
 
-.c-btn--primary:--focused {
-  background-color: var(--zd-btn--primary-focused-background-color);
+.c-btn--primary:--hovered {
+  background-color: var(--zd-btn--primary-hovered-background-color);
   color: var(--zd-btn--primary-color);
 }
 

@@ -42,21 +42,25 @@
       <ul class="l-grid__item u-1/4">
         <li class="u-mb-sm"><button class="c-btn is-disabled" disabled>.c-btn .is-disabled</button></li>
         <li class="u-mb-sm"><button class="c-btn is-focused">.c-btn .is-focused</button></li>
+        <li class="u-mb-sm"><button class="c-btn is-hovered">.c-btn .is-hovered</button></li>
         <li class="u-mb-sm"><button class="c-btn is-active">.c-btn .is-active</button></li>
       </ul
       ><ul class="l-grid__item u-1/4">
         <li class="u-mb-sm"><button class="c-btn c-btn--primary is-disabled" disabled>.c-btn .c-btn--primary .is-disabled</button></li>
         <li class="u-mb-sm"><button class="c-btn c-btn--primary is-focused">.c-btn .c-btn--primary .is-focused</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--primary is-hovered">.c-btn .c-btn--primary .is-hovered</button></li>
         <li class="u-mb-sm"><button class="c-btn c-btn--primary is-active">.c-btn .c-btn--primary .is-active</button></li>
       </ul
       ><ul class="l-grid__item u-1/4">
         <li class="u-mb-sm"><button class="c-btn c-btn--promo is-disabled" disabled>.c-btn .c-btn--promo .is-disabled</button></li>
         <li class="u-mb-sm"><button class="c-btn c-btn--promo is-focused">.c-btn .c-btn--promo .is-focused</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--promo is-hovered">.c-btn .c-btn--promo .is-hovered</button></li>
         <li class="u-mb-sm"><button class="c-btn c-btn--promo is-active">.c-btn .c-btn--promo .is-active</button></li>
       </ul
       ><ul class="l-grid__item u-1/4">
         <li class="u-mb-sm"><button class="c-btn c-btn--basic is-disabled" disabled>.c-btn .c-btn--basic .is-disabled</button></li>
         <li class="u-mb-sm"><button class="c-btn c-btn--basic is-focused">.c-btn .c-btn--basic .is-focused</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--basic is-hovered">.c-btn .c-btn--basic .is-hovered</button></li>
         <li class="u-mb-sm"><button class="c-btn c-btn--basic is-active">.c-btn .c-btn--basic .is-active</button></li>
       </ul>
     </div>
@@ -71,11 +75,21 @@
     <p class="u-mb-sm">The
       <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.l-btn-group</code>
       layout class can be used as a container for grouped buttons.</p>
-    <div class="l-btn-group u-mb-lg">
-      <button class="c-btn">.c-btn</button
-      ><button class="c-btn">.c-btn</button
-      ><button class="c-btn">.c-btn</button>
+    <div class="l-btn-group u-mb">
+      <button class="c-btn">.c-btn One</button
+      ><button class="c-btn">.c-btn Two</button
+      ><button class="c-btn">.c-btn Three</button>
+    </div>
+    <p class="u-mb-sm">Add
+      <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-rtl</code>
+      for right-to-left grouped button layout.</p>
+    <div class="l-btn-group is-rtl u-mb-lg">
+      <button class="c-btn" dir="ltr">.c-btn One</button
+      ><button class="c-btn" dir="ltr">.c-btn Two</button
+      ><button class="c-btn" dir="ltr">.c-btn Three</button>
     </div>
   </main>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

@@ -5,7 +5,10 @@
   --zd-btn--promo-background-color: var(--zd-color-orange-peel);
   --zd-btn--promo-color: var(--zd-color-white);
   --zd-btn--promo-active-background-color: color(var(--zd-btn--promo-background-color) blackness(+11%));
-  --zd-btn--promo-focused-background-color: color(var(--zd-btn--promo-background-color) whiteness(+27%));
+  --zd-btn--promo-focused-box-shadow:
+    0 0 0 4px
+    color(var(--zd-btn--promo-background-color) alpha(20%));
+  --zd-btn--promo-hovered-background-color: color(var(--zd-btn--promo-background-color) whiteness(+27%));
   /* stylelint-enable max-line-length */
 }
 
@@ -15,9 +18,13 @@
   color: color(var(--zd-btn--promo-color) alpha(70%));
 }
 
-.c-btn--promo:--focused {
-  background-color: var(--zd-btn--promo-focused-background-color);
+.c-btn--promo:--hovered {
+  background-color: var(--zd-btn--promo-hovered-background-color);
   color: var(--zd-btn--promo-color);
+}
+
+.c-btn--promo:--focused {
+  box-shadow: var(--zd-btn--promo-focused-box-shadow);
 }
 
 .c-btn--promo:--active {

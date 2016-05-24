@@ -1,10 +1,11 @@
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length */
   --zd-btn-color: var(--zd-color-aluminum);
   --zd-btn-font-size: var(--zd-font-size-zeta);
   --zd-btn-font-weight: var(--zd-font-weight-regular);
-  --zd-btn-background-color: var(--zd-color-snow);
+  --zd-btn-background-color: var(--zd-color-white);
   --zd-btn-border-color: var(--zd-color-gainsboro);
   --zd-btn-border-radius: 4px;
   --zd-btn-border-width: 1px;
@@ -12,10 +13,25 @@
   --zd-btn-padding: 2.25em;
   --zd-btn-min-width: calc(3.8334em + calc(var(--zd-btn-padding) * 2));
   --zd-btn-transition:
-    background-color .12s ease-in-out,
-    border-color .12s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .1s ease-in-out,
+    background-color .17s ease-in-out,
     color .15s ease-in-out;
+  --zd-btn--large-font-size: var(--zd-font-size-epsilon);
+  --zd-btn--large-line-height: 3.43;
+  --zd-btn--large-padding: 1.9286em;
+  --zd-btn--large-min-width: calc(6.1429em + calc(var(--zd-btn--large-padding) * 2));
+  --zd-btn--medium-font-size: var(--zd-font-size-epsilon);
+  --zd-btn--medium-line-height: 2.72;
+  --zd-btn--medium-padding: 1.9286em;
+  --zd-btn--medium-min-width: calc(4.7143em + calc(var(--zd-btn--medium-padding) * 2));
+  /* stylelint-enable max-line-length */
 }
+
+/* 1. IE inner spacing fix.
+ * 2. Anchor tag reset.
+ * 3. Override for <input> & <button> elements.
+ * 4. FF <input type="submit" fix. */
 
 .c-btn {
   display: inline-block;
@@ -27,14 +43,14 @@
   cursor: pointer;
   padding: 0 var(--zd-btn-padding);
   min-width: var(--zd-btn-min-width);
-  overflow: visible; /* IE inner spacing fix. */
+  overflow: visible; /* [1] */
   vertical-align: middle;
   text-align: center;
-  text-decoration: none; /* Anchor tag reset. */
+  text-decoration: none; /* [2] */
   line-height: var(--zd-btn-line-height);
   white-space: nowrap;
   color: var(--zd-btn-color);
-  font-family: inherit; /* Override for <input> & <button> elements. */
+  font-family: inherit; /* [3] */
   font-size: var(--zd-btn-font-size);
   font-weight: var(--zd-btn-font-weight);
   -webkit-font-smoothing: subpixel-antialiased;
@@ -43,10 +59,31 @@
   -webkit-touch-callout: none;
 }
 
-.c-btn::-moz-focus-inner {
-  /* FF <input type="submit"> fix. */
+.c-btn::-moz-focus-inner { /* [4] */
   border: 0;
   padding: 0;
+}
+
+.c-btn--pill { border-radius: 100px; }
+
+.c-btn--medium {
+  padding: 0 var(--zd-btn--medium-padding);
+  min-width: var(--zd-btn--medium-min-width);
+  line-height: var(--zd-btn--medium-line-height);
+  font-size: var(--zd-btn--medium-font-size);
+}
+
+.c-btn--large {
+  padding: 0 var(--zd-btn--large-padding);
+  min-width: var(--zd-btn--large-min-width);
+  line-height: var(--zd-btn--large-line-height);
+  font-size: var(--zd-btn--large-font-size);
+}
+
+.c-btn--full {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .l-btn-group > .c-btn {
@@ -64,3 +101,28 @@
   border-top-right-radius: var(--zd-btn-border-radius);
   border-bottom-right-radius: var(--zd-btn-border-radius);
 }
+
+.l-btn-group.is-rtl {
+  direction: rtl;
+}
+
+.l-btn-group.is-rtl > .c-btn {
+  margin-right: calc(var(--zd-btn-border-width) * -1);
+  margin-left: 0;
+  border-radius: 0;
+}
+
+/* stylelint-disable selector-max-specificity */
+
+.l-btn-group.is-rtl > .c-btn:first-of-type {
+  margin-right: 0;
+  border-top-right-radius: var(--zd-btn-border-radius);
+  border-bottom-right-radius: var(--zd-btn-border-radius);
+}
+
+.l-btn-group.is-rtl > .c-btn:last-of-type {
+  border-top-left-radius: var(--zd-btn-border-radius);
+  border-bottom-left-radius: var(--zd-btn-border-radius);
+}
+
+/* stylelint-enable selector-max-specificity */
