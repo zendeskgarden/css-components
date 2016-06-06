@@ -153,23 +153,3 @@
   background-color:#2a2b2b;
   color:#fff;
 }
-
-.c-btn--promo{
-  border-color:transparent;
-  background-color:#ffa100;
-  color:hsla(0,0%,100%,.7);
-}
-
-.c-btn--promo.is-hovered,.c-btn--promo:hover{
-  background-color:#ffbb45;
-  color:#fff;
-}
-
-.c-btn--promo.is-focused,.c-btn--promo:focus{
-  box-shadow:0 0 0 4px rgba(255,161,0,.2);
-}
-
-.c-btn--promo.is-active,.c-btn--promo:active{
-  background-color:#e39000;
-  color:#fff;
-}

@@ -36,6 +36,24 @@ disabled button should not be able to receive focus.
 See http://zendeskgarden.github.io/css-buttons/ for various button
 modification classes.
 
+#### Accent
+
+See the `accent.css` source file for sample CSS needed to format buttons
+according to your product's accent color (i.e. "promo" orange). This CSS
+is not included in the package distribution. Upon inclusion,
+corresponding HTML would be:
+
+```html
+<button class="c-btn c-btn--accent">...</button>
+```
+
+### Behavior
+
+See [js-buttons](https://github.com/zendeskgarden/js-buttons) for
+intended keyboard & blur-on-mouseup behavior. Use
+[js-tabs](https://github.com/zendeskgarden/js-tabs) to manage behavior
+for button groups.
+
 ## Tests
 
     $ npm test
