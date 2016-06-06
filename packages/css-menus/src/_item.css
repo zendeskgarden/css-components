@@ -2,8 +2,13 @@
 
 :root {
   --zd-menu__item-color: var(--zd-color-steel);
-  --zd-menu__item-line-height: 2.86;
-  --zd-menu__item-padding: 0 1.429em;
+
+  /* 1.42857 @ 14px font-size = 20px line-height */
+  --zd-menu__item-line-height: 1.4285714286;
+
+  /* Same math as above for 10px top/bottom, total 40px inner height */
+  --zd-menu__item-padding: .71428571429em 1.429em;
+
   --zd-menu__item-margin: 10px;
 }
 

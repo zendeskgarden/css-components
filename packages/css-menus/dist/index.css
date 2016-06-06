@@ -10,7 +10,6 @@
   padding:0;
   min-width:140px;
   text-align:left;
-  white-space:nowrap;
   font-size:14px;
   font-weight:400;
 }
@@ -29,8 +28,8 @@
   position:relative;
   z-index:0;
   cursor:pointer;
-  padding:0 1.429em;
-  line-height:2.86;
+  padding:.71428571429em 1.429em;
+  line-height:1.4285714286;
   color:#666;
   -webkit-user-select:none;
      -moz-user-select:none;

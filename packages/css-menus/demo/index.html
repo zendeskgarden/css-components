@@ -14,6 +14,9 @@
   .u-position-static {
     position: static !important;
   }
+  p {
+    margin: 1.4em 0;
+  }
   </style>
 </head>
 <body>
@@ -49,12 +52,39 @@
         <h2 class="u-gamma u-mb">Large
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.c-menu--large</code>
         </h2>
+        <p>(Has a wider min-width.)</p>
         <ul class="c-menu c-menu--large u-position-static" role="menu">
           <li class="c-menu__item" role="menuitem">One one-thousand</li>
           <li class="c-menu__item" role="menuitem">Two one-thousand</li>
           <li class="c-menu__item" role="menuitem">Three one-thousand</li>
         </ul>
       </div>
+
+        <div class="l-grid__item u-1/2 u-mb-lg">
+          <h2 class="u-gamma u-mb">Standard
+            <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
+            with longer item
+          </h2>
+          <ul class="c-menu u-position-static" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+            <li class="c-menu__item" role="menuitem">Significantly longer list item example</li>
+          </ul>
+        </div
+        ><div class="l-grid__item u-1/2 u-mb-lg">
+          <h2 class="u-gamma u-mb">Standard
+            <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
+            but with a max-width (on
+            <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>)
+          </h2>
+          <ul class="c-menu u-position-static" style="max-width: 15em" role="menu">
+            <li class="c-menu__item" role="menuitem">One one-thousand</li>
+            <li class="c-menu__item" role="menuitem">Two one-thousand</li>
+            <li class="c-menu__item" role="menuitem">Three one-thousand</li>
+          <li class="c-menu__item" role="menuitem">Significantly longer list item example</li>
+          </ul>
+        </div>
       <div class="l-grid__item u-1/2 u-mb-lg">
         <h2 class="u-gamma u-mb">Disabled &lt;Item&gt; via
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu__item.is-disabled</code>
