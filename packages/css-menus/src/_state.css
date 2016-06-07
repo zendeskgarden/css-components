@@ -6,7 +6,7 @@
     inset 0 4px 0 -2px var(--zd-color-anti-flash-white),
     inset 0 -4px 0 -2px var(--zd-color-anti-flash-white);
   --zd-menu__item--selected-color: var(--zd-color-oil);
-  --zd-menu__item--selected-background-color: var(--zd-color-snow);
+  --zd-menu__item--selected-background-color: var(--zd-color-anti-flash-white);
 }
 
 /* 1. Bump stacking context in order to prevent sibling menu items from
