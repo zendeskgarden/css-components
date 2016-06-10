@@ -3,8 +3,8 @@
 :root {
   --zd-menu__item-disabled-color: var(--zd-color-iron);
   --zd-menu__item-focused-box-shadow:
-    inset 0 4px 0 -2px var(--zd-color-anti-flash-white),
-    inset 0 -4px 0 -2px var(--zd-color-anti-flash-white);
+    inset 0 4px 0 -2px var(--zd-color-gainsboro),
+    inset 0 -4px 0 -2px var(--zd-color-gainsboro);
   --zd-menu__item--selected-color: var(--zd-color-oil);
   --zd-menu__item--selected-background-color: var(--zd-color-anti-flash-white);
 }

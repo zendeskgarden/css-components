@@ -52,7 +52,7 @@
 
 .c-menu__item.is-focused,.c-menu__item:focus{
   outline:none;
-  box-shadow:inset 0 4px 0 -2px #f3f3f3,inset 0 -4px 0 -2px #f3f3f3;
+  box-shadow:inset 0 4px 0 -2px #ddd,inset 0 -4px 0 -2px #ddd;
 }
 
 .c-menu__item.is-active,.c-menu__item:active{
