@@ -113,7 +113,7 @@
   box-shadow:none;
 }
 
-.c-btn.is-disabled,.c-btn[disabled]{
+.c-btn.is-disabled.is-disabled,.c-btn:disabled:disabled{
   border-color:transparent;
   box-shadow:none;
   background-color:#ddd;

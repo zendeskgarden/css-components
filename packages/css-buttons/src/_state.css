@@ -13,7 +13,8 @@
   --zd-btn-hovered-color: var(--zd-color-oil);
 }
 
-/* 1. Anchor tag reset. */
+/* 1. Anchor tag reset.
+ * 2. Class-chain specificity hack. */
 
 @custom-selector :--hovered .is-hovered, :hover;
 
@@ -42,7 +43,9 @@
   box-shadow: none;
 }
 
-@custom-selector :--disabled .is-disabled, [disabled];
+@custom-selector :--disabled /* [2] */
+  .is-disabled.is-disabled,
+  :disabled:disabled;
 
 .c-btn:--disabled {
   border-color: transparent;

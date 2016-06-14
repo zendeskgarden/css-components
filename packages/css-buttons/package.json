@@ -1,6 +1,6 @@
 {
   "name": "zd-css-buttons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "main": "dist/index.css",
   "style": "src/index.css",
@@ -15,7 +15,7 @@
     "stylelint": "^5.1.0",
     "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#2.0.0",
     "zd-css-bedrock": "git+ssh://git@github.com/zendeskgarden/css-bedrock.git#0.1.0",
-    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.2.2"
+    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.3.0"
   },
   "scripts": {
     "build": "postcss --config .postcss.json",
