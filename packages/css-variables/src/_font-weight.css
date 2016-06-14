@@ -1,14 +1,19 @@
+/* stylelint-disable max-line-length */
 :root {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping */
   --zd-font-weight-thin: 100;
+  --zd-font-weight-extralight: 200;
   --zd-font-weight-light: 300;
   --zd-font-weight-regular: 400;
+  --zd-font-weight-medium: 500;
   --zd-font-weight-semibold: 600;
   --zd-font-weight-bold: 700;
   --zd-font-weight-extrabold: 800;
   --zd-font-weight-black: 900;
 
   /* Aliases */
-  --zd-font-weight-ultralight: var(--zd-font-weight-thin);
-  --zd-font-weight-medium: var(--zd-font-weight-semibold);
-  --zd-font-weight-heavy: var(--zd-font-weight-extrabold);
+  --zd-font-weight-ultralight: var(--zd-font-weight-extralight);
+  --zd-font-weight-ultrabold: var(--zd-font-weight-extrabold);
+  --zd-font-weight-heavy: var(--zd-font-weight-black);
 }
+/* stylelint-enable max-line-length */

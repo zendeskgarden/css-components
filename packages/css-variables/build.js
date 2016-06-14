@@ -22,7 +22,8 @@ var destination = path.join(__dirname, 'dist', 'index.scss');
 postcss([cssimport, cssnext, cssnano])
   .process(fs.readFileSync(source, 'utf8'), { from: source })
   .then(function(result) {
-    var scss = css2scss(result.css);
+    // Convert then remove blank lines, comments, and `!default` flags.
+    var scss = css2scss(result.css).replace(/\n\n|^\n?\/\/.*$| !default/gm, '');
 
     fs.writeFileSync(destination, scss);
   });
