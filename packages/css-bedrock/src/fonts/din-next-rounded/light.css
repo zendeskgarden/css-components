@@ -3,12 +3,12 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-din-next-rounded-light-fallback-woff: a4b8a9c8cfe51d71563124392fc33d36.woff;
-  --zd-din-next-rounded-light-fallback-woff2: fd52c99531b34e3a09653daf34303957.woff2;
-  --zd-din-next-rounded-light-latin-ext-woff: 9c0c764a5209e96b03b5c3deff81145f.woff;
-  --zd-din-next-rounded-light-latin-ext-woff2: b6ca51ea65353a8df3a64341dd4e0cd5.woff2;
-  --zd-din-next-rounded-light-latin-woff: c8125a26c1ae674fea7202e8b9fd6859.woff;
-  --zd-din-next-rounded-light-latin-woff2: 6d13cc250402e5d4f77cfecccdb9bd8b.woff2;
+  --zd-din-next-rounded-light-fallback-woff: a47033b737afce1e86bf9622d108d60f.woff;
+  --zd-din-next-rounded-light-fallback-woff2: afa923796cc9e60502f8322343eb4ded.woff2;
+  --zd-din-next-rounded-light-latin-ext-woff: 611ca7ef6fa631676296f84c90968e70.woff;
+  --zd-din-next-rounded-light-latin-ext-woff2: 653e1e1195589287c074c78047c58373.woff2;
+  --zd-din-next-rounded-light-latin-woff: 8fc71e6a6e180b5eb4c7a10e0ee50370.woff;
+  --zd-din-next-rounded-light-latin-woff2: 124318a0c0d6b4dc891282183480ee38.woff2;
   /* stylelint-enable max-line-length */
 }
 

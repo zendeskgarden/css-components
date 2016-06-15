@@ -3,12 +3,12 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-din-next-rounded-medium-fallback-woff: cbcd34dc673d572bb1268a257fefe97e.woff;
-  --zd-din-next-rounded-medium-fallback-woff2: 1e360246a08a1e7d812dac43a7ed125d.woff2;
-  --zd-din-next-rounded-medium-latin-ext-woff: b181698ce825978e80ba99a97c650f8b.woff;
-  --zd-din-next-rounded-medium-latin-ext-woff2: 682e7c4447c9175c7c81b56c601e5a38.woff2;
-  --zd-din-next-rounded-medium-latin-woff: b120095428867c1c6cd60e26c1b2b771.woff;
-  --zd-din-next-rounded-medium-latin-woff2: 102ccd27d6904aea5c1213cd4b7e77c8.woff2;
+  --zd-din-next-rounded-medium-fallback-woff: 4c88f27bd4e6e5a8836a1a20f07a558d.woff;
+  --zd-din-next-rounded-medium-fallback-woff2: 41cba937daf4df71e8ba66ec75c47801.woff2;
+  --zd-din-next-rounded-medium-latin-ext-woff: 50c69b482ce808e0b4394eb7808adb14.woff;
+  --zd-din-next-rounded-medium-latin-ext-woff2: c82c1e4f2b7c4ee964b541a65dfdccbc.woff2;
+  --zd-din-next-rounded-medium-latin-woff: 84031a94955aebf62ee57375ef786940.woff;
+  --zd-din-next-rounded-medium-latin-woff2: f26ee78ae78ab317dcf8497693d76ea2.woff2;
   /* stylelint-enable max-line-length */
 }
 
