@@ -2,48 +2,48 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/ba9d72832bbc5d7445e65e8db028ae46.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/c37efca6a848403311178adfa3f96e07.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/7657327d3ed4ea6019cb71ec8f63925e.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/14d201c209b8ba70e95e57aa95711bae.woff) format('woff');
   font-weight:400;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/5879fca98a1e1821a3680867a837515f.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/855cfe639a4f025ea9a4d30b73a71101.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/b6d892d0c68a6c42acc05f2d024b8d0d.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/6a2db8af304fc7df0a3aa5dd62289c33.woff) format('woff');
   font-weight:400;
   unicode-range:U+0370-03FF,U+1F00-1FFF;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/52de09a14adfead33028d48a8bd76e89.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/0d565c45de02f094147d08b8f0cdf303.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/56f886fbb704db7cce8438b6f2f61a4c.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/72f0e3e8919647383ef725fd523ca5ff.woff) format('woff');
   font-weight:400;
   unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/75b7b0699b8c3fe91860884907dec82a.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/1365b3f63c72eb7d535e9833eba51f23.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/e1a6e54298674456d7ff7b3071ecc132.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/c9fb2bd3f637fff7ba841b86cf0fad79.woff) format('woff');
   font-weight:400;
   unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/9499fb0204a424ef90bd329e30c1969f.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/ae816b5ef09245b100d94c77ae23e7a9.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/024285dc0977da014627aa33f0537c60.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/43c3fabca82cb45331310a7ace6627bd.woff) format('woff');
   font-weight:400;
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/b5a547872b2418476d7dcadf7a2e54be.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/0a13f1be94205ae665b65f168cf124a4.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/d694afd1e1e9ba215a4c7a5ce43b4630.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/da023bf58382eb4c5fb06e8128a0c01b.woff) format('woff');
   font-weight:400;
   font-style:italic;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/22ae5a4f6767b6277962cab6543b598b.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/9e3ccd9baf88c5283bdcd6c0c2ca508d.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/5f46c58bb753bb5b49aca67e733cad46.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/56144faffe64692621f076f4d2838e4f.woff) format('woff');
   font-weight:400;
   unicode-range:U+0370-03FF,U+1F00-1FFF;
   font-style:italic;
@@ -51,7 +51,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/053d85de5bf47f833e9ca12c9c1d8544.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/f0d102dd84beb4a632d88c1b6dd5b716.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/065b5335742e40062468b0073b0ece0e.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/2c030fa2acc596ec4a1da2e73642fdea.woff) format('woff');
   font-weight:400;
   unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
   font-style:italic;
@@ -59,7 +59,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/2a0a881e882e0f835686117c0d62e189.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/63aa59dbe6fb4ac74610be02572bb898.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/ac0cc938b6f4bcc70c036168761eb9d7.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/d899ee8b9c215461d2fef6d018766f70.woff) format('woff');
   font-weight:400;
   unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
   font-style:italic;
@@ -67,7 +67,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/ce50288149e16a6a505b5cd4bbbe28be.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/d85a7f7957049b414a18d22070afdecd.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/e5efce13f0a24c62813c6b163d9da53f.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/ab1bf8afb5698d8e2dfe2c1f210437d2.woff) format('woff');
   font-weight:400;
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
   font-style:italic;
@@ -75,48 +75,48 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/ea410ffcb7b94b3fd61e8bc4e847ca13.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/1d773bd8bec3a7f91a4ccbb46c72a22b.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/0df3e000b8ae4f7780c778ffa7f0eee2.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/bfb6d8bb016cabd199dc9a29c9974777.woff) format('woff');
   font-weight:600;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/025482c093ace2621430ad91b75f8663.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/fe7a564fd378aaf53b3aa8440f74d578.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/ed2b3bddbb16e7c513aa5f66654545f8.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/465044f9f7464e07b3763106135729f1.woff) format('woff');
   font-weight:600;
   unicode-range:U+0370-03FF,U+1F00-1FFF;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/6afb66e2563cea77d35ef485b9538851.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/0b17c28833e4e30fe582d52806f55a20.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/61b2bc953c7547076a44a8a996049efe.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/407e38e0df899b02b40d7bd3bdf1300c.woff) format('woff');
   font-weight:600;
   unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/a2e1745b0f373eb1231ef270b4624a7d.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/836d2daf1aaef4cb1455c364111bead8.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/cf2f64901bd11fc78e501805599c0ab5.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/a36f85953016bf54197778002a3d17f1.woff) format('woff');
   font-weight:600;
   unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/b7f800f292bff252a366dd93dba1f9a0.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/5ffdef0b6dd8089159c0571e075833e9.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/208d5e47ef38820da86658565adbac90.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/a9db05180829a231b34cd1eb8f97a089.woff) format('woff');
   font-weight:600;
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/c2dd736de6123908c81ad70c79aadf59.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/a34be11987c1081424e913e8a622770c.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/1069337c18ef8787df2e581854c6315d.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/e04e3be0838abb428a47412a40cab993.woff) format('woff');
   font-weight:600;
   font-style:italic;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/ba94dbf2054ffb5cae16aaf062d4b274.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/e5f9a6931aee7d23c7fda6433541d3e7.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/b3c30ce04e2ff35610c08e277b812255.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/e52642be57c6e97d37606d94bb8d5830.woff) format('woff');
   font-weight:600;
   unicode-range:U+0370-03FF,U+1F00-1FFF;
   font-style:italic;
@@ -124,7 +124,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/7e6e018b278bb333f7ceb1b1b15111e4.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/36b92849d064e94309b02584034cc708.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/ef9fb3ba6401a954acc420cdf5f073c3.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/9bfc630b63b230a025a1441242f4a74b.woff) format('woff');
   font-weight:600;
   unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
   font-style:italic;
@@ -132,7 +132,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/d0c60c0deba8e8e20483fef5d7adadfe.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/4f3d87993b682bd8062502746b8bc153.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/30b60dbff6250b2916c6cae4a075915c.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/8d6afbd5cf972a7590c01c09396fb5a1.woff) format('woff');
   font-weight:600;
   unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
   font-style:italic;
@@ -140,7 +140,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/b0a85a5bbd4098bdbe6eb5abef6303c8.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/3947f663932ff5a01379a7c9ecf82f9a.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/289caee6f88e9916aa65aa571fddee27.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/50e482b886833bec90d760170e027ef2.woff) format('woff');
   font-weight:600;
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
   font-style:italic;
@@ -148,48 +148,48 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/29cf37750d42cf0bc2afd33c1c9adc20.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/b2d100d4fc335d1c8b0974a8a5739391.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/c754829d482f0ad7413bfa58338dbd8f.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/a7261e66c83cba195a6228071a023dda.woff) format('woff');
   font-weight:300;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/03812161df621378fe3becb873d5dd56.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/db705bd866a72e875120bc252538ed82.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/f8c7426ecc752e9a00f855a5d3419af1.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/fc917cf078d23f4f3d869c62d5eb59cb.woff) format('woff');
   font-weight:300;
   unicode-range:U+0370-03FF,U+1F00-1FFF;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/f0c4a637275843b7e1418ef42c80fa4f.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/c690da322f876b94e41b75d8f28ffd6e.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/70d9f3a6f4e59e778a3efa6d61af4d5d.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/d7282de432899f2e54c0aab7b114b67c.woff) format('woff');
   font-weight:300;
   unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/a1ed93d6cf610fe910eab37b357b8f9e.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/4390bd1bb1800787e6e19ba5a2809f0e.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/f612d76045fcfa7cee3d26a0e74175c8.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/a0511cd61b33a958c7eb11543906f5d1.woff) format('woff');
   font-weight:300;
   unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/a9599bfee0842ce81344289f325e3ba7.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/5a9662d3626a5ac34991643a8fad034b.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/160ce2ec29b54b2dbdd18c4ab10c3e5a.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/704828d2a4ae7d3196fe05cb5b9cec06.woff) format('woff');
   font-weight:300;
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/eeb41eccadd7bed27f005b2a2616ded2.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/3723aa2352ec7c1f4da6640a9a84d514.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/a834518d22578c9fbf75500e86f62648.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/832cf1df1d095de7f931838f40087fe3.woff) format('woff');
   font-weight:300;
   font-style:italic;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/8bffde74d93c2a965a1575b643f89779.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/afd7f399b1551df82ddbd92e79355354.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/a7667ce8e8688580d2168ced7e9d9e1a.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/1367d4643ec57adda630c09a7ec8e553.woff) format('woff');
   font-weight:300;
   unicode-range:U+0370-03FF,U+1F00-1FFF;
   font-style:italic;
@@ -197,7 +197,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/bd2e8db9847490d7deba045c017891e4.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/2edfb210bb6dc4a3569f725d909a4cf8.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/3b9ad5ba2db4ec524ef78784ca76e62b.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/efd4c0a58e8357c5f2f0ff47fe2618bd.woff) format('woff');
   font-weight:300;
   unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
   font-style:italic;
@@ -205,7 +205,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/37722b477c658265fc058b19f6b03c69.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/9507635001533d6196e2fbfe3d7ee889.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/69f8acd3ceaac02f266e23c4ad3fb297.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/b0e4dcae6570d618e018fce7ba59e062.woff) format('woff');
   font-weight:300;
   unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
   font-style:italic;
@@ -213,7 +213,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/54f4c9aedba3050b7b5210752e876868.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/29551ea0a13300d62c7e41ea7cb72f05.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/f20d143375a96133782bdb08a0bcac36.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/ad5d4de76e7976439f8b2e00d011428d.woff) format('woff');
   font-weight:300;
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
   font-style:italic;
@@ -221,48 +221,48 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/f2d2ff4853e29157c1c9265464f34a49.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/69a8f8d66a20e5b0a0b8337c1c1c8441.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/cfabfabb2f999f967043d67a4de3f0e1.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/b554036306f24ed3d9318045cfaa6aa9.woff) format('woff');
   font-weight:100;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/7b236aa096535f483e9dfbb70d1feb2e.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/e0f727e51a9c879b9e634626223df901.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/d52dbc9b85d54b6616fe189b75fda343.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/7fbbfa9945c50b3d5730e499871f775c.woff) format('woff');
   font-weight:100;
   unicode-range:U+0370-03FF,U+1F00-1FFF;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/64c05ef01c6e088b0996d30b2a89832a.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/a7d88ae6b8003483b800564f3dc0ac9c.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/63a80de45cb14190ac8c4bae7f9973c4.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/4a387b1d1822d78140cff8938701d508.woff) format('woff');
   font-weight:100;
   unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/2565e34c95fbc3901cc516369d6b7390.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/ce49dadec5dad57bf108f34adee33aa5.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/597834d83fbd67e3a05a843369cc2c7a.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/19698a7cbb503b5ff4f3a12997df623b.woff) format('woff');
   font-weight:100;
   unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/f0d351f5c1f86c95b1fb2ea5f89a1509.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/74a2cc1112597396e1850cfb725d0392.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/ae3a4266bebfc4d6950f7fa601fab790.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/a4996343ba918b86bdeed60c0508e96a.woff) format('woff');
   font-weight:100;
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/dd83f6f902348c0905c6ea6f93ac8930.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/14c95c18362746cabfa871d8d623b2c6.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/875f056e6fe54a1c83e41b848fa527e4.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/4147dff1e10f2ece25976795653f9fd2.woff) format('woff');
   font-weight:100;
   font-style:italic;
 }
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/36d401eaf97499a73228234d38d4d9e7.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/3612f8aea891bb6091c9c0168be385bf.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/912553c4f50973dc4ad8b61b12195ea0.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/90a7ab9d9387f9602e860d7fe099493a.woff) format('woff');
   font-weight:100;
   unicode-range:U+0370-03FF,U+1F00-1FFF;
   font-style:italic;
@@ -270,7 +270,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/bf8b8b3ea3eb232d214dd3d1123fbef4.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/699f9d95cb2054b28a028d46a7866dd0.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/d4544ab16ff2de8f9c1aa435b14d77c9.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/7a5e426fbb8ecfd6d571d37f4fa82092.woff) format('woff');
   font-weight:100;
   unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
   font-style:italic;
@@ -278,7 +278,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/e60d3ecadc3cc04f0482c8c2b7c4da37.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/c409d257a9935b08df6fca3ebe23a181.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/db01f8c694a5ce87041ca7611e470c60.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/1be8c6d718865b2a0ac73692eb38eedb.woff) format('woff');
   font-weight:100;
   unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
   font-style:italic;
@@ -286,7 +286,7 @@
 
 @font-face{
   font-family:proxima-nova;
-  src:url(https://d17777qwi045j6.cloudfront.net/fonts/2521e8a6b216fbe481026120c50e0dff.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/10eae998aaa2935e65a7cb1832aa35a6.woff) format('woff');
+  src:url(https://d17777qwi045j6.cloudfront.net/fonts/0feea330f830ae358b49e7c600127d28.woff2) format('woff2'),url(https://d17777qwi045j6.cloudfront.net/fonts/ed7feada48892b5f5d20537b7c78ba7f.woff) format('woff');
   font-weight:100;
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
   font-style:italic;
@@ -391,7 +391,7 @@ pre{
 }
 
 code,kbd,pre,samp{
-  font-family:monospace,monospace;
+  font-family:monospace;
   font-size:1em;
 }
 

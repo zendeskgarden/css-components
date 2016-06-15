@@ -3,16 +3,16 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-proxima-nova-regular-italic-cyrillic-woff: f0d102dd84beb4a632d88c1b6dd5b716.woff;
-  --zd-proxima-nova-regular-italic-cyrillic-woff2: 053d85de5bf47f833e9ca12c9c1d8544.woff2;
-  --zd-proxima-nova-regular-italic-fallback-woff: 0a13f1be94205ae665b65f168cf124a4.woff;
-  --zd-proxima-nova-regular-italic-fallback-woff2: b5a547872b2418476d7dcadf7a2e54be.woff2;
-  --zd-proxima-nova-regular-italic-greek-woff: 9e3ccd9baf88c5283bdcd6c0c2ca508d.woff;
-  --zd-proxima-nova-regular-italic-greek-woff2: 22ae5a4f6767b6277962cab6543b598b.woff2;
-  --zd-proxima-nova-regular-italic-latin-ext-woff: 63aa59dbe6fb4ac74610be02572bb898.woff;
-  --zd-proxima-nova-regular-italic-latin-ext-woff2: 2a0a881e882e0f835686117c0d62e189.woff2;
-  --zd-proxima-nova-regular-italic-latin-woff: d85a7f7957049b414a18d22070afdecd.woff;
-  --zd-proxima-nova-regular-italic-latin-woff2: ce50288149e16a6a505b5cd4bbbe28be.woff2;
+  --zd-proxima-nova-regular-italic-cyrillic-woff: 2c030fa2acc596ec4a1da2e73642fdea.woff;
+  --zd-proxima-nova-regular-italic-cyrillic-woff2: 065b5335742e40062468b0073b0ece0e.woff2;
+  --zd-proxima-nova-regular-italic-fallback-woff: da023bf58382eb4c5fb06e8128a0c01b.woff;
+  --zd-proxima-nova-regular-italic-fallback-woff2: d694afd1e1e9ba215a4c7a5ce43b4630.woff2;
+  --zd-proxima-nova-regular-italic-greek-woff: 56144faffe64692621f076f4d2838e4f.woff;
+  --zd-proxima-nova-regular-italic-greek-woff2: 5f46c58bb753bb5b49aca67e733cad46.woff2;
+  --zd-proxima-nova-regular-italic-latin-ext-woff: d899ee8b9c215461d2fef6d018766f70.woff;
+  --zd-proxima-nova-regular-italic-latin-ext-woff2: ac0cc938b6f4bcc70c036168761eb9d7.woff2;
+  --zd-proxima-nova-regular-italic-latin-woff: ab1bf8afb5698d8e2dfe2c1f210437d2.woff;
+  --zd-proxima-nova-regular-italic-latin-woff2: e5efce13f0a24c62813c6b163d9da53f.woff2;
   /* stylelint-enable max-line-length */
 }
 
