@@ -1,9 +1,13 @@
 /* stylelint-disable declaration-no-important */
 .u-thin { font-weight: var(--zd-font-weight-thin) !important; }
 
+.u-extralight { font-weight: var(--zd-font-weight-extralight) !important; }
+
 .u-light { font-weight: var(--zd-font-weight-light) !important; }
 
 .u-regular { font-weight: var(--zd-font-weight-regular) !important; }
+
+.u-medium { font-weight: var(--zd-font-weight-medium) !important; }
 
 .u-semibold { font-weight: var(--zd-font-weight-semibold) !important; }
 
@@ -15,7 +19,7 @@
 
 .u-ultralight { font-weight: var(--zd-font-weight-ultralight) !important; }
 
-.u-medium { font-weight: var(--zd-font-weight-medium) !important; }
+.u-ultrabold { font-weight: var(--zd-font-weight-ultrabold) !important; }
 
 .u-heavy { font-weight: var(--zd-font-weight-heavy) !important; }
 /* stylelint-enable */

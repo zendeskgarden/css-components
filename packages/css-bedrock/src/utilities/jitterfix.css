@@ -18,10 +18,16 @@
   content: var(--zd-jitterfix-content);
 }
 
-/* stylelint-disable declaration-no-important */
+/* stylelint-disable declaration-no-important, max-line-length */
+.u-jitterfix--thin:after { font-weight: var(--zd-font-weight-thin); }
+
+.u-jitterfix--extralight:after { font-weight: var(--zd-font-weight-extralight); }
+
 .u-jitterfix--light:after { font-weight: var(--zd-font-weight-light); }
 
 .u-jitterfix--regular:after { font-weight: var(--zd-font-weight-regular); }
+
+.u-jitterfix--medium:after { font-weight: var(--zd-font-weight-medium); }
 
 .u-jitterfix--semibold:after { font-weight: var(--zd-font-weight-semibold); }
 
@@ -30,8 +36,4 @@
 .u-jitterfix--extrabold:after { font-weight: var(--zd-font-weight-extrabold); }
 
 .u-jitterfix--black:after { font-weight: var(--zd-font-weight-black); }
-
-.u-jitterfix--medium:after { font-weight: var(--zd-font-weight-medium); }
-
-.u-jitterfix--heavy:after { font-weight: var(--zd-font-weight-heavy); }
 /* stylelint-enable */

@@ -33,26 +33,26 @@ html {
   font-size: var(--zd-html-font-size);
 }
 
+* { font-weight: inherit; }
+
 /* 1. normalize.css override. */
 *,
 *::before,
 *::after,
 input[type='search'] /* [1] */ { box-sizing: inherit; }
 
-* { font-weight: inherit; }
-
 a {
   color: var(--zd-anchor-color);
-}
-
-a:hover {
-  color: var(--zd-anchor-color-hover);
 }
 
 a,
 ins,
 u {
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--zd-anchor-color-hover);
 }
 
 button { padding: 0; }

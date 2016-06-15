@@ -14,6 +14,7 @@
   --zd-din-next-light-latin-woff2: 12f147cedff625bd92ffb3a553629b12.woff2;
 }
 
+/* stylelint-disable function-url-quotes, function-whitespace-after */
 @font-face {
   font-family: var(--zd-font-family-din-next);
   src:
@@ -57,3 +58,4 @@
   font-weight: var(--zd-font-weight-light);
   unicode-range: var(--zd-unicode-range-latin);
 }
+/* stylelint-enable function-url-quotes, function-whitespace-after */

@@ -1,6 +1,6 @@
 @import 'zd-css-variables';
 
-/* stylelint-disable declaration-no-important, max-line-length */
+/* stylelint-disable declaration-no-important, max-line-length, no-unsupported-browser-features */
 
 /* Background Colors */
 
@@ -89,6 +89,8 @@
 .u-bg-sky-blue { background-color: var(--zd-color-sky-blue) !important; }
 
 .u-bg-snow { background-color: var(--zd-color-snow) !important; }
+
+.u-bg-steel { background-color: var(--zd-color-steel) !important; }
 
 .u-bg-sunglow { background-color: var(--zd-color-sunglow) !important; }
 
@@ -189,6 +191,8 @@
 .u-fg-sky-blue { color: var(--zd-color-sky-blue) !important; }
 
 .u-fg-snow { color: var(--zd-color-snow) !important; }
+
+.u-fg-steel { color: var(--zd-color-steel) !important; }
 
 .u-fg-sunglow { color: var(--zd-color-sunglow) !important; }
 
@@ -291,6 +295,8 @@
 .u-bc-sky-blue { border-color: var(--zd-color-sky-blue) !important; }
 
 .u-bc-snow { border-color: var(--zd-color-snow) !important; }
+
+.u-bc-steel { border-color: var(--zd-color-steel) !important; }
 
 .u-bc-sunglow { border-color: var(--zd-color-sunglow) !important; }
 

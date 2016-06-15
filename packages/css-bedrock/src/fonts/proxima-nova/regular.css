@@ -2,6 +2,7 @@
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length */
   --zd-proxima-nova-regular-cyrillic-woff: 0d565c45de02f094147d08b8f0cdf303.woff;
   --zd-proxima-nova-regular-cyrillic-woff2: 52de09a14adfead33028d48a8bd76e89.woff2;
   --zd-proxima-nova-regular-fallback-woff: c37efca6a848403311178adfa3f96e07.woff;
@@ -12,8 +13,10 @@
   --zd-proxima-nova-regular-latin-ext-woff2: 75b7b0699b8c3fe91860884907dec82a.woff2;
   --zd-proxima-nova-regular-latin-woff: ae816b5ef09245b100d94c77ae23e7a9.woff;
   --zd-proxima-nova-regular-latin-woff2: 9499fb0204a424ef90bd329e30c1969f.woff2;
+  /* stylelint-enable max-line-length */
 }
 
+/* stylelint-disable function-url-quotes, function-whitespace-after */
 @font-face {
   font-family: var(--zd-font-family-proxima-nova);
   src:
@@ -57,3 +60,4 @@
   font-weight: var(--zd-font-weight-regular);
   unicode-range: var(--zd-unicode-range-latin);
 }
+/* stylelint-enable function-url-quotes, function-whitespace-after */
