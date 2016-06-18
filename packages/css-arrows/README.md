@@ -4,7 +4,7 @@ The `css-arrows` package contains styling and positioning classes for `.c-arrow`
 
 ## Installation
 
-    $ npm install --save git+ssh://git@github.com:zendeskgarden/css-arrows.git
+    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-arrows.git
 
 ## Usage
 
