@@ -41,7 +41,54 @@
       <div class="l-grid__item u-1/2 u-mb-lg">
         <h2 class="u-gamma u-mb">Standard
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
+          as
+          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">ul &gt; li &gt; a:link</code>
         </h2>
+        <ul class="c-menu u-position-static">
+          <li>
+            <a class="c-menu__item"
+               href="/one">Real Link in &lt;li&gt;</a>
+          </li>
+          <li>
+            <a class="c-menu__item"
+               href="/two">Real Link 2</a>
+          </li>
+
+          <li class="c-menu__separator"
+              role="presentation"></li>
+
+          <li>
+            <a class="c-menu__item"
+               href="/three">Real Link 3</a>
+          </li>
+          <li>
+            <a class="c-menu__item"
+               href="/four">Real Link 4</a>
+          </li>
+        </ul>
+      </div><div class="l-grid__item u-1/2 u-mb-lg">
+        <h2 class="u-gamma u-mb">Standard
+          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
+          as
+          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">nav &gt; a:link</code>
+        </h2>
+        <nav class="c-menu u-position-static">
+          <a class="c-menu__item" href="/one">Real Link in &lt;nav&gt;</a>
+          <a class="c-menu__item" href="/two">Real Link 2</a>
+          <span class="c-menu__separator"></span>
+          <a class="c-menu__item" href="/three">Real Link 3</a>
+        </nav>
+      </div>
+
+      <div class="l-grid__item u-1/2 u-mb-lg">
+        <h2 class="u-gamma u-mb">Standard
+          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
+          without
+          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">&lt;a href&gt;</code>
+        </h2>
+        <p>Intended for menus with very interactive, non-link use cases. Note the example here is <b>incomplete</b> from a markup/behavior perspective and does not support keyboard navigation. See
+          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">js-menu</code>.
+        </p>
         <ul class="c-menu u-position-static" role="menu">
           <li class="c-menu__item" role="menuitem">One</li>
           <li class="c-menu__item" role="menuitem">Two</li>
@@ -60,31 +107,32 @@
         </ul>
       </div>
 
-        <div class="l-grid__item u-1/2 u-mb-lg">
-          <h2 class="u-gamma u-mb">Standard
-            <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
-            with longer item
-          </h2>
-          <ul class="c-menu u-position-static" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li class="c-menu__item" role="menuitem">Two</li>
-            <li class="c-menu__item" role="menuitem">Three</li>
-            <li class="c-menu__item" role="menuitem">Significantly longer list item example</li>
-          </ul>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-lg">
-          <h2 class="u-gamma u-mb">Standard
-            <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
-            but with a max-width (on
-            <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>)
-          </h2>
-          <ul class="c-menu u-position-static" style="max-width: 15em" role="menu">
-            <li class="c-menu__item" role="menuitem">One one-thousand</li>
-            <li class="c-menu__item" role="menuitem">Two one-thousand</li>
-            <li class="c-menu__item" role="menuitem">Three one-thousand</li>
+      <div class="l-grid__item u-1/2 u-mb-lg">
+        <h2 class="u-gamma u-mb">Standard
+          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
+          with longer item
+        </h2>
+        <ul class="c-menu u-position-static" role="menu">
+          <li class="c-menu__item" role="menuitem">One</li>
+          <li class="c-menu__item" role="menuitem">Two</li>
+          <li class="c-menu__item" role="menuitem">Three</li>
           <li class="c-menu__item" role="menuitem">Significantly longer list item example</li>
-          </ul>
-        </div>
+        </ul>
+      </div
+      ><div class="l-grid__item u-1/2 u-mb-lg">
+        <h2 class="u-gamma u-mb">Standard
+          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
+          but with a max-width (on
+          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>)
+        </h2>
+        <ul class="c-menu u-position-static" style="max-width: 15em" role="menu">
+          <li class="c-menu__item" role="menuitem">One one-thousand</li>
+          <li class="c-menu__item" role="menuitem">Two one-thousand</li>
+          <li class="c-menu__item" role="menuitem">Three one-thousand</li>
+        <li class="c-menu__item" role="menuitem">Significantly longer list item example</li>
+        </ul>
+      </div>
+
       <div class="l-grid__item u-1/2 u-mb-lg">
         <h2 class="u-gamma u-mb">Disabled &lt;Item&gt; via
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu__item.is-disabled</code>
@@ -120,9 +168,10 @@
         <h2 class="u-gamma u-mb">Menu Item State</h2>
         <ul class="c-menu u-position-static" role="menu">
           <li class="c-menu__item" role="menuitem" tabindex="0">default</li>
-          <li class="c-menu__item is-selected" dir="ltr" role="menuitem" tabindex="0">.is-selected</li>
-          <li class="c-menu__item is-focused" dir="ltr" role="menuitem" tabindex="0">.is-focused</li>
-          <li class="c-menu__item is-disabled" dir="ltr" role="menuitem" tabindex="0">.is-disabled</li>
+          <li class="c-menu__item is-selected" role="menuitem" tabindex="0">.is-selected</li>
+          <li class="c-menu__item" role="menuitem" tabindex="0">default</li>
+          <li class="c-menu__item is-focused" role="menuitem" tabindex="0">.is-focused</li>
+          <li class="c-menu__item is-disabled" role="menuitem" tabindex="0">.is-disabled</li>
         </ul>
       </div>
     </div>

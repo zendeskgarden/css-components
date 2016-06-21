@@ -10,11 +10,15 @@
   --zd-menu-font-weight: var(--zd-font-weight-regular);
   --zd-menu-min-width: 140px;
   --zd-menu--large-min-width: 270px;
+  --zd-menu-extra-space-at-top-and-bottom: 10px;
 }
 
 /* 1. Positioned relative to controlling item.
- * 2. List element reset.
- * 3. Prevent controlling item cursor inheritance. */
+ * 2. Opt out of browser default list margin.
+ * 3. Prevent controlling item cursor inheritance.
+ * 4. Vertically, add extra space;
+ *    horizontally, opt out of browser default list padding.
+ */
 .c-menu {
   display: inline-block;
   position: absolute; /* [1] */
@@ -24,17 +28,19 @@
   box-shadow: var(--zd-menu-box-shadow);
   background-color: var(--zd-menu-background-color);
   cursor: default; /* [3] */
-  padding: 0; /* [2] */
+  padding: var(--zd-menu-extra-space-at-top-and-bottom) 0; /* [4] */
   min-width: var(--zd-menu-min-width);
   text-align: left;
   font-size: var(--zd-menu-font-size);
   font-weight: var(--zd-menu-font-weight);
 }
 
+/* Just enforces a bigger minimum width */
 .c-menu--large {
   min-width: var(--zd-menu--large-min-width);
 }
 
+/* RTL support */
 .c-menu.is-rtl {
   direction: rtl;
   text-align: right;

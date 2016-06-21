@@ -8,8 +8,6 @@
 
   /* Same math as above for 10px top/bottom, total 40px inner height */
   --zd-menu__item-padding: .71428571429em 1.429em;
-
-  --zd-menu__item-margin: 10px;
 }
 
 /* 1. Allows an item to contain a positioned sub-menu.
@@ -18,17 +16,12 @@
   display: block;
   position: relative; /* [1] */
   z-index: 0; /* [2] */
+
   cursor: pointer;
+
   padding: var(--zd-menu__item-padding);
   line-height: var(--zd-menu__item-line-height);
   color: var(--zd-menu__item-color);
+
   user-select: none;
-}
-
-.c-menu__item:first-child {
-  margin-top: var(--zd-menu__item-margin);
-}
-
-.c-menu__item:last-child {
-  margin-bottom: var(--zd-menu__item-margin);
 }
