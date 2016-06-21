@@ -14,9 +14,13 @@
 }
 
 /* 1. Anchor tag reset.
- * 2. Class-chain specificity hack. */
+ * 2. No `.c-btn:focus` styling, since it prevents mimicking
+ *    "focus-on-keyboard; blur-on-mouse" browser behavior.
+ * 3. Class-chain specificity hack. */
 
-@custom-selector :--hovered .is-hovered, :hover;
+@custom-selector :--hovered
+  .is-hovered,
+  :hover;
 
 .c-btn:--hovered {
   background-color: var(--zd-btn-hovered-background-color);
@@ -24,14 +28,20 @@
   color: var(--zd-btn-hovered-color);
 }
 
-@custom-selector :--focused .is-focused, :focus;
+.c-btn:focus {
+  outline: none;
+}
+
+@custom-selector :--focused /* [2] */
+  .is-focused;
 
 .c-btn:--focused {
-  outline: none;
   box-shadow: var(--zd-btn-focused-box-shadow);
 }
 
-@custom-selector :--active .is-active, :active;
+@custom-selector :--active
+  .is-active,
+  :active;
 
 .c-btn:--active {
   background-color: var(--zd-btn-active-background-color);
@@ -39,11 +49,14 @@
   color: var(--zd-btn-active-color);
 }
 
-.c-btn:--hovered:--active {
+/* stylelint-disable selector-max-specificity */
+.c-btn:--hovered:--active,
+.l-btn-group > .c-btn:--hovered:--active {
   box-shadow: none;
 }
+/* stylelint-enable selector-max-specificity */
 
-@custom-selector :--disabled /* [2] */
+@custom-selector :--disabled /* [3] */
   .is-disabled.is-disabled,
   :disabled:disabled;
 

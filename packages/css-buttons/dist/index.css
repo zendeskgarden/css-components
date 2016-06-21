@@ -98,8 +98,11 @@
   color:#333;
 }
 
-.c-btn.is-focused,.c-btn:focus{
+.c-btn:focus{
   outline:none;
+}
+
+.c-btn.is-focused{
   box-shadow:0 0 0 3px rgba(0,0,0,.1);
 }
 
@@ -109,7 +112,7 @@
   color:#333;
 }
 
-.c-btn.is-hovered.is-active,.c-btn.is-hovered:active,.c-btn:hover.is-active,.c-btn:hover:active{
+.c-btn.is-hovered.is-active,.c-btn.is-hovered:active,.c-btn:hover.is-active,.c-btn:hover:active,.l-btn-group>.c-btn.is-hovered.is-active,.l-btn-group>.c-btn.is-hovered:active,.l-btn-group>.c-btn:hover.is-active,.l-btn-group>.c-btn:hover:active{
   box-shadow:none;
 }
 
@@ -121,7 +124,7 @@
   color:#fff;
 }
 
-.l-btn-group>.c-btn.is-focused,.l-btn-group>.c-btn:focus{
+.l-btn-group>.c-btn.is-focused{
   box-shadow:inset 0 0 0 3px rgba(0,0,0,.1);
 }
 
