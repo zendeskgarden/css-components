@@ -1,6 +1,7 @@
 # Forms Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-forms.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-forms)
 
-The `css-forms` package. Use a copy of this repo to bootstrap a new CSS component.
+The `css-forms` package is intended to provide consistent styling for
+form fields used throughout Zendesk products.
 
 ## Installation
 
@@ -41,6 +42,31 @@ HTML would be:
 
 ```html
 <fieldset class="c-chk c-chk--accent">
+  ...
+</fieldset>
+```
+
+### Text
+
+Text input CSS is intended to support a component structure similar to
+the following.
+
+```html
+<fieldset class="c-txt">
+  <label class="c-txt__label" for="text-id">Label</label>
+  <small class="c-txt__hint">Optional hint.</small>
+  <input class="c-txt__input" id="text-id" placeholder="[placeholder]" type="text">
+</fieldset>
+```
+
+#### Modifications
+
+##### Inline
+
+Use the following modifier class to support inline text fields:
+
+```html
+<fieldset class="c-txt c-txt--inline">
   ...
 </fieldset>
 ```

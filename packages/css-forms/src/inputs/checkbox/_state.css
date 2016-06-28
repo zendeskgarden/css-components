@@ -18,51 +18,51 @@
  *    "focus-on-keyboard; blur-on-mouse" browser behavior.
  * 2. Class-chain specificity hack. */
 
-@custom-selector :--checked
+@custom-selector :--chk-checked
   .c-chk.is-checked > .c-chk__label,
   .c-chk > .c-chk__input:checked ~ .c-chk__label;
 
-:--checked:after {
+:--chk-checked:after {
   background: var(--zd-chk-checked-background);
 }
 
-@custom-selector :--focused /* [1] */
+@custom-selector :--chk-focused /* [1] */
   .c-chk.is-focused > .c-chk__label;
 
-:--focused:after {
+:--chk-focused:after {
   outline: none;
   box-shadow: var(--zd-chk-focused-box-shadow);
 }
 
-@custom-selector :--active /* [2] */
+@custom-selector :--chk-active /* [2] */
   .c-chk.is-active.is-active > .c-chk__label,
   .c-chk > .c-chk__label:active.c-chk__label:active;
 
-:--active:after {
+:--chk-active:after {
   border-color: currentColor;
   background-color: var(--zd-chk-active-background-color);
 }
 
-@custom-selector :--checked-active
+@custom-selector :--chk-checked-active
   .c-chk.is-checked.is-active:not(.is-disabled) > .c-chk__label,
   .c-chk.is-active > .c-chk__input:enabled:checked ~ .c-chk__label,
   .c-chk:not(.is-disabled) >
   .c-chk__input:enabled:checked ~ .c-chk__label:active;
 
-:--checked-active:after {
+:--chk-checked-active:after {
   background-image: var(--zd-chk-checked-active-background-image);
 }
 
-@custom-selector :--disabled /* [2] */
+@custom-selector :--chk-disabled /* [2] */
   .c-chk.is-disabled.is-disabled.is-disabled > .c-chk__label,
   .c-chk > .c-chk__input:disabled.c-chk__input:disabled ~ .c-chk__label;
 
-:--disabled {
+:--chk-disabled {
   cursor: default;
   color: var(--zd-chk-disabled-color);
 }
 
-:--disabled:after {
+:--chk-disabled:after {
   border-color: transparent;
   box-shadow: none;
   background-color: var(--zd-chk-disabled-background-color);

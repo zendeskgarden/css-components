@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <title>Zendesk Garden / Forms / Text</title>
+  <link href="../bedrock.css" rel="stylesheet">
+  <link href="../index.css" rel="stylesheet">
+  <style>
+  .l-wrapper--370 {
+    max-width: 370px;
+  }
+  </style>
+</head>
+<body>
+  <header class="u-bg-oil u-fg-white u-mb-lg">
+    <div class="l-wrapper">
+      <h1 class="u-alpha u-pv">
+        <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
+        <span>/</span>
+        <a class="u-fg-inherit" href="..">Forms</a>
+        <span>/ Text</span>
+      </h1>
+    </div>
+  </header>
+  <main class="l-wrapper">
+    <h1 class="u-beta u-mb">Text</h1>
+    <p class="u-mb">Use the
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt</code>
+    component to style form text fields. Child component classes are shown
+    below.</p>
+    <fieldset class="c-txt u-mb-lg">
+      <label class="c-txt__label" for="txt-0">.c-txt__label</label>
+      <small class="c-txt__hint">.c-txt__hint</small>
+      <input class="c-txt__input" id="txt-0" placeholder=".c-txt__input" type="text">
+    </fieldset>
+    <p class="u-mb">Hint text may also appear below the input field.</p>
+    <fieldset class="c-txt u-mb-lg">
+      <label class="c-txt__label" for="txt-1">.c-txt__label</label>
+      <input class="c-txt__input" id="txt-1" placeholder=".c-txt__input" type="text">
+      <small class="c-txt__hint">.c-txt__hint</small>
+    </fieldset>
+    <p class="u-mb">The unmodified
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt</code>
+    occupies 100% of the width of its container. The following fields are contained
+    by a 370px wrapper.</p>
+    <form class="l-wrapper--370 u-mb-lg">
+      <fieldset class="c-txt u-mb-sm">
+        <label class="c-txt__label" for="txt-2">Label One</label>
+        <small class="c-txt__hint">Hint text for one...</small>
+        <input class="c-txt__input" id="txt-2" placeholder="Email" type="email">
+      </fieldset>
+      <fieldset class="c-txt u-mb-sm">
+        <label class="c-txt__label" for="txt-3">Label Two</label>
+        <small class="c-txt__hint">Hint text for two...</small>
+        <input class="c-txt__input" id="txt-3" placeholder="Password" type="password">
+      </fieldset>
+    </form>
+    <p class="u-mb">Using the Bedrock layout
+    <a href="http://zendeskgarden.github.io/css-bedrock/grid.html">grid</a>,
+    field labels and inputs may be positioned side-by-side.</p>
+    <form class="l-wrapper--370 u-mb-lg">
+      <div class="l-grid">
+        <fieldset class="c-txt u-mb-sm">
+          <label class="c-txt__label l-grid__item u-1/3" for="txt-4">Label One</label
+          ><input class="c-txt__input l-grid__item u-2/3" id="txt-4" placeholder="Email" type="email">
+        </fieldset>
+        <fieldset class="c-txt u-mb-sm">
+          <label class="c-txt__label l-grid__item u-1/3" for="txt-5">Label Two</label
+          ><input class="c-txt__input l-grid__item u-2/3" id="txt-5" placeholder="Password" type="password">
+        </fieldset>
+      </div>
+    </form>
+    <p class="u-mb">Use the
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt--inline</code>
+    class modifier to layout text controls inline.</p>
+    <form class="u-mb-lg">
+      <fieldset class="c-txt c-txt--inline u-mb-sm">
+        <label class="c-txt__label" for="txt-6">Email?</label
+        ><input class="c-txt__input u-ml" id="txt-6" placeholder="Email" type="email">
+      </fieldset>
+      <fieldset class="c-txt c-txt--inline u-mb-sm">
+        <label class="c-txt__label u-ml" for="txt-7">A Label for the Password</label
+        ><input class="c-txt__input u-ml" id="txt-7" placeholder="Password" type="password">
+      </fieldset>
+    </form>
+  </main>
+</body>

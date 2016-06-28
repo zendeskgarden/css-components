@@ -1,0 +1,81 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-txt__hint-color: var(--zd-color-aluminum);
+  --zd-txt__hint-font-size: var(--zd-font-size-zeta);
+  --zd-txt__hint-line-height: 1.666667;
+  --zd-txt__hint-margin-top: var(--zd-spacing-xs);
+  --zd-txt__input-background-color: var(--zd-color-white);
+  --zd-txt__input-border: 1px solid var(--zd-color-gainsboro);
+  --zd-txt__input-border-radius: 4px;
+  --zd-txt__input-color: var(--zd-color-dark-gray);
+  --zd-txt__input-color-placeholder: var(--zd-color-aluminum);
+  --zd-txt__input-font-size: var(--zd-font-size-epsilon);
+  --zd-txt__input-line-height: 2.714286;
+  --zd-txt__input-padding: 0 1.4285714286em;
+  --zd-txt__label-color: var(--zd-color-oil);
+  --zd-txt__label-font-size: var(--zd-font-size-zeta);
+  --zd-txt__label-line-height: 2.5;
+}
+
+/* 1. Reset for <fieldset> element.
+ * 2. Use 100% input width vs. block diplay label to limit label mouse
+ *    interaction area.
+ * 3. Support label inline with input layout. */
+
+.c-txt {
+  margin: 0; /* [1] */
+  border: 0; /* [1] */
+  padding: 0; /* [1] */
+}
+
+.c-txt__hint {
+  display: block;
+  line-height: var(--zd-txt__hint-line-height);
+  color: var(--zd-txt__hint-color);
+  font-size: var(--zd-txt__hint-font-size);
+}
+
+.c-txt__input {
+  outline: none;
+  border: var(--zd-txt__input-border);
+  border-radius: var(--zd-txt__input-border-radius);
+  background-color: var(--zd-txt__input-background-color);
+  padding: var(--zd-txt__input-padding);
+  width: 100%; /* [2] */
+  box-sizing: border-box;
+  vertical-align: middle; /* [3] */
+  line-height: var(--zd-txt__input-line-height);
+  color: var(--zd-txt__input-color);
+}
+
+.c-txt__input::placeholder {
+  color: var(--zd-txt__input-color-placeholder);
+}
+
+.c-txt__hint + .c-txt__input {
+  margin-top: var(--zd-txt__hint-margin-top);
+}
+
+.c-txt__input + .c-txt__hint {
+  margin-top: var(--zd-txt__hint-margin-top);
+}
+
+.c-txt__label {
+  vertical-align: middle; /* [3] */
+  line-height: var(--zd-txt__label-line-height);
+  color: var(--zd-txt__label-color);
+  font-size: var(--zd-txt__label-font-size);
+}
+
+.c-txt__label + .c-txt__hint {
+  margin-top: calc(var(--zd-txt__hint-margin-top) * -1);
+}
+
+.c-txt--inline {
+  display: inline-block;
+}
+
+.c-txt--inline .c-txt__input {
+  width: auto;
+}

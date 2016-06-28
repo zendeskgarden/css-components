@@ -86,3 +86,83 @@
   box-shadow:none;
   background-color:#ddd;
 }
+
+.c-txt{
+  margin:0;
+  border:0;
+  padding:0;
+}
+
+.c-txt__hint{
+  display:block;
+  line-height:1.666667;
+  color:#999;
+  font-size:12px;
+}
+
+.c-txt__input{
+  outline:none;
+  border:1px solid #ddd;
+  border-radius:4px;
+  background-color:#fff;
+  padding:0 1.4285714286em;
+  width:100%;
+  box-sizing:border-box;
+  vertical-align:middle;
+  line-height:2.714286;
+  color:#555;
+}
+
+.c-txt__input::-webkit-input-placeholder{
+  color:#999;
+}
+
+.c-txt__input::-moz-placeholder{
+  color:#999;
+}
+
+.c-txt__input:-ms-input-placeholder{
+  color:#999;
+}
+
+.c-txt__input::placeholder{
+  color:#999;
+}
+
+.c-txt__hint+.c-txt__input,.c-txt__input+.c-txt__hint{
+  margin-top:5px;
+}
+
+.c-txt__label{
+  vertical-align:middle;
+  line-height:2.5;
+  color:#333;
+  font-size:12px;
+}
+
+.c-txt__label+.c-txt__hint{
+  margin-top:-5px;
+}
+
+.c-txt--inline{
+  display:inline-block;
+}
+
+.c-txt--inline .c-txt__input{
+  width:auto;
+}
+
+.c-txt__input.is-hovered,.c-txt__input:hover{
+  background-color:#fbfbfb;
+}
+
+.c-txt__input.is-focused,.c-txt__input:focus{
+  border-color:#999;
+  box-shadow:0 0 0 3px rgba(0,0,0,.1);
+}
+
+.c-txt__input.is-disabled,.c-txt__input:disabled{
+  border-color:#ddd;
+  background-color:#f3f3f3;
+  color:#999;
+}
