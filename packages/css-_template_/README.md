@@ -5,7 +5,7 @@ CSS component.
 
 ## Installation
 
-    $ npm install --save git+ssh://git@github.com:zendeskgarden/css-_template_.git
+    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-_template_.git
 
 ## Usage
 
