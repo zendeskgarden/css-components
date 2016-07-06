@@ -1,6 +1,7 @@
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length */
   --zd-txt__hint-color: var(--zd-color-aluminum);
   --zd-txt__hint-font-size: var(--zd-font-size-zeta);
   --zd-txt__hint-line-height: 1.666667;
@@ -11,17 +12,21 @@
   --zd-txt__input-color: var(--zd-color-dark-gray);
   --zd-txt__input-color-placeholder: var(--zd-color-aluminum);
   --zd-txt__input-font-size: var(--zd-font-size-epsilon);
-  --zd-txt__input-line-height: 2.714286;
-  --zd-txt__input-padding: 0 1.4285714286em;
+  --zd-txt__input-line-height: 1.4285714286;
+  --zd-txt__input-min-height: calc(var(--zd-txt__input-font-size) * var(--zd-txt__input-line-height) + 20px);
+  --zd-txt__input-padding: .7142857143em 1.4285714286em;
   --zd-txt__label-color: var(--zd-color-oil);
   --zd-txt__label-font-size: var(--zd-font-size-zeta);
   --zd-txt__label-line-height: 2.5;
+  /* stylelint-enable max-line-length */
 }
 
 /* 1. Reset for <fieldset> element.
  * 2. Use 100% input width vs. block diplay label to limit label mouse
  *    interaction area.
- * 3. Support label inline with input layout. */
+ * 3. Support label inline with input layout.
+ * 4. Hack for browser <= IE10 which fails to render custom @font-face subsets
+ *    for input fields. */
 
 .c-txt {
   margin: 0; /* [1] */
@@ -43,10 +48,16 @@
   background-color: var(--zd-txt__input-background-color);
   padding: var(--zd-txt__input-padding);
   width: 100%; /* [2] */
+  min-height: var(--zd-txt__input-min-height);
   box-sizing: border-box;
   vertical-align: middle; /* [3] */
   line-height: var(--zd-txt__input-line-height);
   color: var(--zd-txt__input-color);
+  font-size: var(--zd-txt__input-font-size);
+}
+
+@media screen\0 {
+  .c-txt__input { font-family: sans-serif; } /* [4] */
 }
 
 .c-txt__input::placeholder {

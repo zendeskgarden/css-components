@@ -1,0 +1,13 @@
+/* stylelint-disable no-unsupported-browser-features */
+
+/* 1. Remove vertical scrollbar on <textarea> (IE). */
+
+.c-txt__input--area {
+  resize: none;
+  overflow: auto; /* [1] */
+}
+
+.c-txt__input--area.is-resizable {
+  resize: vertical;
+}
+/* stylelint-enable no-unsupported-browser-features */

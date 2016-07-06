@@ -71,6 +71,29 @@ Use the following modifier class to support inline text fields:
 </fieldset>
 ```
 
+##### Area
+
+Use the following modifier class to support `textarea` fields:
+
+```html
+<fieldset class="c-txt">
+  <textarea class="c-txt__input c-txt__input--area"></textarea>
+</fieldset>
+```
+
+##### Accent
+
+See the text `accent.css` source file for sample CSS needed to format
+text fields according to your product's accent color. This CSS is not
+included in the package distribution. Upon inclusion, corresponding HTML
+would be:
+
+```html
+<fieldset class="c-txt c-txt--accent">
+  ...
+</fieldset>
+```
+
 ## Tests
 
     $ npm test

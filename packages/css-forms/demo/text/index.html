@@ -82,5 +82,27 @@
         ><input class="c-txt__input u-ml" id="txt-7" placeholder="Password" type="password">
       </fieldset>
     </form>
+    <p class="u-mb">Add the
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt__input--area</code>
+    modifier class to style <code>&lt;textarea&gt;</code> elements. Specify
+    the textarea's <code>rows</code> attribute to control the height.</p>
+    <form class="u-mb-lg">
+      <fieldset class="c-txt u-mb-sm">
+        <label class="c-txt__label" for="txtarea-0">Textarea</label>
+        <textarea class="c-txt__input c-txt__input--area" id="txtarea-0" placeholder=".c-txt__input .c-txt__input--area"></textarea>
+      </fieldset>
+      <fieldset class="c-txt u-mb-sm">
+        <label class="c-txt__label" for="txtarea-1">Resizable Textarea</label>
+        <small class="c-txt__hint">By default, the
+        <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt__input--area</code>
+        class prevents user-controlled resizing. Adding
+        <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-resizable</code>
+        allows the user to vertically resize the textarea (horizontal resizing
+        typically interferes with layout in an undesirable manner). Resize is
+        not supported by IE.
+        </small>
+        <textarea class="c-txt__input c-txt__input--area is-resizable" id="txtarea-1" placeholder=".c-txt__input .c-txt__input--area .is-resizable"></textarea>
+      </fieldset>
+    </form>
   </main>
 </body>
