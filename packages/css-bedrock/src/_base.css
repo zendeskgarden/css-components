@@ -35,11 +35,13 @@ html {
 
 * { font-weight: inherit; }
 
+/* stylelint-disable selector-no-qualifying-type */
 /* 1. normalize.css override. */
 *,
 *::before,
 *::after,
 input[type='search'] /* [1] */ { box-sizing: inherit; }
+/* stylelint-enable */
 
 a {
   color: var(--zd-anchor-color);
