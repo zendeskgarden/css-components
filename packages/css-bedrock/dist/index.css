@@ -412,7 +412,7 @@ html{
   font-size:14px;
 }
 *{ font-weight:inherit; }
-*,:after,:before,input[type=search]{ box-sizing:inherit; }
+*,:after,:before{ box-sizing:inherit; }
 a{
   color:#5ebbde;
 }
