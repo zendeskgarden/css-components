@@ -23,6 +23,25 @@ the following.
 
 #### Modifications
 
+##### Radio
+
+Use the `.c-chk--radio` modifier to style for radio button form fields.
+
+```html
+<fieldset class="c-chk c-chk--radio">
+  <input class="c-chk__input" id="rdo-1" name="level" type="radio">
+  <label class="c-chk__label" for="rdo-1">Beginner</label>
+</fieldset>
+<fieldset class="c-chk c-chk--radio">
+  <input class="c-chk__input" id="rdo-2" name="level" type="radio">
+  <label class="c-chk__label" for="rdo-2">Intermediate</label>
+</fieldset>
+<fieldset class="c-chk c-chk--radio">
+  <input class="c-chk__input" id="rdo-3" name="level" type="radio">
+  <label class="c-chk__label" for="rdo-3">Advanced</label>
+</fieldset>
+```
+
 ##### RTL
 
 Use the following state class to support RTL text direction:

@@ -22,14 +22,14 @@
   .c-chk.is-checked > .c-chk__label,
   .c-chk > .c-chk__input:checked ~ .c-chk__label;
 
-:--chk-checked:after {
+:--chk-checked::after {
   background: var(--zd-chk-checked-background);
 }
 
 @custom-selector :--chk-focused /* [1] */
   .c-chk.is-focused > .c-chk__label;
 
-:--chk-focused:after {
+:--chk-focused::after {
   outline: none;
   box-shadow: var(--zd-chk-focused-box-shadow);
 }
@@ -38,7 +38,7 @@
   .c-chk.is-active.is-active > .c-chk__label,
   .c-chk > .c-chk__label:active.c-chk__label:active;
 
-:--chk-active:after {
+:--chk-active::after {
   border-color: currentColor;
   background-color: var(--zd-chk-active-background-color);
 }
@@ -49,7 +49,7 @@
   .c-chk:not(.is-disabled) >
   .c-chk__input:enabled:checked ~ .c-chk__label:active;
 
-:--chk-checked-active:after {
+:--chk-checked-active::after {
   background-image: var(--zd-chk-checked-active-background-image);
 }
 
@@ -62,7 +62,7 @@
   color: var(--zd-chk-disabled-color);
 }
 
-:--chk-disabled:after {
+:--chk-disabled::after {
   border-color: transparent;
   box-shadow: none;
   background-color: var(--zd-chk-disabled-background-color);

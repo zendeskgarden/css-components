@@ -28,86 +28,192 @@
     rendering checkbox behavior. However, the
     <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-focused</code>
     class is intended to be programmatically toggled on keyboard (not mouse)
-    focus as it is here.</p>
+    focus as it is here. Each state variation is shown with with corresponding
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-chk--radio</code>
+    styling, intended to be used for displaying radio button form controls.</p>
     <div class="u-mb">
       <h3 class="u-delta u-mb">Default</h3>
-      <div class="u-mb">
-        <fieldset class="c-chk">
-          <input class="c-chk__input" id="chk-0" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-0">.c-chk</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk">
+            <input class="c-chk__input" id="chk-0" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-0">.c-chk</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio">
+            <input class="c-chk__input" id="rdo-01" name="rdo-0" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-01">.c-chk.c-chk--radio</label>
+          </fieldset>
+          <fieldset class="c-chk c-chk--radio">
+            <input class="c-chk__input" id="rdo-02" name="rdo-0" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-02">.c-chk.c-chk--radio</label>
+          </fieldset>
+          <fieldset class="c-chk c-chk--radio">
+            <input class="c-chk__input" id="rdo-03" name="rdo-0" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-03">.c-chk.c-chk--radio</label>
+          </fieldset>
+        </div>
       </div>
-      <div class="u-mb">
-        <fieldset class="c-chk is-checked">
-          <input class="c-chk__input" id="chk-1" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-1">.c-chk.is-checked</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk is-checked">
+            <input class="c-chk__input" id="chk-1" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-1">.c-chk.is-checked</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio is-checked">
+            <input class="c-chk__input" id="rdo-1" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-1">.c-chk.c-chk--radio.is-checked</label>
+          </fieldset>
+        </div>
       </div>
-      <div class="u-mb">
-        <fieldset class="c-chk">
-          <input checked class="c-chk__input" id="chk-2" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-2">.c-chk .c-chk__input[checked]</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk">
+            <input checked class="c-chk__input" id="chk-2" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-2">.c-chk .c-chk__input[checked]</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio">
+            <input checked class="c-chk__input" id="rdo-2" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-2">.c-chk.c-chk--radio .c-chk__input[checked]</label>
+          </fieldset>
+        </div>
       </div>
 
       <h3 class="u-delta u-mb">Focused</h3>
-      <div class="u-mb">
-        <fieldset class="c-chk is-focused">
-          <input class="c-chk__input" id="chk-3" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-3">.c-chk.is-focused</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk is-focused">
+            <input class="c-chk__input" id="chk-3" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-3">.c-chk.is-focused</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio is-focused">
+            <input class="c-chk__input" id="rdo-3" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-3">.c-chk.c-chk--radio.is-focused</label>
+          </fieldset>
+        </div>
       </div>
 
       <h3 class="u-delta u-mb">Active</h3>
-      <div class="u-mb">
-        <fieldset class="c-chk is-active">
-          <input class="c-chk__input" id="chk-4" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-4">.c-chk.is-active</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk is-active">
+            <input class="c-chk__input" id="chk-4" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-4">.c-chk.is-active</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio is-active">
+            <input class="c-chk__input" id="rdo-4" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-4">.c-chk.c-chk--radio.is-active</label>
+          </fieldset>
+        </div>
       </div>
-      <div class="u-mb">
-        <fieldset class="c-chk is-active is-checked">
-          <input class="c-chk__input" id="chk-5" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-5">.c-chk.is-active.is-checked</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk is-active is-checked">
+            <input class="c-chk__input" id="chk-5" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-5">.c-chk.is-active.is-checked</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio is-active is-checked">
+            <input class="c-chk__input" id="rdo-5" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-5">.c-chk.c-chk--radio.is-active.is-checked</label>
+          </fieldset>
+        </div>
       </div>
-      <div class="u-mb">
-        <fieldset class="c-chk is-active">
-          <input checked class="c-chk__input" id="chk-6" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-6">.c-chk.is-active .c-chk__input[checked]</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk is-active">
+            <input checked class="c-chk__input" id="chk-6" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-6">.c-chk.is-active .c-chk__input[checked]</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio is-active">
+            <input checked class="c-chk__input" id="rdo-6" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-6">.c-chk.c-chk--radio.is-active .c-chk__input[checked]</label>
+          </fieldset>
+        </div>
       </div>
 
       <h3 class="u-delta u-mb">Disabled</h3>
-      <div class="u-mb">
-        <fieldset class="c-chk is-disabled">
-          <input class="c-chk__input" id="chk-7" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-7">.c-chk.is-disabled</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk is-disabled">
+            <input class="c-chk__input" id="chk-7" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-7">.c-chk.is-disabled</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio is-disabled">
+            <input class="c-chk__input" id="rdo-7" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-7">.c-chk.c-chk--radio.is-disabled</label>
+          </fieldset>
+        </div>
       </div>
-      <div class="u-mb">
-        <fieldset class="c-chk">
-          <input class="c-chk__input" disabled id="chk-8" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-8">.c-chk .c-chk__input[disabled]</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk">
+            <input class="c-chk__input" disabled id="chk-8" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-8">.c-chk .c-chk__input[disabled]</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio">
+            <input class="c-chk__input" disabled id="rdo-8" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-8">.c-chk.c-chk--radio .c-chk__input[disabled]</label>
+          </fieldset>
+        </div>
       </div>
-      <div class="u-mb">
-        <fieldset class="c-chk is-disabled is-checked">
-          <input class="c-chk__input" id="chk-9" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-9">.c-chk.is-disabled.is-checked</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk is-disabled is-checked">
+            <input class="c-chk__input" id="chk-9" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-9">.c-chk.is-disabled.is-checked</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio is-disabled is-checked">
+            <input class="c-chk__input" id="rdo-9" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-9">.c-chk.c-chk--radio.is-disabled.is-checked</label>
+          </fieldset>
+        </div>
       </div>
-      <div class="u-mb">
-        <fieldset class="c-chk is-checked">
-          <input class="c-chk__input" disabled id="chk-10" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-10">.c-chk.is-checked .c-chk__input[disabled]</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk is-checked">
+            <input class="c-chk__input" disabled id="chk-10" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-10">.c-chk.is-checked .c-chk__input[disabled]</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio is-checked">
+            <input class="c-chk__input" disabled id="rdo-10" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-10">.c-chk.c-chk--radio.is-checked .c-chk__input[disabled]</label>
+          </fieldset>
+        </div>
       </div>
-      <div class="u-mb">
-        <fieldset class="c-chk">
-          <input checked class="c-chk__input" disabled id="chk-10" type="checkbox">
-          <label class="c-chk__label" dir="ltr" for="chk-10">.c-chk .c-chk__input[checked][disabled]</label>
-        </fieldset>
+      <div class="l-grid u-mb">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-chk">
+            <input checked class="c-chk__input" disabled id="chk-11" type="checkbox">
+            <label class="c-chk__label" dir="ltr" for="chk-11">.c-chk .c-chk__input[checked][disabled]</label>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-chk c-chk--radio">
+            <input checked class="c-chk__input" disabled id="rdo-11" type="radio">
+            <label class="c-chk__label" dir="ltr" for="rdo-11">.c-chk.c-chk--radio .c-chk__input[checked][disabled]</label>
+          </fieldset>
+        </div>
       </div>
     </div>
   </main>

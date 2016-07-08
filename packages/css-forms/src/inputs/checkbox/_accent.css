@@ -1,5 +1,7 @@
 @import 'zd-css-variables';
 
+/* stylelint-disable max-line-length */
+
 :root {
   /* Override these variables with your product's accent values. */
   --zd-chk--accent-active-background-color: #d4eff0;
@@ -8,36 +10,41 @@
   --zd-chk--accent-focused-box-shadow:
     0 0 0 2px
     var(--zd-chk--accent-active-background-color);
+  --zd-chk--accent--radio-checked-active-background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Ccircle%20cx%3D%227%22%20cy%3D%227%22%20r%3D%224.5%22%20fill%3D%22%232db1ba%22%2F%3E%3C%2Fsvg%3E');
 }
 
-.c-chk--accent > .c-chk__label:before,
-.c-chk--accent > .c-chk__label:after {
+.c-chk--accent > .c-chk__label::before,
+.c-chk--accent > .c-chk__label::after {
   color: var(--zd-chk--accent-color);
 }
 
 /* stylelint-disable no-descending-specificity */
 
-.c-chk--accent:--checked {
+.c-chk--accent:--chk-checked {
   color: var(--zd-chk--accent-color);
 }
 
-.c-chk--accent:--focused:after {
+.c-chk--accent:--chk-focused::after {
   box-shadow: var(--zd-chk--accent-focused-box-shadow);
 }
 
-.c-chk--accent:--active:after {
+.c-chk--accent:--chk-active::after {
   background-color: var(--zd-chk--accent-active-background-color);
 }
 
-.c-chk--accent:--checked-active:after {
+.c-chk--accent:--chk-checked-active::after {
   background-image: var(--zd-chk--accent-checked-active-background-image);
 }
 
-.c-chk--accent:--disabled {
+.c-chk--accent.c-chk--radio:--chk-checked-active::after {
+  background-image: var(--zd-chk--accent--radio-checked-active-background-image);
+}
+
+.c-chk--accent:--chk-disabled {
   color: var(--zd-chk-disabled-color);
 }
 
-.c-chk--accent:--disabled:after {
+.c-chk--accent:--chk-disabled::after {
   background-color: var(--zd-chk-disabled-background-color);
 }
-/* stylelint-enable no-descending-specificity */
+/* stylelint-enable max-line-length, no-descending-specificity */
