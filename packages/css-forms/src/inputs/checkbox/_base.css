@@ -32,6 +32,7 @@
   position: relative;
   cursor: pointer;
   padding-left: var(--zd-chk__label-padding);
+  white-space: nowrap;
   color: var(--zd-chk-color);
   user-select: none;
 }

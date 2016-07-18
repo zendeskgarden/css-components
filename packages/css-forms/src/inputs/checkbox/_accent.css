@@ -6,11 +6,12 @@
   /* Override these variables with your product's accent values. */
   --zd-chk--accent-active-background-color: #d4eff0;
   --zd-chk--accent-checked-active-background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%232db1ba%22%20stroke-width%3D%221.5%22%20d%3D%22M4.5%207.19L6.76%209.5l2.744-5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
-  --zd-chk--accent-color: #2db1ba;
+  --zd-chk--accent-color: rgb(45, 177, 186);
   --zd-chk--accent-focused-box-shadow:
     0 0 0 2px
     var(--zd-chk--accent-active-background-color);
   --zd-chk--accent--radio-checked-active-background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Ccircle%20cx%3D%227%22%20cy%3D%227%22%20r%3D%224.5%22%20fill%3D%22%232db1ba%22%2F%3E%3C%2Fsvg%3E');
+  --zd-chk--accent--toggle-checked-active-background-color: color(var(--zd-chk--accent-color) blackness(+20%));
 }
 
 .c-chk--accent > .c-chk__label::before,
@@ -24,20 +25,24 @@
   color: var(--zd-chk--accent-color);
 }
 
-.c-chk--accent:--chk-focused::after {
+.c-chk--accent:not(.c-chk--toggle):--chk-focused::after {
   box-shadow: var(--zd-chk--accent-focused-box-shadow);
 }
 
-.c-chk--accent:--chk-active::after {
+.c-chk--accent:not(.c-chk--toggle):--chk-active::after {
   background-color: var(--zd-chk--accent-active-background-color);
 }
 
-.c-chk--accent:--chk-checked-active::after {
+.c-chk--accent:not(.c-chk--toggle):--chk-checked-active::after {
   background-image: var(--zd-chk--accent-checked-active-background-image);
 }
 
 .c-chk--accent.c-chk--radio:--chk-checked-active::after {
   background-image: var(--zd-chk--accent--radio-checked-active-background-image);
+}
+
+.c-chk--accent.c-chk--toggle:--chk-checked-active::after {
+  background-color: var(--zd-chk--accent--toggle-checked-active-background-color);
 }
 
 .c-chk--accent:--chk-disabled {

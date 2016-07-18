@@ -1,3 +1,5 @@
+
+
 .c-chk{
   margin:0;
   border:0;
@@ -15,6 +17,7 @@
   position:relative;
   cursor:pointer;
   padding-left:22px;
+  white-space:nowrap;
   color:#999;
   -webkit-user-select:none;
      -moz-user-select:none;
@@ -97,6 +100,66 @@
 
 .c-chk--radio.c-chk.is-active>.c-chk__input:enabled:checked~.c-chk__label:after,.c-chk--radio.c-chk.is-checked.is-active:not(.is-disabled)>.c-chk__label:after,.c-chk--radio.c-chk:not(.is-disabled)>.c-chk__input:enabled:checked~.c-chk__label:active:after{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Ccircle cx='7' cy='7' r='4.5' fill='%23999'/%3E%3C/svg%3E");
+}
+
+.c-chk--toggle>.c-chk__label{
+  padding-left:50px;
+}
+
+.c-chk--toggle>.c-chk__label:after,.c-chk--toggle>.c-chk__label:before{
+  top:0;
+  margin-top:-1px;
+  border:none;
+  border-radius:100px;
+  background-color:#ddd;
+  width:40px;
+  height:20px;
+}
+
+.c-chk--toggle>.c-chk__label:after{
+  -webkit-transition:background-position .15s ease-in-out;
+  transition:background-position .15s ease-in-out;
+  background-repeat:no-repeat;
+  background-position:0;
+}
+
+.c-chk--toggle.c-chk.is-checked>.c-chk__label:after,.c-chk--toggle.c-chk>.c-chk__input:checked~.c-chk__label:after,.c-chk--toggle>.c-chk__label:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='6' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.c-chk--toggle.c-chk.is-checked>.c-chk__label:after,.c-chk--toggle.c-chk>.c-chk__input:checked~.c-chk__label:after{
+  background-position:100%;
+  background-size:auto;
+}
+
+.c-chk--toggle.c-chk.is-focused>.c-chk__label:after{
+  box-shadow:0 0 0 2px #f3f3f3;
+}
+
+.c-chk--toggle.c-chk.is-active.is-active>.c-chk__label:after,.c-chk--toggle.c-chk>.c-chk__label:active.c-chk__label:active:after{
+  background-color:#b9b9b9;
+}
+
+.c-chk--toggle.c-chk.is-active>.c-chk__input:enabled:checked~.c-chk__label:after,.c-chk--toggle.c-chk.is-checked.is-active:not(.is-disabled)>.c-chk__label:after,.c-chk--toggle.c-chk:not(.is-disabled)>.c-chk__input:enabled:checked~.c-chk__label:active:after{
+  background-color:gray;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='6' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.c-chk--toggle.c-chk.is-disabled.is-disabled.is-disabled>.c-chk__label:after,.c-chk--toggle.c-chk>.c-chk__input:disabled.c-chk__input:disabled~.c-chk__label:after{
+  background-color:#f3f3f3;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='6' fill='%23ddd'/%3E%3C/svg%3E");
+}
+
+.c-chk--toggle.is-rtl>.c-chk__label{
+  padding-right:50px;
+}
+
+.c-chk--toggle.is-rtl>.c-chk__label:after{
+  background-position:100%;
+}
+
+.c-chk--toggle.is-rtl.c-chk.is-checked>.c-chk__label:after,.c-chk--toggle.is-rtl.c-chk>.c-chk__input:checked~.c-chk__label:after{
+  background-position:0;
 }
 
 .c-txt{

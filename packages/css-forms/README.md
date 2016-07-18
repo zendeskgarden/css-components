@@ -23,6 +23,16 @@ the following.
 
 #### Modifications
 
+##### Toggle
+
+Use the `.c-chk--toggle` modifier to style the checkbox as a toggle.
+
+```html
+<fieldset class="c-chk c-chk--toggle">
+  ...
+</fieldset>
+```
+
 ##### Radio
 
 Use the `.c-chk--radio` modifier to style for radio button form fields.
@@ -55,9 +65,9 @@ Use the following state class to support RTL text direction:
 ##### Accent
 
 See the checkbox `accent.css` source file for sample CSS needed to
-format checkboxes according to your product's accent color. This CSS is
-not included in the package distribution. Upon inclusion, corresponding
-HTML would be:
+format checkboxes, toggles, and radio buttons according to your
+product's accent color. This CSS is not included in the package
+distribution. Upon inclusion, corresponding HTML would be:
 
 ```html
 <fieldset class="c-chk c-chk--accent">
