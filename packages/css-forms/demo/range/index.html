@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+  <title>Zendesk Garden / Forms / Range</title>
+  <link href="../bedrock.css" rel="stylesheet">
+  <link href="../index.css" rel="stylesheet">
+  <style>
+  .l-wrapper--370 {
+    max-width: 370px;
+  }
+
+  .c-range--inline.is-rtl > .c-range__label {
+    margin-left: 20px;
+  }
+  </style>
+</head>
+<body>
+  <header class="u-bg-oil u-fg-white u-mb-lg">
+    <div class="l-wrapper">
+      <h1 class="u-alpha u-display-inline-block u-pv">
+        <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
+        <span>/</span>
+        <a class="u-fg-inherit" href="..">Forms</a>
+        <span>/ Range</span>
+      </h1>
+      <label class="u-ml">
+        <input class="js-rtl" type="checkbox">
+        <span class="u-epsilon">RTL</span>
+      </label>
+    </div>
+  </header>
+  <main class="l-wrapper">
+    <h2 class="u-beta u-mb">Range</h2>
+    <p class="u-mb">Use the
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-range</code>
+    component to style form range fields. Stateful
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-*</code>
+    classes are for demo purposes only and are not considered reliable for
+    rendering checkbox behavior. However, the
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-focused</code>
+    class is intended to be programmatically toggled on keyboard (not mouse)
+    focus as it is here.</p>
+    <p class="u-mb">Since WebKit browsers have no supporting pseudo-element for
+    the lower range, the
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-range__input</code>
+    child contains corresponding
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">background</code>
+    CSS whose size should be manipulated via JavaScript whenever the range
+    "thumb" is moved. See the supporting page JS for details.</p>
+    <p class="u-mb">Child component classes are shown here.</p>
+    <fieldset class="c-range u-mb-lg">
+      <label class="c-range__label" dir="ltr" for="range-0">.c-range__label</label>
+      <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+      <input class="c-range__input" id="range-0" type="range">
+    </fieldset>
+    <p class="u-mb">Hint text may also appear below the range input.</p>
+    <fieldset class="c-range u-mb-lg">
+      <label class="c-range__label" dir="ltr" for="range-1">.c-range__label</label>
+      <input class="c-range__input" id="range-1" type="range">
+      <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+    </fieldset>
+    <p class="u-mb">The unmodified
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-range</code>
+    occupies 100% of the width of its container. The following field is contained
+    by a 370px wrapper.</p>
+    <form class="l-wrapper--370 u-mb-lg">
+      <fieldset class="c-range u-mb-lg">
+        <label class="c-range__label" for="range-2">Label</label>
+        <small class="c-range__hint"><span dir="ltr">Hint...</span></small>
+        <input class="c-range__input" id="range-2" type="range">
+      </fieldset>
+    </form>
+    <h3 class="u-delta u-mb">Modifiers</h3>
+    <p class="u-mb">Use the
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-range--inline</code>
+    class modifier to layout range controls inline.</p>
+    <fieldset class="c-range c-range--inline u-mb-lg">
+      <label class="c-range__label u-mr" for="range-2">Scale</label
+      ><input class="c-range__input" id="range-2" type="range">
+    </fieldset>
+    <h3 class="u-delta u-mb">States</h3>
+    <fieldset class="c-range is-focused u-mb-lg">
+      <label class="c-range__label" dir="ltr" for="range-1">.c-range.is-focused</label>
+      <input class="c-range__input" id="range-1" type="range">
+    </fieldset>
+    <fieldset class="c-range is-active u-mb-lg">
+      <label class="c-range__label" dir="ltr" for="range-2">.c-range.is-active</label>
+      <input class="c-range__input" id="range-2" type="range">
+    </fieldset>
+    <fieldset class="c-range is-disabled u-mb">
+      <label class="c-range__label" dir="ltr" for="range-3">.c-range.is-disabled</label>
+      <input class="c-range__input" id="range-3" type="range">
+    </fieldset>
+    <fieldset class="c-range u-mb-lg">
+      <label class="c-range__label" dir="ltr" for="range-3">.c-range .c-range__input[disabled]</label>
+      <input class="c-range__input" disabled id="range-3" type="range">
+    </fieldset>
+    <h3 class="u-delta u-mb">Values</h3>
+    <p class="u-mb">Demonstrate range controls with various
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">max</code>,
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">min</code>,
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">step</code>,
+    and
+    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">value</code>
+    attribute values.</p>
+    <form class="l-wrapper--370 u-mb-lg">
+      <fieldset class="c-range u-mb-lg">
+        <label class="c-range__label" dir="ltr" for="range-4">.c-range .c-range__input[value="10"]</label>
+        <input class="c-range__input" id="range-4" type="range" value="10">
+      </fieldset>
+      <fieldset class="c-range u-mb-lg">
+        <label class="c-range__label" dir="ltr" for="range-5">.c-range .c-range__input[max="40"][value="10"]</label>
+        <input class="c-range__input" id="range-5" max="40" type="range" value="10">
+      </fieldset>
+      <fieldset class="c-range u-mb-lg">
+        <label class="c-range__label" dir="ltr" for="range-6">.c-range .c-range__input[max="60"][min="30"][value="45"]</label>
+        <input class="c-range__input" id="range-6" max="60" min="30" type="range" value="45">
+      </fieldset>
+      <fieldset class="c-range u-mb-lg">
+        <label class="c-range__label" dir="ltr" for="range-7">.c-range .c-range__input[step="5"][value="75"]</label>
+        <input class="c-range__input" id="range-7" step="5" type="range" value="75">
+      </fieldset>
+    </form>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="jquery.pseudo.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -12,28 +12,29 @@
 }
 
 @custom-selector :--txt-hovered
-  .is-hovered,
-  :hover;
+  .c-txt.is-hovered > .c-txt__input,
+  .c-txt > .c-txt__input:hover;
 
-.c-txt__input:--txt-hovered {
+:--txt-hovered {
   background-color: var(--zd-txt-hovered-background-color);
 }
 
 @custom-selector :--txt-focused
-  .is-focused,
-  :focus;
+  .c-txt.is-focused > .c-txt__input,
+  .c-txt > .c-txt__input:focus;
 
-.c-txt__input:--txt-focused {
+:--txt-focused {
   border-color: var(--zd-txt-focused-border-color);
   box-shadow: var(--zd-txt-focused-box-shadow);
 }
 
 @custom-selector :--txt-disabled
-  .is-disabled,
-  :disabled;
+  .c-txt.is-disabled > .c-txt__input,
+  .c-txt > .c-txt__input:disabled;
 
-.c-txt__input:--txt-disabled {
+:--txt-disabled {
   border-color: var(--zd-txt-disabled-border-color);
   background-color: var(--zd-txt-disabled-background-color);
+  cursor: default;
   color: var(--zd-txt-disabled-color);
 }

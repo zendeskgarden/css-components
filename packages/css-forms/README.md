@@ -75,6 +75,57 @@ distribution. Upon inclusion, corresponding HTML would be:
 </fieldset>
 ```
 
+### Range
+
+Range input CSS is intended to support a component structure similar to
+the following.
+
+```html
+<fieldset class="c-range">
+  <label class="c-range__label" for="range-id">Label</label>
+  <small class="c-range__hint">Optional hint.</small>
+  <input class="c-range__input" id="range-id" type="range">
+</fieldset>
+```
+
+#### Modifications
+
+##### Inline
+
+Use the following modifier class to support inline range fields:
+
+```html
+<fieldset class="c-range c-range--inline">
+  ...
+</fieldset>
+```
+
+##### RTL
+
+Use the following state class to support RTL layout. Consider the
+guidelines under [Material Design
+Bidirectionality](https://material.google.com/usability/bidirectionality.html)
+when using a range slider to model directional elements (i.e. playback).
+
+```html
+<fieldset class="c-range is-rtl">
+  ...
+</fieldset>
+```
+
+##### Accent
+
+See the range `accent.css` source file for sample CSS needed to format
+range fields according to your product's accent color. This CSS is not
+included in the package distribution. Upon inclusion, corresponding HTML
+would be:
+
+```html
+<fieldset class="c-range c-range--accent">
+  ...
+</fieldset>
+```
+
 ### Text
 
 Text input CSS is intended to support a component structure similar to

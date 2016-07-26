@@ -2,10 +2,6 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-txt__hint-color: var(--zd-color-aluminum);
-  --zd-txt__hint-font-size: var(--zd-font-size-zeta);
-  --zd-txt__hint-line-height: 1.666667;
-  --zd-txt__hint-margin-top: var(--zd-spacing-xs);
   --zd-txt__input-background-color: var(--zd-color-white);
   --zd-txt__input-border: 1px solid var(--zd-color-gainsboro);
   --zd-txt__input-border-radius: 4px;
@@ -15,9 +11,6 @@
   --zd-txt__input-line-height: 1.4285714286;
   --zd-txt__input-min-height: calc(var(--zd-txt__input-font-size) * var(--zd-txt__input-line-height) + 20px);
   --zd-txt__input-padding: .7142857143em 1.4285714286em;
-  --zd-txt__label-color: var(--zd-color-oil);
-  --zd-txt__label-font-size: var(--zd-font-size-zeta);
-  --zd-txt__label-line-height: 2.5;
   /* stylelint-enable max-line-length */
 }
 
@@ -32,13 +25,6 @@
   margin: 0; /* [1] */
   border: 0; /* [1] */
   padding: 0; /* [1] */
-}
-
-.c-txt__hint {
-  display: block;
-  line-height: var(--zd-txt__hint-line-height);
-  color: var(--zd-txt__hint-color);
-  font-size: var(--zd-txt__hint-font-size);
 }
 
 .c-txt__input {
@@ -62,25 +48,6 @@
 
 .c-txt__input::placeholder {
   color: var(--zd-txt__input-color-placeholder);
-}
-
-.c-txt__hint + .c-txt__input {
-  margin-top: var(--zd-txt__hint-margin-top);
-}
-
-.c-txt__input + .c-txt__hint {
-  margin-top: var(--zd-txt__hint-margin-top);
-}
-
-.c-txt__label {
-  vertical-align: middle; /* [3] */
-  line-height: var(--zd-txt__label-line-height);
-  color: var(--zd-txt__label-color);
-  font-size: var(--zd-txt__label-font-size);
-}
-
-.c-txt__label + .c-txt__hint {
-  margin-top: calc(var(--zd-txt__hint-margin-top) * -1);
 }
 
 .c-txt--inline {

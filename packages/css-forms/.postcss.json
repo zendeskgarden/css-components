@@ -3,6 +3,7 @@
   "output": "dist/index.css",
   "use": [
     "postcss-import",
+    "postcss-input-range",
     "postcss-cssnext",
     "cssnano"
   ],

@@ -1,0 +1,66 @@
+@import 'zd-css-variables';
+
+:root {
+  /* stylelint-disable max-line-length */
+  --zd-range-active-thumb-background-color: var(--zd-color-steel);
+  --zd-range-active-track-background-color: var(--zd-color-gainsboro);
+  --zd-range-disabled-lower-background-color: var(--zd-color-gainsboro);
+  --zd-range-disabled-thumb-background-color: var(--zd-range-disabled-lower-background-color);
+  --zd-range-disabled-thumb-border-color: var(--zd-range-disabled-thumb-background-color);
+  --zd-range-disabled-track-background-color: var(--zd-range-disabled-thumb-background-color);
+  --zd-range-disabled-track-background-image: linear-gradient(var(--zd-range-disabled-track-background-color), var(--zd-range-disabled-track-background-color));
+  --zd-range-focused-box-shadow-spread-radius: 3px;
+  --zd-range-focused-box-shadow:
+    0 0 0 var(--zd-range-focused-box-shadow-spread-radius)
+    color(var(--zd-color-black) alpha(10%));
+  /* stylelint-enable max-line-length */
+}
+
+/* stylelint-disable selector-pseudo-element-no-unknown */
+/* stylelint-disable no-descending-specificity */
+
+@custom-selector :--range-focused
+  .c-range.is-focused > .c-range__input;
+
+:--range-focused::range-thumb {
+  box-shadow: var(--zd-range-focused-box-shadow);
+}
+
+@custom-selector :--range-active
+  .c-range.is-active > .c-range__input,
+  .c-range > .c-range__input:active;
+
+:--range-active::range-track {
+  background-color: var(--zd-range-active-track-background-color);
+}
+
+:--range-active::range-thumb {
+  background-color: var(--zd-range-active-thumb-background-color);
+}
+
+/* 1. Class-chain specificity hack */
+
+@custom-selector :--range-disabled /* [1] */
+  .c-range.is-disabled.is-disabled.is-disabled > .c-range__input,
+  .c-range > .c-range__input:disabled.c-range__input:disabled;
+
+:--range-disabled {
+  cursor: default;
+}
+
+:--range-disabled::range-track {
+  background-color: var(--zd-range-disabled-track-background-color);
+  background-image: var(--zd-range-disabled-track-background-image);
+}
+
+:--range-disabled::range-thumb {
+  border-color: var(--zd-range-disabled-thumb-border-color);
+  background-color: var(--zd-range-disabled-thumb-background-color);
+}
+
+:--range-disabled::range-lower {
+  background-color: var(--zd-range-disabled-lower-background-color);
+}
+
+/* stylelint-enable selector-pseudo-element-no-unknown */
+/* stylelint-enable no-descending-specificity */

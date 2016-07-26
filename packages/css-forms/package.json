@@ -1,6 +1,6 @@
 {
   "name": "zd-css-forms",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "main": "dist/index.css",
   "style": "src/index.css",
@@ -11,6 +11,7 @@
     "postcss-cli": "^2.5.2",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^8.1.2",
+    "postcss-input-range": "jzempel/postcss-input-range#feature/fill-lower-firefox",
     "pre-commit": "^1.1.3",
     "stylelint": "^6.8.0",
     "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#3.0.0",

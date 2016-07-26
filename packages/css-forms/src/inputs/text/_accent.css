@@ -6,7 +6,7 @@
   --zd-txt--accent-focused-box-shadow: 0 0 0 3px #d4eff0;
 }
 
-.c-txt--accent > .c-txt__input:--txt-focused {
+.c-txt--accent:--txt-focused {
   border-color: var(--zd-txt--accent-focused-border-color);
   box-shadow: var(--zd-txt--accent-focused-box-shadow);
 }

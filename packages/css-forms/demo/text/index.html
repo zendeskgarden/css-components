@@ -22,7 +22,7 @@
     </div>
   </header>
   <main class="l-wrapper">
-    <h1 class="u-beta u-mb">Text</h1>
+    <h2 class="u-beta u-mb">Text</h2>
     <p class="u-mb">Use the
     <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt</code>
     component to style form text fields. Child component classes are shown
@@ -69,6 +69,7 @@
         </fieldset>
       </div>
     </form>
+    <h3 class="u-delta u-mb">Modifiers</h3>
     <p class="u-mb">Use the
     <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt--inline</code>
     class modifier to layout text controls inline.</p>
@@ -104,5 +105,18 @@
         <textarea class="c-txt__input c-txt__input--area is-resizable" id="txtarea-1" placeholder=".c-txt__input .c-txt__input--area .is-resizable"></textarea>
       </fieldset>
     </form>
+    <h3 class="u-delta u-mb">States</h3>
+    <fieldset class="c-txt is-hovered u-mb-lg">
+      <input class="c-txt__input" placeholder=".c-txt.is-hovered" type="text">
+    </fieldset>
+    <fieldset class="c-txt is-focused u-mb-lg">
+      <input class="c-txt__input" placeholder=".c-txt.is-focused" type="text">
+    </fieldset>
+    <fieldset class="c-txt is-disabled u-mb-lg">
+      <input class="c-txt__input" placeholder=".c-txt.is-disabled" type="text">
+    </fieldset>
+    <fieldset class="c-txt u-mb-lg">
+      <input class="c-txt__input" disabled placeholder=".c-txt .c-txt__input[disabled]" type="text">
+    </fieldset>
   </main>
 </body>
