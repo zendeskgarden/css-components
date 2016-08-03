@@ -1,0 +1,11 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-tooltip--light-background-color: var(--zd-color-white);
+  --zd-tooltip--light-color: var(--zd-color-aluminum);
+}
+
+.c-tooltip--light {
+  background-color: var(--zd-tooltip--light-background-color);
+  color: var(--zd-tooltip--light-color);
+}

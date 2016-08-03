@@ -1,15 +1,51 @@
+
+
 .c-tooltip{
   display:inline-block;
-  box-shadow:0 0 4px 0 rgba(0,0,0,.15),0 2px 6px 0 rgba(0,0,0,.1);
   border-radius:2px;
+  box-shadow:0 0 4px 0 rgba(0,0,0,.15),0 2px 6px 0 rgba(0,0,0,.1);
   background-color:#555;
   padding:0 1.25em;
   line-height:1.66667;
+  color:#ddd;
   font-size:12px;
   font-weight:400;
-  color:#ddd;
 }
 
 .c-tooltip.c-arrow:after,.c-tooltip.c-arrow:before{
-  font-size:8px;
+  font-size:6px;
+}
+
+.c-tooltip--extra-large{
+  border-radius:4px;
+  padding:40px;
+  max-width:460px;
+  font-size:14px;
+}
+
+.c-tooltip--extra-large.c-arrow:after,.c-tooltip--extra-large.c-arrow:before{
+  font-size:inherit;
+}
+
+.c-tooltip--large{
+  border-radius:4px;
+  padding:20px;
+  max-width:270px;
+  font-size:14px;
+}
+
+.c-tooltip--large.c-arrow:after,.c-tooltip--large.c-arrow:before{
+  font-size:10px;
+}
+
+.c-tooltip--medium{
+  border-radius:4px;
+  padding-top:.83333em;
+  padding-bottom:.83333em;
+  max-width:140px;
+}
+
+.c-tooltip--light{
+  background-color:#fff;
+  color:#999;
 }
