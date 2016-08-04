@@ -69,9 +69,9 @@ design requirements.
 
 ### Behavior
 
-See [js-modals](https://github.com/zendeskgarden/js-tabs) for reference
-JavaScript support for modal dialogs, including trapping tab focus and
-dismissing via escape.
+See [js-modals](https://github.com/zendeskgarden/js-modals) for
+reference JavaScript support for modal dialogs, including trapping tab
+focus and dismissing via escape.
 
 ## Tests
 
