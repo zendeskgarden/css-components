@@ -1,9 +1,16 @@
+/* stylelint-disable no-unsupported-browser-features */
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length */
   --zd-arrow-size: 1em;
   --zd-arrow-transform: rotate(45deg);
   --zd-arrow-position: calc(var(--zd-arrow-size) / -2);
+  --zd-arrow--b-clip-path: polygon(100% 0, calc(100% - 1px) 0, 0 calc(100% - 1px), 0 100%, 100% 100%);
+  --zd-arrow--l-clip-path: polygon(0 100%, 100% 100%, 100% calc(100% - 1px), 1px 0, 0 0);
+  --zd-arrow--r-clip-path: polygon(100% 0, 100% 100%, calc(100% - 1px) 100%, 0 1px, 0 0);
+  --zd-arrow--t-clip-path: polygon(100% 0, 100% 1px, 1px 100%, 0 100%, 0 0);
+  /* stylelint-enable max-line-length */
 }
 
 .c-arrow {
@@ -11,33 +18,44 @@
   position: relative;
 }
 
-.c-arrow:before {
-  /* allow any border inherited by :after to show through */
+.c-arrow::before {
+  /* allow any border inherited by ::after to show through */
   border-width: inherit;
   border-style: inherit;
   border-color: transparent;
   background-clip: content-box;
 }
 
-.c-arrow:after {
-  /* styling and z-space positioning for arrow :after. Border styling and
+.c-arrow::after {
+  /* styling and z-space positioning for arrow ::after. Border styling and
   box-shadow will be automatically inherited from the parent element */
   z-index: -1;
   border: inherit;
   box-shadow: inherit;
-  background-color: inherit;
 }
 
-@custom-selector :--around :before, :after;
+@custom-selector :--around ::before, ::after;
 
 .c-arrow:--around {
-  /* apply shared position and sizing properties to :before and :after */
+  /* apply shared position and sizing properties to ::before and ::after */
   position: absolute;
   transform: var(--zd-arrow-transform);
   background-color: inherit;
   width: var(--zd-arrow-size);
   height: var(--zd-arrow-size);
   content: '';
+}
+
+/* 1. Round-off portion of the foreground square opposite the arrow tip
+ *    (improved layout for IE which doesn't support `clip-path`).
+ * 2. Clip portion of the foreground square opposite the arrow tip so that it
+ *    doesn't interfere with container content. */
+
+.c-arrow--t::before,
+.c-arrow--tl::before,
+.c-arrow--tr::before {
+  border-bottom-right-radius: 100%; /* [1] */
+  clip-path: var(--zd-arrow--t-clip-path); /* [2] */
 }
 
 .c-arrow--t:--around {
@@ -59,6 +77,11 @@
   right: var(--zd-arrow-size);
 }
 
+.c-arrow--r::before {
+  border-bottom-left-radius: 100%; /* [1] */
+  clip-path: var(--zd-arrow--r-clip-path); /* [2] */
+}
+
 .c-arrow--r:--around {
   /* Positions an arrow at the center(v) right(h) of the parent element */
   top: 50%;
@@ -66,11 +89,23 @@
   margin-top: var(--zd-arrow-position);
 }
 
+.c-arrow--l::before {
+  border-top-right-radius: 100%; /* [1] */
+  clip-path: var(--zd-arrow--l-clip-path); /* [2] */
+}
+
 .c-arrow--l:--around {
   /* Positions an arrow at the center(v) left(h) of the parent element */
   top: 50%;
   left: var(--zd-arrow-position);
   margin-top: var(--zd-arrow-position);
+}
+
+.c-arrow--b::before,
+.c-arrow--bl::before,
+.c-arrow--br::before {
+  border-top-left-radius: 100%; /* [1] */
+  clip-path: var(--zd-arrow--b-clip-path); /* [2] */
 }
 
 .c-arrow--b:--around {
@@ -91,3 +126,4 @@
   right: var(--zd-arrow-size);
   bottom: var(--zd-arrow-position);
 }
+/* stylelint-enable no-unsupported-browser-features */
