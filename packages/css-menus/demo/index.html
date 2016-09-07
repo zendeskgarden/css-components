@@ -14,9 +14,6 @@
   .u-position-static {
     position: static !important;
   }
-  p {
-    margin: 1.4em 0;
-  }
   </style>
 </head>
 <body>
@@ -33,25 +30,25 @@
     </div>
   </header>
   <main class="l-wrapper">
-    <h1 class="u-beta u-mb">Menus</h1>
+    <h2 class="u-beta u-mb">Menus</h2>
     <p class="u-mb-lg">The
       <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
       component classes are used to style menus.</p>
     <div class="l-grid">
       <div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Standard
+        <h3 class="u-gamma u-mb">Standard
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
           as
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">ul &gt; li &gt; a:link</code>
-        </h2>
+        </h3>
         <ul class="c-menu u-position-static">
           <li>
             <a class="c-menu__item"
-               href="/one">Real Link in &lt;li&gt;</a>
+               href="/#one">Real Link in &lt;li&gt;</a>
           </li>
           <li>
             <a class="c-menu__item"
-               href="/two">Real Link 2</a>
+               href="/#two">Real Link 2</a>
           </li>
 
           <li class="c-menu__separator"
@@ -59,59 +56,60 @@
 
           <li>
             <a class="c-menu__item"
-               href="/three">Real Link 3</a>
+               href="/#three">Real Link 3</a>
           </li>
           <li>
             <a class="c-menu__item"
-               href="/four">Real Link 4</a>
+               href="/#four">Real Link 4</a>
           </li>
         </ul>
       </div><div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Standard
+        <h3 class="u-gamma u-mb">Standard
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
           as
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">nav &gt; a:link</code>
-        </h2>
+        </h3>
         <nav class="c-menu u-position-static">
-          <a class="c-menu__item" href="/one">Real Link in &lt;nav&gt;</a>
-          <a class="c-menu__item" href="/two">Real Link 2</a>
+          <a class="c-menu__item" href="/#one">Real Link in &lt;nav&gt;</a>
+          <a class="c-menu__item" href="/#two">Real Link 2</a>
           <span class="c-menu__separator"></span>
-          <a class="c-menu__item" href="/three">Real Link 3</a>
+          <a class="c-menu__item" href="/#three">Real Link 3</a>
         </nav>
       </div>
 
       <div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Standard
+        <h3 class="u-gamma u-mb">Standard
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
           without
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">&lt;a href&gt;</code>
-        </h2>
-        <p>Intended for menus with very interactive, non-link use cases. Note the example here is <b>incomplete</b> from a markup/behavior perspective and does not support keyboard navigation. See
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">js-menu</code>.
-        </p>
-        <ul class="c-menu u-position-static" role="menu">
+        </h3>
+        <ul class="c-menu u-position-static u-mb" role="menu">
           <li class="c-menu__item" role="menuitem">One</li>
           <li class="c-menu__item" role="menuitem">Two</li>
           <li class="c-menu__item" role="menuitem">Three</li>
         </ul>
+        <p class="u-fg-aluminum">Intended for menus with very interactive,
+          non-link use cases. Note the example here is <b>incomplete</b> from a
+          markup/behavior perspective and does not support keyboard navigation.
+        </p>
       </div
       ><div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Large
+        <h3 class="u-gamma u-mb">Large
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.c-menu--large</code>
-        </h2>
-        <p>(Has a wider min-width.)</p>
-        <ul class="c-menu c-menu--large u-position-static" role="menu">
+        </h3>
+        <ul class="c-menu c-menu--large u-position-static u-mb" role="menu">
           <li class="c-menu__item" role="menuitem">One one-thousand</li>
           <li class="c-menu__item" role="menuitem">Two one-thousand</li>
           <li class="c-menu__item" role="menuitem">Three one-thousand</li>
         </ul>
+        <p class="u-fg-aluminum">(Has a wider min-width.)</p>
       </div>
 
       <div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Standard
+        <h3 class="u-gamma u-mb">Standard
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
           with longer item
-        </h2>
+        </h3>
         <ul class="c-menu u-position-static" role="menu">
           <li class="c-menu__item" role="menuitem">One</li>
           <li class="c-menu__item" role="menuitem">Two</li>
@@ -120,11 +118,11 @@
         </ul>
       </div
       ><div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Standard
+        <h3 class="u-gamma u-mb">Standard
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
           but with a max-width (on
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>)
-        </h2>
+        </h3>
         <ul class="c-menu u-position-static" style="max-width: 15em" role="menu">
           <li class="c-menu__item" role="menuitem">One one-thousand</li>
           <li class="c-menu__item" role="menuitem">Two one-thousand</li>
@@ -134,9 +132,9 @@
       </div>
 
       <div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Disabled &lt;Item&gt; via
+        <h3 class="u-gamma u-mb">Disabled &lt;Item&gt; via
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu__item.is-disabled</code>
-        </h2>
+        </h3>
         <ul class="c-menu u-position-static" role="menu">
           <li class="c-menu__item" role="menuitem">One</li>
           <li aria-disabled="true" class="c-menu__item is-disabled" role="menuitem">Disabled</li>
@@ -144,9 +142,9 @@
         </ul>
       </div
       ><div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Separator via
+        <h3 class="u-gamma u-mb">Separator via
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu__separator</code>
-        </h2>
+        </h3>
         <ul class="c-menu u-position-static" role="menu">
           <li class="c-menu__item" role="menuitem">One</li>
           <li class="c-menu__item" role="menuitem">Separated</li>
@@ -155,9 +153,9 @@
         </ul>
       </div>
       <div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Reversed layout via
+        <h3 class="u-gamma u-mb">Reversed layout via
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.is-rtl</code>
-        </h2>
+        </h3>
         <ul class="c-menu c-menu is-rtl u-position-static" dir="rtl" role="menu">
           <li class="c-menu__item" role="menuitem">One</li>
           <li class="c-menu__item" role="menuitem">Two</li>
@@ -165,7 +163,7 @@
         </ul>
       </div
       ><div class="l-grid__item u-1/2 u-mb-lg">
-        <h2 class="u-gamma u-mb">Menu Item State</h2>
+        <h3 class="u-gamma u-mb">Menu Item State</h3>
         <ul class="c-menu u-position-static" role="menu">
           <li class="c-menu__item" role="menuitem" tabindex="0">default</li>
           <li class="c-menu__item is-selected" role="menuitem" tabindex="0">.is-selected</li>

@@ -1,16 +1,17 @@
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length */
   --zd-menu-background-color: var(--zd-color-white);
+  --zd-menu-border: 1px solid var(--zd-color-platinum);
   --zd-menu-border-radius: 4px;
-  --zd-menu-box-shadow:
-    0 0 4px 0 color(var(--zd-color-black) alpha(15%)),
-    0 4px 10px 0 color(var(--zd-color-black) alpha(10%));
+  --zd-menu-box-shadow: 0 20px 30px 0 color(var(--zd-color-chathams-blue) alpha(15%));
   --zd-menu-font-size: var(--zd-font-size-epsilon);
   --zd-menu-font-weight: var(--zd-font-weight-regular);
-  --zd-menu-min-width: 140px;
+  --zd-menu-min-width: 180px;
+  --zd-menu-padding: var(--zd-spacing-sm) 0;
   --zd-menu--large-min-width: 270px;
-  --zd-menu-extra-space-at-top-and-bottom: 10px;
+  /* stylelint-enable max-line-length */
 }
 
 /* 1. Positioned relative to controlling item.
@@ -24,11 +25,12 @@
   position: absolute; /* [1] */
   margin: 0; /* [2] */
   box-sizing: border-box;
+  border: var(--zd-menu-border);
   border-radius: var(--zd-menu-border-radius);
   box-shadow: var(--zd-menu-box-shadow);
   background-color: var(--zd-menu-background-color);
   cursor: default; /* [3] */
-  padding: var(--zd-menu-extra-space-at-top-and-bottom) 0; /* [4] */
+  padding: var(--zd-menu-padding); /* [4] */
   min-width: var(--zd-menu-min-width);
   text-align: left;
   font-size: var(--zd-menu-font-size);

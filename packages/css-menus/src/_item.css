@@ -1,13 +1,9 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-menu__item-color: var(--zd-color-steel);
-
-  /* 1.42857 @ 14px font-size = 20px line-height */
-  --zd-menu__item-line-height: 1.4285714286;
-
-  /* Same math as above for 10px top/bottom, total 40px inner height */
-  --zd-menu__item-padding: .71428571429em 1.429em;
+  --zd-menu__item-color: var(--zd-color-monsoon);
+  --zd-menu__item-line-height: calc(20 / 14);
+  --zd-menu__item-padding: .71429em 1.42857em;
 }
 
 /* 1. Allows an item to contain a positioned sub-menu.
@@ -16,12 +12,9 @@
   display: block;
   position: relative; /* [1] */
   z-index: 0; /* [2] */
-
   cursor: pointer;
-
   padding: var(--zd-menu__item-padding);
   line-height: var(--zd-menu__item-line-height);
   color: var(--zd-menu__item-color);
-
   user-select: none;
 }

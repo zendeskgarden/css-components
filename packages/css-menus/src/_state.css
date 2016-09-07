@@ -2,28 +2,24 @@
 
 :root {
   --zd-menu__item-disabled-color: var(--zd-color-iron);
-  --zd-menu__item-focused-box-shadow:
-    inset 0 4px 0 -2px var(--zd-color-gainsboro),
-    inset 0 -4px 0 -2px var(--zd-color-gainsboro);
-  --zd-menu__item--selected-color: var(--zd-color-oil);
-  --zd-menu__item--selected-background-color: var(--zd-color-anti-flash-white);
+  --zd-menu__item--selected-color: var(--zd-color-dark-gray);
+  --zd-menu__item--selected-background-color: var(--zd-color-white-smoke);
 }
 
 /* 1. Bump stacking context in order to prevent sibling menu items from
  *    interfering with sub-menu pseudo styling. */
 
 @custom-selector :--selected .is-selected, :hover;
+@custom-selector :--focused .is-focused, :focus;
 
-.c-menu__item:--selected {
+.c-menu__item:--selected,
+.c-menu__item:--focused {
   background-color: var(--zd-menu__item--selected-background-color);
   color: var(--zd-menu__item--selected-color);
 }
 
-@custom-selector :--focused .is-focused, :focus;
-
 .c-menu__item:--focused {
   outline: none;
-  box-shadow: var(--zd-menu__item-focused-box-shadow);
 }
 
 @custom-selector :--active .is-active, :active;
