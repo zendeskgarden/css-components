@@ -2,25 +2,13 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-btn--primary-background-color: var(--zd-color-oil);
+  --zd-btn--primary-background-color: var(--zd-color-pelorous);
   --zd-btn--primary-color: var(--zd-color-white);
-  --zd-btn--primary-active-background-color: color(var(--zd-btn--primary-background-color) blackness(+20%));
-  --zd-btn--primary-hovered-background-color: color(var(--zd-btn--primary-background-color) whiteness(+20%));
   /* stylelint-enable max-line-length */
 }
 
 .c-btn--primary {
   border-color: transparent;
   background-color: var(--zd-btn--primary-background-color);
-  color: color(var(--zd-btn--primary-color) alpha(70%));
-}
-
-.c-btn--primary:--hovered {
-  background-color: var(--zd-btn--primary-hovered-background-color);
-  color: var(--zd-btn--primary-color);
-}
-
-.c-btn--primary:--active {
-  background-color: var(--zd-btn--primary-active-background-color);
   color: var(--zd-btn--primary-color);
 }

@@ -2,18 +2,24 @@
 
 :root {
   --zd-btn--basic-active-background-color: var(--zd-color-platinum);
+  --zd-btn--basic-active-color: var(--zd-color-oil);
+  --zd-btn--basic-color: var(--zd-color-aluminum);
   --zd-btn--basic-hovered-background-color: var(--zd-color-anti-flash-white);
+  --zd-btn--basic-hovered-color: var(--zd-color-oil);
 }
 
 .c-btn--basic {
   border-color: transparent;
   background-color: transparent;
+  color: var(--zd-btn--basic-color);
 }
 
 .c-btn--basic:--hovered {
   background-color: var(--zd-btn--basic-hovered-background-color);
+  color: var(--zd-btn--basic-hovered-color);
 }
 
 .c-btn--basic:--active {
   background-color: var(--zd-btn--basic-active-background-color);
+  color: var(--zd-btn--basic-active-color);
 }

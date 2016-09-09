@@ -1,9 +1,11 @@
+
+
 .c-btn{
   display:inline-block;
   -webkit-transition:border-color .15s ease-in-out,box-shadow .1s ease-in-out,background-color .17s ease-in-out,color .15s ease-in-out;
   transition:border-color .15s ease-in-out,box-shadow .1s ease-in-out,background-color .17s ease-in-out,color .15s ease-in-out;
   margin:0;
-  border:1px solid #ddd;
+  border:1px solid #30aabc;
   border-radius:4px;
   background-color:#fff;
   cursor:pointer;
@@ -15,7 +17,7 @@
   text-decoration:none;
   line-height:2.34;
   white-space:nowrap;
-  color:#999;
+  color:#30aabc;
   font-family:inherit;
   font-size:12px;
   font-weight:400;
@@ -93,9 +95,10 @@
 }
 
 .c-btn.is-hovered,.c-btn:hover{
-  background-color:#fbfbfb;
+  border-color:transparent;
+  background-color:#38c1d6;
   text-decoration:none;
-  color:#333;
+  color:#fff;
 }
 
 .c-btn:focus{
@@ -107,12 +110,13 @@
 }
 
 .c-btn.is-active,.c-btn:active{
-  background-color:#f3f3f3;
+  border-color:transparent;
+  background-color:#2a93a3;
   text-decoration:none;
-  color:#333;
+  color:#fff;
 }
 
-.c-btn.is-hovered.is-active,.c-btn.is-hovered:active,.c-btn:hover.is-active,.c-btn:hover:active,.l-btn-group>.c-btn.is-hovered.is-active,.l-btn-group>.c-btn.is-hovered:active,.l-btn-group>.c-btn:hover.is-active,.l-btn-group>.c-btn:hover:active{
+.c-btn.is-focused.is-active,.c-btn.is-focused:active,.c-btn.is-hovered.is-active,.c-btn.is-hovered:active,.c-btn:hover.is-active,.c-btn:hover:active,.l-btn-group>.c-btn.is-focused.is-active,.l-btn-group>.c-btn.is-focused:active,.l-btn-group>.c-btn.is-hovered.is-active,.l-btn-group>.c-btn.is-hovered:active,.l-btn-group>.c-btn:hover.is-active,.l-btn-group>.c-btn:hover:active{
   box-shadow:none;
 }
 
@@ -131,28 +135,21 @@
 .c-btn--basic{
   border-color:transparent;
   background-color:transparent;
+  color:#999;
 }
 
 .c-btn--basic.is-hovered,.c-btn--basic:hover{
   background-color:#f3f3f3;
+  color:#333;
 }
 
 .c-btn--basic.is-active,.c-btn--basic:active{
   background-color:#eee;
+  color:#333;
 }
 
 .c-btn--primary{
   border-color:transparent;
-  background-color:#333;
-  color:hsla(0,0%,100%,.7);
-}
-
-.c-btn--primary.is-hovered,.c-btn--primary:hover{
-  background-color:#555;
-  color:#fff;
-}
-
-.c-btn--primary.is-active,.c-btn--primary:active{
-  background-color:#2a2b2b;
+  background-color:#30aabc;
   color:#fff;
 }

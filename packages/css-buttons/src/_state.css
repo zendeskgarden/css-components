@@ -2,15 +2,15 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-btn-active-background-color: var(--zd-color-anti-flash-white);
-  --zd-btn-active-color: var(--zd-color-oil);
+  --zd-btn-active-background-color: var(--zd-color-astral);
+  --zd-btn-active-color: var(--zd-color-white);
   --zd-btn-disabled-background-color: var(--zd-color-gainsboro);
   --zd-btn-disabled-color: var(--zd-color-white);
   --zd-btn-focused-box-shadow:
     0 0 0 3px
     color(var(--zd-color-black) alpha(10%));
-  --zd-btn-hovered-background-color: var(--zd-color-snow);
-  --zd-btn-hovered-color: var(--zd-color-oil);
+  --zd-btn-hovered-background-color: var(--zd-color-scooter);
+  --zd-btn-hovered-color: var(--zd-color-white);
 }
 
 /* 1. Anchor tag reset.
@@ -23,6 +23,7 @@
   :hover;
 
 .c-btn:--hovered {
+  border-color: transparent;
   background-color: var(--zd-btn-hovered-background-color);
   text-decoration: none; /* [1] */
   color: var(--zd-btn-hovered-color);
@@ -44,6 +45,7 @@
   :active;
 
 .c-btn:--active {
+  border-color: transparent;
   background-color: var(--zd-btn-active-background-color);
   text-decoration: none; /* [1] */
   color: var(--zd-btn-active-color);
@@ -51,7 +53,9 @@
 
 /* stylelint-disable selector-max-specificity */
 .c-btn:--hovered:--active,
-.l-btn-group > .c-btn:--hovered:--active {
+.c-btn:--focused:--active,
+.l-btn-group > .c-btn:--hovered:--active,
+.l-btn-group > .c-btn:--focused:--active {
   box-shadow: none;
 }
 /* stylelint-enable selector-max-specificity */

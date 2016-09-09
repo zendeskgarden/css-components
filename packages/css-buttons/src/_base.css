@@ -2,11 +2,11 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-btn-color: var(--zd-color-aluminum);
+  --zd-btn-color: var(--zd-color-pelorous);
   --zd-btn-font-size: var(--zd-font-size-zeta);
   --zd-btn-font-weight: var(--zd-font-weight-regular);
   --zd-btn-background-color: var(--zd-color-white);
-  --zd-btn-border-color: var(--zd-color-gainsboro);
+  --zd-btn-border-color: var(--zd-color-pelorous);
   --zd-btn-border-radius: 4px;
   --zd-btn-border-width: 1px;
   --zd-btn-line-height: 2.34;
