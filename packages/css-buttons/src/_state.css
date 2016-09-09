@@ -4,11 +4,15 @@
 :root {
   --zd-btn-active-background-color: var(--zd-color-astral);
   --zd-btn-active-color: var(--zd-color-white);
+  --zd-btn-active-transition:
+    border-color .1s ease-in-out,
+    background-color .1s ease-in-out,
+    color .1s ease-in-out;
   --zd-btn-disabled-background-color: var(--zd-color-gainsboro);
   --zd-btn-disabled-color: var(--zd-color-white);
   --zd-btn-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-color-black) alpha(10%));
+    color(var(--zd-color-pelorous) alpha(40%));
   --zd-btn-hovered-background-color: var(--zd-color-scooter);
   --zd-btn-hovered-color: var(--zd-color-white);
 }
@@ -45,6 +49,7 @@
   :active;
 
 .c-btn:--active {
+  transition: var(--zd-btn-active-transition);
   border-color: transparent;
   background-color: var(--zd-btn-active-background-color);
   text-decoration: none; /* [1] */

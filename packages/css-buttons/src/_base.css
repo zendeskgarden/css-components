@@ -13,10 +13,10 @@
   --zd-btn-padding: 2.25em;
   --zd-btn-min-width: calc(3.8334em + calc(var(--zd-btn-padding) * 2));
   --zd-btn-transition:
-    border-color .15s ease-in-out,
+    border-color .25s ease-in-out,
     box-shadow .1s ease-in-out,
-    background-color .17s ease-in-out,
-    color .15s ease-in-out;
+    background-color .25s ease-in-out,
+    color .25s ease-in-out;
   --zd-btn--large-font-size: var(--zd-font-size-epsilon);
   --zd-btn--large-line-height: 3.43;
   --zd-btn--large-padding: 1.9286em;
