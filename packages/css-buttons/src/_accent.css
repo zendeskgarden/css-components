@@ -2,25 +2,24 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-btn--accent-background-color: #2db1ba; /* Override this variable with your product's accent color */
+  --zd-btn--accent-background-color: #ad256f; /* Override this variable with your product's accent color */
   --zd-btn--accent-color: var(--zd-color-white);
-  --zd-btn--accent-active-background-color: color(var(--zd-btn--accent-background-color) blackness(+14%));
+  --zd-btn--accent-active-background-color: color(var(--zd-btn--accent-background-color) blackness(+10%));
   --zd-btn--accent-focused-box-shadow:
-    0 0 0 4px
-    color(var(--zd-btn--accent-background-color) alpha(20%));
-  --zd-btn--accent-hovered-background-color: color(var(--zd-btn--accent-background-color) whiteness(+16%));
+    0 0 0 3px
+    color(var(--zd-btn--accent-background-color) alpha(40%));
+  --zd-btn--accent-hovered-background-color: color(var(--zd-btn--accent-background-color) lightness(+10%) saturation(+10%));
   /* stylelint-enable max-line-length */
 }
 
 .c-btn--accent {
   border-color: transparent;
   background-color: var(--zd-btn--accent-background-color);
-  color: color(var(--zd-btn--accent-color) alpha(70%));
+  color: var(--zd-btn--accent-color);
 }
 
 .c-btn--accent:--hovered {
   background-color: var(--zd-btn--accent-hovered-background-color);
-  color: var(--zd-btn--accent-color);
 }
 
 .c-btn--accent:--focused {
@@ -29,5 +28,4 @@
 
 .c-btn--accent:--active {
   background-color: var(--zd-btn--accent-active-background-color);
-  color: var(--zd-btn--accent-color);
 }

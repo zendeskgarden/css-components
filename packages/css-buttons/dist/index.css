@@ -94,7 +94,7 @@
 
 .c-btn.is-hovered,.c-btn:hover{
   border-color:transparent;
-  background-color:#38c1d6;
+  background-color:#41c8dc;
   text-decoration:none;
   color:#fff;
 }
@@ -111,7 +111,7 @@
   -webkit-transition:border-color .1s ease-in-out,background-color .1s ease-in-out,color .1s ease-in-out;
   transition:border-color .1s ease-in-out,background-color .1s ease-in-out,color .1s ease-in-out;
   border-color:transparent;
-  background-color:#2a93a3;
+  background-color:#3094a3;
   text-decoration:none;
   color:#fff;
 }
