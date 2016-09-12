@@ -1,3 +1,5 @@
+
+
 .l-backdrop{
   position:fixed;
   top:0;
@@ -9,16 +11,13 @@
   overflow:auto;
   -webkit-overflow-scrolling:touch;
 }
-
 .l-backdrop--lightbox{
   background-color:rgba(0,0,0,.8);
 }
-
 .l-backdrop--transparent{
   background-color:transparent;
   overflow:hidden;
 }
-
 .c-dialog{
   display:inline-block;
   position:relative;
@@ -28,11 +27,9 @@
   padding:40px;
   width:600px;
 }
-
 .c-dialog:focus{
   outline:none;
 }
-
 .c-dialog--center{
   position:absolute;
   top:50%;
@@ -40,7 +37,6 @@
   -webkit-transform:translate(-50%,-50%);
           transform:translate(-50%,-50%);
 }
-
 @media (max-height:399px){
   .c-dialog--center{
     top:0;
@@ -49,7 +45,6 @@
     margin:20px 0;
   }
 }
-
 @media (max-width:639px){
   .c-dialog--center{
     left:0;
@@ -58,7 +53,6 @@
     margin:0 20px;
   }
 }
-
 @media (max-height:399px) and (max-width:639px){
   .c-dialog--center{
     -webkit-transform:translate(0);
@@ -87,17 +81,14 @@
       -ms-user-select:none;
           user-select:none;
 }
-
 .c-dialog__close:hover{
   color:#555;
 }
-
 .c-dialog__close>svg{
   width:20px;
   height:20px;
   vertical-align:middle;
 }
-
 .c-dialog__header{
   display:block;
   margin-bottom:20px;
@@ -105,14 +96,12 @@
   color:#333;
   font-size:18px;
 }
-
 .c-dialog__body{
   display:block;
   line-height:1.42857;
   color:#999;
   font-size:14px;
 }
-
 .c-dialog__footer{
   display:block;
   margin-top:30px;
