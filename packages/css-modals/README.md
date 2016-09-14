@@ -5,7 +5,7 @@ backdrop layouts needed to present a modal dialog treatment.
 
 ## Installation
 
-    $ npm install --save git+ssh://git@github.com:zendeskgarden/css-modals.git
+    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-modals.git
 
 ## Usage
 
