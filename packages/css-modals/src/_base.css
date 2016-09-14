@@ -1,19 +1,31 @@
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length */
   --zd-dialog-background-color: var(--zd-color-white);
+  --zd-dialog-border: 1px solid var(--zd-color-platinum);
   --zd-dialog-border-radius: 4px;
-  --zd-dialog-box-shadow:
-    0 6px 18px 0 color(var(--zd-color-black) alpha(10%)),
-    0 0 4px 0 color(var(--zd-color-black) alpha(15%));
-  --zd-dialog-padding: var(--zd-spacing-xl);
+  --zd-dialog-box-shadow-offset-y: var(--zd-spacing);
+  --zd-dialog-box-shadow-blur-radius: var(--zd-spacing-lg);
+  --zd-dialog-box-shadow: 0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0 color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-dialog-margin-bottom: var(--zd-dialog-box-shadow-blur-radius);
+  --zd-dialog-padding-bottom: var(--zd-spacing-lg);
+  --zd-dialog-padding-horizontal: var(--zd-spacing-xl);
+  --zd-dialog-padding-top: var(--zd-spacing);
+  --zd-dialog-padding:
+    var(--zd-dialog-padding-top)
+    var(--zd-dialog-padding-horizontal)
+    var(--zd-dialog-padding-bottom);
   --zd-dialog-width: 600px;
   --zd-dialog--center-margin: var(--zd-spacing);
+  /* stylelint-enable max-line-length */
 }
 
 .c-dialog {
   display: inline-block;
   position: relative;
+  margin-bottom: var(--zd-dialog-margin-bottom);
+  border: var(--zd-dialog-border);
   border-radius: var(--zd-dialog-border-radius);
   box-shadow: var(--zd-dialog-box-shadow);
   background-color: var(--zd-dialog-background-color);

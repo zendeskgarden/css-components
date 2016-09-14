@@ -1,16 +1,27 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-dialog__header-color: var(--zd-color-oil);
-  --zd-dialog__header-font-size: var(--zd-font-size-gamma);
-  --zd-dialog__header-line-height: 1.11111;
-  --zd-dialog__header-margin-bottom: var(--zd-spacing);
+  /* stylelint-disable max-line-length */
+  --zd-dialog__header-border-bottom: 1px solid var(--zd-color-platinum);
+  --zd-dialog__header-color: var(--zd-color-dark-gray);
+  --zd-dialog__header-font-size: var(--zd-font-size-epsilon);
+  --zd-dialog__header-font-weight: var(--zd-font-weight-semibold);
+  --zd-dialog__header-line-height: calc(20 / 14);
+  --zd-dialog__header-margin:
+    calc(var(--zd-dialog-padding-top) * -1)
+    calc(var(--zd-dialog-padding-horizontal) * -1)
+    var(--zd-dialog-padding-top);
+  --zd-dialog__header-padding: var(--zd-dialog-padding-top) var(--zd-dialog-padding-horizontal);
+  /* stylelint-enable max-line-length */
 }
 
 .c-dialog__header {
   display: block;
-  margin-bottom: var(--zd-dialog__header-margin-bottom);
+  margin: var(--zd-dialog__header-margin);
+  border-bottom: var(--zd-dialog__header-border-bottom);
+  padding: var(--zd-dialog__header-padding);
   line-height: var(--zd-dialog__header-line-height);
   color: var(--zd-dialog__header-color);
   font-size: var(--zd-dialog__header-font-size);
+  font-weight: var(--zd-dialog__header-font-weight);
 }

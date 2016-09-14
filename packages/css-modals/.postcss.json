@@ -4,6 +4,7 @@
   "use": [
     "postcss-import",
     "postcss-cssnext",
+    "postcss-inline-svg",
     "cssnano"
   ],
   "cssnano": {
@@ -14,5 +15,8 @@
   },
   "postcss-cssnext": {
     "features": { "colorRgba": false }
+  },
+  "postcss-inline-svg": {
+    "path": "node_modules/zd-svg-icons/src"
   }
 }

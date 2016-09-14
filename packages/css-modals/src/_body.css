@@ -1,9 +1,9 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-dialog__body-color: var(--zd-color-aluminum);
+  --zd-dialog__body-color: var(--zd-color-monsoon);
   --zd-dialog__body-font-size: var(--zd-font-size-epsilon);
-  --zd-dialog__body-line-height: 1.42857;
+  --zd-dialog__body-line-height: calc(20 / 14);
 }
 
 .c-dialog__body {

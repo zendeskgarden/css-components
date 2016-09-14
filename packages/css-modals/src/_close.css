@@ -1,45 +1,54 @@
 @import 'zd-css-variables';
 
 :root {
+  /* stylelint-disable max-line-length, no-unsupported-browser-features */
+  --zd-dialog__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-gainsboro));
+  --zd-dialog__close-background:
+    no-repeat
+    center/var(--zd-spacing)
+    var(--zd-dialog__close-background-image)
+    transparent; /* [1] */
   --zd-dialog__close-color: var(--zd-color-gainsboro);
-  --zd-dialog__close-font-family: 'Courier New', monospace;
-  --zd-dialog__close-font-size: 14px;
+  --zd-dialog__close-right: var(--zd-spacing);
   --zd-dialog__close-size: var(--zd-spacing-xl);
-  --zd-dialog__close-hover-color: var(--zd-color-dark-gray);
-  --zd-dialog__close-svg-size: var(--zd-spacing);
+  --zd-dialog__close-top: var(--zd-spacing-sm);
+  --zd-dialog__close-hover-background-image: svg-load('14-remove.svg', color: var(--zd-color-dark-gray));
+  /* stylelint-enable max-line-length, no-unsupported-browser-features */
 }
 
-/* Dialog close styling supports the use of a
- * [multiplication X](http://graphemica.com/%E2%9C%95) (U+2715) although the
- * recommended treatment is to use a child SVG.
- *
- * 1.Reset for <button> element.
+/* 1. Reset for <button> element.
+ * 2. Reset for <a>nchor element.
  */
 .c-dialog__close {
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: var(--zd-dialog__close-top);
+  right: var(--zd-dialog__close-right);
   border: none; /* [1] */
-  border-radius: inherit;
-  background-color: transparent; /* [1] */
+  border-radius: 50%;
+  background: var(--zd-dialog__close-background);
   cursor: pointer;
   width: var(--zd-dialog__close-size);
-  text-align: center;
-  text-decoration: none;
-  line-height: var(--zd-dialog__close-size);
-  color: var(--zd-dialog__close-color);
-  font-family: var(--zd-dialog__close-font-family);
-  font-size: var(--zd-dialog__close-font-size);
+  height: var(--zd-dialog__close-size);
+  overflow: hidden;
+  text-decoration: none; /* [2] */
+  font-size: 0; /* [2] */
   user-select: none;
 }
 
-.c-dialog__close:hover {
-  color: var(--zd-dialog__close-hover-color);
+.c-dialog__close:hover,
+.c-dialog__close.is-focused {
+  background-image: var(--zd-dialog__close-hover-background-image);
 }
 
-.c-dialog__close > svg {
-  width: var(--zd-dialog__close-svg-size);
-  height: var(--zd-dialog__close-svg-size);
-  vertical-align: middle;
+.c-dialog__close:focus {
+  outline: none;
+}
+
+.c-dialog__close.is-focused {
+  background-color: var(--zd-color-platinum);
+}
+
+.c-dialog__close:active {
+  background-color: transparent;
 }

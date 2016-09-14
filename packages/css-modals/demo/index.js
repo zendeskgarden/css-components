@@ -27,6 +27,18 @@ $(document).ready(function() {
     return false;
   });
 
+  $(document).on('focus', '.c-btn, .c-dialog__close', function() {
+    $(this).addClass('is-focused');
+  });
+
+  $(document).on('blur', '.c-btn, .c-dialog__close', function() {
+    $(this).removeClass('is-focused');
+  });
+
+  $(document).on('mouseup', '.c-btn, .c-dialog__close', function() {
+    $(this).removeClass('is-focused');
+  });
+
   $(document).on('click', '.js-close', function() {
     $(this).closest('.c-dialog').hide();
     $(this).closest('.l-backdrop').remove();

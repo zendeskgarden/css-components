@@ -1,7 +1,7 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-dialog__footer-margin-top: var(--zd-spacing-lg);
+  --zd-dialog__footer-margin-top: var(--zd-dialog-padding-bottom);
   --zd-dialog__footer-text-align: right;
 }
 
