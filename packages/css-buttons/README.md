@@ -4,7 +4,7 @@ The `css-buttons` component contains basic `.c-btn` styling.
 
 ## Installation
 
-    $ npm install --save git+ssh://git@github.com:zendeskgarden/css-buttons.git
+    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-buttons.git
 
 ## Usage
 
