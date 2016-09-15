@@ -67,10 +67,21 @@ Use [css-bedrock](https://github.com/zendeskgarden/css-bedrock)
 classes to override default dialog padding for your product's dialog
 design requirements.
 
+#### RTL
+
+Use the following state class to support RTL text direction:
+
+```html
+<section class="c-dialog is-rtl"
+         ...>
+</section>
+```
+
 ### Behavior
 
-See [js-modals](https://github.com/zendeskgarden/js-modals) for
-reference JavaScript support for modal dialogs, including trapping tab
+See the
+[Modal](https://zendeskgarden.github.io/react-components/#!/Modal)
+component for intended modal dialog behavior, including trapping tab
 focus and dismissing via escape.
 
 ## Tests

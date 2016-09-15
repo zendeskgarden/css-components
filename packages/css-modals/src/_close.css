@@ -12,6 +12,9 @@
   --zd-dialog__close-right: var(--zd-spacing);
   --zd-dialog__close-size: var(--zd-spacing-xl);
   --zd-dialog__close-top: var(--zd-spacing-sm);
+  --zd-dialog__close-transition:
+    background-color .1s ease-in-out,
+    background-image .25s ease-in-out;
   --zd-dialog__close-hover-background-image: svg-load('14-remove.svg', color: var(--zd-color-dark-gray));
   /* stylelint-enable max-line-length, no-unsupported-browser-features */
 }
@@ -24,6 +27,7 @@
   position: absolute;
   top: var(--zd-dialog__close-top);
   right: var(--zd-dialog__close-right);
+  transition: var(--zd-dialog__close-transition);
   border: none; /* [1] */
   border-radius: 50%;
   background: var(--zd-dialog__close-background);
@@ -51,4 +55,9 @@
 
 .c-dialog__close:active {
   background-color: transparent;
+}
+
+.c-dialog.is-rtl .c-dialog__close {
+  right: auto;
+  left: var(--zd-dialog__close-right);
 }

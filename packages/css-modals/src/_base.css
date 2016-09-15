@@ -44,6 +44,10 @@
   transform: translate(-50%, -50%);
 }
 
+.c-dialog.is-rtl {
+  direction: rtl;
+}
+
 /* Custom media width is:
  * `calc(var(--zd-dialog-width) + (var(--zd-dialog--center-margin) * 2));`
  * PSA: custom property usage is not valid within a media query.

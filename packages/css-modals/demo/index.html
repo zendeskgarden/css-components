@@ -5,14 +5,24 @@
   <link href="bedrock.css" rel="stylesheet">
   <link href="buttons.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <style>
+  .is-rtl .u-ml {
+    margin-right: 20px !important;
+    margin-left: 0 !important;
+  }
+  </style>
 </head>
 <body>
   <header class="u-bg-oil u-fg-white u-mb-lg">
     <div class="l-wrapper">
-      <h1 class="u-alpha u-pv">
+      <h1 class="u-alpha u-pv u-display-inline-block">
         <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
         <span>/ Modals</span>
       </h1>
+      <label class="u-ml">
+          <input class="js-rtl" type="checkbox">
+          <span class="u-epsilon">RTL</span>
+      </label>
     </div>
   </header>
   <main class="l-wrapper">
@@ -90,17 +100,17 @@
            tabindex="-1">
     <header>
       <h1 class="c-dialog__header"
-          id="zd-default-dialog__header"><code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog__header</code>
+          id="zd-default-dialog__header"><code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs" dir="ltr">.c-dialog__header</code>
         Title</h1>
       <button aria-label="close" class="c-dialog__close js-close"></button>
     </header>
     <p class="c-dialog__body"><code class="u-bg-platinum u-br-sm u-fg-dark-gray
-      u-ph-xs u-pv-xxs">.c-dialog__body</code> Lo-fi pork belly before they
-    sold out, retro bespoke deep v semiotics. Williamsburg cold-pressed
-    stumptown wolf, drinking vinegar whatever gastropub. Austin quinoa butcher,
-    everyday carry echo park sartorial VHS.</p>
+      u-ph-xs u-pv-xxs" dir="ltr">.c-dialog__body</code> Lo-fi pork belly
+    before they sold out, retro bespoke deep v semiotics. Williamsburg
+    cold-pressed stumptown wolf, drinking vinegar whatever gastropub. Austin
+    quinoa butcher, everyday carry echo park sartorial VHS.</p>
     <footer class="c-dialog__footer">
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog__footer</code>
+      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs" dir="ltr">.c-dialog__footer</code>
       <button class="c-btn u-ml js-close">OK</button>
     </footer>
   </section>
@@ -150,8 +160,7 @@
       ><button class="c-btn js-close u-ml">OK</button>
     </footer>
   </section>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.0/svg4everybody.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

@@ -2,11 +2,14 @@
 
 :root {
   --zd-dialog__footer-margin-top: var(--zd-dialog-padding-bottom);
-  --zd-dialog__footer-text-align: right;
 }
 
 .c-dialog__footer {
   display: block;
   margin-top: var(--zd-dialog__footer-margin-top);
-  text-align: var(--zd-dialog__footer-text-align);
+  text-align: right;
+}
+
+.c-dialog.is-rtl .c-dialog__footer {
+  text-align: left;
 }

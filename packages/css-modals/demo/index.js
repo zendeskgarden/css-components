@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  svg4everybody();
+  $('.js-rtl').click(function() {
+    $('.c-dialog').toggleClass('is-rtl');
+  });
 
   $('.js-btn').click(function() {
     var $this = $(this);
@@ -47,5 +49,9 @@ $(document).ready(function() {
 
   $(document).on('click', '.js-dismiss', function() {
     $(this).find('.js-close').trigger('click');
+  });
+
+  $(document).on('click', '.c-dialog', function(event) {
+    event.stopPropagation();
   });
 });
