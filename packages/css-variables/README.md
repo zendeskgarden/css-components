@@ -5,7 +5,7 @@ of the framework.
 
 ## Installation
 
-    $ npm install --save git+ssh://git@github.com:zendeskgarden/css-variables.git
+    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-variables.git
 
 ## Usage
 
