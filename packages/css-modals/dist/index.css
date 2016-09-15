@@ -58,6 +58,8 @@
 }
 
 .c-dialog--center.is-open{
+  -webkit-transform-origin:0 0;
+          transform-origin:0 0;
   -webkit-animation-name:zd-dialog--center-open;
           animation-name:zd-dialog--center-open;
 }
