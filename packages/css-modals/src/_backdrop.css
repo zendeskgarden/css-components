@@ -28,3 +28,9 @@
   background-color: transparent;
   overflow: hidden;
 }
+
+.l-backdrop.is-visible {
+  /* stylelint-disable no-unknown-animations */
+  animation: zd-backdrop-visible .15s ease-in;
+  /* stylelint-enable no-unknown-animations */
+}

@@ -19,6 +19,11 @@
   overflow:hidden;
 }
 
+.l-backdrop.is-visible{
+  -webkit-animation:zd-backdrop-visible .15s ease-in;
+          animation:zd-backdrop-visible .15s ease-in;
+}
+
 .c-dialog{
   display:inline-block;
   position:relative;
@@ -43,6 +48,20 @@
           transform:translate(-50%,-50%);
 }
 
+.c-dialog.is-open{
+  -webkit-animation-name:zd-dialog-open;
+          animation-name:zd-dialog-open;
+  -webkit-animation-duration:.3s;
+          animation-duration:.3s;
+  -webkit-animation-timing-function:ease-in;
+          animation-timing-function:ease-in;
+}
+
+.c-dialog--center.is-open{
+  -webkit-animation-name:zd-dialog--center-open;
+          animation-name:zd-dialog--center-open;
+}
+
 .c-dialog.is-rtl{
   direction:rtl;
 }
@@ -54,6 +73,11 @@
             transform:translate(-50%);
     margin:20px 0;
   }
+
+  .c-dialog--center.is-open{
+    -webkit-animation-name:zd-dialog--center-small-height-open;
+            animation-name:zd-dialog--center-small-height-open;
+  }
 }
 
 @media (max-width:639px){
@@ -63,6 +87,11 @@
             transform:translateY(-50%);
     margin:0 20px;
   }
+
+  .c-dialog--center.is-open{
+    -webkit-animation-name:zd-dialog--center-small-width-open;
+            animation-name:zd-dialog--center-small-width-open;
+  }
 }
 
 @media (max-height:399px) and (max-width:639px){
@@ -70,6 +99,11 @@
     -webkit-transform:translate(0);
             transform:translate(0);
     margin:20px;
+  }
+
+  .c-dialog--center.is-open{
+    -webkit-animation-name:zd-dialog--center-small-open;
+            animation-name:zd-dialog--center-small-open;
   }
 }
 
@@ -142,4 +176,194 @@
 
 .c-dialog.is-rtl .c-dialog__footer{
   text-align:left;
+}
+
+@-webkit-keyframes zd-backdrop-visible{
+  0%{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes zd-backdrop-visible{
+  0%{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes zd-dialog-open{
+  0%{
+    -webkit-transform:scale(0);
+            transform:scale(0);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05);
+            transform:scale(1.05);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes zd-dialog-open{
+  0%{
+    -webkit-transform:scale(0);
+            transform:scale(0);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05);
+            transform:scale(1.05);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes zd-dialog--center-open{
+  0%{
+    -webkit-transform:scale(0) translate(-50%,-50%);
+            transform:scale(0) translate(-50%,-50%);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05) translate(-50%,-50%);
+            transform:scale(1.05) translate(-50%,-50%);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes zd-dialog--center-open{
+  0%{
+    -webkit-transform:scale(0) translate(-50%,-50%);
+            transform:scale(0) translate(-50%,-50%);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05) translate(-50%,-50%);
+            transform:scale(1.05) translate(-50%,-50%);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes zd-dialog--center-small-height-open{
+  0%{
+    -webkit-transform:scale(0) translate(-50%);
+            transform:scale(0) translate(-50%);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05) translate(-50%);
+            transform:scale(1.05) translate(-50%);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes zd-dialog--center-small-height-open{
+  0%{
+    -webkit-transform:scale(0) translate(-50%);
+            transform:scale(0) translate(-50%);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05) translate(-50%);
+            transform:scale(1.05) translate(-50%);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes zd-dialog--center-small-width-open{
+  0%{
+    -webkit-transform:scale(0) translateY(-50%);
+            transform:scale(0) translateY(-50%);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05) translateY(-50%);
+            transform:scale(1.05) translateY(-50%);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes zd-dialog--center-small-width-open{
+  0%{
+    -webkit-transform:scale(0) translateY(-50%);
+            transform:scale(0) translateY(-50%);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05) translateY(-50%);
+            transform:scale(1.05) translateY(-50%);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes zd-dialog--center-small-open{
+  0%{
+    -webkit-transform:scale(0) translate(0);
+            transform:scale(0) translate(0);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05) translate(0);
+            transform:scale(1.05) translate(0);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes zd-dialog--center-small-open{
+  0%{
+    -webkit-transform:scale(0) translate(0);
+            transform:scale(0) translate(0);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05) translate(0);
+            transform:scale(1.05) translate(0);
+  }
+
+  to{
+    opacity:1;
+  }
 }

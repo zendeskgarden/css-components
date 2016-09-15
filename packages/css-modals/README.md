@@ -73,9 +73,22 @@ Use the following state class to support RTL text direction:
 
 ```html
 <section class="c-dialog is-rtl"
-         ...>
+       ...>
 </section>
 ```
+
+#### Animation
+
+Add the following state class on open for a modal "pop" intended by the
+design:
+
+```html
+<section class="c-dialog is-open"
+      ...>
+</section>
+```
+
+Remember to remove `.is-open` when the dialog is closed.
 
 ### Behavior
 

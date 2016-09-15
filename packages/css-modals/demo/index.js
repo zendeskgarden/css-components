@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     }
 
-    $(dialog).show();
+    $(dialog).addClass('is-open').show().parent('.l-backdrop').addClass('is-visible');
 
     return false;
   });
