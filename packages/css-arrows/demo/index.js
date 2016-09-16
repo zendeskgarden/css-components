@@ -5,7 +5,7 @@ $(document).ready(function() {
   });
 
   $('.js-border').click(function() {
-    $('.c-menu').toggleClass('u-menu-border');
+    $('.c-menu').toggleClass('u-menu-no-border');
   });
 
   $('.js-shadow').click(function() {

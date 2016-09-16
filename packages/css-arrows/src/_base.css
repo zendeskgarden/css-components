@@ -1,9 +1,7 @@
 /* stylelint-disable no-unsupported-browser-features */
-@import 'zd-css-variables';
-
 :root {
   /* stylelint-disable max-line-length */
-  --zd-arrow-size: 1em;
+  --zd-arrow-size: .86em;
   --zd-arrow-transform: rotate(45deg);
   --zd-arrow-position: calc(var(--zd-arrow-size) / -2);
   --zd-arrow--b-clip-path: polygon(100% 0, calc(100% - 1px) 0, 0 calc(100% - 1px), 0 100%, 100% 100%);
