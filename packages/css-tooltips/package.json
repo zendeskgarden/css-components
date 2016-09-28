@@ -16,7 +16,7 @@
     "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#4.0.0",
     "zd-css-arrows": "git+ssh://git@github.com/zendeskgarden/css-arrows.git#0.3.0",
     "zd-css-bedrock": "git+ssh://git@github.com/zendeskgarden/css-bedrock.git#0.3.1",
-    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.6.0"
+    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.7.0"
   },
   "scripts": {
     "build": "postcss --config .postcss.json",
