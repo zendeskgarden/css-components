@@ -1,8 +1,9 @@
 .c-tooltip{
   display:inline-block;
+  box-sizing:border-box;
   border-radius:2px;
-  box-shadow:0 0 4px 0 rgba(0,0,0,.15),0 2px 6px 0 rgba(0,0,0,.1);
-  background-color:#555;
+  box-shadow:0 4px 8px 0 rgba(36,83,107,.15);
+  background-color:#03363d;
   padding:0 1.25em;
   line-height:1.66667;
   color:#ddd;
@@ -11,7 +12,7 @@
 }
 
 .c-tooltip.c-arrow:after,.c-tooltip.c-arrow:before{
-  font-size:6px;
+  font-size:7px;
 }
 
 .c-tooltip--extra-large{
@@ -22,7 +23,7 @@
 }
 
 .c-tooltip--extra-large.c-arrow:after,.c-tooltip--extra-large.c-arrow:before{
-  font-size:inherit;
+  font-size:16px;
 }
 
 .c-tooltip--large{
@@ -33,7 +34,7 @@
 }
 
 .c-tooltip--large.c-arrow:after,.c-tooltip--large.c-arrow:before{
-  font-size:10px;
+  font-size:12px;
 }
 
 .c-tooltip--medium{
@@ -44,6 +45,20 @@
 }
 
 .c-tooltip--light{
+  border:1px solid #eee;
+  box-shadow:0 10px 20px 0 rgba(36,83,107,.15);
   background-color:#fff;
-  color:#999;
+  color:#777;
+}
+
+.c-tooltip--light.c-arrow:after,.c-tooltip--light.c-arrow:before{
+  font-size:9px;
+}
+
+.c-tooltip--light.c-tooltip--large.c-arrow:after,.c-tooltip--light.c-tooltip--large.c-arrow:before{
+  font-size:14px;
+}
+
+.c-tooltip--light.c-tooltip--extra-large.c-arrow:after,.c-tooltip--light.c-tooltip--extra-large.c-arrow:before{
+  font-size:18px;
 }
