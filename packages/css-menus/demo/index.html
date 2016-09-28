@@ -3,7 +3,9 @@
 <head>
   <title>Zendesk Garden / Menus</title>
   <link href="bedrock.css" rel="stylesheet">
+  <link href="arrows.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
   <style>
   html {
     transition:
@@ -11,9 +13,34 @@
       color .4s
   }
 
-  .u-position-static {
-    position: static !important;
+  .c-arrow--b {
+    bottom: 32px;
+    left: 59px;
   }
+
+  .c-arrow--l {
+    left: 100.1%;
+    bottom: -55px;
+  }
+
+  .c-arrow--r {
+    top: -55px;
+    right: 100.1%;
+  }
+
+  .c-arrow--t {
+    top: 2px;
+    left: 59px;
+  }
+
+  .u-mb-xxl { margin-bottom: 140px !important; }
+
+  .u-position-relative {
+    z-index: 0;
+    position: relative !important;
+  }
+
+  .u-position-static { position: static !important; }
   </style>
 </head>
 <body>
@@ -156,7 +183,7 @@
         <h3 class="u-gamma u-mb">Reversed layout via
           <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.is-rtl</code>
         </h3>
-        <ul class="c-menu c-menu is-rtl u-position-static" dir="rtl" role="menu">
+        <ul class="c-menu is-rtl u-position-static" dir="rtl" role="menu">
           <li class="c-menu__item" role="menuitem">One</li>
           <li class="c-menu__item" role="menuitem">Two</li>
           <li class="c-menu__item" role="menuitem">Three</li>
@@ -173,8 +200,70 @@
         </ul>
       </div>
     </div>
+    <h3 class="u-gamma u-mb">Animations</h3>
+    <div class="u-mb-lg">
+      <div class="l-grid u-mb-xxl">
+        <div class="l-grid__item u-1/3"></div
+        ><div class="l-grid__item u-1/3">
+          <button class="c-btn c-btn--full js-menu-button">
+            <code class="u-bg-platinum u-br-sm u-milli u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.is-open.is-open--s</code>
+          </button>
+          <div class="u-position-relative">
+            <ul class="c-arrow c-arrow--t c-menu is-open--s js-menu" role="menu" style="display: none">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
+        </div
+        ><div class="l-grid__item u-1/3"></div>
+      </div>
+      <div class="l-grid u-mb-xxl">
+        <div class="l-grid__item u-1/3">
+          <button class="c-btn c-btn--full js-menu-button">
+            <code class="u-bg-platinum u-br-sm u-milli u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.is-open.is-open--e</code>
+          </button>
+          <div class="u-position-relative">
+            <ul class="c-arrow c-arrow--l c-menu is-open--e js-menu" role="menu" style="display: none">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
+        </div
+        ><div class="l-grid__item u-1/3"></div
+        ><div class="l-grid__item u-1/3">
+          <div class="u-position-relative">
+            <ul class="c-arrow c-arrow--r c-menu is-open--w js-menu" role="menu" style="display: none">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
+          <button class="c-btn c-btn--full js-menu-button">
+            <code class="u-bg-platinum u-br-sm u-milli u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.is-open.is-open--w</code>
+          </button>
+        </div>
+      </div>
+      <div class="l-grid u-mb-lg">
+        <div class="l-grid__item u-1/3"></div
+        ><div class="l-grid__item u-1/3">
+          <button class="c-btn c-btn--full js-menu-button">
+            <code class="u-bg-platinum u-br-sm u-milli u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.is-open.is-open--s</code>
+          </button>
+          <div class="u-position-relative">
+            <ul class="c-arrow c-arrow--b c-menu is-open--n js-menu" role="menu" style="display: none">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
+        </div
+        ><div class="l-grid__item u-1/3"></div>
+      </div>
+    </div>
   </main>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

@@ -145,6 +145,21 @@ Use the following state class to support RTL text direction:
 </ul>
 ```
 
+### Animation
+
+Use the following state class (and modifier) on open for a slight
+translate intended by the design:
+
+```
+<ul class="c-menu is-open is-open--s"
+    role="menu">
+  ...
+</ul>
+```
+
+The modifier determines the movement (north, east, south, west) of the
+menu animation. Remember to remove `.is-open` upon menu close.
+
 ## Tests
 
     $ npm test

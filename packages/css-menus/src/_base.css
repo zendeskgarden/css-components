@@ -1,17 +1,17 @@
 @import 'zd-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-menu-background-color: var(--zd-color-white);
   --zd-menu-border: 1px solid var(--zd-color-platinum);
   --zd-menu-border-radius: 4px;
-  --zd-menu-box-shadow: 0 20px 30px 0 color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-menu-box-shadow:
+    0 20px 30px 0
+    color(var(--zd-color-chathams-blue) alpha(15%));
   --zd-menu-font-size: var(--zd-font-size-epsilon);
   --zd-menu-font-weight: var(--zd-font-weight-regular);
   --zd-menu-min-width: 180px;
   --zd-menu-padding: var(--zd-spacing-sm) 0;
   --zd-menu--large-min-width: 270px;
-  /* stylelint-enable max-line-length */
 }
 
 /* 1. Positioned relative to controlling item.
@@ -37,12 +37,47 @@
   font-weight: var(--zd-menu-font-weight);
 }
 
-/* Just enforces a bigger minimum width */
 .c-menu--large {
   min-width: var(--zd-menu--large-min-width);
 }
 
-/* RTL support */
+/* stylelint-disable no-unknown-animations */
+.c-menu.is-open {
+  animation-name: zd-menu-open;
+  animation-timing-function: cubic-bezier(.15, .85, .35, 1.2);
+}
+
+.c-menu.is-open,
+.c-menu.is-open::after {
+  animation-duration: .2s;
+}
+
+/* Apply a separate opacity animation to any arrow treatment attached to the
+ * menu since the menu's translate transform temporarily wrecks the stacking
+ * context, allowing psuedo elements to show through.
+ */
+.c-menu.is-open::after {
+  animation-name: zd-menu-open__after;
+  animation-timing-function: ease-in;
+}
+
+.c-menu.is-open--e {
+  animation-name: zd-menu-open--e;
+}
+
+.c-menu.is-open--n {
+  animation-name: zd-menu-open--n;
+}
+
+.c-menu.is-open--s {
+  animation-name: zd-menu-open--s;
+}
+
+.c-menu.is-open--w {
+  animation-name: zd-menu-open--w;
+}
+/* stylelint-enable no-unknown-animations */
+
 .c-menu.is-rtl {
   direction: rtl;
   text-align: right;

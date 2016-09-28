@@ -1,0 +1,63 @@
+:root {
+  --zd-menu-transform-translate: var(--zd-spacing);
+}
+
+@keyframes zd-menu-open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zd-menu-open__after {
+  0%, 97% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zd-menu-open--n {
+  0% {
+    transform: translateY(var(--zd-menu-transform-translate));
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes zd-menu-open--e {
+  0% {
+    transform: translateX(calc(var(--zd-menu-transform-translate) * -1));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zd-menu-open--s {
+  0% {
+    transform: translateY(calc(var(--zd-menu-transform-translate) * -1));
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes zd-menu-open--w {
+  0% {
+    transform: translateX(var(--zd-menu-transform-translate));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
