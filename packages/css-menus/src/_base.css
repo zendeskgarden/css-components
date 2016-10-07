@@ -43,38 +43,46 @@
 
 /* stylelint-disable no-unknown-animations */
 .c-menu.is-open {
-  animation-name: zd-menu-open;
-  animation-timing-function: cubic-bezier(.15, .85, .35, 1.2);
+  animation: .2s cubic-bezier(.15, .85, .35, 1.2);
 }
 
-.c-menu.is-open,
-.c-menu.is-open::after {
-  animation-duration: .2s;
+/* Used for animating `c-arrow` before/after pseudo elements. */
+@custom-selector :--around ::before, ::after;
+
+.c-menu.is-open:--around {
+  animation: .3s ease-in-out;
 }
 
-/* Apply a separate opacity animation to any arrow treatment attached to the
- * menu since the menu's translate transform temporarily wrecks the stacking
- * context, allowing psuedo elements to show through.
- */
-.c-menu.is-open::after {
-  animation-name: zd-menu-open__after;
-  animation-timing-function: ease-in;
+.c-menu--down.is-open {
+  animation-name: zd-menu--down-open;
 }
 
-.c-menu.is-open--e {
-  animation-name: zd-menu-open--e;
+.c-menu--down.is-open:--around {
+  animation-name: zd-menu--down-open-arrow;
 }
 
-.c-menu.is-open--n {
-  animation-name: zd-menu-open--n;
+.c-menu--left.is-open {
+  animation-name: zd-menu--left-open;
 }
 
-.c-menu.is-open--s {
-  animation-name: zd-menu-open--s;
+.c-menu--left.is-open:--around {
+  animation-name: zd-menu--left-open-arrow;
 }
 
-.c-menu.is-open--w {
-  animation-name: zd-menu-open--w;
+.c-menu--right.is-open {
+  animation-name: zd-menu--right-open;
+}
+
+.c-menu--right.is-open:--around {
+  animation-name: zd-menu--right-open-arrow;
+}
+
+.c-menu--up.is-open {
+  animation-name: zd-menu--up-open;
+}
+
+.c-menu--up.is-open:--around {
+  animation-name: zd-menu--up-open-arrow;
 }
 /* stylelint-enable no-unknown-animations */
 

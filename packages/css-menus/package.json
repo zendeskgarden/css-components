@@ -1,6 +1,6 @@
 {
   "name": "zd-css-menus",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
   "main": "dist/index.css",
   "style": "src/index.css",

@@ -151,14 +151,14 @@ Use the following state class (and modifier) on open for a slight
 translate intended by the design:
 
 ```
-<ul class="c-menu is-open is-open--s"
+<ul class="c-menu c-menu--down is-open"
     role="menu">
   ...
 </ul>
 ```
 
-The modifier determines the movement (north, east, south, west) of the
-menu animation. Remember to remove `.is-open` upon menu close.
+The modifier determines the movement (up, down, right, left) of the menu
+animation. Remember to remove `.is-open` upon menu close.
 
 ## Tests
 

@@ -4,15 +4,19 @@ $(document).ready(function() {
   });
 
   $('.js-menu-button').click(function(event) {
-    $(document).trigger('click');
-    $(this).parent().find('.js-menu').addClass('is-open').show();
-    $(this).addClass('is-disabled');
+    if (!$(this).hasClass('is-disabled')) {
+      $(document).trigger('click');
+      $(this).parent().find('.js-menu').addClass('is-open').show();
+      $(this).addClass('is-disabled');
+    }
 
     return false;
   });
 
   $(document).click(function() {
-    $('.js-menu').hide().removeClass('is-open');
+    $('.js-menu').removeClass('is-open').each(function() {
+      this.offsetHeight; // trigger reflow
+    }).hide();
     $('.js-menu-button').removeClass('is-disabled');
   });
 
