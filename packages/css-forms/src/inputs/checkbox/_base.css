@@ -1,13 +1,19 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-chk-background-color: var(--zd-color-white);
-  --zd-chk-border: 1px solid currentColor;
+  --zd-chk-background-color: var(--zd-color-snow);
+  --zd-chk-border: 1px solid var(--zd-color-platinum);
   --zd-chk-border-radius: 4px;
   --zd-chk-color: var(--zd-color-aluminum);
-  --zd-chk-font-size: var(--zd-font-size-zeta);
+  --zd-chk-font-size: var(--zd-font-size-epsilon);
   --zd-chk-line-height: var(--zd-spacing);
   --zd-chk-size: var(--zd-font-size-epsilon);
+  --zd-chk-transition:
+    border-color .25s ease-in-out,
+    box-shadow .1s ease-in-out,
+    background-color .25s ease-in-out,
+    background-image .25s ease-in-out,
+    color .25s ease-in-out;
   --zd-chk__label-padding: calc(var(--zd-chk-font-size) + var(--zd-spacing-sm));
 }
 
@@ -42,6 +48,7 @@
   position: absolute;
   top: 50%; /* [3] */
   left: 0;
+  transition: var(--zd-chk-transition);
   margin-top: calc(var(--zd-chk-size) / 2 * -1); /* [3] */
   border: var(--zd-chk-border);
   border-radius: var(--zd-chk-border-radius);

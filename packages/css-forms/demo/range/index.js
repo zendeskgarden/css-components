@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   $('.c-range__input, .c-range__label').mousedown(function() {
     keyboard = false;
+    $(this).parent('.c-range').removeClass('is-focused');
   });
 
   $('.c-range__input').focus(function() {

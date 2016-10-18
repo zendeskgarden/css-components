@@ -2,16 +2,30 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-chk-active-background-color: var(--zd-color-anti-flash-white);
+  /* stylelint-disable max-line-length */
+  --zd-chk-active-background-color: color(var(--zd-color-black) alpha(5%));
+  --zd-chk-active-border-color: var(--zd-color-pelorous);
+  --zd-chk-active-transition:
+    border-color .1s ease-in-out,
+    background-color .1s ease-in-out,
+    background-image .1s ease-in-out,
+    color .1s ease-in-out;
   --zd-chk-checked-background:
     no-repeat
     center/100%
-    url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.5%22%20d%3D%22M4.5%207.19L6.76%209.5l2.744-5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E')
-    currentColor;
-  --zd-chk-checked-active-background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23999%22%20stroke-width%3D%221.5%22%20d%3D%22M4.5%207.19L6.76%209.5l2.744-5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
+    svg-load('14-checkmark.svg', color: var(--zd-color-white))
+    var(--zd-color-pelorous);
+  --zd-chk-checked-color: var(--zd-color-pelorous);
+  --zd-chk-checked-active-background-color: color(var(--zd-chk-checked-color) blackness(+10%));
+  --zd-chk-checked-active-border-color: var(--zd-chk-checked-active-background-color);
   --zd-chk-disabled-background-color: var(--zd-color-gainsboro);
-  --zd-chk-disabled-color: var(--zd-color-iron);
-  --zd-chk-focused-box-shadow: 0 0 0 2px var(--zd-color-gainsboro);
+  --zd-chk-focused-background-color: var(--zd-color-white);
+  --zd-chk-focused-border-color: var(--zd-color-pelorous);
+  --zd-chk-focused-box-shadow:
+    0 0 0 3px
+    color(var(--zd-chk-focused-border-color) alpha(40%));
+  --zd-chk-hovered-background-color: var(--zd-chk-focused-background-color);
+  /* stylelint-enable max-line-length */
 }
 
 /* 1. No `.c-chk__input:focus` styling, since it prevents mimicking
@@ -26,11 +40,24 @@
   background: var(--zd-chk-checked-background);
 }
 
+@custom-selector :--chk-hovered
+  .c-chk.is-hovered > .c-chk__label,
+  .c-chk > .c-chk__label:hover;
+
+:--chk-hovered::before {
+  background-color: var(--zd-chk-hovered-background-color);
+}
+
 @custom-selector :--chk-focused /* [1] */
   .c-chk.is-focused > .c-chk__label;
 
+:--chk-focused::before {
+  background-color: var(--zd-chk-focused-background-color);
+}
+
 :--chk-focused::after {
   outline: none;
+  border-color: var(--zd-chk-focused-border-color);
   box-shadow: var(--zd-chk-focused-box-shadow);
 }
 
@@ -39,7 +66,8 @@
   .c-chk > .c-chk__label:active.c-chk__label:active;
 
 :--chk-active::after {
-  border-color: currentColor;
+  transition: var(--zd-chk-active-transition);
+  border-color: var(--zd-chk-active-border-color);
   background-color: var(--zd-chk-active-background-color);
 }
 
@@ -50,7 +78,8 @@
   .c-chk__input:enabled:checked ~ .c-chk__label:active;
 
 :--chk-checked-active::after {
-  background-image: var(--zd-chk-checked-active-background-image);
+  border-color: var(--zd-chk-checked-active-border-color);
+  background-color: var(--zd-chk-checked-active-background-color);
 }
 
 @custom-selector :--chk-disabled /* [2] */
@@ -59,7 +88,10 @@
 
 :--chk-disabled {
   cursor: default;
-  color: var(--zd-chk-disabled-color);
+}
+
+:--chk-disabled::before {
+  border-color: var(--zd-chk-disabled-background-color);
 }
 
 :--chk-disabled::after {

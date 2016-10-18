@@ -1,13 +1,16 @@
 :root {
   /* stylelint-disable max-line-length */
-  --zd-chk--toggle-background-color: var(--zd-color-gainsboro);
-  --zd-chk--toggle-active-background-color: color(var(--zd-chk--toggle-background-color) blackness(+20%));
-  --zd-chk--toggle-checked-active-background-color: color(var(--zd-color-aluminum) blackness(+20%));
-  --zd-chk--toggle-disabled-background-color: var(--zd-color-anti-flash-white);
-  --zd-chk--toggle-disabled-background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%226%22%20fill%3D%22%23ddd%22%2F%3E%3C%2Fsvg%3E');
-  --zd-chk--toggle-background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%226%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E');
-  --zd-chk--toggle-focused-box-shadow: 0 0 0 2px var(--zd-color-anti-flash-white);
+  --zd-chk--toggle-background-color: var(--zd-color-aluminum);
+  --zd-chk--toggle-active-background-color: color(var(--zd-chk--toggle-background-color) blackness(+10%));
+  --zd-chk--toggle-checked-active-background-color: var(--zd-chk-checked-active-background-color);
+  --zd-chk--toggle-disabled-background-color: var(--zd-chk-disabled-background-color);
+  --zd-chk--toggle-background-image: svg-load('14-circle.svg', color: var(--zd-color-white));
   --zd-chk--toggle-height: var(--zd-spacing);
+  --zd-chk--toggle-transition:
+    box-shadow .1s ease-in-out,
+    background-color .15s ease-in-out,
+    background-position .15s ease-in-out,
+    color .25s ease-in-out;
   --zd-chk--toggle-width: var(--zd-spacing-xl);
   --zd-chk--toggle__label-padding: calc(var(--zd-chk--toggle-width) + var(--zd-spacing-sm));
   /* stylelint-enable max-line-length */
@@ -20,7 +23,7 @@
 .c-chk--toggle > .c-chk__label::before,
 .c-chk--toggle > .c-chk__label::after {
   top: 0;
-  margin-top: -1px;
+  margin-top: 0;
   border: none;
   border-radius: 100px;
   background-color: var(--zd-chk--toggle-background-color);
@@ -29,20 +32,16 @@
 }
 
 .c-chk--toggle > .c-chk__label::after {
-  transition: background-position .15s ease-in-out;
+  transition: var(--zd-chk--toggle-transition);
   background-image: var(--zd-chk--toggle-background-image);
   background-repeat: no-repeat;
-  background-position: 0;
+  background-position: 10%;
 }
 
 .c-chk--toggle:--chk-checked::after {
   background-image: var(--zd-chk--toggle-background-image);
-  background-position: 100%;
+  background-position: 90%;
   background-size: auto;
-}
-
-.c-chk--toggle:--chk-focused::after {
-  box-shadow: var(--zd-chk--toggle-focused-box-shadow);
 }
 
 .c-chk--toggle:--chk-active::after {
@@ -51,12 +50,11 @@
 
 .c-chk--toggle:--chk-checked-active::after {
   background-color: var(--zd-chk--toggle-checked-active-background-color);
-  background-image: var(--zd-chk--toggle-background-image);
 }
 
+.c-chk--toggle:--chk-disabled::before,
 .c-chk--toggle:--chk-disabled::after {
   background-color: var(--zd-chk--toggle-disabled-background-color);
-  background-image: var(--zd-chk--toggle-disabled-background-image);
 }
 
 .c-chk--toggle.is-rtl > .c-chk__label {
@@ -64,9 +62,9 @@
 }
 
 .c-chk--toggle.is-rtl > .c-chk__label::after {
-  background-position: 100%;
+  background-position: 90%;
 }
 
 .c-chk--toggle.is-rtl:--chk-checked::after {
-  background-position: 0;
+  background-position: 10%;
 }

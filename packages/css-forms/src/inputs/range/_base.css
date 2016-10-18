@@ -4,7 +4,7 @@
 :root {
   /* stylelint-disable max-line-length */
   --zd-range-margin: calc((var(--zd-range-thumb-size) - var(--zd-range-track-height)) / 2);
-  --zd-range-thumb-background-color: var(--zd-color-aluminum);
+  --zd-range-thumb-background-color: var(--zd-color-pelorous);
   --zd-range-thumb-border: 3px solid var(--zd-range-thumb-background-color);
   --zd-range-thumb-border-radius: 100%;
   --zd-range-thumb-margin: calc(var(--zd-range-margin) * -1) 0;
@@ -35,6 +35,7 @@
   appearance: none;
   margin: 0; /* [2] */
   outline: none;
+  background-color: inherit;
   cursor: pointer;
   padding: 0; /* [3] */
   width: 100%;

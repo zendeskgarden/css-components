@@ -2,7 +2,7 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-range-active-thumb-background-color: var(--zd-color-steel);
+  --zd-range-active-thumb-background-color: color(var(--zd-range-thumb-background-color) blackness(+10%));
   --zd-range-active-track-background-color: var(--zd-color-gainsboro);
   --zd-range-disabled-lower-background-color: var(--zd-color-gainsboro);
   --zd-range-disabled-thumb-background-color: var(--zd-range-disabled-lower-background-color);
@@ -12,7 +12,7 @@
   --zd-range-focused-box-shadow-spread-radius: 3px;
   --zd-range-focused-box-shadow:
     0 0 0 var(--zd-range-focused-box-shadow-spread-radius)
-    color(var(--zd-color-black) alpha(10%));
+    color(var(--zd-range-thumb-background-color) alpha(40%));
   /* stylelint-enable max-line-length */
 }
 

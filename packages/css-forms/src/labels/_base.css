@@ -2,12 +2,12 @@
 
 :root {
   --zd-hint-color: var(--zd-color-aluminum);
-  --zd-hint-font-size: var(--zd-font-size-zeta);
-  --zd-hint-line-height: 1.666667;
-  --zd-hint-margin-top: var(--zd-spacing-xs);
-  --zd-label-color: var(--zd-color-oil);
-  --zd-label-font-size: var(--zd-font-size-zeta);
-  --zd-label-line-height: 2.5;
+  --zd-hint-font-size: var(--zd-font-size-epsilon);
+  --zd-hint-line-height: calc(20 / 14);
+  --zd-hint-margin-top: var(--zd-spacing-sm);
+  --zd-label-color: var(--zd-color-dark-gray);
+  --zd-label-font-size: var(--zd-font-size-delta);
+  --zd-label-line-height: calc(40 / 16);
 }
 
 .c-range__hint,
@@ -19,11 +19,8 @@
 }
 
 .c-range__hint + .c-range__input,
-.c-txt__hint + .c-txt__input {
-  margin-top: var(--zd-hint-margin-top);
-}
-
 .c-range__input + .c-range__hint,
+.c-txt__hint + .c-txt__input,
 .c-txt__input + .c-txt__hint {
   margin-top: var(--zd-hint-margin-top);
 }
@@ -40,5 +37,5 @@
 
 .c-range__label + .c-range__hint,
 .c-txt__label + .c-txt__hint {
-  margin-top: calc(var(--zd-hint-margin-top) * -1);
+  margin-top: calc(var(--zd-hint-margin-top) / 2 * -1);
 }

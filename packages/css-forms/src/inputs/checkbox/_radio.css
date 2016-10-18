@@ -1,6 +1,14 @@
+/* stylelint-disable */
+@svg-load circle url('14-circle.svg') {
+  color: var(--zd-color-white);
+  circle {
+    r: 4.5;
+  }
+}
+/* stylelint-enable */
+
 :root {
-  --zd-chk--radio-checked-background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Ccircle%20cx%3D%227%22%20cy%3D%227%22%20r%3D%224.5%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E');
-  --zd-chk--radio-checked-active-background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%3Ccircle%20cx%3D%227%22%20cy%3D%227%22%20r%3D%224.5%22%20fill%3D%22%23999%22%2F%3E%3C%2Fsvg%3E');
+  --zd-chk--radio-checked-background-image: svg-inline(circle);
 }
 
 .c-chk--radio > .c-chk__label::before,
@@ -10,8 +18,4 @@
 
 .c-chk--radio:--chk-checked::after {
   background-image: var(--zd-chk--radio-checked-background-image);
-}
-
-.c-chk--radio:--chk-checked-active::after {
-  background-image: var(--zd-chk--radio-checked-active-background-image);
 }

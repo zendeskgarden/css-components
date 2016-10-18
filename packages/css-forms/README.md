@@ -62,19 +62,6 @@ Use the following state class to support RTL text direction:
 </fieldset>
 ```
 
-##### Accent
-
-See the checkbox `accent.css` source file for sample CSS needed to
-format checkboxes, toggles, and radio buttons according to your
-product's accent color. This CSS is not included in the package
-distribution. Upon inclusion, corresponding HTML would be:
-
-```html
-<fieldset class="c-chk c-chk--accent">
-  ...
-</fieldset>
-```
-
 ### Range
 
 Range input CSS is intended to support a component structure similar to
@@ -113,19 +100,6 @@ when using a range slider to model directional elements (i.e. playback).
 </fieldset>
 ```
 
-##### Accent
-
-See the range `accent.css` source file for sample CSS needed to format
-range fields according to your product's accent color. This CSS is not
-included in the package distribution. Upon inclusion, corresponding HTML
-would be:
-
-```html
-<fieldset class="c-range c-range--accent">
-  ...
-</fieldset>
-```
-
 ### Text
 
 Text input CSS is intended to support a component structure similar to
@@ -158,19 +132,6 @@ Use the following modifier class to support `textarea` fields:
 ```html
 <fieldset class="c-txt">
   <textarea class="c-txt__input c-txt__input--area"></textarea>
-</fieldset>
-```
-
-##### Accent
-
-See the text `accent.css` source file for sample CSS needed to format
-text fields according to your product's accent color. This CSS is not
-included in the package distribution. Upon inclusion, corresponding HTML
-would be:
-
-```html
-<fieldset class="c-txt c-txt--accent">
-  ...
 </fieldset>
 ```
 

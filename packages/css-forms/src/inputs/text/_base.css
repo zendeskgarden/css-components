@@ -2,15 +2,20 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-txt__input-background-color: var(--zd-color-white);
-  --zd-txt__input-border: 1px solid var(--zd-color-gainsboro);
+  --zd-txt__input-background-color: var(--zd-color-snow);
+  --zd-txt__input-border: 1px solid var(--zd-color-platinum);
   --zd-txt__input-border-radius: 4px;
-  --zd-txt__input-color: var(--zd-color-dark-gray);
-  --zd-txt__input-color-placeholder: var(--zd-color-aluminum);
+  --zd-txt__input-color: var(--zd-color-monsoon);
+  --zd-txt__input-color-placeholder: var(--zd-color-iron);
   --zd-txt__input-font-size: var(--zd-font-size-epsilon);
-  --zd-txt__input-line-height: 1.4285714286;
-  --zd-txt__input-min-height: calc(var(--zd-txt__input-font-size) * var(--zd-txt__input-line-height) + 20px);
-  --zd-txt__input-padding: .7142857143em 1.4285714286em;
+  --zd-txt__input-line-height: calc(20 / 14);
+  --zd-txt__input-min-height: var(--zd-spacing-xl);
+  --zd-txt__input-padding: calc(var(--zd-txt__input-line-height) / 2em) calc(var(--zd-txt__input-line-height) * 1em);
+  --zd-txt__input-transition:
+    border-color .25s ease-in-out,
+    box-shadow .1s ease-in-out,
+    background-color .25s ease-in-out,
+    color .25s ease-in-out;
   /* stylelint-enable max-line-length */
 }
 
@@ -28,6 +33,7 @@
 }
 
 .c-txt__input {
+  transition: var(--zd-txt__input-transition);
   outline: none;
   border: var(--zd-txt__input-border);
   border-radius: var(--zd-txt__input-border-radius);
@@ -47,6 +53,7 @@
 }
 
 .c-txt__input::placeholder {
+  opacity: 1;
   color: var(--zd-txt__input-color-placeholder);
 }
 
