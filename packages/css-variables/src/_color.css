@@ -1,5 +1,4 @@
-/* davidwalsh.name/sass-color-variables-dont-suck
- * name-of-color.com */
+/* davidwalsh.name/sass-color-variables-dont-suck */
 
 :root {
   --zd-color-affair: rgb(115, 73, 136);
@@ -21,7 +20,9 @@
   --zd-color-denim: rgb(20, 110, 170);
   --zd-color-east-side: rgb(176, 131, 200);
   --zd-color-festival: rgb(242, 206, 74);
+  --zd-color-flamingo: rgb(235, 102, 81);
   --zd-color-gainsboro: rgb(221, 221, 221);
+  --zd-color-golden-dream: rgb(239, 201, 61);
   --zd-color-indian-red: rgb(207, 100, 92);
   --zd-color-iron: rgb(204, 204, 204);
   --zd-color-jonquil: rgb(255, 221, 95);
@@ -31,9 +32,11 @@
   --zd-color-lola: rgb(185, 164, 195);
   --zd-color-mabel: rgb(204, 227, 236);
   --zd-color-malibu: rgb(94, 187, 222);
+  --zd-color-mandy: rgb(235, 73, 98);
   --zd-color-monsoon: rgb(119, 119, 119);
   --zd-color-moon-yellow: rgb(237, 190, 14);
   --zd-color-moonstone-blue: rgb(106, 171, 196);
+  --zd-color-nero: rgb(26, 26, 26);
   --zd-color-non-photo-blue: rgb(165, 220, 242);
   --zd-color-oasis: rgb(250, 239, 195);
   --zd-color-oil: rgb(51, 51, 51);
@@ -46,18 +49,28 @@
   --zd-color-platinum: rgb(238, 238, 238);
   --zd-color-regent-st-blue: rgb(154, 199, 216);
   --zd-color-remy: rgb(247, 206, 203);
+  --zd-color-sea-buckthorn: rgb(247, 154, 62);
   --zd-color-sky-blue: rgb(120, 205, 236);
   --zd-color-snow: rgb(251, 251, 251);
   --zd-color-steel: rgb(102, 102, 102);
   --zd-color-sunglow: rgb(255, 209, 42);
   --zd-color-terra-cotta: rgb(232, 108, 100);
   --zd-color-titan-white: rgb(220, 209, 225);
+  --zd-color-verdigris: rgb(55, 184, 175);
   --zd-color-wewak: rgb(239, 157, 151);
   --zd-color-white: rgb(255, 255, 255);
   --zd-color-white-smoke: rgb(248, 248, 248);
 
   /* Aliases */
+  --zd-color-chat-orange: var(--zd-color-sea-buckthorn);
+  --zd-color-connect-red: var(--zd-color-flamingo);
   --zd-color-explore-blue: var(--zd-color-pelorous);
+  --zd-color-guide-pink: var(--zd-color-mandy);
+  --zd-color-message-green: var(--zd-color-verdigris);
+  --zd-color-support-green: var(--zd-color-apple-green);
+  --zd-color-talk-yellow: var(--zd-color-golden-dream);
+
+  /* Deprecated aliases */
   --zd-color-zendesk-green: var(--zd-color-apple-green);
   --zd-color-promo-orange: var(--zd-color-orange-peel);
 }
