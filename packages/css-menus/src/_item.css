@@ -4,6 +4,7 @@
   --zd-menu__item-color: var(--zd-color-monsoon);
   --zd-menu__item-line-height: calc(20 / 14);
   --zd-menu__item-padding: .71429em 1.42857em;
+  --zd-menu__item-transition: box-shadow .1s ease-in-out;
 }
 
 /* 1. Allows an item to contain a positioned sub-menu.
@@ -11,6 +12,7 @@
 .c-menu__item {
   display: block;
   position: relative; /* [1] */
+  transition: var(--zd-menu__item-transition);
   z-index: 0; /* [2] */
   cursor: pointer;
   padding: var(--zd-menu__item-padding);

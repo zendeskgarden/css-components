@@ -20,6 +20,14 @@ $(document).ready(function() {
     $('.js-menu-button').removeClass('is-disabled');
   });
 
+  $('.c-btn').focus(function() {
+    $(this).addClass('is-focused');
+  }).blur(function() {
+    $(this).removeClass('is-focused');
+  }).mouseup(function() {
+    $(this).removeClass('is-focused');
+  });
+
   $('.c-menu__item').mouseup(function() {
     $(this).blur();
   });

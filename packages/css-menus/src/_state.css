@@ -2,6 +2,9 @@
 
 :root {
   --zd-menu__item-disabled-color: var(--zd-color-iron);
+  --zd-menu__item-focused-box-shadow:
+    inset 0 3px 0 color(var(--zd-color-gainsboro) alpha(40%)),
+    inset 0 -3px 0 color(var(--zd-color-gainsboro) alpha(40%));
   --zd-menu__item--selected-color: var(--zd-color-dark-gray);
   --zd-menu__item--selected-background-color: var(--zd-color-white-smoke);
 }
@@ -20,6 +23,7 @@
 
 .c-menu__item:--focused {
   outline: none;
+  box-shadow: var(--zd-menu__item-focused-box-shadow);
 }
 
 @custom-selector :--active .is-active, :active;
