@@ -20,12 +20,7 @@ Canonical markup for a dialog is structured as follows.
          tabindex="-1">
   <header>
     <h1 class="c-dialog__header" id="dialog-title">Dialog Title</h1>
-    <button aria-label="close"
-            class="c-dialog__close">
-      <svg>
-        <use xlink:href="index.svg#zd-svg-icon-14-remove">
-      </svg>
-    </button>
+    <button aria-label="close" class="c-dialog__close"></button>
   </header>
   <div class="c-dialog__body">
     [YOUR DIALOG CONTENT HERE]
@@ -37,11 +32,6 @@ Canonical markup for a dialog is structured as follows.
   </footer>
 </section>
 ```
-
-Please note the recommended use of the "remove" SVG referenced from the
-symbol distribution provided by
-[svg-icons](https://github.com/zendeskgarden/svg-icons) (a dependency of
-this package).
 
 Use the backdrop layout class to give a dialog a modal treatment.
 
