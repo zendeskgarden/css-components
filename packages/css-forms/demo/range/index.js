@@ -14,20 +14,18 @@ $(document).ready(function() {
   });
 
   $('.c-range__input').on('input', function() {
-    $(this).pseudo();
-
     var $this = $(this);
     var min = $this.attr('min') || 0;
     var max = $this.attr('max');
 
-    if (max && (parseInt(max) < parseInt(min))) {
+    if (max && (parseFloat(max) < parseFloat(min))) {
       max = 100;
     }
 
-    var value = max ? ~~(100 * ($this.val() - min) / (max - min)) : $this.val();
+    var value = max ? (100 * ($this.val() - min) / (max - min)) : $this.val();
     var backgroundSize = value + '%';
 
-    $(this).pseudo(':-webkit-slider-runnable-track', 'background-size', backgroundSize);
+    $(this).css('background-size', backgroundSize);
   }).trigger('input');
 
   $('.js-rtl').click(function() {
