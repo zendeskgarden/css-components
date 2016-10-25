@@ -62,6 +62,7 @@ a:hover {
 button {
   cursor: pointer;
   padding: 0;
+  line-height: inherit;
   font-family: inherit;
 }
 

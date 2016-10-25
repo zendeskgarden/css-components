@@ -436,8 +436,9 @@ a:hover{
   color:#358fb2;
 }
 button{
-  padding:0;
   cursor:pointer;
+  padding:0;
+  line-height:inherit;
   font-family:inherit;
 }
 code{ font-size:.95em; }
