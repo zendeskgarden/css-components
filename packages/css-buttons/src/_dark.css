@@ -1,0 +1,21 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-btn--dark-background-color: transparent;
+  --zd-btn--dark-disabled-background-color: var(--zd-color-submarine);
+  --zd-btn--dark-disabled-color: var(--zd-color-algae);
+  --zd-btn--dark-hovered-background-color: var(--zd-color-white);
+}
+
+.c-btn--dark {
+  background-color: var(--zd-btn--dark-background-color);
+}
+
+.c-btn--dark:--hovered {
+  color: var(--zd-btn--dark-hovered-background-color);
+}
+
+.c-btn--dark.c-btn--dark:--disabled {
+  background-color: var(--zd-btn--dark-disabled-background-color);
+  color: var(--zd-btn--dark-disabled-color);
+}
