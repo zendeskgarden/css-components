@@ -32,6 +32,7 @@
   background-color:#fff;
   padding:20px 40px 30px;
   width:600px;
+  min-height:60px;
 }
 .c-dialog:focus{
   outline:none;
@@ -129,13 +130,11 @@
       -ms-user-select:none;
           user-select:none;
 }
-.c-dialog__close.is-focused,.c-dialog__close:hover{
+.c-dialog__close.is-focused,.c-dialog__close.is-hovered,.c-dialog__close:hover{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23555'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
 }
-.c-dialog__close:focus{
+.c-dialog__close.is-focused,.c-dialog__close:focus{
   outline:none;
-}
-.c-dialog__close.is-focused{
   background-color:#eee;
 }
 .c-dialog__close:active{
@@ -158,6 +157,27 @@
 }
 .c-dialog.is-rtl .c-dialog__footer{
   text-align:left;
+}
+.c-dialog--dark{
+  border-color:transparent;
+  box-shadow:0 20px 30px 0 rgba(0,0,0,.15);
+  background-color:#03363d;
+}
+.c-dialog--dark .c-dialog__body{
+  color:#819a9e;
+}
+.c-dialog--dark .c-dialog__close{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2356777A'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+}
+.c-dialog--dark .c-dialog__close.is-focused,.c-dialog--dark .c-dialog__close.is-hovered,.c-dialog--dark .c-dialog__close:hover{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23819A9E'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+}
+.c-dialog--dark .c-dialog__close.is-focused{
+  background-color:#04444d;
+}
+.c-dialog--dark .c-dialog__header{
+  border-bottom-color:#04444d;
+  color:#fff;
 }
 @-webkit-keyframes zd-backdrop-visible{
   0%{

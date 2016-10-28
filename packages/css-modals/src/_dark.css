@@ -1,0 +1,44 @@
+@import 'zd-css-variables';
+
+:root {
+  /* stylelint-disable max-line-length, no-unsupported-browser-features */
+  --zd-dialog--dark-background-color: var(--zd-color-algae);
+  --zd-dialog--dark-border-color: transparent;
+  --zd-dialog--dark-box-shadow:
+    0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0
+    color(var(--zd-color-black) alpha(15%));
+  --zd-dialog--dark__body-color: var(--zd-color-submarine);
+  --zd-dialog--dark__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-breaker-bay));
+  --zd-dialog--dark__close-focused-background-color: var(--zd-color-sherpa-blue);
+  --zd-dialog--dark__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-submarine));
+  --zd-dialog--dark__header-border-bottom-color: var(--zd-color-sherpa-blue);
+  --zd-dialog--dark__header-color: var(--zd-color-white);
+  /* stylelint-enable max-line-length, no-unsupported-browser-features */
+}
+
+.c-dialog--dark {
+  border-color: var(--zd-dialog--dark-border-color);
+  box-shadow: var(--zd-dialog--dark-box-shadow);
+  background-color: var(--zd-dialog--dark-background-color);
+}
+
+.c-dialog--dark .c-dialog__body {
+  color: var(--zd-dialog--dark__body-color);
+}
+
+.c-dialog--dark .c-dialog__close {
+  background-image: var(--zd-dialog--dark__close-background-image);
+}
+
+.c-dialog--dark .c-dialog__close:--hovered {
+  background-image: var(--zd-dialog--dark__close-hovered-background-image);
+}
+
+.c-dialog--dark .c-dialog__close.is-focused {
+  background-color: var(--zd-dialog--dark__close-focused-background-color);
+}
+
+.c-dialog--dark .c-dialog__header {
+  border-bottom-color: var(--zd-dialog--dark__header-border-bottom-color);
+  color: var(--zd-dialog--dark__header-color);
+}

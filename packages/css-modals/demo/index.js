@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  $('.js-dark').click(function() {
+    $('html').toggleClass('u-bg-daintree u-fg-white');
+    $('.c-dialog').toggleClass('c-dialog--dark');
+    $('.c-btn').toggleClass('c-btn--dark');
+  });
+
   $('.js-rtl').click(function() {
     $('.c-dialog').toggleClass('is-rtl');
   });

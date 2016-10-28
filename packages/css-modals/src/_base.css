@@ -8,8 +8,11 @@
   --zd-dialog-border-radius: 4px;
   --zd-dialog-box-shadow-offset-y: var(--zd-spacing);
   --zd-dialog-box-shadow-blur-radius: var(--zd-spacing-lg);
-  --zd-dialog-box-shadow: 0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0 color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-dialog-box-shadow:
+    0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0
+    color(var(--zd-color-chathams-blue) alpha(15%));
   --zd-dialog-margin-bottom: var(--zd-dialog-box-shadow-blur-radius);
+  --zd-dialog-min-height: calc(var(--zd-dialog__close-size) + (2 * var(--zd-dialog__close-top)));
   --zd-dialog-padding-bottom: var(--zd-spacing-lg);
   --zd-dialog-padding-horizontal: var(--zd-spacing-xl);
   --zd-dialog-padding-top: var(--zd-spacing);
@@ -36,6 +39,7 @@
   background-color: var(--zd-dialog-background-color);
   padding: var(--zd-dialog-padding);
   width: var(--zd-dialog-width);
+  min-height: var(--zd-dialog-min-height);
 }
 
 .c-dialog:focus {
