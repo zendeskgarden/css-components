@@ -24,7 +24,7 @@
   --zd-chk-focused-box-shadow:
     0 0 0 3px
     color(var(--zd-chk-focused-border-color) alpha(40%));
-  --zd-chk-hovered-background-color: var(--zd-chk-focused-background-color);
+  --zd-chk-hovered-border-color: var(--zd-chk-focused-border-color);
   /* stylelint-enable max-line-length */
 }
 
@@ -45,7 +45,7 @@
   .c-chk > .c-chk__label:hover;
 
 :--chk-hovered::before {
-  background-color: var(--zd-chk-hovered-background-color);
+  border-color: var(--zd-chk-hovered-border-color);
 }
 
 @custom-selector :--chk-focused /* [1] */

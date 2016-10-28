@@ -2,8 +2,8 @@
 
 :root {
   /* stylelint-disable max-line-length */
-  --zd-txt__input-background-color: var(--zd-color-snow);
-  --zd-txt__input-border: 1px solid var(--zd-color-platinum);
+  --zd-txt__input-background-color: var(--zd-color-white);
+  --zd-txt__input-border: 1px solid var(--zd-color-gainsboro);
   --zd-txt__input-border-radius: 4px;
   --zd-txt__input-color: var(--zd-color-monsoon);
   --zd-txt__input-color-placeholder: var(--zd-color-iron);
@@ -45,6 +45,7 @@
   vertical-align: middle; /* [3] */
   line-height: var(--zd-txt__input-line-height);
   color: var(--zd-txt__input-color);
+  font-family: inherit;
   font-size: var(--zd-txt__input-font-size);
 }
 

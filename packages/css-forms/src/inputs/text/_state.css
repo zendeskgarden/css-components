@@ -10,7 +10,7 @@
   --zd-txt-focused-box-shadow:
     0 0 0 3px
     color(var(--zd-txt-focused-border-color) alpha(40%));
-  --zd-txt-hovered-background-color: var(--zd-txt-focused-background-color);
+  --zd-txt-hovered-border-color: var(--zd-txt-focused-border-color);
   --zd-txt-hovered-color: var(--zd-color-dark-gray);
 }
 
@@ -19,7 +19,7 @@
   .c-txt > .c-txt__input:hover;
 
 :--txt-hovered {
-  background-color: var(--zd-txt-hovered-background-color);
+  border-color: var(--zd-txt-hovered-border-color);
   color: var(--zd-txt-hovered-color);
 }
 

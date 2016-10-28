@@ -1,8 +1,8 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-chk-background-color: var(--zd-color-snow);
-  --zd-chk-border: 1px solid var(--zd-color-platinum);
+  --zd-chk-background-color: var(--zd-color-white);
+  --zd-chk-border: 1px solid var(--zd-color-gainsboro);
   --zd-chk-border-radius: 4px;
   --zd-chk-color: var(--zd-color-aluminum);
   --zd-chk-font-size: var(--zd-font-size-epsilon);
