@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $('.js-dark').click(function() {
-    $('html').toggleClass('u-bg-dark-gray u-fg-white');
+    $('html').toggleClass('u-bg-daintree u-fg-white');
+    $('.c-menu').toggleClass('c-menu--dark');
+    $('.c-btn').toggleClass('c-btn--dark');
   });
 
   $('.js-menu-button').click(function(event) {

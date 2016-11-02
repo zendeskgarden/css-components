@@ -92,6 +92,29 @@
           user-select:none;
 }
 
+.c-menu--dark{
+  border-color:transparent;
+  box-shadow:0 20px 30px 0 rgba(0,0,0,.15);
+  background-color:#03363d;
+}
+
+.c-menu--dark .c-menu__item{
+  color:#819a9e;
+}
+
+.c-menu--dark .c-menu__item.is-focused,.c-menu--dark .c-menu__item.is-selected,.c-menu--dark .c-menu__item:focus,.c-menu--dark .c-menu__item:hover{
+  background-color:#04444d;
+  color:#fff;
+}
+
+.c-menu--dark.c-menu .c-menu__item.is-disabled,.c-menu--dark.c-menu .c-menu__item[aria-disabled=true],.c-menu--dark.c-menu .c-menu__item[disabled]{
+  color:#56777a;
+}
+
+.c-menu--dark .c-menu__separator{
+  border-color:#04444d;
+}
+
 .c-menu__item.is-focused,.c-menu__item.is-selected,.c-menu__item:focus,.c-menu__item:hover{
   background-color:#f8f8f8;
   color:#555;
@@ -106,7 +129,7 @@
   box-shadow:none;
 }
 
-.c-menu__item.is-disabled,.c-menu__item[aria-disabled=true],.c-menu__item[disabled]{
+.c-menu .c-menu__item.is-disabled,.c-menu .c-menu__item[aria-disabled=true],.c-menu .c-menu__item[disabled]{
   background-color:inherit;
   cursor:default;
   color:#ccc;

@@ -1,0 +1,40 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-menu--dark-background-color: var(--zd-color-algae);
+  --zd-menu--dark-border-color: transparent;
+  --zd-menu--dark-box-shadow:
+    0 20px 30px 0
+    color(var(--zd-color-black) alpha(15%));
+  --zd-menu--dark__item-color: var(--zd-color-submarine);
+  --zd-menu--dark__item--disabled-color: var(--zd-color-breaker-bay);
+  --zd-menu--dark__item--selected-background-color: var(--zd-color-sherpa-blue);
+  --zd-menu--dark__item--selected-color: var(--zd-color-white);
+  --zd-menu--dark__separator-border-color: var(--zd-color-sherpa-blue);
+}
+
+.c-menu--dark {
+  border-color: var(--zd-menu--dark-border-color);
+  box-shadow: var(--zd-menu--dark-box-shadow);
+  background-color: var(--zd-menu--dark-background-color);
+}
+
+.c-menu--dark .c-menu__item {
+  color: var(--zd-menu--dark__item-color);
+}
+
+.c-menu--dark .c-menu__item:--selected,
+.c-menu--dark .c-menu__item:--focused {
+  background-color: var(--zd-menu--dark__item--selected-background-color);
+  color: var(--zd-menu--dark__item--selected-color);
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-menu--dark.c-menu .c-menu__item:--disabled {
+  color: var(--zd-menu--dark__item--disabled-color);
+}
+/* stylelint-enable selector-max-specificity */
+
+.c-menu--dark .c-menu__separator {
+  border-color: var(--zd-menu--dark__separator-border-color);
+}

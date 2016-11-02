@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 @import 'zd-css-variables';
 
 :root {
@@ -34,7 +35,7 @@
 
 @custom-selector :--disabled .is-disabled, [disabled], [aria-disabled='true'];
 
-.c-menu__item:--disabled {
+.c-menu .c-menu__item:--disabled {
   background-color: inherit;
   cursor: default;
   color: var(--zd-menu__item-disabled-color);
@@ -51,3 +52,4 @@
 .c-menu:--hidden {
   display: none;
 }
+/* stylelint-enable no-descending-specificity */
