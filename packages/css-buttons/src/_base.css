@@ -5,7 +5,7 @@
   --zd-btn-color: var(--zd-color-pelorous);
   --zd-btn-font-size: var(--zd-font-size-zeta);
   --zd-btn-font-weight: var(--zd-font-weight-regular);
-  --zd-btn-background-color: var(--zd-color-white);
+  --zd-btn-background-color: transparent;
   --zd-btn-border-color: var(--zd-color-pelorous);
   --zd-btn-border-radius: 4px;
   --zd-btn-border-width: 1px;
