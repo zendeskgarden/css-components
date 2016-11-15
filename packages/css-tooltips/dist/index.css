@@ -62,3 +62,10 @@
 .c-tooltip--light.c-tooltip--extra-large.c-arrow:after,.c-tooltip--light.c-tooltip--extra-large.c-arrow:before{
   font-size:18px;
 }
+
+.c-tooltip--dark{
+  border:none;
+  box-shadow:0 10px 20px 0 rgba(0,0,0,.15);
+  background-color:#03363d;
+  color:#819a9e;
+}

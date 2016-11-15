@@ -5,14 +5,25 @@
   <link href="bedrock.css" rel="stylesheet">
   <link href="arrows.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <style>
+  html {
+    transition:
+      background-color .4s,
+      color .4s
+  }
+  </style>
 </head>
 <body>
   <header class="u-bg-oil u-fg-white u-mb-lg">
     <div class="l-wrapper">
-      <h1 class="u-alpha u-pv">
+      <h1 class="u-alpha u-display-inline-block u-pv">
         <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
         <span>/ Tooltips</span>
       </h1>
+      <label class="u-delta u-ml">
+        <input class="js-dark" type="checkbox">
+        <code>.c-tooltip--dark</code>
+      </label>
     </div>
   </header>
   <main class="l-wrapper">
@@ -120,5 +131,7 @@
       </div>
     </div>
   </main>
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

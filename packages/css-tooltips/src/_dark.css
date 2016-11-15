@@ -1,0 +1,16 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-tooltip--dark-background-color: var(--zd-color-algae);
+  --zd-tooltip--dark-box-shadow:
+    0 10px 20px 0
+    color(var(--zd-color-black) alpha(15%));
+  --zd-tooltip--dark-color: var(--zd-color-submarine);
+}
+
+.c-tooltip--dark {
+  border: none;
+  box-shadow: var(--zd-tooltip--dark-box-shadow);
+  background-color: var(--zd-tooltip--dark-background-color);
+  color: var(--zd-tooltip--dark-color);
+}
