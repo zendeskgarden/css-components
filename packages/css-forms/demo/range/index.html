@@ -5,8 +5,26 @@
   <link href="../bedrock.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <style>
+  html {
+    transition:
+      background-color .4s,
+      color .4s;
+  }
+
   .l-wrapper--370 {
     max-width: 370px;
+  }
+
+  .c-range__input::-moz-range-track {
+    transition: background-color .4s;
+  }
+
+  .c-range__input::-ms-track {
+    transition: background-color .4s;
+  }
+
+  .c-range__input::-webkit-slider-runnable-track {
+    transition: background-color .4s;
   }
 
   .c-range--inline.is-rtl > .c-range__label {
@@ -23,6 +41,10 @@
         <a class="u-fg-inherit" href="..">Forms</a>
         <span>/ Range</span>
       </h1>
+      <label class="u-delta u-ml">
+        <input class="js-dark" type="checkbox">
+        <code>.c-range--dark</code>
+      </label>
       <label class="u-ml">
         <input class="js-rtl" type="checkbox">
         <span class="u-epsilon">RTL</span>
@@ -32,19 +54,19 @@
   <main class="l-wrapper">
     <h2 class="u-beta u-mb">Range</h2>
     <p class="u-mb">Use the
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-range</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-range</code>
     component to style form range fields. Stateful
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-*</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.is-*</code>
     classes are for demo purposes only and are not considered reliable for
     rendering checkbox behavior. However, the
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-focused</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.is-focused</code>
     class is intended to be programmatically toggled on keyboard (not mouse)
     focus as it is here.</p>
     <p class="u-mb">Since WebKit browsers have no supporting pseudo-element for
     the lower range, the
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-range__input</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-range__input</code>
     child contains corresponding
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">background</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">background</code>
     CSS whose size should be manipulated via JavaScript whenever the range
     "thumb" is moved. See the supporting page JS for details.</p>
     <p class="u-mb">Child component classes are shown here.</p>
@@ -60,7 +82,7 @@
       <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
     </fieldset>
     <p class="u-mb">The unmodified
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-range</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-range</code>
     occupies 100% of the width of its container. The following field is contained
     by a 370px wrapper.</p>
     <form class="l-wrapper--370 u-mb-lg">
@@ -72,7 +94,7 @@
     </form>
     <h3 class="u-delta u-mb">Modifiers</h3>
     <p class="u-mb">Use the
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-range--inline</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-range--inline</code>
     class modifier to layout range controls inline.</p>
     <fieldset class="c-range c-range--inline u-mb-lg">
       <label class="c-range__label u-mr" for="range-2">Scale</label
@@ -97,11 +119,11 @@
     </fieldset>
     <h3 class="u-delta u-mb">Values</h3>
     <p class="u-mb">Demonstrate range controls with various
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">max</code>,
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">min</code>,
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">step</code>,
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">max</code>,
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">min</code>,
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">step</code>,
     and
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">value</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">value</code>
     attribute values.</p>
     <form class="l-wrapper--370 u-mb-lg">
       <fieldset class="c-range u-mb-lg">
@@ -123,6 +145,7 @@
     </form>
   </main>
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="../index.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

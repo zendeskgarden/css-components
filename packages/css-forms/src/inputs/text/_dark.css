@@ -1,0 +1,32 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-txt--dark-disabled-background-color: var(--zd-color-submarine);
+  --zd-txt--dark-disabled-color: var(--zd-color-algae);
+  --zd-txt--dark-disabled-color-placeholder: var(--zd-color-breaker-bay);
+  --zd-txt--dark-focused-border-color: var(--zd-color-breaker-bay);
+  --zd-txt--dark-hovered-border-color: var(--zd-txt--dark-focused-border-color);
+  --zd-txt--dark__input-background-color: var(--zd-color-sherpa-blue);
+  --zd-txt--dark__input-border-color: transparent;
+  --zd-txt--dark__input-color: color(var(--zd-color-white) alpha(75%));
+  --zd-txt--dark__input-color-placeholder: var(--zd-color-breaker-bay);
+}
+
+.c-txt--dark .c-txt__input {
+  border-color: var(--zd-txt--dark__input-border-color);
+  background-color: var(--zd-txt--dark__input-background-color);
+  color: var(--zd-txt--dark__input-color);
+}
+
+.c-txt--dark .c-txt__input::placeholder {
+  color: var(--zd-txt--dark__input-color-placeholder);
+}
+
+.c-txt--dark:--txt-disabled {
+  background-color: var(--zd-txt--dark-disabled-background-color);
+  color: var(--zd-txt--dark-disabled-color);
+}
+
+.c-txt--dark:--txt-disabled::placeholder {
+  color: var(--zd-txt--dark-disabled-color-placeholder);
+}

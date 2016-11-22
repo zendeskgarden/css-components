@@ -19,7 +19,6 @@
   --zd-chk-checked-active-background-color: color(var(--zd-chk-checked-color) blackness(+10%));
   --zd-chk-checked-active-border-color: var(--zd-chk-checked-active-background-color);
   --zd-chk-disabled-background-color: var(--zd-color-gainsboro);
-  --zd-chk-focused-background-color: var(--zd-color-white);
   --zd-chk-focused-border-color: var(--zd-color-pelorous);
   --zd-chk-focused-box-shadow:
     0 0 0 3px
@@ -33,7 +32,7 @@
  * 2. Class-chain specificity hack. */
 
 @custom-selector :--chk-checked
-  .c-chk.is-checked > .c-chk__label,
+  .c-chk.is-checked.is-checked > .c-chk__label,
   .c-chk > .c-chk__input:checked ~ .c-chk__label;
 
 :--chk-checked::after {
@@ -51,14 +50,14 @@
 @custom-selector :--chk-focused /* [1] */
   .c-chk.is-focused > .c-chk__label;
 
-:--chk-focused::before {
-  background-color: var(--zd-chk-focused-background-color);
-}
-
 :--chk-focused::after {
   outline: none;
-  border-color: var(--zd-chk-focused-border-color);
   box-shadow: var(--zd-chk-focused-box-shadow);
+}
+
+:--chk-focused::before,
+:--chk-focused::after {
+  border-color: var(--zd-chk-focused-border-color);
 }
 
 @custom-selector :--chk-active /* [2] */
@@ -72,7 +71,7 @@
 }
 
 @custom-selector :--chk-checked-active
-  .c-chk.is-checked.is-active:not(.is-disabled) > .c-chk__label,
+  .c-chk.is-checked.is-checked.is-active:not(.is-disabled) > .c-chk__label,
   .c-chk.is-active > .c-chk__input:enabled:checked ~ .c-chk__label,
   .c-chk:not(.is-disabled) >
   .c-chk__input:enabled:checked ~ .c-chk__label:active;
@@ -90,13 +89,19 @@
   cursor: default;
 }
 
-:--chk-disabled::before {
-  border-color: var(--zd-chk-disabled-background-color);
+:--chk-disabled::before,
+:--chk-disabled::after {
+  border-color: transparent;
 }
 
 :--chk-disabled::after {
-  border-color: transparent;
   box-shadow: none;
   background-color: var(--zd-chk-disabled-background-color);
 }
+
+@custom-selector :--chk-checked-disabled
+  .c-chk.is-checked.is-disabled > .c-chk__label,
+  .c-chk > .c-chk__input:checked:disabled ~ .c-chk__label,
+  .c-chk.is-checked > .c-chk__input:disabled ~ .c-chk__label,
+  .c-chk.is-disabled > .c-chk__input:checked ~ .c-chk__label;
 /* stylelint-enable no-descending-specificity */

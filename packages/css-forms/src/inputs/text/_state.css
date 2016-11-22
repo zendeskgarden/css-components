@@ -2,10 +2,9 @@
 
 :root {
   --zd-txt-disabled-background-color: var(--zd-color-gainsboro);
-  --zd-txt-disabled-border-color: var(--zd-color-gainsboro);
+  --zd-txt-disabled-border-color: transparent;
   --zd-txt-disabled-color: var(--zd-color-monsoon);
   --zd-txt-disabled-color-placeholder: var(--zd-color-white);
-  --zd-txt-focused-background-color: var(--zd-color-white);
   --zd-txt-focused-border-color: var(--zd-color-pelorous);
   --zd-txt-focused-box-shadow:
     0 0 0 3px
@@ -20,7 +19,6 @@
 
 :--txt-hovered {
   border-color: var(--zd-txt-hovered-border-color);
-  color: var(--zd-txt-hovered-color);
 }
 
 @custom-selector :--txt-focused
@@ -30,7 +28,6 @@
 :--txt-focused {
   border-color: var(--zd-txt-focused-border-color);
   box-shadow: var(--zd-txt-focused-box-shadow);
-  background-color: var(--zd-txt-focused-background-color);
 }
 
 @custom-selector :--txt-disabled

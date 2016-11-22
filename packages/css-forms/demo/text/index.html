@@ -5,6 +5,12 @@
   <link href="../bedrock.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <style>
+  html {
+    transition:
+      background-color .4s,
+      color .4s
+  }
+
   .l-wrapper--370 {
     max-width: 370px;
   }
@@ -13,18 +19,22 @@
 <body>
   <header class="u-bg-oil u-fg-white u-mb-lg">
     <div class="l-wrapper">
-      <h1 class="u-alpha u-pv">
+      <h1 class="u-alpha u-display-inline-block u-pv">
         <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
         <span>/</span>
         <a class="u-fg-inherit" href="..">Forms</a>
         <span>/ Text</span>
       </h1>
+      <label class="u-delta u-ml">
+        <input class="js-dark" type="checkbox">
+        <code>.c-txt--dark</code>
+      </label>
     </div>
   </header>
   <main class="l-wrapper">
     <h2 class="u-beta u-mb">Text</h2>
     <p class="u-mb">Use the
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-txt</code>
     component to style form text fields. Child component classes are shown
     below.</p>
     <fieldset class="c-txt u-mb-lg">
@@ -39,7 +49,7 @@
       <small class="c-txt__hint">.c-txt__hint</small>
     </fieldset>
     <p class="u-mb">The unmodified
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-txt</code>
     occupies 100% of the width of its container. The following fields are contained
     by a 370px wrapper.</p>
     <form class="l-wrapper--370 u-mb-lg">
@@ -71,7 +81,7 @@
     </form>
     <h3 class="u-delta u-mb">Modifiers</h3>
     <p class="u-mb">Use the
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt--inline</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-txt--inline</code>
     class modifier to layout text controls inline.</p>
     <form class="u-mb-lg">
       <fieldset class="c-txt c-txt--inline u-mb-sm">
@@ -84,7 +94,7 @@
       </fieldset>
     </form>
     <p class="u-mb">Add the
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt__input--area</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-txt__input--area</code>
     modifier class to style <code>&lt;textarea&gt;</code> elements. Specify
     the textarea's <code>rows</code> attribute to control the height.</p>
     <form class="u-mb-lg">
@@ -95,9 +105,9 @@
       <fieldset class="c-txt u-mb-sm">
         <label class="c-txt__label" for="txtarea-1">Resizable Textarea</label>
         <small class="c-txt__hint">By default, the
-        <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-txt__input--area</code>
+        <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-txt__input--area</code>
         class prevents user-controlled resizing. Adding
-        <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-resizable</code>
+        <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.is-resizable</code>
         allows the user to vertically resize the textarea (horizontal resizing
         typically interferes with layout in an undesirable manner). Resize is
         not supported by IE.
@@ -119,4 +129,6 @@
       <input class="c-txt__input" disabled placeholder=".c-txt .c-txt__input[disabled]" type="text">
     </fieldset>
   </main>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="../index.js"></script>
 </body>

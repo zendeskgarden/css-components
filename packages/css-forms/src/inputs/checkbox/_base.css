@@ -4,7 +4,6 @@
   --zd-chk-background-color: var(--zd-color-white);
   --zd-chk-border: 1px solid var(--zd-color-gainsboro);
   --zd-chk-border-radius: 4px;
-  --zd-chk-color: var(--zd-color-aluminum);
   --zd-chk-font-size: var(--zd-font-size-epsilon);
   --zd-chk-line-height: var(--zd-spacing);
   --zd-chk-size: var(--zd-font-size-epsilon);
@@ -14,6 +13,7 @@
     background-color .25s ease-in-out,
     background-image .25s ease-in-out,
     color .25s ease-in-out;
+  --zd-chk__label-color: var(--zd-color-aluminum);
   --zd-chk__label-padding: calc(var(--zd-chk-font-size) + var(--zd-spacing-sm));
 }
 
@@ -40,7 +40,7 @@
   cursor: pointer;
   padding-left: var(--zd-chk__label-padding);
   white-space: nowrap;
-  color: var(--zd-chk-color);
+  color: var(--zd-chk__label-color);
   user-select: none;
 }
 

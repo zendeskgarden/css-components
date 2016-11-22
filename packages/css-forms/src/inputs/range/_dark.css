@@ -1,0 +1,33 @@
+@import 'zd-css-variables';
+
+:root {
+  /* stylelint-disable max-line-length */
+  --zd-range--dark-track-background-color: var(--zd-color-algae);
+  --zd-range--dark-disabled-lower-background-color: var(--zd-color-breaker-bay);
+  --zd-range--dark-disabled-thumb-background-color: var(--zd-range--dark-disabled-lower-background-color);
+  --zd-range--dark-disabled-thumb-border-color: var(--zd-range--dark-disabled-thumb-background-color);
+  --zd-range--dark-disabled-track-background-color: var(--zd-range--dark-disabled-thumb-background-color);
+  --zd-range--dark-disabled-track-background-image: linear-gradient(var(--zd-range--dark-disabled-track-background-color), var(--zd-range--dark-disabled-track-background-color));
+  /* stylelint-enable max-line-length */
+}
+
+/* stylelint-disable selector-pseudo-element-no-unknown */
+.c-range--dark .c-range__input::range-track,
+.c-range--dark:--range-active::range-track {
+  background-color: var(--zd-range--dark-track-background-color);
+}
+
+.c-range--dark:--range-disabled::range-track {
+  background-color: var(--zd-range--dark-disabled-track-background-color);
+  background-image: var(--zd-range--dark-disabled-track-background-image);
+}
+
+.c-range--dark:--range-disabled::range-thumb {
+  border-color: var(--zd-range--dark-disabled-thumb-border-color);
+  background-color: var(--zd-range--dark-disabled-thumb-background-color);
+}
+
+.c-range--dark:--range-disabled::range-lower {
+  background-color: var(--zd-range--dark-disabled-lower-background-color);
+}
+/* stylelint-enable selector-pseudo-element-no-unknown */

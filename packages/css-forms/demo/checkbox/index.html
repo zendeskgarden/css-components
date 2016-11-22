@@ -5,6 +5,12 @@
   <link href="../bedrock.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <style>
+  html {
+    transition:
+      background-color .4s,
+      color .4s
+  }
+
   .l-wrapper--1024 {
     max-width: 1024px;
   }
@@ -19,6 +25,10 @@
         <a class="u-fg-inherit" href="..">Forms</a>
         <span>/ Checkbox</span>
       </h1>
+      <label class="u-delta u-ml">
+        <input class="js-dark" type="checkbox">
+        <code>.c-chk--dark</code>
+      </label>
       <label class="u-ml">
         <input class="js-rtl" type="checkbox">
         <span class="u-epsilon">RTL</span>
@@ -28,15 +38,15 @@
   <main class="l-wrapper l-wrapper--1024">
     <h2 class="u-beta u-mb">Checkbox</h2>
     <p class="u-mb">Checkboxes showing styling for the various states. Stateful
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-*</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.is-*</code>
     classes are for demo purposes only and are not considered reliable for
     rendering checkbox behavior. However, the
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.is-focused</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.is-focused</code>
     class is intended to be programmatically toggled on keyboard (not mouse)
     focus as it is here. Each state variation is shown with with corresponding
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-chk--toggle</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-chk--toggle</code>
     and
-    <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-chk--radio</code>
+    <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-chk--radio</code>
     styling.</p>
     <div class="u-mb">
       <h3 class="u-delta u-mb">Default</h3>
@@ -320,6 +330,7 @@
     </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="../index.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
