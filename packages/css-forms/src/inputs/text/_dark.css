@@ -1,3 +1,4 @@
+/* stylelint-disable max-line-length */
 @import 'zd-css-variables';
 
 :root {
@@ -10,6 +11,8 @@
   --zd-txt--dark__input-border-color: transparent;
   --zd-txt--dark__input-color: color(var(--zd-color-white) alpha(75%));
   --zd-txt--dark__input-color-placeholder: var(--zd-color-breaker-bay);
+  --zd-txt--dark__input--select-hovered-background-image: var(--zd-txt__input--select__chevron-open-background-image);
+  --zd-txt--dark__input--select-disabled-background-image: svg-load('14-chevron.svg', color: var(--zd-color-sherpa-blue));
 }
 
 .c-txt--dark .c-txt__input {
@@ -30,3 +33,23 @@
 .c-txt--dark:--txt-disabled::placeholder {
   color: var(--zd-txt--dark-disabled-color-placeholder);
 }
+
+.c-txt--dark:--txt-hovered.c-txt__input--select:not(select)::before,
+.c-txt--dark:--txt-focused.c-txt__input--select:not(select)::before,
+.c-txt--dark.is-hovered > select.c-txt__input--select,
+.c-txt--dark > select.c-txt__input--select:hover,
+.c-txt--dark.is-focused > select.c-txt__input--select,
+.c-txt--dark > select.c-txt__input--select:focus {
+  background-image: var(--zd-txt--dark__input--select-hovered-background-image);
+}
+
+.c-txt--dark select.c-txt__input--select:-moz-focusring {
+  text-shadow: 0 0 0 var(--zd-txt--dark__input-color);
+}
+
+.c-txt--dark:--txt-disabled.c-txt__input--select:not(select)::before,
+.c-txt--dark.is-disabled > select.c-txt__input--select,
+.c-txt--dark > select.c-txt__input--select:disabled {
+  background-image: var(--zd-txt--dark__input--select-disabled-background-image);
+}
+/* stylelint-enable max-line-length */

@@ -135,6 +135,47 @@ Use the following modifier class to support `textarea` fields:
 </fieldset>
 ```
 
+##### Dropdown
+
+Use the following `select` modifier along with a
+[`menu`](https://github.com/zendeskgarden/css-menus) component
+to support dropdown fields:
+
+```html
+<fieldset>
+  <div class="c-txt">
+    <label class="c-txt__label" for="select-id">Select</label>
+    <button
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      aria-owns="menu-id"
+      class="c-txt__input c-txt__input--select"
+      id="select-id"
+      role="combobox">VALUE</button>
+  </div>
+  <ul aria-hidden="true"
+      aria-labelledby="select-id"
+      class="c-menu c-menu--down"
+      id="menu-id"
+      role="listbox">
+    <li class="c-menu__item" role="option">item</li>
+    <li class="c-menu__item is-selected" role="option">VALUE</li>
+    <li class="c-menu__item" role="option">item</li>
+  </ul>
+</fieldset>
+```
+
+##### RTL
+
+Use the following state class to support RTL text direction:
+
+```html
+<fieldset class="c-txt is-rtl">
+  ...
+</fieldset>
+```
+
 ## Tests
 
     $ npm test
@@ -142,3 +183,8 @@ Use the following modifier class to support `textarea` fields:
 ## Demo
 
     $ npm start
+
+## Contributing
+
+See [LANDSCAPE
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).

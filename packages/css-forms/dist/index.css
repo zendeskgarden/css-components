@@ -1,3 +1,5 @@
+
+
 .c-chk{
   position:relative;
   margin:0;
@@ -399,6 +401,10 @@
   width:auto;
 }
 
+.c-txt.is-rtl{
+  direction:rtl;
+}
+
 .c-txt__input--area{
   resize:none;
   overflow:auto;
@@ -408,8 +414,91 @@
   resize:vertical;
 }
 
+.c-txt__input--select{
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+  position:relative;
+  cursor:pointer;
+  padding-right:3.42857em;
+  text-align:left;
+}
+
+.c-txt__input--select:not(select):before{
+  position:absolute;
+  top:0;
+  right:0;
+  width:48px;
+  height:100%;
+  content:'';
+}
+
+.c-txt__input--select:not(select):before,select.c-txt__input--select{
+  -webkit-transition:background-image .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out;
+  transition:background-image .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out;
+  transition:background-image .25s ease-in-out,transform .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
+  transition:background-image .25s ease-in-out,transform .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23DDD'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 6l3 3 3-3'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 1.21429em center;
+}
+
+select.c-txt__input--select::-ms-expand{
+  display:none;
+}
+
+select.c-txt__input--select::-ms-value{
+  background-color:transparent;
+  color:inherit;
+}
+
+select.c-txt__input--select:-moz-focusring{
+  -webkit-transition:none;
+  transition:none;
+  text-shadow:0 0 0 #777;
+  color:transparent;
+}
+
+.c-txt.is-focused>.c-txt__input.c-txt__input--select:not(select):before,.c-txt.is-focused>select.c-txt__input--select,.c-txt.is-hovered>.c-txt__input.c-txt__input--select:not(select):before,.c-txt.is-hovered>select.c-txt__input--select,.c-txt>.c-txt__input:focus.c-txt__input--select:not(select):before,.c-txt>.c-txt__input:hover.c-txt__input--select:not(select):before,.c-txt>select.c-txt__input--select:focus,.c-txt>select.c-txt__input--select:hover{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23333'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 6l3 3 3-3'/%3E%3C/svg%3E");
+}
+
+.c-txt__input--select.is-open.is-open.is-open:not(select):before{
+  -webkit-transform:rotate(180deg) translateY(-1px);
+          transform:rotate(180deg) translateY(-1px);
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2330AABC'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 6l3 3 3-3'/%3E%3C/svg%3E");
+}
+
+.c-txt.is-disabled>.c-txt__input.c-txt__input--select:not(select):before,.c-txt.is-disabled>select.c-txt__input--select,.c-txt>.c-txt__input:disabled.c-txt__input--select:not(select):before,.c-txt>select.c-txt__input--select:disabled{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 6l3 3 3-3'/%3E%3C/svg%3E");
+}
+
+.c-txt.is-rtl .c-txt__input--select{
+  padding-right:1.42857em;
+  padding-left:3.42857em;
+  text-align:right;
+}
+
+.c-txt.is-rtl .c-txt__input--select:not(select):before{
+  right:auto;
+  left:0;
+}
+
+.c-txt.is-rtl .c-txt__input--select:not(select):before,.c-txt.is-rtl select.c-txt__input--select{
+  background-position:left 1.21429em center;
+}
+
+.c-txt.is-rtl .c-txt__input--select.is-open.is-open.is-open:not(select):before{
+  -webkit-transform:rotate(-180deg) translateY(-1px);
+          transform:rotate(-180deg) translateY(-1px);
+}
+
 .c-txt.is-hovered>.c-txt__input,.c-txt>.c-txt__input:hover{
   border-color:#30aabc;
+}
+
+.c-txt>.c-txt__input:focus{
+  outline:none;
 }
 
 .c-txt.is-focused>.c-txt__input,.c-txt>.c-txt__input:focus{
@@ -481,6 +570,18 @@
 
 .c-txt--dark.c-txt.is-disabled>.c-txt__input::placeholder,.c-txt--dark.c-txt>.c-txt__input:disabled::placeholder{
   color:#56777a;
+}
+
+.c-txt--dark.c-txt.is-focused>.c-txt__input.c-txt__input--select:not(select):before,.c-txt--dark.c-txt.is-hovered>.c-txt__input.c-txt__input--select:not(select):before,.c-txt--dark.c-txt>.c-txt__input:focus.c-txt__input--select:not(select):before,.c-txt--dark.c-txt>.c-txt__input:hover.c-txt__input--select:not(select):before,.c-txt--dark.is-focused>select.c-txt__input--select,.c-txt--dark.is-hovered>select.c-txt__input--select,.c-txt--dark>select.c-txt__input--select:focus,.c-txt--dark>select.c-txt__input--select:hover{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2330AABC'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 6l3 3 3-3'/%3E%3C/svg%3E");
+}
+
+.c-txt--dark select.c-txt__input--select:-moz-focusring{
+  text-shadow:0 0 0 hsla(0,0%,100%,.75);
+}
+
+.c-txt--dark.c-txt.is-disabled>.c-txt__input.c-txt__input--select:not(select):before,.c-txt--dark.c-txt>.c-txt__input:disabled.c-txt__input--select:not(select):before,.c-txt--dark.is-disabled>select.c-txt__input--select,.c-txt--dark>select.c-txt__input--select:disabled{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2304444D'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 6l3 3 3-3'/%3E%3C/svg%3E");
 }
 
 .c-range__hint,.c-txt__hint{

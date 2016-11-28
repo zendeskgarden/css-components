@@ -1,6 +1,6 @@
 {
   "name": "zd-css-forms",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "main": "dist/index.css",
   "style": "src/index.css",
@@ -17,6 +17,7 @@
     "stylelint": "^7.5.0",
     "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#4.0.0",
     "zd-css-bedrock": "git+ssh://git@github.com/zendeskgarden/css-bedrock.git#0.4.0",
+    "zd-css-menus": "git+ssh://git@github.com/zendeskgarden/css-menus.git#2.3.0",
     "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.9.0",
     "zd-svg-icons": "git+ssh://git@github.com/zendeskgarden/svg-icons.git#0.10.0"
   },
