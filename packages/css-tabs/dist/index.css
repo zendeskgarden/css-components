@@ -15,11 +15,13 @@
   padding:0;
   line-height:1.43;
   white-space:nowrap;
-  color:#666;
+  color:#999;
   font-size:14px;
 }
 
 .c-tab__list__item{
+  -webkit-transition:border-color .1s ease-in-out,box-shadow .1s ease-in-out,color .25s ease-in-out;
+  transition:border-color .1s ease-in-out,box-shadow .1s ease-in-out,color .25s ease-in-out;
   display:inline-block;
   margin-left:50px;
   border-width:3px;
@@ -100,22 +102,26 @@
 }
 
 .c-tab__list__item.is-hovered,.c-tab__list__item:hover{
-  color:#333;
+  color:#30aabc;
+}
+
+.c-tab__list__item:focus{
+  outline:none;
 }
 
 .c-tab__list__item.is-focused,.c-tab__list__item:focus{
-  outline:none;
-  box-shadow:inset 0 0 0 2px #ddd;
+  box-shadow:inset 0 0 0 2px rgba(48,170,188,.4);
+  color:#30aabc;
 }
 
 .c-tab__list__item.c-tab__list__item.is-active,.c-tab__list__item.c-tab__list__item:active{
-  border-color:#ddd;
+  border-color:rgba(48,170,188,.25);
   box-shadow:none;
 }
 
 .c-tab__list__item.c-tab__list__item.is-selected{
   border-color:currentColor;
-  color:#333;
+  color:#30aabc;
 }
 
 .c-tab__list__item.c-tab__list__item.is-disabled,.c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab__list__item.c-tab__list__item[disabled]{

@@ -2,13 +2,17 @@
 
 :root {
   --zd-tab__list-border-color: var(--zd-color-anti-flash-white);
-  --zd-tab__list-color: var(--zd-color-steel);
+  --zd-tab__list-color: var(--zd-color-aluminum);
   --zd-tab__list-font-size: var(--zd-font-size-epsilon);
   --zd-tab__list-line-height: 1.43;
   --zd-tab__list-margin-bottom: var(--zd-spacing);
   --zd-tab__list__item-border-width: 3px;
   --zd-tab__list__item-margin: 50px;
   --zd-tab__list__item-padding: 0 .3571em;
+  --zd-tab__list__item-transition:
+    border-color .1s ease-in-out,
+    box-shadow .1s ease-in-out,
+    color .25s ease-in-out;
 }
 
 .c-tab {
@@ -37,6 +41,7 @@
  * 2. Overflow compensation.
  * 3. Anchor element reset. */
 .c-tab__list__item {
+  transition: var(--zd-tab__list__item-transition);
   display: inline-block;
   margin-left: var(--zd-tab__list__item-margin);
   border-width: var(--zd-tab__list__item-border-width);
