@@ -16,4 +16,10 @@ $(document).ready(function() {
   $('.c-tab__list__item').mouseup(function() {
     $(this).blur();
   });
+
+  $('.c-tab__list__item a').click(function() {
+    $(this).parent().click();
+
+    return false;
+  });
 });

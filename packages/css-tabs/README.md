@@ -75,16 +75,6 @@ HTML for anchored tabs should be structured like this:
   role="tab"><a href="#" id="anchor1" role="presentation" tabindex="-1">One</a></li>
 ```
 
-See the `accent.css` source file for sample CSS needed to format tabs
-according to your product's accent color. This CSS is not included in
-the package distribution. Upon inclusion, corresponding HTML would be:
-
-```html
-<ul class="c-tab__list c-tab__list--accent" role="tablist">
-  ...
-</ul>
-```
-
 ### Behavior
 
 See [js-tabs](https://github.com/zendeskgarden/js-tabs) for reference

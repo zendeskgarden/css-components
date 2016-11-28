@@ -1,6 +1,7 @@
 :root {
   --zd-tab--block__list__item-margin-bottom: 20px;
-  --zd-tab--block__list__item-padding: 0 .7143em;
+  --zd-tab--block__list__item-padding: 0 calc(10 / 14 * 1em);
+  --zd-tab--block__list__item__a-margin: 0 calc(10 / 14 * -1em);
   --zd-tab--block__panel-margin: var(--zd-spacing-lg);
 }
 
@@ -26,9 +27,16 @@
   text-align: left;
 }
 
-.c-tab--block .c-tab__list__item:last-of-type {
+.c-tab--block .c-tab__list__item a {
+  margin: var(--zd-tab--block__list__item__a-margin);
+  padding: var(--zd-tab--block__list__item-padding);
+}
+
+/* stylelint-disable selector-pseudo-class-no-unknown */
+.c-tab--block .c-tab__list__item:--last {
   margin-bottom: 0;
 }
+/* stylelint-enable selector-pseudo-class-no-unknown */
 
 .c-tab--block.is-rtl .c-tab__list__item {
   margin-left: 0;

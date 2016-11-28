@@ -33,7 +33,8 @@
   .is-focused,
   :focus;
 
-.c-tab__list__item:focus {
+.c-tab__list__item:focus,
+.c-tab__list__item a:focus {
   outline: none;
 }
 
