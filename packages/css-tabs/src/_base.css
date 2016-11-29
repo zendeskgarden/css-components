@@ -1,7 +1,7 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-tab__list-border-color: var(--zd-color-anti-flash-white);
+  --zd-tab__list-border-color: var(--zd-color-gainsboro);
   --zd-tab__list-color: var(--zd-color-aluminum);
   --zd-tab__list-font-size: var(--zd-font-size-epsilon);
   --zd-tab__list-line-height: calc(20 / 14);

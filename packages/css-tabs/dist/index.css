@@ -11,7 +11,7 @@
   display:block;
   margin-top:0;
   margin-bottom:20px;
-  border-bottom:1px solid #f3f3f3;
+  border-bottom:1px solid #ddd;
   padding:0;
   line-height:1.42857;
   white-space:nowrap;
@@ -112,6 +112,15 @@
 .c-tab--block.is-rtl .c-tab__panel{
   margin-right:30px;
   margin-left:0;
+}
+
+.c-tab--dark .c-tab__list{
+  border-color:#56777a;
+  color:#819a9e;
+}
+
+.c-tab--dark .c-tab__list__item.c-tab__list__item.is-disabled,.c-tab--dark .c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab--dark .c-tab__list__item.c-tab__list__item[disabled]{
+  color:#56777a;
 }
 
 .c-tab__list__item.is-hovered,.c-tab__list__item:hover{

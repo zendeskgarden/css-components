@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  $('.js-dark').click(function() {
+    $('html').toggleClass('u-bg-daintree u-fg-white');
+    $('.c-tab').toggleClass('c-tab--dark');
+    $('.c-tab__panel').toggleClass('u-bg-algae u-bg-snow u-bc-algae u-bc-anti-flash-white');
+  });
+
   $('.js-rtl').click(function() {
     $('.c-tab').toggleClass('is-rtl');
     $('.js-rtl-class').toggleClass('u-display-none');

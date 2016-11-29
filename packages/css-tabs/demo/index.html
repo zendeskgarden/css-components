@@ -4,6 +4,13 @@
   <title>Zendesk Garden / Tabs</title>
   <link href="bedrock.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <style>
+  html {
+    transition:
+      background-color .4s,
+      color .4s
+  }
+  </style>
 </head>
 <body>
   <header class="u-bg-oil u-fg-white u-mb-lg">
@@ -12,6 +19,10 @@
         <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
         <span>/ Tabs</span>
       </h1>
+      <label class="u-delta u-ml">
+        <input class="js-dark" type="checkbox">
+        <code>.c-tag--dark</code>
+      </label>
       <label class="u-ml">
           <input class="js-rtl" type="checkbox">
           <span class="u-epsilon">RTL</span>
@@ -21,10 +32,10 @@
   <main class="l-wrapper">
     <h1 class="u-beta u-mb">Tabs</h1>
     <p class="u-mb-lg">Use the
-      <code class="u-bg-platinum u-br-sm u-ph-xs u-pv-xxs">.c-tab</code>
+      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-tab</code>
       components for consistent tab styling.</p>
     <h2 class="u-gamma u-mb">Default Layout
-      <code class="u-bg-platinum u-br-sm u-epsilon u-ph-xs u-pv-xxs">.c-tab<span class="js-rtl-class u-display-none">.is-rtl</span></code>
+      <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-tab<span class="js-rtl-class u-display-none">.is-rtl</span></code>
     </h2>
     <nav class="c-tab u-mb-lg">
       <ul class="c-tab__list js-tablist" role="tablist">
@@ -83,7 +94,7 @@
         role="tabpanel">PANEL THREE</p>
     </nav>
     <h2 class="u-gamma u-mb">Block Layout
-      <code class="u-bg-platinum u-br-sm u-epsilon u-ph-xs u-pv-xxs">.c-tab<span class="js-rtl-class u-display-none">.is-rtl</span>.c-tab--block</code>
+      <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-tab<span class="js-rtl-class u-display-none">.is-rtl</span>.c-tab--block</code>
     </h2>
     <nav class="c-tab c-tab--block u-mb-lg">
       <ul class="c-tab__list js-tablist" role="tablist">
