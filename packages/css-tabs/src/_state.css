@@ -52,6 +52,9 @@
   width: 100%;
   height: 100%;
   content: '';
+  /* stylelint-disable no-unsupported-browser-features */
+  pointer-events: none;
+  /* stylelint-enable no-unsupported-browser-features */
 }
 
 @custom-selector :--active

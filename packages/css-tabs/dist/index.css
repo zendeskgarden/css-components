@@ -144,6 +144,7 @@
   width:100%;
   height:100%;
   content:'';
+  pointer-events:none;
 }
 
 .c-tab__list__item.c-tab__list__item.is-active,.c-tab__list__item.c-tab__list__item:active{
