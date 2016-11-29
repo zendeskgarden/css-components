@@ -4,7 +4,7 @@ The `css-tabs` package provides styling for tab components.
 
 ## Installation
 
-    $ npm install --save git+ssh://git@github.com:zendeskgarden/css-tabs.git
+    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-tabs.git
 
 ## Usage
 
@@ -75,11 +75,6 @@ HTML for anchored tabs should be structured like this:
   role="tab"><a href="#" id="anchor1" role="presentation" tabindex="-1">One</a></li>
 ```
 
-### Behavior
-
-See [js-tabs](https://github.com/zendeskgarden/js-tabs) for reference
-JavaScript support for tabs.
-
 ## Tests
 
     $ npm test
@@ -87,3 +82,8 @@ JavaScript support for tabs.
 ## Demo
 
     $ npm start
+
+## Contributing
+
+See [LANDSCAPE
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
