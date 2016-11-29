@@ -43,6 +43,7 @@
  * 3. Anchor element reset. */
 .c-tab__list__item {
   display: inline-block;
+  position: relative;
   transition: var(--zd-tab__list__item-transition);
   margin-left: var(--zd-tab__list__item-margin);
   border-width: var(--zd-tab__list__item-border-width);

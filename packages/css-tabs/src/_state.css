@@ -9,6 +9,7 @@
   --zd-tab__list__item-focused-box-shadow:
     inset 0 0 0 2px
     color(var(--zd-tab-color) alpha(40%));
+  --zd-tab__list__item-focused-border-radius: 4px;
   --zd-tab__list__item-focused-color: var(--zd-tab-color);
   --zd-tab__list__item-hovered-color: var(--zd-tab-color);
   --zd-tab__list__item-selected-border-color: currentColor;
@@ -39,8 +40,18 @@
 }
 
 .c-tab__list__item:--focused {
-  box-shadow: var(--zd-tab__list__item-focused-box-shadow);
   color: var(--zd-tab__list__item-focused-color);
+}
+
+.c-tab__list__item:--focused::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--zd-tab__list__item-focused-border-radius);
+  box-shadow: var(--zd-tab__list__item-focused-box-shadow);
+  width: 100%;
+  height: 100%;
+  content: '';
 }
 
 @custom-selector :--active
@@ -49,8 +60,11 @@
 
 .c-tab__list__item.c-tab__list__item:--active { /* [1] */
   border-color: var(--zd-tab__list__item-active-border-color);
-  box-shadow: none;
   color: var(--zd-tab__list__item-active-color);
+}
+
+.c-tab__list__item.c-tab__list__item:--active::before {
+  box-shadow: none;
 }
 
 @custom-selector :--selected
@@ -70,6 +84,10 @@
   border-color: transparent;
   cursor: default;
   color: var(--zd-tab__list__item-disabled-color);
+}
+
+.c-tab__list__item.c-tab__list__item:--disabled a {
+  cursor: inherit;
 }
 
 @custom-selector :--hidden
