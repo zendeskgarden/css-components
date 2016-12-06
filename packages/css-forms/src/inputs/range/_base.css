@@ -53,6 +53,7 @@
   background-color: var(--zd-range-track-background-color);
   background-image: var(--zd-range-track-background-image); /* [5] */
   background-repeat: repeat-y;
+  background-size: 0;
   width: 99.8%; /* [4] */
   height: var(--zd-range-track-height);
   color: transparent; /* [3] */
