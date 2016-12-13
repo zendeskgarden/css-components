@@ -5,7 +5,7 @@ typography, resets, layouts, and utilities.
 
 ## Installation
 
-    $ npm install --save git+ssh://git@github.com:zendeskgarden/css-bedrock.git
+    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-bedrock.git
 
 ## Usage
 
@@ -16,7 +16,7 @@ CSS your project requires. In that case import source files of interest
 from this package and use PostCSS to include them in your asset
 pipeline.
 
-The [demo](http://zendeskgarden.github.io/css-bedrock/) is probably your
+The [demo](http://garden.zendesk.com/css-bedrock/) is probably your
 best bet for discovering the styling classes that Bedrock CSS provides.
 
 ## Tests
@@ -26,3 +26,8 @@ best bet for discovering the styling classes that Bedrock CSS provides.
 ## Demo
 
     $ npm start
+
+## Contributing
+
+See [LANDSCAPE
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
