@@ -19,3 +19,8 @@ your own CSS build pipeline.
 ## Tests
 
     $ npm test
+
+## Contributing
+
+See [LANDSCAPE
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
