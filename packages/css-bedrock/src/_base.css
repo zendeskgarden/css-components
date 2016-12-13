@@ -3,8 +3,8 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-anchor-color: var(--zd-color-malibu);
-  --zd-anchor-color-hover: var(--zd-color-curious-blue);
+  --zd-anchor-color: var(--zd-color-pelorous);
+  --zd-anchor-color-hover: var(--zd-anchor-color);
   --zd-html-background-color: var(--zd-color-white);
   --zd-html-box-sizing: border-box;
   --zd-html-font-family: var(--zd-font-family-proxima-nova), sans-serif;
@@ -45,9 +45,7 @@ _:-ms-input-placeholder, html { font-feature-settings: normal; } /* [3] */
 *::before,
 *::after { box-sizing: inherit; }
 
-a {
-  color: var(--zd-anchor-color);
-}
+a { color: var(--zd-anchor-color); }
 
 a,
 ins,
@@ -55,8 +53,11 @@ u {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--zd-anchor-color-hover);
+a:hover { color: var(--zd-anchor-color-hover); }
+
+a:focus {
+  outline: none;
+  text-decoration: underline;
 }
 
 button {

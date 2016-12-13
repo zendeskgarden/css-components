@@ -426,14 +426,14 @@ html{
 _:-ms-input-placeholder,html{ font-feature-settings:normal; }
 *{ font-weight:inherit; }
 *,:after,:before{ box-sizing:inherit; }
-a{
-  color:#5ebbde;
-}
+a{ color:#30aabc; }
 a,ins,u{
   text-decoration:none;
 }
-a:hover{
-  color:#358fb2;
+a:hover{ color:#30aabc; }
+a:focus{
+  outline:none;
+  text-decoration:underline;
 }
 button{
   cursor:pointer;
