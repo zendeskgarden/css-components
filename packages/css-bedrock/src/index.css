@@ -12,6 +12,7 @@
 @import 'utilities/font-size';
 @import 'utilities/font-weight';
 @import 'utilities/jitterfix';
+@import 'utilities/position';
 @import 'utilities/spacing';
 @import 'utilities/text-align';
 @import 'utilities/truncate';

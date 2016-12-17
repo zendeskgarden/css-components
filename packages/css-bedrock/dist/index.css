@@ -960,6 +960,11 @@ svg{ max-height:100%; }
 .u-jitterfix--bold:after{ font-weight:700; }
 .u-jitterfix--extrabold:after{ font-weight:800; }
 .u-jitterfix--black:after{ font-weight:900; }
+.u-position-absolute{ position:absolute !important; }
+.u-position-fixed{ position:fixed !important; }
+.u-position-inherit{ position:inherit !important; }
+.u-position-relative{ position:relative !important; }
+.u-position-static{ position:static !important; }
 .u-m{ margin:20px !important; }
 .u-mt{ margin-top:20px !important; }
 .u-mr{ margin-right:20px !important; }
