@@ -435,6 +435,9 @@ a:focus{
   outline:none;
   text-decoration:underline;
 }
+a:focus:active{
+  text-decoration:none;
+}
 button{
   cursor:pointer;
   padding:0;

@@ -1,45 +1,82 @@
 <!doctype html>
 <html>
 <head>
-  <title>Zendesk Garden / Bedrock CSS</title>
+  <title>Zendesk Garden / Bedrock</title>
+  <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
 </head>
-<body>
-  <header class="u-bg-oil u-fg-white u-mb-lg">
-    <div class="l-wrapper">
-      <h1 class="u-alpha u-pv">
-        <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
-        <span>/ Bedrock CSS</span>
-      </h1>
+<body class="u-bg-relationshapes">
+  <nav class="c-nav">
+    <figure class="c-nav__logo">
+      <svg class="c-nav__logo__svg svg-square">
+        <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-zendesk">
+      </svg>
+    </figure>
+    <div class="c-tab c-tab--block c-tab--main">
+      <ul class="c-tab__list c-tab__list">
+        <li class="c-tab__list__item" tabindex="0">
+          <a href="http://garden.zendesk.com" tabindex="-1">Home</a>
+        </li>
+        <li class="c-tab__list__item" tabindex="0">
+          <a href="http://garden.zendesk.com/assets" tabindex="-1">Assets</a>
+        </li>
+        <li class="c-tab__list__item is-selected" tabindex="0">
+          <a href="." tabindex="-1">Bedrock</a>
+        </li>
+        <li class="c-tab__list__item" tabindex="0">
+          <a href="http://garden.zendesk.com/css-components" tabindex="-1">CSS Components</a>
+        </li>
+        <li class="c-tab__list__item" tabindex="0">
+          <a href="http://garden.zendesk.com/react-components/" tabindex="-1">React Components</a>
+        </li>
+      </ul>
     </div>
-  </header>
-  <main class="l-wrapper">
-    <h1 class="u-beta u-mb">Bedrock CSS</h1>
-    <h2 class="u-gamma u-mb-sm">Base</h2>
-    <ul class="u-mb">
-      <li><a href="resets.html">Resets</a></li>
-      <li><a href="typography.html">Typography</a></li>
+    <ul class="c-ctl">
+      <li class="c-ctl__item">
+        <fieldset class="c-chk c-chk--toggle">
+          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+          <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+        </fieldset>
+      </li>
     </ul>
-    <h2 class="u-gamma u-mb-sm">Layouts</h2>
-    <ul class="u-mb">
-      <li><a href="flag.html">Flag</a></li>
-      <li><a href="grid.html">Grid</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="wrapper.html">Wrapper</a></li>
-    </ul>
-    <h2 class="u-gamma u-mb-sm">Utilities</h2>
-    <ul class="u-mb">
-      <li><a href="border.html">Border</a></li>
-      <li><a href="border-radius.html">Border Radius</a></li>
-      <li><a href="color.html">Color</a></li>
-      <li><a href="clearfix.html">Clearfix</a></li>
-      <li><a href="display.html">Display</a></li>
-      <li><a href="jitterfix.html">Jitterfix</a></li>
-      <li><a href="spacing.html">Spacing</a></li>
-      <li><a href="text-align.html">Text Align</a></li>
-      <li><a href="truncate.html">Truncate</a></li>
-      <li><a href="vertical-align.html">Vertical Align</a></li>
-    </ul>
+  </nav>
+  <main class="c-main">
+    <h1 class="c-main__title">Bedrock</h1>
+    <div class="c-main__body l-wrapper-720">
+      <div class="l-grid l-grid--xxl">
+        <div class="l-grid__item u-1/2">
+          <h2 class="c-main__subtitle">Base</h2>
+          <ul>
+            <li><a class="u-fg-inherit" href="base/resets">Resets</a></li>
+            <li><a class="u-fg-inherit" href="base/typography">Typography</a></li>
+          </ul>
+          <h2 class="c-main__subtitle" style="margin-top: 100px">Layouts</h2>
+          <ul>
+            <li><a class="u-fg-inherit" href="layouts/flag">Flag</a></li>
+            <li><a class="u-fg-inherit" href="layouts/grid">Grid</a></li>
+            <li><a class="u-fg-inherit" href="layouts/media">Media</a></li>
+          </ul>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <h2 class="c-main__subtitle">Utilities</h2>
+          <ul>
+            <li><a class="u-fg-inherit" href="utilities/border">Border</a></li>
+            <li><a class="u-fg-inherit" href="utilities/border-radius">Border Radius</a></li>
+            <li><a class="u-fg-inherit" href="utilities/clearfix">Clearfix</a></li>
+            <li><a class="u-fg-inherit" href="utilities/color">Color</a></li>
+            <li><a class="u-fg-inherit" href="utilities/display">Display</a></li>
+            <li><a class="u-fg-inherit" href="utilities/jitterfix">Jitterfix</a></li>
+            <li><a class="u-fg-inherit" href="utilities/spacing">Spacing</a></li>
+            <li><a class="u-fg-inherit" href="utilities/text-align">Text Align</a></li>
+            <li><a class="u-fg-inherit" href="utilities/truncate">Truncate</a></li>
+            <li><a class="u-fg-inherit" href="utilities/vertical-align">Vertical Align</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </main>
+  <script src="http://garden.zendesk.com/jquery.js"></script>
+  <script src="http://garden.zendesk.com/svg4everybody.js"></script>
+  <script src="http://garden.zendesk.com/index.js"></script>
 </body>
 </html>
