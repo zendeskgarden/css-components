@@ -721,6 +721,7 @@ svg{ max-height:100%; }
 .u-bg-buff{ background-color:#f6de86 !important; }
 .u-bg-ce-soir{ background-color:#9677a6 !important; }
 .u-bg-cg-red{ background-color:#e03b30 !important; }
+.u-bg-chateau-green{ background-color:#16ba52 !important; }
 .u-bg-coral-candy{ background-color:#efcbc9 !important; }
 .u-bg-curious-blue{ background-color:#358fb2 !important; }
 .u-bg-current-color{ background-color:currentColor !important; }
@@ -745,6 +746,7 @@ svg{ max-height:100%; }
 .u-bg-mabel{ background-color:#cce3ec !important; }
 .u-bg-malibu{ background-color:#5ebbde !important; }
 .u-bg-mandy{ background-color:#eb4962 !important; }
+.u-bg-marigold{ background-color:#ffc800 !important; }
 .u-bg-monsoon{ background-color:#777 !important; }
 .u-bg-moon-yellow{ background-color:#edbe0e !important; }
 .u-bg-moonstone-blue{ background-color:#6aabc4 !important; }
@@ -763,6 +765,7 @@ svg{ max-height:100%; }
 .u-bg-remy{ background-color:#f7cecb !important; }
 .u-bg-sea-buckthorn{ background-color:#f79a3e !important; }
 .u-bg-sherpa-blue{ background-color:#04444d !important; }
+.u-bg-silver-sand{ background-color:#bbb !important; }
 .u-bg-sky-blue{ background-color:#78cdec !important; }
 .u-bg-snow{ background-color:#fbfbfb !important; }
 .u-bg-steel{ background-color:#666 !important; }
@@ -786,6 +789,7 @@ svg{ max-height:100%; }
 .u-fg-buff{ color:#f6de86 !important; }
 .u-fg-ce-soir{ color:#9677a6 !important; }
 .u-fg-cg-red{ color:#e03b30 !important; }
+.u-fg-chateau-green{ color:#16ba52 !important; }
 .u-fg-coral-candy{ color:#efcbc9 !important; }
 .u-fg-curious-blue{ color:#358fb2 !important; }
 .u-fg-daintree{ color:#012b30 !important; }
@@ -809,6 +813,7 @@ svg{ max-height:100%; }
 .u-fg-mabel{ color:#cce3ec !important; }
 .u-fg-malibu{ color:#5ebbde !important; }
 .u-fg-mandy{ color:#eb4962 !important; }
+.u-fg-marigold{ color:#ffc800 !important; }
 .u-fg-monsoon{ color:#777 !important; }
 .u-fg-moon-yellow{ color:#edbe0e !important; }
 .u-fg-moonstone-blue{ color:#6aabc4 !important; }
@@ -827,6 +832,7 @@ svg{ max-height:100%; }
 .u-fg-remy{ color:#f7cecb !important; }
 .u-fg-sea-buckthorn{ color:#f79a3e !important; }
 .u-fg-sherpa-blue{ color:#04444d !important; }
+.u-fg-silver-sand{ color:#bbb !important; }
 .u-fg-sky-blue{ color:#78cdec !important; }
 .u-fg-snow{ color:#fbfbfb !important; }
 .u-fg-steel{ color:#666 !important; }
@@ -850,6 +856,7 @@ svg{ max-height:100%; }
 .u-bc-buff{ border-color:#f6de86 !important; }
 .u-bc-ce-soir{ border-color:#9677a6 !important; }
 .u-bc-cg-red{ border-color:#e03b30 !important; }
+.u-bc-chateau-green{ border-color:#16ba52 !important; }
 .u-bc-coral-candy{ border-color:#efcbc9 !important; }
 .u-bc-curious-blue{ border-color:#358fb2 !important; }
 .u-bc-current-color{ border-color:currentColor !important; }
@@ -874,6 +881,7 @@ svg{ max-height:100%; }
 .u-bc-mabel{ border-color:#cce3ec !important; }
 .u-bc-malibu{ border-color:#5ebbde !important; }
 .u-bc-mandy{ border-color:#eb4962 !important; }
+.u-bc-marigold{ border-color:#ffc800 !important; }
 .u-bc-monsoon{ border-color:#777 !important; }
 .u-bc-moon-yellow{ border-color:#edbe0e !important; }
 .u-bc-moonstone-blue{ border-color:#6aabc4 !important; }
@@ -892,6 +900,7 @@ svg{ max-height:100%; }
 .u-bc-remy{ border-color:#f7cecb !important; }
 .u-bc-sea-buckthorn{ border-color:#f79a3e !important; }
 .u-bc-sherpa-blue{ border-color:#04444d !important; }
+.u-bc-silver-sand{ border-color:#bbb !important; }
 .u-bc-sky-blue{ border-color:#78cdec !important; }
 .u-bc-snow{ border-color:#fbfbfb !important; }
 .u-bc-steel{ border-color:#666 !important; }
