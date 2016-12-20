@@ -18,3 +18,8 @@ CSS component.
 ## Demo
 
     $ npm start
+
+## Contributing
+
+See [LANDSCAPE
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
