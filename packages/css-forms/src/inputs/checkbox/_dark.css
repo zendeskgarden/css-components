@@ -48,8 +48,8 @@
   background-color: var(--zd-chk--dark--toggle-active-background-color);
 }
 
-.c-chk--dark.c-chk--toggle > .c-chk__label::before,
-.c-chk--dark.c-chk--toggle > .c-chk__label::after {
+.c-chk--dark.c-chk--toggle .c-chk__label::before,
+.c-chk--dark.c-chk--toggle .c-chk__label::after {
   background-color: var(--zd-chk--dark--toggle-background-color);
 }
 

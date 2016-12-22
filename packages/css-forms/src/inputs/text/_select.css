@@ -65,10 +65,10 @@ select.c-txt__input--select:-moz-focusring {
 
 :--txt-hovered.c-txt__input--select:not(select)::before,
 :--txt-focused.c-txt__input--select:not(select)::before,
-.c-txt.is-hovered > select.c-txt__input--select,
-.c-txt > select.c-txt__input--select:hover,
-.c-txt.is-focused > select.c-txt__input--select,
-.c-txt > select.c-txt__input--select:focus {
+.c-txt.is-hovered select.c-txt__input--select,
+.c-txt select.c-txt__input--select:hover,
+.c-txt.is-focused select.c-txt__input--select,
+.c-txt select.c-txt__input--select:focus {
   background-image: var(--zd-txt__input--select__chevron-hovered-background-image);
 }
 
@@ -77,11 +77,13 @@ select.c-txt__input--select:-moz-focusring {
   background-image: var(--zd-txt__input--select__chevron-open-background-image);
 }
 
+/* stylelint-disable selector-no-qualifying-type */
 :--txt-disabled.c-txt__input--select:not(select)::before,
-.c-txt.is-disabled > select.c-txt__input--select,
-.c-txt > select.c-txt__input--select:disabled {
+.c-txt.is-disabled select.c-txt__input--select,
+.c-txt select.c-txt__input--select[disabled] {
   background-image: var(--zd-txt__input--select__chevron-disabled-background-image);
 }
+/* stylelint-enable selector-no-qualifying-type */
 
 .c-txt.is-rtl .c-txt__input--select {
   padding-right: var(--zd-txt__input-padding-horizontal);

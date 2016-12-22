@@ -36,10 +36,10 @@
 
 .c-txt--dark:--txt-hovered.c-txt__input--select:not(select)::before,
 .c-txt--dark:--txt-focused.c-txt__input--select:not(select)::before,
-.c-txt--dark.is-hovered > select.c-txt__input--select,
-.c-txt--dark > select.c-txt__input--select:hover,
-.c-txt--dark.is-focused > select.c-txt__input--select,
-.c-txt--dark > select.c-txt__input--select:focus {
+.c-txt--dark.is-hovered select.c-txt__input--select,
+.c-txt--dark select.c-txt__input--select:hover,
+.c-txt--dark.is-focused select.c-txt__input--select,
+.c-txt--dark select.c-txt__input--select:focus {
   background-image: var(--zd-txt--dark__input--select-hovered-background-image);
 }
 
@@ -47,9 +47,10 @@
   text-shadow: 0 0 0 var(--zd-txt--dark__input-color);
 }
 
+/* stylelint-disable selector-no-qualifying-type */
 .c-txt--dark:--txt-disabled.c-txt__input--select:not(select)::before,
-.c-txt--dark.is-disabled > select.c-txt__input--select,
-.c-txt--dark > select.c-txt__input--select:disabled {
+.c-txt--dark.is-disabled select.c-txt__input--select,
+.c-txt--dark select.c-txt__input--select[disabled] {
   background-image: var(--zd-txt--dark__input--select-disabled-background-image);
 }
-/* stylelint-enable max-line-length */
+/* stylelint-enable max-line-length, selector-no-qualifying-type */

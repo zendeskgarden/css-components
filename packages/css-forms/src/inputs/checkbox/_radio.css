@@ -11,8 +11,8 @@
   --zd-chk--radio-checked-background-image: svg-inline(circle);
 }
 
-.c-chk--radio > .c-chk__label::before,
-.c-chk--radio > .c-chk__label::after {
+.c-chk--radio .c-chk__label::before,
+.c-chk--radio .c-chk__label::after {
   border-radius: var(--zd-chk-line-height);
 }
 

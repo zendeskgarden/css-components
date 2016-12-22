@@ -16,12 +16,12 @@
   /* stylelint-enable max-line-length */
 }
 
-.c-chk--toggle > .c-chk__label {
+.c-chk--toggle .c-chk__label {
   padding-left: var(--zd-chk--toggle__label-padding);
 }
 
-.c-chk--toggle > .c-chk__label::before,
-.c-chk--toggle > .c-chk__label::after {
+.c-chk--toggle .c-chk__label::before,
+.c-chk--toggle .c-chk__label::after {
   top: 0;
   margin-top: 0;
   border: none;
@@ -31,7 +31,7 @@
   height: var(--zd-chk--toggle-height);
 }
 
-.c-chk--toggle > .c-chk__label::after {
+.c-chk--toggle .c-chk__label::after {
   transition: var(--zd-chk--toggle-transition);
   background-image: var(--zd-chk--toggle-background-image);
   background-repeat: no-repeat;
@@ -57,11 +57,11 @@
   background-color: var(--zd-chk--toggle-disabled-background-color);
 }
 
-.c-chk--toggle.is-rtl > .c-chk__label {
+.c-chk--toggle.is-rtl .c-chk__label {
   padding-right: var(--zd-chk--toggle__label-padding);
 }
 
-.c-chk--toggle.is-rtl > .c-chk__label::after {
+.c-chk--toggle.is-rtl .c-chk__label::after {
   background-position: 90%;
 }
 

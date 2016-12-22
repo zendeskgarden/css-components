@@ -14,20 +14,20 @@
 }
 
 @custom-selector :--txt-hovered
-  .c-txt.is-hovered > .c-txt__input,
-  .c-txt > .c-txt__input:hover;
+  .c-txt.is-hovered .c-txt__input,
+  .c-txt .c-txt__input:hover;
 
 :--txt-hovered {
   border-color: var(--zd-txt-hovered-border-color);
 }
 
-.c-txt > .c-txt__input:focus {
+.c-txt .c-txt__input:focus {
   outline: none;
 }
 
 @custom-selector :--txt-focused
-  .c-txt.is-focused > .c-txt__input,
-  .c-txt > .c-txt__input:focus;
+  .c-txt.is-focused .c-txt__input,
+  .c-txt .c-txt__input:focus;
 
 :--txt-focused {
   border-color: var(--zd-txt-focused-border-color);
@@ -35,8 +35,8 @@
 }
 
 @custom-selector :--txt-disabled
-  .c-txt.is-disabled > .c-txt__input,
-  .c-txt > .c-txt__input:disabled;
+  .c-txt.is-disabled .c-txt__input,
+  .c-txt .c-txt__input[disabled];
 
 :--txt-disabled {
   border-color: var(--zd-txt-disabled-border-color);
