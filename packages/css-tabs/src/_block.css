@@ -33,7 +33,7 @@
 }
 
 /* stylelint-disable selector-pseudo-class-no-unknown */
-.c-tab--block .c-tab__list__item:--last {
+.c-tab--block .c-tab__list__item:--tab-last {
   margin-bottom: 0;
 }
 /* stylelint-enable selector-pseudo-class-no-unknown */

@@ -68,23 +68,23 @@
 }
 
 /* stylelint-disable selector-pseudo-class-no-unknown */
-@custom-selector :--first
+@custom-selector :--tab-first
   .is-first,
   :first-of-type;
 
-.c-tab__list__item:--first {
+.c-tab__list__item:--tab-first {
   margin-left: 0;
 }
 
-.is-rtl .c-tab__list__item:--first {
+.is-rtl .c-tab__list__item:--tab-first {
   margin-left: var(--zd-tab__list__item-margin);
 }
 
-@custom-selector :--last
+@custom-selector :--tab-last
   .is-last,
   :last-of-type;
 
-.is-rtl .c-tab__list__item:--last {
+.is-rtl .c-tab__list__item:--tab-last {
   margin-left: 0;
 }
 

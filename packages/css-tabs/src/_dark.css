@@ -13,7 +13,7 @@
 
 /* stylelint-disable selector-max-specificity,
    selector-pseudo-class-no-unknown */
-.c-tab--dark .c-tab__list__item.c-tab__list__item:--disabled {
+.c-tab--dark .c-tab__list__item.c-tab__list__item:--tab-disabled {
   color: var(--zd-tab--dark__list__item-disabled-color);
 }
 /* stylelint-enable selector-max-specificity,
