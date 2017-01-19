@@ -24,11 +24,11 @@
  *    "focus-on-keyboard; blur-on-mouse" browser behavior.
  * 3. Class-chain specificity hack. */
 
-@custom-selector :--hovered
+@custom-selector :--btn-hovered
   .is-hovered,
   :hover;
 
-.c-btn:--hovered {
+.c-btn:--btn-hovered {
   border-color: transparent;
   background-color: var(--zd-btn-hovered-background-color);
   text-decoration: none; /* [1] */
@@ -39,18 +39,18 @@
   outline: none;
 }
 
-@custom-selector :--focused /* [2] */
+@custom-selector :--btn-focused /* [2] */
   .is-focused;
 
-.c-btn:--focused {
+.c-btn:--btn-focused {
   box-shadow: var(--zd-btn-focused-box-shadow);
 }
 
-@custom-selector :--active
+@custom-selector :--btn-active
   .is-active,
   :active;
 
-.c-btn:--active {
+.c-btn:--btn-active {
   transition: var(--zd-btn-active-transition);
   border-color: transparent;
   background-color: var(--zd-btn-active-background-color);
@@ -59,19 +59,19 @@
 }
 
 /* stylelint-disable selector-max-specificity */
-.c-btn:--hovered:--active,
-.c-btn:--focused:--active,
-.l-btn-group > .c-btn:--hovered:--active,
-.l-btn-group > .c-btn:--focused:--active {
+.c-btn:--btn-hovered:--btn-active,
+.c-btn:--btn-focused:--btn-active,
+.l-btn-group > .c-btn:--btn-hovered:--btn-active,
+.l-btn-group > .c-btn:--btn-focused:--btn-active {
   box-shadow: none;
 }
 /* stylelint-enable selector-max-specificity */
 
-@custom-selector :--disabled /* [3] */
+@custom-selector :--btn-disabled /* [3] */
   .is-disabled.is-disabled,
   :disabled:disabled;
 
-.c-btn:--disabled {
+.c-btn:--btn-disabled {
   border-color: transparent;
   box-shadow: none;
   background-color: var(--zd-btn-disabled-background-color);
@@ -79,7 +79,7 @@
   color: var(--zd-btn-disabled-color);
 }
 
-.l-btn-group > .c-btn:--focused {
+.l-btn-group > .c-btn:--btn-focused {
   box-shadow: inset var(--zd-btn-focused-box-shadow);
 }
 /* stylelint-enable no-descending-specificity */

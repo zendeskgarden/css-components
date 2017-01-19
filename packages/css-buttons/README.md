@@ -36,20 +36,10 @@ disabled button should not be able to receive focus.
 See http://zendeskgarden.github.io/css-buttons/ for various button
 modification classes.
 
-#### Accent
-
-See the `accent.css` source file for sample CSS needed to format buttons
-according to your product's accent color. This CSS is not included in
-the package distribution. Upon inclusion, corresponding HTML would be:
-
-```html
-<button class="c-btn c-btn--accent">...</button>
-```
-
 ### Behavior
 
 See the
-[Button](https://zendeskgarden.github.io/react-components/#!/Button)
+[Button](http://garden.zendesk.com/react-components/#!/Button)
 component for intended keyboard & blur-on-mouseup behavior.
 
 ## Tests
@@ -59,3 +49,8 @@ component for intended keyboard & blur-on-mouseup behavior.
 ## Demo
 
     $ npm start
+
+## Contributing
+
+See [LANDSCAPE
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
