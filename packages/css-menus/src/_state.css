@@ -13,43 +13,56 @@
 /* 1. Bump stacking context in order to prevent sibling menu items from
  *    interfering with sub-menu pseudo styling. */
 
-@custom-selector :--selected .is-selected, :hover;
-@custom-selector :--focused .is-focused, :focus;
+@custom-selector :--menu-selected
+  .is-selected,
+  :hover;
+@custom-selector :--menu-focused
+  .is-focused,
+  :focus;
 
-.c-menu__item:--selected,
-.c-menu__item:--focused {
+.c-menu__item:--menu-selected,
+.c-menu__item:--menu-focused {
   background-color: var(--zd-menu__item--selected-background-color);
   color: var(--zd-menu__item--selected-color);
 }
 
-.c-menu__item:--focused {
+.c-menu__item:--menu-focused {
   outline: none;
   box-shadow: var(--zd-menu__item-focused-box-shadow);
+  text-decoration: none;
 }
 
-@custom-selector :--active .is-active, :active;
+@custom-selector :--menu-active
+  .is-active,
+  :active;
 
-.c-menu__item:--active {
+.c-menu__item:--menu-active {
   box-shadow: none;
 }
 
-@custom-selector :--disabled .is-disabled, [disabled], [aria-disabled='true'];
+@custom-selector :--menu-disabled
+  .is-disabled,
+  [disabled],
+  [aria-disabled='true'];
 
-.c-menu .c-menu__item:--disabled {
+.c-menu .c-menu__item:--menu-disabled {
   background-color: inherit;
   cursor: default;
   color: var(--zd-menu__item-disabled-color);
 }
 
-@custom-selector :--expanded .is-expanded;
+@custom-selector :--menu-expanded
+  .is-expanded;
 
-.c-menu__item:--expanded {
+.c-menu__item:--menu-expanded {
   z-index: 1; /* [1] */
 }
 
-@custom-selector :--hidden .is-hidden, [aria-hidden='true'];
+@custom-selector :--menu-hidden
+  .is-hidden,
+  [aria-hidden='true'];
 
-.c-menu:--hidden {
+.c-menu:--menu-hidden {
   display: none;
 }
 /* stylelint-enable no-descending-specificity */

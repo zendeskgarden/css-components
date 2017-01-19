@@ -1,18 +1,10 @@
 <!doctype html>
 <html>
 <head>
-  <title>Zendesk Garden / Menus</title>
-  <link href="bedrock.css" rel="stylesheet">
-  <link href="arrows.css" rel="stylesheet">
+  <title>Zendesk Garden / CSS Components / Menus</title>
+  <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
-  <link href="buttons.css" rel="stylesheet">
   <style>
-  html {
-    transition:
-      background-color .4s,
-      color .4s
-  }
-
   .c-arrow--b {
     bottom: 32px;
     left: 59px;
@@ -34,236 +26,241 @@
   }
 
   .u-mb-xxl { margin-bottom: 140px !important; }
-
-  .u-position-relative {
-    z-index: 0;
-    position: relative !important;
-  }
-
-  .u-position-static { position: static !important; }
   </style>
 </head>
 <body>
-  <header class="u-bg-oil u-fg-white u-mb-lg">
-    <div class="l-wrapper">
-      <h1 class="u-alpha u-display-inline-block u-pv">
-        <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
-        <span>/ Menus</span>
-      </h1>
-      <label class="u-delta u-ml">
-        <input class="js-dark" type="checkbox">
-        <code>.c-menu--dark</code>
-      </label>
-    </div>
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="http://garden.zendesk.com">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="http://garden.zendesk.com/css-components">CSS Components</a>
+      <span>/ Menus</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item">
+        <fieldset class="c-chk c-chk--toggle">
+          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+          <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+        </fieldset>
+      </li>
+    </ul>
   </header>
-  <main class="l-wrapper">
-    <h2 class="u-beta u-mb">Menus</h2>
-    <p class="u-mb-lg">The
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
-      component classes are used to style menus.</p>
-    <div class="l-grid">
-      <div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Standard
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
-          as
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">ul &gt; li &gt; a:link</code>
-        </h3>
-        <ul class="c-menu u-position-static">
-          <li>
-            <a class="c-menu__item"
-               href="/#one">Real Link in &lt;li&gt;</a>
-          </li>
-          <li>
-            <a class="c-menu__item"
-               href="/#two">Real Link 2</a>
-          </li>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Menus</h1>
+    <div class="c-main__body">
+      <p class="u-mb-lg">The
+        <code class="c-code">.c-menu</code>
+        component classes are used to style menus.</p>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Standard
+            <code class="c-code">.c-menu</code>
+            as
+            <code class="c-code">ul &gt; li &gt; a:link</code>
+          </h3>
+          <ul class="c-menu u-display-inline-block u-position-static">
+            <li>
+              <a class="c-menu__item"
+                 href="#one">Real Link in &lt;li&gt;</a>
+            </li>
+            <li>
+              <a class="c-menu__item"
+                 href="#two">Real Link 2</a>
+            </li>
 
-          <li class="c-menu__separator"
-              role="presentation"></li>
+            <li class="c-menu__separator"
+                role="presentation"></li>
 
-          <li>
-            <a class="c-menu__item"
-               href="/#three">Real Link 3</a>
-          </li>
-          <li>
-            <a class="c-menu__item"
-               href="/#four">Real Link 4</a>
-          </li>
-        </ul>
-      </div><div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Standard
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
-          as
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">nav &gt; a:link</code>
-        </h3>
-        <nav class="c-menu u-position-static">
-          <a class="c-menu__item" href="/#one">Real Link in &lt;nav&gt;</a>
-          <a class="c-menu__item" href="/#two">Real Link 2</a>
-          <span class="c-menu__separator"></span>
-          <a class="c-menu__item" href="/#three">Real Link 3</a>
-        </nav>
-      </div>
+            <li>
+              <a class="c-menu__item"
+                 href="#three">Real Link 3</a>
+            </li>
+            <li>
+              <a class="c-menu__item"
+                 href="#four">Real Link 4</a>
+            </li>
+          </ul>
+        </div><div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Standard
+            <code class="c-code">.c-menu</code>
+            as
+            <code class="c-code">nav &gt; a:link</code>
+          </h3>
+          <nav class="c-menu u-display-inline-block u-position-static">
+            <a class="c-menu__item" href="#one">Real Link in &lt;nav&gt;</a>
+            <a class="c-menu__item" href="#two">Real Link 2</a>
+            <span class="c-menu__separator"></span>
+            <a class="c-menu__item" href="#three">Real Link 3</a>
+          </nav>
+        </div>
 
-      <div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Standard
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
-          without
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">&lt;a href&gt;</code>
-        </h3>
-        <ul class="c-menu u-position-static u-mb" role="menu">
-          <li class="c-menu__item" role="menuitem">One</li>
-          <li class="c-menu__item" role="menuitem">Two</li>
-          <li class="c-menu__item" role="menuitem">Three</li>
-        </ul>
-        <p class="u-fg-aluminum">Intended for menus with very interactive,
-          non-link use cases. Note the example here is <b>incomplete</b> from a
-          markup/behavior perspective and does not support keyboard navigation.
-        </p>
-      </div
-      ><div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Large
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.c-menu--large</code>
-        </h3>
-        <ul class="c-menu c-menu--large u-position-static u-mb" role="menu">
-          <li class="c-menu__item" role="menuitem">One one-thousand</li>
-          <li class="c-menu__item" role="menuitem">Two one-thousand</li>
-          <li class="c-menu__item" role="menuitem">Three one-thousand</li>
-        </ul>
-        <p class="u-fg-aluminum">(Has a wider min-width.)</p>
-      </div>
+        <div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Standard
+            <code class="c-code">.c-menu</code>
+            without
+            <code class="c-code">&lt;a href&gt;</code>
+          </h3>
+          <ul class="c-menu u-display-inline-block u-position-static u-mb" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+          </ul>
+          <p class="u-fg-aluminum">Intended for menus with very interactive,
+            non-link use cases. Note the example here is <b>incomplete</b> from a
+            markup/behavior perspective and does not support keyboard navigation.
+          </p>
+        </div
+        ><div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Large
+            <code class="c-code">.c-menu.c-menu--large</code>
+          </h3>
+          <ul class="c-menu c-menu--large u-display-inline-block u-position-static u-mb" role="menu">
+            <li class="c-menu__item" role="menuitem">One one-thousand</li>
+            <li class="c-menu__item" role="menuitem">Two one-thousand</li>
+            <li class="c-menu__item" role="menuitem">Three one-thousand</li>
+          </ul>
+          <p class="u-fg-aluminum">(Has a wider min-width.)</p>
+        </div>
 
-      <div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Standard
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
-          with longer item
-        </h3>
-        <ul class="c-menu u-position-static" role="menu">
-          <li class="c-menu__item" role="menuitem">One</li>
-          <li class="c-menu__item" role="menuitem">Two</li>
-          <li class="c-menu__item" role="menuitem">Three</li>
+        <div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Standard
+            <code class="c-code">.c-menu</code>
+            with longer item
+          </h3>
+          <ul class="c-menu u-display-inline-block u-position-static" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+            <li class="c-menu__item" role="menuitem">Significantly longer list item example</li>
+          </ul>
+        </div
+        ><div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Standard
+            <code class="c-code">.c-menu</code>
+            but with a max-width (on
+            <code class="c-code">.c-menu</code>)
+          </h3>
+          <ul class="c-menu u-display-inline-block u-position-static" style="max-width: 15em" role="menu">
+            <li class="c-menu__item" role="menuitem">One one-thousand</li>
+            <li class="c-menu__item" role="menuitem">Two one-thousand</li>
+            <li class="c-menu__item" role="menuitem">Three one-thousand</li>
           <li class="c-menu__item" role="menuitem">Significantly longer list item example</li>
-        </ul>
-      </div
-      ><div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Standard
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>
-          but with a max-width (on
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu</code>)
-        </h3>
-        <ul class="c-menu u-position-static" style="max-width: 15em" role="menu">
-          <li class="c-menu__item" role="menuitem">One one-thousand</li>
-          <li class="c-menu__item" role="menuitem">Two one-thousand</li>
-          <li class="c-menu__item" role="menuitem">Three one-thousand</li>
-        <li class="c-menu__item" role="menuitem">Significantly longer list item example</li>
-        </ul>
-      </div>
+          </ul>
+        </div>
 
-      <div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Disabled &lt;Item&gt; via
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu__item.is-disabled</code>
-        </h3>
-        <ul class="c-menu u-position-static" role="menu">
-          <li class="c-menu__item" role="menuitem">One</li>
-          <li aria-disabled="true" class="c-menu__item is-disabled" role="menuitem">Disabled</li>
-          <li class="c-menu__item" role="menuitem">Item</li>
-        </ul>
-      </div
-      ><div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Separator via
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu__separator</code>
-        </h3>
-        <ul class="c-menu u-position-static" role="menu">
-          <li class="c-menu__item" role="menuitem">One</li>
-          <li class="c-menu__item" role="menuitem">Separated</li>
-          <li class="c-menu__separator" role="separator"></li>
-          <li class="c-menu__item" role="menuitem">Item</li>
-        </ul>
-      </div>
-      <div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Reversed layout via
-          <code class="u-bg-platinum u-br-sm u-epsilon u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.is-rtl</code>
-        </h3>
-        <ul class="c-menu is-rtl u-position-static" dir="rtl" role="menu">
-          <li class="c-menu__item" role="menuitem">One</li>
-          <li class="c-menu__item" role="menuitem">Two</li>
-          <li class="c-menu__item" role="menuitem">Three</li>
-        </ul>
-      </div
-      ><div class="l-grid__item u-1/2 u-mb-lg">
-        <h3 class="u-gamma u-mb">Menu Item State</h3>
-        <ul class="c-menu u-position-static" role="menu">
-          <li class="c-menu__item" role="menuitem" tabindex="0">default</li>
-          <li class="c-menu__item is-selected" role="menuitem" tabindex="0">.is-selected</li>
-          <li class="c-menu__item" role="menuitem" tabindex="0">default</li>
-          <li class="c-menu__item is-focused" role="menuitem" tabindex="0">.is-focused</li>
-          <li class="c-menu__item is-disabled" role="menuitem" tabindex="0">.is-disabled</li>
-        </ul>
-      </div>
-    </div>
-    <h3 class="u-gamma u-mb">Animations</h3>
-    <div class="u-mb-lg">
-      <div class="l-grid u-mb-xxl">
-        <div class="l-grid__item u-1/3"></div
-        ><div class="l-grid__item u-1/3">
-          <button class="c-btn c-btn--full js-menu-button">
-            <code class="u-bg-platinum u-br-sm u-milli u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.c-menu--down.is-open</code>
-          </button>
-          <div class="u-position-relative">
-            <ul class="c-arrow c-arrow--t c-menu c-menu--down js-menu" role="menu" style="display: none">
-              <li class="c-menu__item" role="menuitem">One</li>
-              <li class="c-menu__item" role="menuitem">Two</li>
-              <li class="c-menu__item" role="menuitem">Three</li>
-            </ul>
-          </div>
+        <div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Disabled &lt;Item&gt; via
+            <code class="c-code">.c-menu__item.is-disabled</code>
+          </h3>
+          <ul class="c-menu u-display-inline-block u-position-static" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li aria-disabled="true" class="c-menu__item is-disabled" role="menuitem">Disabled</li>
+            <li class="c-menu__item" role="menuitem">Item</li>
+          </ul>
         </div
-        ><div class="l-grid__item u-1/3"></div>
-      </div>
-      <div class="l-grid u-mb-xxl">
-        <div class="l-grid__item u-1/3">
-          <button class="c-btn c-btn--full js-menu-button">
-            <code class="u-bg-platinum u-br-sm u-milli u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.c-menu--right.is-open</code>
-          </button>
-          <div class="u-position-relative">
-            <ul class="c-arrow c-arrow--l c-menu c-menu--right js-menu" role="menu" style="display: none">
-              <li class="c-menu__item" role="menuitem">One</li>
-              <li class="c-menu__item" role="menuitem">Two</li>
-              <li class="c-menu__item" role="menuitem">Three</li>
-            </ul>
-          </div>
+        ><div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Separator via
+            <code class="c-code">.c-menu__separator</code>
+          </h3>
+          <ul class="c-menu u-display-inline-block u-position-static" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Separated</li>
+            <li class="c-menu__separator" role="separator"></li>
+            <li class="c-menu__item" role="menuitem">Item</li>
+          </ul>
+        </div>
+        <div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Reversed layout via
+            <code class="c-code">.c-menu.is-rtl</code>
+          </h3>
+          <ul class="c-menu is-rtl u-display-inline-block u-position-static" dir="rtl" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+          </ul>
         </div
-        ><div class="l-grid__item u-1/3"></div
-        ><div class="l-grid__item u-1/3">
-          <div class="u-position-relative">
-            <ul class="c-arrow c-arrow--r c-menu c-menu--left js-menu" role="menu" style="display: none">
-              <li class="c-menu__item" role="menuitem">One</li>
-              <li class="c-menu__item" role="menuitem">Two</li>
-              <li class="c-menu__item" role="menuitem">Three</li>
-            </ul>
-          </div>
-          <button class="c-btn c-btn--full js-menu-button">
-            <code class="u-bg-platinum u-br-sm u-milli u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.c-menu--left.is-open</code>
-          </button>
+        ><div class="l-grid__item u-1/2 u-mb-lg">
+          <h3 class="u-gamma u-mb">Menu Item State</h3>
+          <ul class="c-menu u-display-inline-block u-position-static" role="menu">
+            <li class="c-menu__item" role="menuitem" tabindex="0">default</li>
+            <li class="c-menu__item is-selected" role="menuitem" tabindex="0">.is-selected</li>
+            <li class="c-menu__item" role="menuitem" tabindex="0">default</li>
+            <li class="c-menu__item is-focused" role="menuitem" tabindex="0">.is-focused</li>
+            <li class="c-menu__item is-disabled" role="menuitem" tabindex="0">.is-disabled</li>
+          </ul>
         </div>
       </div>
-      <div class="l-grid u-mb-lg">
-        <div class="l-grid__item u-1/3"></div
-        ><div class="l-grid__item u-1/3">
-          <button class="c-btn c-btn--full js-menu-button">
-            <code class="u-bg-platinum u-br-sm u-milli u-fg-dark-gray u-ph-xs u-pv-xxs">.c-menu.c-menu--up.is-open</code>
-          </button>
-          <div class="u-position-relative">
-            <ul class="c-arrow c-arrow--b c-menu c-menu--up js-menu" role="menu" style="display: none">
-              <li class="c-menu__item" role="menuitem">One</li>
-              <li class="c-menu__item" role="menuitem">Two</li>
-              <li class="c-menu__item" role="menuitem">Three</li>
-            </ul>
+      <h3 class="u-gamma u-mb">Animations</h3>
+      <div class="u-mb-lg">
+        <div class="l-grid u-mb-xxl">
+          <div class="l-grid__item u-1/3"></div
+          ><div class="l-grid__item u-1/3">
+            <button class="c-btn c-btn--full js-menu">
+              <code class="c-code">.c-menu.c-menu--down.is-open</code>
+            </button>
+            <div class="u-position-relative">
+              <ul aria-hidden="true" class="c-arrow c-arrow--t c-menu c-menu--down" role="menu">
+                <li class="c-menu__item" role="menuitem">One</li>
+                <li class="c-menu__item" role="menuitem">Two</li>
+                <li class="c-menu__item" role="menuitem">Three</li>
+              </ul>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3"></div>
+        </div>
+        <div class="l-grid u-mb-xxl">
+          <div class="l-grid__item u-1/3">
+            <button class="c-btn c-btn--full js-menu">
+              <code class="c-code">.c-menu.c-menu--right.is-open</code>
+            </button>
+            <div class="u-position-relative">
+              <ul aria-hidden="true" class="c-arrow c-arrow--l c-menu c-menu--right" role="menu">
+                <li class="c-menu__item" role="menuitem">One</li>
+                <li class="c-menu__item" role="menuitem">Two</li>
+                <li class="c-menu__item" role="menuitem">Three</li>
+              </ul>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3"></div
+          ><div class="l-grid__item u-1/3">
+            <div class="u-position-relative">
+              <ul aria-hidden="true" class="c-arrow c-arrow--r c-menu c-menu--left" role="menu">
+                <li class="c-menu__item" role="menuitem">One</li>
+                <li class="c-menu__item" role="menuitem">Two</li>
+                <li class="c-menu__item" role="menuitem">Three</li>
+              </ul>
+            </div>
+            <button class="c-btn c-btn--full js-menu">
+              <code class="c-code">.c-menu.c-menu--left.is-open</code>
+            </button>
           </div>
-        </div
-        ><div class="l-grid__item u-1/3"></div>
+        </div>
+        <div class="l-grid u-mb-lg">
+          <div class="l-grid__item u-1/3"></div
+          ><div class="l-grid__item u-1/3">
+            <button class="c-btn c-btn--full js-menu">
+              <code class="c-code">.c-menu.c-menu--up.is-open</code>
+            </button>
+            <div class="u-position-relative">
+              <ul aria-hidden="true" class="c-arrow c-arrow--b c-menu c-menu--up" role="menu">
+                <li class="c-menu__item" role="menuitem">One</li>
+                <li class="c-menu__item" role="menuitem">Two</li>
+                <li class="c-menu__item" role="menuitem">Three</li>
+              </ul>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3"></div>
+        </div>
       </div>
     </div>
   </main>
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script src="index.js"></script>
+  <script src="http://garden.zendesk.com/jquery.js"></script>
+  <script src="http://garden.zendesk.com/svg4everybody.js"></script>
+  <script src="http://garden.zendesk.com/index.js"></script>
 </body>
 </html>

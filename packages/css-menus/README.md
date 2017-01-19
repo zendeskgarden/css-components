@@ -2,13 +2,13 @@
 
 The `css-menus` package is intended to provide consistent menu styling
 for use across Zendesk products. You are expected to use
-[css-arrows](http://zendeskgarden.github.io/css-arrows/)
+[css-arrows](http://garden.zendesk.com/css-arrows/)
 in addition to this package (for the triangle typically found at the top
 of each top-level menu). Applying `.c-menu` and `.c-menu__item` (and
 optionally some additional classes) is all that is needed to use this
 package, especially when your menus are essentially lists of links.
 That, and
-[JavaScript](https://zendeskgarden.github.io/react-components/#!/Menu)
+[JavaScript](http://garden.zendesk.com/react-components/#!/Menu)
 to show and hide the menu itself.
 
 ## Installation
@@ -167,3 +167,8 @@ animation. Remember to remove `.is-open` upon menu close.
 ## Demo
 
     $ npm start
+
+## Contributing
+
+See [LANDSCAPE
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).

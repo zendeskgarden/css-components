@@ -23,14 +23,14 @@
   color: var(--zd-menu--dark__item-color);
 }
 
-.c-menu--dark .c-menu__item:--selected,
-.c-menu--dark .c-menu__item:--focused {
+.c-menu--dark .c-menu__item:--menu-selected,
+.c-menu--dark .c-menu__item:--menu-focused {
   background-color: var(--zd-menu--dark__item--selected-background-color);
   color: var(--zd-menu--dark__item--selected-color);
 }
 
 /* stylelint-disable selector-max-specificity */
-.c-menu--dark.c-menu .c-menu__item:--disabled {
+.c-menu--dark.c-menu .c-menu__item:--menu-disabled {
   color: var(--zd-menu--dark__item--disabled-color);
 }
 /* stylelint-enable selector-max-specificity */

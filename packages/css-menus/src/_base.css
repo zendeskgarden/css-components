@@ -47,7 +47,9 @@
 }
 
 /* Used for animating `c-arrow` before/after pseudo elements. */
-@custom-selector :--around ::before, ::after;
+@custom-selector :--around
+  ::before,
+  ::after;
 
 .c-menu.is-open:--around {
   animation: .3s ease-in-out;
