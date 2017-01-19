@@ -1,7 +1,6 @@
 @import 'zd-css-variables';
 
 .c-template {
-  color: var(--zd-color-pelorous);
   font-size: var(--zd-font-size-giga);
   font-weight: var(--zd-font-weight-light);
 }
