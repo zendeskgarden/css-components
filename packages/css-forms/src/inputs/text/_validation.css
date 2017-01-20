@@ -1,0 +1,40 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-txt--error-border-color: var(--zd-color-flamingo);
+  --zd-txt--error-focused-box-shadow:
+    0 0 0 3px
+    color(var(--zd-txt--error-border-color) alpha(40%));
+  --zd-txt--success-border-color: var(--zd-color-chateau-green);
+  --zd-txt--success-focused-box-shadow:
+    0 0 0 3px
+    color(var(--zd-txt--success-border-color) alpha(40%));
+  --zd-txt--warning-border-color: var(--zd-color-marigold);
+  --zd-txt--warning-focused-box-shadow:
+    0 0 0 3px
+    color(var(--zd-txt--warning-border-color) alpha(40%));
+}
+
+.has-error.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
+  border-color: var(--zd-txt--error-border-color);
+}
+
+.has-error:--txt-focused {
+  box-shadow: var(--zd-txt--error-focused-box-shadow);
+}
+
+.has-success.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
+  border-color: var(--zd-txt--success-border-color);
+}
+
+.has-success:--txt-focused {
+  box-shadow: var(--zd-txt--success-focused-box-shadow);
+}
+
+.has-warning.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
+  border-color: var(--zd-txt--warning-border-color);
+}
+
+.has-warning:--txt-focused {
+  box-shadow: var(--zd-txt--warning-focused-box-shadow);
+}

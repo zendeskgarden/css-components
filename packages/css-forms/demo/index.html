@@ -1,35 +1,46 @@
 <!doctype html>
 <html>
 <head>
-  <title>Zendesk Garden / Forms</title>
-  <link href="bedrock.css" rel="stylesheet">
+  <title>Zendesk Garden / CSS Components / Forms</title>
+  <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
-  <style>
-  html {
-    transition:
-      background-color .4s,
-      color .4s
-  }
-  </style>
 </head>
 <body>
-  <header class="u-bg-oil u-fg-white u-mb-lg">
-    <div class="l-wrapper">
-      <h1 class="u-alpha u-pv">
-        <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
-        <span>/ Forms</span>
-      </h1>
-    </div>
-  </header>
-  <main class="l-wrapper">
-    <h1 class="u-beta u-mb">Forms</h1>
-    <p class="u-mb">A variety of form elements and their styling.</p>
-    <ul class="u-delta u-mb">
-      <li class="u-mb-xs"><a href="checkbox">Checkbox</a> (and Radio Button)</li>
-      <li class="u-mb-xs"><a href="dropdown">Dropdown</a></li>
-      <li class="u-mb-xs"><a href="range">Range</a></li>
-      <li class="u-mb-xs"><a href="text">Text</a> (and Textarea)</li>
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="http://garden.zendesk.com">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="http://garden.zendesk.com/css-components">CSS Components</a>
+      <span>/ Forms</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item">
+        <fieldset class="c-chk c-chk--toggle">
+          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+          <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+        </fieldset>
+      </li>
     </ul>
+  </header>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Form Elements</h1>
+    <div class="c-main__body">
+      <p class="u-mb">A variety of form elements and their styling.</p>
+      <ul class="u-delta u-mb">
+        <li class="u-mb-xs"><a href="checkbox">Checkbox, Toggles, &amp; Radios</a></li>
+        <li class="u-mb-xs"><a href="dropdown">Dropdowns</a></li>
+        <li class="u-mb-xs"><a href="range">Ranges</a></li>
+        <li class="u-mb-xs"><a href="text">Text &amp; Textarea</a></li>
+      </ul>
+    </div>
   </main>
+  <script src="http://garden.zendesk.com/jquery.js"></script>
+  <script src="http://garden.zendesk.com/svg4everybody.js"></script>
+  <script src="http://garden.zendesk.com/index.js"></script>
 </body>
 </html>
