@@ -1,0 +1,27 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-label--remove-background-image: svg-load('14-remove.svg', color: var(--zd-label-color));
+}
+
+/* 1. Adjust so that hover affordance does not extend beyond pill labels. */
+
+.c-label__remove {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-image: var(--zd-label--remove-background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%; /* [1] */
+  cursor: pointer;
+  float: right;
+  margin-right: -10px;
+}
+
+.c-label.is-rtl .c-label__remove {
+  float: left;
+  margin-left: -10px;
+  margin-right: 0;
+}

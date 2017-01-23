@@ -1,0 +1,71 @@
+.c-label{
+  display:inline-block;
+  border-radius:2px;
+  background-color:#30aabc;
+  padding:0 .83333em;
+  line-height:1.66667;
+  color:#fff;
+  font-size:12px;
+  font-weight:400;
+}
+
+.c-label--error{
+  background-color:#eb6651;
+}
+
+.c-label--success{
+  background-color:#16ba52;
+}
+
+.c-label--warning{
+  background-color:#ffc800;
+}
+
+.c-label--lg{
+  line-height:2.5;
+}
+
+.c-label--sm{
+  padding:0 .6em;
+  line-height:1.5;
+  font-size:10px;
+}
+
+.c-label--round.c-label--sm{
+  min-width:15px;
+}
+
+.c-label--round.c-label--lg{
+  min-width:30px;
+}
+
+.c-label--pill{
+  border-radius:100px;
+}
+
+.c-label--round{
+  border-radius:50%;
+  padding:0;
+  min-width:20px;
+  text-align:center;
+}
+
+.c-label__remove{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  vertical-align:middle;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:50%;
+  border-radius:50%;
+  cursor:pointer;
+  float:right;
+  margin-right:-10px;
+}
+
+.c-label.is-rtl .c-label__remove{
+  float:left;
+  margin-left:-10px;
+  margin-right:0;
+}

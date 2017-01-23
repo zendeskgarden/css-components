@@ -1,0 +1,19 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-label--error-background-color: var(--zd-color-flamingo);
+  --zd-label--success-background-color: var(--zd-color-chateau-green);
+  --zd-label--warning-background-color: var(--zd-color-marigold);
+}
+
+.c-label--error {
+  background-color: var(--zd-label--error-background-color);
+}
+
+.c-label--success {
+  background-color: var(--zd-label--success-background-color);
+}
+
+.c-label--warning {
+  background-color: var(--zd-label--warning-background-color);
+}

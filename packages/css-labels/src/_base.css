@@ -1,0 +1,22 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-label-background-color: var(--zd-color-pelorous);
+  --zd-label-border-radius: 2px;
+  --zd-label-color: var(--zd-color-white);
+  --zd-label-font-size: var(--zd-font-size-zeta);
+  --zd-label-font-weight: var(--zd-font-weight-regular);
+  --zd-label-line-height: calc(20 / 12);
+  --zd-label-padding: 0 calc(10 / 12 * 1em);
+}
+
+.c-label {
+  display: inline-block;
+  border-radius: var(--zd-label-border-radius);
+  background-color: var(--zd-label-background-color);
+  padding: var(--zd-label-padding);
+  line-height: var(--zd-label-line-height);
+  color: var(--zd-label-color);
+  font-size: var(--zd-label-font-size);
+  font-weight: var(--zd-label-font-weight);
+}

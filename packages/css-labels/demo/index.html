@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <title>Zendesk Garden / CSS Components / Labels</title>
+  <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="http://garden.zendesk.com">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="http://garden.zendesk.com/css-components">CSS Components</a>
+      <span>/ Labels</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-settings-fill">
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron">
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-removable" id="nav.ctl.removable" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.removable">Removable</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <div class="u-mb">Size</div>
+            <div class="u-ml">
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-size" id="nav.ctl.size.default" name="nav.ctl.size" checked type="radio" value="">
+                <label class="c-chk__label" for="nav.ctl.size.default">Default</label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-size" id="nav.ctl.size.small" name="nav.ctl.size" type="radio" value="sm">
+                <label class="c-chk__label" for="nav.ctl.size.small"><span class="c-code">.c-label--sm</span></label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-size" id="nav.ctl.size.large" name="nav.ctl.size" type="radio" value="lg">
+                <label class="c-chk__label" for="nav.ctl.size.large"><span class="c-code">.c-label--lg</span></label>
+              </fieldset>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Labels</h1>
+    <div class="c-main__body">
+      <span class="c-label">.c-label</span>
+      <span class="c-label c-label--pill">.c-label.c-label--pill</span>
+      <small class="c-label c-label--error">.c-label.c-label--error</small>
+      <small class="c-label c-label--success">.c-label.c-label--success</small>
+      <small class="c-label c-label--pill c-label--warning">.c-label.c-label--warning<a class="c-label__remove"></a></small>
+      <span class="c-label c-label--round">M</span>
+      <span class="c-label c-label--round">I</span>
+      <a class="c-label" href="#">anchor</a>
+      <a class="c-label" href="#">anchor<span class="c-label__remove"></span></a>
+    </div>
+  </main>
+  <script src="http://garden.zendesk.com/jquery.js"></script>
+  <script src="http://garden.zendesk.com/svg4everybody.js"></script>
+  <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
