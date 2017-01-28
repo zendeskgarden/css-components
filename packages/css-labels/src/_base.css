@@ -6,17 +6,46 @@
   --zd-label-color: var(--zd-color-white);
   --zd-label-font-size: var(--zd-font-size-zeta);
   --zd-label-font-weight: var(--zd-font-weight-regular);
+  --zd-label-height: var(--zd-spacing);
   --zd-label-line-height: calc(20 / 12);
   --zd-label-padding: 0 calc(10 / 12 * 1em);
+  --zd-label-focused-box-shadow:
+    0 0 0 2px
+    color(var(--zd-label-background-color) alpha(40%));
 }
+
+/* 1. Reset for <button> element.
+ * 2. Reset for <a>nchor element. */
 
 .c-label {
   display: inline-block;
+  border: 0; /* [1] */
   border-radius: var(--zd-label-border-radius);
   background-color: var(--zd-label-background-color);
   padding: var(--zd-label-padding);
+  height: var(--zd-label-height);
+  text-decoration: none; /* [2] */
   line-height: var(--zd-label-line-height);
+  white-space: nowrap;
   color: var(--zd-label-color);
   font-size: var(--zd-label-font-size);
   font-weight: var(--zd-label-font-weight);
+}
+
+.c-label:hover {
+  color: var(--zd-label-color); /* [2] */
+}
+
+@custom-selector :--label-focused
+  .is-focused,
+  :focus;
+
+.c-label:--label-focused {
+  outline: 0;
+  box-shadow: var(--zd-label-focused-box-shadow);
+  text-decoration: none;
+}
+
+.c-label.is-rtl {
+  direction: rtl;
 }

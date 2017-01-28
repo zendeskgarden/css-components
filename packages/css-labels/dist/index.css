@@ -1,12 +1,30 @@
 .c-label{
   display:inline-block;
+  border:0;
   border-radius:2px;
   background-color:#30aabc;
   padding:0 .83333em;
+  height:20px;
+  text-decoration:none;
   line-height:1.66667;
+  white-space:nowrap;
   color:#fff;
   font-size:12px;
   font-weight:400;
+}
+
+.c-label:hover{
+  color:#fff;
+}
+
+.c-label.is-focused,.c-label:focus{
+  outline:0;
+  box-shadow:0 0 0 2px rgba(48,170,188,.4);
+  text-decoration:none;
+}
+
+.c-label.is-rtl{
+  direction:rtl;
 }
 
 .c-label--error{
@@ -22,11 +40,13 @@
 }
 
 .c-label--lg{
+  height:30px;
   line-height:2.5;
 }
 
 .c-label--sm{
   padding:0 .6em;
+  height:15px;
   line-height:1.5;
   font-size:10px;
 }
@@ -52,20 +72,55 @@
 
 .c-label__remove{
   display:inline-block;
+  float:right;
+  opacity:.7;
+  margin-right:-10px;
+  border:0;
+  border-radius:2px;
+  background:no-repeat 50% url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E") transparent;
+  cursor:pointer;
+  padding:0;
   width:20px;
   height:20px;
   vertical-align:middle;
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;
-  background-position:50%;
+  font-size:0;
+}
+
+.c-label__remove.is-hovered,.c-label__remove:hover{
+  opacity:1;
+}
+
+.c-label__remove:focus{
+  outline:none;
+}
+
+.c-label--lg .c-label__remove{
+  background-size:16px;
+  width:30px;
+  height:30px;
+}
+
+.c-label--sm .c-label__remove{
+  margin-right:-5px;
+  background-size:12px;
+  width:15px;
+  height:15px;
+}
+
+.c-label--pill .c-label__remove{
   border-radius:50%;
-  cursor:pointer;
-  float:right;
-  margin-right:-10px;
+}
+
+.c-label--round .c-label__remove{
+  display:none;
 }
 
 .c-label.is-rtl .c-label__remove{
   float:left;
-  margin-left:-10px;
   margin-right:0;
+  margin-left:-10px;
+}
+
+.c-label--sm.is-rtl .c-label__remove{
+  margin-left:-5px;
 }

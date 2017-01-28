@@ -1,8 +1,10 @@
 @import 'zd-css-variables';
 
 :root {
+  --zd-label--lg-height: var(--zd-spacing-lg);
   --zd-label--lg-line-height: calc(30 / 12);
   --zd-label--sm-font-size: var(--zd-font-size-micro);
+  --zd-label--sm-height: 15px;
   --zd-label--sm-line-height: calc(15 / 10);
   --zd-label--sm-padding: 0 calc(6 / 10 * 1em);
   --zd-label--round--lg-min-width: 30px;
@@ -10,11 +12,13 @@
 }
 
 .c-label--lg {
+  height: var(--zd-label--lg-height);
   line-height: var(--zd-label--lg-line-height);
 }
 
 .c-label--sm {
   padding: var(--zd-label--sm-padding);
+  height: var(--zd-label--sm-height);
   line-height: var(--zd-label--sm-line-height);
   font-size: var(--zd-label--sm-font-size);
 }
