@@ -31,12 +31,24 @@
   background-color:#eb6651;
 }
 
+.c-label--error.is-focused,.c-label--error:focus{
+  box-shadow:0 0 0 2px hsla(8,79%,62%,.4);
+}
+
 .c-label--success{
   background-color:#16ba52;
 }
 
+.c-label--success.is-focused,.c-label--success:focus{
+  box-shadow:0 0 0 2px rgba(22,186,82,.4);
+}
+
 .c-label--warning{
   background-color:#ffc800;
+}
+
+.c-label--warning.is-focused,.c-label--warning:focus{
+  box-shadow:0 0 0 2px rgba(255,200,0,.4);
 }
 
 .c-label--lg{

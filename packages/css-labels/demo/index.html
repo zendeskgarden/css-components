@@ -74,8 +74,8 @@
       <section class="u-mb-lg">
         <h1 class="c-main__subtitle u-alpha u-mb">Sizes</h1>
         <p class="u-mb">Labels may be sized small or large. Large labels
-        support the inclusion of a <span class="c-code">&lt;svg&gt;</span> or
-        <span class="c-code">&lt;img&gt;</span> icon.</p>
+        support the inclusion of a <code class="c-code">&lt;svg&gt;</code> or
+        <code class="c-code">&lt;img&gt;</code> icon.</p>
         <div class="l-grid u-mb">
           <div class="l-grid__item u-1/3">
             <label class="c-label c-label--sm"><span dir="ltr">.c-label.c-label--sm</span></label>
@@ -117,7 +117,7 @@
         </div>
         <p class="u-mb">Bedrock color utilities may also be used; however,
         remember to extend with the appropriate
-        <span class="c-code">box-shadow</span> treatment if the label is
+        <code class="c-code">box-shadow</code> treatment if the label is
         focusable.</p>
         <div class="l-grid u-mb">
           <div class="l-grid__item u-1/3">
@@ -162,9 +162,25 @@
 
       <section class="u-mb-lg">
         <h1 class="c-main__subtitle u-alpha u-mb">States</h1>
-        <div class="u-mb">
-          <label class="c-label is-focused"><span dir="ltr">.c-label.is-focused</span></label>
+        <p class="u-mb">Focus states are shown for the labels included in
+        Garden. Remember to style an accompanying focus state along with custom
+        background color overrides.</p>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/4">
+            <label class="c-label is-focused"><span dir="ltr">.c-label.is-focused</span></label>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <label class="c-label c-label--error is-focused"><span dir="ltr">.c-label.c-label--error.is-focused</span></label>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <label class="c-label c-label--warning is-focused"><span dir="ltr">.c-label.c-label--warning.is-focused</span></label>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <label class="c-label c-label--success is-focused"><span dir="ltr">.c-label.c-label--success.is-focused</span></label>
+          </div>
         </div>
+        <p class="u-mb">The hover state for the label's remove icon is shown
+        below.</p>
         <div class="u-mb">
           <label class="c-label">
             <span dir="ltr">.c-label .c-label__remove.is-hovered</span>
@@ -177,12 +193,10 @@
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-<textarea class="c-playground__code"
-><label class="c-label c-label--pill c-label--lg c-label--error" tabindex="0">
+<textarea class="c-playground__code"><label class="c-label c-label--pill c-label--lg c-label--error" tabindex="0">
   <span>Hello World</span>
   <button class="c-label__remove"></button>
-</label
-></textarea>
+</label></textarea>
         </div>
       </section>
     </div>
