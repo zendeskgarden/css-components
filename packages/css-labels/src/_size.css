@@ -1,6 +1,7 @@
 @import 'zd-css-variables';
 
 :root {
+  --zd-label--lg-border-radius: 4px;
   --zd-label--lg-height: var(--zd-spacing-lg);
   --zd-label--lg-line-height: calc(30 / 12);
   --zd-label--sm-font-size: var(--zd-font-size-micro);
@@ -12,6 +13,7 @@
 }
 
 .c-label--lg {
+  border-radius: var(--zd-label--lg-border-radius);
   height: var(--zd-label--lg-height);
   line-height: var(--zd-label--lg-line-height);
 }

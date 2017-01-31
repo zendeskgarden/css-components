@@ -52,6 +52,7 @@
 }
 
 .c-label--lg{
+  border-radius:4px;
   height:30px;
   line-height:2.5;
 }
@@ -135,4 +136,41 @@
 
 .c-label--sm.is-rtl .c-label__remove{
   margin-left:-5px;
+}
+
+.c-label__avatar{
+  display:inline-block;
+  float:left;
+  margin:2px 5px 2px -7.5px;
+  border-radius:2px;
+  width:16px;
+  height:16px;
+  vertical-align:middle;
+  font-size:0;
+}
+
+.c-label--lg .c-label__avatar{
+  margin:3px 10px 3px -7px;
+  border-radius:3px;
+  width:24px;
+  height:24px;
+}
+
+.c-label--pill .c-label__avatar{
+  border-radius:50%;
+}
+
+.c-label--round .c-label__avatar,.c-label--sm .c-label__avatar{
+  display:none;
+}
+
+.c-label.is-rtl .c-label__avatar{
+  float:right;
+  margin-right:-7.5px;
+  margin-left:5px;
+}
+
+.c-label--lg.is-rtl .c-label__avatar{
+  margin-right:-7px;
+  margin-left:10px;
 }

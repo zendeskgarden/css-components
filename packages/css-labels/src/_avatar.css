@@ -1,0 +1,64 @@
+@import 'zd-css-variables';
+
+:root {
+  /* stylelint-disable max-line-length */
+  --zd-label__avatar-border-radius: var(--zd-label-border-radius);
+  --zd-label__avatar-margin-left: -7.5px;
+  --zd-label__avatar-margin-right: 5px;
+  --zd-label__avatar-margin-vertical: 2px;
+  --zd-label__avatar-margin:
+    var(--zd-label__avatar-margin-vertical)
+    var(--zd-label__avatar-margin-right)
+    var(--zd-label__avatar-margin-vertical)
+    var(--zd-label__avatar-margin-left);
+  --zd-label__avatar-size: calc(var(--zd-label-height) - (var(--zd-label__avatar-margin-vertical) * 2));
+  --zd-label--lg__avatar-border-radius: calc(var(--zd-label--lg-border-radius) - 1px);
+  --zd-label--lg__avatar-margin-left: -7px;
+  --zd-label--lg__avatar-margin-right: 10px;
+  --zd-label--lg__avatar-margin-vertical: 3px;
+  --zd-label--lg__avatar-margin:
+    var(--zd-label--lg__avatar-margin-vertical)
+    var(--zd-label--lg__avatar-margin-right)
+    var(--zd-label--lg__avatar-margin-vertical)
+    var(--zd-label--lg__avatar-margin-left);
+  --zd-label--lg__avatar-size: calc(var(--zd-label--lg-height) - (var(--zd-label--lg__avatar-margin-vertical) * 2));
+  /* stylelint-enable max-line-length */
+}
+
+.c-label__avatar {
+  display: inline-block;
+  float: left;
+  margin: var(--zd-label__avatar-margin);
+  border-radius: var(--zd-label__avatar-border-radius);
+  width: var(--zd-label__avatar-size);
+  height: var(--zd-label__avatar-size);
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.c-label--lg .c-label__avatar {
+  margin: var(--zd-label--lg__avatar-margin);
+  border-radius: var(--zd-label--lg__avatar-border-radius);
+  width: var(--zd-label--lg__avatar-size);
+  height: var(--zd-label--lg__avatar-size);
+}
+
+.c-label--pill .c-label__avatar {
+  border-radius: 50%;
+}
+
+.c-label--round .c-label__avatar,
+.c-label--sm .c-label__avatar {
+  display: none;
+}
+
+.c-label.is-rtl .c-label__avatar {
+  float: right;
+  margin-right: var(--zd-label__avatar-margin-left);
+  margin-left: var(--zd-label__avatar-margin-right);
+}
+
+.c-label--lg.is-rtl .c-label__avatar {
+  margin-right: var(--zd-label--lg__avatar-margin-left);
+  margin-left: var(--zd-label--lg__avatar-margin-right);
+}
