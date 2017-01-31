@@ -23,12 +23,13 @@ modification classes.
 #### Remove
 
 Use the following HTML to support the addition of a *remove* icon. Note
-the use of `tabindex` to allow the label to receive keyboard focus.
+the use of `tabindex` to allow the label to receive keyboard focus, but
+prevent tabbing to the remove button.
 
 ```html
 <label class="c-label" tabindex="0">
   <span>LABEL</span>
-  <button class="c-label__remove"></button>
+  <button class="c-label__remove" tabindex="-1"></button>
 </label>
 ```
 
