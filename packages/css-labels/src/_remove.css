@@ -26,8 +26,8 @@
 
 .c-label__remove {
   display: inline-block;
-  transition: var(--zd-label__remove-transition);
   float: right;
+  transition: var(--zd-label__remove-transition);
   opacity: var(--zd-label__remove-opacity);
   margin-right: var(--zd-label__remove-margin);
   border: 0; /* [1] */

@@ -87,9 +87,9 @@
 
 .c-label__remove{
   display:inline-block;
+  float:right;
   -webkit-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
-  float:right;
   opacity:.7;
   margin-right:-10px;
   border:0;
@@ -145,7 +145,7 @@
 .c-label__avatar{
   display:inline-block;
   float:left;
-  margin:2px 5px 2px -7.5px;
+  margin:2px 5px 2px -7.9px;
   border-radius:2px;
   width:16px;
   height:16px;
@@ -154,7 +154,7 @@
 }
 
 .c-label--lg .c-label__avatar{
-  margin:3px 10px 3px -7px;
+  margin:3px 10px 3px -6.9px;
   border-radius:3px;
   width:24px;
   height:24px;
@@ -170,11 +170,11 @@
 
 .c-label.is-rtl .c-label__avatar{
   float:right;
-  margin-right:-7.5px;
+  margin-right:-7.9px;
   margin-left:5px;
 }
 
 .c-label--lg.is-rtl .c-label__avatar{
-  margin-right:-7px;
+  margin-right:-6.9px;
   margin-left:10px;
 }

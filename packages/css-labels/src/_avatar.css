@@ -3,7 +3,7 @@
 :root {
   /* stylelint-disable max-line-length */
   --zd-label__avatar-border-radius: var(--zd-label-border-radius);
-  --zd-label__avatar-margin-left: -7.5px;
+  --zd-label__avatar-margin-left: -7.9px;
   --zd-label__avatar-margin-right: 5px;
   --zd-label__avatar-margin-vertical: 2px;
   --zd-label__avatar-margin:
@@ -13,7 +13,7 @@
     var(--zd-label__avatar-margin-left);
   --zd-label__avatar-size: calc(var(--zd-label-height) - (var(--zd-label__avatar-margin-vertical) * 2));
   --zd-label--lg__avatar-border-radius: calc(var(--zd-label--lg-border-radius) - 1px);
-  --zd-label--lg__avatar-margin-left: -7px;
+  --zd-label--lg__avatar-margin-left: -6.9px;
   --zd-label--lg__avatar-margin-right: 10px;
   --zd-label--lg__avatar-margin-vertical: 3px;
   --zd-label--lg__avatar-margin:
