@@ -12,6 +12,7 @@
   --zd-label-focused-box-shadow:
     0 0 0 2px
     color(var(--zd-label-background-color) alpha(40%));
+  --zd-label-transition: box-shadow .1s ease-in-out;
 }
 
 /* 1. Reset for <button> element.
@@ -19,6 +20,7 @@
 
 .c-label {
   display: inline-block;
+  transition: var(--zd-label-transition);
   border: 0; /* [1] */
   border-radius: var(--zd-label-border-radius);
   background-color: var(--zd-label-background-color);

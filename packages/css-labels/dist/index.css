@@ -1,5 +1,7 @@
 .c-label{
   display:inline-block;
+  -webkit-transition:box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out;
   border:0;
   border-radius:2px;
   background-color:#30aabc;
@@ -85,6 +87,8 @@
 
 .c-label__remove{
   display:inline-block;
+  -webkit-transition:opacity .25s ease-in-out;
+  transition:opacity .25s ease-in-out;
   float:right;
   opacity:.7;
   margin-right:-10px;

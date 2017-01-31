@@ -12,6 +12,7 @@
   --zd-label__remove-margin: calc(var(--zd-spacing-sm) * -1);
   --zd-label__remove-opacity: .7;
   --zd-label__remove-size: var(--zd-spacing);
+  --zd-label__remove-transition: opacity .25s ease-in-out;
   --zd-label--lg__remove-background-size: var(--zd-font-size-delta);
   --zd-label--lg__remove-size: var(--zd-spacing-lg);
   --zd-label--sm__remove-background-size: var(--zd-font-size-zeta);
@@ -25,6 +26,7 @@
 
 .c-label__remove {
   display: inline-block;
+  transition: var(--zd-label__remove-transition);
   float: right;
   opacity: var(--zd-label__remove-opacity);
   margin-right: var(--zd-label__remove-margin);
