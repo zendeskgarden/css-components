@@ -1,137 +1,144 @@
 <!doctype html>
 <html>
 <head>
-  <title>Zendesk Garden / Tooltips</title>
-  <link href="bedrock.css" rel="stylesheet">
-  <link href="arrows.css" rel="stylesheet">
+  <title>Zendesk Garden / CSS Components / Tooltips</title>
+  <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <style>
-  html {
-    transition:
-      background-color .4s,
-      color .4s
-  }
+  .is-dark .u-fg-oil { color: #fff !important; }
   </style>
 </head>
 <body>
-  <header class="u-bg-oil u-fg-white u-mb-lg">
-    <div class="l-wrapper">
-      <h1 class="u-alpha u-display-inline-block u-pv">
-        <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
-        <span>/ Tooltips</span>
-      </h1>
-      <label class="u-delta u-ml">
-        <input class="js-dark" type="checkbox">
-        <code>.c-tooltip--dark</code>
-      </label>
-    </div>
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="http://garden.zendesk.com">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="http://garden.zendesk.com/css-components">CSS Components</a>
+      <span>/ Tooltips</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item">
+        <fieldset class="c-chk c-chk--toggle">
+          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+          <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+        </fieldset>
+      </li>
+    </ul>
   </header>
-  <main class="l-wrapper">
-    <h2 class="u-beta u-mb">Tooltips</h2>
-    <p class="u-mb-lg">The
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-tooltip</code>
-      component classes are used to style various tooltip treatments. Combine with
-      <a href="/css-arrows/"><code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-arrow</code></a>
-      classes to connect a tooltip with the element it's informing.</p>
-    <div class="u-mb-lg">
-      <h3 class="u-delta u-mb">Default</h3>
-      <p class="u-mb">The default tooltip has a dark background and is intended to contain
-      only one line of text.</p>
-      <div class="l-grid u-mb">
-        <div class="l-grid__item u-1/3">
-        </div
-        ><div class="l-grid__item u-1/3">
-          <div class="c-tooltip c-arrow c-arrow--b">.c-tooltip.c-arrow.c-arrow--b</div>
-        </div
-        ><div class="l-grid__item u-1/3">
-        </div>
-      </div>
-      <div class="l-grid u-mb">
-        <div class="l-grid__item u-1/3">
-          <div class="c-tooltip c-arrow c-arrow--r">.c-tooltip.c-arrow.c-arrow--r</div>
-        </div
-        ><div class="l-grid__item u-1/3">
-        </div
-        ><div class="l-grid__item u-1/3">
-          <div class="c-tooltip c-arrow c-arrow--l">.c-tooltip.c-arrow.c-arrow--l</div>
-        </div>
-      </div>
-      <div class="l-grid u-mb-lg">
-        <div class="l-grid__item u-1/3">
-        </div
-        ><div class="l-grid__item u-1/3">
-          <div class="c-tooltip c-arrow c-arrow--t">.c-tooltip.c-arrow.c-arrow--t</div>
-        </div
-        ><div class="l-grid__item u-1/3">
-        </div>
-      </div>
-      <h3 class="u-delta u-mb">Modifiers</h3>
-      <p class="u-mb">Use the
-        <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-tooltip--light</code>
-        modifier to style with a lighter background color.</p>
-      <div class="c-tooltip c-tooltip--light c-arrow c-arrow--t u-mb-lg">.c-tooltip.c-tooltip--light</div>
-      <p class="u-mb">The
-        <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-tooltip--medium</code>
-        class provides affordance for tooltips that exceed one line, but are
-        still relatively short (max-width is 140px).</p>
-      <div class="l-grid u-mb-lg">
-        <div class="l-grid__item u-1/2">
-          <div class="c-tooltip c-tooltip--light c-tooltip--medium c-arrow c-arrow--t">.c-tooltip<br>
-            .c-tooltip--light<br>
-            .c-tooltip--medium</div>
-        </div
-        ><div class="l-grid__item u-1/2">
-          <div class="c-tooltip c-tooltip--medium c-arrow c-arrow--t">.c-tooltip<br>
-            .c-tooltip--medium</div>
-        </div>
-      </div>
-      <p class="u-mb">Use
-        <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-tooltip--large</code>
-        for multi-line tooltips that are headed by a title (max-width is
-        270px).</p>
-      <div class="l-grid u-mb-lg">
-        <div class="l-grid__item u-1/2">
-          <div class="c-tooltip c-tooltip--light c-tooltip--large c-arrow c-arrow--t">
-            <strong class="u-fg-oil u-regular u-display-block u-mb-sm">Tipster Title</strong>
-            <p>Everyday carry blog man bun, disrupt fap etsy street art +1
-              poutine twee. Plaid umami PBR&B etsy, narwhal ramps chillwave
-              bespoke butcher cronut. Taxidermy kale chips asymmetrical cardigan,
-              authentic normcore DIY chillwave.</p>
-          </div>
-        </div
-        ><div class="l-grid__item u-1/2">
-          <div class="c-tooltip c-tooltip--large c-arrow c-arrow--t">
-            <strong class="u-fg-white u-regular u-display-block u-mb-sm">Tipster Title</strong>
-            <p>Everyday carry blog man bun, disrupt fap etsy street art +1
-              poutine twee. Plaid umami PBR&B etsy, narwhal ramps chillwave
-              bespoke butcher cronut. Taxidermy kale chips asymmetrical cardigan,
-              authentic normcore DIY chillwave.</p>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Tooltips</h1>
+    <div class="c-main__body">
+      <p class="u-mb-lg">The
+        <code class="c-code">.c-tooltip</code>
+        component classes are used to style various tooltip treatments. Combine with
+        <a href="http://garden.zendesk.com/css-arrows/"><code class="c-code">.c-arrow</code></a>
+        classes to connect a tooltip with the element it's informing.</p>
+      <div class="u-mb-lg">
+        <h3 class="u-delta u-mb">Default</h3>
+        <p class="u-mb">The default tooltip has a dark background and is intended to contain
+        only one line of text.</p>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/3">
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-tooltip c-arrow c-arrow--b">.c-tooltip.c-arrow.c-arrow--b</div>
+          </div
+          ><div class="l-grid__item u-1/3">
           </div>
         </div>
-      </div>
-      <p class="u-mb">Apply the
-        <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-tooltip--extra-large</code>
-        class when a tooltip contains multiple lines and element types
-        (max-width 460px).</p>
-      <div class="c-tooltip c-tooltip--light c-tooltip--extra-large">
-        <div class="u-mb">
-          <span class="u-br u-bg-malibu u-fg-white u-zeta u-pv-xxs u-ph-xs u-light">Badge</span>
-          <strong class="u-fg-oil u-regular u-ml-sm">Tipster Title</strong>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/3">
+            <div class="c-tooltip c-arrow c-arrow--r">.c-tooltip.c-arrow.c-arrow--r</div>
+          </div
+          ><div class="l-grid__item u-1/3">
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-tooltip c-arrow c-arrow--l">.c-tooltip.c-arrow.c-arrow--l</div>
+          </div>
         </div>
-        <p class="u-mb">Everyday carry blog man bun, disrupt fap etsy street art +1
-          poutine twee. Plaid umami PBR&B etsy, narwhal ramps chillwave
-          bespoke butcher cronut. Taxidermy kale chips asymmetrical cardigan,
-          authentic normcore DIY chillwave.</p>
-        <hr class="u-fg-anti-flash-white u-mb">
-        <p>Flannel gluten-free slow-carb butcher actually. Polaroid irony
-          celiac man braid, narwhal venmo iPhone 8-bit cronut cold-pressed
-          keytar. Thundercats street art polaroid banjo mixtape. Humblebrag
-          pickled quinoa occupy. Meggings craft beer organic tilde skateboard,
-          cronut freegan normcore franzen farm-to-table cred ugh.</p>
+        <div class="l-grid u-mb-lg">
+          <div class="l-grid__item u-1/3">
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-tooltip c-arrow c-arrow--t">.c-tooltip.c-arrow.c-arrow--t</div>
+          </div
+          ><div class="l-grid__item u-1/3">
+          </div>
+        </div>
+        <h3 class="u-delta u-mb">Modifiers</h3>
+        <p class="u-mb">Use the
+          <code class="c-code">.c-tooltip--light</code>
+          modifier to style with a lighter background color.</p>
+        <div class="c-tooltip c-tooltip--light c-arrow c-arrow--t u-mb-lg">.c-tooltip.c-tooltip--light</div>
+        <p class="u-mb">The
+          <code class="c-code">.c-tooltip--medium</code>
+          class provides affordance for tooltips that exceed one line, but are
+          still relatively short (max-width is 140px).</p>
+        <div class="l-grid u-mb-lg">
+          <div class="l-grid__item u-1/2">
+            <div class="c-tooltip c-tooltip--light c-tooltip--medium c-arrow c-arrow--t">.c-tooltip<br>
+              .c-tooltip--light<br>
+              .c-tooltip--medium</div>
+          </div
+          ><div class="l-grid__item u-1/2">
+            <div class="c-tooltip c-tooltip--medium c-arrow c-arrow--t">.c-tooltip<br>
+              .c-tooltip--medium</div>
+          </div>
+        </div>
+        <p class="u-mb">Use
+          <code class="c-code">.c-tooltip--large</code>
+          for multi-line tooltips that are headed by a title (max-width is
+          270px).</p>
+        <div class="l-grid u-mb-lg">
+          <div class="l-grid__item u-1/2">
+            <div class="c-tooltip c-tooltip--light c-tooltip--large c-arrow c-arrow--t">
+              <strong class="u-fg-oil u-regular u-display-block u-mb-sm">Tipster Title</strong>
+              <p>Everyday carry blog man bun, disrupt fap etsy street art +1
+                poutine twee. Plaid umami PBR&B etsy, narwhal ramps chillwave
+                bespoke butcher cronut. Taxidermy kale chips asymmetrical cardigan,
+                authentic normcore DIY chillwave.</p>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/2">
+            <div class="c-tooltip c-tooltip--large c-arrow c-arrow--t">
+              <strong class="u-fg-white u-regular u-display-block u-mb-sm">Tipster Title</strong>
+              <p>Everyday carry blog man bun, disrupt fap etsy street art +1
+                poutine twee. Plaid umami PBR&B etsy, narwhal ramps chillwave
+                bespoke butcher cronut. Taxidermy kale chips asymmetrical cardigan,
+                authentic normcore DIY chillwave.</p>
+            </div>
+          </div>
+        </div>
+        <p class="u-mb">Apply the
+          <code class="c-code">.c-tooltip--extra-large</code>
+          class when a tooltip contains multiple lines and element types
+          (max-width 460px).</p>
+        <div class="c-tooltip c-tooltip--light c-tooltip--extra-large">
+          <div class="u-mb">
+            <span class="u-br u-bg-malibu u-fg-white u-zeta u-pv-xxs u-ph-xs u-light">Badge</span>
+            <strong class="u-fg-oil u-regular u-ml-sm">Tipster Title</strong>
+          </div>
+          <p class="u-mb">Everyday carry blog man bun, disrupt fap etsy street art +1
+            poutine twee. Plaid umami PBR&B etsy, narwhal ramps chillwave
+            bespoke butcher cronut. Taxidermy kale chips asymmetrical cardigan,
+            authentic normcore DIY chillwave.</p>
+          <hr class="u-fg-anti-flash-white u-mb">
+          <p>Flannel gluten-free slow-carb butcher actually. Polaroid irony
+            celiac man braid, narwhal venmo iPhone 8-bit cronut cold-pressed
+            keytar. Thundercats street art polaroid banjo mixtape. Humblebrag
+            pickled quinoa occupy. Meggings craft beer organic tilde skateboard,
+            cronut freegan normcore franzen farm-to-table cred ugh.</p>
+        </div>
       </div>
     </div>
   </main>
-  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-  <script src="index.js"></script>
+  <script src="http://garden.zendesk.com/jquery.js"></script>
+  <script src="http://garden.zendesk.com/svg4everybody.js"></script>
+  <script src="http://garden.zendesk.com/index.js"></script>
 </body>
 </html>
