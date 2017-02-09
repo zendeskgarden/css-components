@@ -7,25 +7,25 @@
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/b6d892d0c68a6c42acc05f2d024b8d0d.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/6a2db8af304fc7df0a3aa5dd62289c33.woff) format("woff");
   font-weight:400;
-  unicode-range:U+0370-03FF,U+1F00-1FFF;
+  unicode-range:u+0370-03ff,u+1f??;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/56f886fbb704db7cce8438b6f2f61a4c.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/72f0e3e8919647383ef725fd523ca5ff.woff) format("woff");
   font-weight:400;
-  unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
+  unicode-range:u+0400-052f,u+20b4,u+2116,u+2de0-2dff,u+a640-a69f;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/e1a6e54298674456d7ff7b3071ecc132.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/c9fb2bd3f637fff7ba841b86cf0fad79.woff) format("woff");
   font-weight:400;
-  unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+  unicode-range:u+0100-024f,u+1e??,u+20a0-20ab,u+20ad-20cf,u+2c60-2c7f,u+a720-a7ff;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/024285dc0977da014627aa33f0537c60.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/43c3fabca82cb45331310a7ace6627bd.woff) format("woff");
   font-weight:400;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+  unicode-range:u+00??,u+0131,u+0152-0153,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2212,u+2215,u+e0ff,u+effd,u+f000;
 }
 @font-face{
   font-family:proxima-nova;
@@ -37,28 +37,28 @@
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/5f46c58bb753bb5b49aca67e733cad46.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/56144faffe64692621f076f4d2838e4f.woff) format("woff");
   font-weight:400;
-  unicode-range:U+0370-03FF,U+1F00-1FFF;
+  unicode-range:u+0370-03ff,u+1f??;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/065b5335742e40062468b0073b0ece0e.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/2c030fa2acc596ec4a1da2e73642fdea.woff) format("woff");
   font-weight:400;
-  unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
+  unicode-range:u+0400-052f,u+20b4,u+2116,u+2de0-2dff,u+a640-a69f;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/ac0cc938b6f4bcc70c036168761eb9d7.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/d899ee8b9c215461d2fef6d018766f70.woff) format("woff");
   font-weight:400;
-  unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+  unicode-range:u+0100-024f,u+1e??,u+20a0-20ab,u+20ad-20cf,u+2c60-2c7f,u+a720-a7ff;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/e5efce13f0a24c62813c6b163d9da53f.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/ab1bf8afb5698d8e2dfe2c1f210437d2.woff) format("woff");
   font-weight:400;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+  unicode-range:u+00??,u+0131,u+0152-0153,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2212,u+2215,u+e0ff,u+effd,u+f000;
   font-style:italic;
 }
 @font-face{
@@ -70,25 +70,25 @@
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/ed2b3bddbb16e7c513aa5f66654545f8.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/465044f9f7464e07b3763106135729f1.woff) format("woff");
   font-weight:600;
-  unicode-range:U+0370-03FF,U+1F00-1FFF;
+  unicode-range:u+0370-03ff,u+1f??;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/61b2bc953c7547076a44a8a996049efe.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/407e38e0df899b02b40d7bd3bdf1300c.woff) format("woff");
   font-weight:600;
-  unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
+  unicode-range:u+0400-052f,u+20b4,u+2116,u+2de0-2dff,u+a640-a69f;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/cf2f64901bd11fc78e501805599c0ab5.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/a36f85953016bf54197778002a3d17f1.woff) format("woff");
   font-weight:600;
-  unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+  unicode-range:u+0100-024f,u+1e??,u+20a0-20ab,u+20ad-20cf,u+2c60-2c7f,u+a720-a7ff;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/208d5e47ef38820da86658565adbac90.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/a9db05180829a231b34cd1eb8f97a089.woff) format("woff");
   font-weight:600;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+  unicode-range:u+00??,u+0131,u+0152-0153,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2212,u+2215,u+e0ff,u+effd,u+f000;
 }
 @font-face{
   font-family:proxima-nova;
@@ -100,28 +100,28 @@
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/b3c30ce04e2ff35610c08e277b812255.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/e52642be57c6e97d37606d94bb8d5830.woff) format("woff");
   font-weight:600;
-  unicode-range:U+0370-03FF,U+1F00-1FFF;
+  unicode-range:u+0370-03ff,u+1f??;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/ef9fb3ba6401a954acc420cdf5f073c3.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/9bfc630b63b230a025a1441242f4a74b.woff) format("woff");
   font-weight:600;
-  unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
+  unicode-range:u+0400-052f,u+20b4,u+2116,u+2de0-2dff,u+a640-a69f;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/30b60dbff6250b2916c6cae4a075915c.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/8d6afbd5cf972a7590c01c09396fb5a1.woff) format("woff");
   font-weight:600;
-  unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+  unicode-range:u+0100-024f,u+1e??,u+20a0-20ab,u+20ad-20cf,u+2c60-2c7f,u+a720-a7ff;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/289caee6f88e9916aa65aa571fddee27.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/50e482b886833bec90d760170e027ef2.woff) format("woff");
   font-weight:600;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+  unicode-range:u+00??,u+0131,u+0152-0153,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2212,u+2215,u+e0ff,u+effd,u+f000;
   font-style:italic;
 }
 @font-face{
@@ -133,25 +133,25 @@
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/f8c7426ecc752e9a00f855a5d3419af1.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/fc917cf078d23f4f3d869c62d5eb59cb.woff) format("woff");
   font-weight:300;
-  unicode-range:U+0370-03FF,U+1F00-1FFF;
+  unicode-range:u+0370-03ff,u+1f??;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/70d9f3a6f4e59e778a3efa6d61af4d5d.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/d7282de432899f2e54c0aab7b114b67c.woff) format("woff");
   font-weight:300;
-  unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
+  unicode-range:u+0400-052f,u+20b4,u+2116,u+2de0-2dff,u+a640-a69f;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/f612d76045fcfa7cee3d26a0e74175c8.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/a0511cd61b33a958c7eb11543906f5d1.woff) format("woff");
   font-weight:300;
-  unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+  unicode-range:u+0100-024f,u+1e??,u+20a0-20ab,u+20ad-20cf,u+2c60-2c7f,u+a720-a7ff;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/160ce2ec29b54b2dbdd18c4ab10c3e5a.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/704828d2a4ae7d3196fe05cb5b9cec06.woff) format("woff");
   font-weight:300;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+  unicode-range:u+00??,u+0131,u+0152-0153,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2212,u+2215,u+e0ff,u+effd,u+f000;
 }
 @font-face{
   font-family:proxima-nova;
@@ -163,28 +163,28 @@
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/a7667ce8e8688580d2168ced7e9d9e1a.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/1367d4643ec57adda630c09a7ec8e553.woff) format("woff");
   font-weight:300;
-  unicode-range:U+0370-03FF,U+1F00-1FFF;
+  unicode-range:u+0370-03ff,u+1f??;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/3b9ad5ba2db4ec524ef78784ca76e62b.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/efd4c0a58e8357c5f2f0ff47fe2618bd.woff) format("woff");
   font-weight:300;
-  unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
+  unicode-range:u+0400-052f,u+20b4,u+2116,u+2de0-2dff,u+a640-a69f;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/69f8acd3ceaac02f266e23c4ad3fb297.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/b0e4dcae6570d618e018fce7ba59e062.woff) format("woff");
   font-weight:300;
-  unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+  unicode-range:u+0100-024f,u+1e??,u+20a0-20ab,u+20ad-20cf,u+2c60-2c7f,u+a720-a7ff;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/f20d143375a96133782bdb08a0bcac36.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/ad5d4de76e7976439f8b2e00d011428d.woff) format("woff");
   font-weight:300;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+  unicode-range:u+00??,u+0131,u+0152-0153,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2212,u+2215,u+e0ff,u+effd,u+f000;
   font-style:italic;
 }
 @font-face{
@@ -196,25 +196,25 @@
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/d52dbc9b85d54b6616fe189b75fda343.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/7fbbfa9945c50b3d5730e499871f775c.woff) format("woff");
   font-weight:100;
-  unicode-range:U+0370-03FF,U+1F00-1FFF;
+  unicode-range:u+0370-03ff,u+1f??;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/63a80de45cb14190ac8c4bae7f9973c4.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/4a387b1d1822d78140cff8938701d508.woff) format("woff");
   font-weight:100;
-  unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
+  unicode-range:u+0400-052f,u+20b4,u+2116,u+2de0-2dff,u+a640-a69f;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/597834d83fbd67e3a05a843369cc2c7a.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/19698a7cbb503b5ff4f3a12997df623b.woff) format("woff");
   font-weight:100;
-  unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+  unicode-range:u+0100-024f,u+1e??,u+20a0-20ab,u+20ad-20cf,u+2c60-2c7f,u+a720-a7ff;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/ae3a4266bebfc4d6950f7fa601fab790.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/a4996343ba918b86bdeed60c0508e96a.woff) format("woff");
   font-weight:100;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+  unicode-range:u+00??,u+0131,u+0152-0153,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2212,u+2215,u+e0ff,u+effd,u+f000;
 }
 @font-face{
   font-family:proxima-nova;
@@ -226,28 +226,28 @@
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/912553c4f50973dc4ad8b61b12195ea0.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/90a7ab9d9387f9602e860d7fe099493a.woff) format("woff");
   font-weight:100;
-  unicode-range:U+0370-03FF,U+1F00-1FFF;
+  unicode-range:u+0370-03ff,u+1f??;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/d4544ab16ff2de8f9c1aa435b14d77c9.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/7a5e426fbb8ecfd6d571d37f4fa82092.woff) format("woff");
   font-weight:100;
-  unicode-range:U+0400-052F,U+20B4,U+2116,U+2DE0-2DFF,U+A640-A69F;
+  unicode-range:u+0400-052f,u+20b4,u+2116,u+2de0-2dff,u+a640-a69f;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/db01f8c694a5ce87041ca7611e470c60.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/1be8c6d718865b2a0ac73692eb38eedb.woff) format("woff");
   font-weight:100;
-  unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+  unicode-range:u+0100-024f,u+1e??,u+20a0-20ab,u+20ad-20cf,u+2c60-2c7f,u+a720-a7ff;
   font-style:italic;
 }
 @font-face{
   font-family:proxima-nova;
   src:url(https://d17777qwi045j6.cloudfront.net/fonts/0feea330f830ae358b49e7c600127d28.woff2) format("woff2"),url(https://d17777qwi045j6.cloudfront.net/fonts/ed7feada48892b5f5d20537b7c78ba7f.woff) format("woff");
   font-weight:100;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+  unicode-range:u+00??,u+0131,u+0152-0153,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2212,u+2215,u+e0ff,u+effd,u+f000;
   font-style:italic;
 }
 html{
@@ -710,17 +710,24 @@ svg{ max-height:100%; }
 .u-bg-aluminum{ background-color:#999 !important; }
 .u-bg-anti-flash-white{ background-color:#f3f3f3 !important; }
 .u-bg-apple-green{ background-color:#78a300 !important; }
+.u-bg-apricot{ background-color:#ffcab3 !important; }
 .u-bg-black{ background-color:#000 !important; }
 .u-bg-blue-chalk{ background-color:#e5d6ed !important; }
 .u-bg-breaker-bay{ background-color:#56777a !important; }
 .u-bg-buff{ background-color:#f6de86 !important; }
+.u-bg-buttermilk{ background-color:#ffefb3 !important; }
 .u-bg-ce-soir{ background-color:#9677a6 !important; }
 .u-bg-cg-red{ background-color:#e03b30 !important; }
 .u-bg-chateau-green{ background-color:#16ba52 !important; }
+.u-bg-columbia-blue{ background-color:#a8d8ff !important; }
+.u-bg-cool-blue{ background-color:#0a91ff !important; }
 .u-bg-coral-candy{ background-color:#efcbc9 !important; }
+.u-bg-creme-brulee{ background-color:#ffdc99 !important; }
+.u-bg-cupid{ background-color:#fab4c9 !important; }
 .u-bg-curious-blue{ background-color:#358fb2 !important; }
 .u-bg-current-color{ background-color:currentColor !important; }
 .u-bg-daintree{ background-color:#012b30 !important; }
+.u-bg-dandelion{ background-color:#ffde66 !important; }
 .u-bg-dark-gray{ background-color:#555 !important; }
 .u-bg-dark-pastel-red{ background-color:#bf3026 !important; }
 .u-bg-deep-lilac{ background-color:#965ab6 !important; }
@@ -736,12 +743,14 @@ svg{ max-height:100%; }
 .u-bg-jonquil{ background-color:#ffdd5f !important; }
 .u-bg-karl{ background-color:#f3f0ee !important; }
 .u-bg-lemon-chiffon{ background-color:#fff3ca !important; }
+.u-bg-light-crimson{ background-color:#f3749a !important; }
 .u-bg-lily-white{ background-color:#ebebeb !important; }
 .u-bg-lola{ background-color:#b9a4c3 !important; }
 .u-bg-mabel{ background-color:#cce3ec !important; }
 .u-bg-malibu{ background-color:#5ebbde !important; }
 .u-bg-mandy{ background-color:#eb4962 !important; }
 .u-bg-marigold{ background-color:#ffc800 !important; }
+.u-bg-maya-blue{ background-color:#61b8ff !important; }
 .u-bg-monsoon{ background-color:#777 !important; }
 .u-bg-moon-yellow{ background-color:#edbe0e !important; }
 .u-bg-moonstone-blue{ background-color:#6aabc4 !important; }
@@ -749,15 +758,24 @@ svg{ max-height:100%; }
 .u-bg-non-photo-blue{ background-color:#a5dcf2 !important; }
 .u-bg-oasis{ background-color:#faefc3 !important; }
 .u-bg-oil{ background-color:#333 !important; }
-.u-bg-orange-peel{ background-color:#ffa100 !important; }
+.u-bg-orange-peel{ background-color:#faa200 !important; }
+.u-bg-palatinate-blue{ background-color:#1438f7 !important; }
+.u-bg-pale-turquoise{ background-color:#aff3ee !important; }
 .u-bg-patterns-blue{ background-color:#d2eef9 !important; }
 .u-bg-pelorous{ background-color:#30aabc !important; }
+.u-bg-perano{ background-color:#a6b3ff !important; }
 .u-bg-perfume{ background-color:#caacda !important; }
+.u-bg-persian-green{ background-color:#04b3a7 !important; }
+.u-bg-persimmon{ background-color:#ff6d5a !important; }
 .u-bg-petite-orchid{ background-color:#df9792 !important; }
 .u-bg-picasso{ background-color:#ffe894 !important; }
+.u-bg-pink-orange{ background-color:#ff9466 !important; }
 .u-bg-platinum{ background-color:#eee !important; }
+.u-bg-portland-orange{ background-color:#ff542e !important; }
+.u-bg-razzmatazz{ background-color:#f1316b !important; }
 .u-bg-regent-st-blue{ background-color:#9ac7d8 !important; }
 .u-bg-remy{ background-color:#f7cecb !important; }
+.u-bg-saffron-mango{ background-color:#fac157 !important; }
 .u-bg-sea-buckthorn{ background-color:#f79a3e !important; }
 .u-bg-sherpa-blue{ background-color:#04444d !important; }
 .u-bg-silver-sand{ background-color:#bbb !important; }
@@ -766,10 +784,13 @@ svg{ max-height:100%; }
 .u-bg-steel{ background-color:#666 !important; }
 .u-bg-submarine{ background-color:#819a9e !important; }
 .u-bg-sunglow{ background-color:#ffd12a !important; }
+.u-bg-supernova{ background-color:#ffc800 !important; }
 .u-bg-terra-cotta{ background-color:#e86c64 !important; }
 .u-bg-titan-white{ background-color:#dcd1e1 !important; }
 .u-bg-transparent{ background-color:transparent !important; }
+.u-bg-ultramarine-blue{ background-color:#5e76ff !important; }
 .u-bg-verdigris{ background-color:#37b8af !important; }
+.u-bg-viking{ background-color:#5fd4cc !important; }
 .u-bg-wewak{ background-color:#ef9d97 !important; }
 .u-bg-white{ background-color:#fff !important; }
 .u-bg-white-smoke{ background-color:#f8f8f8 !important; }
@@ -778,16 +799,23 @@ svg{ max-height:100%; }
 .u-fg-aluminum{ color:#999 !important; }
 .u-fg-anti-flash-white{ color:#f3f3f3 !important; }
 .u-fg-apple-green{ color:#78a300 !important; }
+.u-fg-apricot{ color:#ffcab3 !important; }
 .u-fg-black{ color:#000 !important; }
 .u-fg-blue-chalk{ color:#e5d6ed !important; }
 .u-fg-breaker-bay{ color:#56777a !important; }
 .u-fg-buff{ color:#f6de86 !important; }
+.u-fg-buttermilk{ color:#ffefb3 !important; }
 .u-fg-ce-soir{ color:#9677a6 !important; }
 .u-fg-cg-red{ color:#e03b30 !important; }
 .u-fg-chateau-green{ color:#16ba52 !important; }
+.u-fg-columbia-blue{ color:#a8d8ff !important; }
+.u-fg-cool-blue{ color:#0a91ff !important; }
 .u-fg-coral-candy{ color:#efcbc9 !important; }
+.u-fg-creme-brulee{ color:#ffdc99 !important; }
+.u-fg-cupid{ color:#fab4c9 !important; }
 .u-fg-curious-blue{ color:#358fb2 !important; }
 .u-fg-daintree{ color:#012b30 !important; }
+.u-fg-dandelion{ color:#ffde66 !important; }
 .u-fg-dark-gray{ color:#555 !important; }
 .u-fg-dark-pastel-red{ color:#bf3026 !important; }
 .u-fg-deep-lilac{ color:#965ab6 !important; }
@@ -803,12 +831,14 @@ svg{ max-height:100%; }
 .u-fg-jonquil{ color:#ffdd5f !important; }
 .u-fg-karl{ color:#f3f0ee !important; }
 .u-fg-lemon-chiffon{ color:#fff3ca !important; }
+.u-fg-light-crimson{ color:#f3749a !important; }
 .u-fg-lily-white{ color:#ebebeb !important; }
 .u-fg-lola{ color:#b9a4c3 !important; }
 .u-fg-mabel{ color:#cce3ec !important; }
 .u-fg-malibu{ color:#5ebbde !important; }
 .u-fg-mandy{ color:#eb4962 !important; }
 .u-fg-marigold{ color:#ffc800 !important; }
+.u-fg-maya-blue{ color:#61b8ff !important; }
 .u-fg-monsoon{ color:#777 !important; }
 .u-fg-moon-yellow{ color:#edbe0e !important; }
 .u-fg-moonstone-blue{ color:#6aabc4 !important; }
@@ -816,15 +846,24 @@ svg{ max-height:100%; }
 .u-fg-non-photo-blue{ color:#a5dcf2 !important; }
 .u-fg-oasis{ color:#faefc3 !important; }
 .u-fg-oil{ color:#333 !important; }
-.u-fg-orange-peel{ color:#ffa100 !important; }
+.u-fg-orange-peel{ color:#faa200 !important; }
+.u-fg-palatinate-blue{ color:#1438f7 !important; }
+.u-fg-pale-turquoise{ color:#aff3ee !important; }
 .u-fg-patterns-blue{ color:#d2eef9 !important; }
 .u-fg-pelorous{ color:#30aabc !important; }
+.u-fg-perano{ color:#a6b3ff !important; }
 .u-fg-perfume{ color:#caacda !important; }
+.u-fg-persian-green{ color:#04b3a7 !important; }
+.u-fg-persimmon{ color:#ff6d5a !important; }
 .u-fg-petite-orchid{ color:#df9792 !important; }
 .u-fg-picasso{ color:#ffe894 !important; }
+.u-fg-pink-orange{ color:#ff9466 !important; }
 .u-fg-platinum{ color:#eee !important; }
+.u-fg-portland-orange{ color:#ff542e !important; }
+.u-fg-razzmatazz{ color:#f1316b !important; }
 .u-fg-regent-st-blue{ color:#9ac7d8 !important; }
 .u-fg-remy{ color:#f7cecb !important; }
+.u-fg-saffron-mango{ color:#fac157 !important; }
 .u-fg-sea-buckthorn{ color:#f79a3e !important; }
 .u-fg-sherpa-blue{ color:#04444d !important; }
 .u-fg-silver-sand{ color:#bbb !important; }
@@ -833,10 +872,13 @@ svg{ max-height:100%; }
 .u-fg-steel{ color:#666 !important; }
 .u-fg-submarine{ color:#819a9e !important; }
 .u-fg-sunglow{ color:#ffd12a !important; }
+.u-fg-supernova{ color:#ffc800 !important; }
 .u-fg-terra-cotta{ color:#e86c64 !important; }
 .u-fg-titan-white{ color:#dcd1e1 !important; }
 .u-fg-transparent{ color:transparent !important; }
+.u-fg-ultramarine-blue{ color:#5e76ff !important; }
 .u-fg-verdigris{ color:#37b8af !important; }
+.u-fg-viking{ color:#5fd4cc !important; }
 .u-fg-wewak{ color:#ef9d97 !important; }
 .u-fg-white{ color:#fff !important; }
 .u-fg-white-smoke{ color:#f8f8f8 !important; }
@@ -845,17 +887,24 @@ svg{ max-height:100%; }
 .u-bc-aluminum{ border-color:#999 !important; }
 .u-bc-anti-flash-white{ border-color:#f3f3f3 !important; }
 .u-bc-apple-green{ border-color:#78a300 !important; }
+.u-bc-apricot{ border-color:#ffcab3 !important; }
 .u-bc-black{ border-color:#000 !important; }
 .u-bc-blue-chalk{ border-color:#e5d6ed !important; }
 .u-bc-breaker-bay{ border-color:#56777a !important; }
 .u-bc-buff{ border-color:#f6de86 !important; }
+.u-bc-buttermilk{ border-color:#ffefb3 !important; }
 .u-bc-ce-soir{ border-color:#9677a6 !important; }
 .u-bc-cg-red{ border-color:#e03b30 !important; }
 .u-bc-chateau-green{ border-color:#16ba52 !important; }
+.u-bc-columbia-blue{ border-color:#a8d8ff !important; }
+.u-bc-cool-blue{ border-color:#0a91ff !important; }
 .u-bc-coral-candy{ border-color:#efcbc9 !important; }
+.u-bc-creme-brulee{ border-color:#ffdc99 !important; }
+.u-bc-cupid{ border-color:#fab4c9 !important; }
 .u-bc-curious-blue{ border-color:#358fb2 !important; }
 .u-bc-current-color{ border-color:currentColor !important; }
 .u-bc-daintree{ border-color:#012b30 !important; }
+.u-bc-dandelion{ border-color:#ffde66 !important; }
 .u-bc-dark-gray{ border-color:#555 !important; }
 .u-bc-dark-pastel-red{ border-color:#bf3026 !important; }
 .u-bc-deep-lilac{ border-color:#965ab6 !important; }
@@ -871,12 +920,14 @@ svg{ max-height:100%; }
 .u-bc-jonquil{ border-color:#ffdd5f !important; }
 .u-bc-karl{ border-color:#f3f0ee !important; }
 .u-bc-lemon-chiffon{ border-color:#fff3ca !important; }
+.u-bc-light-crimson{ border-color:#f3749a !important; }
 .u-bc-lily-white{ border-color:#ebebeb !important; }
 .u-bc-lola{ border-color:#b9a4c3 !important; }
 .u-bc-mabel{ border-color:#cce3ec !important; }
 .u-bc-malibu{ border-color:#5ebbde !important; }
 .u-bc-mandy{ border-color:#eb4962 !important; }
 .u-bc-marigold{ border-color:#ffc800 !important; }
+.u-bc-maya-blue{ border-color:#61b8ff !important; }
 .u-bc-monsoon{ border-color:#777 !important; }
 .u-bc-moon-yellow{ border-color:#edbe0e !important; }
 .u-bc-moonstone-blue{ border-color:#6aabc4 !important; }
@@ -884,15 +935,24 @@ svg{ max-height:100%; }
 .u-bc-non-photo-blue{ border-color:#a5dcf2 !important; }
 .u-bc-oasis{ border-color:#faefc3 !important; }
 .u-bc-oil{ border-color:#333 !important; }
-.u-bc-orange-peel{ border-color:#ffa100 !important; }
+.u-bc-orange-peel{ border-color:#faa200 !important; }
+.u-bc-palatinate-blue{ border-color:#1438f7 !important; }
+.u-bc-pale-turquoise{ border-color:#aff3ee !important; }
 .u-bc-patterns-blue{ border-color:#d2eef9 !important; }
 .u-bc-pelorous{ border-color:#30aabc !important; }
+.u-bc-perano{ border-color:#a6b3ff !important; }
 .u-bc-perfume{ border-color:#caacda !important; }
+.u-bc-persian-green{ border-color:#04b3a7 !important; }
+.u-bc-persimmon{ border-color:#ff6d5a !important; }
 .u-bc-petite-orchid{ border-color:#df9792 !important; }
 .u-bc-picasso{ border-color:#ffe894 !important; }
+.u-bc-pink-orange{ border-color:#ff9466 !important; }
 .u-bc-platinum{ border-color:#eee !important; }
+.u-bc-portland-orange{ border-color:#ff542e !important; }
+.u-bc-razzmatazz{ border-color:#f1316b !important; }
 .u-bc-regent-st-blue{ border-color:#9ac7d8 !important; }
 .u-bc-remy{ border-color:#f7cecb !important; }
+.u-bc-saffron-mango{ border-color:#fac157 !important; }
 .u-bc-sea-buckthorn{ border-color:#f79a3e !important; }
 .u-bc-sherpa-blue{ border-color:#04444d !important; }
 .u-bc-silver-sand{ border-color:#bbb !important; }
@@ -901,10 +961,13 @@ svg{ max-height:100%; }
 .u-bc-steel{ border-color:#666 !important; }
 .u-bc-submarine{ border-color:#819a9e !important; }
 .u-bc-sunglow{ border-color:#ffd12a !important; }
+.u-bc-supernova{ border-color:#ffc800 !important; }
 .u-bc-terra-cotta{ border-color:#e86c64 !important; }
 .u-bc-titan-white{ border-color:#dcd1e1 !important; }
 .u-bc-transparent{ border-color:transparent !important; }
+.u-bc-ultramarine-blue{ border-color:#5e76ff !important; }
 .u-bc-verdigris{ border-color:#37b8af !important; }
+.u-bc-viking{ border-color:#5fd4cc !important; }
 .u-bc-wewak{ border-color:#ef9d97 !important; }
 .u-bc-white{ border-color:#fff !important; }
 .u-bc-white-smoke{ border-color:#f8f8f8 !important; }

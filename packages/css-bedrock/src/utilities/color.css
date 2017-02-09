@@ -14,6 +14,8 @@
 
 .u-bg-apple-green { background-color: var(--zd-color-apple-green) !important; }
 
+.u-bg-apricot { background-color: var(--zd-color-apricot) !important; }
+
 .u-bg-black { background-color: var(--zd-color-black) !important; }
 
 .u-bg-blue-chalk { background-color: var(--zd-color-blue-chalk) !important; }
@@ -22,19 +24,31 @@
 
 .u-bg-buff { background-color: var(--zd-color-buff) !important; }
 
+.u-bg-buttermilk { background-color: var(--zd-color-buttermilk) !important; }
+
 .u-bg-ce-soir { background-color: var(--zd-color-ce-soir) !important; }
 
 .u-bg-cg-red { background-color: var(--zd-color-cg-red) !important; }
 
 .u-bg-chateau-green { background-color: var(--zd-color-chateau-green) !important; }
 
+.u-bg-columbia-blue { background-color: var(--zd-color-columbia-blue) !important; }
+
+.u-bg-cool-blue { background-color: var(--zd-color-cool-blue) !important; }
+
 .u-bg-coral-candy { background-color: var(--zd-color-coral-candy) !important; }
+
+.u-bg-creme-brulee { background-color: var(--zd-color-creme-brulee) !important; }
+
+.u-bg-cupid { background-color: var(--zd-color-cupid) !important; }
 
 .u-bg-curious-blue { background-color: var(--zd-color-curious-blue) !important; }
 
 .u-bg-current-color { background-color: currentColor !important; }
 
 .u-bg-daintree { background-color: var(--zd-color-daintree) !important; }
+
+.u-bg-dandelion { background-color: var(--zd-color-dandelion) !important; }
 
 .u-bg-dark-gray { background-color: var(--zd-color-dark-gray) !important; }
 
@@ -66,6 +80,8 @@
 
 .u-bg-lemon-chiffon { background-color: var(--zd-color-lemon-chiffon) !important; }
 
+.u-bg-light-crimson { background-color: var(--zd-color-light-crimson) !important; }
+
 .u-bg-lily-white { background-color: var(--zd-color-lily-white) !important; }
 
 .u-bg-lola { background-color: var(--zd-color-lola) !important; }
@@ -77,6 +93,8 @@
 .u-bg-mandy { background-color: var(--zd-color-mandy) !important; }
 
 .u-bg-marigold { background-color: var(--zd-color-marigold) !important; }
+
+.u-bg-maya-blue { background-color: var(--zd-color-maya-blue) !important; }
 
 .u-bg-monsoon { background-color: var(--zd-color-monsoon) !important; }
 
@@ -94,21 +112,39 @@
 
 .u-bg-orange-peel { background-color: var(--zd-color-orange-peel) !important; }
 
+.u-bg-palatinate-blue { background-color: var(--zd-color-palatinate-blue) !important; }
+
+.u-bg-pale-turquoise { background-color: var(--zd-color-pale-turquoise) !important; }
+
 .u-bg-patterns-blue { background-color: var(--zd-color-patterns-blue) !important; }
 
 .u-bg-pelorous { background-color: var(--zd-color-pelorous) !important; }
 
+.u-bg-perano { background-color: var(--zd-color-perano) !important; }
+
 .u-bg-perfume { background-color: var(--zd-color-perfume) !important; }
+
+.u-bg-persian-green { background-color: var(--zd-color-persian-green) !important; }
+
+.u-bg-persimmon { background-color: var(--zd-color-persimmon) !important; }
 
 .u-bg-petite-orchid { background-color: var(--zd-color-petite-orchid) !important; }
 
 .u-bg-picasso { background-color: var(--zd-color-picasso) !important; }
 
+.u-bg-pink-orange { background-color: var(--zd-color-pink-orange) !important; }
+
 .u-bg-platinum { background-color: var(--zd-color-platinum) !important; }
+
+.u-bg-portland-orange { background-color: var(--zd-color-portland-orange) !important; }
+
+.u-bg-razzmatazz { background-color: var(--zd-color-razzmatazz) !important; }
 
 .u-bg-regent-st-blue { background-color: var(--zd-color-regent-st-blue) !important; }
 
 .u-bg-remy { background-color: var(--zd-color-remy) !important; }
+
+.u-bg-saffron-mango { background-color: var(--zd-color-saffron-mango) !important; }
 
 .u-bg-sea-buckthorn { background-color: var(--zd-color-sea-buckthorn) !important; }
 
@@ -126,13 +162,19 @@
 
 .u-bg-sunglow { background-color: var(--zd-color-sunglow) !important; }
 
+.u-bg-supernova { background-color: var(--zd-color-supernova) !important; }
+
 .u-bg-terra-cotta { background-color: var(--zd-color-terra-cotta) !important; }
 
 .u-bg-titan-white { background-color: var(--zd-color-titan-white) !important; }
 
 .u-bg-transparent { background-color: transparent !important; }
 
+.u-bg-ultramarine-blue { background-color: var(--zd-color-ultramarine-blue) !important; }
+
 .u-bg-verdigris { background-color: var(--zd-color-verdigris) !important; }
+
+.u-bg-viking { background-color: var(--zd-color-viking) !important; }
 
 .u-bg-wewak { background-color: var(--zd-color-wewak) !important; }
 
@@ -152,6 +194,8 @@
 
 .u-fg-apple-green { color: var(--zd-color-apple-green) !important; }
 
+.u-fg-apricot { color: var(--zd-color-apricot) !important; }
+
 .u-fg-black { color: var(--zd-color-black) !important; }
 
 .u-fg-blue-chalk { color: var(--zd-color-blue-chalk) !important; }
@@ -160,17 +204,29 @@
 
 .u-fg-buff { color: var(--zd-color-buff) !important; }
 
+.u-fg-buttermilk { color: var(--zd-color-buttermilk) !important; }
+
 .u-fg-ce-soir { color: var(--zd-color-ce-soir) !important; }
 
 .u-fg-cg-red { color: var(--zd-color-cg-red) !important; }
 
 .u-fg-chateau-green { color: var(--zd-color-chateau-green) !important; }
 
+.u-fg-columbia-blue { color: var(--zd-color-columbia-blue) !important; }
+
+.u-fg-cool-blue { color: var(--zd-color-cool-blue) !important; }
+
 .u-fg-coral-candy { color: var(--zd-color-coral-candy) !important; }
+
+.u-fg-creme-brulee { color: var(--zd-color-creme-brulee) !important; }
+
+.u-fg-cupid { color: var(--zd-color-cupid) !important; }
 
 .u-fg-curious-blue { color: var(--zd-color-curious-blue) !important; }
 
 .u-fg-daintree { color: var(--zd-color-daintree) !important; }
+
+.u-fg-dandelion { color: var(--zd-color-dandelion) !important; }
 
 .u-fg-dark-gray { color: var(--zd-color-dark-gray) !important; }
 
@@ -202,6 +258,8 @@
 
 .u-fg-lemon-chiffon { color: var(--zd-color-lemon-chiffon) !important; }
 
+.u-fg-light-crimson { color: var(--zd-color-light-crimson) !important; }
+
 .u-fg-lily-white { color: var(--zd-color-lily-white) !important; }
 
 .u-fg-lola { color: var(--zd-color-lola) !important; }
@@ -213,6 +271,8 @@
 .u-fg-mandy { color: var(--zd-color-mandy) !important; }
 
 .u-fg-marigold { color: var(--zd-color-marigold) !important; }
+
+.u-fg-maya-blue { color: var(--zd-color-maya-blue) !important; }
 
 .u-fg-monsoon { color: var(--zd-color-monsoon) !important; }
 
@@ -230,21 +290,39 @@
 
 .u-fg-orange-peel { color: var(--zd-color-orange-peel) !important; }
 
+.u-fg-palatinate-blue { color: var(--zd-color-palatinate-blue) !important; }
+
+.u-fg-pale-turquoise { color: var(--zd-color-pale-turquoise) !important; }
+
 .u-fg-patterns-blue { color: var(--zd-color-patterns-blue) !important; }
 
 .u-fg-pelorous { color: var(--zd-color-pelorous) !important; }
 
+.u-fg-perano { color: var(--zd-color-perano) !important; }
+
 .u-fg-perfume { color: var(--zd-color-perfume) !important; }
+
+.u-fg-persian-green { color: var(--zd-color-persian-green) !important; }
+
+.u-fg-persimmon { color: var(--zd-color-persimmon) !important; }
 
 .u-fg-petite-orchid { color: var(--zd-color-petite-orchid) !important; }
 
 .u-fg-picasso { color: var(--zd-color-picasso) !important; }
 
+.u-fg-pink-orange { color: var(--zd-color-pink-orange) !important; }
+
 .u-fg-platinum { color: var(--zd-color-platinum) !important; }
+
+.u-fg-portland-orange { color: var(--zd-color-portland-orange) !important; }
+
+.u-fg-razzmatazz { color: var(--zd-color-razzmatazz) !important; }
 
 .u-fg-regent-st-blue { color: var(--zd-color-regent-st-blue) !important; }
 
 .u-fg-remy { color: var(--zd-color-remy) !important; }
+
+.u-fg-saffron-mango { color: var(--zd-color-saffron-mango) !important; }
 
 .u-fg-sea-buckthorn { color: var(--zd-color-sea-buckthorn) !important; }
 
@@ -262,13 +340,19 @@
 
 .u-fg-sunglow { color: var(--zd-color-sunglow) !important; }
 
+.u-fg-supernova { color: var(--zd-color-supernova) !important; }
+
 .u-fg-terra-cotta { color: var(--zd-color-terra-cotta) !important; }
 
 .u-fg-titan-white { color: var(--zd-color-titan-white) !important; }
 
 .u-fg-transparent { color: transparent !important; }
 
+.u-fg-ultramarine-blue { color: var(--zd-color-ultramarine-blue) !important; }
+
 .u-fg-verdigris { color: var(--zd-color-verdigris) !important; }
+
+.u-fg-viking { color: var(--zd-color-viking) !important; }
 
 .u-fg-wewak { color: var(--zd-color-wewak) !important; }
 
@@ -288,6 +372,8 @@
 
 .u-bc-apple-green { border-color: var(--zd-color-apple-green) !important; }
 
+.u-bc-apricot { border-color: var(--zd-color-apricot) !important; }
+
 .u-bc-black { border-color: var(--zd-color-black) !important; }
 
 .u-bc-blue-chalk { border-color: var(--zd-color-blue-chalk) !important; }
@@ -296,19 +382,31 @@
 
 .u-bc-buff { border-color: var(--zd-color-buff) !important; }
 
+.u-bc-buttermilk { border-color: var(--zd-color-buttermilk) !important; }
+
 .u-bc-ce-soir { border-color: var(--zd-color-ce-soir) !important; }
 
 .u-bc-cg-red { border-color: var(--zd-color-cg-red) !important; }
 
 .u-bc-chateau-green { border-color: var(--zd-color-chateau-green) !important; }
 
+.u-bc-columbia-blue { border-color: var(--zd-color-columbia-blue) !important; }
+
+.u-bc-cool-blue { border-color: var(--zd-color-cool-blue) !important; }
+
 .u-bc-coral-candy { border-color: var(--zd-color-coral-candy) !important; }
+
+.u-bc-creme-brulee { border-color: var(--zd-color-creme-brulee) !important; }
+
+.u-bc-cupid { border-color: var(--zd-color-cupid) !important; }
 
 .u-bc-curious-blue { border-color: var(--zd-color-curious-blue) !important; }
 
 .u-bc-current-color { border-color: currentColor !important; }
 
 .u-bc-daintree { border-color: var(--zd-color-daintree) !important; }
+
+.u-bc-dandelion { border-color: var(--zd-color-dandelion) !important; }
 
 .u-bc-dark-gray { border-color: var(--zd-color-dark-gray) !important; }
 
@@ -340,6 +438,8 @@
 
 .u-bc-lemon-chiffon { border-color: var(--zd-color-lemon-chiffon) !important; }
 
+.u-bc-light-crimson { border-color: var(--zd-color-light-crimson) !important; }
+
 .u-bc-lily-white { border-color: var(--zd-color-lily-white) !important; }
 
 .u-bc-lola { border-color: var(--zd-color-lola) !important; }
@@ -351,6 +451,8 @@
 .u-bc-mandy { border-color: var(--zd-color-mandy) !important; }
 
 .u-bc-marigold { border-color: var(--zd-color-marigold) !important; }
+
+.u-bc-maya-blue { border-color: var(--zd-color-maya-blue) !important; }
 
 .u-bc-monsoon { border-color: var(--zd-color-monsoon) !important; }
 
@@ -368,21 +470,39 @@
 
 .u-bc-orange-peel { border-color: var(--zd-color-orange-peel) !important; }
 
+.u-bc-palatinate-blue { border-color: var(--zd-color-palatinate-blue) !important; }
+
+.u-bc-pale-turquoise { border-color: var(--zd-color-pale-turquoise) !important; }
+
 .u-bc-patterns-blue { border-color: var(--zd-color-patterns-blue) !important; }
 
 .u-bc-pelorous { border-color: var(--zd-color-pelorous) !important; }
 
+.u-bc-perano { border-color: var(--zd-color-perano) !important; }
+
 .u-bc-perfume { border-color: var(--zd-color-perfume) !important; }
+
+.u-bc-persian-green { border-color: var(--zd-color-persian-green) !important; }
+
+.u-bc-persimmon { border-color: var(--zd-color-persimmon) !important; }
 
 .u-bc-petite-orchid { border-color: var(--zd-color-petite-orchid) !important; }
 
 .u-bc-picasso { border-color: var(--zd-color-picasso) !important; }
 
+.u-bc-pink-orange { border-color: var(--zd-color-pink-orange) !important; }
+
 .u-bc-platinum { border-color: var(--zd-color-platinum) !important; }
+
+.u-bc-portland-orange { border-color: var(--zd-color-portland-orange) !important; }
+
+.u-bc-razzmatazz { border-color: var(--zd-color-razzmatazz) !important; }
 
 .u-bc-regent-st-blue { border-color: var(--zd-color-regent-st-blue) !important; }
 
 .u-bc-remy { border-color: var(--zd-color-remy) !important; }
+
+.u-bc-saffron-mango { border-color: var(--zd-color-saffron-mango) !important; }
 
 .u-bc-sea-buckthorn { border-color: var(--zd-color-sea-buckthorn) !important; }
 
@@ -400,13 +520,19 @@
 
 .u-bc-sunglow { border-color: var(--zd-color-sunglow) !important; }
 
+.u-bc-supernova { border-color: var(--zd-color-supernova) !important; }
+
 .u-bc-terra-cotta { border-color: var(--zd-color-terra-cotta) !important; }
 
 .u-bc-titan-white { border-color: var(--zd-color-titan-white) !important; }
 
 .u-bc-transparent { border-color: transparent !important; }
 
+.u-bc-ultramarine-blue { border-color: var(--zd-color-ultramarine-blue) !important; }
+
 .u-bc-verdigris { border-color: var(--zd-color-verdigris) !important; }
+
+.u-bc-viking { border-color: var(--zd-color-viking) !important; }
 
 .u-bc-wewak { border-color: var(--zd-color-wewak) !important; }
 
