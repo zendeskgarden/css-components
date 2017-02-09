@@ -162,8 +162,6 @@
 
 .u-bg-sunglow { background-color: var(--zd-color-sunglow) !important; }
 
-.u-bg-supernova { background-color: var(--zd-color-supernova) !important; }
-
 .u-bg-terra-cotta { background-color: var(--zd-color-terra-cotta) !important; }
 
 .u-bg-titan-white { background-color: var(--zd-color-titan-white) !important; }
@@ -339,8 +337,6 @@
 .u-fg-submarine { color: var(--zd-color-submarine) !important; }
 
 .u-fg-sunglow { color: var(--zd-color-sunglow) !important; }
-
-.u-fg-supernova { color: var(--zd-color-supernova) !important; }
 
 .u-fg-terra-cotta { color: var(--zd-color-terra-cotta) !important; }
 
@@ -519,8 +515,6 @@
 .u-bc-submarine { border-color: var(--zd-color-submarine) !important; }
 
 .u-bc-sunglow { border-color: var(--zd-color-sunglow) !important; }
-
-.u-bc-supernova { border-color: var(--zd-color-supernova) !important; }
 
 .u-bc-terra-cotta { border-color: var(--zd-color-terra-cotta) !important; }
 

@@ -758,7 +758,7 @@ svg{ max-height:100%; }
 .u-bg-non-photo-blue{ background-color:#a5dcf2 !important; }
 .u-bg-oasis{ background-color:#faefc3 !important; }
 .u-bg-oil{ background-color:#333 !important; }
-.u-bg-orange-peel{ background-color:#faa200 !important; }
+.u-bg-orange-peel{ background-color:#faa300 !important; }
 .u-bg-palatinate-blue{ background-color:#1438f7 !important; }
 .u-bg-pale-turquoise{ background-color:#aff3ee !important; }
 .u-bg-patterns-blue{ background-color:#d2eef9 !important; }
@@ -784,7 +784,6 @@ svg{ max-height:100%; }
 .u-bg-steel{ background-color:#666 !important; }
 .u-bg-submarine{ background-color:#819a9e !important; }
 .u-bg-sunglow{ background-color:#ffd12a !important; }
-.u-bg-supernova{ background-color:#ffc800 !important; }
 .u-bg-terra-cotta{ background-color:#e86c64 !important; }
 .u-bg-titan-white{ background-color:#dcd1e1 !important; }
 .u-bg-transparent{ background-color:transparent !important; }
@@ -846,7 +845,7 @@ svg{ max-height:100%; }
 .u-fg-non-photo-blue{ color:#a5dcf2 !important; }
 .u-fg-oasis{ color:#faefc3 !important; }
 .u-fg-oil{ color:#333 !important; }
-.u-fg-orange-peel{ color:#faa200 !important; }
+.u-fg-orange-peel{ color:#faa300 !important; }
 .u-fg-palatinate-blue{ color:#1438f7 !important; }
 .u-fg-pale-turquoise{ color:#aff3ee !important; }
 .u-fg-patterns-blue{ color:#d2eef9 !important; }
@@ -872,7 +871,6 @@ svg{ max-height:100%; }
 .u-fg-steel{ color:#666 !important; }
 .u-fg-submarine{ color:#819a9e !important; }
 .u-fg-sunglow{ color:#ffd12a !important; }
-.u-fg-supernova{ color:#ffc800 !important; }
 .u-fg-terra-cotta{ color:#e86c64 !important; }
 .u-fg-titan-white{ color:#dcd1e1 !important; }
 .u-fg-transparent{ color:transparent !important; }
@@ -935,7 +933,7 @@ svg{ max-height:100%; }
 .u-bc-non-photo-blue{ border-color:#a5dcf2 !important; }
 .u-bc-oasis{ border-color:#faefc3 !important; }
 .u-bc-oil{ border-color:#333 !important; }
-.u-bc-orange-peel{ border-color:#faa200 !important; }
+.u-bc-orange-peel{ border-color:#faa300 !important; }
 .u-bc-palatinate-blue{ border-color:#1438f7 !important; }
 .u-bc-pale-turquoise{ border-color:#aff3ee !important; }
 .u-bc-patterns-blue{ border-color:#d2eef9 !important; }
@@ -961,7 +959,6 @@ svg{ max-height:100%; }
 .u-bc-steel{ border-color:#666 !important; }
 .u-bc-submarine{ border-color:#819a9e !important; }
 .u-bc-sunglow{ border-color:#ffd12a !important; }
-.u-bc-supernova{ border-color:#ffc800 !important; }
 .u-bc-terra-cotta{ border-color:#e86c64 !important; }
 .u-bc-titan-white{ border-color:#dcd1e1 !important; }
 .u-bc-transparent{ border-color:transparent !important; }

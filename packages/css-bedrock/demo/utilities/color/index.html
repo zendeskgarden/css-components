@@ -3,7 +3,9 @@
 <head>
   <title>Zendesk Garden / Bedrock / Color</title>
   <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
+  <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="../../index.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
 </head>
 <body>
   <header class="c-header">
@@ -30,438 +32,576 @@
   <main class="c-main c-main--page">
     <h1 class="c-main__title">Color Utility</h1>
     <div class="c-main__body">
-      <p class="u-mb">Color utility classes allow you to determine the background
-      or foreground colors for your elements.</p>
-
-      <h2 class="u-gamma u-mb-sm">Background</h2>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-daintree u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-daintree</code>
+      <p class="u-mb">Color utility classes allow you to determine the
+      background, border, or foreground colors for your elements. Simply format
+      a utility class using the color names shown below. For example:</p>
+      <ul class="u-mb u-ml">
+        <li class="u-mb-sm"><span class="u-mr-xs u-delta">&bullet;</span>
+        Use <code class="c-code">.u-bg-anti-flash-white</code>
+        to set an element's background color to <code class="c-code">#F3F3F3</code>.</li>
+        <li class="u-mb-sm"><span class="u-mr-xs u-delta">&bullet;</span>
+        Use <code class="c-code">.u-fg-algae</code>
+        to set an element's foreground color to <code class="c-code">#03363D</code>.</li>
+        <li class="u-mb-sm"><span class="u-mr-xs u-delta">&bullet;</span>
+        Use <code class="c-code">.u-bc-pelorous</code>
+        to set an element's border color to <code class="c-code">#30AABC</code>.</li>
+      </ul>
+      <p class="u-mb-xl">Color utilities also include special suffixes for
+      <code class="c-code">.u-{??}-current-color</code>,
+      <code class="c-code">.u-{??}-transparent</code>, and
+      <code class="c-code">.u-{??}-inherit</code>.</p>
+      <!-- grayscale -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-black"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">black</bold>
+              <span class="c-swatch__info__hex">000000</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-algae u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-algae</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-nero"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">nero</bold>
+              <span class="c-swatch__info__hex">1a1a1a</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-sherpa-blue u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-sherpa-blue</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-oil"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">oil</bold>
+              <span class="c-swatch__info__hex">333333</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-breaker-bay u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-breaker-bay</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-dark-gray"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">dark gray</bold>
+              <span class="c-swatch__info__hex">555555</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-submarine u-br-b u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-submarine</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-steel"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">steel</bold>
+              <span class="c-swatch__info__hex">666666</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-karl u-br-b u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-karl</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-monsoon"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">monsoon</bold>
+              <span class="c-swatch__info__hex">777777</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-aluminum"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">aluminum</bold>
+              <span class="c-swatch__info__hex">999999</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-silver-sand"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">silver sand</bold>
+              <span class="c-swatch__info__hex">bbbbbb</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-iron"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">iron</bold>
+              <span class="c-swatch__info__hex">cccccc</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-gainsboro"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">gainsboro</bold>
+              <span class="c-swatch__info__hex">dddddd</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-platinum"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">platinum</bold>
+              <span class="c-swatch__info__hex">eeeeee</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-anti-flash-white"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">anti-flash white</bold>
+              <span class="c-swatch__info__hex">f3f3f3</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-white-smoke"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">white smoke</bold>
+              <span class="c-swatch__info__hex">f8f8f8</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-snow"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">snow</bold>
+              <span class="c-swatch__info__hex">fbfbfb</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-white"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">white</bold>
+              <span class="c-swatch__info__hex">ffffff</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-nero u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-nero</code>
+      <!-- neutrals -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-daintree"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">daintree</bold>
+              <span class="c-swatch__info__hex">012b30</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-iron u-br-t u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-iron</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-algae"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">algae</bold>
+              <span class="c-swatch__info__hex">03363d</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-oil u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-oil</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-sherpa-blue"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">sherpa blue</bold>
+              <span class="c-swatch__info__hex">04444d</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-gainsboro u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-gainsboro</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-breaker-bay"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">breaker bay</bold>
+              <span class="c-swatch__info__hex">56777a</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-dark-gray u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-dark-gray</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-submarine"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">submarine</bold>
+              <span class="c-swatch__info__hex">819a9e</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-platinum u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-platinum</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-steel u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-steel</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-anti-flash-white u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-anti-flash-white</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-monsoon u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-monsoon</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-white-smoke u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-white-smoke</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-aluminum u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-aluminum</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-snow u-br-b u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-snow</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-silver-sand u-br-b u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-silver-sand</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-karl"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">karl</bold>
+              <span class="c-swatch__info__hex">f3f0ee</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-pelorous u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-pelorous</code>
+      <!-- greens -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-apple-green">
+              <svg class="c-swatch__color__product">
+                <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-relationshape-support">
+                  <title>Support Green</title>
+                </use>
+              </svg>
+            </div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">apple green</bold>
+              <span class="c-swatch__info__hex">78a300</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-verdigris u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-verdigris</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-apple-green u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-apple-green</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-chateau-green u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-chateau-green</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-marigold u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-marigold</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-golden-dream u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-golden-dream</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-orange-peel u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-orange-peel</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-sea-buckthorn u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-sea-buckthorn</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-flamingo u-br-b u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-flamingo</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-mandy u-br-b u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-mandy</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-chateau-green"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">chateau green</bold>
+              <span class="c-swatch__info__hex">16ba52</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-curious-blue u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-curious-blue</code>
+      <!-- blue-greens -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-verdigris">
+              <svg class="c-swatch__color__product">
+                <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-relationshape-message">
+                  <title>Message Green</title>
+                </use>
+              </svg>
+            </div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">verdigris</bold>
+              <span class="c-swatch__info__hex">37b8af</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-malibu u-br-t u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-malibu</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-persian-green"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">persian green</bold>
+              <span class="c-swatch__info__hex">04b3a7</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-moonstone-blue u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-moonstone-blue</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-viking"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">viking</bold>
+              <span class="c-swatch__info__hex">5fd4cc</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-sky-blue u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-sky-blue</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-regent-st-blue u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-regent-st-blue</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-non-photo-blue u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-non-photo-blue</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-mabel u-br-b u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-mabel</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-patterns-blue u-br-b u-fg-dark-gray u-display-block u-p-xs u-ta-center">.u-bg-patterns-blue</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-pale-turquoise"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">pale turquoise</bold>
+              <span class="c-swatch__info__hex">aff3ee</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-affair u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-affair</code>
+      <!-- blues -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-pelorous">
+              <svg class="c-swatch__color__product">
+                <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-relationshape-explore">
+                  <title>Explore Blue</title>
+                </use>
+              </svg>
+            </div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">pelorous</bold>
+              <span class="c-swatch__info__hex">30aabc</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-deep-lilac u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-deep-lilac</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-cool-blue"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">cool blue</bold>
+              <span class="c-swatch__info__hex">0a91ff</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-ce-soir u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-ce-soir</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-maya-blue"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">maya blue</bold>
+              <span class="c-swatch__info__hex">61b8ff</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-east-side u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-east-side</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-lola u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-lola</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-perfume u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-perfume</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-titan-white u-br-b u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-titan-white</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-blue-chalk u-br-b u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-blue-chalk</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-columbia-blue"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">columbia blue</bold>
+              <span class="c-swatch__info__hex">a8d8ff</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-dark-pastel-red u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-dark-pastel-red</code>
+      <!-- indigos -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-palatinate-blue"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">palatinate blue</bold>
+              <span class="c-swatch__info__hex">1438f7</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-cg-red u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-cg-red</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-ultramarine-blue"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">ultramarine blue</bold>
+              <span class="c-swatch__info__hex">5e76ff</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-indian-red u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-indian-red</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-terra-cotta u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-terra-cotta</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-petite-orchid u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-petite-orchid</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-wewak u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-wewak</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-coral-candy u-br-b u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-coral-candy</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-remy u-br-b u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-remy</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-perano"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">perano</bold>
+              <span class="c-swatch__info__hex">a6b3ff</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-moon-yellow u-br-t u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-moon-yellow</code>
+      <!-- pinks -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-mandy">
+              <svg class="c-swatch__color__product">
+                <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-relationshape-help-center">
+                  <title>Guide Pink</title>
+                </use>
+              </svg>
+            </div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">mandy</bold>
+              <span class="c-swatch__info__hex">eb4962</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-sunglow u-br-t u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-sunglow</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-razzmatazz"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">razzmatazz</bold>
+              <span class="c-swatch__info__hex">f1316b</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-festival u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-festival</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-light-crimson"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">light crimson</bold>
+              <span class="c-swatch__info__hex">f3749a</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-jonquil u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-jonquil</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-buff u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-buff</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-picasso u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-picasso</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-oasis u-br-b u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-oasis</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-lemon-chiffon u-br-b u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-lemon-chiffon</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-cupid"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">cupid</bold>
+              <span class="c-swatch__info__hex">fab4c9</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <div class="l-grid l-grid-sm u-mb">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-white u-bc-current-color u-border u-br-tl u-display-block u-fg-dark-gray u-p-xs u-ta-center">.u-bg-white</code>
+      <!-- reds -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-flamingo">
+              <svg class="c-swatch__color__product">
+                <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-relationshape-connect">
+                  <title>Connect Red</title>
+                </use>
+              </svg>
+            </div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">flamingo</bold>
+              <span class="c-swatch__info__hex">eb6651</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-black u-br-tr u-display-block u-fg-white u-p-xs u-ta-center">.u-bg-black</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-persimmon">
+              <svg class="c-swatch__color__product">
+                <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-inbox">
+                  <title>Inbox Orange</title>
+                </use>
+              </svg>
+            </div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">persimmon</bold>
+              <span class="c-swatch__info__hex">ff6d5a</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-transparent u-bc-current-color u-border u-br-bl u-display-block u-p-xs u-ta-center">.u-bg-transparent</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-portland-orange"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">portland orange</bold>
+              <span class="c-swatch__info__hex">ff542e</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bg-current-color u-bc-current-color u-border u-br-br u-display-block u-fg-dark-gray u-p-xs u-ta-center"><span class="u-fg-white">.u-bg-current-color</span></code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-pink-orange"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">pink orange</bold>
+              <span class="c-swatch__info__hex">ff9466</span>
+            </figcaption>
+          </figure>
+        </div
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-apricot"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">apricot</bold>
+              <span class="c-swatch__info__hex">ffcab3</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-
-      <h2 class="u-gamma u-mb-sm">Border & Foreground</h2>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-daintree u-border u-fg-daintree u-br-t u-display-block u-p-xs u-ta-center">.u-bc-daintree .u-fg-daintree</code>
+      <!-- oranges -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-sea-buckthorn">
+              <svg class="c-swatch__color__product">
+                <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-relationshape-chat">
+                  <title>Chat Orange</title>
+                </use>
+              </svg>
+            </div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">sea buckthorn</bold>
+              <span class="c-swatch__info__hex">f79a3e</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-algae u-border u-fg-algae u-br-t u-display-block u-p-xs u-ta-center">.u-bc-algae .u-fg-algae</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-orange-peel"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">orange peel</bold>
+              <span class="c-swatch__info__hex">faa300</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-sherpa-blue u-border u-fg-sherpa-blue u-display-block u-p-xs u-ta-center">.u-bc-sherpa-blue .u-fg-sherpa-blue</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-saffron-mango"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">saffron mango</bold>
+              <span class="c-swatch__info__hex">fac157</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-breaker-bay u-border u-fg-breaker-bay u-display-block u-p-xs u-ta-center">.u-bc-breaker-bay .u-fg-breaker-bay</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-submarine u-border u-br-b u-fg-submarine u-display-block u-p-xs u-ta-center">.u-bc-submarine .u-fg-submarine</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-karl u-border u-fg-karl u-br-b u-display-block u-p-xs u-ta-center">.u-bc-karl .u-fg-karl</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-creme-brulee"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">creme brulee</bold>
+              <span class="c-swatch__info__hex">ffdc99</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-nero u-border u-fg-nero u-br-t u-display-block u-p-xs u-ta-center">.u-bc-nero .u-fg-nero</code>
+      <!-- yellows -->
+      <div class="l-grid l-grid-sm u-mb-lg">
+        <div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-golden-dream">
+              <svg class="c-swatch__color__product">
+                <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-relationshape-talk">
+                  <title>Talk Yellow</title>
+                </use>
+              </svg>
+            </div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">golden dream</bold>
+              <span class="c-swatch__info__hex">efc93d</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-iron u-border u-fg-iron u-br-t u-display-block u-p-xs u-ta-center">.u-bc-iron .u-fg-iron</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-marigold"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">marigold</bold>
+              <span class="c-swatch__info__hex">ffc800</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-oil u-border u-fg-oil u-display-block u-p-xs u-ta-center">.u-bc-oil .u-fg-oil</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-dandelion"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">dandelion</bold>
+              <span class="c-swatch__info__hex">ffde66</span>
+            </figcaption>
+          </figure>
         </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-gainsboro u-border u-fg-gainsboro u-br-t u-display-block u-p-xs u-ta-center">.u-bc-gainsboro .u-fg-gainsboro</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-dark-gray u-border u-fg-dark-gray u-display-block u-p-xs u-ta-center">.u-bc-dark-gray .u-fg-dark-gray</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-platinum u-border u-fg-platinum u-display-block u-p-xs u-ta-center">.u-bc-platinum .u-fg-platinum</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-steel u-border u-fg-steel u-display-block u-p-xs u-ta-center">.u-bc-steel .u-fg-steel</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-anti-flash-white u-border u-fg-anti-flash-white u-display-block u-p-xs u-micro u-ta-center">.u-bc-anti-flash-white .u-fg-anti-flash-white</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-monsoon u-border u-fg-monsoon u-display-block u-p-xs u-ta-center">.u-bc-monsoon .u-fg-monsoon</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-white-smoke u-border u-fg-white-smoke u-display-block u-p-xs u-ta-center">.u-bc-white-smoke .u-fg-white-smoke</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-aluminum u-border u-fg-aluminum u-display-block u-p-xs u-ta-center">.u-bc-aluminum .u-fg-aluminum</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-snow u-border u-fg-snow u-br-b u-display-block u-p-xs u-ta-center">.u-bc-snow .u-fg-snow</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-silver-sand u-border u-fg-silver-sand u-br-b u-display-block u-p-xs u-ta-center">.u-bc-silver-sand .u-fg-silver-sand</code>
+        ><div class="l-grid__item u-1/8 u-mb">
+          <figure class="c-swatch">
+            <div class="c-swatch__color u-bg-buttermilk"></div>
+            <figcaption class="c-swatch__info">
+              <bold class="c-swatch__info__name">buttermilk</bold>
+              <span class="c-swatch__info__hex">ff3fb3</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-pelorous u-border u-fg-pelorous u-br-t u-display-block u-p-xs u-ta-center">.u-bc-pelorous .u-fg-pelorous</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-verdigris u-border u-fg-verdigris u-br-t u-display-block u-p-xs u-ta-center">.u-bc-verdigris .u-fg-verdigris</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-apple-green u-border u-fg-apple-green u-display-block u-p-xs u-ta-center">.u-bc-apple-green .u-fg-apple-green</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-chateau-green u-border u-fg-chateau-green u-display-block u-p-xs u-ta-center">.u-bc-chateau-green .u-fg-chateau-green</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-marigold u-border u-fg-marigold u-display-block u-p-xs u-ta-center">.u-bc-marigold .u-fg-marigold</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-golden-dream u-border u-fg-golden-dream u-display-block u-p-xs u-ta-center">.u-bc-golden-dream .u-fg-golden-dream</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-orange-peel u-border u-fg-orange-peel u-display-block u-p-xs u-ta-center">.u-bc-orange-peel .u-fg-orange-peel</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-sea-buckthorn u-border u-fg-sea-buckthorn u-display-block u-p-xs u-ta-center">.u-bc-sea-buckthorn .u-fg-sea-buckthorn</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-flamingo u-border u-fg-flamingo u-br-b u-display-block u-p-xs u-ta-center">.u-bc-flamingo .u-fg-flamingo</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-mandy u-border u-fg-mandy u-br-b u-display-block u-p-xs u-ta-center">.u-bc-mandy .u-fg-mandy</code>
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><ul>
+    <li><div class="u-bg-gainsboro u-p-sm u-mb-sm u-ta-center">.u-bg-gainsboro</div></li>
+    <li><div class="u-bg-algae u-fg-submarine u-p-sm u-mb-sm u-ta-center">.u-bg-algae .u-fg-submarine</div></li>
+    <li><div class="u-border u-bc-pelorous u-p-sm u-ta-center">.u-bc-pelorous</div></li>
+</ul></textarea>
         </div>
-      </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-curious-blue u-border u-fg-curious-blue u-br-t u-display-block u-p-xs u-ta-center">.u-bc-curious-blue .u-fg-curious-blue</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-malibu u-border u-fg-malibu u-br-t u-display-block u-p-xs u-ta-center">.u-bc-malibu .u-fg-malibu</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-moonstone-blue u-border u-fg-moonstone-blue u-display-block u-p-xs u-ta-center">.u-bc-moonstone-blue .u-fg-moonstone-blue</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-sky-blue u-border u-fg-sky-blue u-display-block u-p-xs u-ta-center">.u-bc-sky-blue .u-fg-sky-blue</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-regent-st-blue u-border u-fg-regent-st-blue u-display-block u-p-xs u-ta-center">.u-bc-regent-st-blue .u-fg-regent-st-blue</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-non-photo-blue u-border u-fg-non-photo-blue u-display-block u-p-xs u-ta-center">.u-bc-non-photo-blue .u-fg-non-photo-blue</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-mabel u-border u-fg-mabel u-br-b u-display-block u-p-xs u-ta-center">.u-bc-mabel .u-fg-mabel</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-patterns-blue u-border u-fg-patterns-blue u-br-b u-display-block u-p-xs u-ta-center">.u-bc-patterns-blue .u-fg-patterns-blue</code>
-        </div>
-      </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-affair u-border u-fg-affair u-br-t u-display-block u-p-xs u-ta-center">.u-bc-affair .u-fg-affair</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-deep-lilac u-border u-fg-deep-lilac u-br-t u-display-block u-p-xs u-ta-center">.u-bc-deep-lilac .u-fg-deep-lilac</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-ce-soir u-border u-fg-ce-soir u-display-block u-p-xs u-ta-center">.u-bc-ce-soir .u-fg-ce-soir</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-fg-east-side u-border u-fg-east-side u-display-block u-p-xs u-ta-center">.u-bc-east-side .u-fg-east-side</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-lola u-border u-fg-lola u-display-block u-p-xs u-ta-center">.u-bc-lola .u-fg-lola</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-perfume u-border u-fg-perfume u-display-block u-p-xs u-ta-center">.u-bc-perfume .u-fg-perfume</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-titan-white u-border u-fg-titan-white u-br-b u-display-block u-p-xs u-ta-center">.u-bc-titan-white .u-fg-titan-white</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-blue-chalk u-border u-fg-blue-chalk u-br-b u-display-block u-p-xs u-ta-center">.u-bc-blue-chalk .u-fg-blue-chalk</code>
-        </div>
-      </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-dark-pastel-red u-border u-fg-dark-pastel-red u-br-t u-display-block u-p-xs u-ta-center">.u-bc-dark-pastel-red .u-fg-dark-pastel-red</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-cg-red u-border u-fg-cg-red u-br-t u-display-block u-p-xs u-ta-center">.u-bc-cg-red .u-fg-cg-red</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-indian-red u-border u-fg-indian-red u-display-block u-p-xs u-ta-center">.u-bc-indian-red .u-fg-indian-red</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-terra-cotta u-border u-fg-terra-cotta u-display-block u-p-xs u-ta-center">.u-bc-terra-cotta .u-fg-terra-cotta</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-petite-orchid u-border u-fg-petite-orchid u-display-block u-p-xs u-ta-center">.u-bc-petite-orchid .u-fg-petite-orchid</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-wewak u-border u-fg-wewak u-display-block u-p-xs u-ta-center">.u-bc-wewak .u-fg-wewak</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-coral-candy u-border u-fg-coral-candy u-br-b u-display-block u-p-xs u-ta-center">.u-bc-coral-candy .u-fg-coral-candy</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-remy u-border u-fg-remy u-br-b u-display-block u-p-xs u-ta-center">.u-bc-remy .u-fg-remy</code>
-        </div>
-      </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-moon-yellow u-border u-fg-moon-yellow u-br-t u-display-block u-p-xs u-ta-center">.u-bc-moon-yellow .u-fg-moon-yellow</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-sunglow u-border u-fg-sunglow u-br-t u-display-block u-p-xs u-ta-center">.u-bc-sunglow .u-fg-sunglow</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-festival u-border u-fg-festival u-display-block u-p-xs u-ta-center">.u-bc-festival .u-fg-festival</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-jonquil u-border u-fg-jonquil u-display-block u-p-xs u-ta-center">.u-bc-jonquil .u-fg-jonquil</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-buff u-border u-fg-buff u-display-block u-p-xs u-ta-center">.u-bc-buff .u-fg-buff</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-picasso u-border u-fg-picasso u-display-block u-p-xs u-ta-center">.u-bc-picasso .u-fg-picasso</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-oasis u-border u-fg-oasis u-br-b u-display-block u-p-xs u-ta-center">.u-bc-oasis .u-fg-oasis</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-lemon-chiffon u-border u-fg-lemon-chiffon u-br-b u-display-block u-p-xs u-ta-center">.u-bc-lemon-chiffon .u-fg-lemon-chiffon</code>
-        </div>
-      </div>
-      <div class="l-grid l-grid-sm u-mb-sm">
-        <div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-white u-border u-fg-white u-bg-dark-gray u-br-tl u-display-block u-p-xs u-ta-center">.u-bc-white .u-fg-white</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-black u-border u-fg-black u-br-tr u-display-block u-p-xs u-ta-center">.u-bc-black .u-fg-black</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-transparent u-border u-fg-transparent u-bg-dark-gray u-br-bl u-display-block u-p-xs u-ta-center">.u-bc-transparent .u-fg-transparent</code>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-xxs">
-          <code class="u-bc-current-color u-border u-fg-current-color u-br-br u-display-block u-p-xs u-ta-center">.u-bc-current-color .u-fg-current-color</code>
-        </div>
-      </div>
-    </div>
+      </section>
   </main>
   <script src="http://garden.zendesk.com/jquery.js"></script>
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="http://garden.zendesk.com/editor.js"></script>
 </body>
 </html>

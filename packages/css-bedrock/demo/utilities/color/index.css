@@ -1,0 +1,46 @@
+.c-swatch {
+  width: 150px;
+  box-shadow: 0 10px 20px 0 rgba(36, 83, 107, .15);
+}
+
+.c-swatch__color {
+  height: 130px;
+}
+
+.c-swatch__color__product {
+  margin: 10px 0 0 10px;
+  height: 32px;
+  width: 32px;
+  fill: #fff;
+  color: #fff;
+}
+
+.c-swatch__info {
+  background-color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.c-swatch__info__name {
+  display: block;
+  color: #555;
+  line-height: calc(20 / 12);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.c-swatch__info__hex {
+  color: #999;
+}
+
+.c-swatch__info__hex:before {
+  content: '#';
+}
+
+.is-dark .c-swatch {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .15);
+}
+
+.l-grid {
+  min-width: 1300px;
+}
