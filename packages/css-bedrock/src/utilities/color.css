@@ -88,6 +88,8 @@
 
 .u-bg-mabel { background-color: var(--zd-color-mabel) !important; }
 
+.u-bg-magic-mint { background-color: var(--zd-color-magic-mint) !important; }
+
 .u-bg-malibu { background-color: var(--zd-color-malibu) !important; }
 
 .u-bg-mandy { background-color: var(--zd-color-mandy) !important; }
@@ -147,6 +149,8 @@
 .u-bg-saffron-mango { background-color: var(--zd-color-saffron-mango) !important; }
 
 .u-bg-sea-buckthorn { background-color: var(--zd-color-sea-buckthorn) !important; }
+
+.u-bg-shamrock { background-color: var(--zd-color-shamrock) !important; }
 
 .u-bg-sherpa-blue { background-color: var(--zd-color-sherpa-blue) !important; }
 
@@ -264,6 +268,8 @@
 
 .u-fg-mabel { color: var(--zd-color-mabel) !important; }
 
+.u-fg-magic-mint { color: var(--zd-color-magic-mint) !important; }
+
 .u-fg-malibu { color: var(--zd-color-malibu) !important; }
 
 .u-fg-mandy { color: var(--zd-color-mandy) !important; }
@@ -323,6 +329,8 @@
 .u-fg-saffron-mango { color: var(--zd-color-saffron-mango) !important; }
 
 .u-fg-sea-buckthorn { color: var(--zd-color-sea-buckthorn) !important; }
+
+.u-fg-shamrock { color: var(--zd-color-shamrock) !important; }
 
 .u-fg-sherpa-blue { color: var(--zd-color-sherpa-blue) !important; }
 
@@ -442,6 +450,8 @@
 
 .u-bc-mabel { border-color: var(--zd-color-mabel) !important; }
 
+.u-bc-magic-mint { border-color: var(--zd-color-magic-mint) !important; }
+
 .u-bc-malibu { border-color: var(--zd-color-malibu) !important; }
 
 .u-bc-mandy { border-color: var(--zd-color-mandy) !important; }
@@ -501,6 +511,8 @@
 .u-bc-saffron-mango { border-color: var(--zd-color-saffron-mango) !important; }
 
 .u-bc-sea-buckthorn { border-color: var(--zd-color-sea-buckthorn) !important; }
+
+.u-bc-shamrock { border-color: var(--zd-color-shamrock) !important; }
 
 .u-bc-sherpa-blue { border-color: var(--zd-color-sherpa-blue) !important; }
 
