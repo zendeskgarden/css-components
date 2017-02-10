@@ -1,0 +1,30 @@
+/* https://bitsofco.de/the-new-system-font-stack/ */
+
+:root {
+  /* 1. Windows
+   * 2. Ubuntu
+   * 3. macOS
+   * 4. Fallback */
+  --zd-font-family-monospace:
+    'Consolas' /* [1] */,
+    'Liberation Mono' /* [2] */,
+    'Menlo' /* [3] */,
+    'Courier' /* [4] */,
+    monospace /* [4] */;
+
+  /* 1. macOS Safari & FF (San Francisco)
+   * 2. macOS Chrome (San Francisco)
+   * 3. Windows
+   * 4. Fallback
+   * 5. Emojis */
+  --zd-font-family-system:
+    -apple-system /* [1] */,
+    'BlinkMacSystemFont' /* [2] */,
+    'Segoe UI' /* [3] */,
+    'Helvetica' /* [4] */,
+    'Arial' /* [4] */,
+    sans-serif /* [4] */,
+    'Apple Color Emoji' /* [5] */,
+    'Segoe UI Emoji' /* [5] */,
+    'Segoe UI Symbol' /* [5] */;
+}
