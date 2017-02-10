@@ -18,7 +18,7 @@
     "pre-commit": "^1.2.2",
     "stylelint": "^7.7.1",
     "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#4.0.0",
-    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#jzempel/secondary-colors"
+    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.11.0"
   },
   "scripts": {
     "build": "postcss --config .postcss.json",
