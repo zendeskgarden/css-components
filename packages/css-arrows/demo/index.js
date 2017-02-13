@@ -1,14 +1,9 @@
 $(document).ready(function() {
-  $('.js-dark').click(function() {
-    $('html').toggleClass('u-bg-dark-gray u-fg-white');
-    $('.c-menu').toggleClass('u-bg-oil');
-  });
-
   $('.js-border').click(function() {
-    $('.c-menu').toggleClass('u-menu-no-border');
+    $('.c-main .c-menu').toggleClass('u-bc-transparent', !$(this).is(':checked'));
   });
 
-  $('.js-shadow').click(function() {
-    $('.c-menu').toggleClass('u-menu-no-shadow');
+  $('.js-box-shadow').click(function() {
+    $('.c-main .c-menu').toggleClass('u-bs-none', !$(this).is(':checked'));
   });
 });

@@ -20,7 +20,7 @@
   background-color:inherit;
   width:.86em;
   height:.86em;
-  content:'';
+  content:"";
 }
 .c-arrow--t:before,.c-arrow--tl:before,.c-arrow--tr:before{
   border-bottom-right-radius:100%;
