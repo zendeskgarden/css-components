@@ -1,6 +1,6 @@
 @import 'zd-css-variables';
 
-/* stylelint-disable max-line-length */
+/* stylelint-disable max-line-length, no-unsupported-browser-features */
 :root {
   --zd-avatar-active-background-color: var(--zd-color-malibu);
   --zd-avatar-in-background-color: var(--zd-color-apple-green);
@@ -8,7 +8,7 @@
   --zd-avatar-out-filter-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="grayscale"><feColorMatrix values=".3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 0 0 0 1 0"/></filter></svg>#grayscale');
   --zd-avatar-out-opacity: .5;
 }
-/* stylelint-enable */
+/* stylelint-enable, no-unsupported-browser-features */
 
 .c-avatar.is-active {
   background-color: var(--zd-avatar-active-background-color);
@@ -31,10 +31,11 @@
   border-color: transparent;
 }
 
-/* stylelint-disable rule-no-duplicate-properties,
-                     color-no-named,
+/* stylelint-disable declaration-block-no-duplicate-properties,
+                     declaration-block-properties-order,
+                     color-named,
                      property-no-vendor-prefix,
-                     rule-properties-order */
+                     no-unsupported-browser-features */
 .c-avatar.is-out .c-avatar__img,
 .c-avatar.is-out > img {
   transform: translateZ(0); /* Fix CSS3 filter blur for retina */

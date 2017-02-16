@@ -48,6 +48,7 @@
 .c-avatar.is-active .c-avatar__img,.c-avatar.is-active>img,.c-avatar.is-in .c-avatar__img,.c-avatar.is-in>img,.c-avatar.is-out .c-avatar__img,.c-avatar.is-out>img{
   border-color:transparent;
 }
+
 .c-avatar.is-out .c-avatar__img,.c-avatar.is-out>img{
   -webkit-transform:translateZ(0);
           transform:translateZ(0);
