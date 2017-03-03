@@ -3,6 +3,7 @@
 <head>
   <title>Zendesk Garden / CSS Components / Template</title>
   <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
+  <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
@@ -30,11 +31,19 @@
   <main class="c-main c-main--page">
     <h1 class="c-main__title">Template</h1>
     <div class="c-main__body">
-      <p class="c-template">Hello World!</p>
+      <p class="c-template u-mb-lg">Hello World!</p>
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+          <textarea class="c-playground__code"><p class="c-template">Hello World!</p></textarea>
+        </div>
+      </section>
     </div>
   </main>
   <script src="http://garden.zendesk.com/jquery.js"></script>
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="http://garden.zendesk.com/editor.js"></script>
 </body>
 </html>
