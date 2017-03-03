@@ -1,14 +1,3 @@
 {
-  "extends": "stylelint-config-zendesk",
-  "rules": {
-    "no-unsupported-browser-features": [true, {
-      "browsers": "last 2 versions",
-      "ignore": [
-        "font-feature",
-        "font-unicode-range",
-        "kerning-pairs-ligatures"
-      ],
-      "severity": "warning"
-    }]
-  }
+  "extends": "stylelint-config-zendesk"
 }

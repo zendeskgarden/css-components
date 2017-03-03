@@ -16,8 +16,9 @@
     "postcss-cssnext": "^2.9.0",
     "postcss-import": "^9.1.0",
     "pre-commit": "^1.2.2",
-    "stylelint": "^7.7.1",
-    "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#4.0.0",
+    "stylelint": "^7.9.0",
+    "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#4.1.0",
+    "stylelint-order": "^0.3.0",
     "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.11.0"
   },
   "scripts": {
