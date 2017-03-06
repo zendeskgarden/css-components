@@ -1,41 +1,43 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-hint-color: var(--zd-color-aluminum);
-  --zd-hint-font-size: var(--zd-font-size-epsilon);
-  --zd-hint-line-height: calc(20 / 14);
-  --zd-hint-margin-top: var(--zd-spacing-sm);
-  --zd-label-color: var(--zd-color-dark-gray);
-  --zd-label-font-size: var(--zd-font-size-delta);
-  --zd-label-line-height: calc(40 / 16);
+  --zd-input__hint-color: var(--zd-color-aluminum);
+  --zd-input__hint-font-size: var(--zd-font-size-epsilon);
+  --zd-input__hint-line-height: calc(20 / 14);
+  --zd-input__hint-margin-top: var(--zd-spacing-sm);
+  --zd-input__label-color: var(--zd-color-dark-gray);
+  --zd-input__label-font-size: var(--zd-font-size-delta);
+  --zd-input__label-line-height: calc(40 / 16);
 }
 
+/* 1. Support label inline with input layout. */
+
+.c-chk__label,
+.c-range__label,
+.c-txt__label {
+  vertical-align: middle; /* [1] */
+  line-height: var(--zd-input__label-line-height);
+  color: var(--zd-input__label-color);
+  font-size: var(--zd-input__label-font-size);
+}
+
+.c-chk__hint,
 .c-range__hint,
 .c-txt__hint {
   display: block;
-  line-height: var(--zd-hint-line-height);
-  color: var(--zd-hint-color);
-  font-size: var(--zd-hint-font-size);
+  line-height: var(--zd-input__hint-line-height);
+  color: var(--zd-input__hint-color);
+  font-size: var(--zd-input__hint-font-size);
 }
 
 .c-range__hint + .c-range__input,
 .c-range__input + .c-range__hint,
 .c-txt__hint + .c-txt__input,
 .c-txt__input + .c-txt__hint {
-  margin-top: var(--zd-hint-margin-top);
-}
-
-/* 1. Support label inline with input layout. */
-
-.c-range__label,
-.c-txt__label {
-  vertical-align: middle; /* [1] */
-  line-height: var(--zd-label-line-height);
-  color: var(--zd-label-color);
-  font-size: var(--zd-label-font-size);
+  margin-top: var(--zd-input__hint-margin-top);
 }
 
 .c-range__label + .c-range__hint,
 .c-txt__label + .c-txt__hint {
-  margin-top: calc(var(--zd-hint-margin-top) / 2 * -1);
+  margin-top: calc(var(--zd-input__hint-margin-top) / 2 * -1);
 }

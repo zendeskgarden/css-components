@@ -13,7 +13,7 @@
 
 .c-chk--radio .c-chk__label::before,
 .c-chk--radio .c-chk__label::after {
-  border-radius: var(--zd-chk-line-height);
+  border-radius: 50%;
 }
 
 .c-chk--radio:--chk-checked::after {

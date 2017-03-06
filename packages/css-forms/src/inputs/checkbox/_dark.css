@@ -18,12 +18,7 @@
   --zd-chk--dark--toggle-background-color: var(--zd-color-breaker-bay);
   --zd-chk--dark--toggle-active-background-color: color(var(--zd-chk--dark--toggle-background-color) blackness(+5%));
   --zd-chk--dark--toggle-disabled-background-image: svg-load('14-circle.svg', color: var(--zd-color-algae));
-  --zd-chk--dark__label-color: var(--zd-color-breaker-bay);
   /* stylelint-enable max-line-length */
-}
-
-.c-chk--dark .c-chk__label {
-  color: var(--zd-chk--dark__label-color);
 }
 
 .c-chk--dark .c-chk__label::before {

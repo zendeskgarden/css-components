@@ -16,7 +16,8 @@
   /* stylelint-enable max-line-length */
 }
 
-.c-chk--toggle .c-chk__label {
+.c-chk--toggle .c-chk__label,
+.c-chk--toggle .c-chk__hint {
   padding-left: var(--zd-chk--toggle__label-padding);
 }
 
@@ -57,7 +58,8 @@
   background-color: var(--zd-chk--toggle-disabled-background-color);
 }
 
-.c-chk--toggle.is-rtl .c-chk__label {
+.c-chk--toggle.is-rtl .c-chk__label,
+.c-chk--toggle.is-rtl .c-chk__hint {
   padding-right: var(--zd-chk--toggle__label-padding);
 }
 

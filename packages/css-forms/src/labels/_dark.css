@@ -1,16 +1,18 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-dark-hint-color: var(--zd-color-breaker-bay);
-  --zd-dark-label-color: var(--zd-color-white);
+  --zd-dark-input__hint-color: var(--zd-color-breaker-bay);
+  --zd-dark-input__label-color: var(--zd-color-white);
 }
 
-.c-range--dark .c-range__hint,
-.c-txt--dark .c-txt__hint {
-  color: var(--zd-dark-hint-color);
-}
-
+.c-chk--dark .c-chk__label,
 .c-range--dark .c-range__label,
 .c-txt--dark .c-txt__label {
-  color: var(--zd-dark-label-color);
+  color: var(--zd-dark-input__label-color);
+}
+
+.c-chk--dark .c-chk__hint,
+.c-range--dark .c-range__hint,
+.c-txt--dark .c-txt__hint {
+  color: var(--zd-dark-input__hint-color);
 }

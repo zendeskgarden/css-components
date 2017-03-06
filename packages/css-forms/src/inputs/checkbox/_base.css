@@ -4,8 +4,6 @@
   --zd-chk-background-color: var(--zd-color-white);
   --zd-chk-border: 1px solid var(--zd-color-gainsboro);
   --zd-chk-border-radius: 4px;
-  --zd-chk-font-size: var(--zd-font-size-epsilon);
-  --zd-chk-line-height: var(--zd-spacing);
   --zd-chk-size: var(--zd-font-size-epsilon);
   --zd-chk-transition:
     border-color .25s ease-in-out,
@@ -13,8 +11,7 @@
     background-color .25s ease-in-out,
     background-image .25s ease-in-out,
     color .25s ease-in-out;
-  --zd-chk__label-color: var(--zd-color-aluminum);
-  --zd-chk__label-padding: calc(var(--zd-chk-font-size) + var(--zd-spacing-sm));
+  --zd-chk__label-padding: calc(var(--zd-chk-size) + var(--zd-spacing-sm));
 }
 
 /* 1. Reset for <fieldset> element.
@@ -26,8 +23,6 @@
   margin: 0; /* [1] */
   border: 0; /* [1] */
   padding: 0; /* [1] */
-  line-height: var(--zd-chk-line-height);
-  font-size: var(--zd-chk-font-size);
 }
 
 .c-chk__input {
@@ -38,10 +33,17 @@
 .c-chk__label {
   position: relative;
   cursor: pointer;
-  padding-left: var(--zd-chk__label-padding);
   white-space: nowrap;
-  color: var(--zd-chk__label-color);
   user-select: none;
+}
+
+.c-chk__label.c-chk__label {
+  display: inline;
+}
+
+.c-chk__label,
+.c-chk__hint {
+  padding-left: var(--zd-chk__label-padding);
 }
 
 .c-chk__label::before,
@@ -72,7 +74,8 @@
   direction: rtl;
 }
 
-.c-chk.is-rtl .c-chk__label {
+.c-chk.is-rtl .c-chk__label,
+.c-chk.is-rtl .c-chk__hint {
   padding-right: var(--zd-chk__label-padding);
   padding-left: 0;
 }
