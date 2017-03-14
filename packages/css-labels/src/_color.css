@@ -1,10 +1,20 @@
 @import 'zd-css-variables';
 
 :root {
+  --zd-label--dark-background-color: var(--zd-color-algae);
+  --zd-label--dark-focused-box-shadow:
+    0 0 0 2px
+    color(var(--zd-color-breaker-bay) alpha(40%));
   --zd-label--error-background-color: var(--zd-color-flamingo);
   --zd-label--error-focused-box-shadow:
     0 0 0 2px
     color(var(--zd-label--error-background-color) alpha(40%));
+  --zd-label--light-background-color: var(--zd-color-anti-flash-white);
+  --zd-label--light-color: var(--zd-color-monsoon);
+  --zd-label--light-font-weight: var(--zd-font-weight-semibold);
+  --zd-label--light-focused-box-shadow:
+    0 0 0 2px
+    color(var(--zd-color-black) alpha(10%));
   --zd-label--success-background-color: var(--zd-color-chateau-green);
   --zd-label--success-focused-box-shadow:
     0 0 0 2px
@@ -13,6 +23,28 @@
   --zd-label--warning-focused-box-shadow:
     0 0 0 2px
     color(var(--zd-label--warning-background-color) alpha(40%));
+}
+
+.c-label--light {
+  background-color: var(--zd-label--light-background-color);
+  color: var(--zd-label--light-color);
+  font-weight: var(--zd-label--light-font-weight);
+}
+
+.c-label--light:hover {
+  color: var(--zd-label--light-color);
+}
+
+.c-label--light:--label-focused {
+  box-shadow: var(--zd-label--light-focused-box-shadow);
+}
+
+.c-label--dark {
+  background-color: var(--zd-label--dark-background-color);
+}
+
+.c-label--dark:--label-focused {
+  box-shadow: var(--zd-label--dark-focused-box-shadow);
 }
 
 .c-label--error {

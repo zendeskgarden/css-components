@@ -29,6 +29,28 @@
   direction:rtl;
 }
 
+.c-label--light{
+  background-color:#f3f3f3;
+  color:#777;
+  font-weight:600;
+}
+
+.c-label--light:hover{
+  color:#777;
+}
+
+.c-label--light.is-focused,.c-label--light:focus{
+  box-shadow:0 0 0 2px rgba(0,0,0,.1);
+}
+
+.c-label--dark{
+  background-color:#03363d;
+}
+
+.c-label--dark.is-focused,.c-label--dark:focus{
+  box-shadow:0 0 0 2px rgba(86,119,122,.4);
+}
+
 .c-label--error{
   background-color:#eb6651;
 }
@@ -109,6 +131,10 @@
 
 .c-label__remove:focus{
   outline:none;
+}
+
+.c-label--light .c-label__remove{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23777'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
 }
 
 .c-label--lg .c-label__remove{
