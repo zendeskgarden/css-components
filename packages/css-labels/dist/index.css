@@ -40,7 +40,7 @@
 }
 
 .c-label--light.is-focused,.c-label--light:focus{
-  box-shadow:0 0 0 2px rgba(0,0,0,.1);
+  box-shadow:0 0 0 2px hsla(0,0%,73%,.4);
 }
 
 .c-label--dark{

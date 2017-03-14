@@ -14,7 +14,7 @@
   --zd-label--light-font-weight: var(--zd-font-weight-semibold);
   --zd-label--light-focused-box-shadow:
     0 0 0 2px
-    color(var(--zd-color-black) alpha(10%));
+    color(var(--zd-color-silver-sand) alpha(40%));
   --zd-label--success-background-color: var(--zd-color-chateau-green);
   --zd-label--success-focused-box-shadow:
     0 0 0 2px
