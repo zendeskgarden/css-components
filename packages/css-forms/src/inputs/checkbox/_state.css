@@ -10,13 +10,14 @@
     background-color .1s ease-in-out,
     background-image .1s ease-in-out,
     color .1s ease-in-out;
+  --zd-chk-checked-background-color: var(--zd-color-pelorous);
   --zd-chk-checked-background:
     no-repeat
     center/100%
     svg-load('14-checkmark.svg', color: var(--zd-color-white))
-    var(--zd-color-pelorous);
-  --zd-chk-checked-color: var(--zd-color-pelorous);
-  --zd-chk-checked-active-background-color: color(var(--zd-chk-checked-color) blackness(+10%));
+    var(--zd-chk-checked-background-color);
+  --zd-chk-checked-border-color: var(--zd-chk-checked-background-color);
+  --zd-chk-checked-active-background-color: color(var(--zd-chk-checked-background-color) blackness(+10%));
   --zd-chk-checked-active-border-color: var(--zd-chk-checked-active-background-color);
   --zd-chk-disabled-background-color: var(--zd-color-gainsboro);
   --zd-chk-focused-border-color: var(--zd-color-pelorous);
@@ -35,7 +36,8 @@
   .c-chk.is-checked.is-checked .c-chk__label,
   .c-chk .c-chk__input:checked ~ .c-chk__label;
 
-:--chk-checked::after {
+:--chk-checked::before {
+  border-color: var(--zd-chk-checked-border-color);
   background: var(--zd-chk-checked-background);
 }
 
@@ -50,21 +52,17 @@
 @custom-selector :--chk-focused /* [1] */
   .c-chk.is-focused .c-chk__label;
 
-:--chk-focused::after {
+:--chk-focused::before {
   outline: none;
-  box-shadow: var(--zd-chk-focused-box-shadow);
-}
-
-:--chk-focused::before,
-:--chk-focused::after {
   border-color: var(--zd-chk-focused-border-color);
+  box-shadow: var(--zd-chk-focused-box-shadow);
 }
 
 @custom-selector :--chk-active /* [2] */
   .c-chk.is-active.is-active .c-chk__label,
   .c-chk .c-chk__label:active.c-chk__label:active;
 
-:--chk-active::after {
+:--chk-active::before {
   transition: var(--zd-chk-active-transition);
   border-color: var(--zd-chk-active-border-color);
   background-color: var(--zd-chk-active-background-color);
@@ -75,7 +73,7 @@
   .c-chk.is-active .c-chk__input:enabled:checked ~ .c-chk__label,
   .c-chk:not(.is-disabled) .c-chk__input:enabled:checked ~ .c-chk__label:active;
 
-:--chk-checked-active::after {
+:--chk-checked-active::before {
   border-color: var(--zd-chk-checked-active-border-color);
   background-color: var(--zd-chk-checked-active-background-color);
 }
@@ -88,12 +86,8 @@
   cursor: default;
 }
 
-:--chk-disabled::before,
-:--chk-disabled::after {
+:--chk-disabled::before {
   border-color: transparent;
-}
-
-:--chk-disabled::after {
   box-shadow: none;
   background-color: var(--zd-chk-disabled-background-color);
 }

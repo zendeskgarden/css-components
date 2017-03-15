@@ -28,7 +28,7 @@
   padding-left:24px;
 }
 
-.c-chk__label:after,.c-chk__label:before{
+.c-chk__label:before{
   position:absolute;
   top:50%;
   left:0;
@@ -37,19 +37,12 @@
   margin-top:-7px;
   border:1px solid #ddd;
   border-radius:4px;
+  background-color:#fff;
   width:14px;
   height:14px;
   box-sizing:border-box;
   color:inherit;
   content:"";
-}
-
-.c-chk__label:before{
-  background-color:#fff;
-}
-
-.c-chk__label:after{
-  border-color:transparent;
 }
 
 .c-chk.is-rtl{
@@ -61,12 +54,13 @@
   padding-left:0;
 }
 
-.c-chk.is-rtl .c-chk__label:after,.c-chk.is-rtl .c-chk__label:before{
+.c-chk.is-rtl .c-chk__label:before{
   right:0;
   left:auto;
 }
 
-.c-chk .c-chk__input:checked~.c-chk__label:after,.c-chk.is-checked.is-checked .c-chk__label:after{
+.c-chk .c-chk__input:checked~.c-chk__label:before,.c-chk.is-checked.is-checked .c-chk__label:before{
+  border-color:#30aabc;
   background:no-repeat 50%/100% url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5'/%3E%3C/svg%3E") #30aabc;
 }
 
@@ -74,23 +68,19 @@
   border-color:#30aabc;
 }
 
-.c-chk.is-focused .c-chk__label:after{
+.c-chk.is-focused .c-chk__label:before{
   outline:none;
   box-shadow:0 0 0 3px rgba(48,170,188,.4);
 }
 
-.c-chk.is-focused .c-chk__label:after,.c-chk.is-focused .c-chk__label:before{
-  border-color:#30aabc;
-}
-
-.c-chk .c-chk__label:active.c-chk__label:active:after,.c-chk.is-active.is-active .c-chk__label:after{
+.c-chk .c-chk__label:active.c-chk__label:active:before,.c-chk.is-active.is-active .c-chk__label:before{
   -webkit-transition:border-color .1s ease-in-out,background-color .1s ease-in-out,background-image .1s ease-in-out,color .1s ease-in-out;
   transition:border-color .1s ease-in-out,background-color .1s ease-in-out,background-image .1s ease-in-out,color .1s ease-in-out;
   border-color:#30aabc;
   background-color:rgba(0,0,0,.05);
 }
 
-.c-chk.is-active .c-chk__input:enabled:checked~.c-chk__label:after,.c-chk.is-checked.is-checked.is-active:not(.is-disabled) .c-chk__label:after,.c-chk:not(.is-disabled) .c-chk__input:enabled:checked~.c-chk__label:active:after{
+.c-chk.is-active .c-chk__input:enabled:checked~.c-chk__label:before,.c-chk.is-checked.is-checked.is-active:not(.is-disabled) .c-chk__label:before,.c-chk:not(.is-disabled) .c-chk__input:enabled:checked~.c-chk__label:active:before{
   border-color:#3094a3;
   background-color:#3094a3;
 }
@@ -99,20 +89,17 @@
   cursor:default;
 }
 
-.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:after,.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:before,.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:after,.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:before{
+.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:before,.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:before{
   border-color:transparent;
-}
-
-.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:after,.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:after{
   box-shadow:none;
   background-color:#ddd;
 }
 
-.c-chk--radio .c-chk__label:after,.c-chk--radio .c-chk__label:before{
+.c-chk--radio .c-chk__label:before{
   border-radius:50%;
 }
 
-.c-chk--radio.c-chk .c-chk__input:checked~.c-chk__label:after,.c-chk--radio.c-chk.is-checked.is-checked .c-chk__label:after{
+.c-chk--radio.c-chk .c-chk__input:checked~.c-chk__label:before,.c-chk--radio.c-chk.is-checked.is-checked .c-chk__label:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Ccircle cx='7' cy='7' r='4.5' fill='currentColor'/%3E%3C/svg%3E");
 }
 
@@ -120,41 +107,33 @@
   padding-left:50px;
 }
 
-.c-chk--toggle .c-chk__label:after,.c-chk--toggle .c-chk__label:before{
+.c-chk--toggle .c-chk__label:before{
   top:0;
+  -webkit-transition:box-shadow .1s ease-in-out,background-color .15s ease-in-out,background-position .15s ease-in-out,color .25s ease-in-out;
+  transition:box-shadow .1s ease-in-out,background-color .15s ease-in-out,background-position .15s ease-in-out,color .25s ease-in-out;
   margin-top:0;
   border:none;
   border-radius:100px;
-  background-color:#999;
+  background:no-repeat 10% url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Ccircle cx='7' cy='7' r='6' fill='currentColor'/%3E%3C/svg%3E") #999;
   width:40px;
   height:20px;
 }
 
-.c-chk--toggle .c-chk__label:after{
-  -webkit-transition:box-shadow .1s ease-in-out,background-color .15s ease-in-out,background-position .15s ease-in-out,color .25s ease-in-out;
-  transition:box-shadow .1s ease-in-out,background-color .15s ease-in-out,background-position .15s ease-in-out,color .25s ease-in-out;
-  background-repeat:no-repeat;
-  background-position:10%;
-}
-
-.c-chk--toggle.c-chk .c-chk__input:checked~.c-chk__label:after,.c-chk--toggle.c-chk.is-checked.is-checked .c-chk__label:after,.c-chk--toggle .c-chk__label:after{
+.c-chk--toggle.c-chk .c-chk__input:checked~.c-chk__label:before,.c-chk--toggle.c-chk.is-checked.is-checked .c-chk__label:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Ccircle cx='7' cy='7' r='6' fill='currentColor'/%3E%3C/svg%3E");
-}
-
-.c-chk--toggle.c-chk .c-chk__input:checked~.c-chk__label:after,.c-chk--toggle.c-chk.is-checked.is-checked .c-chk__label:after{
   background-position:90%;
   background-size:auto;
 }
 
-.c-chk--toggle.c-chk .c-chk__label:active.c-chk__label:active:after,.c-chk--toggle.c-chk.is-active.is-active .c-chk__label:after{
+.c-chk--toggle.c-chk .c-chk__label:active.c-chk__label:active:before,.c-chk--toggle.c-chk.is-active.is-active .c-chk__label:before{
   background-color:#8b8b8b;
 }
 
-.c-chk--toggle.c-chk.is-active .c-chk__input:enabled:checked~.c-chk__label:after,.c-chk--toggle.c-chk.is-checked.is-checked.is-active:not(.is-disabled) .c-chk__label:after,.c-chk--toggle.c-chk:not(.is-disabled) .c-chk__input:enabled:checked~.c-chk__label:active:after{
+.c-chk--toggle.c-chk.is-active .c-chk__input:enabled:checked~.c-chk__label:before,.c-chk--toggle.c-chk.is-checked.is-checked.is-active:not(.is-disabled) .c-chk__label:before,.c-chk--toggle.c-chk:not(.is-disabled) .c-chk__input:enabled:checked~.c-chk__label:active:before{
   background-color:#3094a3;
 }
 
-.c-chk--toggle.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:after,.c-chk--toggle.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:before,.c-chk--toggle.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:after,.c-chk--toggle.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:before{
+.c-chk--toggle.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:before,.c-chk--toggle.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:before{
   background-color:#ddd;
 }
 
@@ -162,11 +141,11 @@
   padding-right:50px;
 }
 
-.c-chk--toggle.is-rtl .c-chk__label:after{
+.c-chk--toggle.is-rtl .c-chk__label:before{
   background-position:90%;
 }
 
-.c-chk--toggle.is-rtl.c-chk .c-chk__input:checked~.c-chk__label:after,.c-chk--toggle.is-rtl.c-chk.is-checked.is-checked .c-chk__label:after{
+.c-chk--toggle.is-rtl.c-chk .c-chk__input:checked~.c-chk__label:before,.c-chk--toggle.is-rtl.c-chk.is-checked.is-checked .c-chk__label:before{
   background-position:10%;
 }
 
@@ -175,27 +154,31 @@
   background-color:#04444d;
 }
 
-.c-chk--dark.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:after,.c-chk--dark.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:before,.c-chk--dark.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:after,.c-chk--dark.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:before{
+.c-chk--dark.c-chk .c-chk__label:active.c-chk__label:active:before,.c-chk--dark.c-chk.is-active.is-active .c-chk__label:before{
+  background-color:#053940;
+}
+
+.c-chk--dark.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:before,.c-chk--dark.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:before{
   background-color:#56777a;
 }
 
-.c-chk--dark.c-chk .c-chk__input:checked[disabled]~.c-chk__label:after,.c-chk--dark.c-chk.is-checked .c-chk__input[disabled]~.c-chk__label:after,.c-chk--dark.c-chk.is-checked.is-disabled .c-chk__label:after,.c-chk--dark.c-chk.is-disabled .c-chk__input:checked~.c-chk__label:after{
+.c-chk--dark.c-chk .c-chk__input:checked[disabled]~.c-chk__label:before,.c-chk--dark.c-chk.is-checked .c-chk__input[disabled]~.c-chk__label:before,.c-chk--dark.c-chk.is-checked.is-disabled .c-chk__label:before,.c-chk--dark.c-chk.is-disabled .c-chk__input:checked~.c-chk__label:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2303363D'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5'/%3E%3C/svg%3E");
 }
 
-.c-chk--dark.c-chk--radio.c-chk .c-chk__input:checked[disabled]~.c-chk__label:after,.c-chk--dark.c-chk--radio.c-chk.is-checked .c-chk__input[disabled]~.c-chk__label:after,.c-chk--dark.c-chk--radio.c-chk.is-checked.is-disabled .c-chk__label:after,.c-chk--dark.c-chk--radio.c-chk.is-disabled .c-chk__input:checked~.c-chk__label:after{
+.c-chk--dark.c-chk--radio.c-chk .c-chk__input:checked[disabled]~.c-chk__label:before,.c-chk--dark.c-chk--radio.c-chk.is-checked .c-chk__input[disabled]~.c-chk__label:before,.c-chk--dark.c-chk--radio.c-chk.is-checked.is-disabled .c-chk__label:before,.c-chk--dark.c-chk--radio.c-chk.is-disabled .c-chk__input:checked~.c-chk__label:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2303363D'%3E%3Ccircle cx='7' cy='7' r='4.5' fill='currentColor'/%3E%3C/svg%3E");
 }
 
-.c-chk--dark.c-chk--toggle.c-chk .c-chk__label:active.c-chk__label:active:after,.c-chk--dark.c-chk--toggle.c-chk.is-active.is-active .c-chk__label:after{
+.c-chk--dark.c-chk--toggle.c-chk .c-chk__label:active.c-chk__label:active:before,.c-chk--dark.c-chk--toggle.c-chk.is-active.is-active .c-chk__label:before{
   background-color:#576c6e;
 }
 
-.c-chk--dark.c-chk--toggle .c-chk__label:after,.c-chk--dark.c-chk--toggle .c-chk__label:before{
+.c-chk--dark.c-chk--toggle .c-chk__label:before{
   background-color:#56777a;
 }
 
-.c-chk--dark.c-chk--toggle.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:after,.c-chk--dark.c-chk--toggle.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:after{
+.c-chk--dark.c-chk--toggle.c-chk .c-chk__input[disabled].c-chk__input[disabled]~.c-chk__label:before,.c-chk--dark.c-chk--toggle.c-chk.is-disabled.is-disabled.is-disabled .c-chk__label:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2303363D'%3E%3Ccircle cx='7' cy='7' r='6' fill='currentColor'/%3E%3C/svg%3E");
 }
 

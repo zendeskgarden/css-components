@@ -11,11 +11,10 @@
   --zd-chk--radio-checked-background-image: svg-inline(circle);
 }
 
-.c-chk--radio .c-chk__label::before,
-.c-chk--radio .c-chk__label::after {
+.c-chk--radio .c-chk__label::before {
   border-radius: 50%;
 }
 
-.c-chk--radio:--chk-checked::after {
+.c-chk--radio:--chk-checked::before {
   background-image: var(--zd-chk--radio-checked-background-image);
 }

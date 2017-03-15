@@ -1,10 +1,15 @@
 :root {
   /* stylelint-disable max-line-length */
   --zd-chk--toggle-background-color: var(--zd-color-aluminum);
+  --zd-chk--toggle-background-image: svg-load('14-circle.svg', color: var(--zd-color-white));
+  --zd-chk--toggle-background:
+    no-repeat
+    10%
+    var(--zd-chk--toggle-background-image)
+    var(--zd-chk--toggle-background-color);
   --zd-chk--toggle-active-background-color: color(var(--zd-chk--toggle-background-color) blackness(+10%));
   --zd-chk--toggle-checked-active-background-color: var(--zd-chk-checked-active-background-color);
   --zd-chk--toggle-disabled-background-color: var(--zd-chk-disabled-background-color);
-  --zd-chk--toggle-background-image: svg-load('14-circle.svg', color: var(--zd-color-white));
   --zd-chk--toggle-height: var(--zd-spacing);
   --zd-chk--toggle-transition:
     box-shadow .1s ease-in-out,
@@ -21,40 +26,32 @@
   padding-left: var(--zd-chk--toggle__label-padding);
 }
 
-.c-chk--toggle .c-chk__label::before,
-.c-chk--toggle .c-chk__label::after {
+.c-chk--toggle .c-chk__label::before {
   top: 0;
+  transition: var(--zd-chk--toggle-transition);
   margin-top: 0;
   border: none;
   border-radius: 100px;
-  background-color: var(--zd-chk--toggle-background-color);
+  background: var(--zd-chk--toggle-background);
   width: var(--zd-chk--toggle-width);
   height: var(--zd-chk--toggle-height);
 }
 
-.c-chk--toggle .c-chk__label::after {
-  transition: var(--zd-chk--toggle-transition);
-  background-image: var(--zd-chk--toggle-background-image);
-  background-repeat: no-repeat;
-  background-position: 10%;
-}
-
-.c-chk--toggle:--chk-checked::after {
+.c-chk--toggle:--chk-checked::before {
   background-image: var(--zd-chk--toggle-background-image);
   background-position: 90%;
   background-size: auto;
 }
 
-.c-chk--toggle:--chk-active::after {
+.c-chk--toggle:--chk-active::before {
   background-color: var(--zd-chk--toggle-active-background-color);
 }
 
-.c-chk--toggle:--chk-checked-active::after {
+.c-chk--toggle:--chk-checked-active::before {
   background-color: var(--zd-chk--toggle-checked-active-background-color);
 }
 
-.c-chk--toggle:--chk-disabled::before,
-.c-chk--toggle:--chk-disabled::after {
+.c-chk--toggle:--chk-disabled::before {
   background-color: var(--zd-chk--toggle-disabled-background-color);
 }
 
@@ -63,10 +60,10 @@
   padding-right: var(--zd-chk--toggle__label-padding);
 }
 
-.c-chk--toggle.is-rtl .c-chk__label::after {
+.c-chk--toggle.is-rtl .c-chk__label::before {
   background-position: 90%;
 }
 
-.c-chk--toggle.is-rtl:--chk-checked::after {
+.c-chk--toggle.is-rtl:--chk-checked::before {
   background-position: 10%;
 }
