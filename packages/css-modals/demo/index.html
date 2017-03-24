@@ -99,7 +99,7 @@
         Backdrop</a>
       <h2 class="u-gamma u-mb-sm">Centered Dialog with Lightbox Backdrop Layout</h2>
       <p class="u-mb-sm">The backdrop may be modified to support a darker lightbox treatment.</p>
-      <a class="c-btn js-dialog js-backdrop js-lightbox u-mb-lg"
+      <a class="c-btn js-dialog js-backdrop js-backdrop--lightbox u-mb-lg"
          href="#zd-center-dialog"
          role="button">Open
         <code class="c-code">.c-dialog .c-dialog--center</code>
@@ -111,7 +111,7 @@
       needs to be handled or prevented. The transparent backdrop element supports
       this use case. The transparent backdrop does not add it's own scrolling
       behavior.</p>
-      <a class="c-btn js-dialog js-backdrop js-transparent u-mb-lg"
+      <a class="c-btn js-dialog js-backdrop js-backdrop--transparent u-mb-lg"
          href="#zd-transparent-dialog"
          role="button">Open
         <code class="c-code">.c-dialog</code>
@@ -135,7 +135,25 @@
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-          <textarea class="c-playground__code"></textarea>
+<textarea class="c-playground__code"><a class="c-btn js-dialog js-backdrop"
+   href="#zd-test-modal"
+   role="button">Open Test Modal</a>
+
+<section aria-hidden="true"
+         class="c-dialog c-dialog--center"
+         id="zd-test-modal"
+         role="dialog"
+         style="display:none"
+         tabindex="-1">
+  <header>
+    <h1 class="c-dialog__header">Test</h1>
+    <button aria-label="close" class="c-dialog__close"></button>
+  </header>
+  <p class="c-dialog__body">Hello World</p>
+  <footer class="c-dialog__footer">
+    <button class="c-btn js-close">Goodbye</button>
+  </footer>
+</section></textarea>
         </div>
       </section>
     </div>
@@ -152,7 +170,7 @@
       <h1 class="c-dialog__header"
           id="zd-default-dialog__header"><code class="c-code" dir="ltr">.c-dialog__header</code>
         Title</h1>
-      <button aria-label="close" class="c-dialog__close js-close"></button>
+      <button aria-label="close" class="c-dialog__close"></button>
     </header>
     <p class="c-dialog__body"><code class="c-code" dir="ltr">.c-dialog__body</code>
     Lo-fi pork belly before they sold out, retro bespoke deep v semiotics.
@@ -175,7 +193,7 @@
     <header>
       <h1 class="c-dialog__header"
           id="zd-center-dialog__header">Dialog Title</h1>
-      <button aria-label="close" class="c-dialog__close js-close"></button>
+      <button aria-label="close" class="c-dialog__close"></button>
     </header>
     <p class="c-dialog__body">Plaid seitan lo-fi, tumblr farm-to-table freegan
     venmo helvetica tilde kickstarter ramps four dollar toast. Health goth
@@ -198,7 +216,7 @@
     <header>
       <h1 class="c-dialog__header"
           id="zd-transparent-dialog__header">Dialog Title</h1>
-      <button aria-label="close" class="c-dialog__close js-close"></button>
+      <button aria-label="close" class="c-dialog__close"></button>
     </header>
     <p class="c-dialog__body">Plaid seitan lo-fi, tumblr farm-to-table freegan
     venmo helvetica tilde kickstarter ramps four dollar toast. Health goth
@@ -214,6 +232,5 @@
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
   <script src="http://garden.zendesk.com/editor.js"></script>
-  <script src="index.js"></script>
 </body>
 </html>
