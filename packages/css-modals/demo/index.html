@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-  <title>Zendesk Garden / Modals</title>
-  <link href="bedrock.css" rel="stylesheet">
-  <link href="buttons.css" rel="stylesheet">
+  <title>Zendesk Garden / CSS Components / Modals</title>
+  <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
+  <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <style>
   .is-rtl .u-ml {
@@ -13,99 +13,132 @@
   </style>
 </head>
 <body>
-  <header class="u-bg-oil u-fg-white u-mb-lg">
-    <div class="l-wrapper">
-      <h1 class="u-alpha u-pv u-display-inline-block">
-        <a class="u-fg-inherit" href="http://zendeskgarden.github.io/">Zendesk Garden</a>
-        <span>/ Modals</span>
-      </h1>
-      <label class="u-ml">
-          <input class="js-dark" type="checkbox">
-          <code>.c-dialog--dark</code>
-      </label>
-      <label class="u-ml">
-          <input class="js-rtl" type="checkbox">
-          <span class="u-epsilon">RTL</span>
-      </label>
-    </div>
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="http://garden.zendesk.com">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="http://garden.zendesk.com/css-components">CSS Components</a>
+      <span>/ Modals</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-settings-fill">
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron">
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </header>
-  <main class="l-wrapper">
-    <h1 class="u-beta u-mb">Modals</h1>
-    <p class="u-mb-lg">Use
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog</code>
-      component classes for styling modal dialogs.</p>
-    <h2 class="u-gamma u-mb-sm">Dialog</h2>
-    <p class="u-mb-sm">The default component class is used to style a simple
-    dialog box. Add absolute positioning properties in order to logically
-    associate the dialog with its opener.</p>
-    <a class="c-btn js-btn u-mb-lg"
-       href="#zd-default-dialog"
-       role="button">Open
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog</code>
-      Dialog</a>
-    <h2 class="u-gamma u-mb-sm">Centered Dialog</h2>
-    <p class="u-mb-sm">A dialog with additional positioning CSS to center it on
-    the page. The dialog retains its centered position until the window shrinks
-    to a small size, at which breakpoints activate to position the dialog to
-    the top and/or left of the viewport. Extend the centered dialog component
-    with @media queries that reposition wider/longer dialogs used for your
-    particular application.</p>
-    <a class="c-btn js-btn u-mb-lg"
-       href="#zd-center-dialog"
-       role="button">Open
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog .c-dialog--center</code>
-      Dialog</a>
-    <h2 class="u-gamma u-mb-sm">Centered Dialog with Default Backdrop Layout</h2>
-    <p class="u-mb-sm">Surround modal dialogs with a backdrop to give them
-    visual distinction from page content. The backdrop layout also adds
-    scrolling behavior so that dialog content can be accessed in a small
-    browser window. <i>Note: implementations are expected to toggle
-    "overflow: hidden" on the &lt;html&gt; element in order to prevent
-    scrolling of background content (and potential double scrollbars for
-    both the content and the backdrop).</i> The backdrop may add a listener,
-    as this demo does, that closes the dialog when a user clicks outside the
-    dialog.</p>
-    <a class="c-btn js-btn js-backdrop u-mb-lg"
-       href="#zd-center-dialog"
-       role="button">Open
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog .c-dialog--center</code>
-      Dialog with
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.l-backdrop</code>
-      Backdrop</a>
-    <h2 class="u-gamma u-mb-sm">Centered Dialog with Lightbox Backdrop Layout</h2>
-    <p class="u-mb-sm">The backdrop may be modified to support a darker lightbox treatment.</p>
-    <a class="c-btn js-btn js-backdrop js-lightbox u-mb-lg"
-       href="#zd-center-dialog"
-       role="button">Open
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog .c-dialog--center</code>
-      Dialog with
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.l-backdrop .l-backdrop--lightbox</code>
-      Backdrop</a>
-    <h2 class="u-gamma u-mb-sm">Dialog with Transparent Backdrop Layout</h2>
-    <p class="u-mb-sm">There may be cases where interaction outside of a dialog
-    needs to be handled or prevented. The transparent backdrop element supports
-    this use case. The transparent backdrop does not add it's own scrolling
-    behavior.</p>
-    <a class="c-btn js-btn js-backdrop js-transparent u-mb-lg"
-       href="#zd-transparent-dialog"
-       role="button">Open
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog</code>
-      Dialog with
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.l-backdrop .l-backdrop--transparent</code>
-      Backdrop</a>
-    <h2 class="u-gamma u-mb-sm">Close button states</h2>
-    <section class="c-dialog">
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog__close</code>
-      <button class="c-dialog__close"></button>
-    </section>
-    <section class="c-dialog">
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog__close.is-hovered</code>
-      <button class="c-dialog__close is-hovered"></button>
-    </section>
-    <section class="c-dialog">
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs">.c-dialog__close.is-focused</code>
-      <button class="c-dialog__close is-focused"></button>
-    </section>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Modals</h1>
+    <div class="c-main__body">
+      <p class="u-mb-lg">Use
+        <code class="c-code">.c-dialog</code>
+        component classes for styling modal dialogs.</p>
+      <h2 class="u-gamma u-mb-sm">Dialog</h2>
+      <p class="u-mb-sm">The default component class is used to style a simple
+      dialog box. Add absolute positioning properties in order to logically
+      associate the dialog with its opener.</p>
+      <a class="c-btn js-dialog u-mb-lg"
+         href="#zd-default-dialog"
+         role="button">Open
+        <code class="c-code">.c-dialog</code>
+        Dialog</a>
+      <h2 class="u-gamma u-mb-sm">Centered Dialog</h2>
+      <p class="u-mb-sm">A dialog with additional positioning CSS to center it on
+      the page. The dialog retains its centered position until the window shrinks
+      to a small size, at which breakpoints activate to position the dialog to
+      the top and/or left of the viewport. Extend the centered dialog component
+      with @media queries that reposition wider/longer dialogs used for your
+      particular application.</p>
+      <a class="c-btn js-dialog u-mb-lg"
+         href="#zd-center-dialog"
+         role="button">Open
+        <code class="c-code">.c-dialog .c-dialog--center</code>
+        Dialog</a>
+      <h2 class="u-gamma u-mb-sm">Centered Dialog with Default Backdrop Layout</h2>
+      <p class="u-mb-sm">Surround modal dialogs with a backdrop to give them
+      visual distinction from page content. The backdrop layout also adds
+      scrolling behavior so that dialog content can be accessed in a small
+      browser window. <i>Note: implementations are expected to toggle
+      "overflow: hidden" on the &lt;html&gt; element in order to prevent
+      scrolling of background content (and potential double scrollbars for
+      both the content and the backdrop).</i> The backdrop may add a listener,
+      as this demo does, that closes the dialog when a user clicks outside the
+      dialog.</p>
+      <a class="c-btn js-dialog js-backdrop u-mb-lg"
+         href="#zd-center-dialog"
+         role="button">Open
+        <code class="c-code">.c-dialog .c-dialog--center</code>
+        Dialog with
+        <code class="c-code">.l-backdrop</code>
+        Backdrop</a>
+      <h2 class="u-gamma u-mb-sm">Centered Dialog with Lightbox Backdrop Layout</h2>
+      <p class="u-mb-sm">The backdrop may be modified to support a darker lightbox treatment.</p>
+      <a class="c-btn js-dialog js-backdrop js-lightbox u-mb-lg"
+         href="#zd-center-dialog"
+         role="button">Open
+        <code class="c-code">.c-dialog .c-dialog--center</code>
+        Dialog with
+        <code class="c-code">.l-backdrop .l-backdrop--lightbox</code>
+        Backdrop</a>
+      <h2 class="u-gamma u-mb-sm">Dialog with Transparent Backdrop Layout</h2>
+      <p class="u-mb-sm">There may be cases where interaction outside of a dialog
+      needs to be handled or prevented. The transparent backdrop element supports
+      this use case. The transparent backdrop does not add it's own scrolling
+      behavior.</p>
+      <a class="c-btn js-dialog js-backdrop js-transparent u-mb-lg"
+         href="#zd-transparent-dialog"
+         role="button">Open
+        <code class="c-code">.c-dialog</code>
+        Dialog with
+        <code class="c-code">.l-backdrop .l-backdrop--transparent</code>
+        Backdrop</a>
+      <h2 class="u-gamma u-mb-sm">Close button states</h2>
+      <section class="c-dialog u-display-block">
+        <code class="c-code" dir="ltr">.c-dialog__close</code>
+        <button class="c-dialog__close"></button>
+      </section>
+      <section class="c-dialog u-display-block">
+        <code class="c-code" dir="ltr">.c-dialog__close.is-hovered</code>
+        <button class="c-dialog__close is-hovered"></button>
+      </section>
+      <section class="c-dialog u-display-block">
+        <code class="c-code" dir="ltr">.c-dialog__close.is-focused</code>
+        <button class="c-dialog__close is-focused"></button>
+      </section>
+      <section class="u-mt-xl" id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+          <textarea class="c-playground__code"></textarea>
+        </div>
+      </section>
+    </div>
   </main>
 
   <section aria-labelledby="zd-default-dialog__header"
@@ -117,17 +150,17 @@
            tabindex="-1">
     <header>
       <h1 class="c-dialog__header"
-          id="zd-default-dialog__header"><code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs" dir="ltr">.c-dialog__header</code>
+          id="zd-default-dialog__header"><code class="c-code" dir="ltr">.c-dialog__header</code>
         Title</h1>
       <button aria-label="close" class="c-dialog__close js-close"></button>
     </header>
-    <p class="c-dialog__body"><code class="u-bg-platinum u-br-sm u-fg-dark-gray
-      u-ph-xs u-pv-xxs" dir="ltr">.c-dialog__body</code> Lo-fi pork belly
-    before they sold out, retro bespoke deep v semiotics. Williamsburg
-    cold-pressed stumptown wolf, drinking vinegar whatever gastropub. Austin
-    quinoa butcher, everyday carry echo park sartorial VHS.</p>
+    <p class="c-dialog__body"><code class="c-code" dir="ltr">.c-dialog__body</code>
+    Lo-fi pork belly before they sold out, retro bespoke deep v semiotics.
+    Williamsburg cold-pressed stumptown wolf, drinking vinegar whatever
+    gastropub. Austin quinoa butcher, everyday carry echo park sartorial
+    VHS.</p>
     <footer class="c-dialog__footer">
-      <code class="u-bg-platinum u-br-sm u-fg-dark-gray u-ph-xs u-pv-xxs" dir="ltr">.c-dialog__footer</code>
+      <code class="c-code" dir="ltr">.c-dialog__footer</code>
       <button class="c-btn u-ml js-close">OK</button>
     </footer>
   </section>
@@ -177,7 +210,10 @@
       ><button class="c-btn js-close u-ml">OK</button>
     </footer>
   </section>
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="http://garden.zendesk.com/jquery.js"></script>
+  <script src="http://garden.zendesk.com/svg4everybody.js"></script>
+  <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="http://garden.zendesk.com/editor.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

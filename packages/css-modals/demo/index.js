@@ -1,15 +1,5 @@
 $(document).ready(function() {
-  $('.js-dark').click(function() {
-    $('html').toggleClass('u-bg-daintree u-fg-white');
-    $('.c-dialog').toggleClass('c-dialog--dark');
-    $('.c-btn').toggleClass('c-btn--dark');
-  });
-
-  $('.js-rtl').click(function() {
-    $('.c-dialog').toggleClass('is-rtl');
-  });
-
-  $('.js-btn').click(function() {
+  $('.js-dialog').click(function() {
     var $this = $(this);
     var dialog = $this.attr('href');
 
@@ -33,18 +23,6 @@ $(document).ready(function() {
     $(dialog).addClass('is-open').show().parent('.l-backdrop').addClass('is-visible');
 
     return false;
-  });
-
-  $(document).on('focus', '.c-btn, .c-dialog__close', function() {
-    $(this).addClass('is-focused');
-  });
-
-  $(document).on('blur', '.c-btn, .c-dialog__close', function() {
-    $(this).removeClass('is-focused');
-  });
-
-  $(document).on('mouseup', '.c-btn, .c-dialog__close', function() {
-    $(this).removeClass('is-focused');
   });
 
   $(document).on('click', '.js-close', function() {
