@@ -22,6 +22,7 @@
     var(--zd-dialog-padding-bottom);
   --zd-dialog-width: 600px;
   --zd-dialog--center-margin: var(--zd-spacing);
+  --zd-dialog--center-max-height: calc(100vh - (2 * var(--zd-dialog-margin-bottom)));
   --zd-dialog--center-transform: translate(-50%, -50%);
   --zd-dialog--center-small-height-transform: translate(-50%, 0);
   --zd-dialog--center-small-width-transform: translate(0, -50%);
@@ -51,6 +52,8 @@
   top: 50%;
   left: 50%;
   transform: var(--zd-dialog--center-transform);
+  max-height: var(--zd-dialog--center-max-height);
+  overflow: scroll;
 }
 
 .c-dialog.is-open {
@@ -81,6 +84,7 @@
     top: 0;
     transform: var(--zd-dialog--center-small-height-transform);
     margin: var(--zd-dialog--center-margin) 0;
+    max-height: none;
   }
 
   .c-dialog--center.is-open {
@@ -104,6 +108,7 @@
   .c-dialog--center {
     transform: var(--zd-dialog--center-small-transform);
     margin: var(--zd-dialog--center-margin);
+    max-height: none;
   }
 
   .c-dialog--center.is-open {
