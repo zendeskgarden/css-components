@@ -1,12 +1,10 @@
 @import 'zd-css-variables';
 
-/* stylelint-disable max-line-length */
 :root {
   --zd-backdrop-background-color: color(var(--zd-color-white) alpha(80%));
   --zd-backdrop-z-index: 400;
   --zd-backdrop--lightbox-background-color: color(var(--zd-color-black) alpha(80%));
 }
-/* stylelint-enable */
 
 .l-backdrop {
   position: fixed;
