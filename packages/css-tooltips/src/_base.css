@@ -54,6 +54,7 @@
   padding: var(--zd-tooltip--extra-large-padding);
   max-width: var(--zd-tooltip--extra-large-max-width);
   font-size: var(--zd-tooltip--extra-large-font-size);
+  word-break: break-all;
 }
 
 .c-tooltip--extra-large.c-arrow::before,
@@ -66,6 +67,7 @@
   padding: var(--zd-tooltip--large-padding);
   max-width: var(--zd-tooltip--large-max-width);
   font-size: var(--zd-tooltip--large-font-size);
+  word-break: break-all;
 }
 
 .c-tooltip--large.c-arrow::before,
@@ -78,4 +80,5 @@
   padding-top: var(--zd-tooltip--medium-padding-vertical);
   padding-bottom: var(--zd-tooltip--medium-padding-vertical);
   max-width: var(--zd-tooltip--medium-max-width);
+  word-break: break-all;
 }

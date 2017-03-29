@@ -20,6 +20,7 @@
   padding:40px;
   max-width:460px;
   font-size:14px;
+  word-break:break-all;
 }
 
 .c-tooltip--extra-large.c-arrow:after,.c-tooltip--extra-large.c-arrow:before{
@@ -31,6 +32,7 @@
   padding:20px;
   max-width:270px;
   font-size:14px;
+  word-break:break-all;
 }
 
 .c-tooltip--large.c-arrow:after,.c-tooltip--large.c-arrow:before{
@@ -42,6 +44,7 @@
   padding-top:.83333em;
   padding-bottom:.83333em;
   max-width:140px;
+  word-break:break-all;
 }
 
 .c-tooltip--light{
