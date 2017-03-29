@@ -6,6 +6,7 @@
   background-color:#03363d;
   padding:0 1.25em;
   line-height:1.66667;
+  white-space:nowrap;
   color:#ddd;
   font-size:12px;
   font-weight:400;
@@ -19,6 +20,7 @@
   border-radius:4px;
   padding:40px;
   max-width:460px;
+  white-space:normal;
   font-size:14px;
   word-break:break-all;
 }
@@ -31,6 +33,7 @@
   border-radius:4px;
   padding:20px;
   max-width:270px;
+  white-space:normal;
   font-size:14px;
   word-break:break-all;
 }
@@ -44,6 +47,7 @@
   padding-top:.83333em;
   padding-bottom:.83333em;
   max-width:140px;
+  white-space:normal;
   word-break:break-all;
 }
 

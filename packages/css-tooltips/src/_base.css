@@ -1,7 +1,6 @@
 @import 'zd-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-tooltip-background-color: var(--zd-color-algae);
   --zd-tooltip-border-radius: 2px;
   --zd-tooltip-box-shadow:
@@ -26,7 +25,6 @@
   --zd-tooltip--medium-border-radius: var(--zd-tooltip--large-border-radius);
   --zd-tooltip--medium-max-width: 140px;
   --zd-tooltip--medium-padding-vertical: .83333em;
-  /* stylelint-enable max-line-length */
 }
 
 .c-tooltip {
@@ -37,6 +35,7 @@
   background-color: var(--zd-tooltip-background-color);
   padding: var(--zd-tooltip-padding);
   line-height: var(--zd-tooltip-line-height);
+  white-space: nowrap;
   color: var(--zd-tooltip-color);
   font-size: var(--zd-tooltip-font-size);
   font-weight: var(--zd-tooltip-font-weight);
@@ -53,6 +52,7 @@
   border-radius: var(--zd-tooltip--extra-large-border-radius);
   padding: var(--zd-tooltip--extra-large-padding);
   max-width: var(--zd-tooltip--extra-large-max-width);
+  white-space: normal;
   font-size: var(--zd-tooltip--extra-large-font-size);
   word-break: break-all;
 }
@@ -66,6 +66,7 @@
   border-radius: var(--zd-tooltip--large-border-radius);
   padding: var(--zd-tooltip--large-padding);
   max-width: var(--zd-tooltip--large-max-width);
+  white-space: normal;
   font-size: var(--zd-tooltip--large-font-size);
   word-break: break-all;
 }
@@ -80,5 +81,6 @@
   padding-top: var(--zd-tooltip--medium-padding-vertical);
   padding-bottom: var(--zd-tooltip--medium-padding-vertical);
   max-width: var(--zd-tooltip--medium-max-width);
+  white-space: normal;
   word-break: break-all;
 }
