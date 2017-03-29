@@ -12,13 +12,6 @@
     color(var(--zd-color-chathams-blue) alpha(15%));
   --zd-dialog-margin-bottom: var(--zd-dialog-box-shadow-blur-radius);
   --zd-dialog-min-height: calc(var(--zd-dialog__close-size) + (2 * var(--zd-dialog__close-top)));
-  --zd-dialog-padding-bottom: var(--zd-spacing-lg);
-  --zd-dialog-padding-horizontal: var(--zd-spacing-xl);
-  --zd-dialog-padding-top: var(--zd-spacing);
-  --zd-dialog-padding:
-    var(--zd-dialog-padding-top)
-    var(--zd-dialog-padding-horizontal)
-    var(--zd-dialog-padding-bottom);
   --zd-dialog-width: 600px;
   --zd-dialog--center-margin: var(--zd-spacing);
   --zd-dialog--center-max-height: calc(100vh - (2 * var(--zd-dialog-margin-bottom)));
@@ -36,7 +29,6 @@
   border-radius: var(--zd-dialog-border-radius);
   box-shadow: var(--zd-dialog-box-shadow);
   background-color: var(--zd-dialog-background-color);
-  padding: var(--zd-dialog-padding);
   width: var(--zd-dialog-width);
   min-height: var(--zd-dialog-min-height);
 }

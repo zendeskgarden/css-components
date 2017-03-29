@@ -32,7 +32,6 @@
   border-radius:4px;
   box-shadow:0 20px 30px 0 rgba(36,83,107,.15);
   background-color:#fff;
-  padding:20px 40px 30px;
   width:600px;
   min-height:60px;
 }
@@ -119,7 +118,7 @@
 
 .c-dialog__header{
   display:block;
-  margin:-20px -40px 20px;
+  margin:0;
   border-bottom:1px solid #eee;
   padding:20px 40px;
   line-height:1.42857;
@@ -170,6 +169,8 @@
 
 .c-dialog__body{
   display:block;
+  margin:0;
+  padding:20px 40px 30px;
   line-height:1.42857;
   color:#777;
   font-size:14px;
@@ -177,7 +178,7 @@
 
 .c-dialog__footer{
   display:block;
-  margin-top:30px;
+  padding:0 40px 30px;
   text-align:right;
 }
 

@@ -1,23 +1,19 @@
 @import 'zd-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-dialog__header-border-bottom: 1px solid var(--zd-color-platinum);
   --zd-dialog__header-color: var(--zd-color-dark-gray);
   --zd-dialog__header-font-size: var(--zd-font-size-epsilon);
   --zd-dialog__header-font-weight: var(--zd-font-weight-semibold);
   --zd-dialog__header-line-height: calc(20 / 14);
-  --zd-dialog__header-margin:
-    calc(var(--zd-dialog-padding-top) * -1)
-    calc(var(--zd-dialog-padding-horizontal) * -1)
-    var(--zd-dialog-padding-top);
-  --zd-dialog__header-padding: var(--zd-dialog-padding-top) var(--zd-dialog-padding-horizontal);
-  /* stylelint-enable max-line-length */
+  --zd-dialog__header-padding: var(--zd-spacing) var(--zd-spacing-xl);
 }
+
+/* 1. Reset for <h1>, etc. */
 
 .c-dialog__header {
   display: block;
-  margin: var(--zd-dialog__header-margin);
+  margin: 0; /* [1] */
   border-bottom: var(--zd-dialog__header-border-bottom);
   padding: var(--zd-dialog__header-padding);
   line-height: var(--zd-dialog__header-line-height);
