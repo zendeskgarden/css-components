@@ -1,0 +1,42 @@
+# Change Log
+
+## [2.2.0] - 2017-03-29
+### Changed
+- [#6](https://github.com/zendeskgarden/css-modals/issues/6) Remove
+  padding from `.c-dialog` container and apply to child elements
+  instead.
+- [#7](https://github.com/zendeskgarden/css-modals/pull/7) Fixed
+  `.c-dialog--center` to handle content that exceeds the height of the
+  current viewport.
+
+## [2.1.0] - 2016-11-02
+### Added
+- [#9](https://github.com/zendeskgarden/css-modals/pull/9) Support for
+  Electroid "dark" mode via `.c-dialog--dark`.
+
+### Removed
+- [#8](https://github.com/zendeskgarden/css-modals/pull/8) References to
+  `14-remove` SVG in README.
+
+## [2.0.0] - 2016-09-15
+### Added
+- `.c-dialog__close.is-focused` to handle keyboard focus.
+- `.c-dialog.is-rtl` to support RTL layouts.
+- `.c-dialog.is-open` to "pop" animate a modal on display.
+- `.l-background.is-visible` to animate background fade-in.
+
+### Changed (per [#4](https://github.com/zendeskgarden/css-modals/pull/4))
+- Updated with Electroid styling specifications.
+- Incorporate SVG "X" into `.c-dialog__close` CSS.
+
+## [0.1.1] - 2016-02-20
+### Changed (per [#2](https://github.com/zendeskgarden/css-modals/pull/2))
+- Display `.c-dialog` inline block.
+- Set `.c-dialog__close` background transparent.
+
+## 0.1.0 - 2016-02-03
+
+[2.2.0]: https://github.com/zendeskgarden/css-modals/compare/2.1.0...2.2.0
+[2.1.0]: https://github.com/zendeskgarden/css-modals/compare/2.0.0...2.1.0
+[2.0.0]: https://github.com/zendeskgarden/css-modals/compare/0.1.1...2.0.0
+[0.1.1]: https://github.com/zendeskgarden/css-modals/compare/0.1.0...0.1.1
