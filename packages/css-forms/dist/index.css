@@ -359,11 +359,6 @@
   color:#ccc;
 }
 
-.c-txt__input::-moz-placeholder{
-  opacity:1;
-  color:#ccc;
-}
-
 .c-txt__input:-ms-input-placeholder{
   opacity:1;
   color:#ccc;
@@ -498,10 +493,6 @@ select.c-txt__input--select:-moz-focusring{
   color:#fff;
 }
 
-.c-txt .c-txt__input[disabled]::-moz-placeholder,.c-txt.is-disabled .c-txt__input::-moz-placeholder{
-  color:#fff;
-}
-
 .c-txt .c-txt__input[disabled]:-ms-input-placeholder,.c-txt.is-disabled .c-txt__input:-ms-input-placeholder{
   color:#fff;
 }
@@ -520,10 +511,6 @@ select.c-txt__input--select:-moz-focusring{
   color:#56777a;
 }
 
-.c-txt--dark .c-txt__input::-moz-placeholder{
-  color:#56777a;
-}
-
 .c-txt--dark .c-txt__input:-ms-input-placeholder{
   color:#56777a;
 }
@@ -538,10 +525,6 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt--dark.c-txt .c-txt__input[disabled]::-webkit-input-placeholder,.c-txt--dark.c-txt.is-disabled .c-txt__input::-webkit-input-placeholder{
-  color:#56777a;
-}
-
-.c-txt--dark.c-txt .c-txt__input[disabled]::-moz-placeholder,.c-txt--dark.c-txt.is-disabled .c-txt__input::-moz-placeholder{
   color:#56777a;
 }
 
@@ -591,6 +574,9 @@ select.c-txt__input--select:-moz-focusring{
 
 .c-chk__label,.c-range__label,.c-txt__label{
   vertical-align:middle;
+}
+
+.c-chk__label,.c-input-label,.c-range__label,.c-txt__label{
   line-height:2.5;
   color:#555;
   font-size:16px;
@@ -598,6 +584,9 @@ select.c-txt__input--select:-moz-focusring{
 
 .c-chk__hint,.c-range__hint,.c-txt__hint{
   display:block;
+}
+
+.c-chk__hint,.c-input-hint,.c-range__hint,.c-txt__hint{
   line-height:1.42857;
   color:#999;
   font-size:14px;
@@ -611,10 +600,10 @@ select.c-txt__input--select:-moz-focusring{
   margin-top:-5px;
 }
 
-.c-chk--dark .c-chk__label,.c-range--dark .c-range__label,.c-txt--dark .c-txt__label{
+.c-chk--dark .c-chk__label,.c-input-label--dark,.c-range--dark .c-range__label,.c-txt--dark .c-txt__label{
   color:#fff;
 }
 
-.c-chk--dark .c-chk__hint,.c-range--dark .c-range__hint,.c-txt--dark .c-txt__hint{
+.c-chk--dark .c-chk__hint,.c-input-hint--dark,.c-range--dark .c-range__hint,.c-txt--dark .c-txt__hint{
   color:#56777a;
 }

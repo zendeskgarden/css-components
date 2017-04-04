@@ -16,6 +16,12 @@
 .c-range__label,
 .c-txt__label {
   vertical-align: middle; /* [1] */
+}
+
+.c-chk__label,
+.c-range__label,
+.c-txt__label,
+.c-input-label {
   line-height: var(--zd-input__label-line-height);
   color: var(--zd-input__label-color);
   font-size: var(--zd-input__label-font-size);
@@ -25,6 +31,12 @@
 .c-range__hint,
 .c-txt__hint {
   display: block;
+}
+
+.c-chk__hint,
+.c-range__hint,
+.c-txt__hint,
+.c-input-hint {
   line-height: var(--zd-input__hint-line-height);
   color: var(--zd-input__hint-color);
   font-size: var(--zd-input__hint-font-size);
