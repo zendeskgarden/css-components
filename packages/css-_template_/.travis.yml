@@ -7,14 +7,3 @@ sudo: false
 cache:
   directories:
     - node_modules
-
-before_deploy:
-  - git config --global user.email "Travis CI"
-  - git config --global user.name "travis@travis-ci.com"
-
-deploy:
-  provider: script
-  script: npm run publish
-  skip_cleanup: true
-  on:
-    branch: master
