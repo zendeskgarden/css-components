@@ -8,6 +8,10 @@ cache:
   directories:
     - node_modules
 
+before_deploy:
+  - git config user.email "Travis CI"
+  - git config user.name "travis@travis-ci.com"
+
 deploy:
   provider: script
   script: npm run publish
