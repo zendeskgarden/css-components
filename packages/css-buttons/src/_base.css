@@ -1,7 +1,6 @@
 @import 'zd-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-btn-color: var(--zd-color-pelorous);
   --zd-btn-font-size: var(--zd-font-size-zeta);
   --zd-btn-font-weight: var(--zd-font-weight-regular);
@@ -9,23 +8,23 @@
   --zd-btn-border-color: var(--zd-color-pelorous);
   --zd-btn-border-radius: 4px;
   --zd-btn-border-width: 1px;
-  --zd-btn-line-height: 2.34;
-  --zd-btn-padding: 2.25em;
-  --zd-btn-min-width: calc(3.8334em + calc(var(--zd-btn-padding) * 2));
+  --zd-btn-line-height: calc(28.1 / 12);
+  --zd-btn-padding: calc(27 / 12 * 1em);
+  --zd-btn-min-width: calc(calc(46 / 12 * 1em) + calc(var(--zd-btn-padding) * 2));
   --zd-btn-transition:
     border-color .25s ease-in-out,
     box-shadow .1s ease-in-out,
     background-color .25s ease-in-out,
     color .25s ease-in-out;
   --zd-btn--large-font-size: var(--zd-font-size-epsilon);
-  --zd-btn--large-line-height: 3.43;
-  --zd-btn--large-padding: 1.9286em;
-  --zd-btn--large-min-width: calc(6.1429em + calc(var(--zd-btn--large-padding) * 2));
+  --zd-btn--large-line-height: calc(48.1 / 14);
+  --zd-btn--large-padding: calc(27 / 14 * 1em);
+  --zd-btn--large-min-width: calc(calc(86 / 14 * 1em) + calc(var(--zd-btn--large-padding) * 2));
   --zd-btn--medium-font-size: var(--zd-font-size-epsilon);
-  --zd-btn--medium-line-height: 2.72;
-  --zd-btn--medium-padding: 1.9286em;
-  --zd-btn--medium-min-width: calc(4.7143em + calc(var(--zd-btn--medium-padding) * 2));
-  /* stylelint-enable max-line-length */
+  --zd-btn--medium-line-height: calc(38 / 14);
+  --zd-btn--medium-padding: calc(27 / 14 * 1em);
+  --zd-btn--medium-min-width: calc(calc(66 / 14 * 1em) + calc(var(--zd-btn--medium-padding) * 2));
+  --zd-btn--pill-border-radius: 100px;
 }
 
 /* 1. IE inner spacing fix.
@@ -64,7 +63,7 @@
   padding: 0;
 }
 
-.c-btn--pill { border-radius: 100px; }
+.c-btn--pill { border-radius: var(--zd-btn--pill-border-radius); }
 
 .c-btn--medium {
   padding: 0 var(--zd-btn--medium-padding);
@@ -85,44 +84,3 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.l-btn-group > .c-btn {
-  margin-left: calc(var(--zd-btn-border-width) * -1);
-  border-radius: 0;
-}
-
-.l-btn-group > .c-btn:first-of-type {
-  margin-left: 0;
-  border-top-left-radius: var(--zd-btn-border-radius);
-  border-bottom-left-radius: var(--zd-btn-border-radius);
-}
-
-.l-btn-group > .c-btn:last-of-type {
-  border-top-right-radius: var(--zd-btn-border-radius);
-  border-bottom-right-radius: var(--zd-btn-border-radius);
-}
-
-.l-btn-group.is-rtl {
-  direction: rtl;
-}
-
-.l-btn-group.is-rtl > .c-btn {
-  margin-right: calc(var(--zd-btn-border-width) * -1);
-  margin-left: 0;
-  border-radius: 0;
-}
-
-/* stylelint-disable selector-max-specificity */
-
-.l-btn-group.is-rtl > .c-btn:first-of-type {
-  margin-right: 0;
-  border-top-right-radius: var(--zd-btn-border-radius);
-  border-bottom-right-radius: var(--zd-btn-border-radius);
-}
-
-.l-btn-group.is-rtl > .c-btn:last-of-type {
-  border-top-left-radius: var(--zd-btn-border-radius);
-  border-bottom-left-radius: var(--zd-btn-border-radius);
-}
-
-/* stylelint-enable selector-max-specificity */

@@ -1,0 +1,11 @@
+{
+  "plugins": {
+    "postcss-import",
+    "postcss-cssnext",
+    "cssnano": {
+      "autoprefixer": false,
+      "core": false,
+      "discardComments": { "removeAll": true }
+    }
+  }
+}

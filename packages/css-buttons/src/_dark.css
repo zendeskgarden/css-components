@@ -3,14 +3,9 @@
 :root {
   --zd-btn--dark-disabled-background-color: var(--zd-color-submarine);
   --zd-btn--dark-disabled-color: var(--zd-color-algae);
-  --zd-btn--dark-hovered-background-color: var(--zd-color-white);
 }
 
-.c-btn--dark:--btn-hovered {
-  color: var(--zd-btn--dark-hovered-background-color);
-}
-
-.c-btn--dark.c-btn--dark:--btn-disabled {
+.c-btn.c-btn--dark:--btn-disabled {
   background-color: var(--zd-btn--dark-disabled-background-color);
   color: var(--zd-btn--dark-disabled-color);
 }

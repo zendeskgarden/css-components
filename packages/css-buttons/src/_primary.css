@@ -1,13 +1,15 @@
 @import 'zd-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-btn--primary-background-color: var(--zd-color-pelorous);
   --zd-btn--primary-color: var(--zd-color-white);
-  /* stylelint-enable max-line-length */
 }
 
-.c-btn--primary {
+@custom-selector :--btn-primary
+  .c-btn--primary,
+  .is-selected;
+
+.c-btn:--btn-primary {
   border-color: transparent;
   background-color: var(--zd-btn--primary-background-color);
   color: var(--zd-btn--primary-color);

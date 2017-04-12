@@ -2,7 +2,6 @@
 @import 'zd-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-btn-active-background-color: color(var(--zd-btn-color) blackness(+10%));
   --zd-btn-active-color: var(--zd-color-white);
   --zd-btn-active-transition:
@@ -16,7 +15,6 @@
     color(var(--zd-btn-color) alpha(40%));
   --zd-btn-hovered-background-color: color(var(--zd-btn-color) lightness(+10%) saturation(+10%));
   --zd-btn-hovered-color: var(--zd-color-white);
-  /* stylelint-enable max-line-length */
 }
 
 /* 1. Anchor tag reset.
@@ -25,8 +23,8 @@
  * 3. Class-chain specificity hack. */
 
 @custom-selector :--btn-hovered
-  .is-hovered,
-  :hover;
+  .is-hovered.is-hovered,
+  :hover:hover;
 
 .c-btn:--btn-hovered {
   border-color: transparent;
@@ -47,8 +45,8 @@
 }
 
 @custom-selector :--btn-active
-  .is-active,
-  :active;
+  .is-active.is-active,
+  :active:active;
 
 .c-btn:--btn-active {
   transition: var(--zd-btn-active-transition);
@@ -60,9 +58,7 @@
 
 /* stylelint-disable selector-max-specificity */
 .c-btn:--btn-hovered:--btn-active,
-.c-btn:--btn-focused:--btn-active,
-.l-btn-group > .c-btn:--btn-hovered:--btn-active,
-.l-btn-group > .c-btn:--btn-focused:--btn-active {
+.c-btn:--btn-focused:--btn-active {
   box-shadow: none;
 }
 /* stylelint-enable selector-max-specificity */
@@ -77,9 +73,5 @@
   background-color: var(--zd-btn-disabled-background-color);
   cursor: default;
   color: var(--zd-btn-disabled-color);
-}
-
-.l-btn-group > .c-btn:--btn-focused {
-  box-shadow: inset var(--zd-btn-focused-box-shadow);
 }
 /* stylelint-enable no-descending-specificity */
