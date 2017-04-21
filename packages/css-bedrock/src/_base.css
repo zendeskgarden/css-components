@@ -48,9 +48,7 @@ a { color: var(--zd-anchor-color); }
 
 a,
 ins,
-u {
-  text-decoration: none;
-}
+u { text-decoration: none; }
 
 a:hover { color: var(--zd-anchor-color-hover); }
 
@@ -59,9 +57,10 @@ a:focus {
   text-decoration: underline;
 }
 
-a:focus:active {
-  text-decoration: none;
-}
+a:focus:active { text-decoration: none; }
+
+body,
+button { margin: 0; }
 
 button {
   cursor: pointer;
@@ -106,6 +105,11 @@ hr {
   border: none;
   border-top: 1px solid;
 }
+
+input,
+optgroup,
+select,
+textarea { margin: 0; }
 
 ol,
 ul { list-style: none; }
