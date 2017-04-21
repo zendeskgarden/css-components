@@ -1,4 +1,3 @@
-@import 'zd-css-fonts';
 @import 'normalize.css';
 @import 'zd-css-variables';
 
@@ -7,7 +6,7 @@
   --zd-anchor-color-hover: var(--zd-anchor-color);
   --zd-html-background-color: var(--zd-color-white);
   --zd-html-box-sizing: border-box;
-  --zd-html-font-family: var(--zd-font-family-proxima-nova), sans-serif;
+  --zd-html-font-family: var(--zd-font-family-system);
   --zd-html-font-feature-settings: 'kern';
   --zd-html-font-kerning: normal;
   --zd-html-font-size: 14px;
