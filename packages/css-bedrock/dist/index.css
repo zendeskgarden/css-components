@@ -226,6 +226,8 @@ button{
 
 code{ font-size:.95em; }
 
+code,kbd,pre,samp{ font-family:Consolas,Liberation Mono,Menlo,Courier,monospace; }
+
 fieldset,iframe{ border:0; }
 
 h1,h2,h3,h4,h5,h6{ font-size:inherit; }
