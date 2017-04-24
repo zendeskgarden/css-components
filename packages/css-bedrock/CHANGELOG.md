@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.0.0] - 2017-04-24
+### Changed (per [#18](https://github.com/zendeskgarden/css-bedrock/pull/18))
+- Updated `font-family` default from Proxima Nova to system font stack.
+- Updated to `normalize.css` 6.0.0.
+
 ## [1.1.0] - 2016-02-10
 ### Added (per [#16](https://github.com/zendeskgarden/css-bedrock/pull/16))
 - New Electroid color utilities.
@@ -58,6 +63,7 @@
 
 ## 0.0.1 - 2015-12-21
 
+[2.0.0]: https://github.com/zendeskgarden/css-bedrock/compare/1.1.0...2.0.0
 [1.1.0]: https://github.com/zendeskgarden/css-bedrock/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/zendeskgarden/css-bedrock/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/zendeskgarden/css-bedrock/compare/0.5.0...1.0.0
