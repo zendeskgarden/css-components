@@ -1,22 +1,19 @@
 @import 'zd-css-variables';
 
 :root {
-  --zd-txt--error-border-color: var(--zd-color-flamingo);
   --zd-txt--error-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-txt--error-border-color) alpha(40%));
-  --zd-txt--success-border-color: var(--zd-color-chateau-green);
+    color(var(--zd-input--error-color) alpha(40%));
   --zd-txt--success-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-txt--success-border-color) alpha(40%));
-  --zd-txt--warning-border-color: var(--zd-color-marigold);
+    color(var(--zd-input--success-color) alpha(40%));
   --zd-txt--warning-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-txt--warning-border-color) alpha(40%));
+    color(var(--zd-input--warning-color) alpha(40%));
 }
 
 .has-error.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
-  border-color: var(--zd-txt--error-border-color);
+  border-color: var(--zd-input--error-color);
 }
 
 .has-error:--txt-focused {
@@ -24,7 +21,7 @@
 }
 
 .has-success.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
-  border-color: var(--zd-txt--success-border-color);
+  border-color: var(--zd-input--success-color);
 }
 
 .has-success:--txt-focused {
@@ -32,7 +29,7 @@
 }
 
 .has-warning.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
-  border-color: var(--zd-txt--warning-border-color);
+  border-color: var(--zd-input--warning-color);
 }
 
 .has-warning:--txt-focused {

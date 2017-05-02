@@ -45,6 +45,27 @@
               <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
             </fieldset>
           </li>
+          <li class="c-menu__item" role="menuitem">
+            <div class="u-mb">Validation</div>
+            <div class="u-ml">
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.none" name="nav.ctl.validation" checked type="radio" value="">
+                <label class="c-chk__label" for="nav.ctl.validation.none">None</label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.success" name="nav.ctl.validation" type="radio" value="success">
+                <label class="c-chk__label" for="nav.ctl.validation.success"><span class="c-code">.has-success</span></label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.warning" name="nav.ctl.validation" type="radio" value="warning">
+                <label class="c-chk__label" for="nav.ctl.validation.warning"><span class="c-code">.has-warning</span></label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.error" name="nav.ctl.validation" type="radio" value="error">
+                <label class="c-chk__label" for="nav.ctl.validation.error"><span class="c-code">.has-error</span></label>
+              </fieldset>
+            </div>
+          </li>
         </ul>
       </li>
     </ul>
@@ -73,6 +94,7 @@
         <label class="c-range__label" dir="ltr" for="range-0">.c-range__label</label>
         <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
         <input class="c-range__input" id="range-0" type="range">
+        <small class="c-range__message"><span dir="ltr">.c-range__message</span></small>
       </fieldset>
       <p class="u-mb">Hint text may also appear below the range input.</p>
       <fieldset class="c-range u-mb-lg">
@@ -97,7 +119,8 @@
       class modifier to layout range controls inline.</p>
       <fieldset class="c-range c-range--inline u-mb-lg">
         <label class="c-range__label" for="range-2">Scale</label
-        ><input class="c-range__input u-mh" id="range-2" type="range">
+        ><input class="c-range__input u-mh" id="range-2" type="range"
+        ><small class="c-range__message">(valid)</small>
       </fieldset>
       <h3 class="u-delta u-mb">States</h3>
       <fieldset class="c-range is-focused u-mb-lg">
@@ -147,5 +170,6 @@
   <script src="http://garden.zendesk.com/jquery.js"></script>
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="../index.js"></script>
 </body>
 </html>

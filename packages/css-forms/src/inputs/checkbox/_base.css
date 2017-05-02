@@ -41,10 +41,16 @@
   display: inline;
 }
 
+/* stylelint-disable selector-max-specificity */
 .c-chk__label,
-.c-chk__hint {
+.c-chk__hint,
+.c-chk__message,
+.c-chk.has-error .c-chk__message.c-chk__message,
+.c-chk.has-success .c-chk__message.c-chk__message,
+.c-chk.has-warning .c-chk__message.c-chk__message {
   padding-left: var(--zd-chk__label-padding);
 }
+/* stylelint-enable selector-max-specificity */
 
 .c-chk__label::before {
   position: absolute;
@@ -66,11 +72,17 @@
   direction: rtl;
 }
 
+/* stylelint-disable selector-max-specificity */
 .c-chk.is-rtl .c-chk__label,
-.c-chk.is-rtl .c-chk__hint {
+.c-chk.is-rtl .c-chk__hint,
+.c-chk.is-rtl .c-chk__message,
+.c-chk.is-rtl.has-error .c-chk__message,
+.c-chk.is-rtl.has-success .c-chk__message,
+.c-chk.is-rtl.has-warning .c-chk__message {
   padding-right: var(--zd-chk__label-padding);
   padding-left: 0;
 }
+/* stylelint-enable selector-max-specificity */
 
 .c-chk.is-rtl .c-chk__label::before {
   right: 0;

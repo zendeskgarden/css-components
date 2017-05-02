@@ -1,9 +1,14 @@
 # Change Log
 
+## [1.3.0] - 2017-04-26
+### Added (per [#24](https://github.com/zendeskgarden/css-forms/pull/24))
+- Validation `.c-chk__message`, `.c-range__message`, and
+  `.c-txt__message`.
+
 ## [1.2.0] - 2017-04-04
 ### Added (per [#23](https://github.com/zendeskgarden/css-forms/pull/23))
-- Added standalone `.c-input-label` and `.c-input-hint` to support
-  label/hint styling disconnected from input component structure.
+- Standalone `.c-input-label` and `.c-input-hint` to support label/hint
+  styling disconnected from input component structure.
 
 ## [1.0.1] - 2017-03-15
 ### Updated (per [#22](https://github.com/zendeskgarden/css-forms/pull/22))

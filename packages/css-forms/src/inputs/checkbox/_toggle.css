@@ -18,13 +18,27 @@
     color .25s ease-in-out;
   --zd-chk--toggle-width: var(--zd-spacing-xl);
   --zd-chk--toggle__label-padding: calc(var(--zd-chk--toggle-width) + var(--zd-spacing-sm));
+  --zd-chk--toggle__message-background-position: calc(var(--zd-chk--toggle-width) - var(--zd-font-size-epsilon));
   /* stylelint-enable max-line-length */
 }
 
+/* stylelint-disable selector-max-specificity */
 .c-chk--toggle .c-chk__label,
-.c-chk--toggle .c-chk__hint {
+.c-chk--toggle .c-chk__hint,
+.c-chk--toggle .c-chk__message,
+.c-chk--toggle.has-error .c-chk__message.c-chk__message,
+.c-chk--toggle.has-success .c-chk__message.c-chk__message,
+.c-chk--toggle.has-warning .c-chk__message.c-chk__message {
   padding-left: var(--zd-chk--toggle__label-padding);
 }
+
+.c-chk--toggle .c-chk__message,
+.c-chk--toggle.has-error .c-chk__message.c-chk__message,
+.c-chk--toggle.has-success .c-chk__message.c-chk__message,
+.c-chk--toggle.has-warning .c-chk__message.c-chk__message {
+  background-position: var(--zd-chk--toggle__message-background-position);
+}
+/* stylelint-enable selector-max-specificity */
 
 .c-chk--toggle .c-chk__label::before {
   top: 0;
@@ -55,10 +69,24 @@
   background-color: var(--zd-chk--toggle-disabled-background-color);
 }
 
+/* stylelint-disable selector-max-specificity */
 .c-chk--toggle.is-rtl .c-chk__label,
-.c-chk--toggle.is-rtl .c-chk__hint {
+.c-chk--toggle.is-rtl .c-chk__hint,
+.c-chk--toggle.is-rtl .c-chk__message,
+.c-chk--toggle.is-rtl.has-error .c-chk__message.c-chk__message,
+.c-chk--toggle.is-rtl.has-success .c-chk__message.c-chk__message,
+.c-chk--toggle.is-rtl.has-warning .c-chk__message.c-chk__message {
   padding-right: var(--zd-chk--toggle__label-padding);
+  padding-left: 0;
 }
+
+.c-chk--toggle.is-rtl .c-chk__message,
+.c-chk--toggle.is-rtl.has-error .c-chk__message.c-chk__message,
+.c-chk--toggle.is-rtl.has-success .c-chk__message.c-chk__message,
+.c-chk--toggle.is-rtl.has-warning .c-chk__message.c-chk__message {
+  background-position: calc(100% - var(--zd-chk--toggle__message-background-position));
+}
+/* stylelint-enable selector-max-specificity */
 
 .c-chk--toggle.is-rtl .c-chk__label::before {
   background-position: 90%;
