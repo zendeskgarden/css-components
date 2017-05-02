@@ -1,3 +1,7 @@
 {
-  "extends": "stylelint-config-zendesk"
+  "extends": "stylelint-config-zendesk",
+  "rules": {
+    "no-missing-end-of-source-newline",
+    "value-keyword-case": ["lower", { "ignoreKeywords": ['/^[A-Z].+$/'] }]
+  }
 }

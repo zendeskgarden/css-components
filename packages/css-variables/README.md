@@ -9,12 +9,11 @@ of the framework.
 
 ## Usage
 
-Variables are declared under the `src` folder may be accessed via
-`@import` with the help of
-[postcss-import](https://github.com/postcss/postcss-import).
+The main package export is the set of variables declared under the `src`
+folder.
 
-The package `dist` contains corresponding Sass variables for use inside
-your own CSS build pipeline.
+The package `dist` contains corresponding CSS, JSON, and Sass variables
+for use inside your own build pipeline.
 
 ## Tests
 

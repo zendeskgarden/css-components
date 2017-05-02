@@ -1,5 +1,3 @@
-/* davidwalsh.name/sass-color-variables-dont-suck */
-
 :root {
   --zd-color-affair: rgb(115, 73, 136);
   --zd-color-algae: rgb(3, 54, 61);
@@ -89,18 +87,46 @@
   --zd-color-wewak: rgb(239, 157, 151);
   --zd-color-white: rgb(255, 255, 255);
   --zd-color-white-smoke: rgb(248, 248, 248);
-
-  /* Aliases */
-  --zd-color-chat-orange: var(--zd-color-sea-buckthorn);
-  --zd-color-connect-red: var(--zd-color-flamingo);
-  --zd-color-explore-blue: var(--zd-color-pelorous);
-  --zd-color-guide-pink: var(--zd-color-mandy);
-  --zd-color-inbox-orange: var(--zd-color-persimmon);
-  --zd-color-message-green: var(--zd-color-verdigris);
-  --zd-color-support-green: var(--zd-color-apple-green);
-  --zd-color-talk-yellow: var(--zd-color-golden-dream);
-
-  /* Deprecated aliases */
-  --zd-color-zendesk-green: var(--zd-color-apple-green);
-  --zd-color-promo-orange: var(--zd-color-orange-peel);
+  --zd-color-chat-orange: rgb(247, 154, 62);
+  --zd-color-connect-red: rgb(235, 102, 81);
+  --zd-color-explore-blue: rgb(48, 170, 188);
+  --zd-color-guide-pink: rgb(235, 73, 98);
+  --zd-color-inbox-orange: rgb(255, 109, 90);
+  --zd-color-message-green: rgb(55, 184, 175);
+  --zd-color-support-green: rgb(120, 163, 0);
+  --zd-color-talk-yellow: rgb(239, 201, 61);
+  --zd-color-zendesk-green: rgb(120, 163, 0);
+  --zd-color-promo-orange: rgb(250, 163, 0);
+  --zd-font-family-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  --zd-font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --zd-font-size-giga: 36px;
+  --zd-font-size-mega: 28px;
+  --zd-font-size-kilo: 25px;
+  --zd-font-size-alpha: 22px;
+  --zd-font-size-beta: 20px;
+  --zd-font-size-gamma: 18px;
+  --zd-font-size-delta: 16px;
+  --zd-font-size-epsilon: 14px;
+  --zd-font-size-zeta: 12px;
+  --zd-font-size-milli: 11px;
+  --zd-font-size-micro: 10px;
+  --zd-font-size-nano: 9px;
+  --zd-font-weight-thin: 100;
+  --zd-font-weight-extralight: 200;
+  --zd-font-weight-light: 300;
+  --zd-font-weight-regular: 400;
+  --zd-font-weight-medium: 500;
+  --zd-font-weight-semibold: 600;
+  --zd-font-weight-bold: 700;
+  --zd-font-weight-extrabold: 800;
+  --zd-font-weight-black: 900;
+  --zd-font-weight-ultralight: 200;
+  --zd-font-weight-ultrabold: 800;
+  --zd-font-weight-heavy: 900;
+  --zd-spacing: 20px;
+  --zd-spacing-lg: 30px;
+  --zd-spacing-sm: 10px;
+  --zd-spacing-xl: 40px;
+  --zd-spacing-xs: 5px;
+  --zd-spacing-xxs: 2px;
 }

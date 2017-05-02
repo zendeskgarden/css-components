@@ -1,8 +1,0 @@
-:root {
-  --zd-spacing: 20px;
-  --zd-spacing-lg: calc(var(--zd-spacing) * 1.5);
-  --zd-spacing-sm: calc(var(--zd-spacing) / 2);
-  --zd-spacing-xl: calc(var(--zd-spacing) * 2);
-  --zd-spacing-xs: calc(var(--zd-spacing) / 4);
-  --zd-spacing-xxs: calc(var(--zd-spacing) / 10);
-}
