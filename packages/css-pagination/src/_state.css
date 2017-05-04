@@ -1,0 +1,77 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-pagination__page-active-background-color: var(--zd-color-platinum);
+  --zd-pagination__page-current-background-color: var(--zd-color-anti-flash-white);
+  --zd-pagination__page-current-color: var(--zd-color-dark-gray);
+  --zd-pagination__page-current-font-weight: var(--zd-font-weight-semibold);
+  --zd-pagination__page-focused-box-shadow:
+    inset 0 0 0 3px
+    color(var(--zd-color-pelorous) alpha(40%));
+  --zd-pagination__page-hovered-background-color: var(--zd-pagination__page-current-background-color);
+  --zd-pagination__page--next-hover-background-image: svg-load('14-next.svg', color: var(--zd-color-dark-gray));
+  --zd-pagination__page--previous-hover-background-image: svg-load('14-previous.svg', color: var(--zd-color-dark-gray));
+}
+
+@custom-selector :--page-hover
+  .is-hovered,
+  :hover;
+
+.c-pagination__page:--page-hover {
+  background-color: var(--zd-pagination__page-hovered-background-color);
+}
+
+@custom-selector :--page-focused
+  .is-focused,
+  :focus;
+
+.c-pagination__page:--page-focused {
+  outline: none;
+  box-shadow: var(--zd-pagination__page-focused-box-shadow);
+}
+
+@custom-selector :--page-active
+  .is-active,
+  :active;
+
+.c-pagination__page:--page-active {
+  background-color: var(--zd-pagination__page-active-background-color);
+  box-shadow: none;
+}
+
+@custom-selector :--page-current
+  .is-current,
+  [aria-current='true'];
+
+.c-pagination__page:--page-current {
+  background-color: var(--zd-pagination__page-current-background-color);
+  color: var(--zd-pagination__page-current-color);
+  font-weight: var(--zd-pagination__page-current-font-weight);
+}
+
+@custom-selector :--page-hidden
+  .is-hidden,
+  [aria-hidden='true'];
+
+.c-pagination__page:--page-hidden {
+  visibility: hidden;
+}
+
+.c-pagination__page--gap:--page-hover,
+.c-pagination__page--gap:--page-active,
+.c-pagination__page--next:--page-hover,
+.c-pagination__page--next:--page-active,
+.c-pagination__page--previous:--page-active,
+.c-pagination__page--previous:--page-hover {
+  background-color: transparent;
+}
+
+.c-pagination__page--next:--page-hover,
+.c-pagination__page--next:--page-active {
+  background-image: var(--zd-pagination__page--next-hover-background-image);
+}
+
+.c-pagination__page--previous:--page-active,
+.c-pagination__page--previous:--page-hover {
+  background-image: var(--zd-pagination__page--previous-hover-background-image);
+}

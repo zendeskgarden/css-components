@@ -1,0 +1,38 @@
+{
+  "name": "zd-css-pagination",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/index.css",
+  "style": "src/index.css",
+  "dependencies": {
+    "postcss-inline-svg": "^2.3.0",
+    "zd-svg-icons": "git+ssh://git@github.com/zendeskgarden/svg-icons.git#1.4.0"
+  },
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "gh-pages": "^0.12.0",
+    "live-server": "^1.2.0",
+    "postcss-cli": "^3.2.0",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-import": "^9.1.0",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^7.10.1",
+    "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#4.1.0",
+    "stylelint-order": "^0.3.0",
+    "zd-css-variables": "git+ssh://git@github.com/zendeskgarden/css-variables.git#0.11.0"
+  },
+  "scripts": {
+    "build": "postcss src/index.css --output dist/index.css",
+    "lint": "stylelint $(find src -name '*.css')",
+    "nuke": "rm -rf node_modules",
+    "publish": "gh-pages -d demo",
+    "rebuild": "npm run nuke && npm install && npm run build",
+    "start": "npm run watch & live-server demo",
+    "test": "npm run lint",
+    "watch": "npm run build -- --watch"
+  },
+  "pre-commit": [
+    "build",
+    "test"
+  ]
+}

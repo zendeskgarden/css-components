@@ -1,0 +1,82 @@
+@import 'zd-css-variables';
+
+:root {
+  --zd-pagination__page-border-radius: 4px;
+  --zd-pagination__page-color: var(--zd-color-monsoon);
+  --zd-pagination__page-font-size: var(--zd-font-size-epsilon);
+  --zd-pagination__page-line-height: calc(30 / 14);
+  --zd-pagination__page-margin: var(--zd-spacing-xs);
+  --zd-pagination__page-padding: 0 calc(5 / 14 * 1em);
+  --zd-pagination__page-size: var(--zd-spacing-lg);
+  --zd-pagination__page-transition:
+    background .25s ease-in-out,
+    box-shadow .1s ease-in-out,
+    color .25s ease-in-out;
+  --zd-pagination__page--gap-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-silver-sand));
+  --zd-pagination__page--next-background-image: svg-load('14-next.svg', color: var(--zd-color-silver-sand));
+  --zd-pagination__page--previous-background-image: svg-load('14-previous.svg', color: var(--zd-color-silver-sand));
+}
+
+/* 1. List element reset. */
+.c-pagination {
+  display: flex;
+  margin-top: 0; /* [1] */
+  padding: 0; /* [1] */
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.c-pagination__page {
+  display: inline-block;
+  transition: var(--zd-pagination__page-transition);
+  margin-left: var(--zd-pagination__page-margin);
+  border-radius: var(--zd-pagination__page-border-radius);
+  cursor: pointer;
+  padding: var(--zd-pagination__page-padding);
+  min-width: var(--zd-pagination__page-size);
+  height: var(--zd-pagination__page-size);
+  text-align: center;
+  line-height: var(--zd-pagination__page-line-height);
+  color: var(--zd-pagination__page-color);
+  font-size: var(--zd-pagination__page-font-size);
+  user-select: none;
+}
+
+.c-pagination__page:first-of-type {
+  margin-left: 0;
+}
+
+.c-pagination__page--gap,
+.c-pagination__page--next,
+.c-pagination__page--previous {
+  width: var(--zd-pagination__page-size);
+  overflow: hidden;
+  color: transparent;
+}
+
+.c-pagination__page--gap {
+  position: relative;
+  cursor: default;
+}
+
+.c-pagination__page--gap::before {
+  position: absolute;
+  color: var(--zd-pagination__page-color);
+  content: '…';
+  width: 100%;
+  left: 0;
+}
+
+.c-pagination__page--next,
+.c-pagination__page--previous {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c-pagination__page--next {
+  background-image: var(--zd-pagination__page--next-background-image);
+}
+
+.c-pagination__page--previous {
+  background-image: var(--zd-pagination__page--previous-background-image);
+}
