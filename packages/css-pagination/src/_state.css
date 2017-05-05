@@ -9,25 +9,34 @@
     inset 0 0 0 3px
     color(var(--zd-color-pelorous) alpha(40%));
   --zd-pagination__page-hovered-background-color: var(--zd-pagination__page-current-background-color);
-  --zd-pagination__page--next-hover-background-image: svg-load('14-next.svg', color: var(--zd-color-dark-gray));
-  --zd-pagination__page--previous-hover-background-image: svg-load('14-previous.svg', color: var(--zd-color-dark-gray));
+  --zd-pagination__page--next-hovered-background-image: svg-load('14-next.svg', color: var(--zd-color-dark-gray));
+  --zd-pagination__page--previous-hovered-background-image: svg-load('14-previous.svg', color: var(--zd-color-dark-gray));
 }
 
-@custom-selector :--page-hover
+/* 1. No `.c-pagination__page:focus` styling, since it prevents preferred
+ *    "focus-on-keyboard; blur-on-mouse" behavior.
+ */
+
+@custom-selector :--page-hovered
   .is-hovered,
   :hover;
 
-.c-pagination__page:--page-hover {
+.c-pagination__page:--page-hovered {
   background-color: var(--zd-pagination__page-hovered-background-color);
 }
 
-@custom-selector :--page-focused
-  .is-focused,
-  :focus;
+@custom-selector :--page-focused /* [1] */
+  .is-focused;
 
 .c-pagination__page:--page-focused {
   outline: none;
   box-shadow: var(--zd-pagination__page-focused-box-shadow);
+}
+
+.c-pagination__page:focus,
+.c-pagination__page a:focus {
+  outline: none;
+  text-decoration: none;
 }
 
 @custom-selector :--page-active
@@ -35,8 +44,8 @@
   :active;
 
 .c-pagination__page:--page-active {
-  background-color: var(--zd-pagination__page-active-background-color);
   box-shadow: none;
+  background-color: var(--zd-pagination__page-active-background-color);
 }
 
 @custom-selector :--page-current
@@ -57,21 +66,28 @@
   visibility: hidden;
 }
 
-.c-pagination__page--gap:--page-hover,
+.c-pagination__page--gap:--page-hovered,
 .c-pagination__page--gap:--page-active,
-.c-pagination__page--next:--page-hover,
+.c-pagination__page--next:--page-hovered,
 .c-pagination__page--next:--page-active,
-.c-pagination__page--previous:--page-active,
-.c-pagination__page--previous:--page-hover {
+.c-pagination__page--previous:--page-hovered,
+.c-pagination__page--previous:--page-active {
   background-color: transparent;
 }
 
-.c-pagination__page--next:--page-hover,
-.c-pagination__page--next:--page-active {
-  background-image: var(--zd-pagination__page--next-hover-background-image);
+/* stylelint-disable selector-max-specificity */
+.c-pagination__page--next:--page-hovered,
+.c-pagination__page--next:--page-active,
+.c-pagination.is-rtl .c-pagination__page--previous:--page-hovered,
+.c-pagination.is-rtl .c-pagination__page--previous:--page-active {
+  background-image: var(--zd-pagination__page--next-hovered-background-image);
 }
 
+/* stylelint-disable no-descending-specificity */
+.c-pagination__page--previous:--page-hovered,
 .c-pagination__page--previous:--page-active,
-.c-pagination__page--previous:--page-hover {
-  background-image: var(--zd-pagination__page--previous-hover-background-image);
+.c-pagination.is-rtl .c-pagination__page--next:--page-hovered,
+.c-pagination.is-rtl .c-pagination__page--next:--page-active {
+  background-image: var(--zd-pagination__page--previous-hovered-background-image);
 }
+/* stylelint-enable no-descending-specificity, selector-max-specificity */

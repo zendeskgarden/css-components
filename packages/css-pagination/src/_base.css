@@ -12,9 +12,9 @@
     background .25s ease-in-out,
     box-shadow .1s ease-in-out,
     color .25s ease-in-out;
-  --zd-pagination__page--gap-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-silver-sand));
   --zd-pagination__page--next-background-image: svg-load('14-next.svg', color: var(--zd-color-silver-sand));
   --zd-pagination__page--previous-background-image: svg-load('14-previous.svg', color: var(--zd-color-silver-sand));
+  --zd-pagination__page__a-margin: 0 calc(5 / 14 * -1em);
 }
 
 /* 1. List element reset. */
@@ -42,10 +42,6 @@
   user-select: none;
 }
 
-.c-pagination__page:first-of-type {
-  margin-left: 0;
-}
-
 .c-pagination__page--gap,
 .c-pagination__page--next,
 .c-pagination__page--previous {
@@ -61,10 +57,10 @@
 
 .c-pagination__page--gap::before {
   position: absolute;
+  left: 0;
+  width: 100%;
   color: var(--zd-pagination__page-color);
   content: '…';
-  width: 100%;
-  left: 0;
 }
 
 .c-pagination__page--next,
@@ -73,10 +69,32 @@
   background-position: center;
 }
 
-.c-pagination__page--next {
+/* stylelint-disable no-descending-specificity */
+.c-pagination__page--next,
+.c-pagination.is-rtl .c-pagination__page--previous {
   background-image: var(--zd-pagination__page--next-background-image);
 }
 
-.c-pagination__page--previous {
+.c-pagination__page--previous,
+.c-pagination.is-rtl .c-pagination__page--next {
   background-image: var(--zd-pagination__page--previous-background-image);
 }
+/* stylelint-enable no-descending-specificity */
+
+.c-pagination__page a {
+  display: block;
+  margin: var(--zd-pagination__page__a-margin);
+  padding: var(--zd-pagination__page-padding);
+  color: inherit;
+}
+
+.c-pagination.is-rtl {
+  direction: rtl;
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-pagination:not(.is-rtl) .c-pagination__page:first-of-type,
+.c-pagination.is-rtl .c-pagination__page:last-of-type {
+  margin-left: 0;
+}
+/* stylelint-enable selector-max-specificity */

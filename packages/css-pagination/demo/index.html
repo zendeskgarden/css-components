@@ -20,17 +20,52 @@
       <span>/ Pagination</span>
     </h1>
     <ul class="c-ctl c-ctl--header">
-      <li class="c-ctl__item">
-        <fieldset class="c-chk c-chk--toggle">
-          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
-          <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
-        </fieldset>
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-settings-fill" />
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron" />
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+        </ul>
       </li>
     </ul>
   </header>
   <main class="c-main c-main--page">
     <h1 class="c-main__title">Pagination</h1>
     <div class="c-main__body">
+      <p class="u-mb-lg">The pagination component provides styling for a
+      multi-page control used to navigate long content lists such as data
+      tables or search results.</p>
+      <ul class="c-pagination">
+        <li class="c-pagination__page c-pagination__page--previous">previous</li>
+        <li class="c-pagination__page">1</li>
+        <li class="c-pagination__page c-pagination__page--gap">2-3</li>
+        <li class="c-pagination__page">4</li>
+        <li class="c-pagination__page">5</li>
+        <li class="c-pagination__page is-current">6</li>
+        <li class="c-pagination__page">7</li>
+        <li class="c-pagination__page">8</li>
+        <li class="c-pagination__page c-pagination__page--gap">9-10</li>
+        <li class="c-pagination__page">11</li>
+        <li class="c-pagination__page c-pagination__page--next">next</li>
+      </ul>
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
