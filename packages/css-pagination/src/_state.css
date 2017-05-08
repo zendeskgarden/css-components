@@ -58,6 +58,11 @@
   font-weight: var(--zd-pagination__page-current-font-weight);
 }
 
+.c-pagination__page:--page-current,
+.c-pagination__page:--page-current a {
+  max-width: none;
+}
+
 @custom-selector :--page-hidden
   .is-hidden,
   [aria-hidden='true'];

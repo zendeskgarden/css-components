@@ -18,8 +18,11 @@
   cursor:pointer;
   padding:0 .35714em;
   min-width:30px;
+  max-width:60px;
   height:30px;
+  overflow:hidden;
   text-align:center;
+  text-overflow:ellipsis;
   line-height:2.14286;
   color:#777;
   font-size:14px;
@@ -31,7 +34,6 @@
 
 .c-pagination__page--gap,.c-pagination__page--next,.c-pagination__page--previous{
   width:30px;
-  overflow:hidden;
   color:transparent;
 }
 
@@ -43,8 +45,10 @@
 .c-pagination__page--gap:before{
   position:absolute;
   left:0;
+  margin-top:-2px;
   width:100%;
   color:#777;
+  font-size:16px;
   content:"…";
 }
 
@@ -65,6 +69,9 @@
   display:block;
   margin:0 -.35714em;
   padding:0 .35714em;
+  max-width:60px;
+  overflow:hidden;
+  text-overflow:ellipsis;
   color:inherit;
 }
 
@@ -99,6 +106,10 @@
   background-color:#f3f3f3;
   color:#555;
   font-weight:600;
+}
+
+.c-pagination__page.is-current,.c-pagination__page.is-current a,.c-pagination__page[aria-current=true],.c-pagination__page[aria-current=true] a{
+  max-width:none;
 }
 
 .c-pagination__page.is-hidden,.c-pagination__page[aria-hidden=true]{
