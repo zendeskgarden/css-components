@@ -5,7 +5,11 @@ The `css-arrows` package contains styling and positioning classes for
 
 ## Installation
 
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-arrows.git
+```sh
+$ npm install --save-dev @zendesk/zd-css-arrows
+# or 
+$ yarn add @zendesk/zd-css-arrows
+```
 
 ## Usage
 
