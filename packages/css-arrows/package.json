@@ -1,7 +1,9 @@
 {
-  "name": "zd-css-arrows",
+  "name": "@zendesk/zd-css-arrows",
   "version": "0.3.0",
-  "private": true,
+  "publishConfig": {
+    "registry":"https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+  },
   "main": "dist/index.css",
   "style": "src/index.css",
   "devDependencies": {
