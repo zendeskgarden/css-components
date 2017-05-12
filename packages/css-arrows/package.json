@@ -1,5 +1,5 @@
 {
-  "name": "@zendesk/zd-css-arrows",
+  "name": "@zendesk/garden-css-arrows",
   "version": "0.3.0",
   "publishConfig": {
     "registry":"https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
