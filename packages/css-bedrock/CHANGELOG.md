@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.0.1] - 2017-05-17
+### Changed (per [#19](https://github.com/zendeskgarden/css-bedrock/pull/19))
+- Updated default system and monospace font stacks via latest
+  `zd-css-variables` package.
+
 ## [2.0.0] - 2017-04-24
 ### Changed (per [#18](https://github.com/zendeskgarden/css-bedrock/pull/18))
 - Updated `font-family` default from Proxima Nova to system font stack.
@@ -63,6 +68,7 @@
 
 ## 0.0.1 - 2015-12-21
 
+[2.0.1]: https://github.com/zendeskgarden/css-bedrock/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/zendeskgarden/css-bedrock/compare/1.1.0...2.0.0
 [1.1.0]: https://github.com/zendeskgarden/css-bedrock/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/zendeskgarden/css-bedrock/compare/1.0.0...1.0.1
