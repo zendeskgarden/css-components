@@ -1,32 +1,39 @@
 /* https://bitsofco.de/the-new-system-font-stack/ */
 
 var retVal = {
-  /* 1. Windows
-   * 2. Ubuntu
-   * 3. macOS
+  /* 1. macOS
+   * 2. Windows
+   * 3. Ubuntu
    * 4. Fallback */
   'monospace': [
-    'Consolas' /* [1] */,
-    'Liberation Mono' /* [2] */,
-    'Menlo' /* [3] */,
+    'SFMono-Regular', /* [1] */
+    'Consolas' /* [2] */,
+    'Liberation Mono' /* [3] */,
+    'Menlo' /* [4] */,
     'Courier' /* [4] */,
     'monospace' /* [4] */
   ],
-  /* 1. macOS Safari & FF (San Francisco)
-   * 2. macOS Chrome (San Francisco)
-   * 3. Windows
-   * 4. Fallback
-   * 5. Emojis */
+  /* 1. drafts.csswg.org/css-fonts-4/#system-ui
+   * 2. macOS Safari & FF (San Francisco)
+   * 3. macOS Chrome (San Francisco)
+   * 4. Windows
+   * 5. Android & ChromeOS
+   * 6. KDE
+   * 7. Ubuntu
+   * 8. GNOME
+   * 9. Fallback */
   'system': [
-    '-apple-system' /* [1] */,
-    'BlinkMacSystemFont' /* [2] */,
-    'Segoe UI' /* [3] */,
-    'Helvetica' /* [4] */,
-    'Arial' /* [4] */,
-    'sans-serif' /* [4] */,
-    'Apple Color Emoji' /* [5] */,
-    'Segoe UI Emoji' /* [5] */,
-    'Segoe UI Symbol' /* [5] */
+    'system-ui', /* [1] */
+    '-apple-system' /* [2] */,
+    'BlinkMacSystemFont' /* [3] */,
+    'Segoe UI' /* [4] */,
+    'Roboto', /* [5] */
+    'Oxygen-Sans', /* [6] */
+    'Ubuntu', /* [7] */
+    'Cantarell', /* [8] */
+    'Helvetica Neue' /* [9] */,
+    'Arial' /* [9] */,
+    'sans-serif' /* [9] */
   ]
 };
 

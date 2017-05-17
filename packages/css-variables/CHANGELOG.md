@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.1] - 2017-05-16
+### Changed (per [#15](https://github.com/zendeskgarden/css-variables/pull/15))
+- Update `--zd-font-family-system` with `system-ui` generic, fonts for
+  Linux, and removing problematic emoji fonts.
+- Prepend `SFMono-Regular` to `--zd-font-family-monospace`.
+
 ## [1.0.0] - 2017-05-01
 ### Changed (per [#14](https://github.com/zendeskgarden/css-variables/pull/14))
 - Updated `src` to define variables via JS and build `dist` with CSS,
@@ -63,6 +69,7 @@
 
 ## 0.1.0 - 2015-11-24
 
+[1.0.1]: https://github.com/zendeskgarden/css-variables/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/zendeskgarden/css-variables/compare/0.11.0...1.0.0
 [0.11.0]: https://github.com/zendeskgarden/css-variables/compare/0.10.0...0.11.0
 [0.10.0]: https://github.com/zendeskgarden/css-variables/compare/0.9.0...0.10.0
