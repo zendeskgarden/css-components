@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.1.0] - 2017-05-18
+### Changed (per [#16](https://github.com/zendeskgarden/css-variables/pull/16))
+- Add dist/index.js with variable names in camelCase
+
 ## [1.0.1] - 2017-05-16
 ### Changed (per [#15](https://github.com/zendeskgarden/css-variables/pull/15))
 - Update `--zd-font-family-system` with `system-ui` generic, fonts for
