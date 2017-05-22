@@ -2,7 +2,7 @@
 
 ## [1.1.0] - 2017-05-18
 ### Changed (per [#16](https://github.com/zendeskgarden/css-variables/pull/16))
-- Add dist/index.js with variable names in camelCase
+- Add `dist/index.js` with variable names in camelCase
 
 ## [1.0.1] - 2017-05-16
 ### Changed (per [#15](https://github.com/zendeskgarden/css-variables/pull/15))
@@ -73,6 +73,7 @@
 
 ## 0.1.0 - 2015-11-24
 
+[1.1.0]: https://github.com/zendeskgarden/css-variables/compare/1.1.0...1.0.1
 [1.0.1]: https://github.com/zendeskgarden/css-variables/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/zendeskgarden/css-variables/compare/0.11.0...1.0.0
 [0.11.0]: https://github.com/zendeskgarden/css-variables/compare/0.10.0...0.11.0
