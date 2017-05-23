@@ -11,7 +11,7 @@ cache:
 deploy:
   provider: npm
   email: $ARTIFACTORY_EMAIL
-  api_key: $ARTIFACTORY_API_KEY
+  api_key:
+    - secure: $ARTIFACTORY_API_KEY
   on:
     branch: master
-    tags: true
