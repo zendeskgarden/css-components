@@ -7,3 +7,11 @@ sudo: false
 cache:
   directories:
     - node_modules
+
+deploy:
+  provider: npm
+  email: $ARTIFACTORY_EMAIL
+  api_key: $ARTIFACTORY_API_KEY
+  on:
+    branch: master
+    tags: true

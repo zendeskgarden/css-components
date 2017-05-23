@@ -5,7 +5,15 @@ CSS component.
 
 ## Installation
 
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-_template_.git
+```sh
+npm install --save-dev @zendesk/garden-css-_template_
+# or
+yarn add @zendesk/garden-css-_template_
+```
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 

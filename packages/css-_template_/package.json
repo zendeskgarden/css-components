@@ -1,7 +1,9 @@
 {
-  "name": "zd-css-_template_",
+  "name": "@zendesk/garden-css-_template_",
   "version": "0.0.0",
-  "private": true,
+  "publishConfig": {
+    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+  },
   "main": "dist/index.css",
   "style": "src/index.css",
   "devDependencies": {
