@@ -8,6 +8,8 @@ cache:
   directories:
     - node_modules
 
+before_deploy: "cat ~/.npmrc"
+
 deploy:
   provider: npm
   email: $ARTIFACTORY_EMAIL
