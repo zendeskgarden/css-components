@@ -6,7 +6,7 @@ CSS component.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-_template_
+npm install --save-dev zendesk/garden-css-_template_
 # or
 yarn add @zendesk/garden-css-_template_
 ```

@@ -1,6 +1,8 @@
 {
   "name": "@zendesk/garden-css-_template_",
   "version": "0.0.0",
+  "repository": "zendeskgarden/css-_template_",
+  "license": "UNLICENSED",
   "publishConfig": {
     "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
   },
