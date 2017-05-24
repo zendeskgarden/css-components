@@ -13,14 +13,10 @@ before_deploy:
   - npm config set email jzempel@zendesk.com
   - npm config set always-auth true
   - npm config set @zendesk:registry https://zdrepo.jfrog.io/zdrepo/api/npm/npm/
-  - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:_password $ARTIFACTORY_PASSWORD
-  - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:username jzempel
-  - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:email jzempel@zendesk.com
-  - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:always-auth true
 
 deploy:
   provider: script
-  script: cat ~/.npmrc && npm publish
+  script: npm publish
   on:
     all_branches: true
     # branch: master
