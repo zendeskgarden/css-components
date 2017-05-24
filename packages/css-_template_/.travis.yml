@@ -13,5 +13,5 @@ deploy:
   email: $ARTIFACTORY_EMAIL
   api_key: $ARTIFACTORY_API_KEY
   on:
-    # branch: master
+    branch: jzempel/private-npm
     # tags: true
