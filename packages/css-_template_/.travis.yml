@@ -18,6 +18,7 @@ before_deploy:
 deploy:
   provider: script
   script: npm publish
+  skip_cleanup: true
   on:
     all_branches: true
     # branch: master
