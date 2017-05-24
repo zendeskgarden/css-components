@@ -13,6 +13,7 @@ before_install:
   - npm config set email $ARTIFACTORY_EMAIL
   - npm config set always-auth true
   - npm config set @zendesk:registry https://zdrepo.jfrog.io/zdrepo/api/npm/npm/
+  - cat ~/.npmrc
 
 deploy:
   provider: script
