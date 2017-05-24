@@ -25,7 +25,7 @@
     "build": "postcss src/index.css --output dist/index.css",
     "lint": "stylelint $(find src -name '*.css')",
     "nuke": "rm -rf node_modules",
-    "publish": "gh-pages -d demo",
+    "publish-demo": "gh-pages -d demo",
     "rebuild": "npm run nuke && npm install && npm run build",
     "start": "npm run watch & live-server demo",
     "test": "npm run lint",
