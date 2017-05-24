@@ -16,9 +16,8 @@ before_deploy:
   - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:always-auth true
 
 deploy:
-  provider: npm
-  email: $ARTIFACTORY_EMAIL
-  api_key: $ARTIFACTORY_API_KEY
+  provider: script
+  script: npm publish
   on:
     all_branches: true
     # branch: master
