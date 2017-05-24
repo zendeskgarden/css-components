@@ -17,6 +17,7 @@ before_deploy:
 
 deploy:
   provider: npm
+  email: $ARTIFACTORY_EMAIL
   on:
     all_branches: true
     # branch: master
