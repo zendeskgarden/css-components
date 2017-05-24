@@ -9,6 +9,9 @@ cache:
     - node_modules
 
 before_deploy:
+  - npm config set _auth $ARTIFACTORY_API_KEY
+  - npm config set email jzempel@zendesk.com
+  - npm config set always-auth true
   - npm config set @zendesk:registry https://zdrepo.jfrog.io/zdrepo/api/npm/npm/
   - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:_password $ARTIFACTORY_PASSWORD
   - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:username jzempel
