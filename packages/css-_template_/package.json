@@ -1,6 +1,6 @@
 {
   "name": "@test/garden-css-_template_",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "zendeskgarden/css-_template_",
   "license": "UNLICENSED",
   "publishConfig": {
@@ -9,7 +9,6 @@
   "main": "dist/index.css",
   "style": "src/index.css",
   "devDependencies": {
-    "@zendesk/product-tray": "^11.0.0",
     "cssnano": "^3.10.0",
     "gh-pages": "^1.0.0",
     "live-server": "^1.2.0",
