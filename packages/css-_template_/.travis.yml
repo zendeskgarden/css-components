@@ -18,7 +18,6 @@ before_install:
 before_deploy:
   - npm config set _auth $ARTIFACTORY_API_KEY
   - npm config set email $ARTIFACTORY_EMAIL
-  - npm config set @zendesk:registry https://zdrepo.jfrog.io/zdrepo/api/npm/npm/
 
 deploy:
   provider: script
