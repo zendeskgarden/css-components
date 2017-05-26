@@ -78,7 +78,7 @@
 
 ## 0.1.0 - 2015-11-24
 
-[2.0.0]: https://github.com/zendeskgarden/css-variables/compare/1.1.0...2.0.0
+[2.0.0]: https://github.com/zendeskgarden/css-variables/compare/1.1.0...v2.0.0
 [1.1.0]: https://github.com/zendeskgarden/css-variables/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/zendeskgarden/css-variables/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/zendeskgarden/css-variables/compare/0.11.0...1.0.0
