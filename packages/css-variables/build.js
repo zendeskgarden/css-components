@@ -36,42 +36,42 @@ function toProperties(variables) {
   }, []);
 }
 
-function toCamelCase(hyphenCased) {
-  return hyphenCased.replace(/-([a-z])/g, function (_, c) {
+function toCamelCase(value) {
+  return value.replace(/-([a-z])/g, function (_, c) {
     return c.toUpperCase()
   });
 }
 
 const css = `:root {
   ${toProperties(variables).join('\n  ')}
-}`;
+}\n`;
 
 postcss([cssnano])
   .process(css)
   .then(function(result) {
+    let js = [];
     let json = [];
     let scss = [];
-    let js = {};
 
     result.root.walkRules(function(rule) {
       rule.walkDecls(function(declaration) {
         const key = declaration.prop.replace('--', '');
         const value = declaration.value;
 
+        js.push(`${toCamelCase(key)}: '${value}'`);
         json.push(`"${key}": "${value.replace(/"/g, '\'')}"`);
         scss.push(`$${key}: ${value};`);
-        js[toCamelCase(key)] = value;
       });
     });
 
-    json = '{\n  ' + json.join(',\n  ') + '\n}';
-    scss = scss.join('\n');
-    js = `module.exports = ${JSON.stringify(js, null, 2)}`;
+    js = 'module.exports = {\n  ' + js.join(',\n  ') + '\n};\n';
+    json = '{\n  ' + json.join(',\n  ') + '\n}\n';
+    scss = scss.join('\n') + '\n';
 
     const destination = path.join(__dirname, 'dist');
 
     fs.writeFileSync(path.join(destination, 'index.css'), css, 'utf8');
+    fs.writeFileSync(path.join(destination, 'index.js'), js, 'utf8');
     fs.writeFileSync(path.join(destination, 'index.json'), json, 'utf8');
     fs.writeFileSync(path.join(destination, 'index.scss'), scss, 'utf8');
-    fs.writeFileSync(path.join(destination, 'index.js'), js, 'utf8');
   });

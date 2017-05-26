@@ -1,26 +1,35 @@
 {
-  "name": "zd-css-variables",
+  "name": "@zendesk/garden-css-variables",
   "version": "1.1.0",
-  "private": true,
+  "repository": "zendeskgarden/css-variables",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+  },
   "main": "src/index.js",
   "style": "dist/index.css",
   "devDependencies": {
+    "@zendesk/eslint-config-garden": "^3.0.0",
+    "@zendesk/garden-stylelint-config": "^5.0.0",
+    "babel-eslint": "^7.2.3",
     "cssnano": "^3.10.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-sort-class-members": "^1.1.1",
     "jsonlint": "^1.6.2",
-    "postcss": "^5.2.17",
+    "postcss": "^6.0.1",
     "pre-commit": "^1.2.2",
     "stylelint": "^7.10.1",
-    "stylelint-config-zendesk": "git+ssh://git@github.com/zendeskgarden/stylelint-config.git#4.1.0",
-    "stylelint-order": "^0.3.0",
+    "stylelint-order": "^0.4.4",
     "watch": "^1.0.2"
   },
   "scripts": {
+    "_eslint": "eslint dist/index.js",
     "_jsonlint": "jsonlint dist/index.json -q",
     "_stylelint": "stylelint dist/index.css",
     "build": "node build",
     "nuke": "rm -rf node_modules",
     "rebuild": "npm run nuke && npm install && npm run build",
-    "test": "npm run _stylelint && npm run _jsonlint",
+    "test": "npm run _stylelint && npm run _eslint && npm run _jsonlint",
     "watch": "watch 'npm run build'"
   },
   "pre-commit": [

@@ -1,0 +1,6 @@
+{
+  extends: '@zendesk/garden',
+  rules: {
+    max-len: 0
+  }
+}
