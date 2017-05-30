@@ -1,4 +1,4 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 .c-template {
   font-size: var(--zd-font-size-giga);
