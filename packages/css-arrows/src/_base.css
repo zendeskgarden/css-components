@@ -1,6 +1,4 @@
-/* stylelint-disable no-unsupported-browser-features */
 :root {
-  /* stylelint-disable max-line-length */
   --zd-arrow-size: .86em;
   --zd-arrow-transform: rotate(45deg);
   --zd-arrow-position: calc(var(--zd-arrow-size) / -2);
@@ -8,7 +6,6 @@
   --zd-arrow--l-clip-path: polygon(0 100%, 100% 100%, 100% calc(100% - 1px), 1px 0, 0 0);
   --zd-arrow--r-clip-path: polygon(100% 0, 100% 100%, calc(100% - 1px) 100%, 0 1px, 0 0);
   --zd-arrow--t-clip-path: polygon(100% 0, 100% 1px, 1px 100%, 0 100%, 0 0);
-  /* stylelint-enable max-line-length */
 }
 
 .c-arrow {
@@ -124,4 +121,3 @@
   right: var(--zd-arrow-size);
   bottom: var(--zd-arrow-position);
 }
-/* stylelint-enable no-unsupported-browser-features */
