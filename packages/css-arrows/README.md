@@ -7,6 +7,10 @@ for `.c-arrow`.
 
     npm install --save-dev @zendesk/garden-css-arrows
 
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
+
 ## Usage
 
 Arrow CSS classes are used on a parent element (typically menus or
