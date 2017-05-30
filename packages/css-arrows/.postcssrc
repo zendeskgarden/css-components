@@ -1,0 +1,18 @@
+{
+  "plugins": {
+    "postcss-import",
+    "postcss-cssnext": {
+      "browsers": [
+        "> 1%",
+        "last 2 versions",
+        "Firefox ESR",
+        "Explorer 9"
+      ]
+    },
+    "cssnano": {
+      "autoprefixer": false,
+      "core": false,
+      "discardComments": { "removeAll": true }
+    }
+  }
+}

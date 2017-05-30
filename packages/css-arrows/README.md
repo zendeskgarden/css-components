@@ -1,15 +1,11 @@
 # Arrow Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-arrows.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-arrows)
 
-The `css-arrows` package contains styling and positioning classes for
-`.c-arrow`.
+The `garden-css-arrows` package contains styling and positioning classes
+for `.c-arrow`.
 
 ## Installation
 
-```sh
-$ npm install --save-dev @zendesk/garden-css-arrows
-# or 
-$ yarn add @zendesk/garden-css-arrows
-```
+    npm install --save-dev @zendesk/garden-css-arrows
 
 ## Usage
 
