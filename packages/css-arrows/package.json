@@ -1,10 +1,10 @@
 {
   "name": "@zendesk/garden-css-arrows",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "repository": "zendeskgarden/css-arrows",
   "license": "UNLICENSED",
   "publishConfig": {
-    "registry":"https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
   },
   "main": "dist/index.css",
   "style": "src/index.css",
