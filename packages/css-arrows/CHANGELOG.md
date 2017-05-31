@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.0] - 2017-05-31
+### Changed (per [#10](https://github.com/zendeskgarden/css-arrows/pull/10))
+- Prepared package for registry publish as
+  `@zendesk/garden-css-arrows`. See README for updated installation.
+
 ## [0.3.0] - 2016-09-16
 ### Changed (per [#8](https://github.com/zendeskgarden/css-arrows/pull/8))
 - Reduce arrow size.
@@ -14,6 +19,7 @@
 
 ## 0.1.0 - 2016-02-03
 
+[1.0.0]: https://github.com/zendeskgarden/css-arrows/compare/0.3.0...v1.0.0
 [0.3.0]: https://github.com/zendeskgarden/css-arrows/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/zendeskgarden/css-arrows/compare/0.1.1...0.2.0
 [0.1.1]: https://github.com/zendeskgarden/css-arrows/compare/0.1.0...0.1.1
