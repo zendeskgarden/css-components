@@ -1,6 +1,5 @@
 .c-btn{
   display:inline-block;
-  -webkit-transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
   transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
   margin:0;
   border:1px solid #30aabc;
@@ -36,17 +35,18 @@
 .c-btn--pill{ border-radius:100px; }
 
 .c-btn--medium{
-  padding:0 1.92857em;
   min-width:8.57143em;
   line-height:2.71429;
+}
+
+.c-btn--large,.c-btn--medium{
+  padding:0 1.92857em;
   font-size:14px;
 }
 
 .c-btn--large{
-  padding:0 1.92857em;
   min-width:10em;
   line-height:3.43571;
-  font-size:14px;
 }
 
 .c-btn--full{
@@ -170,7 +170,6 @@
 }
 
 .c-btn.is-active.is-active,.c-btn:active:active{
-  -webkit-transition:border-color .1s ease-in-out,background-color .1s ease-in-out,color .1s ease-in-out;
   transition:border-color .1s ease-in-out,background-color .1s ease-in-out,color .1s ease-in-out;
   border-color:transparent;
   background-color:#3094a3;
@@ -219,7 +218,6 @@
 }
 
 .c-btn__icon{
-  -webkit-transition:-webkit-transform .25s ease-in-out;
   transition:-webkit-transform .25s ease-in-out;
   transition:transform .25s ease-in-out;
   transition:transform .25s ease-in-out,-webkit-transform .25s ease-in-out;

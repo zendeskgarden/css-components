@@ -1,5 +1,5 @@
 /* stylelint-disable no-descending-specificity */
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-btn-active-background-color: color(var(--zd-btn-color) blackness(+10%));
