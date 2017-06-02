@@ -1,4 +1,4 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-backdrop-background-color: color(var(--zd-color-white) alpha(80%));

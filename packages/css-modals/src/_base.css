@@ -1,5 +1,5 @@
 /* stylelint-disable no-unknown-animations */
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-dialog-background-color: var(--zd-color-white);

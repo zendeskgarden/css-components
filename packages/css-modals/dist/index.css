@@ -132,7 +132,6 @@
   position:absolute;
   top:10px;
   right:20px;
-  -webkit-transition:background-color .1s ease-in-out,background-image .25s ease-in-out;
   transition:background-color .1s ease-in-out,background-image .25s ease-in-out;
   border:none;
   border-radius:50%;

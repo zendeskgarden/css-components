@@ -1,7 +1,7 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length, no-unsupported-browser-features */
+  /* stylelint-disable no-unsupported-browser-features */
   --zd-dialog__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-gainsboro));
   --zd-dialog__close-background:
     no-repeat
@@ -16,7 +16,7 @@
     background-image .25s ease-in-out;
   --zd-dialog__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-dark-gray));
   --zd-dialog__close-focused-background-color: var(--zd-color-platinum);
-  /* stylelint-enable max-line-length, no-unsupported-browser-features */
+  /* stylelint-enable no-unsupported-browser-features */
 }
 
 /* 1. Reset for <button> element.

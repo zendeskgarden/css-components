@@ -1,11 +1,15 @@
 # Modal Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-modals.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-modals)
 
-The `css-modals` package provides styling for dialogs and the associated
-backdrop layouts needed to present a modal dialog treatment.
+The `garden-css-modals` package provides styling for dialogs and the
+associated backdrop layouts needed to present a modal dialog treatment.
 
 ## Installation
 
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-modals.git
+    npm install --save-dev @zendesk/garden-css-modals
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 
@@ -94,3 +98,8 @@ focus and dismissing via escape.
 ## Demo
 
     $ npm start
+
+## Contributing
+
+See [LANDSCAPE
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).

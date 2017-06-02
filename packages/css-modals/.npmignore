@@ -1,5 +1,5 @@
 /demo
 .npmignore
-.postcss.json
+.postcssrc
 .stylelintrc
 .travis.yml
