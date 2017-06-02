@@ -1,10 +1,14 @@
 # Tab Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-tabs.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-tabs)
 
-The `css-tabs` package provides styling for tab components.
+The `garden-css-tabs` package provides styling for tab components.
 
 ## Installation
 
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-tabs.git
+    npm install --save-dev @zendesk/garden-css-tabs
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 
