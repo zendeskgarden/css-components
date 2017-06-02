@@ -1,11 +1,15 @@
 # Label Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-labels.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-labels)
 
-The `css-labels` package provides styling for label components needed to
-support badges, pills, and tags.
+The `garden-css-labels` package provides styling for label components
+needed to support badges, pills, and tags.
 
 ## Installation
 
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-labels.git
+    npm install --save-dev @zendesk/garden-css-labels
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 

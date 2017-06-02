@@ -1,6 +1,5 @@
 .c-label{
   display:inline-block;
-  -webkit-transition:box-shadow .1s ease-in-out;
   transition:box-shadow .1s ease-in-out;
   border:0;
   border-radius:2px;
@@ -10,12 +9,11 @@
   text-decoration:none;
   line-height:1.66667;
   white-space:nowrap;
-  color:#fff;
   font-size:12px;
   font-weight:400;
 }
 
-.c-label:hover{
+.c-label,.c-label:hover{
   color:#fff;
 }
 
@@ -110,7 +108,6 @@
 .c-label__remove{
   display:inline-block;
   float:right;
-  -webkit-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
   opacity:.7;
   margin-right:-10px;

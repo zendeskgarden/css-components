@@ -1,8 +1,7 @@
 /* stylelint-disable no-unsupported-browser-features */
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-label__remove-background-image: svg-load('14-remove.svg', color: var(--zd-label-color));
   --zd-label__remove-background:
     no-repeat
@@ -19,7 +18,6 @@
   --zd-label--sm__remove-background-size: var(--zd-font-size-zeta);
   --zd-label--sm__remove-margin: calc(var(--zd-label__remove-margin) / 2);
   --zd-label--sm__remove-size: 15px;
-  /* stylelint-enable max-line-length */
 }
 
 /* 1. Reset for <button> element.

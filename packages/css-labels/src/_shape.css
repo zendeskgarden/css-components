@@ -1,7 +1,7 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
-  --zd-label--round-min-width: 20px;
+  --zd-label--round-min-width: var(--zd-spacing);
 }
 
 .c-label--pill {

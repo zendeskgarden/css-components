@@ -1,7 +1,6 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-label__avatar-border-radius: var(--zd-label-border-radius);
   --zd-label__avatar-margin-left: -7.9px;
   --zd-label__avatar-margin-right: 5px;
@@ -22,7 +21,6 @@
     var(--zd-label--lg__avatar-margin-vertical)
     var(--zd-label--lg__avatar-margin-left);
   --zd-label--lg__avatar-size: calc(var(--zd-label--lg-height) - (var(--zd-label--lg__avatar-margin-vertical) * 2));
-  /* stylelint-enable max-line-length */
 }
 
 .c-label__avatar {
