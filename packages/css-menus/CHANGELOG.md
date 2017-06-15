@@ -1,6 +1,11 @@
 # Change Log
 
-## [2.3.1] - 2016-01-19
+## [3.0.0] - 2017-06-15
+### Changed (per [#25](https://github.com/zendeskgarden/css-menus/pull/25))
+- Prepared package for registry publish as `@zendesk/garden-css-menus`.
+  See README for updated installation.
+
+## [2.3.1] - 2017-01-19
 ### Fixed (per [#24](https://github.com/zendeskgarden/css-menus/pull/24))
 - Import collisions on `@custom-selector` names.
 
@@ -62,6 +67,7 @@
 
 ## 0.1.0 - 2015-01-15
 
+[3.0.0]: https://github.com/zendeskgarden/css-menus/compare/2.3.1...v3.0.0
 [2.3.1]: https://github.com/zendeskgarden/css-menus/compare/2.3.0...2.3.1
 [2.3.0]: https://github.com/zendeskgarden/css-menus/compare/2.2.1...2.3.0
 [2.2.1]: https://github.com/zendeskgarden/css-menus/compare/2.2.0...2.2.1
