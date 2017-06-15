@@ -1,8 +1,8 @@
-# Menu Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-menus.svg?token=dDt9s6smCMgz269xNbpz)](https://travis-ci.com/zendeskgarden/css-menus)
+# Menu Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-menus.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-menus)
 
-The `css-menus` package is intended to provide consistent menu styling
-for use across Zendesk products. You are expected to use
-[css-arrows](http://garden.zendesk.com/css-arrows/)
+The `garden-css-menus` package is intended to provide consistent menu
+styling for use across Zendesk products. You are expected to use
+[garden-css-arrows](http://garden.zendesk.com/css-arrows/)
 in addition to this package (for the triangle typically found at the top
 of each top-level menu). Applying `.c-menu` and `.c-menu__item` (and
 optionally some additional classes) is all that is needed to use this
@@ -13,7 +13,11 @@ to show and hide the menu itself.
 
 ## Installation
 
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-menus.git
+    npm install --save-dev @zendesk/garden-css-menus
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 

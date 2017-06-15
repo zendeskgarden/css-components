@@ -77,7 +77,6 @@
 .c-menu__item{
   display:block;
   position:relative;
-  -webkit-transition:box-shadow .1s ease-in-out;
   transition:box-shadow .1s ease-in-out;
   z-index:0;
   cursor:pointer;

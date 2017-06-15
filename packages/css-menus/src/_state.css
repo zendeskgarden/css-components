@@ -1,5 +1,5 @@
 /* stylelint-disable no-descending-specificity */
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-menu__item-disabled-color: var(--zd-color-iron);
