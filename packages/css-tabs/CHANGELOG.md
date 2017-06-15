@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.0.0] - 2017-06-15
+### Updated (per [#5](https://github.com/zendeskgarden/css-tabs/pull/5))
+- Prepared package for registry publish as `@zendesk/garden-css-tabs`.
+  See README for updated installation.
+
 ## [2.0.1] - 2017-01-19
 ### Fixed (per [#4](https://github.com/zendeskgarden/css-tabs/pull/4))
 - Prevent `@custom-selector` name collision.
@@ -25,6 +30,7 @@
 
 ## 0.1.0 - 2015-11-24
 
+[3.0.0]: https://github.com/zendeskgarden/css-tabs/compare/2.0.1...v3.0.0
 [2.0.1]: https://github.com/zendeskgarden/css-tabs/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/zendeskgarden/css-tabs/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/zendeskgarden/css-tabs/compare/0.2.0...1.0.0
