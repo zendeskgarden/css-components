@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.0.0] - 2017-06-15
+### Changed (per [#27](https://github.com/zendeskgarden/css-forms/pull/27))
+- Prepared package for registry publish as `@zendesk/garden-css-forms`.
+  See README for updated installation.
+
 ## [1.3.0] - 2017-05-02
 ### Added (per [#24](https://github.com/zendeskgarden/css-forms/pull/24))
 - Validation `.c-chk__message`, `.c-range__message`, and
@@ -88,6 +93,7 @@
 ### Added
 - `.c-chk` component.
 
+[2.0.0]: https://github.com/zendeskgarden/css-forms/compare/1.3.0...v2.0.0
 [1.3.0]: https://github.com/zendeskgarden/css-forms/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/zendeskgarden/css-forms/compare/1.0.1...1.2.0
 [1.0.1]: https://github.com/zendeskgarden/css-forms/compare/1.0.0...1.0.1
