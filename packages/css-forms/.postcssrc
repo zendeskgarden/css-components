@@ -1,10 +1,10 @@
 {
   "plugins": {
     "postcss-import",
-    "postcss-input-range",
+    "sunesimonsen-postcss-input-range",
     "postcss-cssnext",
     "postcss-inline-svg": {
-      "path": "node_modules/zd-svg-icons/src"
+      "path": "node_modules/@zendesk/garden-svg-icons/src"
     },
     "cssnano": {
       "autoprefixer": false,

@@ -1,11 +1,15 @@
 # Forms Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-forms.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-forms)
 
-The `css-forms` package is intended to provide consistent styling for
-form fields used throughout Zendesk products.
+The `garden-css-forms` package is intended to provide consistent styling
+for form fields used throughout Zendesk products.
 
 ## Installation
 
-    $ npm install --save git+ssh://git@github.com:zendeskgarden/css-forms.git
+    npm install --save-dev @zendesk/garden-css-forms
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 

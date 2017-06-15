@@ -1,14 +1,12 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-range--dark-track-background-color: var(--zd-color-algae);
   --zd-range--dark-disabled-lower-background-color: var(--zd-color-breaker-bay);
   --zd-range--dark-disabled-thumb-background-color: var(--zd-range--dark-disabled-lower-background-color);
   --zd-range--dark-disabled-thumb-border-color: var(--zd-range--dark-disabled-thumb-background-color);
   --zd-range--dark-disabled-track-background-color: var(--zd-range--dark-disabled-thumb-background-color);
   --zd-range--dark-disabled-track-background-image: linear-gradient(var(--zd-range--dark-disabled-track-background-color), var(--zd-range--dark-disabled-track-background-color));
-  /* stylelint-enable max-line-length */
 }
 
 /* stylelint-disable selector-pseudo-element-no-unknown */

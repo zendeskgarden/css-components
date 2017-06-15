@@ -1,4 +1,6 @@
-/* stylelint-disable max-line-length, no-unsupported-browser-features */
+/* stylelint-disable no-unsupported-browser-features */
+@import '@zendesk/garden-css-variables';
+
 :root {
   --zd-txt__input--select-padding-right: calc(48 / 14 * 1em);
   --zd-txt__input--select-transition:
@@ -101,6 +103,7 @@ select.c-txt__input--select:-moz-focusring {
   background-position: var(--zd-txt-rtl__input--select__chevron-background-position);
 }
 
+/* stylelint-disable max-line-length */
 .c-txt.is-rtl .c-txt__input--select.is-open.is-open.is-open:not(select)::before {
   transform: var(--zd-txt-rtl__input--select__chevron-transform);
 }

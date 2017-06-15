@@ -1,8 +1,7 @@
 /* stylelint-disable no-unsupported-browser-features */
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-range-margin: calc((var(--zd-range-thumb-size) - var(--zd-range-track-height)) / 2);
   --zd-range-thumb-background-color: var(--zd-color-pelorous);
   --zd-range-thumb-border: 3px solid var(--zd-range-thumb-background-color);
@@ -15,7 +14,6 @@
   --zd-range-track-height: var(--zd-range-track-border-radius);
   --zd-range-track-margin: calc(var(--zd-range-margin) + var(--zd-range-focused-box-shadow-spread-radius)) 0;
   --zd-range-lower-background-color: var(--zd-range-thumb-background-color);
-  /* stylelint-enable max-line-length */
 }
 
 /* 1. Reset for <fieldset> element.

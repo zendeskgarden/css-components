@@ -1,5 +1,4 @@
 :root {
-  /* stylelint-disable max-line-length */
   --zd-chk--toggle-background-color: var(--zd-color-aluminum);
   --zd-chk--toggle-background-image: svg-load('14-circle.svg', color: var(--zd-color-white));
   --zd-chk--toggle-background:
@@ -19,7 +18,6 @@
   --zd-chk--toggle-width: var(--zd-spacing-xl);
   --zd-chk--toggle__label-padding: calc(var(--zd-chk--toggle-width) + var(--zd-spacing-sm));
   --zd-chk--toggle__message-background-position: calc(var(--zd-chk--toggle-width) - var(--zd-font-size-epsilon));
-  /* stylelint-enable max-line-length */
 }
 
 /* stylelint-disable selector-max-specificity */

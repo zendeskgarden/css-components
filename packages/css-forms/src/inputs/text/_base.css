@@ -1,7 +1,6 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-txt__input-background-color: var(--zd-color-white);
   --zd-txt__input-border: 1px solid var(--zd-color-gainsboro);
   --zd-txt__input-border-radius: 4px;
@@ -17,7 +16,6 @@
     box-shadow .1s ease-in-out,
     background-color .25s ease-in-out,
     color .25s ease-in-out;
-  /* stylelint-enable max-line-length */
 }
 
 /* 1. Reset for <fieldset> element.

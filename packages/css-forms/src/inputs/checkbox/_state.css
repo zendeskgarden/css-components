@@ -1,8 +1,7 @@
 /* stylelint-disable no-descending-specificity */
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
-  /* stylelint-disable max-line-length */
   --zd-chk-active-background-color: color(var(--zd-color-black) alpha(5%));
   --zd-chk-active-border-color: var(--zd-color-pelorous);
   --zd-chk-active-transition:
@@ -25,7 +24,6 @@
     0 0 0 3px
     color(var(--zd-chk-focused-border-color) alpha(40%));
   --zd-chk-hovered-border-color: var(--zd-chk-focused-border-color);
-  /* stylelint-enable max-line-length */
 }
 
 /* 1. No `.c-chk__input:focus` styling, since it prevents mimicking

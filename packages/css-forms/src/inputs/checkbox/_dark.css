@@ -1,4 +1,4 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 /* stylelint-disable */
 @svg-load circle url('14-circle.svg') {

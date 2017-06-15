@@ -1,5 +1,4 @@
-/* stylelint-disable max-line-length */
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-txt--dark-disabled-background-color: var(--zd-color-submarine);
@@ -53,4 +52,4 @@
 .c-txt--dark select.c-txt__input--select[disabled] {
   background-image: var(--zd-txt--dark__input--select-disabled-background-image);
 }
-/* stylelint-enable max-line-length, selector-no-qualifying-type */
+/* stylelint-enable selector-no-qualifying-type */
