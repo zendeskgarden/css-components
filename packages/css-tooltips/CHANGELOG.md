@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.0.0] - 2017-06-16
+### Changed (per [#7](https://github.com/zendeskgarden/css-tooltips/pull/7))
+- Prepared package for registry publish as `@zendesk/garden-css-tooltips`.
+  See README for updated installation.
+
 ## [1.1.1] - 2017-03-30
 ### Changed
 - [#4](https://github.com/zendeskgarden/css-tooltips/issues/4) Prevent
@@ -19,6 +24,7 @@
 
 ## 0.1.0 - 2016-08-17
 
+[2.0.0]: https://github.com/zendeskgarden/css-tooltips/compare/1.1.1...v2.0.0
 [1.1.1]: https://github.com/zendeskgarden/css-tooltips/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/zendeskgarden/css-tooltips/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/zendeskgarden/css-tooltips/compare/0.1.0...1.0.0
