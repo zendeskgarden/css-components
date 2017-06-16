@@ -67,6 +67,11 @@
   background-color: var(--zd-chk--toggle-disabled-background-color);
 }
 
+.c-chk--toggle.c-chk--nolabel .c-chk__label {
+  padding-left: var(--zd-chk--toggle-width);
+  vertical-align: top;
+}
+
 /* stylelint-disable selector-max-specificity */
 .c-chk--toggle.is-rtl .c-chk__label,
 .c-chk--toggle.is-rtl .c-chk__hint,
@@ -83,6 +88,10 @@
 .c-chk--toggle.is-rtl.has-success .c-chk__message.c-chk__message,
 .c-chk--toggle.is-rtl.has-warning .c-chk__message.c-chk__message {
   background-position: calc(100% - var(--zd-chk--toggle__message-background-position));
+}
+
+.c-chk--toggle.c-chk--nolabel.is-rtl .c-chk__label {
+  padding-right: var(--zd-chk--toggle-width);
 }
 /* stylelint-enable selector-max-specificity */
 

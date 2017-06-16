@@ -16,7 +16,8 @@
 
 /* 1. Reset for <fieldset> element.
    2. Hide <input type="checkbox"> but retain accessibility.
-   3. Vertical centering. */
+   3. Vertical centering.
+   4. Override `.c-chk--nolabel`. */
 
 .c-chk {
   position: relative;
@@ -57,6 +58,7 @@
   top: 50%; /* [3] */
   left: 0;
   transition: var(--zd-chk-transition);
+  visibility: visible; /* [4] */
   margin-top: calc(var(--zd-chk-size) / 2 * -1); /* [3] */
   border: var(--zd-chk-border);
   border-radius: var(--zd-chk-border-radius);
@@ -66,6 +68,12 @@
   box-sizing: border-box;
   color: inherit;
   content: '';
+}
+
+.c-chk--nolabel .c-chk__label {
+  display: inline-block;
+  visibility: hidden;
+  padding-left: var(--zd-chk-size);
 }
 
 .c-chk.is-rtl {
@@ -83,6 +91,10 @@
   padding-left: 0;
 }
 /* stylelint-enable selector-max-specificity */
+
+.c-chk--nolabel.is-rtl .c-chk__label {
+  padding-right: var(--zd-chk-size);
+}
 
 .c-chk.is-rtl .c-chk__label::before {
   right: 0;

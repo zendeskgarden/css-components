@@ -113,6 +113,7 @@
             </fieldset>
           </div>
         </div>
+        <h3 class="u-beta u-mb">Alternatives</h3>
         <p class="u-mb">When checkboxes are grouped or muted, the label style
         may be overriden in order to logically display under a label
         heading.  The element labels below are styled by applying
@@ -153,6 +154,36 @@
             <fieldset class="c-chk c-chk--radio">
               <input class="c-chk__input" id="rdo-03" name="rdo-0" type="radio">
               <label class="c-chk__label c-chk__hint" for="rdo-03">Three</label>
+            </fieldset>
+          </div>
+        </div>
+        <p class="u-mb">Apply <code class="c-code">.c-chk.c-chk--nolabel</code>
+        for standalone checkbox and toggle layouts. Note the basic component
+        structure (including an empty <code class="c-code">.c-chk__label</code>
+        child element is required in order to render the control.</p>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/3">
+            <legend class="u-delta u-mb-sm">.c-chk.c-chk--nolabel</legend>
+            <fieldset class="c-chk c-chk--nolabel">
+              <input class="c-chk__input" id="chk-nolabel" type="checkbox">
+              <label class="c-chk__label" for="chk-nolabel"></label
+              ><code class="c-code" dir="ltr">nolabel</code>
+            </fieldset>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <legend class="u-delta u-mb-sm">.c-chk.c-chk--nolabel.c-chk--toggle</legend>
+            <fieldset class="c-chk c-chk--nolabel c-chk--toggle">
+              <input class="c-chk__input" id="tgl-nolabel" type="checkbox">
+              <label class="c-chk__label" for="tgl-nolabel"></label
+              ><code class="c-code">nolabel</code>
+            </fieldset>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <legend class="u-delta u-mb-sm">.c-chk.c-chk--nolabel.c-chk--radio</legend>
+            <fieldset class="c-chk c-chk--nolabel c-chk--radio">
+              <input class="c-chk__input" id="rdo-nolabel" type="radio">
+              <label class="c-chk__label" for="rdo-nolabel"></label
+              ><code class="c-code">nolabel</code>
             </fieldset>
           </div>
         </div>
