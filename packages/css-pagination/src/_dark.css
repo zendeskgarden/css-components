@@ -1,3 +1,5 @@
+@import '@zendesk/garden-css-variables';
+
 :root {
   --zd-pagination--dark__page-color: var(--zd-color-submarine);
   --zd-pagination--dark__page-active-background-color: var(--zd-color-sherpa-blue);

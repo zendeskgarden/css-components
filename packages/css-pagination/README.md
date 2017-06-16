@@ -1,11 +1,15 @@
 # Pagination Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-pagination.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-pagination)
 
-The `css-pagination` package provides component styling for page
+The `garden-css-pagination` package provides component styling for page
 navigation.
 
 ## Installation
 
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-pagination.git
+    $ npm install --save-dev @zendesk/garden-css-pagination
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 
