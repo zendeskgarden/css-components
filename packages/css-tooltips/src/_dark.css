@@ -1,4 +1,4 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-tooltip--dark-background-color: var(--zd-color-algae);

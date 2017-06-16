@@ -1,10 +1,15 @@
 # Tooltip Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-tooltips.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-tooltips)
 
-The `css-tooltips` package contains styling for various `.c-tooltip` treatments.
+The `garden-css-tooltips` package contains styling for various
+`.c-tooltip` treatments.
 
 ## Installation
 
-    $ npm install --save-dev git+ssh://git@github.com:zendeskgarden/css-tooltips.git
+    $ npm install --save-dev @zendesk/garden-css-tooltips
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 
