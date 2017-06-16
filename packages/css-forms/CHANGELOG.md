@@ -1,5 +1,9 @@
 # Change Log
 
+## [2.1.0] - 2017-06-16
+### Added (per [#28](https://github.com/zendeskgarden/css-forms/pull/28))
+- `.c-chk.c-chk--nolabel` for standalone checkbox support.
+
 ## [2.0.0] - 2017-06-15
 ### Changed (per [#27](https://github.com/zendeskgarden/css-forms/pull/27))
 - Prepared package for registry publish as `@zendesk/garden-css-forms`.
@@ -93,6 +97,7 @@
 ### Added
 - `.c-chk` component.
 
+[2.1.0]: https://github.com/zendeskgarden/css-forms/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/zendeskgarden/css-forms/compare/1.3.0...v2.0.0
 [1.3.0]: https://github.com/zendeskgarden/css-forms/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/zendeskgarden/css-forms/compare/1.0.1...1.2.0
