@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.0.0] - 2017-06-20
+### Changed (per [#20](https://github.com/zendeskgarden/css-bedrock/pull/20))
+- Prepared package for registry publish as
+  `@zendesk/garden-css-bedrock`. See README for updated installation.
+
 ## [2.0.1] - 2017-05-17
 ### Changed (per [#19](https://github.com/zendeskgarden/css-bedrock/pull/19))
 - Updated default system and monospace font stacks via latest
@@ -68,6 +73,7 @@
 
 ## 0.0.1 - 2015-12-21
 
+[3.0.0]: https://github.com/zendeskgarden/css-bedrock/compare/2.0.1...v3.0.0
 [2.0.1]: https://github.com/zendeskgarden/css-bedrock/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/zendeskgarden/css-bedrock/compare/1.1.0...2.0.0
 [1.1.0]: https://github.com/zendeskgarden/css-bedrock/compare/1.0.1...1.1.0
