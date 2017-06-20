@@ -1,5 +1,5 @@
 @import 'normalize.css';
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-anchor-color: var(--zd-color-pelorous);
@@ -59,12 +59,16 @@ a:focus {
 
 a:focus:active { text-decoration: none; }
 
-body,
-button { margin: 0; }
-
 button {
   cursor: pointer;
   padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
   line-height: inherit;
   font-family: inherit;
 }
@@ -110,11 +114,6 @@ hr {
   border: none;
   border-top: 1px solid;
 }
-
-input,
-optgroup,
-select,
-textarea { margin: 0; }
 
 ol,
 ul { list-style: none; }
