@@ -1,10 +1,14 @@
 # Avatar Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-avatars.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-avatars)
 
-The `css-avatars` component contains basic `.c-avatar` styling.
+The `garden-css-avatars` component contains basic `.c-avatar` styling.
 
 ## Installation
 
-    $ npm install --save git+ssh://git@github.com:zendeskgarden/css-avatars.git
+    $ npm install --save-dev @zendesk/garden-css-avatars
+
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 
@@ -33,3 +37,8 @@ classes.
 ## Demo
 
     $ npm start
+
+## Contributing
+
+See [LANDSCAPE
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).

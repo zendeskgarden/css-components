@@ -1,6 +1,5 @@
 .c-avatar{
   display:inline-block;
-  -webkit-transition:background-color .3s;
   transition:background-color .3s;
   border:1px solid transparent;
   border-radius:50%;
@@ -10,7 +9,6 @@
 }
 
 .c-avatar>img,.c-avatar__img{
-  -webkit-transition:all .3s;
   transition:all .3s;
   border:1px solid #ddd;
   border-radius:50%;

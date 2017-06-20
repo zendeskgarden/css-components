@@ -1,6 +1,6 @@
-@import 'zd-css-variables';
+@import '@zendesk/garden-css-variables';
 
-/* stylelint-disable max-line-length, no-unsupported-browser-features */
+/* stylelint-disable no-unsupported-browser-features */
 :root {
   --zd-avatar-active-background-color: var(--zd-color-malibu);
   --zd-avatar-in-background-color: var(--zd-color-apple-green);
@@ -32,7 +32,7 @@
 }
 
 /* stylelint-disable declaration-block-no-duplicate-properties,
-                     declaration-block-properties-order,
+                     order/properties-order,
                      color-named,
                      property-no-vendor-prefix,
                      no-unsupported-browser-features */
