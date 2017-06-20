@@ -15,6 +15,6 @@
 
 ## 0.1.0 - 2016-01-06
 
-[1.0.0]: https://github.com/zendeskgarden/css-avatars/compare/0.2.0...1.0.0
+[1.0.0]: https://github.com/zendeskgarden/css-avatars/compare/0.2.0...v1.0.0
 [0.2.0]: https://github.com/zendeskgarden/css-avatars/compare/0.1.1...0.2.0
 [0.1.1]: https://github.com/zendeskgarden/css-avatars/compare/0.1.0...0.1.1
