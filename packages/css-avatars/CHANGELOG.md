@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.1] - 2017-06-21
+### Fixed (per [#7](https://github.com/zendeskgarden/css-avatars/pull/7))
+- Correct package name to be `@zendesk/garden-css-avatars`.
+
 ## [1.0.0] - 2017-06-20
 ### Changed (per [#6](https://github.com/zendeskgarden/css-avatars/pull/6))
 - Prepared package for registry publish as
