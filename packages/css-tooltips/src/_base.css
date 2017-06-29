@@ -52,9 +52,9 @@
   border-radius: var(--zd-tooltip--extra-large-border-radius);
   padding: var(--zd-tooltip--extra-large-padding);
   max-width: var(--zd-tooltip--extra-large-max-width);
+  overflow-wrap: break-word;
   white-space: normal;
   font-size: var(--zd-tooltip--extra-large-font-size);
-  word-break: break-all;
 }
 
 .c-tooltip--extra-large.c-arrow::before,
@@ -66,9 +66,9 @@
   border-radius: var(--zd-tooltip--large-border-radius);
   padding: var(--zd-tooltip--large-padding);
   max-width: var(--zd-tooltip--large-max-width);
+  overflow-wrap: break-word;
   white-space: normal;
   font-size: var(--zd-tooltip--large-font-size);
-  word-break: break-all;
 }
 
 .c-tooltip--large.c-arrow::before,
@@ -81,6 +81,6 @@
   padding-top: var(--zd-tooltip--medium-padding-vertical);
   padding-bottom: var(--zd-tooltip--medium-padding-vertical);
   max-width: var(--zd-tooltip--medium-max-width);
+  overflow-wrap: break-word;
   white-space: normal;
-  word-break: break-all;
 }

@@ -20,9 +20,9 @@
   border-radius:4px;
   padding:40px;
   max-width:460px;
+  word-wrap:break-word;
   white-space:normal;
   font-size:14px;
-  word-break:break-all;
 }
 
 .c-tooltip--extra-large.c-arrow:after,.c-tooltip--extra-large.c-arrow:before{
@@ -33,9 +33,9 @@
   border-radius:4px;
   padding:20px;
   max-width:270px;
+  word-wrap:break-word;
   white-space:normal;
   font-size:14px;
-  word-break:break-all;
 }
 
 .c-tooltip--large.c-arrow:after,.c-tooltip--large.c-arrow:before{
@@ -47,8 +47,8 @@
   padding-top:.83333em;
   padding-bottom:.83333em;
   max-width:140px;
+  word-wrap:break-word;
   white-space:normal;
-  word-break:break-all;
 }
 
 .c-tooltip--light{
