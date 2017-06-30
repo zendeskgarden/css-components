@@ -1,6 +1,6 @@
 {
   "name": "@zendesk/garden-css-tooltips",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "repository": "zendeskgarden/css-tooltips",
   "license": "UNLICENSED",
   "publishConfig": {
