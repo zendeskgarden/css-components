@@ -1,0 +1,9 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-callout-padding: var(--zd-spacing) var(--zd-spacing-xl);
+}
+
+.c-callout {
+  padding: var(--zd-callout-padding);
+}
