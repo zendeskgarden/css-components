@@ -1,7 +1,7 @@
 {
   "plugins": {
     "postcss-import",
-    "sunesimonsen-postcss-input-range",
+    "postcss-input-range",
     "postcss-cssnext",
     "postcss-inline-svg": {
       "path": "node_modules/@zendesk/garden-svg-icons/src"

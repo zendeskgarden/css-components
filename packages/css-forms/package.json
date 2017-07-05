@@ -11,7 +11,7 @@
   "devDependencies": {
     "@zendesk/garden-css-variables": "^2.0.0",
     "@zendesk/garden-stylelint-config": "^5.0.0",
-    "@zendesk/garden-svg-icons": "^2.0.0",
+    "@zendesk/garden-svg-icons": "^2.1.0",
     "cssnano": "^3.10.0",
     "gh-pages": "^1.0.0",
     "live-server": "^1.2.0",
@@ -19,10 +19,10 @@
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",
     "postcss-inline-svg": "^3.0.0",
+    "postcss-input-range": "^4.0.0",
     "pre-commit": "^1.2.2",
     "stylelint": "^7.10.1",
-    "stylelint-order": "^0.4.4",
-    "sunesimonsen-postcss-input-range": "^2.1.0"
+    "stylelint-order": "^0.4.4"
   },
   "scripts": {
     "build": "postcss src/index.css --output dist/index.css",
