@@ -1,0 +1,32 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-callout--error-background-color: color(var(--zd-callout--error-color) alpha(10%));
+  --zd-callout--error-color: var(--zd-color-flamingo);
+  --zd-callout--recessed-background-color: var(--zd-color-snow);
+  --zd-callout--recessed-border-color: var(--zd-color-gainsboro);
+  --zd-callout--success-background-color: color(var(--zd-callout--success-color) alpha(10%));
+  --zd-callout--success-color: var(--zd-color-chateau-green);
+  --zd-callout--warning-background-color: color(var(--zd-callout--warning-color) alpha(10%));
+  --zd-callout--warning-color: var(--zd-color-marigold);
+}
+
+.c-callout--recessed {
+  border-color: var(--zd-callout--recessed-border-color);
+  background-color: var(--zd-callout--recessed-background-color);
+}
+
+.c-callout--error {
+  border-color: var(--zd-callout--error-color);
+  background-color: var(--zd-callout--error-background-color);
+}
+
+.c-callout--success {
+  border-color: var(--zd-callout--success-color);
+  background-color: var(--zd-callout--success-background-color);
+}
+
+.c-callout--warning {
+  border-color: var(--zd-callout--warning-color);
+  background-color: var(--zd-callout--warning-background-color);
+}

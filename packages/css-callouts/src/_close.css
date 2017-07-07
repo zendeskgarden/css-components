@@ -1,0 +1,67 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-callout__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-silver-sand));
+  --zd-callout__close-background:
+    no-repeat
+    center/var(--zd-font-size-epsilon)
+    var(--zd-callout__close-background-image)
+    transparent; /* [1] */
+  --zd-callout__close-position: var(--zd-spacing-xs);
+  --zd-callout__close-size: var(--zd-spacing);
+  --zd-callout__close-transition:
+    background-color .1s ease-in-out,
+    background-image .25s ease-in-out;
+  --zd-callout__close-focused-background-color: color(var(--zd-color-black) alpha(7%));
+  --zd-callout__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-dark-gray));
+}
+
+/* 1. Reset for <button> element.
+ * 2. Reset for <a>nchor element. */
+
+.c-callout__close {
+  display: block;
+  position: absolute;
+  top: var(--zd-callout__close-position);
+  right: var(--zd-callout__close-position);
+  transition: var(--zd-callout__close-transition);
+  border: none; /* [1] */
+  border-radius: 50%;
+  background: var(--zd-callout__close-background);
+  cursor: pointer;
+  width: var(--zd-callout__close-size);
+  height: var(--zd-callout__close-size);
+  overflow: hidden;
+  text-decoration: none; /* [2] */
+  font-size: 0; /* [2] */
+  user-select: none;
+}
+
+@custom-selector :--callout-hovered
+  .is-hovered,
+  .is-focused,
+  :hover,
+  :focus;
+
+.c-callout__close:--callout-hovered {
+  background-image: var(--zd-callout__close-hovered-background-image);
+}
+
+@custom-selector :--callout-focused
+  .is-focused,
+  :focus;
+
+.c-callout__close:--callout-focused {
+  outline: none;
+  background-color: var(--zd-callout__close-focused-background-color);
+}
+
+@custom-selector :--callout-active
+  .is-active,
+  :active;
+
+/* stylelint-disable selector-max-specificity */
+.c-callout .c-callout__close.c-callout__close:--callout-active {
+  background-color: transparent;
+}
+/* stylelint-enable selector-max-specificity */
