@@ -36,7 +36,7 @@
 
 .c-callout--dark.c-callout--recessed {
   border-color: var(--zd-callout--dark--recessed-border-color);
-  background-color: var(--zd-callout--dark--rececessed-background-color);
+  background-color: var(--zd-callout--dark--recessed-background-color);
 }
 
 .c-callout--dark.c-callout--recessed.c-callout--error {

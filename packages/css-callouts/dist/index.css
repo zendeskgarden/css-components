@@ -20,6 +20,10 @@
   margin:10px 0 0;
 }
 
+.c-callout.is-rtl{
+  direction:rtl;
+}
+
 .c-callout__close{
   display:block;
   position:absolute;
@@ -79,8 +83,14 @@
 
 .c-callout--error,.c-callout--success,.c-callout--warning{
   background-repeat:no-repeat;
-  background-position:20px 22px;
+  background-position:20px 23px;
   padding-left:50px;
+}
+
+.c-callout--error.is-rtl,.c-callout--success.is-rtl,.c-callout--warning.is-rtl{
+  background-position:calc(100% - 20px) 23px;
+  padding-right:50px;
+  padding-left:40px;
 }
 
 .c-callout--dark{
@@ -107,7 +117,7 @@
 
 .c-callout--dark.c-callout--recessed{
   border-color:#04444d;
-  background-color:var(--zd-callout--dark--rececessed-background-color);
+  background-color:#012b30;
 }
 
 .c-callout--dark.c-callout--recessed.c-callout--error{

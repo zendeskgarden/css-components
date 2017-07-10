@@ -13,7 +13,19 @@ for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
 
-[TODO]
+Callout CSS is intended to provide styling for the following HTML.
+
+```html
+<div class="c-callout">
+  <strong class="c-callout__title">Callout Title</strong>
+  <p class="c-callout__paragraph">Callout body text...</p>
+</div>
+```
+
+### Modifications
+
+See https://zendeskgarden.github.io/css-callouts/ for various callout
+modification classes.
 
 ## Tests
 

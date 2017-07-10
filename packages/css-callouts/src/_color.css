@@ -2,7 +2,10 @@
 
 :root {
   --zd-callout--alert-padding: 50px;
-  --zd-callout--alert-background-position: var(--zd-spacing) calc(var(--zd-spacing) + 2);
+  --zd-callout--alert-background-position-x: var(--zd-spacing);
+  --zd-callout--alert-background-position-y: calc(var(--zd-spacing) + 3);
+  --zd-callout--alert-background-position: var(--zd-callout--alert-background-position-x) var(--zd-callout--alert-background-position-y);
+  --zd-callout--alert-background-position-rtl: calc(100% - var(--zd-callout--alert-background-position-x)) var(--zd-callout--alert-background-position-y);
   --zd-callout--error-background-color: color(var(--zd-callout--error-color) alpha(10%));
   --zd-callout--error-background-image: svg-load('14-error-fill.svg', color: var(--zd-callout--error-color));
   --zd-callout--error-color: var(--zd-color-flamingo);
@@ -45,4 +48,12 @@
   background-repeat: no-repeat;
   background-position: var(--zd-callout--alert-background-position);
   padding-left: var(--zd-callout--alert-padding);
+}
+
+.c-callout--error.is-rtl,
+.c-callout--success.is-rtl,
+.c-callout--warning.is-rtl {
+  background-position: var(--zd-callout--alert-background-position-rtl);
+  padding-right: var(--zd-callout--alert-padding);
+  padding-left: var(--zd-callout-padding-horizontal);
 }
