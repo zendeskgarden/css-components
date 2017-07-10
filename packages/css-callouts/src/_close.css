@@ -65,3 +65,8 @@
   background-color: transparent;
 }
 /* stylelint-enable selector-max-specificity */
+
+.c-callout.is-rtl .c-callout__close {
+  right: auto;
+  left: var(--zd-callout__close-position);
+}

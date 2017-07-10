@@ -17,6 +17,7 @@ Callout CSS is intended to provide styling for the following HTML.
 
 ```html
 <div class="c-callout">
+  <button aria-label="close callout" class="c-callout__close">Optional Close Icon</button>
   <strong class="c-callout__title">Callout Title</strong>
   <p class="c-callout__paragraph">Callout body text...</p>
 </div>

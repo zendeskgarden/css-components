@@ -58,6 +58,11 @@
   background-color:transparent;
 }
 
+.c-callout.is-rtl .c-callout__close{
+  right:auto;
+  left:5px;
+}
+
 .c-callout--recessed{
   border-color:#ddd;
   background-color:#fbfbfb;
