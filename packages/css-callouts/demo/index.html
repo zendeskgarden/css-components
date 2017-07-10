@@ -5,6 +5,16 @@
   <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
   <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <style>
+  .c-callout {
+    transition:
+      border-color ease-in-out .25s,
+      background-color ease-in-out .25s;
+  }
+
+  .c-callout__paragraph,
+  .c-callout__title { transition: color ease-in-out .25s; }
+  </style>
 </head>
 <body>
   <header class="c-header">
@@ -32,22 +42,137 @@
     <h1 class="c-main__title">Callouts</h1>
     <div class="c-main__body">
       <div class="u-mb-lg">
-        <div class="c-callout">
-          <strong class="c-callout__title">Callout Title</strong>
-          Chicharrones brooklyn cardigan marfa pour-over
-          craft beer dreamcatcher cold-pressed brunch meggings. Live-edge disrupt
-          narwhal irony neutra single-origin coffee, biodiesel before they sold
-          out roof party venmo farm-to-table direct trade poke tousled aesthetic.
-          Prism dreamcatcher glossier cloud bread blue bottle farm-to-table celiac
-          chicharrones single-origin coffee salvia knausgaard raclette. Biodiesel
-          asymmetrical lumbersexual venmo gochujang, swag enamel pin mumblecore
-          DIY.</div>
+        <p class="u-mb">The <code class="c-code">.c-callout</code> component
+        provides consistent styling for callouts, wells, and alerts. The
+        callout expands to the width of it's parent block and may contain
+        <code class="c-code">.c-callout__title</code> and
+        <code class="c-code">.c-callout__paragraph</code> child elements.
+        Callout body text should only receive paragraph styling when it wraps
+        to multiple lines.</p>
+        <div class="l-grid">
+          <div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout">
+              <strong class="c-callout__title">Callout: Standard (Multi-line)</strong>
+              <p class="c-callout__paragraph">Chicharrones brooklyn cardigan marfa
+              pour-over craft beer dreamcatcher cold-pressed brunch meggings.
+              Live-edge disrupt narwhal irony neutra single-origin coffee,
+              biodiesel before they sold out roof party venmo farm-to-table direct
+              trade poke tousled aesthetic.  Prism dreamcatcher glossier cloud
+              bread blue bottle farm-to-table celiac chicharrones single-origin
+              coffee salvia knausgaard raclette.</p>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout c-callout--recessed">
+              <strong class="c-callout__title">Callout: Recessed (Multi-line)</strong>
+              <p class="c-callout__paragraph">Chicharrones brooklyn cardigan marfa
+              pour-over craft beer dreamcatcher cold-pressed brunch meggings.
+              Live-edge disrupt narwhal irony neutra single-origin coffee,
+              biodiesel before they sold out roof party venmo farm-to-table direct
+              trade poke tousled aesthetic.  Prism dreamcatcher glossier cloud
+              bread blue bottle farm-to-table celiac chicharrones single-origin
+              coffee salvia knausgaard raclette.</p>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout">
+              <strong class="c-callout__title">Callout: Standard (One-line)</strong>
+              <p>Paleo gochujang heirloom salvia subway tile letterpress retro.</p>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout c-callout--recessed">
+              <strong class="c-callout__title">Callout: Recessed (One-line)</strong>
+              <p>Paleo gochujang heirloom salvia subway tile letterpress retro.</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="u-gamma u-mb-sm">Alert Modifications</h2>
+        <div class="l-grid">
+          <div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout c-callout--success">
+              <strong class="c-callout__title">Success Callout: Standard</strong>
+              <p class="c-callout__paragraph">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Morbi scelerisque sapien quis purus
+              tincidunt ultrices. Morbi rutrum, tellus et viverra tincidunt,
+              diam ipsum laoreet risus, non tempus ligula arcu eget mi.</p>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout c-callout--recessed c-callout--success">
+              <strong class="c-callout__title">Success Callout: Recessed</strong>
+              <p class="c-callout__paragraph">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Morbi scelerisque sapien quis purus
+              tincidunt ultrices. Morbi rutrum, tellus et viverra tincidunt,
+              diam ipsum laoreet risus, non tempus ligula arcu eget mi.</p>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout c-callout--warning">
+              <strong class="c-callout__title">Warning Callout: Standard</strong>
+              <p class="c-callout__paragraph">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Morbi scelerisque sapien quis purus
+              tincidunt ultrices. Morbi rutrum, tellus et viverra tincidunt,
+              diam ipsum laoreet risus, non tempus ligula arcu eget mi.</p>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout c-callout--recessed c-callout--warning">
+              <strong class="c-callout__title">Warning Callout: Recessed</strong>
+              <p class="c-callout__paragraph">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Morbi scelerisque sapien quis purus
+              tincidunt ultrices. Morbi rutrum, tellus et viverra tincidunt,
+              diam ipsum laoreet risus, non tempus ligula arcu eget mi.</p>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout c-callout--error">
+              <strong class="c-callout__title">Error Callout: Standard</strong>
+              <p class="c-callout__paragraph">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Morbi scelerisque sapien quis purus
+              tincidunt ultrices. Morbi rutrum, tellus et viverra tincidunt,
+              diam ipsum laoreet risus, non tempus ligula arcu eget mi.</p>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/2 u-mb">
+            <div class="c-callout c-callout--recessed c-callout--error">
+              <strong class="c-callout__title">Error Callout: Recessed</strong>
+              <p class="c-callout__paragraph">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Morbi scelerisque sapien quis purus
+              tincidunt ultrices. Morbi rutrum, tellus et viverra tincidunt,
+              diam ipsum laoreet risus, non tempus ligula arcu eget mi.</p>
+            </div>
+          </div>
+        </div>
       </div>
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-          <textarea class="c-playground__code"><div class="c-callout">Hello World!</div></textarea>
+<textarea class="c-playground__code"><div class="c-callout c-callout--recessed">
+  <strong class="c-callout__title">Callout Title</strong>
+  <p class="c-callout__paragraph">Taxidermy tousled listicle tilde. Tattooed
+  pork belly gochujang, skateboard iceland portland man braid paleo letterpress
+  normcore yuccie poke wayfarers photo booth vegan. Meggings seitan narwhal
+  pop-up echo park salvia ennui messenger bag PBR&B cold-pressed. Next level
+  ennui four dollar toast yr edison bulb single-origin coffee godard hexagon
+  locavore literally cray hella whatever.</p>
+  <p class="c-callout__paragraph">Chicharrones af try-hard, mlkshk lo-fi meh
+  art party street art. Chillwave tilde glossier subway tile try-hard
+  helvetica. Dreamcatcher ennui ethical PBR&B chartreuse kitsch. Ugh
+  gluten-free ramps, farm-to-table 3 wolf moon echo park live-edge artisan
+  adaptogen. Green juice tofu live-edge, unicorn locavore literally twee
+  gluten-free vaporware. Tattooed af 8-bit, scenester shoreditch chillwave
+  ennui beard bushwick austin salvia brunch.</p>
+  <p class="c-callout__paragraph">Echo park fixie sriracha, chillwave 3 wolf
+  moon edison bulb sustainable blue bottle. Selfies cornhole echo park
+  try-hard. Poutine godard food truck pabst williamsburg cornhole mlkshk vape.
+  Craft beer VHS bushwick swag, palo santo hashtag cronut hammock venmo. Marfa
+  kale chips taiyaki edison bulb art party unicorn keffiyeh next level copper
+  mug disrupt photo booth leggings. Meh helvetica four loko truffaut bicycle
+  rights brooklyn four dollar toast affogato slow-carb selfies authentic
+  salvia.</p>
+</div></textarea>
         </div>
       </section>
     </div>
