@@ -4,11 +4,11 @@
   --zd-callout__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-silver-sand));
   --zd-callout__close-background:
     no-repeat
-    center/var(--zd-font-size-epsilon)
+    center/var(--zd-font-size-gamma)
     var(--zd-callout__close-background-image)
     transparent; /* [1] */
-  --zd-callout__close-position: var(--zd-spacing-xs);
-  --zd-callout__close-size: var(--zd-spacing);
+  --zd-callout__close-position: 4px;
+  --zd-callout__close-size: var(--zd-font-size-mega);
   --zd-callout__close-transition:
     background-color .1s ease-in-out,
     background-image .25s ease-in-out;
