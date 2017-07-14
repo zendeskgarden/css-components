@@ -23,7 +23,7 @@
     "watch": "^1.0.2"
   },
   "scripts": {
-    "_eslint": "eslint dist/index.js",
+    "_eslint": "eslint dist/index.js dist/module.js",
     "_jsonlint": "jsonlint dist/index.json -q",
     "_stylelint": "stylelint dist/index.css",
     "build": "node build",

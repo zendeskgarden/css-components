@@ -64,6 +64,7 @@ postcss([cssnano])
       });
     });
 
+    const module = 'const values = {\n  ' + js.join(',\n  ') + '\n};\n\nexport default values;\n';
     js = 'module.exports = {\n  ' + js.join(',\n  ') + '\n};\n';
     json = '{\n  ' + json.join(',\n  ') + '\n}\n';
     scss = scss.join('\n') + '\n';
@@ -74,4 +75,5 @@ postcss([cssnano])
     fs.writeFileSync(path.join(destination, 'index.js'), js, 'utf8');
     fs.writeFileSync(path.join(destination, 'index.json'), json, 'utf8');
     fs.writeFileSync(path.join(destination, 'index.scss'), scss, 'utf8');
+    fs.writeFileSync(path.join(destination, 'module.js'), module, 'utf-8');
   });
