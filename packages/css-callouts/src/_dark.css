@@ -4,6 +4,9 @@
   --zd-callout--dark-background-color: var(--zd-color-algae);
   --zd-callout--dark-border-color: transparent;
   --zd-callout--dark-color: var(--zd-color-submarine);
+  --zd-callout--dark--dialog-box-shadow:
+    0 var(--zd-spacing) var(--zd-spacing-lg) 0
+    color(var(--zd-color-black) alpha(15%));
   --zd-callout--dark--recessed-background-color: var(--zd-color-daintree);
   --zd-callout--dark--recessed-border-color: var(--zd-color-sherpa-blue);
   --zd-callout--dark__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-breaker-bay));
@@ -12,7 +15,8 @@
   --zd-callout--dark__title-color: var(--zd-color-white);
 }
 
-.c-callout--dark {
+.c-callout--dark,
+.c-callout--dark.c-callout--dialog {
   border-color: var(--zd-callout--dark-border-color);
   background-color: var(--zd-callout--dark-background-color);
   color: var(--zd-callout--dark-color);
@@ -32,6 +36,10 @@
 
 .c-callout--dark .c-callout__title {
   color: var(--zd-callout--dark__title-color);
+}
+
+.c-callout--dark.c-callout--dialog {
+  box-shadow: var(--zd-callout--dark--dialog-box-shadow);
 }
 
 .c-callout--dark.c-callout--recessed {

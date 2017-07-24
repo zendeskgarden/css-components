@@ -92,13 +92,30 @@
   padding-left:50px;
 }
 
+.c-callout--dialog{
+  border-color:#eee;
+  box-shadow:0 20px 30px 0 rgba(36,83,107,.15);
+}
+
+.c-callout--dialog.c-callout--error,.c-callout--dialog.c-callout--success,.c-callout--dialog.c-callout--warning{
+  background-color:#fff;
+}
+
+.c-callout--dialog.c-callout--error .c-callout__title{
+  color:#eb6651;
+}
+
+.c-callout--dialog.c-callout--success .c-callout__title{
+  color:#16ba52;
+}
+
 .c-callout--error.is-rtl,.c-callout--success.is-rtl,.c-callout--warning.is-rtl{
   background-position:calc(100% - 20px) 23px;
   padding-right:50px;
   padding-left:40px;
 }
 
-.c-callout--dark{
+.c-callout--dark,.c-callout--dark.c-callout--dialog{
   border-color:transparent;
   background-color:#03363d;
   color:#819a9e;
@@ -118,6 +135,10 @@
 
 .c-callout--dark .c-callout__title{
   color:#fff;
+}
+
+.c-callout--dark.c-callout--dialog{
+  box-shadow:0 20px 30px 0 rgba(0,0,0,.15);
 }
 
 .c-callout--dark.c-callout--recessed{
