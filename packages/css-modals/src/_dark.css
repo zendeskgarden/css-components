@@ -26,11 +26,11 @@
   color: var(--zd-dialog--dark__body-color);
 }
 
-.c-dialog--dark .c-dialog__close {
+.c-dialog--dark .c-dialog__close::before {
   background-image: var(--zd-dialog--dark__close-background-image);
 }
 
-.c-dialog--dark .c-dialog__close:--hovered {
+.c-dialog--dark .c-dialog__close::after {
   background-image: var(--zd-dialog--dark__close-hovered-background-image);
 }
 

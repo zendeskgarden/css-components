@@ -3,19 +3,14 @@
 :root {
   /* stylelint-disable no-unsupported-browser-features */
   --zd-dialog__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-gainsboro));
-  --zd-dialog__close-background:
-    no-repeat
-    center/var(--zd-spacing)
-    var(--zd-dialog__close-background-image)
-    transparent; /* [1] */
   --zd-dialog__close-right: var(--zd-spacing);
   --zd-dialog__close-size: var(--zd-spacing-xl);
   --zd-dialog__close-top: var(--zd-spacing-sm);
-  --zd-dialog__close-transition:
-    background-color .1s ease-in-out,
-    background-image .25s ease-in-out;
+  --zd-dialog__close-transition: background-color .1s ease-in-out;
   --zd-dialog__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-dark-gray));
   --zd-dialog__close-focused-background-color: var(--zd-color-platinum);
+  --zd-dialog__close__icon-background-size: var(--zd-spacing);
+  --zd-dialog__close__icon-transition: opacity .25s ease-in-out;
   /* stylelint-enable no-unsupported-browser-features */
 }
 
@@ -30,7 +25,7 @@
   transition: var(--zd-dialog__close-transition);
   border: none; /* [1] */
   border-radius: 50%;
-  background: var(--zd-dialog__close-background);
+  background-color: transparent; /* [1] */
   cursor: pointer;
   width: var(--zd-dialog__close-size);
   height: var(--zd-dialog__close-size);
@@ -40,29 +35,58 @@
   user-select: none;
 }
 
-@custom-selector :--hovered
+.c-dialog__close::before,
+.c-dialog__close::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: var(--zd-dialog__close__icon-transition);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: var(--zd-dialog__close__icon-background-size);
+  content: '';
+}
+
+.c-dialog__close::before {
+  opacity: 1;
+  background-image: var(--zd-dialog__close-background-image);
+}
+
+.c-dialog__close::after {
+  opacity: 0;
+  background-image: var(--zd-dialog__close-hovered-background-image);
+}
+
+@custom-selector :--dialog-hovered
   .is-hovered,
   .is-focused,
   :hover;
 
-.c-dialog__close:--hovered {
-  background-image: var(--zd-dialog__close-hovered-background-image);
+.c-dialog__close:--dialog-hovered::before {
+  opacity: 0;
 }
 
-@custom-selector :--focused
+.c-dialog__close:--dialog-hovered::after {
+  opacity: 1;
+}
+
+@custom-selector :--dialog-focused
   .is-focused,
   :focus;
 
-.c-dialog__close:--focused {
+.c-dialog__close:--dialog-focused {
   outline: none;
   background-color: var(--zd-dialog__close-focused-background-color);
 }
 
-@custom-selector :--active
+@custom-selector :--dialog-active
   .is-active,
   :active;
 
-.c-dialog__close:active {
+.c-dialog__close:--dialog-active {
   background-color: transparent;
 }
 
