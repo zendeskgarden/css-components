@@ -22,11 +22,11 @@
   color: var(--zd-callout--dark-color);
 }
 
-.c-callout--dark .c-callout__close {
+.c-callout--dark .c-callout__close::before {
   background-image: var(--zd-callout--dark__close-background-image);
 }
 
-.c-callout--dark .c-callout__close:--callout-hovered {
+.c-callout--dark .c-callout__close::after {
   background-image: var(--zd-callout--dark__close-hovered-background-image);
 }
 
