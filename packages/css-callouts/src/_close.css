@@ -2,18 +2,13 @@
 
 :root {
   --zd-callout__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-silver-sand));
-  --zd-callout__close-background:
-    no-repeat
-    center/var(--zd-font-size-gamma)
-    var(--zd-callout__close-background-image)
-    transparent; /* [1] */
   --zd-callout__close-position: 4px;
   --zd-callout__close-size: var(--zd-font-size-mega);
-  --zd-callout__close-transition:
-    background-color .1s ease-in-out,
-    background-image .25s ease-in-out;
+  --zd-callout__close-transition: background-color .1s ease-in-out;
   --zd-callout__close-focused-background-color: color(var(--zd-color-black) alpha(7%));
   --zd-callout__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-dark-gray));
+  --zd-callout__close__icon-background-size: var(--zd-font-size-gamma);
+  --zd-callout__close__icon-transition: opacity .25s ease-in-out;
 }
 
 /* 1. Reset for <button> element.
@@ -27,7 +22,7 @@
   transition: var(--zd-callout__close-transition);
   border: none; /* [1] */
   border-radius: 50%;
-  background: var(--zd-callout__close-background);
+  background-color: transparent; /* [1] */
   cursor: pointer;
   width: var(--zd-callout__close-size);
   height: var(--zd-callout__close-size);
@@ -37,14 +32,43 @@
   user-select: none;
 }
 
+.c-callout__close::before,
+.c-callout__close::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity var(--zd-callout__close__icon-opacity);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: var(--zd-callout__close__icon-background-size);
+  content: '';
+}
+
+.c-callout__close::before {
+  opacity: 1;
+  background-image: var(--zd-callout__close-background-image);
+}
+
+.c-callout__close::after {
+  opacity: 0;
+  background-image: var(--zd-callout__close-hovered-background-image);
+}
+
 @custom-selector :--callout-hovered
   .is-hovered,
   .is-focused,
   :hover,
   :focus;
 
-.c-callout__close:--callout-hovered {
-  background-image: var(--zd-callout__close-hovered-background-image);
+.c-callout__close:--callout-hovered::before {
+  opacity: 0;
+}
+
+.c-callout__close:--callout-hovered::after {
+  opacity: 1;
 }
 
 @custom-selector :--callout-focused
