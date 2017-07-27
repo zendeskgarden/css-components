@@ -52,7 +52,7 @@
   right:0;
   bottom:0;
   left:0;
-  transition:opacity var(--zd-callout__close__icon-opacity);
+  transition:opacity .25s ease-in-out;
   background-repeat:no-repeat;
   background-position:50%;
   background-size:18px;

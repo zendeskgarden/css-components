@@ -40,7 +40,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  transition: opacity var(--zd-callout__close__icon-opacity);
+  transition: var(--zd-callout__close__icon-transition);
   background-repeat: no-repeat;
   background-position: center;
   background-size: var(--zd-callout__close__icon-background-size);
