@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.0.1] - 2017-07-28
+### Fixed (per [#14](https://github.com/zendeskgarden/css-modals/pull/14))
+- `.c-dialog__close` background-image transition (Safari).
+
 ## [3.0.0] - 2017-06-15
 ### Updated (per [#12](https://github.com/zendeskgarden/css-modals/pull/12))
 - Prepared package for registry publish as `@zendesk/garden-css-modals`.
@@ -41,6 +45,7 @@
 
 ## 0.1.0 - 2016-02-03
 
+[3.0.1]: https://github.com/zendeskgarden/css-modals/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/zendeskgarden/css-modals/compare/2.2.0...v3.0.0
 [2.2.0]: https://github.com/zendeskgarden/css-modals/compare/2.1.0...2.2.0
 [2.1.0]: https://github.com/zendeskgarden/css-modals/compare/2.0.0...2.1.0
