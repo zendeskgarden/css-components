@@ -1,5 +1,24 @@
 # Change Log
 
+## [3.0.0] - 2017-07-28
+### Added (per [#32](https://github.com/zendeskgarden/css-forms/pull/32))
+- `.c-txt--sm`, `.c-range--sm`, and `.c-input--sm` modifications to
+  support compact form layouts.
+- Support for inputs containing `.c-label` components.
+
+### Changed
+- Use base-4 spacing.
+- Labels updated to semibold font weight.
+
+### Fixed (per [#34](https://github.com/zendeskgarden/css-forms/issues/34))
+- `.c-chk--nolabel` display for IE11.
+
+### Removed
+- Ability to override `.c-chk__label` with the addition of
+  `.c-chk__hint`. Use a utility (like Bedrock `.u-regular`) to override
+  the label font weight for the intended group design. See the demo page
+  for details.
+
 ## [2.2.0] - 2017-07-28
 ### Added (per [#31](https://github.com/zendeskgarden/css-forms/pull/31))
 - Styling and structure support for custom range sliders with multiple
@@ -106,6 +125,7 @@
 ### Added
 - `.c-chk` component.
 
+[3.0.0]: https://github.com/zendeskgarden/css-forms/compare/v2.2.0...v3.0.0
 [2.2.0]: https://github.com/zendeskgarden/css-forms/compare/v2.1.1...v2.2.0
 [2.1.1]: https://github.com/zendeskgarden/css-forms/compare/v2.1.0...v2.1.1
 [2.1.0]: https://github.com/zendeskgarden/css-forms/compare/v2.0.0...v2.1.0
