@@ -11,13 +11,13 @@
     background-color .25s ease-in-out,
     background-image .25s ease-in-out,
     color .25s ease-in-out;
-  --zd-chk__label-padding: calc(var(--zd-chk-size) + var(--zd-spacing-sm));
+  --zd-chk__label-spacing: 8px;
+  --zd-chk__label-padding: calc(var(--zd-chk-size) + var(--zd-chk__label-spacing));
 }
 
 /* 1. Reset for <fieldset> element.
    2. Hide <input type="checkbox"> but retain accessibility.
-   3. Vertical centering.
-   4. Override `.c-chk--nolabel`. */
+   3. Vertical centering. */
 
 .c-chk {
   position: relative;
@@ -58,7 +58,6 @@
   top: 50%; /* [3] */
   left: 0;
   transition: var(--zd-chk-transition);
-  visibility: visible; /* [4] */
   margin-top: calc(var(--zd-chk-size) / 2 * -1); /* [3] */
   border: var(--zd-chk-border);
   border-radius: var(--zd-chk-border-radius);
@@ -72,8 +71,8 @@
 
 .c-chk--nolabel .c-chk__label {
   display: inline-block;
-  visibility: hidden;
   padding-left: var(--zd-chk-size);
+  font-size: 0;
 }
 
 .c-chk.is-rtl {

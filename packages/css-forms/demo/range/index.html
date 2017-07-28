@@ -6,7 +6,7 @@
   <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <style>
-  .l-wrapper--370 { max-width: 370px; }
+  .l-wrapper--400 { max-width: 400px; }
   </style>
 </head>
 <body>
@@ -44,6 +44,12 @@
             <fieldset class="c-chk c-chk--toggle">
               <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
               <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.size"><span class="c-code">.c-range--sm</span></label>
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
@@ -157,10 +163,10 @@
       <p class="u-mb">The unmodified
       <code class="c-code">.c-range</code>
       occupies 100% of the width of its container. The following fields are
-      contained by a 370px wrapper.</p>
+      contained by a 400px wrapper.</p>
       <div class="l-grid">
         <div class="l-grid__item u-1/2">
-          <form class="l-wrapper--370 u-mb-lg">
+          <form class="l-wrapper--400 u-mb-lg">
             <fieldset class="c-range u-mb-lg">
               <label class="c-range__label" for="range-2">Label</label>
               <small class="c-range__hint"><span dir="ltr">Hint...</span></small>
@@ -169,7 +175,7 @@
           </form>
         </div
         ><div class="l-grid__item u-1/2">
-          <form class="l-wrapper--370 u-mb-lg">
+          <form class="l-wrapper--400 u-mb-lg">
             <fieldset class="c-range u-mb-lg">
               <label class="c-range__label" for="multirange-2">Label</label>
               <small class="c-range__hint"><span dir="ltr">Hint...</span></small>
@@ -285,7 +291,7 @@
       and
       <code class="c-code">value</code>
       attribute values.</p>
-      <form class="l-wrapper--370 u-mb-lg">
+      <form class="l-wrapper--400 u-mb-lg">
         <fieldset class="c-range u-mb-lg">
           <label class="c-range__label u-epsilon" dir="ltr" for="range-4">.c-range .c-range__input[value="10"]</label>
           <input class="c-range__input" id="range-4" type="range" value="10">

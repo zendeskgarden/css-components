@@ -7,14 +7,16 @@
   --zd-input__hint-color: var(--zd-color-aluminum);
   --zd-input__hint-font-size: var(--zd-font-size-epsilon);
   --zd-input__hint-line-height: calc(20 / 14);
-  --zd-input__hint-margin-top: var(--zd-spacing-sm);
+  --zd-input__hint-margin-top: 8px;
   --zd-input__label-color: var(--zd-color-dark-gray);
-  --zd-input__label-font-size: var(--zd-font-size-delta);
-  --zd-input__label-line-height: calc(40 / 16);
+  --zd-input__label-font-size: var(--zd-font-size-epsilon);
+  --zd-input__label-font-weight: var(--zd-font-weight-semibold);
+  --zd-input__label-line-height: calc(30 / 14);
+  --zd-input__label--regular-font-weight: var(--zd-font-weight-regular);
   --zd-input__message-color: var(--zd-color-monsoon);
   --zd-input__message-font-size: var(--zd-font-size-zeta);
   --zd-input__message-line-height: calc(20 / 12);
-  --zd-input__message-margin-top: var(--zd-spacing-xs);
+  --zd-input__message-margin-top: 4px;
   --zd-input__message-padding: var(--zd-spacing);
   --zd-input__message--error-background-image: svg-load('14-error-fill.svg', color: var(--zd-input--error-color));
   --zd-input__message--success-background-image: svg-load('14-checkmark-fill.svg', color: var(--zd-input--success-color));
@@ -22,24 +24,6 @@
 }
 
 /* 1. Support label inline with input layout. */
-
-.c-chk__label,
-.c-range__label,
-.c-txt__label,
-.c-chk__message,
-.c-range__message,
-.c-txt__message {
-  vertical-align: middle; /* [1] */
-}
-
-.c-chk__label,
-.c-range__label,
-.c-txt__label,
-.c-input-label {
-  line-height: var(--zd-input__label-line-height);
-  color: var(--zd-input__label-color);
-  font-size: var(--zd-input__label-font-size);
-}
 
 .c-chk__hint,
 .c-range__hint,
@@ -54,6 +38,41 @@
   line-height: var(--zd-input__hint-line-height);
   color: var(--zd-input__hint-color);
   font-size: var(--zd-input__hint-font-size);
+}
+
+.c-chk__label,
+.c-range__label,
+.c-txt__label,
+.c-chk__message,
+.c-range__message,
+.c-txt__message {
+  vertical-align: middle; /* [1] */
+}
+
+.c-chk__label,
+.c-range__label,
+.c-txt__label,
+.c-input-label {
+  color: var(--zd-input__label-color);
+  font-size: var(--zd-input__label-font-size);
+  font-weight: var(--zd-input__label-font-weight);
+}
+
+.c-chk__label--regular,
+.c-range__label--regular,
+.c-txt__label--regular,
+.c-input-label--regular {
+  font-weight: var(--zd-input__label--regular-font-weight);
+}
+
+.c-chk__label {
+  line-height: var(--zd-input__hint-line-height);
+}
+
+.c-range__label,
+.c-txt__label,
+.c-input-label {
+  line-height: var(--zd-input__label-line-height);
 }
 
 .c-range__hint + .c-range__input,

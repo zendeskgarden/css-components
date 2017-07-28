@@ -3,6 +3,7 @@
 <head>
   <title>Zendesk Garden / CSS Components / Text &amp; Textarea</title>
   <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
+  <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <style>
   .l-wrapper--370 { max-width: 370px; }
@@ -43,6 +44,12 @@
             <fieldset class="c-chk c-chk--toggle">
               <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
               <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.size"><span class="c-code">.c-txt--sm</span></label>
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
@@ -135,6 +142,22 @@
           ><small class="c-txt__message">strength</small>
         </fieldset>
       </form>
+      <p class="u-mb">Apply a <code class="c-code">.c-txt__input--label</code>
+      modifier class to inputs that are used to hold
+      <a href="http://garden.zendesk.com/css-labels/"><code class="c-code">.c-label</code></a>
+      elements.</p>
+      <form class="u-mb-lg">
+        <fieldset class="c-txt">
+          <label class="c-txt__label" for="txt-label">Label</label>
+          <div class="c-txt__input c-txt__input--label" id="txt-label" tabindex="0">
+            <label class="c-label c-label--lg c-label--light c-label--pill">
+              <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
+              <span dir="ltr">.c-txt__input--label</span>
+              <button class="c-label__remove" type="button"></button>
+            </label>
+          </div>
+        </fieldset>
+      </form>
       <p class="u-mb">Add the
       <code class="c-code">.c-txt__input--area</code>
       modifier class to style <code>&lt;textarea&gt;</code> elements. Specify
@@ -142,7 +165,7 @@
       <form class="u-mb-lg">
         <fieldset class="c-txt u-mb-sm">
           <label class="c-txt__label" for="txtarea-0">Textarea</label>
-          <textarea class="c-txt__input c-txt__input--area" id="txtarea-0" placeholder=".c-txt__input .c-txt__input--area"></textarea>
+          <textarea class="c-txt__input c-txt__input--area" id="txtarea-0" placeholder=".c-txt__input.c-txt__input--area"></textarea>
         </fieldset>
         <fieldset class="c-txt u-mb-sm">
           <label class="c-txt__label" for="txtarea-1">Resizable Textarea</label>
@@ -154,7 +177,7 @@
           typically interferes with layout in an undesirable manner). Resize is
           not supported by IE.
           </small>
-          <textarea class="c-txt__input c-txt__input--area is-resizable" id="txtarea-1" placeholder=".c-txt__input .c-txt__input--area .is-resizable"></textarea>
+          <textarea class="c-txt__input c-txt__input--area is-resizable" id="txtarea-1" placeholder=".c-txt__input.c-txt__input--area.is-resizable"></textarea>
         </fieldset>
       </form>
       <h3 class="u-delta u-mb">States</h3>
@@ -170,11 +193,41 @@
       <fieldset class="c-txt u-mb-lg">
         <input class="c-txt__input" disabled placeholder=".c-txt .c-txt__input[disabled]" type="text">
       </fieldset>
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><form class="l-wrapper--370">
+  <div class="c-txt has-success u-mb-sm">
+    <label class="c-txt__label" for="txt-playground-1">Label One</label>
+    <small class="c-txt__hint">Hint text goes here...</small>
+    <input class="c-txt__input" id="txt-playground-1" type="text" value="Value">
+    <small class="c-txt__message">This is a good thing</small>
+  </div>
+  <div class="c-txt has-error u-mb-sm">
+    <label class="c-txt__label" for="txt-playground-2">Label Two</label>
+    <input class="c-txt__input" id="txt-playground-2" placeholder="Placeholder" type="text">
+    <small class="c-txt__message">This is a bad thing</small>
+  </div>
+  <div class="c-txt">
+    <label class="c-txt__label" for="txt-playground-3">Label Three</label>
+    <div class="c-txt__input c-txt__input--label" id="txt-playground-3" tabindex="0">
+      <label class="c-label c-label--lg c-label--light c-label--pill">
+        <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
+        <span dir="ltr">A Label</span>
+        <button class="c-label__remove" type="button"></button>
+      </label>
+    </div>
+  </div>
+</form></textarea>
+        </div>
+      </section>
     </div>
   </main>
   <script src="http://garden.zendesk.com/jquery.js"></script>
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="http://garden.zendesk.com/editor.js"></script>
   <script src="../index.js"></script>
 </body>
 </html>

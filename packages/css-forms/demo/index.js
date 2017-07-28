@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  $('.js-size').change(function() {
+    $('.c-label:not(.c-playground .c-label)').toggleClass('c-label--lg');
+    $('.c-menu:not(.c-playground .c-menu):not(.c-ctl .c-menu)').toggleClass('c-menu--sm');
+    $('.c-range:not(.c-playground .c-range)').toggleClass('c-range--sm');
+    $('.c-txt:not(.c-playground .c-txt)').toggleClass('c-txt--sm');
+  });
+
   $('.js-validation').change(function() {
     var value = $(this).val();
 

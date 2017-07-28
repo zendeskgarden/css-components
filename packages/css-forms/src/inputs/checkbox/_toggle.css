@@ -16,7 +16,7 @@
     background-position .15s ease-in-out,
     color .25s ease-in-out;
   --zd-chk--toggle-width: var(--zd-spacing-xl);
-  --zd-chk--toggle__label-padding: calc(var(--zd-chk--toggle-width) + var(--zd-spacing-sm));
+  --zd-chk--toggle__label-padding: calc(var(--zd-chk--toggle-width) + var(--zd-chk__label-spacing));
   --zd-chk--toggle__message-background-position: calc(var(--zd-chk--toggle-width) - var(--zd-font-size-epsilon));
 }
 
