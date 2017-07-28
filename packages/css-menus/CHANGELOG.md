@@ -1,5 +1,14 @@
 # Change Log
 
+## [4.0.0] - 2017-07-28
+### Added (per [#26](https://github.com/zendeskgarden/css-menus/pull/26))
+- `.c-menu--sm` modifier for small menus (expected to combine with
+  [css-forms@3.0.0](https://github.com/zendeskgarden/css-forms/releases/tag/v3.0.0)
+  dropdowns).
+
+### Changed
+- Updated to use base-4 spacing.
+
 ## [3.0.0] - 2017-06-15
 ### Changed (per [#25](https://github.com/zendeskgarden/css-menus/pull/25))
 - Prepared package for registry publish as `@zendesk/garden-css-menus`.
@@ -67,6 +76,7 @@
 
 ## 0.1.0 - 2015-01-15
 
+[4.0.0]: https://github.com/zendeskgarden/css-menus/compare/v3.0.0...v4.0.0
 [3.0.0]: https://github.com/zendeskgarden/css-menus/compare/2.3.1...v3.0.0
 [2.3.1]: https://github.com/zendeskgarden/css-menus/compare/2.3.0...2.3.1
 [2.3.0]: https://github.com/zendeskgarden/css-menus/compare/2.2.1...2.3.0
