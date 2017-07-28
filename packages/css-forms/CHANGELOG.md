@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.2.0] - 2017-07-28
+### Added (per [#31](https://github.com/zendeskgarden/css-forms/pull/31))
+- Styling and structure support for custom range sliders with multiple
+  thumb controls.
+
 ## [2.1.1] - 2017-07-05
 ### Updated (per [#30](https://github.com/zendeskgarden/css-forms/pull/30))
 - Revert to `postcss-input-range` v4.0.0.
