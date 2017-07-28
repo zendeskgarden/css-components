@@ -3,6 +3,7 @@
 <head>
   <title>Zendesk Garden / CSS Components / Menus</title>
   <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
+  <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <style>
   .c-arrow--b {
@@ -42,11 +43,36 @@
       <span>/ Menus</span>
     </h1>
     <ul class="c-ctl c-ctl--header">
-      <li class="c-ctl__item">
-        <fieldset class="c-chk c-chk--toggle">
-          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
-          <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
-        </fieldset>
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-settings-fill">
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron">
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.size"><span class="c-code">.c-menu--sm</span></label>
+            </fieldset>
+          </li>
+        </ul>
       </li>
     </ul>
   </header>
@@ -154,16 +180,6 @@
         </div>
 
         <div class="l-grid__item u-1/2 u-mb-lg">
-          <h3 class="u-gamma u-mb">Disabled &lt;Item&gt; via
-            <code class="c-code">.c-menu__item.is-disabled</code>
-          </h3>
-          <ul class="c-menu u-display-inline-block u-position-static" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li aria-disabled="true" class="c-menu__item is-disabled" role="menuitem">Disabled</li>
-            <li class="c-menu__item" role="menuitem">Item</li>
-          </ul>
-        </div
-        ><div class="l-grid__item u-1/2 u-mb-lg">
           <h3 class="u-gamma u-mb">Separator via
             <code class="c-code">.c-menu__separator</code>
           </h3>
@@ -172,16 +188,6 @@
             <li class="c-menu__item" role="menuitem">Separated</li>
             <li class="c-menu__separator" role="separator"></li>
             <li class="c-menu__item" role="menuitem">Item</li>
-          </ul>
-        </div>
-        <div class="l-grid__item u-1/2 u-mb-lg">
-          <h3 class="u-gamma u-mb">Reversed layout via
-            <code class="c-code">.c-menu.is-rtl</code>
-          </h3>
-          <ul class="c-menu is-rtl u-display-inline-block u-position-static" dir="rtl" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li class="c-menu__item" role="menuitem">Two</li>
-            <li class="c-menu__item" role="menuitem">Three</li>
           </ul>
         </div
         ><div class="l-grid__item u-1/2 u-mb-lg">
@@ -257,10 +263,28 @@
           ><div class="l-grid__item u-1/3"></div>
         </div>
       </div>
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><div class="u-position-relative u-display-inline-block">
+  <ul class="c-menu c-arrow c-arrow--t u-display-inline-block u-position-static" role="menu">
+    <li class="c-menu__item" role="menuitem">John</li>
+    <li class="c-menu__item" role="menuitem">Paul</li>
+    <li class="c-menu__item" role="menuitem">George</li>
+    <li class="c-menu__item" role="menuitem">Ringo</li>
+    <li class="c-menu__separator" role="separator">
+    <li class="c-menu__item" role="menuitem">Bert</li>
+  </ul>
+</div></textarea>
+        </div>
+      </section>
     </div>
   </main>
   <script src="http://garden.zendesk.com/jquery.js"></script>
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="http://garden.zendesk.com/editor.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

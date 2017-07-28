@@ -3,8 +3,9 @@
 :root {
   --zd-menu__item-color: var(--zd-color-monsoon);
   --zd-menu__item-line-height: calc(20 / 14);
-  --zd-menu__item-padding: .71429em 1.42857em;
+  --zd-menu__item-padding: calc(10 / 14 * 1em) calc(16 / 14 * 1em);
   --zd-menu__item-transition: box-shadow .1s ease-in-out;
+  --zd-menu--small__item-padding: calc(6 / 14 * 1em) calc(12 / 14 * 1em);
 }
 
 /* 1. Allows an item to contain a positioned sub-menu.
@@ -19,4 +20,8 @@
   line-height: var(--zd-menu__item-line-height);
   color: var(--zd-menu__item-color);
   user-select: none;
+}
+
+.c-menu--sm .c-menu__item {
+  padding: var(--zd-menu--small__item-padding);
 }

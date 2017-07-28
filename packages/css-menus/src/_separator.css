@@ -2,7 +2,7 @@
 
 :root {
   --zd-menu__separator-border: 1px solid var(--zd-color-platinum);
-  --zd-menu__separator-margin: 5px 0;
+  --zd-menu__separator-margin: 4px 0;
 }
 
 .c-menu__separator {

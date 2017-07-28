@@ -10,7 +10,7 @@
   --zd-menu-font-size: var(--zd-font-size-epsilon);
   --zd-menu-font-weight: var(--zd-font-weight-regular);
   --zd-menu-min-width: 180px;
-  --zd-menu-padding: var(--zd-spacing-sm) 0;
+  --zd-menu-padding: 8px 0;
   --zd-menu--large-min-width: 270px;
 }
 
@@ -47,11 +47,11 @@
 }
 
 /* Used for animating `c-arrow` before/after pseudo elements. */
-@custom-selector :--around
+@custom-selector :--menu-around
   ::before,
   ::after;
 
-.c-menu.is-open:--around {
+.c-menu.is-open:--menu-around {
   animation: .3s ease-in-out;
 }
 
@@ -59,7 +59,7 @@
   animation-name: zd-menu--down-open;
 }
 
-.c-menu--down.is-open:--around {
+.c-menu--down.is-open:--menu-around {
   animation-name: zd-menu--down-open-arrow;
 }
 
@@ -67,7 +67,7 @@
   animation-name: zd-menu--left-open;
 }
 
-.c-menu--left.is-open:--around {
+.c-menu--left.is-open:--menu-around {
   animation-name: zd-menu--left-open-arrow;
 }
 
@@ -75,7 +75,7 @@
   animation-name: zd-menu--right-open;
 }
 
-.c-menu--right.is-open:--around {
+.c-menu--right.is-open:--menu-around {
   animation-name: zd-menu--right-open-arrow;
 }
 
@@ -83,7 +83,7 @@
   animation-name: zd-menu--up-open;
 }
 
-.c-menu--up.is-open:--around {
+.c-menu--up.is-open:--menu-around {
   animation-name: zd-menu--up-open-arrow;
 }
 /* stylelint-enable no-unknown-animations */
