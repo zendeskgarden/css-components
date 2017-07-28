@@ -57,7 +57,9 @@
 }
 
 .c-range__hint + .c-range__input,
+.c-range__hint + .c-range__slider,
 .c-range__input + .c-range__hint,
+.c-range__slider + .c-range__hint,
 .c-txt__hint + .c-txt__input,
 .c-txt__input + .c-txt__hint {
   margin-top: var(--zd-input__hint-margin-top);

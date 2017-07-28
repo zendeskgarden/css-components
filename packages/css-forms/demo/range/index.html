@@ -3,6 +3,7 @@
 <head>
   <title>Zendesk Garden / CSS Components / Ranges</title>
   <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
+  <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <style>
   .l-wrapper--370 { max-width: 370px; }
@@ -88,57 +89,194 @@
       child contains corresponding
       <code class="c-code">background</code>
       CSS whose size should be manipulated via JavaScript whenever the range
-      "thumb" is moved. See the supporting page JS for details.</p>
-      <p class="u-mb">Child component classes are shown here.</p>
-      <fieldset class="c-range u-mb-lg">
-        <label class="c-range__label" dir="ltr" for="range-0">.c-range__label</label>
-        <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
-        <input class="c-range__input" id="range-0" type="range">
-        <small class="c-range__message"><span dir="ltr">.c-range__message</span></small>
-      </fieldset>
+      "thumb" is moved. Similarly, the track background for dual-thumb sliders
+      must be maniuplated as each thumb is dragged. See the supporting page JS
+      for details.</p>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <p class="u-mb">Child component classes are shown here.</p>
+        </div
+        ><div class="l-grid__item u-1/2 u-mb">
+          <p class="u-mb">Use the following controls to manipulate the range
+          sliders displayed below.</p>
+          <fieldset class="c-txt c-txt--inline u-float-left">
+            <input class="c-txt__input js-range" min="0" max="100" name="min" placeholder="min" type="number">
+          </fieldset>
+          <fieldset class="c-txt c-txt--inline u-float-right">
+            <input class="c-txt__input js-range" min="0" max="100" name="max" placeholder="max" type="number">
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range u-mb-lg">
+            <label class="c-range__label" dir="ltr" for="range-0">.c-range__label</label>
+            <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+            <input class="c-range__input" id="range-0" type="range">
+            <small class="c-range__message"><span dir="ltr">.c-range__message</span></small>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range u-mb-lg">
+            <label class="c-range__label" dir="ltr" for="multirange-0">.c-range__label</label>
+            <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+            <div class="c-range__slider">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-0">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+            <small class="c-range__message"><span dir="ltr">.c-range__message</span></small>
+          </fieldset>
+        </div>
+      </div>
       <p class="u-mb">Hint text may also appear below the range input.</p>
-      <fieldset class="c-range u-mb-lg">
-        <label class="c-range__label" dir="ltr" for="range-1">.c-range__label</label>
-        <input class="c-range__input" id="range-1" type="range">
-        <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
-      </fieldset>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-range u-mb-lg">
+            <label class="c-range__label" dir="ltr" for="range-1">.c-range__label</label>
+            <input class="c-range__input" id="range-1" type="range">
+            <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range u-mb-lg">
+            <label class="c-range__label" dir="ltr" for="multirange-1">.c-range__label</label>
+            <div class="c-range__slider">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-1">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+            <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+          </fieldset>
+        </div>
+      </div>
       <p class="u-mb">The unmodified
       <code class="c-code">.c-range</code>
-      occupies 100% of the width of its container. The following field is contained
-      by a 370px wrapper.</p>
-      <form class="l-wrapper--370 u-mb-lg">
-        <fieldset class="c-range u-mb-lg">
-          <label class="c-range__label" for="range-2">Label</label>
-          <small class="c-range__hint"><span dir="ltr">Hint...</span></small>
-          <input class="c-range__input" id="range-2" type="range">
-        </fieldset>
-      </form>
+      occupies 100% of the width of its container. The following fields are
+      contained by a 370px wrapper.</p>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <form class="l-wrapper--370 u-mb-lg">
+            <fieldset class="c-range u-mb-lg">
+              <label class="c-range__label" for="range-2">Label</label>
+              <small class="c-range__hint"><span dir="ltr">Hint...</span></small>
+              <input class="c-range__input" id="range-2" type="range">
+            </fieldset>
+          </form>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <form class="l-wrapper--370 u-mb-lg">
+            <fieldset class="c-range u-mb-lg">
+              <label class="c-range__label" for="multirange-2">Label</label>
+              <small class="c-range__hint"><span dir="ltr">Hint...</span></small>
+              <div class="c-range__slider">
+                <div class="c-range__slider__track">
+                  <div class="c-range__slider__track__rail">
+                    <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-2">
+                    <input class="c-range__slider__track__rail__thumb" value="75">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
       <h3 class="u-delta u-mb">Modifiers</h3>
       <p class="u-mb">Use the
       <code class="c-code">.c-range--inline</code>
       class modifier to layout range controls inline.</p>
-      <fieldset class="c-range c-range--inline u-mb-lg">
-        <label class="c-range__label" for="range-2">Scale</label
-        ><input class="c-range__input u-mh" id="range-2" type="range"
-        ><small class="c-range__message">(valid)</small>
-      </fieldset>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-range c-range--inline u-mb-lg">
+            <label class="c-range__label" for="range-inline">Scale</label
+            ><input class="c-range__input u-mh" id="range-inline" style="width:200px" type="range"
+            ><small class="c-range__message">(valid)</small>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range c-range--inline u-mb-lg">
+            <label class="c-range__label" for="multirange-inline">Scale</label
+            ><div class="c-range__slider u-mh" style="width:200px">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-inline">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div><small class="c-range__message">(valid)</small>
+          </fieldset>
+        </div>
+      </div>
       <h3 class="u-delta u-mb">States</h3>
-      <fieldset class="c-range is-focused u-mb-lg">
-        <label class="c-range__label" dir="ltr" for="range-1">.c-range.is-focused</label>
-        <input class="c-range__input" id="range-1" type="range">
-      </fieldset>
-      <fieldset class="c-range is-active u-mb-lg">
-        <label class="c-range__label" dir="ltr" for="range-2">.c-range.is-active</label>
-        <input class="c-range__input" id="range-2" type="range">
-      </fieldset>
-      <fieldset class="c-range is-disabled u-mb">
-        <label class="c-range__label" dir="ltr" for="range-3">.c-range.is-disabled</label>
-        <input class="c-range__input" id="range-3" type="range">
-      </fieldset>
-      <fieldset class="c-range u-mb-lg">
-        <label class="c-range__label" dir="ltr" for="range-3">.c-range .c-range__input[disabled]</label>
-        <input class="c-range__input" disabled id="range-3" type="range">
-      </fieldset>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <fieldset class="c-range is-focused u-mb-lg">
+            <label class="c-range__label" dir="ltr" for="range-focus">.c-range.is-focused</label>
+            <input class="c-range__input" id="range-focus" type="range">
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range u-mb-lg">
+            <label class="c-range__label" dir="ltr" for="multirange-focus">.c-range .c-range__slider__track__rail__thumb.is-focused</label>
+            <div class="c-range__slider">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb is-focused" value="25" id="multirange-focus">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range is-active u-mb-lg">
+            <label class="c-range__label" dir="ltr" for="range-active">.c-range.is-active</label>
+            <input class="c-range__input" id="range-active" type="range">
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range is-active u-mb-lg">
+            <label class="c-range__label" dir="ltr" for="multirange-active">.c-range.is-active</label>
+            <div class="c-range__slider">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-active">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range is-disabled u-mb">
+            <label class="c-range__label" dir="ltr" for="range-isdisabled">.c-range.is-disabled</label>
+            <input class="c-range__input" id="range-isdisabled" type="range">
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range is-disabled u-mb">
+            <label class="c-range__label" dir="ltr" for="multirange-isdisabled">.c-range.is-disabled</label>
+            <div class="c-range__slider">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-isdisabled">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <fieldset class="c-range u-mb-lg">
+            <label class="c-range__label" dir="ltr" for="range-disabled">.c-range .c-range__input[disabled]</label>
+            <input class="c-range__input" disabled id="range-disabled" type="range">
+          </fieldset>
+        </div>
+      </div>
       <h3 class="u-delta u-mb">Values</h3>
       <p class="u-mb">Demonstrate range controls with various
       <code class="c-code">max</code>,
@@ -165,11 +303,37 @@
           <input class="c-range__input" id="range-7" step="5" type="range" value="75">
         </fieldset>
       </form>
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><fieldset class="c-range u-mb">
+  <label class="c-range__label" for="range-playground">Standard Range Input</label>
+  <small class="c-range__hint">Allow user to specify a numeric value using native <code class="c-code">input type="range"</code> element.</small>
+  <input class="c-range__input" id="range-playground" type="range">
+</fieldset>
+
+<fieldset class="c-range">
+  <label class="c-range__label" for="multirange-playground">Custom Range Slider</label>
+  <small class="c-range__hint">Allow user to specify a numeric range using multiple <code class="c-code">input</code> "thumb" controls (requires JS to support draggable behaviors).</small>
+  <div class="c-range__slider">
+    <div class="c-range__slider__track" style="background-position:50%; background-size:50%">
+      <div class="c-range__slider__track__rail">
+        <input class="c-range__slider__track__rail__thumb" style="left:25%" value="25" id="multirange-playground">
+        <input class="c-range__slider__track__rail__thumb" style="left:75%" value="75">
+      </div>
+    </div>
+  </div>
+</fieldset></textarea>
+        </div>
+      </section>
     </div>
   </main>
   <script src="http://garden.zendesk.com/jquery.js"></script>
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="http://garden.zendesk.com/editor.js"></script>
   <script src="../index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
