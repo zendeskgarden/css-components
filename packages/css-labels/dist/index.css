@@ -1,14 +1,19 @@
 .c-label{
-  display:inline-block;
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  -ms-flex-wrap:nowrap;
+      flex-wrap:nowrap;
   transition:box-shadow .1s ease-in-out;
   border:0;
   border-radius:2px;
   background-color:#30aabc;
   padding:0 .83333em;
+  max-width:100%;
   height:20px;
+  overflow:hidden;
   text-decoration:none;
   line-height:1.66667;
-  white-space:nowrap;
   font-size:12px;
   font-weight:400;
 }
@@ -25,6 +30,13 @@
 
 .c-label.is-rtl{
   direction:rtl;
+}
+
+.c-label>*{
+  min-width:2em;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
 .c-label--light{
@@ -99,15 +111,19 @@
 }
 
 .c-label--round{
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
   border-radius:50%;
   padding:0;
   min-width:20px;
-  text-align:center;
 }
 
 .c-label__remove{
   display:inline-block;
-  float:right;
+  -ms-flex-negative:0;
+      flex-shrink:0;
+  float:none;
   transition:opacity .25s ease-in-out;
   opacity:.7;
   margin-right:-10px;
@@ -156,7 +172,10 @@
 }
 
 .c-label.is-rtl .c-label__remove{
-  float:left;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:reverse;
+      -ms-flex-direction:row-reverse;
+          flex-direction:row-reverse;
   margin-right:0;
   margin-left:-10px;
 }
@@ -167,10 +186,13 @@
 
 .c-label__avatar{
   display:inline-block;
-  float:left;
+  -ms-flex-negative:0;
+      flex-shrink:0;
+  float:none;
   margin:2px 5px 2px -7.9px;
   border-radius:2px;
   width:16px;
+  min-width:16px;
   height:16px;
   vertical-align:middle;
   font-size:0;
@@ -180,6 +202,7 @@
   margin:3px 10px 3px -6.9px;
   border-radius:3px;
   width:24px;
+  min-width:24px;
   height:24px;
 }
 
@@ -192,7 +215,6 @@
 }
 
 .c-label.is-rtl .c-label__avatar{
-  float:right;
   margin-right:-7.9px;
   margin-left:5px;
 }

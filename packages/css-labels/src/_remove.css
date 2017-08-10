@@ -25,7 +25,8 @@
 
 .c-label__remove {
   display: inline-block;
-  float: right;
+  flex-shrink: 0;
+  float: none;
   transition: var(--zd-label__remove-transition);
   opacity: var(--zd-label__remove-opacity);
   margin-right: var(--zd-label__remove-margin);
@@ -78,7 +79,7 @@
 }
 
 .c-label.is-rtl .c-label__remove {
-  float: left;
+  flex-direction: row-reverse;
   margin-right: 0;
   margin-left: var(--zd-label__remove-margin);
 }

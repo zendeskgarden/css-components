@@ -19,16 +19,18 @@
  * 2. Reset for <a>nchor element. */
 
 .c-label {
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: nowrap;
   transition: var(--zd-label-transition);
   border: 0; /* [1] */
   border-radius: var(--zd-label-border-radius);
   background-color: var(--zd-label-background-color);
   padding: var(--zd-label-padding);
+  max-width: 100%;
   height: var(--zd-label-height);
+  overflow: hidden;
   text-decoration: none; /* [2] */
   line-height: var(--zd-label-line-height);
-  white-space: nowrap;
   color: var(--zd-label-color);
   font-size: var(--zd-label-font-size);
   font-weight: var(--zd-label-font-weight);
@@ -50,4 +52,11 @@
 
 .c-label.is-rtl {
   direction: rtl;
+}
+
+.c-label > * {
+  min-width: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

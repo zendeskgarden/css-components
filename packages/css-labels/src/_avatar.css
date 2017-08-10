@@ -23,12 +23,16 @@
   --zd-label--lg__avatar-size: calc(var(--zd-label--lg-height) - (var(--zd-label--lg__avatar-margin-vertical) * 2));
 }
 
+/* 1. Prevent flex shrink */
+
 .c-label__avatar {
   display: inline-block;
-  float: left;
+  flex-shrink: 0;
+  float: none;
   margin: var(--zd-label__avatar-margin);
   border-radius: var(--zd-label__avatar-border-radius);
   width: var(--zd-label__avatar-size);
+  min-width: var(--zd-label__avatar-size); /* [1] */
   height: var(--zd-label__avatar-size);
   vertical-align: middle;
   font-size: 0;
@@ -38,6 +42,7 @@
   margin: var(--zd-label--lg__avatar-margin);
   border-radius: var(--zd-label--lg__avatar-border-radius);
   width: var(--zd-label--lg__avatar-size);
+  min-width: var(--zd-label--lg__avatar-size); /* [1] */
   height: var(--zd-label--lg__avatar-size);
 }
 
@@ -51,7 +56,6 @@
 }
 
 .c-label.is-rtl .c-label__avatar {
-  float: right;
   margin-right: var(--zd-label__avatar-margin-left);
   margin-left: var(--zd-label__avatar-margin-right);
 }
