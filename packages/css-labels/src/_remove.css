@@ -15,7 +15,7 @@
   --zd-label--lg__remove-background-size: var(--zd-font-size-delta);
   --zd-label--lg__remove-size: var(--zd-spacing-lg);
   --zd-label--light__remove-background-image: svg-load('14-remove.svg', color: var(--zd-label--light-color));
-  --zd-label--sm__remove-background-size: var(--zd-font-size-zeta);
+  --zd-label--sm__remove-background-size: var(--zd-font-size-milli);
   --zd-label--sm__remove-margin: calc(var(--zd-label__remove-margin) / 2);
   --zd-label--sm__remove-size: 15px;
 }
