@@ -5,6 +5,9 @@
   <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <style>
+  .c-txt__input .c-label { min-width: 75px; }
+  </style>
 </head>
 <body>
   <header class="c-header">
@@ -270,9 +273,12 @@
         slider below to change the width of the text field container. Text
         within the labels will truncate with an ellipsis based on the available
         container width. Alternate title text is applied to the label element
-        in order to provide access to the truncated text.</p>
+        in order to provide access to the truncated text. A
+        <span class="c-code">min-width</span> should be applied to contained
+        labels (as it is here) with a value that is reasonable for the layout
+        in question.</p>
         <div class="c-txt">
-          <div class="c-txt__input js-txt" style="overflow:hidden;width:100%">
+          <div class="c-txt__input js-txt" style="overflow:scroll">
             <label class="c-label c-label--light u-mb-xxs" title="man braid synth">
               <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
               <span dir="ltr">man braid synth</span>
