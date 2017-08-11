@@ -26,7 +26,6 @@
 .c-label__remove {
   display: inline-block;
   flex-shrink: 0;
-  float: none;
   transition: var(--zd-label__remove-transition);
   opacity: var(--zd-label__remove-opacity);
   margin-right: var(--zd-label__remove-margin);

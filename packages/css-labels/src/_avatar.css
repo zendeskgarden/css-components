@@ -28,7 +28,6 @@
 .c-label__avatar {
   display: inline-block;
   flex-shrink: 0;
-  float: none;
   margin: var(--zd-label__avatar-margin);
   border-radius: var(--zd-label__avatar-border-radius);
   width: var(--zd-label__avatar-size);

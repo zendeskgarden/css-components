@@ -123,7 +123,6 @@
   display:inline-block;
   -ms-flex-negative:0;
       flex-shrink:0;
-  float:none;
   transition:opacity .25s ease-in-out;
   opacity:.7;
   margin-right:-10px;
@@ -188,7 +187,6 @@
   display:inline-block;
   -ms-flex-negative:0;
       flex-shrink:0;
-  float:none;
   margin:2px 5px 2px -7.9px;
   border-radius:2px;
   width:16px;
