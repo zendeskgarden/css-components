@@ -1,5 +1,12 @@
 # Change Log
 
+## [3.0.1] - 2017-08-14
+### Added (per [#33](https://github.com/zendeskgarden/css-forms/pull/33))
+- `.c-txt__input--bare` modification for unstyled text fields.
+
+### Fixed (per [#35](https://github.com/zendeskgarden/css-forms/pull/35))
+- Styling for wrapped `.c-txt__message` elements.
+
 ## [3.0.0] - 2017-07-28
 ### Added (per [#32](https://github.com/zendeskgarden/css-forms/pull/32))
 - `.c-txt--sm`, `.c-range--sm`, and `.c-input--sm` modifications to
@@ -125,6 +132,7 @@
 ### Added
 - `.c-chk` component.
 
+[3.0.1]: https://github.com/zendeskgarden/css-forms/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/zendeskgarden/css-forms/compare/v2.2.0...v3.0.0
 [2.2.0]: https://github.com/zendeskgarden/css-forms/compare/v2.1.1...v2.2.0
 [2.1.1]: https://github.com/zendeskgarden/css-forms/compare/v2.1.0...v2.1.1
