@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('.js-bare').change(function() {
+    $('.c-txt__input:not(.c-playground .c-txt__input)').toggleClass('c-txt__input--bare');
+  });
+
   $('.js-size').change(function() {
     $('.c-label:not(.c-playground .c-label)').toggleClass('c-label--lg');
     $('.c-menu:not(.c-playground .c-menu):not(.c-ctl .c-menu)').toggleClass('c-menu--sm');
