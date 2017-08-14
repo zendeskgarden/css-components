@@ -1021,14 +1021,14 @@ select.c-txt__input--select:-moz-focusring{
 
 .c-chk__message,.c-range__message,.c-txt__message{
   display:inline-block;
-  line-height:1.66667;
+  line-height:1.33333;
   color:#777;
   font-size:12px;
 }
 
 .has-error.c-chk .c-chk__message,.has-error.c-range .c-range__message,.has-error.c-txt .c-txt__message,.has-success.c-chk .c-chk__message,.has-success.c-range .c-range__message,.has-success.c-txt .c-txt__message,.has-warning.c-chk .c-chk__message,.has-warning.c-range .c-range__message,.has-warning.c-txt .c-txt__message{
   background-repeat:no-repeat;
-  background-position:0;
+  background-position:0 0;
   padding-left:20px;
 }
 
@@ -1052,13 +1052,13 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .is-rtl.has-error .c-chk__message,.is-rtl.has-error .c-range__message,.is-rtl.has-error .c-txt__message,.is-rtl.has-success .c-chk__message,.is-rtl.has-success .c-range__message,.is-rtl.has-success .c-txt__message,.is-rtl.has-warning .c-chk__message,.is-rtl.has-warning .c-range__message,.is-rtl.has-warning .c-txt__message{
-  background-position:100%;
+  background-position:100% 0;
   padding-right:20px;
   padding-left:0;
 }
 
 .c-range:not(.c-range--inline) .c-range__input+.c-range__message,.c-txt:not(.c-txt--inline) .c-txt__input+.c-txt__message{
-  margin-top:4px;
+  margin-top:8px;
 }
 
 .c-chk--dark .c-chk__label,.c-input-label--dark,.c-range--dark .c-range__label,.c-txt--dark .c-txt__label{

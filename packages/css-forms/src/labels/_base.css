@@ -15,8 +15,8 @@
   --zd-input__label--regular-font-weight: var(--zd-font-weight-regular);
   --zd-input__message-color: var(--zd-color-monsoon);
   --zd-input__message-font-size: var(--zd-font-size-zeta);
-  --zd-input__message-line-height: calc(20 / 12);
-  --zd-input__message-margin-top: 4px;
+  --zd-input__message-line-height: calc(16 / 12);
+  --zd-input__message-margin-top: 8px;
   --zd-input__message-padding: var(--zd-spacing);
   --zd-input__message--error-background-image: svg-load('14-error-fill.svg', color: var(--zd-input--error-color));
   --zd-input__message--success-background-image: svg-load('14-checkmark-fill.svg', color: var(--zd-input--success-color));
@@ -108,7 +108,7 @@
 .has-warning.c-range .c-range__message,
 .has-warning.c-txt .c-txt__message {
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: top left;
   padding-left: var(--zd-input__message-padding);
 }
 
@@ -148,7 +148,7 @@
 .is-rtl.has-warning .c-chk__message,
 .is-rtl.has-warning .c-range__message,
 .is-rtl.has-warning .c-txt__message {
-  background-position: right;
+  background-position: top right;
   padding-right: var(--zd-input__message-padding);
   padding-left: 0;
 }
