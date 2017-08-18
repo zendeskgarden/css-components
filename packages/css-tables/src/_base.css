@@ -26,8 +26,8 @@
 .c-table__row {
   display: table-row;
   border-bottom: var(--zd-table__row-border-bottom);
-  vertical-align: top;
   height: var(--zd-table__row-height);
+  vertical-align: top;
 }
 
 .c-table__row--header {

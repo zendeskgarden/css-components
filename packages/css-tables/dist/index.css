@@ -11,8 +11,8 @@
 .c-table__row{
   display:table-row;
   border-bottom:1px solid #eee;
-  vertical-align:top;
   height:40px;
+  vertical-align:top;
 }
 
 .c-table__row--header{
