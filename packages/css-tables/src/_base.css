@@ -1,0 +1,52 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-table-font-size: var(--zd-font-size-epsilon);
+  --zd-table-line-height: calc(20 / 14);
+  --zd-table__row-border-bottom: 1px solid var(--zd-color-platinum);
+  --zd-table__row-height: 40px;
+  --zd-table__row--header-border-color: var(--zd-color-gainsboro);
+  --zd-table__row--header-font-weight: var(--zd-font-weight-semibold);
+  --zd-table__row__cell-padding: 10px 12px;
+}
+
+/* 1. <table> reset.
+   2. <th> reset. */
+
+.c-table {
+  display: table;
+  border: none; /* [1] */
+  width: 100%; /* [1] */
+  border-collapse: collapse; /* [1] */
+  border-spacing: 0; /* [1] */
+  line-height: var(--zd-table-line-height);
+  font-size: var(--zd-table-font-size);
+}
+
+.c-table__row {
+  display: table-row;
+  border-bottom: var(--zd-table__row-border-bottom);
+  vertical-align: top;
+  height: var(--zd-table__row-height);
+}
+
+.c-table__row--header {
+  border-color: var(--zd-table__row--header-border-color);
+  vertical-align: bottom;
+  font-weight: var(--zd-table__row--header-font-weight);
+}
+
+.c-table__row__cell {
+  display: table-cell;
+  padding: var(--zd-table__row__cell-padding);
+}
+
+.c-table__row__cell--truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c-table__row--header .c-table__row__cell {
+  text-align: left; /* [2] */
+}

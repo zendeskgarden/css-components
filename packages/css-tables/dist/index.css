@@ -1,0 +1,37 @@
+.c-table{
+  display:table;
+  border:none;
+  width:100%;
+  border-collapse:collapse;
+  border-spacing:0;
+  line-height:1.42857;
+  font-size:14px;
+}
+
+.c-table__row{
+  display:table-row;
+  border-bottom:1px solid #eee;
+  vertical-align:top;
+  height:40px;
+}
+
+.c-table__row--header{
+  border-color:#ddd;
+  vertical-align:bottom;
+  font-weight:600;
+}
+
+.c-table__row__cell{
+  display:table-cell;
+  padding:10px 12px;
+}
+
+.c-table__row__cell--truncate{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.c-table__row--header .c-table__row__cell{
+  text-align:left;
+}
