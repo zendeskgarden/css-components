@@ -3,11 +3,18 @@
 :root {
   --zd-table-font-size: var(--zd-font-size-epsilon);
   --zd-table-line-height: calc(20 / 14);
-  --zd-table__row-border-bottom: 1px solid var(--zd-color-platinum);
+  --zd-table__row-border: 1px solid;
+  --zd-table__row-border-bottom: var(--zd-table__row-border) var(--zd-color-platinum);
   --zd-table__row-height: 40px;
+  --zd-table__row--group-font-size: var(--zd-font-size-zeta);
+  --zd-table__row--group-height: 32px;
+  --zd-table__row--group-line-height: calc(20 / 12);
+  --zd-table__row--group__cell-padding: 6px 10px;
   --zd-table__row--header-border-color: var(--zd-color-gainsboro);
   --zd-table__row--header-font-weight: var(--zd-font-weight-semibold);
+  --zd-table__row--stripe-background-color: var(--zd-color-snow);
   --zd-table__row__cell-padding: 10px 12px;
+  --zd-table__row__cell__strong-font-weight: var(--zd-font-weight-semibold);
 }
 
 /* 1. <table> reset.
@@ -17,6 +24,7 @@
   display: table;
   border: none; /* [1] */
   width: 100%; /* [1] */
+  table-layout: fixed; /* [1] */
   border-collapse: collapse; /* [1] */
   border-spacing: 0; /* [1] */
   line-height: var(--zd-table-line-height);
@@ -30,15 +38,32 @@
   vertical-align: top;
 }
 
+.c-table__row--group {
+  height: var(--zd-table__row--group-height);
+  line-height: var(--zd-table__row--group-line-height);
+  font-size: var(--zd-table__row--group-font-size);
+}
+
 .c-table__row--header {
-  border-color: var(--zd-table__row--header-border-color);
+  border-bottom-color: var(--zd-table__row--header-border-color);
   vertical-align: bottom;
   font-weight: var(--zd-table__row--header-font-weight);
+}
+
+.c-table__row--group,
+.c-table__row--stripe {
+  background-color: var(--zd-table__row--stripe-background-color);
 }
 
 .c-table__row__cell {
   display: table-cell;
   padding: var(--zd-table__row__cell-padding);
+}
+
+.c-table__row__cell--min {
+  box-sizing: content-box;
+  padding-right: 0;
+  width: 1em;
 }
 
 .c-table__row__cell--truncate {
@@ -47,6 +72,14 @@
   white-space: nowrap;
 }
 
+.c-table__row--group .c-table__row__cell {
+  padding: var(--zd-table__row--group__cell-padding);
+}
+
 .c-table__row--header .c-table__row__cell {
   text-align: left; /* [2] */
+}
+
+.c-table__row__cell strong {
+  font-weight: var(--zd-table__row__cell__strong-font-weight);
 }

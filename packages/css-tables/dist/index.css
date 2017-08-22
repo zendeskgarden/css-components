@@ -2,6 +2,7 @@
   display:table;
   border:none;
   width:100%;
+  table-layout:fixed;
   border-collapse:collapse;
   border-spacing:0;
   line-height:1.42857;
@@ -15,15 +16,31 @@
   vertical-align:top;
 }
 
+.c-table__row--group{
+  height:32px;
+  line-height:1.66667;
+  font-size:12px;
+}
+
 .c-table__row--header{
-  border-color:#ddd;
+  border-bottom-color:#ddd;
   vertical-align:bottom;
   font-weight:600;
+}
+
+.c-table__row--group,.c-table__row--stripe{
+  background-color:#fbfbfb;
 }
 
 .c-table__row__cell{
   display:table-cell;
   padding:10px 12px;
+}
+
+.c-table__row__cell--min{
+  box-sizing:content-box;
+  padding-right:0;
+  width:1em;
 }
 
 .c-table__row__cell--truncate{
@@ -32,6 +49,35 @@
   white-space:nowrap;
 }
 
+.c-table__row--group .c-table__row__cell{
+  padding:6px 10px;
+}
+
 .c-table__row--header .c-table__row__cell{
   text-align:left;
+}
+
+.c-table__row__cell strong{
+  font-weight:600;
+}
+
+.c-table__row:not(.c-table__row--header).is-hovered,.c-table__row:not(.c-table__row--header):hover{
+  background-color:#f8f8f8;
+}
+
+.c-table__row:focus{
+  outline:none;
+}
+
+.c-table__row:not(.c-table__row--header).is-focused .c-table__row__cell:first-of-type,.c-table__row:not(.c-table__row--header):focus .c-table__row__cell:first-of-type{
+  box-shadow:inset 3px 0 0 0 #30aabc;
+}
+
+.c-table__row:not(.c-table__row--header).is-selected,.c-table__row:not(.c-table__row--header)[aria-selected]{
+  border-color:#ddd;
+  background-color:#eee;
+}
+
+.c-table__row:not(.c-table__row--header).is-selected .c-table__row__cell,.c-table__row:not(.c-table__row--header)[aria-selected] .c-table__row__cell{
+  border-top:1px solid #ddd;
 }
