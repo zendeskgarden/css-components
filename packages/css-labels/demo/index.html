@@ -7,6 +7,21 @@
   <link href="index.css" rel="stylesheet">
   <style>
   .c-txt__input .c-label { min-width: 75px; }
+  /**
+   * Used to make hidden text accessible to screen-readers.
+   * Borrowed from the Ebay accessibility standards: https://ebay.gitbooks.io/mindpatterns/content/techniques/offscreentext.html
+   */
+  .u-visibility-screenreader {
+    border: 0 !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+  }
   </style>
 </head>
 <body>
@@ -323,13 +338,26 @@
 
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <p class="u-mb">
+          If you are visualizing the state of a label with color only (success, failure, etc.) 
+          you should include additional accessibility messaging relating to the current state.
+          This can be achieved in the same manner as our removal warning with the 
+          <span class="c-code">.u-visibility-screenreader</span> class.
+        </p>
+        <p class="u-mb">
+          Additionally, for users that are vision impaired, but do not use a screen reader (color-blind),
+          you should include a visual element along with the color based state.
+        </p>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-<textarea class="c-playground__code"><label class="c-label c-label--pill c-label--lg c-label--success" tabindex="0">
-  <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
+<textarea class="c-playground__code">
+<div class="c-label c-label--pill c-label--lg c-label--success" tabindex="0">
+  <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a" alt="Avatar Description" />
   <span>Hello World</span>
+  <div class="u-visibility-screenreader">Press delete to remove this label.</div>
   <button class="c-label__remove" tabindex="-1"></button>
-</label></textarea>
+</div>
+</textarea>
         </div>
       </section>
     </div>

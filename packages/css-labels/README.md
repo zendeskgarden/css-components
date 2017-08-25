@@ -16,7 +16,7 @@ for the configuration needed to install `@zendesk`-scoped packages.
 Label CSS is intended to enhance the following HTML.
 
 ```html
-<label class="c-label">LABEL</label>
+<div class="c-label">LABEL</div>
 ```
 
 ### Modifications
@@ -30,11 +30,15 @@ Use the following HTML to support the addition of a *remove* icon. Note
 the use of `tabindex` to allow the label to receive keyboard focus, but
 prevent tabbing to the remove button.
 
+To make this accessible to all users we have added a hidden description 
+that is visible to screen readers.
+
 ```html
-<label class="c-label" tabindex="0">
+<div class="c-label" tabindex="0">
   <span>LABEL</span>
+  <div class="u-visibility-screenreader">Press delete to remove this label.</div>
   <button class="c-label__remove" tabindex="-1"></button>
-</label>
+</div>
 ```
 
 #### Avatar
@@ -42,10 +46,10 @@ prevent tabbing to the remove button.
 Use the following HTML to support the addition of a label *avatar*.
 
 ```html
-<label class="c-label">
-  <svg class="c-label__avatar">...</svg>
+<div class="c-label">
+  <svg class="c-label__avatar" aria-label="Avatar description">...</svg>
   <span>LABEL</span>
-</label>
+</div>
 ```
 
 ## Tests
