@@ -68,9 +68,13 @@
   left:auto;
 }
 
-.c-chk .c-chk__input:checked~.c-chk__label:before,.c-chk.is-checked.is-checked .c-chk__label:before{
+.c-chk .c-chk__input:checked~.c-chk__label:before,.c-chk.is-checked.is-checked .c-chk__label:before,.c-chk:not(.c-chk--radio):not(.c-chk--toggle) .c-chk__input:indeterminate~.c-chk__label:before,.c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate .c-chk__label:before{
   border-color:#30aabc;
   background:no-repeat 50%/100% url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5'/%3E%3C/svg%3E") #30aabc;
+}
+
+.c-chk:not(.c-chk--radio):not(.c-chk--toggle) .c-chk__input:indeterminate~.c-chk__label:before,.c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate .c-chk__label:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4.25 7h5.5'/%3E%3C/svg%3E");
 }
 
 .c-chk .c-chk__label:hover:before,.c-chk.is-hovered .c-chk__label:before{
@@ -89,7 +93,7 @@
   background-color:rgba(0,0,0,.05);
 }
 
-.c-chk.is-active .c-chk__input:enabled:checked~.c-chk__label:before,.c-chk.is-checked.is-checked.is-active:not(.is-disabled) .c-chk__label:before,.c-chk:not(.is-disabled) .c-chk__input:enabled:checked~.c-chk__label:active:before{
+.c-chk.is-active .c-chk__input:enabled:checked~.c-chk__label:before,.c-chk.is-checked.is-checked.is-active:not(.is-disabled) .c-chk__label:before,.c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-active .c-chk__input:enabled:indeterminate~.c-chk__label:before,.c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate.is-active:not(.is-disabled) .c-chk__label:before,.c-chk:not(.c-chk--radio):not(.c-chk--toggle):not(.is-disabled) .c-chk__input:enabled:indeterminate~.c-chk__label:active:before,.c-chk:not(.is-disabled) .c-chk__input:enabled:checked~.c-chk__label:active:before{
   border-color:#3094a3;
   background-color:#3094a3;
 }
@@ -190,6 +194,10 @@
 
 .c-chk--dark.c-chk .c-chk__input:checked[disabled]~.c-chk__label:before,.c-chk--dark.c-chk.is-checked .c-chk__input[disabled]~.c-chk__label:before,.c-chk--dark.c-chk.is-checked.is-disabled .c-chk__label:before,.c-chk--dark.c-chk.is-disabled .c-chk__input:checked~.c-chk__label:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2303363D'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4.5 7.19L6.76 9.5l2.744-5'/%3E%3C/svg%3E");
+}
+
+.c-chk--dark.c-chk:not(.c-chk--radio):not(.c-chk--toggle) .c-chk__input[disabled]:indeterminate~.c-chk__label:before,.c-chk--dark.c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate .c-chk__input[disabled]~.c-chk__label:before,.c-chk--dark.c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate.is-disabled .c-chk__label:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2303363D'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4.25 7h5.5'/%3E%3C/svg%3E");
 }
 
 .c-chk--dark.c-chk--radio.c-chk .c-chk__input:checked[disabled]~.c-chk__label:before,.c-chk--dark.c-chk--radio.c-chk.is-checked .c-chk__input[disabled]~.c-chk__label:before,.c-chk--dark.c-chk--radio.c-chk.is-checked.is-disabled .c-chk__label:before,.c-chk--dark.c-chk--radio.c-chk.is-disabled .c-chk__input:checked~.c-chk__label:before{

@@ -9,9 +9,9 @@
   "main": "dist/index.css",
   "style": "src/index.css",
   "devDependencies": {
-    "@zendesk/garden-css-variables": "^2.0.0",
-    "@zendesk/garden-stylelint-config": "^5.0.0",
-    "@zendesk/garden-svg-icons": "^2.1.0",
+    "@zendesk/garden-css-variables": "^2.1.0",
+    "@zendesk/garden-stylelint-config": "^5.1.0",
+    "@zendesk/garden-svg-icons": "^2.2.0",
     "cssnano": "^3.10.0",
     "gh-pages": "^1.0.0",
     "live-server": "^1.2.0",

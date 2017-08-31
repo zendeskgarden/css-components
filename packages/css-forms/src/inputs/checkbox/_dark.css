@@ -15,6 +15,7 @@
   --zd-chk--dark-active-background-color: color(var(--zd-chk--dark-background-color) blackness(+5%));
   --zd-chk--dark-disabled-background-color: var(--zd-color-breaker-bay);
   --zd-chk--dark-disabled-background-image: svg-load('14-checkmark.svg', color: var(--zd-color-algae));
+  --zd-chk--dark-indeterminate-disabled-background-image: svg-load('14-dash.svg', color: var(--zd-color-algae));
   --zd-chk--dark--radio-disabled-background-image: svg-inline(circle);
   --zd-chk--dark--toggle-background-color: var(--zd-color-breaker-bay);
   --zd-chk--dark--toggle-active-background-color: color(var(--zd-chk--dark--toggle-background-color) blackness(+5%));
@@ -37,6 +38,10 @@
 
 .c-chk--dark:--chk-checked-disabled::before {
   background-image: var(--zd-chk--dark-disabled-background-image);
+}
+
+.c-chk--dark:--chk-indeterminate-disabled::before {
+  background-image: var(--zd-chk--dark-indeterminate-disabled-background-image);
 }
 
 .c-chk--dark.c-chk--radio:--chk-checked-disabled::before {

@@ -23,4 +23,14 @@ $(document).ready(function() {
       $('.c-txt').addClass('has-' + value);
     }
   });
+
+  $('.c-chk__input:not(.c-ctl .c-chk__input)').click(function(event) {
+    if (event.altKey && !$(this).is(':checked')) {
+      $(this).prop('indeterminate', true);
+    }
+  });
+
+  $('.c-chk__input[indeterminate]').each(function() {
+    $(this).prop('indeterminate', true);
+  });
 });

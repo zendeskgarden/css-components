@@ -1,4 +1,4 @@
-/* stylelint-disable no-descending-specificity */
+/* stylelint-disable at-rule-empty-line-before, max-line-length, no-descending-specificity */
 @import '@zendesk/garden-css-variables';
 
 :root {
@@ -24,19 +24,29 @@
     0 0 0 3px
     color(var(--zd-chk-focused-border-color) alpha(40%));
   --zd-chk-hovered-border-color: var(--zd-chk-focused-border-color);
+  --zd-chk-indeterminate-background-image: svg-load('14-dash.svg', color: var(--zd-color-white));
 }
 
 /* 1. No `.c-chk__input:focus` styling, since it prevents mimicking
  *    "focus-on-keyboard; blur-on-mouse" browser behavior.
  * 2. Class-chain specificity hack. */
 
-@custom-selector :--chk-checked
+@custom-selector :--chk-checked /* [2] */
   .c-chk.is-checked.is-checked .c-chk__label,
   .c-chk .c-chk__input:checked ~ .c-chk__label;
 
-:--chk-checked::before {
+:--chk-checked::before,
+:--chk-indeterminate::before {
   border-color: var(--zd-chk-checked-border-color);
   background: var(--zd-chk-checked-background);
+}
+
+@custom-selector :--chk-indeterminate
+  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate .c-chk__label,
+  .c-chk:not(.c-chk--radio):not(.c-chk--toggle) .c-chk__input:indeterminate ~ .c-chk__label;
+
+:--chk-indeterminate::before {
+  background-image: var(--zd-chk-indeterminate-background-image);
 }
 
 @custom-selector :--chk-hovered
@@ -71,7 +81,13 @@
   .c-chk.is-active .c-chk__input:enabled:checked ~ .c-chk__label,
   .c-chk:not(.is-disabled) .c-chk__input:enabled:checked ~ .c-chk__label:active;
 
-:--chk-checked-active::before {
+@custom-selector :--chk-indeterminate-active
+  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate.is-active:not(.is-disabled) .c-chk__label,
+  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-active .c-chk__input:enabled:indeterminate ~ .c-chk__label,
+  .c-chk:not(.c-chk--radio):not(.c-chk--toggle):not(.is-disabled) .c-chk__input:enabled:indeterminate ~ .c-chk__label:active;
+
+:--chk-checked-active::before,
+:--chk-indeterminate-active::before {
   border-color: var(--zd-chk-checked-active-border-color);
   background-color: var(--zd-chk-checked-active-background-color);
 }
@@ -95,4 +111,10 @@
   .c-chk .c-chk__input:checked[disabled] ~ .c-chk__label,
   .c-chk.is-checked .c-chk__input[disabled] ~ .c-chk__label,
   .c-chk.is-disabled .c-chk__input:checked ~ .c-chk__label;
-/* stylelint-enable no-descending-specificity */
+
+@custom-selector :--chk-indeterminate-disabled
+  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate.is-disabled .c-chk__label,
+  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate .c-chk__input[disabled] ~ .c-chk__label,
+  .c-chk:not(.c-chk--radio):not(.c-chk--toggle) .c-chk__input[disabled]:indeterminate ~ .c-chk__label;
+
+/* stylelint-enable at-rule-empty-line-before, max-line-length, no-descending-specificity */
