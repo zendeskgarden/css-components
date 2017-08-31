@@ -1,6 +1,10 @@
 # Change Log
 
-## [3.0.1] - 2017-08-14
+## [3.2.0] - 2017-09-01
+### Added (per [#38](https://github.com/zendeskgarden/css-forms/pull/38))
+- Styling for `.c-chk__input:indeterminate` checkboxes.
+
+## [3.1.0] - 2017-08-14
 ### Added (per [#33](https://github.com/zendeskgarden/css-forms/pull/33))
 - `.c-txt__input--bare` modification for unstyled text fields.
 
@@ -132,7 +136,8 @@
 ### Added
 - `.c-chk` component.
 
-[3.0.1]: https://github.com/zendeskgarden/css-forms/compare/v3.0.0...v3.0.1
+[3.2.0]: https://github.com/zendeskgarden/css-forms/compare/v3.1.0...v3.2.0
+[3.1.0]: https://github.com/zendeskgarden/css-forms/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/zendeskgarden/css-forms/compare/v2.2.0...v3.0.0
 [2.2.0]: https://github.com/zendeskgarden/css-forms/compare/v2.1.1...v2.2.0
 [2.1.1]: https://github.com/zendeskgarden/css-forms/compare/v2.1.0...v2.1.1
