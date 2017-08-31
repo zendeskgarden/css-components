@@ -2,6 +2,9 @@
   "plugins": {
     "postcss-import",
     "postcss-cssnext",
+    "postcss-inline-svg": {
+      "path": "node_modules/@zendesk/garden-svg-icons/src"
+    },
     "cssnano": {
       "autoprefixer": false,
       "core": false,

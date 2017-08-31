@@ -12,8 +12,8 @@
 /* stylelint-disable selector-max-specificity, no-descending-specificity */
 
 @custom-selector :--table__row-hovered
-  :not(.c-table__row--header).is-hovered,
-  :not(.c-table__row--header):hover;
+  :not(.c-table__row--header):not(.c-table__row--group).is-hovered,
+  :not(.c-table__row--header):not(.c-table__row--group):hover;
 
 .c-table__row:--table__row-hovered {
   background-color: var(--zd-table__row-hovered-background-color);
@@ -29,6 +29,10 @@
 
 .c-table__row:--table__row-focused .c-table__row__cell:first-of-type {
   box-shadow: var(--zd-table__row-focused-box-shadow);
+}
+
+.c-table__row__cell--overflow.is-active {
+  z-index: 1;
 }
 
 @custom-selector :--table__row-selected

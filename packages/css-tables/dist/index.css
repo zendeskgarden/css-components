@@ -11,6 +11,7 @@
 
 .c-table__row{
   display:table-row;
+  transition:border-color .25s ease-in-out,background-color .25s ease-in-out;
   border-bottom:1px solid #eee;
   height:40px;
   vertical-align:top;
@@ -34,6 +35,7 @@
 
 .c-table__row__cell{
   display:table-cell;
+  transition:box-shadow .1s ease-in-out;
   padding:10px 12px;
 }
 
@@ -41,6 +43,28 @@
   box-sizing:content-box;
   padding-right:0;
   width:1em;
+}
+
+.c-table__row__cell--overflow{
+  position:relative;
+  z-index:0;
+  cursor:pointer;
+  padding:0;
+  width:2em;
+}
+
+.c-table__row__cell--overflow:before{
+  position:absolute;
+  top:0;
+  left:0;
+  -webkit-transform:rotate(90deg);
+          transform:rotate(90deg);
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' color='%23999'%3E%3Cg fill='currentColor'%3E%3Ccircle cx='7' cy='13' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3Ccircle cx='19' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:50%;
+  width:100%;
+  height:100%;
+  content:"";
 }
 
 .c-table__row__cell--truncate{
@@ -61,7 +85,7 @@
   font-weight:600;
 }
 
-.c-table__row:not(.c-table__row--header).is-hovered,.c-table__row:not(.c-table__row--header):hover{
+.c-table__row:not(.c-table__row--header):not(.c-table__row--group).is-hovered,.c-table__row:not(.c-table__row--header):not(.c-table__row--group):hover{
   background-color:#f8f8f8;
 }
 
@@ -71,6 +95,10 @@
 
 .c-table__row:not(.c-table__row--header).is-focused .c-table__row__cell:first-of-type,.c-table__row:not(.c-table__row--header):focus .c-table__row__cell:first-of-type{
   box-shadow:inset 3px 0 0 0 #30aabc;
+}
+
+.c-table__row__cell--overflow.is-active{
+  z-index:1;
 }
 
 .c-table__row:not(.c-table__row--header).is-selected,.c-table__row:not(.c-table__row--header)[aria-selected]{

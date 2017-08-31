@@ -31,7 +31,6 @@
   <main class="c-main c-main--page">
     <h1 class="c-main__title">Tables</h1>
     <div class="c-main__body">
-      <p class="c-table u-mb-lg">Hello World!</p>
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
@@ -46,11 +45,18 @@
       <th class="c-table__row__cell">Header 1</th>
       <th class="c-table__row__cell">Header 2</th>
       <th class="c-table__row__cell">Header 3</th>
+      <th class="c-table__row__cell c-table__row__cell--overflow js-menu">
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu" style="top:36px;right:0">
+          <li class="c-menu__item" role="menuitem">One</li>
+          <li class="c-menu__item" role="menuitem">Two</li>
+          <li class="c-menu__item" role="menuitem">Three</li>
+        </ul>
+      </th>
     </tr>
   </thead>
   <tbody>
     <tr class="c-table__row c-table__row--group">
-      <td class="c-table__row__cell" colspan="4">Status <strong>Open</strong></td>
+      <td class="c-table__row__cell" colspan="5">Status <strong>Open</strong></td>
     </tr>
     <tr class="c-table__row" tabindex="0">
       <td class="c-table__row__cell"><div class="c-chk c-chk--nolabel">
@@ -60,6 +66,7 @@
       <td class="c-table__row__cell">Column 1</td>
       <td class="c-table__row__cell">Column 2</td>
       <td class="c-table__row__cell">Column 3</td>
+      <td class="c-table__row__cell c-table__row__cell--overflow"></td>
     </tr>
     <tr class="c-table__row" tabindex="0">
       <td class="c-table__row__cell"><div class="c-chk c-chk--nolabel">
@@ -69,6 +76,7 @@
       <td class="c-table__row__cell">Column 1</td>
       <td class="c-table__row__cell">Column 2</td>
       <td class="c-table__row__cell">Column 3</td>
+      <td class="c-table__row__cell c-table__row__cell--overflow"></td>
     </tr>
   </tbody>
 </table></textarea>
@@ -80,5 +88,6 @@
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
   <script src="http://garden.zendesk.com/editor.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
