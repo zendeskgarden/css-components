@@ -26,6 +26,7 @@
 
 .c-table__row--header{
   border-bottom-color:#ddd;
+  height:48px;
   vertical-align:bottom;
   font-weight:600;
 }
@@ -36,7 +37,7 @@
 
 .c-table__row__cell{
   display:table-cell;
-  transition:box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,opacity .25s ease-in-out;
   padding:10px 12px;
 }
 
@@ -68,6 +69,10 @@
   content:"";
 }
 
+.c-table__row:not(.c-table__row--header) .c-table__row__cell--overflow{
+  opacity:0;
+}
+
 .c-table__row__cell--truncate{
   overflow:hidden;
   text-overflow:ellipsis;
@@ -79,6 +84,8 @@
 }
 
 .c-table__row--header .c-table__row__cell{
+  padding-top:14px;
+  padding-bottom:14px;
   text-align:left;
 }
 
@@ -96,6 +103,10 @@
 
 .c-table__row:not(.c-table__row--header).is-focused .c-table__row__cell:first-of-type,.c-table__row:not(.c-table__row--header):focus .c-table__row__cell:first-of-type{
   box-shadow:inset 3px 0 0 0 #30aabc;
+}
+
+.c-table__row:not(.c-table__row--header).is-focused .c-table__row__cell--overflow,.c-table__row:not(.c-table__row--header):focus .c-table__row__cell--overflow,.c-table__row:not(.c-table__row--header):not(.c-table__row--group).is-hovered .c-table__row__cell--overflow,.c-table__row:not(.c-table__row--header):not(.c-table__row--group):hover .c-table__row__cell--overflow,.c-table__row__cell--overflow.is-active{
+  opacity:1;
 }
 
 .c-table__row__cell--overflow.is-active{
@@ -152,4 +163,40 @@
 
 .c-table__row__cell .is-sortable.is-focused{
   text-decoration:underline;
+}
+
+.c-table--lg .c-table__row--header{
+  height:72px;
+}
+
+.c-table--lg .c-table__row--header .c-table__row__cell{
+  padding-top:26px;
+  padding-bottom:26px;
+}
+
+.c-table--sm .c-table__row--header{
+  height:40px;
+}
+
+.c-table--sm .c-table__row--header .c-table__row__cell{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.c-table--lg .c-table__row:not(.c-table__row--header):not(.c-table__row--group){
+  height:64px;
+}
+
+.c-table--lg .c-table__row:not(.c-table__row--header):not(.c-table__row--group) .c-table__row__cell{
+  padding-top:22px;
+  padding-bottom:22px;
+}
+
+.c-table--sm .c-table__row:not(.c-table__row--header):not(.c-table__row--group){
+  height:32px;
+}
+
+.c-table--sm .c-table__row:not(.c-table__row--header):not(.c-table__row--group) .c-table__row__cell{
+  padding-top:6px;
+  padding-bottom:6px;
 }
