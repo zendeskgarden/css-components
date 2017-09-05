@@ -1,6 +1,7 @@
 @import '@zendesk/garden-css-variables';
 
 :root {
+  --zd-table-color: var(--zd-color-dark-gray);
   --zd-table-font-size: var(--zd-font-size-epsilon);
   --zd-table-line-height: calc(20 / 14);
   --zd-table__row-border: 1px solid;
@@ -15,10 +16,10 @@
   --zd-table__row--group__cell-padding: 6px 10px;
   --zd-table__row--header-border-color: var(--zd-color-gainsboro);
   --zd-table__row--header-font-weight: var(--zd-font-weight-semibold);
-  --zd-table__row--overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-aluminum));
   --zd-table__row--stripe-background-color: var(--zd-color-snow);
   --zd-table__row__cell-padding: 10px 12px;
   --zd-table__row__cell-transition: box-shadow .1s ease-in-out;
+  --zd-table__row__cell--overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-aluminum));
   --zd-table__row__cell__strong-font-weight: var(--zd-font-weight-semibold);
 }
 
@@ -33,6 +34,7 @@
   border-collapse: collapse; /* [1] */
   border-spacing: 0; /* [1] */
   line-height: var(--zd-table-line-height);
+  color: var(--zd-table-color);
   font-size: var(--zd-table-font-size);
 }
 
@@ -86,7 +88,7 @@
   top: 0;
   left: 0;
   transform: rotate(90deg);
-  background-image: var(--zd-table__row--overflow-background-image);
+  background-image: var(--zd-table__row__cell--overflow-background-image);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;

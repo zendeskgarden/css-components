@@ -6,6 +6,7 @@
   border-collapse:collapse;
   border-spacing:0;
   line-height:1.42857;
+  color:#555;
   font-size:14px;
 }
 
@@ -108,4 +109,47 @@
 
 .c-table__row:not(.c-table__row--header).is-selected .c-table__row__cell,.c-table__row:not(.c-table__row--header)[aria-selected] .c-table__row__cell{
   border-top:1px solid #ddd;
+}
+
+.c-table__row__cell .is-sortable{
+  position:relative;
+  cursor:pointer;
+  padding-right:17px;
+  font-weight:600;
+}
+
+.c-table__row__cell .is-sortable:before{
+  position:absolute;
+  top:0;
+  right:0;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23555' fill='%23555'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:50%;
+  width:14px;
+  height:100%;
+  content:"";
+}
+
+.c-table__row__cell .is-sortable.is-asc:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23555' fill='%23BBB'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
+}
+
+.c-table__row__cell .is-sortable.is-desc:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23BBB' fill='%23555'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
+}
+
+.c-table__row__cell .is-sortable.is-hovered,.c-table__row__cell .is-sortable:hover{
+  color:#30aabc;
+}
+
+.c-table__row__cell .is-sortable.is-hovered:before,.c-table__row__cell .is-sortable:hover:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2330AABC' fill='%2330AABC'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
+}
+
+.c-table__row__cell .is-sortable:focus{
+  outline:none;
+}
+
+.c-table__row__cell .is-sortable.is-focused{
+  text-decoration:underline;
 }
