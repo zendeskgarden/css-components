@@ -1,0 +1,43 @@
+:root {
+  --zd-table-color--dark: var(--zd-color-white);
+  --zd-table--dark__row-border-bottom: var(--zd-table__row-border) var(--zd-color-sherpa-blue);
+  --zd-table--dark__row--header-border-color: var(--zd-color-breaker-bay);
+  --zd-table--dark__row--stripe-background-color: var(--zd-color-algae);
+  --zd-table--dark__row-hovered-background-color: var(--zd-color-sherpa-blue);
+  --zd-table--dark__row-selected-background-color: var(--zd-color-sherpa-blue);
+  --zd-table--dark__row-selected-border-color: var(--zd-color-breaker-bay);
+}
+
+.c-table--dark {
+  color: var(--zd-table-color--dark);
+}
+
+.c-table--dark .c-table__row {
+  border-bottom: var(--zd-table--dark__row-border-bottom);
+}
+
+.c-table--dark .c-table__row--header {
+  border-bottom-color: var(--zd-table--dark__row--header-border-color);
+}
+
+.c-table--dark .c-table__row--group,
+.c-table--dark .c-table__row--stripe {
+  background-color: var(--zd-table--dark__row--stripe-background-color);
+}
+
+.c-table--dark .c-table__row:--table__row-hovered {
+  background-color: var(--zd-table--dark__row-hovered-background-color);
+}
+
+.c-table--dark .c-table__row:--table__row-selected {
+  border-color: var(--zd-table--dark__row-selected-border-color);
+  background-color: var(--zd-table--dark__row-selected-background-color);
+}
+
+/* stylelint-disable selector-max-specificity */
+
+.c-table--dark .c-table__row:--table__row-selected .c-table__row__cell {
+  border-top: var(--zd-table__row-border) var(--zd-table--dark__row-selected-border-color);
+}
+
+/* stylelint-enable selector-max-specificity */

@@ -23,7 +23,6 @@
   --zd-table__row__cell-transition:
     box-shadow .1s ease-in-out,
     opacity .25s ease-in-out;
-  --zd-table__row__cell--overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-aluminum));
   --zd-table__row__cell__strong-font-weight: var(--zd-font-weight-semibold);
 }
 
@@ -80,31 +79,6 @@
   width: 1em;
 }
 
-.c-table__row__cell--overflow {
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-  padding: 0;
-  width: 2em;
-}
-
-.c-table__row__cell--overflow::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotate(90deg);
-  background-image: var(--zd-table__row__cell--overflow-background-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  content: '';
-}
-
-.c-table__row:not(.c-table__row--header) .c-table__row__cell--overflow {
-  opacity: 0;
-}
-
 .c-table__row__cell--truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -115,7 +89,7 @@
   padding: var(--zd-table__row--group__cell-padding);
 }
 
-.c-table__row--header .c-table__row__cell {
+.c-table__row--header .c-table__row__cell:not(.c-table__row__cell--overflow) {
   padding-top: var(--zd-table__row--header__cell-padding);
   padding-bottom: var(--zd-table__row--header__cell-padding);
   text-align: left; /* [2] */

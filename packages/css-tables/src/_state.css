@@ -31,16 +31,6 @@
   box-shadow: var(--zd-table__row-focused-box-shadow);
 }
 
-.c-table__row:--table__row-hovered .c-table__row__cell--overflow,
-.c-table__row:--table__row-focused .c-table__row__cell--overflow,
-.c-table__row__cell--overflow.is-active {
-  opacity: 1;
-}
-
-.c-table__row__cell--overflow.is-active {
-  z-index: 1;
-}
-
 @custom-selector :--table__row-selected
   :not(.c-table__row--header).is-selected,
   :not(.c-table__row--header)[aria-selected];

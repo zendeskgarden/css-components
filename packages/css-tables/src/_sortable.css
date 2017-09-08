@@ -3,18 +3,22 @@
   --zd-table__row__cell__sortable-asc-background-image: svg-load('14-sort.svg', color: var(--zd-table-color), fill: var(--zd-color-silver-sand));
   --zd-table__row__cell__sortable-desc-background-image: svg-load('14-sort.svg', color: var(--zd-color-silver-sand), fill: var(--zd-table-color));
   --zd-table__row__cell__sortable-hover-background-image: svg-load('14-sort.svg', color: var(--zd-color-pelorous), fill: var(--zd-color-pelorous));
+  --zd-table__row__cell__sortable-hover-asc-background-image: svg-load('14-sort.svg', color: var(--zd-color-pelorous), fill: color(var(--zd-color-pelorous) alpha(40%)));
+  --zd-table__row__cell__sortable-hover-desc-background-image: svg-load('14-sort.svg', color: color(var(--zd-color-pelorous) alpha(40%)), fill: var(--zd-color-pelorous));
   --zd-table__row__cell__sortable-padding: 17px;
   --zd-table__row__cell__sortable-hover-color: var(--zd-color-pelorous);
 }
 
-.c-table__row__cell .is-sortable {
+.c-table__row__cell__sortable {
   position: relative;
   cursor: pointer;
   padding-right: var(--zd-table__row__cell__sortable-padding);
+  text-decoration: none;
+  color: inherit;
   font-weight: var(--zd-table__row__cell__strong-font-weight);
 }
 
-.c-table__row__cell .is-sortable::before {
+.c-table__row__cell__sortable::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -26,11 +30,11 @@
   content: '';
 }
 
-.c-table__row__cell .is-sortable.is-asc::before {
+.c-table__row__cell__sortable.is-asc::before {
   background-image: var(--zd-table__row__cell__sortable-asc-background-image);
 }
 
-.c-table__row__cell .is-sortable.is-desc::before {
+.c-table__row__cell__sortable.is-desc::before {
   background-image: var(--zd-table__row__cell__sortable-desc-background-image);
 }
 
@@ -38,18 +42,43 @@
   :hover,
   .is-hovered;
 
-.c-table__row__cell .is-sortable:--table__row__cell__sortable-hovered {
+.c-table__row__cell__sortable:--table__row__cell__sortable-hovered {
+  text-decoration: none;
+}
+
+.c-table__row__cell__sortable:--table__row__cell__sortable-hovered,
+.c-table__row__cell__sortable:--table__row__cell__sortable-focused {
   color: var(--zd-table__row__cell__sortable-hover-color);
 }
 
-.c-table__row__cell .is-sortable:--table__row__cell__sortable-hovered::before {
+.c-table__row__cell__sortable:--table__row__cell__sortable-hovered::before,
+.c-table__row__cell__sortable:--table__row__cell__sortable-focused::before {
   background-image: var(--zd-table__row__cell__sortable-hover-background-image);
 }
 
-.c-table__row__cell .is-sortable:focus {
-  outline: none;
+/* stylelint-disable max-line-length */
+
+.c-table__row__cell__sortable.is-asc:--table__row__cell__sortable-hovered::before,
+.c-table__row__cell__sortable.is-asc:--table__row__cell__sortable-focused::before {
+  background-image: var(--zd-table__row__cell__sortable-hover-asc-background-image);
 }
 
-.c-table__row__cell .is-sortable.is-focused {
+.c-table__row__cell__sortable.is-desc:--table__row__cell__sortable-hovered::before,
+.c-table__row__cell__sortable.is-desc:--table__row__cell__sortable-focused::before {
+  background-image: var(--zd-table__row__cell__sortable-hover-desc-background-image);
+}
+
+/* stylelint-enable max-line-length */
+
+@custom-selector :--table__row__cell__sortable-focused
+  :focus,
+  .is-focused;
+
+.c-table__row__cell__sortable:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.c-table__row__cell__sortable.is-focused {
   text-decoration: underline;
 }

@@ -1,0 +1,48 @@
+:root {
+  --zd-table__row__cell__overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-aluminum));
+}
+
+.c-table__row__cell--overflow {
+  padding: 0;
+  width: 2em;
+  height: inherit;
+}
+
+.c-table__row__cell__overflow {
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  height: 100%;
+}
+
+.c-table__row__cell__overflow::before {
+  position: absolute;
+  top: calc(50% - 1em);
+  left: 0;
+  transform: rotate(90deg);
+  background-image: var(--zd-table__row__cell__overflow-background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2em;
+  height: 2em;
+  content: '';
+}
+
+.c-table__row:not(.c-table__row--header) .c-table__row__cell__overflow {
+  opacity: 0;
+}
+
+.c-table__row:--table__row-hovered .c-table__row__cell__overflow,
+.c-table__row:--table__row-focused .c-table__row__cell__overflow,
+.c-table__row__cell__overflow.is-active {
+  opacity: 1;
+}
+
+.c-table__row__cell__overflow.is-active {
+  z-index: 1;
+}
+
+.c-table__row__cell__overflow .c-menu {
+  top: calc(50% + 1em);
+  right: 0;
+}
