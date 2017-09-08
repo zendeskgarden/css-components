@@ -20,8 +20,8 @@
 }
 
 @custom-selector :--table__row-focused
-  :not(.c-table__row--header).is-focused,
-  :not(.c-table__row--header):focus;
+  :not(.c-table__row--header):not(.c-table__row--group).is-focused,
+  :not(.c-table__row--header):not(.c-table__row--group):focus;
 
 .c-table__row:focus {
   outline: none;

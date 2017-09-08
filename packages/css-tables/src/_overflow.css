@@ -1,5 +1,6 @@
 :root {
   --zd-table__row__cell__overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-aluminum));
+  --zd-table__row__cell__overflow-transition: opacity .25s ease-in-out;
 }
 
 .c-table__row__cell--overflow {
@@ -10,6 +11,7 @@
 
 .c-table__row__cell__overflow {
   position: relative;
+  transition: var(--zd-table__row__cell__overflow-transition);
   z-index: 0;
   cursor: pointer;
   height: 100%;
@@ -28,8 +30,12 @@
   content: '';
 }
 
-.c-table__row:not(.c-table__row--header) .c-table__row__cell__overflow {
-  opacity: 0;
+.c-table__row__cell__overflow:focus {
+  outline: none;
+}
+
+.c-table__row__cell__overflow.is-active {
+  z-index: 1;
 }
 
 .c-table__row:--table__row-hovered .c-table__row__cell__overflow,
@@ -38,11 +44,11 @@
   opacity: 1;
 }
 
-.c-table__row__cell__overflow.is-active {
-  z-index: 1;
+.c-table__row:not(.c-table__row--header) .c-table__row__cell__overflow {
+  opacity: 0;
 }
 
-.c-table__row__cell__overflow .c-menu {
+.c-table__row__cell--overflow .c-menu {
   top: calc(50% + 1em);
   right: 0;
 }

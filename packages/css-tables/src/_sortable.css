@@ -38,6 +38,18 @@
   background-image: var(--zd-table__row__cell__sortable-desc-background-image);
 }
 
+.c-table--dark .c-table__row__cell__sortable::before {
+  background-image: var(--zd-table--dark__row__cell__sortable-background-image);
+}
+
+.c-table--dark .c-table__row__cell__sortable.is-asc::before {
+  background-image: var(--zd-table--dark__row__cell__sortable-asc-background-image);
+}
+
+.c-table--dark .c-table__row__cell__sortable.is-desc::before {
+  background-image: var(--zd-table--dark__row__cell__sortable-desc-background-image);
+}
+
 @custom-selector :--table__row__cell__sortable-hovered
   :hover,
   .is-hovered;

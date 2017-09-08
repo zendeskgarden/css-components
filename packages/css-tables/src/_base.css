@@ -19,10 +19,9 @@
   --zd-table__row--header-height: 48px;
   --zd-table__row--header__cell-padding: 14px;
   --zd-table__row--stripe-background-color: var(--zd-color-snow);
-  --zd-table__row__cell-padding: 10px 12px;
-  --zd-table__row__cell-transition:
-    box-shadow .1s ease-in-out,
-    opacity .25s ease-in-out;
+  --zd-table__row__cell-padding-horizontal: 12px;
+  --zd-table__row__cell-padding: 10px var(--zd-table__row__cell-padding-horizontal);
+  --zd-table__row__cell-transition: box-shadow .1s ease-in-out;
   --zd-table__row__cell__strong-font-weight: var(--zd-font-weight-semibold);
 }
 

@@ -20,13 +20,30 @@
       <span>/ Tables</span>
     </h1>
     <ul class="c-ctl c-ctl--header">
-      <li class="c-ctl__item">
-        <fieldset class="c-chk c-chk--toggle">
-          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
-          <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
-        </fieldset>
-      </li>
-    </ul>
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-settings-fill" />
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron" />
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+        </ul>
   </header>
   <main class="c-main c-main--page">
     <h1 class="c-main__title">Tables</h1>
@@ -48,7 +65,7 @@
       <th class="c-table__row__cell">Header 2</th>
       <th class="c-table__row__cell">Header 3</th>
       <th class="c-table__row__cell c-table__row__cell--overflow">
-        <div class="c-table__row__cell__overflow js-menu">
+        <div class="c-table__row__cell__overflow js-menu" tabindex="0">
           <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
             <li class="c-menu__item" role="menuitem">One</li>
             <li class="c-menu__item" role="menuitem">Two</li>
@@ -63,7 +80,7 @@
       <td class="c-table__row__cell" colspan="5">Status <a class="c-table__row__cell__sortable is-asc" href>Open</a></td>
     </tr>
     <tr class="c-table__row" tabindex="0">
-      <td class="c-table__row__cell">
+      <td class="c-table__row__cell c-table__row__cell--min">
         <div class="c-chk c-chk--nolabel">
           <input class="c-chk__input" id="chk-one" type="checkbox">
           <label class="c-chk__label" for="chk-one">Select Row One</label>
@@ -72,8 +89,8 @@
       <td class="c-table__row__cell">Column 1</td>
       <td class="c-table__row__cell">Column 2</td>
       <td class="c-table__row__cell">Column 3</td>
-      <td class="c-table__row__cell c-table__row__cell--overflow js-menu">
-        <div class="c-table__row__cell__overflow js-menu">
+      <td class="c-table__row__cell c-table__row__cell--overflow">
+        <div class="c-table__row__cell__overflow js-menu" tabindex="0">
           <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
             <li class="c-menu__item" role="menuitem">One</li>
             <li class="c-menu__item" role="menuitem">Two</li>
@@ -83,7 +100,7 @@
       </td>
     </tr>
     <tr class="c-table__row" tabindex="0">
-      <td class="c-table__row__cell">
+      <td class="c-table__row__cell c-table__row__cell--min">
         <div class="c-chk c-chk--nolabel">
           <input class="c-chk__input" id="chk-two" type="checkbox">
           <label class="c-chk__label" for="chk-two">Select Row Two</label>
@@ -93,7 +110,7 @@
       <td class="c-table__row__cell">Column 2</td>
       <td class="c-table__row__cell">Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
-        <div class="c-table__row__cell__overflow js-menu">
+        <div class="c-table__row__cell__overflow js-menu" tabindex="0">
           <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
             <li class="c-menu__item" role="menuitem">One</li>
             <li class="c-menu__item" role="menuitem">Two</li>

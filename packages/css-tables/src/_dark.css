@@ -4,8 +4,13 @@
   --zd-table--dark__row--header-border-color: var(--zd-color-breaker-bay);
   --zd-table--dark__row--stripe-background-color: var(--zd-color-algae);
   --zd-table--dark__row-hovered-background-color: var(--zd-color-sherpa-blue);
-  --zd-table--dark__row-selected-background-color: var(--zd-color-sherpa-blue);
-  --zd-table--dark__row-selected-border-color: var(--zd-color-breaker-bay);
+  --zd-table--dark__row-selected-background-color: var(--zd-color-breaker-bay);
+  --zd-table--dark__row-selected-border-color: var(--zd-color-sherpa-blue);
+  --zd-table--dark__row__cell__overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-breaker-bay));
+  --zd-table--dark__row-selected__cell__overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-submarine));
+  --zd-table--dark__row__cell__sortable-background-image: svg-load('14-sort.svg', color: var(--zd-table-color--dark), fill: var(--zd-table-color--dark));
+  --zd-table--dark__row__cell__sortable-asc-background-image: svg-load('14-sort.svg', color: var(--zd-table-color--dark), fill: var(--zd-color-breaker-bay));
+  --zd-table--dark__row__cell__sortable-desc-background-image: svg-load('14-sort.svg', color: var(--zd-color-breaker-bay), fill: var(--zd-table-color--dark));
 }
 
 .c-table--dark {
@@ -25,6 +30,10 @@
   background-color: var(--zd-table--dark__row--stripe-background-color);
 }
 
+.c-table--dark .c-table__row__cell__overflow::before {
+  background-image: var(--zd-table--dark__row__cell__overflow-background-image);
+}
+
 .c-table--dark .c-table__row:--table__row-hovered {
   background-color: var(--zd-table--dark__row-hovered-background-color);
 }
@@ -34,10 +43,14 @@
   background-color: var(--zd-table--dark__row-selected-background-color);
 }
 
-/* stylelint-disable selector-max-specificity */
+/* stylelint-disable max-line-length, selector-max-specificity */
 
 .c-table--dark .c-table__row:--table__row-selected .c-table__row__cell {
   border-top: var(--zd-table__row-border) var(--zd-table--dark__row-selected-border-color);
 }
 
-/* stylelint-enable selector-max-specificity */
+.c-table--dark .c-table__row:--table__row-selected .c-table__row__cell__overflow::before {
+  background-image: var(--zd-table--dark__row-selected__cell__overflow-background-image);
+}
+
+/* stylelint-enable max-line-length, selector-max-specificity */
