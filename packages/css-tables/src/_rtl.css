@@ -31,7 +31,7 @@
 
 .c-table.is-rtl .c-table__row__cell__overflow .c-menu {
   right: auto;
-  left: 0;
+  left: calc(100% - var(--zd-table__row__cell__overflow-size));
 }
 
 .c-table.is-rtl .c-table__row:--table__row-focused .c-table__row__cell:first-of-type {

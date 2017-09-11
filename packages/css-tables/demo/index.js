@@ -19,6 +19,19 @@ $(document).ready(function() {
     $(this).removeClass('is-focused');
   });
 
+  $(document).on('focus', '.c-table__row__cell__overflow', function() {
+    if (mouse) {
+      mouse = false;
+    } else {
+      $(this).addClass('is-focused');
+    }
+  }).on('mousedown', '.c-table__row__cell__overflow', function() {
+    mouse = true;
+    $(this).removeClass('is-focused');
+  }).on('blur', '.c-table__row__cell__overflow', function() {
+    $(this).removeClass('is-focused');
+  });
+
   $(document).on('click', '.c-table__row__cell__sortable', function() {
     var $this = $(this);
 
@@ -44,5 +57,39 @@ $(document).ready(function() {
     }
   }).on('blur', '.c-table__row__cell__sortable', function() {
     $(this).removeClass('is-focused');
+  });
+
+  $(document).on('change', '.js-display', function() {
+    var value = $(this).val();
+    var $table = $('.c-table:not(.c-playground .c-table)');
+
+    $table.removeClass('c-table--sm c-table--lg');
+
+    if (value.length > 0) {
+      $table.addClass('c-table--' + value);
+    }
+  });
+
+  $('.js-stripes').change(function() {
+    if ($(this).is(':checked')) {
+      $('.c-table:not(.c-playground .c-table)').each(function() {
+        var addStripe = true;
+
+        $('.c-table__row', $(this)).each(function() {
+          var $row = $(this);
+
+          if ($row.hasClass('c-table__row--header')) {
+            addStripe = true;
+          } else if ($row.hasClass('c-table__row--group')) {
+            addStripe = false;
+          } else {
+            $row.toggleClass('c-table__row--stripe', addStripe);
+            addStripe = !addStripe;
+          }
+        });
+      });
+    } else {
+      $('.c-table__row').removeClass('c-table__row--stripe');
+    }
   });
 });
