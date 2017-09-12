@@ -429,14 +429,14 @@
           <li class="u-mb"><table class="c-table">
             <tr class="c-table__row">
               <td class="c-table__row__cell">
-                <code class="c-code c-table__row__cell__sortable is-asc" dir="ltr">.c-table__row__cell__sortable.is-asc</code>
+                <code class="c-code c-table__row__cell__sortable is-ascending" dir="ltr">.c-table__row__cell__sortable.is-ascending</code>
               </td>
             </tr>
           </table></li>
           <li class="u-mb"><table class="c-table">
             <tr class="c-table__row">
               <td class="c-table__row__cell">
-                <code class="c-code c-table__row__cell__sortable is-desc" dir="ltr">.c-table__row__cell__sortable.is-desc</code>
+                <code class="c-code c-table__row__cell__sortable is-descending" dir="ltr">.c-table__row__cell__sortable.is-descending</code>
               </td>
             </tr>
           </table></li>
@@ -484,6 +484,7 @@
         <div class="c-playground">
           <div class="c-playground__preview"></div>
 <textarea class="c-playground__code"><table class="c-table">
+  <caption class="c-table__caption u-beta u-semibold u-mb-sm">Table Caption</caption>
   <thead>
     <tr class="c-table__row c-table__row--header">
       <th class="c-table__row__cell c-table__row__cell--min">
@@ -493,12 +494,12 @@
         </div>
       </th>
       <th class="c-table__row__cell">Header 1</th>
-      <th class="c-table__row__cell">
-        <a class="c-table__row__cell__sortable" tabindex="0">Header 2</a>
+      <th aria-sort="none" class="c-table__row__cell">
+        <button class="c-table__row__cell__sortable">Header 2</button>
       </th>
       <th class="c-table__row__cell">Header 3</th>
       <th class="c-table__row__cell c-table__row__cell--overflow">
-        <button class="c-table__row__cell__overflow js-menu" tabindex="0">
+        <button class="c-table__row__cell__overflow js-menu">
           <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
             <li class="c-menu__item" role="menuitem">One</li>
             <li class="c-menu__item" role="menuitem">Two</li>
@@ -510,7 +511,7 @@
   </thead>
   <tbody>
     <tr class="c-table__row c-table__row--group">
-      <td class="c-table__row__cell" colspan="5">Status <a class="c-table__row__cell__sortable is-asc" href>Platinum</a></td>
+      <td aria-sort="ascending" class="c-table__row__cell" colspan="5">Status <button class="c-table__row__cell__sortable is-ascending">Platinum</button></td>
     </tr>
     <tr class="c-table__row" tabindex="0">
       <td class="c-table__row__cell">
@@ -523,7 +524,7 @@
       <td class="c-table__row__cell">Row 1, Column 2</td>
       <td class="c-table__row__cell">Row 1, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
-        <button class="c-table__row__cell__overflow js-menu" tabindex="0">
+        <button class="c-table__row__cell__overflow js-menu">
           <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
             <li class="c-menu__item" role="menuitem">One</li>
             <li class="c-menu__item" role="menuitem">Two</li>
@@ -543,7 +544,7 @@
       <td class="c-table__row__cell">Row 2, Column 2</td>
       <td class="c-table__row__cell">Row 2, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
-        <button class="c-table__row__cell__overflow js-menu" tabindex="0">
+        <button class="c-table__row__cell__overflow js-menu">
           <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
             <li class="c-menu__item" role="menuitem">One</li>
             <li class="c-menu__item" role="menuitem">Two</li>
@@ -553,7 +554,7 @@
       </td>
     </tr>
     <tr class="c-table__row c-table__row--group">
-      <td class="c-table__row__cell" colspan="5">Status <a class="c-table__row__cell__sortable is-asc" href>Gold</a></td>
+      <td aria-sort["descending"] class="c-table__row__cell" colspan="5">Status <button class="c-table__row__cell__sortable is-descending">Gold</button></td>
     </tr>
     <tr class="c-table__row" tabindex="0">
       <td class="c-table__row__cell">
@@ -566,7 +567,7 @@
       <td class="c-table__row__cell">Row 3, Column 2</td>
       <td class="c-table__row__cell">Row 3, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
-        <button class="c-table__row__cell__overflow js-menu" tabindex="0">
+        <button class="c-table__row__cell__overflow js-menu">
           <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
             <li class="c-menu__item" role="menuitem">One</li>
             <li class="c-menu__item" role="menuitem">Two</li>
@@ -586,7 +587,7 @@
       <td class="c-table__row__cell">Row 4, Column 2</td>
       <td class="c-table__row__cell">Row 4, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
-        <button class="c-table__row__cell__overflow js-menu" tabindex="0">
+        <button class="c-table__row__cell__overflow js-menu">
           <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
             <li class="c-menu__item" role="menuitem">One</li>
             <li class="c-menu__item" role="menuitem">Two</li>
@@ -606,7 +607,7 @@
       <td class="c-table__row__cell">Row 5, Column 2</td>
       <td class="c-table__row__cell">Row 5, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
-        <button class="c-table__row__cell__overflow js-menu" tabindex="0">
+        <button class="c-table__row__cell__overflow js-menu">
           <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
             <li class="c-menu__item" role="menuitem">One</li>
             <li class="c-menu__item" role="menuitem">Two</li>

@@ -8,6 +8,10 @@
   direction: rtl;
 }
 
+.c-table.is-rtl .c-table__caption {
+  text-align: right;
+}
+
 .c-table.is-rtl .c-table__row__cell--min {
   padding-right: var(--zd-table__row__cell-padding-horizontal);
   padding-left: 0;

@@ -35,17 +35,13 @@ $(document).ready(function() {
   $(document).on('click', '.c-table__row__cell__sortable', function() {
     var $this = $(this);
 
-    if ($this.is('.is-asc')) {
-      $this.removeClass('is-asc').addClass('is-desc');
-    } else if ($this.is('.is-desc')) {
-      $this.removeClass('is-desc').addClass('is-asc');
+    if ($this.is('.is-ascending')) {
+      $this.removeClass('is-ascending').addClass('is-descending');
+    } else if ($this.is('.is-descending')) {
+      $this.removeClass('is-descending').addClass('is-ascending');
     } else {
-      $this.addClass('is-asc');
+      $this.addClass('is-ascending');
     }
-
-    $this.blur();
-
-    return false;
   }).on('mousedown', '.c-table__row__cell__sortable', function() {
     mouse = true;
     $(this).removeClass('is-focused');
