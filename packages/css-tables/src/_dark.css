@@ -8,9 +8,6 @@
   --zd-table--dark__row-selected-border-color: var(--zd-color-sherpa-blue);
   --zd-table--dark__row__cell__overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-breaker-bay));
   --zd-table--dark__row-selected__cell__overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-submarine));
-  --zd-table--dark__row__cell__sortable-background-image: svg-load('14-sort.svg', color: var(--zd-table-color--dark), fill: var(--zd-table-color--dark));
-  --zd-table--dark__row__cell__sortable-asc-background-image: svg-load('14-sort.svg', color: var(--zd-table-color--dark), fill: var(--zd-color-breaker-bay));
-  --zd-table--dark__row__cell__sortable-desc-background-image: svg-load('14-sort.svg', color: var(--zd-color-breaker-bay), fill: var(--zd-table-color--dark));
 }
 
 .c-table--dark {

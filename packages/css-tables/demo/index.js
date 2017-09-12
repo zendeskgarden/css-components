@@ -48,6 +48,7 @@ $(document).ready(function() {
   }).on('focus', '.c-table__row__cell__sortable', function() {
     if (mouse) {
       mouse = false;
+      $(this).blur();
     } else {
       $(this).addClass('is-focused');
     }

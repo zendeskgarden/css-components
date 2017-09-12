@@ -8,6 +8,9 @@
   --zd-table__row__cell__sortable-hover-color: var(--zd-color-pelorous);
   --zd-table__row__cell__sortable-hover-ascending-background-image: svg-load('14-sort.svg', color: var(--zd-color-pelorous), fill: color(var(--zd-color-pelorous) alpha(40%)));
   --zd-table__row__cell__sortable-hover-descending-background-image: svg-load('14-sort.svg', color: color(var(--zd-color-pelorous) alpha(40%)), fill: var(--zd-color-pelorous));
+  --zd-table--dark__row__cell__sortable-background-image: svg-load('14-sort.svg', color: var(--zd-table-color--dark), fill: var(--zd-table-color--dark));
+  --zd-table--dark__row__cell__sortable-ascending-background-image: svg-load('14-sort.svg', color: var(--zd-table-color--dark), fill: var(--zd-color-breaker-bay));
+  --zd-table--dark__row__cell__sortable-descending-background-image: svg-load('14-sort.svg', color: var(--zd-color-breaker-bay), fill: var(--zd-table-color--dark));
 }
 
 /* 1. Reset for <button> element.
