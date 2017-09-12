@@ -39,8 +39,8 @@ Component CSS provides styling for the following basic table structure.
 
 See http://zendeskgarden.github.io/css-tables/ for a variety of table
 modification classes, including: small and large sizing, zebra-striped
-rows, minimized and truncated cells, in-context overflow, support for
-RTL, etc.
+rows, minimized and truncated cells, in-context menu overflow, support
+for RTL, etc.
 
 ### Accessibility
 
@@ -49,12 +49,12 @@ best practice.
 
 * Every table must include a `<caption>` element with the title of the
   table as its first descendant. The `.c-table__caption` BEM component
-  provides rudimentary styling (along with support for RTL) and is meant
-  to be enhanced with CSS for individual table designs.
+  provides minimal styling (along with support for RTL) and is meant to
+  be enhanced with custom CSS for individual table designs.
 * Use `aria-sort` to indicate column sort order.
 * Use a `button` to handle keyboard toggle for a
   `.c-table__row__cell__sortable` component. Combined with the previous
-  checkpoint, the HTML would look something like this:
+  point, the HTML would look something like this:
 
 ```html
 <th aria-sort="ascending" class="c-table__row__cell">
