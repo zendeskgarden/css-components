@@ -323,8 +323,20 @@
   border-top:1px solid #04444d;
 }
 
-.c-table--dark .c-table__row:not(.c-table__row--header).is-selected .c-table__row__cell__overflow:before,.c-table--dark .c-table__row:not(.c-table__row--header)[aria-selected] .c-table__row__cell__overflow:before{
+.c-table--dark .c-table__row:not(.c-table__row--header).is-selected .c-table__row__cell__overflow:after,.c-table--dark .c-table__row:not(.c-table__row--header)[aria-selected] .c-table__row__cell__overflow:after,.c-table--dark .c-table__row__cell__overflow:after{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' color='%23819A9E'%3E%3Cg fill='currentColor'%3E%3Ccircle cx='7' cy='13' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3Ccircle cx='19' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.c-table--dark .c-table__row__cell__overflow.is-focused:after,.c-table--dark .c-table__row__cell__overflow.is-focused:before{
+  background-color:#04444d;
+}
+
+.c-table--dark .c-table__row:not(.c-table__row--header).is-selected .c-table__row__cell__overflow:before,.c-table--dark .c-table__row:not(.c-table__row--header)[aria-selected] .c-table__row__cell__overflow:before{
+  opacity:0;
+}
+
+.c-table--dark .c-table__row:not(.c-table__row--header).is-selected .c-table__row__cell__overflow:after,.c-table--dark .c-table__row:not(.c-table__row--header)[aria-selected] .c-table__row__cell__overflow:after{
+  opacity:1;
 }
 
 .c-table.is-rtl{
