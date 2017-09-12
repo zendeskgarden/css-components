@@ -56,7 +56,7 @@ $(document).ready(function() {
     $(this).removeClass('is-focused');
   });
 
-  $(document).on('change', '.js-display', function() {
+  $('.js-display').change(function() {
     var value = $(this).val();
     var $table = $('.c-table:not(.c-playground .c-table)');
 
