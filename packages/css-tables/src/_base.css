@@ -10,6 +10,7 @@
   --zd-table__row-transition:
     border-color .25s ease-in-out,
     background-color .25s ease-in-out;
+  --zd-table__row--group-color: var(--zd-color-monsoon);
   --zd-table__row--group-font-size: var(--zd-font-size-zeta);
   --zd-table__row--group-height: 32px;
   --zd-table__row--group-line-height: calc(20 / 12);
@@ -57,6 +58,7 @@
 .c-table__row--group {
   height: var(--zd-table__row--group-height);
   line-height: var(--zd-table__row--group-line-height);
+  color: var(--zd-table__row--group-color);
   font-size: var(--zd-table__row--group-font-size);
 }
 

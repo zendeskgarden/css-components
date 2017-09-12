@@ -1,6 +1,7 @@
 :root {
   --zd-table-color--dark: var(--zd-color-white);
   --zd-table--dark__row-border-bottom: var(--zd-table__row-border) var(--zd-color-sherpa-blue);
+  --zd-table--dark__row--group-color: var(--zd-color-karl);
   --zd-table--dark__row--header-border-color: var(--zd-color-breaker-bay);
   --zd-table--dark__row--stripe-background-color: var(--zd-color-algae);
   --zd-table--dark__row-hovered-background-color: var(--zd-color-sherpa-blue);
@@ -26,6 +27,10 @@
 .c-table--dark .c-table__row--group,
 .c-table--dark .c-table__row--stripe {
   background-color: var(--zd-table--dark__row--stripe-background-color);
+}
+
+.c-table--dark .c-table__row--group {
+  color: var(--zd-table--dark__row--group-color);
 }
 
 .c-table--dark .c-table__row__cell__overflow::before {

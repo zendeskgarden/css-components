@@ -1,5 +1,4 @@
 :root {
-  --zd-table__row__cell__sortable-background-image: svg-load('14-sort.svg', color: var(--zd-table-color), fill: var(--zd-table-color));
   --zd-table__row__cell__sortable-padding: 17px;
   --zd-table__row__cell__sortable-transition: opacity .25s ease-in-out;
   --zd-table__row__cell__sortable-ascending-background-image: svg-load('14-sort.svg', color: var(--zd-table-color), fill: var(--zd-color-silver-sand));
@@ -8,9 +7,8 @@
   --zd-table__row__cell__sortable-hover-color: var(--zd-color-pelorous);
   --zd-table__row__cell__sortable-hover-ascending-background-image: svg-load('14-sort.svg', color: var(--zd-color-pelorous), fill: color(var(--zd-color-pelorous) alpha(40%)));
   --zd-table__row__cell__sortable-hover-descending-background-image: svg-load('14-sort.svg', color: color(var(--zd-color-pelorous) alpha(40%)), fill: var(--zd-color-pelorous));
-  --zd-table--dark__row__cell__sortable-background-image: svg-load('14-sort.svg', color: var(--zd-table-color--dark), fill: var(--zd-table-color--dark));
-  --zd-table--dark__row__cell__sortable-ascending-background-image: svg-load('14-sort.svg', color: var(--zd-table-color--dark), fill: var(--zd-color-breaker-bay));
-  --zd-table--dark__row__cell__sortable-descending-background-image: svg-load('14-sort.svg', color: var(--zd-color-breaker-bay), fill: var(--zd-table-color--dark));
+  --zd-table--dark__row__cell__sortable-ascending-background-image: svg-load('14-sort.svg', color: var(--zd-color-karl), fill: var(--zd-color-breaker-bay));
+  --zd-table--dark__row__cell__sortable-descending-background-image: svg-load('14-sort.svg', color: var(--zd-color-breaker-bay), fill: var(--zd-color-karl));
 }
 
 /* 1. Reset for <button> element.
@@ -24,6 +22,12 @@
   text-decoration: none; /* [2] */
   color: inherit;
   font-weight: var(--zd-table__row__cell__strong-font-weight);
+}
+
+/* stylelint-disable no-descending-specificity */
+
+.c-table:not(.c-table--dark) .c-table__row__cell__sortable {
+  color: var(--zd-table-color);
 }
 
 .c-table__row__cell__sortable::before {
@@ -49,10 +53,6 @@
   background-image: var(--zd-table__row__cell__sortable-descending-background-image);
 }
 
-.c-table--dark .c-table__row__cell__sortable::before {
-  background-image: var(--zd-table--dark__row__cell__sortable-background-image);
-}
-
 .c-table--dark .c-table__row__cell__sortable.is-ascending::before {
   background-image: var(--zd-table--dark__row__cell__sortable-ascending-background-image);
 }
@@ -69,8 +69,8 @@
   text-decoration: none;
 }
 
-.c-table__row__cell__sortable:--table__row__cell__sortable-hovered,
-.c-table__row__cell__sortable:--table__row__cell__sortable-focused {
+.c-table .c-table__row__cell__sortable:--table__row__cell__sortable-hovered,
+.c-table .c-table__row__cell__sortable:--table__row__cell__sortable-focused {
   color: var(--zd-table__row__cell__sortable-hover-color);
 }
 
@@ -92,8 +92,6 @@
   background-image: var(--zd-table__row__cell__sortable-hover-descending-background-image);
 }
 
-/* stylelint-enable max-line-length */
-
 @custom-selector :--table__row__cell__sortable-focused
   :focus,
   .is-focused;
@@ -106,3 +104,5 @@
 .c-table__row__cell__sortable.is-focused {
   text-decoration: underline;
 }
+
+/* stylelint-enable max-line-length, no-descending-specificity */
