@@ -141,6 +141,14 @@
   top:calc(24px - 1em);
 }
 
+.c-table--lg .c-table__row__cell__overflow:after,.c-table--lg .c-table__row__cell__overflow:before{
+  top:calc(32px - 1em);
+}
+
+.c-table--sm .c-table__row__cell__overflow:after,.c-table--sm .c-table__row__cell__overflow:before{
+  top:calc(16px - 1em);
+}
+
 .c-table__row__cell__overflow.is-active:before,.c-table__row__cell__overflow.is-focused:before,.c-table__row__cell__overflow.is-hovered:before,.c-table__row__cell__overflow:hover:before{
   opacity:0;
 }
@@ -169,13 +177,37 @@
   opacity:0;
 }
 
+.c-table--lg .c-table__row--header .c-table__row__cell__overflow:after,.c-table--lg .c-table__row--header .c-table__row__cell__overflow:before{
+  top:calc(36px - 1em);
+}
+
+.c-table--sm .c-table__row--header .c-table__row__cell__overflow:after,.c-table--sm .c-table__row--header .c-table__row__cell__overflow:before{
+  top:calc(20px - 1em);
+}
+
 .c-table__row__cell--overflow .c-menu{
-  top:35px;
+  top:calc(21px + 1em);
   right:calc(100% - 2em);
 }
 
 .c-table__row--header .c-table__row__cell--overflow .c-menu{
-  top:39px;
+  top:calc(25px + 1em);
+}
+
+.c-table--lg .c-table__row__cell--overflow .c-menu{
+  top:calc(33px + 1em);
+}
+
+.c-table--sm .c-table__row__cell--overflow .c-menu{
+  top:calc(17px + 1em);
+}
+
+.c-table--lg .c-table__row--header .c-table__row__cell--overflow .c-menu{
+  top:calc(37px + 1em);
+}
+
+.c-table--sm .c-table__row--header .c-table__row__cell--overflow .c-menu{
+  top:calc(21px + 1em);
 }
 
 .c-table__row__cell__sortable{
