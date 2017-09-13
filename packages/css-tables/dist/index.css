@@ -69,10 +69,6 @@
   text-align:left;
 }
 
-.c-table__row__cell strong{
-  font-weight:600;
-}
-
 .c-table__row:not(.c-table__row--header):not(.c-table__row--group).is-hovered,.c-table__row:not(.c-table__row--header):not(.c-table__row--group):hover{
   background-color:#f8f8f8;
 }

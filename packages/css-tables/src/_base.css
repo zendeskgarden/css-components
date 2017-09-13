@@ -24,7 +24,6 @@
   --zd-table__row__cell-padding-vertical: 10px;
   --zd-table__row__cell-padding: var(--zd-table__row__cell-padding-vertical) var(--zd-table__row__cell-padding-horizontal);
   --zd-table__row__cell-transition: box-shadow .1s ease-in-out;
-  --zd-table__row__cell__strong-font-weight: var(--zd-font-weight-semibold);
 }
 
 /* 1. <table> reset.
@@ -100,8 +99,4 @@
   padding-top: var(--zd-table__row--header__cell-padding);
   padding-bottom: var(--zd-table__row--header__cell-padding);
   text-align: left; /* [2] */
-}
-
-.c-table__row__cell strong {
-  font-weight: var(--zd-table__row__cell__strong-font-weight);
 }
