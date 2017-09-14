@@ -1,0 +1,22 @@
+/* stylelint-disable at-rule-empty-line-before */
+
+@custom-selector :--btn-primary
+  .c-btn--primary,
+  .is-selected;
+
+@custom-selector :--btn-hovered
+  .is-hovered.is-hovered,
+  :hover:hover;
+
+@custom-selector :--btn-focused
+  .is-focused;
+
+@custom-selector :--btn-active
+  .is-active.is-active,
+  :active:active;
+
+@custom-selector :--btn-disabled
+  .is-disabled.is-disabled,
+  :disabled:disabled;
+
+/* stylelint-enable at-rule-empty-line-before */

@@ -1,0 +1,25 @@
+.c-btn--custom{
+  border-color:#eb4962;
+  color:#eb4962;
+}
+.c-btn--custom.c-btn--basic{
+  border-color:transparent;
+}
+.c-btn--custom.c-btn--primary,.c-btn--custom.is-selected{
+  background-color:#eb4962;
+}
+.c-btn--custom.is-hovered.is-hovered,.c-btn--custom:hover:hover{
+  background-color:#f76e82;
+}
+.c-btn--custom.is-focused{
+  box-shadow:0 0 0 3px rgba(235,73,98,.4);
+}
+.c-btn--custom.is-active.is-active,.c-btn--custom:active:active{
+  background-color:#d14a5e;
+}
+.c-btn--custom.is-disabled.is-disabled,.c-btn--custom:disabled:disabled{
+  background-color:#ddd;
+}
+.l-btn-group .c-btn--custom.is-focused{
+  box-shadow:inset 0 0 0 3px rgba(235,73,98,.4);
+}
