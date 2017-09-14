@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.1.0] - 2017-09-14
+### Added (per [#19](https://github.com/zendeskgarden/css-buttons/pull/19))
+- Include complementary `.c-btn--custom` CSS demonstrating how to apply
+  a primary color change.
+
 ## [3.0.0] - 2017-06-01
 ### Changed (per [#17](https://github.com/zendeskgarden/css-buttons/pull/17))
 - Prepared package for registry publish as
@@ -62,6 +67,7 @@
 
 ## 0.1.0 - 2016-01-05
 
+[3.1.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/zendeskgarden/css-buttons/compare/2.2.0...v3.0.0
 [2.2.0]: https://github.com/zendeskgarden/css-buttons/compare/2.1.2...2.2.0
 [2.1.2]: https://github.com/zendeskgarden/css-buttons/compare/2.1.1...2.1.2
