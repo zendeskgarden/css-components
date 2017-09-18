@@ -1,18 +1,24 @@
 @import '@zendesk/garden-css-variables';
 @import '_selectors';
+@import '_variables';
 
 :root {
   --zd-btn--custom-color: var(--zd-color-mandy);
   --zd-btn--custom-active-background-color: color(var(--zd-btn--custom-color) blackness(+10%));
-  --zd-btn--custom-disabled-background-color: var(--zd-color-gainsboro);
+  --zd-btn--custom-disabled-background-color: var(--zd-btn-disabled-background-color);
   --zd-btn--custom-focused-box-shadow:
     0 0 0 3px
     color(var(--zd-btn--custom-color) alpha(40%));
   --zd-btn--custom-hovered-background-color: color(var(--zd-btn--custom-color) lightness(+10%) saturation(+10%));
+  --zd-btn--custom--anchor-disabled-color: var(--zd-btn--anchor-disabled-color);
 }
 
 .c-btn--custom {
   border-color: var(--zd-btn--custom-color);
+  color: var(--zd-btn--custom-color);
+}
+
+.c-btn--custom.c-btn--anchor {
   color: var(--zd-btn--custom-color);
 }
 
@@ -28,6 +34,11 @@
   background-color: var(--zd-btn--custom-hovered-background-color);
 }
 
+.c-btn--custom.c-btn--anchor:--btn-hovered {
+  background-color: transparent;
+  color: var(--zd-btn--custom-color);
+}
+
 .c-btn--custom:--btn-focused {
   box-shadow: var(--zd-btn--custom-focused-box-shadow);
 }
@@ -36,8 +47,16 @@
   background-color: var(--zd-btn--custom-active-background-color);
 }
 
+.c-btn--custom.c-btn--anchor:--btn-active {
+  color: var(--zd-btn--custom-color);
+}
+
 .c-btn--custom:--btn-disabled {
   background-color: var(--zd-btn--custom-disabled-background-color);
+}
+
+.c-btn--custom.c-btn--anchor:--btn-disabled {
+  color: var(--zd-btn--custom--anchor-disabled-color);
 }
 
 .l-btn-group .c-btn--custom:--btn-focused {

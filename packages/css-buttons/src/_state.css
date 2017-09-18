@@ -1,5 +1,6 @@
 /* stylelint-disable no-descending-specificity */
 @import '@zendesk/garden-css-variables';
+@import '_variables';
 
 :root {
   --zd-btn-active-background-color: color(var(--zd-btn-color) blackness(+10%));
@@ -8,7 +9,6 @@
     border-color .1s ease-in-out,
     background-color .1s ease-in-out,
     color .1s ease-in-out;
-  --zd-btn-disabled-background-color: var(--zd-color-gainsboro);
   --zd-btn-disabled-color: var(--zd-color-white);
   --zd-btn-focused-box-shadow:
     0 0 0 3px

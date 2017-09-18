@@ -1,7 +1,8 @@
 @import '@zendesk/garden-css-variables';
+@import '_variables';
 
 :root {
-  --zd-btn--primary-background-color: var(--zd-color-pelorous);
+  --zd-btn--primary-background-color: var(--zd-btn-color);
   --zd-btn--primary-color: var(--zd-color-white);
 }
 

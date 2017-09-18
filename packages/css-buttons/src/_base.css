@@ -1,7 +1,7 @@
 @import '@zendesk/garden-css-variables';
+@import '_variables';
 
 :root {
-  --zd-btn-color: var(--zd-color-pelorous);
   --zd-btn-font-size: var(--zd-font-size-zeta);
   --zd-btn-font-weight: var(--zd-font-weight-regular);
   --zd-btn-background-color: transparent;

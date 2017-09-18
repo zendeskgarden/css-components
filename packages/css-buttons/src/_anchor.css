@@ -1,0 +1,41 @@
+@import '_variables';
+
+.c-btn--anchor {
+  display: inline;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  min-width: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  user-select: none;
+  line-height: normal;
+  white-space: normal;
+  color: var(--zd-btn-color);
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c-btn--anchor.c-btn--anchor:--btn-hovered {
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--zd-btn-color);
+}
+
+.c-btn--anchor.c-btn--anchor:--btn-focused {
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+.c-btn--anchor.c-btn--anchor:--btn-active {
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--zd-btn-color);
+}
+
+.c-btn--anchor.c-btn--anchor:--btn-disabled {
+  background-color: transparent;
+  color: var(--zd-btn--anchor-disabled-color);
+}
