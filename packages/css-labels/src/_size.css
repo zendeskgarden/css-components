@@ -25,10 +25,12 @@
   font-size: var(--zd-label--sm-font-size);
 }
 
-.c-label--round.c-label--sm {
+.c-label--round.c-label--sm,
+.c-label--round.c-label--sm > * {
   min-width: var(--zd-label--round--sm-min-width);
 }
 
-.c-label--round.c-label--lg {
+.c-label--round.c-label--lg,
+.c-label--round.c-label--lg > * {
   min-width: var(--zd-label--round--lg-min-width);
 }

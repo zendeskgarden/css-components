@@ -14,3 +14,8 @@
   padding: 0;
   min-width: var(--zd-label--round-min-width);
 }
+
+.c-label--round > * {
+  min-width: var(--zd-label--round-min-width);
+  text-align: center;
+}
