@@ -144,7 +144,7 @@
 ### Added
 - `.c-chk` component.
 
-[3.2.0]: https://github.com/zendeskgarden/css-forms/compare/v3.2.0...v3.2.1
+[3.2.1]: https://github.com/zendeskgarden/css-forms/compare/v3.2.0...v3.2.1
 [3.2.0]: https://github.com/zendeskgarden/css-forms/compare/v3.1.0...v3.2.0
 [3.1.0]: https://github.com/zendeskgarden/css-forms/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/zendeskgarden/css-forms/compare/v2.2.0...v3.0.0
