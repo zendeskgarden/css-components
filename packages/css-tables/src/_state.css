@@ -36,12 +36,11 @@
   :not(.c-table__row--header)[aria-selected];
 
 .c-table__row:--table__row-selected {
-  border-color: var(--zd-table__row-selected-border-color);
   background-color: var(--zd-table__row-selected-background-color);
 }
 
 .c-table__row:--table__row-selected .c-table__row__cell {
-  border-top: var(--zd-table__row-border) var(--zd-table__row-selected-border-color);
+  border-bottom-color: var(--zd-table__row-selected-border-color);
 }
 
 /* stylelint-enable selector-max-specificity, no-descending-specificity */
