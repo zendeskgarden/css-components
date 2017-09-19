@@ -1,9 +1,11 @@
 @import '@zendesk/garden-css-variables';
+@import '_selectors';
+@import '_variables';
 
 :root {
   --zd-table__row-focused-box-shadow:
     inset 3px 0 0 0
-    var(--zd-color-pelorous);
+    var(--zd-table-color);
   --zd-table__row-hovered-background-color: var(--zd-color-white-smoke);
   --zd-table__row-selected-background-color: var(--zd-color-platinum);
   --zd-table__row-selected-border-color: var(--zd-color-gainsboro);
@@ -11,17 +13,9 @@
 
 /* stylelint-disable selector-max-specificity, no-descending-specificity */
 
-@custom-selector :--table__row-hovered
-  :not(.c-table__row--header):not(.c-table__row--group).is-hovered,
-  :not(.c-table__row--header):not(.c-table__row--group):hover;
-
 .c-table__row:--table__row-hovered {
   background-color: var(--zd-table__row-hovered-background-color);
 }
-
-@custom-selector :--table__row-focused
-  :not(.c-table__row--header):not(.c-table__row--group).is-focused,
-  :not(.c-table__row--header):not(.c-table__row--group):focus;
 
 .c-table__row:focus {
   outline: none;
@@ -30,10 +24,6 @@
 .c-table__row:--table__row-focused .c-table__row__cell:first-of-type {
   box-shadow: var(--zd-table__row-focused-box-shadow);
 }
-
-@custom-selector :--table__row-selected
-  :not(.c-table__row--header).is-selected,
-  :not(.c-table__row--header)[aria-selected];
 
 .c-table__row:--table__row-selected {
   background-color: var(--zd-table__row-selected-background-color);

@@ -1,7 +1,7 @@
 @import '@zendesk/garden-css-variables';
 
 :root {
-  --zd-table-color: var(--zd-color-dark-gray);
+  --zd-table-font-color: var(--zd-color-dark-gray);
   --zd-table-font-size: var(--zd-font-size-epsilon);
   --zd-table-line-height: calc(20 / 14);
   --zd-table__row-border: 1px solid;
@@ -36,7 +36,7 @@
   table-layout: fixed; /* [1] */
   border-spacing: 0; /* [1] */
   line-height: var(--zd-table-line-height);
-  color: var(--zd-table-color);
+  color: var(--zd-table-font-color);
   font-size: var(--zd-table-font-size);
 }
 

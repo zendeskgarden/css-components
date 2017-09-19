@@ -56,6 +56,10 @@ $(document).ready(function() {
     $(this).removeClass('is-focused');
   });
 
+  $('.js-custom').click(function() {
+    $('.c-table:not(.c-playground .c-table)').toggleClass('c-table--custom');
+  });
+
   $('.js-display').change(function() {
     var value = $(this).val();
     var $table = $('.c-table:not(.c-playground .c-table)');
