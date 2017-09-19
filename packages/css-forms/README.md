@@ -19,10 +19,10 @@ Checkbox input CSS is intended to support component structure similar to
 the following.
 
 ```html
-<fieldset class="c-chk">
+<div class="c-chk">
   <input class="c-chk__input" id="box-id" type="checkbox">
   <label class="c-chk__label" for="box-id">Label</label>
-</fieldset>
+</div>
 ```
 
 #### Modifications
@@ -32,9 +32,9 @@ the following.
 Use the `.c-chk--toggle` modifier to style the checkbox as a toggle.
 
 ```html
-<fieldset class="c-chk c-chk--toggle">
+<div class="c-chk c-chk--toggle">
   ...
-</fieldset>
+</div>
 ```
 
 ##### Radio
@@ -42,18 +42,18 @@ Use the `.c-chk--toggle` modifier to style the checkbox as a toggle.
 Use the `.c-chk--radio` modifier to style for radio button form fields.
 
 ```html
-<fieldset class="c-chk c-chk--radio">
+<div class="c-chk c-chk--radio">
   <input class="c-chk__input" id="rdo-1" name="level" type="radio">
   <label class="c-chk__label" for="rdo-1">Beginner</label>
-</fieldset>
-<fieldset class="c-chk c-chk--radio">
+</div>
+<div class="c-chk c-chk--radio">
   <input class="c-chk__input" id="rdo-2" name="level" type="radio">
   <label class="c-chk__label" for="rdo-2">Intermediate</label>
-</fieldset>
-<fieldset class="c-chk c-chk--radio">
+</div>
+<div class="c-chk c-chk--radio">
   <input class="c-chk__input" id="rdo-3" name="level" type="radio">
   <label class="c-chk__label" for="rdo-3">Advanced</label>
-</fieldset>
+</div>
 ```
 
 ##### RTL
@@ -61,9 +61,9 @@ Use the `.c-chk--radio` modifier to style for radio button form fields.
 Use the following state class to support RTL text direction:
 
 ```html
-<fieldset class="c-chk is-rtl">
+<div class="c-chk is-rtl">
   ...
-</fieldset>
+</div>
 ```
 
 ### Range
@@ -72,11 +72,11 @@ Range input CSS is intended to support a component structure similar to
 the following.
 
 ```html
-<fieldset class="c-range">
+<div class="c-range">
   <label class="c-range__label" for="range-id">Label</label>
   <small class="c-range__hint">Optional hint.</small>
   <input class="c-range__input" id="range-id" type="range">
-</fieldset>
+</div>
 ```
 
 #### Modifications
@@ -86,9 +86,9 @@ the following.
 Use the following modifier class to support inline range fields:
 
 ```html
-<fieldset class="c-range c-range--inline">
+<div class="c-range c-range--inline">
   ...
-</fieldset>
+</div>
 ```
 
 ##### RTL
@@ -99,9 +99,9 @@ Bidirectionality](https://material.google.com/usability/bidirectionality.html)
 when using a range slider to model directional elements (i.e. playback).
 
 ```html
-<fieldset class="c-range is-rtl">
+<div class="c-range is-rtl">
   ...
-</fieldset>
+</div>
 ```
 
 ### Text
@@ -110,11 +110,11 @@ Text input CSS is intended to support a component structure similar to
 the following.
 
 ```html
-<fieldset class="c-txt">
+<div class="c-txt">
   <label class="c-txt__label" for="text-id">Label</label>
   <small class="c-txt__hint">Optional hint.</small>
   <input class="c-txt__input" id="text-id" placeholder="[placeholder]" type="text">
-</fieldset>
+</div>
 ```
 
 #### Modifications
@@ -124,9 +124,9 @@ the following.
 Use the following modifier class to support inline text fields:
 
 ```html
-<fieldset class="c-txt c-txt--inline">
+<div class="c-txt c-txt--inline">
   ...
-</fieldset>
+</div>
 ```
 
 ##### Area
@@ -134,9 +134,9 @@ Use the following modifier class to support inline text fields:
 Use the following modifier class to support `textarea` fields:
 
 ```html
-<fieldset class="c-txt">
+<div class="c-txt">
   <textarea class="c-txt__input c-txt__input--area"></textarea>
-</fieldset>
+</div>
 ```
 
 ##### Dropdown
@@ -146,7 +146,7 @@ Use the following `select` modifier along with a
 to support dropdown fields:
 
 ```html
-<fieldset>
+<div>
   <div class="c-txt">
     <label class="c-txt__label" for="select-id">Select</label>
     <button
@@ -167,7 +167,7 @@ to support dropdown fields:
     <li class="c-menu__item is-selected" role="option">VALUE</li>
     <li class="c-menu__item" role="option">item</li>
   </ul>
-</fieldset>
+</div>
 ```
 
 ##### RTL
@@ -175,9 +175,9 @@ to support dropdown fields:
 Use the following state class to support RTL text direction:
 
 ```html
-<fieldset class="c-txt is-rtl">
+<div class="c-txt is-rtl">
   ...
-</fieldset>
+</div>
 ```
 
 ## Tests

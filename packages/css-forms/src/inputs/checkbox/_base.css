@@ -13,6 +13,7 @@
     color .25s ease-in-out;
   --zd-chk__label-spacing: 8px;
   --zd-chk__label-padding: calc(var(--zd-chk-size) + var(--zd-chk__label-spacing));
+  --zd-chk__label-top: var(--zd-spacing-sm);
 }
 
 /* 1. Reset for <fieldset> element.
@@ -34,12 +35,12 @@
 .c-chk__label {
   position: relative;
   cursor: pointer;
-  white-space: nowrap;
+  white-space: normal;
   user-select: none;
 }
 
 .c-chk__label.c-chk__label {
-  display: inline;
+  display: inline-block;
 }
 
 /* stylelint-disable selector-max-specificity */
@@ -55,7 +56,7 @@
 
 .c-chk__label::before {
   position: absolute;
-  top: 50%; /* [3] */
+  top: var(--zd-chk__label-top); /* [3] */
   left: 0;
   transition: var(--zd-chk-transition);
   margin-top: calc(var(--zd-chk-size) / 2 * -1); /* [3] */
@@ -70,9 +71,12 @@
 }
 
 .c-chk--nolabel .c-chk__label {
-  display: inline-block;
   padding-left: var(--zd-chk-size);
   font-size: 0;
+}
+
+.c-chk--nolabel .c-chk__label::before {
+  top: 0;
 }
 
 .c-chk.is-rtl {

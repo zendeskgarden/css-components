@@ -13,7 +13,7 @@
 .c-chk__label{
   position:relative;
   cursor:pointer;
-  white-space:nowrap;
+  white-space:normal;
   -webkit-user-select:none;
      -moz-user-select:none;
       -ms-user-select:none;
@@ -21,7 +21,7 @@
 }
 
 .c-chk__label.c-chk__label{
-  display:inline;
+  display:inline-block;
 }
 
 .c-chk.has-error .c-chk__message.c-chk__message,.c-chk.has-success .c-chk__message.c-chk__message,.c-chk.has-warning .c-chk__message.c-chk__message,.c-chk__hint,.c-chk__label,.c-chk__message{
@@ -30,7 +30,7 @@
 
 .c-chk__label:before{
   position:absolute;
-  top:50%;
+  top:10px;
   left:0;
   transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,background-image .25s ease-in-out,color .25s ease-in-out;
   margin-top:-7px;
@@ -45,9 +45,12 @@
 }
 
 .c-chk--nolabel .c-chk__label{
-  display:inline-block;
   padding-left:14px;
   font-size:0;
+}
+
+.c-chk--nolabel .c-chk__label:before{
+  top:0;
 }
 
 .c-chk.is-rtl{
@@ -707,7 +710,7 @@
   background-color:#fff;
   padding:.71429em 1.14286em;
   width:100%;
-  min-height:40px;
+  height:40px;
   box-sizing:border-box;
   vertical-align:middle;
   line-height:1.42857;
@@ -718,6 +721,10 @@
 
 @media screen\0 {
   .c-txt__input{ font-family:sans-serif; }
+}
+
+.c-txt__input::-ms-clear{
+  display:none;
 }
 
 .c-txt__input::-webkit-input-placeholder{
@@ -748,8 +755,15 @@
 }
 
 .c-txt__input--area{
+  height:auto;
+  min-height:40px;
   resize:none;
   overflow:auto;
+}
+
+.c-txt--sm .c-txt__input.c-txt__input--area{
+  height:auto;
+  min-height:32px;
 }
 
 .c-txt__input--area.is-resizable{
@@ -960,7 +974,7 @@ select.c-txt__input--select:-moz-focusring{
 
 .c-txt--sm .c-txt__input{
   padding:.42857em .85714em;
-  min-height:32px;
+  height:32px;
 }
 
 .c-txt--sm .c-txt__input--select.c-txt__input--select{

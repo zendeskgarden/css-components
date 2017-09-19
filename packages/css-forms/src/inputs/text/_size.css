@@ -1,7 +1,7 @@
 :root {
   --zd-txt--sm__input-padding-horizontal: calc(12 / 14 * 1em);
   --zd-txt--sm__input-padding: calc(6 / 14 * 1em) var(--zd-txt--sm__input-padding-horizontal);
-  --zd-txt--sm__input-min-height: 32px;
+  --zd-txt--sm__input-height: 32px;
   --zd-txt--sm__input--select-padding-unit: 40;
   --zd-txt--sm__input--select-padding-right: calc(var(--zd-txt--sm__input--select-padding-unit) / 14 * 1em);
   --zd-txt--sm__input--select__chevron-background-position-x: calc((var(--zd-txt--sm__input--select-padding-unit) / 2 - 8 + 1) / 14 * 1em);
@@ -12,7 +12,7 @@
 
 .c-txt--sm .c-txt__input {
   padding: var(--zd-txt--sm__input-padding);
-  min-height: var(--zd-txt--sm__input-min-height);
+  height: var(--zd-txt--sm__input-height);
 }
 
 .c-txt--sm .c-txt__input--select.c-txt__input--select {

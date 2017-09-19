@@ -3,8 +3,15 @@
 /* 1. Remove vertical scrollbar on <textarea> (IE). */
 
 .c-txt__input--area {
+  height: auto;
+  min-height: var(--zd-txt__input-height);
   resize: none;
   overflow: auto; /* [1] */
+}
+
+.c-txt--sm .c-txt__input.c-txt__input--area {
+  height: auto;
+  min-height: var(--zd-txt--sm__input-height);
 }
 
 .c-txt__input--area.is-resizable {
