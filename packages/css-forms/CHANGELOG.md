@@ -1,5 +1,13 @@
 # Change Log
 
+## [3.2.1] - 2017-09-19
+### Fixed
+- [#36](https://github.com/zendeskgarden/css-forms/pull/36) Allow
+  checkbox labels to line wrap.
+- [#39](https://github.com/zendeskgarden/css-forms/issues/39) Prevent
+  pixel height shift in empty text field `<div>`.
+- Remove IE "clear" button from text fields.
+
 ## [3.2.0] - 2017-09-01
 ### Added (per [#38](https://github.com/zendeskgarden/css-forms/pull/38))
 - Styling for `.c-chk__input:indeterminate` checkboxes.
@@ -136,6 +144,7 @@
 ### Added
 - `.c-chk` component.
 
+[3.2.0]: https://github.com/zendeskgarden/css-forms/compare/v3.2.0...v3.2.1
 [3.2.0]: https://github.com/zendeskgarden/css-forms/compare/v3.1.0...v3.2.0
 [3.1.0]: https://github.com/zendeskgarden/css-forms/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/zendeskgarden/css-forms/compare/v2.2.0...v3.0.0
