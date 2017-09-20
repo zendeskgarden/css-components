@@ -710,10 +710,10 @@
   background-color:#fff;
   padding:.71429em 1.14286em;
   width:100%;
-  height:40px;
+  min-height:40px;
   box-sizing:border-box;
   vertical-align:middle;
-  line-height:1.42857;
+  line-height:1.28571;
   color:#777;
   font-family:inherit;
   font-size:14px;
@@ -755,15 +755,8 @@
 }
 
 .c-txt__input--area{
-  height:auto;
-  min-height:40px;
   resize:none;
   overflow:auto;
-}
-
-.c-txt--sm .c-txt__input.c-txt__input--area{
-  height:auto;
-  min-height:32px;
 }
 
 .c-txt__input--area.is-resizable{
@@ -974,7 +967,7 @@ select.c-txt__input--select:-moz-focusring{
 
 .c-txt--sm .c-txt__input{
   padding:.42857em .85714em;
-  height:32px;
+  min-height:32px;
 }
 
 .c-txt--sm .c-txt__input--select.c-txt__input--select{

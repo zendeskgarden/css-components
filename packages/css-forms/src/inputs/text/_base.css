@@ -7,7 +7,7 @@
   --zd-txt__input-color: var(--zd-color-monsoon);
   --zd-txt__input-color-placeholder: var(--zd-color-iron);
   --zd-txt__input-font-size: var(--zd-font-size-epsilon);
-  --zd-txt__input-line-height: calc(20 / 14);
+  --zd-txt__input-line-height: calc(18 / 14);
   --zd-txt__input-height: var(--zd-spacing-xl);
   --zd-txt__input-padding-horizontal: calc(16 / 14 * 1em);
   --zd-txt__input-padding: calc(10 / 14 * 1em) var(--zd-txt__input-padding-horizontal);
@@ -40,7 +40,7 @@
   background-color: var(--zd-txt__input-background-color);
   padding: var(--zd-txt__input-padding);
   width: 100%; /* [2] */
-  height: var(--zd-txt__input-height);
+  min-height: var(--zd-txt__input-height);
   box-sizing: border-box;
   vertical-align: middle; /* [3] */
   line-height: var(--zd-txt__input-line-height);

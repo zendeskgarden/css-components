@@ -12,7 +12,7 @@
 
 .c-txt--sm .c-txt__input {
   padding: var(--zd-txt--sm__input-padding);
-  height: var(--zd-txt--sm__input-height);
+  min-height: var(--zd-txt--sm__input-height);
 }
 
 .c-txt--sm .c-txt__input--select.c-txt__input--select {
