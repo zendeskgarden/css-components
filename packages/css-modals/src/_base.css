@@ -23,8 +23,9 @@
 }
 
 .c-dialog {
-  display: inline-block;
+  display: flex;
   position: relative;
+  flex-direction: column;
   margin-bottom: var(--zd-dialog-margin-bottom);
   border: var(--zd-dialog-border);
   border-radius: var(--zd-dialog-border-radius);
