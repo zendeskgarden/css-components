@@ -10,15 +10,16 @@
   --zd-dialog-box-shadow:
     0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0
     color(var(--zd-color-chathams-blue) alpha(15%));
-  --zd-dialog-margin-bottom: var(--zd-dialog-box-shadow-blur-radius);
+  --zd-dialog-margin-bottom: 48px;
   --zd-dialog-min-height: calc(var(--zd-dialog__close-size) + (2 * var(--zd-dialog__close-top)));
-  --zd-dialog-width: 600px;
+  --zd-dialog-width: 544px;
   --zd-dialog--center-margin: var(--zd-spacing);
   --zd-dialog--center-max-height: calc(100vh - (2 * var(--zd-dialog-margin-bottom)));
   --zd-dialog--center-transform: translate(50%, 50%);
   --zd-dialog--center-small-height-transform: translate(50%, 0);
   --zd-dialog--center-small-width-transform: translate(0, 50%);
   --zd-dialog--center-small-transform: translate(0, 0);
+  --zd-dialog--large-width: 800px;
 }
 
 .c-dialog {
@@ -35,6 +36,10 @@
 
 .c-dialog:focus {
   outline: none;
+}
+
+.c-dialog--large {
+  width: var(--zd-dialog--large-width);
 }
 
 .c-dialog--center {

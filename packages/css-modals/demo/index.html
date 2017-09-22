@@ -78,7 +78,15 @@
       <a class="c-btn js-dialog u-mb-lg"
          href="#zd-center-dialog"
          role="button">Open
-        <code class="c-code">.c-dialog .c-dialog--center</code>
+        <code class="c-code">.c-dialog.c-dialog--center</code>
+        Dialog</a>
+      <h2 class="u-gamma u-mb-sm">Large Dialog</h2>
+      <p class="u-mb-sm">The large dialog modification affects the dialog
+      footer and sets a larger dialog width.</p>
+      <a class="c-btn js-dialog u-mb-lg"
+         href="#zd-large-dialog"
+         role="button">Open
+        <code class="c-code">.c-dialog.c-dialog--large</code>
         Dialog</a>
       <h2 class="u-gamma u-mb-sm">Centered Dialog with Default Backdrop Layout</h2>
       <p class="u-mb-sm">Surround modal dialogs with a backdrop to give them
@@ -93,30 +101,9 @@
       <a class="c-btn js-dialog js-backdrop u-mb-lg"
          href="#zd-center-dialog"
          role="button">Open
-        <code class="c-code">.c-dialog .c-dialog--center</code>
+        <code class="c-code">.c-dialog.c-dialog--center</code>
         Dialog with
         <code class="c-code">.l-backdrop</code>
-        Backdrop</a>
-      <h2 class="u-gamma u-mb-sm">Centered Dialog with Lightbox Backdrop Layout</h2>
-      <p class="u-mb-sm">The backdrop may be modified to support a darker lightbox treatment.</p>
-      <a class="c-btn js-dialog js-backdrop js-backdrop--lightbox u-mb-lg"
-         href="#zd-center-dialog"
-         role="button">Open
-        <code class="c-code">.c-dialog .c-dialog--center</code>
-        Dialog with
-        <code class="c-code">.l-backdrop .l-backdrop--lightbox</code>
-        Backdrop</a>
-      <h2 class="u-gamma u-mb-sm">Dialog with Transparent Backdrop Layout</h2>
-      <p class="u-mb-sm">There may be cases where interaction outside of a dialog
-      needs to be handled or prevented. The transparent backdrop element supports
-      this use case. The transparent backdrop does not add it's own scrolling
-      behavior.</p>
-      <a class="c-btn js-dialog js-backdrop js-backdrop--transparent u-mb-lg"
-         href="#zd-transparent-dialog"
-         role="button">Open
-        <code class="c-code">.c-dialog</code>
-        Dialog with
-        <code class="c-code">.l-backdrop .l-backdrop--transparent</code>
         Backdrop</a>
       <h2 class="u-gamma u-mb-sm">Close button states</h2>
       <section class="c-dialog u-display-block">
@@ -131,6 +118,10 @@
         <h1 class="c-dialog__header"><code class="c-code" dir="ltr">.c-dialog__close.is-focused</code></h1>
         <button class="c-dialog__close is-focused"></button>
       </section>
+      <h2 class="u-gamma u-mb-sm">Animation</h2>
+      <p class="u-mb">Refine the display of modal dialogs by adding
+      <code class="c-code">.is-visible</code> to the backdrop and
+      <code class="c-code">.is-open</code> to the dialog itself.</p>
       <section class="u-mt-xl" id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
@@ -151,16 +142,16 @@
   </header>
   <p class="c-dialog__body">Hello World</p>
   <footer class="c-dialog__footer">
-    <button class="c-btn js-close">Goodbye</button>
+    <button class="c-btn c-btn--medium js-close">Goodbye</button>
   </footer>
 </section>
 
-<a class="c-btn js-dialog js-backdrop u-ml"
+<a class="c-btn c-btn--medium js-dialog js-backdrop u-ml"
    href="#zd-test-modal-lg"
    role="button">Open Big Modal</a>
 
 <section aria-hidden="true"
-         class="c-dialog c-dialog--center"
+         class="c-dialog c-dialog--center c-dialog--large"
          id="zd-test-modal-lg"
          role="dialog"
          style="display:none"
@@ -256,7 +247,7 @@
     tincidunt id purus vel posuere.</p>
   </div>
   <footer class="c-dialog__footer">
-    <button class="c-btn js-close">OK</button>
+    <button class="c-btn c-btn--medium js-close">OK</button>
   </footer>
 </section></textarea>
         </div>
@@ -284,7 +275,47 @@
     VHS.</p>
     <footer class="c-dialog__footer">
       <code class="c-code" dir="ltr">.c-dialog__footer</code>
-      <button class="c-btn u-ml js-close">OK</button>
+      <button class="c-btn c-btn--medium u-ml js-close">OK</button>
+    </footer>
+  </section>
+
+  <section aria-labelledby="zd-center-dialog__header"
+           aria-hidden="true"
+           class="c-dialog c-dialog--center c-dialog--large"
+           id="zd-large-dialog"
+           role="dialog"
+           style="display:none"
+           tabindex="-1">
+    <header>
+      <h1 class="c-dialog__header"
+          id="zd-center-dialog__header">Dialog Title</h1>
+      <button aria-label="close" class="c-dialog__close"></button>
+    </header>
+    <div class="c-dialog__body">
+      <p class="u-mb-sm">Semiotics meh helvetica scenester lomo stumptown
+      kinfolk copper mug butcher kitsch kogi flexitarian pop-up umami. XOXO
+      vice master cleanse, single-origin coffee wayfarers twee whatever
+      truffaut 90's hot chicken pickled tousled. Hashtag tumblr celiac vegan,
+      DIY vinyl ugh migas. Echo park mumblecore blog kogi single-origin coffee
+      letterpress aesthetic. Keytar listicle 90's post-ironic thundercats
+      master cleanse narwhal four dollar toast. Farm-to-table bitters 90's wolf
+      irony mixtape literally banh mi lo-fi deep v. Plaid fanny pack retro
+      meditation cred, godard franzen.</p>
+      <p class="u-mb-sm">Copper mug art party single-origin coffee keytar, fingerstache
+      chicharrones kinfolk 8-bit 90's twee. PBR&B health goth yr, disrupt
+      subway tile hoodie gentrify ramps put a bird on it fanny pack. Street art
+      marfa trust fund seitan, 90's blue bottle tote bag selfies. Readymade art
+      party gluten-free kale chips fixie dreamcatcher quinoa cliche distillery
+      lomo occupy kombucha health goth air plant.</p>
+      <p>Shaman air plant flannel YOLO chia polaroid tacos typewriter.
+      Typewriter four dollar toast keffiyeh street art drinking vinegar vegan
+      actually wayfarers scenester sustainable occupy direct trade. Fanny pack
+      cardigan biodiesel put a bird on it asymmetrical stumptown. PBR&B twee
+      mlkshk hexagon.</p>
+    </div>
+    <footer class="c-dialog__footer">
+      <button class="c-btn c-btn--medium js-close">Cancel</button
+      ><button class="c-btn c-btn--medium js-close u-ml">OK</button>
     </footer>
   </section>
 
@@ -306,33 +337,11 @@
     bitters, blog letterpress pinterest vegan dreamcatcher. Selvage meh lomo
     90's, crucifix banjo seitan knausgaard kitsch salvia actually bespoke.</p>
     <footer class="c-dialog__footer">
-      <button class="c-btn js-close">Cancel</button
-      ><button class="c-btn js-close u-ml">OK</button>
+      <button class="c-btn c-btn--medium js-close">Cancel</button
+      ><button class="c-btn c-btn--medium js-close u-ml">OK</button>
     </footer>
   </section>
 
-  <section aria-labelledby="zd-transparent-dialog__header"
-           aria-hidden="true"
-           class="c-dialog"
-           id="zd-transparent-dialog"
-           role="dialog"
-           style="display:none;top:40px;left:40px"
-           tabindex="-1">
-    <header>
-      <h1 class="c-dialog__header"
-          id="zd-transparent-dialog__header">Dialog Title</h1>
-      <button aria-label="close" class="c-dialog__close"></button>
-    </header>
-    <p class="c-dialog__body">Plaid seitan lo-fi, tumblr farm-to-table freegan
-    venmo helvetica tilde kickstarter ramps four dollar toast. Health goth
-    leggings 8-bit butcher thundercats fashion axe. Authentic trust fund
-    bitters, blog letterpress pinterest vegan dreamcatcher. Selvage meh lomo
-    90's, crucifix banjo seitan knausgaard kitsch salvia actually bespoke.</p>
-    <footer class="c-dialog__footer">
-      <button class="c-btn js-close">Cancel</button
-      ><button class="c-btn js-close u-ml">OK</button>
-    </footer>
-  </section>
   <script src="http://garden.zendesk.com/jquery.js"></script>
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>

@@ -1,13 +1,20 @@
 @import '@zendesk/garden-css-variables';
 
 :root {
-  --zd-dialog__footer-padding: 0 var(--zd-spacing-xl) var(--zd-spacing-lg);
+  --zd-dialog__footer-padding: 0 var(--zd-spacing-xl) 32px;
+  --zd-dialog--large__footer-padding: 32px var(--zd-spacing-xl);
+  --zd-dialog--large__footer-border-top: var(--zd-dialog__header-border-bottom);
 }
 
 .c-dialog__footer {
   display: block;
   padding: var(--zd-dialog__footer-padding);
   text-align: right;
+}
+
+.c-dialog--large .c-dialog__footer {
+  border-top: var(--zd-dialog--large__footer-border-top);
+  padding: var(--zd-dialog--large__footer-padding);
 }
 
 .c-dialog.is-rtl .c-dialog__footer {

@@ -1,9 +1,8 @@
 @import '@zendesk/garden-css-variables';
 
 :root {
-  --zd-backdrop-background-color: color(var(--zd-color-white) alpha(80%));
+  --zd-backdrop-background-color: color(var(--zd-color-black) alpha(65%));
   --zd-backdrop-z-index: 400;
-  --zd-backdrop--lightbox-background-color: color(var(--zd-color-black) alpha(80%));
 }
 
 .l-backdrop {
@@ -16,15 +15,6 @@
   background-color: var(--zd-backdrop-background-color);
   overflow: auto;
   -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
-}
-
-.l-backdrop--lightbox {
-  background-color: var(--zd-backdrop--lightbox-background-color);
-}
-
-.l-backdrop--transparent {
-  background-color: transparent;
-  overflow: hidden;
 }
 
 .l-backdrop.is-visible {

@@ -5,18 +5,9 @@
   bottom:0;
   left:0;
   z-index:400;
-  background-color:hsla(0,0%,100%,.8);
+  background-color:rgba(0,0,0,.65);
   overflow:auto;
   -webkit-overflow-scrolling:touch;
-}
-
-.l-backdrop--lightbox{
-  background-color:rgba(0,0,0,.8);
-}
-
-.l-backdrop--transparent{
-  background-color:transparent;
-  overflow:hidden;
 }
 
 .l-backdrop.is-visible{
@@ -27,17 +18,21 @@
 .c-dialog{
   display:inline-block;
   position:relative;
-  margin-bottom:30px;
+  margin-bottom:48px;
   border:1px solid #eee;
   border-radius:4px;
   box-shadow:0 20px 30px 0 rgba(36,83,107,.15);
   background-color:#fff;
-  width:600px;
+  width:544px;
   min-height:60px;
 }
 
 .c-dialog:focus{
   outline:none;
+}
+
+.c-dialog--large{
+  width:800px;
 }
 
 .c-dialog--center{
@@ -47,7 +42,7 @@
   -webkit-transform:translate(50%,50%);
           transform:translate(50%,50%);
   margin-bottom:0;
-  max-height:calc(100vh - 60px);
+  max-height:calc(100vh - 96px);
   overflow:auto;
 }
 
@@ -197,16 +192,25 @@
 .c-dialog__body{
   display:block;
   margin:0;
-  padding:20px 40px 30px;
+  padding:20px 40px 40px;
   line-height:1.42857;
   color:#777;
   font-size:14px;
 }
 
+.c-dialog--large .c-dialog__body{
+  padding:20px 40px;
+}
+
 .c-dialog__footer{
   display:block;
-  padding:0 40px 30px;
+  padding:0 40px 32px;
   text-align:right;
+}
+
+.c-dialog--large .c-dialog__footer{
+  border-top:1px solid #eee;
+  padding:32px 40px;
 }
 
 .c-dialog.is-rtl .c-dialog__footer{
