@@ -2,7 +2,7 @@
 
 :root {
   /* stylelint-disable no-unsupported-browser-features */
-  --zd-dialog__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-gainsboro));
+  --zd-dialog__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-iron));
   --zd-dialog__close-right: var(--zd-spacing);
   --zd-dialog__close-size: var(--zd-spacing-xl);
   --zd-dialog__close-top: var(--zd-spacing-sm);

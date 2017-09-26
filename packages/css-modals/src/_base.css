@@ -1,4 +1,3 @@
-/* stylelint-disable no-unknown-animations */
 @import '@zendesk/garden-css-variables';
 
 :root {
@@ -10,25 +9,20 @@
   --zd-dialog-box-shadow:
     0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0
     color(var(--zd-color-chathams-blue) alpha(15%));
-  --zd-dialog-margin-bottom: 48px;
+  --zd-dialog-margin: 48px;
   --zd-dialog-min-height: calc(var(--zd-dialog__close-size) + (2 * var(--zd-dialog__close-top)));
   --zd-dialog-width: 544px;
-  --zd-dialog--center-margin: var(--zd-spacing);
-  --zd-dialog--center-max-height: calc(100vh - (2 * var(--zd-dialog-margin-bottom)));
-  --zd-dialog--center-transform: translate(50%, 50%);
-  --zd-dialog--center-small-height-transform: translate(50%, 0);
-  --zd-dialog--center-small-width-transform: translate(0, 50%);
-  --zd-dialog--center-small-transform: translate(0, 0);
   --zd-dialog--large-width: 800px;
 }
 
 .c-dialog {
   display: flex;
-  position: relative;
+  position: absolute;
   flex-direction: column;
-  margin-bottom: var(--zd-dialog-margin-bottom);
+  margin-bottom: var(--zd-dialog-margin);
   border: var(--zd-dialog-border);
   border-radius: var(--zd-dialog-border-radius);
+  box-sizing: border-box;
   box-shadow: var(--zd-dialog-box-shadow);
   background-color: var(--zd-dialog-background-color);
   width: var(--zd-dialog-width);
@@ -43,74 +37,14 @@
   width: var(--zd-dialog--large-width);
 }
 
-.c-dialog--center {
-  position: absolute;
-  right: 50%;
-  bottom: 50%;
-  transform: var(--zd-dialog--center-transform);
-  margin-bottom: 0;
-  max-height: var(--zd-dialog--center-max-height);
-  overflow: auto;
-}
-
+/* stylelint-disable no-unknown-animations */
 .c-dialog.is-open {
   animation-name: zd-dialog-open;
   animation-duration: .3s;
   animation-timing-function: ease-in;
 }
-
-.c-dialog--center.is-open {
-  transform-origin: 100% 100%;
-  animation-name: zd-dialog--center-open;
-}
+/* stylelint-enable no-unknown-animations */
 
 .c-dialog.is-rtl {
   direction: rtl;
 }
-
-/* Custom media width is:
- * `calc(var(--zd-dialog-width) + (var(--zd-dialog--center-margin) * 2));`
- * PSA: custom property usage is not valid within a media query.
- */
-@custom-media --zd-dialog-viewport-small-height (height < 400px);
-@custom-media --zd-dialog-viewport-small-width (width < 640px);
-@custom-media --zd-dialog-viewport-small (height < 400px) and (width < 640px);
-
-@media (--zd-dialog-viewport-small-height) {
-  .c-dialog--center {
-    bottom: auto;
-    transform: var(--zd-dialog--center-small-height-transform);
-    margin: var(--zd-dialog--center-margin) 0;
-    max-height: none;
-  }
-
-  .c-dialog--center.is-open {
-    transform-origin: 100% 0;
-    animation-name: zd-dialog--center-small-height-open;
-  }
-}
-
-@media (--zd-dialog-viewport-small-width) {
-  .c-dialog--center {
-    left: 0;
-    transform: var(--zd-dialog--center-small-width-transform);
-    margin: 0 var(--zd-dialog--center-margin);
-  }
-
-  .c-dialog--center.is-open {
-    animation-name: zd-dialog--center-small-width-open;
-  }
-}
-
-@media (--zd-dialog-viewport-small) {
-  .c-dialog--center {
-    transform: var(--zd-dialog--center-small-transform);
-    margin: var(--zd-dialog--center-margin);
-    max-height: none;
-  }
-
-  .c-dialog--center.is-open {
-    animation-name: zd-dialog--center-small-open;
-  }
-}
-/* stylelint-enable no-unknown-animations */
