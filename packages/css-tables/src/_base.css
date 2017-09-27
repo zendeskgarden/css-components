@@ -34,6 +34,7 @@
   border: none; /* [1] */
   width: 100%; /* [1] */
   table-layout: fixed; /* [1] */
+  border-collapse: collapse; /* [1] */
   border-spacing: 0; /* [1] */
   line-height: var(--zd-table-line-height);
   color: var(--zd-table-font-color);
@@ -48,6 +49,7 @@
 .c-table__row {
   display: table-row;
   transition: var(--zd-table__row-transition);
+  border-bottom: var(--zd-table__row-border-bottom);
   height: var(--zd-table__row-height);
   vertical-align: top;
 }
@@ -60,6 +62,7 @@
 }
 
 .c-table__row--header {
+  border-bottom-color: var(--zd-table__row--header-border-color);
   height: var(--zd-table__row--header-height);
   vertical-align: bottom;
   font-weight: var(--zd-table__row--header-font-weight);
@@ -73,7 +76,6 @@
 .c-table__row__cell {
   display: table-cell;
   transition: var(--zd-table__row__cell-transition);
-  border-bottom: var(--zd-table__row-border-bottom);
   padding: var(--zd-table__row__cell-padding);
 }
 
@@ -91,10 +93,6 @@
 
 .c-table__row--group .c-table__row__cell {
   padding: var(--zd-table__row--group__cell-padding);
-}
-
-.c-table__row--header .c-table__row__cell {
-  border-bottom-color: var(--zd-table__row--header-border-color);
 }
 
 .c-table__row--header .c-table__row__cell:not(.c-table__row__cell--overflow) {

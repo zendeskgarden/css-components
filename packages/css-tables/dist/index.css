@@ -3,6 +3,7 @@
   border:none;
   width:100%;
   table-layout:fixed;
+  border-collapse:collapse;
   border-spacing:0;
   line-height:1.42857;
   color:#555;
@@ -17,6 +18,7 @@
 .c-table__row{
   display:table-row;
   transition:background-color .25s ease-in-out;
+  border-bottom:1px solid #eee;
   height:40px;
   vertical-align:top;
 }
@@ -29,6 +31,7 @@
 }
 
 .c-table__row--header{
+  border-bottom-color:#ddd;
   height:48px;
   vertical-align:bottom;
   font-weight:600;
@@ -41,7 +44,6 @@
 .c-table__row__cell{
   display:table-cell;
   transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out;
-  border-bottom:1px solid #eee;
   padding:10px 12px;
 }
 
@@ -59,10 +61,6 @@
 
 .c-table__row--group .c-table__row__cell{
   padding:6px 10px;
-}
-
-.c-table__row--header .c-table__row__cell{
-  border-bottom-color:#ddd;
 }
 
 .c-table__row--header .c-table__row__cell:not(.c-table__row__cell--overflow){
@@ -84,11 +82,8 @@
 }
 
 .c-table__row:not(.c-table__row--header).is-selected,.c-table__row:not(.c-table__row--header)[aria-selected]{
-  background-color:#eee;
-}
-
-.c-table__row:not(.c-table__row--header).is-selected .c-table__row__cell,.c-table__row:not(.c-table__row--header)[aria-selected] .c-table__row__cell{
   border-bottom-color:#ddd;
+  background-color:#eee;
 }
 
 .c-table__row__cell--overflow{
@@ -324,11 +319,11 @@
   color:#fff;
 }
 
-.c-table--dark .c-table__row__cell{
+.c-table--dark .c-table__row{
   border-bottom:1px solid #04444d;
 }
 
-.c-table--dark .c-table__row--header .c-table__row__cell{
+.c-table--dark .c-table__row--header .c-table__row{
   border-bottom-color:#56777a;
 }
 
@@ -349,11 +344,8 @@
 }
 
 .c-table--dark .c-table__row:not(.c-table__row--header).is-selected,.c-table--dark .c-table__row:not(.c-table__row--header)[aria-selected]{
-  background-color:#56777a;
-}
-
-.c-table--dark .c-table__row:not(.c-table__row--header).is-selected .c-table__row__cell,.c-table--dark .c-table__row:not(.c-table__row--header)[aria-selected] .c-table__row__cell{
   border-color:#04444d;
+  background-color:#56777a;
 }
 
 .c-table--dark .c-table__row:not(.c-table__row--header).is-selected .c-table__row__cell__overflow:after,.c-table--dark .c-table__row:not(.c-table__row--header)[aria-selected] .c-table__row__cell__overflow:after,.c-table--dark .c-table__row__cell__overflow:after{

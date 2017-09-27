@@ -26,11 +26,8 @@
 }
 
 .c-table__row:--table__row-selected {
-  background-color: var(--zd-table__row-selected-background-color);
-}
-
-.c-table__row:--table__row-selected .c-table__row__cell {
   border-bottom-color: var(--zd-table__row-selected-border-color);
+  background-color: var(--zd-table__row-selected-background-color);
 }
 
 /* stylelint-enable selector-max-specificity, no-descending-specificity */
