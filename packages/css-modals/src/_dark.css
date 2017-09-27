@@ -1,7 +1,6 @@
 @import '@zendesk/garden-css-variables';
 
 :root {
-  /* stylelint-disable no-unsupported-browser-features */
   --zd-dialog--dark-background-color: var(--zd-color-algae);
   --zd-dialog--dark-border-color: var(--zd-color-sherpa-blue);
   --zd-dialog--dark-box-shadow:
@@ -12,7 +11,6 @@
   --zd-dialog--dark__close-focused-background-color: var(--zd-color-sherpa-blue);
   --zd-dialog--dark__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-submarine));
   --zd-dialog--dark__header-color: var(--zd-color-white);
-  /* stylelint-enable no-unsupported-browser-features */
 }
 
 .c-dialog--dark {

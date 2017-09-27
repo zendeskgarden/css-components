@@ -1,7 +1,6 @@
 @import '@zendesk/garden-css-variables';
 
 :root {
-  /* stylelint-disable no-unsupported-browser-features */
   --zd-dialog__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-iron));
   --zd-dialog__close-right: var(--zd-spacing);
   --zd-dialog__close-size: var(--zd-spacing-xl);
@@ -11,7 +10,6 @@
   --zd-dialog__close-focused-background-color: var(--zd-color-platinum);
   --zd-dialog__close__icon-background-size: var(--zd-spacing);
   --zd-dialog__close__icon-transition: opacity .25s ease-in-out;
-  /* stylelint-enable no-unsupported-browser-features */
 }
 
 /* 1. Reset for <button> element.
