@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.3.0] - 2017-09-28
+### Added (per [#23](https://github.com/zendeskgarden/css-buttons/pull/23))
+- Added danger styling `.c-btn--danger`
+
 ## [3.2.0] - 2017-09-19
 ### Added (per [#20](https://github.com/zendeskgarden/css-buttons/pull/20))
 - Modification for `.c-btn--anchor` styling.
@@ -71,6 +75,7 @@
 
 ## 0.1.0 - 2016-01-05
 
+[3.3.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.2.0...v3.3.0
 [3.2.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.1.0...v3.2.0
 [3.1.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/zendeskgarden/css-buttons/compare/2.2.0...v3.0.0
