@@ -1,3 +1,5 @@
+/* stylelint-disable selector-max-specificity */
+
 @import '_variables';
 
 .c-btn--anchor {
@@ -24,6 +26,14 @@
   color: var(--zd-btn-color);
 }
 
+.c-btn.c-btn--anchor.c-btn--danger {
+  color: var(--zd-btn-danger-color);
+}
+
+.c-btn.c-btn--anchor.c-btn--danger:--btn-hovered {
+  color: var(--zd-btn-danger-color);
+}
+
 .c-btn--anchor.c-btn--anchor:--btn-focused {
   box-shadow: none;
   text-decoration: underline;
@@ -33,6 +43,10 @@
   background-color: transparent;
   text-decoration: none;
   color: var(--zd-btn-color);
+}
+
+.c-btn.c-btn--anchor.c-btn--danger:--btn-active {
+  color: var(--zd-btn-danger-color);
 }
 
 .c-btn--anchor.c-btn--anchor:--btn-disabled {

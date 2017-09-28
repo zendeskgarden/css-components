@@ -1,5 +1,8 @@
+@import '@zendesk/garden-css-variables';
+
 :root {
   --zd-btn-color: var(--zd-color-pelorous);
   --zd-btn-disabled-background-color: var(--zd-color-gainsboro);
   --zd-btn--anchor-disabled-color: color(var(--zd-btn-disabled-background-color) blackness(20%));
+  --zd-btn-danger-color: var(--zd-color-flamingo);
 }

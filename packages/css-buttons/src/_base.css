@@ -84,3 +84,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.c-btn.c-btn--danger {
+  border-color: var(--zd-btn-danger-color);
+  color: var(--zd-btn-danger-color);
+}
