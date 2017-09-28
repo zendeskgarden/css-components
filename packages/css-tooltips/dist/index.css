@@ -4,7 +4,7 @@
   border-radius:2px;
   box-shadow:0 4px 8px 0 rgba(36,83,107,.15);
   background-color:#03363d;
-  padding:0 1.25em;
+  padding:0 1em;
   line-height:1.66667;
   white-space:nowrap;
   color:#ddd;
@@ -44,10 +44,10 @@
 
 .c-tooltip--medium{
   border-radius:4px;
-  padding-top:.83333em;
-  padding-bottom:.83333em;
+  padding:1em;
   max-width:140px;
   word-wrap:break-word;
+  line-height:1.33333;
   white-space:normal;
 }
 
@@ -71,8 +71,13 @@
 }
 
 .c-tooltip--dark{
-  border:none;
+  border-color:transparent;
   box-shadow:0 10px 20px 0 rgba(0,0,0,.15);
+  background-color:#56777a;
+  color:#fff;
+}
+
+.c-tooltip--dark.c-tooltip--light{
   background-color:#03363d;
   color:#819a9e;
 }
