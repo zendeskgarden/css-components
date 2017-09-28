@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.0.2] - 2017-09-28
+### Updated (per [#9](https://github.com/zendeskgarden/css-tooltips/pull/9))
+- Improve spacing for default and medium tooltips.
+- Light/dark inverse for tooltips in dark mode.
+
 ## [2.0.1] - 2017-06-30
 ### Fixed (per [#8](https://github.com/zendeskgarden/css-tooltips/pull/8))
 - Improved word-break on overflow for medium, large, and extra-large
@@ -29,6 +34,7 @@
 
 ## 0.1.0 - 2016-08-17
 
+[2.0.2]: https://github.com/zendeskgarden/css-tooltips/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/zendeskgarden/css-tooltips/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/zendeskgarden/css-tooltips/compare/1.1.1...v2.0.0
 [1.1.1]: https://github.com/zendeskgarden/css-tooltips/compare/1.1.0...1.1.1
