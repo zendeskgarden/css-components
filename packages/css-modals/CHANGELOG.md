@@ -1,5 +1,22 @@
 # Change Log
 
+## [4.0.0] - 2017-09-28
+### Added
+- `.c-dialog--large` modifier.
+- `.l-backdrop--center` modifier.
+- `.l-backdrop.is-rtl` for RTL layout.
+
+### Updated
+- Layout using flex.
+- Default backdrop is black at 65% opacity.
+- Default dialog width (544px; large is 800px).
+- Slight padding and shadow modifications.
+
+### Removed (per [#16](https://github.com/zendeskgarden/css-modals/pull/16))
+- `.l-backdrop--lightbox` and `.l-backdrop--transparent`.
+- `.c-dialog--center` (use `.l-backdrop--center` to align contained
+  dialog).
+
 ## [3.0.1] - 2017-07-28
 ### Fixed (per [#14](https://github.com/zendeskgarden/css-modals/pull/14))
 - `.c-dialog__close` background-image transition (Safari).
@@ -45,6 +62,7 @@
 
 ## 0.1.0 - 2016-02-03
 
+[4.0.0]: https://github.com/zendeskgarden/css-modals/compare/v3.0.1...v4.0.0
 [3.0.1]: https://github.com/zendeskgarden/css-modals/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/zendeskgarden/css-modals/compare/2.2.0...v3.0.0
 [2.2.0]: https://github.com/zendeskgarden/css-modals/compare/2.1.0...2.2.0
