@@ -23,9 +23,9 @@
   },
   "scripts": {
     "build": "postcss src/[a-z]*.css --dir dist",
+    "gh-pages": "gh-pages -d demo",
     "lint": "stylelint $(find src -name '*.css')",
     "nuke": "rm -rf node_modules",
-    "publish-demo": "gh-pages -d demo",
     "rebuild": "npm run nuke && npm install && npm run build",
     "start": "npm run watch & live-server demo",
     "test": "npm run lint",
