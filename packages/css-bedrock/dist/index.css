@@ -1658,6 +1658,21 @@ svg{ max-height:100%; }
 
 .u-va-top{ vertical-align:top !important; }
 
+.u-visibility-visible{ visibility:visible !important; }
+
+.u-visibility-hidden{ visibility:hidden !important; }
+
+.u-visibility-screenreader{
+  position:absolute;
+  border:0;
+  clip:rect(1px,1px,1px,1px);
+  padding:0;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
 .u-1\/1,.u-2\/2,.u-3\/3,.u-4\/4,.u-5\/5,.u-6\/6,.u-8\/8,.u-12\/12,.u-24\/24{ width:100% !important; }
 
 .u-1\/5{ width:20% !important; }
