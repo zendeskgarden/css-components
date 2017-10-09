@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.1.0] - 2017-10-09
+### Added (per [#22](https://github.com/zendeskgarden/css-bedrock/pull/22))
+- Visibility utility classes
+
 ## [3.0.0] - 2017-06-20
 ### Changed (per [#20](https://github.com/zendeskgarden/css-bedrock/pull/20))
 - Prepared package for registry publish as
@@ -73,6 +77,7 @@
 
 ## 0.0.1 - 2015-12-21
 
+[3.1.0]: https://github.com/zendeskgarden/css-bedrock/compare/3.0.0...v3.1.0
 [3.0.0]: https://github.com/zendeskgarden/css-bedrock/compare/2.0.1...v3.0.0
 [2.0.1]: https://github.com/zendeskgarden/css-bedrock/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/zendeskgarden/css-bedrock/compare/1.1.0...2.0.0
