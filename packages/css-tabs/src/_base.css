@@ -8,12 +8,12 @@
   --zd-tab__list-margin-bottom: var(--zd-spacing);
   --zd-tab__list__item-border-width: 3px;
   --zd-tab__list__item-margin: 50px;
-  --zd-tab__list__item-padding: 0 calc(5 / 14 * 1em);
+  --zd-tab__list__item-padding: calc(5 / 14 * 1em);
   --zd-tab__list__item-transition:
     border-color .1s ease-in-out,
     box-shadow .1s ease-in-out,
     color .25s ease-in-out;
-  --zd-tab__list__item__a-margin: 0 calc(5 / 14 * -1em);
+  --zd-tab__list__item__a-margin: calc(5 / 14 * -1em);
 }
 
 .c-tab {
