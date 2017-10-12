@@ -1,0 +1,44 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+}
+
+/* 1. Prevent "bounce" overscroll. */
+.c-chrome {
+  display: flex;
+  margin: 0;
+  background-color: var(--zd-color-daintree);
+  min-height: 100vh;
+  overflow: hidden; /* [1] */
+}
+
+.c-chrome__nav {
+  order: -1;
+  flex-direction: column;
+  background-color: var(--zd-color-algae);
+  width: 60px;
+  color: var(--zd-color-white);
+}
+
+.c-chrome__subnav {
+  order: 0;
+  flex-direction: column;
+  background-color: var(--zd-color-daintree);
+  width: 180px;
+  color: var(--zd-color-white);
+}
+
+.c-chrome__body {
+  order: 0;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--zd-color-snow);
+}
+
+.c-chrome__body__header {
+  box-sizing: border-box;
+  background-color: var(--zd-color-white);
+  height: 50px;
+  border-bottom: 1px solid var(--zd-color-anti-flash-white);
+  color: var(--zd-color-aluminum);
+}

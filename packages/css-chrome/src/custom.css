@@ -1,0 +1,5 @@
+@import '@zendesk/garden-css-variables';
+
+.c-chrome--custom {
+  color: var(--zd-color-mandy);
+}
