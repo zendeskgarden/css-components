@@ -7,7 +7,7 @@
   --zd-table__row-border: 1px solid;
   --zd-table__row-border-bottom: var(--zd-table__row-border) var(--zd-color-platinum);
   --zd-table__row-height: 40px;
-  --zd-table__row-transition: background-color .25s ease-in-out;
+  --zd-table__row-transition: background-color .1s ease-in-out;
   --zd-table__row--group-color: var(--zd-color-monsoon);
   --zd-table__row--group-font-size: var(--zd-font-size-zeta);
   --zd-table__row--group-height: 32px;
