@@ -9,13 +9,13 @@
 }
 
 .c-chrome__nav{
-  -webkit-box-ordinal-group:0;
-      -ms-flex-order:-1;
-          order:-1;
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
       -ms-flex-direction:column;
           flex-direction:column;
+  -webkit-box-ordinal-group:0;
+      -ms-flex-order:-1;
+          order:-1;
   background-color:#03363d;
   width:60px;
   color:#fff;
@@ -24,17 +24,17 @@
 .c-chrome__subnav{
       -ms-flex-direction:column;
           flex-direction:column;
+  -webkit-box-ordinal-group:1;
+      -ms-flex-order:0;
   background-color:#012b30;
   width:180px;
   color:#fff;
 }
 
 .c-chrome__body,.c-chrome__subnav{
-  -webkit-box-ordinal-group:1;
-      -ms-flex-order:0;
-          order:0;
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
+          order:0;
 }
 
 .c-chrome__body{
@@ -43,14 +43,16 @@
           flex:1;
       -ms-flex-direction:column;
           flex-direction:column;
+  -webkit-box-ordinal-group:1;
+      -ms-flex-order:0;
   background-color:#fbfbfb;
 }
 
 .c-chrome__body__header{
   -webkit-box-sizing:border-box;
           box-sizing:border-box;
+  border-bottom:1px solid #f3f3f3;
   background-color:#fff;
   height:50px;
-  border-bottom:1px solid #f3f3f3;
   color:#999;
 }
