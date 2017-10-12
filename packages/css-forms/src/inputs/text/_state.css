@@ -3,8 +3,7 @@
 :root {
   --zd-txt-disabled-background-color: var(--zd-color-gainsboro);
   --zd-txt-disabled-border-color: transparent;
-  --zd-txt-disabled-color: var(--zd-color-monsoon);
-  --zd-txt-disabled-color-placeholder: var(--zd-color-white);
+  --zd-txt-disabled-color: var(--zd-color-aluminum);
   --zd-txt-focused-border-color: var(--zd-color-pelorous);
   --zd-txt-focused-box-shadow:
     0 0 0 3px
@@ -45,6 +44,7 @@
   color: var(--zd-txt-disabled-color);
 }
 
+/* Necessary to override common bedrock placeholder styling */
 :--txt-disabled::placeholder {
-  color: var(--zd-txt-disabled-color-placeholder);
+  color: var(--zd-txt-disabled-color);
 }

@@ -817,7 +817,7 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt .c-txt__input[disabled].c-txt__input--select:not(select):before,.c-txt.is-disabled .c-txt__input.c-txt__input--select:not(select):before,.c-txt.is-disabled select.c-txt__input--select,.c-txt select.c-txt__input--select[disabled]{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 6l3 3 3-3'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23999'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 6l3 3 3-3'/%3E%3C/svg%3E");
 }
 
 .c-txt.is-rtl .c-txt__input--select{
@@ -879,19 +879,19 @@ select.c-txt__input--select:-moz-focusring{
   border-color:transparent;
   background-color:#ddd;
   cursor:default;
-  color:#777;
+  color:#999;
 }
 
 .c-txt .c-txt__input[disabled]::-webkit-input-placeholder,.c-txt.is-disabled .c-txt__input::-webkit-input-placeholder{
-  color:#fff;
+  color:#999;
 }
 
 .c-txt .c-txt__input[disabled]:-ms-input-placeholder,.c-txt.is-disabled .c-txt__input:-ms-input-placeholder{
-  color:#fff;
+  color:#999;
 }
 
 .c-txt .c-txt__input[disabled]::placeholder,.c-txt.is-disabled .c-txt__input::placeholder{
-  color:#fff;
+  color:#999;
 }
 
 .c-txt--dark .c-txt__input{
@@ -918,15 +918,15 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt--dark.c-txt .c-txt__input[disabled]::-webkit-input-placeholder,.c-txt--dark.c-txt.is-disabled .c-txt__input::-webkit-input-placeholder{
-  color:#56777a;
+  color:#03363d;
 }
 
 .c-txt--dark.c-txt .c-txt__input[disabled]:-ms-input-placeholder,.c-txt--dark.c-txt.is-disabled .c-txt__input:-ms-input-placeholder{
-  color:#56777a;
+  color:#03363d;
 }
 
 .c-txt--dark.c-txt .c-txt__input[disabled]::placeholder,.c-txt--dark.c-txt.is-disabled .c-txt__input::placeholder{
-  color:#56777a;
+  color:#03363d;
 }
 
 .c-txt--dark.c-txt .c-txt__input:focus.c-txt__input--select:not(select):before,.c-txt--dark.c-txt .c-txt__input:hover.c-txt__input--select:not(select):before,.c-txt--dark.c-txt.is-focused .c-txt__input.c-txt__input--select:not(select):before,.c-txt--dark.c-txt.is-hovered .c-txt__input.c-txt__input--select:not(select):before,.c-txt--dark.is-focused select.c-txt__input--select,.c-txt--dark.is-hovered select.c-txt__input--select,.c-txt--dark select.c-txt__input--select:focus,.c-txt--dark select.c-txt__input--select:hover{
