@@ -10,7 +10,7 @@
     border-color .1s ease-in-out,
     background-color .1s ease-in-out,
     color .1s ease-in-out;
-  --zd-btn-disabled-color: var(--zd-color-white);
+  --zd-btn-disabled-color: var(--zd-color-aluminum);
   --zd-btn-focused-box-shadow:
     0 0 0 3px
     color(var(--zd-btn-color) alpha(40%));

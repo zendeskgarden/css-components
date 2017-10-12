@@ -166,7 +166,7 @@
   box-shadow:none;
   background-color:#ddd;
   cursor:default;
-  color:#fff;
+  color:#999;
 }
 .c-btn--anchor{
   display:inline;
@@ -207,7 +207,7 @@
 }
 .c-btn--anchor.c-btn--anchor.is-disabled.is-disabled,.c-btn--anchor.c-btn--anchor:disabled:disabled{
   background-color:transparent;
-  color:#cfcfcf;
+  color:#999;
 }
 .c-btn--basic.c-btn--basic{
   border-color:transparent;

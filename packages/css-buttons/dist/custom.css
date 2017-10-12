@@ -30,7 +30,7 @@
   background-color:#ddd;
 }
 .c-btn--custom.c-btn--anchor.is-disabled.is-disabled,.c-btn--custom.c-btn--anchor:disabled:disabled{
-  color:#cfcfcf;
+  color:#999;
 }
 .l-btn-group .c-btn--custom.is-focused{
   box-shadow:inset 0 0 0 3px rgba(235,73,98,.4);
