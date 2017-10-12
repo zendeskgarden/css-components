@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.3.1] - 2017-10-12
+### Fixed
+- Bump version to trigger failed deploy
+
 ## [3.3.0] - 2017-10-12
 ### Added (per [#44](https://github.com/zendeskgarden/css-forms/pull/44))
 - Improve readability of disabled text
@@ -151,6 +155,7 @@
 ### Added
 - `.c-chk` component.
 
+[3.3.1]: https://github.com/zendeskgarden/css-forms/compare/v3.3.0...v3.3.1
 [3.3.0]: https://github.com/zendeskgarden/css-forms/compare/v3.2.2...v3.3.0
 [3.2.2]: https://github.com/zendeskgarden/css-forms/compare/v3.2.1...v3.2.2
 [3.2.1]: https://github.com/zendeskgarden/css-forms/compare/v3.2.0...v3.2.1
