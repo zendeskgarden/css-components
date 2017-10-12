@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.4.0] - 2017-10-11
+### Added (per [#26](https://github.com/zendeskgarden/css-buttons/pull/26))
+- Improve readability of disabled text
+
 ## [3.3.1] - 2017-09-28
 ### Added (per [#24](https://github.com/zendeskgarden/css-buttons/pull/23))
 - Correct basic button styling when used with danger modifier
@@ -79,6 +83,7 @@
 
 ## 0.1.0 - 2016-01-05
 
+[3.4.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.3.1...v3.4.0
 [3.3.1]: https://github.com/zendeskgarden/css-buttons/compare/v3.3.0...v3.3.1
 [3.3.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.2.0...v3.3.0
 [3.2.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.1.0...v3.2.0
