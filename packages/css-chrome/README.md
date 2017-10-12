@@ -1,4 +1,4 @@
-# Chrome Component CSS [![Build Status]()](https://travis-ci.com/zendeskgarden/css-chrome)
+# Chrome Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-chrome.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-chrome)
 
 The `garden-css-chrome` package.
 
