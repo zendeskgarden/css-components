@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.1.0] - 2017-10-18
+### Added (per [#6](https://github.com/zendeskgarden/css-tabs/pull/6))
+- Include complementary `.c-tab--custom` CSS demonstrating how to apply
+  an accent color change.
+
 ## [3.0.1] - 2017-10-12
 ### Fixed (per [#7](https://github.com/zendeskgarden/css-tabs/pull/7))
 - Increase tab list item padding.
