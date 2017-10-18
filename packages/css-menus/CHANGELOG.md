@@ -1,5 +1,29 @@
 # Change Log
 
+## [5.0.0] - 2017-10-18
+### Added (per [#27](https://github.com/zendeskgarden/css-menus/pull/27))
+- `.c-menu__item.is-checked` state.
+- `.c-menu__item--header` modification (with optional
+  `.c-menu__item--header__icon`).
+- `.c-menu__item--next` and `.c-menu__item--previous` modifications for
+  navigating to sub-menu items.
+- `.c-menu__item--add` modification to support add gestures from a menu.
+- `.c-menu__item__meta` for the addition of menu item metadata.
+- `.c-menu__item--media` modification to handle avatar-styled menu
+  items.
+- Include complementary `.c-menu--custom` CSS demonstrating how to apply
+  an accent color change.
+
+### Changed
+- Increased padding to accommodate menu item icons.
+
+### Removed
+- `.c-menu--large`; instead override `min-width` to increase default
+  menu size.
+
+### Fixed
+- Handle break for long word wrapping.
+
 ## [4.0.0] - 2017-07-28
 ### Added (per [#26](https://github.com/zendeskgarden/css-menus/pull/26))
 - `.c-menu--sm` modifier for small menus (expected to combine with
@@ -76,6 +100,7 @@
 
 ## 0.1.0 - 2015-01-15
 
+[5.0.0]: https://github.com/zendeskgarden/css-menus/compare/v4.0.0...v5.0.0
 [4.0.0]: https://github.com/zendeskgarden/css-menus/compare/v3.0.0...v4.0.0
 [3.0.0]: https://github.com/zendeskgarden/css-menus/compare/2.3.1...v3.0.0
 [2.3.1]: https://github.com/zendeskgarden/css-menus/compare/2.3.0...2.3.1
