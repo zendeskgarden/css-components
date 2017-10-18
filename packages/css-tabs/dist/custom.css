@@ -13,5 +13,6 @@
   color:#eb4962;
 }
 .c-tab--custom .c-tab__list__item.c-tab__list__item.is-disabled,.c-tab--custom .c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab--custom .c-tab__list__item.c-tab__list__item[disabled]{
+  border-color:transparent;
   color:#ddd;
 }

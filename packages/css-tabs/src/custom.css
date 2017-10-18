@@ -39,6 +39,7 @@
 }
 
 .c-tab--custom .c-tab__list__item.c-tab__list__item:--tab-disabled {
+  border-color: transparent;
   color: var(--zd-tab--custom__list__item-disabled-color);
 }
 /* stylelint-enable selector-max-specificity */
