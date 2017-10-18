@@ -1,6 +1,6 @@
 {
   "name": "@zendesk/garden-css-variables",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "repository": "zendeskgarden/css-variables",
   "license": "UNLICENSED",
   "publishConfig": {
