@@ -16,6 +16,7 @@
 
 ### Changed
 - Increased padding to accommodate menu item icons.
+- Ease opacity on `.is-hidden` to improve user feedback.
 
 ### Removed
 - `.c-menu--large`; instead override `min-width` to increase default
