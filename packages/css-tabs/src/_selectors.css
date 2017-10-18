@@ -1,0 +1,29 @@
+/* stylelint-disable at-rule-empty-line-before */
+
+@custom-selector :--tab-hovered
+  .is-hovered,
+  :hover;
+
+@custom-selector :--tab-focused
+  .is-focused,
+  :focus;
+
+@custom-selector :--tab-active
+  .is-active,
+  :active;
+
+/* 1. No [aria-selected] styling due to behavioral timing delay between
+ *    selection and expansion. */
+@custom-selector :--tab-selected
+  .is-selected; /* [1] */
+
+@custom-selector :--tab-disabled
+  .is-disabled,
+  [disabled],
+  [aria-disabled='true'];
+
+@custom-selector :--tab-hidden
+  .is-hidden,
+  [aria-hidden='true'];
+
+/* stylelint-enable at-rule-empty-line-before */

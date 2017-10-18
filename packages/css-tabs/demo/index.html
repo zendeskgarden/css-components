@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
 <head>
-  <title>Zendesk Garden / CSS Components / Tabs</title>
+  <title>Tabs / CSS Components / Zendesk Garden</title>
   <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
+  <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
 </head>
 <body>
   <header class="c-header">
@@ -19,17 +21,36 @@
       <span>/ Tabs</span>
     </h1>
     <ul class="c-ctl c-ctl--header">
-      <li class="c-ctl__item u-bg-transparent">
-        <fieldset class="c-chk c-chk--toggle">
-          <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-          <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
-        </fieldset>
-      </li
-      ><li class="c-ctl__item">
-        <fieldset class="c-chk c-chk--toggle">
-          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
-          <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
-        </fieldset>
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-settings-fill">
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron">
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.custom">Custom</label>
+            </fieldset>
+          </li>
+        </ul>
       </li>
     </ul>
   </header>
@@ -303,10 +324,21 @@
           Williamsburg beard kickstarter flexitarian. Pinterest chia
           vexillologist helvetica roof party fap. Taxidermy kickstarter pok pok
           VHS, chia messenger bag fixie bushwick organic iPhone swag.</p>
+
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><nav class="c-tab">
+</nav></textarea>
+        </div>
+      </section>
     </div>
   </main>
   <script src="http://garden.zendesk.com/jquery.js"></script>
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="http://garden.zendesk.com/editor.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

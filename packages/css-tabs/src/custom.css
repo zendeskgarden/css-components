@@ -1,0 +1,44 @@
+@import '@zendesk/garden-css-variables';
+@import '_variables';
+@import '_selectors';
+
+:root {
+  --zd-tab--custom-accent-color: var(--zd-color-mandy);
+  --zd-tab--custom__list__item-active-color: var(--zd-tab--custom-accent-color);
+  --zd-tab--custom__list__item-active-border-color: color(var(--zd-tab--custom-accent-color) alpha(25%));
+  --zd-tab--custom__list__item-disabled-color: var(--zd-tab-disabled-color);
+  --zd-tab--custom__list__item-focused-box-shadow:
+    var(--zd-tab-focused-box-shadow)
+    color(var(--zd-tab--custom-accent-color) alpha(40%));
+  --zd-tab--custom__list__item-focused-border-radius: 4px;
+  --zd-tab--custom__list__item-focused-color: var(--zd-tab--custom-accent-color);
+  --zd-tab--custom__list__item-hovered-color: var(--zd-tab--custom-accent-color);
+  --zd-tab--custom__list__item-selected-color: var(--zd-tab--custom-accent-color);
+}
+
+.c-tab--custom .c-tab__list__item:--tab-hovered {
+  color: var(--zd-tab--custom__list__item-hovered-color);
+}
+
+.c-tab--custom .c-tab__list__item:--tab-focused {
+  color: var(--zd-tab--custom__list__item-focused-color);
+}
+
+.c-tab--custom .c-tab__list__item:--tab-focused::before {
+  box-shadow: var(--zd-tab--custom__list__item-focused-box-shadow);
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-tab--custom .c-tab__list__item.c-tab__list__item:--tab-active {
+  border-color: var(--zd-tab--custom__list__item-active-border-color);
+  color: var(--zd-tab--custom__list__item-active-color);
+}
+
+.c-tab--custom .c-tab__list__item.c-tab__list__item:--tab-selected {
+  color: var(--zd-tab--custom__list__item-selected-color);
+}
+
+.c-tab--custom .c-tab__list__item.c-tab__list__item:--tab-disabled {
+  color: var(--zd-tab--custom__list__item-disabled-color);
+}
+/* stylelint-enable selector-max-specificity */

@@ -121,7 +121,7 @@
   color:#819a9e;
 }
 
-.c-tab--dark .c-tab__list__item.c-tab__list__item.is-disabled,.c-tab--dark .c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab--dark .c-tab__list__item.c-tab__list__item[disabled]{
+.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item.is-disabled,.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item[disabled]{
   color:#56777a;
 }
 
