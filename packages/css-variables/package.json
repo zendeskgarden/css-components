@@ -6,7 +6,7 @@
   "publishConfig": {
     "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
   },
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "style": "dist/index.css",
   "devDependencies": {
     "@zendesk/eslint-config-garden": "^3.0.0",
