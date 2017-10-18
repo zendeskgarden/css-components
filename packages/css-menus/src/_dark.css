@@ -1,4 +1,5 @@
 @import '@zendesk/garden-css-variables';
+@import '_selectors';
 
 :root {
   --zd-menu--dark-background-color: var(--zd-color-algae);
@@ -7,9 +8,13 @@
     0 20px 30px 0
     color(var(--zd-color-black) alpha(15%));
   --zd-menu--dark__item-color: var(--zd-color-submarine);
-  --zd-menu--dark__item--disabled-color: var(--zd-color-breaker-bay);
+  --zd-menu--dark__item-disabled-color: var(--zd-color-breaker-bay);
+  --zd-menu--dark__item-disabled--add-background-image: svg-load('14-plus.svg', color: var(--zd-menu--dark__item-disabled-color));
+  --zd-menu--dark__item-disabled--checked-background-image: svg-load('14-checkmark-lg.svg', color: var(--zd-menu--dark__item-disabled-color));
+  --zd-menu--dark__item-disabled--next-background-image: svg-load('14-next.svg', color: var(--zd-menu--dark__item-disabled-color));
+  --zd-menu--dark__item-disabled--previous-background-image: svg-load('14-previous.svg', color: var(--zd-menu--dark__item-disabled-color));
   --zd-menu--dark__item--selected-background-color: var(--zd-color-sherpa-blue);
-  --zd-menu--dark__item--selected-color: var(--zd-color-white);
+  --zd-menu--dark__item__meta-color: var(--zd-color-breaker-bay);
   --zd-menu--dark__separator-border-color: var(--zd-color-sherpa-blue);
 }
 
@@ -19,22 +24,43 @@
   background-color: var(--zd-menu--dark-background-color);
 }
 
-.c-menu--dark .c-menu__item {
+.c-menu--dark .c-menu__item:not(.c-menu__item--add) {
   color: var(--zd-menu--dark__item-color);
 }
 
 .c-menu--dark .c-menu__item:--menu-selected,
 .c-menu--dark .c-menu__item:--menu-focused {
   background-color: var(--zd-menu--dark__item--selected-background-color);
-  color: var(--zd-menu--dark__item--selected-color);
 }
 
 /* stylelint-disable selector-max-specificity */
-.c-menu--dark.c-menu .c-menu__item:--menu-disabled {
-  color: var(--zd-menu--dark__item--disabled-color);
+.c-menu--dark.c-menu .c-menu__item:--menu-disabled:--menu-disabled {
+  color: var(--zd-menu--dark__item-disabled-color);
+}
+
+.c-menu--dark.c-menu .c-menu__item.c-menu__item--add:--menu-disabled::before {
+  background-image: var(--zd-menu--dark__item-disabled--add-background-image);
+}
+
+.c-menu--dark.c-menu .c-menu__item.c-menu__item--next:--menu-disabled::before {
+  background-image: var(--zd-menu--dark__item-disabled--next-background-image);
+}
+
+/* stylelint-disable max-line-length */
+.c-menu--dark.c-menu .c-menu__item.c-menu__item--previous:--menu-disabled::before {
+  background-image: var(--zd-menu--dark__item-disabled--previous-background-image);
+}
+/* stylelint-enable max-line-length */
+
+.c-menu--dark.c-menu .c-menu__item:--menu-checked:--menu-disabled::before {
+  background-image: var(--zd-menu--dark__item-disabled--checked-background-image);
 }
 /* stylelint-enable selector-max-specificity */
 
 .c-menu--dark .c-menu__separator {
   border-color: var(--zd-menu--dark__separator-border-color);
+}
+
+.c-menu--dark .c-menu__item__meta {
+  color: var(--zd-menu--dark__item__meta-color);
 }

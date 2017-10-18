@@ -1,0 +1,35 @@
+/* stylelint-disable at-rule-empty-line-before */
+
+@custom-selector :--menu-around
+  ::before,
+  ::after;
+
+@custom-selector :--menu-expanded
+  .is-expanded;
+
+@custom-selector :--menu-hidden
+  .is-hidden,
+  [aria-hidden='true'];
+
+@custom-selector :--menu-selected
+  .is-selected,
+  :not(.c-menu__item--header):hover;
+
+@custom-selector :--menu-focused
+  .is-focused,
+  :not(.c-menu__item--header):focus;
+
+@custom-selector :--menu-active
+  .is-active,
+  :active;
+
+@custom-selector :--menu-disabled
+  .is-disabled,
+  [disabled],
+  [aria-disabled='true'];
+
+@custom-selector :--menu-checked
+  .is-checked,
+  [aria-checked='true'];
+
+/* stylelint-enable at-rule-empty-line-before */
