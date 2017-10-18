@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.0.0] - 2017-10-18
+### Added (per [#21](https://github.com/zendeskgarden/css-variables/pull/21))
+- Update `package.json` to point to dist rather than src.
+
 ## [2.1.0] - 2017-07-14
 ### Added (per [#19](https://github.com/zendeskgarden/css-variables/pull/19))
 - Add `dist/module.js` with ES6 module export.
@@ -82,6 +86,7 @@
 
 ## 0.1.0 - 2015-11-24
 
+[3.0.0]: https://github.com/zendeskgarden/css-variables/compare/v2.1.0...v3.0.0
 [2.1.0]: https://github.com/zendeskgarden/css-variables/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/zendeskgarden/css-variables/compare/1.1.0...v2.0.0
 [1.1.0]: https://github.com/zendeskgarden/css-variables/compare/1.0.1...1.1.0
