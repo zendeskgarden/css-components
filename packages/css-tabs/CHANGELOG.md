@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.1.1] - 2017-10-18
+### Fixed (per [#8](https://github.com/zendeskgarden/css-tabs/pull/8))
+- Prevent custom `.is-active` border on `.is-disabled` tablist items.
+
 ## [3.1.0] - 2017-10-18
 ### Added (per [#6](https://github.com/zendeskgarden/css-tabs/pull/6))
 - Include complementary `.c-tab--custom` CSS demonstrating how to apply
@@ -39,6 +43,7 @@
 
 ## 0.1.0 - 2015-11-24
 
+[3.1.1]: https://github.com/zendeskgarden/css-tabs/compare/v3.1.0...v3.1.1
 [3.1.0]: https://github.com/zendeskgarden/css-tabs/compare/v3.0.1...v3.1.0
 [3.0.1]: https://github.com/zendeskgarden/css-tabs/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/zendeskgarden/css-tabs/compare/2.0.1...v3.0.0
