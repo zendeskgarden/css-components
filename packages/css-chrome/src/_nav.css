@@ -1,0 +1,75 @@
+@import '@zendesk/garden-css-variables';
+@import '_variables';
+@import '_selectors';
+
+:root {
+  --zd-chrome__nav-width: 60px;
+  --zd-chrome__nav__item-height: 50px;
+  --zd-chrome__nav__item-opacity: .5;
+  --zd-chrome__nav__item-transition:
+    box-shadow .1s ease-in-out,
+    background-color .1s ease-in-out,
+    opacity .1s ease-in-out;
+  --zd-chrome__nav__item-current-background-color: var(--zd-chrome-accent-color);
+  --zd-chrome__nav__item-focused-box-shadow:
+    inset 0 0 0 3px
+    color(var(--zd-color-white) alpha(20%));
+  --zd-chrome__nav__item-hovered-background-color: color(var(--zd-color-black) alpha(10%));
+  --zd-chrome__nav__item__icon-border-radius: 4px;
+  --zd-chrome__nav__item__icon-size: 30px;
+}
+
+/* 1. Anchor reset. */
+
+.c-chrome__nav {
+  flex-direction: column;
+  order: -1;
+  background-color: var(--zd-chrome__nav-background-color);
+  width: var(--zd-chrome__nav-width);
+  color: var(--zd-chrome__nav-color);
+}
+
+.c-chrome__nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--zd-chrome__nav__item-transition);
+  opacity: var(--zd-chrome__nav__item-opacity);
+  height: var(--zd-chrome__nav__item-height);
+  font-size: 0;
+}
+
+.c-chrome__nav__item,
+.c-chrome__nav__item:hover,
+.c-chrome__nav__item:focus {
+  text-decoration: none; /* [1] */
+  color: inherit; /* [1] */
+}
+
+.c-chrome__nav__item:focus {
+  outline: none; /* [1] */
+}
+
+.c-chrome__nav__item:--chrome-hovered {
+  background-color: var(--zd-chrome__nav__item-hovered-background-color);
+}
+
+.c-chrome__nav__item:--chrome-hovered,
+.c-chrome__nav__item:--chrome-focused,
+.c-chrome__nav__item:--chrome-current {
+  opacity: 1;
+}
+
+.c-chrome__nav__item:--chrome-focused {
+  box-shadow: var(--zd-chrome__nav__item-focused-box-shadow);
+}
+
+.c-chrome__nav__item:--chrome-current {
+  background-color: var(--zd-chrome__nav__item-current-background-color);
+}
+
+.c-chrome__nav__item__icon {
+  border-radius: var(--zd-chrome__nav__item__icon-border-radius);
+  width: var(--zd-chrome__nav__item__icon-size);
+  height: var(--zd-chrome__nav__item__icon-size);
+}

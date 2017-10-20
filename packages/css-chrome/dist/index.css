@@ -3,56 +3,121 @@
   display:-ms-flexbox;
   display:flex;
   margin:0;
-  background-color:#012b30;
   min-height:100vh;
   overflow:hidden;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Oxygen-Sans,Arial,sans-serif;
 }
-
-.c-chrome__nav{
+.c-chrome.is-rtl{
+  direction:rtl;
+}
+.c-chrome__body{
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
       -ms-flex-direction:column;
           flex-direction:column;
+  -webkit-box-ordinal-group:2;
+      -ms-flex-order:1;
+          order:1;
+  background-color:#fbfbfb;
+}
+.c-chrome__body__header{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:nowrap;
+      flex-wrap:nowrap;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:end;
+      -ms-flex-pack:end;
+          justify-content:flex-end;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+  border-bottom:1px solid #f3f3f3;
+  background-color:#fff;
+  padding:0 20px;
+  height:50px;
+  color:#777;
+  font-size:14px;
+}
+.c-chrome__body__header__item{
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  margin:0 12px;
+}
+.c-chrome__body__header__item--grow{
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+}
+.c-chrome__subnav{
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-box-ordinal-group:1;
+      -ms-flex-order:0;
+          order:0;
+  background-color:#012b30;
+  min-width:180px;
+}
+.c-chrome__nav,.c-chrome__subnav{
+      -ms-flex-direction:column;
+          flex-direction:column;
+  color:#fff;
+}
+.c-chrome__nav{
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
   -webkit-box-ordinal-group:0;
       -ms-flex-order:-1;
           order:-1;
   background-color:#03363d;
   width:60px;
-  color:#fff;
 }
-
-.c-chrome__subnav{
-      -ms-flex-direction:column;
-          flex-direction:column;
-  -webkit-box-ordinal-group:1;
-      -ms-flex-order:0;
-  background-color:#012b30;
-  width:180px;
-  color:#fff;
-}
-
-.c-chrome__body,.c-chrome__subnav{
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-          order:0;
-}
-
-.c-chrome__body{
-  -webkit-box-flex:1;
-      -ms-flex:1;
-          flex:1;
-      -ms-flex-direction:column;
-          flex-direction:column;
-  -webkit-box-ordinal-group:1;
-      -ms-flex-order:0;
-  background-color:#fbfbfb;
-}
-
-.c-chrome__body__header{
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
-  border-bottom:1px solid #f3f3f3;
-  background-color:#fff;
+.c-chrome__nav__item{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  opacity:.5;
   height:50px;
-  color:#999;
+  font-size:0;
+}
+.c-chrome__nav__item,.c-chrome__nav__item:focus,.c-chrome__nav__item:hover{
+  text-decoration:none;
+  color:inherit;
+}
+.c-chrome__nav__item:focus{
+  outline:none;
+}
+.c-chrome__nav__item.is-hovered,.c-chrome__nav__item:hover{
+  background-color:rgba(0,0,0,.1);
+}
+.c-chrome__nav__item.is-current,.c-chrome__nav__item.is-focused,.c-chrome__nav__item.is-hovered,.c-chrome__nav__item:focus,.c-chrome__nav__item:hover,.c-chrome__nav__item[aria-current=true]{
+  opacity:1;
+}
+.c-chrome__nav__item.is-focused,.c-chrome__nav__item:focus{
+  -webkit-box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
+          box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
+}
+.c-chrome__nav__item.is-current,.c-chrome__nav__item[aria-current=true]{
+  background-color:#30aabc;
+}
+.c-chrome__nav__item__icon{
+  border-radius:4px;
+  width:30px;
+  height:30px;
 }

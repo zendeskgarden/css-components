@@ -1,0 +1,7 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-chrome-accent-color: var(--zd-color-pelorous);
+  --zd-chrome__nav-background-color: var(--zd-color-algae);
+  --zd-chrome__nav-color: var(--zd-color-white);
+}
