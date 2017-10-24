@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.1] - 2017-10-24
+### Fixed (per [#11](https://github.com/zendeskgarden/css-arrows/pull/11))
+- Half pixel visible border on clipped side of arrow.
+
 ## [1.0.0] - 2017-05-31
 ### Changed (per [#10](https://github.com/zendeskgarden/css-arrows/pull/10))
 - Prepared package for registry publish as
@@ -19,6 +23,7 @@
 
 ## 0.1.0 - 2016-02-03
 
+[1.0.1]: https://github.com/zendeskgarden/css-arrows/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/zendeskgarden/css-arrows/compare/0.3.0...v1.0.0
 [0.3.0]: https://github.com/zendeskgarden/css-arrows/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/zendeskgarden/css-arrows/compare/0.1.1...0.2.0
