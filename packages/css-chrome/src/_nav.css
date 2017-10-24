@@ -16,7 +16,10 @@
     color(var(--zd-color-white) alpha(20%));
   --zd-chrome__nav__item-hovered-background-color: color(var(--zd-color-black) alpha(10%));
   --zd-chrome__nav__item__icon-border-radius: 4px;
-  --zd-chrome__nav__item__icon-size: 30px;
+  --zd-chrome__nav__item__icon-size: 26px;
+  --zd-chrome__nav--expanded-width: 200px;
+  --zd-chrome__nav--expanded__item-padding: 0 10px;
+  --zd-chrome__nav--expanded__item__-margin: var(--zd-chrome__nav--expanded__item-padding);
 }
 
 /* 1. Anchor reset. */
@@ -26,6 +29,7 @@
   order: -1;
   background-color: var(--zd-chrome__nav-background-color);
   width: var(--zd-chrome__nav-width);
+  overflow: hidden;
   color: var(--zd-chrome__nav-color);
 }
 
@@ -36,7 +40,6 @@
   transition: var(--zd-chrome__nav__item-transition);
   opacity: var(--zd-chrome__nav__item-opacity);
   height: var(--zd-chrome__nav__item-height);
-  font-size: 0;
 }
 
 .c-chrome__nav__item,
@@ -69,7 +72,41 @@
 }
 
 .c-chrome__nav__item__icon {
+  order: 0;
   border-radius: var(--zd-chrome__nav__item__icon-border-radius);
-  width: var(--zd-chrome__nav__item__icon-size);
+  min-width: var(--zd-chrome__nav__item__icon-size);
   height: var(--zd-chrome__nav__item__icon-size);
+}
+
+.c-chrome__nav__item__text {
+  position: absolute;
+  order: 1;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.c-chrome__nav--expanded {
+  width: var(--zd-chrome__nav--expanded-width);
+}
+
+.c-chrome__nav--expanded .c-chrome__nav__item {
+  justify-content: start;
+  padding: var(--zd-chrome__nav--expanded__item-padding);
+}
+
+.c-chrome__nav--expanded .c-chrome__nav__item__icon,
+.c-chrome__nav--expanded .c-chrome__nav__item__text {
+  margin: var(--zd-chrome__nav--expanded__item__-margin);
+}
+
+.c-chrome__nav--expanded .c-chrome__nav__item__text {
+  position: static;
+  flex: 1;
+  clip: auto;
+  width: auto;
+  height: auto;
+  text-overflow: ellipsis;
 }

@@ -1,7 +1,8 @@
 @import '@zendesk/garden-css-variables';
-@import '_variables';
 
 :root {
+  --zd-chrome-font-family: var(--zd-font-family-system);
+  --zd-chrome-min-height: 100vh;
   --zd-chrome__body-color: var(--zd-color-snow);
   --zd-chrome__body__header-background-color: var(--zd-color-white);
   --zd-chrome__body__header-border-bottom: 1px solid var(--zd-color-anti-flash-white);
@@ -9,20 +10,26 @@
   --zd-chrome__body__header-font-size: var(--zd-font-size-epsilon);
   --zd-chrome__body__header-height: var(--zd-chrome__nav__item-height);
   --zd-chrome__body__header-padding: 0 20px;
+  --zd-chrome__body__header--solo-box-shadow:
+    0 0 10px 0
+    color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-chrome__body__header__item-line-height: calc(30 / 14);
+  --zd-chrome__body__header__item-margin: 0 12px;
+  --zd-chrome__body__header__item--icon-border-radius: 4px;
+  --zd-chrome__body__header__item--icon-size: 30px;
   --zd-chrome__subnav-background-color: var(--zd-color-daintree);
   --zd-chrome__subnav-color: var(--zd-color-white);
   --zd-chrome__subnav-min-width: 180px;
 }
 
-/* 1. Prevent "bounce" overscroll.
- * 2. UL element reset. */
+/* 1. Prevent "bounce" overscroll. */
 
 .c-chrome {
   display: flex;
   margin: 0;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden; /* [1] */
-  font-family: var(--zd-font-family-system);
+  font-family: var(--zd-chrome-font-family);
 }
 
 .c-chrome.is-rtl {
@@ -34,29 +41,6 @@
   flex-direction: column;
   order: 1;
   background-color: var(--zd-chrome__body-color);
-}
-
-.c-chrome__body__header {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: flex-end;
-  box-sizing: border-box;
-  border-bottom: var(--zd-chrome__body__header-border-bottom);
-  background-color: var(--zd-chrome__body__header-background-color);
-  padding: var(--zd-chrome__body__header-padding);
-  height: var(--zd-chrome__body__header-height);
-  color: var(--zd-chrome__body__header-color);
-  font-size: var(--zd-chrome__body__header-font-size);
-}
-
-.c-chrome__body__header__item {
-  display: inline-flex;
-  margin: 0 12px;
-}
-
-.c-chrome__body__header__item--grow {
-  flex: 1;
 }
 
 .c-chrome__subnav {

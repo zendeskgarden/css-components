@@ -1,3 +1,7 @@
 .c-chrome--custom .c-chrome__nav__item.is-current,.c-chrome--custom .c-chrome__nav__item[aria-current=true]{
   background-color:#eb4962;
 }
+.c-chrome--custom .c-chrome__body__header__item--icon.is-focused,.c-chrome--custom .c-chrome__body__header__item--icon:focus{
+  -webkit-box-shadow:0 0 0 3px rgba(235,73,98,.4);
+          box-shadow:0 0 0 3px rgba(235,73,98,.4);
+}
