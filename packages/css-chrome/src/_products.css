@@ -1,0 +1,38 @@
+@import '@zendesk/garden-css-variables';
+
+/* stylelint-disable max-line-length */
+.c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--chat {
+  color: var(--zd-color-chat-orange);
+}
+
+.c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--connect {
+  color: var(--zd-color-connect-red);
+}
+
+.c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--explore {
+  color: var(--zd-color-explore-blue);
+}
+
+.c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--guide {
+  color: var(--zd-color-guide-pink);
+}
+
+.c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--message {
+  color: var(--zd-color-message-green);
+}
+
+.c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--support {
+  color: var(--zd-color-support-green);
+}
+
+.c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk,
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--talk {
+  color: var(--zd-color-talk-yellow);
+}
+/* stylelint-enable max-line-length */

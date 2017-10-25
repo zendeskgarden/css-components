@@ -5,8 +5,11 @@
   :hover;
 
 @custom-selector :--chrome-focused
-  .is-focused,
-  :focus;
+  .is-focused;
+
+@custom-selector :--chrome-active
+  .is-active,
+  :active;
 
 @custom-selector :--chrome-current
   .is-current,

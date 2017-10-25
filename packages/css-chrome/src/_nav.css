@@ -10,6 +10,7 @@
     box-shadow .1s ease-in-out,
     background-color .1s ease-in-out,
     opacity .1s ease-in-out;
+  --zd-chrome__nav__item-active-background-color: color(var(--zd-color-white) alpha(10%));
   --zd-chrome__nav__item-current-background-color: var(--zd-chrome-accent-color);
   --zd-chrome__nav__item-focused-box-shadow:
     inset 0 0 0 3px
@@ -42,6 +43,10 @@
   height: var(--zd-chrome__nav__item-height);
 }
 
+.c-chrome__nav__item--logo {
+  fill: var(--zd-chrome__nav-color);
+}
+
 .c-chrome__nav__item,
 .c-chrome__nav__item:hover,
 .c-chrome__nav__item:focus {
@@ -53,22 +58,11 @@
   outline: none; /* [1] */
 }
 
-.c-chrome__nav__item:--chrome-hovered {
-  background-color: var(--zd-chrome__nav__item-hovered-background-color);
-}
-
+.c-chrome__nav__item--logo,
 .c-chrome__nav__item:--chrome-hovered,
 .c-chrome__nav__item:--chrome-focused,
 .c-chrome__nav__item:--chrome-current {
   opacity: 1;
-}
-
-.c-chrome__nav__item:--chrome-focused {
-  box-shadow: var(--zd-chrome__nav__item-focused-box-shadow);
-}
-
-.c-chrome__nav__item:--chrome-current {
-  background-color: var(--zd-chrome__nav__item-current-background-color);
 }
 
 .c-chrome__nav__item__icon {
@@ -92,7 +86,7 @@
   width: var(--zd-chrome__nav--expanded-width);
 }
 
-.c-chrome__nav--expanded .c-chrome__nav__item {
+.c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo) {
   justify-content: start;
   padding: var(--zd-chrome__nav--expanded__item-padding);
 }
@@ -102,11 +96,34 @@
   margin: var(--zd-chrome__nav--expanded__item__-margin);
 }
 
-.c-chrome__nav--expanded .c-chrome__nav__item__text {
+/* stylelint-disable max-line-length */
+.c-chrome__nav--expanded :not(.c-chrome__nav__item--logo) .c-chrome__nav__item__text {
   position: static;
   flex: 1;
   clip: auto;
   width: auto;
   height: auto;
   text-overflow: ellipsis;
+}
+/* stylelint-enable max-line-length */
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-hovered {
+  background-color: var(--zd-chrome__nav__item-hovered-background-color);
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-focused {
+  box-shadow: var(--zd-chrome__nav__item-focused-box-shadow);
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-active {
+  background-color: var(--zd-chrome__nav__item-active-background-color);
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-current {
+  background-color: var(--zd-chrome__nav__item-current-background-color);
+  cursor: default;
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active:--chrome-focused {
+  box-shadow: none;
 }

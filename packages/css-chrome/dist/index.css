@@ -71,6 +71,10 @@
   height:50px;
 }
 
+.c-chrome__nav__item--logo{
+  fill:#fff;
+}
+
 .c-chrome__nav__item,.c-chrome__nav__item:focus,.c-chrome__nav__item:hover{
   text-decoration:none;
   color:inherit;
@@ -80,21 +84,8 @@
   outline:none;
 }
 
-.c-chrome__nav__item.is-hovered,.c-chrome__nav__item:hover{
-  background-color:rgba(0,0,0,.1);
-}
-
-.c-chrome__nav__item.is-current,.c-chrome__nav__item.is-focused,.c-chrome__nav__item.is-hovered,.c-chrome__nav__item:focus,.c-chrome__nav__item:hover,.c-chrome__nav__item[aria-current=true]{
+.c-chrome__nav__item--logo,.c-chrome__nav__item.is-current,.c-chrome__nav__item.is-focused,.c-chrome__nav__item.is-hovered,.c-chrome__nav__item:hover,.c-chrome__nav__item[aria-current=true]{
   opacity:1;
-}
-
-.c-chrome__nav__item.is-focused,.c-chrome__nav__item:focus{
-  -webkit-box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
-          box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
-}
-
-.c-chrome__nav__item.is-current,.c-chrome__nav__item[aria-current=true]{
-  background-color:#30aabc;
 }
 
 .c-chrome__nav__item__icon{
@@ -122,7 +113,7 @@
   width:200px;
 }
 
-.c-chrome__nav--expanded .c-chrome__nav__item{
+.c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo){
   -webkit-box-pack:start;
       -ms-flex-pack:start;
           justify-content:start;
@@ -133,7 +124,7 @@
   margin:0 10px;
 }
 
-.c-chrome__nav--expanded .c-chrome__nav__item__text{
+.c-chrome__nav--expanded :not(.c-chrome__nav__item--logo) .c-chrome__nav__item__text{
   position:static;
   -webkit-box-flex:1;
       -ms-flex:1;
@@ -142,6 +133,29 @@
   width:auto;
   height:auto;
   text-overflow:ellipsis;
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-hovered,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):hover{
+  background-color:rgba(0,0,0,.1);
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-focused{
+  -webkit-box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
+          box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
+  background-color:hsla(0,0%,100%,.1);
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
+  background-color:#30aabc;
+  cursor:default;
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active.is-focused{
+  -webkit-box-shadow:none;
+          box-shadow:none;
 }
 
 .c-chrome__body__header{
@@ -181,10 +195,47 @@
   -webkit-box-pack:center;
       -ms-flex-pack:center;
           justify-content:center;
+  -webkit-transition:color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,color .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   z-index:0;
   margin:0 12px;
+  border:none;
+  border-radius:4px;
+  background:transparent;
+  padding:0 4px;
+  min-width:30px;
+  height:30px;
   line-height:2.14286;
   white-space:nowrap;
+}
+
+.c-chrome__body__header__item,.c-chrome__body__header__item:focus,.c-chrome__body__header__item:hover{
+  text-decoration:none;
+  color:inherit;
+}
+
+.c-chrome__body__header__item:focus{
+  outline:none;
+}
+
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover{
+  color:#03363d;
+}
+
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-focused{
+  -webkit-box-shadow:0 0 0 3px rgba(48,170,188,.4);
+          box-shadow:0 0 0 3px rgba(48,170,188,.4);
+}
+
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active{
+  color:#03363d;
+}
+
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active.is-focused{
+  -webkit-box-shadow:none;
+          box-shadow:none;
 }
 
 .c-chrome__body__header__item--grow{
@@ -196,62 +247,106 @@
           justify-content:start;
 }
 
-.c-chrome__body__header__item--icon{
-  border:none;
-  border-radius:4px;
-  background:transparent;
-  cursor:pointer;
-  min-width:30px;
-  height:30px;
-  -webkit-user-select:none;
-     -moz-user-select:none;
-      -ms-user-select:none;
-          user-select:none;
-}
-
 .c-chrome__body__header__item--logo{
+  display:none;
+  margin-right:auto;
   margin-left:-20px;
-  border-right:1px solid #f3f3f3;
+  border-right:1px solid #eee;
+  padding:0;
   width:60px;
   height:100%;
   overflow:hidden;
+  fill:#03363d;
 }
 
 .c-chrome__body__header--solo .c-chrome__body__header__item--logo{
-  border-color:#eee;
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
 }
 
-.c-chrome__body__header__item,.c-chrome__body__header__item:focus,.c-chrome__body__header__item:hover{
-  color:inherit;
+.c-chrome.is-rtl .c-chrome__body__header__item--logo{
+  margin-right:-20px;
+  margin-left:auto;
+  border-right:none;
+  border-left:1px solid #eee;
 }
 
-.c-chrome__body__header__item--icon,.c-chrome__body__header__item--icon:focus,.c-chrome__body__header__item--icon:hover{
-  text-decoration:none;
+.c-chrome__body__header__item__icon{
+  -webkit-transition:-webkit-transform .25s ease-in-out;
+  transition:-webkit-transform .25s ease-in-out;
+  transition:transform .25s ease-in-out;
+  transition:transform .25s ease-in-out,-webkit-transform .25s ease-in-out;
+  margin:0 4px;
+  width:14px;
+  height:14px;
 }
 
-.c-chrome__body__header__item--icon:focus{
-  outline:none;
+.c-chrome__body__header__item--logo .c-chrome__body__header__item__icon{
+  margin:0;
+  width:26px;
+  height:26px;
 }
 
-.c-chrome__body__header__item--icon.is-hovered,.c-chrome__body__header__item--icon:hover{
-  color:#03363d;
-}
-
-.c-chrome__body__header__item--icon.is-focused,.c-chrome__body__header__item--icon:focus{
-  -webkit-box-shadow:0 0 0 3px rgba(48,170,188,.4);
-          box-shadow:0 0 0 3px rgba(48,170,188,.4);
-}
-
-.c-chrome__body__header__item--icon img{
+img.c-chrome__body__header__item__icon{
+  margin:0;
   border-radius:3px;
+  width:22px;
+  height:22px;
 }
 
-.c-chrome__body__header__item--icon img,.c-chrome__body__header__item--icon svg{
-  margin:3px;
-  width:24px;
-  height:24px;
+.c-chrome__body__header__item__icon.is-rotated{
+  -webkit-transform:rotate(180deg);
+          transform:rotate(180deg);
 }
 
-.c-chrome__body__header__item--icon--round,.c-chrome__body__header__item--icon--round img,.c-chrome__body__header__item--icon--round svg{
+.c-chrome.is-rtl .c-chrome__body__header__item__icon.is-rotated{
+  -webkit-transform:rotate(-180deg);
+          transform:rotate(-180deg);
+}
+
+.c-chrome__body__header__item--round,.c-chrome__body__header__item--round .c-chrome__body__header__item__icon{
   border-radius:100px;
+}
+
+.c-chrome__body__header__item__text{
+  margin:0 4px;
+}
+
+.c-chrome__body__header__item--logo .c-chrome__body__header__item__text,.c-chrome__body__header__item__text.is-clipped{
+  position:absolute;
+  margin:0;
+  clip:rect(1px,1px,1px,1px);
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--chat,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat{
+  color:#f79a3e;
+}
+
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--connect,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect{
+  color:#eb6651;
+}
+
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--explore,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore{
+  color:#30aabc;
+}
+
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--guide,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide{
+  color:#eb4962;
+}
+
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--message,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--message{
+  color:#37b8af;
+}
+
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--support,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--support{
+  color:#78a300;
+}
+
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--talk,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
+  color:#efc93d;
 }

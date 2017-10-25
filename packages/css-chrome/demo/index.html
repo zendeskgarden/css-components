@@ -6,6 +6,9 @@
   <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <link href="custom.css" rel="stylesheet">
+  <style>
+  .c-chrome--demo { height: 300px !important; }
+  </style>
 </head>
 <body>
   <header class="c-header">
@@ -46,6 +49,12 @@
           </li>
           <li class="c-menu__item" role="menuitem">
             <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-expand" id="nav.ctl.expand" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.expand">Expanded</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
               <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
               <label class="c-chk__label" for="nav.ctl.custom">Custom</label>
             </fieldset>
@@ -58,14 +67,269 @@
     <h1 class="c-main__title">Chrome</h1>
     <div class="c-main__body">
       <div class="u-mb u-delta">
-        <a href="page.html" target="_blank">Open page Chrome in a separate window</a>
+        <a href="page.html" target="_blank"><i>Open page Chrome in a separate window</i></a>
       </div>
+
+      <div class="u-mb-lg">
+        <h2 class="c-main__subtitle u-gamma u-mb">Navigation</h2>
+        <div class="l-grid u-mb-lg">
+          <div class="l-grid__item u-1/3">
+            <div class="c-chrome c-chrome--demo">
+              <nav class="c-chrome__nav">
+                <div class="c-chrome__nav__item c-chrome__nav__item--logo c-chrome__nav__item--logo--support">
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M14.3 5.2L5.4 2.7l-2.5 8.9-2.5 8.9 8.9 2.4 2.5-8.8z"/>
+                    <path d="M14.223 14.131l8.853-2.503 2.503 8.853-8.853 2.503z"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Zendesk Support</span>
+                </div>
+                <a class="c-chrome__nav__item is-current" href>
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M23.885 13.2l-1.328 1.639a.522.522 0 0 1-.737.084l-1.444-1.155v7.182c0 .577-.474 1.05-1.054 1.05H16.51c-.58 0-1.054-.473-1.054-1.05v-3.182a2.43 2.43 0 0 0-.716-1.732 2.448 2.448 0 0 0-1.74-.714 2.45 2.45 0 0 0-1.739.714 2.43 2.43 0 0 0-.716 1.732v3.182c0 .577-.474 1.05-1.054 1.05H6.678c-.582 0-1.054-.47-1.054-1.05v-7.182L4.18 14.923a.522.522 0 0 1-.737-.084L2.115 13.2a.52.52 0 0 1 .084-.735l10.474-8.348a.51.51 0 0 1 .654 0L23.8 12.466a.52.52 0 0 1 .084.735"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Home</span>
+                </a>
+                <a class="c-chrome__nav__item" href>
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M13 16.627a3.625 3.625 0 0 1-3.63-3.622A3.633 3.633 0 0 1 13 9.373a3.633 3.633 0 0 1 3.63 3.632A3.625 3.625 0 0 1 13 16.627m8.295-4.902h-.006a2.116 2.116 0 0 1-1.955-1.307l-.031-.075a2.117 2.117 0 0 1 .459-2.306.693.693 0 0 0 0-.998l-.809-.809a.71.71 0 0 0-.997 0 2.106 2.106 0 0 1-2.295.457l-.08-.033a2.109 2.109 0 0 1-1.302-1.948.705.705 0 0 0-.705-.706h-1.148a.705.705 0 0 0-.705.706c0 .855-.514 1.628-1.306 1.95-.021.009-.043.017-.063.027a2.106 2.106 0 0 1-2.308-.453.72.72 0 0 0-1.006 0l-.81.81a.708.708 0 0 0 0 .997l.007.006a2.11 2.11 0 0 1 .454 2.305c-.01.022-.018.045-.028.066a2.103 2.103 0 0 1-1.95 1.311h-.006a.706.706 0 0 0-.705.706v1.138c0 .39.316.706.705.706h.002a2.1 2.1 0 0 1 1.949 1.306l.029.069a2.11 2.11 0 0 1-.452 2.31l-.004.003a.708.708 0 0 0 0 .998l.809.809a.72.72 0 0 0 1.006 0l.005-.005a2.106 2.106 0 0 1 2.307-.452l.059.024a2.104 2.104 0 0 1 1.306 1.95v.007c0 .395.32.706.705.706h1.148c.385 0 .705-.31.705-.706v-.007c0-.855.514-1.627 1.306-1.95l.059-.024a2.106 2.106 0 0 1 2.307.452l.005.005a.71.71 0 0 0 .997 0l.809-.81a.693.693 0 0 0 0-.997l-.004-.003a2.11 2.11 0 0 1-.452-2.31l.029-.069a2.102 2.102 0 0 1 1.948-1.306h.012a.706.706 0 0 0 .705-.706v-1.138a.706.706 0 0 0-.705-.706"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Settings</span>
+                </a>
+              </nav>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-chrome c-chrome--demo">
+              <nav class="c-chrome__nav">
+                <div class="c-chrome__nav__item c-chrome__nav__item--logo c-chrome__nav__item--logo--chat">
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M9.3 5.4c4.9 4.9 4.9 12.7 0 17.6L.5 14.2l8.8-8.8z"/>
+                    <path d="M19.2 15.4c-3.4-3.4-3.4-9 0-12.4l6.2 6.2-6.2 6.2z"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Zendesk Chat</span>
+                </div>
+                <a class="c-chrome__nav__item is-current" href>
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M23.885 13.2l-1.328 1.639a.522.522 0 0 1-.737.084l-1.444-1.155v7.182c0 .577-.474 1.05-1.054 1.05H16.51c-.58 0-1.054-.473-1.054-1.05v-3.182a2.43 2.43 0 0 0-.716-1.732 2.448 2.448 0 0 0-1.74-.714 2.45 2.45 0 0 0-1.739.714 2.43 2.43 0 0 0-.716 1.732v3.182c0 .577-.474 1.05-1.054 1.05H6.678c-.582 0-1.054-.47-1.054-1.05v-7.182L4.18 14.923a.522.522 0 0 1-.737-.084L2.115 13.2a.52.52 0 0 1 .084-.735l10.474-8.348a.51.51 0 0 1 .654 0L23.8 12.466a.52.52 0 0 1 .084.735"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Home</span>
+                </a>
+                <a class="c-chrome__nav__item" href>
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M13 16.627a3.625 3.625 0 0 1-3.63-3.622A3.633 3.633 0 0 1 13 9.373a3.633 3.633 0 0 1 3.63 3.632A3.625 3.625 0 0 1 13 16.627m8.295-4.902h-.006a2.116 2.116 0 0 1-1.955-1.307l-.031-.075a2.117 2.117 0 0 1 .459-2.306.693.693 0 0 0 0-.998l-.809-.809a.71.71 0 0 0-.997 0 2.106 2.106 0 0 1-2.295.457l-.08-.033a2.109 2.109 0 0 1-1.302-1.948.705.705 0 0 0-.705-.706h-1.148a.705.705 0 0 0-.705.706c0 .855-.514 1.628-1.306 1.95-.021.009-.043.017-.063.027a2.106 2.106 0 0 1-2.308-.453.72.72 0 0 0-1.006 0l-.81.81a.708.708 0 0 0 0 .997l.007.006a2.11 2.11 0 0 1 .454 2.305c-.01.022-.018.045-.028.066a2.103 2.103 0 0 1-1.95 1.311h-.006a.706.706 0 0 0-.705.706v1.138c0 .39.316.706.705.706h.002a2.1 2.1 0 0 1 1.949 1.306l.029.069a2.11 2.11 0 0 1-.452 2.31l-.004.003a.708.708 0 0 0 0 .998l.809.809a.72.72 0 0 0 1.006 0l.005-.005a2.106 2.106 0 0 1 2.307-.452l.059.024a2.104 2.104 0 0 1 1.306 1.95v.007c0 .395.32.706.705.706h1.148c.385 0 .705-.31.705-.706v-.007c0-.855.514-1.627 1.306-1.95l.059-.024a2.106 2.106 0 0 1 2.307.452l.005.005a.71.71 0 0 0 .997 0l.809-.81a.693.693 0 0 0 0-.997l-.004-.003a2.11 2.11 0 0 1-.452-2.31l.029-.069a2.102 2.102 0 0 1 1.948-1.306h.012a.706.706 0 0 0 .705-.706v-1.138a.706.706 0 0 0-.705-.706"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Settings</span>
+                </a>
+              </nav>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-chrome c-chrome--demo">
+              <nav class="c-chrome__nav">
+                <div class="c-chrome__nav__item c-chrome__nav__item--logo c-chrome__nav__item--logo--guide">
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path d="M7 7.8l6-6 6 6z"/>
+                    <path fill="currentColor" d="M.5 23L13 10.4 25.5 23z"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Zendesk Guide</span>
+                </div>
+                <a class="c-chrome__nav__item" href>
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M13 16.627a3.625 3.625 0 0 1-3.63-3.622A3.633 3.633 0 0 1 13 9.373a3.633 3.633 0 0 1 3.63 3.632A3.625 3.625 0 0 1 13 16.627m8.295-4.902h-.006a2.116 2.116 0 0 1-1.955-1.307l-.031-.075a2.117 2.117 0 0 1 .459-2.306.693.693 0 0 0 0-.998l-.809-.809a.71.71 0 0 0-.997 0 2.106 2.106 0 0 1-2.295.457l-.08-.033a2.109 2.109 0 0 1-1.302-1.948.705.705 0 0 0-.705-.706h-1.148a.705.705 0 0 0-.705.706c0 .855-.514 1.628-1.306 1.95-.021.009-.043.017-.063.027a2.106 2.106 0 0 1-2.308-.453.72.72 0 0 0-1.006 0l-.81.81a.708.708 0 0 0 0 .997l.007.006a2.11 2.11 0 0 1 .454 2.305c-.01.022-.018.045-.028.066a2.103 2.103 0 0 1-1.95 1.311h-.006a.706.706 0 0 0-.705.706v1.138c0 .39.316.706.705.706h.002a2.1 2.1 0 0 1 1.949 1.306l.029.069a2.11 2.11 0 0 1-.452 2.31l-.004.003a.708.708 0 0 0 0 .998l.809.809a.72.72 0 0 0 1.006 0l.005-.005a2.106 2.106 0 0 1 2.307-.452l.059.024a2.104 2.104 0 0 1 1.306 1.95v.007c0 .395.32.706.705.706h1.148c.385 0 .705-.31.705-.706v-.007c0-.855.514-1.627 1.306-1.95l.059-.024a2.106 2.106 0 0 1 2.307.452l.005.005a.71.71 0 0 0 .997 0l.809-.81a.693.693 0 0 0 0-.997l-.004-.003a2.11 2.11 0 0 1-.452-2.31l.029-.069a2.102 2.102 0 0 1 1.948-1.306h.012a.706.706 0 0 0 .705-.706v-1.138a.706.706 0 0 0-.705-.706"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Settings</span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="l-grid u-mb-lg">
+          <div class="l-grid__item u-1/3">
+            <div class="c-chrome c-chrome--demo">
+              <nav class="c-chrome__nav">
+                <div class="c-chrome__nav__item c-chrome__nav__item--logo c-chrome__nav__item--logo--explore">
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M.6 22.9l8.7-15 8.7 15z"/>
+                    <path d="M16.8 13V3.1l8.6 5z"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Zendesk Explore</span>
+                </div>
+                <a class="c-chrome__nav__item is-current" href>
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M23.885 13.2l-1.328 1.639a.522.522 0 0 1-.737.084l-1.444-1.155v7.182c0 .577-.474 1.05-1.054 1.05H16.51c-.58 0-1.054-.473-1.054-1.05v-3.182a2.43 2.43 0 0 0-.716-1.732 2.448 2.448 0 0 0-1.74-.714 2.45 2.45 0 0 0-1.739.714 2.43 2.43 0 0 0-.716 1.732v3.182c0 .577-.474 1.05-1.054 1.05H6.678c-.582 0-1.054-.47-1.054-1.05v-7.182L4.18 14.923a.522.522 0 0 1-.737-.084L2.115 13.2a.52.52 0 0 1 .084-.735l10.474-8.348a.51.51 0 0 1 .654 0L23.8 12.466a.52.52 0 0 1 .084.735"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Home</span>
+                </a>
+                <a class="c-chrome__nav__item" href>
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M13 16.627a3.625 3.625 0 0 1-3.63-3.622A3.633 3.633 0 0 1 13 9.373a3.633 3.633 0 0 1 3.63 3.632A3.625 3.625 0 0 1 13 16.627m8.295-4.902h-.006a2.116 2.116 0 0 1-1.955-1.307l-.031-.075a2.117 2.117 0 0 1 .459-2.306.693.693 0 0 0 0-.998l-.809-.809a.71.71 0 0 0-.997 0 2.106 2.106 0 0 1-2.295.457l-.08-.033a2.109 2.109 0 0 1-1.302-1.948.705.705 0 0 0-.705-.706h-1.148a.705.705 0 0 0-.705.706c0 .855-.514 1.628-1.306 1.95-.021.009-.043.017-.063.027a2.106 2.106 0 0 1-2.308-.453.72.72 0 0 0-1.006 0l-.81.81a.708.708 0 0 0 0 .997l.007.006a2.11 2.11 0 0 1 .454 2.305c-.01.022-.018.045-.028.066a2.103 2.103 0 0 1-1.95 1.311h-.006a.706.706 0 0 0-.705.706v1.138c0 .39.316.706.705.706h.002a2.1 2.1 0 0 1 1.949 1.306l.029.069a2.11 2.11 0 0 1-.452 2.31l-.004.003a.708.708 0 0 0 0 .998l.809.809a.72.72 0 0 0 1.006 0l.005-.005a2.106 2.106 0 0 1 2.307-.452l.059.024a2.104 2.104 0 0 1 1.306 1.95v.007c0 .395.32.706.705.706h1.148c.385 0 .705-.31.705-.706v-.007c0-.855.514-1.627 1.306-1.95l.059-.024a2.106 2.106 0 0 1 2.307.452l.005.005a.71.71 0 0 0 .997 0l.809-.81a.693.693 0 0 0 0-.997l-.004-.003a2.11 2.11 0 0 1-.452-2.31l.029-.069a2.102 2.102 0 0 1 1.948-1.306h.012a.706.706 0 0 0 .705-.706v-1.138a.706.706 0 0 0-.705-.706"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Settings</span>
+                </a>
+              </nav>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-chrome c-chrome--demo">
+              <nav class="c-chrome__nav">
+                <div class="c-chrome__nav__item c-chrome__nav__item--logo c-chrome__nav__item--logo--talk">
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path d="M6.8 3.3C3.4 3.3.6 6.5.6 9.5H13c0-3-2.8-6.2-6.2-6.2z"/>
+                    <path fill="currentColor" d="M14.9 23.2c5.8 0 10.5-4.1 10.5-10.5H4.3c0 6.4 4.8 10.5 10.6 10.5z"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Zendesk Talk</span>
+                </div>
+                <a class="c-chrome__nav__item" href>
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M13 16.627a3.625 3.625 0 0 1-3.63-3.622A3.633 3.633 0 0 1 13 9.373a3.633 3.633 0 0 1 3.63 3.632A3.625 3.625 0 0 1 13 16.627m8.295-4.902h-.006a2.116 2.116 0 0 1-1.955-1.307l-.031-.075a2.117 2.117 0 0 1 .459-2.306.693.693 0 0 0 0-.998l-.809-.809a.71.71 0 0 0-.997 0 2.106 2.106 0 0 1-2.295.457l-.08-.033a2.109 2.109 0 0 1-1.302-1.948.705.705 0 0 0-.705-.706h-1.148a.705.705 0 0 0-.705.706c0 .855-.514 1.628-1.306 1.95-.021.009-.043.017-.063.027a2.106 2.106 0 0 1-2.308-.453.72.72 0 0 0-1.006 0l-.81.81a.708.708 0 0 0 0 .997l.007.006a2.11 2.11 0 0 1 .454 2.305c-.01.022-.018.045-.028.066a2.103 2.103 0 0 1-1.95 1.311h-.006a.706.706 0 0 0-.705.706v1.138c0 .39.316.706.705.706h.002a2.1 2.1 0 0 1 1.949 1.306l.029.069a2.11 2.11 0 0 1-.452 2.31l-.004.003a.708.708 0 0 0 0 .998l.809.809a.72.72 0 0 0 1.006 0l.005-.005a2.106 2.106 0 0 1 2.307-.452l.059.024a2.104 2.104 0 0 1 1.306 1.95v.007c0 .395.32.706.705.706h1.148c.385 0 .705-.31.705-.706v-.007c0-.855.514-1.627 1.306-1.95l.059-.024a2.106 2.106 0 0 1 2.307.452l.005.005a.71.71 0 0 0 .997 0l.809-.81a.693.693 0 0 0 0-.997l-.004-.003a2.11 2.11 0 0 1-.452-2.31l.029-.069a2.102 2.102 0 0 1 1.948-1.306h.012a.706.706 0 0 0 .705-.706v-1.138a.706.706 0 0 0-.705-.706"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Settings</span>
+                </a>
+              </nav>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-chrome c-chrome--demo">
+              <nav class="c-chrome__nav">
+                <div class="c-chrome__nav__item c-chrome__nav__item--logo c-chrome__nav__item--logo--message">
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <circle cx="4.9" cy="7.4" r="4.4"/>
+                    <circle cx="18" cy="15.5" r="7.5" fill="currentColor"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Zendesk Message</span>
+                </div>
+                <a class="c-chrome__nav__item" href>
+                  <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M13 16.627a3.625 3.625 0 0 1-3.63-3.622A3.633 3.633 0 0 1 13 9.373a3.633 3.633 0 0 1 3.63 3.632A3.625 3.625 0 0 1 13 16.627m8.295-4.902h-.006a2.116 2.116 0 0 1-1.955-1.307l-.031-.075a2.117 2.117 0 0 1 .459-2.306.693.693 0 0 0 0-.998l-.809-.809a.71.71 0 0 0-.997 0 2.106 2.106 0 0 1-2.295.457l-.08-.033a2.109 2.109 0 0 1-1.302-1.948.705.705 0 0 0-.705-.706h-1.148a.705.705 0 0 0-.705.706c0 .855-.514 1.628-1.306 1.95-.021.009-.043.017-.063.027a2.106 2.106 0 0 1-2.308-.453.72.72 0 0 0-1.006 0l-.81.81a.708.708 0 0 0 0 .997l.007.006a2.11 2.11 0 0 1 .454 2.305c-.01.022-.018.045-.028.066a2.103 2.103 0 0 1-1.95 1.311h-.006a.706.706 0 0 0-.705.706v1.138c0 .39.316.706.705.706h.002a2.1 2.1 0 0 1 1.949 1.306l.029.069a2.11 2.11 0 0 1-.452 2.31l-.004.003a.708.708 0 0 0 0 .998l.809.809a.72.72 0 0 0 1.006 0l.005-.005a2.106 2.106 0 0 1 2.307-.452l.059.024a2.104 2.104 0 0 1 1.306 1.95v.007c0 .395.32.706.705.706h1.148c.385 0 .705-.31.705-.706v-.007c0-.855.514-1.627 1.306-1.95l.059-.024a2.106 2.106 0 0 1 2.307.452l.005.005a.71.71 0 0 0 .997 0l.809-.81a.693.693 0 0 0 0-.997l-.004-.003a2.11 2.11 0 0 1-.452-2.31l.029-.069a2.102 2.102 0 0 1 1.948-1.306h.012a.706.706 0 0 0 .705-.706v-1.138a.706.706 0 0 0-.705-.706"/>
+                  </svg>
+                  <span class="c-chrome__nav__item__text">Settings</span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-mb-lg">
+        <h2 class="c-main__subtitle u-gamma u-mb">Header
+          <span class="c-chk c-chk--toggle u-display-inline-block u-va-text-bottom u-ml-sm">
+            <input class="c-chk__input js-solo" checked id="nav.ctl.solo" type="checkbox">
+            <label class="c-chk__label" for="nav.ctl.solo">Solo</label>
+          </span>
+        </h2>
+        <div class="u-mb">
+          <div class="c-chrome c-chrome--demo">
+            <div class="c-chrome__body">
+              <header class="c-chrome__body__header c-chrome__body__header--solo">
+                <div class="c-chrome__body__header__item c-chrome__body__header__item--logo c-chrome__body__header__item--logo--support">
+                  <svg class="c-chrome__body__header__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                    <path fill="currentColor" d="M14.3 5.2L5.4 2.7l-2.5 8.9-2.5 8.9 8.9 2.4 2.5-8.8z"/>
+                    <path d="M14.223 14.131l8.853-2.503 2.503 8.853-8.853 2.503z"/>
+                  </svg>
+                  <span class="c-chrome__body__header__item__text">Zendesk Support</span>
+                </div>
+                <button class="c-chrome__body__header__item js-parent-menu">
+                  <svg class="c-chrome__body__header__item__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" focusable="false" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" d="M7 11V3M3 7h8"/>
+                  </svg>
+                  <span class="c-chrome__body__header__item__text">Add</span>
+                  <ul aria-hidden="true" class="c-menu c-menu--down c-arrow c-arrow--tl" style="top:calc(100% + 8px);left:0">
+                    <li class="c-menu__item c-menu__item--header" role="menuitem">New</li>
+                    <li class="c-menu__separator" role="separator">
+                    <li class="c-menu__item" role="menuitem">Ticket</li>
+                    <li class="c-menu__item" role="menuitem">User</li>
+                    <li class="c-menu__item" role="menuitem">Organization</li>
+                    <li class="c-menu__item" role="menuitem">Search</li>
+                  </ul>
+                </button>
+                <div class="c-chrome__body__header__item c-chrome__body__header__item--grow"></div>
+                <button class="c-chrome__body__header__item">
+                  <svg class="c-chrome__body__header__item__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" focusable="false" viewBox="0 0 14 14">
+                    <g stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                      <circle cx="6" cy="6" r="4" fill="none"/>
+                      <path d="M9 9l3 3"/>
+                    </g>
+                  </svg>
+                  <span class="c-chrome__body__header__item__text is-clipped">Search</span>
+                </button>
+                <button class="c-chrome__body__header__item">
+                  <svg class="c-chrome__body__header__item__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" focusable="false" viewBox="0 0 14 14">
+                    <g fill="currentColor">
+                      <rect width="6" height="6" rx="1"/>
+                      <rect width="6" height="6" x="8" rx="1"/>
+                      <rect width="6" height="6" y="8" rx="1"/>
+                      <rect width="6" height="6" x="8" y="8" rx="1"/>
+                    </g>
+                  </svg>
+                  <span class="c-chrome__body__header__item__text is-clipped">Products</span>
+                  <ul aria-hidden="true" class="c-menu c-menu--down c-arrow c-arrow--tr" style="top:calc(100% + 8px);right:-4px">
+                    <li class="c-menu__item c-menu__item--media u-fg-apple-green" role="menuitem">
+                      <svg class="c-menu__item--media__figure" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                        <path fill="currentColor" d="M14.3 5.2L5.4 2.7l-2.5 8.9-2.5 8.9 8.9 2.4 2.5-8.8z"/>
+                        <path d="M14.223 14.131l8.853-2.503 2.503 8.853-8.853 2.503z"/>
+                      </svg>
+                      <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Support</div>
+                    </li>
+                    <li class="c-menu__item c-menu__item--media u-fg-mandy" role="menuitem">
+                      <svg class="c-menu__item--media__figure" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                        <path d="M7 7.8l6-6 6 6z"/>
+                        <path fill="currentColor" d="M.5 23L13 10.4 25.5 23z"/>
+                      </svg>
+                      <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Guide</div>
+                    </li>
+                    <li class="c-menu__item c-menu__item--media u-fg-sea-buckthorn" role="menuitem">
+                      <svg class="c-menu__item--media__figure" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                        <path fill="currentColor" d="M9.3 5.4c4.9 4.9 4.9 12.7 0 17.6L.5 14.2l8.8-8.8z"/>
+                        <path d="M19.2 15.4c-3.4-3.4-3.4-9 0-12.4l6.2 6.2-6.2 6.2z"/>
+                      </svg>
+                      <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Chat</div>
+                    </li>
+                    <li class="c-menu__item c-menu__item--media u-fg-golden-dream" role="menuitem">
+                      <svg class="c-menu__item--media__figure" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+                        <path d="M6.8 3.3C3.4 3.3.6 6.5.6 9.5H13c0-3-2.8-6.2-6.2-6.2z"/>
+                        <path fill="currentColor" d="M14.9 23.2c5.8 0 10.5-4.1 10.5-10.5H4.3c0 6.4 4.8 10.5 10.6 10.5z"/>
+                      </svg>
+                      <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Talk</div>
+                    </li>
+                  </ul>
+                </button>
+                <button class="c-chrome__body__header__item c-chrome__body__header__item--round">
+                  <img alt="Helpy Helperton" class="c-chrome__body__header__item__icon" src="http://placeskull.com/22/22/78A300/37/0">
+                  <span class="c-chrome__body__header__item__text is-clipped">User</span>
+                  <ul aria-hidden="true" class="c-menu c-menu--down c-arrow c-arrow--tr" style="top:calc(100% + 8px);right:-4px">
+                    <li class="c-menu__item c-menu__item--media" role="menuitem">
+                      <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/78A300/37/0">
+                      <div class="c-menu__item--media__body">
+                        <div>Helpy Helperton</div>
+                        <span class="c-menu__item__meta">View profile</span>
+                      </div>
+                    </li>
+                    <li class="c-menu__separator" role="separator">
+                    <li class="c-menu__item" role="menuitem">Help</li>
+                    <li class="c-menu__item" role="menuitem">Settings</li>
+                    <li class="c-menu__item" role="menuitem">About</li>
+                    <li class="c-menu__separator" role="separator">
+                    <li class="c-menu__item" role="menuitem">Sign out</li>
+                  </ul>
+                </button>
+              </header>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
 <textarea class="c-playground__code"><div class="c-chrome">
   <nav class="c-chrome__nav">
+    <div class="c-chrome__nav__item c-chrome__nav__item--logo c-chrome__nav__item--logo--support">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+        <path fill="currentColor" d="M14.3 5.2L5.4 2.7l-2.5 8.9-2.5 8.9 8.9 2.4 2.5-8.8z"/>
+        <path d="M14.223 14.131l8.853-2.503 2.503 8.853-8.853 2.503z"/>
+      </svg>
+    </div>
     <a class="c-chrome__nav__item is-current" href>
       <svg class="c-chrome__nav__item__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
         <path fill="currentColor" d="M23.885 13.2l-1.328 1.639a.522.522 0 0 1-.737.084l-1.444-1.155v7.182c0 .577-.474 1.05-1.054 1.05H16.51c-.58 0-1.054-.473-1.054-1.05v-3.182a2.43 2.43 0 0 0-.716-1.732 2.448 2.448 0 0 0-1.74-.714 2.45 2.45 0 0 0-1.739.714 2.43 2.43 0 0 0-.716 1.732v3.182c0 .577-.474 1.05-1.054 1.05H6.678c-.582 0-1.054-.47-1.054-1.05v-7.182L4.18 14.923a.522.522 0 0 1-.737-.084L2.115 13.2a.52.52 0 0 1 .084-.735l10.474-8.348a.51.51 0 0 1 .654 0L23.8 12.466a.52.52 0 0 1 .084.735"/>
@@ -91,13 +355,13 @@
       </ul>
       <a class="c-chrome__body__header__item" href>Profile</a>
       <button class="c-chrome__body__header__item c-chrome__body__header__item--icon">
-        <img src="http://placeskull.com/24/24/777777/37/0">
+        <img src="http://placeskull.com/22/22/777777/37/0">
         <span class="u-mh-xs">Help Center</span>
       </button>
       <button class="c-chrome__body__header__item c-chrome__body__header__item--icon">button</button>
       <a class="c-chrome__body__header__item c-chrome__body__header__item--icon" href>anchor</a>
       <button class="c-chrome__body__header__item c-chrome__body__header__item--icon c-chrome__body__header__item--icon--round">
-        <img class="js-menu" src="http://placeskull.com/24/24/777777/37/0">
+        <img src="http://placeskull.com/22/22/777777/37/0">
         <ul aria-hidden="true" class="c-menu c-menu--down c-arrow c-arrow--t" style="top:calc(100% + 8px)">
           <li class="c-menu__item">item</li>
         </ul>
