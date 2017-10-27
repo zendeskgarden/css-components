@@ -10,6 +10,17 @@ $(document).ready(function() {
     return false;
   });
 
+  $('.c-chrome__subnav__item').click(function() {
+    var $parent = $(this).parent('.c-chrome__subnav');
+
+    if ($parent.length) {
+      $parent.children('.c-chrome__subnav__item').removeClass('is-current');
+      $(this).addClass('is-current');
+    }
+
+    return false;
+  });
+
   $('.js-custom').click(function() {
     $('.c-chrome:not(.c-playground .c-chrome)').toggleClass('c-chrome--custom');
   });
@@ -43,9 +54,9 @@ $(document).ready(function() {
         $this.addClass('is-active');
         $this.children('.c-chrome__body__header__item__icon.js-rotate').addClass('is-rotated');
       }
-    }
 
-    return false;
+      return false;
+    }
   });
 
   $(document).click(function() {

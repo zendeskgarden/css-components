@@ -4,8 +4,9 @@
 
 :root {
   --zd-chrome__nav-width: 60px;
+  --zd-chrome__nav-font-size: var(--zd-font-size-epsilon);
   --zd-chrome__nav__item-height: 50px;
-  --zd-chrome__nav__item-opacity: .5;
+  --zd-chrome__nav__item-opacity: .6;
   --zd-chrome__nav__item-transition:
     box-shadow .1s ease-in-out,
     background-color .1s ease-in-out,
@@ -19,7 +20,7 @@
   --zd-chrome__nav__item__icon-border-radius: 4px;
   --zd-chrome__nav__item__icon-size: 26px;
   --zd-chrome__nav--expanded-width: 200px;
-  --zd-chrome__nav--expanded__item-padding: 0 10px;
+  --zd-chrome__nav--expanded__item-padding: 0 calc(calc(var(--zd-chrome__nav-width) - var(--zd-chrome__nav__item__icon-size)) / 4);
   --zd-chrome__nav--expanded__item__-margin: var(--zd-chrome__nav--expanded__item-padding);
 }
 
@@ -32,6 +33,7 @@
   width: var(--zd-chrome__nav-width);
   overflow: hidden;
   color: var(--zd-chrome__nav-color);
+  font-size: var(--zd-chrome__nav-font-size);
 }
 
 .c-chrome__nav__item {
