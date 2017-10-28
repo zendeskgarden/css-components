@@ -1,26 +1,4 @@
 $(document).ready(function() {
-  $('.c-chrome__nav__item:not(.c-chrome__nav__item--logo)').click(function() {
-    var $parent = $(this).parent('.c-chrome__nav');
-
-    if ($parent.length) {
-      $parent.children('.c-chrome__nav__item').removeClass('is-current');
-      $(this).addClass('is-current');
-    }
-
-    return false;
-  });
-
-  $('.c-chrome__subnav__item').click(function() {
-    var $parent = $(this).parent('.c-chrome__subnav');
-
-    if ($parent.length) {
-      $parent.children('.c-chrome__subnav__item').removeClass('is-current');
-      $(this).addClass('is-current');
-    }
-
-    return false;
-  });
-
   $('.js-custom').click(function() {
     $('.c-chrome:not(.c-playground .c-chrome)').toggleClass('c-chrome--custom');
   });
@@ -39,6 +17,28 @@ $(document).ready(function() {
     if ($parent.length) {
       $parent.find('.c-chrome__body__header').toggleClass('c-chrome__body__header--solo');
     }
+  });
+
+  $(document).on('click', '.c-chrome__nav__item:not(.c-chrome__nav__item--logo)', function() {
+    var $parent = $(this).parent('.c-chrome__nav');
+
+    if ($parent.length) {
+      $parent.children('.c-chrome__nav__item').removeClass('is-current');
+      $(this).addClass('is-current');
+    }
+
+    return false;
+  });
+
+  $(document).on('click', '.c-chrome__subnav__item', function() {
+    var $parent = $(this).parent('.c-chrome__subnav');
+
+    if ($parent.length) {
+      $parent.children('.c-chrome__subnav__item').removeClass('is-current');
+      $(this).addClass('is-current');
+    }
+
+    return false;
   });
 
   $(document).on('click', '.c-chrome__body__header__item', function() {
@@ -64,13 +64,13 @@ $(document).ready(function() {
     $('.c-chrome__body__header__item').children('.c-chrome__body__header__item__icon').removeClass('is-rotated');
   });
 
-  $(document).on('focus', '.c-chrome__nav__item, .c-chrome__body__header__item', function() {
+  $(document).on('focus', '.c-chrome__nav__item, .c-chrome__subnav__item, .c-chrome__body__header__item', function() {
     $(this).addClass('is-focused');
-  }).on('blur mouseup', '.c-chrome__nav__item, .c-chrome__body__header__item', function() {
+  }).on('blur mouseup', '.c-chrome__nav__item, .c-chrome__subnav__item, .c-chrome__body__header__item', function() {
     $(this).removeClass('is-focused');
   });
 
-  $(document).on('focus', '.c-chrome__nav__item a, .c-chrome__body__header__item a', function(event) {
+  $(document).on('focus', '.c-chrome__body__header__item *', function(event) {
     event.stopPropagation();
   });
 });

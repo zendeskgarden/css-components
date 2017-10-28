@@ -70,7 +70,7 @@
 .c-chrome__nav__item__icon {
   order: 0;
   border-radius: var(--zd-chrome__nav__item__icon-border-radius);
-  min-width: var(--zd-chrome__nav__item__icon-size);
+  width: var(--zd-chrome__nav__item__icon-size);
   height: var(--zd-chrome__nav__item__icon-size);
 }
 
@@ -128,4 +128,11 @@
 
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active:--chrome-focused {
   box-shadow: none;
+}
+
+.c-chrome__nav__fab {
+  bottom: 22px;
+  left: 30px;
+  width: 60px;
+  height: 40px;
 }

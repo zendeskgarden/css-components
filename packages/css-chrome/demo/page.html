@@ -2,20 +2,22 @@
 <html>
 <head>
   <title>Zendesk Product</title>
+  <meta name="application-name" content="Zendesk Product">
+  <meta name="msapplication-config" content="http://garden.zendesk.com/favicons/zendesk/browserconfig.xml">
+  <link rel="apple-touch-icon" href="http://garden.zendesk.com/favicons/zendesk/apple-touch-icon.png">
+  <link rel="mask-icon" href="http://garden.zendesk.com/favicons/zendesk/mask-icon.svg" color="#03363d">
+  <link rel="shortcut icon" href="http://garden.zendesk.com/favicons/zendesk/favicon.ico">
   <link href="index.css" rel="stylesheet">
 </head>
 <body class="c-chrome">
-
   <nav class="c-chrome__nav">
-    Navigation
+    <div class="c-chrome__nav__item c-chrome__nav__item--logo" title="Zendesk Product">
+      <svg class="c-chrome__nav__item__icon">
+        <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-zendesk" />
+      </svg>
+      <span class="c-chrome__nav__item__text">Zendesk Product</span>
+    </div>
   </nav>
-
-  <!--
-  <nav class="c-chrome__subnav">
-    Sub-Navigation
-  </nav>
-  -->
-
   <div class="c-chrome__body">
     <header class="c-chrome__body__header">
       <div class="c-chrome__body__header__item c-chrome__body__header__item--grow">Bread &gt; Crumb</div>
@@ -23,6 +25,5 @@
       <div class="c-chrome__body__header__item">User</div>
     </header>
   </div>
-
 </body>
 </html>

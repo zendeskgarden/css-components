@@ -81,7 +81,7 @@
       -ms-flex-order:0;
           order:0;
   border-radius:4px;
-  min-width:26px;
+  width:26px;
   height:26px;
 }
 
@@ -146,6 +146,13 @@
           box-shadow:none;
 }
 
+.c-chrome__nav__fab{
+  bottom:22px;
+  left:30px;
+  width:60px;
+  height:40px;
+}
+
 .c-chrome__subnav{
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
@@ -159,10 +166,6 @@
   min-width:180px;
   color:#fff;
   font-size:14px;
-}
-
-.c-chrome__subnav__separator{
-  border-bottom:1px solid hsla(0,0%,100%,.1);
 }
 
 .c-chrome__subnav__item{
@@ -186,12 +189,25 @@
   color:inherit;
 }
 
+.c-chrome__subnav__item:focus{
+  outline:none;
+}
+
 .c-chrome__subnav__item.is-current,.c-chrome__subnav__item.is-focused,.c-chrome__subnav__item.is-hovered,.c-chrome__subnav__item:hover,.c-chrome__subnav__item[aria-current=true]{
   opacity:1;
 }
 
 .c-chrome__subnav__item.is-hovered,.c-chrome__subnav__item:hover{
   background-color:rgba(0,0,0,.1);
+}
+
+.c-chrome__subnav__item.is-focused{
+  -webkit-box-shadow:0 0 0 3px hsla(0,0%,100%,.2);
+          box-shadow:0 0 0 3px hsla(0,0%,100%,.2);
+}
+
+.c-chrome__subnav__item.is-active,.c-chrome__subnav__item:active{
+  background-color:hsla(0,0%,100%,.03);
 }
 
 .c-chrome__subnav__item.is-current,.c-chrome__subnav__item[aria-current=true]{
@@ -303,9 +319,12 @@
   border-right:1px solid #eee;
   padding:0;
   width:60px;
-  height:100%;
   overflow:hidden;
   fill:#03363d;
+}
+
+.c-chrome__body__header__item--logo,.c-chrome__body__header__item--max{
+  height:100%;
 }
 
 .c-chrome__body__header--solo .c-chrome__body__header__item--logo{

@@ -120,9 +120,13 @@
   border-right: var(--zd-chrome__body__header__item--logo-border);
   padding: 0;
   width: var(--zd-chrome__body__header__item--logo-width);
-  height: 100%;
   overflow: hidden;
   fill: var(--zd-chrome__body__header__item--logo-fill);
+}
+
+.c-chrome__body__header__item--logo,
+.c-chrome__body__header__item--max {
+  height: 100%;
 }
 
 .c-chrome__body__header--solo .c-chrome__body__header__item--logo {
