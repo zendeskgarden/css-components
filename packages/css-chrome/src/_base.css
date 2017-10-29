@@ -19,7 +19,7 @@
   display: flex;
   margin: 0;
   height: 100vh;
-  overflow: hidden; /* [1] */
+  overflow-y: hidden; /* [1] */
   font-family: var(--zd-chrome-font-family);
 }
 
