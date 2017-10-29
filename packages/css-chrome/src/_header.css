@@ -3,7 +3,8 @@
 
 :root {
   --zd-chrome__body__header-background-color: var(--zd-color-white);
-  --zd-chrome__body__header-border-bottom: 1px solid var(--zd-color-anti-flash-white);
+  --zd-chrome__body__header-border-color: var(--zd-color-anti-flash-white);
+  --zd-chrome__body__header-border-bottom: 1px solid var(--zd-chrome__body__header-border-color);
   --zd-chrome__body__header-color: var(--zd-color-monsoon);
   --zd-chrome__body__header-font-size: var(--zd-font-size-epsilon);
   --zd-chrome__body__header-height: var(--zd-chrome__nav__item-height);

@@ -27,7 +27,7 @@
 /* 1. Anchor reset. */
 
 .c-chrome__nav {
-  flex-direction: column;
+  flex-shrink: 0;
   order: -1;
   background-color: var(--zd-chrome__nav-background-color);
   width: var(--zd-chrome__nav-width);
