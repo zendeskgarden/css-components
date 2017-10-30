@@ -5,6 +5,23 @@
 :root {
   --zd-chrome__nav-width: 60px;
   --zd-chrome__nav-font-size: var(--zd-font-size-epsilon);
+  --zd-chrome__nav__fab-background-color: var(--zd-color-breaker-bay);
+  --zd-chrome__nav__fab-box-shadow:
+    0 6px 12px 0
+    color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-chrome__nav__fab-bottom: 22px;
+  --zd-chrome__nav__fab-font-weight: var(--zd-font-weight-semibold);
+  --zd-chrome__nav__fab-height: 40px;
+  --zd-chrome__nav__fab-right: calc(var(--zd-chrome__nav__fab-width) / 2 * -1);
+  --zd-chrome__nav__fab-transition:
+    box-shadow .1s ease-in-out,
+    background-color .1s ease-in-out;
+  --zd-chrome__nav__fab-width: 60px;
+  --zd-chrome__nav__fab-active-background-color: color(var(--zd-chrome__nav__fab-background-color) blackness(+10%));
+  --zd-chrome__nav__fab-focused-box-shadow: var(--zd-chrome__nav__item-focused-box-shadow);
+  --zd-chrome__nav__fab-hovered-background-color: color(var(--zd-chrome__nav__fab-background-color) lightness(+10%));
+  --zd-chrome__nav__fab__icon-size: var(--zd-chrome__nav__item__icon-size);
+  --zd-chrome__nav__fab__text-margin: 0 4px;
   --zd-chrome__nav__item-height: 50px;
   --zd-chrome__nav__item-opacity: .6;
   --zd-chrome__nav__item-transition:
@@ -27,11 +44,11 @@
 /* 1. Anchor reset. */
 
 .c-chrome__nav {
+  position: relative;
   flex-shrink: 0;
   order: -1;
   background-color: var(--zd-chrome__nav-background-color);
   width: var(--zd-chrome__nav-width);
-  overflow: hidden;
   color: var(--zd-chrome__nav-color);
   font-size: var(--zd-chrome__nav-font-size);
 }
@@ -84,6 +101,40 @@
   white-space: nowrap;
 }
 
+.c-chrome__nav__fab {
+  display: inline-flex;
+  position: absolute;
+  right: var(--zd-chrome__nav__fab-right);
+  bottom: var(--zd-chrome__nav__fab-bottom);
+  align-items: center;
+  justify-content: center;
+  transition: var(--zd-chrome__nav__fab-transition);
+  border: none;
+  border-radius: 100px;
+  box-shadow: var(--zd-chrome__nav__fab-right);
+  background-color: var(--zd-chrome__nav__fab-background-color);
+  width: var(--zd-chrome__nav__fab-width);
+  height: var(--zd-chrome__nav__fab-height);
+  color: inherit;
+  font-weight: var(--zd-chrome__nav__fab-font-weight);
+}
+
+.c-chrome__nav__fab:focus {
+  outline: none;
+}
+
+.c-chrome__nav__fab__icon {
+  width: var(--zd-chrome__nav__fab__icon-size);
+  height: var(--zd-chrome__nav__fab__icon-size);
+}
+
+.c-chrome__nav__fab__text {
+  margin: var(--zd-chrome__nav__fab__text-margin);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c-chrome__nav--expanded {
   width: var(--zd-chrome__nav--expanded-width);
 }
@@ -113,12 +164,24 @@
   background-color: var(--zd-chrome__nav__item-hovered-background-color);
 }
 
+.c-chrome__nav__fab:--chrome-hovered {
+  background-color: var(--zd-chrome__nav__fab-hovered-background-color);
+}
+
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-focused {
   box-shadow: var(--zd-chrome__nav__item-focused-box-shadow);
 }
 
+.c-chrome__nav__fab:--chrome-focused {
+  box-shadow: var(--zd-chrome__nav__fab-focused-box-shadow);
+}
+
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-active {
   background-color: var(--zd-chrome__nav__item-active-background-color);
+}
+
+.c-chrome__nav__fab:--chrome-active {
+  background-color: var(--zd-chrome__nav__fab-active-background-color);
 }
 
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-current {
@@ -126,13 +189,7 @@
   cursor: default;
 }
 
-.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active:--chrome-focused {
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active:--chrome-focused,
+.c-chrome__nav__fab:active:--chrome-focused {
   box-shadow: none;
-}
-
-.c-chrome__nav__fab {
-  bottom: 22px;
-  left: 30px;
-  width: 60px;
-  height: 40px;
 }

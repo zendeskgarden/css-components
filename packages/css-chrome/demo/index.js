@@ -64,9 +64,9 @@ $(document).ready(function() {
     $('.c-chrome__body__header__item').children('.c-chrome__body__header__item__icon').removeClass('is-rotated');
   });
 
-  $(document).on('focus', '.c-chrome__nav__item, .c-chrome__subnav__item, .c-chrome__body__header__item', function() {
+  $(document).on('focus', '.c-chrome__nav__item, .c-chrome__nav__fab, .c-chrome__subnav__item, .c-chrome__body__header__item', function() {
     $(this).addClass('is-focused');
-  }).on('blur mouseup', '.c-chrome__nav__item, .c-chrome__subnav__item, .c-chrome__body__header__item', function() {
+  }).on('blur mouseup', '.c-chrome__nav__item, .c-chrome__nav__fab, .c-chrome__subnav__item, .c-chrome__body__header__item', function() {
     $(this).removeClass('is-focused');
   });
 
