@@ -146,8 +146,8 @@
   transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   border:none;
   border-radius:100px;
-  -webkit-box-shadow:-30px;
-          box-shadow:-30px;
+  -webkit-box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
+          box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
   background-color:#56777a;
   width:60px;
   height:40px;

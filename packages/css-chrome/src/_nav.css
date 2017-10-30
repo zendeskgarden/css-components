@@ -111,7 +111,7 @@
   transition: var(--zd-chrome__nav__fab-transition);
   border: none;
   border-radius: 100px;
-  box-shadow: var(--zd-chrome__nav__fab-right);
+  box-shadow: var(--zd-chrome__nav__fab-box-shadow);
   background-color: var(--zd-chrome__nav__fab-background-color);
   width: var(--zd-chrome__nav__fab-width);
   height: var(--zd-chrome__nav__fab-height);
