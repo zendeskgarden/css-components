@@ -20,7 +20,7 @@
   --zd-chrome__nav__fab-active-background-color: color(var(--zd-chrome__nav__fab-background-color) blackness(+10%));
   --zd-chrome__nav__fab-focused-box-shadow: var(--zd-chrome__nav__item-focused-box-shadow);
   --zd-chrome__nav__fab-hovered-background-color: color(var(--zd-chrome__nav__fab-background-color) lightness(+10%));
-  --zd-chrome__nav__fab__icon-size: var(--zd-chrome__nav__item__icon-size);
+  --zd-chrome__nav__fab__icon-size: 20px;
   --zd-chrome__nav__fab__text-margin: 0 4px;
   --zd-chrome__nav__item-height: 50px;
   --zd-chrome__nav__item-opacity: .6;
@@ -192,4 +192,8 @@
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active:--chrome-focused,
 .c-chrome__nav__fab:active:--chrome-focused {
   box-shadow: none;
+}
+
+.c-chrome.is-rtl .c-chrome__nav__fab {
+  right: calc(var(--zd-chrome__nav__fab-right) * -1);
 }

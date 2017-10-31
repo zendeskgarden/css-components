@@ -3,6 +3,10 @@ $(document).ready(function() {
     $('.c-chrome:not(.c-playground .c-chrome)').toggleClass('c-chrome--custom');
   });
 
+  $('.js-dark').click(function() {
+    $('.c-chrome:not(.c-playground .c-chrome)').toggleClass('c-chrome--dark', $('body').hasClass('is-dark'));
+  });
+
   $('.js-expand').click(function() {
     $('.c-chrome:not(.c-playground .c-chrome) .c-chrome__nav').toggleClass('c-chrome__nav--expanded');
   });

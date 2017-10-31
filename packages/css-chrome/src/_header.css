@@ -71,7 +71,6 @@
   z-index: 0;
   margin: var(--zd-chrome__body__header__item-margin);
   border: none; /* [1] */
-  border-radius: var(--zd-chrome__body__header__item-border-radius);
   background: transparent; /* [1] */
   padding: var(--zd-chrome__body__header__item-padding);
   min-width: var(--zd-chrome__body__header__item-size);
@@ -89,6 +88,10 @@
 
 .c-chrome__body__header__item:focus {
   outline: none; /* [2] */
+}
+
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo) {
+  border-radius: var(--zd-chrome__body__header__item-border-radius);
 }
 
 /* stylelint-disable max-line-length */
@@ -171,10 +174,12 @@ img.c-chrome__body__header__item__icon {
 }
 /* stylelint-enable selector-max-specificity */
 
-.c-chrome__body__header__item--round,
-.c-chrome__body__header__item--round .c-chrome__body__header__item__icon {
+/* stylelint-disable max-line-length */
+.c-chrome__body__header__item.c-chrome__body__header__item--round,
+.c-chrome__body__header__item.c-chrome__body__header__item--round .c-chrome__body__header__item__icon {
   border-radius: 100px;
 }
+/* stylelint-enable max-line-length */
 
 .c-chrome__body__header__item__text {
   margin: var(--zd-chrome__body__header__item__text-margin);

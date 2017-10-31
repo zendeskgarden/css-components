@@ -160,8 +160,8 @@
 }
 
 .c-chrome__nav__fab__icon{
-  width:26px;
-  height:26px;
+  width:20px;
+  height:20px;
 }
 
 .c-chrome__nav__fab__text{
@@ -226,6 +226,10 @@
 .c-chrome__nav__fab:active.is-focused,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active.is-focused{
   -webkit-box-shadow:none;
           box-shadow:none;
+}
+
+.c-chrome.is-rtl .c-chrome__nav__fab{
+  right:30px;
 }
 
 .c-chrome__subnav{
@@ -342,7 +346,6 @@
   z-index:0;
   margin:0 12px;
   border:none;
-  border-radius:4px;
   background:transparent;
   padding:0 4px;
   min-width:30px;
@@ -358,6 +361,10 @@
 
 .c-chrome__body__header__item:focus{
   outline:none;
+}
+
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo){
+  border-radius:4px;
 }
 
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover{
@@ -448,7 +455,7 @@ img.c-chrome__body__header__item__icon{
           transform:rotate(-180deg);
 }
 
-.c-chrome__body__header__item--round,.c-chrome__body__header__item--round .c-chrome__body__header__item__icon{
+.c-chrome__body__header__item.c-chrome__body__header__item--round,.c-chrome__body__header__item.c-chrome__body__header__item--round .c-chrome__body__header__item__icon{
   border-radius:100px;
 }
 
@@ -492,4 +499,41 @@ img.c-chrome__body__header__item__icon{
 
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--talk,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
   color:#efc93d;
+}
+
+.c-chrome--dark .c-chrome__nav__fab{
+  -webkit-box-shadow:0 6px 12px 0 rgba(0,0,0,.15);
+          box-shadow:0 6px 12px 0 rgba(0,0,0,.15);
+}
+
+.c-chrome--dark .c-chrome__body{
+  background-color:#012b30;
+}
+
+.c-chrome--dark .c-chrome__body__header{
+  border-bottom:none;
+  background-color:#03363d;
+  color:#819a9e;
+}
+
+.c-chrome--dark .c-chrome__body__header--solo{
+  -webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.15);
+          box-shadow:0 0 10px 0 rgba(0,0,0,.15);
+}
+
+.c-chrome.c-chrome--dark .c-chrome__body__header__item--logo{
+  border-color:#04444d;
+  fill:#fff;
+}
+
+.c-chrome--dark .c-chrome__body__content,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover{
+  color:#fff;
+}
+
+.c-chrome--dark .c-chrome__body__content__main{
+  background-color:inherit;
+}
+
+.c-chrome--dark .c-chrome__body__content__sidebar{
+  border-color:#04444d;
 }
