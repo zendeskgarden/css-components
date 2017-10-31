@@ -59,6 +59,6 @@
   background-color: inherit;
 }
 
-.c-chrome--dark .c-chrome__body__content__sidebar {
+.c-chrome.c-chrome--dark .c-chrome__body__content__sidebar {
   border-color: var(--zd-chrome--dark__body__content__sidebar-border-color);
 }

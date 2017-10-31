@@ -19,7 +19,7 @@
   -webkit-box-ordinal-group:2;
       -ms-flex-order:1;
           order:1;
-  background-color:#fbfbfb;
+  background-color:#f3f3f3;
 }
 
 .c-chrome__body__content{
@@ -48,14 +48,14 @@
           order:0;
   -webkit-box-sizing:border-box;
           box-sizing:border-box;
-  border-right:1px solid #f3f3f3;
+  border-right:1px solid #ddd;
   width:330px;
   overflow:auto;
 }
 
 .c-chrome.is-rtl .c-chrome__body__content__sidebar{
   border-right:none;
-  border-left:1px solid #f3f3f3;
+  border-left:1px solid #ddd;
 }
 
 .c-chrome__nav{
@@ -314,7 +314,7 @@
           justify-content:flex-end;
   -webkit-box-sizing:border-box;
           box-sizing:border-box;
-  border-bottom:1px solid #f3f3f3;
+  border-bottom:1px solid #ddd;
   background-color:#fff;
   padding:0 20px;
   height:50px;
@@ -322,8 +322,7 @@
   font-size:14px;
 }
 
-.c-chrome__body__header--solo{
-  border-color:#eee;
+.c-chrome__body__header--standalone{
   -webkit-box-shadow:0 0 10px 0 rgba(36,83,107,.15);
           box-shadow:0 0 10px 0 rgba(36,83,107,.15);
 }
@@ -398,7 +397,7 @@
   display:none;
   margin-right:auto;
   margin-left:-20px;
-  border-right:1px solid #eee;
+  border-right:1px solid #ddd;
   padding:0;
   width:60px;
   overflow:hidden;
@@ -409,7 +408,7 @@
   height:100%;
 }
 
-.c-chrome__body__header--solo .c-chrome__body__header__item--logo{
+.c-chrome__body__header--standalone .c-chrome__body__header__item--logo{
   display:-webkit-inline-box;
   display:-ms-inline-flexbox;
   display:inline-flex;
@@ -419,7 +418,7 @@
   margin-right:-20px;
   margin-left:auto;
   border-right:none;
-  border-left:1px solid #eee;
+  border-left:1px solid #ddd;
 }
 
 .c-chrome__body__header__item__icon{
@@ -443,16 +442,6 @@ img.c-chrome__body__header__item__icon{
   border-radius:3px;
   width:22px;
   height:22px;
-}
-
-.c-chrome__body__header__item__icon.is-rotated{
-  -webkit-transform:rotate(180deg);
-          transform:rotate(180deg);
-}
-
-.c-chrome.is-rtl .c-chrome__body__header__item__icon.is-rotated{
-  -webkit-transform:rotate(-180deg);
-          transform:rotate(-180deg);
 }
 
 .c-chrome__body__header__item.c-chrome__body__header__item--round,.c-chrome__body__header__item.c-chrome__body__header__item--round .c-chrome__body__header__item__icon{
@@ -534,6 +523,6 @@ img.c-chrome__body__header__item__icon{
   background-color:inherit;
 }
 
-.c-chrome--dark .c-chrome__body__content__sidebar{
+.c-chrome.c-chrome--dark .c-chrome__body__content__sidebar{
   border-color:#04444d;
 }
