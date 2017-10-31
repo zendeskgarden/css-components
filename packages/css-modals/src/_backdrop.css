@@ -10,6 +10,8 @@
   --zd-backdrop--center__dialog-max-height: calc(100vh - (2 * var(--zd-dialog-margin)));
 }
 
+/* 1. Fix for Firefox dialog .is-open animation. */
+
 .l-backdrop {
   display: flex;
   position: fixed;
@@ -38,13 +40,16 @@
 }
 /* stylelint-enable no-unknown-animations */
 
+/* stylelint-disable time-min-milliseconds */
 .l-backdrop .c-dialog {
+  animation-delay: .01s; /* [1] */
   margin: var(--zd-dialog-margin);
   border-color: transparent;
   box-shadow: var(--zd-backdrop__dialog-box-shadow);
   max-height: var(--zd-backdrop--center__dialog-max-height);
   overflow: auto;
 }
+/* stylelint-enable time-min-milliseconds */
 
 .l-backdrop--center .c-dialog {
   margin: 0;
@@ -60,10 +65,6 @@
     bottom: auto;
     margin-bottom: var(--zd-backdrop--center__dialog-margin);
     max-height: none;
-  }
-
-  .l-backdrop .c-dialog.is-open {
-    transform-origin: 50% 0;
   }
 }
 

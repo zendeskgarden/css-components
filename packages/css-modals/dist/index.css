@@ -32,6 +32,8 @@
 }
 
 .l-backdrop .c-dialog{
+  -webkit-animation-delay:.01s;
+          animation-delay:.01s;
   margin:48px;
   border-color:transparent;
   box-shadow:0 20px 30px 0 rgba(0,0,0,.32);
@@ -49,11 +51,6 @@
     bottom:auto;
     margin-bottom:24px;
     max-height:none;
-  }
-
-  .l-backdrop .c-dialog.is-open{
-    -webkit-transform-origin:50% 0;
-            transform-origin:50% 0;
   }
 }
 
