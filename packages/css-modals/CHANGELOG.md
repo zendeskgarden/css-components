@@ -1,5 +1,10 @@
 # Change Log
 
+## [4.0.1] - 2017-11-01
+### Fixed (per [#19](https://github.com/zendeskgarden/css-modals/pull/19))
+- Centered repositioning animation glitch (Firefox).
+- Centered modal positioning (IE11).
+
 ## [4.0.0] - 2017-09-28
 ### Added
 - `.c-dialog--large` modifier.
@@ -62,6 +67,7 @@
 
 ## 0.1.0 - 2016-02-03
 
+[4.0.1]: https://github.com/zendeskgarden/css-modals/compare/v4.0.0...v4.0.1
 [4.0.0]: https://github.com/zendeskgarden/css-modals/compare/v3.0.1...v4.0.0
 [3.0.1]: https://github.com/zendeskgarden/css-modals/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/zendeskgarden/css-modals/compare/2.2.0...v3.0.0
