@@ -1,10 +1,32 @@
+function updateNavColor($nav, value) {
+  if (value) {
+    var color = tinycolor(value);
+
+    $nav
+      .toggleClass('c-chrome__nav--dark', color.isDark())
+      .toggleClass('c-chrome__nav--light', color.isLight())
+      .css('backgroundColor', color.toHexString());
+  }
+}
+
 $(document).ready(function() {
+  $('.js-color').change(function() {
+    var value = $(this).val();
+    var $nav = $('.c-chrome__nav:not(.c-playground .c-chrome__nav)');
+
+    if (value.toUpperCase() === $(this).attr('value').toUpperCase()) {
+      $nav.removeClass('c-chrome__nav--dark c-chrome__nav--light').css('backgroundColor', '');
+    } else {
+      updateNavColor($nav, value);
+    }
+  });
+
   $('.js-custom').click(function() {
     $('.c-chrome:not(.c-playground .c-chrome)').toggleClass('c-chrome--custom');
   });
 
   $('.js-expand').click(function() {
-    $('.c-chrome:not(.c-playground .c-chrome) .c-chrome__nav').toggleClass('c-chrome__nav--expanded');
+    $('.c-chrome__nav:not(.c-playground .c-chrome__nav)').toggleClass('c-chrome__nav--expanded');
   });
 
   $('.js-standalone').click(function() {
@@ -61,7 +83,4 @@ $(document).ready(function() {
   $(document).on('focus', '.c-chrome__body__header__item *', function(event) {
     event.stopPropagation();
   });
-
-  $('.c-chrome').toggleClass('c-chrome--dark', window.getUrlParameter('mode') === 'dark');
-  $('.c-chrome').toggleClass('is-rtl', window.getUrlParameter('dir') === 'rtl');
 });

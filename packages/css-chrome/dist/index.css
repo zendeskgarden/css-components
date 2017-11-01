@@ -526,3 +526,34 @@ img.c-chrome__body__header__item__icon{
 .c-chrome.c-chrome--dark .c-chrome__body__content__sidebar{
   border-color:#04444d;
 }
+
+.c-chrome__nav--dark{
+  background-color:#000;
+}
+
+.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
+  background-color:hsla(0,0%,100%,.3);
+}
+
+.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
+  color:#fff;
+}
+
+.c-chrome__nav--light{
+  background-color:#fff;
+  color:#333;
+}
+
+.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-focused{
+  -webkit-box-shadow:inset 0 0 0 3px rgba(0,0,0,.2);
+          box-shadow:inset 0 0 0 3px rgba(0,0,0,.2);
+}
+
+.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
+  background-color:rgba(0,0,0,.3);
+}
+
+.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
+  color:#333;
+  fill:#333;
+}
