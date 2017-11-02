@@ -15,9 +15,7 @@
     cursor: pointer;
   }
 
-  .c-txt__input--color::-webkit-color-swatch-wrapper {
-    padding: 0;
-  }
+  .c-txt__input--color::-webkit-color-swatch-wrapper { padding: 0; }
 
   .c-txt__input--color::-webkit-color-swatch {
     border: none;
@@ -29,8 +27,11 @@
     border-radius: 2px;
   }
 
-  .c-txt__input--color::-moz-focus-inner {
-    border: none;
+  .c-txt__input--color::-moz-focus-inner { border: none; }
+
+  .u-list-style-disc {
+    padding-left: 20px;
+    list-style: disc;
   }
   </style>
 </head>
@@ -84,19 +85,137 @@
   <main class="c-main c-main--page">
     <h1 class="c-main__title">Chrome</h1>
     <div class="c-main__body">
-      <div class="u-mb u-delta">
-        <a href="page.html" target="_blank"><i>Open full page Chrome in a separate window</i></a>
-      </div>
+      <p class="u-mb-lg">The <code class="c-code">.c-chrome</code> component
+      classes are used to style Zendesk product chrome: navigation, header and
+      content layout.
+      <a href="page.html" target="_blank"><i>Open full page Chrome in a separate window</i></a>.
+      Remember to apply the proper set of
+      <a href="http://garden.zendesk.com/favicons/">Garden Favicons</a> to your
+      product pages.</p>
 
       <div class="u-mb-lg">
-        <h2 class="c-main__subtitle u-gamma u-mb">Navigation
-          <span class="c-chk c-chk--toggle u-display-inline-block u-va-text-bottom u-ml-sm">
-            <input class="c-chk__input js-expand" id="nav.ctl.expand" type="checkbox">
-            <label class="c-chk__label" for="nav.ctl.expand">Expanded</label>
-          </span>
-        </h2>
-        <div class="c-txt c-txt--inline u-mb">
-          <input class="c-txt__input c-txt__input--color js-color" type="color" style="width:40px" value="#03363d">
+        <h2 class="c-main__subtitle u-gamma u-mb">Basic Structure</h2>
+        <p class="u-mb">The product chrome CSS classes describe the following
+        canonical structure. Although exact implementations will vary, be sure
+        to sequence the components as indicated so that tab order is consistent
+        from one product to the next.</p>
+        <ul class="u-list-style-disc u-mb">
+          <li>
+            <code>&lt;body class="</code><code class="c-code">.c-chrome</code><code>"&gt;</code>
+            <ul class="u-list-style-disc">
+              <li>
+                <code>&lt;nav class="</code><code class="c-code">.c-chrome__nav</code><code>"&gt;</code>
+                <ul class="u-list-style-disc">
+                  <li>
+                    <code>&lt;a class="</code><code class="c-code">.c-chrome__nav__item</code><code>"&gt;</code>
+                    <ul class="u-list-style-disc">
+                      <li>
+                        <code>&lt;svg class="</code><code class="c-code">.c-chrome__nav__item__icon</code><code>"&gt;</code>
+                      </li>
+                      <li>
+                        <code>&lt;span class="</code><code class="c-code">.c-chrome__nav__item__text</code><code>"&gt;</code>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code>&lt;a class="</code><code class="c-code">.c-chrome__nav__item</code><code>"&gt;</code>
+                  </li>
+                  <li>etc.</li>
+                </ul>
+              </li>
+              <li>
+                <code>&lt;nav class="</code><code class="c-code">.c-chrome__subnav</code><code>"&gt;</code>
+                <span>(optional)</span>
+                <ul class="u-list-style-disc">
+                  <li>
+                    <code>&lt;a class="</code><code class="c-code">.c-chrome__subnav__item</code><code>"&gt;</code>
+                    <ul class="u-list-style-disc">
+                      <li>
+                        <code>&lt;span class="</code><code class="c-code">.c-chrome__subnav__item__text</code><code>"&gt;</code>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code>&lt;a class="</code><code class="c-code">.c-chrome__subnav__item</code><code>"&gt;</code>
+                  </li>
+                  <li>etc.</li>
+                </ul>
+              </li>
+              <li>
+                <code>&lt;div class="</code><code class="c-code">.c-chrome__body</code><code>"&gt;</code>
+                <ul class="u-list-style-disc">
+                  <li>
+                    <code>&lt;header class="</code><code class="c-code">.c-chrome__body__header</code><code>"&gt;</code>
+                  </li>
+                  <ul class="u-list-style-disc">
+                    <li>
+                      <code>&lt;button class="</code><code class="c-code">.c-chrome__body__header__item</code><code>"&gt;</code>
+                      <ul class="u-list-style-disc">
+                        <li>
+                          <code>&lt;svg class="</code><code class="c-code">.c-chrome__body__header__item__icon</code><code>"&gt;</code>
+                        </li>
+                        <li>
+                          <code>&lt;span class="</code><code class="c-code">.c-chrome__body__header__item__text</code><code>"&gt;</code>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <code>&lt;button class="</code><code class="c-code">.c-chrome__body__header__item</code><code>"&gt;</code>
+                    </li>
+                    <li>etc.</li>
+                  </ul>
+                  <li>
+                    <code>&lt;div class="</code><code class="c-code">.c-chrome__body__content</code><code>"&gt;</code>
+                    <ul class="u-list-style-disc">
+                      <li>
+                        <code>&lt;aside class="</code><code class="c-code">.c-chrome__body__content__sidebar</code><code>"&gt;</code>
+                        <span>(optional)</span>
+                      </li>
+                      <li>
+                        <code>&lt;main class="</code><code class="c-code">.c-chrome__body__content__main</code><code>"&gt;</code>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="u-mb-xl">
+        <h2 class="c-main__subtitle u-gamma u-mb">Navigation</h2>
+        <p class="u-mb">The <code class="c-code">.c-chrome__nav</code> element
+        is the home for the logo and main product navigation items. In addition,
+        products may include a floating action button (FAB) in the nav. The nav
+        may receive a <code class="c-code">.c-chrome__nav--expanded</code>
+        modifier to show navigation item text. Otherwise, the text is clipped
+        from view but accessible for screenreaders.</p>
+        <div class="u-mb-lg u-ml">
+          <div class="c-chk c-chk--toggle u-mb">
+            <input class="c-chk__input js-expand" id="ctl.expand" type="checkbox">
+            <label class="c-chk__label" for="ctl.expand">Expanded</label>
+            <small class="c-chk__hint">
+              Toggle the
+              <code class="c-code">.c-chrome__nav--expanded</code>
+              class on the nav bars below.</small>
+          </div>
+          <div class="c-txt c-txt--inline">
+            <input class="c-txt__input c-txt__input--color js-color" id="ctl.color" type="color" style="width:40px" value="#03363d"
+            ><label class="c-txt__label u-mh-sm" for="ctl.color">Color</label>
+            <small class="c-txt__hint u-mt-sm-" style="margin-left:50px">
+              The default nav component is styled with Zendesk's Algae brand
+              color. Select an alternate brand color to apply either
+              <code class="c-code">.c-chrome__nav--dark</code> or
+              <code class="c-code">.c-chrome__nav--light</code> in conjunction
+              with an inline background-color override.
+            </small>
+            <div class="c-txt__message" style="margin-left:50px">
+              The demo uses
+              <a href="http://bgrins.github.io/TinyColor/">TinyColor</a>
+              to determine whether the selected color is dark or light.
+            </div>
+          </div>
         </div>
         <div class="l-grid u-mb-lg">
           <div class="l-grid__item u-1/3">
@@ -325,13 +444,24 @@
         </div>
       </div>
 
-      <div class="u-mb-lg">
-        <h2 class="c-main__subtitle u-gamma u-mb">Header
-          <span class="c-chk c-chk--toggle u-display-inline-block u-va-text-bottom u-ml-sm">
-            <input class="c-chk__input js-standalone" checked id="nav.ctl.standalone" type="checkbox">
-            <label class="c-chk__label" for="nav.ctl.standalone">Standalone</label>
-          </span>
-        </h2>
+      <div class="u-mb-xl">
+        <h2 class="c-main__subtitle u-gamma u-mb">Header</h2>
+        <p class="u-mb">The <code class="c-code">.c-chrome__body__header</code>
+        element contains header menu items. The header may be displayed
+        standalone – with a product logo – or along with the side navigation
+        shown above.</p>
+        <div class="u-mb-lg u-ml">
+          <div class="c-chk c-chk--toggle u-mb">
+            <input checked class="c-chk__input js-standalone" id="ctl.standalone" type="checkbox">
+            <label class="c-chk__label" for="ctl.standalone">Standalone</label>
+            <small class="c-chk__hint">
+              Toggle the
+              <code class="c-code">.c-chrome__body__header--standalone</code>
+              class on the headers below.
+            </small>
+          </div>
+        </div>
+
         <div class="u-mb">
           <div class="c-chrome c-chrome--demo u-mb">
             <div class="c-chrome__body">
@@ -754,6 +884,25 @@
         </div>
       </div>
 
+      <div class="u-mb-lg">
+        <h2 class="c-main__subtitle u-gamma u-mb">Modification</h2>
+        <p class="u-mb">In addition to the navigation and header modifiers
+        shown above, the following BEM classes are available to modify various
+        components of the chrome.</p>
+        <ul class="u-list-style-disc">
+          <li class="u-mb-sm"><code class="c-code">.c-chrome--dark</code> – toggles "dark mode" styling (via settings menu).</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome.is-rtl</code> – toggles RTL layout (via settings menu).</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome--custom</code> – toggles accent overrides (via settings menu).</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item--logo</code> – style the product logo shown as the top item in the nav.</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item.is-current</code> – indicate which item is current in the nav.</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--logo</code> – style the product logo shown as the first item in the header (only displayed in standalone).</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--grow</code> – grow a flex item in the header to take as much space as possible (i.e. breadcrumbs).</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--max</code> – maximize the height for a header item (i.e. contains a search input).</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--round</code> – round the border radius for a header item (i.e. user icon).</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item__text.is-clipped</code> – clip text (but leave accessible to screenreaders) for an icon-only header item.</li>
+        </ul>
+      </div>
+
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
@@ -796,6 +945,19 @@
       </svg>
     </button>
   </nav>
+  <!--
+  <nav class="c-chrome__subnav">
+    <a class="c-chrome__subnav__item is-current" href>
+      <span class="c-chrome__subnav__item__text">Item One</span>
+    </a>
+    <a class="c-chrome__subnav__item" href>
+      <span class="c-chrome__subnav__item__text">Item Two</span>
+    </a>
+    <a class="c-chrome__subnav__item" href>
+      <span class="c-chrome__subnav__item__text">Item Three</span>
+    </a>
+  </nav>
+  -->
   <div class="c-chrome__body">
     <header class="c-chrome__body__header">
       <button class="c-chrome__body__header__item">

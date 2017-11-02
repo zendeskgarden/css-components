@@ -30,11 +30,7 @@ $(document).ready(function() {
   });
 
   $('.js-standalone').click(function() {
-    var $parent = $(this).closest('div');
-
-    if ($parent.length) {
-      $parent.find('.c-chrome__body__header').toggleClass('c-chrome__body__header--standalone');
-    }
+    $('.c-chrome__body__header:not(.c-playground .c-chrome__body__header)').toggleClass('c-chrome__body__header--standalone');
   });
 
   $(document).on('click', '.c-chrome__nav__item:not(.c-chrome__nav__item--logo)', function() {
