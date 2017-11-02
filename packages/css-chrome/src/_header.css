@@ -40,8 +40,9 @@
   --zd-chrome-space: 0 4px;
 }
 
-/* 1. Button element reset.
- * 2. Anchor reset. */
+/* 1. Reset the stacking context for embedded menus.
+ * 2. Button element reset.
+ * 3. Anchor reset. */
 
 .c-chrome__body__header {
   display: flex;
@@ -67,10 +68,10 @@
   justify-content: center;
   order: var(--zd-chrome__body__header__item-order);
   transition: var(--zd-chrome__body__header__item-transition);
-  z-index: 0;
+  z-index: 0; /* [1] */
   margin: var(--zd-chrome__body__header__item-margin);
-  border: none; /* [1] */
-  background: transparent; /* [1] */
+  border: none; /* [2] */
+  background: transparent; /* [2] */
   padding: var(--zd-chrome__body__header__item-padding);
   min-width: var(--zd-chrome__body__header__item-size);
   height: var(--zd-chrome__body__header__item-size);
@@ -81,12 +82,12 @@
 .c-chrome__body__header__item,
 .c-chrome__body__header__item:hover,
 .c-chrome__body__header__item:focus {
-  text-decoration: none; /* [2] */
-  color: inherit; /* [2] */
+  text-decoration: none; /* [3] */
+  color: inherit; /* [3] */
 }
 
 .c-chrome__body__header__item:focus {
-  outline: none; /* [2] */
+  outline: none; /* [3] */
 }
 
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo) {
