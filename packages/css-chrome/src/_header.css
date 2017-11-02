@@ -1,4 +1,5 @@
 @import '@zendesk/garden-css-variables';
+@import '_variables';
 @import '_selectors';
 
 :root {
@@ -178,11 +179,6 @@ img.c-chrome__body__header__item__icon {
 
 .c-chrome__body__header__item__text.is-clipped,
 .c-chrome__body__header__item--logo .c-chrome__body__header__item__text {
-  position: absolute;
   margin: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  white-space: nowrap;
+  @apply --zd-chrome__item__text-clipped;
 }

@@ -114,10 +114,10 @@
   height:26px;
 }
 .c-chrome__nav__item__text{
-  position:absolute;
   -webkit-box-ordinal-group:2;
       -ms-flex-order:1;
           order:1;
+  position:absolute;
   clip:rect(1px,1px,1px,1px);
   width:1px;
   height:1px;
@@ -409,8 +409,8 @@ img.c-chrome__body__header__item__icon{
   margin:0 4px;
 }
 .c-chrome__body__header__item--logo .c-chrome__body__header__item__text,.c-chrome__body__header__item__text.is-clipped{
-  position:absolute;
   margin:0;
+  position:absolute;
   clip:rect(1px,1px,1px,1px);
   width:1px;
   height:1px;

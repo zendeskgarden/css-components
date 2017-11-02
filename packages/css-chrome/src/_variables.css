@@ -21,5 +21,14 @@
 
   --zd-chrome__body__header__item--logo-order: 0;
   --zd-chrome__body__header__item-order: 1;
+
+  --zd-chrome__item__text-clipped: {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 /* stylelint-enable custom-property-empty-line-before */

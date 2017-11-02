@@ -96,13 +96,8 @@
 }
 
 .c-chrome__nav__item__text {
-  position: absolute;
   order: var(--zd-chrome__nav__item__text-order);
-  clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  white-space: nowrap;
+  @apply --zd-chrome__item__text-clipped;
 }
 
 .c-chrome__nav__fab {
