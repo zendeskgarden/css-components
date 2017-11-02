@@ -1,7 +1,25 @@
 @import '@zendesk/garden-css-variables';
 
+/* stylelint-disable custom-property-empty-line-before */
 :root {
   --zd-chrome-accent-color: var(--zd-color-pelorous);
   --zd-chrome__nav-background-color: var(--zd-color-algae);
   --zd-chrome__nav-color: var(--zd-color-white);
+
+  --zd-chrome__nav-order: -1;
+  --zd-chrome__subnav-order: 0;
+  --zd-chrome__body-order: 1;
+
+  --zd-chrome__nav__item--logo-order: 0;
+  --zd-chrome__nav__item-order: 1;
+
+  --zd-chrome__nav__item__icon-order: 0;
+  --zd-chrome__nav__item__text-order: 1;
+
+  --zd-chrome__body__content__sidebar-order: 0;
+  --zd-chrome__body__content__main-order: 1;
+
+  --zd-chrome__body__header__item--logo-order: 0;
+  --zd-chrome__body__header__item-order: 1;
 }
+/* stylelint-enable custom-property-empty-line-before */

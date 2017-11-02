@@ -18,6 +18,10 @@
 }
 
 /* stylelint-disable max-line-length */
+.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-active {
+  background-color: var(--zd-chrome__nav__item-hovered-background-color);
+}
+
 .c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-current {
   background-color: var(--zd-chrome__nav--dark__item-current-background-color);
 }
@@ -39,6 +43,10 @@
 
 .c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-focused {
   box-shadow: var(--zd-chrome__nav--light__item-focused-box-shadow);
+}
+
+.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-active {
+  background-color: var(--zd-chrome__nav__item-hovered-background-color);
 }
 
 .c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-current {

@@ -65,6 +65,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
+  order: var(--zd-chrome__body__header__item-order);
   transition: var(--zd-chrome__body__header__item-transition);
   z-index: 0;
   margin: var(--zd-chrome__body__header__item-margin);
@@ -117,6 +118,7 @@
 
 .c-chrome__body__header__item--logo {
   display: none;
+  order: var(--zd-chrome__body__header__item--logo-order);
   margin-right: auto;
   margin-left: var(--zd-chrome__body__header__item--logo-margin);
   border-right: var(--zd-chrome__body__header__item--logo-border);

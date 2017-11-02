@@ -1,4 +1,5 @@
 @import '@zendesk/garden-css-variables';
+@import '_variables';
 
 :root {
   --zd-chrome-font-family: var(--zd-font-family-system);
@@ -29,7 +30,7 @@
 
 .c-chrome__body {
   flex: 1;
-  order: 1;
+  order: var(--zd-chrome__body-order);
   background-color: var(--zd-chrome__body-color);
 }
 
@@ -42,14 +43,14 @@
 }
 
 .c-chrome__body__content__main {
-  order: 1;
+  order: var(--zd-chrome__body__content__main-order);
   background-color: var(--zd-chrome__body__content__main-background-color);
   overflow: auto;
 }
 
 .c-chrome__body__content__sidebar {
   flex-shrink: 0;
-  order: 0;
+  order: var(--zd-chrome__body__content__sidebar-order);
   box-sizing: border-box;
   border-right: var(--zd-chrome__body__content__sidebar-border);
   width: var(--zd-chrome__body__content__sidebar-width);

@@ -44,9 +44,11 @@
 /* 1. Anchor reset. */
 
 .c-chrome__nav {
+  display: flex;
   position: relative;
+  flex-direction: column;
   flex-shrink: 0;
-  order: -1;
+  order: var(--zd-chrome__nav-order);
   background-color: var(--zd-chrome__nav-background-color);
   width: var(--zd-chrome__nav-width);
   color: var(--zd-chrome__nav-color);
@@ -57,12 +59,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  order: var(--zd-chrome__nav__item-order);
   transition: var(--zd-chrome__nav__item-transition);
   opacity: var(--zd-chrome__nav__item-opacity);
   height: var(--zd-chrome__nav__item-height);
 }
 
 .c-chrome__nav__item--logo {
+  order: var(--zd-chrome__nav__item--logo-order);
   fill: var(--zd-chrome__nav-color);
 }
 
@@ -85,7 +89,7 @@
 }
 
 .c-chrome__nav__item__icon {
-  order: 0;
+  order: var(--zd-chrome__nav__item__icon-order);
   border-radius: var(--zd-chrome__nav__item__icon-border-radius);
   width: var(--zd-chrome__nav__item__icon-size);
   height: var(--zd-chrome__nav__item__icon-size);
@@ -93,7 +97,7 @@
 
 .c-chrome__nav__item__text {
   position: absolute;
-  order: 1;
+  order: var(--zd-chrome__nav__item__text-order);
   clip: rect(1px, 1px, 1px, 1px);
   width: 1px;
   height: 1px;

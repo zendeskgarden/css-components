@@ -1,4 +1,5 @@
 @import '@zendesk/garden-css-variables';
+@import '_variables';
 @import '_selectors';
 
 :root {
@@ -26,7 +27,7 @@
 
 .c-chrome__subnav {
   flex-direction: column;
-  order: 0;
+  order: var(--zd-chrome__subnav-order);
   background-color: var(--zd-chrome__subnav-background-color);
   padding: var(--zd-chrome__subnav-padding);
   min-width: var(--zd-chrome__subnav-min-width);
