@@ -316,6 +316,7 @@
   z-index:0;
   margin:0 12px;
   border:none;
+  border-radius:4px;
   background:transparent;
   padding:0 4px;
   min-width:30px;
@@ -329,9 +330,6 @@
 }
 .c-chrome__body__header__item:focus{
   outline:none;
-}
-.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo){
-  border-radius:4px;
 }
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover{
   color:#03363d;
@@ -369,6 +367,7 @@
   fill:#03363d;
 }
 .c-chrome__body__header__item--logo,.c-chrome__body__header__item--max{
+  border-radius:0;
   height:100%;
 }
 .c-chrome__body__header--standalone .c-chrome__body__header__item--logo{
@@ -381,6 +380,10 @@
   margin-left:auto;
   border-right:none;
   border-left:1px solid #ddd;
+}
+.c-chrome__body__header__item.c-chrome__body__header__item--max.is-focused{
+  -webkit-box-shadow:inset 0 3px 0 0 rgba(48,170,188,.4),3px 0 0 0 rgba(48,170,188,.4),inset 0 -3px 0 0 rgba(48,170,188,.4),-3px 0 0 0 rgba(48,170,188,.4);
+          box-shadow:inset 0 3px 0 0 rgba(48,170,188,.4),3px 0 0 0 rgba(48,170,188,.4),inset 0 -3px 0 0 rgba(48,170,188,.4),-3px 0 0 0 rgba(48,170,188,.4);
 }
 .c-chrome__body__header__item__icon{
   -webkit-transition:-webkit-transform .25s ease-in-out;

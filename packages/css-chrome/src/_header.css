@@ -23,9 +23,10 @@
     box-shadow .1s ease-in-out,
     color .1s ease-in-out;
   --zd-chrome__body__header__item-active-color: var(--zd-color-algae);
+  --zd-chrome__body__header__item-focused-box-shadow-color: color(var(--zd-chrome-accent-color) alpha(40%));
   --zd-chrome__body__header__item-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-chrome-accent-color) alpha(40%));
+    var(--zd-chrome__body__header__item-focused-box-shadow-color);
   --zd-chrome__body__header__item-hovered-color: var(--zd-chrome__body__header__item-active-color);
   --zd-chrome__body__header__item__icon-margin: var(--zd-chrome__body__header__item-padding);
   --zd-chrome__body__header__item__icon-size: 14px;
@@ -38,6 +39,11 @@
   --zd-chrome__body__header__item--logo-margin: calc(var(--zd-chrome__body__header-padding-horizontal) * -1);
   --zd-chrome__body__header__item--logo-width: var(--zd-chrome__nav-width);
   --zd-chrome__body__header__item--logo__icon-size: var(--zd-chrome__nav__item__icon-size);
+  --zd-chrome__body__header__item--max-focused-box-shadow:
+    inset 0 3px 0 0 var(--zd-chrome__body__header__item-focused-box-shadow-color),
+    3px 0 0 0 var(--zd-chrome__body__header__item-focused-box-shadow-color),
+    inset 0 -3px 0 0 var(--zd-chrome__body__header__item-focused-box-shadow-color),
+    -3px 0 0 0 var(--zd-chrome__body__header__item-focused-box-shadow-color);
   --zd-chrome-space: 0 4px;
 }
 
@@ -72,6 +78,7 @@
   z-index: 0; /* [1] */
   margin: var(--zd-chrome__body__header__item-margin);
   border: none; /* [2] */
+  border-radius: var(--zd-chrome__body__header__item-border-radius);
   background: transparent; /* [2] */
   padding: var(--zd-chrome__body__header__item-padding);
   min-width: var(--zd-chrome__body__header__item-size);
@@ -89,10 +96,6 @@
 
 .c-chrome__body__header__item:focus {
   outline: none; /* [3] */
-}
-
-.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo) {
-  border-radius: var(--zd-chrome__body__header__item-border-radius);
 }
 
 /* stylelint-disable max-line-length */
@@ -132,6 +135,7 @@
 
 .c-chrome__body__header__item--logo,
 .c-chrome__body__header__item--max {
+  border-radius: 0;
   height: 100%;
 }
 
@@ -145,6 +149,12 @@
   border-right: none;
   border-left: var(--zd-chrome__body__header__item--logo-border);
 }
+
+/* stylelint-disable max-line-length */
+.c-chrome__body__header__item.c-chrome__body__header__item--max:--chrome-focused {
+  box-shadow: var(--zd-chrome__body__header__item--max-focused-box-shadow);
+}
+/* stylelint-enable max-line-length */
 
 .c-chrome__body__header__item__icon {
   transition: var(--zd-chrome__body__header__item__icon-transition);
