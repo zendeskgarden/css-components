@@ -99,22 +99,13 @@
 }
 
 /* stylelint-disable max-line-length */
-.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-hovered {
-  color: var(--zd-chrome__body__header__item-hovered-color);
-}
-
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-focused {
   box-shadow: var(--zd-chrome__body__header__item-focused-box-shadow);
-}
-
-.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-active {
-  color: var(--zd-chrome__body__header__item-active-color);
 }
 
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active:--chrome-focused {
   box-shadow: none;
 }
-/* stylelint-enable max-line-length */
 
 .c-chrome__body__header__item--grow {
   flex: 1;
@@ -150,11 +141,9 @@
   border-left: var(--zd-chrome__body__header__item--logo-border);
 }
 
-/* stylelint-disable max-line-length */
 .c-chrome__body__header__item.c-chrome__body__header__item--max:--chrome-focused {
   box-shadow: var(--zd-chrome__body__header__item--max-focused-box-shadow);
 }
-/* stylelint-enable max-line-length */
 
 .c-chrome__body__header__item__icon {
   transition: var(--zd-chrome__body__header__item__icon-transition);
@@ -176,12 +165,10 @@ img.c-chrome__body__header__item__icon {
   height: var(--zd-chrome__body__header__item--img__icon-size);
 }
 
-/* stylelint-disable max-line-length */
 .c-chrome__body__header__item.c-chrome__body__header__item--round,
 .c-chrome__body__header__item.c-chrome__body__header__item--round .c-chrome__body__header__item__icon {
   border-radius: 100px;
 }
-/* stylelint-enable max-line-length */
 
 .c-chrome__body__header__item__text {
   margin: var(--zd-chrome__body__header__item__text-margin);
@@ -192,3 +179,14 @@ img.c-chrome__body__header__item__icon {
   margin: 0;
   @apply --zd-chrome__item__text-clipped;
 }
+
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-hovered .c-chrome__body__header__item__icon,
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-hovered .c-chrome__body__header__item__text {
+  color: var(--zd-chrome__body__header__item-hovered-color);
+}
+
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-active .c-chrome__body__header__item__icon,
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-active .c-chrome__body__header__item__text {
+  color: var(--zd-chrome__body__header__item-active-color);
+}
+/* stylelint-enable max-line-length */

@@ -331,15 +331,9 @@
 .c-chrome__body__header__item:focus{
   outline:none;
 }
-.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover{
-  color:#03363d;
-}
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-focused{
   -webkit-box-shadow:0 0 0 3px rgba(48,170,188,.4);
           box-shadow:0 0 0 3px rgba(48,170,188,.4);
-}
-.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active{
-  color:#03363d;
 }
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active.is-focused{
   -webkit-box-shadow:none;
@@ -420,6 +414,9 @@ img.c-chrome__body__header__item__icon{
   overflow:hidden;
   white-space:nowrap;
 }
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__text{
+  color:#03363d;
+}
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--chat,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat{
   color:#f79a3e;
 }
@@ -461,7 +458,7 @@ img.c-chrome__body__header__item__icon{
   border-color:#04444d;
   fill:#fff;
 }
-.c-chrome--dark .c-chrome__body__content,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover{
+.c-chrome--dark .c-chrome__body__content,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__text,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__text,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__text,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__text{
   color:#fff;
 }
 .c-chrome--dark .c-chrome__body__content__main{
