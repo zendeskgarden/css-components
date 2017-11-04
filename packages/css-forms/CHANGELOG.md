@@ -1,12 +1,16 @@
 # Change Log
 
+## [3.3.2] - 2017-11-04
+### Fixed (per [#45](https://github.com/zendeskgarden/css-forms/pull/45))
+- Align select chevron to top in multi-line dropdown.
+
 ## [3.3.1] - 2017-10-12
 ### Fixed
-- Bump version to trigger failed deploy
+- Bump version to trigger failed deploy.
 
 ## [3.3.0] - 2017-10-12
-### Added (per [#44](https://github.com/zendeskgarden/css-forms/pull/44))
-- Improve readability of disabled text
+### Changed (per [#44](https://github.com/zendeskgarden/css-forms/pull/44))
+- Improve readability of disabled text.
 
 ## [3.2.2] - 2017-09-19
 ### Fixed
@@ -155,6 +159,7 @@
 ### Added
 - `.c-chk` component.
 
+[3.3.2]: https://github.com/zendeskgarden/css-forms/compare/v3.3.1...v3.3.2
 [3.3.1]: https://github.com/zendeskgarden/css-forms/compare/v3.3.0...v3.3.1
 [3.3.0]: https://github.com/zendeskgarden/css-forms/compare/v3.2.2...v3.3.0
 [3.2.2]: https://github.com/zendeskgarden/css-forms/compare/v3.2.1...v3.2.2
