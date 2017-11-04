@@ -1,5 +1,5 @@
 :root {
-  --zd-range__slider-height: calc(var(--zd-range-track-margin) * 2 + var(--zd-range-track-height));
+  --zd-range__slider-height: calc(calc(var(--zd-range-track-margin-y) * 2) + var(--zd-range-track-height));
   --zd-range__slider__track-margin-top: calc(var(--zd-range-track-height) / 2 * -1);
   --zd-range__slider__track-padding: 0 calc(var(--zd-range-thumb-size) / 2);
   --zd-range__slider__track__rail-margin: 0 calc(var(--zd-range-thumb-size) / 2) 0 calc(var(--zd-range-thumb-size) / 2 * -1);

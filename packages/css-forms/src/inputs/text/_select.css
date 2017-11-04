@@ -40,7 +40,7 @@
   top: 0;
   right: 0;
   width: var(--zd-txt__input--select__chevron-width);
-  height: 100%;
+  height: var(--zd-txt__input-height);
   content: '';
 }
 
