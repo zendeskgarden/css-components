@@ -450,10 +450,14 @@
         element contains header menu items. The
         <a href="http://garden.zendesk.com/css-menus/"><code class="c-code">.c-menu</code></a>
         components demonstrated below are packaged separately from the chrome
-        components, however, menus must be positioned with respect to their
-        header menu items precisely as shown.  The header may be displayed
-        standalone – with a product logo – or along with the side navigation
-        shown above.</p>
+        components. Menus must be positioned with respect to their header menu
+        items precisely as shown.  The header may be displayed standalone
+        – with a product logo – or along with the side navigation shown above.
+        By default, the <code class="c-code">.c-chrome__body__header__item</code>
+        elements contained in the header are designed to be focusable. However,
+        they may also be used as containers for other focusable elements, in
+        which case they provide consistent item spacing. See the modifier
+        classes below for more details.</p>
         <div class="u-mb-lg u-ml">
           <div class="c-chk c-chk--toggle u-mb">
             <input checked class="c-chk__input js-standalone" id="ctl.standalone" type="checkbox">
@@ -490,7 +494,7 @@
                     <li class="c-menu__item" role="menuitem">Search</li>
                   </ul>
                 </button>
-                <div class="c-chrome__body__header__item c-chrome__body__header__item--grow"></div>
+                <div class="c-chrome__body__header__item c-chrome__body__header__item--max-x"></div>
                 <button class="c-chrome__body__header__item">
                   <svg class="c-chrome__body__header__item__icon">
                     <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-search" />
@@ -629,7 +633,7 @@
                   </svg>
                   <span class="c-chrome__body__header__item__text">Zendesk Guide</span>
                 </div>
-                <div class="c-chrome__body__header__item c-chrome__body__header__item--grow">
+                <div class="c-chrome__body__header__item c-chrome__body__header__item--max-x">
                   <ul>
                     <li class="u-display-inline-block"><a href>Bread</a></li>
                     <li class="u-display-inline-block">
@@ -852,7 +856,7 @@
                   </svg>
                   <span class="c-chrome__body__header__item__text">Zendesk Message</span>
                 </div>
-                <div class="c-chrome__body__header__item c-chrome__body__header__item--max">
+                <div class="c-chrome__body__header__item c-chrome__body__header__item--max-y">
                   <div class="c-txt c-txt--sm">
                     <input class="c-txt__input" placeholder="Search" type="text">
                   </div>
@@ -900,8 +904,8 @@
           <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item--logo</code> – style the product logo shown as the top item in the nav.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item.is-current</code> – indicate which item is current in the nav.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--logo</code> – style the product logo shown as the first item in the header (only displayed in standalone).</li>
-          <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--grow</code> – grow a flex item in the header to take as much space as possible (i.e. breadcrumb container or an empty element separating starting items from ending items).</li>
-          <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--max</code> – maximize the height for a header item (i.e. contains a search input).</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--max-x</code> – horizontally maximize a flex item in the header to take as much space as possible (i.e. breadcrumb container or an empty element separating starting items from ending items).</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--max-y</code> – vertically maximize the height for a header item (i.e. contains a search input).</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--round</code> – round the border radius for a header item (i.e. user icon).</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item__text.is-clipped</code> – clip text (but leave accessible to screenreaders) for an icon-only header item.</li>
         </ul>
