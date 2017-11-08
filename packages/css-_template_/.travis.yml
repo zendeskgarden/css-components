@@ -23,8 +23,13 @@ before_deploy:
   - npm config set email $ARTIFACTORY_EMAIL
 
 deploy:
-  provider: script
-  script: npm publish
-  on:
-    branch: master
-    tags: true
+  - provider: pages
+    github_token: $GITHUB_TOKEN
+    on:
+      all_branches: true
+
+  - provider: script
+    script: npm publish
+    on:
+      branch: master
+      tags: true
