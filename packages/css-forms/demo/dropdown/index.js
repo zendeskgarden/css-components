@@ -8,9 +8,9 @@ $(document).ready(function() {
 
     if ($menu.hasClass('is-open')) {
       $menu.parent('.u-position-relative').css('zIndex', 1);
-      $menu.show();
+      $menu.attr('aria-hidden', false);
     } else {
-      $menu.hide();
+      $menu.attr('aria-hidden', true);
       $menu.parent('.u-position-relative').css('zIndex', '');
     }
 
@@ -19,7 +19,7 @@ $(document).ready(function() {
     var $menu = $(this).parent().siblings('.c-menu');
 
     $(this).removeClass('is-open');
-    $menu.removeClass('is-open').hide();
+    $menu.removeClass('is-open').attr('aria-hidden', true);
     $menu.parent('.u-position-relative').css('zIndex', '');
   });
 

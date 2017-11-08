@@ -1,9 +1,10 @@
 /* stylelint-disable no-unsupported-browser-features */
 @import '@zendesk/garden-css-variables';
+@import '../../_variables';
 
 :root {
   --zd-range-margin: calc((var(--zd-range-thumb-size) - var(--zd-range-track-height)) / 2);
-  --zd-range-thumb-background-color: var(--zd-color-pelorous);
+  --zd-range-thumb-background-color: var(--zd-forms-accent-color);
   --zd-range-thumb-border: 3px solid var(--zd-range-thumb-background-color);
   --zd-range-thumb-border-radius: 100%;
   --zd-range-thumb-box-shadow:

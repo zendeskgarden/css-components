@@ -26,6 +26,7 @@
 .c-txt--sm .c-txt__input--select:not(select)::before,
 .c-txt--sm select.c-txt__input--select {
   background-position: var(--zd-txt--sm__input--select__chevron-background-position);
+  height: var(--zd-txt--sm__input-height);
 }
 
 .c-txt--sm.is-rtl .c-txt__input--select {

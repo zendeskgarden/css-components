@@ -1,11 +1,6 @@
 :root {
   --zd-chk--toggle-background-color: var(--zd-color-aluminum);
   --zd-chk--toggle-background-image: svg-load('14-circle.svg', color: var(--zd-color-white));
-  --zd-chk--toggle-background:
-    no-repeat
-    10%
-    var(--zd-chk--toggle-background-image)
-    var(--zd-chk--toggle-background-color);
   --zd-chk--toggle-active-background-color: color(var(--zd-chk--toggle-background-color) blackness(+10%));
   --zd-chk--toggle-checked-active-background-color: var(--zd-chk-checked-active-background-color);
   --zd-chk--toggle-disabled-background-color: var(--zd-chk-disabled-background-color);
@@ -44,7 +39,10 @@
   margin-top: 0;
   border: none;
   border-radius: 100px;
-  background: var(--zd-chk--toggle-background);
+  background-color: var(--zd-chk--toggle-background-color);
+  background-image: var(--zd-chk--toggle-background-image);
+  background-position: 10%;
+  background-size: auto;
   width: var(--zd-chk--toggle-width);
   height: var(--zd-chk--toggle-height);
 }
@@ -52,7 +50,6 @@
 .c-chk--toggle:--chk-checked::before {
   background-image: var(--zd-chk--toggle-background-image);
   background-position: 90%;
-  background-size: auto;
 }
 
 .c-chk--toggle:--chk-active::before {

@@ -14,6 +14,7 @@
   --zd-chk__label-spacing: 8px;
   --zd-chk__label-padding: calc(var(--zd-chk-size) + var(--zd-chk__label-spacing));
   --zd-chk__label-top: var(--zd-spacing-sm);
+  --zd-chk__message-margin-top: 4px;
 }
 
 /* 1. Reset for <fieldset> element.
@@ -63,11 +64,19 @@
   border: var(--zd-chk-border);
   border-radius: var(--zd-chk-border-radius);
   background-color: var(--zd-chk-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
   width: var(--zd-chk-size);
   height: var(--zd-chk-size);
   box-sizing: border-box;
   color: inherit;
   content: '';
+}
+
+.c-chk__label + .c-chk__message {
+  display: block;
+  margin-top: var(--zd-chk__message-margin-top);
 }
 
 .c-chk--nolabel .c-chk__label {

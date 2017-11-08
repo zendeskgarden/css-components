@@ -1,25 +1,23 @@
 /* stylelint-disable at-rule-empty-line-before, max-line-length, no-descending-specificity */
 @import '@zendesk/garden-css-variables';
+@import '../../_variables';
+@import '_selectors';
 
 :root {
   --zd-chk-active-background-color: color(var(--zd-color-black) alpha(5%));
-  --zd-chk-active-border-color: var(--zd-color-pelorous);
+  --zd-chk-active-border-color: var(--zd-forms-accent-color);
   --zd-chk-active-transition:
     border-color .1s ease-in-out,
     background-color .1s ease-in-out,
     background-image .1s ease-in-out,
     color .1s ease-in-out;
-  --zd-chk-checked-background-color: var(--zd-color-pelorous);
-  --zd-chk-checked-background:
-    no-repeat
-    center/100%
-    svg-load('14-checkmark.svg', color: var(--zd-color-white))
-    var(--zd-chk-checked-background-color);
+  --zd-chk-checked-background-color: var(--zd-forms-accent-color);
+  --zd-chk-checked-background-image: svg-load('14-checkmark.svg', color: var(--zd-color-white));
   --zd-chk-checked-border-color: var(--zd-chk-checked-background-color);
   --zd-chk-checked-active-background-color: color(var(--zd-chk-checked-background-color) blackness(+10%));
   --zd-chk-checked-active-border-color: var(--zd-chk-checked-active-background-color);
-  --zd-chk-disabled-background-color: var(--zd-color-gainsboro);
-  --zd-chk-focused-border-color: var(--zd-color-pelorous);
+  --zd-chk-disabled-background-color: var(--zd-forms-disabled-background-color);
+  --zd-chk-focused-border-color: var(--zd-forms-accent-color);
   --zd-chk-focused-box-shadow:
     0 0 0 3px
     color(var(--zd-chk-focused-border-color) alpha(40%));
@@ -27,38 +25,23 @@
   --zd-chk-indeterminate-background-image: svg-load('14-dash.svg', color: var(--zd-color-white));
 }
 
-/* 1. No `.c-chk__input:focus` styling, since it prevents mimicking
- *    "focus-on-keyboard; blur-on-mouse" browser behavior.
- * 2. Class-chain specificity hack. */
-
-@custom-selector :--chk-checked /* [2] */
-  .c-chk.is-checked.is-checked .c-chk__label,
-  .c-chk .c-chk__input:checked ~ .c-chk__label;
-
-:--chk-checked::before,
-:--chk-indeterminate::before {
-  border-color: var(--zd-chk-checked-border-color);
-  background: var(--zd-chk-checked-background);
+:--chk-checked::before {
+  background-image: var(--zd-chk-checked-background-image);
 }
-
-@custom-selector :--chk-indeterminate
-  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate .c-chk__label,
-  .c-chk:not(.c-chk--radio):not(.c-chk--toggle) .c-chk__input:indeterminate ~ .c-chk__label;
 
 :--chk-indeterminate::before {
   background-image: var(--zd-chk-indeterminate-background-image);
 }
 
-@custom-selector :--chk-hovered
-  .c-chk.is-hovered .c-chk__label,
-  .c-chk .c-chk__label:hover;
+:--chk-checked-enabled::before,
+:--chk-indeterminate-enabled::before {
+  border-color: var(--zd-chk-checked-border-color);
+  background-color: var(--zd-chk-checked-background-color);
+}
 
 :--chk-hovered::before {
   border-color: var(--zd-chk-hovered-border-color);
 }
-
-@custom-selector :--chk-focused /* [1] */
-  .c-chk.is-focused .c-chk__label;
 
 :--chk-focused::before {
   outline: none;
@@ -66,35 +49,17 @@
   box-shadow: var(--zd-chk-focused-box-shadow);
 }
 
-@custom-selector :--chk-active /* [2] */
-  .c-chk.is-active.is-active .c-chk__label,
-  .c-chk .c-chk__label:active.c-chk__label:active;
-
 :--chk-active::before {
   transition: var(--zd-chk-active-transition);
   border-color: var(--zd-chk-active-border-color);
   background-color: var(--zd-chk-active-background-color);
 }
 
-@custom-selector :--chk-checked-active
-  .c-chk.is-checked.is-checked.is-active:not(.is-disabled) .c-chk__label,
-  .c-chk.is-active .c-chk__input:enabled:checked ~ .c-chk__label,
-  .c-chk:not(.is-disabled) .c-chk__input:enabled:checked ~ .c-chk__label:active;
-
-@custom-selector :--chk-indeterminate-active
-  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate.is-active:not(.is-disabled) .c-chk__label,
-  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-active .c-chk__input:enabled:indeterminate ~ .c-chk__label,
-  .c-chk:not(.c-chk--radio):not(.c-chk--toggle):not(.is-disabled) .c-chk__input:enabled:indeterminate ~ .c-chk__label:active;
-
 :--chk-checked-active::before,
 :--chk-indeterminate-active::before {
   border-color: var(--zd-chk-checked-active-border-color);
   background-color: var(--zd-chk-checked-active-background-color);
 }
-
-@custom-selector :--chk-disabled /* [2] */
-  .c-chk.is-disabled.is-disabled.is-disabled .c-chk__label,
-  .c-chk .c-chk__input[disabled].c-chk__input[disabled] ~ .c-chk__label;
 
 :--chk-disabled {
   cursor: default;
@@ -105,16 +70,5 @@
   box-shadow: none;
   background-color: var(--zd-chk-disabled-background-color);
 }
-
-@custom-selector :--chk-checked-disabled
-  .c-chk.is-checked.is-disabled .c-chk__label,
-  .c-chk .c-chk__input:checked[disabled] ~ .c-chk__label,
-  .c-chk.is-checked .c-chk__input[disabled] ~ .c-chk__label,
-  .c-chk.is-disabled .c-chk__input:checked ~ .c-chk__label;
-
-@custom-selector :--chk-indeterminate-disabled
-  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate.is-disabled .c-chk__label,
-  .c-chk:not(.c-chk--radio):not(.c-chk--toggle).is-indeterminate .c-chk__input[disabled] ~ .c-chk__label,
-  .c-chk:not(.c-chk--radio):not(.c-chk--toggle) .c-chk__input[disabled]:indeterminate ~ .c-chk__label;
 
 /* stylelint-enable at-rule-empty-line-before, max-line-length, no-descending-specificity */

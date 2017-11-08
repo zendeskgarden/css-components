@@ -84,7 +84,7 @@
   background-color: var(--zd-range-active-track-background-color);
 }
 
-.c-range__slider__track__rail__thumb:active,
+.c-range:not(.is-disabled) .c-range__slider__track__rail__thumb:active,
 .c-range.is-active .c-range__slider__track__rail__thumb:first-of-type {
   background-color: var(--zd-range-active-thumb-background-color);
 }

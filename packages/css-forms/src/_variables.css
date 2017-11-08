@@ -1,0 +1,7 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-forms-accent-color: var(--zd-color-pelorous);
+  --zd-forms-disabled-color: var(--zd-color-aluminum);
+  --zd-forms-disabled-background-color: var(--zd-color-gainsboro);
+}

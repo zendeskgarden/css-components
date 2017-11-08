@@ -1,4 +1,5 @@
 @import '@zendesk/garden-css-variables';
+@import '_selectors';
 
 /* stylelint-disable */
 @svg-load circle url('14-circle.svg') {
@@ -32,6 +33,11 @@
   background-color: var(--zd-chk--dark-active-background-color);
 }
 
+.c-chk--dark:--chk-checked-active::before,
+.c-chk--dark:--chk-indeterminate-active::before {
+  background-color: var(--zd-chk-checked-active-background-color);
+}
+
 .c-chk--dark:--chk-disabled::before {
   background-color: var(--zd-chk--dark-disabled-background-color);
 }
@@ -50,6 +56,11 @@
 
 .c-chk--dark.c-chk--toggle:--chk-active::before {
   background-color: var(--zd-chk--dark--toggle-active-background-color);
+}
+
+.c-chk--dark.c-chk--toggle:--chk-checked-active::before,
+.c-chk--dark.c-chk--toggle:--chk-indeterminate-active::before {
+  background-color: var(--zd-chk-checked-active-background-color);
 }
 
 .c-chk--dark.c-chk--toggle .c-chk__label::before {
