@@ -23,6 +23,7 @@ deploy:
   - provider: pages
     github_token: $GITHUB_TOKEN
     local_dir: demo
+    skip_cleanup: true
     on:
       all_branches: true
 
