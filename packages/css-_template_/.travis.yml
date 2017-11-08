@@ -15,9 +15,6 @@ before_install:
   - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:email $ARTIFACTORY_EMAIL
   - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:always-auth true
 
-after_success:
-  - npm run gh-pages
-
 before_deploy:
   - npm config set _auth $ARTIFACTORY_API_KEY
   - npm config set email $ARTIFACTORY_EMAIL
@@ -25,6 +22,7 @@ before_deploy:
 deploy:
   - provider: pages
     github_token: $GITHUB_TOKEN
+    local_dir: demo
     on:
       all_branches: true
 
