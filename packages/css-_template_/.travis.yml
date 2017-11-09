@@ -16,6 +16,7 @@ before_install:
   - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:always-auth true
 
 before_deploy:
+  - cp -f dist/*.css demo
   - npm config set _auth $ARTIFACTORY_API_KEY
   - npm config set email $ARTIFACTORY_EMAIL
 
