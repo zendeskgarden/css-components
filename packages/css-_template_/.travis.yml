@@ -21,11 +21,11 @@ before_deploy:
   - npm config set email $ARTIFACTORY_EMAIL
 
 deploy:
-  - skip_cleanup: true
 
   - provider: pages
     github_token: $GITHUB_TOKEN
     local_dir: demo
+    skip_cleanup: true
     on:
       all_branches: true
 
