@@ -5,7 +5,7 @@
 
 :root {
   --zd-forms--custom-accent-color: var(--zd-color-mandy);
-  --zd-forms--custom-accent-color-active: color(var(--zd-color-mandy) blackness(+10%));
+  --zd-forms--custom-accent-color-active: color(var(--zd-forms--custom-accent-color) blackness(+10%));
   --zd-forms--custom-box-shadow:
     0 0 0 3px
     color(var(--zd-forms--custom-accent-color) alpha(40%));
@@ -92,7 +92,7 @@
   box-shadow: var(--zd-forms--custom-box-shadow);
 }
 
-.c-txt--custom:not(.has-error):not(.has-success):not(.has-warning):--txt--select-open::before {
+.c-txt--custom:--txt--select-open::before {
   background-image: var(--zd-txt--custom__input--select__chevron-open-background-image);
 }
 
