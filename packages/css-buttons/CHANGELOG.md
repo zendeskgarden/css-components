@@ -1,5 +1,15 @@
 # Change Log
 
+## [3.5.0] - 2017-11-14
+### Added (per [#21](https://github.com/zendeskgarden/css-buttons/pull/21))
+- Custom hover background saturation override variable.
+
+### Changed (per [#27](https://github.com/zendeskgarden/css-buttons/pull/27))
+- Update `.c-btn--anchor` to underline on hover.
+
+### Fixed (per [#28](https://github.com/zendeskgarden/css-buttons/pull/28))
+- Prevent `.l-btn-group` wrap.
+
 ## [3.4.0] - 2017-10-11
 ### Added (per [#26](https://github.com/zendeskgarden/css-buttons/pull/26))
 - Improve readability of disabled text
@@ -83,6 +93,7 @@
 
 ## 0.1.0 - 2016-01-05
 
+[3.5.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.4.0...v3.5.0
 [3.4.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.3.1...v3.4.0
 [3.3.1]: https://github.com/zendeskgarden/css-buttons/compare/v3.3.0...v3.3.1
 [3.3.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.2.0...v3.3.0
