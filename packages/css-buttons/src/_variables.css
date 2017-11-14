@@ -3,6 +3,7 @@
 :root {
   --zd-btn-color: var(--zd-color-pelorous);
   --zd-btn-disabled-background-color: var(--zd-color-gainsboro);
+  --zd-btn-hovered-background-color-saturation: +10%;
   --zd-btn--anchor-disabled-color: var(--zd-color-aluminum);
-  --zd-btn-danger-color: var(--zd-color-flamingo);
+  --zd-btn--danger-color: var(--zd-color-flamingo);
 }

@@ -17,5 +17,5 @@
 }
 
 .c-btn.c-btn--danger:--btn-primary {
-  background-color: var(--zd-btn-danger-color);
+  background-color: var(--zd-btn--danger-color);
 }

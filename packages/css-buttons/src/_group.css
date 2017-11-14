@@ -14,6 +14,7 @@
 .l-btn-group {
   position: relative;
   z-index: 0;
+  white-space: nowrap;
 }
 
 .l-btn-group .c-btn {

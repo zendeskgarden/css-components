@@ -86,6 +86,6 @@
 }
 
 .c-btn.c-btn--danger {
-  border-color: var(--zd-btn-danger-color);
-  color: var(--zd-btn-danger-color);
+  border-color: var(--zd-btn--danger-color);
+  color: var(--zd-btn--danger-color);
 }

@@ -55,6 +55,7 @@
 .l-btn-group{
   position:relative;
   z-index:0;
+  white-space:nowrap;
 }
 .l-btn-group .c-btn{
   position:relative;
@@ -141,6 +142,7 @@
 }
 .c-btn:focus{
   outline:none;
+  text-decoration:none;
 }
 .c-btn.is-focused{
   box-shadow:0 0 0 3px rgba(48,170,188,.4);
@@ -172,22 +174,25 @@
   display:inline;
   border:none;
   border-radius:0;
+  background-color:transparent;
   cursor:pointer;
   padding:0;
   min-width:0;
   vertical-align:baseline;
+  text-decoration:none;
   -webkit-user-select:none;
      -moz-user-select:none;
       -ms-user-select:none;
           user-select:none;
   line-height:normal;
   white-space:normal;
+  color:#30aabc;
   font-size:inherit;
   font-weight:inherit;
 }
-.c-btn--anchor,.c-btn--anchor.c-btn--anchor.is-hovered.is-hovered,.c-btn--anchor.c-btn--anchor:hover:hover{
+.c-btn--anchor.c-btn--anchor.is-hovered.is-hovered,.c-btn--anchor.c-btn--anchor:hover:hover{
   background-color:transparent;
-  text-decoration:none;
+  text-decoration:underline;
   color:#30aabc;
 }
 .c-btn.c-btn--anchor.c-btn--danger,.c-btn.c-btn--anchor.c-btn--danger.is-hovered.is-hovered,.c-btn.c-btn--anchor.c-btn--danger:hover:hover{
@@ -199,7 +204,7 @@
 }
 .c-btn--anchor.c-btn--anchor.is-active.is-active,.c-btn--anchor.c-btn--anchor:active:active{
   background-color:transparent;
-  text-decoration:none;
+  text-decoration:underline;
   color:#30aabc;
 }
 .c-btn.c-btn--anchor.c-btn--danger.is-active.is-active,.c-btn.c-btn--anchor.c-btn--danger:active:active{
@@ -207,6 +212,7 @@
 }
 .c-btn--anchor.c-btn--anchor.is-disabled.is-disabled,.c-btn--anchor.c-btn--anchor:disabled:disabled{
   background-color:transparent;
+  text-decoration:none;
   color:#999;
 }
 .c-btn--basic.c-btn--basic{
