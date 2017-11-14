@@ -1,5 +1,9 @@
 # Change Log
 
+## [5.0.1] - 2017-11-14
+### Fixed (per [#28](https://github.com/zendeskgarden/css-menus/pull/28))
+- Prevent whitespace inheritance from controlling menu item.
+
 ## [5.0.0] - 2017-10-18
 ### Added (per [#27](https://github.com/zendeskgarden/css-menus/pull/27))
 - `.c-menu__item.is-checked` state.
@@ -101,6 +105,7 @@
 
 ## 0.1.0 - 2015-01-15
 
+[5.0.1]: https://github.com/zendeskgarden/css-menus/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/zendeskgarden/css-menus/compare/v4.0.0...v5.0.0
 [4.0.0]: https://github.com/zendeskgarden/css-menus/compare/v3.0.0...v4.0.0
 [3.0.0]: https://github.com/zendeskgarden/css-menus/compare/2.3.1...v3.0.0
