@@ -19,6 +19,7 @@
  * 3. Prevent controlling item cursor inheritance.
  * 4. Vertically, add extra space;
  *    horizontally, opt out of browser default list padding.
+ * 5. Prevent controlling item whitespace inheritance.
  */
 .c-menu {
   display: inline-block;
@@ -33,6 +34,7 @@
   padding: var(--zd-menu-padding); /* [4] */
   min-width: var(--zd-menu-min-width);
   text-align: left;
+  white-space: normal; /* [5] */
   font-size: var(--zd-menu-font-size);
   font-weight: var(--zd-menu-font-weight);
 }
