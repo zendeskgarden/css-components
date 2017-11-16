@@ -27,10 +27,12 @@ deploy:
     local_dir: demo
     skip_cleanup: true
     on:
-      all_branches: true
+      branch: master
+      tags: true
 
   - provider: script
     script: npm publish
+    skip_cleanup: true
     on:
       branch: master
       tags: true
