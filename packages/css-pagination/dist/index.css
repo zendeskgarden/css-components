@@ -2,11 +2,11 @@
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  margin-top:0;
-  padding:0;
   -webkit-box-pack:center;
       -ms-flex-pack:center;
           justify-content:center;
+  margin-top:0;
+  padding:0;
   white-space:nowrap;
 }
 

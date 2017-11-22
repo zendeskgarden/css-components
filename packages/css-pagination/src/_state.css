@@ -1,4 +1,6 @@
 @import '@zendesk/garden-css-variables';
+@import '_variables';
+@import '_selectors';
 
 :root {
   --zd-pagination__page-active-background-color: var(--zd-color-platinum);
@@ -7,26 +9,15 @@
   --zd-pagination__page-current-font-weight: var(--zd-font-weight-semibold);
   --zd-pagination__page-focused-box-shadow:
     inset 0 0 0 3px
-    color(var(--zd-color-pelorous) alpha(40%));
+    color(var(--zd-pagination-accent-color) alpha(40%));
   --zd-pagination__page-hovered-background-color: var(--zd-pagination__page-current-background-color);
   --zd-pagination__page--next-hovered-background-image: svg-load('14-next.svg', color: var(--zd-color-dark-gray));
   --zd-pagination__page--previous-hovered-background-image: svg-load('14-previous.svg', color: var(--zd-color-dark-gray));
 }
 
-/* 1. No `.c-pagination__page:focus` styling, since it prevents preferred
- *    "focus-on-keyboard; blur-on-mouse" behavior.
- */
-
-@custom-selector :--page-hovered
-  .is-hovered,
-  :hover;
-
 .c-pagination__page:--page-hovered {
   background-color: var(--zd-pagination__page-hovered-background-color);
 }
-
-@custom-selector :--page-focused /* [1] */
-  .is-focused;
 
 .c-pagination__page:--page-focused {
   outline: none;
@@ -39,18 +30,10 @@
   text-decoration: none;
 }
 
-@custom-selector :--page-active
-  .is-active,
-  :active;
-
 .c-pagination__page:--page-active {
   box-shadow: none;
   background-color: var(--zd-pagination__page-active-background-color);
 }
-
-@custom-selector :--page-current
-  .is-current,
-  [aria-current='true'];
 
 .c-pagination__page:--page-current {
   background-color: var(--zd-pagination__page-current-background-color);
@@ -62,10 +45,6 @@
 .c-pagination__page:--page-current a {
   max-width: none;
 }
-
-@custom-selector :--page-hidden
-  .is-hidden,
-  [aria-hidden='true'];
 
 .c-pagination__page:--page-hidden {
   visibility: hidden;

@@ -1,0 +1,13 @@
+@import '@zendesk/garden-css-variables';
+@import '_selectors';
+
+:root {
+  --zd-pagination--custom-accent-color: var(--zd-color-mandy);
+  --zd-pagination--custom__page-focused-box-shadow:
+    inset 0 0 0 3px
+    color(var(--zd-pagination--custom-accent-color) alpha(40%));
+}
+
+.c-pagination--custom .c-pagination__page:--page-focused {
+  box-shadow: var(--zd-pagination--custom__page-focused-box-shadow);
+}

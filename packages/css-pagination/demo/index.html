@@ -5,6 +5,7 @@
   <link href="http://garden.zendesk.com/index.css" rel="stylesheet">
   <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
   <style>
   .u-list-style-decimal { list-style: decimal !important; }
   </style>
@@ -46,6 +47,12 @@
               <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
             </fieldset>
           </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.custom">Custom</label>
+            </fieldset>
+          </li>
         </ul>
       </li>
     </ul>
@@ -62,7 +69,7 @@
         <li class="c-pagination__page c-pagination__page--gap">2-3</li>
         <li class="c-pagination__page">4</li>
         <li class="c-pagination__page">5</li>
-        <li class="c-pagination__page is-current">6</li>
+        <li class="c-pagination__page is-current" tabindex="0">6</li>
         <li class="c-pagination__page">7</li>
         <li class="c-pagination__page">8</li>
         <li class="c-pagination__page c-pagination__page--gap">9-10</li>
@@ -249,5 +256,6 @@
   <script src="http://garden.zendesk.com/svg4everybody.js"></script>
   <script src="http://garden.zendesk.com/index.js"></script>
   <script src="http://garden.zendesk.com/editor.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
