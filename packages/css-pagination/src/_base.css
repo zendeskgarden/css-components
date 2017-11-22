@@ -24,10 +24,10 @@
  * 2. Text truncation. */
 .c-pagination {
   display: flex;
+  justify-content: center;
   margin-top: 0; /* [1] */
   padding: 0; /* [1] */
   white-space: nowrap; /* [2] */
-  justify-content: center;
 }
 
 .c-pagination__page {
