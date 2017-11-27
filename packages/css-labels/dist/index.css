@@ -4,7 +4,10 @@
   display:inline-flex;
   -ms-flex-wrap:nowrap;
       flex-wrap:nowrap;
+  -webkit-transition:-webkit-box-shadow .1s ease-in-out;
+  transition:-webkit-box-shadow .1s ease-in-out;
   transition:box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   border:0;
   border-radius:2px;
   background-color:#30aabc;
@@ -24,7 +27,8 @@
 
 .c-label.is-focused,.c-label:focus{
   outline:0;
-  box-shadow:0 0 0 2px rgba(48,170,188,.4);
+  -webkit-box-shadow:0 0 0 2px rgba(48,170,188,.4);
+          box-shadow:0 0 0 2px rgba(48,170,188,.4);
   text-decoration:none;
 }
 
@@ -50,7 +54,8 @@
 }
 
 .c-label--light.is-focused,.c-label--light:focus{
-  box-shadow:0 0 0 2px hsla(0,0%,73%,.4);
+  -webkit-box-shadow:0 0 0 2px hsla(0,0%,73%,.4);
+          box-shadow:0 0 0 2px hsla(0,0%,73%,.4);
 }
 
 .c-label--dark{
@@ -58,7 +63,8 @@
 }
 
 .c-label--dark.is-focused,.c-label--dark:focus{
-  box-shadow:0 0 0 2px rgba(86,119,122,.4);
+  -webkit-box-shadow:0 0 0 2px rgba(86,119,122,.4);
+          box-shadow:0 0 0 2px rgba(86,119,122,.4);
 }
 
 .c-label--error{
@@ -66,7 +72,8 @@
 }
 
 .c-label--error.is-focused,.c-label--error:focus{
-  box-shadow:0 0 0 2px hsla(8,79%,62%,.4);
+  -webkit-box-shadow:0 0 0 2px hsla(8,79%,62%,.4);
+          box-shadow:0 0 0 2px hsla(8,79%,62%,.4);
 }
 
 .c-label--success{
@@ -74,7 +81,8 @@
 }
 
 .c-label--success.is-focused,.c-label--success:focus{
-  box-shadow:0 0 0 2px rgba(22,186,82,.4);
+  -webkit-box-shadow:0 0 0 2px rgba(22,186,82,.4);
+          box-shadow:0 0 0 2px rgba(22,186,82,.4);
 }
 
 .c-label--warning{
@@ -82,7 +90,8 @@
 }
 
 .c-label--warning.is-focused,.c-label--warning:focus{
-  box-shadow:0 0 0 2px rgba(255,200,0,.4);
+  -webkit-box-shadow:0 0 0 2px rgba(255,200,0,.4);
+          box-shadow:0 0 0 2px rgba(255,200,0,.4);
 }
 
 .c-label--lg{
@@ -128,6 +137,7 @@
   display:inline-block;
   -ms-flex-negative:0;
       flex-shrink:0;
+  -webkit-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
   opacity:.7;
   margin-right:-10px;
