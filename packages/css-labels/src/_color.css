@@ -1,4 +1,5 @@
 @import '@zendesk/garden-css-variables';
+@import '_selectors';
 
 :root {
   --zd-label--dark-background-color: var(--zd-color-algae);
@@ -25,48 +26,48 @@
     color(var(--zd-label--warning-background-color) alpha(40%));
 }
 
-.c-label--light {
+.c-label.c-label--light {
   background-color: var(--zd-label--light-background-color);
   color: var(--zd-label--light-color);
   font-weight: var(--zd-label--light-font-weight);
 }
 
-.c-label--light:hover {
+.c-label.c-label--light:hover {
   color: var(--zd-label--light-color);
 }
 
-.c-label--light:--label-focused {
+.c-label.c-label--light:--label-focused {
   box-shadow: var(--zd-label--light-focused-box-shadow);
 }
 
-.c-label--dark {
+.c-label.c-label--dark {
   background-color: var(--zd-label--dark-background-color);
 }
 
-.c-label--dark:--label-focused {
+.c-label.c-label--dark:--label-focused {
   box-shadow: var(--zd-label--dark-focused-box-shadow);
 }
 
-.c-label--error {
+.c-label.c-label--error {
   background-color: var(--zd-label--error-background-color);
 }
 
-.c-label--error:--label-focused {
+.c-label.c-label--error:--label-focused {
   box-shadow: var(--zd-label--error-focused-box-shadow);
 }
 
-.c-label--success {
+.c-label.c-label--success {
   background-color: var(--zd-label--success-background-color);
 }
 
-.c-label--success:--label-focused {
+.c-label.c-label--success:--label-focused {
   box-shadow: var(--zd-label--success-focused-box-shadow);
 }
 
-.c-label--warning {
+.c-label.c-label--warning {
   background-color: var(--zd-label--warning-background-color);
 }
 
-.c-label--warning:--label-focused {
+.c-label.c-label--warning:--label-focused {
   box-shadow: var(--zd-label--warning-focused-box-shadow);
 }

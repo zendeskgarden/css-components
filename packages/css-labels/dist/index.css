@@ -20,105 +20,84 @@
   font-size:12px;
   font-weight:400;
 }
-
 .c-label,.c-label:hover{
   color:#fff;
 }
-
 .c-label.is-focused,.c-label:focus{
   outline:0;
   -webkit-box-shadow:0 0 0 2px rgba(48,170,188,.4);
           box-shadow:0 0 0 2px rgba(48,170,188,.4);
   text-decoration:none;
 }
-
 .c-label.is-rtl{
   direction:rtl;
 }
-
 .c-label>*{
   min-width:2em;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
 }
-
-.c-label--light{
+.c-label.c-label--light{
   background-color:#f3f3f3;
   color:#777;
   font-weight:600;
 }
-
-.c-label--light:hover{
+.c-label.c-label--light:hover{
   color:#777;
 }
-
-.c-label--light.is-focused,.c-label--light:focus{
+.c-label.c-label--light.is-focused,.c-label.c-label--light:focus{
   -webkit-box-shadow:0 0 0 2px hsla(0,0%,73%,.4);
           box-shadow:0 0 0 2px hsla(0,0%,73%,.4);
 }
-
-.c-label--dark{
+.c-label.c-label--dark{
   background-color:#03363d;
 }
-
-.c-label--dark.is-focused,.c-label--dark:focus{
+.c-label.c-label--dark.is-focused,.c-label.c-label--dark:focus{
   -webkit-box-shadow:0 0 0 2px rgba(86,119,122,.4);
           box-shadow:0 0 0 2px rgba(86,119,122,.4);
 }
-
-.c-label--error{
+.c-label.c-label--error{
   background-color:#eb6651;
 }
-
-.c-label--error.is-focused,.c-label--error:focus{
+.c-label.c-label--error.is-focused,.c-label.c-label--error:focus{
   -webkit-box-shadow:0 0 0 2px hsla(8,79%,62%,.4);
           box-shadow:0 0 0 2px hsla(8,79%,62%,.4);
 }
-
-.c-label--success{
+.c-label.c-label--success{
   background-color:#16ba52;
 }
-
-.c-label--success.is-focused,.c-label--success:focus{
+.c-label.c-label--success.is-focused,.c-label.c-label--success:focus{
   -webkit-box-shadow:0 0 0 2px rgba(22,186,82,.4);
           box-shadow:0 0 0 2px rgba(22,186,82,.4);
 }
-
-.c-label--warning{
+.c-label.c-label--warning{
   background-color:#ffc800;
 }
-
-.c-label--warning.is-focused,.c-label--warning:focus{
+.c-label.c-label--warning.is-focused,.c-label.c-label--warning:focus{
   -webkit-box-shadow:0 0 0 2px rgba(255,200,0,.4);
           box-shadow:0 0 0 2px rgba(255,200,0,.4);
 }
-
 .c-label--lg{
   border-radius:4px;
   height:30px;
   line-height:2.5;
 }
-
 .c-label--sm{
   padding:0 .6em;
   height:15px;
   line-height:1.5;
   font-size:10px;
 }
-
 .c-label--round.c-label--sm,.c-label--round.c-label--sm>*{
   min-width:15px;
 }
-
 .c-label--round.c-label--lg,.c-label--round.c-label--lg>*{
   min-width:30px;
 }
-
 .c-label--pill{
   border-radius:100px;
 }
-
 .c-label--round{
   -webkit-box-pack:center;
       -ms-flex-pack:center;
@@ -127,12 +106,10 @@
   padding:0;
   min-width:20px;
 }
-
 .c-label--round>*{
   min-width:20px;
   text-align:center;
 }
-
 .c-label__remove{
   display:inline-block;
   -ms-flex-negative:0;
@@ -151,40 +128,32 @@
   vertical-align:middle;
   font-size:0;
 }
-
 .c-label__remove.is-hovered,.c-label__remove:hover{
   opacity:1;
 }
-
 .c-label__remove:focus{
   outline:none;
 }
-
 .c-label--light .c-label__remove{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23777'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
 }
-
 .c-label--lg .c-label__remove{
   background-size:16px;
   width:30px;
   height:30px;
 }
-
 .c-label--sm .c-label__remove{
   margin-right:-5px;
   background-size:11px;
   width:15px;
   height:15px;
 }
-
 .c-label--pill .c-label__remove{
   border-radius:50%;
 }
-
 .c-label--round .c-label__remove{
   display:none;
 }
-
 .c-label.is-rtl .c-label__remove{
   -webkit-box-orient:horizontal;
   -webkit-box-direction:reverse;
@@ -193,11 +162,9 @@
   margin-right:0;
   margin-left:-10px;
 }
-
 .c-label--sm.is-rtl .c-label__remove{
   margin-left:-5px;
 }
-
 .c-label__avatar{
   display:inline-block;
   -ms-flex-negative:0;
@@ -210,7 +177,6 @@
   vertical-align:middle;
   font-size:0;
 }
-
 .c-label--lg .c-label__avatar{
   margin:3px 10px 3px -6.9px;
   border-radius:3px;
@@ -218,20 +184,16 @@
   min-width:24px;
   height:24px;
 }
-
 .c-label--pill .c-label__avatar{
   border-radius:50%;
 }
-
 .c-label--round .c-label__avatar,.c-label--sm .c-label__avatar{
   display:none;
 }
-
 .c-label.is-rtl .c-label__avatar{
   margin-right:-7.9px;
   margin-left:5px;
 }
-
 .c-label--lg.is-rtl .c-label__avatar{
   margin-right:-6.9px;
   margin-left:10px;

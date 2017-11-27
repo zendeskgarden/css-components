@@ -1,7 +1,9 @@
 @import '@zendesk/garden-css-variables';
+@import '_variables';
+@import '_selectors';
 
 :root {
-  --zd-label-background-color: var(--zd-color-pelorous);
+  --zd-label-background-color: var(--zd-label-accent-color);
   --zd-label-border-radius: 2px;
   --zd-label-color: var(--zd-color-white);
   --zd-label-font-size: var(--zd-font-size-zeta);
@@ -39,10 +41,6 @@
 .c-label:hover {
   color: var(--zd-label-color); /* [2] */
 }
-
-@custom-selector :--label-focused
-  .is-focused,
-  :focus;
 
 .c-label:--label-focused {
   outline: 0;

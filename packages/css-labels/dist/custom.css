@@ -1,0 +1,7 @@
+.c-label--custom{
+  background-color:#eb4962;
+}
+.c-label--custom.is-focused,.c-label--custom:focus{
+  -webkit-box-shadow:0 0 0 2px rgba(235,73,98,.4);
+          box-shadow:0 0 0 2px rgba(235,73,98,.4);
+}
