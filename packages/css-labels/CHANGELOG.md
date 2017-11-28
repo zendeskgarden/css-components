@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.1.0] - 2017-11-28
+### Added (per [#10](https://github.com/zendeskgarden/css-labels/pull/10))
+- Include complementary `.c-label--custom` CSS demonstrating how to
+  apply an accent color change.
+
 ## [1.0.2] - 2017-09-19
 ### Fixed (per [#8](https://github.com/zendeskgarden/css-labels/pull/8))
 - Prevent child elements from impacting `.c-label--round` shape.
@@ -20,6 +25,7 @@
 
 ## 0.1.0 - 2017-02-06
 
+[1.1.0]: https://github.com/zendeskgarden/css-labels/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/zendeskgarden/css-labels/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/zendeskgarden/css-labels/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/zendeskgarden/css-labels/compare/0.2.0...v1.0.0
