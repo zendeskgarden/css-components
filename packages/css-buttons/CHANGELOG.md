@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.6.1] - 2017-12-06
+### Fixed (per [#30](https://github.com/zendeskgarden/css-buttons/pull/30))
+- Remove poor border display from a disabled + primary grouped button.
+
 ## [3.6.0] - 2017-12-06
 ### Changed (per [#29](https://github.com/zendeskgarden/css-buttons/pull/29))
 - Update with base-4 sizing.
@@ -97,6 +101,7 @@
 
 ## 0.1.0 - 2016-01-05
 
+[3.6.1]: https://github.com/zendeskgarden/css-buttons/compare/v3.6.0...v3.6.1
 [3.6.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.5.0...v3.6.0
 [3.5.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.4.0...v3.5.0
 [3.4.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.3.1...v3.4.0
