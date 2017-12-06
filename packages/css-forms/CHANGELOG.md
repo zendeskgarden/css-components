@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.4.2] - 2017-12-06
+### Fixed (per [#49](https://github.com/zendeskgarden/css-forms/pull/49))
+- Reduce padding on `.c-txt__input--label` to prevent pixel shift on
+  label removal.
+
 ## [3.4.1] - 2017-11-10
 ### Fixed (per [#48](https://github.com/zendeskgarden/css-forms/pull/48))
 - Update `.c-[input]--custom` to base active color on accent color.
@@ -169,6 +174,7 @@
 ### Added
 - `.c-chk` component.
 
+[3.4.2]: https://github.com/zendeskgarden/css-forms/compare/v3.4.1...v3.4.2
 [3.4.1]: https://github.com/zendeskgarden/css-forms/compare/v3.4.0...v3.4.1
 [3.4.0]: https://github.com/zendeskgarden/css-forms/compare/v3.3.2...v3.4.0
 [3.3.2]: https://github.com/zendeskgarden/css-forms/compare/v3.3.1...v3.3.2
