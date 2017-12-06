@@ -1,6 +1,6 @@
 :root {
   --zd-txt__input--label-padding-horizontal: 8px;
-  --zd-txt__input--label-padding: 3px var(--zd-txt__input--label-padding-horizontal);
+  --zd-txt__input--label-padding: 2px var(--zd-txt__input--label-padding-horizontal);
   --zd-txt__input__label-margin: 2px;
 }
 

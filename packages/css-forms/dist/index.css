@@ -909,7 +909,7 @@ select.c-txt__input--select:-moz-focusring{
   display:flex;
   -ms-flex-wrap:wrap;
       flex-wrap:wrap;
-  padding:3px 8px;
+  padding:2px 8px;
 }
 
 .c-txt .c-txt__input--label.c-txt__input--select{
