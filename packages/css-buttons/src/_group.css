@@ -1,4 +1,8 @@
-/* stylelint-disable no-descending-specificity, selector-max-specificity */
+/* stylelint-disable
+  no-descending-specificity,
+  selector-max-specificity,
+  selector-combinator-space-after
+*/
 @import '@zendesk/garden-css-variables';
 
 :root {
@@ -121,14 +125,23 @@
 .l-btn-group:not(.is-rtl) .c-btn:--btn-primary:--btn-first,
 .l-btn-group:not(.is-rtl) .c-btn:--btn-disabled:--btn-first,
 .l-btn-group.is-rtl .c-btn:--btn-primary:--btn-last,
-.l-btn-group.is-rtl .c-btn:--btn-disabled:--btn-last {
+.l-btn-group.is-rtl .c-btn:--btn-disabled:--btn-last,
+.l-btn-group:not(.is-rtl) .c-btn:--btn-disabled:--btn-first +
+.c-btn:--btn-primary:--btn-last {
   border-left-color: transparent;
 }
 
 .l-btn-group:not(.is-rtl) .c-btn:--btn-primary:--btn-last,
 .l-btn-group:not(.is-rtl) .c-btn:--btn-disabled:--btn-last,
 .l-btn-group.is-rtl .c-btn:--btn-primary:--btn-first,
-.l-btn-group.is-rtl .c-btn:--btn-disabled:--btn-first {
+.l-btn-group.is-rtl .c-btn:--btn-disabled:--btn-first,
+.l-btn-group.is-rtl .c-btn:--btn-disabled:--btn-first +
+.c-btn:--btn-primary:--btn-last {
   border-right-color: transparent;
 }
-/* stylelint-enable no-descending-specificity, selector-max-specificity */
+
+/* stylelint-enable
+  no-descending-specificity,
+  selector-max-specificity,
+  selector-combinator-space-after
+*/
