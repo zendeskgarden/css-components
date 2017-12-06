@@ -1,9 +1,9 @@
 @import '@zendesk/garden-css-variables';
 
 :root {
-  --zd-btn--icon-size: var(--zd-spacing-lg);
-  --zd-btn--icon--medium-size: var(--zd-spacing-xl);
-  --zd-btn--icon--large-size: calc(var(--zd-spacing-xl) + var(--zd-spacing-sm));
+  --zd-btn--icon-size: calc(var(--zd-btn-line-height) + 2);
+  --zd-btn--icon--medium-size: calc(var(--zd-btn--medium-line-height) + 2);
+  --zd-btn--icon--large-size: calc(var(--zd-btn--large-line-height) + 2);
   --zd-btn__icon-size: 14px;
   --zd-btn__icon-transition: transform .25s ease-in-out;
   --zd-btn--medium__icon-size: 18px;

@@ -8,7 +8,7 @@
   --zd-btn-border-color: var(--zd-color-pelorous);
   --zd-btn-border-radius: 4px;
   --zd-btn-border-width: 1px;
-  --zd-btn-line-height: calc(28.1 / 12);
+  --zd-btn-line-height: 30px;
   --zd-btn-padding: calc(27 / 12 * 1em);
   --zd-btn-min-width: calc(calc(46 / 12 * 1em) + calc(var(--zd-btn-padding) * 2));
   --zd-btn-transition:
@@ -17,11 +17,11 @@
     background-color .25s ease-in-out,
     color .25s ease-in-out;
   --zd-btn--large-font-size: var(--zd-font-size-epsilon);
-  --zd-btn--large-line-height: calc(48.1 / 14);
+  --zd-btn--large-line-height: 46px;
   --zd-btn--large-padding: calc(27 / 14 * 1em);
   --zd-btn--large-min-width: calc(calc(86 / 14 * 1em) + calc(var(--zd-btn--large-padding) * 2));
   --zd-btn--medium-font-size: var(--zd-font-size-epsilon);
-  --zd-btn--medium-line-height: calc(38 / 14);
+  --zd-btn--medium-line-height: 38px;
   --zd-btn--medium-padding: calc(27 / 14 * 1em);
   --zd-btn--medium-min-width: calc(calc(66 / 14 * 1em) + calc(var(--zd-btn--medium-padding) * 2));
   --zd-btn--pill-border-radius: 100px;

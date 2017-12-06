@@ -6,9 +6,9 @@
   --zd-btn-group--primary-focused-box-shadow:
     inset 0 0 0 3px
     color(var(--zd-color-white) alpha(30%));
-  --zd-btn-group--primary-line-height: calc(30 / 12);
-  --zd-btn-group--primary--large-line-height: calc(50 / 14);
-  --zd-btn-group--primary--medium-line-height: calc(40.1 / 14);
+  --zd-btn-group--primary-line-height: var(--zd-btn--icon-size);
+  --zd-btn-group--primary--large-line-height: var(--zd-btn--icon--large-size);
+  --zd-btn-group--primary--medium-line-height: var(--zd-btn--icon--medium-size);
 }
 
 .l-btn-group {
