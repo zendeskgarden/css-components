@@ -1,5 +1,13 @@
 /* stylelint-disable at-rule-empty-line-before */
 
+@custom-selector :--tab-first
+  .is-first,
+  :first-of-type;
+
+@custom-selector :--tab-last
+  .is-last,
+  :last-of-type;
+
 @custom-selector :--tab-hovered
   .is-hovered,
   :hover;

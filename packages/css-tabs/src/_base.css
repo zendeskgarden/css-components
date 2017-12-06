@@ -2,18 +2,18 @@
 
 :root {
   --zd-tab__list-border-color: var(--zd-color-gainsboro);
+  --zd-tab__list-border-width: 1px;
   --zd-tab__list-color: var(--zd-color-aluminum);
   --zd-tab__list-font-size: var(--zd-font-size-epsilon);
-  --zd-tab__list-line-height: calc(20 / 14);
+  --zd-tab__list-line-height: 20px;
   --zd-tab__list-margin-bottom: var(--zd-spacing);
   --zd-tab__list__item-border-width: 3px;
-  --zd-tab__list__item-margin: 50px;
-  --zd-tab__list__item-padding: calc(5 / 14 * 1em);
-  --zd-tab__list__item-transition:
-    border-color .1s ease-in-out,
-    box-shadow .1s ease-in-out,
-    color .25s ease-in-out;
-  --zd-tab__list__item__a-margin: calc(5 / 14 * -1em);
+  --zd-tab__list__item-padding-bottom: calc(var(--zd-tab__list__item-padding-top) - var(--zd-tab__list__item-border-width) - var(--zd-tab__list-border-width));
+  --zd-tab__list__item-padding-horizontal: 28px;
+  --zd-tab__list__item-padding-top: 10px;
+  --zd-tab__list__item-padding: var(--zd-tab__list__item-padding-top) var(--zd-tab__list__item-padding-horizontal) var(--zd-tab__list__item-padding-bottom);
+  --zd-tab__list__item-transition: color .25s ease-in-out;
+  --zd-tab__list__item__a-margin: calc(var(--zd-tab__list__item-padding-top) * -1) calc(var(--zd-tab__list__item-padding-horizontal) * -1) calc(var(--zd-tab__list__item-padding-bottom) * -1);
 }
 
 .c-tab {
@@ -45,7 +45,6 @@
   display: inline-block;
   position: relative;
   transition: var(--zd-tab__list__item-transition);
-  margin-left: var(--zd-tab__list__item-margin);
   border-width: var(--zd-tab__list__item-border-width);
   border-bottom-style: solid;
   border-bottom-color: transparent;
@@ -60,35 +59,14 @@
   color: inherit; /* [3] */
 }
 
+/* 1. Expand anchor block to cover entire tab list item. */
 .c-tab__list__item a {
   display: block;
-  margin: var(--zd-tab__list__item__a-margin);
-  padding: var(--zd-tab__list__item-padding);
+  margin: var(--zd-tab__list__item__a-margin); /* [1] */
+  padding: var(--zd-tab__list__item-padding); /* [1] */
   color: inherit;
-}
-
-/* stylelint-disable selector-pseudo-class-no-unknown */
-@custom-selector :--tab-first
-  .is-first,
-  :first-of-type;
-
-.c-tab__list__item:--tab-first {
-  margin-left: 0;
-}
-
-.is-rtl .c-tab__list__item:--tab-first {
-  margin-left: var(--zd-tab__list__item-margin);
-}
-
-@custom-selector :--tab-last
-  .is-last,
-  :last-of-type;
-
-.is-rtl .c-tab__list__item:--tab-last {
-  margin-left: 0;
 }
 
 .c-tab__panel {
   display: block;
 }
-/* stylelint-enable selector-pseudo-class-no-unknown */
