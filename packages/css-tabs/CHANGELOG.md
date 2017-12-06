@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.2.0] - 2017-12-06
+### Changed (per [#9](https://github.com/zendeskgarden/css-tabs/pull/9))
+- Update to base-4 sizing.
+- Expand tab selection border.
+
 ## [3.1.1] - 2017-10-18
 ### Fixed (per [#8](https://github.com/zendeskgarden/css-tabs/pull/8))
 - Prevent custom `.is-active` border on `.is-disabled` tablist items.
@@ -43,6 +48,7 @@
 
 ## 0.1.0 - 2015-11-24
 
+[3.2.0]: https://github.com/zendeskgarden/css-tabs/compare/v3.1.1...v3.2.0
 [3.1.1]: https://github.com/zendeskgarden/css-tabs/compare/v3.1.0...v3.1.1
 [3.1.0]: https://github.com/zendeskgarden/css-tabs/compare/v3.0.1...v3.1.0
 [3.0.1]: https://github.com/zendeskgarden/css-tabs/compare/v3.0.0...v3.0.1
