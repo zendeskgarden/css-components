@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.6.0] - 2017-12-06
+### Changed (per [#29](https://github.com/zendeskgarden/css-buttons/pull/29))
+- Update with base-4 sizing.
+
 ## [3.5.0] - 2017-11-14
 ### Added (per [#21](https://github.com/zendeskgarden/css-buttons/pull/21))
 - Custom hover background saturation override variable.
@@ -93,6 +97,7 @@
 
 ## 0.1.0 - 2016-01-05
 
+[3.6.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.5.0...v3.6.0
 [3.5.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.4.0...v3.5.0
 [3.4.0]: https://github.com/zendeskgarden/css-buttons/compare/v3.3.1...v3.4.0
 [3.3.1]: https://github.com/zendeskgarden/css-buttons/compare/v3.3.0...v3.3.1
