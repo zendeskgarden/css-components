@@ -208,9 +208,12 @@
   border:none;
   background-color:transparent;
   cursor:pointer;
+  padding:0;
   padding-right:17px;
   text-decoration:none;
   color:inherit;
+  font-family:inherit;
+  font-size:inherit;
   font-weight:600;
 }
 

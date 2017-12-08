@@ -22,9 +22,12 @@
   border: none; /* [1] */
   background-color: transparent; /* [1] */
   cursor: pointer;
+  padding: 0; /* [1] */
   padding-right: var(--zd-table__row__cell__sortable-padding);
   text-decoration: none; /* [2] */
   color: inherit;
+  font-family: inherit; /* [1] */
+  font-size: inherit; /* [1] */
   font-weight: var(--zd-table__row__cell__sortable-font-weight);
 }
 
