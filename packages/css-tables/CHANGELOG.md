@@ -1,8 +1,12 @@
 # Change Log
 
+## [1.0.3] - 2017-12-08
+### Fixed (per [#8](https://github.com/zendeskgarden/css-tables/pull/8))
+- Add button element styling resets to `.c-table__row__cell__sortable`.
+
 ## [1.0.2] - 2017-10-12
 ### Fixed (per [#5](https://github.com/zendeskgarden/css-tables/pull/5))
-- Increase speed of row hover transition
+- Increase speed of row hover transition.
 
 ## [1.0.1] - 2017-09-28
 ### Fixed (per [#4](https://github.com/zendeskgarden/css-tables/pull/4))
@@ -19,6 +23,7 @@
 
 ## 0.1.0 - 2017-09-13
 
+[1.0.3]: https://github.com/zendeskgarden/css-tables/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/zendeskgarden/css-tables/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/zendeskgarden/css-tables/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/zendeskgarden/css-tables/compare/v0.1.0...v1.0.0
