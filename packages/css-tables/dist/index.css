@@ -21,6 +21,7 @@
   border-bottom:1px solid #eee;
   height:40px;
   vertical-align:top;
+  box-sizing:border-box;
 }
 
 .c-table__row--group{
@@ -45,6 +46,7 @@
   display:table-cell;
   transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out;
   padding:10px 12px;
+  box-sizing:border-box;
 }
 
 .c-table__row__cell--min{

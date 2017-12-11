@@ -52,6 +52,7 @@
   border-bottom: var(--zd-table__row-border-bottom);
   height: var(--zd-table__row-height);
   vertical-align: top;
+  box-sizing: border-box;
 }
 
 .c-table__row--group {
@@ -77,6 +78,7 @@
   display: table-cell;
   transition: var(--zd-table__row__cell-transition);
   padding: var(--zd-table__row__cell-padding);
+  box-sizing: border-box;
 }
 
 .c-table__row__cell--min {
