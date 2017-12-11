@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.4] - 2017-12-11
+### Fixed (per [#9](https://github.com/zendeskgarden/css-tables/pull/9))
+- Add box sizing styling overrides to `.c-table__row` and
+  `.c-table__row__cell`.
+
 ## [1.0.3] - 2017-12-08
 ### Fixed (per [#8](https://github.com/zendeskgarden/css-tables/pull/8))
 - Add button element styling resets to `.c-table__row__cell__sortable`.
@@ -23,6 +28,7 @@
 
 ## 0.1.0 - 2017-09-13
 
+[1.0.4]: https://github.com/zendeskgarden/css-tables/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/zendeskgarden/css-tables/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/zendeskgarden/css-tables/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/zendeskgarden/css-tables/compare/v1.0.0...v1.0.1
