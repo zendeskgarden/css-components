@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "name": "@zendeskgarden/css-components",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "lerna run build --stream",
+    "clean": "git clean -Xdf .",
+    "postinstall": "lerna bootstrap --stream",
+    "test": "lerna run test --stream"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^5.2.5",
+    "@commitlint/config-conventional": "^5.2.3",
+    "@zendesk/garden-stylelint-config": "^6.0.0",
+    "caniuse-lite": "^1.0.30000783",
+    "commitizen": "^2.9.6",
+    "cssnano": "^3.10.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.15.0-beta.16",
+    "lerna": "^2.5.1",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "prettier-package-json": "^1.4.0",
+    "stylelint": "^8.4.0",
+    "stylelint-order": "^0.7.0"
+  },
+  "publishConfig": {
+    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "prettier-package-json --write && git add",
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "post-checkout": "yarn",
+      "post-merge": "yarn",
+      "pre-push": "yarn test"
+    }
+  }
+}
