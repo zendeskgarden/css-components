@@ -30,9 +30,6 @@
     "stylelint": "^8.4.0",
     "stylelint-order": "^0.7.0"
   },
-  "publishConfig": {
-    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
