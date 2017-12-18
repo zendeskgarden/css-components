@@ -5,6 +5,7 @@
   "scripts": {
     "build": "lerna run build --stream",
     "clean": "git clean -Xdf .",
+    "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "lerna bootstrap --stream",
     "test": "lerna run test --stream"
   },
@@ -37,8 +38,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "prettier-package-json --write && git add",
-      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-commit": "yarn format && git add",
       "post-checkout": "yarn",
       "post-merge": "yarn",
       "pre-push": "yarn test"

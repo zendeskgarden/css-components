@@ -1,39 +1,35 @@
 {
-  "name": "@zendesk/garden-css-variables",
-  "version": "3.0.0",
-  "repository": "zendeskgarden/css-variables",
+  "name": "@zendeskgarden/css-variables",
   "license": "UNLICENSED",
+  "repository": "zendeskgarden/css-variables",
+  "version": "3.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node build",
+    "format": "prettier-package-json --write",
+    "lint": "yarn lint:css && yarn lint:js && yarn lint:json && yarn lint:sass",
+    "lint:css": "stylelint dist/index.css",
+    "lint:js": "eslint dist/*.js",
+    "lint:json": "jsonlint dist/index.json -q",
+    "lint:sass": "stylelint --config .sasslintrc dist/index.scss",
+    "test": "yarn lint"
+  },
+  "devDependencies": {
+    "@zendesk/eslint-config-garden": "^4.0.0",
+    "@zendesk/garden-stylelint-config": "^6.0.0",
+    "babel-eslint": "^8.0.3",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.13.1",
+    "jsonlint": "^1.6.2",
+    "postcss": "^6.0.1",
+    "prettier-package-json": "^1.4.0",
+    "stylelint": "^8.4.0",
+    "stylelint-order": "^0.7.0",
+    "stylelint-scss": "^2.2.0",
+    "watch": "^1.0.2"
+  },
   "publishConfig": {
     "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
   },
-  "main": "dist/index.js",
-  "style": "dist/index.css",
-  "devDependencies": {
-    "@zendesk/eslint-config-garden": "^3.0.0",
-    "@zendesk/garden-stylelint-config": "^5.0.0",
-    "babel-eslint": "^7.2.3",
-    "cssnano": "^3.10.0",
-    "eslint": "^3.19.0",
-    "eslint-plugin-sort-class-members": "^1.1.1",
-    "jsonlint": "^1.6.2",
-    "postcss": "^6.0.1",
-    "pre-commit": "^1.2.2",
-    "stylelint": "^7.10.1",
-    "stylelint-order": "^0.4.4",
-    "watch": "^1.0.2"
-  },
-  "scripts": {
-    "_eslint": "eslint dist/index.js dist/module.js",
-    "_jsonlint": "jsonlint dist/index.json -q",
-    "_stylelint": "stylelint dist/index.css",
-    "build": "node build",
-    "nuke": "rm -rf node_modules",
-    "rebuild": "npm run nuke && npm install && npm run build",
-    "test": "npm run _stylelint && npm run _eslint && npm run _jsonlint",
-    "watch": "watch 'npm run build'"
-  },
-  "pre-commit": [
-    "build",
-    "test"
-  ]
+  "style": "dist/index.css"
 }
