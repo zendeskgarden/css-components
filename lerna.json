@@ -1,0 +1,12 @@
+{
+  "lerna": "2.5.1",
+  "npmClient": "yarn",
+  "version": "independent",
+  "hoist": true,
+  "command": {
+    "publish": {
+      "allowBranch": "master",
+      "message": "chore(release): publish"
+    }
+  }
+}
