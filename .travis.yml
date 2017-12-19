@@ -4,6 +4,10 @@ node_js:
 
 sudo: false
 
+branches:
+  only:
+    - master
+
 cache:
   yarn: true
   directories:
