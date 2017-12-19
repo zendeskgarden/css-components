@@ -1,6 +1,6 @@
 /* davidwalsh.name/sass-color-variables-dont-suck */
 
-var retVal = {
+let retVal = {
   'affair': { r: 115, g: 73, b: 136 },
   'algae': { r: 3, g: 54, b: 61 },
   'aluminum': { r: 153, g: 153, b: 153 },

@@ -1,11 +1,11 @@
 /* https://bitsofco.de/the-new-system-font-stack/ */
 
-var retVal = {
+const retVal = {
   /* 1. macOS
    * 2. Windows
    * 3. Ubuntu
    * 4. Fallback */
-  'monospace': [
+  monospace: [
     'SFMono-Regular', /* [1] */
     'Consolas' /* [2] */,
     'Liberation Mono' /* [3] */,
@@ -22,7 +22,7 @@ var retVal = {
    * 7. Ubuntu
    * 8. GNOME
    * 9. Fallback */
-  'system': [
+  system: [
     'system-ui', /* [1] */
     '-apple-system' /* [2] */,
     'BlinkMacSystemFont' /* [3] */,

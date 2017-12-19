@@ -9,22 +9,18 @@
     "format": "prettier-package-json --write",
     "lint": "yarn lint:css && yarn lint:js && yarn lint:json && yarn lint:sass",
     "lint:css": "stylelint dist/index.css",
-    "lint:js": "eslint dist/*.js",
+    "lint:js": "eslint src/*.js dist/*.js",
     "lint:json": "jsonlint dist/index.json -q",
     "lint:sass": "stylelint --config .sasslintrc dist/index.scss",
-    "prepack": "yarn build",
+    "prepublish": "yarn build",
     "test": "yarn build && yarn lint"
   },
   "devDependencies": {
     "@zendesk/eslint-config-garden": "^4.0.0",
-    "@zendesk/garden-stylelint-config": "^6.0.0",
     "babel-eslint": "^8.0.3",
     "eslint": "^4.13.1",
     "jsonlint": "^1.6.2",
     "postcss": "^6.0.14",
-    "prettier-package-json": "^1.4.0",
-    "stylelint": "^8.4.0",
-    "stylelint-order": "^0.7.0",
     "stylelint-scss": "^2.2.0"
   },
   "publishConfig": {

@@ -64,12 +64,17 @@ postcss([cssnano])
       });
     });
 
+    const destination = path.join(__dirname, '..', 'dist');
+
+    if (!fs.existsSync(destination)) {
+      fs.mkdirSync(destination);
+    }
+
     const _js = '{\n  ' + jsItems.join(',\n  ') + '\n};\n';
-    const module = `const values = ${_js}\nexport default values;\n`;
+    const module = `const retVal = ${_js}\nexport default retVal;\n`;
     const js = `module.exports = ${_js}`;
     const json = '{\n  ' + jsonItems.join(',\n  ') + '\n}\n';
     const scss = scssItems.join('\n') + '\n';
-    const destination = path.join(__dirname, '..', 'dist');
 
     fs.writeFileSync(path.join(destination, 'index.css'), css, 'utf8');
     fs.writeFileSync(path.join(destination, 'index.js'), js, 'utf8');

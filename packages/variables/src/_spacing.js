@@ -1,5 +1,5 @@
-var base = 20;
-var retVal = {
+const base = 20;
+const retVal = {
   '': `${base}px`,
   'lg': `${base * 1.5}px`,
   'sm': `${base / 2}px`,
