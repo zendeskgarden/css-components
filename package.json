@@ -7,9 +7,9 @@
     "clean": "git clean -Xdf .",
     "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "lerna bootstrap --stream",
-    "prepublish": "yarn build",
+    "prepare": "yarn build",
     "test": "lerna run test --stream",
-    "update": "lerna publish --conventional-commits --skip-git --skip-npm"
+    "test:publish": "lerna publish --conventional-commits --skip-git --skip-npm --loglevel=silly"
   },
   "config": {
     "commitizen": {

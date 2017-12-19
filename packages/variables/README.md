@@ -1,29 +1,23 @@
-# CSS Variables [![Build Status](https://travis-ci.com/zendeskgarden/css-variables.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-variables)
+# @zendeskgarden/css-variables
 
-The `garden-css-variables` package contains common variables used by the
-rest of the framework.
+This package contains common variables used by the rest of the
+CSS component framework.
+
+- color
+- font-family
+- font-size
+- font-weight
+- spacing
 
 ## Installation
 
-    npm install --save-dev @zendesk/garden-css-variables
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+    npm install --save-dev @zendeskgarden/css-variables
 
 ## Usage
 
-The main package export is the set of variables declared under the `src`
-folder.
+Once installed, variables can be referenced via `postcss-import`.
 
-The package `dist` contains corresponding CSS, JSON, JS, and Sass
-variables for use inside your own build pipeline.
+    @import '@zendeskgarden/css-variables';
 
-## Tests
-
-    $ npm test
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+The package contains corresponding JSON, JS, and Sass variables for use
+within a variety of asset build pipelines.

@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="3.0.0"></a>
 ## [3.0.0] - 2017-10-18
 ### Added (per [#21](https://github.com/zendeskgarden/css-variables/pull/21))
 - Update `package.json` to point to dist rather than src.
