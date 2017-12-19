@@ -7,6 +7,7 @@
     "clean": "git clean -Xdf .",
     "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "lerna bootstrap --stream",
+    "prepublish": "yarn build",
     "test": "lerna run test --stream"
   },
   "config": {

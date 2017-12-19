@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const postcss = require('postcss');
 const cssnano = require('cssnano');
-const variables = require('./src/index');
+const variables = require('../src/index');
 
 function toProperties(variables) {
   const categories = Object.keys(variables);
@@ -49,27 +49,27 @@ const css = `:root {
 postcss([cssnano])
   .process(css)
   .then(function(result) {
-    let js = [];
-    let json = [];
-    let scss = [];
+    let jsItems = [];
+    let jsonItems = [];
+    let scssItems = [];
 
     result.root.walkRules(function(rule) {
       rule.walkDecls(function(declaration) {
         const key = declaration.prop.replace('--', '');
         const value = declaration.value;
 
-        js.push(`${toCamelCase(key)}: '${value}'`);
-        json.push(`"${key}": "${value.replace(/"/g, '\'')}"`);
-        scss.push(`$${key}: ${value};`);
+        jsItems.push(`${toCamelCase(key)}: '${value}'`);
+        jsonItems.push(`"${key}": "${value.replace(/"/g, '\'')}"`);
+        scssItems.push(`$${key}: ${value};`);
       });
     });
 
-    const module = 'const values = {\n  ' + js.join(',\n  ') + '\n};\n\nexport default values;\n';
-    js = 'module.exports = {\n  ' + js.join(',\n  ') + '\n};\n';
-    json = '{\n  ' + json.join(',\n  ') + '\n}\n';
-    scss = scss.join('\n') + '\n';
-
-    const destination = path.join(__dirname, 'dist');
+    const _js = '{\n  ' + jsItems.join(',\n  ') + '\n};\n';
+    const module = `const values = ${_js}\nexport default values;\n`;
+    const js = `module.exports = ${_js}`;
+    const json = '{\n  ' + jsonItems.join(',\n  ') + '\n}\n';
+    const scss = scssItems.join('\n') + '\n';
+    const destination = path.join(__dirname, '..', 'dist');
 
     fs.writeFileSync(path.join(destination, 'index.css'), css, 'utf8');
     fs.writeFileSync(path.join(destination, 'index.js'), js, 'utf8');

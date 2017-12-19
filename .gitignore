@@ -1,4 +1,5 @@
 node_modules
+packages/**/dist
 packages/**/yarn.lock
 package-lock.json
 *.log
