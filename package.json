@@ -8,7 +8,8 @@
     "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "lerna bootstrap --stream",
     "prepublish": "yarn build",
-    "test": "lerna run test --stream"
+    "test": "lerna run test --stream",
+    "update": "lerna publish --conventional-commits --skip-git --skip-npm"
   },
   "config": {
     "commitizen": {
@@ -40,7 +41,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn format && git add",
-      "post-checkout": "yarn",
+      "post-checkout": "if [[ $GIT_PARAMS == *1 ]]; then yarn; fi",
       "post-merge": "yarn",
       "pre-push": "yarn test"
     }
