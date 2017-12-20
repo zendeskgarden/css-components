@@ -1,6 +1,20 @@
 # Change Log
 
-<a name="3.0.0"></a>
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+      <a name="3.1.0"></a>
+# 3.1.0 (2017-12-20)
+
+
+### Features
+
+* **variables:** add package to monorepo ([#2](https://github.com/zendeskgarden/css-components/issues/2)) ([fbe6e87](https://github.com/zendeskgarden/css-components/commit/fbe6e87))
+
+
+
+
+      <a name="3.0.0"></a>
 ## [3.0.0] - 2017-10-18
 ### Added (per [#21](https://github.com/zendeskgarden/css-variables/pull/21))
 - Update `package.json` to point to dist rather than src.
@@ -12,7 +26,7 @@
 ## [2.0.0] - 2017-05-26
 ### Changed (per [#17](https://github.com/zendeskgarden/css-variables/pull/17))
 - Prepared package for registry publish as
-  `@zendesk/garden-css-variables`. See README for updated installation.
+`@zendesk/garden-css-variables`. See README for updated installation.
 
 ## [1.1.0] - 2017-05-18
 ### Changed (per [#16](https://github.com/zendeskgarden/css-variables/pull/16))
@@ -21,20 +35,20 @@
 ## [1.0.1] - 2017-05-16
 ### Changed (per [#15](https://github.com/zendeskgarden/css-variables/pull/15))
 - Update `--zd-font-family-system` with `system-ui` generic, fonts for
-  Linux, and removing problematic emoji fonts.
+Linux, and removing problematic emoji fonts.
 - Prepend `SFMono-Regular` to `--zd-font-family-monospace`.
 
 ## [1.0.0] - 2017-05-01
 ### Changed (per [#14](https://github.com/zendeskgarden/css-variables/pull/14))
 - Updated `src` to define variables via JS and build `dist` with CSS,
-  JSON, and Sass outputs.
+JSON, and Sass outputs.
 
 ## [0.11.0] - 2017-02-10
 ### Added
 - [#11](https://github.com/zendeskgarden/css-variables/pull/11)
-  `font-family` variables.
+`font-family` variables.
 - [#12](https://github.com/zendeskgarden/css-variables/pull/12)
-  secondary color palette variables.
+secondary color palette variables.
 
 ## [0.10.0] - 2016-12-13
 ### Added (per [#9](https://github.com/zendeskgarden/css-variables/pull/9))
