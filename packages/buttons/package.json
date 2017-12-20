@@ -18,7 +18,8 @@
     "format": "prettier-package-json --write",
     "lint": "stylelint $(find src -name '*.css')",
     "prepare": "yarn build",
-    "test": "yarn lint"
+    "test": "yarn lint",
+    "watch": "yarn build --watch"
   },
   "devDependencies": {
     "@zendeskgarden/css-variables": "^3.1.0"
