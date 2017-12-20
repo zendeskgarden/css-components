@@ -1,9 +1,5 @@
-/* stylelint-disable
-  no-descending-specificity,
-  selector-max-specificity,
-  selector-combinator-space-after
-*/
-@import '@zendesk/garden-css-variables';
+/* stylelint-disable no-descending-specificity, selector-max-specificity */
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-btn-group--light-border-color: color(var(--zd-color-white) alpha(40%));
@@ -122,12 +118,13 @@
   margin-left: -2px; /* [1] */
 }
 
+/* stylelint-disable max-line-length */
+
 .l-btn-group:not(.is-rtl) .c-btn:--btn-primary:--btn-first,
 .l-btn-group:not(.is-rtl) .c-btn:--btn-disabled:--btn-first,
 .l-btn-group.is-rtl .c-btn:--btn-primary:--btn-last,
 .l-btn-group.is-rtl .c-btn:--btn-disabled:--btn-last,
-.l-btn-group:not(.is-rtl) .c-btn:--btn-disabled:--btn-first +
-.c-btn:--btn-primary:--btn-last {
+.l-btn-group:not(.is-rtl) .c-btn:--btn-disabled:--btn-first + .c-btn:--btn-primary:--btn-last {
   border-left-color: transparent;
 }
 
@@ -135,13 +132,8 @@
 .l-btn-group:not(.is-rtl) .c-btn:--btn-disabled:--btn-last,
 .l-btn-group.is-rtl .c-btn:--btn-primary:--btn-first,
 .l-btn-group.is-rtl .c-btn:--btn-disabled:--btn-first,
-.l-btn-group.is-rtl .c-btn:--btn-disabled:--btn-first +
-.c-btn:--btn-primary:--btn-last {
+.l-btn-group.is-rtl .c-btn:--btn-disabled:--btn-first + .c-btn:--btn-primary:--btn-last {
   border-right-color: transparent;
 }
 
-/* stylelint-enable
-  no-descending-specificity,
-  selector-max-specificity,
-  selector-combinator-space-after
-*/
+/* stylelint-enable max-line-length, no-descending-specificity, selector-max-specificity */

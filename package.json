@@ -43,7 +43,7 @@
       "pre-commit": "yarn format && git add",
       "post-checkout": "if [[ $GIT_PARAMS == *1 ]]; then yarn; fi",
       "post-merge": "yarn",
-      "pre-push": "yarn test"
+      "pre-push": "lerna run test --since"
     }
   }
 }
