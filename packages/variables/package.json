@@ -1,0 +1,44 @@
+{
+  "name": "@zendeskgarden/css-variables",
+  "description": "Garden component CSS",
+  "author": "Zendesk Garden <garden@zendesk.com>",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/zendeskgarden/css-components",
+  "bugs": {
+    "url": "https://github.com/zendeskgarden/css-components/issues"
+  },
+  "version": "3.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node scripts/build",
+    "format": "prettier-package-json --write",
+    "lint": "yarn lint:css && yarn lint:js && yarn lint:json && yarn lint:sass",
+    "lint:css": "stylelint dist/index.css",
+    "lint:js": "eslint src/*.js dist/*.js",
+    "lint:json": "jsonlint dist/index.json -q",
+    "lint:sass": "stylelint --config .sasslintrc dist/index.scss",
+    "prepare": "yarn build",
+    "test": "yarn build && yarn lint"
+  },
+  "devDependencies": {
+    "@zendesk/eslint-config-garden": "^4.0.0",
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.13.1",
+    "jsonlint": "^1.6.2",
+    "postcss": "^6.0.14",
+    "stylelint-scss": "^2.2.0"
+  },
+  "keywords": [
+    "components",
+    "css",
+    "garden",
+    "zendesk"
+  ],
+  "publishConfig": {
+    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+  },
+  "style": "dist/index.css"
+}

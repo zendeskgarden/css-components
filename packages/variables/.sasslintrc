@@ -1,0 +1,6 @@
+{
+  "plugins": [ "stylelint-scss" ],
+  "rules": {
+    "scss/dollar-variable-pattern": "^zd-"
+  }
+}
