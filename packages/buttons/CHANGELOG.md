@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="3.6.1"></a>
 ## [3.6.1] - 2017-12-06
 ### Fixed (per [#30](https://github.com/zendeskgarden/css-buttons/pull/30))
 - Remove poor border display from a disabled + primary grouped button.
