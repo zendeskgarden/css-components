@@ -1,18 +1,19 @@
-# Tab Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-tabs.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-tabs)
+# @zendeskgarden/css-tabs
 
-The `garden-css-tabs` package provides styling for tab components.
+This package provides styling for tab components.
 
 ## Installation
 
-    npm install --save-dev @zendesk/garden-css-tabs
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+    npm install --save-dev @zendeskgarden/css-tabs
 
 ## Usage
 
-Tab CSS classes are intended to support the following component structure.
+Once installed, tabs CSS can be accessed via `postcss-import`.
+
+    @import '@zendeskgarden/css-tabs';
+
+Tab CSS classes are intended to support the following component
+structure.
 
 ```html
 <nav class="c-tab">
@@ -79,15 +80,9 @@ HTML for anchored tabs should be structured like this:
   role="tab"><a href="#" id="anchor1" role="presentation" tabindex="-1">One</a></li>
 ```
 
-## Tests
+### Behavior
 
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+See the
+[&lt;Tabs&gt;](http://garden.zendesk.com/react-components/#!/Tabs)
+component for intended mouse and keyboard (tab-to; cursor-through)
+behavior.
