@@ -4,6 +4,10 @@ node_js:
 
 sudo: false
 
+branches:
+  only:
+    - master
+
 cache:
   yarn: true
   directories:
@@ -34,4 +38,4 @@ deploy:
     local_dir: demo
     skip_cleanup: true
     on:
-      all_branches: true
+      branch: master
