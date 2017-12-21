@@ -4,10 +4,6 @@ node_js:
 
 sudo: false
 
-branches:
-  only:
-    - master
-
 cache:
   yarn: true
   directories:
@@ -37,5 +33,3 @@ deploy:
     github_token: $GITHUB_TOKEN
     local_dir: demo
     skip_cleanup: true
-    on:
-      branch: master
