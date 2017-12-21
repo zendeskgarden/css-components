@@ -1,16 +1,16 @@
-# Button Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-buttons.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-buttons)
+# @zendeskgarden/css-buttons
 
-The `garden-css-buttons` component contains basic `.c-btn` styling.
+This package contains basic `.c-btn` component styling.
 
 ## Installation
 
-    npm install --save-dev @zendesk/garden-css-buttons
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+    npm install --save-dev @zendeskgarden/css-buttons
 
 ## Usage
+
+Once installed, button CSS can be accessed via `postcss-import`.
+
+    @import '@zendeskgarden/css-buttons';
 
 Button CSS is intended to enhance the following HTML.
 
@@ -37,24 +37,11 @@ disabled button should not be able to receive focus.
 
 ### Modifications
 
-See http://garden.zendesk.com/css-buttons/ for various button
+See http://garden.zendesk.com/css-components/buttons/ for various button
 modification classes.
 
 ### Behavior
 
 See the
-[Button](http://garden.zendesk.com/react-components/#!/Button)
+[&lt;Button&gt;](http://garden.zendesk.com/react-components/#!/Button)
 component for intended keyboard & blur-on-mouseup behavior.
-
-## Tests
-
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
