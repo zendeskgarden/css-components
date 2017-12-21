@@ -33,4 +33,5 @@ deploy:
     github_token: $GITHUB_TOKEN
     local_dir: demo
     skip_cleanup: true
-    all_branches: true
+    on:
+      all_branches: true
