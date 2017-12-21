@@ -1,0 +1,54 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-btn--icon-size: calc(var(--zd-btn-line-height) + 2px);
+  --zd-btn--icon--medium-size: calc(var(--zd-btn--medium-line-height) + 2px);
+  --zd-btn--icon--large-size: calc(var(--zd-btn--large-line-height) + 2px);
+  --zd-btn__icon-size: 14px;
+  --zd-btn__icon-transition: transform .25s ease-in-out;
+  --zd-btn--medium__icon-size: 18px;
+  --zd-btn--large__icon-size: 24px;
+}
+
+.c-btn--icon {
+  padding: 0;
+  width: var(--zd-btn--icon-size);
+  min-width: 0;
+  height: var(--zd-btn--icon-size);
+}
+
+.c-btn--icon.c-btn--medium {
+  width: var(--zd-btn--icon--medium-size);
+  height: var(--zd-btn--icon--medium-size);
+}
+
+.c-btn--icon.c-btn--large {
+  width: var(--zd-btn--icon--large-size);
+  height: var(--zd-btn--icon--large-size);
+}
+
+.c-btn__icon {
+  transition: var(--zd-btn__icon-transition);
+  margin-top: -2px;
+  width: var(--zd-btn__icon-size);
+  height: var(--zd-btn__icon-size);
+  vertical-align: middle;
+}
+
+.c-btn--medium .c-btn__icon {
+  width: var(--zd-btn--medium__icon-size);
+  height: var(--zd-btn--medium__icon-size);
+}
+
+.c-btn--large .c-btn__icon {
+  width: var(--zd-btn--large__icon-size);
+  height: var(--zd-btn--large__icon-size);
+}
+
+.c-btn__icon.is-rotated {
+  transform: rotate(180deg);
+}
+
+.is-rtl .c-btn__icon.is-rotated {
+  transform: rotate(-180deg);
+}

@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+  <title>Buttons / CSS Components / Zendesk Garden</title>
+  <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/css-menus/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/css-forms/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/site.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/editor.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
+</head>
+<body>
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="http://zendeskgarden.github.io">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-zendesk" />
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="http://zendeskgarden.github.io/css-components">CSS Components</a>
+      <span>/ Buttons</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-settings-fill" />
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron" />
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.custom">Custom</label>
+            </fieldset>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Buttons</h1>
+    <div class="c-main__body">
+      <p class="u-mb">Use the <code class="c-code">.c-btn</code> component for
+        consistent button styling. See the Garden React
+        <a href="http://zendeskgarden.github.io/react-components/#!/Button"><code class="c-code">&lt;Button&gt;</code></a>
+        component for enhanced keyboard and event behavior.</p>
+      <h2 class="u-gamma u-mb-sm">Types</h2>
+      <ul class="u-mb">
+        <li class="u-mb-sm"><button class="c-btn">.c-btn</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--primary">.c-btn.c-btn--primary</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--pill">.c-btn.c-btn--pill</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--basic">.c-btn.c-btn--basic</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--anchor">.c-btn.c-btn--anchor</button></li>
+      </ul>
+      <h2 class="u-gamma u-mb-sm">Colors</h2>
+      <ul class="u-mb">
+        <li class="u-mb-sm"><button class="c-btn c-btn--danger">.c-btn.c-btn--danger</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--primary c-btn--danger">.c-btn.c-btn--primary.c-btn--danger</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--pill c-btn--danger">.c-btn.c-btn--pill.c-btn--danger</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--basic c-btn--danger">.c-btn.c-btn--basic.c-btn--danger</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--anchor c-btn--danger">.c-btn.c-btn--anchor.c-btn--danger</button></li>
+      </ul>
+      <h2 class="u-gamma u-mb-sm">Sizes</h2>
+      <ul class="u-mb">
+        <li class="u-mb-sm"><button class="c-btn c-btn--medium">.c-btn.c-btn--medium</button></li>
+        <li class="u-mb-sm"><button class="c-btn c-btn--large">.c-btn.c-btn--large</button></li>
+        <li class="l-grid u-mb-sm">
+          <span class="l-grid__item u-1/3"><button class="c-btn c-btn--full">.c-btn.c-btn--full</button></span
+          ><span class="l-grid__item u-1/3"><button class="c-btn c-btn--full">.c-btn.c-btn--full</button></span
+          ><span class="l-grid__item u-1/3"><button class="c-btn c-btn--full">.c-btn.c-btn--full</button></span>
+        </li>
+      </ul>
+      <h2 class="u-gamma u-mb-sm">States</h2>
+      <div class="l-grid u-mb">
+        <ul class="l-grid__item u-1/4">
+          <li class="u-mb-sm"><button class="c-btn is-disabled" disabled>.c-btn.is-disabled</button></li>
+          <li class="u-mb-sm"><button class="c-btn is-focused">.c-btn.is-focused</button></li>
+          <li class="u-mb-sm"><button class="c-btn is-hovered">.c-btn.is-hovered</button></li>
+          <li class="u-mb-sm"><button class="c-btn is-active">.c-btn.is-active</button></li>
+        </ul
+        ><ul class="l-grid__item u-1/4">
+          <li class="u-mb-sm"><button class="c-btn c-btn--primary is-disabled" disabled>.c-btn.c-btn--primary.is-disabled</button></li>
+          <li class="u-mb-sm"><button class="c-btn c-btn--primary is-focused">.c-btn.c-btn--primary.is-focused</button></li>
+          <li class="u-mb-sm"><button class="c-btn c-btn--primary is-hovered">.c-btn.c-btn--primary.is-hovered</button></li>
+          <li class="u-mb-sm"><button class="c-btn c-btn--primary is-active">.c-btn.c-btn--primary.is-active</button></li>
+        </ul
+        ><ul class="l-grid__item u-1/4">
+          <li class="u-mb-sm"><button class="c-btn c-btn--basic is-disabled" disabled>.c-btn.c-btn--basic.is-disabled</button></li>
+          <li class="u-mb-sm"><button class="c-btn c-btn--basic is-focused">.c-btn.c-btn--basic.is-focused</button></li>
+          <li class="u-mb-sm"><button class="c-btn c-btn--basic is-hovered">.c-btn.c-btn--basic.is-hovered</button></li>
+          <li class="u-mb-sm"><button class="c-btn c-btn--basic is-active">.c-btn.c-btn--basic.is-active</button></li>
+        </ul
+        ><ul class="l-grid__item u-1/4">
+          <li class="u-mb-sm"><button class="c-btn c-btn--anchor is-disabled u-mb-sm" disabled>.c-btn.c-btn--anchor.is-disabled</button></li>
+          <li class="u-mb-sm"><button class="c-btn c-btn--anchor is-focused u-mb-sm">.c-btn.c-btn--anchor.is-focused</button></li>
+          <li class="u-mb-sm"><button class="c-btn c-btn--anchor is-hovered u-mb-sm">.c-btn.c-btn--anchor.is-hovered</button></li>
+          <li class="u-mb-sm"><button class="c-btn c-btn--anchor is-active u-mb-sm">.c-btn.c-btn--anchor.is-active</button></li>
+        </ul>
+      </div>
+      <h2 class="u-gamma u-mb-sm">Elements</h2>
+      <ul class="u-mb">
+        <li class="u-mb-sm"><a class="c-btn" href="#" role="button">&lt;a&gt;</a></li>
+        <li class="u-mb-sm"><input class="c-btn" type="button" value="&lt;input&gt;"></li>
+        <li class="u-mb-sm"><input class="c-btn" disabled type="button" value="&lt;input [disabled]&gt;"></li>
+        <li class="u-mb-sm"><div class="c-btn" tabindex="0">&lt;div&gt;</div></li>
+      </ul>
+      <h2 class="u-gamma u-mb-sm">Icons</h2>
+      <p class="u-mb-sm">The
+        <code class="c-code">.c-btn--icon</code>
+        modifier is used to support icon buttons. Style the child image using
+        the <code class="c-code">.c-btn__icon</code> class. The following
+        examples demonstrate the icon sized as default, medium, and large.
+        (See the corresponding Garden React
+        <a href="http://zendeskgarden.github.io/react-components/#!/IconButton"><code class="c-code">&lt;IconButton&gt;</code></a>
+        component.)
+      </p>
+      <div class="l-grid u-mb">
+        <ul class="l-grid__item u-1/3">
+          <button class="c-btn c-btn--icon"><img class="c-btn__icon" src="http://placeskull.com/14/14/777777"></button>
+        </ul
+        ><ul class="l-grid__item u-1/3">
+          <button class="c-btn c-btn--icon c-btn--medium"><img class="c-btn__icon" src="http://placeskull.com/18/18/777777"></button>
+        </ul
+        ><ul class="l-grid__item u-1/3">
+          <button class="c-btn c-btn--icon c-btn--large"><img class="c-btn__icon" src="http://placeskull.com/22/22/777777"></button>
+        </ul>
+      </div>
+      <h2 class="u-gamma u-mb-sm">Groups</h2>
+      <p class="u-mb-sm">The
+        <code class="c-code">.l-btn-group</code>
+        layout class can be used as a container for grouped buttons. Use
+        <code class="c-code">.is-selected</code>
+        to indicate item selection. (See the corresponding Garden React
+        <a href="http://zendeskgarden.github.io/react-components/#!/ButtonGroup"><code class="c-code">&lt;ButtonGroup&gt;</code></a>
+        component.)
+      </p>
+      <div class="l-btn-group u-mb" role="tablist">
+        <button class="c-btn is-selected" role="tab"><span dir="ltr">.c-btn One</span></button
+        ><button class="c-btn" role="tab"><span dir="ltr">.c-btn Two</span></button
+        ><button class="c-btn" role="tab"><span dir="ltr">.c-btn Three</span></button>
+      </div>
+      <p class="u-mb-sm">Use the group to combine a button with an icon button
+        to support a split button as shown. The icon button should gain
+        <code class="c-code">.is-active</code>
+        styling while the menu is open. Icon rotation is achieved by adding
+        <code class="c-code">.is-rotated</code> to the
+        <code class="c-code">.c-btn__icon</code> element. (See the corresponding
+        Garden React
+        <a href="http://zendeskgarden.github.io/react-components/#!/SplitButton"><code class="c-code">&lt;SplitButton&gt;</code></a>
+        component.)
+      </p>
+      <div class="l-btn-group u-mb-lg">
+        <button class="c-btn">Split Button</button
+        ><button class="c-btn c-btn--icon js-menu">
+          <svg class="c-btn__icon">
+            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron">
+          </svg>
+        </button>
+        <div class="u-position-relative">
+          <ul aria-hidden="true" class="c-menu c-menu--up" role="menu" style="bottom:32px">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item is-selected" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+          </ul>
+        </div>
+      </div>
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><div class="l-btn-group">
+  <button class="c-btn c-btn--medium c-btn--pill c-btn--primary">Submit As <strong class="u-semibold">Pending</strong></button
+  ><button class="c-btn c-btn--icon c-btn--medium c-btn--pill c-btn--primary" title="more">
+    <svg class="c-btn__icon">
+      <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron">
+    </svg>
+  </button>
+</div></textarea>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="http://zendeskgarden.github.io/jquery.js"></script>
+  <script src="http://zendeskgarden.github.io/svg4everybody.js"></script>
+  <script src="http://zendeskgarden.github.io/index.js"></script>
+  <script src="http://zendeskgarden.github.io/editor.js"></script>
+</body>
+</html>

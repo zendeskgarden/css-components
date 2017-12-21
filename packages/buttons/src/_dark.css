@@ -1,0 +1,11 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-btn--dark-disabled-background-color: var(--zd-color-submarine);
+  --zd-btn--dark-disabled-color: var(--zd-color-algae);
+}
+
+.c-btn.c-btn--dark:--btn-disabled {
+  background-color: var(--zd-btn--dark-disabled-background-color);
+  color: var(--zd-btn--dark-disabled-color);
+}

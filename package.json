@@ -8,6 +8,7 @@
     "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "lerna bootstrap --stream",
     "prepare": "yarn build",
+    "start": "lerna run watch --stream & live-server demo",
     "test": "lerna run test --stream",
     "test:publish": "lerna publish --conventional-commits --skip-git --skip-npm --loglevel=silly"
   },
@@ -26,6 +27,7 @@
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^0.15.0-beta.16",
     "lerna": "^2.5.1",
+    "live-server": "^1.2.0",
     "postcss-cli": "^4.1.1",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^11.0.0",
@@ -43,7 +45,7 @@
       "pre-commit": "yarn format && git add",
       "post-checkout": "if [[ $GIT_PARAMS == *1 ]]; then yarn; fi",
       "post-merge": "yarn",
-      "pre-push": "yarn test"
+      "pre-push": "lerna run test --since"
     }
   }
 }

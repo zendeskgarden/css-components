@@ -1,0 +1,78 @@
+/* stylelint-disable no-descending-specificity */
+@import '@zendeskgarden/css-variables';
+@import '_variables';
+@import '_selectors';
+
+:root {
+  --zd-btn-active-background-color: color(var(--zd-btn-color) blackness(+10%));
+  --zd-btn-active-color: var(--zd-color-white);
+  --zd-btn-active-transition:
+    border-color .1s ease-in-out,
+    background-color .1s ease-in-out,
+    color .1s ease-in-out;
+  --zd-btn-disabled-color: var(--zd-color-aluminum);
+  --zd-btn-focused-box-shadow:
+    0 0 0 3px
+    color(var(--zd-btn-color) alpha(40%));
+  --zd-btn-hovered-background-color: color(var(--zd-btn-color) lightness(+10%) saturation(var(--zd-btn-hovered-background-color-saturation)));
+  --zd-btn-hovered-color: var(--zd-color-white);
+  --zd-btn--danger-active-background-color: color(var(--zd-btn--danger-color) blackness(+10%));
+  --zd-btn--danger-focused-box-shadow:
+    0 0 0 3px
+    color(var(--zd-btn--danger-color) alpha(40%));
+  --zd-btn--danger-hovered-background-color: color(var(--zd-btn--danger-color) lightness(+10%) saturation(+10%));
+}
+
+/* 1. Anchor tag reset. */
+
+.c-btn:--btn-hovered {
+  border-color: transparent;
+  background-color: var(--zd-btn-hovered-background-color);
+  text-decoration: none; /* [1] */
+  color: var(--zd-btn-hovered-color);
+}
+
+.c-btn.c-btn--danger:--btn-hovered {
+  background-color: var(--zd-btn--danger-hovered-background-color);
+}
+
+.c-btn:focus {
+  outline: none;
+  text-decoration: none; /* [1] */
+}
+
+.c-btn:--btn-focused {
+  box-shadow: var(--zd-btn-focused-box-shadow);
+}
+
+.c-btn.c-btn--danger:--btn-focused {
+  box-shadow: var(--zd-btn--danger-focused-box-shadow);
+}
+
+.c-btn:--btn-active {
+  transition: var(--zd-btn-active-transition);
+  border-color: transparent;
+  background-color: var(--zd-btn-active-background-color);
+  text-decoration: none; /* [1] */
+  color: var(--zd-btn-active-color);
+}
+
+.c-btn.c-btn--danger:--btn-active {
+  background-color: var(--zd-btn--danger-active-background-color);
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-btn:--btn-hovered:--btn-active,
+.c-btn:--btn-focused:--btn-active {
+  box-shadow: none;
+}
+/* stylelint-enable selector-max-specificity */
+
+.c-btn:--btn-disabled {
+  border-color: transparent;
+  box-shadow: none;
+  background-color: var(--zd-btn-disabled-background-color);
+  cursor: default;
+  color: var(--zd-btn-disabled-color);
+}
+/* stylelint-enable no-descending-specificity */
