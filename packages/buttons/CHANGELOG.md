@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-      <a name="3.7.0"></a>
+<a name="3.7.0"></a>
 # 3.7.0 (2017-12-21)
 
 
@@ -14,7 +14,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-      <a name="3.6.1"></a>
 ## [3.6.1] - 2017-12-06
 ### Fixed (per [#30](https://github.com/zendeskgarden/css-buttons/pull/30))
 - Remove poor border display from a disabled + primary grouped button.
