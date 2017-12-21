@@ -1,6 +1,20 @@
 # Change Log
 
-<a name="3.6.1"></a>
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+      <a name="3.7.0"></a>
+# 3.7.0 (2017-12-21)
+
+
+### Features
+
+* add css-buttons package to monorepo ([#3](https://github.com/zendeskgarden/css-components/issues/3)) ([239d9a3](https://github.com/zendeskgarden/css-components/commit/239d9a3))
+
+
+
+
+      <a name="3.6.1"></a>
 ## [3.6.1] - 2017-12-06
 ### Fixed (per [#30](https://github.com/zendeskgarden/css-buttons/pull/30))
 - Remove poor border display from a disabled + primary grouped button.
@@ -38,12 +52,12 @@
 ## [3.1.0] - 2017-09-14
 ### Added (per [#19](https://github.com/zendeskgarden/css-buttons/pull/19))
 - Include complementary `.c-btn--custom` CSS demonstrating how to apply
-  a primary color change.
+a primary color change.
 
 ## [3.0.0] - 2017-06-01
 ### Changed (per [#17](https://github.com/zendeskgarden/css-buttons/pull/17))
 - Prepared package for registry publish as
-  `@zendesk/garden-css-buttons`. See README for updated installation.
+`@zendesk/garden-css-buttons`. See README for updated installation.
 
 ## [2.2.0] - 2017-04-11
 ### Added (per [#15](https://github.com/zendeskgarden/css-buttons/pull/15))
@@ -89,7 +103,7 @@
 ### Added (per [#1](https://github.com/zendeskgarden/css-buttons/pull/1))
 - Focus styling.
 - Modifications for `.c-btn--pill`, `.c-btn--medium`, `.c-btn--large`,
-  and `.c-btn--full`.
+and `.c-btn--full`.
 - `.l-btn-group` to support button groups.
 
 ### Fixed (per [#4](https://github.com/zendeskgarden/css-buttons/issues/4))
@@ -98,7 +112,7 @@
 ## [0.2.0] - 2016-02-22
 ### Added
 - [#2](https://github.com/zendeskgarden/css-buttons/pull/2)
-  `.c-btn--basic`.
+`.c-btn--basic`.
 
 ## 0.1.0 - 2016-01-05
 
