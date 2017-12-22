@@ -76,9 +76,14 @@ postcss([cssnano])
     const json = '{\n  ' + jsonItems.join(',\n  ') + '\n}\n';
     const scss = scssItems.join('\n') + '\n';
 
+    console.log('Writing CSS');
     fs.writeFileSync(path.join(destination, 'index.css'), css, 'utf8');
+    console.log('Writing JS');
     fs.writeFileSync(path.join(destination, 'index.js'), js, 'utf8');
+    console.log('Writing JSON');
     fs.writeFileSync(path.join(destination, 'index.json'), json, 'utf8');
+    console.log('Writing SCSS');
     fs.writeFileSync(path.join(destination, 'index.scss'), scss, 'utf8');
-    fs.writeFileSync(path.join(destination, 'module.js'), module, 'utf-8');
+    console.log('Writing ES6 module');
+    fs.writeFileSync(path.join(destination, 'module.js'), module, 'utf8');
   });

@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-      <a name="3.1.0"></a>
+<a name="3.1.0"></a>
 # 3.1.0 (2017-12-20)
 
 
@@ -14,7 +14,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-      <a name="3.0.0"></a>
 ## [3.0.0] - 2017-10-18
 ### Added (per [#21](https://github.com/zendeskgarden/css-variables/pull/21))
 - Update `package.json` to point to dist rather than src.
