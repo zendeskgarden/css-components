@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.5.0] - 2017-12-22
+### Fixed (per [#50](https://github.com/zendeskgarden/css-forms/pull/50) and [#51](https://github.com/zendeskgarden/css-forms/pull/51))
+- Add support for inline media (icons) within text inputs
+
 ## [3.4.2] - 2017-12-06
 ### Fixed (per [#49](https://github.com/zendeskgarden/css-forms/pull/49))
 - Reduce padding on `.c-txt__input--label` to prevent pixel shift on
@@ -174,6 +178,7 @@
 ### Added
 - `.c-chk` component.
 
+[3.5.0]: https://github.com/zendeskgarden/css-forms/compare/v3.4.2...v3.5.0
 [3.4.2]: https://github.com/zendeskgarden/css-forms/compare/v3.4.1...v3.4.2
 [3.4.1]: https://github.com/zendeskgarden/css-forms/compare/v3.4.0...v3.4.1
 [3.4.0]: https://github.com/zendeskgarden/css-forms/compare/v3.3.2...v3.4.0
