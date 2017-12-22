@@ -1,0 +1,38 @@
+:root {
+  --zd-txt__input__icon-start-margin: calc(var(--zd-txt__input-padding-horizontal));
+  --zd-txt__input__icon-end-margin: calc(var(--zd-txt__input-padding-horizontal) * (3 / 4));
+  --zd-txt__input__icon-size: 1em;
+}
+
+.c-txt__input--icon {
+  display: flex;
+  align-items: baseline;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.c-txt__input--icon .c-txt__input {
+  flex-grow: 1;
+}
+
+.c-txt__input__icon {
+  height: var(--zd-txt__input__icon-size);
+  color: var(--zd-txt__input-color);
+}
+
+.c-txt__input__icon svg {
+  width: var(--zd-txt__input__icon-size);
+  height: var(--zd-txt__input__icon-size);
+}
+
+.c-txt__input__icon:first-of-type,
+.is-rtl .c-txt__input__icon:last-of-type {
+  margin: auto var(--zd-txt__input__icon-end-margin) auto var(--zd-txt__input__icon-start-margin);
+}
+
+/* stylelint-disable no-descending-specificity */
+.c-txt__input__icon:last-of-type,
+.is-rtl .c-txt__input__icon:first-of-type {
+  margin: auto var(--zd-txt__input__icon-start-margin) auto var(--zd-txt__input__icon-end-margin);
+}
+/* stylelint-enable no-descending-specificity */

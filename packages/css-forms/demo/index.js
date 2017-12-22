@@ -39,4 +39,10 @@ $(document).ready(function() {
   $('.c-chk__input[indeterminate]').each(function() {
     $(this).prop('indeterminate', true);
   });
+
+  $(document).on('focus', '.c-txt__input--icon input', function() {
+    $(this).parent().parent().addClass('is-focused');
+  }).on('blur', '.c-txt__input--icon input', function() {
+    $(this).parent().parent().removeClass('is-focused');
+  });
 });
