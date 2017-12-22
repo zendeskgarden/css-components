@@ -7,7 +7,7 @@
     "clean": "git clean -Xdf .",
     "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "lerna bootstrap --stream",
-    "prepare": "yarn build",
+    "prepublish": "yarn build",
     "start": "lerna run watch --parallel --stream & live-server demo",
     "test": "lerna run test --stream",
     "test:publish": "lerna publish --conventional-commits --skip-git --skip-npm --loglevel=silly"
