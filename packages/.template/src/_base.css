@@ -1,10 +1,10 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
-.c-template {
+.c-{{component}} {
   font-size: var(--zd-font-size-giga);
   font-weight: var(--zd-font-weight-light);
 }
 
-.c-template.is-rtl {
+.c-{{component}}.is-rtl {
   direction: rtl;
 }

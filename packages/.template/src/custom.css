@@ -1,5 +1,5 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
-.c-template--custom {
+.c-{{component}}--custom {
   color: var(--zd-color-mandy);
 }

@@ -1,13 +1,13 @@
-# @zendeskgarden/css-{{template}}
+# @zendeskgarden/css-{{component}}
 
 This package contains ...
 
 ## Installation
 
-    npm install --save-dev @zendeskgarden/css-{{template}}
+    npm install --save-dev @zendeskgarden/css-{{component}}
 
 ## Usage
 
-Once installed, {{template}} CSS can be accessed via `postcss-import`.
+Once installed, {{component}} CSS can be accessed via `postcss-import`.
 
-    @import '@zendeskgarden/css-{{template}}';
+    @import '@zendeskgarden/css-{{component}}';

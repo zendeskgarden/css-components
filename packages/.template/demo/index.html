@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Template / CSS Components / Zendesk Garden</title>
+  <title>{{capitalize component}} / CSS Components / Zendesk Garden</title>
   <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
   <link href="http://zendeskgarden.github.io/css-menus/index.css" rel="stylesheet">
   <link href="http://zendeskgarden.github.io/css-forms/index.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     ></figure
     ><h1 class="c-header__title"
       ><a class="u-fg-inherit" href="http://zendeskgarden.github.io/css-components">CSS Components</a>
-      <span>/ Template</span>
+      <span>/ {{capitalize component}}</span>
     </h1>
     <ul class="c-ctl c-ctl--header">
       <li class="c-ctl__item u-position-relative">
@@ -58,14 +58,14 @@
     </ul>
   </header>
   <main class="c-main c-main--page">
-    <h1 class="c-main__title">Template</h1>
+    <h1 class="c-main__title">{{capitalize component}}</h1>
     <div class="c-main__body">
-      <p class="c-template u-mb-lg">Hello World!</p>
+      <p class="c-{{component}} u-mb-lg">Hello World!</p>
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-          <textarea class="c-playground__code"><p class="c-template">Hello World!</p></textarea>
+          <textarea class="c-playground__code"><p class="c-{{component}}">Hello World!</p></textarea>
         </div>
       </section>
     </div>
