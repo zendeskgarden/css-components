@@ -1,6 +1,20 @@
 # Change Log
 
-<a name="3.2.0"></a>
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+      <a name="3.3.0"></a>
+# 3.3.0 (2017-12-22)
+
+
+### Features
+
+* add css-tabs package to monorepo ([#5](https://github.com/zendeskgarden/css-components/issues/5)) ([8017661](https://github.com/zendeskgarden/css-components/commit/8017661))
+
+
+
+
+      <a name="3.2.0"></a>
 ## [3.2.0] - 2017-12-06
 ### Changed (per [#9](https://github.com/zendeskgarden/css-tabs/pull/9))
 - Update to base-4 sizing.
@@ -13,7 +27,7 @@
 ## [3.1.0] - 2017-10-18
 ### Added (per [#6](https://github.com/zendeskgarden/css-tabs/pull/6))
 - Include complementary `.c-tab--custom` CSS demonstrating how to apply
-  an accent color change.
+an accent color change.
 
 ## [3.0.1] - 2017-10-12
 ### Fixed (per [#7](https://github.com/zendeskgarden/css-tabs/pull/7))
@@ -22,7 +36,7 @@
 ## [3.0.0] - 2017-06-15
 ### Updated (per [#5](https://github.com/zendeskgarden/css-tabs/pull/5))
 - Prepared package for registry publish as `@zendesk/garden-css-tabs`.
-  See README for updated installation.
+See README for updated installation.
 
 ## [2.0.1] - 2017-01-19
 ### Fixed (per [#4](https://github.com/zendeskgarden/css-tabs/pull/4))
