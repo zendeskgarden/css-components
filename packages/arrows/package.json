@@ -1,0 +1,33 @@
+{
+  "name": "@zendeskgarden/css-arrows",
+  "description": "Garden component CSS",
+  "author": "Zendesk Garden <garden@zendesk.com>",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/zendeskgarden/css-components",
+  "bugs": {
+    "url": "https://github.com/zendeskgarden/css-components/issues"
+  },
+  "version": "1.1.0",
+  "main": "dist/index.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "postcss src/[a-z]*.css --dir dist",
+    "format": "prettier-package-json --write",
+    "lint": "stylelint $(find src -name '*.css')",
+    "test": "yarn lint",
+    "watch": "yarn build -- --watch"
+  },
+  "keywords": [
+    "components",
+    "css",
+    "garden",
+    "zendesk"
+  ],
+  "publishConfig": {
+    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+  },
+  "style": "src/index.css"
+}
