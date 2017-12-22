@@ -25,6 +25,7 @@
     "commitizen": "^2.9.6",
     "cssnano": "^3.10.0",
     "cz-conventional-changelog": "^2.1.0",
+    "gh-pages": "^1.1.0",
     "husky": "^0.15.0-beta.16",
     "lerna": "^2.5.1",
     "live-server": "^1.2.0",
