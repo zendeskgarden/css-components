@@ -1,17 +1,17 @@
-# Chrome Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-chrome.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-chrome)
+# @zendeskgarden/css-chrome
 
-The `garden-css-chrome` package contains a variety of classes for
-handling consistent product page navigation, headers, and layout.
+This package contains a variety of classes for handling consistent
+product page navigation, headers, and layout.
 
 ## Installation
 
-    npm install --save-dev @zendesk/garden-css-chrome
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+    npm install --save-dev @zendeskgarden/css-chrome
 
 ## Usage
+
+Once installed, chrome CSS can be accessed via `postcss-import`.
+
+    @import '@zendeskgarden/css-chrome';
 
 Component CSS provides styling for the following basic page structure
 (actual HTML elements may vary).
@@ -36,9 +36,9 @@ Component CSS provides styling for the following basic page structure
 
 ### Modifications
 
-See http://zendeskgarden.github.io/css-chrome/ for a variety of chrome
-modification classes, including dark mode, support for RTL, standalone
-headers, branded nav, etc.
+See http://zendeskgarden.github.io/css-components/chrome/ for a variety
+of chrome modification classes, including dark mode, support for RTL,
+standalone headers, branded nav, etc.
 
 ### Accessibility
 
@@ -49,16 +49,3 @@ best practice.
 * Be sure to use `a` elements for navigational items and `button`
   elements for action items (i.e. menus).
 * Use `aria-current` to indicate the current item in the nav.
-
-## Tests
-
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
