@@ -1,0 +1,72 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-tab__list-border-color: var(--zd-color-gainsboro);
+  --zd-tab__list-border-width: 1px;
+  --zd-tab__list-color: var(--zd-color-aluminum);
+  --zd-tab__list-font-size: var(--zd-font-size-epsilon);
+  --zd-tab__list-line-height: 20px;
+  --zd-tab__list-margin-bottom: var(--zd-spacing);
+  --zd-tab__list__item-border-width: 3px;
+  --zd-tab__list__item-padding-bottom: calc(var(--zd-tab__list__item-padding-top) - var(--zd-tab__list__item-border-width) - var(--zd-tab__list-border-width));
+  --zd-tab__list__item-padding-horizontal: 28px;
+  --zd-tab__list__item-padding-top: 10px;
+  --zd-tab__list__item-padding: var(--zd-tab__list__item-padding-top) var(--zd-tab__list__item-padding-horizontal) var(--zd-tab__list__item-padding-bottom);
+  --zd-tab__list__item-transition: color .25s ease-in-out;
+  --zd-tab__list__item__a-margin: calc(var(--zd-tab__list__item-padding-top) * -1) calc(var(--zd-tab__list__item-padding-horizontal) * -1) calc(var(--zd-tab__list__item-padding-bottom) * -1);
+}
+
+.c-tab {
+  display: block;
+  overflow: hidden;
+}
+
+.c-tab.is-rtl {
+  direction: rtl;
+}
+
+/* 1. List element reset. */
+.c-tab__list {
+  display: block;
+  margin-top: 0; /* [1] */
+  margin-bottom: var(--zd-tab__list-margin-bottom);
+  border-bottom: 1px solid var(--zd-tab__list-border-color);
+  padding: 0; /* [1] */
+  line-height: var(--zd-tab__list-line-height);
+  white-space: nowrap;
+  color: var(--zd-tab__list-color);
+  font-size: var(--zd-tab__list-font-size);
+}
+
+/* 1. Text truncation (requires `max-width`).
+ * 2. Overflow compensation.
+ * 3. Anchor element reset. */
+.c-tab__list__item {
+  display: inline-block;
+  position: relative;
+  transition: var(--zd-tab__list__item-transition);
+  border-width: var(--zd-tab__list__item-border-width);
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  cursor: pointer;
+  padding: var(--zd-tab__list__item-padding);
+  overflow: hidden; /* [1] */
+  vertical-align: top; /* [2] */
+  user-select: none;
+  text-align: center;
+  text-decoration: none; /* [3] */
+  text-overflow: ellipsis; /* [1] */
+  color: inherit; /* [3] */
+}
+
+/* 1. Expand anchor block to cover entire tab list item. */
+.c-tab__list__item a {
+  display: block;
+  margin: var(--zd-tab__list__item__a-margin); /* [1] */
+  padding: var(--zd-tab__list__item-padding); /* [1] */
+  color: inherit;
+}
+
+.c-tab__panel {
+  display: block;
+}

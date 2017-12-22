@@ -1,0 +1,87 @@
+@import '@zendeskgarden/css-variables';
+@import '_variables';
+@import '_selectors';
+
+:root {
+  --zd-tab__list__item-active-color: var(--zd-tab-accent-color);
+  --zd-tab__list__item-active-border-color: currentColor;
+  --zd-tab__list__item-disabled-color: var(--zd-tab-disabled-color);
+  --zd-tab__list__item-focused-box-shadow:
+    var(--zd-tab-focused-box-shadow)
+    color(var(--zd-tab-accent-color) alpha(40%));
+  --zd-tab__list__item-focused-border-radius: 4px;
+  --zd-tab__list__item-focused-color: var(--zd-tab-accent-color);
+  --zd-tab__list__item-focused-height: var(--zd-tab__list-line-height);
+  --zd-tab__list__item-focused-left: calc(var(--zd-tab__list__item-padding-horizontal) - 4px);
+  --zd-tab__list__item-focused-top: var(--zd-tab__list__item-padding-top);
+  --zd-tab__list__item-focused-transition: box-shadow .1s ease-in-out;
+  --zd-tab__list__item-hovered-color: var(--zd-tab-accent-color);
+  --zd-tab__list__item-selected-border-color: currentColor;
+  --zd-tab__list__item-selected-color: var(--zd-tab-accent-color);
+}
+
+/* 1. Specificity hack for border color. */
+
+.c-tab__list__item:--tab-hovered {
+  color: var(--zd-tab__list__item-hovered-color);
+}
+
+.c-tab__list__item a:hover {
+  text-decoration: none;
+}
+
+.c-tab__list__item:focus,
+.c-tab__list__item a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.c-tab__list__item:--tab-focused {
+  color: var(--zd-tab__list__item-focused-color);
+}
+
+.c-tab__list__item::before {
+  transition: var(--zd-tab__list__item-focused-transition);
+  content: '';
+}
+
+.c-tab__list__item:--tab-focused::before {
+  position: absolute;
+  top: var(--zd-tab__list__item-focused-top);
+  right: var(--zd-tab__list__item-focused-left);
+  left: var(--zd-tab__list__item-focused-left);
+  border-radius: var(--zd-tab__list__item-focused-border-radius);
+  box-shadow: var(--zd-tab__list__item-focused-box-shadow);
+  height: var(--zd-tab__list__item-focused-height);
+  /* stylelint-disable no-unsupported-browser-features */
+  pointer-events: none;
+  /* stylelint-enable no-unsupported-browser-features */
+}
+
+.c-tab__list__item.c-tab__list__item:--tab-active { /* [1] */
+  border-color: var(--zd-tab__list__item-active-border-color);
+  color: var(--zd-tab__list__item-active-color);
+}
+
+.c-tab__list__item.c-tab__list__item:--tab-active::before {
+  box-shadow: none;
+}
+
+.c-tab__list__item.c-tab__list__item:--tab-selected { /* [1] */
+  border-color: var(--zd-tab__list__item-selected-border-color);
+  color: var(--zd-tab__list__item-selected-color);
+}
+
+.c-tab__list__item.c-tab__list__item:--tab-disabled {
+  border-color: transparent;
+  cursor: default;
+  color: var(--zd-tab__list__item-disabled-color);
+}
+
+.c-tab__list__item.c-tab__list__item:--tab-disabled a {
+  cursor: inherit;
+}
+
+.c-tab__panel:--tab-hidden {
+  display: none;
+}

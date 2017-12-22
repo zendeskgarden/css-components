@@ -1,0 +1,20 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-tab--dark__list-border-color: var(--zd-color-breaker-bay);
+  --zd-tab--dark__list-color: var(--zd-color-submarine);
+  --zd-tab--dark__list__item-disabled-color: var(--zd-color-breaker-bay);
+}
+
+.c-tab--dark .c-tab__list {
+  border-color: var(--zd-tab--dark__list-border-color);
+  color: var(--zd-tab--dark__list-color);
+}
+
+/* stylelint-disable selector-max-specificity,
+   selector-pseudo-class-no-unknown */
+.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item:--tab-disabled {
+  color: var(--zd-tab--dark__list__item-disabled-color);
+}
+/* stylelint-enable selector-max-specificity,
+   selector-pseudo-class-no-unknown */

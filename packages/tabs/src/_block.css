@@ -1,0 +1,66 @@
+@import '_selectors';
+
+:root {
+  --zd-tab--block__list__item-margin-bottom: 20px;
+  --zd-tab--block__list__item-padding-vertical: 4px;
+  --zd-tab--block__list__item-padding-horizontal: 8px;
+  --zd-tab--block__list__item-padding: var(--zd-tab--block__list__item-padding-vertical) var(--zd-tab--block__list__item-padding-horizontal);
+  --zd-tab--block__list__item__a-margin: calc(var(--zd-tab--block__list__item-padding-vertical) * -1) calc(var(--zd-tab--block__list__item-padding-horizontal) * -1);
+  --zd-tab--block__list__item-focused-left: calc(var(--zd-tab--block__list__item-padding-horizontal) - 4px);
+  --zd-tab--block__list__item-focused-top: var(--zd-tab--block__list__item-padding-vertical);
+  --zd-tab--block__panel-margin: 32px;
+}
+
+.c-tab--block {
+  display: table;
+}
+
+.c-tab--block .c-tab__list {
+  display: table-cell;
+  margin-bottom: 0;
+  border-bottom: none;
+  vertical-align: top;
+}
+
+.c-tab--block .c-tab__list__item {
+  display: block;
+  margin-bottom: var(--zd-tab--block__list__item-margin-bottom);
+  border-bottom-style: none;
+  border-left-style: solid;
+  border-left-color: transparent;
+  padding: var(--zd-tab--block__list__item-padding);
+  text-align: left;
+}
+
+/* 1. Expand anchor block to cover entire tab list item. */
+.c-tab--block .c-tab__list__item a {
+  margin: var(--zd-tab--block__list__item__a-margin); /* [1] */
+  padding: var(--zd-tab--block__list__item-padding); /* [1] */
+}
+
+.c-tab--block .c-tab__list__item:--tab-last {
+  margin-bottom: 0;
+}
+
+.c-tab--block .c-tab__list__item:--tab-focused::before {
+  top: var(--zd-tab--block__list__item-focused-top);
+  right: var(--zd-tab--block__list__item-focused-left);
+  left: var(--zd-tab--block__list__item-focused-left);
+}
+
+.c-tab--block.is-rtl .c-tab__list__item {
+  margin-left: 0;
+  border-left: 0;
+  border-right-style: solid;
+  border-right-color: transparent;
+  text-align: right;
+}
+
+.c-tab--block .c-tab__panel {
+  margin-left: var(--zd-tab--block__panel-margin);
+  vertical-align: top;
+}
+
+.c-tab--block.is-rtl .c-tab__panel {
+  margin-right: var(--zd-tab--block__panel-margin);
+}
