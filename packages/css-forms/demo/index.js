@@ -40,9 +40,9 @@ $(document).ready(function() {
     $(this).prop('indeterminate', true);
   });
 
-  $(document).on('focus', '.c-txt__input--icon input', function() {
+  $(document).on('focus', '.c-txt__input--media input', function() {
     $(this).parent().parent().addClass('is-focused');
-  }).on('blur', '.c-txt__input--icon input', function() {
+  }).on('blur', '.c-txt__input--media input', function() {
     $(this).parent().parent().removeClass('is-focused');
   });
 });

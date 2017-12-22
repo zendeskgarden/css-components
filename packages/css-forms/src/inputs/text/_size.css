@@ -8,8 +8,8 @@
   --zd-txt--sm__input--select__chevron-background-position: right var(--zd-txt--sm__input--select__chevron-background-position-x) center;
   --zd-txt--sm__input--select__chevron-width: calc(var(--zd-txt--sm__input--select-padding-unit) * 1px);
   --zd-txt-rtl--sm__input--select__chevron-background-position: left var(--zd-txt--sm__input--select__chevron-background-position-x) center;
-  --zd-txt--sm__input__icon-start-margin: var(--zd-txt--sm__input-padding-horizontal);
-  --zd-txt--sm__input__icon-end-margin: calc(var(--zd-txt--sm__input-padding-horizontal) * (3 / 4));
+  --zd-txt--sm__media-start-margin: var(--zd-txt--sm__input-padding-horizontal);
+  --zd-txt--sm__media-end-margin: calc(var(--zd-txt--sm__input-padding-horizontal) * (3 / 4));
 }
 
 .c-txt--sm .c-txt__input {
@@ -40,14 +40,14 @@
   padding-left: var(--zd-txt--sm__input--select-padding-right);
 }
 
-.c-txt--sm .c-txt__input__icon:first-of-type,
-.c-txt--sm.is-rtl .c-txt__input__icon:last-of-type {
-  margin: auto var(--zd-txt--sm__input__icon-end-margin) auto var(--zd-txt--sm__input__icon-start-margin);
+.c-txt--sm .c-txt__input--media__figure:first-of-type,
+.c-txt--sm.is-rtl .c-txt__input--media__figure:last-of-type {
+  margin: auto var(--zd-txt--sm__media-end-margin) auto var(--zd-txt--sm__media-start-margin);
 }
 
-.c-txt--sm .c-txt__input__icon:last-of-type,
-.c-txt--sm.is-rtl .c-txt__input__icon:first-of-type {
-  margin: auto var(--zd-txt--sm__input__icon-start-margin) auto var(--zd-txt--sm__input__icon-end-margin);
+.c-txt--sm .c-txt__input--media__figure:last-of-type,
+.c-txt--sm.is-rtl .c-txt__input--media__figure:first-of-type {
+  margin: auto var(--zd-txt--sm__media-start-margin) auto var(--zd-txt--sm__media-end-margin);
 }
 /* stylelint-enable selector-max-specificity, no-descending-specificity */
 
@@ -56,7 +56,7 @@
   background-position: var(--zd-txt-rtl--sm__input--select__chevron-background-position);
 }
 
-.c-txt--sm .c-txt__input.c-txt__input--icon {
+.c-txt--sm .c-txt__input.c-txt__input--media {
   padding-right: 0;
   padding-left: 0;
 }
