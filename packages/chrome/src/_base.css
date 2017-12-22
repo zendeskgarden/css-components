@@ -1,0 +1,63 @@
+@import '@zendeskgarden/css-variables';
+@import '_variables';
+
+:root {
+  --zd-chrome-font-family: var(--zd-font-family-system);
+  --zd-chrome-min-height: 100vh;
+  --zd-chrome__body-color: var(--zd-color-anti-flash-white);
+  --zd-chrome__body__content-color: var(--zd-color-dark-gray);
+  --zd-chrome__body__content-font-size: var(--zd-font-size-epsilon);
+  --zd-chrome__body__content-height: calc(100% - var(--zd-chrome__body__header-height));
+  --zd-chrome__body__content-line-height: calc(20 / 14);
+  --zd-chrome__body__content__main-background-color: var(--zd-color-white);
+  --zd-chrome__body__content__sidebar-border: 1px solid var(--zd-chrome__body__header-border-color);
+  --zd-chrome__body__content__sidebar-width: 330px;
+}
+
+/* 1. Prevent "bounce" overscroll. */
+
+.c-chrome {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  overflow-y: hidden; /* [1] */
+  font-family: var(--zd-chrome-font-family);
+}
+
+.c-chrome.is-rtl {
+  direction: rtl;
+}
+
+.c-chrome__body {
+  flex: 1;
+  order: var(--zd-chrome__body-order);
+  background-color: var(--zd-chrome__body-color);
+}
+
+.c-chrome__body__content {
+  display: flex;
+  height: var(--zd-chrome__body__content-height);
+  line-height: var(--zd-chrome__body__content-line-height);
+  color: var(--zd-chrome__body__content-color);
+  font-size: var(--zd-chrome__body__content-font-size);
+}
+
+.c-chrome__body__content__main {
+  order: var(--zd-chrome__body__content__main-order);
+  background-color: var(--zd-chrome__body__content__main-background-color);
+  overflow: auto;
+}
+
+.c-chrome__body__content__sidebar {
+  flex-shrink: 0;
+  order: var(--zd-chrome__body__content__sidebar-order);
+  box-sizing: border-box;
+  border-right: var(--zd-chrome__body__content__sidebar-border);
+  width: var(--zd-chrome__body__content__sidebar-width);
+  overflow: auto;
+}
+
+.c-chrome.is-rtl .c-chrome__body__content__sidebar {
+  border-right: none;
+  border-left: var(--zd-chrome__body__content__sidebar-border);
+}

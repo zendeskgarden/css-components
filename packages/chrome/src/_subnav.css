@@ -1,0 +1,91 @@
+@import '@zendeskgarden/css-variables';
+@import '_variables';
+@import '_selectors';
+
+:root {
+  --zd-chrome__subnav-background-color: var(--zd-color-daintree);
+  --zd-chrome__subnav-color: var(--zd-color-white);
+  --zd-chrome__subnav-font-size: var(--zd-font-size-epsilon);
+  --zd-chrome__subnav-min-width: 180px;
+  --zd-chrome__subnav-padding: 30px 20px;
+  --zd-chrome__subnav__item-border-radius: 4px;
+  --zd-chrome__subnav__item-line-height: calc(30 / 14);
+  --zd-chrome__subnav__item-margin: 8px;
+  --zd-chrome__subnav__item-opacity: .6;
+  --zd-chrome__subnav__item-padding: 0 8px;
+  --zd-chrome__subnav__item-transition:
+    box-shadow .1s ease-in-out,
+    background-color .1s ease-in-out,
+    opacity .1s ease-in-out;
+  --zd-chrome__subnav__item-active-background-color: color(var(--zd-color-white) alpha(3%));
+  --zd-chrome__subnav__item-current-background-color: color(var(--zd-color-white) alpha(10%));
+  --zd-chrome__subnav__item-focused-box-shadow:
+    0 0 0 3px
+    color(var(--zd-color-white) alpha(20%));
+  --zd-chrome__subnav__item-hovered-background-color: color(var(--zd-color-black) alpha(10%));
+}
+
+.c-chrome__subnav {
+  flex-direction: column;
+  order: var(--zd-chrome__subnav-order);
+  background-color: var(--zd-chrome__subnav-background-color);
+  padding: var(--zd-chrome__subnav-padding);
+  min-width: var(--zd-chrome__subnav-min-width);
+  color: var(--zd-chrome__subnav-color);
+  font-size: var(--zd-chrome__subnav-font-size);
+}
+
+/* 1. Anchor reset */
+
+.c-chrome__subnav__item {
+  display: flex;
+  transition: var(--zd-chrome__subnav__item-transition);
+  opacity: var(--zd-chrome__subnav__item-opacity);
+  margin-top: var(--zd-chrome__subnav__item-margin);
+  border-radius: var(--zd-chrome__subnav__item-border-radius);
+  padding: var(--zd-chrome__subnav__item-padding);
+  line-height: var(--zd-chrome__subnav__item-line-height);
+  white-space: nowrap;
+}
+
+.c-chrome__subnav__item,
+.c-chrome__subnav__item:hover,
+.c-chrome__subnav__item:focus {
+  text-decoration: none; /* [1] */
+  color: inherit; /* [1] */
+}
+
+.c-chrome__subnav__item:focus {
+  outline: none; /* [1] */
+}
+
+.c-chrome__subnav__item:--chrome-hovered,
+.c-chrome__subnav__item:--chrome-focused,
+.c-chrome__subnav__item:--chrome-current {
+  opacity: 1;
+}
+
+.c-chrome__subnav__item:--chrome-hovered {
+  background-color: var(--zd-chrome__subnav__item-hovered-background-color);
+}
+
+.c-chrome__subnav__item:--chrome-focused {
+  box-shadow: var(--zd-chrome__subnav__item-focused-box-shadow);
+}
+
+.c-chrome__subnav__item:--chrome-active {
+  background-color: var(--zd-chrome__subnav__item-active-background-color);
+}
+
+.c-chrome__subnav__item:--chrome-current {
+  background-color: var(--zd-chrome__subnav__item-current-background-color);
+}
+
+.c-chrome__subnav__item:first-of-type {
+  margin-top: 0;
+}
+
+.c-chrome__subnav__item__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

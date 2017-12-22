@@ -1,0 +1,200 @@
+@import '@zendeskgarden/css-variables';
+@import '_variables';
+@import '_selectors';
+
+:root {
+  --zd-chrome__nav-width: 60px;
+  --zd-chrome__nav-font-size: var(--zd-font-size-epsilon);
+  --zd-chrome__nav__fab-background-color: var(--zd-color-breaker-bay);
+  --zd-chrome__nav__fab-box-shadow:
+    0 6px 12px 0
+    color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-chrome__nav__fab-bottom: 22px;
+  --zd-chrome__nav__fab-font-weight: var(--zd-font-weight-semibold);
+  --zd-chrome__nav__fab-height: 40px;
+  --zd-chrome__nav__fab-right: calc(var(--zd-chrome__nav__fab-width) / 2 * -1);
+  --zd-chrome__nav__fab-transition:
+    box-shadow .1s ease-in-out,
+    background-color .1s ease-in-out;
+  --zd-chrome__nav__fab-width: 60px;
+  --zd-chrome__nav__fab-active-background-color: color(var(--zd-chrome__nav__fab-background-color) blackness(+10%));
+  --zd-chrome__nav__fab-focused-box-shadow: var(--zd-chrome__nav__item-focused-box-shadow);
+  --zd-chrome__nav__fab-hovered-background-color: color(var(--zd-chrome__nav__fab-background-color) lightness(+10%));
+  --zd-chrome__nav__fab__icon-size: 20px;
+  --zd-chrome__nav__fab__text-margin: 0 4px;
+  --zd-chrome__nav__item-height: 50px;
+  --zd-chrome__nav__item-opacity: .6;
+  --zd-chrome__nav__item-transition:
+    box-shadow .1s ease-in-out,
+    background-color .1s ease-in-out,
+    opacity .1s ease-in-out;
+  --zd-chrome__nav__item-active-background-color: color(var(--zd-color-white) alpha(10%));
+  --zd-chrome__nav__item-current-background-color: var(--zd-chrome-accent-color);
+  --zd-chrome__nav__item-focused-box-shadow:
+    inset 0 0 0 3px
+    color(var(--zd-color-white) alpha(20%));
+  --zd-chrome__nav__item-hovered-background-color: color(var(--zd-color-black) alpha(10%));
+  --zd-chrome__nav__item__icon-border-radius: 4px;
+  --zd-chrome__nav__item__icon-size: 26px;
+  --zd-chrome__nav--expanded-width: 200px;
+  --zd-chrome__nav--expanded__item-padding: 0 calc(calc(var(--zd-chrome__nav-width) - var(--zd-chrome__nav__item__icon-size)) / 4);
+  --zd-chrome__nav--expanded__item__-margin: var(--zd-chrome__nav--expanded__item-padding);
+}
+
+/* 1. Anchor reset. */
+
+.c-chrome__nav {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-shrink: 0;
+  order: var(--zd-chrome__nav-order);
+  background-color: var(--zd-chrome__nav-background-color);
+  width: var(--zd-chrome__nav-width);
+  color: var(--zd-chrome__nav-color);
+  font-size: var(--zd-chrome__nav-font-size);
+}
+
+.c-chrome__nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: var(--zd-chrome__nav__item-order);
+  transition: var(--zd-chrome__nav__item-transition);
+  opacity: var(--zd-chrome__nav__item-opacity);
+  height: var(--zd-chrome__nav__item-height);
+}
+
+.c-chrome__nav__item--logo {
+  order: var(--zd-chrome__nav__item--logo-order);
+  fill: var(--zd-chrome__nav-color);
+}
+
+.c-chrome__nav__item,
+.c-chrome__nav__item:hover,
+.c-chrome__nav__item:focus {
+  text-decoration: none; /* [1] */
+  color: inherit; /* [1] */
+}
+
+.c-chrome__nav__item:focus {
+  outline: none; /* [1] */
+}
+
+.c-chrome__nav__item--logo,
+.c-chrome__nav__item:--chrome-hovered,
+.c-chrome__nav__item:--chrome-focused,
+.c-chrome__nav__item:--chrome-current {
+  opacity: 1;
+}
+
+.c-chrome__nav__item__icon {
+  order: var(--zd-chrome__nav__item__icon-order);
+  border-radius: var(--zd-chrome__nav__item__icon-border-radius);
+  width: var(--zd-chrome__nav__item__icon-size);
+  height: var(--zd-chrome__nav__item__icon-size);
+}
+
+.c-chrome__nav__item__text {
+  order: var(--zd-chrome__nav__item__text-order);
+  @apply --zd-chrome__item__text-clipped;
+}
+
+.c-chrome__nav__fab {
+  display: inline-flex;
+  position: absolute;
+  right: var(--zd-chrome__nav__fab-right);
+  bottom: var(--zd-chrome__nav__fab-bottom);
+  align-items: center;
+  justify-content: center;
+  transition: var(--zd-chrome__nav__fab-transition);
+  border: none;
+  border-radius: 100px;
+  box-shadow: var(--zd-chrome__nav__fab-box-shadow);
+  background-color: var(--zd-chrome__nav__fab-background-color);
+  width: var(--zd-chrome__nav__fab-width);
+  height: var(--zd-chrome__nav__fab-height);
+  color: inherit;
+  font-weight: var(--zd-chrome__nav__fab-font-weight);
+}
+
+.c-chrome__nav__fab:focus {
+  outline: none;
+}
+
+.c-chrome__nav__fab__icon {
+  width: var(--zd-chrome__nav__fab__icon-size);
+  height: var(--zd-chrome__nav__fab__icon-size);
+}
+
+.c-chrome__nav__fab__text {
+  margin: var(--zd-chrome__nav__fab__text-margin);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c-chrome__nav--expanded {
+  width: var(--zd-chrome__nav--expanded-width);
+}
+
+.c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo) {
+  justify-content: start;
+  padding: var(--zd-chrome__nav--expanded__item-padding);
+}
+
+.c-chrome__nav--expanded .c-chrome__nav__item__icon,
+.c-chrome__nav--expanded .c-chrome__nav__item__text {
+  margin: var(--zd-chrome__nav--expanded__item__-margin);
+}
+
+/* stylelint-disable max-line-length */
+.c-chrome__nav--expanded :not(.c-chrome__nav__item--logo) .c-chrome__nav__item__text {
+  position: static;
+  flex: 1;
+  clip: auto;
+  width: auto;
+  height: auto;
+  text-overflow: ellipsis;
+}
+/* stylelint-enable max-line-length */
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-hovered {
+  background-color: var(--zd-chrome__nav__item-hovered-background-color);
+}
+
+.c-chrome__nav__fab:--chrome-hovered {
+  background-color: var(--zd-chrome__nav__fab-hovered-background-color);
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-focused {
+  box-shadow: var(--zd-chrome__nav__item-focused-box-shadow);
+}
+
+.c-chrome__nav__fab:--chrome-focused {
+  box-shadow: var(--zd-chrome__nav__fab-focused-box-shadow);
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-active {
+  background-color: var(--zd-chrome__nav__item-active-background-color);
+}
+
+.c-chrome__nav__fab:--chrome-active {
+  background-color: var(--zd-chrome__nav__fab-active-background-color);
+}
+
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-current {
+  background-color: var(--zd-chrome__nav__item-current-background-color);
+  cursor: default;
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active:--chrome-focused,
+.c-chrome__nav__fab:active:--chrome-focused {
+  box-shadow: none;
+}
+/* stylelint-enable selector-max-specificity */
+
+.c-chrome.is-rtl .c-chrome__nav__fab {
+  right: calc(var(--zd-chrome__nav__fab-right) * -1);
+}

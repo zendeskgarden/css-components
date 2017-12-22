@@ -1,0 +1,66 @@
+@import '_selectors';
+
+:root {
+  --zd-chrome__nav--dark-background-color: var(--zd-color-black);
+  --zd-chrome__nav--dark__item-current-background-color: color(var(--zd-color-white) alpha(30%));
+  --zd-chrome__nav--dark__item--logo-color: var(--zd-color-white);
+  --zd-chrome__nav--light-background-color: var(--zd-color-white);
+  --zd-chrome__nav--light-color: var(--zd-color-oil);
+  --zd-chrome__nav--light__item-current-background-color: color(var(--zd-color-black) alpha(30%));
+  --zd-chrome__nav--light__item-focused-box-shadow:
+    inset 0 0 0 3px
+    color(var(--zd-color-black) alpha(20%));
+  --zd-chrome__nav--light__item--logo-color: var(--zd-chrome__nav--light-color);
+}
+
+.c-chrome__nav--dark {
+  background-color: var(--zd-chrome__nav--dark-background-color);
+}
+
+/* stylelint-disable max-line-length, selector-max-specificity */
+.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-active {
+  background-color: var(--zd-chrome__nav__item-hovered-background-color);
+}
+
+.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-current {
+  background-color: var(--zd-chrome__nav--dark__item-current-background-color);
+}
+
+.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,
+.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,
+.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,
+.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,
+.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,
+.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,
+.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk {
+  color: var(--zd-chrome__nav--dark__item--logo-color);
+}
+
+.c-chrome__nav--light {
+  background-color: var(--zd-chrome__nav--light-background-color);
+  color: var(--zd-chrome__nav--light-color);
+}
+
+.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-focused {
+  box-shadow: var(--zd-chrome__nav--light__item-focused-box-shadow);
+}
+
+.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-active {
+  background-color: var(--zd-chrome__nav__item-hovered-background-color);
+}
+
+.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-current {
+  background-color: var(--zd-chrome__nav--light__item-current-background-color);
+}
+
+.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,
+.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,
+.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,
+.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,
+.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,
+.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,
+.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk {
+  color: var(--zd-chrome__nav--light__item--logo-color);
+  fill: var(--zd-chrome__nav--light__item--logo-color);
+}
+/* stylelint-enable max-line-length, selector-max-specificity */
