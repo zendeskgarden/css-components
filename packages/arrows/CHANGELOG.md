@@ -1,6 +1,20 @@
 # Change Log
 
-<a name="1.0.1"></a>
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+      <a name="1.1.0"></a>
+# 1.1.0 (2017-12-22)
+
+
+### Features
+
+* add css-arrows package to monorepo ([#6](https://github.com/zendeskgarden/css-components/issues/6)) ([8cb0574](https://github.com/zendeskgarden/css-components/commit/8cb0574))
+
+
+
+
+      <a name="1.0.1"></a>
 ## [1.0.1] - 2017-10-24
 ### Fixed (per [#11](https://github.com/zendeskgarden/css-arrows/pull/11))
 - Half pixel visible border on clipped side of arrow.
@@ -8,7 +22,7 @@
 ## [1.0.0] - 2017-05-31
 ### Changed (per [#10](https://github.com/zendeskgarden/css-arrows/pull/10))
 - Prepared package for registry publish as
-  `@zendesk/garden-css-arrows`. See README for updated installation.
+`@zendesk/garden-css-arrows`. See README for updated installation.
 
 ## [0.3.0] - 2016-09-16
 ### Changed (per [#8](https://github.com/zendeskgarden/css-arrows/pull/8))
