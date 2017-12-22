@@ -42,7 +42,7 @@
   fill: var(--zd-chrome--dark__body__header__item--logo-fill);
 }
 
-/* stylelint-disable max-line-length */
+/* stylelint-disable max-line-length, selector-max-specificity */
 .c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-hovered .c-chrome__body__header__item__icon,
 .c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-hovered .c-chrome__body__header__item__text {
   color: var(--zd-chrome--dark__body__header__item-hovered-color);
@@ -52,7 +52,7 @@
 .c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-active .c-chrome__body__header__item__text {
   color: var(--zd-chrome--dark__body__header__item-active-color);
 }
-/* stylelint-enable max-line-length */
+/* stylelint-enable max-line-length, selector-max-specificity */
 
 .c-chrome--dark .c-chrome__body__content {
   color: var(--zd-chrome--dark__body__content-color);

@@ -103,9 +103,11 @@
   box-shadow: var(--zd-chrome__body__header__item-focused-box-shadow);
 }
 
+/* stylelint-disable selector-max-specificity */
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active:--chrome-focused {
   box-shadow: none;
 }
+/* stylelint-enable selector-max-specificity */
 
 .c-chrome__body__header__item--max-x {
   flex: 1;
@@ -180,6 +182,8 @@ img.c-chrome__body__header__item__icon {
   @apply --zd-chrome__item__text-clipped;
 }
 
+/* stylelint-disable selector-max-specificity */
+
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-hovered .c-chrome__body__header__item__icon,
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-hovered .c-chrome__body__header__item__text {
   color: var(--zd-chrome__body__header__item-hovered-color);
@@ -189,4 +193,4 @@ img.c-chrome__body__header__item__icon {
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):--chrome-active .c-chrome__body__header__item__text {
   color: var(--zd-chrome__body__header__item-active-color);
 }
-/* stylelint-enable max-line-length */
+/* stylelint-enable max-line-length, selector-max-specificity */

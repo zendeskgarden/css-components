@@ -17,7 +17,7 @@
   background-color: var(--zd-chrome__nav--dark-background-color);
 }
 
-/* stylelint-disable max-line-length */
+/* stylelint-disable max-line-length, selector-max-specificity */
 .c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo):--chrome-active {
   background-color: var(--zd-chrome__nav__item-hovered-background-color);
 }
@@ -63,4 +63,4 @@
   color: var(--zd-chrome__nav--light__item--logo-color);
   fill: var(--zd-chrome__nav--light__item--logo-color);
 }
-/* stylelint-enable max-line-length */
+/* stylelint-enable max-line-length, selector-max-specificity */

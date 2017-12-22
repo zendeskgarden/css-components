@@ -188,10 +188,12 @@
   cursor: default;
 }
 
+/* stylelint-disable selector-max-specificity */
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active:--chrome-focused,
 .c-chrome__nav__fab:active:--chrome-focused {
   box-shadow: none;
 }
+/* stylelint-enable selector-max-specificity */
 
 .c-chrome.is-rtl .c-chrome__nav__fab {
   right: calc(var(--zd-chrome__nav__fab-right) * -1);
