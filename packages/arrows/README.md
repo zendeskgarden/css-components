@@ -1,17 +1,16 @@
-# Arrow Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-arrows.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-arrows)
+# @zendeskgarden/css-arrows
 
-The `garden-css-arrows` package contains styling and positioning classes
-for `.c-arrow`.
+This package contains styling and positioning classes for `.c-arrow`.
 
 ## Installation
 
-    npm install --save-dev @zendesk/garden-css-arrows
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+    npm install --save-dev @zendeskgarden/css-arrows
 
 ## Usage
+
+Once installed, arrow CSS can be accessed via `postcss-import`.
+
+    @import '@zendeskgarden/css-arrows';
 
 Arrow CSS classes are used on a parent element (typically menus or
 tooltips) by applying the base `.c-arrow` class in addition to a
@@ -27,15 +26,5 @@ element using the `.c-arrow--t` positioning class.
 </ul>
 ```
 
-## Tests
-
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+See http://garden.zendesk.com/css-components/arrows/ for a comprehensive
+demo of the arrow component classes.

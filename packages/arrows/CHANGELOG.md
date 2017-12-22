@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="1.0.1"></a>
 ## [1.0.1] - 2017-10-24
 ### Fixed (per [#11](https://github.com/zendeskgarden/css-arrows/pull/11))
 - Half pixel visible border on clipped side of arrow.
