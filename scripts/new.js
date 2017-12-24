@@ -25,7 +25,6 @@ function linkCss(component) {
   });
 
   console.log(chalk.green('success'), 'Linked demo CSS');
-
 }
 
 function updateDemo(component) {
@@ -51,7 +50,7 @@ function addComponent(name) {
   const destination = path.join(packages, name);
 
   if (fs.existsSync(destination)) {
-    console.log(chalk.red('error'), `Component package exists`);
+    console.log(chalk.red('error'), 'Component package exists');
   } else {
     ncp(source, destination, error => {
       if (error) {
@@ -76,7 +75,7 @@ function addComponent(name) {
 }
 
 if (process.argv.length >= 3) {
-  addComponent(process.argv[2])
+  addComponent(process.argv[2]);
 } else {
   console.log(chalk.red('error'), 'Missing component name');
 }
