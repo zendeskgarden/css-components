@@ -1,5 +1,6 @@
 const Handlebars = require('handlebars');
 const chalk = require('chalk');
+const execSync = require('child_process').execSync;
 const fs = require('fs');
 const klaw = require('klaw-sync');
 const ncp = require('ncp').ncp;
@@ -10,15 +11,26 @@ Handlebars.registerHelper('capitalize', value => {
   return value.charAt(0).toUpperCase() + value.slice(1);
 });
 
-const parent = path.join(__dirname, '..');
-const packages = path.join(parent, 'packages');
+const packages = path.join(process.cwd(), 'packages');
 
-function linkCss(name) {
+function linkCss(component) {
+  const destination = path.join(process.cwd(), 'demo', component);
+
+  process.chdir(destination);
+
+  const source = path.relative(destination, path.join(packages, component, 'dist'));
+
+  fs.readdirSync(source).forEach(file => {
+    fs.symlinkSync(path.join(source, file), file);
+  });
+
+  console.log(chalk.green('success'), 'Linked demo CSS');
+
 }
 
-function updateDemo(name) {
-  const source = path.join(packages, name, 'demo');
-  const destination = path.join(parent, 'demo', name);
+function updateDemo(component) {
+  const source = path.join(packages, component, 'demo');
+  const destination = path.join(process.cwd(), 'demo', component);
 
   ncp(source, destination, error => {
     if (error) {
@@ -26,6 +38,9 @@ function updateDemo(name) {
     } else {
       rimraf(source, () => {
         console.log(chalk.green('success'), 'Updated component demo');
+        execSync(`yarn build --scope @zendeskgarden/css-${component}`);
+        linkCss(component);
+        execSync(`yarn start --open=${component}`);
       });
     }
   });
@@ -53,6 +68,7 @@ function addComponent(name) {
         });
 
         console.log(chalk.green('success'), 'Added new component');
+        execSync('yarn postinstall');
         updateDemo(name);
       }
     });
