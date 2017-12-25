@@ -11,10 +11,11 @@ Handlebars.registerHelper('capitalize', value => {
   return value.charAt(0).toUpperCase() + value.slice(1);
 });
 
+const demo = path.join(process.cwd(), 'demo');
 const packages = path.join(process.cwd(), 'packages');
 
 function linkCss(component) {
-  const destination = path.join(process.cwd(), 'demo', component);
+  const destination = path.join(demo, component);
 
   process.chdir(destination);
 
@@ -29,7 +30,7 @@ function linkCss(component) {
 
 function updateDemo(component) {
   const source = path.join(packages, component, 'demo');
-  const destination = path.join(process.cwd(), 'demo', component);
+  const destination = path.join(demo, component);
 
   ncp(source, destination, error => {
     if (error) {
