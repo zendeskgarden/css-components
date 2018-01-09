@@ -4,13 +4,17 @@ This package contains styling and positioning classes for `.c-arrow`.
 
 ## Installation
 
-    npm install --save-dev @zendeskgarden/css-arrows
+```sh
+npm install --save-dev @zendeskgarden/css-arrows
+```
 
 ## Usage
 
 Once installed, arrow CSS can be accessed via `postcss-import`.
 
-    @import '@zendeskgarden/css-arrows';
+```css
+@import '@zendeskgarden/css-arrows';
+```
 
 Arrow CSS classes are used on a parent element (typically menus or
 tooltips) by applying the base `.c-arrow` class in addition to a
