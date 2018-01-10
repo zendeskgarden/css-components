@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="5.0.1"></a>
 ## [5.0.1] - 2017-11-14
 ### Fixed (per [#28](https://github.com/zendeskgarden/css-menus/pull/28))
 - Prevent whitespace inheritance from controlling menu item.

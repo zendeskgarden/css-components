@@ -1,5 +1,5 @@
 /* stylelint-disable no-descending-specificity */
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 @import '_selectors';
 
 :root {
