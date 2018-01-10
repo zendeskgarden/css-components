@@ -4,13 +4,17 @@ This package provides styling for tab components.
 
 ## Installation
 
-    npm install --save-dev @zendeskgarden/css-tabs
+```sh
+npm install --save-dev @zendeskgarden/css-tabs
+```
 
 ## Usage
 
 Once installed, tabs CSS can be accessed via `postcss-import`.
 
-    @import '@zendeskgarden/css-tabs';
+```css
+@import '@zendeskgarden/css-tabs';
+```
 
 Tab CSS classes are intended to support the following component
 structure.

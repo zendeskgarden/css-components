@@ -40,3 +40,6 @@ available:
   runs as part of the initial install.
 - `yarn clean` to remove all install and build artifacts. You will need
   to re-execute `yarn` in order to continue with development.
+- `yarn new <component>` to generate a new CSS `component` based on a
+  package template. The new component demo page is launched upon
+  completion.

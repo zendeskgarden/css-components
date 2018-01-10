@@ -5,13 +5,17 @@ product page navigation, headers, and layout.
 
 ## Installation
 
-    npm install --save-dev @zendeskgarden/css-chrome
+```sh
+npm install --save-dev @zendeskgarden/css-chrome
+```
 
 ## Usage
 
 Once installed, chrome CSS can be accessed via `postcss-import`.
 
-    @import '@zendeskgarden/css-chrome';
+```css
+@import '@zendeskgarden/css-chrome';
+```
 
 Component CSS provides styling for the following basic page structure
 (actual HTML elements may vary).

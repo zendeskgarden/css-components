@@ -4,13 +4,17 @@ This package contains basic `.c-btn` component styling.
 
 ## Installation
 
-    npm install --save-dev @zendeskgarden/css-buttons
+```sh
+npm install --save-dev @zendeskgarden/css-buttons
+```
 
 ## Usage
 
 Once installed, button CSS can be accessed via `postcss-import`.
 
-    @import '@zendeskgarden/css-buttons';
+```css
+@import '@zendeskgarden/css-buttons';
+```
 
 Button CSS is intended to enhance the following HTML.
 

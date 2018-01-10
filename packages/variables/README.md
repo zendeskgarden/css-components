@@ -11,13 +11,17 @@ CSS component framework.
 
 ## Installation
 
-    npm install --save-dev @zendeskgarden/css-variables
+```sh
+npm install --save-dev @zendeskgarden/css-variables
+```
 
 ## Usage
 
 Once installed, variables can be referenced via `postcss-import`.
 
-    @import '@zendeskgarden/css-variables';
+```css
+@import '@zendeskgarden/css-variables';
+```
 
 The package contains corresponding JSON, JS, and Sass variables for use
 within a variety of asset build pipelines.
