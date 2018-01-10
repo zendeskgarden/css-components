@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "scripts": {
     "build": "lerna run build --stream",
-    "clean": "git clean -Xdf .",
     "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "lerna bootstrap --stream",
     "new": "node scripts/new",

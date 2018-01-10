@@ -67,7 +67,7 @@ add/next/previous, metadata, RTL, etc.
 Use `.is-open` to apply easing animations to the menu (and
 it's arrow, if included) when a menu is shown.
 
-```
+```html
 <ul aria-hidden="false"
     class="c-arrow c-arrow--t c-menu c-menu--down is-open"
     role="menu">
