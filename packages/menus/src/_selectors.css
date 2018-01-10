@@ -11,8 +11,8 @@
   .is-hidden,
   [aria-hidden='true'];
 
-@custom-selector :--menu-selected
-  .is-selected,
+@custom-selector :--menu-hovered
+  .is-hovered,
   :not(.c-menu__item--header):hover;
 
 @custom-selector :--menu-focused
