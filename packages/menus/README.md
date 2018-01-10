@@ -1,22 +1,23 @@
-# Menu Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-menus.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-menus)
+# @zendeskgarden/css-menus
 
-The `garden-css-menus` package is intended to provide consistent menu
-styling for use across Zendesk products. See
-[react-components](http://garden.zendesk.com/react-components/#menu)
-for show/hide behavior, positioning, and keyboard accessibility. Menus
-can be used along with
-[garden-css-arrows](http://garden.zendesk.com/css-arrows/) to apply an
-arrow indicator along the menu's border.
+This package is intended to provide consistent menu styling for use
+across Zendesk products. Menus can be used along with
+[@zendeskgarden/css-arrows](http://zendeskgarden.github.io/css-arrows/)
+to apply an arrow indicator along the menu's border.
 
 ## Installation
 
-    npm install --save-dev @zendesk/garden-css-menus
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+```sh
+npm install --save-dev @zendeskgarden/css-menus
+```
 
 ## Usage
+
+Once installed, menu CSS can be accessed via `postcss-import`.
+
+```css
+@import '@zendeskgarden/css-menus';
+```
 
 Menu CSS provides styling for the following basic structure ([W3
 example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-2/menubar-2.html)).
@@ -57,14 +58,11 @@ example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-1
 </nav>
 ```
 
-The `aria-hidden` property above is intended to be flipped using
-JavaScript when the menu is hidden or shown.
-
 ## Modifications
 
-See http://zendeskgarden.github.io/css-menus/ for a variety of menu item
-classes, including modifications for: headers, add/next/previous,
-metadata, RTL, etc.
+See http://zendeskgarden.github.io/css-components/menus/ for a variety
+of menu item classes, including modifications for: headers,
+add/next/previous, metadata, RTL, etc.
 
 Use `.is-open` to apply easing animations to the menu (and
 it's arrow, if included) when a menu is shown.
@@ -80,15 +78,9 @@ it's arrow, if included) when a menu is shown.
 The modifier determines the movement (up, down, right, left) of the menu
 animation. Remove `.is-open` to ease hiding the menu.
 
-## Tests
+### Behavior
 
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+See the
+[&lt;Menu&gt;](http://zendeskgarden.github.io/react-components/#!/Menu)
+component for show/hide behavior, positioning, and keyboard
+accessibility.
