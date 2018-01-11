@@ -1,0 +1,87 @@
+@import '@zendeskgarden/css-variables';
+@import '_selectors';
+
+:root {
+  --zd-menu-background-color: var(--zd-color-white);
+  --zd-menu-border: 1px solid var(--zd-color-platinum);
+  --zd-menu-border-radius: 4px;
+  --zd-menu-box-shadow:
+    0 20px 30px 0
+    color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-menu-font-size: var(--zd-font-size-epsilon);
+  --zd-menu-font-weight: var(--zd-font-weight-regular);
+  --zd-menu-min-width: 180px;
+  --zd-menu-padding: 8px 0;
+}
+
+/* 1. Positioned relative to controlling item.
+ * 2. Opt out of browser default list margin.
+ * 3. Prevent controlling item cursor inheritance.
+ * 4. Vertically, add extra space;
+ *    horizontally, opt out of browser default list padding.
+ * 5. Prevent controlling item whitespace inheritance.
+ */
+.c-menu {
+  display: inline-block;
+  position: absolute; /* [1] */
+  margin: 0; /* [2] */
+  box-sizing: border-box;
+  border: var(--zd-menu-border);
+  border-radius: var(--zd-menu-border-radius);
+  box-shadow: var(--zd-menu-box-shadow);
+  background-color: var(--zd-menu-background-color);
+  cursor: default; /* [3] */
+  padding: var(--zd-menu-padding); /* [4] */
+  min-width: var(--zd-menu-min-width);
+  text-align: left;
+  white-space: normal; /* [5] */
+  font-size: var(--zd-menu-font-size);
+  font-weight: var(--zd-menu-font-weight);
+}
+
+/* stylelint-disable no-unknown-animations */
+.c-menu.is-open {
+  animation: .2s cubic-bezier(.15, .85, .35, 1.2);
+}
+
+.c-menu.is-open:--menu-around {
+  animation: .3s ease-in-out;
+}
+
+.c-menu--down.is-open {
+  animation-name: zd-menu--down-open;
+}
+
+.c-menu--down.is-open:--menu-around {
+  animation-name: zd-menu--down-open-arrow;
+}
+
+.c-menu--left.is-open {
+  animation-name: zd-menu--left-open;
+}
+
+.c-menu--left.is-open:--menu-around {
+  animation-name: zd-menu--left-open-arrow;
+}
+
+.c-menu--right.is-open {
+  animation-name: zd-menu--right-open;
+}
+
+.c-menu--right.is-open:--menu-around {
+  animation-name: zd-menu--right-open-arrow;
+}
+
+.c-menu--up.is-open {
+  animation-name: zd-menu--up-open;
+}
+
+.c-menu--up.is-open:--menu-around {
+  animation-name: zd-menu--up-open-arrow;
+}
+/* stylelint-enable no-unknown-animations */
+
+.c-menu.is-rtl {
+  direction: rtl;
+  text-align: right;
+}

@@ -1,0 +1,31 @@
+@import '@zendeskgarden/css-variables';
+@import '_selectors';
+
+:root {
+  --zd-menu--custom-accent-color: var(--zd-color-mandy);
+  --zd-menu--custom__item--add-color: var(--zd-menu--custom-accent-color);
+  --zd-menu--custom__item--add-background-image: svg-load('14-plus.svg', color: var(--zd-menu--custom-accent-color));
+  --zd-menu--custom__item--icon-background-image: svg-load('14-checkmark-lg.svg', color: var(--zd-menu--custom-accent-color));
+  --zd-menu--custom__item--next-background-image: svg-load('14-next.svg', color: var(--zd-menu--custom-accent-color));
+  --zd-menu--custom__item--previous-background-image: svg-load('14-previous.svg', color: var(--zd-menu--custom-accent-color));
+}
+
+.c-menu--custom .c-menu__item::before {
+  background-image: var(--zd-menu--custom__item--icon-background-image);
+}
+
+.c-menu--custom .c-menu__item.c-menu__item--add {
+  color: var(--zd-menu--custom__item--add-color);
+}
+
+.c-menu--custom .c-menu__item.c-menu__item--add::before {
+  background-image: var(--zd-menu--custom__item--add-background-image);
+}
+
+.c-menu--custom .c-menu__item.c-menu__item--next::before {
+  background-image: var(--zd-menu--custom__item--next-background-image);
+}
+
+.c-menu--custom .c-menu__item.c-menu__item--previous::before {
+  background-image: var(--zd-menu--custom__item--previous-background-image);
+}

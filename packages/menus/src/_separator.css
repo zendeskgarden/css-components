@@ -1,0 +1,12 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-menu__separator-border: 1px solid var(--zd-color-platinum);
+  --zd-menu__separator-margin: 4px 0;
+}
+
+.c-menu__separator {
+  display: block;
+  margin: var(--zd-menu__separator-margin);
+  border-bottom: var(--zd-menu__separator-border);
+}

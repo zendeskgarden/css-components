@@ -1,0 +1,5 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-menu-accent-color: var(--zd-color-pelorous);
+}

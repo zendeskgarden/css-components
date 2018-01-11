@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "scripts": {
     "build": "lerna run build --stream",
-    "clean": "git clean -Xdf .",
     "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "lerna bootstrap --stream",
     "new": "node scripts/new",
@@ -37,6 +36,7 @@
     "postcss-cli": "^4.1.1",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^11.0.0",
+    "postcss-inline-svg": "^3.0.0",
     "prettier-package-json": "^1.4.0",
     "rimraf": "^2.6.2",
     "stylelint": "^8.4.0",

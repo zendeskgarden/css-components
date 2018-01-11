@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+<head>
+  <title>Menus / CSS Components / Zendesk Garden</title>
+  <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/css-arrows/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/css-buttons/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/css-forms/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/site.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/editor.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
+  <style>
+  .c-arrow--b,
+  .c-arrow--t {
+    left: calc(50% - 90px);
+  }
+
+  .c-arrow--b {
+    bottom: calc(100% + 2px);
+  }
+
+  .c-arrow--t {
+    top: calc(100% + 2px);
+  }
+
+  .c-arrow--l,
+  .c-arrow--r {
+    top: -52px;
+  }
+
+  .c-arrow--l {
+    left: calc(100% + 2px);
+  }
+
+  .c-arrow--r {
+    right: calc(100% + 2px);
+  }
+
+  .u-list-style-disc {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+
+  .u-mb-xxl { margin-bottom: 140px !important; }
+
+  .u-opacity-opaque { opacity: 1 !important; }
+  </style>
+</head>
+<body>
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="http://zendeskgarden.github.io">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="../index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="..">CSS Components</a>
+      <span>/ Menus</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill">
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="../index.svg#zd-svg-icon-14-chevron">
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.custom">Custom</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.size">Size</label>
+            </fieldset>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <main class="c-main c-main--page" style="min-width: 960px">
+    <h1 class="c-main__title">Menus</h1>
+    <div class="c-main__body">
+      <p class="u-mb-lg">The
+        <code class="c-code">.c-menu</code>
+        component classes are used to style menus.</p>
+
+      <div class="u-mb-lg">
+        <h2 class="c-main__subtitle u-gamma u-mb">Basic Structure</h2>
+        <p class="u-mb">Menus typically originate from a control (i.e. a
+          menubar, <code class="c-code">&lt;select&gt;</code> dropdown, or
+          button). The basic BEM structure is <code class="c-code">.c-menu &gt;
+          .c-menu__item</code>. A separator may be added between menu items using
+          <code class="c-code">.c-menu__separator</code>. The canonical HTML below
+          illustrates a menu of options vs. a menu of navigation items.</p>
+        <div class="l-grid">
+          <div class="l-grid__item u-1/2">
+            <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static">
+              <li class="c-menu__item c-menu__item--header">Using <code class="c-code">ul &gt; li</code></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item">Option One</li>
+              <li class="c-menu__item">Option Two</li>
+              <li class="c-menu__item">Option Three</li>
+            </ul>
+          </div
+          ><div class="l-grid__item u-1/2">
+            <nav class="c-menu u-opacity-opaque u-visibility-visible u-position-static">
+              <div class="c-menu__item c-menu__item--header">Using <code class="c-code">nav &gt; a</code></div>
+              <div class="c-menu__separator"></div>
+              <a class="c-menu__item" href>Link One</a>
+              <a class="c-menu__item" href>Link Two</a>
+              <a class="c-menu__item" href>Link Three</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-mb-lg">
+        <h2 class="c-main__subtitle u-gamma u-mb">Show/Hide Animations</h2>
+        <p class="u-mb">Each menu connected with the buttons below is hidden
+          and oriented with respect to a relatively positioned container. When a
+          button is clicked, the <code class="c-code">.is-open</code> class is
+          added. This class applies subtle easing animation to the menu and it's
+          connected <code class="c-code">.c-arrow</code> (depending on the
+          indicated position and direction).  When the menu is subsequently
+          dismissed, it eases out with a quick fade to give the user a sense of
+          successful execution on the selected item.</p>
+        <div class="u-mb-lg">
+          <div class="l-grid u-mb-xxl">
+            <div class="l-grid__item u-1/3"></div
+            ><div class="l-grid__item u-1/3">
+              <div class="u-position-relative">
+                <button class="c-btn c-btn--full js-menu">
+                  <code class="c-code">.c-menu.c-menu--down</code>
+                </button>
+                <ul aria-hidden="true" class="c-arrow c-arrow--t c-menu c-menu--down">
+                  <li class="c-menu__item">One</li>
+                  <li class="c-menu__item">Two</li>
+                  <li class="c-menu__item">Three</li>
+                </ul>
+              </div>
+            </div
+            ><div class="l-grid__item u-1/3"></div>
+          </div>
+          <div class="l-grid u-mb-xxl">
+            <div class="l-grid__item u-1/3">
+              <div class="u-position-relative">
+                <button class="c-btn c-btn--full js-menu">
+                  <code class="c-code">.c-menu.c-menu--right</code>
+                </button>
+                <ul aria-hidden="true" class="c-arrow c-arrow--l c-menu c-menu--right">
+                  <li class="c-menu__item">One</li>
+                  <li class="c-menu__item">Two</li>
+                  <li class="c-menu__item">Three</li>
+                </ul>
+              </div>
+            </div
+            ><div class="l-grid__item u-1/3"></div
+            ><div class="l-grid__item u-1/3">
+              <div class="u-position-relative">
+                <button class="c-btn c-btn--full js-menu">
+                  <code class="c-code">.c-menu.c-menu--left</code>
+                </button>
+                <ul aria-hidden="true" class="c-arrow c-arrow--r c-menu c-menu--left">
+                  <li class="c-menu__item">One</li>
+                  <li class="c-menu__item">Two</li>
+                  <li class="c-menu__item">Three</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="l-grid u-mb-lg">
+            <div class="l-grid__item u-1/3"></div
+            ><div class="l-grid__item u-1/3">
+              <div class="u-position-relative">
+                <button class="c-btn c-btn--full js-menu">
+                  <code class="c-code">.c-menu.c-menu--up</code>
+                </button>
+                <ul aria-hidden="true" class="c-arrow c-arrow--b c-menu c-menu--up">
+                  <li class="c-menu__item">One</li>
+                  <li class="c-menu__item">Two</li>
+                  <li class="c-menu__item">Three</li>
+                </ul>
+              </div>
+            </div
+            ><div class="l-grid__item u-1/3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-mb-lg">
+        <h2 class="c-main__subtitle u-gamma u-mb">Menu Modifications</h2>
+        <p class="u-mb">Use the main settings menu to modify styling for the
+          menus displayed throughout the page.</p>
+        <ul class="u-list-style-disc">
+          <li class="u-mb-sm">Toggle "Dark Mode" to view
+            <code class="c-code">.c-menu--dark</code> styling.</li>
+          <li class="u-mb-sm">Toggle "RTL" to add the
+            <code class="c-code">.is-rtl</code> menu class.</li>
+          <li class="u-mb-sm">Toggle "Custom" to view the
+            <code class="c-code">.c-menu--custom</code> accent override.</li>
+          <li class="u-mb-sm">Toggle "Size" to apply
+            <code class="c-code">.c-menu--sm</code> sizing.</li>
+        </ul>
+      </div>
+
+      <div class="u-mb-lg">
+        <div class="l-grid">
+          <div class="l-grid__item u-1/2">
+            <h2 class="c-main__subtitle u-gamma u-mb">Menu Item Modifications</h2>
+            <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static" style="min-width:270px">
+              <li class="c-menu__item c-menu__item--previous" tabindex="0"><span dir="ltr">.c-menu__item--previous</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item c-menu__item--header"><span dir="ltr">.c-menu__item--header</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item c-menu__item--header">
+                <svg class="c-menu__item--header__icon u-fg-white u-bg-silver-sand u-br-sm">
+                  <use xlink:href="../index.svg#zd-svg-icon-14-person">
+                </svg>
+                <span dir="ltr">&gt; .c-menu__item--header__icon</span>
+              </li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item c-menu__item--next" tabindex="0"><span dir="ltr">.c-menu__item--next</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item" tabindex="0">
+                <span dir="ltr">.c-menu__item</span>
+                <span class="c-menu__item__meta" dir="ltr">.c-menu__item__meta</span>
+              </li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item c-menu__item--media" tabindex="0">
+                <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/555555">
+                <div class="c-menu__item--media__body">
+                  <span dir="ltr">.c-menu__item--media</span>
+                  <span class="c-menu__item__meta" dir="ltr">.c-menu__item__meta</span>
+                </div>
+              </li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item c-menu__item--add" tabindex="0"><span dir="ltr">.c-menu__item--add</span></li>
+            </ul>
+          </div
+          ><div class="l-grid__item u-1/2">
+            <h2 class="c-main__subtitle u-gamma u-mb">Menu Item State</h2>
+            <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static">
+              <li class="c-menu__item" tabindex="0">default</li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item is-hovered" tabindex="0"><span dir="ltr">.is-hovered</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item is-checked" tabindex="0"><span dir="ltr">.is-checked</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item is-focused" tabindex="0"><span dir="ltr">.is-focused</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item is-disabled" tabindex="0"><span dir="ltr">.is-disabled</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item is-checked is-disabled" tabindex="0"><span dir="ltr">.is-checked.is-disabled</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item c-menu__item--next is-disabled" tabindex="0"><span dir="ltr">.c-menu__item--next.is-disabled</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item c-menu__item--previous is-disabled" tabindex="0"><span dir="ltr">.c-menu__item--previous.is-disabled</span></li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item c-menu__item--add is-disabled" tabindex="0"><span dir="ltr">.c-menu__item--add.is-disabled</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-mb-lg">
+        <h2 class="c-main__subtitle u-gamma u-mb">Sizing</h2>
+        <p class="u-mb">By default, a menu will expand to accommodate the width
+        of it's items. Override the menu's <code class="c-code">min-width</code>
+        to increase the container size. Overriding <code class="c-code">max-width</code>
+        can force longer items to wrap.</p>
+        <div class="l-grid">
+          <div class="l-grid__item u-1/3">
+            <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static">
+              <li class="c-menu__item c-menu__item--header">Standard Menu</li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item">...with a very, very, very long menu item</li>
+            </ul>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static" style="min-width:270px">
+              <li class="c-menu__item c-menu__item--header">Override min-width</li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item">short item</li>
+            </ul>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static" style="max-width:200px">
+              <li class="c-menu__item c-menu__item--header">Override max-width</li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item">...in order to force a very long item to wrap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static" role="menu">
+  <li class="c-menu__item c-menu__item--header">The Beatles</li>
+  <li class="c-menu__separator" role="separator">
+  <li class="c-menu__item c-menu__item--media" role="menuitem">
+    <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/37B8AF">
+    <div class="c-menu__item--media__body">
+      <span>John</span>
+      <span class="c-menu__item__meta">john@beatles.com</span>
+    </div>
+  </li>
+  <li class="c-menu__item c-menu__item--media" role="menuitem">
+    <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/EB6651">
+    <div class="c-menu__item--media__body">
+      <span>Paul</span>
+      <span class="c-menu__item__meta">paul@beatles.com</span>
+    </div>
+  </li>
+  <li class="c-menu__item c-menu__item--media" role="menuitem">
+    <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/30AABC">
+    <div class="c-menu__item--media__body">
+      <span>George</span>
+      <span class="c-menu__item__meta">george@beatles.com</span>
+    </div>
+  </li>
+  <li class="c-menu__item c-menu__item--media" role="menuitem">
+    <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/F79A3E">
+    <div class="c-menu__item--media__body">
+      <span>Ringo</span>
+      <span class="c-menu__item__meta">ringo@beatles.com</span>
+    </div>
+  </li>
+  <li class="c-menu__separator" role="separator">
+  <li class="c-menu__item c-menu__item--add" role="menuitem">Bert</li>
+</ul></textarea>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="http://zendeskgarden.github.io/jquery.js"></script>
+  <script src="http://zendeskgarden.github.io/svg4everybody.js"></script>
+  <script src="http://zendeskgarden.github.io/index.js"></script>
+  <script src="http://zendeskgarden.github.io/editor.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
