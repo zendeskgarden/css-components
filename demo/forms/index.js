@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('.js-bare').change(function() {
-    $('.c-txt__input:not(.c-playground .c-txt__input)').toggleClass('c-txt__input--bare');
+    $('.c-txt__input:not(.c-playground .c-txt__input):not(.c-txt__input--media__body)').toggleClass('c-txt__input--bare');
   });
 
   $('.js-custom').click(function() {
