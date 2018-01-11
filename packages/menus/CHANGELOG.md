@@ -1,6 +1,20 @@
 # Change Log
 
-<a name="5.0.1"></a>
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+      <a name="5.1.0"></a>
+# 5.1.0 (2018-01-11)
+
+
+### Features
+
+* add css-menus package to monorepo ([#10](https://github.com/zendeskgarden/css-components/issues/10)) ([6f48111](https://github.com/zendeskgarden/css-components/commit/6f48111))
+
+
+
+
+      <a name="5.0.1"></a>
 ## [5.0.1] - 2017-11-14
 ### Fixed (per [#28](https://github.com/zendeskgarden/css-menus/pull/28))
 - Prevent whitespace inheritance from controlling menu item.
@@ -9,15 +23,15 @@
 ### Added (per [#27](https://github.com/zendeskgarden/css-menus/pull/27))
 - `.c-menu__item.is-checked` state.
 - `.c-menu__item--header` modification (with optional
-  `.c-menu__item--header__icon`).
+`.c-menu__item--header__icon`).
 - `.c-menu__item--next` and `.c-menu__item--previous` modifications for
-  navigating to sub-menu items.
+navigating to sub-menu items.
 - `.c-menu__item--add` modification to support add gestures from a menu.
 - `.c-menu__item__meta` for the addition of menu item metadata.
 - `.c-menu__item--media` modification to handle avatar-styled menu
-  items.
+items.
 - Include complementary `.c-menu--custom` CSS demonstrating how to apply
-  an accent color change.
+an accent color change.
 
 ### Changed
 - Increased padding to accommodate menu item icons.
@@ -25,7 +39,7 @@
 
 ### Removed
 - `.c-menu--large`; instead override `min-width` to increase default
-  menu size.
+menu size.
 
 ### Fixed
 - Handle break for long word wrapping.
@@ -33,8 +47,8 @@
 ## [4.0.0] - 2017-07-28
 ### Added (per [#26](https://github.com/zendeskgarden/css-menus/pull/26))
 - `.c-menu--sm` modifier for small menus (expected to combine with
-  [css-forms@3.0.0](https://github.com/zendeskgarden/css-forms/releases/tag/v3.0.0)
-  dropdowns).
+[css-forms@3.0.0](https://github.com/zendeskgarden/css-forms/releases/tag/v3.0.0)
+dropdowns).
 
 ### Changed
 - Updated to use base-4 spacing.
@@ -42,7 +56,7 @@
 ## [3.0.0] - 2017-06-15
 ### Changed (per [#25](https://github.com/zendeskgarden/css-menus/pull/25))
 - Prepared package for registry publish as `@zendesk/garden-css-menus`.
-  See README for updated installation.
+See README for updated installation.
 
 ## [2.3.1] - 2017-01-19
 ### Fixed (per [#24](https://github.com/zendeskgarden/css-menus/pull/24))
