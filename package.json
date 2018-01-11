@@ -37,6 +37,7 @@
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^11.0.0",
     "postcss-inline-svg": "^3.0.0",
+    "postcss-input-range": "^4.0.0",
     "prettier-package-json": "^1.4.0",
     "rimraf": "^2.6.2",
     "stylelint": "^8.4.0",

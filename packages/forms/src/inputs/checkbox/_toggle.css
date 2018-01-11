@@ -1,3 +1,5 @@
+@import '@zendeskgarden/css-variables';
+
 :root {
   --zd-chk--toggle-background-color: var(--zd-color-aluminum);
   --zd-chk--toggle-background-image: svg-load('14-circle.svg', color: var(--zd-color-white));
