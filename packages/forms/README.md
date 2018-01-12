@@ -1,17 +1,21 @@
-# Forms Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-forms.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-forms)
+# @zendeskgarden/css-forms
 
-The `garden-css-forms` package is intended to provide consistent styling
-for form fields used throughout Zendesk products.
+This package is intended to provide consistent styling for form fields
+used throughout Zendesk products.
 
 ## Installation
 
-    npm install --save-dev @zendesk/garden-css-forms
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+```sh
+npm install --save-dev @zendeskgarden/css-forms
+```
 
 ## Usage
+
+Once installed, form CSS can be accessed via `postcss-import`.
+
+```css
+@import '@zendeskgarden/css-forms';
+```
 
 ### Checkbox
 
@@ -142,7 +146,7 @@ Use the following modifier class to support `textarea` fields:
 ##### Dropdown
 
 Use the following `select` modifier along with a
-[`menu`](https://github.com/zendeskgarden/css-menus) component
+[`menu`](http://zendeskgarden.github.io/css-components/menus/) component
 to support dropdown fields:
 
 ```html
@@ -180,15 +184,8 @@ Use the following state class to support RTL text direction:
 </div>
 ```
 
-## Tests
+## Behavior
 
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+See the
+[React Components](http://zendeskgarden.github.io/react-components/)
+for a rich set of component behaviors applied to form input controls.
