@@ -153,8 +153,10 @@
   padding-left: 0;
 }
 
+/* stylelint-disable selector-max-specificity */
 .c-range:not(.c-range--inline) .c-range__input + .c-range__message,
 .c-range:not(.c-range--inline) .c-range__slider + .c-range__message,
 .c-txt:not(.c-txt--inline) .c-txt__input + .c-txt__message {
   margin-top: var(--zd-input__message-margin-top);
 }
+/* stylelint-enable selector-max-specificity */

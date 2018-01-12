@@ -97,6 +97,7 @@ select.c-txt__input--select:-moz-focusring {
   text-align: right;
 }
 
+/* stylelint-disable selector-max-specificity */
 .c-txt.is-rtl .c-txt__input--select:not(select)::before {
   right: auto;
   left: 0;
@@ -106,6 +107,7 @@ select.c-txt__input--select:-moz-focusring {
 .c-txt.is-rtl select.c-txt__input--select {
   background-position: var(--zd-txt-rtl__input--select__chevron-background-position);
 }
+/* stylelint-enable selector-max-specificity */
 
 /* stylelint-disable max-line-length */
 .is-rtl:--txt--select-open::before {

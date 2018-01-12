@@ -66,7 +66,7 @@
   box-shadow: var(--zd-forms--custom-box-shadow);
 }
 
-/* stylelint-disable max-line-length */
+/* stylelint-disable max-line-length, selector-max-specificity */
 
 .c-range--custom:not(.is-disabled) .c-range__slider__track__rail__thumb.is-focused {
   box-shadow: var(--zd-forms--custom-box-shadow);
@@ -96,4 +96,4 @@
   background-image: var(--zd-txt--custom__input--select__chevron-open-background-image);
 }
 
-/* stylelint-enable max-line-length */
+/* stylelint-enable max-line-length, selector-max-specificity */

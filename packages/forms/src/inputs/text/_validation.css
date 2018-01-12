@@ -12,6 +12,7 @@
     color(var(--zd-input--warning-color) alpha(40%));
 }
 
+/* stylelint-disable selector-max-specificity */
 .has-error.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
   border-color: var(--zd-input--error-color);
 }
@@ -35,3 +36,4 @@
 .has-warning:--txt-focused {
   box-shadow: var(--zd-txt--warning-focused-box-shadow);
 }
+/* stylelint-enable selector-max-specificity */
