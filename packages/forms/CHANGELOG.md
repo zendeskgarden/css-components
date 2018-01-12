@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="3.5.0"></a>
 ## [3.5.0] - 2017-12-22
 ### Fixed (per [#50](https://github.com/zendeskgarden/css-forms/pull/50) and [#51](https://github.com/zendeskgarden/css-forms/pull/51))
 - Add support for inline media (icons) within text inputs
