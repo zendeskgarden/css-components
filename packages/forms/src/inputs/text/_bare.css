@@ -1,0 +1,15 @@
+.c-txt .c-txt__input--bare.c-txt__input--bare {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  min-height: 1em;
+}
+
+:--txt-focused.c-txt__input--bare {
+  box-shadow: none;
+}
+
+:--txt-disabled.c-txt__input--bare {
+  background-color: transparent;
+}

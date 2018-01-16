@@ -1,0 +1,75 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-txt__input-background-color: var(--zd-color-white);
+  --zd-txt__input-border: 1px solid var(--zd-color-gainsboro);
+  --zd-txt__input-border-radius: 4px;
+  --zd-txt__input-color: var(--zd-color-monsoon);
+  --zd-txt__input-color-placeholder: var(--zd-color-iron);
+  --zd-txt__input-font-size: var(--zd-font-size-epsilon);
+  --zd-txt__input-line-height: calc(18 / 14);
+  --zd-txt__input-height: var(--zd-spacing-xl);
+  --zd-txt__input-padding-horizontal: calc(16 / 14 * 1em);
+  --zd-txt__input-padding: calc(10 / 14 * 1em) var(--zd-txt__input-padding-horizontal);
+  --zd-txt__input-transition:
+    border-color .25s ease-in-out,
+    box-shadow .1s ease-in-out,
+    background-color .25s ease-in-out,
+    color .25s ease-in-out;
+}
+
+/* 1. Reset for <fieldset> element.
+ * 2. Use 100% input width vs. block diplay label to limit label mouse
+ *    interaction area.
+ * 3. Support label inline with input layout.
+ * 4. Hack for browser <= IE10 which fails to render custom @font-face subsets
+ *    for input fields.
+ * 5. Remove clear button in IE. */
+
+.c-txt {
+  margin: 0; /* [1] */
+  border: 0; /* [1] */
+  padding: 0; /* [1] */
+}
+
+.c-txt__input {
+  transition: var(--zd-txt__input-transition);
+  outline: none;
+  border: var(--zd-txt__input-border);
+  border-radius: var(--zd-txt__input-border-radius);
+  background-color: var(--zd-txt__input-background-color);
+  padding: var(--zd-txt__input-padding);
+  width: 100%; /* [2] */
+  min-height: var(--zd-txt__input-height);
+  box-sizing: border-box;
+  vertical-align: middle; /* [3] */
+  line-height: var(--zd-txt__input-line-height);
+  color: var(--zd-txt__input-color);
+  font-family: inherit;
+  font-size: var(--zd-txt__input-font-size);
+}
+
+@media screen\0 {
+  .c-txt__input { font-family: sans-serif; } /* [4] */
+}
+
+.c-txt__input::-ms-clear {
+  display: none; /* [5] */
+}
+
+.c-txt__input::placeholder {
+  opacity: 1;
+  color: var(--zd-txt__input-color-placeholder);
+}
+
+.c-txt--inline {
+  display: inline-block;
+}
+
+.c-txt--inline .c-txt__input {
+  width: auto;
+}
+
+.c-txt.is-rtl {
+  direction: rtl;
+}

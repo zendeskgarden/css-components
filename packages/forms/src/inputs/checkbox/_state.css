@@ -1,0 +1,74 @@
+/* stylelint-disable at-rule-empty-line-before, max-line-length, no-descending-specificity */
+@import '@zendeskgarden/css-variables';
+@import '../../_variables';
+@import '_selectors';
+
+:root {
+  --zd-chk-active-background-color: color(var(--zd-color-black) alpha(5%));
+  --zd-chk-active-border-color: var(--zd-forms-accent-color);
+  --zd-chk-active-transition:
+    border-color .1s ease-in-out,
+    background-color .1s ease-in-out,
+    background-image .1s ease-in-out,
+    color .1s ease-in-out;
+  --zd-chk-checked-background-color: var(--zd-forms-accent-color);
+  --zd-chk-checked-background-image: svg-load('14-checkmark.svg', color: var(--zd-color-white));
+  --zd-chk-checked-border-color: var(--zd-chk-checked-background-color);
+  --zd-chk-checked-active-background-color: color(var(--zd-chk-checked-background-color) blackness(+10%));
+  --zd-chk-checked-active-border-color: var(--zd-chk-checked-active-background-color);
+  --zd-chk-disabled-background-color: var(--zd-forms-disabled-background-color);
+  --zd-chk-focused-border-color: var(--zd-forms-accent-color);
+  --zd-chk-focused-box-shadow:
+    0 0 0 3px
+    color(var(--zd-chk-focused-border-color) alpha(40%));
+  --zd-chk-hovered-border-color: var(--zd-chk-focused-border-color);
+  --zd-chk-indeterminate-background-image: svg-load('14-dash.svg', color: var(--zd-color-white));
+}
+
+:--chk-checked::before {
+  background-image: var(--zd-chk-checked-background-image);
+}
+
+:--chk-indeterminate::before {
+  background-image: var(--zd-chk-indeterminate-background-image);
+}
+
+:--chk-checked-enabled::before,
+:--chk-indeterminate-enabled::before {
+  border-color: var(--zd-chk-checked-border-color);
+  background-color: var(--zd-chk-checked-background-color);
+}
+
+:--chk-hovered::before {
+  border-color: var(--zd-chk-hovered-border-color);
+}
+
+:--chk-focused::before {
+  outline: none;
+  border-color: var(--zd-chk-focused-border-color);
+  box-shadow: var(--zd-chk-focused-box-shadow);
+}
+
+:--chk-active::before {
+  transition: var(--zd-chk-active-transition);
+  border-color: var(--zd-chk-active-border-color);
+  background-color: var(--zd-chk-active-background-color);
+}
+
+:--chk-checked-active::before,
+:--chk-indeterminate-active::before {
+  border-color: var(--zd-chk-checked-active-border-color);
+  background-color: var(--zd-chk-checked-active-background-color);
+}
+
+:--chk-disabled {
+  cursor: default;
+}
+
+:--chk-disabled::before {
+  border-color: transparent;
+  box-shadow: none;
+  background-color: var(--zd-chk-disabled-background-color);
+}
+
+/* stylelint-enable at-rule-empty-line-before, max-line-length, no-descending-specificity */

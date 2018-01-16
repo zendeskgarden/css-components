@@ -23,6 +23,11 @@ install Garden CSS components for development. A git `post-checkout` and
 development environment up to date as you checkout and merge between
 branches.
 
+See [package registry
+documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
+for the configuration needed to install `@zendeskgarden`-scoped
+packages as dependencies in your own program.
+
 ## Usage
 
 After CSS components have been installed, the following commands are

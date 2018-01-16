@@ -1,0 +1,52 @@
+@import '@zendeskgarden/css-variables';
+@import '_selectors';
+
+:root {
+  --zd-range-active-thumb-background-color: color(var(--zd-range-thumb-background-color) blackness(+10%));
+  --zd-range-active-track-background-color: var(--zd-color-gainsboro);
+  --zd-range-disabled-lower-background-color: var(--zd-forms-disabled-background-color);
+  --zd-range-disabled-thumb-background-color: var(--zd-range-disabled-lower-background-color);
+  --zd-range-disabled-thumb-border-color: var(--zd-range-disabled-thumb-background-color);
+  --zd-range-disabled-track-background-color: var(--zd-range-track-background-color);
+  --zd-range-disabled-track-background-image: linear-gradient(var(--zd-range-disabled-thumb-background-color), var(--zd-range-disabled-thumb-background-color));
+  --zd-range-focused-box-shadow-spread-radius: 3px;
+  --zd-range-focused-box-shadow:
+    var(--zd-range-thumb-box-shadow),
+    0 0 0 var(--zd-range-focused-box-shadow-spread-radius)
+    color(var(--zd-range-thumb-background-color) alpha(40%));
+}
+
+:--range-disabled {
+  cursor: default;
+}
+
+/* stylelint-disable selector-pseudo-element-no-unknown */
+
+:--range-focused::range-thumb {
+  box-shadow: var(--zd-range-focused-box-shadow);
+}
+
+:--range-active::range-track {
+  background-color: var(--zd-range-active-track-background-color);
+}
+
+:--range-active::range-thumb {
+  background-color: var(--zd-range-active-thumb-background-color);
+}
+
+:--range-disabled::range-track {
+  background-color: var(--zd-range-disabled-track-background-color);
+  background-image: var(--zd-range-disabled-track-background-image);
+}
+
+:--range-disabled::range-thumb {
+  border-color: var(--zd-range-disabled-thumb-border-color);
+  box-shadow: none;
+  background-color: var(--zd-range-disabled-thumb-background-color);
+}
+
+:--range-disabled::range-lower {
+  background-color: var(--zd-range-disabled-lower-background-color);
+}
+
+/* stylelint-enable selector-pseudo-element-no-unknown */

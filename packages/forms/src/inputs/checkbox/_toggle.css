@@ -1,0 +1,103 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-chk--toggle-background-color: var(--zd-color-aluminum);
+  --zd-chk--toggle-background-image: svg-load('14-circle.svg', color: var(--zd-color-white));
+  --zd-chk--toggle-active-background-color: color(var(--zd-chk--toggle-background-color) blackness(+10%));
+  --zd-chk--toggle-checked-active-background-color: var(--zd-chk-checked-active-background-color);
+  --zd-chk--toggle-disabled-background-color: var(--zd-chk-disabled-background-color);
+  --zd-chk--toggle-height: var(--zd-spacing);
+  --zd-chk--toggle-transition:
+    box-shadow .1s ease-in-out,
+    background-color .15s ease-in-out,
+    background-position .15s ease-in-out,
+    color .25s ease-in-out;
+  --zd-chk--toggle-width: var(--zd-spacing-xl);
+  --zd-chk--toggle__label-padding: calc(var(--zd-chk--toggle-width) + var(--zd-chk__label-spacing));
+  --zd-chk--toggle__message-background-position: calc(var(--zd-chk--toggle-width) - var(--zd-font-size-epsilon));
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-chk--toggle .c-chk__label,
+.c-chk--toggle .c-chk__hint,
+.c-chk--toggle .c-chk__message,
+.c-chk--toggle.has-error .c-chk__message.c-chk__message,
+.c-chk--toggle.has-success .c-chk__message.c-chk__message,
+.c-chk--toggle.has-warning .c-chk__message.c-chk__message {
+  padding-left: var(--zd-chk--toggle__label-padding);
+}
+
+.c-chk--toggle .c-chk__message,
+.c-chk--toggle.has-error .c-chk__message.c-chk__message,
+.c-chk--toggle.has-success .c-chk__message.c-chk__message,
+.c-chk--toggle.has-warning .c-chk__message.c-chk__message {
+  background-position: var(--zd-chk--toggle__message-background-position);
+}
+/* stylelint-enable selector-max-specificity */
+
+.c-chk--toggle .c-chk__label::before {
+  top: 0;
+  transition: var(--zd-chk--toggle-transition);
+  margin-top: 0;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--zd-chk--toggle-background-color);
+  background-image: var(--zd-chk--toggle-background-image);
+  background-position: 10%;
+  background-size: auto;
+  width: var(--zd-chk--toggle-width);
+  height: var(--zd-chk--toggle-height);
+}
+
+.c-chk--toggle:--chk-checked::before {
+  background-image: var(--zd-chk--toggle-background-image);
+  background-position: 90%;
+}
+
+.c-chk--toggle:--chk-active::before {
+  background-color: var(--zd-chk--toggle-active-background-color);
+}
+
+.c-chk--toggle:--chk-checked-active::before {
+  background-color: var(--zd-chk--toggle-checked-active-background-color);
+}
+
+.c-chk--toggle:--chk-disabled::before {
+  background-color: var(--zd-chk--toggle-disabled-background-color);
+}
+
+.c-chk--toggle.c-chk--nolabel .c-chk__label {
+  padding-left: var(--zd-chk--toggle-width);
+  vertical-align: top;
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-chk--toggle.is-rtl .c-chk__label,
+.c-chk--toggle.is-rtl .c-chk__hint,
+.c-chk--toggle.is-rtl .c-chk__message,
+.c-chk--toggle.is-rtl.has-error .c-chk__message.c-chk__message,
+.c-chk--toggle.is-rtl.has-success .c-chk__message.c-chk__message,
+.c-chk--toggle.is-rtl.has-warning .c-chk__message.c-chk__message {
+  padding-right: var(--zd-chk--toggle__label-padding);
+  padding-left: 0;
+}
+
+.c-chk--toggle.is-rtl .c-chk__message,
+.c-chk--toggle.is-rtl.has-error .c-chk__message.c-chk__message,
+.c-chk--toggle.is-rtl.has-success .c-chk__message.c-chk__message,
+.c-chk--toggle.is-rtl.has-warning .c-chk__message.c-chk__message {
+  background-position: calc(100% - var(--zd-chk--toggle__message-background-position));
+}
+
+.c-chk--toggle.c-chk--nolabel.is-rtl .c-chk__label {
+  padding-right: var(--zd-chk--toggle-width);
+}
+/* stylelint-enable selector-max-specificity */
+
+.c-chk--toggle.is-rtl .c-chk__label::before {
+  background-position: 90%;
+}
+
+.c-chk--toggle.is-rtl:--chk-checked::before {
+  background-position: 10%;
+}

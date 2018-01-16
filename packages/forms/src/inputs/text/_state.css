@@ -1,0 +1,40 @@
+@import '@zendeskgarden/css-variables';
+@import '../../_variables';
+@import '_selectors';
+
+:root {
+  --zd-txt-disabled-background-color: var(--zd-forms-disabled-background-color);
+  --zd-txt-disabled-border-color: transparent;
+  --zd-txt-disabled-color: var(--zd-forms-disabled-color);
+  --zd-txt-focused-border-color: var(--zd-forms-accent-color);
+  --zd-txt-focused-box-shadow:
+    0 0 0 3px
+    color(var(--zd-txt-focused-border-color) alpha(40%));
+  --zd-txt-hovered-border-color: var(--zd-txt-focused-border-color);
+  --zd-txt-hovered-color: var(--zd-color-dark-gray);
+}
+
+:--txt-hovered {
+  border-color: var(--zd-txt-hovered-border-color);
+}
+
+.c-txt .c-txt__input:focus {
+  outline: none;
+}
+
+:--txt-focused {
+  border-color: var(--zd-txt-focused-border-color);
+  box-shadow: var(--zd-txt-focused-box-shadow);
+}
+
+:--txt-disabled {
+  border-color: var(--zd-txt-disabled-border-color);
+  background-color: var(--zd-txt-disabled-background-color);
+  cursor: default;
+  color: var(--zd-txt-disabled-color);
+}
+
+/* Necessary to override common bedrock placeholder styling */
+:--txt-disabled::placeholder {
+  color: var(--zd-txt-disabled-color);
+}

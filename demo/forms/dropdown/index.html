@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+  <title>Dropdown / CSS Components / Zendesk Garden</title>
+  <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
+  <link href="../../menus/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/css-labels/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/site.css" rel="stylesheet">
+  <link href="../index.css" rel="stylesheet">
+  <link href="../custom.css" rel="stylesheet">
+  <style>
+  .c-main .c-menu {
+    width: 370px;
+    bottom: 47px;
+  }
+
+  .c-main .c-txt + .c-menu {
+    top: calc(100% + 5px);
+    bottom: auto;
+  }
+
+  .l-wrapper--370 { max-width: 370px; }
+  </style>
+</head>
+<body>
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="http://zendeskgarden.github.io">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="../../index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="../..">CSS Components</a>
+      <span>/ Dropdown</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="../../index.svg#zd-svg-icon-26-settings-fill">
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="../../index.svg#zd-svg-icon-14-chevron">
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.custom">Custom</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk c-chk--toggle">
+              <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
+              <label class="c-chk__label" for="nav.ctl.size"><span class="c-code">.c-txt--sm</span></label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <div class="u-mb">Validation</div>
+            <div class="u-ml">
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.none" name="nav.ctl.validation" checked type="radio" value="">
+                <label class="c-chk__label" for="nav.ctl.validation.none">None</label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.success" name="nav.ctl.validation" type="radio" value="success">
+                <label class="c-chk__label" for="nav.ctl.validation.success"><span class="c-code">.has-success</span></label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.warning" name="nav.ctl.validation" type="radio" value="warning">
+                <label class="c-chk__label" for="nav.ctl.validation.warning"><span class="c-code">.has-warning</span></label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.error" name="nav.ctl.validation" type="radio" value="error">
+                <label class="c-chk__label" for="nav.ctl.validation.error"><span class="c-code">.has-error</span></label>
+              </fieldset>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Dropdown</h1>
+    <div class="c-main__body">
+      <p class="u-mb">Use the
+        <code class="c-code">.c-txt__input--select</code>
+        modifier to apply dropdown styling to any non-void
+        element (i.e. &lt;button&gt;). Combine with a
+        <a href="../../menus/">
+          <code class="c-code">.c-menu</code>
+        </a>
+        component to present dropdown options. Consult the
+        associated Select React Component for complete
+        functionality, including option selection and
+        keyboard navigation.</p>
+      <form class="l-wrapper--370 u-mb-lg">
+        <fieldset class="u-mb-lg u-position-relative">
+          <div class="c-txt">
+            <label class="c-txt__label" for="select-0">A &lt;button&gt; Dropdown</label>
+            <button class="c-txt__input c-txt__input--select" id="select-0"><span dir="ltr">.c-txt__input--select<span></button>
+          </div>
+          <ul aria-hidden="true" class="c-menu c-menu--down">
+            <li class="c-menu__item">item</li>
+            <li class="c-menu__item is-checked"><span dir="ltr">.c-txt__input--select</span></li>
+            <li class="c-menu__item">item</li>
+          </ul>
+        </fieldset>
+        <fieldset class="u-mb-lg u-position-relative">
+          <ul aria-hidden="true" class="c-menu c-menu--up">
+            <li class="c-menu__item">one</li>
+            <li class="c-menu__item is-checked">two</li>
+            <li class="c-menu__item">three</li>
+          </ul>
+          <div class="c-txt">
+            <label class="c-txt__label" for="select-1">A ContentEditable &lt;div&gt; Dropdown</label>
+            <div class="c-txt__input c-txt__input--select" contenteditable="true" id="select-1" tabindex="0">two</div>
+          </div>
+        </fieldset>
+        <fieldset class="u-mb-lg u-position-relative">
+          <div class="c-txt">
+            <label class="c-txt__label" for="select-label">A Dropdown with Label Content</label>
+            <div class="c-txt__input c-txt__input--label c-txt__input--select" id="select-label" tabindex="0">
+              <label class="c-label c-label--lg c-label--light c-label--pill">
+                <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
+                <span>Label One</span>
+                <button class="c-label__remove" type="button"></button>
+              </label>
+              <label class="c-label c-label--lg c-label--light c-label--pill">
+                <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
+                <span>Label Two</span>
+                <button class="c-label__remove" type="button"></button>
+              </label>
+              <label class="c-label c-label--lg c-label--light c-label--pill">
+                <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
+                <span>Label Three</span>
+                <button class="c-label__remove" type="button"></button>
+              </label>
+            </div>
+          </div>
+          <ul aria-hidden="true" class="c-menu c-menu--down">
+            <li class="c-menu__item">Label Zero</li>
+            <li class="c-menu__item is-checked">Label One</li>
+            <li class="c-menu__item is-checked">Label Two</li>
+            <li class="c-menu__item is-checked">Label Three</li>
+          </ul>
+        </fieldset>
+        <fieldset class="u-mb-lg">
+          <div class="c-txt">
+            <label class="c-txt__label" for="select-2">A &lt;select&gt; Dropdown</label>
+            <small class="c-txt__hint">The CSS modifier may be applied to a standard
+              &lt;select&gt; input element for lightweight, no-JS usage. Note that
+              the unstyled &lt;option&gt; menu is not appropriate for in-product use.</small>
+            <select class="c-txt__input c-txt__input--select" id="select-2">
+              <option>One</option>
+              <option>Two</option>
+              <option>Three</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="u-mb-lg">
+          <div class="c-txt">
+            <label class="c-txt__label" for="select-3">A Disabled &lt;button&gt; Dropdown</label>
+            <button class="c-txt__input c-txt__input--select" disabled id="select-3"><span dir="ltr">.c-txt__input--select[disabled]</span></button>
+          </div>
+        </fieldset>
+        <fieldset class="u-mb-lg">
+          <div class="c-txt">
+            <label class="c-txt__label" for="select-4">A Disabled &lt;select&gt; Dropdown</label>
+            <select class="c-txt__input c-txt__input--select" disabled id="select-4">
+              <option dir="ltr">select[disabled]</option>
+            </select>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+  <script src="http://zendeskgarden.github.io/jquery.js"></script>
+  <script src="http://zendeskgarden.github.io/svg4everybody.js"></script>
+  <script src="http://zendeskgarden.github.io/index.js"></script>
+  <script src="../index.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
