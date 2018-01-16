@@ -1,6 +1,20 @@
 # Change Log
 
-<a name="3.5.0"></a>
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+      <a name="3.6.0"></a>
+# 3.6.0 (2018-01-16)
+
+
+### Features
+
+* add css-forms package to monorepo ([#11](https://github.com/zendeskgarden/css-components/issues/11)) ([a855c69](https://github.com/zendeskgarden/css-components/commit/a855c69))
+
+
+
+
+      <a name="3.5.0"></a>
 ## [3.5.0] - 2017-12-22
 ### Fixed (per [#50](https://github.com/zendeskgarden/css-forms/pull/50) and [#51](https://github.com/zendeskgarden/css-forms/pull/51))
 - Add support for inline media (icons) within text inputs
@@ -8,7 +22,7 @@
 ## [3.4.2] - 2017-12-06
 ### Fixed (per [#49](https://github.com/zendeskgarden/css-forms/pull/49))
 - Reduce padding on `.c-txt__input--label` to prevent pixel shift on
-  label removal.
+label removal.
 
 ## [3.4.1] - 2017-11-10
 ### Fixed (per [#48](https://github.com/zendeskgarden/css-forms/pull/48))
@@ -17,8 +31,8 @@
 ## [3.4.0] - 2017-11-08
 ### Added (per [#41](https://github.com/zendeskgarden/css-forms/pull/41))
 - Include complementary `.c-txt--custom`, `.c-chk--custom`, and
-  `.c-range--custom` CSS demonstrating how to apply an accent color
-  changes.
+`.c-range--custom` CSS demonstrating how to apply an accent color
+changes.
 
 ## [3.3.2] - 2017-11-04
 ### Fixed (per [#45](https://github.com/zendeskgarden/css-forms/pull/45))
@@ -35,12 +49,12 @@
 ## [3.2.2] - 2017-09-19
 ### Fixed
 - [#39](https://github.com/zendeskgarden/css-forms/issues/39) Prevent
-  pixel height shift in empty text field `<div>`.
+pixel height shift in empty text field `<div>`.
 
 ## [3.2.1] - 2017-09-19
 ### Fixed
 - [#36](https://github.com/zendeskgarden/css-forms/pull/36) Allow
-  checkbox labels to line wrap.
+checkbox labels to line wrap.
 - Remove IE "clear" button from text fields.
 
 ## [3.2.0] - 2017-09-01
@@ -57,7 +71,7 @@
 ## [3.0.0] - 2017-07-28
 ### Added (per [#32](https://github.com/zendeskgarden/css-forms/pull/32))
 - `.c-txt--sm`, `.c-range--sm`, and `.c-input--sm` modifications to
-  support compact form layouts.
+support compact form layouts.
 - Support for inputs containing `.c-label` components.
 
 ### Changed
@@ -69,14 +83,14 @@
 
 ### Removed
 - Ability to override `.c-chk__label` with the addition of
-  `.c-chk__hint`. Use a utility (like Bedrock `.u-regular`) to override
-  the label font weight for the intended group design. See the demo page
-  for details.
+`.c-chk__hint`. Use a utility (like Bedrock `.u-regular`) to override
+the label font weight for the intended group design. See the demo page
+for details.
 
 ## [2.2.0] - 2017-07-28
 ### Added (per [#31](https://github.com/zendeskgarden/css-forms/pull/31))
 - Styling and structure support for custom range sliders with multiple
-  thumb controls.
+thumb controls.
 
 ## [2.1.1] - 2017-07-05
 ### Updated (per [#30](https://github.com/zendeskgarden/css-forms/pull/30))
@@ -89,22 +103,22 @@
 ## [2.0.0] - 2017-06-15
 ### Changed (per [#27](https://github.com/zendeskgarden/css-forms/pull/27))
 - Prepared package for registry publish as `@zendesk/garden-css-forms`.
-  See README for updated installation.
+See README for updated installation.
 
 ## [1.3.0] - 2017-05-02
 ### Added (per [#24](https://github.com/zendeskgarden/css-forms/pull/24))
 - Validation `.c-chk__message`, `.c-range__message`, and
-  `.c-txt__message`.
+`.c-txt__message`.
 
 ## [1.2.0] - 2017-04-04
 ### Added (per [#23](https://github.com/zendeskgarden/css-forms/pull/23))
 - Standalone `.c-input-label` and `.c-input-hint` to support label/hint
-  styling disconnected from input component structure.
+styling disconnected from input component structure.
 
 ## [1.0.1] - 2017-03-15
 ### Updated (per [#22](https://github.com/zendeskgarden/css-forms/pull/22))
 - Moved all `.c-chk` "after" into "before" pseudo, allowing for more
-  flexible checkbox label content.
+flexible checkbox label content.
 
 ## [1.0.0] - 2017-03-06
 ### Updated (per [#21](https://github.com/zendeskgarden/css-forms/pull/21))
@@ -117,7 +131,7 @@
 ## [0.3.2] - 2016-12-22
 ### Fixed (per [#18](https://github.com/zendeskgarden/css-forms/pull/18))
 - Loosen descendant and disabled selector rules, allowing for more
-  flexible component usage.
+flexible component usage.
 
 ## [0.3.1] - 2016-12-06
 ### Fixed (per [#16](https://github.com/zendeskgarden/css-forms/pull/16))
@@ -135,21 +149,21 @@
 ## [0.1.3] - 2016-11-11
 ### Fixed
 - [#13](https://github.com/zendeskgarden/css-forms/issues/13) Set
-  `.c-chk` to relative positioning.
+`.c-chk` to relative positioning.
 
 ## [0.1.2] - 2016-10-28
 ### Changed
 - [#10](https://github.com/zendeskgarden/css-forms/pull/10) Update field
-  background and hover colors to improve contrast.
+background and hover colors to improve contrast.
 
 ### Fixed
 - [#11](https://github.com/zendeskgarden/css-forms/issues/11) Update
-  `.c-txt__input` to inherit `font-family`.
+`.c-txt__input` to inherit `font-family`.
 
 ## [0.1.1] - 2016-10-19
 ### Fixed (per [#9](https://github.com/zendeskgarden/css-forms/pull/9))
 - Address `.c-range` shadow DOM performance by inheriting
-  `background-size` from parent.
+`background-size` from parent.
 
 ## [0.1.0] - 2016-10-17
 ### Changed (per [#8](https://github.com/zendeskgarden/css-forms/pull/8))
