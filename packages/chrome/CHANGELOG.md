@@ -14,5 +14,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-<a name="1.0.0"></a>
 ## 1.0.0 - 2017-11-06

@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-      <a name="1.1.0"></a>
+<a name="1.1.0"></a>
 # 1.1.0 (2017-12-22)
 
 
@@ -14,7 +14,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-      <a name="1.0.1"></a>
 ## [1.0.1] - 2017-10-24
 ### Fixed (per [#11](https://github.com/zendeskgarden/css-arrows/pull/11))
 - Half pixel visible border on clipped side of arrow.

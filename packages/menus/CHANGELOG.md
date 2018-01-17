@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-      <a name="5.1.0"></a>
+<a name="5.1.0"></a>
 # 5.1.0 (2018-01-11)
 
 
@@ -14,7 +14,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-      <a name="5.0.1"></a>
 ## [5.0.1] - 2017-11-14
 ### Fixed (per [#28](https://github.com/zendeskgarden/css-menus/pull/28))
 - Prevent whitespace inheritance from controlling menu item.
