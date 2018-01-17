@@ -1,4 +1,4 @@
-@import '@zendeskgarden/css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-tab--dark__list-border-color: var(--zd-color-breaker-bay);
