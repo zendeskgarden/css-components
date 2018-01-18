@@ -1,5 +1,5 @@
 /* stylelint-disable no-unsupported-browser-features */
-@import '@zendeskgarden/css-variables';
+@import '@zendesk/garden-css-variables';
 @import '../../_variables';
 
 :root {

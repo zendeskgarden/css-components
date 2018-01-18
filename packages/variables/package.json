@@ -1,5 +1,5 @@
 {
-  "name": "@zendeskgarden/css-variables",
+  "name": "@zendesk/garden-css-variables",
   "description": "Garden component CSS",
   "author": "Zendesk Garden <garden@zendesk.com>",
   "license": "UNLICENSED",

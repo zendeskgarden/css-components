@@ -1,4 +1,4 @@
-@import '@zendeskgarden/css-variables';
+@import '@zendesk/garden-css-variables';
 
 .c-{{component}} {
   font-size: var(--zd-font-size-giga);

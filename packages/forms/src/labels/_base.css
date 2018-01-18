@@ -1,4 +1,4 @@
-@import '@zendeskgarden/css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-input--error-color: var(--zd-color-flamingo);

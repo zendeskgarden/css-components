@@ -1,4 +1,4 @@
-@import '@zendeskgarden/css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-chk--toggle-background-color: var(--zd-color-aluminum);

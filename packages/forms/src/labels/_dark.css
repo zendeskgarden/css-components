@@ -1,4 +1,4 @@
-@import '@zendeskgarden/css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-dark-input__hint-color: var(--zd-color-breaker-bay);

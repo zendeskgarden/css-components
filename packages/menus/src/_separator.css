@@ -1,4 +1,4 @@
-@import '@zendeskgarden/css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
   --zd-menu__separator-border: 1px solid var(--zd-color-platinum);

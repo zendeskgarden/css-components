@@ -6,7 +6,7 @@ used throughout Zendesk products.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-forms
+npm install --save-dev @zendesk/garden-css-forms
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install --save-dev @zendeskgarden/css-forms
 Once installed, form CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendeskgarden/css-forms';
+@import '@zendesk/garden-css-forms';
 ```
 
 ### Checkbox

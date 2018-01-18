@@ -25,8 +25,8 @@ branches.
 
 See [package registry
 documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendeskgarden`-scoped
-packages as dependencies in your own program.
+for the configuration needed to install `@zendesk`-scoped packages as
+dependencies in your own program.
 
 ## Usage
 
