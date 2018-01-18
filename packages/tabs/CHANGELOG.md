@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-      <a name="3.3.0"></a>
+<a name="3.3.0"></a>
 # 3.3.0 (2017-12-22)
 
 
@@ -14,7 +14,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-      <a name="3.2.0"></a>
 ## [3.2.0] - 2017-12-06
 ### Changed (per [#9](https://github.com/zendeskgarden/css-tabs/pull/9))
 - Update to base-4 sizing.

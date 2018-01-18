@@ -9,28 +9,18 @@
     "new": "node scripts/new",
     "prepare": "yarn build",
     "start": "lerna run watch --parallel --stream & live-server demo",
-    "test": "lerna run test --stream",
-    "test:publish": "lerna publish --conventional-commits --skip-git --skip-npm --loglevel=silly"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
+    "test": "lerna run test --stream"
   },
   "devDependencies": {
-    "@commitlint/cli": "^5.2.5",
-    "@commitlint/config-conventional": "^5.2.3",
     "@zendesk/garden-stylelint-config": "^6.0.0",
-    "caniuse-lite": "^1.0.30000783",
+    "caniuse-lite": "^1.0.30000792",
     "chalk": "^2.3.0",
-    "commitizen": "^2.9.6",
     "cssnano": "^3.10.0",
-    "cz-conventional-changelog": "^2.1.0",
     "gh-pages": "^1.1.0",
     "handlebars": "^4.0.11",
     "husky": "^0.15.0-beta.16",
     "klaw-sync": "^3.0.2",
-    "lerna": "^2.5.1",
+    "lerna": "^2.7.1",
     "live-server": "^1.2.0",
     "ncp": "^2.0.0",
     "postcss-cli": "^4.1.1",
@@ -42,11 +32,6 @@
     "rimraf": "^2.6.2",
     "stylelint": "^8.4.0",
     "stylelint-order": "^0.7.0"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   },
   "husky": {
     "hooks": {

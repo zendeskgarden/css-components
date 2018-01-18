@@ -1,9 +1,9 @@
 {
-  "lerna": "2.5.1",
+  "lerna": "2.7.1",
   "npmClient": "yarn",
   "version": "independent",
   "hoist": true,
-  "command": {
+  "commands": {
     "publish": {
       "allowBranch": "master",
       "message": "chore(release): publish"
