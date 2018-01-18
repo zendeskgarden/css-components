@@ -3,7 +3,7 @@
   "npmClient": "yarn",
   "version": "independent",
   "hoist": true,
-  "command": {
+  "commands": {
     "publish": {
       "allowBranch": "master",
       "message": "chore(release): publish"
