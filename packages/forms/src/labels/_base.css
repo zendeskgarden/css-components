@@ -25,12 +25,6 @@
 
 /* 1. Support label inline with input layout. */
 
-.c-chk .c-chk__hint,
-.c-range .c-range__hint,
-.c-txt .c-txt__hint {
-  display: block;
-}
-
 .c-chk__hint,
 .c-range__hint,
 .c-txt__hint {
@@ -150,3 +144,9 @@
   margin-top: var(--zd-input__message-margin-top);
 }
 /* stylelint-enable selector-max-specificity */
+
+.c-chk .c-chk__hint,
+.c-range .c-range__hint,
+.c-txt .c-txt__hint {
+  display: block;
+}

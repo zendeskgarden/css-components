@@ -75,6 +75,7 @@ select.c-txt__input--select:--txt-focused {
   background-image: var(--zd-txt__input--select__chevron-hovered-background-image);
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .c-txt__input--select:--txt--select-open::before {
   transform: var(--zd-txt__input--select__chevron-transform);
   background-image: var(--zd-txt__input--select__chevron-open-background-image);
