@@ -1,18 +1,18 @@
-/* stylelint-disable at-rule-empty-line-before, max-line-length */
+/* stylelint-disable at-rule-empty-line-before */
 
 @custom-selector :--txt-hovered
-  .c-txt.is-hovered:not(.is-disabled) .c-txt__input:not([disabled]),
-  .c-txt:not(.is-disabled) .c-txt__input:not([disabled]):hover;
+  .is-hovered:not(.is-disabled):not([disabled]),
+  :hover:not(.is-disabled):not([disabled]);
 
 @custom-selector :--txt-focused
-  .c-txt.is-focused:not(.is-disabled) .c-txt__input:not([disabled]),
-  .c-txt:not(.is-disabled) .c-txt__input:not([disabled]):focus;
+  .is-focused:not(.is-disabled):not([disabled]),
+  :focus:not(.is-disabled):not([disabled]);
 
 @custom-selector :--txt-disabled
-  .c-txt.is-disabled .c-txt__input,
-  .c-txt .c-txt__input[disabled];
+  .is-disabled,
+  [disabled];
 
 @custom-selector :--txt--select-open
-  .c-txt.c-txt:not(.is-disabled) .c-txt__input.c-txt__input--select.is-open:not(select);
+  .is-open:not(.is-disabled):not([disabled]):not(select);
 
-/* stylelint-enable at-rule-empty-line-before, max-line-length */
+/* stylelint-enable at-rule-empty-line-before */

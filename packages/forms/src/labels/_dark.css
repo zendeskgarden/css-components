@@ -5,16 +5,20 @@
   --zd-dark-input__label-color: var(--zd-color-white);
 }
 
-.c-chk--dark .c-chk__label,
-.c-range--dark .c-range__label,
-.c-txt--dark .c-txt__label,
-.c-input-label--dark {
+.c-chk__label--dark,
+.c-range__label--dark,
+.c-txt__label--dark {
   color: var(--zd-dark-input__label-color);
 }
 
-.c-chk--dark .c-chk__hint,
-.c-range--dark .c-range__hint,
-.c-txt--dark .c-txt__hint,
-.c-input-hint--dark {
+.c-chk__hint--dark,
+.c-range__hint--dark,
+.c-txt__hint--dark {
   color: var(--zd-dark-input__hint-color);
+}
+
+.c-chk__message--dark.c-chk__message--warning,
+.c-range__message--dark.c-range__message--warning,
+.c-txt__message--dark.c-txt__message--warning {
+  color: var(--zd-input--warning-color);
 }

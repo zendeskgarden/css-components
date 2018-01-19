@@ -13,27 +13,27 @@
 }
 
 /* stylelint-disable selector-max-specificity */
-.has-error.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
+.c-txt__input.c-txt__input--error:not(.is-disabled):not([disabled]) {
   border-color: var(--zd-input--error-color);
 }
 
-.has-error:--txt-focused {
+.c-txt__input--error:--txt-focused {
   box-shadow: var(--zd-txt--error-focused-box-shadow);
 }
 
-.has-success.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
+.c-txt__input.c-txt__input--success:not(.is-disabled):not([disabled]) {
   border-color: var(--zd-input--success-color);
 }
 
-.has-success:--txt-focused {
+.c-txt__input--success:--txt-focused {
   box-shadow: var(--zd-txt--success-focused-box-shadow);
 }
 
-.has-warning.c-txt:not(.is-disabled) .c-txt__input:not([disabled]) {
+.c-txt__input.c-txt__input--warning:not(.is-disabled):not([disabled]) {
   border-color: var(--zd-input--warning-color);
 }
 
-.has-warning:--txt-focused {
+.c-txt__input--warning:--txt-focused {
   box-shadow: var(--zd-txt--warning-focused-box-shadow);
 }
 /* stylelint-enable selector-max-specificity */

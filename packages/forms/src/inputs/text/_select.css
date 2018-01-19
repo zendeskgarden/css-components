@@ -1,4 +1,3 @@
-/* stylelint-disable no-unsupported-browser-features */
 @import '@zendesk/garden-css-variables';
 @import '../../_variables';
 @import '_selectors';
@@ -69,48 +68,41 @@ select.c-txt__input--select:-moz-focusring {
   color: transparent; /* [1] */
 }
 
-:--txt-hovered.c-txt__input--select:not(select)::before,
-:--txt-focused.c-txt__input--select:not(select)::before,
-.c-txt.is-hovered select.c-txt__input--select,
-.c-txt select.c-txt__input--select:hover,
-.c-txt.is-focused select.c-txt__input--select,
-.c-txt select.c-txt__input--select:focus {
+.c-txt__input--select:--txt-hovered:not(select)::before,
+.c-txt__input--select:--txt-focused:not(select)::before,
+select.c-txt__input--select:--txt-hovered,
+select.c-txt__input--select:--txt-focused {
   background-image: var(--zd-txt__input--select__chevron-hovered-background-image);
 }
 
-:--txt--select-open::before {
+.c-txt__input--select:--txt--select-open::before {
   transform: var(--zd-txt__input--select__chevron-transform);
   background-image: var(--zd-txt__input--select__chevron-open-background-image);
 }
 
 /* stylelint-disable selector-no-qualifying-type */
-:--txt-disabled.c-txt__input--select:not(select)::before,
-.c-txt.is-disabled select.c-txt__input--select,
-.c-txt select.c-txt__input--select[disabled] {
+.c-txt__input--select:--txt-disabled:not(select)::before,
+select.c-txt__input--select[disabled] {
   background-image: var(--zd-txt__input--select__chevron-disabled-background-image);
 }
 /* stylelint-enable selector-no-qualifying-type */
 
-.c-txt.is-rtl .c-txt__input--select {
+.is-rtl.c-txt__input--select {
   padding-right: var(--zd-txt__input-padding-horizontal);
   padding-left: var(--zd-txt__input--select-padding-right);
   text-align: right;
 }
 
-/* stylelint-disable selector-max-specificity */
-.c-txt.is-rtl .c-txt__input--select:not(select)::before {
+.is-rtl.c-txt__input--select:not(select)::before {
   right: auto;
   left: 0;
 }
 
-.c-txt.is-rtl .c-txt__input--select:not(select)::before,
-.c-txt.is-rtl select.c-txt__input--select {
+.is-rtl.c-txt__input--select:not(select)::before,
+select.is-rtl.c-txt__input--select {
   background-position: var(--zd-txt-rtl__input--select__chevron-background-position);
 }
-/* stylelint-enable selector-max-specificity */
 
-/* stylelint-disable max-line-length */
-.is-rtl:--txt--select-open::before {
+.is-rtl.c-txt__input--select:--txt--select-open::before {
   transform: var(--zd-txt-rtl__input--select__chevron-transform);
 }
-/* stylelint-enable max-line-length, no-unsupported-browser-features */

@@ -13,45 +13,42 @@
   --zd-txt--dark__input--select-disabled-background-image: svg-load('14-chevron.svg', color: var(--zd-color-sherpa-blue));
 }
 
-.c-txt--dark .c-txt__input {
+.c-txt__input--dark {
   border-color: var(--zd-txt--dark__input-border-color);
   background-color: var(--zd-txt--dark__input-background-color);
   color: var(--zd-txt--dark__input-color);
 }
 
-.c-txt--dark .c-txt__input::placeholder {
+.c-txt__input--dark::placeholder {
   color: var(--zd-txt--dark__input-color-placeholder);
 }
 
-.c-txt--dark:--txt-disabled {
+.c-txt__input--dark:--txt-disabled {
   background-color: var(--zd-txt--dark-disabled-background-color);
   color: var(--zd-txt--dark-disabled-color);
 }
 
-.c-txt--dark:--txt-disabled::placeholder {
+.c-txt__input--dark:--txt-disabled::placeholder {
   color: var(--zd-txt--dark-disabled-color);
 }
 
 /* stylelint-disable selector-max-specificity */
 
-.c-txt--dark:--txt-hovered.c-txt__input--select:not(select)::before,
-.c-txt--dark:--txt-focused.c-txt__input--select:not(select)::before,
-.c-txt--dark.is-hovered select.c-txt__input--select,
-.c-txt--dark select.c-txt__input--select:hover,
-.c-txt--dark.is-focused select.c-txt__input--select,
-.c-txt--dark select.c-txt__input--select:focus {
+.c-txt__input--dark:--txt-hovered.c-txt__input--select:not(select)::before,
+.c-txt__input--dark:--txt-focused.c-txt__input--select:not(select)::before,
+select.c-txt__input--dark:--txt-hovered.c-txt__input--select,
+select.c-txt__input--dark:--txt-focused.c-txt__input--select {
   background-image: var(--zd-txt--dark__input--select-hovered-background-image);
 }
 
-.c-txt--dark select.c-txt__input--select:-moz-focusring {
+select.c-txt__input--dark.c-txt__input--select:-moz-focusring {
   text-shadow: 0 0 0 var(--zd-txt--dark__input-color);
 }
 
 /* stylelint-disable selector-no-qualifying-type */
 
-.c-txt--dark:--txt-disabled.c-txt__input--select:not(select)::before,
-.c-txt--dark.is-disabled select.c-txt__input--select,
-.c-txt--dark select.c-txt__input--select[disabled] {
+.c-txt__input--dark:--txt-disabled.c-txt__input--select:not(select)::before,
+select.c-txt__input--dark:--txt-disabled.c-txt__input--select {
   background-image: var(--zd-txt--dark__input--select-disabled-background-image);
 }
 

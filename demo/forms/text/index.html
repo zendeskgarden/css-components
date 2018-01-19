@@ -10,6 +10,8 @@
   <link href="../index.css" rel="stylesheet">
   <link href="../custom.css" rel="stylesheet">
   <style>
+  .c-label.c-label--dark { color: #fff; }
+
   .l-wrapper--370 { max-width: 370px; }
   </style>
 </head>
@@ -59,13 +61,13 @@
           <li class="c-menu__item" role="menuitem">
             <div class="c-chk c-chk--toggle">
               <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.size"><span class="c-code">.c-txt--sm</span></label>
+              <label class="c-chk__label" for="nav.ctl.size">Size</label>
             </div>
           </li>
           <li class="c-menu__item" role="menuitem">
             <div class="c-chk c-chk--toggle">
               <input class="c-chk__input js-bare" id="nav.ctl.bare" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.bare"><span class="c-code">.c-txt__input--bare</span></label>
+              <label class="c-chk__label" for="nav.ctl.bare">Bare</label>
             </div>
           </li>
           <li class="c-menu__item" role="menuitem">
@@ -77,15 +79,15 @@
               </div>
               <div class="c-chk c-chk--radio">
                 <input class="c-chk__input js-validation" id="nav.ctl.validation.success" name="nav.ctl.validation" type="radio" value="success">
-                <label class="c-chk__label" for="nav.ctl.validation.success"><span class="c-code">.has-success</span></label>
+                <label class="c-chk__label" for="nav.ctl.validation.success">Success</label>
               </div>
               <div class="c-chk c-chk--radio">
                 <input class="c-chk__input js-validation" id="nav.ctl.validation.warning" name="nav.ctl.validation" type="radio" value="warning">
-                <label class="c-chk__label" for="nav.ctl.validation.warning"><span class="c-code">.has-warning</span></label>
+                <label class="c-chk__label" for="nav.ctl.validation.warning">Warning</label>
               </div>
               <div class="c-chk c-chk--radio">
                 <input class="c-chk__input js-validation" id="nav.ctl.validation.error" name="nav.ctl.validation" type="radio" value="error">
-                <label class="c-chk__label" for="nav.ctl.validation.error"><span class="c-code">.has-error</span></label>
+                <label class="c-chk__label" for="nav.ctl.validation.error">Error</label>
               </div>
             </div>
           </li>
@@ -168,18 +170,17 @@
             <label class="c-label c-label--lg c-label--light c-label--pill">
               <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
               <span dir="ltr">.c-txt__input--label</span>
-              <button class="c-label__remove" type="button"></button>
+              <button class="c-label__remove" type="button" tabindex="-1"></button>
             </label>
           </div>
         </div>
       </form>
+      <p class="u-mb">The <code class="c-code">.c-txt__input--media</code>
+      modifier removes default padding and acts as a flex container for it's
+      contents.  Both start and end media are available.</p>
       <form class="u-mb-lg">
         <div class="c-txt">
           <label class="c-txt__label">Media</label>
-          <small class="c-txt__hint">Both start and end media are available.
-            <code class="c-code">.c-txt__input--media</code> removes default padding and acts
-            as a flex container for it's contents.
-          </small>
           <div class="c-txt__input c-txt__input--media">
             <div class="c-txt__input--media__figure">
               <svg>
@@ -218,33 +219,33 @@
         </div>
       </form>
       <h3 class="u-delta u-mb">States</h3>
-      <div class="c-txt is-hovered u-mb-lg">
-        <input class="c-txt__input" placeholder=".c-txt.is-hovered" type="text">
-      </div>
-      <div class="c-txt is-focused u-mb-lg">
-        <input class="c-txt__input" placeholder=".c-txt.is-focused" type="text">
-      </div>
-      <div class="c-txt is-disabled u-mb-lg">
-        <input class="c-txt__input" placeholder=".c-txt.is-disabled" type="text">
+      <div class="c-txt u-mb-lg">
+        <input class="c-txt__input is-hovered" placeholder=".c-txt__input.is-hovered" type="text">
       </div>
       <div class="c-txt u-mb-lg">
-        <input class="c-txt__input" disabled placeholder=".c-txt .c-txt__input[disabled]" type="text">
+        <input class="c-txt__input is-focused" placeholder=".c-txt__input.is-focused" type="text">
+      </div>
+      <div class="c-txt u-mb-lg">
+        <input class="c-txt__input is-disabled" placeholder=".c-txt__input.is_disabled" type="text">
+      </div>
+      <div class="c-txt u-mb-lg">
+        <input class="c-txt__input" disabled placeholder=".c-txt__input[disabled]" type="text">
       </div>
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
 <textarea class="c-playground__code"><form class="l-wrapper--370">
-  <div class="c-txt has-success u-mb-sm">
+  <div class="c-txt u-mb-sm">
     <label class="c-txt__label" for="txt-playground-1">Label One</label>
     <small class="c-txt__hint">Hint text goes here...</small>
-    <input class="c-txt__input" id="txt-playground-1" type="text" value="Value">
-    <small class="c-txt__message">This is a good thing</small>
+    <input class="c-txt__input c-txt__input--success" id="txt-playground-1" type="text" value="Value">
+    <small class="c-txt__message c-txt__message--success">This is a good thing</small>
   </div>
-  <div class="c-txt has-error u-mb-sm">
+  <div class="c-txt u-mb-sm">
     <label class="c-txt__label" for="txt-playground-2">Label Two</label>
-    <input class="c-txt__input" id="txt-playground-2" placeholder="Placeholder" type="text">
-    <small class="c-txt__message">This is a bad thing</small>
+    <input class="c-txt__input c-txt__input--error" id="txt-playground-2" placeholder="Placeholder" type="text">
+    <small class="c-txt__message c-txt__message--error">This is a bad thing</small>
   </div>
   <div class="c-txt">
     <label class="c-txt__label" for="txt-playground-3">Label Three</label>
@@ -252,7 +253,7 @@
       <label class="c-label c-label--lg c-label--light c-label--pill">
         <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
         <span dir="ltr">A Label</span>
-        <button class="c-label__remove" type="button"></button>
+        <button class="c-label__remove" type="button" tabindex="-1"></button>
       </label>
     </div>
   </div>

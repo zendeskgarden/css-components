@@ -25,14 +25,18 @@
   height: var(--zd-txt__input__media-size);
 }
 
+/* stylelint-disable no-descending-specificity */
 .c-txt__input--media__figure:first-of-type,
 .is-rtl .c-txt__input--media__figure:last-of-type {
   margin: auto var(--zd-txt__media-end-margin) auto var(--zd-txt__media-start-margin);
 }
 
-/* stylelint-disable no-descending-specificity */
 .c-txt__input--media__figure:last-of-type,
 .is-rtl .c-txt__input--media__figure:first-of-type {
   margin: auto var(--zd-txt__media-start-margin) auto var(--zd-txt__media-end-margin);
 }
 /* stylelint-enable no-descending-specificity */
+
+.c-txt__input--dark .c-txt__input--media__figure {
+  color: var(--zd-txt--dark__input-color);
+}

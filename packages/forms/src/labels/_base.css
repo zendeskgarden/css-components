@@ -25,16 +25,15 @@
 
 /* 1. Support label inline with input layout. */
 
-.c-chk__hint,
-.c-range__hint,
-.c-txt__hint {
+.c-chk .c-chk__hint,
+.c-range .c-range__hint,
+.c-txt .c-txt__hint {
   display: block;
 }
 
 .c-chk__hint,
 .c-range__hint,
-.c-txt__hint,
-.c-input-hint {
+.c-txt__hint {
   line-height: var(--zd-input__hint-line-height);
   color: var(--zd-input__hint-color);
   font-size: var(--zd-input__hint-font-size);
@@ -51,8 +50,7 @@
 
 .c-chk__label,
 .c-range__label,
-.c-txt__label,
-.c-input-label {
+.c-txt__label {
   color: var(--zd-input__label-color);
   font-size: var(--zd-input__label-font-size);
   font-weight: var(--zd-input__label-font-weight);
@@ -60,8 +58,7 @@
 
 .c-chk__label--regular,
 .c-range__label--regular,
-.c-txt__label--regular,
-.c-input-label--regular {
+.c-txt__label--regular {
   font-weight: var(--zd-input__label--regular-font-weight);
 }
 
@@ -70,8 +67,7 @@
 }
 
 .c-range__label,
-.c-txt__label,
-.c-input-label {
+.c-txt__label {
   line-height: var(--zd-input__label-line-height);
 }
 
@@ -98,56 +94,50 @@
   font-size: var(--zd-input__message-font-size);
 }
 
-.has-error.c-chk .c-chk__message,
-.has-error.c-range .c-range__message,
-.has-error.c-txt .c-txt__message,
-.has-success.c-chk .c-chk__message,
-.has-success.c-range .c-range__message,
-.has-success.c-txt .c-txt__message,
-.has-warning.c-chk .c-chk__message,
-.has-warning.c-range .c-range__message,
-.has-warning.c-txt .c-txt__message {
+.c-chk__message--error,
+.c-range__message--error,
+.c-txt__message--error,
+.c-chk__message--success,
+.c-range__message--success,
+.c-txt__message--success,
+.c-chk__message--warning,
+.c-range__message--warning,
+.c-txt__message--warning {
   background-repeat: no-repeat;
   background-position: top left;
   padding-left: var(--zd-input__message-padding);
 }
 
-.has-error.c-chk .c-chk__message,
-.has-error.c-range .c-range__message,
-.has-error.c-txt .c-txt__message {
+.c-chk__message--error,
+.c-range__message--error,
+.c-txt__message--error {
   background-image: var(--zd-input__message--error-background-image);
   color: var(--zd-input--error-color);
 }
 
-.has-success.c-chk .c-chk__message,
-.has-success.c-range .c-range__message,
-.has-success.c-txt .c-txt__message {
+.c-chk__message--success,
+.c-range__message--success,
+.c-txt__message--success {
   background-image: var(--zd-input__message--success-background-image);
   color: var(--zd-input--success-color);
 }
 
-.has-warning.c-chk .c-chk__message,
-.has-warning.c-range .c-range__message,
-.has-warning.c-txt .c-txt__message {
+.c-chk__message--warning,
+.c-range__message--warning,
+.c-txt__message--warning {
   background-image: var(--zd-input__message--warning-background-image);
   padding-left: var(--zd-input__message-padding);
 }
 
-.has-warning.c-chk--dark .c-chk__message,
-.has-warning.c-range--dark .c-range__message,
-.has-warning.c-txt--dark .c-txt__message {
-  color: var(--zd-input--warning-color);
-}
-
-.is-rtl.has-error .c-chk__message,
-.is-rtl.has-error .c-range__message,
-.is-rtl.has-error .c-txt__message,
-.is-rtl.has-success .c-chk__message,
-.is-rtl.has-success .c-range__message,
-.is-rtl.has-success .c-txt__message,
-.is-rtl.has-warning .c-chk__message,
-.is-rtl.has-warning .c-range__message,
-.is-rtl.has-warning .c-txt__message {
+.is-rtl.c-chk__message--error,
+.is-rtl.c-range__message--error,
+.is-rtl.c-txt__message--error,
+.is-rtl.c-chk__message--success,
+.is-rtl.c-range__message--success,
+.is-rtl.c-txt__message--success,
+.is-rtl.c-chk__message--warning,
+.is-rtl.c-range__message--warning,
+.is-rtl.c-txt__message--warning {
   background-position: top right;
   padding-right: var(--zd-input__message-padding);
   padding-left: 0;

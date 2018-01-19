@@ -8,19 +8,18 @@
   margin: var(--zd-txt__input__label-margin);
 }
 
-.c-txt .c-txt__input--label.c-txt__input--label {
+.c-txt__input.c-txt__input--label {
   display: flex;
   flex-wrap: wrap;
   padding: var(--zd-txt__input--label-padding);
 }
 
-.c-txt .c-txt__input--label.c-txt__input--select {
+.c-txt__input--label.c-txt__input--select {
   padding-right: var(--zd-txt__input--select-padding-right);
 }
 
-/* stylelint-disable selector-max-specificity */
-.c-txt.is-rtl .c-txt__input--label.c-txt__input--select {
+/* stylelint-disable-next-line selector-max-specificity */
+.is-rtl.c-txt__input.c-txt__input--label.c-txt__input--select {
   padding-right: var(--zd-txt__input--label-padding-horizontal);
   padding-left: var(--zd-txt__input--select-padding-right);
 }
-/* stylelint-enable selector-max-specificity */

@@ -83,16 +83,16 @@
 
 /* stylelint-enable selector-pseudo-element-no-unknown */
 
-.c-txt--custom:not(.has-error):not(.has-success):not(.has-warning):--txt-hovered:not(.c-txt__input--bare),
-.c-txt--custom:not(.has-error):not(.has-success):not(.has-warning):--txt-focused:not(.c-txt__input--bare) {
+.c-txt__input--custom:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning):--txt-hovered:not(.c-txt__input--bare),
+.c-txt__input--custom:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning):--txt-focused:not(.c-txt__input--bare) {
   border-color: var(--zd-forms--custom-accent-color);
 }
 
-.c-txt--custom:not(.has-error):not(.has-success):not(.has-warning):--txt-focused:not(.c-txt__input--bare) {
+.c-txt__input--custom:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning):--txt-focused:not(.c-txt__input--bare) {
   box-shadow: var(--zd-forms--custom-box-shadow);
 }
 
-.c-txt--custom:--txt--select-open::before {
+.c-txt__input--custom.c-txt__input--select:--txt--select-open::before {
   background-image: var(--zd-txt--custom__input--select__chevron-open-background-image);
 }
 
