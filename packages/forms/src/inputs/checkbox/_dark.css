@@ -29,6 +29,10 @@
   background-color: var(--zd-chk--dark-background-color);
 }
 
+.c-chk__label--dark.c-chk__label--toggle::before {
+  background-color: var(--zd-chk--dark--toggle-background-color);
+}
+
 :--chk-active.c-chk__label--dark::before {
   background-color: var(--zd-chk--dark-active-background-color);
 }
@@ -61,10 +65,6 @@
 :--chk-checked-active.c-chk__label--dark.c-chk__label--toggle::before,
 :--chk-indeterminate-active.c-chk__label--dark.c-chk__label--toggle::before {
   background-color: var(--zd-chk-checked-active-background-color);
-}
-
-.c-chk__label--dark.c-chk__label--toggle::before {
-  background-color: var(--zd-chk--dark--toggle-background-color);
 }
 
 :--chk-disabled.c-chk__label--dark.c-chk__label--toggle::before {
