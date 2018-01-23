@@ -17,6 +17,8 @@
   --zd-chk__label-spacing: 8px;
   --zd-chk__label-top: var(--zd-spacing-sm);
   --zd-chk__label--regular-font-weight: var(--zd-font-weight-regular);
+  --zd-chk__hint-line-height: calc(20 / 14);
+  --zd-chk__message-line-height: calc(16 / 12);
   --zd-chk__message-margin-top: 4px;
 }
 
@@ -79,7 +81,7 @@
 
 .c-chk__hint {
   padding-left: var(--zd-chk__label-padding);
-  line-height: var(--zd-input__hint-line-height);
+  line-height: var(--zd-chk__hint-line-height);
   color: var(--zd-input__hint-color);
   font-size: var(--zd-input__hint-font-size);
 }
@@ -92,7 +94,7 @@
   display: inline-block;
   padding-left: var(--zd-chk__label-padding);
   vertical-align: middle;
-  line-height: var(--zd-input__message-line-height);
+  line-height: var(--zd-chk__message-line-height);
   color: var(--zd-input__message-color);
   font-size: var(--zd-input__message-font-size);
 }
