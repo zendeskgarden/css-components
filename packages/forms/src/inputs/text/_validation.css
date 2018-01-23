@@ -3,18 +3,18 @@
 :root {
   --zd-txt--error-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-input--error-color) alpha(40%));
+    color(var(--zd-forms-error-color) alpha(40%));
   --zd-txt--success-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-input--success-color) alpha(40%));
+    color(var(--zd-forms-success-color) alpha(40%));
   --zd-txt--warning-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-input--warning-color) alpha(40%));
+    color(var(--zd-forms-warning-color) alpha(40%));
 }
 
 /* stylelint-disable selector-max-specificity */
 .c-txt__input.c-txt__input--error:not(.is-disabled):not([disabled]) {
-  border-color: var(--zd-input--error-color);
+  border-color: var(--zd-forms-error-color);
 }
 
 .c-txt__input--error:--txt-focused {
@@ -22,7 +22,7 @@
 }
 
 .c-txt__input.c-txt__input--success:not(.is-disabled):not([disabled]) {
-  border-color: var(--zd-input--success-color);
+  border-color: var(--zd-forms-success-color);
 }
 
 .c-txt__input--success:--txt-focused {
@@ -30,7 +30,7 @@
 }
 
 .c-txt__input.c-txt__input--warning:not(.is-disabled):not([disabled]) {
-  border-color: var(--zd-input--warning-color);
+  border-color: var(--zd-forms-warning-color);
 }
 
 .c-txt__input--warning:--txt-focused {

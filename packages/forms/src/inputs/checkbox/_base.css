@@ -1,4 +1,5 @@
 @import '@zendesk/garden-css-variables';
+@import '../../_variables';
 
 :root {
   --zd-chk-background-color: var(--zd-color-white);
@@ -11,9 +12,11 @@
     background-color .25s ease-in-out,
     background-image .25s ease-in-out,
     color .25s ease-in-out;
-  --zd-chk__label-spacing: 8px;
+  --zd-chk__label-line-height: calc(20 / 14);
   --zd-chk__label-padding: calc(var(--zd-chk-size) + var(--zd-chk__label-spacing));
+  --zd-chk__label-spacing: 8px;
   --zd-chk__label-top: var(--zd-spacing-sm);
+  --zd-chk__label--regular-font-weight: var(--zd-font-weight-regular);
   --zd-chk__message-margin-top: 4px;
 }
 
@@ -34,26 +37,18 @@
 }
 
 .c-chk__label {
+  display: inline-block;
   position: relative;
   cursor: pointer;
+  padding-left: var(--zd-chk__label-padding);
+  vertical-align: middle;
+  line-height: var(--zd-chk__label-line-height);
   white-space: normal;
+  color: var(--zd-input__label-color);
+  font-size: var(--zd-input__label-font-size);
+  font-weight: var(--zd-input__label-font-weight);
   user-select: none;
 }
-
-.c-chk__label.c-chk__label {
-  display: inline-block;
-}
-
-/* stylelint-disable selector-max-specificity */
-.c-chk__label,
-.c-chk__hint,
-.c-chk__message,
-.c-chk.has-error .c-chk__message.c-chk__message,
-.c-chk.has-success .c-chk__message.c-chk__message,
-.c-chk.has-warning .c-chk__message.c-chk__message {
-  padding-left: var(--zd-chk__label-padding);
-}
-/* stylelint-enable selector-max-specificity */
 
 .c-chk__label::before {
   position: absolute;
@@ -74,41 +69,101 @@
   content: '';
 }
 
+.c-chk__label--dark {
+  color: var(--zd-input__label--dark-color);
+}
+
+.c-chk__label--regular {
+  font-weight: var(--zd-chk__label--regular-font-weight);
+}
+
+.c-chk__hint {
+  padding-left: var(--zd-chk__label-padding);
+  line-height: var(--zd-input__hint-line-height);
+  color: var(--zd-input__hint-color);
+  font-size: var(--zd-input__hint-font-size);
+}
+
+.c-chk__hint--dark {
+  color: var(--zd-input__hint--dark-color);
+}
+
+.c-chk__message {
+  display: inline-block;
+  padding-left: var(--zd-chk__label-padding);
+  vertical-align: middle;
+  line-height: var(--zd-input__message-line-height);
+  color: var(--zd-input__message-color);
+  font-size: var(--zd-input__message-font-size);
+}
+
+.c-chk__message--error,
+.c-chk__message--success,
+.c-chk__message--warning {
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.c-chk__message--error {
+  background-image: var(--zd-input__message--error-background-image);
+  color: var(--zd-forms-error-color);
+}
+
+.c-chk__message--success {
+  background-image: var(--zd-input__message--success-background-image);
+  color: var(--zd-forms-success-color);
+}
+
+.c-chk__message--warning {
+  background-image: var(--zd-input__message--warning-background-image);
+}
+
+.c-chk__message--warning.c-chk__message--dark {
+  color: var(--zd-forms-warning-color);
+}
+
+.c-chk__label.is-hidden {
+  padding-left: var(--zd-chk-size);
+  font-size: 0;
+}
+
+.c-chk__label.is-hidden::before {
+  top: 0;
+}
+
+.is-rtl.c-chk {
+  direction: rtl;
+}
+
+.is-rtl.c-chk__label::before {
+  right: 0;
+  left: auto;
+}
+
+.is-rtl.c-chk__label,
+.is-rtl.c-chk__hint,
+.is-rtl.c-chk__message {
+  direction: rtl;
+  padding-right: var(--zd-chk__label-padding);
+  padding-left: 0;
+}
+
+.is-rtl.c-chk__message--error,
+.is-rtl.c-chk__message--success,
+.is-rtl.c-chk__message--warning {
+  background-position: top right;
+  padding-left: 0;
+}
+
+.is-rtl.c-chk__label.is-hidden {
+  padding-right: var(--zd-chk-size);
+}
+
 .c-chk__label + .c-chk__message {
   display: block;
   margin-top: var(--zd-chk__message-margin-top);
 }
 
-.c-chk--nolabel .c-chk__label {
-  padding-left: var(--zd-chk-size);
-  font-size: 0;
-}
-
-.c-chk--nolabel .c-chk__label::before {
-  top: 0;
-}
-
-.c-chk.is-rtl {
-  direction: rtl;
-}
-
-/* stylelint-disable selector-max-specificity */
-.c-chk.is-rtl .c-chk__label,
-.c-chk.is-rtl .c-chk__hint,
-.c-chk.is-rtl .c-chk__message,
-.c-chk.is-rtl.has-error .c-chk__message,
-.c-chk.is-rtl.has-success .c-chk__message,
-.c-chk.is-rtl.has-warning .c-chk__message {
-  padding-right: var(--zd-chk__label-padding);
-  padding-left: 0;
-}
-/* stylelint-enable selector-max-specificity */
-
-.c-chk--nolabel.is-rtl .c-chk__label {
-  padding-right: var(--zd-chk-size);
-}
-
-.c-chk.is-rtl .c-chk__label::before {
-  right: 0;
-  left: auto;
+.c-chk .c-chk__hint {
+  display: block;
 }

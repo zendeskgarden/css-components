@@ -17,25 +17,17 @@
   --zd-chk--toggle__message-background-position: calc(var(--zd-chk--toggle-width) - var(--zd-font-size-epsilon));
 }
 
-/* stylelint-disable selector-max-specificity */
-.c-chk--toggle .c-chk__label,
-.c-chk--toggle .c-chk__hint,
-.c-chk--toggle .c-chk__message,
-.c-chk--toggle.has-error .c-chk__message.c-chk__message,
-.c-chk--toggle.has-success .c-chk__message.c-chk__message,
-.c-chk--toggle.has-warning .c-chk__message.c-chk__message {
+.c-chk__label--toggle,
+.c-chk__hint--toggle,
+.c-chk__message--toggle {
   padding-left: var(--zd-chk--toggle__label-padding);
 }
 
-.c-chk--toggle .c-chk__message,
-.c-chk--toggle.has-error .c-chk__message.c-chk__message,
-.c-chk--toggle.has-success .c-chk__message.c-chk__message,
-.c-chk--toggle.has-warning .c-chk__message.c-chk__message {
+.c-chk__message--toggle {
   background-position: var(--zd-chk--toggle__message-background-position);
 }
-/* stylelint-enable selector-max-specificity */
 
-.c-chk--toggle .c-chk__label::before {
+.c-chk__label--toggle::before {
   top: 0;
   transition: var(--zd-chk--toggle-transition);
   margin-top: 0;
@@ -49,55 +41,47 @@
   height: var(--zd-chk--toggle-height);
 }
 
-.c-chk--toggle:--chk-checked::before {
+:--chk-checked.c-chk__label--toggle::before {
   background-image: var(--zd-chk--toggle-background-image);
   background-position: 90%;
 }
 
-.c-chk--toggle:--chk-active::before {
+:--chk-active.c-chk__label--toggle::before {
   background-color: var(--zd-chk--toggle-active-background-color);
 }
 
-.c-chk--toggle:--chk-checked-active::before {
+:--chk-checked-active.c-chk__label--toggle::before {
   background-color: var(--zd-chk--toggle-checked-active-background-color);
 }
 
-.c-chk--toggle:--chk-disabled::before {
+:--chk-disabled.c-chk__label--toggle::before {
   background-color: var(--zd-chk--toggle-disabled-background-color);
 }
 
-.c-chk--toggle.c-chk--nolabel .c-chk__label {
+.c-chk__label--toggle.is-hidden {
   padding-left: var(--zd-chk--toggle-width);
   vertical-align: top;
 }
 
-/* stylelint-disable selector-max-specificity */
-.c-chk--toggle.is-rtl .c-chk__label,
-.c-chk--toggle.is-rtl .c-chk__hint,
-.c-chk--toggle.is-rtl .c-chk__message,
-.c-chk--toggle.is-rtl.has-error .c-chk__message.c-chk__message,
-.c-chk--toggle.is-rtl.has-success .c-chk__message.c-chk__message,
-.c-chk--toggle.is-rtl.has-warning .c-chk__message.c-chk__message {
+.is-rtl.c-chk__label--toggle,
+.is-rtl.c-chk__hint--toggle,
+.is-rtl.c-chk__message--toggle {
   padding-right: var(--zd-chk--toggle__label-padding);
   padding-left: 0;
 }
 
-.c-chk--toggle.is-rtl .c-chk__message,
-.c-chk--toggle.is-rtl.has-error .c-chk__message.c-chk__message,
-.c-chk--toggle.is-rtl.has-success .c-chk__message.c-chk__message,
-.c-chk--toggle.is-rtl.has-warning .c-chk__message.c-chk__message {
+.is-rtl.c-chk__message--toggle {
   background-position: calc(100% - var(--zd-chk--toggle__message-background-position));
 }
 
-.c-chk--toggle.c-chk--nolabel.is-rtl .c-chk__label {
+.is-rtl.c-chk__label--toggle.is-hidden {
   padding-right: var(--zd-chk--toggle-width);
 }
-/* stylelint-enable selector-max-specificity */
 
-.c-chk--toggle.is-rtl .c-chk__label::before {
+.is-rtl.c-chk__label--toggle::before {
   background-position: 90%;
 }
 
-.c-chk--toggle.is-rtl:--chk-checked::before {
+:--chk-checked.is-rtl.c-chk__label--toggle::before {
   background-position: 10%;
 }

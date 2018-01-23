@@ -3,16 +3,13 @@
   --zd-input--sm__label-line-height: calc(28 / 14);
 }
 
-.c-range__label--sm,
-.c-txt__label--sm {
+.c-range__label--sm {
   line-height: var(--zd-input--sm__label-line-height);
 }
 
 .c-range__hint--sm + .c-range__input--sm,
 .c-range__hint--sm + .c-range__slider--sm,
 .c-range__input--sm + .c-range__hint--sm,
-.c-range__slider--sm + .c-range__hint--sm,
-.c-txt__hint--sm + .c-txt__input--sm,
-.c-txt__input--sm + .c-txt__hint--sm {
+.c-range__slider--sm + .c-range__hint--sm {
   margin-top: var(--zd-input--sm__hint-margin-top);
 }
