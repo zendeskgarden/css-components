@@ -1,14 +1,14 @@
 /* stylelint-disable at-rule-empty-line-before */
 
 @custom-selector :--range-focused
-  .c-range.is-focused:not(.is-disabled) .c-range__input:enabled;
+  .is-focused:not(.is-disabled):not([disabled]);
 
 @custom-selector :--range-active
-  .c-range.is-active:not(.is-disabled) .c-range__input:enabled,
-  .c-range:not(.is-disabled) .c-range__input:enabled:active;
+  .is-active:not(.is-disabled):not([disabled]),
+  :active:not(.is-disabled):not([disabled]);
 
 @custom-selector :--range-disabled
-  .c-range.is-disabled .c-range__input,
-  .c-range .c-range__input[disabled];
+  .is-disabled,
+  [disabled];
 
 /* stylelint-enable at-rule-empty-line-before */

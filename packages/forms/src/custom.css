@@ -13,27 +13,27 @@
   --zd-txt--custom__input--select__chevron-open-background-image: svg-load('14-chevron.svg', color: var(--zd-forms--custom-accent-color));
 }
 
-.c-chk--custom:--chk-checked-enabled::before,
-.c-chk--custom:--chk-indeterminate-enabled::before {
+:--chk-checked-enabled.c-chk__label--custom::before,
+:--chk-indeterminate-enabled.c-chk__label--custom::before {
   border-color: var(--zd-forms--custom-accent-color);
   background-color: var(--zd-forms--custom-accent-color);
 }
 
-.c-chk--custom:--chk-hovered::before {
+:--chk-hovered.c-chk__label--custom::before {
   border-color: var(--zd-forms--custom-accent-color);
 }
 
-.c-chk--custom:--chk-focused::before {
+:--chk-focused.c-chk__label--custom::before {
   border-color: var(--zd-forms--custom-accent-color);
   box-shadow: var(--zd-forms--custom-box-shadow);
 }
 
-.c-chk--custom:--chk-active::before {
+:--chk-active.c-chk__label--custom::before {
   border-color: var(--zd-forms--custom-accent-color);
 }
 
-.c-chk.c-chk--custom:--chk-checked-active::before,
-.c-chk.c-chk--custom:--chk-indeterminate-active::before {
+:--chk-checked-active.c-chk__label--custom::before,
+:--chk-indeterminate-active.c-chk__label--custom::before {
   border-color: var(--zd-forms--custom-accent-color-active);
   background-color: var(--zd-forms--custom-accent-color-active);
 }

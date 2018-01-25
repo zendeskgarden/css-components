@@ -95,25 +95,29 @@
   background-size: inherit; /* [5] */
 }
 
+.c-range.is-rtl,
+.c-range__input.is-rtl,
+.c-range__label.is-rtl,
+.c-range__hint.is-rtl,
+.c-range__message.is-rtl {
+  direction: rtl;
+}
+
+.c-range__input.is-rtl::range-track {
+  background-position: right bottom;
+}
+
+.c-range__input.is-rtl::range-lower {
+  border-top-right-radius: var(--zd-range-track-border-radius);
+  border-bottom-right-radius: var(--zd-range-track-border-radius);
+}
+
 .c-range--inline {
   display: inline-block;
 }
 
 .c-range--inline .c-range__input {
   width: auto;
-}
-
-.c-range.is-rtl {
-  direction: rtl;
-}
-
-.c-range.is-rtl .c-range__input::range-track {
-  background-position: right bottom;
-}
-
-.c-range.is-rtl .c-range__input::range-lower {
-  border-top-right-radius: var(--zd-range-track-border-radius);
-  border-bottom-right-radius: var(--zd-range-track-border-radius);
 }
 
 /* stylelint-enable selector-pseudo-element-no-unknown */

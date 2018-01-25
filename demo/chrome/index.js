@@ -10,6 +10,17 @@ function updateNavColor($nav, value) {
 }
 
 $(document).ready(function() {
+  [
+    '.c-chrome__body__header__item',
+    '.c-chrome__nav__fab',
+    '.c-chrome__nav__item',
+    '.c-chrome__subnav__item',
+  ].forEach(Garden.handleFocus);
+
+  Garden.customClasses.push('.c-chrome');
+  Garden.darkClasses.push('.c-chrome');
+  Garden.rtlClasses.push('.c-chrome');
+
   $('.js-color').change(function() {
     var value = $(this).val();
     var $nav = $('.c-chrome__nav:not(.c-playground .c-chrome__nav)');
@@ -19,10 +30,6 @@ $(document).ready(function() {
     } else {
       updateNavColor($nav, value);
     }
-  });
-
-  $('.js-custom').click(function() {
-    $('.c-chrome:not(.c-playground .c-chrome)').toggleClass('c-chrome--custom');
   });
 
   $('.js-expand').click(function() {
