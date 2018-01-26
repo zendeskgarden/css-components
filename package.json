@@ -6,9 +6,10 @@
     "build": "lerna run build --stream",
     "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "lerna bootstrap --stream",
-    "new": "node scripts/new",
+    "new": "scripts/new.js",
     "prepare": "yarn build",
     "start": "lerna run watch --parallel --stream & live-server demo",
+    "tag": "lerna publish --conventional-commits",
     "test": "lerna run test --stream"
   },
   "devDependencies": {

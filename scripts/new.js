@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const Handlebars = require('handlebars');
 const chalk = require('chalk');
 const execSync = require('child_process').execSync;
