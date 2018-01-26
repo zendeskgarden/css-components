@@ -1,17 +1,25 @@
-# Modal Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-modals.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-modals)
+# @zendeskgarden/css-modals
 
-The `garden-css-modals` package provides styling for dialogs and the
-associated backdrop layouts needed to present a modal dialog treatment.
+This package package provides styling for dialogs and the associated
+backdrop layouts needed to present a modal dialog treatment.
 
 ## Installation
 
-    npm install --save-dev @zendesk/garden-css-modals
+```sh
+npm install --save-dev @zendesk/garden-css-modals
+```
 
 See [package registry
 documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
 for the configuration needed to install `@zendesk`-scoped packages.
 
 ## Usage
+
+Once installed, modal CSS can be accessed via `postcss-import`.
+
+```css
+@import '@zendesk/garden-css-modals';
+```
 
 Canonical markup for a dialog is structured as follows.
 
@@ -53,32 +61,25 @@ The sample HTML incorporates `aria-*` and `role` attributes expected by
 assistive technology. The use of `tabindex` supports focus and keyboard
 navigation.
 
-### Modifications
 
-Layout specifications for modals are expected to vary based on context.
-Use [css-bedrock](https://github.com/zendeskgarden/css-bedrock)
-[spacing](http://zendeskgarden.github.io/css-bedrock/spacing.html)
-classes to override default dialog padding for your product's dialog
-design requirements.
-
-#### RTL
+### RTL
 
 Use the following state class to support RTL text direction:
 
 ```html
 <section class="c-dialog is-rtl"
-       ...>
+         ...>
 </section>
 ```
 
-#### Animation
+### Animation
 
 Add the following state class on open for a modal "pop" intended by the
 design:
 
 ```html
 <section class="c-dialog is-open"
-      ...>
+         ...>
 </section>
 ```
 
@@ -87,19 +88,6 @@ Remember to remove `.is-open` when the dialog is closed.
 ### Behavior
 
 See the
-[Modal](https://zendeskgarden.github.io/react-components/#!/Modal)
+[&lt;Modal&gt;](https://zendeskgarden.github.io/react-components/#!/Modal)
 component for intended modal dialog behavior, including trapping tab
 focus and dismissing via escape.
-
-## Tests
-
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
