@@ -4,7 +4,7 @@
   <title>Arrows / CSS Components / Zendesk Garden</title>
   <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
   <link href="../menus/index.css" rel="stylesheet">
-  <link href="../forms/index.css" rel="stylesheet">
+  <link href="../forms/checkbox/index.css" rel="stylesheet">
   <link href="http://zendeskgarden.github.io/site.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <style>
@@ -47,21 +47,21 @@
         </a>
         <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
           <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk c-chk--toggle">
+            <fieldset class="c-chk">
               <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk c-chk--toggle">
+            <fieldset class="c-chk">
               <input checked class="c-chk__input js-border" id="nav.ctl.border" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.border">Show Border</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.border">Show Border</label>
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk c-chk--toggle">
+            <fieldset class="c-chk">
               <input checked class="c-chk__input js-box-shadow" id="nav.ctl.box-shadow" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.box-shadow">Show Box Shadow</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.box-shadow">Show Box Shadow</label>
             </fieldset>
           </li>
         </ul>
@@ -254,9 +254,9 @@
       </div>
     </div>
   </main>
-  <script src="http://garden.zendesk.com/jquery.js"></script>
-  <script src="http://garden.zendesk.com/svg4everybody.js"></script>
-  <script src="http://garden.zendesk.com/index.js"></script>
+  <script src="http://garden.zendesk.com/site.js"></script>
+  <script src="../menus/index.js"></script>
+  <script src="../forms/checkbox/index.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

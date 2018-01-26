@@ -1,0 +1,14 @@
+/* stylelint-disable at-rule-empty-line-before */
+
+@custom-selector :--range-focused
+  .is-focused:not(.is-disabled):not([disabled]);
+
+@custom-selector :--range-active
+  .is-active:not(.is-disabled):not([disabled]),
+  :active:not(.is-disabled):not([disabled]);
+
+@custom-selector :--range-disabled
+  .is-disabled,
+  [disabled];
+
+/* stylelint-enable at-rule-empty-line-before */

@@ -1,0 +1,68 @@
+/* stylelint-disable at-rule-empty-line-before, max-line-length */
+
+@custom-selector :--chk-checked
+  .c-chk__label.is-checked,
+  .c-chk__input:checked ~ .c-chk__label;
+
+@custom-selector :--chk-checked-enabled
+  .c-chk__input:enabled ~ .c-chk__label.is-checked:not(.is-disabled),
+  .c-chk__input:checked:enabled ~ .c-chk__label:not(.is-disabled);
+
+@custom-selector :--chk-indeterminate
+  .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate,
+  .c-chk__input:indeterminate ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle);
+
+@custom-selector :--chk-indeterminate-enabled
+  .c-chk__input:enabled ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate:not(.is-disabled),
+  .c-chk__input:indeterminate:enabled ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle):not(.is-disabled);
+
+@custom-selector :--chk-hovered
+  .c-chk__input:enabled ~ .c-chk__label.is-hovered:not(.is-disabled),
+  .c-chk__input:enabled ~ .c-chk__label:not(.is-disabled):hover;
+
+@custom-selector :--chk-focused
+  .c-chk__input:enabled ~ .c-chk__label.is-focused:not(.is-disabled);
+
+@custom-selector :--chk-active
+  .c-chk__input:enabled ~ .c-chk__label.is-active:not(.is-disabled),
+  .c-chk__input:enabled ~ .c-chk__label:not(.is-disabled):active;
+
+/* 1. Class = checked/indeterminate & active.
+ * 2. Class = checked/indeterminate; psuedo = active.
+ * 3. Class = active; psuedo = checked/indeterminate.
+ * 4. Psuedo = checked/indeterminate & active. */
+
+@custom-selector :--chk-checked-active
+  .c-chk__input:enabled ~ .c-chk__label.is-checked.is-active:not(.is-disabled), /* [1] */
+  .c-chk__input:enabled ~ .c-chk__label.is-checked:not(.is-disabled):active, /* [2] */
+  .c-chk__input:enabled:checked ~ .c-chk__label.is-active:not(.is-disabled), /* [3] */
+  .c-chk__input:enabled:checked ~ .c-chk__label:not(.is-disabled):active; /* [4] */
+
+@custom-selector :--chk-indeterminate-active
+  .c-chk__input:enabled ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate.is-active:not(.is-disabled), /* [1] */
+  .c-chk__input:enabled ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate:not(.is-disabled):active, /* [2] */
+  .c-chk__input:enabled:indeterminate ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-active:not(.is-disabled), /* [3] */
+  .c-chk__input:enabled:indeterminate ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle):not(.is-disabled):active; /* [4] */
+
+@custom-selector :--chk-disabled
+  .c-chk__label.is-disabled,
+  .c-chk__input[disabled] ~ .c-chk__label;
+
+/* 1. Class = checked/indeterminate & disabled.
+ * 2. Class = checked/indeterminate; attribute = disabled.
+ * 3. Class = disabled; psuedo = checked/indeterminate.
+ * 4. Psuedo = checked/indeterminate; attribute = disabled. */
+
+@custom-selector :--chk-checked-disabled
+  .c-chk__label.is-checked.is-disabled, /* [1] */
+  .c-chk__input[disabled] ~ .c-chk__label.is-checked, /* [2] */
+  .c-chk__input:checked ~ .c-chk__label.is-disabled, /* [3] */
+  .c-chk__input:checked[disabled] ~ .c-chk__label; /* [4] */
+
+@custom-selector :--chk-indeterminate-disabled
+  .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate.is-disabled, /* [1] */
+  .c-chk__input[disabled] ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate, /* [2] */
+  .c-chk__input:indeterminate ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-disabled, /* [3] */
+  .c-chk__input:indeterminate[disabled] ~ .c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle); /* [4] */
+
+/* stylelint-enable at-rule-empty-line-before, max-line-length */

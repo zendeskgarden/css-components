@@ -1,0 +1,55 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-txt--dark-disabled-background-color: var(--zd-color-submarine);
+  --zd-txt--dark-disabled-color: var(--zd-color-algae);
+  --zd-txt--dark-focused-border-color: var(--zd-color-breaker-bay);
+  --zd-txt--dark-hovered-border-color: var(--zd-txt--dark-focused-border-color);
+  --zd-txt--dark__input-background-color: var(--zd-color-sherpa-blue);
+  --zd-txt--dark__input-border-color: transparent;
+  --zd-txt--dark__input-color: color(var(--zd-color-white) alpha(75%));
+  --zd-txt--dark__input-color-placeholder: var(--zd-color-breaker-bay);
+  --zd-txt--dark__input--select-hovered-background-image: var(--zd-txt__input--select__chevron-open-background-image);
+  --zd-txt--dark__input--select-disabled-background-image: svg-load('14-chevron.svg', color: var(--zd-color-sherpa-blue));
+}
+
+.c-txt__input--dark {
+  border-color: var(--zd-txt--dark__input-border-color);
+  background-color: var(--zd-txt--dark__input-background-color);
+  color: var(--zd-txt--dark__input-color);
+}
+
+.c-txt__input--dark::placeholder {
+  color: var(--zd-txt--dark__input-color-placeholder);
+}
+
+.c-txt__input--dark:--txt-disabled {
+  background-color: var(--zd-txt--dark-disabled-background-color);
+  color: var(--zd-txt--dark-disabled-color);
+}
+
+.c-txt__input--dark:--txt-disabled::placeholder {
+  color: var(--zd-txt--dark-disabled-color);
+}
+
+/* stylelint-disable selector-max-specificity */
+
+.c-txt__input--dark:--txt-hovered.c-txt__input--select:not(select)::before,
+.c-txt__input--dark:--txt-focused.c-txt__input--select:not(select)::before,
+select.c-txt__input--dark:--txt-hovered.c-txt__input--select,
+select.c-txt__input--dark:--txt-focused.c-txt__input--select {
+  background-image: var(--zd-txt--dark__input--select-hovered-background-image);
+}
+
+select.c-txt__input--dark.c-txt__input--select:-moz-focusring {
+  text-shadow: 0 0 0 var(--zd-txt--dark__input-color);
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+
+.c-txt__input--dark:--txt-disabled.c-txt__input--select:not(select)::before,
+select.c-txt__input--dark:--txt-disabled.c-txt__input--select {
+  background-image: var(--zd-txt--dark__input--select-disabled-background-image);
+}
+
+/* stylelint-enable selector-max-specificity, selector-no-qualifying-type */

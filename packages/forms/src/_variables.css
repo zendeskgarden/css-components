@@ -2,6 +2,21 @@
 
 :root {
   --zd-forms-accent-color: var(--zd-color-pelorous);
+  --zd-forms-error-color: var(--zd-color-flamingo);
   --zd-forms-disabled-color: var(--zd-color-aluminum);
   --zd-forms-disabled-background-color: var(--zd-color-gainsboro);
+  --zd-forms-success-color: var(--zd-color-chateau-green);
+  --zd-forms-warning-color: var(--zd-color-marigold);
+  --zd-input__hint-color: var(--zd-color-aluminum);
+  --zd-input__hint-font-size: var(--zd-font-size-epsilon);
+  --zd-input__hint--dark-color: var(--zd-color-breaker-bay);
+  --zd-input__label-color: var(--zd-color-dark-gray);
+  --zd-input__label-font-size: var(--zd-font-size-epsilon);
+  --zd-input__label-font-weight: var(--zd-font-weight-semibold);
+  --zd-input__label--dark-color: var(--zd-color-white);
+  --zd-input__message-color: var(--zd-color-monsoon);
+  --zd-input__message-font-size: var(--zd-font-size-zeta);
+  --zd-input__message--error-background-image: svg-load('14-error-fill.svg', color: var(--zd-forms-error-color));
+  --zd-input__message--success-background-image: svg-load('14-checkmark-fill.svg', color: var(--zd-forms-success-color));
+  --zd-input__message--warning-background-image: svg-load('14-error-fill.svg', color: var(--zd-forms-warning-color));
 }

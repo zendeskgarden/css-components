@@ -5,7 +5,6 @@
   <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
   <link href="../../menus/index.css" rel="stylesheet">
   <link href="http://zendeskgarden.github.io/site.css" rel="stylesheet">
-  <link href="http://zendeskgarden.github.io/editor.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <link href="../custom.css" rel="stylesheet">
   <style>
@@ -38,47 +37,47 @@
         </a>
         <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
           <li class="c-menu__item" role="menuitem">
-            <div class="c-chk c-chk--toggle">
+            <div class="c-chk">
               <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
             </div>
           </li>
           <li class="c-menu__item" role="menuitem">
-            <div class="c-chk c-chk--toggle">
+            <div class="c-chk">
               <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
             </div>
           </li>
           <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk c-chk--toggle">
+            <fieldset class="c-chk">
               <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.custom">Custom</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
-            <div class="c-chk c-chk--toggle">
+            <div class="c-chk">
               <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.size"><span class="c-code">.c-range--sm</span></label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.size">Size</label>
             </div>
           </li>
           <li class="c-menu__item" role="menuitem">
             <div class="u-mb">Validation</div>
             <div class="u-ml">
-              <div class="c-chk c-chk--radio">
+              <div class="c-chk">
                 <input class="c-chk__input js-validation" id="nav.ctl.validation.none" name="nav.ctl.validation" checked type="radio" value="">
-                <label class="c-chk__label" for="nav.ctl.validation.none">None</label>
+                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.none">None</label>
               </div>
-              <div class="c-chk c-chk--radio">
+              <div class="c-chk">
                 <input class="c-chk__input js-validation" id="nav.ctl.validation.success" name="nav.ctl.validation" type="radio" value="success">
-                <label class="c-chk__label" for="nav.ctl.validation.success"><span class="c-code">.has-success</span></label>
+                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.success">Success</label>
               </div>
-              <div class="c-chk c-chk--radio">
+              <div class="c-chk">
                 <input class="c-chk__input js-validation" id="nav.ctl.validation.warning" name="nav.ctl.validation" type="radio" value="warning">
-                <label class="c-chk__label" for="nav.ctl.validation.warning"><span class="c-code">.has-warning</span></label>
+                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.warning">Warning</label>
               </div>
-              <div class="c-chk c-chk--radio">
+              <div class="c-chk">
                 <input class="c-chk__input js-validation" id="nav.ctl.validation.error" name="nav.ctl.validation" type="radio" value="error">
-                <label class="c-chk__label" for="nav.ctl.validation.error"><span class="c-code">.has-error</span></label>
+                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.error">Error</label>
               </div>
             </div>
           </li>
@@ -89,15 +88,8 @@
   <main class="c-main c-main--page">
     <h1 class="c-main__title">Ranges</h1>
     <div class="c-main__body l-wrapper--1024">
-      <p class="u-mb">Use the
-      <code class="c-code">.c-range</code>
-      component to style form range fields. Stateful
-      <code class="c-code">.is-*</code>
-      classes are for demo purposes only and are not considered reliable for
-      rendering checkbox behavior. However, the
-      <code class="c-code">.is-focused</code>
-      class is intended to be programmatically toggled on keyboard (not mouse)
-      focus as it is here.</p>
+      <p class="u-mb">Use <code class="c-code">.c-range</code> components to
+      style form range inputs. Child component classes are shown below.</p>
       <p class="u-mb">Since WebKit browsers have no supporting pseudo-element for
       the lower range, the
       <code class="c-code">.c-range__input</code>
@@ -109,7 +101,9 @@
       for details.</p>
       <div class="l-grid">
         <div class="l-grid__item u-1/2">
-          <p class="u-mb">Child component classes are shown here.</p>
+          <p class="u-mb">Standard
+          <code class="c-code">input type="range"</code>
+          fields are demonstrated below.</p>
         </div
         ><div class="l-grid__item u-1/2 u-mb">
           <p class="u-mb">Use the following controls to manipulate the range
@@ -123,7 +117,7 @@
         </div
         ><div class="l-grid__item u-1/2">
           <div class="c-range u-mb-lg">
-            <label class="c-range__label" dir="ltr" for="range-0">.c-range__label</label>
+            <label class="c-range__label" for="range-0"><span dir="ltr">.c-range__label</span></label>
             <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
             <input class="c-range__input" id="range-0" type="range">
             <small class="c-range__message"><span dir="ltr">.c-range__message</span></small>
@@ -131,7 +125,7 @@
         </div
         ><div class="l-grid__item u-1/2">
           <div class="c-range u-mb-lg">
-            <label class="c-range__label" dir="ltr" for="multirange-0">.c-range__label</label>
+            <label class="c-range__label" for="multirange-0"><span dir="ltr">.c-range__label</span></label>
             <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
             <div class="c-range__slider">
               <div class="c-range__slider__track">
@@ -149,14 +143,14 @@
       <div class="l-grid">
         <div class="l-grid__item u-1/2">
           <div class="c-range u-mb-lg">
-            <label class="c-range__label" dir="ltr" for="range-1">.c-range__label</label>
+            <label class="c-range__label" for="range-1"><span dir="ltr">.c-range__label</span></label>
             <input class="c-range__input" id="range-1" type="range">
             <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
           </div>
         </div
         ><div class="l-grid__item u-1/2">
           <div class="c-range u-mb-lg">
-            <label class="c-range__label" dir="ltr" for="multirange-1">.c-range__label</label>
+            <label class="c-range__label" for="multirange-1"><span dir="ltr">.c-range__label</span></label>
             <div class="c-range__slider">
               <div class="c-range__slider__track">
                 <div class="c-range__slider__track__rail">
@@ -229,14 +223,14 @@
       <h3 class="u-delta u-mb">States</h3>
       <div class="l-grid">
         <div class="l-grid__item u-1/2">
-          <div class="c-range is-focused u-mb-lg">
-            <label class="c-range__label" dir="ltr" for="range-focus">.c-range.is-focused</label>
-            <input class="c-range__input" id="range-focus" type="range">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="range-focus"><span dir="ltr">.c-range__input.is-focused</span></label>
+            <input class="c-range__input is-focused" id="range-focus" type="range">
           </div>
         </div
         ><div class="l-grid__item u-1/2">
           <div class="c-range u-mb-lg">
-            <label class="c-range__label" dir="ltr" for="multirange-focus">.c-range .c-range__slider__track__rail__thumb.is-focused</label>
+            <label class="c-range__label" for="multirange-focus"><span dir="ltr">.c-range__slider__track__rail__thumb.is-focused</span></label>
             <div class="c-range__slider">
               <div class="c-range__slider__track">
                 <div class="c-range__slider__track__rail">
@@ -248,15 +242,15 @@
           </div>
         </div
         ><div class="l-grid__item u-1/2">
-          <div class="c-range is-active u-mb-lg">
-            <label class="c-range__label" dir="ltr" for="range-active">.c-range.is-active</label>
-            <input class="c-range__input" id="range-active" type="range">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="range-active"><span dir="ltr">.c-range__input.is-active</span></label>
+            <input class="c-range__input is-active" id="range-active" type="range">
           </div>
         </div
         ><div class="l-grid__item u-1/2">
-          <div class="c-range is-active u-mb-lg">
-            <label class="c-range__label" dir="ltr" for="multirange-active">.c-range.is-active</label>
-            <div class="c-range__slider">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="multirange-active"><span dir="ltr">.c-range__slider.is-active</span></label>
+            <div class="c-range__slider is-active">
               <div class="c-range__slider__track">
                 <div class="c-range__slider__track__rail">
                   <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-active">
@@ -267,15 +261,15 @@
           </div>
         </div
         ><div class="l-grid__item u-1/2">
-          <div class="c-range is-disabled u-mb">
-            <label class="c-range__label" dir="ltr" for="range-isdisabled">.c-range.is-disabled</label>
-            <input class="c-range__input" id="range-isdisabled" type="range">
+          <div class="c-range u-mb">
+            <label class="c-range__label" for="range-isdisabled"><span dir="ltr">.c-range__input.is-disabled</span></label>
+            <input class="c-range__input is-disabled" id="range-isdisabled" type="range">
           </div>
         </div
         ><div class="l-grid__item u-1/2">
-          <div class="c-range is-disabled u-mb">
-            <label class="c-range__label" dir="ltr" for="multirange-isdisabled">.c-range.is-disabled</label>
-            <div class="c-range__slider">
+          <div class="c-range u-mb">
+            <label class="c-range__label" for="multirange-isdisabled"><span dir="ltr">.c-range__slider.is-disabled</span></label>
+            <div class="c-range__slider is-disabled">
               <div class="c-range__slider__track">
                 <div class="c-range__slider__track__rail">
                   <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-isdisabled">
@@ -287,7 +281,7 @@
         </div
         ><div class="l-grid__item u-1/2">
           <div class="c-range u-mb-lg">
-            <label class="c-range__label" dir="ltr" for="range-disabled">.c-range .c-range__input[disabled]</label>
+            <label class="c-range__label" for="range-disabled"><span dir="ltr">.c-range__input[disabled]</span></label>
             <input class="c-range__input" disabled id="range-disabled" type="range">
           </div>
         </div>
@@ -302,19 +296,19 @@
       attribute values.</p>
       <form class="u-mb-lg" style="max-width:480px">
         <div class="c-range u-mb-lg">
-          <label class="c-range__label u-epsilon" dir="ltr" for="range-4">.c-range .c-range__input[value="10"]</label>
+          <label class="c-range__label u-epsilon" for="range-4"><span dir="ltr">.c-range__input[value="10"]</span></label>
           <input class="c-range__input" id="range-4" type="range" value="10">
         </div>
         <div class="c-range u-mb-lg">
-          <label class="c-range__label u-epsilon" dir="ltr" for="range-5">.c-range .c-range__input[max="40"][value="10"]</label>
+          <label class="c-range__label u-epsilon" for="range-5"><span dir="ltr">.c-range__input[max="40"][value="10"]</span></label>
           <input class="c-range__input" id="range-5" max="40" type="range" value="10">
         </div>
         <div class="c-range u-mb-lg">
-          <label class="c-range__label u-epsilon" dir="ltr" for="range-6">.c-range .c-range__input[max="60"][min="30"][value="45"]</label>
+          <label class="c-range__label u-epsilon" for="range-6"><span dir="ltr">.c-range__input[max="60"][min="30"][value="45"]</span></label>
           <input class="c-range__input" id="range-6" max="60" min="30" type="range" value="45">
         </div>
         <div class="c-range u-mb-lg">
-          <label class="c-range__label u-epsilon" dir="ltr" for="range-7">.c-range .c-range__input[step="5"][value="75"]</label>
+          <label class="c-range__label u-epsilon" for="range-7"><span dir="ltr">.c-range__input[step="5"][value="75"]</span></label>
           <input class="c-range__input" id="range-7" step="5" type="range" value="75">
         </div>
       </form>
@@ -344,11 +338,10 @@
       </section>
     </div>
   </main>
-  <script src="http://zendeskgarden.github.io/jquery.js"></script>
-  <script src="http://zendeskgarden.github.io/svg4everybody.js"></script>
-  <script src="http://zendeskgarden.github.io/index.js"></script>
-  <script src="http://zendeskgarden.github.io/editor.js"></script>
-  <script src="../index.js"></script>
+  <script src="http://zendeskgarden.github.io/site.js"></script>
+  <script src="../../menus/index.js"></script>
+  <script src="../checkbox/index.js"></script>
+  <script src="../text/index.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
