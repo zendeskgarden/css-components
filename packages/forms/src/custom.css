@@ -40,44 +40,44 @@
 
 /* stylelint-disable selector-pseudo-element-no-unknown */
 
-.c-range--custom .c-range__input::range-track {
+.c-range__input--custom::range-track {
   background-image: var(--zd-range--custom-track-background-image);
 }
 
-.c-range--custom .c-range__slider__track {
+.c-range__slider--custom .c-range__slider__track {
   background-image: var(--zd-range--custom-track-background-image);
 }
 
-.c-range--custom .c-range__input::range-thumb {
+.c-range__input--custom::range-thumb {
   border-color: var(--zd-forms--custom-accent-color);
   background-color: var(--zd-forms--custom-accent-color);
 }
 
-.c-range--custom .c-range__slider__track__rail__thumb {
+.c-range__slider--custom .c-range__slider__track__rail__thumb {
   border-color: var(--zd-forms--custom-accent-color);
   background-color: var(--zd-forms--custom-accent-color);
 }
 
-.c-range--custom .c-range__input::range-lower {
+.c-range__input--custom::range-lower {
   background-color: var(--zd-forms--custom-accent-color);
 }
 
-.c-range--custom:--range-focused::range-thumb {
+.c-range__input--custom:--range-focused::range-thumb {
   box-shadow: var(--zd-forms--custom-box-shadow);
 }
 
 /* stylelint-disable max-line-length, selector-max-specificity */
 
-.c-range--custom:not(.is-disabled) .c-range__slider__track__rail__thumb.is-focused {
+.c-range__slider--custom:not(.is-disabled) .c-range__slider__track__rail__thumb.is-focused {
   box-shadow: var(--zd-forms--custom-box-shadow);
 }
 
-.c-range--custom:--range-active::range-thumb {
+.c-range__input--custom:--range-active::range-thumb {
   background-color: var(--zd-forms--custom-accent-color-active);
 }
 
-.c-range--custom:not(.is-disabled) .c-range__slider__track__rail__thumb:active,
-.c-range--custom.is-active:not(.is-disabled) .c-range__slider__track__rail__thumb:first-of-type {
+.c-range__slider--custom:not(.is-disabled) .c-range__slider__track__rail__thumb:active,
+.c-range__slider--custom.is-active:not(.is-disabled) .c-range__slider__track__rail__thumb:first-of-type {
   background-color: var(--zd-forms--custom-accent-color-active);
 }
 
