@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# 4.0.0 (2018-01-26)
+
+
+### Features
+
+* add css-forms package to monorepo ([#11](https://github.com/zendeskgarden/css-components/issues/11)) ([a855c69](https://github.com/zendeskgarden/css-components/commit/a855c69))
+* **forms:** refactor composite components to allow standalone child inputs, labels, hints, and messages ([#13](https://github.com/zendeskgarden/css-components/issues/13)) ([0067d75](https://github.com/zendeskgarden/css-components/commit/0067d75))
+
+
+### BREAKING CHANGES
+
+* **forms:** all BEM modifiers have been attached directly to the child component(s) that they affect.
+
+The following table contains the CSS class mapping. In some cases, multiple child class modifications may be used to represent one previous parent class modifier.
+
+BEFORE | AFTER
+
+
+
+
 <a name="3.6.0"></a>
 # 3.6.0 (2018-01-16)
 
