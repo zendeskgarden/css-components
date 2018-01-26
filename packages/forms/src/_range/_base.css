@@ -1,6 +1,6 @@
 /* stylelint-disable no-unsupported-browser-features */
 @import '@zendesk/garden-css-variables';
-@import '../../_variables';
+@import '../_variables';
 
 :root {
   --zd-range-margin: calc((var(--zd-range-thumb-size) - var(--zd-range-track-height)) / 2);

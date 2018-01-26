@@ -1,5 +1,5 @@
 @import '@zendesk/garden-css-variables';
-@import '../../_variables';
+@import '../_variables';
 
 :root {
   --zd-chk-background-color: var(--zd-color-white);

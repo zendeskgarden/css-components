@@ -1,5 +1,5 @@
 @import '@zendesk/garden-css-variables';
-@import '../../_variables';
+@import '../_variables';
 
 :root {
   --zd-range__label-line-height: calc(30 / 14);

@@ -1,1 +1,3 @@
-@import 'inputs';
+@import '_checkbox';
+@import '_range';
+@import '_text';

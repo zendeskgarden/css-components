@@ -1,6 +1,6 @@
 /* stylelint-disable at-rule-empty-line-before, max-line-length, no-descending-specificity */
 @import '@zendesk/garden-css-variables';
-@import '../../_variables';
+@import '../_variables';
 @import '_selectors';
 
 :root {

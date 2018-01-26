@@ -1,7 +1,7 @@
 @import '@zendesk/garden-css-variables';
-@import 'inputs/checkbox/_selectors';
-@import 'inputs/range/_selectors';
-@import 'inputs/text/_selectors';
+@import '_checkbox/_selectors';
+@import '_range/_selectors';
+@import '_text/_selectors';
 
 :root {
   --zd-forms--custom-accent-color: var(--zd-color-mandy);

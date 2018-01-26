@@ -97,6 +97,7 @@ $(document).ready(function() {
   });
 
   var keyboard = true;
+  var selector = '.c-range__input, .c-range__slider__track__rail__thumb';
   var updateRangeBackground = function($rangeInput) {
     var min = $rangeInput.attr('min') || 0;
     var max = $rangeInput.attr('max');
@@ -111,10 +112,10 @@ $(document).ready(function() {
     $rangeInput.css('background-size', backgroundSize);
   };
 
-  $(document).on('focus', '.c-range__input', function() {
+  $(document).on('focus', selector, function() {
     $(this).toggleClass('is-focused', keyboard);
     keyboard = true;
-  }).on('blur mousedown', '.c-range__input', function() {
+  }).on('blur mousedown', selector, function() {
     if (event.type === 'mousedown') {
       keyboard = false;
     }
