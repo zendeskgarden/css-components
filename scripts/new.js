@@ -4,7 +4,7 @@ const Handlebars = require('handlebars');
 const chalk = require('chalk');
 const execSync = require('child_process').execSync;
 const fs = require('fs');
-const klaw = require('klaw-sync');
+const walk = require('klaw-sync');
 const ncp = require('ncp').ncp;
 const path = require('path');
 const rimraf = require('rimraf');
@@ -57,7 +57,7 @@ function addComponent(name) {
       if (error) {
         console.log(chalk.red('error'), error);
       } else {
-        const items = klaw(destination, { nodir: true });
+        const items = walk(destination, { nodir: true });
 
         items.forEach(item => {
           const string = fs.readFileSync(item.path, 'utf8');
