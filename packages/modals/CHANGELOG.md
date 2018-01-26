@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="4.0.1"></a>
 ## [4.0.1] - 2017-11-01
 ### Fixed (per [#19](https://github.com/zendeskgarden/css-modals/pull/19))
 - Centered repositioning animation glitch (Firefox).
