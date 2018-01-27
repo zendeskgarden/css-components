@@ -9,10 +9,6 @@ backdrop layouts needed to present a modal dialog treatment.
 npm install --save-dev @zendesk/garden-css-modals
 ```
 
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
-
 ## Usage
 
 Once installed, modal CSS can be accessed via `postcss-import`.
