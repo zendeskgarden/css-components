@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="1.1.0"></a>
 ## [1.1.0] - 2017-11-22
 ### Added (per [#4](https://github.com/zendeskgarden/css-pagination/pull/4))
 - Include complementary `.c-pagination--custom` CSS demonstrating how to

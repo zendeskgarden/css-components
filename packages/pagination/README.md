@@ -1,17 +1,20 @@
-# Pagination Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-pagination.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-pagination)
+# @zendeskgarden/css-pagination
 
-The `garden-css-pagination` package provides component styling for page
-navigation.
+This package provides component styling for page navigation.
 
 ## Installation
 
-    $ npm install --save-dev @zendesk/garden-css-pagination
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+```sh
+npm install --save-dev @zendesk/garden-css-pagination
+```
 
 ## Usage
+
+Once installed, pagination CSS can be accessed via `postcss-import`.
+
+```css
+@import '@zendesk/garden-css-pagination';
+```
 
 Pagination CSS classes are used to style the following canonical markup.
 
@@ -25,18 +28,13 @@ Pagination CSS classes are used to style the following canonical markup.
 </ul>
 ```
 
-See http://garden.zendesk.com/css-pagination/ for pagination component
-usage and additional modification classes.
+### Modifications
 
-## Tests
+See http://zendeskgarden.github.io/css-components/pagination/ for
+pagination component usage and modification classes.
 
-    $ npm test
+### Behavior
 
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+See the
+[&lt;Pagination&gt;](http://garden.zendesk.com/react-components/#!/Pagination)
+component for intended mouse and keyboarding behaviors.
