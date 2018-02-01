@@ -1,0 +1,111 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-pagination__page-border-radius: 4px;
+  --zd-pagination__page-color: var(--zd-color-monsoon);
+  --zd-pagination__page-font-size: var(--zd-font-size-epsilon);
+  --zd-pagination__page-line-height: calc(30 / 14);
+  --zd-pagination__page-margin: var(--zd-spacing-xs);
+  --zd-pagination__page-max-width: calc(var(--zd-pagination__page-size) * 2);
+  --zd-pagination__page-padding: 0 calc(5 / 14 * 1em);
+  --zd-pagination__page-size: var(--zd-spacing-lg);
+  --zd-pagination__page-transition:
+    background .25s ease-in-out,
+    box-shadow .1s ease-in-out,
+    color .25s ease-in-out;
+  --zd-pagination__page--gap-font-size: var(--zd-font-size-delta);
+  --zd-pagination__page--gap-margin-top: calc(var(--zd-pagination__page-font-size) - var(--zd-pagination__page--gap-font-size));
+  --zd-pagination__page--next-background-image: svg-load('14-next.svg', color: var(--zd-color-silver-sand));
+  --zd-pagination__page--previous-background-image: svg-load('14-previous.svg', color: var(--zd-color-silver-sand));
+  --zd-pagination__page__a-margin: 0 calc(5 / 14 * -1em);
+}
+
+/* 1. List element reset.
+ * 2. Text truncation. */
+.c-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 0; /* [1] */
+  padding: 0; /* [1] */
+  white-space: nowrap; /* [2] */
+}
+
+.c-pagination__page {
+  display: inline-block;
+  transition: var(--zd-pagination__page-transition);
+  margin-left: var(--zd-pagination__page-margin);
+  border-radius: var(--zd-pagination__page-border-radius);
+  cursor: pointer;
+  padding: var(--zd-pagination__page-padding);
+  min-width: var(--zd-pagination__page-size);
+  max-width: var(--zd-pagination__page-max-width); /* [2] */
+  height: var(--zd-pagination__page-size);
+  overflow: hidden; /* [2] */
+  text-align: center;
+  text-overflow: ellipsis; /* [2] */
+  line-height: var(--zd-pagination__page-line-height);
+  color: var(--zd-pagination__page-color);
+  font-size: var(--zd-pagination__page-font-size);
+  user-select: none;
+}
+
+.c-pagination__page--gap,
+.c-pagination__page--next,
+.c-pagination__page--previous {
+  width: var(--zd-pagination__page-size);
+  color: transparent;
+}
+
+.c-pagination__page--gap {
+  position: relative;
+  cursor: default;
+}
+
+.c-pagination__page--gap::before {
+  position: absolute;
+  left: 0;
+  margin-top: var(--zd-pagination__page--gap-margin-top);
+  width: 100%;
+  color: var(--zd-pagination__page-color);
+  font-size: var(--zd-pagination__page--gap-font-size);
+  content: '…';
+}
+
+.c-pagination__page--next,
+.c-pagination__page--previous {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* stylelint-disable no-descending-specificity */
+.c-pagination__page--next,
+.c-pagination.is-rtl .c-pagination__page--previous {
+  background-image: var(--zd-pagination__page--next-background-image);
+}
+
+.c-pagination__page--previous,
+.c-pagination.is-rtl .c-pagination__page--next {
+  background-image: var(--zd-pagination__page--previous-background-image);
+}
+/* stylelint-enable no-descending-specificity */
+
+.c-pagination__page a {
+  display: block;
+  margin: var(--zd-pagination__page__a-margin);
+  padding: var(--zd-pagination__page-padding);
+  max-width: var(--zd-pagination__page-max-width); /* [2] */
+  overflow: hidden; /* [2] */
+  text-overflow: ellipsis; /* [2] */
+  color: inherit;
+}
+
+.c-pagination.is-rtl {
+  direction: rtl;
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-pagination:not(.is-rtl) .c-pagination__page:first-of-type,
+.c-pagination.is-rtl .c-pagination__page:last-of-type {
+  margin-left: 0;
+}
+/* stylelint-enable selector-max-specificity */

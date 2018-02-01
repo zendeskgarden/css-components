@@ -27,7 +27,7 @@ script:
   - yarn test
 
 before_deploy:
-  - find demo -type l | xargs sed -i '' # convert symlinks to regular files
+  - find demo -type l | xargs sed -i '' || true # convert symlinks to regular files
   - npm config set _auth $ARTIFACTORY_API_KEY
   - npm config set email $ARTIFACTORY_EMAIL
 

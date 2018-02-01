@@ -1,0 +1,5 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-pagination-accent-color: var(--zd-color-pelorous);
+}

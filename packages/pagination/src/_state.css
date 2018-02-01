@@ -1,0 +1,77 @@
+@import '@zendesk/garden-css-variables';
+@import '_variables';
+@import '_selectors';
+
+:root {
+  --zd-pagination__page-active-background-color: var(--zd-color-platinum);
+  --zd-pagination__page-current-background-color: var(--zd-color-anti-flash-white);
+  --zd-pagination__page-current-color: var(--zd-color-dark-gray);
+  --zd-pagination__page-current-font-weight: var(--zd-font-weight-semibold);
+  --zd-pagination__page-focused-box-shadow:
+    inset 0 0 0 3px
+    color(var(--zd-pagination-accent-color) alpha(40%));
+  --zd-pagination__page-hovered-background-color: var(--zd-pagination__page-current-background-color);
+  --zd-pagination__page--next-hovered-background-image: svg-load('14-next.svg', color: var(--zd-color-dark-gray));
+  --zd-pagination__page--previous-hovered-background-image: svg-load('14-previous.svg', color: var(--zd-color-dark-gray));
+}
+
+.c-pagination__page:--page-hovered {
+  background-color: var(--zd-pagination__page-hovered-background-color);
+}
+
+.c-pagination__page:--page-focused {
+  outline: none;
+  box-shadow: var(--zd-pagination__page-focused-box-shadow);
+}
+
+.c-pagination__page:focus,
+.c-pagination__page a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.c-pagination__page:--page-active {
+  box-shadow: none;
+  background-color: var(--zd-pagination__page-active-background-color);
+}
+
+.c-pagination__page:--page-current {
+  background-color: var(--zd-pagination__page-current-background-color);
+  color: var(--zd-pagination__page-current-color);
+  font-weight: var(--zd-pagination__page-current-font-weight);
+}
+
+.c-pagination__page:--page-current,
+.c-pagination__page:--page-current a {
+  max-width: none;
+}
+
+.c-pagination__page:--page-hidden {
+  visibility: hidden;
+}
+
+.c-pagination__page--gap:--page-hovered,
+.c-pagination__page--gap:--page-active,
+.c-pagination__page--next:--page-hovered,
+.c-pagination__page--next:--page-active,
+.c-pagination__page--previous:--page-hovered,
+.c-pagination__page--previous:--page-active {
+  background-color: transparent;
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-pagination__page--next:--page-hovered,
+.c-pagination__page--next:--page-active,
+.c-pagination.is-rtl .c-pagination__page--previous:--page-hovered,
+.c-pagination.is-rtl .c-pagination__page--previous:--page-active {
+  background-image: var(--zd-pagination__page--next-hovered-background-image);
+}
+
+/* stylelint-disable no-descending-specificity */
+.c-pagination__page--previous:--page-hovered,
+.c-pagination__page--previous:--page-active,
+.c-pagination.is-rtl .c-pagination__page--next:--page-hovered,
+.c-pagination.is-rtl .c-pagination__page--next:--page-active {
+  background-image: var(--zd-pagination__page--previous-hovered-background-image);
+}
+/* stylelint-enable no-descending-specificity, selector-max-specificity */
