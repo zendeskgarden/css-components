@@ -32,10 +32,15 @@ before_deploy:
   - npm config set email $ARTIFACTORY_EMAIL
 
 deploy:
-
   - provider: pages
     github_token: $GITHUB_TOKEN
     local_dir: demo
+    skip_cleanup: true
+    on:
+      branch: master
+
+  - provider: script
+    script: scripts/publish.js
     skip_cleanup: true
     on:
       branch: master
