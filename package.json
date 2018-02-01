@@ -36,7 +36,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn format --since && git add .",
+      "pre-commit": "yarn format --since",
       "post-checkout": "if [[ $GIT_PARAMS == *1 ]]; then yarn; fi",
       "post-merge": "yarn",
       "pre-push": "yarn test --since"
