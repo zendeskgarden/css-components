@@ -1,6 +1,20 @@
 # Change Log
 
-<a name="4.0.1"></a>
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+      <a name="4.1.0"></a>
+# 4.1.0 (2018-02-01)
+
+
+### Features
+
+* add css-modals package to monorepo ([#15](https://github.com/zendeskgarden/css-components/issues/15)) ([a8df05d](https://github.com/zendeskgarden/css-components/commit/a8df05d))
+
+
+
+
+      <a name="4.0.1"></a>
 ## [4.0.1] - 2017-11-01
 ### Fixed (per [#19](https://github.com/zendeskgarden/css-modals/pull/19))
 - Centered repositioning animation glitch (Firefox).
@@ -21,7 +35,7 @@
 ### Removed (per [#16](https://github.com/zendeskgarden/css-modals/pull/16))
 - `.l-backdrop--lightbox` and `.l-backdrop--transparent`.
 - `.c-dialog--center` (use `.l-backdrop--center` to align contained
-  dialog).
+dialog).
 
 ## [3.0.1] - 2017-07-28
 ### Fixed (per [#14](https://github.com/zendeskgarden/css-modals/pull/14))
@@ -30,25 +44,25 @@
 ## [3.0.0] - 2017-06-15
 ### Updated (per [#12](https://github.com/zendeskgarden/css-modals/pull/12))
 - Prepared package for registry publish as `@zendesk/garden-css-modals`.
-  See README for updated installation.
+See README for updated installation.
 
 ## [2.2.0] - 2017-03-29
 ### Changed
 - [#6](https://github.com/zendeskgarden/css-modals/issues/6) Remove
-  padding from `.c-dialog` container and apply to child elements
-  instead.
+padding from `.c-dialog` container and apply to child elements
+instead.
 - [#7](https://github.com/zendeskgarden/css-modals/pull/7) Fixed
-  `.c-dialog--center` to handle content that exceeds the height of the
-  current viewport.
+`.c-dialog--center` to handle content that exceeds the height of the
+current viewport.
 
 ## [2.1.0] - 2016-11-02
 ### Added
 - [#9](https://github.com/zendeskgarden/css-modals/pull/9) Support for
-  Electroid "dark" mode via `.c-dialog--dark`.
+Electroid "dark" mode via `.c-dialog--dark`.
 
 ### Removed
 - [#8](https://github.com/zendeskgarden/css-modals/pull/8) References to
-  `14-remove` SVG in README.
+`14-remove` SVG in README.
 
 ## [2.0.0] - 2016-09-15
 ### Added
