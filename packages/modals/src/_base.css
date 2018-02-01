@@ -1,0 +1,50 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-dialog-background-color: var(--zd-color-white);
+  --zd-dialog-border: 1px solid var(--zd-color-platinum);
+  --zd-dialog-border-radius: 4px;
+  --zd-dialog-box-shadow-offset-y: var(--zd-spacing);
+  --zd-dialog-box-shadow-blur-radius: var(--zd-spacing-lg);
+  --zd-dialog-box-shadow:
+    0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0
+    color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-dialog-margin: 48px;
+  --zd-dialog-min-height: calc(var(--zd-dialog__close-size) + (2 * var(--zd-dialog__close-top)));
+  --zd-dialog-width: 544px;
+  --zd-dialog--large-width: 800px;
+}
+
+.c-dialog {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-bottom: var(--zd-dialog-margin);
+  border: var(--zd-dialog-border);
+  border-radius: var(--zd-dialog-border-radius);
+  box-sizing: border-box;
+  box-shadow: var(--zd-dialog-box-shadow);
+  background-color: var(--zd-dialog-background-color);
+  width: var(--zd-dialog-width);
+  min-height: var(--zd-dialog-min-height);
+}
+
+.c-dialog:focus {
+  outline: none;
+}
+
+.c-dialog--large {
+  width: var(--zd-dialog--large-width);
+}
+
+/* stylelint-disable no-unknown-animations */
+.c-dialog.is-open {
+  animation-name: zd-dialog-open;
+  animation-duration: .3s;
+  animation-timing-function: ease-in;
+}
+/* stylelint-enable no-unknown-animations */
+
+.c-dialog.is-rtl {
+  direction: rtl;
+}

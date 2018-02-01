@@ -1,0 +1,89 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-backdrop-background-color: color(var(--zd-color-black) alpha(65%));
+  --zd-backdrop-z-index: 400;
+  --zd-backdrop__dialog-box-shadow:
+    0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0
+    color(var(--zd-color-black) alpha(32%));
+  --zd-backdrop--center__dialog-margin: calc(var(--zd-dialog-margin) / 2);
+  --zd-backdrop--center__dialog-max-height: calc(100vh - (2 * var(--zd-dialog-margin)));
+}
+
+/* 1. Fix for Firefox dialog .is-open animation.
+ * 2. IE11 centering hack. */
+
+.l-backdrop {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: var(--zd-backdrop-z-index);
+  background-color: var(--zd-backdrop-background-color);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
+}
+
+.l-backdrop--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.l-backdrop.is-rtl {
+  direction: rtl;
+}
+
+/* stylelint-disable no-unknown-animations */
+.l-backdrop.is-visible {
+  animation: zd-backdrop-visible .15s ease-in;
+}
+/* stylelint-enable no-unknown-animations */
+
+/* stylelint-disable time-min-milliseconds */
+.l-backdrop .c-dialog {
+  animation-delay: .01s; /* [1] */
+  margin: var(--zd-dialog-margin);
+  border-color: transparent;
+  box-shadow: var(--zd-backdrop__dialog-box-shadow);
+  max-height: var(--zd-backdrop--center__dialog-max-height);
+  overflow: auto;
+}
+/* stylelint-enable time-min-milliseconds */
+
+.l-backdrop--center .c-dialog {
+  margin: 0;
+}
+
+/* stylelint-disable selector-type-no-unknown, selector-no-vendor-prefix */
+_:-ms-input-placeholder, .l-backdrop--center .c-dialog {
+  right: 50%; /* [2] */
+  bottom: 50%; /* [2] */
+  transform: translate(50%, 50%); /* [2] */
+}
+/* stylelint-enable selector-type-no-unknown, selector-no-vendor-prefix */
+
+@custom-media --zd-dialog-viewport-small-height (height < 400px);
+@custom-media --zd-dialog-viewport-small-width (width < 700px);
+@custom-media --zd-dialog-viewport-small (height < 400px) and (width < 700px);
+
+@media (--zd-dialog-viewport-small-height) {
+  .l-backdrop .c-dialog {
+    top: var(--zd-backdrop--center__dialog-margin);
+    bottom: auto;
+    margin-bottom: var(--zd-backdrop--center__dialog-margin);
+    max-height: none;
+  }
+}
+
+@media (--zd-dialog-viewport-small-width) {
+  .l-backdrop .c-dialog {
+    left: var(--zd-backdrop--center__dialog-margin);
+  }
+
+  .l-backdrop.is-rtl .c-dialog {
+    right: var(--zd-backdrop--center__dialog-margin);
+    left: auto;
+  }
+}

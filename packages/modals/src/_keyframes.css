@@ -1,0 +1,29 @@
+:root {
+  --zd-dialog-animation-transform: scale(1.05);
+}
+
+@keyframes zd-backdrop-visible {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zd-dialog-open {
+  0% {
+    transform: scale(0);
+    transform-origin: 0 0;
+    opacity: 0;
+  }
+
+  50% {
+    transform: var(--zd-dialog-animation-transform);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
