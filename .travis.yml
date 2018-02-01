@@ -37,10 +37,10 @@ deploy:
     local_dir: demo
     skip_cleanup: true
     on:
-      all_branches: true
+      branch: master
 
   - provider: script
     script: scripts/publish.js
     skip_cleanup: true
     on:
-      all_branches: true
+      branch: master
