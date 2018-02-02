@@ -41,10 +41,10 @@ Component CSS provides styling for the following basic table structure.
 
 ### Modifications
 
-See http://zendeskgarden.github.io/css-tables/ for a variety of table
-modification classes, including: small and large sizing, zebra-striped
-rows, minimized and truncated cells, in-context menu overflow, support
-for RTL, etc.
+See http://zendeskgarden.github.io/css-components/tables/ for a variety
+of table modification classes, including: small and large sizing,
+zebra-striped rows, minimized and truncated cells, in-context menu
+overflow, support for RTL, etc.
 
 ### Accessibility
 
