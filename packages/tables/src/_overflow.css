@@ -12,12 +12,12 @@
   --zd-table--sm__row__cell__overflow-top: calc(calc(var(--zd-table--sm__row-height) / 2) - 1em);
   --zd-table--lg__row--header__cell__overflow-top: calc(calc(var(--zd-table--lg__row--header-height) / 2) - 1em);
   --zd-table--sm__row--header__cell__overflow-top: calc(calc(var(--zd-table--sm__row--header-height) / 2) - 1em);
-  --zd-table__row__cell--overflow__menu-top: calc(calc(var(--zd-table__row-height) / 2 + 1) + 1em);
+  --zd-table__row__cell--overflow__menu-top: calc(calc(var(--zd-table__row-height) / 2 + 1px) + 1em);
   --zd-table__row--header__cell--overflow__menu-top: calc(calc(var(--zd-table__row--header-height) / 2 + 1px) + 1em);
-  --zd-table--lg__row__cell--overflow__menu-top: calc(calc(var(--zd-table--lg__row-height) / 2 + 1) + 1em);
-  --zd-table--sm__row__cell--overflow__menu-top: calc(calc(var(--zd-table--sm__row-height) / 2 + 1) + 1em);
-  --zd-table--lg__row--header__cell--overflow__menu-top: calc(calc(var(--zd-table--lg__row--header-height) / 2 + 1) + 1em);
-  --zd-table--sm__row--header__cell--overflow__menu-top: calc(calc(var(--zd-table--sm__row--header-height) / 2 + 1) + 1em);
+  --zd-table--lg__row__cell--overflow__menu-top: calc(calc(var(--zd-table--lg__row-height) / 2 + 1px) + 1em);
+  --zd-table--sm__row__cell--overflow__menu-top: calc(calc(var(--zd-table--sm__row-height) / 2 + 1px) + 1em);
+  --zd-table--lg__row--header__cell--overflow__menu-top: calc(calc(var(--zd-table--lg__row--header-height) / 2 + 1px) + 1em);
+  --zd-table--sm__row--header__cell--overflow__menu-top: calc(calc(var(--zd-table--sm__row--header-height) / 2 + 1px) + 1em);
 }
 
 .c-table__row__cell--overflow {

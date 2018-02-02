@@ -13,7 +13,7 @@
   height: var(--zd-table--lg__row--header-height);
 }
 
-/* stylelint-disable max-line-length */
+/* stylelint-disable max-line-length, selector-max-specificity */
 
 .c-table--lg .c-table__row--header .c-table__row__cell:not(.c-table__row__cell--overflow) {
   padding-top: var(--zd-table--lg__row--header__cell-padding);
@@ -47,4 +47,4 @@
   padding-bottom: var(--zd-table--sm__row__cell-padding);
 }
 
-/* stylelint-enable max-line-length */
+/* stylelint-enable max-line-length, selector-max-specificity */
