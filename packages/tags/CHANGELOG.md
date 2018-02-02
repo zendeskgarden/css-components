@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="1.1.0"></a>
 ## [1.1.0] - 2017-11-28
 ### Added (per [#10](https://github.com/zendeskgarden/css-labels/pull/10))
 - Include complementary `.c-label--custom` CSS demonstrating how to
