@@ -1,38 +1,36 @@
 {
   "name": "@zendesk/garden-css-tooltips",
-  "version": "2.0.2",
-  "repository": "zendeskgarden/css-tooltips",
+  "description": "Garden component CSS",
+  "author": "Zendesk Garden <garden@zendesk.com>",
   "license": "UNLICENSED",
+  "repository": "https://github.com/zendeskgarden/css-components",
+  "bugs": {
+    "url": "https://github.com/zendeskgarden/css-components/issues"
+  },
+  "version": "2.0.2",
+  "main": "dist/index.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "postcss src/[a-z]*.css --dir dist",
+    "format": "prettier-package-json --write",
+    "lint": "stylelint $(find src -name '*.css')",
+    "test": "npm run lint",
+    "watch": "yarn build --watch"
+  },
+  "devDependencies": {
+    "@zendesk/garden-css-variables": "^3.1.0"
+  },
+  "keywords": [
+    "components",
+    "css",
+    "garden",
+    "zendesk"
+  ],
   "publishConfig": {
     "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
   },
-  "main": "dist/index.css",
-  "style": "src/index.css",
-  "devDependencies": {
-    "@zendesk/garden-css-variables": "^2.1.0",
-    "@zendesk/garden-stylelint-config": "^5.1.0",
-    "cssnano": "^3.10.0",
-    "gh-pages": "^1.0.0",
-    "live-server": "^1.2.0",
-    "postcss-cli": "^4.1.1",
-    "postcss-cssnext": "^3.0.2",
-    "postcss-import": "^11.0.0",
-    "pre-commit": "^1.2.2",
-    "stylelint": "^7.13.0",
-    "stylelint-order": "^0.5.0"
-  },
-  "scripts": {
-    "build": "postcss src/index.css --output dist/index.css",
-    "gh-pages": "gh-pages -d demo",
-    "lint": "stylelint $(find src -name '*.css')",
-    "nuke": "rm -rf node_modules package-lock.json",
-    "rebuild": "npm run nuke && npm install && npm run build",
-    "start": "npm run watch & live-server demo",
-    "test": "npm run lint",
-    "watch": "npm run build -- --watch"
-  },
-  "pre-commit": [
-    "build",
-    "test"
-  ]
+  "style": "src/index.css"
 }
