@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="1.0.5"></a>
 ## [1.0.5] - 2018-02-02
 ### Fixed (per [#10](https://github.com/zendeskgarden/css-tables/pull/10))
 - Handle truncation on `.c-table__row__cell--truncate
