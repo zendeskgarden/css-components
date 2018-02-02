@@ -37,8 +37,8 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn format --since",
-      "post-checkout": "if [[ $GIT_PARAMS == *1 ]]; then yarn; fi",
-      "post-merge": "yarn",
+      "post-checkout": "if [[ $GIT_PARAMS == *1 ]]; then yarn --frozen-lockfile; fi",
+      "post-merge": "yarn --frozen-lockfile",
       "pre-push": "yarn test --since"
     }
   }
