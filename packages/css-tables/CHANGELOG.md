@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.5] - 2018-02-02
+### Fixed (per [#10](https://github.com/zendeskgarden/css-tables/pull/10))
+- Handle truncation on `.c-table__row__cell--truncate
+  .c-table__row__cell__sortable` elements.
+
 ## [1.0.4] - 2017-12-11
 ### Fixed (per [#9](https://github.com/zendeskgarden/css-tables/pull/9))
 - Add box sizing styling overrides to `.c-table__row` and
@@ -28,6 +33,7 @@
 
 ## 0.1.0 - 2017-09-13
 
+[1.0.5]: https://github.com/zendeskgarden/css-tables/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/zendeskgarden/css-tables/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/zendeskgarden/css-tables/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/zendeskgarden/css-tables/compare/v1.0.1...v1.0.2
