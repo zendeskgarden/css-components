@@ -4,12 +4,12 @@
   <title>Dropdown / CSS Components / Zendesk Garden</title>
   <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
   <link href="../../menus/index.css" rel="stylesheet">
-  <link href="http://zendeskgarden.github.io/css-labels/index.css" rel="stylesheet">
+  <link href="../../tags/index.css" rel="stylesheet">
   <link href="http://zendeskgarden.github.io/site.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <link href="../custom.css" rel="stylesheet">
   <style>
-  .c-label.c-label--dark { color: #fff; }
+  .c-tag.c-tag--dark { color: #fff; }
 
   .c-main .c-menu {
     width: 370px;
@@ -137,30 +137,30 @@
         </fieldset>
         <fieldset class="u-mb-lg u-position-relative">
           <div class="c-txt">
-            <label class="c-txt__label" for="select-label">A Dropdown with Label Content</label>
+            <label class="c-txt__label" for="select-label">A Dropdown with Tag Content</label>
             <div class="c-txt__input c-txt__input--tag c-txt__input--select" id="select-label" tabindex="0">
-              <label class="c-label c-label--lg c-label--light c-label--pill">
-                <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
-                <span>Label One</span>
-                <button class="c-label__remove" tabindex="-1" type="button"></button>
-              </label>
-              <label class="c-label c-label--lg c-label--light c-label--pill">
-                <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
-                <span>Label Two</span>
-                <button class="c-label__remove" tabindex="-1" type="button"></button>
-              </label>
-              <label class="c-label c-label--lg c-label--light c-label--pill">
-                <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
-                <span>Label Three</span>
-                <button class="c-label__remove" tabindex="-1" type="button"></button>
-              </label>
+              <div class="c-tag c-tag--lg c-tag--light c-tag--pill">
+                <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+                <span>Tag One</span>
+                <button class="c-tag__remove" tabindex="-1" type="button"></button>
+              </div>
+              <div class="c-tag c-tag--lg c-tag--light c-tag--pill">
+                <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+                <span>Tag Two</span>
+                <button class="c-tag__remove" tabindex="-1" type="button"></button>
+              </div>
+              <div class="c-tag c-tag--lg c-tag--light c-tag--pill">
+                <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+                <span>Tag Three</span>
+                <button class="c-tag__remove" tabindex="-1" type="button"></button>
+              </div>
             </div>
           </div>
           <ul aria-hidden="true" class="c-menu c-menu--down">
-            <li class="c-menu__item">Label Zero</li>
-            <li class="c-menu__item is-checked">Label One</li>
-            <li class="c-menu__item is-checked">Label Two</li>
-            <li class="c-menu__item is-checked">Label Three</li>
+            <li class="c-menu__item">Tag Zero</li>
+            <li class="c-menu__item is-checked">Tag One</li>
+            <li class="c-menu__item is-checked">Tag Two</li>
+            <li class="c-menu__item is-checked">Tag Three</li>
           </ul>
         </fieldset>
         <fieldset class="u-mb-lg">
@@ -195,6 +195,7 @@
   </main>
   <script src="http://zendeskgarden.github.io/site.js"></script>
   <script src="../../menus/index.js"></script>
+  <script src="../../tags/index.js"></script>
   <script src="../checkbox/index.js"></script>
   <script src="../text/index.js"></script>
   <script src="index.js"></script>
