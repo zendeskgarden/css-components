@@ -4,7 +4,6 @@ This package contains styling for various `.c-tooltip` treatments.
 
 ## Installation
 
-
 ```sh
 npm install --save-dev @zendesk/garden-css-tooltips
 ```
