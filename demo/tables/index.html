@@ -3,10 +3,9 @@
 <head>
   <title>Tables / CSS Components / Zendesk Garden</title>
   <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
-  <link href="http://zendeskgarden.github.io/css-menus/index.css" rel="stylesheet">
-  <link href="http://zendeskgarden.github.io/css-forms/index.css" rel="stylesheet">
+  <link href="../menus/index.css" rel="stylesheet">
+  <link href="../forms/checkbox/index.css" rel="stylesheet">
   <link href="http://zendeskgarden.github.io/site.css" rel="stylesheet">
-  <link href="http://garden.zendesk.com/editor.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <link href="custom.css" rel="stylesheet">
   <style>
@@ -27,44 +26,44 @@
 <body>
   <header class="c-header" style="z-index:2">
     <figure class="c-header__logo">
-      <a class="u-fg-inherit" href="http://garden.zendesk.com">
+      <a class="u-fg-inherit" href="http://zendeskgarden.github.io">
         <svg class="c-header__logo__svg svg-square">
-          <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-zendesk">
+          <use xlink:href="../index.svg#zd-svg-icon-26-zendesk">
         </svg>
       </a
     ></figure
     ><h1 class="c-header__title"
-      ><a class="u-fg-inherit" href="http://garden.zendesk.com/css-components">CSS Components</a>
+      ><a class="u-fg-inherit" href="..">CSS Components</a>
       <span>/ Tables</span>
     </h1>
     <ul class="c-ctl c-ctl--header">
       <li class="c-ctl__item u-position-relative">
         <a class="c-menu-ctl js-menu" href="#settings">
           <svg>
-            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-26-settings-fill" />
+            <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill" />
           </svg>
           <span>Settings</span>
           <svg>
-            <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-chevron" />
+            <use xlink:href="../index.svg#zd-svg-icon-14-chevron" />
           </svg>
         </a>
         <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
           <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk c-chk--toggle">
+            <fieldset class="c-chk">
               <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.dark">Dark Mode</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk c-chk--toggle">
+            <fieldset class="c-chk">
               <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.rtl">RTL</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk c-chk--toggle">
+            <fieldset class="c-chk">
               <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.custom">Custom</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
@@ -85,9 +84,9 @@
             </div>
           </li>
           <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk c-chk--toggle">
+            <fieldset class="c-chk">
               <input class="c-chk__input js-stripes" id="nav.ctl.stripes" type="checkbox">
-              <label class="c-chk__label" for="nav.ctl.stripes">Zebra Stripes</label>
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.stripes">Zebra Stripes</label>
             </fieldset>
           </li>
         </ul>
@@ -251,14 +250,14 @@
           <thead>
             <tr class="c-table__row c-table__row--header">
               <th class="c-table__row__cell c-table__row__cell--min">
-                <div class="c-chk c-chk--nolabel">
+                <div class="c-chk">
                   <input class="c-chk__input" id="chk-0.0.0" type="checkbox">
-                  <label class="c-chk__label" for="chk-0.0.0"></label>
+                  <label class="c-chk__label is-hidden" for="chk-0.0.0"></label>
                 </div>
               </th>
               <th class="c-table__row__cell c-table__row__cell--min">
                 <svg>
-                  <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-twitter-heart" />
+                  <use xlink:href="../index.svg#zd-svg-icon-14-twitter-heart" />
                 </svg>
               </th>
               <th class="c-table__row__cell">TH, C2</th>
@@ -269,14 +268,14 @@
           <tbody>
             <tr class="c-table__row">
               <td class="c-table__row__cell">
-                <div class="c-chk c-chk--nolabel">
+                <div class="c-chk">
                   <input class="c-chk__input" id="chk-0.0.1" type="checkbox">
-                  <label class="c-chk__label" for="chk-0.0.1"></label>
+                  <label class="c-chk__label is-hidden" for="chk-0.0.1"></label>
                 </div>
               </td>
               <td class="c-table__row__cell">
                 <svg>
-                  <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-twitter-heart" />
+                  <use xlink:href="../index.svg#zd-svg-icon-14-twitter-heart" />
                 </svg>
               </td>
               <td class="c-table__row__cell">R0, C2</td>
@@ -285,14 +284,14 @@
             </tr>
             <tr class="c-table__row">
               <td class="c-table__row__cell">
-                <div class="c-chk c-chk--nolabel">
+                <div class="c-chk">
                   <input class="c-chk__input" id="chk-0.0.2" type="checkbox">
-                  <label class="c-chk__label" for="chk-0.0.2"></label>
+                  <label class="c-chk__label is-hidden" for="chk-0.0.2"></label>
                 </div>
               </td>
               <td class="c-table__row__cell">
                 <svg>
-                  <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-twitter-heart" />
+                  <use xlink:href="../index.svg#zd-svg-icon-14-twitter-heart" />
                 </svg>
               </td>
               <td class="c-table__row__cell">R1, C2</td>
@@ -301,14 +300,14 @@
             </tr>
             <tr class="c-table__row">
               <td class="c-table__row__cell">
-                <div class="c-chk c-chk--nolabel">
+                <div class="c-chk">
                   <input class="c-chk__input" id="chk-0.0.3" type="checkbox">
-                  <label class="c-chk__label" for="chk-0.0.3"></label>
+                  <label class="c-chk__label is-hidden" for="chk-0.0.3"></label>
                 </div>
               </td>
               <td class="c-table__row__cell">
                 <svg>
-                  <use xlink:href="http://garden.zendesk.com/index.svg#zd-svg-icon-14-twitter-heart" />
+                  <use xlink:href="../index.svg#zd-svg-icon-14-twitter-heart" />
                 </svg>
               </td>
               <td class="c-table__row__cell">R2, C2</td>
@@ -500,9 +499,9 @@
   <thead>
     <tr class="c-table__row c-table__row--header">
       <th class="c-table__row__cell c-table__row__cell--min">
-        <div class="c-chk c-chk--nolabel">
+        <div class="c-chk">
           <input class="c-chk__input" id="chk-all" type="checkbox">
-          <label class="c-chk__label" for="chk-all">Select All</label>
+          <label class="c-chk__label is-hidden" for="chk-all">Select All</label>
         </div>
       </th>
       <th class="c-table__row__cell c-table__row__cell--truncate">Header 1</th>
@@ -527,9 +526,9 @@
     </tr>
     <tr class="c-table__row" tabindex="0">
       <td class="c-table__row__cell">
-        <div class="c-chk c-chk--nolabel">
+        <div class="c-chk">
           <input class="c-chk__input" id="chk-one" type="checkbox">
-          <label class="c-chk__label" for="chk-one">Select Row One</label>
+          <label class="c-chk__label is-hidden" for="chk-one">Select Row One</label>
         </div>
       </td>
       <td class="c-table__row__cell">Row 1, Column 1</td>
@@ -547,9 +546,9 @@
     </tr>
     <tr class="c-table__row" tabindex="0">
       <td class="c-table__row__cell">
-        <div class="c-chk c-chk--nolabel">
+        <div class="c-chk">
           <input class="c-chk__input" id="chk-two" type="checkbox">
-          <label class="c-chk__label" for="chk-two">Select Row Two</label>
+          <label class="c-chk__label is-hidden" for="chk-two">Select Row Two</label>
         </div>
       </td>
       <td class="c-table__row__cell">Row 2, Column 1</td>
@@ -570,9 +569,9 @@
     </tr>
     <tr class="c-table__row" tabindex="0">
       <td class="c-table__row__cell">
-        <div class="c-chk c-chk--nolabel">
+        <div class="c-chk">
           <input class="c-chk__input" id="chk-three" type="checkbox">
-          <label class="c-chk__label" for="chk-three">Select Row Three</label>
+          <label class="c-chk__label is-hidden" for="chk-three">Select Row Three</label>
         </div>
       </td>
       <td class="c-table__row__cell">Row 3, Column 1</td>
@@ -590,9 +589,9 @@
     </tr>
     <tr class="c-table__row" tabindex="0">
       <td class="c-table__row__cell">
-        <div class="c-chk c-chk--nolabel">
+        <div class="c-chk">
           <input class="c-chk__input" id="chk-four" type="checkbox">
-          <label class="c-chk__label" for="chk-four">Select Row Four</label>
+          <label class="c-chk__label is-hidden" for="chk-four">Select Row Four</label>
         </div>
       </td>
       <td class="c-table__row__cell">Row 4, Column 1</td>
@@ -610,9 +609,9 @@
     </tr>
     <tr class="c-table__row" tabindex="0">
       <td class="c-table__row__cell">
-        <div class="c-chk c-chk--nolabel">
+        <div class="c-chk">
           <input class="c-chk__input" id="chk-five" type="checkbox">
-          <label class="c-chk__label" for="chk-five">Select Row Five</label>
+          <label class="c-chk__label is-hidden" for="chk-five">Select Row Five</label>
         </div>
       </td>
       <td class="c-table__row__cell">Row 5, Column 1</td>
@@ -634,10 +633,9 @@
       </section>
     </div>
   </main>
-  <script src="http://garden.zendesk.com/jquery.js"></script>
-  <script src="http://garden.zendesk.com/svg4everybody.js"></script>
-  <script src="http://garden.zendesk.com/index.js"></script>
-  <script src="http://garden.zendesk.com/editor.js"></script>
+  <script src="http://zendeskgarden.github.io/site.js"></script>
+  <script src="../menus/index.js"></script>
+  <script src="../forms/checkbox/index.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

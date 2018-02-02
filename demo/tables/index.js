@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  var mouse = false;
+  Garden.customClasses.push('.c-table');
+  Garden.darkClasses.push('.c-table');
+  Garden.rtlClasses.push('.c-table');
 
   $(document).on('click', '.c-table__row--header .c-chk__input', function() {
     var $rows = $(this).parents('.c-table').find('.c-table__row:not(.c-table__row--header):not(.c-table__row--group)');
@@ -18,6 +20,8 @@ $(document).ready(function() {
   }).on('blur', '.c-table__row', function() {
     $(this).removeClass('is-focused');
   });
+
+  var mouse = false;
 
   $(document).on('focus', '.c-table__row__cell__overflow', function() {
     if (mouse) {
@@ -54,10 +58,6 @@ $(document).ready(function() {
     }
   }).on('blur', '.c-table__row__cell__sortable', function() {
     $(this).removeClass('is-focused');
-  });
-
-  $('.js-custom').click(function() {
-    $('.c-table:not(.c-playground .c-table)').toggleClass('c-table--custom');
   });
 
   $('.js-display').change(function() {
