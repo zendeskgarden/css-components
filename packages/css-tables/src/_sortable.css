@@ -68,6 +68,12 @@
   background-image: var(--zd-table--dark__row__cell__sortable-descending-background-image);
 }
 
+.c-table__row__cell--truncate .c-table__row__cell__sortable {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c-table__row__cell__sortable:--table__row__cell__sortable-hovered {
   text-decoration: none;
 }
