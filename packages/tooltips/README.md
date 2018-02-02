@@ -1,17 +1,21 @@
-# Tooltip Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-tooltips.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-tooltips)
+# @zendeskgarden/css-tooltips
 
-The `garden-css-tooltips` package contains styling for various
-`.c-tooltip` treatments.
+This package contains styling for various `.c-tooltip` treatments.
 
 ## Installation
 
-    $ npm install --save-dev @zendesk/garden-css-tooltips
 
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+```sh
+npm install --save-dev @zendesk/garden-css-tooltips
+```
 
 ## Usage
+
+Once installed, tooltip CSS can be accessed via `postcss-import`.
+
+```css
+@import '@zendesk/garden-css-tooltips';
+```
 
 Tooltip CSS is intended to enhance the following HTML.
 
@@ -24,15 +28,8 @@ Tooltip CSS is intended to enhance the following HTML.
 See https://zendeskgarden.github.io/css-tooltips/ for various tooltip
 modification classes.
 
-## Tests
+### Behavior
 
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+See
+[&lt;Tooltips&gt;](http://zendeskgarden.github.io/react-components/#!/TooltipProvider)
+for intended behavior.
