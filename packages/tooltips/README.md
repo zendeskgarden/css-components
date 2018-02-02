@@ -24,8 +24,8 @@ Tooltip CSS is intended to enhance the following HTML.
 
 ### Modifications
 
-See https://zendeskgarden.github.io/css-tooltips/ for various tooltip
-modification classes.
+See https://zendeskgarden.github.io/css-components/tooltips/ for various
+tooltip modification classes.
 
 ### Behavior
 
