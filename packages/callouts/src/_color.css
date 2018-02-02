@@ -3,7 +3,7 @@
 :root {
   --zd-callout--alert-padding: 50px;
   --zd-callout--alert-background-position-x: var(--zd-spacing);
-  --zd-callout--alert-background-position-y: calc(var(--zd-spacing) + 3);
+  --zd-callout--alert-background-position-y: calc(var(--zd-spacing) + 3px);
   --zd-callout--alert-background-position: var(--zd-callout--alert-background-position-x) var(--zd-callout--alert-background-position-y);
   --zd-callout--alert-background-position-rtl: calc(100% - var(--zd-callout--alert-background-position-x)) var(--zd-callout--alert-background-position-y);
   --zd-callout--dialog-background-color: var(--zd-color-white);
