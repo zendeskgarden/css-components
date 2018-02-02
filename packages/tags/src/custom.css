@@ -2,17 +2,17 @@
 @import '_selectors';
 
 :root {
-  --zd-label--custom-accent-color: var(--zd-color-mandy);
-  --zd-label--custom-background-color: var(--zd-label--custom-accent-color);
-  --zd-label--custom-focused-box-shadow:
+  --zd-tag--custom-accent-color: var(--zd-color-mandy);
+  --zd-tag--custom-background-color: var(--zd-tag--custom-accent-color);
+  --zd-tag--custom-focused-box-shadow:
     0 0 0 2px
-    color(var(--zd-label--custom-background-color) alpha(40%));
+    color(var(--zd-tag--custom-background-color) alpha(40%));
 }
 
-.c-label--custom {
-  background-color: var(--zd-label--custom-background-color);
+.c-tag--custom {
+  background-color: var(--zd-tag--custom-background-color);
 }
 
-.c-label--custom:--label-focused {
-  box-shadow: var(--zd-label--custom-focused-box-shadow);
+.c-tag--custom:--tag-focused {
+  box-shadow: var(--zd-tag--custom-focused-box-shadow);
 }

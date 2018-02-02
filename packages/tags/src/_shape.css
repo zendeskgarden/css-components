@@ -1,21 +1,21 @@
 @import '@zendesk/garden-css-variables';
 
 :root {
-  --zd-label--round-min-width: var(--zd-spacing);
+  --zd-tag--round-min-width: var(--zd-spacing);
 }
 
-.c-label--pill {
+.c-tag--pill {
   border-radius: 100px;
 }
 
-.c-label--round {
+.c-tag--round {
   justify-content: center;
   border-radius: 50%;
   padding: 0;
-  min-width: var(--zd-label--round-min-width);
+  min-width: var(--zd-tag--round-min-width);
 }
 
-.c-label--round > * {
-  min-width: var(--zd-label--round-min-width);
+.c-tag--round > * {
+  min-width: var(--zd-tag--round-min-width);
   text-align: center;
 }

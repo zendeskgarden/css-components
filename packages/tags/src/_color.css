@@ -2,72 +2,72 @@
 @import '_selectors';
 
 :root {
-  --zd-label--dark-background-color: var(--zd-color-algae);
-  --zd-label--dark-focused-box-shadow:
+  --zd-tag--dark-background-color: var(--zd-color-algae);
+  --zd-tag--dark-focused-box-shadow:
     0 0 0 2px
     color(var(--zd-color-breaker-bay) alpha(40%));
-  --zd-label--error-background-color: var(--zd-color-flamingo);
-  --zd-label--error-focused-box-shadow:
+  --zd-tag--error-background-color: var(--zd-color-flamingo);
+  --zd-tag--error-focused-box-shadow:
     0 0 0 2px
-    color(var(--zd-label--error-background-color) alpha(40%));
-  --zd-label--light-background-color: var(--zd-color-anti-flash-white);
-  --zd-label--light-color: var(--zd-color-monsoon);
-  --zd-label--light-font-weight: var(--zd-font-weight-semibold);
-  --zd-label--light-focused-box-shadow:
+    color(var(--zd-tag--error-background-color) alpha(40%));
+  --zd-tag--light-background-color: var(--zd-color-anti-flash-white);
+  --zd-tag--light-color: var(--zd-color-monsoon);
+  --zd-tag--light-font-weight: var(--zd-font-weight-semibold);
+  --zd-tag--light-focused-box-shadow:
     0 0 0 2px
     color(var(--zd-color-silver-sand) alpha(40%));
-  --zd-label--success-background-color: var(--zd-color-chateau-green);
-  --zd-label--success-focused-box-shadow:
+  --zd-tag--success-background-color: var(--zd-color-chateau-green);
+  --zd-tag--success-focused-box-shadow:
     0 0 0 2px
-    color(var(--zd-label--success-background-color) alpha(40%));
-  --zd-label--warning-background-color: var(--zd-color-marigold);
-  --zd-label--warning-focused-box-shadow:
+    color(var(--zd-tag--success-background-color) alpha(40%));
+  --zd-tag--warning-background-color: var(--zd-color-marigold);
+  --zd-tag--warning-focused-box-shadow:
     0 0 0 2px
-    color(var(--zd-label--warning-background-color) alpha(40%));
+    color(var(--zd-tag--warning-background-color) alpha(40%));
 }
 
-.c-label.c-label--light {
-  background-color: var(--zd-label--light-background-color);
-  color: var(--zd-label--light-color);
-  font-weight: var(--zd-label--light-font-weight);
+.c-tag.c-tag--light {
+  background-color: var(--zd-tag--light-background-color);
+  color: var(--zd-tag--light-color);
+  font-weight: var(--zd-tag--light-font-weight);
 }
 
-.c-label.c-label--light:hover {
-  color: var(--zd-label--light-color);
+.c-tag.c-tag--light:hover {
+  color: var(--zd-tag--light-color);
 }
 
-.c-label.c-label--light:--label-focused {
-  box-shadow: var(--zd-label--light-focused-box-shadow);
+.c-tag.c-tag--light:--tag-focused {
+  box-shadow: var(--zd-tag--light-focused-box-shadow);
 }
 
-.c-label.c-label--dark {
-  background-color: var(--zd-label--dark-background-color);
+.c-tag.c-tag--dark {
+  background-color: var(--zd-tag--dark-background-color);
 }
 
-.c-label.c-label--dark:--label-focused {
-  box-shadow: var(--zd-label--dark-focused-box-shadow);
+.c-tag.c-tag--dark:--tag-focused {
+  box-shadow: var(--zd-tag--dark-focused-box-shadow);
 }
 
-.c-label.c-label--error {
-  background-color: var(--zd-label--error-background-color);
+.c-tag.c-tag--error {
+  background-color: var(--zd-tag--error-background-color);
 }
 
-.c-label.c-label--error:--label-focused {
-  box-shadow: var(--zd-label--error-focused-box-shadow);
+.c-tag.c-tag--error:--tag-focused {
+  box-shadow: var(--zd-tag--error-focused-box-shadow);
 }
 
-.c-label.c-label--success {
-  background-color: var(--zd-label--success-background-color);
+.c-tag.c-tag--success {
+  background-color: var(--zd-tag--success-background-color);
 }
 
-.c-label.c-label--success:--label-focused {
-  box-shadow: var(--zd-label--success-focused-box-shadow);
+.c-tag.c-tag--success:--tag-focused {
+  box-shadow: var(--zd-tag--success-focused-box-shadow);
 }
 
-.c-label.c-label--warning {
-  background-color: var(--zd-label--warning-background-color);
+.c-tag.c-tag--warning {
+  background-color: var(--zd-tag--warning-background-color);
 }
 
-.c-label.c-label--warning:--label-focused {
-  box-shadow: var(--zd-label--warning-focused-box-shadow);
+.c-tag.c-tag--warning:--tag-focused {
+  box-shadow: var(--zd-tag--warning-focused-box-shadow);
 }

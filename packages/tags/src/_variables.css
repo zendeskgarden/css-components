@@ -1,5 +1,5 @@
 @import '@zendesk/garden-css-variables';
 
 :root {
-  --zd-label-accent-color: var(--zd-color-pelorous);
+  --zd-tag-accent-color: var(--zd-color-pelorous);
 }
