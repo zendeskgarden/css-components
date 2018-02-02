@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="1.1.1"></a>
 ## [1.1.1] - 2017-07-28
 ### Fixed (per [#3](https://github.com/zendeskgarden/css-callouts/pull/3))
 - `.c-callout__close` background-image transition (Safari).
