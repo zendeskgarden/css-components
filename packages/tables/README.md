@@ -1,17 +1,21 @@
-# Table Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-tables.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-tables)
+# @zendeskgarden/css-tables
 
-The `garden-css-tables` package contains a variety of classes that apply
-consistent styling to tables, rows, and columns.
+This package contains a variety of classes that apply consistent styling
+to tables, rows, and columns.
 
 ## Installation
 
-    npm install --save-dev @zendesk/garden-css-tables
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+```sh
+npm install --save-dev @zendesk/garden-css-tables
+```
 
 ## Usage
+
+Once installed, table CSS can be accessed via `postcss-import`.
+
+```css
+@import '@zendesk/garden-css-tables';
+```
 
 Component CSS provides styling for the following basic table structure.
 
@@ -76,15 +80,9 @@ best practice.
 </td>
 ```
 
-## Tests
+### Behavior
 
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+See the
+[&lt;Table&gt;](http://zendeskgarden.github.io/react-components/#!/Table)
+component for virtual scrolling and intended mouse and keyboarding
+behaviors.
