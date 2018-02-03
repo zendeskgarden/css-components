@@ -1,0 +1,87 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-tooltip-background-color: var(--zd-color-algae);
+  --zd-tooltip-border-radius: 2px;
+  --zd-tooltip-box-shadow:
+    0 4px 8px 0
+    color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-tooltip-color: var(--zd-color-gainsboro);
+  --zd-tooltip-font-size: var(--zd-font-size-zeta);
+  --zd-tooltip-font-weight: var(--zd-font-weight-regular);
+  --zd-tooltip-line-height: calc(20 / 12);
+  --zd-tooltip-padding: 0 1em;
+  --zd-tooltip__arrow-font-size: 7px;
+  --zd-tooltip--extra-large-border-radius: 4px;
+  --zd-tooltip--extra-large-font-size: var(--zd-font-size-epsilon);
+  --zd-tooltip--extra-large-max-width: 460px;
+  --zd-tooltip--extra-large-padding: var(--zd-spacing-xl);
+  --zd-tooltip--extra-large__arrow-font-size: var(--zd-font-size-delta);
+  --zd-tooltip--large-border-radius: var(--zd-tooltip--extra-large-border-radius);
+  --zd-tooltip--large-font-size: var(--zd-tooltip--extra-large-font-size);
+  --zd-tooltip--large-max-width: 270px;
+  --zd-tooltip--large-padding: var(--zd-spacing);
+  --zd-tooltip--large__arrow-font-size: var(--zd-font-size-zeta);
+  --zd-tooltip--medium-border-radius: var(--zd-tooltip--large-border-radius);
+  --zd-tooltip--medium-line-height: calc(16 / 12);
+  --zd-tooltip--medium-max-width: 140px;
+  --zd-tooltip--medium-padding: 1em;
+}
+
+.c-tooltip {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: var(--zd-tooltip-border-radius);
+  box-shadow: var(--zd-tooltip-box-shadow);
+  background-color: var(--zd-tooltip-background-color);
+  padding: var(--zd-tooltip-padding);
+  line-height: var(--zd-tooltip-line-height);
+  white-space: nowrap;
+  color: var(--zd-tooltip-color);
+  font-size: var(--zd-tooltip-font-size);
+  font-weight: var(--zd-tooltip-font-weight);
+}
+
+/* 1. Manipulate arrow sizing (which is based on ems). */
+
+.c-tooltip.c-arrow::before,
+.c-tooltip.c-arrow::after {
+  font-size: var(--zd-tooltip__arrow-font-size); /* [1] */
+}
+
+.c-tooltip--extra-large {
+  border-radius: var(--zd-tooltip--extra-large-border-radius);
+  padding: var(--zd-tooltip--extra-large-padding);
+  max-width: var(--zd-tooltip--extra-large-max-width);
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-size: var(--zd-tooltip--extra-large-font-size);
+}
+
+.c-tooltip--extra-large.c-arrow::before,
+.c-tooltip--extra-large.c-arrow::after {
+  font-size: var(--zd-tooltip--extra-large__arrow-font-size); /* [1] */
+}
+
+.c-tooltip--large {
+  border-radius: var(--zd-tooltip--large-border-radius);
+  padding: var(--zd-tooltip--large-padding);
+  max-width: var(--zd-tooltip--large-max-width);
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-size: var(--zd-tooltip--large-font-size);
+}
+
+.c-tooltip--large.c-arrow::before,
+.c-tooltip--large.c-arrow::after {
+  font-size: var(--zd-tooltip--large__arrow-font-size); /* [1] */
+}
+
+.c-tooltip--medium {
+  border-radius: var(--zd-tooltip--medium-border-radius);
+  padding: var(--zd-tooltip--medium-padding);
+  max-width: var(--zd-tooltip--medium-max-width);
+  overflow-wrap: break-word;
+  line-height: var(--zd-tooltip--medium-line-height);
+  white-space: normal;
+}
