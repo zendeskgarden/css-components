@@ -1,0 +1,18 @@
+@import '@zendesk/garden-css-variables';
+@import '_selectors';
+
+:root {
+  --zd-tag--custom-accent-color: var(--zd-color-mandy);
+  --zd-tag--custom-background-color: var(--zd-tag--custom-accent-color);
+  --zd-tag--custom-focused-box-shadow:
+    0 0 0 2px
+    color(var(--zd-tag--custom-background-color) alpha(40%));
+}
+
+.c-tag--custom {
+  background-color: var(--zd-tag--custom-background-color);
+}
+
+.c-tag--custom:--tag-focused {
+  box-shadow: var(--zd-tag--custom-focused-box-shadow);
+}

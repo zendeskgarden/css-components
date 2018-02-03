@@ -4,12 +4,12 @@
   <title>Text &amp; Textarea / CSS Components / Zendesk Garden</title>
   <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
   <link href="../../menus/index.css" rel="stylesheet">
-  <link href="http://zendeskgarden.github.io/css-labels/index.css" rel="stylesheet">
+  <link href="../../tags/index.css" rel="stylesheet">
   <link href="http://zendeskgarden.github.io/site.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <link href="../custom.css" rel="stylesheet">
   <style>
-  .c-label.c-label--dark { color: #fff; }
+  .c-tag.c-tag--dark { color: #fff; }
 
   .l-wrapper--370 { max-width: 370px; }
   </style>
@@ -158,17 +158,17 @@
       </form>
       <p class="u-mb">Apply a <code class="c-code">.c-txt__input--tag</code>
       modifier class to inputs that are used to hold
-      <a href="http://zendeskgarden.github.io/css-labels/"><code class="c-code">.c-label</code></a>
+      <a href="http://zendeskgarden.github.io/css-labels/"><code class="c-code">.c-tag</code></a>
       elements.</p>
       <form class="u-mb-lg">
         <div class="c-txt">
           <label class="c-txt__label" for="txt-label">Tag</label>
           <div class="c-txt__input c-txt__input--tag" id="txt-label" tabindex="0">
-            <label class="c-label c-label--lg c-label--light c-label--pill">
-              <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
+            <div class="c-tag c-tag--lg c-tag--light c-tag--pill">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
               <span dir="ltr">.c-txt__input--tag</span>
-              <button class="c-label__remove" type="button" tabindex="-1"></button>
-            </label>
+              <button class="c-tag__remove" type="button" tabindex="-1"></button>
+            </div>
           </div>
         </div>
       </form>
@@ -247,11 +247,11 @@
   <div class="c-txt">
     <label class="c-txt__label" for="txt-playground-3">Label Three</label>
     <div class="c-txt__input c-txt__input--tag" id="txt-playground-3" tabindex="0">
-      <label class="c-label c-label--lg c-label--light c-label--pill">
-        <img class="c-label__avatar" src="http://placeskull.com/16/16/56777a">
-        <span dir="ltr">A Label</span>
-        <button class="c-label__remove" type="button" tabindex="-1"></button>
-      </label>
+      <div class="c-tag c-tag--lg c-tag--light c-tag--pill">
+        <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+        <span dir="ltr">A Tag</span>
+        <button class="c-tag__remove" type="button" tabindex="-1"></button>
+      </div>
     </div>
   </div>
   <div class="c-txt">
@@ -277,6 +277,7 @@
   </main>
   <script src="http://zendeskgarden.github.io/site.js"></script>
   <script src="../../menus/index.js"></script>
+  <script src="../../tags/index.js"></script>
   <script src="../checkbox/index.js"></script>
   <script src="index.js"></script>
 </body>

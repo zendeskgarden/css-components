@@ -23,10 +23,6 @@ $(document).ready(function() {
     $('.c-txt__input:not(.c-playground .c-txt__input):not(.c-txt__input--media__body)').toggleClass('c-txt__input--bare');
   });
 
-  $('.js-size').change(function() {
-    $('.c-label:not(.c-playground .c-label)').toggleClass('c-label--lg');
-  });
-
   $('.js-validation').change(function() {
     var value = $(this).val();
 
@@ -44,9 +40,4 @@ $(document).ready(function() {
   }).on('blur', '.c-txt__input--media input', function() {
     $(this).parent().removeClass('is-focused');
   });
-
-  // TODO [jtz] replace with ../../tags/index.js
-
-  Garden.darkClasses.push('.c-label');
-  Garden.rtlClasses.push('.c-label');
 });

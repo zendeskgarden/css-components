@@ -1,0 +1,36 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-tag--lg-border-radius: 4px;
+  --zd-tag--lg-height: var(--zd-spacing-lg);
+  --zd-tag--lg-line-height: calc(30 / 12);
+  --zd-tag--sm-font-size: var(--zd-font-size-micro);
+  --zd-tag--sm-height: 15px;
+  --zd-tag--sm-line-height: calc(15 / 10);
+  --zd-tag--sm-padding: 0 calc(6 / 10 * 1em);
+  --zd-tag--round--lg-min-width: 30px;
+  --zd-tag--round--sm-min-width: 15px;
+}
+
+.c-tag--lg {
+  border-radius: var(--zd-tag--lg-border-radius);
+  height: var(--zd-tag--lg-height);
+  line-height: var(--zd-tag--lg-line-height);
+}
+
+.c-tag--sm {
+  padding: var(--zd-tag--sm-padding);
+  height: var(--zd-tag--sm-height);
+  line-height: var(--zd-tag--sm-line-height);
+  font-size: var(--zd-tag--sm-font-size);
+}
+
+.c-tag--round.c-tag--sm,
+.c-tag--round.c-tag--sm > * {
+  min-width: var(--zd-tag--round--sm-min-width);
+}
+
+.c-tag--round.c-tag--lg,
+.c-tag--round.c-tag--lg > * {
+  min-width: var(--zd-tag--round--lg-min-width);
+}

@@ -1,0 +1,89 @@
+/* stylelint-disable no-unsupported-browser-features */
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-tag__remove-background-image: svg-load('14-remove.svg', color: var(--zd-tag-color));
+  --zd-tag__remove-background:
+    no-repeat
+    center
+    var(--zd-tag__remove-background-image)
+    transparent; /* [1] */
+  --zd-tag__remove-margin: calc(var(--zd-spacing-sm) * -1);
+  --zd-tag__remove-opacity: .7;
+  --zd-tag__remove-size: var(--zd-spacing);
+  --zd-tag__remove-transition: opacity .25s ease-in-out;
+  --zd-tag--lg__remove-background-size: var(--zd-font-size-delta);
+  --zd-tag--lg__remove-size: var(--zd-spacing-lg);
+  --zd-tag--light__remove-background-image: svg-load('14-remove.svg', color: var(--zd-tag--light-color));
+  --zd-tag--sm__remove-background-size: var(--zd-font-size-milli);
+  --zd-tag--sm__remove-margin: calc(var(--zd-tag__remove-margin) / 2);
+  --zd-tag--sm__remove-size: 15px;
+}
+
+/* 1. Reset for <button> element.
+ * 2. Reset for text content. */
+
+.c-tag__remove {
+  display: inline-block;
+  flex-shrink: 0;
+  transition: var(--zd-tag__remove-transition);
+  opacity: var(--zd-tag__remove-opacity);
+  margin-right: var(--zd-tag__remove-margin);
+  border: 0; /* [1] */
+  border-radius: var(--zd-tag-border-radius);
+  background: var(--zd-tag__remove-background);
+  cursor: pointer;
+  padding: 0; /* [1] */
+  width: var(--zd-tag__remove-size);
+  height: var(--zd-tag__remove-size);
+  vertical-align: middle;
+  font-size: 0; /* [2] */
+}
+
+@custom-selector :--tag-hovered
+  .is-hovered,
+  :hover;
+
+.c-tag__remove:--tag-hovered {
+  opacity: 1;
+}
+
+.c-tag__remove:focus {
+  outline: none;
+}
+
+.c-tag--light .c-tag__remove {
+  background-image: var(--zd-tag--light__remove-background-image);
+}
+
+.c-tag--lg .c-tag__remove {
+  background-size: var(--zd-tag--lg__remove-background-size);
+  width: var(--zd-tag--lg__remove-size);
+  height: var(--zd-tag--lg__remove-size);
+}
+
+.c-tag--sm .c-tag__remove {
+  margin-right: var(--zd-tag--sm__remove-margin);
+  background-size: var(--zd-tag--sm__remove-background-size);
+  width: var(--zd-tag--sm__remove-size);
+  height: var(--zd-tag--sm__remove-size);
+}
+
+.c-tag--pill .c-tag__remove {
+  border-radius: 50%;
+}
+
+.c-tag--round .c-tag__remove {
+  display: none;
+}
+
+.c-tag.is-rtl .c-tag__remove {
+  flex-direction: row-reverse;
+  margin-right: 0;
+  margin-left: var(--zd-tag__remove-margin);
+}
+
+.c-tag--sm.is-rtl .c-tag__remove {
+  margin-left: var(--zd-tag--sm__remove-margin);
+}
+/* stylelint-enable no-unsupported-browser-features */

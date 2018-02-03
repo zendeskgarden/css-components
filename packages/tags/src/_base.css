@@ -1,0 +1,60 @@
+@import '@zendesk/garden-css-variables';
+@import '_variables';
+@import '_selectors';
+
+:root {
+  --zd-tag-background-color: var(--zd-tag-accent-color);
+  --zd-tag-border-radius: 2px;
+  --zd-tag-color: var(--zd-color-white);
+  --zd-tag-font-size: var(--zd-font-size-zeta);
+  --zd-tag-font-weight: var(--zd-font-weight-regular);
+  --zd-tag-height: var(--zd-spacing);
+  --zd-tag-line-height: calc(20 / 12);
+  --zd-tag-padding: 0 calc(10 / 12 * 1em);
+  --zd-tag-focused-box-shadow:
+    0 0 0 2px
+    color(var(--zd-tag-background-color) alpha(40%));
+  --zd-tag-transition: box-shadow .1s ease-in-out;
+}
+
+/* 1. Reset for <button> element.
+ * 2. Reset for <a>nchor element. */
+
+.c-tag {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  transition: var(--zd-tag-transition);
+  border: 0; /* [1] */
+  border-radius: var(--zd-tag-border-radius);
+  background-color: var(--zd-tag-background-color);
+  padding: var(--zd-tag-padding);
+  max-width: 100%;
+  height: var(--zd-tag-height);
+  overflow: hidden;
+  text-decoration: none; /* [2] */
+  line-height: var(--zd-tag-line-height);
+  color: var(--zd-tag-color);
+  font-size: var(--zd-tag-font-size);
+  font-weight: var(--zd-tag-font-weight);
+}
+
+.c-tag:hover {
+  color: var(--zd-tag-color); /* [2] */
+}
+
+.c-tag:--tag-focused {
+  outline: 0;
+  box-shadow: var(--zd-tag-focused-box-shadow);
+  text-decoration: none;
+}
+
+.c-tag.is-rtl {
+  direction: rtl;
+}
+
+.c-tag > * {
+  min-width: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

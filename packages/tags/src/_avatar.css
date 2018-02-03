@@ -1,0 +1,65 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-tag__avatar-border-radius: var(--zd-tag-border-radius);
+  --zd-tag__avatar-margin-left: -7.9px;
+  --zd-tag__avatar-margin-right: 5px;
+  --zd-tag__avatar-margin-vertical: 2px;
+  --zd-tag__avatar-margin:
+    var(--zd-tag__avatar-margin-vertical)
+    var(--zd-tag__avatar-margin-right)
+    var(--zd-tag__avatar-margin-vertical)
+    var(--zd-tag__avatar-margin-left);
+  --zd-tag__avatar-size: calc(var(--zd-tag-height) - (var(--zd-tag__avatar-margin-vertical) * 2));
+  --zd-tag--lg__avatar-border-radius: calc(var(--zd-tag--lg-border-radius) - 1px);
+  --zd-tag--lg__avatar-margin-left: -6.9px;
+  --zd-tag--lg__avatar-margin-right: 10px;
+  --zd-tag--lg__avatar-margin-vertical: 3px;
+  --zd-tag--lg__avatar-margin:
+    var(--zd-tag--lg__avatar-margin-vertical)
+    var(--zd-tag--lg__avatar-margin-right)
+    var(--zd-tag--lg__avatar-margin-vertical)
+    var(--zd-tag--lg__avatar-margin-left);
+  --zd-tag--lg__avatar-size: calc(var(--zd-tag--lg-height) - (var(--zd-tag--lg__avatar-margin-vertical) * 2));
+}
+
+/* 1. Prevent flex shrink */
+
+.c-tag__avatar {
+  display: inline-block;
+  flex-shrink: 0;
+  margin: var(--zd-tag__avatar-margin);
+  border-radius: var(--zd-tag__avatar-border-radius);
+  width: var(--zd-tag__avatar-size);
+  min-width: var(--zd-tag__avatar-size); /* [1] */
+  height: var(--zd-tag__avatar-size);
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.c-tag--lg .c-tag__avatar {
+  margin: var(--zd-tag--lg__avatar-margin);
+  border-radius: var(--zd-tag--lg__avatar-border-radius);
+  width: var(--zd-tag--lg__avatar-size);
+  min-width: var(--zd-tag--lg__avatar-size); /* [1] */
+  height: var(--zd-tag--lg__avatar-size);
+}
+
+.c-tag--pill .c-tag__avatar {
+  border-radius: 50%;
+}
+
+.c-tag--round .c-tag__avatar,
+.c-tag--sm .c-tag__avatar {
+  display: none;
+}
+
+.c-tag.is-rtl .c-tag__avatar {
+  margin-right: var(--zd-tag__avatar-margin-left);
+  margin-left: var(--zd-tag__avatar-margin-right);
+}
+
+.c-tag--lg.is-rtl .c-tag__avatar {
+  margin-right: var(--zd-tag--lg__avatar-margin-left);
+  margin-left: var(--zd-tag--lg__avatar-margin-right);
+}
