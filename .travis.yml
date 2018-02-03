@@ -21,7 +21,7 @@ before_install:
   - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:always-auth true
 
 install:
-  - yarn
+  - yarn --frozen-lockfile
 
 script:
   - yarn test
