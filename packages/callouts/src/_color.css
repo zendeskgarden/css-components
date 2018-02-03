@@ -1,0 +1,83 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-callout--alert-padding: 50px;
+  --zd-callout--alert-background-position-x: var(--zd-spacing);
+  --zd-callout--alert-background-position-y: calc(var(--zd-spacing) + 3px);
+  --zd-callout--alert-background-position: var(--zd-callout--alert-background-position-x) var(--zd-callout--alert-background-position-y);
+  --zd-callout--alert-background-position-rtl: calc(100% - var(--zd-callout--alert-background-position-x)) var(--zd-callout--alert-background-position-y);
+  --zd-callout--dialog-background-color: var(--zd-color-white);
+  --zd-callout--dialog-border-color: var(--zd-color-platinum);
+  --zd-callout--dialog-box-shadow:
+    0 var(--zd-spacing) var(--zd-spacing-lg) 0
+    color(var(--zd-color-chathams-blue) alpha(15%));
+  --zd-callout--error-background-color: color(var(--zd-callout--error-color) alpha(10%));
+  --zd-callout--error-background-image: svg-load('14-error-fill.svg', color: var(--zd-callout--error-color));
+  --zd-callout--error-color: var(--zd-color-flamingo);
+  --zd-callout--recessed-background-color: var(--zd-color-snow);
+  --zd-callout--recessed-border-color: var(--zd-color-gainsboro);
+  --zd-callout--success-background-color: color(var(--zd-callout--success-color) alpha(10%));
+  --zd-callout--success-background-image: svg-load('14-checkmark-fill.svg', color: var(--zd-callout--success-color));
+  --zd-callout--success-color: var(--zd-color-chateau-green);
+  --zd-callout--warning-background-color: color(var(--zd-callout--warning-color) alpha(10%));
+  --zd-callout--warning-background-image: svg-load('14-error-fill.svg', color: var(--zd-callout--warning-color));
+  --zd-callout--warning-color: var(--zd-color-marigold);
+}
+
+.c-callout--recessed {
+  border-color: var(--zd-callout--recessed-border-color);
+  background-color: var(--zd-callout--recessed-background-color);
+}
+
+.c-callout--error {
+  border-color: var(--zd-callout--error-color);
+  background-color: var(--zd-callout--error-background-color);
+  background-image: var(--zd-callout--error-background-image);
+}
+
+.c-callout--success {
+  border-color: var(--zd-callout--success-color);
+  background-color: var(--zd-callout--success-background-color);
+  background-image: var(--zd-callout--success-background-image);
+}
+
+.c-callout--warning {
+  border-color: var(--zd-callout--warning-color);
+  background-color: var(--zd-callout--warning-background-color);
+  background-image: var(--zd-callout--warning-background-image);
+}
+
+.c-callout--error,
+.c-callout--success,
+.c-callout--warning {
+  background-repeat: no-repeat;
+  background-position: var(--zd-callout--alert-background-position);
+  padding-left: var(--zd-callout--alert-padding);
+}
+
+.c-callout--dialog {
+  border-color: var(--zd-callout--dialog-border-color);
+  box-shadow: var(--zd-callout--dialog-box-shadow);
+}
+
+.c-callout--dialog.c-callout--error,
+.c-callout--dialog.c-callout--success,
+.c-callout--dialog.c-callout--warning {
+  background-color: var(--zd-callout--dialog-background-color);
+}
+
+.c-callout--dialog.c-callout--error .c-callout__title {
+  color: var(--zd-callout--error-color);
+}
+
+.c-callout--dialog.c-callout--success .c-callout__title {
+  color: var(--zd-callout--success-color);
+}
+
+.c-callout--error.is-rtl,
+.c-callout--success.is-rtl,
+.c-callout--warning.is-rtl {
+  background-position: var(--zd-callout--alert-background-position-rtl);
+  padding-right: var(--zd-callout--alert-padding);
+  padding-left: var(--zd-callout-padding-horizontal);
+}
