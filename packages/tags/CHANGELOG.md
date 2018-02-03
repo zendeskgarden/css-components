@@ -1,10 +1,29 @@
 # Change Log
 
-<a name="1.1.0"></a>
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+      <a name="2.0.0"></a>
+# 2.0.0 (2018-02-03)
+
+
+### Features
+
+* add css-labels package to monorepo ([#20](https://github.com/zendeskgarden/css-components/issues/20)) ([a446d62](https://github.com/zendeskgarden/css-components/commit/a446d62))
+
+
+### BREAKING CHANGES
+
+* rename all `.c-label` (parent and child) classes to `.c-tag` for component clarity. **IMPORTANT**: the new package name changes from `@zendesk/garden-css-labels` to `@zendesk/garden-css-tags`.
+
+
+
+
+      <a name="1.1.0"></a>
 ## [1.1.0] - 2017-11-28
 ### Added (per [#10](https://github.com/zendeskgarden/css-labels/pull/10))
 - Include complementary `.c-label--custom` CSS demonstrating how to
-  apply an accent color change.
+apply an accent color change.
 
 ## [1.0.2] - 2017-09-19
 ### Fixed (per [#8](https://github.com/zendeskgarden/css-labels/pull/8))
@@ -18,7 +37,7 @@
 ## [1.0.0] - 2017-06-15
 ### Changed (per [#3](https://github.com/zendeskgarden/css-labels/pull/3))
 - Prepared package for registry publish as `@zendesk/garden-css-labels`.
-  See README for updated installation.
+See README for updated installation.
 
 ## [0.2.0] - 2017-03-14
 ### Added (per [#2](https://github.com/zendeskgarden/css-labels/pull/2))
