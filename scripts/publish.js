@@ -4,7 +4,8 @@ const path = require('path');
 const childProcess = require('child_process');
 const lernaConfig = require(path.resolve(__dirname, '..', 'lerna.json'));
 
-if (process.env.TRAVIS_COMMIT === lernaConfig.commands.publish.message) {
+if (process.env.TRAVIS_COMMIT_MESSAGE &&
+    process.env.TRAVIS_COMMIT_MESSAGE.startsWith(lernaConfig.commands.publish.message)) {
   const publish = childProcess.spawn('yarn', [
     'lerna',
     'exec',
