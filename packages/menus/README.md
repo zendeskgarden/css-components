@@ -58,7 +58,7 @@ example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-1
 </nav>
 ```
 
-## Modifications
+### Modifications
 
 See http://zendeskgarden.github.io/css-components/menus/ for a variety
 of menu item classes, including modifications for: headers,
