@@ -9,7 +9,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* add css-forms package to monorepo ([#11](https://github.com/zendeskgarden/css-components/issues/11)) ([a855c69](https://github.com/zendeskgarden/css-components/commit/a855c69))
 * **forms:** refactor composite components to allow standalone child inputs, labels, hints, and messages ([#13](https://github.com/zendeskgarden/css-components/issues/13)) ([0067d75](https://github.com/zendeskgarden/css-components/commit/0067d75))
 
 
