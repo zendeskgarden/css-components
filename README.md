@@ -38,6 +38,9 @@ available:
 - `yarn test` to run tests across all component packages. Note this is
   run as a git `pre-push` hook for all packages that have changed since
   the last release.
+- `yarn lint` to enforce consistent CSS and JavaScript code conventions
+  across all component packages. Note this is run as a git `pre-commit`
+  hook.
 - `yarn format` to enforce code style with opinionated formats (i.e.
   package.json) across all component packages. Note this is run as a git
   `pre-commit` hook.
