@@ -20,7 +20,34 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 The following table contains the CSS class mapping. In some cases, multiple child class modifications may be used to represent one previous parent class modifier.
 
 BEFORE | AFTER
+-------- | -------
+`.c-chk--radio` | `.c-chk__label--radio`
+`.c-chk--toggle` | `.c-chk__label--toggle`
+`.c-chk--dark` | `.c-chk__label--dark`, `.c-chk__hint--dark`, `.c-chk__message--dark`
+`.c-chk--custom` | `.c-chk__label--custom`
+`.c-range--dark` | `.c-range__input--dark`, `.c-range__label--dark`, `.c-range__hint--dark`, `.c-range__message--dark`, `.c-range__slider--dark`
+`.c-range--custom` | `.c-range__input--custom`, `.c-range__slider--custom`
+`.c-range--sm` | `.c-range__input--sm`, `.c-range__label--sm`, `.c-range__hint--sm`, `.c-range__slider--sm`
+`.c-txt--sm` | `.c-txt__input--sm`, `.c-txt__label--sm`, `.c-txt__hint--sm`
+`.c-txt--custom` | `.c-txt__input--custom`
+`.c-txt.is-focused` | `.c-txt__input.is-focused`
+`.c-chk.is-focused` | `.c-chk__label.is-focused`
+`.c-range.is-focused` | `.c-range__input.is-focused`
+`.c-txt.has-error` | `.c-txt__input--error`, `.c-txt__message--error`
+`.c-txt.has-success` | `.c-txt__input--success`, `.c-txt__message--success`
+`.c-txt.has-warning` | `.c-txt__input--warning`, `.c-txt__message--warning`
+`.c-chk.has-error` | `.c-chk__message--error`
+`.c-chk.has-success` | `.c-chk__message--success`
+`.c-chk.has-warning` | `.c-chk__message--warning`
+`.c-chk--nolabel .c-chk__label` | `.c-chk__label.is-hidden`
+`.c-txt.is-rtl` | `.c-txt__input.is-rtl`, `.c-txt__label.is-rtl`, `.c-txt__hint.is-rtl`, `.c-txt__message.is-rtl`
+`.c-chk.is-rtl` | `.c-chk__label.is-rtl`, `.c-chk__hint.is-rtl`, `.c-chk__message.is-rtl`
+`.c-range.is-rtl` | `.c-range__input.is-rtl`, `.c-range__label.is-rtl`, `.c-range__hint.is-rtl`, `.c-range__message.is-rtl`, `.c-range__slider.is-rtl`
+`.c-txt__input--label` | `.c-txt__input--tag`
+`.c-input-label` | use `.c-txt__label` standalone
+`.c-input-hint` | use `.c-txt__hint` standalone
 
+This allows individual child components to function in a standalone context for improved upstream `react-components` composability.
 
 
 
