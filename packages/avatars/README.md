@@ -1,18 +1,22 @@
-# Avatar Component CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-avatars.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-avatars)
+# @zendeskgarden/css-avatars
 
-The `garden-css-avatars` component contains basic `.c-avatar` styling.
+This component contains basic `.c-avatar` component styling.
 
 ## Installation
 
-    $ npm install --save-dev @zendesk/garden-css-avatars
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+```sh
+npm install --save-dev @zendesk/garden-css-avatars
+```
 
 ## Usage
 
-Use avatar CSS to style user and system icons.
+Once installed, avatar CSS can be accessed via `postcss-import`.
+
+```css
+@import '@zendesk/garden-css-avatars';
+```
+
+Use avatar CSS to style user and system images.
 
 ```html
 <figure class="c-avatar">
@@ -30,15 +34,8 @@ Avatar classes retain affordance for indicating state. See
 http://zendeskgarden.github.io/css-avatars for various modification
 classes.
 
-## Tests
+### Behavior
 
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+See the
+[&lt;Avatar&gt;](http://garden.zendesk.com/react-components/#!/Avatar)
+component for supported props and behavior.
