@@ -24,9 +24,6 @@
     "watch": "watch 'yarn build' src --interval=.1"
   },
   "devDependencies": {
-    "@zendesk/eslint-config-garden": "^4.0.0",
-    "babel-eslint": "^8.0.3",
-    "eslint": "^4.13.1",
     "jsonlint": "^1.6.2",
     "postcss": "^6.0.14",
     "stylelint-scss": "^2.2.0",

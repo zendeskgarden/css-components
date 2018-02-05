@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/* eslint-disable no-console */
+
 const Handlebars = require('handlebars');
 const chalk = require('chalk');
 const execSync = require('child_process').execSync;
@@ -9,17 +11,24 @@ const ncp = require('ncp').ncp;
 const path = require('path');
 const rimraf = require('rimraf');
 
-Handlebars.registerHelper('capitalize', ([first, ...rest]) => `${first.toUpperCase()}${rest.join('')}`);
+Handlebars.registerHelper('capitalize', ([first, ...rest]) =>
+  `${first.toUpperCase()}${rest.join('')}`);
 
 const demo = path.join(process.cwd(), 'demo');
 const packages = path.join(process.cwd(), 'packages');
 
+/**
+ * Link demo CSS to the package dist for the given component.
+ *
+ * @param {String} component The name of the component to link.
+ */
 function linkCss(component) {
   const destination = path.join(demo, component);
 
   process.chdir(destination);
 
-  const source = path.relative(destination, path.join(packages, component, 'dist'));
+  const dist = path.join(packages, component, 'dist');
+  const source = path.relative(destination, dist);
 
   fs.readdirSync(source).forEach(file => {
     fs.symlinkSync(path.join(source, file), file);
@@ -28,6 +37,11 @@ function linkCss(component) {
   console.log(chalk.green('success'), 'Linked demo CSS');
 }
 
+/**
+ * Update the HTML page demo for the given component.
+ *
+ * @param {String} component The name of the component to update.
+ */
 function updateDemo(component) {
   const source = path.join(packages, component, 'demo');
   const destination = path.join(demo, component);
@@ -46,6 +60,11 @@ function updateDemo(component) {
   });
 }
 
+/**
+ * Add a new component package with the given name.
+ *
+ * @param {String} name The name of the component to add.
+ */
 function addComponent(name) {
   const source = path.join(packages, '.template');
   const destination = path.join(packages, name);
