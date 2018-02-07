@@ -36,5 +36,5 @@ pagination component usage and modification classes.
 ### Behavior
 
 See the
-[&lt;Pagination&gt;](http://garden.zendesk.com/react-components/#!/Pagination)
+[&lt;Pagination&gt;](http://zendeskgarden.github.io/react-components/#!/Pagination)
 component for intended mouse and keyboarding behaviors.

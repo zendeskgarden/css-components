@@ -51,14 +51,19 @@ Use the backdrop layout class to give a dialog a modal treatment.
 </div>
 ```
 
-### Accessibility
+### Modifications
+
+See http://zendeskgarden.github.io/css-components/modals/ for
+modal component usage and modification classes.
+
+#### Accessibility
 
 The sample HTML incorporates `aria-*` and `role` attributes expected by
 assistive technology. The use of `tabindex` supports focus and keyboard
 navigation.
 
 
-### RTL
+#### RTL
 
 Use the following state class to support RTL text direction:
 
@@ -68,7 +73,7 @@ Use the following state class to support RTL text direction:
 </section>
 ```
 
-### Animation
+#### Animation
 
 Add the following state class on open for a modal "pop" intended by the
 design:
