@@ -21,8 +21,7 @@
     "watch": "yarn build --watch"
   },
   "devDependencies": {
-    "@zendesk/garden-css-variables": "^3.1.0",
-    "@zendesk/garden-svg-icons": "^2.5.0"
+    "@zendesk/garden-css-variables": "^3.1.0"
   },
   "keywords": [
     "components",

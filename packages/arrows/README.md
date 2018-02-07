@@ -30,5 +30,5 @@ element using the `.c-arrow--t` positioning class.
 </ul>
 ```
 
-See http://garden.zendesk.com/css-components/arrows/ for a comprehensive
-demo of the arrow component classes.
+See http://zendeskgarden.github.io/css-components/arrows/ for a
+comprehensive demo of the arrow component classes.

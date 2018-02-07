@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-      <a name="4.1.0"></a>
+<a name="4.1.0"></a>
 # 4.1.0 (2018-02-01)
 
 
@@ -14,7 +14,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-      <a name="4.0.1"></a>
 ## [4.0.1] - 2017-11-01
 ### Fixed (per [#19](https://github.com/zendeskgarden/css-modals/pull/19))
 - Centered repositioning animation glitch (Firefox).

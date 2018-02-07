@@ -84,9 +84,12 @@ HTML for anchored tabs should be structured like this:
   role="tab"><a href="#" id="anchor1" role="presentation" tabindex="-1">One</a></li>
 ```
 
+See http://zendeskgarden.github.io/css-components/tabs/ for additional
+tab component modification classes.
+
 ### Behavior
 
 See the
-[&lt;Tabs&gt;](http://garden.zendesk.com/react-components/#!/Tabs)
+[&lt;Tabs&gt;](http://zendeskgarden.github.io/react-components/#!/Tabs)
 component for intended mouse and keyboard (tab-to; cursor-through)
 behavior.

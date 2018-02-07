@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-      <a name="2.1.0"></a>
+<a name="2.1.0"></a>
 # 2.1.0 (2018-02-03)
 
 
@@ -14,7 +14,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-      <a name="2.0.2"></a>
 ## [2.0.2] - 2017-09-28
 ### Updated (per [#9](https://github.com/zendeskgarden/css-tooltips/pull/9))
 - Improve spacing for default and medium tooltips.

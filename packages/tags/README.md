@@ -59,5 +59,5 @@ Use the following HTML to support the addition of a tag *avatar*.
 ### Behavior
 
 See the
-[&lt;Label&gt;](http://garden.zendesk.com/react-components/#!/Label)
+[&lt;Label&gt;](http://zendeskgarden.github.io/react-components/#!/Label)
 component for intended mouse and keyboarding behaviors.

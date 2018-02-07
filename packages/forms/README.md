@@ -31,6 +31,9 @@ the following.
 
 #### Modifications
 
+See http://zendeskgarden.github.io/css-components/forms/checkbox/ for
+checkbox component usage and modification classes.
+
 ##### Toggle
 
 Use the `.c-chk--toggle` modifier to style the checkbox as a toggle.
@@ -85,6 +88,9 @@ the following.
 
 #### Modifications
 
+See http://zendeskgarden.github.io/css-components/forms/range/ for
+range component usage and modification classes.
+
 ##### Inline
 
 Use the following modifier class to support inline range fields:
@@ -122,6 +128,9 @@ the following.
 ```
 
 #### Modifications
+
+See http://zendeskgarden.github.io/css-components/forms/text/ for
+text component usage and modification classes.
 
 ##### Inline
 
