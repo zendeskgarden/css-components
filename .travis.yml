@@ -2,8 +2,6 @@ language: node_js
 node_js:
   - node
 
-sudo: false
-
 branches:
   only:
     - master
@@ -20,11 +18,9 @@ before_install:
   - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:email $ARTIFACTORY_EMAIL
   - npm config set //zdrepo.jfrog.io/zdrepo/api/npm/npm/:always-auth true
 
-install:
-  - yarn --frozen-lockfile
+install: yarn --frozen-lockfile
 
-script:
-  - yarn test
+script: yarn test
 
 before_deploy:
   - find demo -type l | xargs sed -i '' || true # convert symlinks to regular files
