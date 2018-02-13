@@ -1,0 +1,5 @@
+/* stylelint-disable declaration-no-important */
+.u-opacity-opaque { opacity: 1 !important; }
+
+.u-opacity-transparent { opacity: 0 !important; }
+/* stylelint-enable declaration-no-important */
