@@ -31,25 +31,56 @@
   </header>
   <main class="c-main c-main--page">
     <h1 class="c-main__title">Utilities</h1>
-    <div class="c-main__body">
-      <p class="u-mb">A collection of single purpose utility classes. In most
-        cases, a utility class applies a single CSS property and makes use of
-        <code class="c-code">!important</code> to ensure styles are
-        overridden.</p>
-      <ul class="u-delta u-mb">
-        <li><a class="u-mb-xs" href="border-radius">Border Radius</a></li>
-        <li><a class="u-mb-xs" href="border">Border</a></li>
-        <li><a class="u-mb-xs" href="clearfix">Clearfix</a></li>
-        <li><a class="u-mb-xs" href="color">Color</a></li>
-        <li><a class="u-mb-xs" href="display">Display</a></li>
-        <li><a class="u-mb-xs" href="jitterfix">Jitterfix</a></li>
-        <li><a class="u-mb-xs" href="position">Position</a></li>
-        <li><a class="u-mb-xs" href="spacing">Spacing</a></li>
-        <li><a class="u-mb-xs" href="text-align">Text Align</a></li>
-        <li><a class="u-mb-xs" href="truncate">Truncate</a></li>
-        <li><a class="u-mb-xs" href="vertical-align">Vertical Align</a></li>
-        <li><a class="u-mb-xs" href="visibility">Visibility</a></li>
-      </ul>
+    <p class="u-mb-lg">A collection of single purpose utility classes. In most
+      cases, a utility class applies a single CSS property and makes use of
+      <code class="c-code">!important</code> to ensure styles are
+      overridden.</p>
+    <div class="c-main__body l-wrapper-720">
+      <div class="l-grid l-grid--xxl u-mb-lg u-alpha u-light u-fg-submarine">
+        <div class="l-grid__item u-1/2">
+          <ul>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="border-radius">Border Radius</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="border">Border</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="clearfix">Clearfix</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="color">Color</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="display">Display</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="jitterfix">Jitterfix</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="list-style">List Style</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="position">Position</a></li>
+          </ul>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <ul>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="spacing">Spacing</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="text-align">Text Align</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="truncate">Truncate</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="typography">Typography</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="vertical-align">Vertical Align</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="visibility">Visibility</a></li>
+            <li><a class="u-fg-inherit u-display-inline-block u-mb-xs" href="width">Width</a></li>
+          </ul>
+        </div>
+      </div>
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><p class="u-mb-sm">Box Shadow Utility</p>
+<div class="u-bg-pelorous u-bs-none u-mb u-p-sm" style="box-shadow: 0 0 0 4px">
+  <code class="c-code">.u-bs-none</code>
+</div>
+
+<p class="u-mb-sm">Opacity Utility</p>
+<div class="u-bg-verdigris u-opacity-opaque u-mb u-p-sm" style="opacity: 0">
+  <code class="c-code">.u-opacity-opaque</code>
+</div>
+<div class="u-bc-dark-gray u-border" style="border-style: dotted !important">
+  <div class="u-bg-sea-buckthorn u-opacity-transparent u-p-sm" style="opacity: 1">
+    <code class="c-code">.u-opacity-transparent</code>
+  </div>
+</div></textarea>
+        </div>
+      </section>
     </div>
   </main>
   <script src="http://zendeskgarden.github.io/site.js"></script>
