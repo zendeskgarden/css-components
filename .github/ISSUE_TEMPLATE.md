@@ -23,9 +23,4 @@
 ## Specifications
 
   - CSS Component: <!-- buttons@2.2.0 -->
-  - Browser:
-    - [ ] Chrome
-    - [ ] Firefox
-    - [ ] Edge
-    - [ ] Safari
-    - [ ] IE 11
+  - Browsers: all
