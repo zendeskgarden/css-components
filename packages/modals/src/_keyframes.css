@@ -15,7 +15,6 @@
 @keyframes zd-dialog-open {
   0% {
     transform: scale(0);
-    transform-origin: 0 0;
     opacity: 0;
   }
 

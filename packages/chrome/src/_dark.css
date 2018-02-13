@@ -17,10 +17,17 @@
   --zd-chrome--dark__nav__fab-box-shadow:
     0 6px 12px 0
     color(var(--zd-color-black) alpha(15%));
+  --zd-chrome--dark__nav__fab-focused-box-shadow:
+    var(--zd-chrome--dark__nav__fab-box-shadow),
+    var(--zd-chrome__nav__item-focused-box-shadow);
 }
 
 .c-chrome--dark .c-chrome__nav__fab {
   box-shadow: var(--zd-chrome--dark__nav__fab-box-shadow);
+}
+
+.c-chrome--dark .c-chrome__nav__fab:--chrome-focused {
+  box-shadow: var(--zd-chrome--dark__nav__fab-focused-box-shadow);
 }
 
 .c-chrome--dark .c-chrome__body {

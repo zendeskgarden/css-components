@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.1"></a>
+## [4.1.1](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-modals@4.1.0...@zendesk/garden-css-modals@4.1.1) (2018-02-13)
+
+
+### Bug Fixes
+
+* **modals:** use `transform-origin` center default on dialog open animation ([#26](https://github.com/zendeskgarden/css-components/issues/26)) ([b05a3d2](https://github.com/zendeskgarden/css-components/commit/b05a3d2))
+
+
+
+
 <a name="4.1.0"></a>
 # 4.1.0 (2018-02-01)
 
