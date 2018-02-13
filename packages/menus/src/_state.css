@@ -43,6 +43,10 @@
   color: var(--zd-menu__item-disabled-color);
 }
 
+.c-menu .c-menu__item:--menu-checked:--menu-disabled::before {
+  background-image: var(--zd-menu__item-disabled--checked-background-image);
+}
+
 .c-menu .c-menu__item.c-menu__item--add:--menu-disabled::before {
   background-image: var(--zd-menu__item-disabled--add-background-image);
 }
@@ -53,10 +57,6 @@
 
 .c-menu .c-menu__item.c-menu__item--previous:--menu-disabled::before {
   background-image: var(--zd-menu__item-disabled--previous-background-image);
-}
-
-.c-menu .c-menu__item:--menu-checked:--menu-disabled::before {
-  background-image: var(--zd-menu__item-disabled--checked-background-image);
 }
 /* stylelint-enable selector-max-specificity */
 
