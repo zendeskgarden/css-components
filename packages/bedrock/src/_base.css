@@ -1,4 +1,3 @@
-@import 'normalize.css';
 @import '@zendesk/garden-css-variables';
 
 :root {
@@ -17,9 +16,7 @@
 
 /* 1. Ensure the page always fills at least the entire viewport height.
  * 2. Force visible scrollbars to prevent awkard jumps when navigating between
- * pages that do/don't have enough content to produce natural scrollbars.
- * 3. Hack for IE 10 & 11 browsers that fail to render Proxima Nova text
- * elements containing extended unicode characters. */
+ * pages that do/don't have enough content to produce natural scrollbars. */
 html {
   background-color: var(--zd-html-background-color);
   min-height: 100%; /* [1] */
@@ -34,10 +31,6 @@ html {
   font-size: var(--zd-html-font-size);
 }
 
-/* stylelint-disable selector-type-no-unknown, selector-no-vendor-prefix */
-_:-ms-input-placeholder, html { font-feature-settings: normal; } /* [3] */
-/* stylelint-enable selector-type-no-unknown, selector-no-vendor-prefix */
-
 * { font-weight: inherit; }
 
 *,
@@ -50,14 +43,13 @@ a,
 ins,
 u { text-decoration: none; }
 
-a:hover { color: var(--zd-anchor-color-hover); }
-
+a:hover,
 a:focus {
-  outline: none;
   text-decoration: underline;
+  color: var(--zd-anchor-color-hover);
 }
 
-a:focus:active { text-decoration: none; }
+a:focus { outline: none; }
 
 button {
   cursor: pointer;
@@ -122,6 +114,5 @@ img { max-width: 100%; }
 
 svg { max-height: 100%; }
 
-/* stylelint-disable declaration-no-important */
+/* stylelint-disable-next-line declaration-no-important */
 [tabindex='-1']:focus { outline: none !important; }
-/* stylelint-enable */
