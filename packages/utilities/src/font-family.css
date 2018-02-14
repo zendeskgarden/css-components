@@ -1,0 +1,9 @@
+@import '@zendesk/garden-css-variables';
+
+/* stylelint-disable declaration-no-important */
+.u-font-family-inherit { font-family: inherit !important; }
+
+.u-font-family-monospace { font-family: var(--zd-font-family-monospace) !important; }
+
+.u-font-family-system { font-family: var(--zd-font-family-system) !important; }
+/* stylelint-enable declaration-no-important */

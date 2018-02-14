@@ -1,0 +1,41 @@
+@import '@zendesk/garden-css-variables';
+
+/* Reserve space for transitioning to weighted text.
+ * stackoverflow.com/a/20249560 */
+
+:root {
+  --zd-jitterfix-content: attr(data-text);
+}
+
+.u-jitterfix {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.u-jitterfix:after {
+  display: block;
+  visibility: hidden;
+  line-height: 0;
+  content: var(--zd-jitterfix-content);
+}
+
+/* stylelint-disable declaration-no-important, max-line-length */
+.u-jitterfix--thin:after { font-weight: var(--zd-font-weight-thin); }
+
+.u-jitterfix--extralight:after { font-weight: var(--zd-font-weight-extralight); }
+
+.u-jitterfix--light:after { font-weight: var(--zd-font-weight-light); }
+
+.u-jitterfix--regular:after { font-weight: var(--zd-font-weight-regular); }
+
+.u-jitterfix--medium:after { font-weight: var(--zd-font-weight-medium); }
+
+.u-jitterfix--semibold:after { font-weight: var(--zd-font-weight-semibold); }
+
+.u-jitterfix--bold:after { font-weight: var(--zd-font-weight-bold); }
+
+.u-jitterfix--extrabold:after { font-weight: var(--zd-font-weight-extrabold); }
+
+.u-jitterfix--black:after { font-weight: var(--zd-font-weight-black); }
+/* stylelint-enable declaration-no-important */

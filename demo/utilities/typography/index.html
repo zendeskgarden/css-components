@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+<head>
+  <title>Typography / Utilities / CSS Components / Zendesk Garden</title>
+  <link href="http://zendeskgarden.github.io/css-bedrock/index.css" rel="stylesheet">
+  <link href="../../forms/index.css" rel="stylesheet">
+  <link href="http://zendeskgarden.github.io/site.css" rel="stylesheet">
+  <link href="../index.css" rel="stylesheet">
+  <style>
+  .u-border.u-display-inline-block { line-height: 1; }
+  </style>
+</head>
+<body class="u-font-family-system">
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="http://zendeskgarden.github.io">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="../..//index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="../..">CSS Components</a
+      ><span> / </span
+      ><a class="u-fg-inherit" href="..">Utilities</a
+      ><span> / Typography</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item u-bg-transparent u-pv-0">
+        <fieldset class="c-txt c-txt--inline">
+          <label class="c-txt__label" for="nav.ctl.text">Text</label>
+          <select class="c-txt__input c-txt__input--select js-text u-ml" id="nav.ctl.text">
+            <option value="Grumpy wizards make toxic brew for the evil Queen and Jack.">Latin</option>
+            <option value="Cyrillic: В чащах юга жил бы цитрус? Да, но фальшивый экземпляр!">Cyrillic</option>
+            <option value="Greek: Τάχιστη αλώπηξ βαφής ψημένη γη, δρασκελίζει υπέρ νωθρού κυνός">Greek</option>
+            <option value="Vietnamese: Tôi có thể ăn thủy tinh mà không hại gì.">Vietnamese</option>
+            <option value="Japanese: 気難しいウィザードは、悪の女王とジャックのために有毒な醸造を作る。">Japanese</option>
+            <option value="Chinese: 脾气暴躁的向导使有毒冲泡邪恶的皇后和杰克。">Chinese</option>
+            <option value="Arabic: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق">Arabic</option>
+            <option value="Hebrew: דג סקרן שט בים מאוכזב ולפתע מצא חברה">Hebrew</option>
+            <option value="Khmer: ខ្ញុំអាចញ៉ាំកញ្ចក់បាន ដោយគ្មានបញ្ហា">Khmer</option>
+            <option value="Special: ¡Ay, caramba¡ ⅓ kerning AWAY H₂O to the ligature ﬀ % ® © ™ @ § ¶ № ☑ ✓ ⌘">Special</option>
+          </select>
+        </fieldset>
+      </li
+      ><li class="c-ctl__item">
+        <fieldset class="c-chk">
+          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+          <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
+        </fieldset>
+      </li>
+    </ul>
+  </header>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Typography Utility</h1>
+    <div class="c-main__body">
+      <p class="u-mb">Garden's
+        <a href="http://zendeskgarden.github.io/css-bedrock/">bedrock</a>
+        resets apply a system font to page HTML. If not using bedrock, you can
+        achieve the same result by using the
+        <code class="c-code">.u-font-family-system</code> utility (as this page
+        does) or by leveraging Garden
+        <a href="https://github.com/zendeskgarden/css-components/tree/master/packages/variables">CSS variables</a>
+        to set this same system font stack in your code. Utility font sizes are
+        based on a
+        <a href="http://www.modularscale.com/?14&px&1.125">1.125 modular scale</a>.
+        Base line height is 20px and a 20 unit vertical rhythm is suggested,
+        but not enforced.</p>
+
+      <p class="u-mb u-ta-center">
+        <a href="#nano">Nano</a>
+        <span>•</span>
+        <a href="#micro">Micro</a>
+        <span>•</span>
+        <a href="#milli">Milli</a>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <a href="#zeta">Zeta</a>
+        <span>•</span>
+        <a href="#epsilon">Epsilon</a>
+        <span>•</span>
+        <a href="#delta">Delta</a>
+        <span>•</span>
+        <a href="#gamma">Gamma</a>
+        <span>•</span>
+        <a href="#beta">Beta</a>
+        <span>•</span>
+        <a href="#alpha">Alpha</a>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <a href="#kilo">Kilo</a>
+        <span>•</span>
+        <a href="#mega">Mega</a>
+        <span>•</span>
+        <a href="#giga">Giga</a>
+      </p>
+
+      <h2 class="u-gamma u-mb">Standard Sizes</h2>
+
+      <h3 class="u-delta u-mb"><span id="zeta">Zeta</span>
+        <code class="c-code">.u-zeta</code>
+        <span>(12px)</span></h3>
+      <ul class="u-zeta u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="epsilon">Epsilon</span>
+        <code class="c-code">.u-epsilon</code>
+        <span>(14px)</span></h3>
+      <ul class="u-epsilon u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="delta">Delta</span>
+        <code class="c-code">.u-delta</code>
+        <span>(16px)</span></h3>
+      <ul class="u-delta u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="gamma">Gamma</span>
+        <code class="c-code">.u-gamma</code>
+        <span>(18px)</span></h3>
+      <ul class="u-gamma u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="beta">Beta</span>
+        <code class="c-code">.u-beta</code>
+        <span>(20px)</span></h3>
+      <ul class="u-beta u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="alpha">Alpha</span>
+        <code class="c-code">.u-alpha</code>
+        <span>(22px)</span></h3>
+      <ul class="u-alpha u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+      </ul>
+
+      <h2 class="u-gamma u-mb">Extreme Sizes</h2>
+
+      <h3 class="u-delta u-mb"><span id="nano">Nano</span>
+        <code class="c-code">.u-nano</code>
+        <span>(9px)</span></h3>
+      <ul class="u-nano u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="micro">Micro</span>
+        <code class="c-code">.u-micro</code>
+        <span>(10px)</span></h3>
+      <ul class="u-micro u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="milli">Milli</span>
+        <code class="c-code">.u-milli</code>
+        <span>(11px)</span></h3>
+      <ul class="u-milli u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample"></p>
+          <p><i class="js-sample"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="kilo">Kilo</span>
+        <code class="c-code">.u-kilo</code>
+        <span>(25px)</span></h3>
+      <ul class="u-kilo u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample u-line-height-lg"></p>
+          <p><i class="js-sample u-line-height-lg"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample u-line-height-lg"></p>
+          <p><i class="js-sample u-line-height-lg"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample u-line-height-lg"></p>
+          <p><i class="js-sample u-line-height-lg"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample u-line-height-lg"></p>
+          <p><i class="js-sample u-line-height-lg"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="mega">Mega</span>
+        <code class="c-code">.u-mega</code>
+        <span>(28px)</span></h3>
+      <ul class="u-mega u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample u-line-height-lg"></p>
+          <p><i class="js-sample u-line-height-lg"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample u-line-height-lg"></p>
+          <p><i class="js-sample u-line-height-lg"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample u-line-height-lg"></p>
+          <p><i class="js-sample u-line-height-lg"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample u-line-height-lg"></p>
+          <p><i class="js-sample u-line-height-lg"></i></p>
+        </li>
+      </ul>
+
+      <h3 class="u-delta u-mb"><span id="giga">Giga</span>
+        <code class="c-code">.u-giga</code>
+        <span>(36px)</span></h3>
+      <ul class="u-giga u-mb-lg">
+        <li class="u-thin u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">THIN</span>
+          <code class="c-code">.u-thin</code>
+          <p class="js-sample u-line-height-xl"></p>
+          <p><i class="js-sample u-line-height-xl"></i></p>
+        </li>
+        <li class="u-light u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">LIGHT</span>
+          <code class="c-code">.u-light</code>
+          <p class="js-sample u-line-height-xl"></p>
+          <p><i class="js-sample u-line-height-xl"></i></p>
+        </li>
+        <li class="u-regular u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">REGULAR</span>
+          <code class="c-code">.u-regular</code>
+          <p class="js-sample u-line-height-xl"></p>
+          <p><i class="js-sample u-line-height-xl"></i></p>
+        </li>
+        <li class="u-semibold u-mb-sm">
+          <span class="u-border u-bc-iron u-mb-xs u-display-inline-block u-ph-xxs">SEMIBOLD</span>
+          <code class="c-code">.u-semibold</code>
+          <p class="js-sample u-line-height-xl"></p>
+          <p><i class="js-sample u-line-height-xl"></i></p>
+        </li>
+      </ul>
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><pre class="u-font-family-inherit u-gamma">é - accent acute
+è - accent grave
+ê - circumflex
+ë - umlaut or diaerisis
+ç - cedilla
+ñ - tilde
+ø - streg
+ð - eth (capital form Ð)
+å - bolle
+æ - ligature
+œ - ligature
+ē - macron
+č - háček
+ŭ - crescent</pre></textarea>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="http://zendeskgarden.github.io/site.js"></script>
+  <script src="../../forms/checkbox/index.js"></script>
+  <script src="../../forms/text/index.js"></script>
+  <script>
+  $(document).ready(function() {
+    $(".js-text").change(function() {
+      $(".js-sample").html($(this).val());
+    }).change();
+  });
+  </script>
+</body>
+</html>
