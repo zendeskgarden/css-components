@@ -1,6 +1,25 @@
 # Change Log
 
-<a name="3.1.0"></a>
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+      <a name="4.0.0"></a>
+# 4.0.0 (2018-02-14)
+
+
+### Features
+
+* add css-bedrock package to monorepo ([#28](https://github.com/zendeskgarden/css-components/issues/28)) ([596f6ff](https://github.com/zendeskgarden/css-components/commit/596f6ff))
+
+
+### BREAKING CHANGES
+
+* all utility and layout (grid, flag, media) classes have been removed in favor of simplifying Bedrock as a CSS reset. Utilities can be added via `@zendesk/garden-css-utilities`.
+
+
+
+
+      <a name="3.1.0"></a>
 ## [3.1.0] - 2017-10-09
 ### Added (per [#22](https://github.com/zendeskgarden/css-bedrock/pull/22))
 - Visibility utility classes
@@ -8,12 +27,12 @@
 ## [3.0.0] - 2017-06-20
 ### Changed (per [#20](https://github.com/zendeskgarden/css-bedrock/pull/20))
 - Prepared package for registry publish as
-  `@zendesk/garden-css-bedrock`. See README for updated installation.
+`@zendesk/garden-css-bedrock`. See README for updated installation.
 
 ## [2.0.1] - 2017-05-17
 ### Changed (per [#19](https://github.com/zendeskgarden/css-bedrock/pull/19))
 - Updated default system and monospace font stacks via latest
-  `zd-css-variables` package.
+`zd-css-variables` package.
 
 ## [2.0.0] - 2017-04-24
 ### Changed (per [#18](https://github.com/zendeskgarden/css-bedrock/pull/18))
@@ -50,12 +69,12 @@
 ## [0.3.0] - 2016-07-13
 ### Changed (per [#7](https://github.com/zendeskgarden/css-bedrock/pull/7))
 - Moved customn `@font-face` declarations out to a separate `css-fonts`
-  package.
+package.
 
 ## [0.2.0] - 2016-06-28
 ### Added
 - Missing color (`steel`) and font-weight (`extralight` & `ultrabold`)
-  variables.
+variables.
 
 ### Changed (per [#6](https://github.com/zendeskgarden/css-bedrock/pull/6))
 - Update all font files (to restore command character).
@@ -67,7 +86,7 @@
 ## [0.0.3] - 2016-01-20
 ### Changed (per [#3](https://github.com/zendeskgarden/css-bedrock/pull/3))
 - Update `normalize.css` and `zd-css-variables` to be package
-  dependencies.
+dependencies.
 
 ### Removed (per [#2](https://github.com/zendeskgarden/css-bedrock/pull/2))
 - font smoothing
