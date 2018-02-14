@@ -1,5 +1,5 @@
 {
-  "name": "@zendesk/garden-css-tags",
+  "name": "@zendesk/garden-css-utilities",
   "description": "Garden component CSS",
   "author": "Zendesk Garden <garden@zendesk.com>",
   "license": "UNLICENSED",
@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/css-components/issues"
   },
-  "version": "2.0.0",
+  "version": "1.0.0",
   "main": "dist/index.css",
   "files": [
     "dist",

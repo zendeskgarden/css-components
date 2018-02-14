@@ -1,0 +1,24 @@
+@import '@zendesk/garden-css-variables';
+
+/* stylelint-disable declaration-no-important */
+.u-list-style-circle { list-style: circle inside !important; }
+
+.u-list-style-decimal { list-style: decimal inside !important; }
+
+/* stylelint-disable-next-line max-line-length */
+.u-list-style-decimal-leading-zero { list-style: decimal-leading-zero inside !important; }
+
+.u-list-style-disc { list-style: disc inside !important; }
+
+.u-list-style-lower-alpha { list-style: lower-alpha inside !important; }
+
+.u-list-style-lower-roman { list-style: lower-roman inside !important; }
+
+.u-list-style-none { list-style: none inside !important; }
+
+.u-list-style-square { list-style: square inside !important; }
+
+.u-list-style-upper-alpha { list-style: upper-alpha inside !important; }
+
+.u-list-style-upper-roman { list-style: upper-roman inside !important; }
+/* stylelint-enable declaration-no-important */

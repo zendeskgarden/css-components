@@ -1,0 +1,222 @@
+:root {
+  --zd-border-radius: 4px;
+  --zd-border-radius-lg: calc(var(--zd-border-radius) * 1.5);
+  --zd-border-radius-sm: calc(var(--zd-border-radius) / 2);
+  --zd-border-radius-xl: calc(var(--zd-border-radius) * 2);
+}
+
+/* stylelint-disable declaration-no-important */
+.u-br {
+  border-radius: var(--zd-border-radius) !important;
+}
+
+.u-br-b {
+  border-bottom-left-radius: var(--zd-border-radius) !important;
+  border-bottom-right-radius: var(--zd-border-radius) !important;
+}
+
+.u-br-bl {
+  border-bottom-left-radius: var(--zd-border-radius) !important;
+}
+
+.u-br-br {
+  border-bottom-right-radius: var(--zd-border-radius) !important;
+}
+
+.u-br-l {
+  border-top-left-radius: var(--zd-border-radius) !important;
+  border-bottom-left-radius: var(--zd-border-radius) !important;
+}
+
+.u-br-r {
+  border-top-right-radius: var(--zd-border-radius) !important;
+  border-bottom-right-radius: var(--zd-border-radius) !important;
+}
+
+.u-br-t {
+  border-top-left-radius: var(--zd-border-radius) !important;
+  border-top-right-radius: var(--zd-border-radius) !important;
+}
+
+.u-br-tl {
+  border-top-left-radius: var(--zd-border-radius) !important;
+}
+
+.u-br-tr {
+  border-top-right-radius: var(--zd-border-radius) !important;
+}
+
+/* Zero Radius */
+
+.u-br-0 {
+  border-radius: 0 !important;
+}
+
+.u-br-b-0 {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.u-br-bl-0 {
+  border-bottom-left-radius: 0 !important;
+}
+
+.u-br-br-0 {
+  border-bottom-right-radius: 0 !important;
+}
+
+.u-br-l-0 {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.u-br-r-0 {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.u-br-t-0 {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.u-br-tl-0 {
+  border-top-left-radius: 0 !important;
+}
+
+.u-br-tr-0 {
+  border-top-right-radius: 0 !important;
+}
+
+/* Round Radius */
+
+.u-br-50\% {
+  border-radius: 50% !important;
+}
+
+/* Large Radius */
+
+.u-br-lg {
+  border-radius: var(--zd-border-radius-lg) !important;
+}
+
+.u-br-b-lg {
+  border-bottom-left-radius: var(--zd-border-radius-lg) !important;
+  border-bottom-right-radius: var(--zd-border-radius-lg) !important;
+}
+
+.u-br-bl-lg {
+  border-bottom-left-radius: var(--zd-border-radius-lg) !important;
+}
+
+.u-br-br-lg {
+  border-bottom-right-radius: var(--zd-border-radius-lg) !important;
+}
+
+.u-br-l-lg {
+  border-top-left-radius: var(--zd-border-radius-lg) !important;
+  border-bottom-left-radius: var(--zd-border-radius-lg) !important;
+}
+
+.u-br-r-lg {
+  border-top-right-radius: var(--zd-border-radius-lg) !important;
+  border-bottom-right-radius: var(--zd-border-radius-lg) !important;
+}
+
+.u-br-t-lg {
+  border-top-left-radius: var(--zd-border-radius-lg) !important;
+  border-top-right-radius: var(--zd-border-radius-lg) !important;
+}
+
+.u-br-tl-lg {
+  border-top-left-radius: var(--zd-border-radius-lg) !important;
+}
+
+.u-br-tr-lg {
+  border-top-right-radius: var(--zd-border-radius-lg) !important;
+}
+
+/* Small Radius */
+
+.u-br-sm {
+  border-radius: var(--zd-border-radius-sm) !important;
+}
+
+.u-br-b-sm {
+  border-bottom-left-radius: var(--zd-border-radius-sm) !important;
+  border-bottom-right-radius: var(--zd-border-radius-sm) !important;
+}
+
+.u-br-bl-sm {
+  border-bottom-left-radius: var(--zd-border-radius-sm) !important;
+}
+
+.u-br-br-sm {
+  border-bottom-right-radius: var(--zd-border-radius-sm) !important;
+}
+
+.u-br-l-sm {
+  border-top-left-radius: var(--zd-border-radius-sm) !important;
+  border-bottom-left-radius: var(--zd-border-radius-sm) !important;
+}
+
+.u-br-r-sm {
+  border-top-right-radius: var(--zd-border-radius-sm) !important;
+  border-bottom-right-radius: var(--zd-border-radius-sm) !important;
+}
+
+.u-br-t-sm {
+  border-top-left-radius: var(--zd-border-radius-sm) !important;
+  border-top-right-radius: var(--zd-border-radius-sm) !important;
+}
+
+.u-br-tl-sm {
+  border-top-left-radius: var(--zd-border-radius-sm) !important;
+}
+
+.u-br-tr-sm {
+  border-top-right-radius: var(--zd-border-radius-sm) !important;
+}
+
+/* Extra-Large Radius */
+
+.u-br-xl {
+  border-radius: var(--zd-border-radius-xl) !important;
+}
+
+.u-br-b-xl {
+  border-bottom-left-radius: var(--zd-border-radius-xl) !important;
+  border-bottom-right-radius: var(--zd-border-radius-xl) !important;
+}
+
+.u-br-bl-xl {
+  border-bottom-left-radius: var(--zd-border-radius-xl) !important;
+}
+
+.u-br-br-xl {
+  border-bottom-right-radius: var(--zd-border-radius-xl) !important;
+}
+
+.u-br-l-xl {
+  border-top-left-radius: var(--zd-border-radius-xl) !important;
+  border-bottom-left-radius: var(--zd-border-radius-xl) !important;
+}
+
+.u-br-r-xl {
+  border-top-right-radius: var(--zd-border-radius-xl) !important;
+  border-bottom-right-radius: var(--zd-border-radius-xl) !important;
+}
+
+.u-br-t-xl {
+  border-top-left-radius: var(--zd-border-radius-xl) !important;
+  border-top-right-radius: var(--zd-border-radius-xl) !important;
+}
+
+.u-br-tl-xl {
+  border-top-left-radius: var(--zd-border-radius-xl) !important;
+}
+
+.u-br-tr-xl {
+  border-top-right-radius: var(--zd-border-radius-xl) !important;
+}
+/* stylelint-enable declaration-no-important */
