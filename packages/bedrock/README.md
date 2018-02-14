@@ -1,36 +1,32 @@
-# Bedrock CSS [![Build Status](https://travis-ci.com/zendeskgarden/css-bedrock.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-bedrock)
+# @zendeskgarden/css-bedrock
 
-The `garden-css-bedrock` package contains foundational CSS for Garden
-fonts, typography, resets, layouts, and utilities.
+This package provides a mostly reasonable CSS reset layered on top of
+[Normalize.css](http://necolas.github.io/normalize.css/).
 
 ## Installation
 
-    $ npm install --save-dev @zendesk/garden-css-bedrock
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages.
+```sh
+npm install --save-dev @zendesk/garden-css-bedrock
+```
 
 ## Usage
 
+Once installed, bedrock CSS can be accessed via `postcss-import`.
+
+```css
+@import '@zendesk/garden-css-bedrock';
+```
+
 The distribution for Bedrock CSS contains global styling rules to help
-projects get started with Garden designs. In some cases, the
-distribution CSS may contain too much or too little of the CSS your
-project requires. In that case import source files of interest from this
-package and use PostCSS to include them in your asset pipeline.
+projects get started with Garden designs. In addition to Normalize.css,
+Bedrock includes:
 
-The [demo](http://garden.zendesk.com/css-bedrock/) is probably your
-best bet for discovering the styling classes that Bedrock CSS provides.
+* Garden's system font stack applied to page.
+* Base font size (14px) applied to the page.
+* Reset `box-sizing` to `border-box` for all elements.
+* A default treatment for anchor elements.
+* Headings (1-6) reset to inherit `font-size`.
+* Browser `margin` and `padding` stripped from block elements.
 
-## Tests
-
-    $ npm test
-
-## Demo
-
-    $ npm start
-
-## Contributing
-
-See [LANDSCAPE
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Contributing).
+See https://zendeskgarden.github.io/css-components/bedrock/ for a
+demonstration of the resets provided by this package.

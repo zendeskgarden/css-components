@@ -1,5 +1,6 @@
 # Change Log
 
+<a name="3.1.0"></a>
 ## [3.1.0] - 2017-10-09
 ### Added (per [#22](https://github.com/zendeskgarden/css-bedrock/pull/22))
 - Visibility utility classes
