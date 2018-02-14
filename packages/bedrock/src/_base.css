@@ -1,0 +1,118 @@
+@import '@zendesk/garden-css-variables';
+
+:root {
+  --zd-anchor-color: var(--zd-color-pelorous);
+  --zd-anchor-color-hover: var(--zd-anchor-color);
+  --zd-html-background-color: var(--zd-color-white);
+  --zd-html-box-sizing: border-box;
+  --zd-html-font-family: var(--zd-font-family-system);
+  --zd-html-font-feature-settings: 'kern';
+  --zd-html-font-kerning: normal;
+  --zd-html-font-size: 14px;
+  --zd-html-line-height: var(--zd-spacing);
+  --zd-html-text-color: var(--zd-color-dark-gray);
+  --zd-html-text-rendering: optimizeLegibility;
+}
+
+/* 1. Ensure the page always fills at least the entire viewport height.
+ * 2. Force visible scrollbars to prevent awkard jumps when navigating between
+ * pages that do/don't have enough content to produce natural scrollbars. */
+html {
+  background-color: var(--zd-html-background-color);
+  min-height: 100%; /* [1] */
+  box-sizing: var(--zd-html-box-sizing);
+  overflow-y: scroll; /* [2] */
+  text-rendering: var(--zd-html-text-rendering);
+  line-height: var(--zd-html-line-height);
+  color: var(--zd-html-text-color);
+  font-feature-settings: var(--zd-html-font-feature-settings);
+  font-kerning: var(--zd-html-font-kerning);
+  font-family: var(--zd-html-font-family);
+  font-size: var(--zd-html-font-size);
+}
+
+* { font-weight: inherit; }
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+a { color: var(--zd-anchor-color); }
+
+a,
+ins,
+u { text-decoration: none; }
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: var(--zd-anchor-color-hover);
+}
+
+a:focus { outline: none; }
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: inherit;
+  font-family: inherit;
+}
+
+code { font-size: .95em; }
+
+code,
+kbd,
+pre,
+samp { font-family: var(--zd-font-family-monospace); }
+
+fieldset,
+iframe { border: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-size: inherit; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+fieldset,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid;
+}
+
+ol,
+ul { list-style: none; }
+
+img { max-width: 100%; }
+
+svg { max-height: 100%; }
+
+/* stylelint-disable-next-line declaration-no-important */
+[tabindex='-1']:focus { outline: none !important; }
