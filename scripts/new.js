@@ -11,8 +11,8 @@ const ncp = require('ncp').ncp;
 const path = require('path');
 const rimraf = require('rimraf');
 
-Handlebars.registerHelper('capitalize', ([first, ...rest]) =>
-  `${first.toUpperCase()}${rest.join('')}`);
+/* eslint-disable-next-line max-len */
+Handlebars.registerHelper('capitalize', ([first, ...rest]) => `${first.toUpperCase()}${rest.join('')}`);
 
 const demo = path.join(process.cwd(), 'demo');
 const packages = path.join(process.cwd(), 'packages');
