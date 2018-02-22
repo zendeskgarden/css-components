@@ -2,29 +2,29 @@
 @import '_variables';
 
 :root {
-  --zd-btn-font-size: var(--zd-font-size-zeta);
+  --zd-btn-font-size: var(--zd-font-size-epsilon);
   --zd-btn-font-weight: var(--zd-font-weight-regular);
   --zd-btn-background-color: transparent;
   --zd-btn-border-color: var(--zd-color-pelorous);
   --zd-btn-border-radius: 4px;
   --zd-btn-border-width: 1px;
-  --zd-btn-line-height: 30px;
-  --zd-btn-padding: calc(27 / 12 * 1em);
-  --zd-btn-min-width: calc(calc(46 / 12 * 1em) + calc(var(--zd-btn-padding) * 2));
+  --zd-btn-line-height: 38px;
+  --zd-btn-padding: calc(27 / 14 * 1em);
+  --zd-btn-min-width: calc(calc(66 / 14 * 1em) + calc(var(--zd-btn-padding) * 2));
   --zd-btn-transition:
     border-color .25s ease-in-out,
     box-shadow .1s ease-in-out,
     background-color .25s ease-in-out,
     color .25s ease-in-out;
-  --zd-btn--large-font-size: var(--zd-font-size-epsilon);
-  --zd-btn--large-line-height: 46px;
-  --zd-btn--large-padding: calc(27 / 14 * 1em);
-  --zd-btn--large-min-width: calc(calc(86 / 14 * 1em) + calc(var(--zd-btn--large-padding) * 2));
-  --zd-btn--medium-font-size: var(--zd-font-size-epsilon);
-  --zd-btn--medium-line-height: 38px;
-  --zd-btn--medium-padding: calc(27 / 14 * 1em);
-  --zd-btn--medium-min-width: calc(calc(66 / 14 * 1em) + calc(var(--zd-btn--medium-padding) * 2));
+  --zd-btn--lg-font-size: var(--zd-font-size-epsilon);
+  --zd-btn--lg-line-height: 46px;
+  --zd-btn--lg-padding: calc(27 / 14 * 1em);
+  --zd-btn--lg-min-width: calc(calc(86 / 14 * 1em) + calc(var(--zd-btn--lg-padding) * 2));
   --zd-btn--pill-border-radius: 100px;
+  --zd-btn--sm-font-size: var(--zd-font-size-zeta);
+  --zd-btn--sm-line-height: 30px;
+  --zd-btn--sm-padding: calc(27 / 12 * 1em);
+  --zd-btn--sm-min-width: calc(calc(46 / 12 * 1em) + calc(var(--zd-btn--sm-padding) * 2));
 }
 
 /* 1. IE inner spacing fix.
@@ -65,18 +65,18 @@
 
 .c-btn--pill { border-radius: var(--zd-btn--pill-border-radius); }
 
-.c-btn--medium {
-  padding: 0 var(--zd-btn--medium-padding);
-  min-width: var(--zd-btn--medium-min-width);
-  line-height: var(--zd-btn--medium-line-height);
-  font-size: var(--zd-btn--medium-font-size);
+.c-btn--sm {
+  padding: 0 var(--zd-btn--sm-padding);
+  min-width: var(--zd-btn--sm-min-width);
+  line-height: var(--zd-btn--sm-line-height);
+  font-size: var(--zd-btn--sm-font-size);
 }
 
-.c-btn--large {
-  padding: 0 var(--zd-btn--large-padding);
-  min-width: var(--zd-btn--large-min-width);
-  line-height: var(--zd-btn--large-line-height);
-  font-size: var(--zd-btn--large-font-size);
+.c-btn--lg {
+  padding: 0 var(--zd-btn--lg-padding);
+  min-width: var(--zd-btn--lg-min-width);
+  line-height: var(--zd-btn--lg-line-height);
+  font-size: var(--zd-btn--lg-font-size);
 }
 
 .c-btn--full {

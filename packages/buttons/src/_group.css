@@ -7,8 +7,8 @@
     inset 0 0 0 3px
     color(var(--zd-color-white) alpha(30%));
   --zd-btn-group--primary-line-height: var(--zd-btn--icon-size);
-  --zd-btn-group--primary--large-line-height: var(--zd-btn--icon--large-size);
-  --zd-btn-group--primary--medium-line-height: var(--zd-btn--icon--medium-size);
+  --zd-btn-group--primary--sm-line-height: var(--zd-btn--icon--sm-size);
+  --zd-btn-group--primary--lg-line-height: var(--zd-btn--icon--lg-size);
 }
 
 .l-btn-group {
@@ -55,14 +55,14 @@
   line-height: var(--zd-btn-group--primary-line-height);
 }
 
-.l-btn-group .c-btn--medium.c-btn:--btn-primary,
-.l-btn-group .c-btn--medium:--btn-disabled {
-  line-height: var(--zd-btn-group--primary--medium-line-height);
+.l-btn-group .c-btn--sm.c-btn:--btn-primary,
+.l-btn-group .c-btn--sm:--btn-disabled {
+  line-height: var(--zd-btn-group--primary--sm-line-height);
 }
 
-.l-btn-group .c-btn--large.c-btn:--btn-primary,
-.l-btn-group .c-btn--large:--btn-disabled {
-  line-height: var(--zd-btn-group--primary--large-line-height);
+.l-btn-group .c-btn--lg.c-btn:--btn-primary,
+.l-btn-group .c-btn--lg:--btn-disabled {
+  line-height: var(--zd-btn-group--primary--lg-line-height);
 }
 
 .l-btn-group.is-rtl {
