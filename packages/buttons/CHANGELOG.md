@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# 4.0.0 (2018-02-22)
+
+
+### Features
+
+* add css-buttons package to monorepo ([#3](https://github.com/zendeskgarden/css-components/issues/3)) ([239d9a3](https://github.com/zendeskgarden/css-components/commit/239d9a3))
+* **buttons:** update default size ([#30](https://github.com/zendeskgarden/css-components/issues/30)) ([52fa695](https://github.com/zendeskgarden/css-components/commit/52fa695))
+
+
+### BREAKING CHANGES
+
+* **buttons:** the default `.c-btn` now renders the previous `.c-btn--medium` size.
+
+The following table describes the CSS class mapping needed upon upgrade. Modifiers were renamed for consistency with other Garden components (menus, tables, form elements):
+
+BEFORE | AFTER
+-------- | -------
+`.c-btn` | `.c-btn.c-btn--sm`
+`.c-btn.c-btn--medium` | `.c-btn`
+`.c-btn.c-btn--large` | `.c-btn.c-btn--lg`
+
+
+
+
 <a name="3.7.0"></a>
 # 3.7.0 (2017-12-21)
 
