@@ -1,0 +1,28 @@
+:root {
+  --zd-btn--muted-background-color: var(--zd-color-platinum);
+  --zd-btn--muted-color: var(--zd-color-iron);
+  --zd-btn--muted-color-active: var(--zd-color-dark-gray);
+}
+
+.c-btn--muted {
+  border: none;
+  background-color: transparent;
+  color: var(--zd-btn--muted-color);
+}
+
+.c-btn--muted.c-btn--muted:--btn-focused {
+  outline: none;
+  box-shadow: none;
+  background-color: var(--zd-btn--muted-background-color);
+  color: var(--zd-btn--muted-color-active);
+}
+
+.c-btn--muted.c-btn--muted:--btn-hovered {
+  background-color: transparent;
+  color: var(--zd-btn--muted-color-active);
+}
+
+.c-btn--muted.c-btn--muted:--btn-active {
+  background-color: transparent;
+  color: var(--zd-btn--muted-color-active);
+}
