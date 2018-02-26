@@ -14,7 +14,7 @@ includes:
 
 * `├── package.json` – the top-level "project" package that contains
   the dependencies and scripts needed to manage the multi-package repo.
-  This package will never be published to the registry.
+  _This package will never be published to the registry._
 * `├── packages/` – the folder that contains individual `@zendeskgarden`
   packages which are published to the registry.<br>
   `│   ├── avatars/`<br>
@@ -23,6 +23,32 @@ includes:
   `│   └── etc.`
 * `└── demo/` – HTML pages used to test and demonstrate CSS component
   styling.
+
+Garden CSS selectors use a form of BEM (Block Element Modifier) naming.
+The naming convention follows a pattern:
+
+```css
+.block {}
+.block__element {}
+.block--modifier {}
+```
+
+* `.block` represents a high-level component.
+* `.block__element` represents a descendant element of the `.block`.
+* `.block--modifier` represents a style variation of `.block`.
+
+In addition, Garden CSS incorporates namespace prefixes to encourage
+self-documenting transparency. For example:
+
+```css
+.c-btn--pill /* a pill-styled button Component */
+.u-jitterfix /* the jitterfix Utility */
+.is-active /* a stateful namespace to indicate transient styling */
+```
+
+Check out the
+[Namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
+post for more detail on these conventions.
 
 ## Versioning Workflow
 
@@ -34,7 +60,7 @@ The [pull request workflow](#pull-request-workflow) along with the [PR
 template](PULL_REQUEST_TEMPLATE.md) will help us determine how to
 version your contributions.
 
-All changes are recorded in applicable CHANGELOG files.
+All changes are recorded in applicable package CHANGELOG files.
 
 ## Development Workflow
 
