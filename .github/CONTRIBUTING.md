@@ -16,13 +16,11 @@ includes:
   the dependencies and scripts needed to manage the multi-package repo.
   This package will never be published to the registry.
 * `├── packages/` – the folder that contains individual `@zendeskgarden`
-  packages which are published to the registry.
-
-  `│   ├── avatars/`<br/>
-  `│   ├── buttons/`<br/>
-  `│   ├── tabs/`<br/>
+  packages which are published to the registry.<br>
+  `│   ├── avatars/`<br>
+  `│   ├── buttons/`<br>
+  `│   ├── tabs/`<br>
   `│   └── etc.`
-
 * `└── demo/` – HTML pages used to test and demonstrate CSS component
   styling.
 
