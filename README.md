@@ -1,15 +1,34 @@
 # Garden CSS Components [![Build Status](https://travis-ci.com/zendeskgarden/css-components.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-components)
 
-Garden is a [design
-system](https://www.designbetter.co/design-systems-handbook) for
-Zendesk. Garden CSS provides consistent styling for Garden components.
-Component CSS is maintained following a monorepo approach where
-components are packaged and published individually but combined under
-this single repository.
+> :seedling: Garden is a design system for Zendesk
+
+Garden CSS provides consistent styling for Garden components. Component
+CSS is maintained following a multi-package approach where components
+are packaged and published individually but combined under this single
+repository.
+
+Package |
+------- |
+[`@zendesk/garden-css-arrows`](/packages/arrows) |
+[`@zendesk/garden-css-avatars`](/packages/avatars) |
+[`@zendesk/garden-css-bedrock`](/packages/bedrock) |
+[`@zendesk/garden-css-buttons`](/packages/buttons) |
+[`@zendesk/garden-css-callouts`](/packages/callouts) |
+[`@zendesk/garden-css-chrome`](/packages/chrome) |
+[`@zendesk/garden-css-forms`](/packages/forms) |
+[`@zendesk/garden-css-menus`](/packages/menus) |
+[`@zendesk/garden-css-modals`](/packages/modals) |
+[`@zendesk/garden-css-pagination`](/packages/pagination) |
+[`@zendesk/garden-css-tables`](/packages/tables) |
+[`@zendesk/garden-css-tabs`](/packages/tabs) |
+[`@zendesk/garden-css-tags`](/packages/tags) |
+[`@zendesk/garden-css-tooltips`](/packages/tooltips) |
+[`@zendesk/garden-css-utilities`](/packages/utilities) |
+[`@zendesk/garden-css-variables`](/packages/variables) |
 
 Component CSS may be used in isolation or together with a variety of web
 application frameworks. However, many projects will benefit from the
-added functionality provided by [Garden React
+added behavioral functionality provided by [Garden React
 Components](https://github.com/zendeskgarden/react-components).
 
 ## Installation
@@ -49,3 +68,24 @@ available:
 - `yarn new <component>` to generate a new CSS `component` based on a
   package template. The new component demo page is launched upon
   completion.
+
+## Contribution
+
+Thanks for your interest in Garden! Community involvement helps make our
+design system fresh and tasty for everyone.
+
+Got issues with what you find here? Please feel free to create an
+[issue](/issues/new).
+
+If you'd like to take a crack at making some changes, please follow our
+[contributing](/.github/CONTRIBUTING.md) documentation for details
+needed to submit a PR.
+
+Community behavior is benevolently ruled by a [code of
+conduct](/.github/CODE_OF_CONDUCT.md). Please participate accordingly.
+
+## License
+
+Copyright 2018 Zendesk
+
+Licensed under the [Apache License, Version 2.0](/.github/LICENSE.md)
