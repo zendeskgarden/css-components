@@ -6,4 +6,5 @@
   --zd-btn-hovered-background-color-saturation: +10%;
   --zd-btn--anchor-disabled-color: var(--zd-color-aluminum);
   --zd-btn--danger-color: var(--zd-color-flamingo);
+  --zd-btn--muted-color: var(--zd-color-aluminum);
 }

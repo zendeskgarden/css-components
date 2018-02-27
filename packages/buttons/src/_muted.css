@@ -3,13 +3,12 @@
 
 :root {
   --zd-btn--muted-background-color: var(--zd-color-platinum);
-  --zd-btn--muted-color: var(--zd-color-aluminum);
   --zd-btn--muted-color-active: var(--zd-color-dark-gray);
   --zd-btn--muted-color-disabled: var(--zd-color-aluminum);
 }
 
 .c-btn--muted {
-  border: none;
+  border-color: var(--zd-btn--muted-color);
   background-color: transparent;
   color: var(--zd-btn--muted-color);
 }
@@ -22,11 +21,13 @@
 }
 
 .c-btn--muted.c-btn--muted:--btn-hovered {
+  border-color: var(--zd-btn--muted-color);
   background-color: transparent;
   color: var(--zd-btn--muted-color-active);
 }
 
 .c-btn--muted.c-btn--muted:--btn-active {
+  border-color: var(--zd-btn--muted-color);
   background-color: transparent;
   color: var(--zd-btn--muted-color-active);
 }
@@ -34,4 +35,8 @@
 .c-btn--muted.c-btn--muted:--btn-disabled {
   background-color: var(--zd-btn-disabled-background-color);
   color: var(--zd-btn--muted-color-disabled);
+}
+
+.c-btn--muted.c-btn--basic {
+  border: none;
 }

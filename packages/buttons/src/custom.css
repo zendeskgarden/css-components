@@ -30,6 +30,11 @@
   background-color: var(--zd-btn--custom-color);
 }
 
+.c-btn--custom.c-btn--muted {
+  border-color: var(--zd-btn--muted-color);
+  color: var(--zd-btn--muted-color);
+}
+
 .c-btn--custom:--btn-hovered {
   background-color: var(--zd-btn--custom-hovered-background-color);
 }
