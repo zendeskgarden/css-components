@@ -33,6 +33,7 @@
 }
 
 .c-btn.c-btn--muted:--btn-disabled {
+  border-color: transparent;
   background-color: var(--zd-btn-disabled-background-color);
   color: var(--zd-btn--muted-color-disabled);
 }
