@@ -13,26 +13,26 @@
   color: var(--zd-btn--muted-color);
 }
 
-.c-btn--muted.c-btn--muted:--btn-focused {
+.c-btn.c-btn--muted:--btn-focused {
   outline: none;
   box-shadow: none;
   background-color: var(--zd-btn--muted-background-color);
   color: var(--zd-btn--muted-color-active);
 }
 
-.c-btn--muted.c-btn--muted:--btn-hovered {
+.c-btn.c-btn--muted:--btn-hovered {
   border-color: var(--zd-btn--muted-color);
   background-color: transparent;
   color: var(--zd-btn--muted-color-active);
 }
 
-.c-btn--muted.c-btn--muted:--btn-active {
+.c-btn.c-btn--muted:--btn-active {
   border-color: var(--zd-btn--muted-color);
   background-color: transparent;
   color: var(--zd-btn--muted-color-active);
 }
 
-.c-btn--muted.c-btn--muted:--btn-disabled {
+.c-btn.c-btn--muted:--btn-disabled {
   background-color: var(--zd-btn-disabled-background-color);
   color: var(--zd-btn--muted-color-disabled);
 }

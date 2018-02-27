@@ -14,6 +14,7 @@
 }
 
 .c-btn.c-btn--dark.c-btn--muted {
+  border-color: var(--zd-btn--dark-muted-color);
   color: var(--zd-btn--dark-muted-color);
 }
 
@@ -24,10 +25,12 @@
 }
 
 .c-btn.c-btn--dark.c-btn--muted:--btn-hovered {
+  border-color: var(--zd-btn--dark-muted-color);
   color: var(--zd-btn--dark-muted-color-active);
 }
 
 .c-btn.c-btn--dark.c-btn--muted:--btn-active {
+  border-color: var(--zd-btn--dark-muted-color);
   color: var(--zd-btn--dark-muted-color-active);
 }
 
