@@ -37,5 +37,5 @@ classes.
 ### Behavior
 
 See the
-[&lt;Avatar&gt;](http://garden.zendesk.com/react-components/#!/Avatar)
+[&lt;Avatar&gt;](http://zendeskgarden.github.io/react-components/#!/Avatar)
 component for supported props and behavior.
