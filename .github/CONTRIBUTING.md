@@ -121,4 +121,4 @@ modified using option [flags](https://github.com/lerna/lerna#flags)
 ## License
 
 By contributing to Garden, you agree that your contributions will be
-licensed under the [Apache License, Version 2.0](LICENSE.md).
+licensed under the [Apache License, Version 2.0](../LICENSE.md).
