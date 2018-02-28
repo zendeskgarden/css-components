@@ -3,9 +3,39 @@
 :root {
   --zd-btn--dark-disabled-background-color: var(--zd-color-submarine);
   --zd-btn--dark-disabled-color: var(--zd-color-algae);
+  --zd-btn--dark-muted-color: var(--zd-color-breaker-bay);
+  --zd-btn--dark-muted-background-color-active: var(--zd-color-sherpa-blue);
+  --zd-btn--dark-muted-color-active: var(--zd-color-submarine);
 }
 
 .c-btn.c-btn--dark:--btn-disabled {
   background-color: var(--zd-btn--dark-disabled-background-color);
   color: var(--zd-btn--dark-disabled-color);
 }
+
+.c-btn.c-btn--dark.c-btn--muted {
+  border-color: var(--zd-btn--dark-muted-color);
+  color: var(--zd-btn--dark-muted-color);
+}
+
+/* stylelint-disable selector-max-specificity */
+.c-btn.c-btn--dark.c-btn--muted:--btn-focused {
+  background-color: var(--zd-btn--dark-muted-background-color-active);
+  color: var(--zd-btn--dark-muted-color-active);
+}
+
+.c-btn.c-btn--dark.c-btn--muted:--btn-hovered {
+  border-color: var(--zd-btn--dark-muted-color);
+  color: var(--zd-btn--dark-muted-color-active);
+}
+
+.c-btn.c-btn--dark.c-btn--muted:--btn-active {
+  border-color: var(--zd-btn--dark-muted-color);
+  color: var(--zd-btn--dark-muted-color-active);
+}
+
+.c-btn.c-btn--dark.c-btn--muted:--btn-disabled {
+  background-color: var(--zd-btn--dark-disabled-background-color);
+  color: var(--zd-btn--dark-disabled-color);
+}
+/* stylelint-enable selector-max-specificity */
