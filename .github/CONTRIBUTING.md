@@ -17,7 +17,8 @@ includes:
   _This package will never be published to the registry._
 * `├── packages/` – the folder that contains individual `@zendeskgarden`
   packages which are published to the registry.<br>
-  `│   ├── avatars/`<br>
+  `│   ├── .template/` – a special template package referenced by `yarn new`
+  to generate a component.<br>
   `│   ├── buttons/`<br>
   `│   ├── tabs/`<br>
   `│   └── etc.`
