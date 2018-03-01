@@ -62,4 +62,4 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 Copyright 2018 Zendesk
 
-Licensed under the [Apache License, Version 2.0](.github/LICENSE.md)
+Licensed under the [Apache License, Version 2.0](LICENSE.md)

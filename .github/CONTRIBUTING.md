@@ -17,7 +17,8 @@ includes:
   _This package will never be published to the registry._
 * `├── packages/` – the folder that contains individual `@zendeskgarden`
   packages which are published to the registry.<br>
-  `│   ├── avatars/`<br>
+  `│   ├── .template/` – a special template package referenced by `yarn new`
+  to generate a component.<br>
   `│   ├── buttons/`<br>
   `│   ├── tabs/`<br>
   `│   └── etc.`
@@ -121,4 +122,4 @@ modified using option [flags](https://github.com/lerna/lerna#flags)
 ## License
 
 By contributing to Garden, you agree that your contributions will be
-licensed under the [Apache License, Version 2.0](LICENSE.md).
+licensed under the [Apache License, Version 2.0](../LICENSE.md).
