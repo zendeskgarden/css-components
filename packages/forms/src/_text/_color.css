@@ -1,5 +1,5 @@
 :root {
-  --zd-txt__input-color-swatch-border-radius: 2px;
+  --zd-txt__input-color-swatch-border-radius: calc(var(--zd-txt__input-border-radius) / 2);
   --zd-txt__input-color-swatch-height: 28px;
   --zd-txt__input-color-swatch-margin-horizontal: -11px;
   --zd-txt__input-color-swatch-margin-vertical: calc(calc(var(--zd-txt__input-height) - var(--zd-txt__input-color-swatch-height)) / 2 * -1 + 1px);

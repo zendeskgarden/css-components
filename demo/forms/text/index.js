@@ -35,6 +35,13 @@ $(document).ready(function() {
     }
   });
 
+  // Override [type="file"] focus for FireFox, which only focuses "browse".
+  $(document).on('focus', '.c-txt__input[type="file"]', function() {
+    $(this).addClass('is-focused');
+  }).on('blur', '.c-txt__input[type="file"]', function() {
+    $(this).removeClass('is-focused');
+  });
+
   $(document).on('focus', '.c-txt__input--media input', function() {
     $(this).parent().addClass('is-focused');
   }).on('blur', '.c-txt__input--media input', function() {

@@ -17,6 +17,10 @@
   min-height: var(--zd-txt--sm__input-height);
 }
 
+.c-txt__input[type='file'] {
+  max-height: var(--zd-txt--sm__input-height);
+}
+
 .c-txt__input--sm.c-txt__input--media {
   padding-right: 0;
   padding-left: 0;
