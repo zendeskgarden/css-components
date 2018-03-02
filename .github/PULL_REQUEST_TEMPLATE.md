@@ -13,6 +13,8 @@
 
 ## Detail
 
+<!-- closes GITHUB_ISSUE -->
+
 <!-- supporting details; screen shot, code, etc. -->
 
 ## Checklist
