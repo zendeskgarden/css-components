@@ -13,9 +13,9 @@
 
 ## Detail
 
-<!-- closes GITHUB_ISSUE -->
-
 <!-- supporting details; screen shot, code, etc. -->
+
+<!-- closes GITHUB_ISSUE -->
 
 ## Checklist
 
