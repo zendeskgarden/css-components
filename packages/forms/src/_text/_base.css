@@ -99,7 +99,10 @@
   line-height: 1;
 }
 
-.c-txt__input[type='number'] { appearance: textfield; } /* [8] */
+/* stylelint-disable-next-line */
+@media screen and (min--moz-device-pixel-ratio: 0) {
+  .c-txt__input[type='number'] { appearance: textfield; } /* [8] */
+}
 
 .c-txt.is-rtl,
 .c-txt__input.is-rtl,
