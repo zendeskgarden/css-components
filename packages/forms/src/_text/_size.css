@@ -17,8 +17,17 @@
   min-height: var(--zd-txt--sm__input-height);
 }
 
-.c-txt__input[type='file'] {
+.c-txt__input--sm[type='date'],
+.c-txt__input--sm[type='datetime-local'],
+.c-txt__input--sm[type='file'],
+.c-txt__input--sm[type='month'],
+.c-txt__input--sm[type='time'],
+.c-txt__input--sm[type='week'] {
   max-height: var(--zd-txt--sm__input-height);
+}
+
+.c-txt__input--sm::-ms-browse {
+  font-size: var(--zd-font-size-milli);
 }
 
 .c-txt__input--sm.c-txt__input--media {

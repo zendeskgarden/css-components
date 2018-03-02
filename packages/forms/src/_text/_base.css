@@ -86,8 +86,16 @@
 
 .c-txt__input:invalid { box-shadow: none; } /* [7] */
 
-.c-txt__input[type='file'] {
+.c-txt__input[type='date'],
+.c-txt__input[type='datetime-local'],
+.c-txt__input[type='file'],
+.c-txt__input[type='month'],
+.c-txt__input[type='time'],
+.c-txt__input[type='week'] {
   max-height: var(--zd-txt__input-height);
+}
+
+.c-txt__input[type='file'] {
   line-height: 1;
 }
 
