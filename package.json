@@ -9,7 +9,7 @@
     "lint": "eslint scripts/*.js && lerna run lint --stream",
     "new": "scripts/new.js",
     "prepare": "yarn build",
-    "start": "lerna run watch --parallel --stream & live-server demo",
+    "start": "live-server demo & lerna run watch --parallel --stream",
     "tag": "lerna publish --conventional-commits",
     "test": "lerna run test --stream"
   },
