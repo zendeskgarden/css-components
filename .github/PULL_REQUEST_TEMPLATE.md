@@ -15,6 +15,8 @@
 
 <!-- supporting details; screen shot, code, etc. -->
 
+<!-- closes GITHUB_ISSUE -->
+
 ## Checklist
 
 * [ ] :ok_hand: style updates are Garden Designer approved (add the

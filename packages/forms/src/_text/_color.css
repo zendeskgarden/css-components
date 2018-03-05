@@ -1,0 +1,47 @@
+:root {
+  --zd-txt__input-color-swatch-border-radius: calc(var(--zd-txt__input-border-radius) / 2);
+  --zd-txt__input-color-swatch-height: 28px;
+  --zd-txt__input-color-swatch-margin-horizontal: -11px;
+  --zd-txt__input-color-swatch-margin-vertical: calc(calc(var(--zd-txt__input-height) - var(--zd-txt__input-color-swatch-height)) / 2 * -1 + 1px);
+  --zd-txt__input-color-swatch-width: calc(100% + calc(var(--zd-txt__input-color-swatch-margin-horizontal) * -2));
+  --zd-txt--sm__input-color-swatch-height: 24px;
+  --zd-txt--sm__input-color-swatch-margin-horizontal: -9px;
+  --zd-txt--sm__input-color-swatch-margin-vertical: calc(calc(var(--zd-txt--sm__input-height) - var(--zd-txt--sm__input-color-swatch-height)) / 2 * -1 + 1px);
+  --zd-txt--sm__input-color-swatch-width: calc(100% + calc(var(--zd-txt--sm__input-color-swatch-margin-horizontal) * -2));
+}
+
+/* 1. Update color swatch size for Edge. */
+
+@supports (-ms-ime-align: auto) {
+  .c-txt__input[type='color'] { padding: 1px 3px; } /* [1] */
+
+  .c-txt--sm__input[type='color'] { padding: 0 2px; } /* [1] */
+}
+
+.c-txt__input::-moz-color-swatch {
+  margin-top: var(--zd-txt__input-color-swatch-margin-vertical);
+  margin-left: var(--zd-txt__input-color-swatch-margin-horizontal);
+  border: none;
+  border-radius: var(--zd-txt__input-color-swatch-border-radius);
+  width: var(--zd-txt__input-color-swatch-width);
+  height: var(--zd-txt__input-color-swatch-height);
+}
+
+.c-txt__input::-webkit-color-swatch {
+  margin: var(--zd-txt__input-color-swatch-margin-vertical) var(--zd-txt__input-color-swatch-margin-horizontal);
+  border: none;
+  border-radius: var(--zd-txt__input-color-swatch-border-radius);
+}
+
+.c-txt__input--sm::-webkit-color-swatch {
+  margin: var(--zd-txt--sm__input-color-swatch-margin-vertical) var(--zd-txt--sm__input-color-swatch-margin-horizontal);
+}
+
+.c-txt__input--sm::-moz-color-swatch {
+  margin-top: var(--zd-txt--sm__input-color-swatch-margin-vertical);
+  margin-left: var(--zd-txt--sm__input-color-swatch-margin-horizontal);
+  width: var(--zd-txt--sm__input-color-swatch-width);
+  height: var(--zd-txt--sm__input-color-swatch-height);
+}
+
+.c-txt__input::-webkit-color-swatch-wrapper { padding: 0; }

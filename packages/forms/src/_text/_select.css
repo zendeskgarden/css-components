@@ -26,17 +26,18 @@
 }
 
 /* 1. Select reset.
- * 2. Button reset. */
+ * 2. Button reset.
+ * 3. Calendar picker reset. */
 
 .c-txt__input--select {
   appearance: none; /* [1] */
   position: relative;
-  cursor: pointer;
   padding-right: var(--zd-txt__input--select-padding-right);
   text-align: left; /* [2] */
 }
 
-.c-txt__input--select:not(select)::before {
+.c-txt__input--select:not(select)::before,
+.c-txt__input--select::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 0;
   right: 0;
@@ -68,6 +69,12 @@ select.c-txt__input--select:-moz-focusring {
   color: transparent; /* [1] */
 }
 
+.c-txt__input--select::-webkit-calendar-picker-indicator {
+  background-color: transparent; /* [2] */
+  padding: 0; /* [2] */
+  color: transparent; /* [2] */
+}
+
 .c-txt__input--select:--txt-hovered:not(select)::before,
 .c-txt__input--select:--txt-focused:not(select)::before,
 select.c-txt__input--select:--txt-hovered,
@@ -94,7 +101,8 @@ select.c-txt__input--select[disabled] {
   text-align: right;
 }
 
-.is-rtl.c-txt__input--select:not(select)::before {
+.is-rtl.c-txt__input--select:not(select)::before,
+.is-rtl.c-txt__input--select::-webkit-calendar-picker-indicator {
   right: auto;
   left: 0;
 }

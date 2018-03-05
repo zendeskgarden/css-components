@@ -3,9 +3,10 @@
 <head>
   <title>Text &amp; Textarea / CSS Components / Zendesk Garden</title>
   <link href="../../bedrock/index.css" rel="stylesheet">
+  <link href="../../buttons/index.css" rel="stylesheet">
   <link href="../../menus/index.css" rel="stylesheet">
   <link href="../../tags/index.css" rel="stylesheet">
-  <link href="//zendeskgarden.github.io/site.css" rel="stylesheet">
+  <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="../index.css" rel="stylesheet">
   <link href="../custom.css" rel="stylesheet">
   <link href="../../utilities/index.css" rel="stylesheet">
@@ -142,7 +143,7 @@
           </div>
         </div>
       </form>
-      <h3 class="u-delta u-mb">Modifiers</h3>
+      <h3 class="u-gamma u-mb">Modifiers</h3>
       <p class="u-mb">Use the
       <code class="c-code">.c-txt--inline</code>
       class modifier to layout text controls inline.</p>
@@ -216,7 +217,7 @@
           <textarea class="c-txt__input c-txt__input--area is-resizable" id="txtarea-1" placeholder=".c-txt__input.c-txt__input--area.is-resizable"></textarea>
         </div>
       </form>
-      <h3 class="u-delta u-mb">States</h3>
+      <h3 class="u-gamma u-mb">States</h3>
       <div class="c-txt u-mb-lg">
         <input class="c-txt__input is-hovered" placeholder=".c-txt__input.is-hovered" type="text">
       </div>
@@ -229,6 +230,71 @@
       <div class="c-txt u-mb-lg">
         <input class="c-txt__input" disabled placeholder=".c-txt__input[disabled]" type="text">
       </div>
+      <h3 class="u-gamma u-mb">Types</h3>
+      <p class="u-mb">The fields shown below demonstrate how
+        <code class="c-code">.c-txt__input</code> works in combination with
+        various input types. In general, we attempt to knock out non-standard
+        browser features (spinners, clear buttons, etc). Styling from the
+        <code class="c-code">.c-txt__input--select</code>
+        <a href="../dropdown">dropdown</a> modifier is added to fields that
+        support native calendar pickers.</p>
+      <form class="u-mb-lg">
+        <div class="l-grid">
+          <div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-color">Color</label>
+            <input class="c-txt__input" id="txt-type-color" placeholder="color" required type="color">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-date">Date</label>
+            <input class="c-txt__input c-txt__input--select" id="txt-type-date" placeholder="date" required type="date">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-datetime">Datetime-Local</label>
+            <input class="c-txt__input c-txt__input--select" id="txt-type-datetime" placeholder="datetime-local" required type="datetime-local">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-email">Email</label>
+            <input class="c-txt__input" id="txt-type-email" placeholder="email" required type="email">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-file">File</label>
+            <input class="c-txt__input" id="txt-type-file" placeholder="file" required type="file">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-month">Month</label>
+            <input class="c-txt__input c-txt__input--select" id="txt-type-month" placeholder="month" required type="month">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-number">Number</label>
+            <input class="c-txt__input" id="txt-type-number" placeholder="number" required type="number">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-password">Password</label>
+            <input class="c-txt__input" id="txt-type-password" placeholder="password" required type="password">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-search">Search</label>
+            <input class="c-txt__input" id="txt-type-search" placeholder="search" required type="search">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-tel">Tel</label>
+            <input class="c-txt__input" id="txt-type-tel" placeholder="tel" required type="tel">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-time">Time</label>
+            <input class="c-txt__input" id="txt-type-time" placeholder="time" required type="time">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-url">URL</label>
+            <input class="c-txt__input" id="txt-type-url" placeholder="url" required type="url">
+          </div
+          ><div class="l-grid__item u-1/4 u-mb-sm">
+            <label class="c-txt__label" for="txt-type-week">Week</label>
+            <input class="c-txt__input c-txt__input--select" id="txt-type-week" placeholder="week" required type="week">
+          </div>
+        </div>
+        <button class="c-btn u-mt-sm" type="submit">Test</button>
+      </form>
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
@@ -276,7 +342,8 @@
       </section>
     </div>
   </main>
-  <script src="//zendeskgarden.github.io/site.js"></script>
+  <script src="//zendeskgarden.github.io/index.js"></script>
+  <script src="../../buttons/index.js"></script>
   <script src="../../menus/index.js"></script>
   <script src="../../tags/index.js"></script>
   <script src="../checkbox/index.js"></script>

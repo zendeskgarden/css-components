@@ -72,8 +72,8 @@ dependencies needed for development. A git `post-checkout` and
 development environment up to date as you checkout and merge between
 branches. After installation, the following commands are available:
 
-- `yarn start` to launch component demo server with live reload –
-  package source files will be watched for changes.
+- `yarn start`<sup>*</sup> to launch component demo server with live
+  reload – package source files will be watched for changes.
 - `yarn test`<sup>*</sup> to run tests across all component packages.
   Note this is run as a git `pre-push` hook for all packages that have
   changed since the last release.
