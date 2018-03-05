@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-forms@4.0.0...@zendesk/garden-css-forms@4.0.1) (2018-03-05)
+
+
+### Bug Fixes
+
+* **forms:** non-standard input field browser features ([#35](https://github.com/zendeskgarden/css-components/issues/35)) ([1fa6b96](https://github.com/zendeskgarden/css-components/commit/1fa6b96))
+
+
+
+
 <a name="4.0.0"></a>
 # 4.0.0 (2018-01-26)
 
