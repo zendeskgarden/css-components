@@ -43,6 +43,7 @@
 }
 
 .c-chrome__body__content__main {
+  flex: 1;
   order: var(--zd-chrome__body__content__main-order);
   background-color: var(--zd-chrome__body__content__main-background-color);
   overflow: auto;
