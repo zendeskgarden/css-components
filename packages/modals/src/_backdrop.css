@@ -10,8 +10,7 @@
   --zd-backdrop--center__dialog-max-height: calc(100vh - (2 * var(--zd-dialog-margin)));
 }
 
-/* 1. Fix for Firefox dialog .is-open animation.
- * 2. IE11 centering hack. */
+/* 1. Fix for Firefox dialog .is-open animation. */
 
 .l-backdrop {
   display: flex;
@@ -55,14 +54,6 @@
 .l-backdrop--center .c-dialog {
   margin: 0;
 }
-
-/* stylelint-disable selector-type-no-unknown, selector-no-vendor-prefix */
-_:-ms-input-placeholder, .l-backdrop--center .c-dialog {
-  right: 50%; /* [2] */
-  bottom: 50%; /* [2] */
-  transform: translate(50%, 50%); /* [2] */
-}
-/* stylelint-enable selector-type-no-unknown, selector-no-vendor-prefix */
 
 @custom-media --zd-dialog-viewport-small-height (height < 400px);
 @custom-media --zd-dialog-viewport-small-width (width < 700px);
