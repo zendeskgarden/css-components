@@ -1,0 +1,309 @@
+.l-backdrop{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:400;
+  background-color:rgba(0,0,0,.65);
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+.l-backdrop--center{
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+}
+
+.l-backdrop.is-rtl{
+  direction:rtl;
+}
+
+.l-backdrop.is-visible{
+  -webkit-animation:zd-backdrop-visible .15s ease-in;
+          animation:zd-backdrop-visible .15s ease-in;
+}
+
+.l-backdrop .c-dialog{
+  -webkit-animation-delay:.01s;
+          animation-delay:.01s;
+  margin:48px;
+  border-color:transparent;
+  -webkit-box-shadow:0 20px 30px 0 rgba(0,0,0,.32);
+          box-shadow:0 20px 30px 0 rgba(0,0,0,.32);
+  max-height:calc(100vh - 96px);
+  overflow:auto;
+}
+
+.l-backdrop--center .c-dialog{
+  margin:0;
+}
+
+.l-backdrop--center .c-dialog,_:-ms-input-placeholder{
+  right:50%;
+  bottom:50%;
+  transform:translate(50%,50%);
+}
+
+@media (max-height:399px){
+  .l-backdrop .c-dialog{
+    top:24px;
+    bottom:auto;
+    margin-bottom:24px;
+    max-height:none;
+  }
+}
+
+@media (max-width:699px){
+  .l-backdrop .c-dialog{
+    left:24px;
+  }
+
+  .l-backdrop.is-rtl .c-dialog{
+    right:24px;
+    left:auto;
+  }
+}
+
+.c-dialog{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  position:fixed;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  margin-bottom:48px;
+  border:1px solid #eee;
+  border-radius:4px;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+  -webkit-box-shadow:0 20px 30px 0 rgba(36,83,107,.15);
+          box-shadow:0 20px 30px 0 rgba(36,83,107,.15);
+  background-color:#fff;
+  width:544px;
+  min-height:60px;
+}
+
+.c-dialog:focus{
+  outline:none;
+}
+
+.c-dialog--large{
+  width:800px;
+}
+
+.c-dialog.is-open{
+  -webkit-animation-name:zd-dialog-open;
+          animation-name:zd-dialog-open;
+  -webkit-animation-duration:.3s;
+          animation-duration:.3s;
+  -webkit-animation-timing-function:ease-in;
+          animation-timing-function:ease-in;
+}
+
+.c-dialog.is-rtl{
+  direction:rtl;
+}
+
+.c-dialog__header{
+  display:block;
+  margin:0;
+  border-bottom:1px solid #eee;
+  padding:20px 40px;
+  line-height:1.42857;
+  color:#555;
+  font-size:14px;
+  font-weight:600;
+}
+
+.c-dialog__close{
+  display:block;
+  position:absolute;
+  top:10px;
+  right:20px;
+  -webkit-transition:background-color .1s ease-in-out;
+  transition:background-color .1s ease-in-out;
+  border:none;
+  border-radius:50%;
+  background-color:transparent;
+  cursor:pointer;
+  width:40px;
+  height:40px;
+  overflow:hidden;
+  text-decoration:none;
+  font-size:0;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+}
+
+.c-dialog__close:after,.c-dialog__close:before{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  -webkit-transition:opacity .25s ease-in-out;
+  transition:opacity .25s ease-in-out;
+  background-repeat:no-repeat;
+  background-position:50%;
+  background-size:20px;
+  content:"";
+}
+
+.c-dialog__close:before{
+  opacity:1;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23CCC'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+}
+
+.c-dialog__close:after{
+  opacity:0;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23555'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+}
+
+.c-dialog__close.is-focused:before,.c-dialog__close.is-hovered:before,.c-dialog__close:hover:before{
+  opacity:0;
+}
+
+.c-dialog__close.is-focused:after,.c-dialog__close.is-hovered:after,.c-dialog__close:hover:after{
+  opacity:1;
+}
+
+.c-dialog__close.is-focused,.c-dialog__close:focus{
+  outline:none;
+  background-color:#eee;
+}
+
+.c-dialog__close.is-active,.c-dialog__close:active{
+  background-color:transparent;
+}
+
+.c-dialog.is-rtl .c-dialog__close{
+  right:auto;
+  left:20px;
+}
+
+.c-dialog__body{
+  display:block;
+  margin:0;
+  padding:20px 40px 40px;
+  line-height:1.42857;
+  color:#777;
+  font-size:14px;
+}
+
+.c-dialog--large .c-dialog__body{
+  padding:20px 40px;
+}
+
+.c-dialog__footer{
+  display:block;
+  padding:0 40px 32px;
+  text-align:right;
+}
+
+.c-dialog--large .c-dialog__footer{
+  border-top:1px solid #eee;
+  padding:32px 40px;
+}
+
+.c-dialog.is-rtl .c-dialog__footer{
+  text-align:left;
+}
+
+.c-dialog--dark{
+  border-color:transparent;
+  -webkit-box-shadow:0 20px 30px 0 rgba(0,0,0,.15);
+          box-shadow:0 20px 30px 0 rgba(0,0,0,.15);
+  background-color:#03363d;
+}
+
+.c-dialog--dark .c-dialog__body{
+  color:#819a9e;
+}
+
+.c-dialog--dark .c-dialog__close:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2356777A'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+}
+
+.c-dialog--dark .c-dialog__close:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23819A9E'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+}
+
+.c-dialog--dark .c-dialog__close.is-focused{
+  background-color:#04444d;
+}
+
+.c-dialog--dark .c-dialog__header{
+  border-bottom-color:#04444d;
+  color:#fff;
+}
+
+.c-dialog--dark.c-dialog--large .c-dialog__footer{
+  border-top-color:#04444d;
+}
+
+@-webkit-keyframes zd-backdrop-visible{
+  0%{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes zd-backdrop-visible{
+  0%{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes zd-dialog-open{
+  0%{
+    -webkit-transform:scale(0);
+            transform:scale(0);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05);
+            transform:scale(1.05);
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes zd-dialog-open{
+  0%{
+    -webkit-transform:scale(0);
+            transform:scale(0);
+    opacity:0;
+  }
+
+  50%{
+    -webkit-transform:scale(1.05);
+            transform:scale(1.05);
+  }
+
+  to{
+    opacity:1;
+  }
+}

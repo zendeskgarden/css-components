@@ -1,0 +1,637 @@
+<!doctype html>
+<html>
+<head>
+  <title>Tables / CSS Components / Zendesk Garden</title>
+  <link href="../bedrock/index.css" rel="stylesheet">
+  <link href="../menus/index.css" rel="stylesheet">
+  <link href="../forms/checkbox/index.css" rel="stylesheet">
+  <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
+  <link href="../utilities/index.css" rel="stylesheet">
+  <style>
+  .c-table strong { font-weight: 600; }
+
+  .c-table svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+  }
+  </style>
+</head>
+<body>
+  <header class="c-header" style="z-index:2">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="//zendeskgarden.github.io">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="../index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="..">CSS Components</a>
+      <span>/ Tables</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill" />
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="../index.svg#zd-svg-icon-14-chevron" />
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk">
+              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <div class="u-mb">Display Density</div>
+            <div class="u-ml">
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-display" id="nav.ctl.display.small" name="nav.ctl.display" type="radio" value="sm">
+                <label class="c-chk__label" for="nav.ctl.display.small">Cozy</label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-display" id="nav.ctl.display.default" name="nav.ctl.display" checked type="radio" value="">
+                <label class="c-chk__label" for="nav.ctl.display.default">Comfortable</label>
+              </fieldset>
+              <fieldset class="c-chk c-chk--radio">
+                <input class="c-chk__input js-display" id="nav.ctl.display.large" name="nav.ctl.display" type="radio" value="lg">
+                <label class="c-chk__label" for="nav.ctl.display.large">Airy</label>
+              </fieldset>
+            </div>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk">
+              <input class="c-chk__input js-stripes" id="nav.ctl.stripes" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.stripes">Zebra Stripes</label>
+            </fieldset>
+          </li>
+        </ul>
+  </header>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Tables</h1>
+    <div class="c-main__body">
+      <p class="u-mb">The <code class="c-code">.c-table</code> components are
+      intended to provide consistent styling for HTML
+      <code class="c-code">&lt;table&gt;</code> elements.</p>
+
+      <div class="u-mb-lg">
+        <h2 class="u-gamma u-mb">Basic Layout</h2>
+        <p class="u-mb">The basic BEM class structure is
+        <code class="c-code">.c-table &gt; .c-table__row &gt; .c-table__row__cell</code>
+        , which can be used to style a table along with rows and cells.</p>
+        <table class="c-table">
+          <tr class="c-table__row">
+            <td class="c-table__row__cell">R0, C0</td>
+            <td class="c-table__row__cell">R0, C1</td>
+            <td class="c-table__row__cell">R0, C2</td>
+            <td class="c-table__row__cell">R0, C3</td>
+            <td class="c-table__row__cell">R0, C4</td>
+          </tr>
+          <tr class="c-table__row">
+            <td class="c-table__row__cell">R1, C0</td>
+            <td class="c-table__row__cell">R1, C1</td>
+            <td class="c-table__row__cell">R1, C2</td>
+            <td class="c-table__row__cell">R1, C3</td>
+            <td class="c-table__row__cell">R1, C4</td>
+          </tr>
+          <tr class="c-table__row">
+            <td class="c-table__row__cell">R2, C0</td>
+            <td class="c-table__row__cell">R2, C1</td>
+            <td class="c-table__row__cell">R2, C2</td>
+            <td class="c-table__row__cell">R2, C3</td>
+            <td class="c-table__row__cell">R2, C4</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="u-mb-lg">
+        <h2 class="u-gamma u-mb">Table Modifications</h2>
+        <p class="u-mb">Use the settings menu to modify the styling for the
+        tables displayed throughout the page.</p>
+        <ul class="u-list-style-disc">
+          <li class="u-mb-sm">Toggle "Dark Mode" to view
+            <code class="c-code">.c-table--dark</code> styling.</li>
+          <li class="u-mb-sm">Toggle "RTL" to add the
+            <code class="c-code">.is-rtl</code> table class.</li>
+          <li class="u-mb-sm">Select "Display Density" to apply either
+            <code class="c-code">.c-table--sm</code> (cozy) or
+            <code class="c-code">.c-table--lg</code> (airy) row sizing.</li>
+        </ul>
+      </div>
+
+      <div class="u-mb-lg">
+        <h2 class="u-gamma u-mb">Row Modifications</h2>
+        <p class="u-mb">Add <code class="c-code">.c-table__row--header</code>
+        to style the header row for your table.</p>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/2">
+            <table class="c-table">
+              <thead>
+                <tr class="c-table__row c-table__row--header">
+                  <th class="c-table__row__cell">TH, C0</th>
+                  <th class="c-table__row__cell">TH, C1</th>
+                  <th class="c-table__row__cell">TH, C2</th>
+                  <th class="c-table__row__cell">TH, C3</th>
+                  <th class="c-table__row__cell">TH, C4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c-table__row">
+                  <td class="c-table__row__cell">R0, C0</td>
+                  <td class="c-table__row__cell">R0, C1</td>
+                  <td class="c-table__row__cell">R0, C2</td>
+                  <td class="c-table__row__cell">R0, C3</td>
+                  <td class="c-table__row__cell">R0, C4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="u-mb">Use <code class="c-code">.c-table__row--group</code>
+        to format a grouping row. Be sure to apply a <code class="c-code">colspan</code>
+        attribute to the group-by cell equal to the number of columns in the table.</p>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/2">
+            <table class="c-table">
+              <tr class="c-table__row c-table__row--group">
+                <td class="c-table__row__cell" colspan="5">Status <button class="c-table__row__cell__sortable">Group</button></td>
+              </tr>
+              <tr class="c-table__row">
+                <td class="c-table__row__cell">R0, C0</td>
+                <td class="c-table__row__cell">R0, C1</td>
+                <td class="c-table__row__cell">R0, C2</td>
+                <td class="c-table__row__cell">R0, C3</td>
+                <td class="c-table__row__cell">R0, C4</td>
+              </tr>
+              <tr class="c-table__row">
+                <td class="c-table__row__cell">R1, C0</td>
+                <td class="c-table__row__cell">R1, C1</td>
+                <td class="c-table__row__cell">R1, C2</td>
+                <td class="c-table__row__cell">R1, C3</td>
+                <td class="c-table__row__cell">R1, C4</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <p class="u-mb">Use the "Zebra Stripes" settings control on this page
+        to apply <code class="c-code">.c-table__row--stripe</code> to every
+        other table row.</p>
+      </div>
+
+      <div class="u-mb-lg">
+        <h2 class="u-gamma u-mb">Cell Modifications</h2>
+        <p class="u-mb">Most table layouts will benefit from the addition of
+        <code class="c-code">.c-table__row__cell--truncate</code> to prevent
+        cell content from wrapping.</p>
+        <table class="c-table u-mb" style="width:800px">
+          <tr class="c-table__row">
+            <td class="c-table__row__cell"><strong>Wrapped Cell</strong></td>
+            <td class="c-table__row__cell">Shaman ugh cronut iceland occupy
+              hoodie copper mug quinoa. Shoreditch vegan paleo occupy you
+              probably haven't heard of them.</td>
+            <td class="c-table__row__cell c-table__row__cell--overflow">
+              <div class="c-table__row__cell__overflow js-menu" tabindex="0">
+                <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                  <li class="c-menu__item" role="menuitem">One</li>
+                  <li class="c-menu__item" role="menuitem">Two</li>
+                  <li class="c-menu__item" role="menuitem">Three</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr class="c-table__row">
+            <td class="c-table__row__cell"><strong>Truncated Cell</strong></td>
+            <td class="c-table__row__cell c-table__row__cell--truncate">Shaman
+              ugh cronut iceland occupy hoodie copper mug quinoa. Shoreditch
+              vegan paleo occupy you probably haven't heard of them.</td>
+            <td class="c-table__row__cell c-table__row__cell--overflow">
+              <div class="c-table__row__cell__overflow js-menu" tabindex="0">
+                <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                  <li class="c-menu__item" role="menuitem">One</li>
+                  <li class="c-menu__item" role="menuitem">Two</li>
+                  <li class="c-menu__item" role="menuitem">Three</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <p class="u-mb">Table cells for Garden are rendered using fixed layout.
+        This means cell width (which defaults to <code class="c-code">auto</code>)
+        is controlled by the first row. Add the
+        <code class="c-code">.c-table__row__cell--min</code> class to any column
+        that should receive a minimum amount of fixed width (i.e. columns used
+        to contain checkboxes or icons). The first two columns in the table
+        below demonstrate this treatment.</p>
+        <table class="c-table u-mb">
+          <thead>
+            <tr class="c-table__row c-table__row--header">
+              <th class="c-table__row__cell c-table__row__cell--min">
+                <div class="c-chk">
+                  <input class="c-chk__input" id="chk-0.0.0" type="checkbox">
+                  <label class="c-chk__label is-hidden" for="chk-0.0.0"></label>
+                </div>
+              </th>
+              <th class="c-table__row__cell c-table__row__cell--min">
+                <svg>
+                  <use xlink:href="../index.svg#zd-svg-icon-14-twitter-heart" />
+                </svg>
+              </th>
+              <th class="c-table__row__cell">TH, C2</th>
+              <th class="c-table__row__cell">TH, C3</th>
+              <th class="c-table__row__cell">TH, C4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="c-table__row">
+              <td class="c-table__row__cell">
+                <div class="c-chk">
+                  <input class="c-chk__input" id="chk-0.0.1" type="checkbox">
+                  <label class="c-chk__label is-hidden" for="chk-0.0.1"></label>
+                </div>
+              </td>
+              <td class="c-table__row__cell">
+                <svg>
+                  <use xlink:href="../index.svg#zd-svg-icon-14-twitter-heart" />
+                </svg>
+              </td>
+              <td class="c-table__row__cell">R0, C2</td>
+              <td class="c-table__row__cell">R0, C3</td>
+              <td class="c-table__row__cell">R0, C4</td>
+            </tr>
+            <tr class="c-table__row">
+              <td class="c-table__row__cell">
+                <div class="c-chk">
+                  <input class="c-chk__input" id="chk-0.0.2" type="checkbox">
+                  <label class="c-chk__label is-hidden" for="chk-0.0.2"></label>
+                </div>
+              </td>
+              <td class="c-table__row__cell">
+                <svg>
+                  <use xlink:href="../index.svg#zd-svg-icon-14-twitter-heart" />
+                </svg>
+              </td>
+              <td class="c-table__row__cell">R1, C2</td>
+              <td class="c-table__row__cell">R1, C3</td>
+              <td class="c-table__row__cell">R1, C4</td>
+            </tr>
+            <tr class="c-table__row">
+              <td class="c-table__row__cell">
+                <div class="c-chk">
+                  <input class="c-chk__input" id="chk-0.0.3" type="checkbox">
+                  <label class="c-chk__label is-hidden" for="chk-0.0.3"></label>
+                </div>
+              </td>
+              <td class="c-table__row__cell">
+                <svg>
+                  <use xlink:href="../index.svg#zd-svg-icon-14-twitter-heart" />
+                </svg>
+              </td>
+              <td class="c-table__row__cell">R2, C2</td>
+              <td class="c-table__row__cell">R2, C3</td>
+              <td class="c-table__row__cell">R2, C4</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="u-mb">Add <code class="c-code">.c-table__row__cell--overflow</code>
+        to prepare a column for receiving
+        <code class="c-code">.c-table__row__cell__overflow</code> child content.
+        Overflow menus are displayed in the last column of the table. Overflow
+        for non-header rows is only displayed on hover or focus. Note, in order
+        to control stacking, a <code class="c-code">.is-active</code> state
+        class is toggled whenever the menu for a
+        <code class="c-code">.c-table__row__cell__overflow</code> component
+        is shown.</p>
+        <table class="c-table u-mb">
+          <thead>
+            <tr class="c-table__row c-table__row--header">
+              <th class="c-table__row__cell">TH, C0</th>
+              <th class="c-table__row__cell">TH, C1</th>
+              <th class="c-table__row__cell">TH, C2</th>
+              <th class="c-table__row__cell">TH, C3</th>
+              <th class="c-table__row__cell">TH, C4</th>
+              <th class="c-table__row__cell c-table__row__cell--overflow">
+                <div class="c-table__row__cell__overflow js-menu" tabindex="0">
+                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                    <li class="c-menu__item" role="menuitem">One</li>
+                    <li class="c-menu__item" role="menuitem">Two</li>
+                    <li class="c-menu__item" role="menuitem">Three</li>
+                  </ul>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="c-table__row" tabindex="0">
+              <td class="c-table__row__cell">R0, C0</td>
+              <td class="c-table__row__cell">R0, C1</td>
+              <td class="c-table__row__cell">R0, C2</td>
+              <td class="c-table__row__cell">R0, C3</td>
+              <td class="c-table__row__cell">R0, C4</td>
+              <td class="c-table__row__cell c-table__row__cell--overflow">
+                <div class="c-table__row__cell__overflow js-menu" tabindex="0">
+                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                    <li class="c-menu__item" role="menuitem">One</li>
+                    <li class="c-menu__item" role="menuitem">Two</li>
+                    <li class="c-menu__item" role="menuitem">Three</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr class="c-table__row" tabindex="0">
+              <td class="c-table__row__cell">R1, C0</td>
+              <td class="c-table__row__cell">R1, C1</td>
+              <td class="c-table__row__cell">R1, C2</td>
+              <td class="c-table__row__cell">R1, C3</td>
+              <td class="c-table__row__cell">R1, C4</td>
+              <td class="c-table__row__cell c-table__row__cell--overflow">
+                <div class="c-table__row__cell__overflow js-menu" tabindex="0">
+                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                    <li class="c-menu__item" role="menuitem">One</li>
+                    <li class="c-menu__item" role="menuitem">Two</li>
+                    <li class="c-menu__item" role="menuitem">Three</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr class="c-table__row" tabindex="0">
+              <td class="c-table__row__cell">R2, C0</td>
+              <td class="c-table__row__cell">R2, C1</td>
+              <td class="c-table__row__cell">R2, C2</td>
+              <td class="c-table__row__cell">R2, C3</td>
+              <td class="c-table__row__cell">R2, C4</td>
+              <td class="c-table__row__cell c-table__row__cell--overflow">
+                <div class="c-table__row__cell__overflow js-menu" tabindex="0">
+                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                    <li class="c-menu__item" role="menuitem">One</li>
+                    <li class="c-menu__item" role="menuitem">Two</li>
+                    <li class="c-menu__item" role="menuitem">Three</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="u-mb">Use <code class="c-code">&lt;strong&gt;</code> tags
+        within table cells to apply semibold font weight to cell text.</p>
+      </div>
+
+      <div class="u-mb-xl">
+        <h2 class="u-gamma u-mb">Table State</h2>
+        <ul>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row is-hovered">
+              <td class="c-table__row__cell">
+                <code class="c-code" dir="ltr">.c-table__row.is-hovered</code>
+              </td>
+            </tr>
+          </table></li>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row is-focused">
+              <td class="c-table__row__cell">
+                <code class="c-code" dir="ltr">.c-table__row.is-focused</code>
+              </td>
+            </tr>
+          </table></li>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row is-selected">
+              <td class="c-table__row__cell">
+                <code class="c-code" dir="ltr">.c-table__row.is-selected</code>
+              </td>
+            </tr>
+          </table></li>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row">
+              <td class="c-table__row__cell">
+                <code class="c-code c-table__row__cell__sortable is-hovered" dir="ltr">.c-table__row__cell__sortable.is-hovered</code>
+              </td>
+            </tr>
+          </table></li>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row">
+              <td class="c-table__row__cell">
+                <code class="c-code c-table__row__cell__sortable is-focused" dir="ltr">.c-table__row__cell__sortable.is-focused</code>
+              </td>
+            </tr>
+          </table></li>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row">
+              <td class="c-table__row__cell">
+                <code class="c-code c-table__row__cell__sortable is-ascending" dir="ltr">.c-table__row__cell__sortable.is-ascending</code>
+              </td>
+            </tr>
+          </table></li>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row">
+              <td class="c-table__row__cell">
+                <code class="c-code c-table__row__cell__sortable is-descending" dir="ltr">.c-table__row__cell__sortable.is-descending</code>
+              </td>
+            </tr>
+          </table></li>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row c-table__row--header">
+              <td class="c-table__row__cell">
+                <code class="c-code" dir="ltr">.c-table__row__cell__overflow.is-hovered</code>
+              </td>
+              <td class="c-table__row__cell c-table__row__cell--overflow">
+                <div class="c-table__row__cell__overflow is-hovered"></div>
+              </td>
+            </tr>
+          </table></li>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row c-table__row--header">
+              <td class="c-table__row__cell">
+                <code class="c-code" dir="ltr">.c-table__row__cell__overflow.is-focused</code>
+              </td>
+              <td class="c-table__row__cell c-table__row__cell--overflow">
+                <div class="c-table__row__cell__overflow is-focused"></div>
+              </td>
+            </tr>
+          </table></li>
+          <li class="u-mb"><table class="c-table">
+            <tr class="c-table__row c-table__row--header">
+              <td class="c-table__row__cell">
+                <code class="c-code" dir="ltr">.c-table__row__cell__overflow.is-active</code>
+              </td>
+              <td class="c-table__row__cell c-table__row__cell--overflow">
+                <div class="c-table__row__cell__overflow is-active">
+                  <ul class="c-menu u-display-inline-block" role="menu">
+                    <li class="c-menu__item" role="menuitem">
+                      <code class="c-code" dir="ltr">.c-menu</code>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </table></li>
+        </ul>
+      </div>
+
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><table class="c-table u-bg-white">
+  <caption class="c-table__caption u-beta u-semibold u-mb-sm">Table Caption</caption>
+  <thead>
+    <tr class="c-table__row c-table__row--header">
+      <th class="c-table__row__cell c-table__row__cell--min">
+        <div class="c-chk">
+          <input class="c-chk__input" id="chk-all" type="checkbox">
+          <label class="c-chk__label is-hidden" for="chk-all">Select All</label>
+        </div>
+      </th>
+      <th class="c-table__row__cell c-table__row__cell--truncate">Header 1</th>
+      <th aria-sort="none" class="c-table__row__cell c-table__row__cell--truncate">
+        <button class="c-table__row__cell__sortable" type="button">Header 2</button>
+      </th>
+      <th class="c-table__row__cell c-table__row__cell--truncate">Header 3</th>
+      <th class="c-table__row__cell c-table__row__cell--overflow">
+        <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+          </ul>
+        </button>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="c-table__row c-table__row--group">
+      <td aria-sort="ascending" class="c-table__row__cell" colspan="5">Status <strong>Platinum</strong></td>
+    </tr>
+    <tr class="c-table__row" tabindex="0">
+      <td class="c-table__row__cell">
+        <div class="c-chk">
+          <input class="c-chk__input" id="chk-one" type="checkbox">
+          <label class="c-chk__label is-hidden" for="chk-one">Select Row One</label>
+        </div>
+      </td>
+      <td class="c-table__row__cell">Row 1, Column 1</td>
+      <td class="c-table__row__cell">Row 1, Column 2</td>
+      <td class="c-table__row__cell">Row 1, Column 3</td>
+      <td class="c-table__row__cell c-table__row__cell--overflow">
+        <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+          </ul>
+        </button>
+      </td>
+    </tr>
+    <tr class="c-table__row" tabindex="0">
+      <td class="c-table__row__cell">
+        <div class="c-chk">
+          <input class="c-chk__input" id="chk-two" type="checkbox">
+          <label class="c-chk__label is-hidden" for="chk-two">Select Row Two</label>
+        </div>
+      </td>
+      <td class="c-table__row__cell">Row 2, Column 1</td>
+      <td class="c-table__row__cell">Row 2, Column 2</td>
+      <td class="c-table__row__cell">Row 2, Column 3</td>
+      <td class="c-table__row__cell c-table__row__cell--overflow">
+        <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+          </ul>
+        </button>
+      </td>
+    </tr>
+    <tr class="c-table__row c-table__row--group">
+      <td aria-sort["descending"] class="c-table__row__cell" colspan="5">Status <strong>Gold</strong></td>
+    </tr>
+    <tr class="c-table__row" tabindex="0">
+      <td class="c-table__row__cell">
+        <div class="c-chk">
+          <input class="c-chk__input" id="chk-three" type="checkbox">
+          <label class="c-chk__label is-hidden" for="chk-three">Select Row Three</label>
+        </div>
+      </td>
+      <td class="c-table__row__cell">Row 3, Column 1</td>
+      <td class="c-table__row__cell">Row 3, Column 2</td>
+      <td class="c-table__row__cell">Row 3, Column 3</td>
+      <td class="c-table__row__cell c-table__row__cell--overflow">
+        <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+          </ul>
+        </button>
+      </td>
+    </tr>
+    <tr class="c-table__row" tabindex="0">
+      <td class="c-table__row__cell">
+        <div class="c-chk">
+          <input class="c-chk__input" id="chk-four" type="checkbox">
+          <label class="c-chk__label is-hidden" for="chk-four">Select Row Four</label>
+        </div>
+      </td>
+      <td class="c-table__row__cell">Row 4, Column 1</td>
+      <td class="c-table__row__cell">Row 4, Column 2</td>
+      <td class="c-table__row__cell">Row 4, Column 3</td>
+      <td class="c-table__row__cell c-table__row__cell--overflow">
+        <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+          </ul>
+        </button>
+      </td>
+    </tr>
+    <tr class="c-table__row" tabindex="0">
+      <td class="c-table__row__cell">
+        <div class="c-chk">
+          <input class="c-chk__input" id="chk-five" type="checkbox">
+          <label class="c-chk__label is-hidden" for="chk-five">Select Row Five</label>
+        </div>
+      </td>
+      <td class="c-table__row__cell">Row 5, Column 1</td>
+      <td class="c-table__row__cell">Row 5, Column 2</td>
+      <td class="c-table__row__cell">Row 5, Column 3</td>
+      <td class="c-table__row__cell c-table__row__cell--overflow">
+        <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">One</li>
+            <li class="c-menu__item" role="menuitem">Two</li>
+            <li class="c-menu__item" role="menuitem">Three</li>
+          </ul>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table></textarea>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="//zendeskgarden.github.io/index.js"></script>
+  <script src="../menus/index.js"></script>
+  <script src="../forms/checkbox/index.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

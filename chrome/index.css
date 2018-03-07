@@ -1,0 +1,510 @@
+.c-chrome{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  margin:0;
+  height:100vh;
+  overflow-y:hidden;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Oxygen-Sans,Arial,sans-serif;
+}
+.c-chrome.is-rtl{
+  direction:rtl;
+}
+.c-chrome__body{
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  -webkit-box-ordinal-group:2;
+      -ms-flex-order:1;
+          order:1;
+  background-color:#f3f3f3;
+}
+.c-chrome__body__content{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  height:calc(100% - 50px);
+  line-height:1.42857;
+  color:#555;
+  font-size:14px;
+}
+.c-chrome__body__content__main{
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  -webkit-box-ordinal-group:2;
+      -ms-flex-order:1;
+          order:1;
+  background-color:#fff;
+  overflow:auto;
+}
+.c-chrome__body__content__sidebar{
+  -ms-flex-negative:0;
+      flex-shrink:0;
+  -webkit-box-ordinal-group:1;
+      -ms-flex-order:0;
+          order:0;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+  border-right:1px solid #ddd;
+  width:330px;
+  overflow:auto;
+}
+.c-chrome.is-rtl .c-chrome__body__content__sidebar{
+  border-right:none;
+  border-left:1px solid #ddd;
+}
+.c-chrome__nav{
+  position:relative;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -ms-flex-negative:0;
+      flex-shrink:0;
+  -webkit-box-ordinal-group:0;
+      -ms-flex-order:-1;
+          order:-1;
+  background-color:#03363d;
+  width:60px;
+  color:#fff;
+  font-size:14px;
+}
+.c-chrome__nav,.c-chrome__nav__item{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+}
+.c-chrome__nav__item{
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-ordinal-group:2;
+      -ms-flex-order:1;
+          order:1;
+  -webkit-transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  opacity:.6;
+  height:50px;
+}
+.c-chrome__nav__item--logo{
+  -webkit-box-ordinal-group:1;
+      -ms-flex-order:0;
+          order:0;
+  fill:#fff;
+}
+.c-chrome__nav__item,.c-chrome__nav__item:focus,.c-chrome__nav__item:hover{
+  text-decoration:none;
+  color:inherit;
+}
+.c-chrome__nav__item:focus{
+  outline:none;
+}
+.c-chrome__nav__item--logo,.c-chrome__nav__item.is-current,.c-chrome__nav__item.is-focused,.c-chrome__nav__item.is-hovered,.c-chrome__nav__item:hover,.c-chrome__nav__item[aria-current=true]{
+  opacity:1;
+}
+.c-chrome__nav__item__icon{
+  -webkit-box-ordinal-group:1;
+      -ms-flex-order:0;
+          order:0;
+  border-radius:4px;
+  width:26px;
+  height:26px;
+}
+.c-chrome__nav__item__text{
+  -webkit-box-ordinal-group:2;
+      -ms-flex-order:1;
+          order:1;
+  position:absolute;
+  clip:rect(1px,1px,1px,1px);
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.c-chrome__nav__fab{
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  position:absolute;
+  right:-30px;
+  bottom:22px;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-transition:background-color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:background-color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  border:none;
+  border-radius:100px;
+  -webkit-box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
+          box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
+  background-color:#56777a;
+  width:60px;
+  height:40px;
+  color:inherit;
+  font-weight:600;
+}
+.c-chrome__nav__fab:focus{
+  outline:none;
+}
+.c-chrome__nav__fab__icon{
+  width:20px;
+  height:20px;
+}
+.c-chrome__nav__fab__text{
+  margin:0 4px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.c-chrome__nav--expanded{
+  width:200px;
+}
+.c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo){
+  -webkit-box-pack:start;
+      -ms-flex-pack:start;
+          justify-content:start;
+  padding:0 8.5px;
+}
+.c-chrome__nav--expanded .c-chrome__nav__item__icon,.c-chrome__nav--expanded .c-chrome__nav__item__text{
+  margin:0 8.5px;
+}
+.c-chrome__nav--expanded :not(.c-chrome__nav__item--logo) .c-chrome__nav__item__text{
+  position:static;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  clip:auto;
+  width:auto;
+  height:auto;
+  text-overflow:ellipsis;
+}
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-hovered,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):hover{
+  background-color:rgba(0,0,0,.1);
+}
+.c-chrome__nav__fab.is-hovered,.c-chrome__nav__fab:hover{
+  background-color:#6d9497;
+}
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-focused{
+  -webkit-box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
+          box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
+}
+.c-chrome__nav__fab.is-focused{
+  -webkit-box-shadow:0 6px 12px 0 rgba(36,83,107,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
+          box-shadow:0 6px 12px 0 rgba(36,83,107,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
+}
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
+  background-color:hsla(0,0%,100%,.1);
+}
+.c-chrome__nav__fab.is-active,.c-chrome__nav__fab:active{
+  background-color:#576061;
+}
+.c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
+  background-color:#30aabc;
+  cursor:default;
+}
+.c-chrome__nav__fab:active.is-focused,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active.is-focused{
+  -webkit-box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
+          box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
+}
+.c-chrome.is-rtl .c-chrome__nav__fab{
+  right:30px;
+}
+.c-chrome__subnav{
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-ordinal-group:1;
+      -ms-flex-order:0;
+          order:0;
+  background-color:#012b30;
+  padding:30px 20px;
+  min-width:180px;
+  color:#fff;
+  font-size:14px;
+}
+.c-chrome__subnav__item{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  opacity:.6;
+  margin-top:8px;
+  border-radius:4px;
+  padding:0 8px;
+  line-height:2.14286;
+  white-space:nowrap;
+}
+.c-chrome__subnav__item,.c-chrome__subnav__item:focus,.c-chrome__subnav__item:hover{
+  text-decoration:none;
+  color:inherit;
+}
+.c-chrome__subnav__item:focus{
+  outline:none;
+}
+.c-chrome__subnav__item.is-current,.c-chrome__subnav__item.is-focused,.c-chrome__subnav__item.is-hovered,.c-chrome__subnav__item:hover,.c-chrome__subnav__item[aria-current=true]{
+  opacity:1;
+}
+.c-chrome__subnav__item.is-hovered,.c-chrome__subnav__item:hover{
+  background-color:rgba(0,0,0,.1);
+}
+.c-chrome__subnav__item.is-focused{
+  -webkit-box-shadow:0 0 0 3px hsla(0,0%,100%,.2);
+          box-shadow:0 0 0 3px hsla(0,0%,100%,.2);
+}
+.c-chrome__subnav__item.is-active,.c-chrome__subnav__item:active{
+  background-color:hsla(0,0%,100%,.03);
+}
+.c-chrome__subnav__item.is-current,.c-chrome__subnav__item[aria-current=true]{
+  background-color:hsla(0,0%,100%,.1);
+}
+.c-chrome__subnav__item:first-of-type{
+  margin-top:0;
+}
+.c-chrome__subnav__item__text{
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.c-chrome__body__header{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:end;
+      -ms-flex-pack:end;
+          justify-content:flex-end;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+  border-bottom:1px solid #ddd;
+  background-color:#fff;
+  padding:0 20px;
+  height:50px;
+  color:#777;
+  font-size:14px;
+}
+.c-chrome__body__header--standalone{
+  -webkit-box-shadow:0 0 10px 0 rgba(36,83,107,.15);
+          box-shadow:0 0 10px 0 rgba(36,83,107,.15);
+}
+.c-chrome__body__header__item{
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  position:relative;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-ordinal-group:2;
+      -ms-flex-order:1;
+          order:1;
+  -webkit-transition:color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,color .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  z-index:0;
+  margin:0 12px;
+  border:none;
+  border-radius:4px;
+  background:transparent;
+  padding:0 4px;
+  min-width:30px;
+  height:30px;
+  line-height:2.14286;
+  white-space:nowrap;
+}
+.c-chrome__body__header__item,.c-chrome__body__header__item:focus,.c-chrome__body__header__item:hover{
+  text-decoration:none;
+  color:inherit;
+}
+.c-chrome__body__header__item:focus{
+  outline:none;
+}
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-focused{
+  -webkit-box-shadow:0 0 0 3px rgba(48,170,188,.4);
+          box-shadow:0 0 0 3px rgba(48,170,188,.4);
+}
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active.is-focused{
+  -webkit-box-shadow:none;
+          box-shadow:none;
+}
+.c-chrome__body__header__item--max-x{
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  -webkit-box-pack:start;
+      -ms-flex-pack:start;
+          justify-content:start;
+}
+.c-chrome__body__header__item--logo{
+  display:none;
+  -webkit-box-ordinal-group:1;
+      -ms-flex-order:0;
+          order:0;
+  margin-right:auto;
+  margin-left:-20px;
+  border-right:1px solid #ddd;
+  padding:0;
+  width:60px;
+  overflow:hidden;
+  fill:#03363d;
+}
+.c-chrome__body__header__item--logo,.c-chrome__body__header__item--max-y{
+  border-radius:0;
+  height:100%;
+}
+.c-chrome__body__header--standalone .c-chrome__body__header__item--logo{
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+}
+.c-chrome.is-rtl .c-chrome__body__header__item--logo{
+  margin-right:-20px;
+  margin-left:auto;
+  border-right:none;
+  border-left:1px solid #ddd;
+}
+.c-chrome__body__header__item.c-chrome__body__header__item--max-y.is-focused{
+  -webkit-box-shadow:inset 0 3px 0 0 rgba(48,170,188,.4),3px 0 0 0 rgba(48,170,188,.4),inset 0 -3px 0 0 rgba(48,170,188,.4),-3px 0 0 0 rgba(48,170,188,.4);
+          box-shadow:inset 0 3px 0 0 rgba(48,170,188,.4),3px 0 0 0 rgba(48,170,188,.4),inset 0 -3px 0 0 rgba(48,170,188,.4),-3px 0 0 0 rgba(48,170,188,.4);
+}
+.c-chrome__body__header__item__icon{
+  -webkit-transition:-webkit-transform .25s ease-in-out;
+  transition:-webkit-transform .25s ease-in-out;
+  transition:transform .25s ease-in-out;
+  transition:transform .25s ease-in-out,-webkit-transform .25s ease-in-out;
+  margin:0 4px;
+  width:14px;
+  height:14px;
+}
+.c-chrome__body__header__item--logo .c-chrome__body__header__item__icon{
+  margin:0;
+  width:26px;
+  height:26px;
+}
+img.c-chrome__body__header__item__icon{
+  margin:0;
+  border-radius:3px;
+  width:22px;
+  height:22px;
+}
+.c-chrome__body__header__item.c-chrome__body__header__item--round,.c-chrome__body__header__item.c-chrome__body__header__item--round .c-chrome__body__header__item__icon{
+  border-radius:100px;
+}
+.c-chrome__body__header__item__text{
+  margin:0 4px;
+}
+.c-chrome__body__header__item--logo .c-chrome__body__header__item__text,.c-chrome__body__header__item__text.is-clipped{
+  margin:0;
+  position:absolute;
+  clip:rect(1px,1px,1px,1px);
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__text{
+  color:#03363d;
+}
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--chat,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat{
+  color:#f79a3e;
+}
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--connect,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect{
+  color:#eb6651;
+}
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--explore,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore{
+  color:#30aabc;
+}
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--guide,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide{
+  color:#eb4962;
+}
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--message,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--message{
+  color:#37b8af;
+}
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--support,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--support{
+  color:#78a300;
+}
+.c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--talk,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
+  color:#efc93d;
+}
+.c-chrome--dark .c-chrome__nav__fab{
+  -webkit-box-shadow:0 6px 12px 0 rgba(0,0,0,.15);
+          box-shadow:0 6px 12px 0 rgba(0,0,0,.15);
+}
+.c-chrome--dark .c-chrome__nav__fab.is-focused{
+  -webkit-box-shadow:0 6px 12px 0 rgba(0,0,0,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
+          box-shadow:0 6px 12px 0 rgba(0,0,0,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
+}
+.c-chrome--dark .c-chrome__body{
+  background-color:#012b30;
+}
+.c-chrome--dark .c-chrome__body__header{
+  border-bottom:none;
+  background-color:#03363d;
+  color:#819a9e;
+}
+.c-chrome--dark .c-chrome__body__header--solo{
+  -webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.15);
+          box-shadow:0 0 10px 0 rgba(0,0,0,.15);
+}
+.c-chrome.c-chrome--dark .c-chrome__body__header__item--logo{
+  border-color:#04444d;
+  fill:#fff;
+}
+.c-chrome--dark .c-chrome__body__content,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__text,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__text,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__text,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__text{
+  color:#fff;
+}
+.c-chrome--dark .c-chrome__body__content__main{
+  background-color:inherit;
+}
+.c-chrome.c-chrome--dark .c-chrome__body__content__sidebar{
+  border-color:#04444d;
+}
+.c-chrome__nav--dark{
+  background-color:#000;
+}
+.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
+  background-color:rgba(0,0,0,.1);
+}
+.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
+  background-color:hsla(0,0%,100%,.3);
+}
+.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
+  color:#fff;
+}
+.c-chrome__nav--light{
+  background-color:#fff;
+  color:#333;
+}
+.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-focused{
+  -webkit-box-shadow:inset 0 0 0 3px rgba(0,0,0,.2);
+          box-shadow:inset 0 0 0 3px rgba(0,0,0,.2);
+}
+.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
+  background-color:rgba(0,0,0,.1);
+}
+.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
+  background-color:rgba(0,0,0,.3);
+}
+.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
+  color:#333;
+  fill:#333;
+}

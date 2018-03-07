@@ -1,0 +1,181 @@
+.c-tab{
+  display:block;
+  overflow:hidden;
+}
+
+.c-tab.is-rtl{
+  direction:rtl;
+}
+
+.c-tab__list{
+  display:block;
+  margin-top:0;
+  margin-bottom:20px;
+  border-bottom:1px solid #ddd;
+  padding:0;
+  line-height:20px;
+  white-space:nowrap;
+  color:#999;
+  font-size:14px;
+}
+
+.c-tab__list__item{
+  display:inline-block;
+  position:relative;
+  -webkit-transition:color .25s ease-in-out;
+  transition:color .25s ease-in-out;
+  border-width:3px;
+  border-bottom-style:solid;
+  border-bottom-color:transparent;
+  cursor:pointer;
+  padding:10px 28px 6px;
+  overflow:hidden;
+  vertical-align:top;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+  text-align:center;
+  text-decoration:none;
+  text-overflow:ellipsis;
+  color:inherit;
+}
+
+.c-tab__list__item a{
+  display:block;
+  margin:-10px -28px -6px;
+  padding:10px 28px 6px;
+  color:inherit;
+}
+
+.c-tab__panel{
+  display:block;
+}
+
+.c-tab--block{
+  display:table;
+}
+
+.c-tab--block .c-tab__list{
+  display:table-cell;
+  margin-bottom:0;
+  border-bottom:none;
+  vertical-align:top;
+}
+
+.c-tab--block .c-tab__list__item{
+  display:block;
+  margin-bottom:20px;
+  border-bottom-style:none;
+  border-left-style:solid;
+  border-left-color:transparent;
+  padding:4px 8px;
+  text-align:left;
+}
+
+.c-tab--block .c-tab__list__item a{
+  margin:-4px -8px;
+  padding:4px 8px;
+}
+
+.c-tab--block .c-tab__list__item.is-last,.c-tab--block .c-tab__list__item:last-of-type{
+  margin-bottom:0;
+}
+
+.c-tab--block .c-tab__list__item.is-focused:before,.c-tab--block .c-tab__list__item:focus:before{
+  top:4px;
+  right:4px;
+  left:4px;
+}
+
+.c-tab--block.is-rtl .c-tab__list__item{
+  margin-left:0;
+  border-left:0;
+  border-right-style:solid;
+  border-right-color:transparent;
+  text-align:right;
+}
+
+.c-tab--block .c-tab__panel{
+  margin-left:32px;
+  vertical-align:top;
+}
+
+.c-tab--block.is-rtl .c-tab__panel{
+  margin-right:32px;
+}
+
+.c-tab--dark .c-tab__list{
+  border-color:#56777a;
+  color:#819a9e;
+}
+
+.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item.is-disabled,.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item[disabled]{
+  color:#56777a;
+}
+
+.c-tab__list__item.is-hovered,.c-tab__list__item:hover{
+  color:#30aabc;
+}
+
+.c-tab__list__item a:hover{
+  text-decoration:none;
+}
+
+.c-tab__list__item:focus,.c-tab__list__item a:focus{
+  outline:none;
+  text-decoration:none;
+}
+
+.c-tab__list__item.is-focused,.c-tab__list__item:focus{
+  color:#30aabc;
+}
+
+.c-tab__list__item:before{
+  -webkit-transition:-webkit-box-shadow .1s ease-in-out;
+  transition:-webkit-box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out;
+  transition:box-shadow .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  content:"";
+}
+
+.c-tab__list__item.is-focused:before,.c-tab__list__item:focus:before{
+  position:absolute;
+  top:10px;
+  right:24px;
+  left:24px;
+  border-radius:4px;
+  -webkit-box-shadow:inset 0 0 0 2px rgba(48,170,188,.4);
+          box-shadow:inset 0 0 0 2px rgba(48,170,188,.4);
+  height:20px;
+  pointer-events:none;
+}
+
+.c-tab__list__item.c-tab__list__item.is-active,.c-tab__list__item.c-tab__list__item:active{
+  border-color:currentColor;
+  color:#30aabc;
+}
+
+.c-tab__list__item.c-tab__list__item.is-active:before,.c-tab__list__item.c-tab__list__item:active:before{
+  -webkit-box-shadow:none;
+          box-shadow:none;
+}
+
+.c-tab__list__item.c-tab__list__item.is-selected{
+  border-color:currentColor;
+  color:#30aabc;
+}
+
+.c-tab__list__item.c-tab__list__item.is-disabled,.c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab__list__item.c-tab__list__item[disabled]{
+  border-color:transparent;
+  cursor:default;
+  color:#ddd;
+}
+
+.c-tab__list__item.c-tab__list__item.is-disabled a,.c-tab__list__item.c-tab__list__item[aria-disabled=true] a,.c-tab__list__item.c-tab__list__item[disabled] a{
+  cursor:inherit;
+}
+
+.c-tab__panel.is-hidden,.c-tab__panel[aria-hidden=true]{
+  display:none;
+}

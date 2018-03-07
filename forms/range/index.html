@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+  <title>Ranges / CSS Components / Zendesk Garden</title>
+  <link href="../../bedrock/index.css" rel="stylesheet">
+  <link href="../../menus/index.css" rel="stylesheet">
+  <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
+  <link href="../index.css" rel="stylesheet">
+  <link href="../custom.css" rel="stylesheet">
+  <link href="../../utilities/index.css" rel="stylesheet">
+  <style>
+  .l-wrapper--400 { max-width: 400px; }
+  </style>
+</head>
+<body>
+  <header class="c-header">
+    <figure class="c-header__logo">
+      <a class="u-fg-inherit" href="//zendeskgarden.github.io">
+        <svg class="c-header__logo__svg svg-square">
+          <use xlink:href="../../index.svg#zd-svg-icon-26-zendesk">
+        </svg>
+      </a
+    ></figure
+    ><h1 class="c-header__title"
+      ><a class="u-fg-inherit" href="../..">CSS Components</a>
+      <span>/ Ranges</span>
+    </h1>
+    <ul class="c-ctl c-ctl--header">
+      <li class="c-ctl__item u-position-relative">
+        <a class="c-menu-ctl js-menu" href="#settings">
+          <svg>
+            <use xlink:href="../../index.svg#zd-svg-icon-26-settings-fill">
+          </svg>
+          <span>Settings</span>
+          <svg>
+            <use xlink:href="../../index.svg#zd-svg-icon-14-chevron">
+          </svg>
+        </a>
+        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <div class="c-chk">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
+            </div>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <div class="c-chk">
+              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
+            </div>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk">
+              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <div class="c-chk">
+              <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.size">Size</label>
+            </div>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <div class="u-mb">Validation</div>
+            <div class="u-ml">
+              <div class="c-chk">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.none" name="nav.ctl.validation" checked type="radio" value="">
+                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.none">None</label>
+              </div>
+              <div class="c-chk">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.success" name="nav.ctl.validation" type="radio" value="success">
+                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.success">Success</label>
+              </div>
+              <div class="c-chk">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.warning" name="nav.ctl.validation" type="radio" value="warning">
+                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.warning">Warning</label>
+              </div>
+              <div class="c-chk">
+                <input class="c-chk__input js-validation" id="nav.ctl.validation.error" name="nav.ctl.validation" type="radio" value="error">
+                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.error">Error</label>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <main class="c-main c-main--page">
+    <h1 class="c-main__title">Ranges</h1>
+    <div class="c-main__body l-wrapper--1024">
+      <p class="u-mb">Use <code class="c-code">.c-range</code> components to
+      style form range inputs. Child component classes are shown below.</p>
+      <p class="u-mb">Since WebKit browsers have no supporting pseudo-element for
+      the lower range, the
+      <code class="c-code">.c-range__input</code>
+      child contains corresponding
+      <code class="c-code">background</code>
+      CSS whose size should be manipulated via JavaScript whenever the range
+      "thumb" is moved. Similarly, the track background for dual-thumb sliders
+      must be maniuplated as each thumb is dragged. See the supporting page JS
+      for details.</p>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <p class="u-mb">Standard
+          <code class="c-code">input type="range"</code>
+          fields are demonstrated below.</p>
+        </div
+        ><div class="l-grid__item u-1/2 u-mb">
+          <p class="u-mb">Use the following controls to manipulate the range
+          sliders displayed below.</p>
+          <div class="c-txt c-txt--inline u-float-left">
+            <input class="c-txt__input js-range" min="0" max="100" name="min" placeholder="min" type="number">
+          </div>
+          <div class="c-txt c-txt--inline u-float-right">
+            <input class="c-txt__input js-range" min="0" max="100" name="max" placeholder="max" type="number">
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="range-0"><span dir="ltr">.c-range__label</span></label>
+            <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+            <input class="c-range__input" id="range-0" type="range">
+            <small class="c-range__message"><span dir="ltr">.c-range__message</span></small>
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="multirange-0"><span dir="ltr">.c-range__label</span></label>
+            <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+            <div class="c-range__slider">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-0">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+            <small class="c-range__message"><span dir="ltr">.c-range__message</span></small>
+          </div>
+        </div>
+      </div>
+      <p class="u-mb">Hint text may also appear below the range input.</p>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="range-1"><span dir="ltr">.c-range__label</span></label>
+            <input class="c-range__input" id="range-1" type="range">
+            <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="multirange-1"><span dir="ltr">.c-range__label</span></label>
+            <div class="c-range__slider">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-1">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+            <small class="c-range__hint"><span dir="ltr">.c-range__hint</span></small>
+          </div>
+        </div>
+      </div>
+      <p class="u-mb">The unmodified
+      <code class="c-code">.c-range</code>
+      occupies 100% of the width of its container. The following fields are
+      contained by a 400px wrapper.</p>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <form class="l-wrapper--400 u-mb-lg">
+            <div class="c-range u-mb-lg">
+              <label class="c-range__label" for="range-2">Label</label>
+              <small class="c-range__hint"><span dir="ltr">Hint...</span></small>
+              <input class="c-range__input" id="range-2" type="range">
+            </div>
+          </form>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <form class="l-wrapper--400 u-mb-lg">
+            <div class="c-range u-mb-lg">
+              <label class="c-range__label" for="multirange-2">Label</label>
+              <small class="c-range__hint"><span dir="ltr">Hint...</span></small>
+              <div class="c-range__slider">
+                <div class="c-range__slider__track">
+                  <div class="c-range__slider__track__rail">
+                    <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-2">
+                    <input class="c-range__slider__track__rail__thumb" value="75">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <h3 class="u-delta u-mb">Modifiers</h3>
+      <p class="u-mb">Use the
+      <code class="c-code">.c-range--inline</code>
+      class modifier to layout range controls inline.</p>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <div class="c-range c-range--inline u-mb-lg">
+            <label class="c-range__label" for="range-inline">Scale</label
+            ><input class="c-range__input u-mh" id="range-inline" style="width:200px" type="range"
+            ><small class="c-range__message">(valid)</small>
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range c-range--inline u-mb-lg">
+            <label class="c-range__label" for="multirange-inline">Scale</label
+            ><div class="c-range__slider u-mh" style="width:200px">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-inline">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div><small class="c-range__message">(valid)</small>
+          </div>
+        </div>
+      </div>
+      <h3 class="u-delta u-mb">States</h3>
+      <div class="l-grid">
+        <div class="l-grid__item u-1/2">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="range-focus"><span dir="ltr">.c-range__input.is-focused</span></label>
+            <input class="c-range__input is-focused" id="range-focus" type="range">
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="multirange-focus"><span dir="ltr">.c-range__slider__track__rail__thumb.is-focused</span></label>
+            <div class="c-range__slider">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb is-focused" value="25" id="multirange-focus">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="range-active"><span dir="ltr">.c-range__input.is-active</span></label>
+            <input class="c-range__input is-active" id="range-active" type="range">
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="multirange-active"><span dir="ltr">.c-range__slider.is-active</span></label>
+            <div class="c-range__slider is-active">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-active">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range u-mb">
+            <label class="c-range__label" for="range-isdisabled"><span dir="ltr">.c-range__input.is-disabled</span></label>
+            <input class="c-range__input is-disabled" id="range-isdisabled" type="range">
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range u-mb">
+            <label class="c-range__label" for="multirange-isdisabled"><span dir="ltr">.c-range__slider.is-disabled</span></label>
+            <div class="c-range__slider is-disabled">
+              <div class="c-range__slider__track">
+                <div class="c-range__slider__track__rail">
+                  <input class="c-range__slider__track__rail__thumb" value="25" id="multirange-isdisabled">
+                  <input class="c-range__slider__track__rail__thumb" value="75">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div
+        ><div class="l-grid__item u-1/2">
+          <div class="c-range u-mb-lg">
+            <label class="c-range__label" for="range-disabled"><span dir="ltr">.c-range__input[disabled]</span></label>
+            <input class="c-range__input" disabled id="range-disabled" type="range">
+          </div>
+        </div>
+      </div>
+      <h3 class="u-delta u-mb">Values</h3>
+      <p class="u-mb">Demonstrate range controls with various
+      <code class="c-code">max</code>,
+      <code class="c-code">min</code>,
+      <code class="c-code">step</code>,
+      and
+      <code class="c-code">value</code>
+      attribute values.</p>
+      <form class="u-mb-lg" style="max-width:480px">
+        <div class="c-range u-mb-lg">
+          <label class="c-range__label u-epsilon" for="range-4"><span dir="ltr">.c-range__input[value="10"]</span></label>
+          <input class="c-range__input" id="range-4" type="range" value="10">
+        </div>
+        <div class="c-range u-mb-lg">
+          <label class="c-range__label u-epsilon" for="range-5"><span dir="ltr">.c-range__input[max="40"][value="10"]</span></label>
+          <input class="c-range__input" id="range-5" max="40" type="range" value="10">
+        </div>
+        <div class="c-range u-mb-lg">
+          <label class="c-range__label u-epsilon" for="range-6"><span dir="ltr">.c-range__input[max="60"][min="30"][value="45"]</span></label>
+          <input class="c-range__input" id="range-6" max="60" min="30" type="range" value="45">
+        </div>
+        <div class="c-range u-mb-lg">
+          <label class="c-range__label u-epsilon" for="range-7"><span dir="ltr">.c-range__input[step="5"][value="75"]</span></label>
+          <input class="c-range__input" id="range-7" step="5" type="range" value="75">
+        </div>
+      </form>
+      <section id="playground">
+        <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
+        <div class="c-playground">
+          <div class="c-playground__preview"></div>
+<textarea class="c-playground__code"><div class="c-range u-mb">
+  <label class="c-range__label" for="range-playground">Standard Range Input</label>
+  <small class="c-range__hint">Allow user to specify a numeric value using native <code class="c-code">input type="range"</code> element.</small>
+  <input class="c-range__input" id="range-playground" type="range">
+</div>
+
+<div class="c-range">
+  <label class="c-range__label" for="multirange-playground">Custom Range Slider</label>
+  <small class="c-range__hint">Allow user to specify a numeric range using multiple <code class="c-code">input</code> "thumb" controls (requires JS to support draggable behaviors).</small>
+  <div class="c-range__slider">
+    <div class="c-range__slider__track" style="background-position:50%; background-size:50%">
+      <div class="c-range__slider__track__rail">
+        <input class="c-range__slider__track__rail__thumb" style="left:25%" value="25" id="multirange-playground">
+        <input class="c-range__slider__track__rail__thumb" style="left:75%" value="75">
+      </div>
+    </div>
+  </div>
+</div></textarea>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="//zendeskgarden.github.io/index.js"></script>
+  <script src="../../menus/index.js"></script>
+  <script src="../checkbox/index.js"></script>
+  <script src="../text/index.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
