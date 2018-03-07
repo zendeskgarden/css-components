@@ -17,7 +17,7 @@
 
 .c-dialog {
   display: flex;
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   margin-bottom: var(--zd-dialog-margin);
   border: var(--zd-dialog-border);
