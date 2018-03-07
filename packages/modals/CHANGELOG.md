@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.2"></a>
+## [4.1.2](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-modals@4.1.1...@zendesk/garden-css-modals@4.1.2) (2018-03-07)
+
+
+### Bug Fixes
+
+* **modals:** correct Modal placement in Firefox ([#38](https://github.com/zendeskgarden/css-components/issues/38)) ([4914d7a](https://github.com/zendeskgarden/css-components/commit/4914d7a))
+
+
+
+
 <a name="4.1.1"></a>
 ## [4.1.1](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-modals@4.1.0...@zendesk/garden-css-modals@4.1.1) (2018-02-13)
 
