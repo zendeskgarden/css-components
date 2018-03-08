@@ -56,6 +56,10 @@
   border-color:#eb6651;
   color:#eb6651;
 }
+.c-btn--basic.c-btn--basic{
+  border-color:transparent;
+  background-color:transparent;
+}
 .l-btn-group{
   position:relative;
   z-index:0;
@@ -242,10 +246,6 @@
   background-color:transparent;
   text-decoration:none;
   color:#999;
-}
-.c-btn--basic.c-btn--basic{
-  border-color:transparent;
-  background-color:transparent;
 }
 .c-btn.c-btn--primary,.c-btn.is-selected{
   border-color:transparent;
