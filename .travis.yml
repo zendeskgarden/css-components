@@ -2,10 +2,6 @@ language: node_js
 node_js:
   - node
 
-branches:
-  only:
-    - master
-
 cache:
   yarn: true
   directories:
@@ -32,8 +28,8 @@ deploy:
     github_token: $GITHUB_TOKEN
     local_dir: demo
     skip_cleanup: true
-    on:
-      branch: master
+    all_branches: true
+    verbose: true
 
   - provider: script
     script: scripts/publish.js
