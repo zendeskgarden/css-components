@@ -16,8 +16,6 @@ before_install:
 
 install: yarn --frozen-lockfile
 
-script: yarn test
-
 before_deploy:
   - find demo -type l | xargs sed -i '' || true # convert symlinks to regular files
   - npm config set _auth $ARTIFACTORY_API_KEY
@@ -28,8 +26,9 @@ deploy:
     github_token: $GITHUB_TOKEN
     local_dir: demo
     skip_cleanup: true
-    all_branches: true
     verbose: true
+    on:
+      all_branches: true
 
   - provider: script
     script: scripts/publish.js
