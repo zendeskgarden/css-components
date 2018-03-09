@@ -20,17 +20,15 @@ before_install:
 
 install: yarn --frozen-lockfile
 
-script: yarn test
-
 before_deploy:
+  - export NODE_DEBUG=gh-pages
   - find demo -type l | xargs sed -i '' || true # convert symlinks to regular files
   - npm config set _auth $ARTIFACTORY_API_KEY
   - npm config set email $ARTIFACTORY_EMAIL
 
 deploy:
-  - provider: pages
-    github_token: $GITHUB_TOKEN
-    local_dir: demo
+  - provider: script
+    script: scripts/gh-pages.js
     skip_cleanup: true
     on:
       branch: master
