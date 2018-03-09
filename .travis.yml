@@ -2,6 +2,10 @@ language: node_js
 node_js:
   - node
 
+branches:
+  only:
+    - master
+
 cache:
   yarn: true
   directories:
@@ -27,7 +31,7 @@ deploy:
     script: scripts/gh-pages.js
     skip_cleanup: true
     on:
-      all_branches: true
+      branch: master
 
   - provider: script
     script: scripts/publish.js
