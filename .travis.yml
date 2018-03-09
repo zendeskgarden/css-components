@@ -22,12 +22,9 @@ before_deploy:
   - npm config set email $ARTIFACTORY_EMAIL
 
 deploy:
-  - provider: pages
-    github_token: $GITHUB_TOKEN
-    local_dir: demo
+  - provider: script
+    script: NODE_DEBUG=gh-pages scripts/gh-pages.js
     skip_cleanup: true
-    verbose: true
-    edge: true
     on:
       all_branches: true
 
