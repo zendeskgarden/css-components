@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const ghPages = require('gh-pages');
 
 ghPages.publish('demo', {
