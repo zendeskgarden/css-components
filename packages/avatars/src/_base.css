@@ -11,9 +11,12 @@
   --zd-avatar__img-transition: all .3s;
 }
 
+/* 1. Reset for <figure> element. */
+
 .c-avatar {
   display: inline-block;
   transition: var(--zd-avatar-transition);
+  margin: 0; /* [1] */
   border: var(--zd-avatar-border);
   border-radius: var(--zd-avatar-border-radius);
   width: var(--zd-avatar-size);
