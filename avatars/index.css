@@ -2,6 +2,7 @@
   display:inline-block;
   -webkit-transition:background-color .3s;
   transition:background-color .3s;
+  margin:0;
   border:1px solid transparent;
   border-radius:50%;
   width:34px;
