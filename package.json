@@ -14,9 +14,9 @@
     "test": "lerna run test --stream"
   },
   "devDependencies": {
+    "@zendesk/garden-svg-icons": "^2.5.0",
     "@zendeskgarden/eslint-config": "^5.0.2",
     "@zendeskgarden/stylelint-config": "^8.0.2",
-    "@zendesk/garden-svg-icons": "^2.5.0",
     "babel-eslint": "^8.2.2",
     "caniuse-lite": "^1.0.30000810",
     "chalk": "^2.3.1",
