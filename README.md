@@ -1,4 +1,4 @@
-# Garden CSS Components [![Build Status](https://travis-ci.com/zendeskgarden/css-components.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-components)
+# Garden CSS Components [![Build Status](https://travis-ci.com/zendeskgarden/css-components.svg?token=dDt9s6smCMgz269xNbpz&branch=master)](https://travis-ci.com/zendeskgarden/css-components) [![Dependency Status](https://img.shields.io/david/dev/zendeskgarden/css-components.svg)](https://david-dm.org/zendeskgarden/css-components?type=dev)
 
 > :seedling: Garden is a design system for Zendesk
 
@@ -12,8 +12,8 @@ repository.
 See the individual package README for the CSS component you would like
 to install.
 
-Package |
-------- |
+Package | Version | Dependencies
+------- | ------- | ------------
 [`@zendesk/garden-css-arrows`](packages/arrows) |
 [`@zendesk/garden-css-avatars`](packages/avatars) |
 [`@zendesk/garden-css-bedrock`](packages/bedrock) |
@@ -30,11 +30,6 @@ Package |
 [`@zendesk/garden-css-tooltips`](packages/tooltips) |
 [`@zendesk/garden-css-utilities`](packages/utilities) |
 [`@zendesk/garden-css-variables`](packages/variables) |
-
-See [package registry
-documentation](https://github.com/zendeskgarden/LANDSCAPE/wiki/Package-Registry)
-for the configuration needed to install `@zendesk`-scoped packages as
-dependencies in your own program.
 
 ## Usage
 

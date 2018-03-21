@@ -14,14 +14,15 @@
     "test": "lerna run test --stream"
   },
   "devDependencies": {
-    "@zendesk/eslint-config-garden": "^4.1.0",
-    "@zendesk/garden-stylelint-config": "^7.0.0",
+    "@zendeskgarden/eslint-config": "^5.0.2",
+    "@zendeskgarden/stylelint-config": "^8.0.2",
     "@zendesk/garden-svg-icons": "^2.5.0",
     "babel-eslint": "^8.2.2",
     "caniuse-lite": "^1.0.30000810",
     "chalk": "^2.3.1",
     "cssnano": "^3.10.0",
     "eslint": "^4.18.1",
+    "eslint-plugin-notice": "^0.6.6",
     "gh-pages": "^1.1.0",
     "handlebars": "^4.0.11",
     "husky": "^0.15.0-rc.8",

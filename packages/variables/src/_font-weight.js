@@ -1,5 +1,11 @@
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping */
+/**
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping */
 let retVal = {
   thin: 100,
   extralight: 200,
