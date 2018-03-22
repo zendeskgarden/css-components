@@ -23,7 +23,7 @@
     "watch": "yarn build --watch"
   },
   "devDependencies": {
-    "@zendesk/garden-css-variables": "^3.1.0",
+    "@zendeskgarden/css-variables": "^3.1.0",
     "tinycolor2": "^1.4.1"
   },
   "keywords": [
