@@ -14,22 +14,22 @@ to install.
 
 Package | Version | Dependencies
 ------- | ------- | ------------
-[`@zendesk/garden-css-arrows`](packages/arrows) |
-[`@zendesk/garden-css-avatars`](packages/avatars) |
-[`@zendesk/garden-css-bedrock`](packages/bedrock) |
-[`@zendesk/garden-css-buttons`](packages/buttons) |
-[`@zendesk/garden-css-callouts`](packages/callouts) |
-[`@zendesk/garden-css-chrome`](packages/chrome) |
-[`@zendesk/garden-css-forms`](packages/forms) |
-[`@zendesk/garden-css-menus`](packages/menus) |
-[`@zendesk/garden-css-modals`](packages/modals) |
-[`@zendesk/garden-css-pagination`](packages/pagination) |
-[`@zendesk/garden-css-tables`](packages/tables) |
-[`@zendesk/garden-css-tabs`](packages/tabs) |
-[`@zendesk/garden-css-tags`](packages/tags) |
-[`@zendesk/garden-css-tooltips`](packages/tooltips) |
-[`@zendesk/garden-css-utilities`](packages/utilities) |
-[`@zendesk/garden-css-variables`](packages/variables) |
+[`@zendeskgarden/css-arrows`](packages/arrows) |
+[`@zendeskgarden/css-avatars`](packages/avatars) |
+[`@zendeskgarden/css-bedrock`](packages/bedrock) |
+[`@zendeskgarden/css-buttons`](packages/buttons) |
+[`@zendeskgarden/css-callouts`](packages/callouts) |
+[`@zendeskgarden/css-chrome`](packages/chrome) |
+[`@zendeskgarden/css-forms`](packages/forms) |
+[`@zendeskgarden/css-menus`](packages/menus) |
+[`@zendeskgarden/css-modals`](packages/modals) |
+[`@zendeskgarden/css-pagination`](packages/pagination) |
+[`@zendeskgarden/css-tables`](packages/tables) |
+[`@zendeskgarden/css-tabs`](packages/tabs) |
+[`@zendeskgarden/css-tags`](packages/tags) |
+[`@zendeskgarden/css-tooltips`](packages/tooltips) |
+[`@zendeskgarden/css-utilities`](packages/utilities) |
+[`@zendeskgarden/css-variables`](packages/variables) |
 
 ## Usage
 

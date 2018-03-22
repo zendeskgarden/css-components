@@ -20,6 +20,7 @@
     "lint:js": "eslint scripts/*.js src/*.js dist/*.js",
     "lint:json": "jsonlint dist/index.json -q",
     "lint:sass": "stylelint --config .sasslintrc dist/index.scss",
+    "prepack": "cp ../../LICENSE.md .",
     "test": "yarn build && yarn lint",
     "watch": "watch 'yarn build' src --interval=.1"
   },

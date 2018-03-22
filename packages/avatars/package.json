@@ -17,6 +17,7 @@
     "build": "postcss src/[a-z]*.css --dir dist",
     "format": "prettier-package-json --write",
     "lint": "stylelint $(find src -name '*.css')",
+    "prepack": "cp ../../LICENSE.md .",
     "test": "yarn lint",
     "watch": "yarn build --watch"
   },

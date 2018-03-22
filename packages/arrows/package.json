@@ -1,8 +1,8 @@
 {
   "name": "@zendesk/garden-css-arrows",
   "description": "Garden component CSS",
-  "author": "Zendesk Garden <garden@zendesk.com>",
   "license": "UNLICENSED",
+  "author": "Zendesk Garden <garden@zendesk.com>",
   "repository": "https://github.com/zendeskgarden/css-components",
   "bugs": {
     "url": "https://github.com/zendeskgarden/css-components/issues"
@@ -17,6 +17,7 @@
     "build": "postcss src/[a-z]*.css --dir dist",
     "format": "prettier-package-json --write",
     "lint": "stylelint $(find src -name '*.css')",
+    "prepack": "cp ../../LICENSE.md .",
     "test": "yarn lint",
     "watch": "yarn build --watch"
   },

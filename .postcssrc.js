@@ -11,7 +11,7 @@ module.exports = {
     'cssnano': {
       autoprefixer: false,
       core: false,
-      discardComments: { removeAll: true },
+      discardComments: { removeAllButFirst: true },
       reduceIdents: false,
       zindex: false
     }
