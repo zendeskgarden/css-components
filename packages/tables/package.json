@@ -1,8 +1,9 @@
 {
-  "name": "@zendesk/garden-css-tables",
+  "name": "@zendeskgarden/css-tables",
   "description": "Garden component CSS",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",
+  "homepage": "https://garden.zendesk.com/",
   "repository": "https://github.com/zendeskgarden/css-components",
   "bugs": {
     "url": "https://github.com/zendeskgarden/css-components/issues"
@@ -31,7 +32,7 @@
     "zendesk"
   ],
   "publishConfig": {
-    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+    "access": "public"
   },
   "style": "src/index.css"
 }

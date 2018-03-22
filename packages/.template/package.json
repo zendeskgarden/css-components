@@ -2,7 +2,8 @@
   "name": "@zendeskgarden/css-{{component}}",
   "description": "Garden component CSS",
   "author": "Zendesk Garden <garden@zendesk.com>",
-  "license": "UNLICENSED",
+  "homepage": "https://garden.zendesk.com/",
+  "license": "Apache-2.0",
   "repository": "https://github.com/zendeskgarden/css-components",
   "bugs": {
     "url": "https://github.com/zendeskgarden/css-components/issues"
@@ -31,7 +32,7 @@
     "zendesk"
   ],
   "publishConfig": {
-    "registry": "https://zdrepo.jfrog.io/zdrepo/api/npm/npm"
+    "access": "public"
   },
   "style": "src/index.css"
 }
