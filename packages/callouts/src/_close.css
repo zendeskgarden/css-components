@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-callout__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-silver-sand));

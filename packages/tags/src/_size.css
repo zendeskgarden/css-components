@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-tag--lg-border-radius: 4px;

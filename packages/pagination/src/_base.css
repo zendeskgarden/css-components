@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-pagination__page-border-radius: 4px;

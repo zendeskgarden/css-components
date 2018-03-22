@@ -71,10 +71,6 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@zendesk/garden-css-variables@^3.1.0":
-  version "3.1.0"
-  resolved "https://zdrepo.jfrog.io/zdrepo/api/npm/npm/@zendesk/garden-css-variables/-/@zendesk/garden-css-variables-3.1.0.tgz#1654ada5524a09018a3c2d8f89920849ab88b742"
-
 "@zendesk/garden-svg-icons@^2.5.0":
   version "2.5.0"
   resolved "https://zdrepo.jfrog.io/zdrepo/api/npm/npm/@zendesk/garden-svg-icons/-/@zendesk/garden-svg-icons-2.5.0.tgz#c913a32c062e6b2b4a1cbfd4feec969e81a66f93"

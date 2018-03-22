@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-dialog__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-iron));

@@ -1,5 +1,5 @@
 /* stylelint-disable no-descending-specificity, selector-max-specificity */
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-btn-group--light-border-color: color(var(--zd-color-white) alpha(40%));

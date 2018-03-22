@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-btn--icon-size: calc(var(--zd-btn-line-height) + 2px);
