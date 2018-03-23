@@ -12,11 +12,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **menus:** prevent `.is-disabled.is-checked` from overriding disabled/add, disabled/next, and disabled/previous ([#24](https://github.com/zendeskgarden/css-components/issues/24)) ([67feb42](https://github.com/zendeskgarden/css-components/commit/67feb42))
 
 
-### Features
-
-* add css-menus package to monorepo ([#10](https://github.com/zendeskgarden/css-components/issues/10)) ([6f48111](https://github.com/zendeskgarden/css-components/commit/6f48111))
-
-
 
 
 <a name="5.1.0"></a>
