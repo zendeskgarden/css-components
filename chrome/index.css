@@ -90,13 +90,18 @@
   transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out;
   transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   opacity:.6;
+  border:none;
+  background:transparent;
+  cursor:pointer;
   height:50px;
+  font-size:inherit;
 }
 .c-chrome__nav__item--logo{
   -webkit-box-ordinal-group:1;
       -ms-flex-order:0;
           order:0;
   fill:#fff;
+  cursor:default;
 }
 .c-chrome__nav__item,.c-chrome__nav__item:focus,.c-chrome__nav__item:hover{
   text-decoration:none;
@@ -149,6 +154,7 @@
   -webkit-box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
           box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
   background-color:#56777a;
+  cursor:pointer;
   width:60px;
   height:40px;
   color:inherit;
@@ -175,6 +181,7 @@
       -ms-flex-pack:start;
           justify-content:start;
   padding:0 8.5px;
+  text-align:left;
 }
 .c-chrome__nav--expanded .c-chrome__nav__item__icon,.c-chrome__nav--expanded .c-chrome__nav__item__text{
   margin:0 8.5px;
@@ -217,8 +224,12 @@
   -webkit-box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
           box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
 }
+.c-chrome.is-rtl .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo){
+  text-align:right;
+}
 .c-chrome.is-rtl .c-chrome__nav__fab{
-  right:30px;
+  right:auto;
+  left:-30px;
 }
 .c-chrome__subnav{
   -webkit-box-orient:vertical;
@@ -293,7 +304,7 @@
           box-sizing:border-box;
   border-bottom:1px solid #ddd;
   background-color:#fff;
-  padding:0 20px;
+  padding:0 4px;
   height:50px;
   color:#777;
   font-size:14px;
@@ -330,6 +341,7 @@
   height:30px;
   line-height:2.14286;
   white-space:nowrap;
+  font-size:inherit;
 }
 .c-chrome__body__header__item,.c-chrome__body__header__item:focus,.c-chrome__body__header__item:hover{
   text-decoration:none;
@@ -360,7 +372,7 @@
       -ms-flex-order:0;
           order:0;
   margin-right:auto;
-  margin-left:-20px;
+  margin-left:-4px;
   border-right:1px solid #ddd;
   padding:0;
   width:60px;
@@ -377,7 +389,7 @@
   display:inline-flex;
 }
 .c-chrome.is-rtl .c-chrome__body__header__item--logo{
-  margin-right:-20px;
+  margin-right:-4px;
   margin-left:auto;
   border-right:none;
   border-left:1px solid #ddd;
