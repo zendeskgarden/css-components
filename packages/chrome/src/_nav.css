@@ -43,7 +43,8 @@
   --zd-chrome__nav--expanded__item__-margin: var(--zd-chrome__nav--expanded__item-padding);
 }
 
-/* 1. Anchor reset. */
+/* 1. Button reset.
+ * 2. Anchor reset. */
 
 .c-chrome__nav {
   display: flex;
@@ -64,23 +65,28 @@
   order: var(--zd-chrome__nav__item-order);
   transition: var(--zd-chrome__nav__item-transition);
   opacity: var(--zd-chrome__nav__item-opacity);
+  border: none; /* [1] */
+  background: transparent; /* [1] */
+  cursor: pointer;
   height: var(--zd-chrome__nav__item-height);
+  font-size: inherit; /* [1] */
 }
 
 .c-chrome__nav__item--logo {
   order: var(--zd-chrome__nav__item--logo-order);
   fill: var(--zd-chrome__nav-color);
+  cursor: default;
 }
 
 .c-chrome__nav__item,
 .c-chrome__nav__item:hover,
 .c-chrome__nav__item:focus {
-  text-decoration: none; /* [1] */
-  color: inherit; /* [1] */
+  text-decoration: none; /* [2] */
+  color: inherit; /* [2] */
 }
 
 .c-chrome__nav__item:focus {
-  outline: none; /* [1] */
+  outline: none; /* [2] */
 }
 
 .c-chrome__nav__item--logo,
@@ -114,6 +120,7 @@
   border-radius: 100px;
   box-shadow: var(--zd-chrome__nav__fab-box-shadow);
   background-color: var(--zd-chrome__nav__fab-background-color);
+  cursor: pointer;
   width: var(--zd-chrome__nav__fab-width);
   height: var(--zd-chrome__nav__fab-height);
   color: inherit;
@@ -143,6 +150,7 @@
 .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo) {
   justify-content: start;
   padding: var(--zd-chrome__nav--expanded__item-padding);
+  text-align: left;
 }
 
 .c-chrome__nav--expanded .c-chrome__nav__item__icon,
@@ -190,13 +198,18 @@
   cursor: default;
 }
 
-/* stylelint-disable selector-max-specificity */
+/* stylelint-disable max-line-length, selector-max-specificity */
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active:--chrome-focused,
 .c-chrome__nav__fab:active:--chrome-focused {
   box-shadow: var(--zd-chrome__nav__fab-box-shadow);
 }
-/* stylelint-enable selector-max-specificity */
+
+.c-chrome.is-rtl .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo) {
+  text-align: right;
+}
+/* stylelint-enable max-line-length, selector-max-specificity */
 
 .c-chrome.is-rtl .c-chrome__nav__fab {
-  right: calc(var(--zd-chrome__nav__fab-right) * -1);
+  right: auto;
+  left: var(--zd-chrome__nav__fab-right);
 }
