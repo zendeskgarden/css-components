@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-chrome@1.1.2...@zendesk/garden-css-chrome@1.1.3) (2018-03-23)
+
+
+### Bug Fixes
+
+* **chrome:** add resets to support a wider selection of element types ([#43](https://github.com/zendeskgarden/css-components/issues/43)) ([d1f4f05](https://github.com/zendeskgarden/css-components/commit/d1f4f05))
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-chrome@1.1.1...@zendesk/garden-css-chrome@1.1.2) (2018-03-07)
 
