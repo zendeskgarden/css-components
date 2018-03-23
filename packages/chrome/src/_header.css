@@ -9,7 +9,7 @@
   --zd-chrome__body__header-color: var(--zd-color-monsoon);
   --zd-chrome__body__header-font-size: var(--zd-font-size-epsilon);
   --zd-chrome__body__header-height: var(--zd-chrome__nav__item-height);
-  --zd-chrome__body__header-padding-horizontal: 20px;
+  --zd-chrome__body__header-padding-horizontal: 4px;
   --zd-chrome__body__header-padding: 0 var(--zd-chrome__body__header-padding-horizontal);
   --zd-chrome__body__header--standalone-box-shadow:
     0 0 10px 0
@@ -85,6 +85,7 @@
   height: var(--zd-chrome__body__header__item-size);
   line-height: var(--zd-chrome__body__header__item-line-height);
   white-space: nowrap;
+  font-size: inherit; /* [2] */
 }
 
 .c-chrome__body__header__item,
