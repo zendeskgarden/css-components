@@ -18,7 +18,7 @@ if (process.env.TRAVIS_COMMIT_MESSAGE &&
     'lerna',
     'exec',
     'npm publish',
-    '--since=HEAD~1',
+    '--since=HEAD^',
     '--bail=false'
   ]);
 
