@@ -6,6 +6,7 @@
  */
 
 let retVal = {
+  'black': { r: 0, g: 0, b: 0 },
   'green-100': { r: 237, g: 248, b: 244 },
   'green-200': { r: 209, g: 232, b: 223 },
   'green-300': { r: 174, g: 207, b: 194 },
@@ -53,7 +54,8 @@ let retVal = {
   'yellow-500': { r: 245, g: 161, b: 51 },
   'yellow-600': { r: 237, g: 150, b: 28 },
   'yellow-700': { r: 173, g: 94, b: 24 },
-  'yellow-800': { r: 112, g: 59, b: 21 }
+  'yellow-800': { r: 112, g: 59, b: 21 },
+  'white': { r: 255, g: 255, b: 255 }
 };
 
 /* Deprecated colors */
@@ -63,7 +65,6 @@ retVal = Object.assign(retVal, {
   'anti-flash-white': { r: 243, g: 243, b: 243 },
   'apple-green': { r: 120, g: 163, b: 0 },
   'apricot': { r: 255, g: 202, b: 179 },
-  'black': { r: 0, g: 0, b: 0 },
   'blue-chalk': { r: 229, g: 214, b: 237 },
   'buff': { r: 246, g: 222, b: 134 },
   'buttermilk': { r: 255, g: 239, b: 179 },
@@ -139,7 +140,6 @@ retVal = Object.assign(retVal, {
   'verdigris': { r: 55, g: 184, b: 175 },
   'viking': { r: 95, g: 212, b: 204 },
   'wewak': { r: 239, g: 157, b: 151 },
-  'white': { r: 255, g: 255, b: 255 },
   'white-smoke': { r: 248, g: 248, b: 248 }
 });
 
@@ -160,9 +160,9 @@ retVal = Object.assign(retVal, {
   'algae': retVal['kale-700'],
   'breaker-bay': retVal['kale-400'],
   'daintree': retVal['kale-800'],
+  'promo-orange': retVal['orange-peel'],
   'sherpa-blue': retVal['kale-600'],
   'submarine': retVal['kale-300'],
-  'promo-orange': retVal['orange-peel'],
   'zendesk-green': retVal['apple-green']
 });
 
