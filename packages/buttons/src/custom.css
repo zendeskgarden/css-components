@@ -16,7 +16,7 @@
   --zd-btn--custom-focused-box-shadow:
     0 0 0 3px
     color(var(--zd-btn--custom-color) alpha(40%));
-  --zd-btn--custom-hovered-background-color: color(var(--zd-btn--custom-color) lightness(+10%) saturation(var(--zd-btn-hovered-background-color-saturation)));
+  --zd-btn--custom-hovered-background-color: color(var(--zd-btn--custom-color) lightness(+10%) saturation(+10%));
   --zd-btn--custom--anchor-disabled-color: var(--zd-btn--anchor-disabled-color);
 }
 

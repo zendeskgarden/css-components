@@ -5,7 +5,6 @@
   --zd-btn-font-size: var(--zd-font-size-epsilon);
   --zd-btn-font-weight: var(--zd-font-weight-regular);
   --zd-btn-background-color: transparent;
-  --zd-btn-border-color: var(--zd-color-pelorous);
   --zd-btn-border-radius: 4px;
   --zd-btn-border-width: 1px;
   --zd-btn-line-height: 38px;
@@ -86,6 +85,6 @@
 }
 
 .c-btn.c-btn--danger {
-  border-color: var(--zd-btn--danger-color);
+  border-color: var(--zd-btn--danger-border-color);
   color: var(--zd-btn--danger-color);
 }

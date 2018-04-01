@@ -1,11 +1,11 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-btn--dark-disabled-background-color: var(--zd-color-submarine);
-  --zd-btn--dark-disabled-color: var(--zd-color-algae);
-  --zd-btn--dark-muted-color: var(--zd-color-breaker-bay);
-  --zd-btn--dark-muted-background-color-active: var(--zd-color-sherpa-blue);
-  --zd-btn--dark-muted-color-active: var(--zd-color-submarine);
+  --zd-btn--dark-disabled-background-color: var(--zd-color-kale-300);
+  --zd-btn--dark-disabled-color: var(--zd-color-kale-700);
+  --zd-btn--dark-muted-color: var(--zd-color-kale-400);
+  --zd-btn--dark-muted-background-color-active: var(--zd-color-kale-600);
+  --zd-btn--dark-muted-color-active: var(--zd-color-kale-300);
 }
 
 .c-btn.c-btn--dark:--btn-disabled {
@@ -37,5 +37,10 @@
 .c-btn.c-btn--dark.c-btn--muted:--btn-disabled {
   background-color: var(--zd-btn--dark-disabled-background-color);
   color: var(--zd-btn--dark-disabled-color);
+}
+
+.l-btn-group .c-btn.c-btn--dark:--btn-disabled {
+  border-right-color: var(--zd-btn--dark-disabled-color);
+  border-left-color: var(--zd-btn--dark-disabled-color);
 }
 /* stylelint-enable selector-max-specificity */
