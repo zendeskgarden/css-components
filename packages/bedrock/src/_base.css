@@ -1,7 +1,7 @@
-@import '@zendeskgarden/css-variables';
+@import '@zendesk/garden-css-variables';
 
 :root {
-  --zd-anchor-color: var(--zd-color-pelorous);
+  --zd-anchor-color: var(--zd-color-blue-600);
   --zd-anchor-color-hover: var(--zd-anchor-color);
   --zd-html-background-color: var(--zd-color-white);
   --zd-html-box-sizing: border-box;
