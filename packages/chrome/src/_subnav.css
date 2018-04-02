@@ -91,6 +91,10 @@
   margin-top: 0;
 }
 
+.c-chrome__subnav__item:active:--chrome-focused {
+  box-shadow: none;
+}
+
 .c-chrome__subnav__item__text {
   overflow: hidden;
   text-overflow: ellipsis;
