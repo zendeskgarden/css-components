@@ -49,9 +49,9 @@
   cursor: pointer; /* [2] */
   padding: var(--zd-chrome__subnav__item-padding);
   width: 100%; /* [2] */
-  text-align: left; /* [2] */
   line-height: var(--zd-chrome__subnav__item-line-height);
   white-space: nowrap;
+  font-size: inherit; /* [2] */
 }
 
 .c-chrome__subnav__item,
@@ -87,7 +87,7 @@
   background-color: var(--zd-chrome__subnav__item-current-background-color);
 }
 
-.c-chrome__subnav__item:first-of-type {
+.c-chrome__subnav__item:first-child {
   margin-top: 0;
 }
 
