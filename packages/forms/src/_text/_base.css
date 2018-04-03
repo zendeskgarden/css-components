@@ -2,10 +2,10 @@
 
 :root {
   --zd-txt__input-background-color: var(--zd-color-white);
-  --zd-txt__input-border: 1px solid var(--zd-color-gainsboro);
+  --zd-txt__input-border: 1px solid var(--zd-forms-border-color);
   --zd-txt__input-border-radius: 4px;
-  --zd-txt__input-color: var(--zd-color-monsoon);
-  --zd-txt__input-color-placeholder: var(--zd-color-iron);
+  --zd-txt__input-color: var(--zd-color-grey-800);
+  --zd-txt__input-color-placeholder: var(--zd-color-grey-500);
   --zd-txt__input-font-size: var(--zd-font-size-epsilon);
   --zd-txt__input-line-height: calc(18 / 14);
   --zd-txt__input-height: var(--zd-spacing-xl);
