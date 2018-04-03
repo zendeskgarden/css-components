@@ -22,7 +22,7 @@
     "test": "yarn lint",
     "watch": "yarn build --watch"
   },
-  "devDependencies": {
+  "dependencies": {
     "@zendeskgarden/css-variables": "*",
     "normalize.css": "^8.0.0"
   },

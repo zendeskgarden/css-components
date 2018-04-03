@@ -22,8 +22,10 @@
     "test": "yarn lint",
     "watch": "yarn build --watch"
   },
+  "dependencies": {
+    "@zendeskgarden/css-variables": "*"
+  },
   "devDependencies": {
-    "@zendeskgarden/css-variables": "*",
     "tinycolor2": "^1.4.1"
   },
   "keywords": [
