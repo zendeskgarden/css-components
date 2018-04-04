@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.1.2"></a>
+## [5.1.2](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-menus@5.1.1...@zendesk/garden-css-menus@5.1.2) (2018-04-04)
+
+
+### Bug Fixes
+
+* **menus:** update header styling ([#46](https://github.com/zendeskgarden/css-components/issues/46)) ([866a30e](https://github.com/zendeskgarden/css-components/commit/866a30e))
+
+
+
+
 <a name="5.1.1"></a>
 ## 5.1.1 (2018-02-13)
 
