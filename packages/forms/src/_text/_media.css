@@ -1,7 +1,8 @@
 :root {
-  --zd-txt__media-start-margin: calc(var(--zd-txt__input-padding-horizontal));
-  --zd-txt__media-end-margin: calc(var(--zd-txt__input-padding-horizontal) * (3 / 4));
-  --zd-txt__input__media-size: 1em;
+  --zd-txt__input--media__figure-color: var(--zd-color-grey-400);
+  --zd-txt__input--media__figure-margin-start: calc(var(--zd-txt__input-padding-horizontal));
+  --zd-txt__input--media__figure-margin-end: calc(var(--zd-txt__input-padding-horizontal) * (3 / 4));
+  --zd-txt__input--media__figure-size: 1em;
 }
 
 .c-txt__input--media {
@@ -16,27 +17,26 @@
 }
 
 .c-txt__input--media__figure {
-  max-height: var(--zd-txt__input__media-size);
-  color: var(--zd-txt__input-color);
-}
-
-.c-txt__input--dark .c-txt__input--media__figure {
-  color: var(--zd-txt--dark__input-color);
+  margin: auto;
+  max-height: var(--zd-txt__input--media__figure-size);
+  color: var(--zd-txt__input--media__figure-color);
 }
 
 .c-txt__input--media__figure svg {
-  width: var(--zd-txt__input__media-size);
-  height: var(--zd-txt__input__media-size);
+  width: var(--zd-txt__input--media__figure-size);
+  height: var(--zd-txt__input--media__figure-size);
 }
 
 /* stylelint-disable no-descending-specificity */
 .c-txt__input--media__figure:first-of-type,
 .is-rtl .c-txt__input--media__figure:last-of-type {
-  margin: auto var(--zd-txt__media-end-margin) auto var(--zd-txt__media-start-margin);
+  margin-right: var(--zd-txt__input--media__figure-margin-end);
+  margin-left: var(--zd-txt__input--media__figure-margin-start);
 }
 
 .c-txt__input--media__figure:last-of-type,
 .is-rtl .c-txt__input--media__figure:first-of-type {
-  margin: auto var(--zd-txt__media-start-margin) auto var(--zd-txt__media-end-margin);
+  margin-right: var(--zd-txt__input--media__figure-margin-start);
+  margin-left: var(--zd-txt__input--media__figure-margin-end);
 }
 /* stylelint-enable no-descending-specificity */

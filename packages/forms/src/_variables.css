@@ -3,10 +3,11 @@
 :root {
   --zd-forms-accent-color: var(--zd-color-blue-600);
   --zd-forms-border-color: var(--zd-color-grey-300);
-  --zd-forms-disabled-color: var(--zd-color-aluminum);
+  --zd-forms-disabled-color: var(--zd-color-grey-400);
   --zd-forms-disabled-background-color: var(--zd-color-grey-100);
+  --zd-forms-focused-box-shadow-spread-radius: 3px;
   --zd-forms-focused-box-shadow:
-    0 0 0 3px
+    0 0 0 var(--zd-forms-focused-box-shadow-spread-radius)
     color(var(--zd-forms-accent-color) alpha(35%));
   --zd-forms-hovered-border-color: var(--zd-color-blue-400);
   --zd-forms-error-color: var(--zd-color-red-400);

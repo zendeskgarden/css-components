@@ -9,7 +9,6 @@
   --zd-txt--dark__input-border-color: transparent;
   --zd-txt--dark__input-color: color(var(--zd-color-white) alpha(75%));
   --zd-txt--dark__input-color-placeholder: var(--zd-color-breaker-bay);
-  --zd-txt--dark__input--select-hovered-background-image: var(--zd-txt__input--select__chevron-open-background-image);
   --zd-txt--dark__input--select-disabled-background-image: svg-load('14-chevron.svg', color: var(--zd-color-sherpa-blue));
 }
 
@@ -33,13 +32,6 @@
 }
 
 /* stylelint-disable selector-max-specificity */
-
-.c-txt__input--dark:--txt-hovered.c-txt__input--select:not(select)::before,
-.c-txt__input--dark:--txt-focused.c-txt__input--select:not(select)::before,
-select.c-txt__input--dark:--txt-hovered.c-txt__input--select,
-select.c-txt__input--dark:--txt-focused.c-txt__input--select {
-  background-image: var(--zd-txt--dark__input--select-hovered-background-image);
-}
 
 select.c-txt__input--dark.c-txt__input--select:-moz-focusring {
   text-shadow: 0 0 0 var(--zd-txt--dark__input-color);
