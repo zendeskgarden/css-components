@@ -23,10 +23,6 @@
   font-weight: var(--zd-input__label-font-weight);
 }
 
-.c-txt__label--dark {
-  color: var(--zd-input__label--dark-color);
-}
-
 .c-txt__label--regular {
   font-weight: var(--zd-txt__label--regular-font-weight);
 }
@@ -39,10 +35,6 @@
   line-height: var(--zd-txt__hint-line-height);
   color: var(--zd-input__hint-color);
   font-size: var(--zd-input__hint-font-size);
-}
-
-.c-txt__hint--dark {
-  color: var(--zd-input__hint--dark-color);
 }
 
 .c-txt__message {

@@ -21,10 +21,6 @@
   font-weight: var(--zd-input__label-font-weight);
 }
 
-.c-range__label--dark {
-  color: var(--zd-input__label--dark-color);
-}
-
 .c-range__label--regular {
   font-weight: var(--zd-range__label--regular-font-weight);
 }
@@ -37,10 +33,6 @@
   line-height: var(--zd-range__hint-line-height);
   color: var(--zd-input__hint-color);
   font-size: var(--zd-input__hint-font-size);
-}
-
-.c-range__hint--dark {
-  color: var(--zd-input__hint--dark-color);
 }
 
 .c-range__message {
@@ -71,10 +63,6 @@
 
 .c-range__message--warning {
   background-image: var(--zd-input__message--warning-background-image);
-}
-
-.c-range__message--warning.c-range__message--dark {
-  color: var(--zd-forms-warning-color);
 }
 
 .is-rtl.c-range__message--error,

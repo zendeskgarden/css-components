@@ -71,10 +71,6 @@
   content: '';
 }
 
-.c-chk__label--dark {
-  color: var(--zd-input__label--dark-color);
-}
-
 .c-chk__label--regular {
   font-weight: var(--zd-chk__label--regular-font-weight);
 }
@@ -84,10 +80,6 @@
   line-height: var(--zd-chk__hint-line-height);
   color: var(--zd-input__hint-color);
   font-size: var(--zd-input__hint-font-size);
-}
-
-.c-chk__hint--dark {
-  color: var(--zd-input__hint--dark-color);
 }
 
 .c-chk__message {
@@ -118,10 +110,6 @@
 
 .c-chk__message--warning {
   background-image: var(--zd-input__message--warning-background-image);
-}
-
-.c-chk__message--warning.c-chk__message--dark {
-  color: var(--zd-forms-warning-color);
 }
 
 .c-chk__label.is-hidden {
