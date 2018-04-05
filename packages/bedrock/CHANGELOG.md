@@ -3,7 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-      <a name="4.0.0"></a>
+  <a name="4.0.1"></a>
+## [4.0.1](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-bedrock@4.0.0...@zendesk/garden-css-bedrock@4.0.1) (2018-04-05)
+
+
+
+
+**Note:** Version bump only for package @zendesk/garden-css-bedrock
+
+  <a name="4.0.0"></a>
 # 4.0.0 (2018-02-14)
 
 
@@ -19,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-      <a name="3.1.0"></a>
+<a name="3.1.0"></a>
 ## [3.1.0] - 2017-10-09
 ### Added (per [#22](https://github.com/zendeskgarden/css-bedrock/pull/22))
 - Visibility utility classes
