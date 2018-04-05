@@ -4,7 +4,9 @@ module.exports = {
   plugins: {
     'postcss-import': {},
     'postcss-input-range': {},
-    'postcss-cssnext': {},
+    'postcss-cssnext': {
+      features: { fontFamilySystemUi: false }
+    },
     'postcss-inline-svg': {
       path: path.join(__dirname, 'node_modules', '@zendesk', 'garden-svg-icons', 'src')
     },
