@@ -53,16 +53,17 @@
 
 .c-range__message--error {
   background-image: var(--zd-input__message--error-background-image);
-  color: var(--zd-forms-error-color);
+  color: var(--zd-input__message--error-color);
 }
 
 .c-range__message--success {
   background-image: var(--zd-input__message--success-background-image);
-  color: var(--zd-forms-success-color);
+  color: var(--zd-input__message--success-color);
 }
 
 .c-range__message--warning {
   background-image: var(--zd-input__message--warning-background-image);
+  color: var(--zd-input__message--warning-color);
 }
 
 .is-rtl.c-range__message--error,

@@ -4,7 +4,7 @@
 @import '_selectors';
 
 :root {
-  --zd-chk-active-background-color: var(--zd-color-grey-200);
+  --zd-chk-active-background-color: var(--zd-color-blue-200);
   --zd-chk-active-border-color: var(--zd-forms-accent-color);
   --zd-chk-active-transition:
     border-color .1s ease-in-out,
