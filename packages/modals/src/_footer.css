@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-dialog__footer-padding: 0 var(--zd-spacing-xl) 32px;

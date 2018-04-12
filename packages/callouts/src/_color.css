@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-callout--alert-padding: 50px;
@@ -12,15 +12,15 @@
     0 var(--zd-spacing) var(--zd-spacing-lg) 0
     color(var(--zd-color-chathams-blue) alpha(15%));
   --zd-callout--error-background-color: color(var(--zd-callout--error-color) alpha(10%));
-  --zd-callout--error-background-image: svg-load('14-error-fill.svg', color: var(--zd-callout--error-color));
+  --zd-callout--error-background-image: svg-load('14/error-fill.svg', color: var(--zd-callout--error-color));
   --zd-callout--error-color: var(--zd-color-flamingo);
   --zd-callout--recessed-background-color: var(--zd-color-snow);
   --zd-callout--recessed-border-color: var(--zd-color-gainsboro);
   --zd-callout--success-background-color: color(var(--zd-callout--success-color) alpha(10%));
-  --zd-callout--success-background-image: svg-load('14-checkmark-fill.svg', color: var(--zd-callout--success-color));
+  --zd-callout--success-background-image: svg-load('14/checkmark-fill.svg', color: var(--zd-callout--success-color));
   --zd-callout--success-color: var(--zd-color-chateau-green);
   --zd-callout--warning-background-color: color(var(--zd-callout--warning-color) alpha(10%));
-  --zd-callout--warning-background-image: svg-load('14-error-fill.svg', color: var(--zd-callout--warning-color));
+  --zd-callout--warning-background-image: svg-load('14/error-fill.svg', color: var(--zd-callout--warning-color));
   --zd-callout--warning-color: var(--zd-color-marigold);
 }
 

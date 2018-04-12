@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-pagination__page-border-radius: 4px;
@@ -15,8 +15,8 @@
     color .25s ease-in-out;
   --zd-pagination__page--gap-font-size: var(--zd-font-size-delta);
   --zd-pagination__page--gap-margin-top: calc(var(--zd-pagination__page-font-size) - var(--zd-pagination__page--gap-font-size));
-  --zd-pagination__page--next-background-image: svg-load('14-next.svg', color: var(--zd-color-silver-sand));
-  --zd-pagination__page--previous-background-image: svg-load('14-previous.svg', color: var(--zd-color-silver-sand));
+  --zd-pagination__page--next-background-image: svg-load('14/next.svg', color: var(--zd-color-silver-sand));
+  --zd-pagination__page--previous-background-image: svg-load('14/previous.svg', color: var(--zd-color-silver-sand));
   --zd-pagination__page__a-margin: 0 calc(5 / 14 * -1em);
 }
 

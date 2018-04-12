@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 @import '_selectors';
 @import '_variables';
 
@@ -9,13 +9,13 @@
   --zd-menu__item-padding-vertical: 10px;
   --zd-menu__item-padding: var(--zd-menu__item-padding-vertical) var(--zd-menu__item-padding-horizontal);
   --zd-menu__item-transition: box-shadow .1s ease-in-out;
-  --zd-menu__item--add-background-image: svg-load('14-plus.svg', color: var(--zd-menu-accent-color));
+  --zd-menu__item--add-background-image: svg-load('14/plus.svg', color: var(--zd-menu-accent-color));
   --zd-menu__item--add-color: var(--zd-menu-accent-color);
   --zd-menu__item--checked-background-offset: 10%;
   --zd-menu__item--checked-background:
     no-repeat
     calc(50% + var(--zd-menu__item--checked-background-offset)) / var(--zd-spacing-sm)
-    svg-load('14-checkmark-lg.svg', color: var(--zd-menu-accent-color));
+    svg-load('14/checkmark-lg.svg', color: var(--zd-menu-accent-color));
   --zd-menu__item--header-font-weight: var(--zd-font-weight-semibold);
   --zd-menu__item--header__icon-top: calc(calc(var(--zd-menu__item--icon-height) - var(--zd-menu__item--icon-background-size)) / 2);
   --zd-menu__item--header__icon-left: calc(calc(var(--zd-menu__item--icon-width) - var(--zd-menu__item--icon-background-size)) / 2);
@@ -26,8 +26,8 @@
   --zd-menu__item--media--icon-height: calc(var(--zd-menu__item--media__figure-size) + 22px);
   --zd-menu__item--media__figure-margin: 8px;
   --zd-menu__item--media__figure-size: 32px;
-  --zd-menu__item--next-background-image: svg-load('14-next.svg', color: var(--zd-menu-accent-color));
-  --zd-menu__item--previous-background-image: svg-load('14-previous.svg', color: var(--zd-menu-accent-color));
+  --zd-menu__item--next-background-image: svg-load('14/next.svg', color: var(--zd-menu-accent-color));
+  --zd-menu__item--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu-accent-color));
   --zd-menu--sm__item-padding-horizontal: 20px;
   --zd-menu--sm__item-padding-vertical: 6px;
   --zd-menu--sm__item-padding: var(--zd-menu--sm__item-padding-vertical) var(--zd-menu--sm__item-padding-horizontal);

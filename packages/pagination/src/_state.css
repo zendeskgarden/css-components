@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 @import '_variables';
 @import '_selectors';
 
@@ -11,8 +11,8 @@
     inset 0 0 0 3px
     color(var(--zd-pagination-accent-color) alpha(40%));
   --zd-pagination__page-hovered-background-color: var(--zd-pagination__page-current-background-color);
-  --zd-pagination__page--next-hovered-background-image: svg-load('14-next.svg', color: var(--zd-color-dark-gray));
-  --zd-pagination__page--previous-hovered-background-image: svg-load('14-previous.svg', color: var(--zd-color-dark-gray));
+  --zd-pagination__page--next-hovered-background-image: svg-load('14/next.svg', color: var(--zd-color-dark-gray));
+  --zd-pagination__page--previous-hovered-background-image: svg-load('14/previous.svg', color: var(--zd-color-dark-gray));
 }
 
 .c-pagination__page:--page-hovered {

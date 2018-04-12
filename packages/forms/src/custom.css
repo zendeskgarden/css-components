@@ -1,4 +1,11 @@
-@import '@zendesk/garden-css-variables';
+/*!
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@import '@zendeskgarden/css-variables';
 @import '_checkbox/_selectors';
 @import '_range/_selectors';
 @import '_text/_selectors';
@@ -10,7 +17,7 @@
     0 0 0 3px
     color(var(--zd-forms--custom-accent-color) alpha(40%));
   --zd-range--custom-track-background-image: linear-gradient(var(--zd-forms--custom-accent-color), var(--zd-forms--custom-accent-color));
-  --zd-txt--custom__input--select__chevron-open-background-image: svg-load('14-chevron.svg', color: var(--zd-forms--custom-accent-color));
+  --zd-txt--custom__input--select__chevron-open-background-image: svg-load('14/chevron.svg', color: var(--zd-forms--custom-accent-color));
 }
 
 :--chk-checked-enabled.c-chk__label--custom::before,

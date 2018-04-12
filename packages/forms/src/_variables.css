@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-forms-accent-color: var(--zd-color-pelorous);
@@ -16,7 +16,7 @@
   --zd-input__label--dark-color: var(--zd-color-white);
   --zd-input__message-color: var(--zd-color-monsoon);
   --zd-input__message-font-size: var(--zd-font-size-zeta);
-  --zd-input__message--error-background-image: svg-load('14-error-fill.svg', color: var(--zd-forms-error-color));
-  --zd-input__message--success-background-image: svg-load('14-checkmark-fill.svg', color: var(--zd-forms-success-color));
-  --zd-input__message--warning-background-image: svg-load('14-error-fill.svg', color: var(--zd-forms-warning-color));
+  --zd-input__message--error-background-image: svg-load('14/error-fill.svg', color: var(--zd-forms-error-color));
+  --zd-input__message--success-background-image: svg-load('14/checkmark-fill.svg', color: var(--zd-forms-success-color));
+  --zd-input__message--warning-background-image: svg-load('14/error-fill.svg', color: var(--zd-forms-warning-color));
 }

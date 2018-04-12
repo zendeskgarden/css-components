@@ -8,12 +8,12 @@ module.exports = {
       features: { fontFamilySystemUi: false }
     },
     'postcss-inline-svg': {
-      path: path.join(__dirname, 'node_modules', '@zendesk', 'garden-svg-icons', 'src')
+      path: path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')
     },
     'cssnano': {
       autoprefixer: false,
       core: false,
-      discardComments: { removeAll: true },
+      discardComments: { removeAllButFirst: true },
       reduceIdents: false,
       zindex: false
     }

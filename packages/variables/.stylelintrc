@@ -1,5 +1,5 @@
 {
-  "extends": "@zendesk/garden-stylelint-config",
+  "extends": "@zendeskgarden/stylelint-config",
   "rules": {
     "no-missing-end-of-source-newline",
     "value-keyword-case": ["lower", { "ignoreKeywords": ['/^[A-Z].+$/'] }]

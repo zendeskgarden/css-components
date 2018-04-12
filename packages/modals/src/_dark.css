@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-dialog--dark-background-color: var(--zd-color-algae);
@@ -7,9 +7,9 @@
     0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0
     color(var(--zd-color-black) alpha(15%));
   --zd-dialog--dark__body-color: var(--zd-color-submarine);
-  --zd-dialog--dark__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-breaker-bay));
+  --zd-dialog--dark__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-breaker-bay));
   --zd-dialog--dark__close-focused-background-color: var(--zd-color-sherpa-blue);
-  --zd-dialog--dark__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-submarine));
+  --zd-dialog--dark__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-submarine));
   --zd-dialog--dark__header-color: var(--zd-color-white);
 }
 

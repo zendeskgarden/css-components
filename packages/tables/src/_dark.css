@@ -7,9 +7,9 @@
   --zd-table--dark__row-hovered-background-color: var(--zd-color-sherpa-blue);
   --zd-table--dark__row-selected-background-color: var(--zd-color-breaker-bay);
   --zd-table--dark__row-selected-border-color: var(--zd-color-sherpa-blue);
-  --zd-table--dark__row__cell__overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-breaker-bay));
+  --zd-table--dark__row__cell__overflow-background-image: svg-load('26/ellipsis.svg', color: var(--zd-color-breaker-bay));
   --zd-table--dark__row__cell__overflow-focused-background-color: var(--zd-color-sherpa-blue);
-  --zd-table--dark__row-selected__cell__overflow-background-image: svg-load('26-ellipsis.svg', color: var(--zd-color-submarine));
+  --zd-table--dark__row-selected__cell__overflow-background-image: svg-load('26/ellipsis.svg', color: var(--zd-color-submarine));
 }
 
 .c-table--dark {

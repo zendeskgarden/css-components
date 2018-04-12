@@ -1,4 +1,4 @@
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 
 :root {
   --zd-pagination--dark__page-color: var(--zd-color-submarine);
@@ -6,10 +6,10 @@
   --zd-pagination--dark__page-current-background-color: var(--zd-pagination--dark__page-hovered-background-color);
   --zd-pagination--dark__page-current-color: color(var(--zd-pagination--dark__page-color) lightness(+10%));
   --zd-pagination--dark__page-hovered-background-color: var(--zd-color-algae);
-  --zd-pagination--dark__page--next-background-image: svg-load('14-next.svg', color: var(--zd-color-submarine));
-  --zd-pagination--dark__page--previous-background-image: svg-load('14-previous.svg', color: var(--zd-color-submarine));
-  --zd-pagination--dark__page--next-hovered-background-image: svg-load('14-next.svg', color: var(--zd-color-white));
-  --zd-pagination--dark__page--previous-hovered-background-image: svg-load('14-previous.svg', color: var(--zd-color-white));
+  --zd-pagination--dark__page--next-background-image: svg-load('14/next.svg', color: var(--zd-color-submarine));
+  --zd-pagination--dark__page--previous-background-image: svg-load('14/previous.svg', color: var(--zd-color-submarine));
+  --zd-pagination--dark__page--next-hovered-background-image: svg-load('14/next.svg', color: var(--zd-color-white));
+  --zd-pagination--dark__page--previous-hovered-background-image: svg-load('14/previous.svg', color: var(--zd-color-white));
 }
 
 .c-pagination--dark .c-pagination__page {
