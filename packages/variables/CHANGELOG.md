@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@3.1.0...@zendeskgarden/css-variables@4.0.0) (2018-04-12)
+
+
+### Features
+
+* **variables, arrows:** prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#44](https://github.com/zendeskgarden/css-components/issues/44)) ([ffe72ce](https://github.com/zendeskgarden/css-components/commit/ffe72ce))
+
+
+### BREAKING CHANGES
+
+* **variables, arrows:** package location has moved to the npm registry under the `@zendeskgarden` scope. See the README for installation/upgrade details.
+
+
+
+
 <a name="3.1.0"></a>
 # 3.1.0 (2017-12-20)
 
