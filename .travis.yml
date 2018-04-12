@@ -26,7 +26,7 @@ deploy:
       branch: master
 
   - provider: script
-    script: npm whoami && scripts/publish.js
+    script: scripts/publish.js
     skip_cleanup: true
     on:
       branch: master
