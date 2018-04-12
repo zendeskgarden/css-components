@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@4.0.0...@zendeskgarden/css-variables@4.1.0) (2018-04-12)
+
+
+### Features
+
+* **variables:** add new {color}-[100..800] values ([#45](https://github.com/zendeskgarden/css-components/issues/45)) ([00a11fa](https://github.com/zendeskgarden/css-components/commit/00a11fa))
+
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@3.1.0...@zendeskgarden/css-variables@4.0.0) (2018-04-12)
 
