@@ -1,19 +1,31 @@
+/*!
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
 .c-table--custom .c-table__row:not(.c-table__row--header):not(.c-table__row--group).is-focused .c-table__row__cell:first-of-type,.c-table--custom .c-table__row:not(.c-table__row--header):not(.c-table__row--group):focus .c-table__row__cell:first-of-type{
   -webkit-box-shadow:inset 3px 0 0 0 #eb4962;
           box-shadow:inset 3px 0 0 0 #eb4962;
 }
+
 .c-table--custom .c-table__row__cell__sortable.is-focused,.c-table--custom .c-table__row__cell__sortable.is-hovered,.c-table--custom .c-table__row__cell__sortable:focus,.c-table--custom .c-table__row__cell__sortable:hover{
   color:#eb4962;
 }
+
 .c-table--custom .c-table__row__cell__sortable.is-focused:before,.c-table--custom .c-table__row__cell__sortable.is-hovered:before,.c-table--custom .c-table__row__cell__sortable:focus:before,.c-table--custom .c-table__row__cell__sortable:hover:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='rgba(235, 73, 98, 0.4)' fill='rgba(235, 73, 98, 0.4)'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
 }
+
 .c-table--custom .c-table__row__cell__sortable.is-ascending.is-focused:before,.c-table--custom .c-table__row__cell__sortable.is-ascending.is-hovered:before,.c-table--custom .c-table__row__cell__sortable.is-ascending:focus:before,.c-table--custom .c-table__row__cell__sortable.is-ascending:hover:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23EB4962' fill='rgba(235, 73, 98, 0.4)'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
 }
+
 .c-table--custom .c-table__row__cell__sortable.is-descending.is-focused:before,.c-table--custom .c-table__row__cell__sortable.is-descending.is-hovered:before,.c-table--custom .c-table__row__cell__sortable.is-descending:focus:before,.c-table--custom .c-table__row__cell__sortable.is-descending:hover:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='rgba(235, 73, 98, 0.4)' fill='%23EB4962'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
 }
+
 .c-table--custom.is-rtl .c-table__row:not(.c-table__row--header):not(.c-table__row--group).is-focused .c-table__row__cell:first-of-type,.c-table--custom.is-rtl .c-table__row:not(.c-table__row--header):not(.c-table__row--group):focus .c-table__row__cell:first-of-type{
   -webkit-box-shadow:inset -3px 0 0 0 #eb4962;
           box-shadow:inset -3px 0 0 0 #eb4962;

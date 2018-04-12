@@ -1,3 +1,10 @@
+/*!
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
 .c-chrome{
   display:-webkit-box;
   display:-ms-flexbox;
@@ -7,9 +14,11 @@
   overflow-y:hidden;
   font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif;
 }
+
 .c-chrome.is-rtl{
   direction:rtl;
 }
+
 .c-chrome__body{
   -webkit-box-flex:1;
       -ms-flex:1;
@@ -19,6 +28,7 @@
           order:1;
   background-color:#f3f3f3;
 }
+
 .c-chrome__body__content{
   display:-webkit-box;
   display:-ms-flexbox;
@@ -28,6 +38,7 @@
   color:#555;
   font-size:14px;
 }
+
 .c-chrome__body__content__main{
   -webkit-box-flex:1;
       -ms-flex:1;
@@ -38,6 +49,7 @@
   background-color:#fff;
   overflow:auto;
 }
+
 .c-chrome__body__content__sidebar{
   -ms-flex-negative:0;
       flex-shrink:0;
@@ -50,10 +62,12 @@
   width:330px;
   overflow:auto;
 }
+
 .c-chrome.is-rtl .c-chrome__body__content__sidebar{
   border-right:none;
   border-left:1px solid #ddd;
 }
+
 .c-chrome__nav{
   position:relative;
   -webkit-box-orient:vertical;
@@ -70,11 +84,13 @@
   color:#fff;
   font-size:14px;
 }
+
 .c-chrome__nav,.c-chrome__nav__item{
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
 }
+
 .c-chrome__nav__item{
   -webkit-box-align:center;
       -ms-flex-align:center;
@@ -96,6 +112,7 @@
   height:50px;
   font-size:inherit;
 }
+
 .c-chrome__nav__item--logo{
   -webkit-box-ordinal-group:1;
       -ms-flex-order:0;
@@ -103,16 +120,20 @@
   fill:#fff;
   cursor:default;
 }
+
 .c-chrome__nav__item,.c-chrome__nav__item:focus,.c-chrome__nav__item:hover{
   text-decoration:none;
   color:inherit;
 }
+
 .c-chrome__nav__item:focus{
   outline:none;
 }
+
 .c-chrome__nav__item--logo,.c-chrome__nav__item.is-current,.c-chrome__nav__item.is-focused,.c-chrome__nav__item.is-hovered,.c-chrome__nav__item:hover,.c-chrome__nav__item[aria-current=true]{
   opacity:1;
 }
+
 .c-chrome__nav__item__icon{
   -webkit-box-ordinal-group:1;
       -ms-flex-order:0;
@@ -121,6 +142,7 @@
   width:26px;
   height:26px;
 }
+
 .c-chrome__nav__item__text{
   -webkit-box-ordinal-group:2;
       -ms-flex-order:1;
@@ -132,6 +154,7 @@
   overflow:hidden;
   white-space:nowrap;
 }
+
 .c-chrome__nav__fab{
   display:-webkit-inline-box;
   display:-ms-inline-flexbox;
@@ -160,22 +183,27 @@
   color:inherit;
   font-weight:600;
 }
+
 .c-chrome__nav__fab:focus{
   outline:none;
 }
+
 .c-chrome__nav__fab__icon{
   width:20px;
   height:20px;
 }
+
 .c-chrome__nav__fab__text{
   margin:0 4px;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
 }
+
 .c-chrome__nav--expanded{
   width:200px;
 }
+
 .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo){
   -webkit-box-pack:start;
       -ms-flex-pack:start;
@@ -183,9 +211,11 @@
   padding:0 8.5px;
   text-align:left;
 }
+
 .c-chrome__nav--expanded .c-chrome__nav__item__icon,.c-chrome__nav--expanded .c-chrome__nav__item__text{
   margin:0 8.5px;
 }
+
 .c-chrome__nav--expanded :not(.c-chrome__nav__item--logo) .c-chrome__nav__item__text{
   position:static;
   -webkit-box-flex:1;
@@ -196,41 +226,52 @@
   height:auto;
   text-overflow:ellipsis;
 }
+
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-hovered,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):hover{
   background-color:rgba(0,0,0,.1);
 }
+
 .c-chrome__nav__fab.is-hovered,.c-chrome__nav__fab:hover{
   background-color:#6d9497;
 }
+
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-focused{
   -webkit-box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
           box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
 }
+
 .c-chrome__nav__fab.is-focused{
   -webkit-box-shadow:0 6px 12px 0 rgba(36,83,107,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
           box-shadow:0 6px 12px 0 rgba(36,83,107,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
 }
+
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
   background-color:hsla(0,0%,100%,.1);
 }
+
 .c-chrome__nav__fab.is-active,.c-chrome__nav__fab:active{
   background-color:#576061;
 }
+
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
   background-color:#30aabc;
   cursor:default;
 }
+
 .c-chrome__nav__fab:active.is-focused,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active.is-focused{
   -webkit-box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
           box-shadow:0 6px 12px 0 rgba(36,83,107,.15);
 }
+
 .c-chrome.is-rtl .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo){
   text-align:right;
 }
+
 .c-chrome.is-rtl .c-chrome__nav__fab{
   right:auto;
   left:-30px;
 }
+
 .c-chrome__subnav{
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
@@ -245,6 +286,7 @@
   color:#fff;
   font-size:14px;
 }
+
 .c-chrome__subnav__item{
   display:-webkit-box;
   display:-ms-flexbox;
@@ -265,40 +307,51 @@
   white-space:nowrap;
   font-size:inherit;
 }
+
 .c-chrome__subnav__item,.c-chrome__subnav__item:focus,.c-chrome__subnav__item:hover{
   text-decoration:none;
   color:inherit;
 }
+
 .c-chrome__subnav__item:focus{
   outline:none;
 }
+
 .c-chrome__subnav__item.is-current,.c-chrome__subnav__item.is-focused,.c-chrome__subnav__item.is-hovered,.c-chrome__subnav__item:hover,.c-chrome__subnav__item[aria-current=true]{
   opacity:1;
 }
+
 .c-chrome__subnav__item.is-hovered,.c-chrome__subnav__item:hover{
   background-color:rgba(0,0,0,.1);
 }
+
 .c-chrome__subnav__item.is-focused{
   -webkit-box-shadow:0 0 0 3px hsla(0,0%,100%,.2);
           box-shadow:0 0 0 3px hsla(0,0%,100%,.2);
 }
+
 .c-chrome__subnav__item.is-active,.c-chrome__subnav__item:active{
   background-color:hsla(0,0%,100%,.03);
 }
+
 .c-chrome__subnav__item.is-current,.c-chrome__subnav__item[aria-current=true]{
   background-color:hsla(0,0%,100%,.1);
 }
+
 .c-chrome__subnav__item:first-child{
   margin-top:0;
 }
+
 .c-chrome__subnav__item:active.is-focused{
   -webkit-box-shadow:none;
           box-shadow:none;
 }
+
 .c-chrome__subnav__item__text{
   overflow:hidden;
   text-overflow:ellipsis;
 }
+
 .c-chrome__body__header{
   display:-webkit-box;
   display:-ms-flexbox;
@@ -318,10 +371,12 @@
   color:#777;
   font-size:14px;
 }
+
 .c-chrome__body__header--standalone{
   -webkit-box-shadow:0 0 10px 0 rgba(36,83,107,.15);
           box-shadow:0 0 10px 0 rgba(36,83,107,.15);
 }
+
 .c-chrome__body__header__item{
   display:-webkit-inline-box;
   display:-ms-inline-flexbox;
@@ -352,21 +407,26 @@
   white-space:nowrap;
   font-size:inherit;
 }
+
 .c-chrome__body__header__item,.c-chrome__body__header__item:focus,.c-chrome__body__header__item:hover{
   text-decoration:none;
   color:inherit;
 }
+
 .c-chrome__body__header__item:focus{
   outline:none;
 }
+
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-focused{
   -webkit-box-shadow:0 0 0 3px rgba(48,170,188,.4);
           box-shadow:0 0 0 3px rgba(48,170,188,.4);
 }
+
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active.is-focused{
   -webkit-box-shadow:none;
           box-shadow:none;
 }
+
 .c-chrome__body__header__item--max-x{
   -webkit-box-flex:1;
       -ms-flex:1;
@@ -375,6 +435,7 @@
       -ms-flex-pack:start;
           justify-content:start;
 }
+
 .c-chrome__body__header__item--logo{
   display:none;
   -webkit-box-ordinal-group:1;
@@ -388,25 +449,30 @@
   overflow:hidden;
   fill:#03363d;
 }
+
 .c-chrome__body__header__item--logo,.c-chrome__body__header__item--max-y{
   border-radius:0;
   height:100%;
 }
+
 .c-chrome__body__header--standalone .c-chrome__body__header__item--logo{
   display:-webkit-inline-box;
   display:-ms-inline-flexbox;
   display:inline-flex;
 }
+
 .c-chrome.is-rtl .c-chrome__body__header__item--logo{
   margin-right:-4px;
   margin-left:auto;
   border-right:none;
   border-left:1px solid #ddd;
 }
+
 .c-chrome__body__header__item.c-chrome__body__header__item--max-y.is-focused{
   -webkit-box-shadow:inset 0 3px 0 0 rgba(48,170,188,.4),3px 0 0 0 rgba(48,170,188,.4),inset 0 -3px 0 0 rgba(48,170,188,.4),-3px 0 0 0 rgba(48,170,188,.4);
           box-shadow:inset 0 3px 0 0 rgba(48,170,188,.4),3px 0 0 0 rgba(48,170,188,.4),inset 0 -3px 0 0 rgba(48,170,188,.4),-3px 0 0 0 rgba(48,170,188,.4);
 }
+
 .c-chrome__body__header__item__icon{
   -webkit-transition:-webkit-transform .25s ease-in-out;
   transition:-webkit-transform .25s ease-in-out;
@@ -416,23 +482,28 @@
   width:14px;
   height:14px;
 }
+
 .c-chrome__body__header__item--logo .c-chrome__body__header__item__icon{
   margin:0;
   width:26px;
   height:26px;
 }
+
 img.c-chrome__body__header__item__icon{
   margin:0;
   border-radius:3px;
   width:22px;
   height:22px;
 }
+
 .c-chrome__body__header__item.c-chrome__body__header__item--round,.c-chrome__body__header__item.c-chrome__body__header__item--round .c-chrome__body__header__item__icon{
   border-radius:100px;
 }
+
 .c-chrome__body__header__item__text{
   margin:0 4px;
 }
+
 .c-chrome__body__header__item--logo .c-chrome__body__header__item__text,.c-chrome__body__header__item__text.is-clipped{
   margin:0;
   position:absolute;
@@ -442,89 +513,115 @@ img.c-chrome__body__header__item__icon{
   overflow:hidden;
   white-space:nowrap;
 }
+
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__text{
   color:#03363d;
 }
+
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--chat,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat{
   color:#f79a3e;
 }
+
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--connect,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect{
   color:#eb6651;
 }
+
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--explore,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore{
   color:#30aabc;
 }
+
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--guide,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide{
   color:#eb4962;
 }
+
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--message,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--message{
   color:#37b8af;
 }
+
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--support,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--support{
   color:#78a300;
 }
+
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--talk,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
   color:#efc93d;
 }
+
 .c-chrome--dark .c-chrome__nav__fab{
   -webkit-box-shadow:0 6px 12px 0 rgba(0,0,0,.15);
           box-shadow:0 6px 12px 0 rgba(0,0,0,.15);
 }
+
 .c-chrome--dark .c-chrome__nav__fab.is-focused{
   -webkit-box-shadow:0 6px 12px 0 rgba(0,0,0,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
           box-shadow:0 6px 12px 0 rgba(0,0,0,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
 }
+
 .c-chrome--dark .c-chrome__body{
   background-color:#012b30;
 }
+
 .c-chrome--dark .c-chrome__body__header{
   border-bottom:none;
   background-color:#03363d;
   color:#819a9e;
 }
+
 .c-chrome--dark .c-chrome__body__header--solo{
   -webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.15);
           box-shadow:0 0 10px 0 rgba(0,0,0,.15);
 }
+
 .c-chrome.c-chrome--dark .c-chrome__body__header__item--logo{
   border-color:#04444d;
   fill:#fff;
 }
+
 .c-chrome--dark .c-chrome__body__content,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__text,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__text,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__text,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__icon,.c-chrome--dark .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__text{
   color:#fff;
 }
+
 .c-chrome--dark .c-chrome__body__content__main{
   background-color:inherit;
 }
+
 .c-chrome.c-chrome--dark .c-chrome__body__content__sidebar{
   border-color:#04444d;
 }
+
 .c-chrome__nav--dark{
   background-color:#000;
 }
+
 .c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
   background-color:rgba(0,0,0,.1);
 }
+
 .c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
   background-color:hsla(0,0%,100%,.3);
 }
+
 .c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
   color:#fff;
 }
+
 .c-chrome__nav--light{
   background-color:#fff;
   color:#333;
 }
+
 .c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-focused{
   -webkit-box-shadow:inset 0 0 0 3px rgba(0,0,0,.2);
           box-shadow:inset 0 0 0 3px rgba(0,0,0,.2);
 }
+
 .c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
   background-color:rgba(0,0,0,.1);
 }
+
 .c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
   background-color:rgba(0,0,0,.3);
 }
+
 .c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
   color:#333;
   fill:#333;
