@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-chrome@1.1.3...@zendesk/garden-css-chrome@1.1.4) (2018-04-02)
+
+
+### Bug Fixes
+
+* **chrome:** allow subnav items to be used with buttons ([#47](https://github.com/zendeskgarden/css-components/issues/47)) ([b5a7b13](https://github.com/zendeskgarden/css-components/commit/b5a7b13))
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-chrome@1.1.2...@zendesk/garden-css-chrome@1.1.3) (2018-03-23)
 
