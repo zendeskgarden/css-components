@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-arrows@1.1.0...@zendeskgarden/css-arrows@2.0.0) (2018-04-12)
+
+
+### Features
+
+* add css-menus package to monorepo ([#10](https://github.com/zendeskgarden/css-components/issues/10)) ([6f48111](https://github.com/zendeskgarden/css-components/commit/6f48111))
+* **variables, arrows:** prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#44](https://github.com/zendeskgarden/css-components/issues/44)) ([ffe72ce](https://github.com/zendeskgarden/css-components/commit/ffe72ce))
+
+
+### BREAKING CHANGES
+
+* **variables, arrows:** package location has moved to the npm registry under the `@zendeskgarden` scope. See the README for installation/upgrade details.
+
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2017-12-22)
 

@@ -5,14 +5,14 @@
   --zd-table__row__cell__sortable-padding: 17px;
   --zd-table__row__cell__sortable-transition: opacity .25s ease-in-out;
   --zd-table__row__cell__sortable-font-weight: var(--zd-font-weight-semibold);
-  --zd-table__row__cell__sortable-ascending-background-image: svg-load('14-sort.svg', color: var(--zd-table-font-color), fill: var(--zd-color-silver-sand));
-  --zd-table__row__cell__sortable-descending-background-image: svg-load('14-sort.svg', color: var(--zd-color-silver-sand), fill: var(--zd-table-font-color));
-  --zd-table__row__cell__sortable-hover-background-image: svg-load('14-sort.svg', color: color(var(--zd-table-color) alpha(40%)), fill: color(var(--zd-table-color) alpha(40%)));
+  --zd-table__row__cell__sortable-ascending-background-image: svg-load('14/sort.svg', color: var(--zd-table-font-color), fill: var(--zd-color-silver-sand));
+  --zd-table__row__cell__sortable-descending-background-image: svg-load('14/sort.svg', color: var(--zd-color-silver-sand), fill: var(--zd-table-font-color));
+  --zd-table__row__cell__sortable-hover-background-image: svg-load('14/sort.svg', color: color(var(--zd-table-color) alpha(40%)), fill: color(var(--zd-table-color) alpha(40%)));
   --zd-table__row__cell__sortable-hover-color: var(--zd-table-color);
-  --zd-table__row__cell__sortable-hover-ascending-background-image: svg-load('14-sort.svg', color: var(--zd-table-color), fill: color(var(--zd-table-color) alpha(40%)));
-  --zd-table__row__cell__sortable-hover-descending-background-image: svg-load('14-sort.svg', color: color(var(--zd-table-color) alpha(40%)), fill: var(--zd-table-color));
-  --zd-table--dark__row__cell__sortable-ascending-background-image: svg-load('14-sort.svg', color: var(--zd-color-karl), fill: var(--zd-color-breaker-bay));
-  --zd-table--dark__row__cell__sortable-descending-background-image: svg-load('14-sort.svg', color: var(--zd-color-breaker-bay), fill: var(--zd-color-karl));
+  --zd-table__row__cell__sortable-hover-ascending-background-image: svg-load('14/sort.svg', color: var(--zd-table-color), fill: color(var(--zd-table-color) alpha(40%)));
+  --zd-table__row__cell__sortable-hover-descending-background-image: svg-load('14/sort.svg', color: color(var(--zd-table-color) alpha(40%)), fill: var(--zd-table-color));
+  --zd-table--dark__row__cell__sortable-ascending-background-image: svg-load('14/sort.svg', color: var(--zd-color-karl), fill: var(--zd-color-breaker-bay));
+  --zd-table--dark__row__cell__sortable-descending-background-image: svg-load('14/sort.svg', color: var(--zd-color-breaker-bay), fill: var(--zd-color-karl));
 }
 
 /* 1. Reset for <button> element.

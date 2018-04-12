@@ -22,8 +22,8 @@
     "test": "yarn lint",
     "watch": "yarn build --watch"
   },
-  "devDependencies": {
-    "@zendeskgarden/css-variables": "*"
+  "dependencies": {
+    "@zendeskgarden/css-variables": "^4.0.0"
   },
   "keywords": [
     "components",

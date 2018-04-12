@@ -10,7 +10,7 @@
   --zd-txt--dark__input-color: color(var(--zd-color-white) alpha(75%));
   --zd-txt--dark__input-color-placeholder: var(--zd-color-breaker-bay);
   --zd-txt--dark__input--select-hovered-background-image: var(--zd-txt__input--select__chevron-open-background-image);
-  --zd-txt--dark__input--select-disabled-background-image: svg-load('14-chevron.svg', color: var(--zd-color-sherpa-blue));
+  --zd-txt--dark__input--select-disabled-background-image: svg-load('14/chevron.svg', color: var(--zd-color-sherpa-blue));
 }
 
 .c-txt__input--dark {
