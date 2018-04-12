@@ -6,15 +6,66 @@
  */
 
 let retVal = {
+  'black': { r: 0, g: 0, b: 0 },
+  'green-100': { r: 237, g: 248, b: 244 },
+  'green-200': { r: 209, g: 232, b: 223 },
+  'green-300': { r: 174, g: 207, b: 194 },
+  'green-400': { r: 94, g: 174, b: 145 },
+  'green-500': { r: 34, g: 143, b: 103 },
+  'green-600': { r: 3, g: 129, b: 83 },
+  'green-700': { r: 24, g: 97, b: 70 },
+  'green-800': { r: 11, g: 59, b: 41 },
+  'grey-100': { r: 248, g: 249, b: 249 },
+  'grey-200': { r: 233, g: 235, b: 237 },
+  'grey-300': { r: 216, g: 220, b: 222 },
+  'grey-400': { r: 203, g: 207, b: 210 },
+  'grey-500': { r: 164, g: 172, b: 181 },
+  'grey-600': { r: 104, g: 115, b: 125 },
+  'grey-700': { r: 73, g: 84, b: 92 },
+  'grey-800': { r: 47, g: 57, b: 65 },
+  'blue-100': { r: 237, g: 247, b: 255 },
+  'blue-200': { r: 206, g: 226, b: 242 },
+  'blue-300': { r: 173, g: 204, b: 228 },
+  'blue-400': { r: 82, g: 147, b: 199 },
+  'blue-500': { r: 51, g: 127, b: 189 },
+  'blue-600': { r: 31, g: 115, b: 183 },
+  'blue-700': { r: 20, g: 74, b: 117 },
+  'blue-800': { r: 15, g: 53, b: 84 },
+  'kale-100': { r: 245, g: 251, b: 252 },
+  'kale-200': { r: 193, g: 214, b: 217 },
+  'kale-300': { r: 129, g: 154, b: 158 },
+  'kale-400': { r: 86, g: 119, b: 122 },
+  'kale-500': { r: 51, g: 93, b: 99 },
+  'kale-600': { r: 4, g: 68, b: 77 },
+  'kale-700': { r: 3, g: 54, b: 61 },
+  'kale-800': { r: 1, g: 43, b: 48 },
+  'red-100': { r: 255, g: 240, b: 241 },
+  'red-200': { r: 245, g: 213, b: 216 },
+  'red-300': { r: 245, g: 181, b: 186 },
+  'red-400': { r: 227, g: 91, b: 102 },
+  'red-500': { r: 217, g: 63, b: 76 },
+  'red-600': { r: 204, g: 51, b: 64 },
+  'red-700': { r: 140, g: 35, b: 44 },
+  'red-800': { r: 104, g: 18, b: 25 },
+  'yellow-100': { r: 255, g: 248, b: 237 },
+  'yellow-200': { r: 255, g: 240, b: 219 },
+  'yellow-300': { r: 252, g: 219, b: 169 },
+  'yellow-400': { r: 255, g: 182, b: 72 },
+  'yellow-500': { r: 245, g: 161, b: 51 },
+  'yellow-600': { r: 237, g: 150, b: 28 },
+  'yellow-700': { r: 173, g: 94, b: 24 },
+  'yellow-800': { r: 112, g: 59, b: 21 },
+  'white': { r: 255, g: 255, b: 255 }
+};
+
+/* Deprecated colors */
+retVal = Object.assign(retVal, {
   'affair': { r: 115, g: 73, b: 136 },
-  'algae': { r: 3, g: 54, b: 61 },
   'aluminum': { r: 153, g: 153, b: 153 },
   'anti-flash-white': { r: 243, g: 243, b: 243 },
   'apple-green': { r: 120, g: 163, b: 0 },
   'apricot': { r: 255, g: 202, b: 179 },
-  'black': { r: 0, g: 0, b: 0 },
   'blue-chalk': { r: 229, g: 214, b: 237 },
-  'breaker-bay': { r: 86, g: 119, b: 122 },
   'buff': { r: 246, g: 222, b: 134 },
   'buttermilk': { r: 255, g: 239, b: 179 },
   'ce-soir': { r: 150, g: 119, b: 166 },
@@ -27,7 +78,6 @@ let retVal = {
   'creme-brulee': { r: 255, g: 220, b: 153 },
   'cupid': { r: 250, g: 180, b: 201 },
   'curious-blue': { r: 53, g: 143, b: 178 },
-  'daintree': { r: 1, g: 43, b: 48 },
   'dandelion': { r: 255, g: 222, b: 102 },
   'dark-gray': { r: 85, g: 85, b: 85 },
   'dark-pastel-red': { r: 191, g: 48, b: 38 },
@@ -79,12 +129,10 @@ let retVal = {
   'saffron-mango': { r: 250, g: 193, b: 87 },
   'sea-buckthorn': { r: 247, g: 154, b: 62 },
   'shamrock': { r: 69, g: 217, b: 123 },
-  'sherpa-blue': { r: 4, g: 68, b: 77 },
   'silver-sand': { r: 187, g: 187, b: 187 },
   'sky-blue': { r: 120, g: 205, b: 236 },
   'snow': { r: 251, g: 251, b: 251 },
   'steel': { r: 102, g: 102, b: 102 },
-  'submarine': { r: 129, g: 154, b: 158 },
   'sunglow': { r: 255, g: 209, b: 42 },
   'terra-cotta': { r: 232, g: 108, b: 100 },
   'titan-white': { r: 220, g: 209, b: 225 },
@@ -92,9 +140,8 @@ let retVal = {
   'verdigris': { r: 55, g: 184, b: 175 },
   'viking': { r: 95, g: 212, b: 204 },
   'wewak': { r: 239, g: 157, b: 151 },
-  'white': { r: 255, g: 255, b: 255 },
   'white-smoke': { r: 248, g: 248, b: 248 }
-};
+});
 
 /* Aliases */
 retVal = Object.assign(retVal, {
@@ -110,8 +157,13 @@ retVal = Object.assign(retVal, {
 
 /* Deprecated aliases */
 retVal = Object.assign(retVal, {
-  'zendesk-green': retVal['apple-green'],
-  'promo-orange': retVal['orange-peel']
+  'algae': retVal['kale-700'],
+  'breaker-bay': retVal['kale-400'],
+  'daintree': retVal['kale-800'],
+  'promo-orange': retVal['orange-peel'],
+  'sherpa-blue': retVal['kale-600'],
+  'submarine': retVal['kale-300'],
+  'zendesk-green': retVal['apple-green']
 });
 
 module.exports = retVal;
