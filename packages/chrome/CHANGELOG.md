@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@1.1.0...@zendeskgarden/css-chrome@2.0.0) (2018-04-12)
+
+
+### Bug Fixes
+
+* **chrome:** add resets to support a wider selection of element types ([#43](https://github.com/zendeskgarden/css-components/issues/43)) ([d1f4f05](https://github.com/zendeskgarden/css-components/commit/d1f4f05))
+* **chrome:** allow subnav items to be used with buttons ([#47](https://github.com/zendeskgarden/css-components/issues/47)) ([b5a7b13](https://github.com/zendeskgarden/css-components/commit/b5a7b13))
+* **chrome:** expand "main" to fill body content ([#39](https://github.com/zendeskgarden/css-components/issues/39)) ([bd66e56](https://github.com/zendeskgarden/css-components/commit/bd66e56))
+* **chrome:** focused FAB box-shadow treatment ([#25](https://github.com/zendeskgarden/css-components/issues/25)) ([9a736fa](https://github.com/zendeskgarden/css-components/commit/9a736fa))
+
+
+### Features
+
+* add css-menus package to monorepo ([#10](https://github.com/zendeskgarden/css-components/issues/10)) ([6f48111](https://github.com/zendeskgarden/css-components/commit/6f48111))
+* **variables, arrows:** prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#44](https://github.com/zendeskgarden/css-components/issues/44)) ([ffe72ce](https://github.com/zendeskgarden/css-components/commit/ffe72ce))
+* prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#49](https://github.com/zendeskgarden/css-components/issues/49)) ([5a2923b](https://github.com/zendeskgarden/css-components/commit/5a2923b))
+
+
+### BREAKING CHANGES
+
+* package location has moved to the npm registry under the `@zendeskgarden` scope. See the README for installation/upgrade details.
+* **variables, arrows:** package location has moved to the npm registry under the `@zendeskgarden` scope. See the README for installation/upgrade details.
+
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/zendeskgarden/css-components/compare/@zendesk/garden-css-chrome@1.1.3...@zendesk/garden-css-chrome@1.1.4) (2018-04-02)
 

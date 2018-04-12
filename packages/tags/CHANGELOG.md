@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# 3.0.0 (2018-04-12)
+
+
+### Features
+
+* add css-labels package to monorepo ([#20](https://github.com/zendeskgarden/css-components/issues/20)) ([a446d62](https://github.com/zendeskgarden/css-components/commit/a446d62))
+* add css-utilities package to monorepo ([#27](https://github.com/zendeskgarden/css-components/issues/27)) ([77ab661](https://github.com/zendeskgarden/css-components/commit/77ab661))
+* **variables, arrows:** prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#44](https://github.com/zendeskgarden/css-components/issues/44)) ([ffe72ce](https://github.com/zendeskgarden/css-components/commit/ffe72ce))
+* prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#49](https://github.com/zendeskgarden/css-components/issues/49)) ([5a2923b](https://github.com/zendeskgarden/css-components/commit/5a2923b))
+
+
+### BREAKING CHANGES
+
+* package location has moved to the npm registry under the `@zendeskgarden` scope. See the README for installation/upgrade details.
+* **variables, arrows:** package location has moved to the npm registry under the `@zendeskgarden` scope. See the README for installation/upgrade details.
+* remove utility classes for deprecated colors. This only affects users that are replacing `@zendesk/garden-css-bedrock` with `@zendesk/garden-css-utilities`.
+* rename all `.c-label` (parent and child) classes to `.c-tag` for component clarity. **IMPORTANT**: the new package name changes from `@zendesk/garden-css-labels` to `@zendesk/garden-css-tags`.
+
+
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2018-02-03)
 
