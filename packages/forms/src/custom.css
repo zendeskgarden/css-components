@@ -17,7 +17,7 @@
     0 0 0 3px
     color(var(--zd-forms--custom-accent-color) alpha(40%));
   --zd-range--custom-track-background-image: linear-gradient(var(--zd-forms--custom-accent-color), var(--zd-forms--custom-accent-color));
-  --zd-txt--custom__input--select__chevron-open-background-image: svg-load('14-chevron.svg', color: var(--zd-forms--custom-accent-color));
+  --zd-txt--custom__input--select__chevron-open-background-image: svg-load('14/chevron.svg', color: var(--zd-forms--custom-accent-color));
 }
 
 :--chk-checked-enabled.c-chk__label--custom::before,

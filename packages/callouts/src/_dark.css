@@ -9,9 +9,9 @@
     color(var(--zd-color-black) alpha(15%));
   --zd-callout--dark--recessed-background-color: var(--zd-color-daintree);
   --zd-callout--dark--recessed-border-color: var(--zd-color-sherpa-blue);
-  --zd-callout--dark__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-breaker-bay));
+  --zd-callout--dark__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-breaker-bay));
   --zd-callout--dark__close-focused-background-color: var(--zd-color-sherpa-blue);
-  --zd-callout--dark__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-submarine));
+  --zd-callout--dark__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-submarine));
   --zd-callout--dark__title-color: var(--zd-color-white);
 }
 

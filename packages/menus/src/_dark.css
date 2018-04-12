@@ -9,10 +9,10 @@
     color(var(--zd-color-black) alpha(15%));
   --zd-menu--dark__item-color: var(--zd-color-submarine);
   --zd-menu--dark__item-disabled-color: var(--zd-color-breaker-bay);
-  --zd-menu--dark__item-disabled--add-background-image: svg-load('14-plus.svg', color: var(--zd-menu--dark__item-disabled-color));
-  --zd-menu--dark__item-disabled--checked-background-image: svg-load('14-checkmark-lg.svg', color: var(--zd-menu--dark__item-disabled-color));
-  --zd-menu--dark__item-disabled--next-background-image: svg-load('14-next.svg', color: var(--zd-menu--dark__item-disabled-color));
-  --zd-menu--dark__item-disabled--previous-background-image: svg-load('14-previous.svg', color: var(--zd-menu--dark__item-disabled-color));
+  --zd-menu--dark__item-disabled--add-background-image: svg-load('14/plus.svg', color: var(--zd-menu--dark__item-disabled-color));
+  --zd-menu--dark__item-disabled--checked-background-image: svg-load('14/checkmark-lg.svg', color: var(--zd-menu--dark__item-disabled-color));
+  --zd-menu--dark__item-disabled--next-background-image: svg-load('14/next.svg', color: var(--zd-menu--dark__item-disabled-color));
+  --zd-menu--dark__item-disabled--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu--dark__item-disabled-color));
   --zd-menu--dark__item--hovered-background-color: var(--zd-color-sherpa-blue);
   --zd-menu--dark__item__meta-color: var(--zd-color-breaker-bay);
   --zd-menu--dark__separator-border-color: var(--zd-color-sherpa-blue);
