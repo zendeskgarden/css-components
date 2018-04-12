@@ -35,17 +35,23 @@
   font-size: var(--zd-chrome__subnav-font-size);
 }
 
-/* 1. Anchor reset */
+/* 1. Anchor reset
+ * 2. Button reset */
 
 .c-chrome__subnav__item {
   display: flex;
   transition: var(--zd-chrome__subnav__item-transition);
   opacity: var(--zd-chrome__subnav__item-opacity);
   margin-top: var(--zd-chrome__subnav__item-margin);
+  border: none; /* [2] */
   border-radius: var(--zd-chrome__subnav__item-border-radius);
+  background: transparent; /* [2] */
+  cursor: pointer; /* [2] */
   padding: var(--zd-chrome__subnav__item-padding);
+  width: 100%; /* [2] */
   line-height: var(--zd-chrome__subnav__item-line-height);
   white-space: nowrap;
+  font-size: inherit; /* [2] */
 }
 
 .c-chrome__subnav__item,
@@ -81,8 +87,12 @@
   background-color: var(--zd-chrome__subnav__item-current-background-color);
 }
 
-.c-chrome__subnav__item:first-of-type {
+.c-chrome__subnav__item:first-child {
   margin-top: 0;
+}
+
+.c-chrome__subnav__item:active:--chrome-focused {
+  box-shadow: none;
 }
 
 .c-chrome__subnav__item__text {

@@ -1,12 +1,12 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-callout__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-silver-sand));
+  --zd-callout__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-silver-sand));
   --zd-callout__close-position: 4px;
   --zd-callout__close-size: var(--zd-font-size-mega);
   --zd-callout__close-transition: background-color .1s ease-in-out;
   --zd-callout__close-focused-background-color: color(var(--zd-color-black) alpha(7%));
-  --zd-callout__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-dark-gray));
+  --zd-callout__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-dark-gray));
   --zd-callout__close__icon-background-size: var(--zd-font-size-gamma);
   --zd-callout__close__icon-transition: opacity .25s ease-in-out;
 }

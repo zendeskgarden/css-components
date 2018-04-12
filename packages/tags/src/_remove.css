@@ -2,7 +2,7 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-tag__remove-background-image: svg-load('14-remove.svg', color: var(--zd-tag-color));
+  --zd-tag__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag-color));
   --zd-tag__remove-background:
     no-repeat
     center
@@ -14,7 +14,7 @@
   --zd-tag__remove-transition: opacity .25s ease-in-out;
   --zd-tag--lg__remove-background-size: var(--zd-font-size-delta);
   --zd-tag--lg__remove-size: var(--zd-spacing-lg);
-  --zd-tag--light__remove-background-image: svg-load('14-remove.svg', color: var(--zd-tag--light-color));
+  --zd-tag--light__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag--light-color));
   --zd-tag--sm__remove-background-size: var(--zd-font-size-milli);
   --zd-tag--sm__remove-margin: calc(var(--zd-tag__remove-margin) / 2);
   --zd-tag--sm__remove-size: 15px;

@@ -2,7 +2,7 @@
 
 :root {
   --zd-chk--toggle-background-color: var(--zd-color-aluminum);
-  --zd-chk--toggle-background-image: svg-load('14-circle.svg', color: var(--zd-color-white));
+  --zd-chk--toggle-background-image: svg-load('14/circle.svg', color: var(--zd-color-white));
   --zd-chk--toggle-active-background-color: color(var(--zd-chk--toggle-background-color) blackness(+10%));
   --zd-chk--toggle-checked-active-background-color: var(--zd-chk-checked-active-background-color);
   --zd-chk--toggle-disabled-background-color: var(--zd-chk-disabled-background-color);
