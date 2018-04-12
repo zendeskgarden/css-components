@@ -30,3 +30,8 @@ deploy:
     skip_cleanup: true
     on:
       branch: master
+
+after_script:
+  - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+  - npm config list
+  - npm whoami
