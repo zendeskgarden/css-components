@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@2.0.0...@zendeskgarden/css-utilities@2.1.0) (2018-04-13)
+
+
+### Features
+
+* **utilities:** add new foreground/background/border color override classes ([#52](https://github.com/zendeskgarden/css-components/issues/52)) ([6c0c0bf](https://github.com/zendeskgarden/css-components/commit/6c0c0bf))
+
+
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2018-04-12)
 
