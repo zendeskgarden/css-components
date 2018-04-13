@@ -9,17 +9,14 @@
   --zd-menu__item-padding-vertical: 10px;
   --zd-menu__item-padding: var(--zd-menu__item-padding-vertical) var(--zd-menu__item-padding-horizontal);
   --zd-menu__item-transition: box-shadow .1s ease-in-out;
-  --zd-menu__item--add-background-image: svg-load('14-plus.svg', color: var(--zd-menu-accent-color));
+  --zd-menu__item--add-background-image: svg-load('14/plus.svg', color: var(--zd-menu-accent-color));
   --zd-menu__item--add-color: var(--zd-menu-accent-color);
   --zd-menu__item--checked-background-offset: 10%;
   --zd-menu__item--checked-background:
     no-repeat
     calc(50% + var(--zd-menu__item--checked-background-offset)) / var(--zd-spacing-sm)
-    svg-load('14-checkmark-lg.svg', color: var(--zd-menu-accent-color));
-  --zd-menu__item--header-font-size: var(--zd-font-size-zeta);
+    svg-load('14/checkmark-lg.svg', color: var(--zd-menu-accent-color));
   --zd-menu__item--header-font-weight: var(--zd-font-weight-semibold);
-  --zd-menu__item--header-line-height: calc(16 / 12);
-  --zd-menu__item--header-padding-vertical: 12px;
   --zd-menu__item--header__icon-top: calc(calc(var(--zd-menu__item--icon-height) - var(--zd-menu__item--icon-background-size)) / 2);
   --zd-menu__item--header__icon-left: calc(calc(var(--zd-menu__item--icon-width) - var(--zd-menu__item--icon-background-size)) / 2);
   --zd-menu__item--icon-background-size: var(--zd-font-size-epsilon);
@@ -29,13 +26,12 @@
   --zd-menu__item--media--icon-height: calc(var(--zd-menu__item--media__figure-size) + 22px);
   --zd-menu__item--media__figure-margin: 8px;
   --zd-menu__item--media__figure-size: 32px;
-  --zd-menu__item--next-background-image: svg-load('14-next.svg', color: var(--zd-menu-accent-color));
-  --zd-menu__item--previous-background-image: svg-load('14-previous.svg', color: var(--zd-menu-accent-color));
+  --zd-menu__item--next-background-image: svg-load('14/next.svg', color: var(--zd-menu-accent-color));
+  --zd-menu__item--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu-accent-color));
   --zd-menu--sm__item-padding-horizontal: 20px;
   --zd-menu--sm__item-padding-vertical: 6px;
   --zd-menu--sm__item-padding: var(--zd-menu--sm__item-padding-vertical) var(--zd-menu--sm__item-padding-horizontal);
   --zd-menu--sm__item--checked-background-size: 9px;
-  --zd-menu--sm__item--header-padding-vertical: 8px;
   --zd-menu--sm__item--header__icon-top: calc(calc(var(--zd-menu--sm__item--icon-height) - var(--zd-menu__item--icon-background-size)) / 2);
   --zd-menu--sm__item--header__icon-left: calc(calc(var(--zd-menu--sm__item--icon-width) - var(--zd-menu__item--icon-background-size)) / 2);
   --zd-menu--sm__item--icon-height: calc(20px + calc(var(--zd-menu--sm__item-padding-vertical) * 2));
@@ -95,11 +91,6 @@
 
 .c-menu__item.c-menu__item--header {
   cursor: default;
-  padding-top: var(--zd-menu__item--header-padding-vertical);
-  padding-bottom: var(--zd-menu__item--header-padding-vertical);
-  text-transform: uppercase;
-  line-height: var(--zd-menu__item--header-line-height);
-  font-size: var(--zd-menu__item--header-font-size);
 }
 
 .c-menu__item.c-menu__item--header,
@@ -113,11 +104,6 @@
   left: var(--zd-menu__item--header__icon-left);
   width: var(--zd-menu__item--icon-background-size);
   height: var(--zd-menu__item--icon-background-size);
-}
-
-.c-menu--sm .c-menu__item.c-menu__item--header {
-  padding-top: var(--zd-menu--sm__item--header-padding-vertical);
-  padding-bottom: var(--zd-menu--sm__item--header-padding-vertical);
 }
 
 .c-menu--sm .c-menu__item .c-menu__item--header__icon {

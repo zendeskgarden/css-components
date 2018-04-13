@@ -1,12 +1,12 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-dialog__close-background-image: svg-load('14-remove.svg', color: var(--zd-color-iron));
+  --zd-dialog__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-iron));
   --zd-dialog__close-right: var(--zd-spacing);
   --zd-dialog__close-size: var(--zd-spacing-xl);
   --zd-dialog__close-top: var(--zd-spacing-sm);
   --zd-dialog__close-transition: background-color .1s ease-in-out;
-  --zd-dialog__close-hovered-background-image: svg-load('14-remove.svg', color: var(--zd-color-dark-gray));
+  --zd-dialog__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-dark-gray));
   --zd-dialog__close-focused-background-color: var(--zd-color-platinum);
   --zd-dialog__close__icon-background-size: var(--zd-spacing);
   --zd-dialog__close__icon-transition: opacity .25s ease-in-out;
