@@ -8,7 +8,7 @@
   --zd-tab__list__item-disabled-color: var(--zd-tab-disabled-color);
   --zd-tab__list__item-focused-box-shadow:
     var(--zd-tab-focused-box-shadow)
-    color(var(--zd-tab-accent-color) alpha(40%));
+    color(var(--zd-tab-accent-color) alpha(35%));
   --zd-tab__list__item-focused-border-radius: 4px;
   --zd-tab__list__item-focused-color: var(--zd-tab-accent-color);
   --zd-tab__list__item-focused-height: var(--zd-tab__list-line-height);

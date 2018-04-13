@@ -12,11 +12,11 @@
 :root {
   --zd-tab--custom-accent-color: var(--zd-color-mandy);
   --zd-tab--custom__list__item-active-color: var(--zd-tab--custom-accent-color);
-  --zd-tab--custom__list__item-active-border-color: color(var(--zd-tab--custom-accent-color) alpha(25%));
+  --zd-tab--custom__list__item-active-border-color: var(--zd-tab--custom-accent-color);
   --zd-tab--custom__list__item-disabled-color: var(--zd-tab-disabled-color);
   --zd-tab--custom__list__item-focused-box-shadow:
     var(--zd-tab-focused-box-shadow)
-    color(var(--zd-tab--custom-accent-color) alpha(40%));
+    color(var(--zd-tab--custom-accent-color) alpha(35%));
   --zd-tab--custom__list__item-focused-border-radius: 4px;
   --zd-tab--custom__list__item-focused-color: var(--zd-tab--custom-accent-color);
   --zd-tab--custom__list__item-hovered-color: var(--zd-tab--custom-accent-color);
