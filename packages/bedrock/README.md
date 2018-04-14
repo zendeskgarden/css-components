@@ -6,7 +6,7 @@ This package provides a mostly reasonable CSS reset layered on top of
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-bedrock
+npm install --save-dev @zendeskgarden/css-bedrock
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install --save-dev @zendesk/garden-css-bedrock
 Once installed, bedrock CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-bedrock';
+@import '@zendeskgarden/css-bedrock';
 ```
 
 The distribution for Bedrock CSS contains global styling rules to help

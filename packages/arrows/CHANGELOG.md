@@ -9,7 +9,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* add css-menus package to monorepo ([#10](https://github.com/zendeskgarden/css-components/issues/10)) ([6f48111](https://github.com/zendeskgarden/css-components/commit/6f48111))
 * **variables, arrows:** prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#44](https://github.com/zendeskgarden/css-components/issues/44)) ([ffe72ce](https://github.com/zendeskgarden/css-components/commit/ffe72ce))
 
 

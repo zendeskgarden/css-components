@@ -6,7 +6,7 @@ to tables, rows, and columns.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-tables
+npm install --save-dev @zendeskgarden/css-tables
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install --save-dev @zendesk/garden-css-tables
 Once installed, table CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-tables';
+@import '@zendeskgarden/css-tables';
 ```
 
 Component CSS provides styling for the following basic table structure.

@@ -6,7 +6,7 @@ classes.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-utilities
+npm install --save-dev @zendeskgarden/css-utilities
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install --save-dev @zendesk/garden-css-utilities
 Once installed, utilities CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-utilities';
+@import '@zendeskgarden/css-utilities';
 ```
 
 Utilities include CSS property overrides for:

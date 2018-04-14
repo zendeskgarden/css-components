@@ -12,7 +12,7 @@ CSS component framework.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-variables
+npm install --save-dev @zendeskgarden/css-variables
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install --save-dev @zendesk/garden-css-variables
 Once installed, variables can be referenced via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-variables';
+@import '@zendeskgarden/css-variables';
 ```
 
 The package contains corresponding JSON, JS, and Sass variables for use

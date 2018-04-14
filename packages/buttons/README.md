@@ -5,7 +5,7 @@ This package contains basic `.c-btn` component styling.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-buttons
+npm install --save-dev @zendeskgarden/css-buttons
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install --save-dev @zendesk/garden-css-buttons
 Once installed, button CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-buttons';
+@import '@zendeskgarden/css-buttons';
 ```
 
 Button CSS is intended to enhance the following HTML.

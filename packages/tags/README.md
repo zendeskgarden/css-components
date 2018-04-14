@@ -6,7 +6,7 @@ badges, pills, and labels.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-tags
+npm install --save-dev @zendeskgarden/css-tags
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install --save-dev @zendesk/garden-css-tags
 Once installed, tag CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-tags';
+@import '@zendeskgarden/css-tags';
 ```
 
 Tag CSS is intended to enhance the following HTML.
