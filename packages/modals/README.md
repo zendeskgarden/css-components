@@ -6,7 +6,7 @@ backdrop layouts needed to present a modal dialog treatment.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-modals
+npm install --save-dev @zendeskgarden/css-modals
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install --save-dev @zendesk/garden-css-modals
 Once installed, modal CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-modals';
+@import '@zendeskgarden/css-modals';
 ```
 
 Canonical markup for a dialog is structured as follows.

@@ -5,7 +5,7 @@ This package contains styling for a selection of callout containers.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-callouts
+npm install --save-dev @zendeskgarden/css-callouts
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install --save-dev @zendesk/garden-css-callouts
 Once installed, callout CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-callouts';
+@import '@zendeskgarden/css-callouts';
 ```
 
 Callout CSS is intended to provide styling for the following HTML.

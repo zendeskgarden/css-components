@@ -8,7 +8,7 @@ to apply an arrow indicator along the menu's border.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-menus
+npm install --save-dev @zendeskgarden/css-menus
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ npm install --save-dev @zendesk/garden-css-menus
 Once installed, menu CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-menus';
+@import '@zendeskgarden/css-menus';
 ```
 
 Menu CSS provides styling for the following basic structure ([W3

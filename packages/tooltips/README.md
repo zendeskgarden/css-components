@@ -5,7 +5,7 @@ This package contains styling for various `.c-tooltip` treatments.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-tooltips
+npm install --save-dev @zendeskgarden/css-tooltips
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install --save-dev @zendesk/garden-css-tooltips
 Once installed, tooltip CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-tooltips';
+@import '@zendeskgarden/css-tooltips';
 ```
 
 Tooltip CSS is intended to enhance the following HTML.
