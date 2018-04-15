@@ -5,7 +5,7 @@ This component contains basic `.c-avatar` component styling.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-avatars
+npm install --save-dev @zendeskgarden/css-avatars
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install --save-dev @zendesk/garden-css-avatars
 Once installed, avatar CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-avatars';
+@import '@zendeskgarden/css-avatars';
 ```
 
 Use avatar CSS to style user and system images.

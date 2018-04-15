@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.0.0"></a>
+# 6.0.0 (2018-04-15)
+
+
+### Bug Fixes
+
+* document corrected `[@zendeskgarden](https://github.com/zendeskgarden)` package scope ([#53](https://github.com/zendeskgarden/css-components/issues/53)) ([1218b1a](https://github.com/zendeskgarden/css-components/commit/1218b1a))
+
+
+### Features
+
+* add css-bedrock package to monorepo ([#28](https://github.com/zendeskgarden/css-components/issues/28)) ([596f6ff](https://github.com/zendeskgarden/css-components/commit/596f6ff))
+* **variables, arrows:** prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#44](https://github.com/zendeskgarden/css-components/issues/44)) ([ffe72ce](https://github.com/zendeskgarden/css-components/commit/ffe72ce))
+* prepare for [@zendeskgarden](https://github.com/zendeskgarden) npm publish ([#49](https://github.com/zendeskgarden/css-components/issues/49)) ([5a2923b](https://github.com/zendeskgarden/css-components/commit/5a2923b))
+
+
+### BREAKING CHANGES
+
+* package location has moved to the npm registry under the `@zendeskgarden` scope. See the README for installation/upgrade details.
+* **variables, arrows:** package location has moved to the npm registry under the `@zendeskgarden` scope. See the README for installation/upgrade details.
+* all utility and layout (grid, flag, media) classes have been removed in favor of simplifying Bedrock as a CSS reset. Utilities can be added via `@zendesk/garden-css-utilities`.
+
+
+
+
 <a name="5.0.0"></a>
 # 5.0.0 (2018-04-12)
 

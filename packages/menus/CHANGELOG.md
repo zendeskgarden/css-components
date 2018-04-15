@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.0.1"></a>
+## [6.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@6.0.0...@zendeskgarden/css-menus@6.0.1) (2018-04-15)
+
+
+### Bug Fixes
+
+* document corrected `[@zendeskgarden](https://github.com/zendeskgarden)` package scope ([#53](https://github.com/zendeskgarden/css-components/issues/53)) ([1218b1a](https://github.com/zendeskgarden/css-components/commit/1218b1a))
+
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@5.1.0...@zendeskgarden/css-menus@6.0.0) (2018-04-12)
 

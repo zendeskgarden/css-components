@@ -5,7 +5,7 @@ This package provides component styling for page navigation.
 ## Installation
 
 ```sh
-npm install --save-dev @zendesk/garden-css-pagination
+npm install --save-dev @zendeskgarden/css-pagination
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install --save-dev @zendesk/garden-css-pagination
 Once installed, pagination CSS can be accessed via `postcss-import`.
 
 ```css
-@import '@zendesk/garden-css-pagination';
+@import '@zendeskgarden/css-pagination';
 ```
 
 Pagination CSS classes are used to style the following canonical markup.
