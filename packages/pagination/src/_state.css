@@ -3,16 +3,16 @@
 @import '_selectors';
 
 :root {
-  --zd-pagination__page-active-background-color: var(--zd-color-platinum);
-  --zd-pagination__page-current-background-color: var(--zd-color-anti-flash-white);
-  --zd-pagination__page-current-color: var(--zd-color-dark-gray);
+  --zd-pagination__page-active-background-color: var(--zd-color-grey-200);
+  --zd-pagination__page-current-background-color: var(--zd-color-grey-200);
+  --zd-pagination__page-current-color: var(--zd-color-grey-800);
   --zd-pagination__page-current-font-weight: var(--zd-font-weight-semibold);
   --zd-pagination__page-focused-box-shadow:
     inset 0 0 0 3px
-    color(var(--zd-pagination-accent-color) alpha(40%));
+    color(var(--zd-pagination-accent-color) alpha(35%));
   --zd-pagination__page-hovered-background-color: var(--zd-pagination__page-current-background-color);
-  --zd-pagination__page--next-hovered-background-image: svg-load('14/next.svg', color: var(--zd-color-dark-gray));
-  --zd-pagination__page--previous-hovered-background-image: svg-load('14/previous.svg', color: var(--zd-color-dark-gray));
+  --zd-pagination__page--next-hovered-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-500));
+  --zd-pagination__page--previous-hovered-background-image: svg-load('14/previous.svg', color: var(--zd-color-grey-500));
 }
 
 .c-pagination__page:--page-hovered {
