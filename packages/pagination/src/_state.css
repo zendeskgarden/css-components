@@ -19,6 +19,10 @@
   background-color: var(--zd-pagination__page-hovered-background-color);
 }
 
+.c-pagination__page a:hover {
+  text-decoration: none;
+}
+
 .c-pagination__page:--page-focused {
   outline: none;
   box-shadow: var(--zd-pagination__page-focused-box-shadow);

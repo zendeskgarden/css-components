@@ -95,6 +95,7 @@
   padding: var(--zd-pagination__page-padding);
   max-width: var(--zd-pagination__page-max-width); /* [2] */
   overflow: hidden; /* [2] */
+  text-decoration: none;
   text-overflow: ellipsis; /* [2] */
   color: inherit;
 }
