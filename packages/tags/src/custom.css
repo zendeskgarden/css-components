@@ -11,15 +11,27 @@
 :root {
   --zd-tag--custom-accent-color: var(--zd-color-mandy);
   --zd-tag--custom-background-color: var(--zd-tag--custom-accent-color);
+  --zd-tag--custom-color: var(--zd-color-white);
   --zd-tag--custom-focused-box-shadow:
     0 0 0 2px
     color(var(--zd-tag--custom-background-color) alpha(40%));
+  --zd-tag--custom__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag--custom-color));
 }
 
 .c-tag--custom {
   background-color: var(--zd-tag--custom-background-color);
+  color: var(--zd-tag--custom-color);
+}
+
+.c-tag--custom:hover,
+.c-tag--custom:--tag-focused {
+  color: var(--zd-tag--custom-color);
 }
 
 .c-tag--custom:--tag-focused {
   box-shadow: var(--zd-tag--custom-focused-box-shadow);
+}
+
+.c-tag--custom .c-tag__remove {
+  background-image: var(--zd-tag--custom__remove-background-image);
 }

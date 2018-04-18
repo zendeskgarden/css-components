@@ -42,12 +42,6 @@
         <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
           <li class="c-menu__item" role="menuitem">
             <fieldset class="c-chk">
-              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
               <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
               <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
             </fieldset>
@@ -87,7 +81,8 @@
 
       <section class="u-mb-lg">
         <h1 class="c-main__subtitle u-alpha u-mb">Sizes</h1>
-        <p class="u-mb">Tags may be sized small or large.</p>
+        <p class="u-mb">Tags may be sized small or large. Note that small tags
+        will not display the <i>avatar</i> element (shown below).</p>
         <div class="l-grid u-mb">
           <div class="l-grid__item u-1/3">
             <div class="c-tag c-tag--sm"><span dir="ltr">.c-tag.c-tag--sm</span></div>
@@ -115,38 +110,25 @@
       <section class="u-mb-lg">
         <h1 class="c-main__subtitle u-alpha u-mb">Colors</h1>
         <p class="u-mb">Modifiers may be added to override the tag color. The
-        component contains light/dark and validation treatments (error,
-        warning, success).</p>
+        component contains colors for each Garden palette hue.</p>
         <div class="l-grid u-mb">
-          <div class="l-grid__item u-1/5">
-            <div class="c-tag c-tag--light"><span dir="ltr">.c-tag.c-tag--light</span></div>
+          <div class="l-grid__item u-1/6">
+            <div class="c-tag c-tag--grey"><span dir="ltr">.c-tag.c-tag--grey</span></div>
           </div
-          ><div class="l-grid__item u-1/5">
-            <div class="c-tag c-tag--dark"><span dir="ltr">.c-tag.c-tag--dark</span></div>
+          ><div class="l-grid__item u-1/6">
+            <div class="c-tag c-tag--blue"><span dir="ltr">.c-tag.c-tag--blue</span></div>
           </div
-          ><div class="l-grid__item u-1/5">
-            <div class="c-tag c-tag--error"><span dir="ltr">.c-tag.c-tag--error</span></div>
+          ><div class="l-grid__item u-1/6">
+            <div class="c-tag c-tag--kale"><span dir="ltr">.c-tag.c-tag--kale</span></div>
           </div
-          ><div class="l-grid__item u-1/5">
-            <div class="c-tag c-tag--warning"><span dir="ltr">.c-tag.c-tag--warning</span></div>
+          ><div class="l-grid__item u-1/6">
+            <div class="c-tag c-tag--red"><span dir="ltr">.c-tag.c-tag--red</span></div>
           </div
-          ><div class="l-grid__item u-1/5">
-            <div class="c-tag c-tag--success"><span dir="ltr">.c-tag.c-tag--success</span></div>
-          </div>
-        </div>
-        <p class="u-mb">Bedrock color utilities may also be used; however,
-        you will need to extend with the appropriate
-        <code class="c-code">box-shadow</code> treatment if the tag is
-        focusable.</p>
-        <div class="l-grid u-mb">
-          <div class="l-grid__item u-1/3">
-            <div class="c-tag u-bg-verdigris"><span dir="ltr">.c-tag.u-bg-verdigris</span></div>
+          ><div class="l-grid__item u-1/6">
+            <div class="c-tag c-tag--green"><span dir="ltr">.c-tag.c-tag--green</span></div>
           </div
-          ><div class="l-grid__item u-1/3">
-            <div class="c-tag u-bg-kale-300"><span dir="ltr">.c-tag.u-bg-kale-300</span></div>
-          </div
-          ><div class="l-grid__item u-1/3">
-            <div class="c-tag u-bg-sea-buckthorn"><span dir="ltr">.c-tag.u-bg-sea-buckthorn</span></div>
+          ><div class="l-grid__item u-1/6">
+            <div class="c-tag c-tag--yellow"><span dir="ltr">.c-tag.c-tag--yellow</span></div>
           </div>
         </div>
       </section>
@@ -156,7 +138,7 @@
         <p class="u-mb">The tag component supports a child <i>remove</i>
         element. An event listener can be attached to this element to remove
         the tag on click or delete keypress. Remember to use a focusable tag
-        in order to support keyboard focus on the tag.</p>
+        in order to support keyboard navigation to the tag.</p>
         <div class="l-grid u-mb">
           <div class="l-grid__item u-1/3">
             <div class="c-tag" tabindex="0">
@@ -165,7 +147,7 @@
             </div>
           </div
           ><div class="l-grid__item u-1/3">
-            <a class="c-tag" href="#">
+            <a class="c-tag" href>
               <span dir="ltr">a.c-tag .c-tag__remove</span>
               <span class="c-tag__remove"></span>
             </a>
@@ -177,18 +159,58 @@
             </button>
           </div>
         </div>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/3">
+            <div class="c-tag c-tag--grey" tabindex="0">
+              <span dir="ltr">.c-tag.c-tag--grey .c-tag__remove</span>
+              <button class="c-tag__remove" tabindex="-1"></button>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-tag c-tag--blue" tabindex="0">
+              <span dir="ltr">.c-tag.c-tag--blue .c-tag__remove</span>
+              <button class="c-tag__remove" tabindex="-1"></button>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-tag c-tag--green" tabindex="0">
+              <span dir="ltr">.c-tag.c-tag--green .c-tag__remove</span>
+              <button class="c-tag__remove" tabindex="-1"></button>
+            </div>
+          </div>
+        </div>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/3">
+            <div class="c-tag c-tag--kale" tabindex="0">
+              <span dir="ltr">.c-tag.c-tag--kale .c-tag__remove</span>
+              <button class="c-tag__remove" tabindex="-1"></button>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-tag c-tag--red" tabindex="0">
+              <span dir="ltr">.c-tag.c-tag--red .c-tag__remove</span>
+              <button class="c-tag__remove" tabindex="-1"></button>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/3">
+            <div class="c-tag c-tag--yellow" tabindex="0">
+              <span dir="ltr">.c-tag.c-tag--yellow .c-tag__remove</span>
+              <button class="c-tag__remove" tabindex="-1"></button>
+            </div>
+          </div>
+        </div>
         <p class="u-mb">The tag may also contain a child <i>avatar</i>
         element. Pill-styled tags display round avatars.</p>
         <div class="l-grid u-mb">
           <div class="l-grid__item u-1/4">
             <div class="c-tag">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/03363d">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">.c-tag img.c-tag__avatar</span>
             </div>
           </div
           ><div class="l-grid__item u-1/4">
             <div class="c-tag">
-              <svg class="c-tag__avatar u-bg-kale-700">
+              <svg class="c-tag__avatar u-bg-grey-600 u-fg-white">
                 <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill">
               </svg>
               <span dir="ltr">.c-tag svg.c-tag__avatar</span>
@@ -196,13 +218,13 @@
           </div
           ><div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--lg">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/03363d">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">.c-tag.c-tag--lg img.c-tag__avatar</span>
             </div>
           </div
           ><div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--lg">
-              <svg class="c-tag__avatar u-bg-kale-700">
+              <svg class="c-tag__avatar u-bg-grey-600 u-fg-white">
                 <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill">
               </svg>
               <span dir="ltr">.c-tag.c-tag--lg svg.c-tag__avatar</span>
@@ -212,13 +234,13 @@
         <div class="l-grid u-mb">
           <div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--pill">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/03363d">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">.c-tag--pill img.c-tag__avatar</span>
             </div>
           </div
           ><div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--pill">
-              <svg class="c-tag__avatar u-bg-kale-700">
+              <svg class="c-tag__avatar u-bg-grey-600 u-fg-white">
                 <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill">
               </svg>
               <span dir="ltr">.c-tag--pill svg.c-tag__avatar</span>
@@ -226,13 +248,13 @@
           </div
           ><div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--lg c-tag--pill">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/03363d">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">.c-tag--pill.c-tag--lg img.c-tag__avatar</span>
             </div>
           </div
           ><div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--lg c-tag--pill">
-              <svg class="c-tag__avatar u-bg-kale-700">
+              <svg class="c-tag__avatar u-bg-grey-600 u-fg-white">
                 <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill">
               </svg>
               <span dir="ltr">.c-tag--pill.c-tag--lg svg.c-tag__avatar</span>
@@ -247,33 +269,76 @@
         Garden. Remember to style an accompanying focus state along with custom
         background color overrides.</p>
         <div class="l-grid u-mb">
-          <div class="l-grid__item u-1/3">
+          <div class="l-grid__item u-1/4">
             <div class="c-tag is-focused"><span dir="ltr">.c-tag.is-focused</span></div>
           </div
-          ><div class="l-grid__item u-1/3">
-            <div class="c-tag c-tag--light is-focused"><span dir="ltr">.c-tag.c-tag--light.is-focused</span></div>
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--grey is-focused"><span dir="ltr">.c-tag.c-tag--grey.is-focused</span></div>
           </div
-          ><div class="l-grid__item u-1/3">
-            <div class="c-tag c-tag--dark is-focused"><span dir="ltr">.c-tag.c-tag--dark.is-focused</span></div>
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--blue is-focused"><span dir="ltr">.c-tag.c-tag--blue.is-focused</span></div>
           </div>
         </div>
         <div class="l-grid u-mb">
-          <div class="l-grid__item u-1/3">
-            <div class="c-tag c-tag--error is-focused"><span dir="ltr">.c-tag.c-tag--error.is-focused</span></div>
+          <div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--kale is-focused"><span dir="ltr">.c-tag.c-tag--kale.is-focused</span></div>
           </div
-          ><div class="l-grid__item u-1/3">
-            <div class="c-tag c-tag--warning is-focused"><span dir="ltr">.c-tag.c-tag--warning.is-focused</span></div>
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--red is-focused"><span dir="ltr">.c-tag.c-tag--red.is-focused</span></div>
           </div
-          ><div class="l-grid__item u-1/3">
-            <div class="c-tag c-tag--success is-focused"><span dir="ltr">.c-tag.c-tag--success.is-focused</span></div>
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--green is-focused"><span dir="ltr">.c-tag.c-tag--green.is-focused</span></div>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--yellow is-focused"><span dir="ltr">.c-tag.c-tag--yellow.is-focused</span></div>
           </div>
         </div>
         <p class="u-mb">The hover state for the tag's remove icon is shown
         below.</p>
-        <div class="u-mb">
-          <div class="c-tag">
-            <span dir="ltr">.c-tag .c-tag__remove.is-hovered</span>
-            <button class="c-tag__remove is-hovered" tabindex="-1"></button>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/4">
+            <div class="c-tag">
+              <span dir="ltr">.c-tag .c-tag__remove.is-hovered</span>
+              <button class="c-tag__remove is-hovered" tabindex="-1"></button>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--grey">
+              <span dir="ltr">.c-tag .c-tag__remove.is-hovered</span>
+              <button class="c-tag__remove is-hovered" tabindex="-1"></button>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--blue">
+              <span dir="ltr">.c-tag .c-tag__remove.is-hovered</span>
+              <button class="c-tag__remove is-hovered" tabindex="-1"></button>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--kale">
+              <span dir="ltr">.c-tag .c-tag__remove.is-hovered</span>
+              <button class="c-tag__remove is-hovered" tabindex="-1"></button>
+            </div>
+          </div>
+        </div>
+        <div class="l-grid u-mb">
+          <div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--red">
+              <span dir="ltr">.c-tag .c-tag__remove.is-hovered</span>
+              <button class="c-tag__remove is-hovered" tabindex="-1"></button>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--green">
+              <span dir="ltr">.c-tag .c-tag__remove.is-hovered</span>
+              <button class="c-tag__remove is-hovered" tabindex="-1"></button>
+            </div>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--yellow">
+              <span dir="ltr">.c-tag .c-tag__remove.is-hovered</span>
+              <button class="c-tag__remove is-hovered" tabindex="-1"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -291,37 +356,37 @@
         <div class="c-txt">
           <div class="c-txt__input c-txt__input--sm c-txt__input--tag js-txt" style="overflow:scroll">
             <div class="c-tag c-tag--light" title="man braid synth">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">man braid synth</span>
               <button class="c-tag__remove"></button>
             </div>
             <div class="c-tag c-tag--light" title="post-ironic bicycle rights">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">post-ironic bicycle rights</span>
               <button class="c-tag__remove"></button>
             </div>
             <div class="c-tag c-tag--light" title="dollar toast mixtape la croix">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">dollar toast mixtape la croix</span>
               <button class="c-tag__remove"></button>
             </div>
             <div class="c-tag c-tag--light" title="key normcore food truck">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">key normcore food truck</span>
               <button class="c-tag__remove"></button>
             </div>
             <div class="c-tag c-tag--light" title="hashtag">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">hashtag</span>
               <button class="c-tag__remove"></button>
             </div>
             <div class="c-tag c-tag--light" title="disrupt polaroid iceland four loko echo park cardigan wolf">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">disrupt polaroid iceland four loko echo park cardigan wolf</span>
               <button class="c-tag__remove"></button>
             </div>
             <div class="c-tag c-tag--light" title="dreamcatcher synth flexitarian">
-              <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a">
+              <img class="c-tag__avatar" src="http://placeskull.com/16/16/68737D">
               <span dir="ltr">dreamcatcher synth flexitarian</span>
               <button class="c-tag__remove"></button>
             </div>
@@ -347,8 +412,8 @@
         <div class="c-playground">
           <div class="c-playground__preview"></div>
 <textarea class="c-playground__code">
-<div class="c-tag c-tag--pill c-tag--lg c-tag--success" tabindex="0">
-  <img class="c-tag__avatar" src="http://placeskull.com/16/16/56777a" alt="Avatar Description" />
+<div class="c-tag c-tag--pill c-tag--lg c-tag--blue" tabindex="0">
+  <img class="c-tag__avatar" src="http://placeskull.com/16/16/2F3941" alt="Avatar Description" />
   <span>Hello World</span>
   <div class="u-visibility-screenreader">Press delete to remove this tag.</div>
   <button class="c-tag__remove" tabindex="-1"></button>

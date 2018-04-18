@@ -1,73 +1,91 @@
 @import '@zendeskgarden/css-variables';
+@import '_variables';
 @import '_selectors';
 
 :root {
-  --zd-tag--dark-background-color: var(--zd-color-algae);
-  --zd-tag--dark-focused-box-shadow:
-    0 0 0 2px
-    color(var(--zd-color-breaker-bay) alpha(40%));
-  --zd-tag--error-background-color: var(--zd-color-flamingo);
-  --zd-tag--error-focused-box-shadow:
-    0 0 0 2px
-    color(var(--zd-tag--error-background-color) alpha(40%));
-  --zd-tag--light-background-color: var(--zd-color-anti-flash-white);
-  --zd-tag--light-color: var(--zd-color-monsoon);
-  --zd-tag--light-font-weight: var(--zd-font-weight-semibold);
-  --zd-tag--light-focused-box-shadow:
-    0 0 0 2px
-    color(var(--zd-color-silver-sand) alpha(40%));
-  --zd-tag--success-background-color: var(--zd-color-chateau-green);
-  --zd-tag--success-focused-box-shadow:
-    0 0 0 2px
-    color(var(--zd-tag--success-background-color) alpha(40%));
-  --zd-tag--warning-background-color: var(--zd-color-marigold);
-  --zd-tag--warning-focused-box-shadow:
-    0 0 0 2px
-    color(var(--zd-tag--warning-background-color) alpha(40%));
+  --zd-tag--blue-background-color: var(--zd-color-blue-600);
+  --zd-tag--green-background-color: var(--zd-color-green-600);
+  --zd-tag--grey-background-color: var(--zd-color-grey-600);
+  --zd-tag--kale-background-color: var(--zd-color-kale-600);
+  --zd-tag--red-background-color: var(--zd-color-red-600);
+  --zd-tag--yellow-background-color: var(--zd-color-yellow-400);
+  --zd-tag--color-color: var(--zd-color-white);
+  --zd-tag--yellow-color: var(--zd-color-yellow-800);
+  --zd-tag--blue-focused-box-shadow:
+    var(--zd-tag-focused-box-shadow)
+    color(var(--zd-tag--blue-background-color) alpha(35%));
+  --zd-tag--green-focused-box-shadow:
+    var(--zd-tag-focused-box-shadow)
+    color(var(--zd-tag--green-background-color) alpha(35%));
+  --zd-tag--grey-focused-box-shadow:
+    var(--zd-tag-focused-box-shadow)
+    color(var(--zd-tag--grey-background-color) alpha(35%));
+  --zd-tag--kale-focused-box-shadow:
+    var(--zd-tag-focused-box-shadow)
+    color(var(--zd-tag--kale-background-color) alpha(35%));
+  --zd-tag--red-focused-box-shadow:
+    var(--zd-tag-focused-box-shadow)
+    color(var(--zd-tag--red-background-color) alpha(35%));
+  --zd-tag--yellow-focused-box-shadow:
+    var(--zd-tag-focused-box-shadow)
+    color(var(--zd-tag--yellow-background-color) alpha(35%));
 }
 
-.c-tag.c-tag--light {
-  background-color: var(--zd-tag--light-background-color);
-  color: var(--zd-tag--light-color);
-  font-weight: var(--zd-tag--light-font-weight);
+.c-tag.c-tag--blue {
+  background-color: var(--zd-tag--blue-background-color);
+  color: var(--zd-tag--color-color);
 }
 
-.c-tag.c-tag--light:hover {
-  color: var(--zd-tag--light-color);
+.c-tag.c-tag--green {
+  background-color: var(--zd-tag--green-background-color);
+  color: var(--zd-tag--color-color);
 }
 
-.c-tag.c-tag--light:--tag-focused {
-  box-shadow: var(--zd-tag--light-focused-box-shadow);
+.c-tag.c-tag--grey {
+  background-color: var(--zd-tag--grey-background-color);
+  color: var(--zd-tag--color-color);
 }
 
-.c-tag.c-tag--dark {
-  background-color: var(--zd-tag--dark-background-color);
+.c-tag.c-tag--kale {
+  background-color: var(--zd-tag--kale-background-color);
+  color: var(--zd-tag--color-color);
 }
 
-.c-tag.c-tag--dark:--tag-focused {
-  box-shadow: var(--zd-tag--dark-focused-box-shadow);
+.c-tag.c-tag--red {
+  background-color: var(--zd-tag--red-background-color);
+  color: var(--zd-tag--color-color);
 }
 
-.c-tag.c-tag--error {
-  background-color: var(--zd-tag--error-background-color);
+.c-tag.c-tag--yellow {
+  background-color: var(--zd-tag--yellow-background-color);
+  color: var(--zd-tag--yellow-color);
 }
 
-.c-tag.c-tag--error:--tag-focused {
-  box-shadow: var(--zd-tag--error-focused-box-shadow);
+.c-tag.c-tag--blue:--tag-focused {
+  box-shadow: var(--zd-tag--blue-focused-box-shadow);
 }
 
-.c-tag.c-tag--success {
-  background-color: var(--zd-tag--success-background-color);
+.c-tag.c-tag--green:--tag-focused {
+  box-shadow: var(--zd-tag--green-focused-box-shadow);
 }
 
-.c-tag.c-tag--success:--tag-focused {
-  box-shadow: var(--zd-tag--success-focused-box-shadow);
+.c-tag.c-tag--grey:--tag-focused {
+  box-shadow: var(--zd-tag--grey-focused-box-shadow);
 }
 
-.c-tag.c-tag--warning {
-  background-color: var(--zd-tag--warning-background-color);
+.c-tag.c-tag--kale:--tag-focused {
+  box-shadow: var(--zd-tag--kale-focused-box-shadow);
 }
 
-.c-tag.c-tag--warning:--tag-focused {
-  box-shadow: var(--zd-tag--warning-focused-box-shadow);
+.c-tag.c-tag--red:--tag-focused {
+  box-shadow: var(--zd-tag--red-focused-box-shadow);
+}
+
+.c-tag.c-tag--yellow:--tag-focused {
+  box-shadow: var(--zd-tag--yellow-focused-box-shadow);
+}
+
+.c-tag.c-tag--yellow:hover,
+.c-tag.c-tag--yellow:--tag-focused {
+  color: var(--zd-tag--yellow-color);
 }

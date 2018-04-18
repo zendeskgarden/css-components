@@ -3,17 +3,14 @@
 @import '_selectors';
 
 :root {
-  --zd-tag-background-color: var(--zd-tag-accent-color);
+  --zd-tag-background-color: var(--zd-color-grey-200);
   --zd-tag-border-radius: 2px;
-  --zd-tag-color: var(--zd-color-white);
+  --zd-tag-color: var(--zd-color-grey-700);
   --zd-tag-font-size: var(--zd-font-size-zeta);
-  --zd-tag-font-weight: var(--zd-font-weight-regular);
+  --zd-tag-font-weight: var(--zd-font-weight-semibold);
   --zd-tag-height: var(--zd-spacing);
   --zd-tag-line-height: calc(20 / 12);
   --zd-tag-padding: 0 calc(10 / 12 * 1em);
-  --zd-tag-focused-box-shadow:
-    0 0 0 2px
-    color(var(--zd-tag-background-color) alpha(40%));
   --zd-tag-transition: box-shadow .1s ease-in-out;
 }
 
@@ -39,13 +36,18 @@
 }
 
 .c-tag:hover {
+  cursor: default;
+  text-decoration: none; /* [2] */
   color: var(--zd-tag-color); /* [2] */
 }
 
 .c-tag:--tag-focused {
   outline: 0;
-  box-shadow: var(--zd-tag-focused-box-shadow);
-  text-decoration: none;
+  box-shadow:
+    var(--zd-tag-focused-box-shadow)
+    color(var(--zd-color-grey-600) alpha(35%));
+  text-decoration: none; /* [2] */
+  color: var(--zd-tag-color); /* [2] */
 }
 
 .c-tag.is-rtl {
