@@ -1,5 +1,5 @@
 :root {
-  --zd-table__row__cell__overflow-background-image: svg-load('26/ellipsis.svg', color: var(--zd-color-aluminum));
+  --zd-table__row__cell__overflow-background-image: svg-load('26/ellipsis.svg', color: var(--zd-color-grey-600));
   --zd-table__row__cell__overflow-size: 2em;
   --zd-table__row__cell__overflow-top: calc(calc(var(--zd-table__row-height) / 2) - 1em);
   --zd-table__row__cell__overflow-transition:
