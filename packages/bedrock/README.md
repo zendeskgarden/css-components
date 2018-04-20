@@ -6,7 +6,7 @@ This package provides a mostly reasonable CSS reset layered on top of
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-bedrock
+npm install --save @zendeskgarden/css-bedrock
 ```
 
 ## Usage
