@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.2"></a>
+## [5.0.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@5.0.1...@zendeskgarden/css-forms@5.0.2) (2018-04-24)
+
+
+### Bug Fixes
+
+* remove `--save-dev` from install instructions ([#54](https://github.com/zendeskgarden/css-components/issues/54)) ([b81071c](https://github.com/zendeskgarden/css-components/commit/b81071c))
+
+
+
+
 <a name="5.0.1"></a>
 ## [5.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@5.0.0...@zendeskgarden/css-forms@5.0.1) (2018-04-15)
 
