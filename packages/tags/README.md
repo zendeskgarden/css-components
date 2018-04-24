@@ -6,7 +6,7 @@ badges, pills, and labels.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-tags
+npm install @zendeskgarden/css-tags
 ```
 
 ## Usage

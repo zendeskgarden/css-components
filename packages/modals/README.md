@@ -6,7 +6,7 @@ backdrop layouts needed to present a modal dialog treatment.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-modals
+npm install @zendeskgarden/css-modals
 ```
 
 ## Usage

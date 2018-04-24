@@ -5,7 +5,7 @@ This package provides styling for tab components.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-tabs
+npm install @zendeskgarden/css-tabs
 ```
 
 ## Usage

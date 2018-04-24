@@ -8,7 +8,7 @@ to apply an arrow indicator along the menu's border.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-menus
+npm install @zendeskgarden/css-menus
 ```
 
 ## Usage

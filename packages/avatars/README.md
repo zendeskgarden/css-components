@@ -5,7 +5,7 @@ This component contains basic `.c-avatar` component styling.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-avatars
+npm install @zendeskgarden/css-avatars
 ```
 
 ## Usage

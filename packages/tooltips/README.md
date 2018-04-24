@@ -5,7 +5,7 @@ This package contains styling for various `.c-tooltip` treatments.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-tooltips
+npm install @zendeskgarden/css-tooltips
 ```
 
 ## Usage

@@ -12,7 +12,7 @@ CSS component framework.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-variables
+npm install @zendeskgarden/css-variables
 ```
 
 ## Usage

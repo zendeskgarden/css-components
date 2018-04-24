@@ -6,7 +6,7 @@ to tables, rows, and columns.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-tables
+npm install @zendeskgarden/css-tables
 ```
 
 ## Usage
