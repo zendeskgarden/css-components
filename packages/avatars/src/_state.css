@@ -2,33 +2,14 @@
 
 /* stylelint-disable no-unsupported-browser-features */
 :root {
-  --zd-avatar-active-background-color: var(--zd-color-malibu);
-  --zd-avatar-in-background-color: var(--zd-color-apple-green);
-  --zd-avatar-out-background-color: var(--zd-color-gainsboro);
-  --zd-avatar-out-filter-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="grayscale"><feColorMatrix values=".3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 0 0 0 1 0"/></filter></svg>#grayscale');
-  --zd-avatar-out-opacity: .5;
+  --zd-avatar-disabled-background-color: var(--zd-color-grey-300);
+  --zd-avatar-disabled-filter-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="grayscale"><feColorMatrix values=".3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 0 0 0 1 0"/></filter></svg>#grayscale');
+  --zd-avatar-disabled-opacity: .5;
 }
 /* stylelint-enable, no-unsupported-browser-features */
 
-.c-avatar.is-active {
-  background-color: var(--zd-avatar-active-background-color);
-}
-
-.c-avatar.is-in {
-  background-color: var(--zd-avatar-in-background-color);
-}
-
-.c-avatar.is-out {
-  background-color: var(--zd-avatar-out-background-color);
-}
-
-.c-avatar.is-active .c-avatar__img,
-.c-avatar.is-in .c-avatar__img,
-.c-avatar.is-out .c-avatar__img,
-.c-avatar.is-active > img,
-.c-avatar.is-in > img,
-.c-avatar.is-out > img {
-  border-color: transparent;
+.c-avatar.is-disabled {
+  background-color: var(--zd-avatar-disabled-background-color);
 }
 
 /* stylelint-disable declaration-block-no-duplicate-properties,
@@ -36,12 +17,13 @@
                      color-named,
                      property-no-vendor-prefix,
                      no-unsupported-browser-features */
-.c-avatar.is-out .c-avatar__img,
-.c-avatar.is-out > img {
+.c-avatar.is-disabled .c-avatar__img,
+.c-avatar.is-disabled > img {
   transform: translateZ(0); /* Fix CSS3 filter blur for retina */
-  filter: var(--zd-avatar-out-filter-url); /* Support for Firefox 10+ */
+  filter: var(--zd-avatar-disabled-filter-url); /* Support for Firefox 10+ */
   filter: gray; /* Support for IE 6-9 (IE 10 dropped DX filter support) */
   -webkit-filter: grayscale(100%);
-  opacity: var(--zd-avatar-out-opacity);
+  border-color: transparent;
+  opacity: var(--zd-avatar-disabled-opacity);
 }
 /* stylelint-enable */
