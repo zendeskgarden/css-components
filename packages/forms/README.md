@@ -6,7 +6,7 @@ used throughout Zendesk products.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-forms
+npm install @zendeskgarden/css-forms
 ```
 
 ## Usage

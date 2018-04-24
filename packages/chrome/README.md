@@ -6,7 +6,7 @@ product page navigation, headers, and layout.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-chrome
+npm install @zendeskgarden/css-chrome
 ```
 
 ## Usage
