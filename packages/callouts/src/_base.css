@@ -2,15 +2,16 @@
 
 :root {
   --zd-callout-background-color: var(--zd-color-white);
-  --zd-callout-border: 1px solid var(--zd-color-gainsboro);
+  --zd-callout-border-color: var(--zd-color-grey-300);
+  --zd-callout-border: 1px solid var(--zd-callout-border-color);
   --zd-callout-border-radius: 4px;
-  --zd-callout-color: var(--zd-color-monsoon);
+  --zd-callout-color: var(--zd-color-grey-600);
   --zd-callout-font-size: var(--zd-font-size-epsilon);
   --zd-callout-line-height: calc(20 / 14);
   --zd-callout-padding-horizontal: var(--zd-spacing-xl);
   --zd-callout-padding: var(--zd-spacing) var(--zd-callout-padding-horizontal);
   --zd-callout__paragraph-margin: var(--zd-spacing-sm) 0 0;
-  --zd-callout__title-color: var(--zd-color-dark-gray);
+  --zd-callout__title-color: var(--zd-color-grey-800);
   --zd-callout__title-font-weight: var(--zd-font-weight-semibold);
 }
 
