@@ -4,16 +4,16 @@
 
 :root {
   --zd-chrome__body__header-background-color: var(--zd-color-white);
-  --zd-chrome__body__header-border-color: var(--zd-color-gainsboro);
+  --zd-chrome__body__header-border-color: var(--zd-color-grey-300);
   --zd-chrome__body__header-border-bottom: 1px solid var(--zd-chrome__body__header-border-color);
-  --zd-chrome__body__header-color: var(--zd-color-monsoon);
+  --zd-chrome__body__header-color: var(--zd-color-grey-600);
   --zd-chrome__body__header-font-size: var(--zd-font-size-epsilon);
   --zd-chrome__body__header-height: var(--zd-chrome__nav__item-height);
   --zd-chrome__body__header-padding-horizontal: 4px;
   --zd-chrome__body__header-padding: 0 var(--zd-chrome__body__header-padding-horizontal);
   --zd-chrome__body__header--standalone-box-shadow:
     0 0 10px 0
-    color(var(--zd-color-chathams-blue) alpha(15%));
+    color(var(--zd-color-kale-600) alpha(15%));
   --zd-chrome__body__header__item-border-radius: 4px;
   --zd-chrome__body__header__item-line-height: calc(30 / 14);
   --zd-chrome__body__header__item-margin: 0 12px;
@@ -22,7 +22,7 @@
   --zd-chrome__body__header__item-transition:
     box-shadow .1s ease-in-out,
     color .1s ease-in-out;
-  --zd-chrome__body__header__item-active-color: var(--zd-color-algae);
+  --zd-chrome__body__header__item-active-color: var(--zd-color-kale-700);
   --zd-chrome__body__header__item-focused-box-shadow-color: color(var(--zd-chrome-accent-color) alpha(40%));
   --zd-chrome__body__header__item-focused-box-shadow:
     0 0 0 3px
@@ -35,7 +35,7 @@
   --zd-chrome__body__header__item--img__icon-size: 22px;
   --zd-chrome__body__header__item__text-margin: var(--zd-chrome__body__header__item__icon-margin);
   --zd-chrome__body__header__item--logo-border: 1px solid var(--zd-chrome__body__header-border-color);
-  --zd-chrome__body__header__item--logo-fill: var(--zd-color-algae);
+  --zd-chrome__body__header__item--logo-fill: var(--zd-color-kale-700);
   --zd-chrome__body__header__item--logo-margin: calc(var(--zd-chrome__body__header-padding-horizontal) * -1);
   --zd-chrome__body__header__item--logo-width: var(--zd-chrome__nav-width);
   --zd-chrome__body__header__item--logo__icon-size: var(--zd-chrome__nav__item__icon-size);

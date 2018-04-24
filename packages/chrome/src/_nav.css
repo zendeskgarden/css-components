@@ -5,10 +5,10 @@
 :root {
   --zd-chrome__nav-width: 60px;
   --zd-chrome__nav-font-size: var(--zd-font-size-epsilon);
-  --zd-chrome__nav__fab-background-color: var(--zd-color-breaker-bay);
+  --zd-chrome__nav__fab-background-color: var(--zd-color-kale-400);
   --zd-chrome__nav__fab-box-shadow:
     0 6px 12px 0
-    color(var(--zd-color-chathams-blue) alpha(15%));
+    color(var(--zd-color-kale-600) alpha(15%));
   --zd-chrome__nav__fab-bottom: 22px;
   --zd-chrome__nav__fab-font-weight: var(--zd-font-weight-semibold);
   --zd-chrome__nav__fab-height: 40px;
@@ -17,7 +17,7 @@
     box-shadow .1s ease-in-out,
     background-color .1s ease-in-out;
   --zd-chrome__nav__fab-width: 60px;
-  --zd-chrome__nav__fab-active-background-color: color(var(--zd-chrome__nav__fab-background-color) blackness(+10%));
+  --zd-chrome__nav__fab-active-background-color: var(--zd-chrome__nav__fab-background-color);
   --zd-chrome__nav__fab-focused-box-shadow:
     var(--zd-chrome__nav__fab-box-shadow),
     var(--zd-chrome__nav__item-focused-box-shadow);
@@ -124,6 +124,7 @@
   width: var(--zd-chrome__nav__fab-width);
   height: var(--zd-chrome__nav__fab-height);
   color: inherit;
+  font-size: inherit;
   font-weight: var(--zd-chrome__nav__fab-font-weight);
 }
 
