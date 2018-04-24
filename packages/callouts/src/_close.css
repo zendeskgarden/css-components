@@ -132,7 +132,7 @@
   background-color: var(--zd-callout--warning__close-focused-background-color);
 }
 
-.c-callout .c-callout__close:focus:active {
+.c-callout .c-callout__close:--callout-focused:active {
   background-color: transparent;
 }
 
