@@ -5,7 +5,7 @@ This package contains styling and positioning classes for `.c-arrow`.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-arrows
+npm install @zendeskgarden/css-arrows
 ```
 
 ## Usage

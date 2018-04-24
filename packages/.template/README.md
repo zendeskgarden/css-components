@@ -5,7 +5,7 @@ This package contains ...
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-{{component}}
+npm install @zendeskgarden/css-{{component}}
 ```
 
 ## Usage

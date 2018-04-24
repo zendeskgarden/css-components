@@ -6,7 +6,7 @@ classes.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-utilities
+npm install @zendeskgarden/css-utilities
 ```
 
 ## Usage

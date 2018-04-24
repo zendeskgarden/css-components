@@ -5,7 +5,7 @@ This package contains styling for a selection of callout containers.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-callouts
+npm install @zendeskgarden/css-callouts
 ```
 
 ## Usage

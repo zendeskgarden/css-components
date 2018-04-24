@@ -5,7 +5,7 @@ This package contains basic `.c-btn` component styling.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-buttons
+npm install @zendeskgarden/css-buttons
 ```
 
 ## Usage

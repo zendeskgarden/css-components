@@ -5,7 +5,7 @@ This package provides component styling for page navigation.
 ## Installation
 
 ```sh
-npm install --save-dev @zendeskgarden/css-pagination
+npm install @zendeskgarden/css-pagination
 ```
 
 ## Usage
