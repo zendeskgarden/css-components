@@ -1,6 +1,5 @@
 $(document).ready(function() {
   Garden.customClasses.push('.c-menu');
-  Garden.darkClasses.push('.c-menu');
   Garden.smClasses.push('.c-menu');
   Garden.rtlClasses.push('.c-menu');
 

@@ -22,8 +22,8 @@
 }
 
 .c-btn--custom.c-btn--muted{
-  border-color:#999;
-  color:#999;
+  border-color:#68737d;
+  color:#68737d;
 }
 
 .c-btn--custom.is-hovered.is-hovered,.c-btn--custom:hover:hover{
@@ -49,11 +49,11 @@
 }
 
 .c-btn--custom.is-disabled.is-disabled,.c-btn--custom:disabled:disabled{
-  background-color:#ddd;
+  background-color:#e9ebed;
 }
 
 .c-btn--custom.c-btn--anchor.is-disabled.is-disabled,.c-btn--custom.c-btn--anchor:disabled:disabled{
-  color:#999;
+  color:#a4acb5;
 }
 
 .l-btn-group .c-btn--custom.is-focused{

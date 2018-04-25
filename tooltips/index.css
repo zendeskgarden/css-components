@@ -10,13 +10,13 @@
   -webkit-box-sizing:border-box;
           box-sizing:border-box;
   border-radius:2px;
-  -webkit-box-shadow:0 4px 8px 0 rgba(36,83,107,.15);
-          box-shadow:0 4px 8px 0 rgba(36,83,107,.15);
+  -webkit-box-shadow:0 4px 8px 0 rgba(4,68,77,.15);
+          box-shadow:0 4px 8px 0 rgba(4,68,77,.15);
   background-color:#03363d;
   padding:0 1em;
   line-height:1.66667;
   white-space:nowrap;
-  color:#ddd;
+  color:#fff;
   font-size:12px;
   font-weight:400;
 }
@@ -30,6 +30,7 @@
   padding:40px;
   max-width:460px;
   word-wrap:break-word;
+  line-height:1.42857;
   white-space:normal;
   font-size:14px;
 }
@@ -43,6 +44,7 @@
   padding:20px;
   max-width:270px;
   word-wrap:break-word;
+  line-height:1.42857;
   white-space:normal;
   font-size:14px;
 }
@@ -60,12 +62,38 @@
   white-space:normal;
 }
 
+.c-tooltip__paragraph{
+  margin:0;
+}
+
+.c-tooltip__title{
+  display:none;
+  margin:0;
+  font-weight:600;
+}
+
+.c-tooltip--large .c-tooltip__paragraph{
+  margin-top:8px;
+}
+
+.c-tooltip--extra-large .c-tooltip__paragraph{
+  margin-top:10px;
+}
+
+.c-tooltip--extra-large .c-tooltip__title,.c-tooltip--large .c-tooltip__title{
+  display:block;
+}
+
+.c-tooltip.is-rtl{
+  direction:rtl;
+}
+
 .c-tooltip--light{
-  border:1px solid #eee;
-  -webkit-box-shadow:0 10px 20px 0 rgba(36,83,107,.15);
-          box-shadow:0 10px 20px 0 rgba(36,83,107,.15);
+  border:1px solid #d8dcde;
+  -webkit-box-shadow:0 12px 20px 0 rgba(4,68,77,.15);
+          box-shadow:0 12px 20px 0 rgba(4,68,77,.15);
   background-color:#fff;
-  color:#777;
+  color:#49545c;
 }
 
 .c-tooltip--light.c-arrow:after,.c-tooltip--light.c-arrow:before{
@@ -80,15 +108,6 @@
   font-size:18px;
 }
 
-.c-tooltip--dark{
-  border-color:transparent;
-  -webkit-box-shadow:0 10px 20px 0 rgba(0,0,0,.15);
-          box-shadow:0 10px 20px 0 rgba(0,0,0,.15);
-  background-color:#56777a;
-  color:#fff;
-}
-
-.c-tooltip--dark.c-tooltip--light{
-  background-color:#03363d;
-  color:#819a9e;
+.c-tooltip--light .c-tooltip__title{
+  color:#2f3941;
 }

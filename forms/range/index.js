@@ -3,13 +3,6 @@ $(document).ready(function() {
     '.c-range__input',
     '.c-range__slider'
   );
-  Garden.darkClasses.push(
-    '.c-range__input',
-    '.c-range__label',
-    '.c-range__hint',
-    '.c-range__message',
-    '.c-range__slider'
-  );
   Garden.smClasses.push(
     '.c-range__input',
     '.c-range__label',
