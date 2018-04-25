@@ -33,11 +33,11 @@
   box-shadow: var(--zd-menu__item-focused-box-shadow);
 }
 
-.c-menu__item:--menu-active:--menu-focused {
+/* stylelint-disable selector-max-specificity */
+.c-menu .c-menu__item:--menu-active:--menu-focused {
   box-shadow: none;
 }
 
-/* stylelint-disable selector-max-specificity */
 .c-menu .c-menu__item:--menu-disabled {
   cursor: default;
   color: var(--zd-menu__item-disabled-color);

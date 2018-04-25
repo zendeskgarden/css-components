@@ -7,6 +7,12 @@ $(document).ready(function() {
     $(this).blur();
   });
 
+  $(document).on('click', '.c-menu__item', function(event) {
+    if (event.target === event.currentTarget) {
+      $(this).find('.c-chk__input').click();
+    }
+  });
+
   $(document).on('click', '.c-menu__item:not(.is-disabled):not(.c-menu__item--header):not(.c-ctl .c-menu__item)', function() {
     $(this).toggleClass('is-checked');
   });
