@@ -75,11 +75,13 @@
   display: none;
 }
 
-.c-tag.c-tag--blue .c-tag__remove,
-.c-tag.c-tag--green .c-tag__remove,
-.c-tag.c-tag--grey .c-tag__remove,
-.c-tag.c-tag--kale .c-tag__remove,
-.c-tag.c-tag--red .c-tag__remove {
+.c-tag:matches(
+.c-tag--blue,
+.c-tag--green,
+.c-tag--grey,
+.c-tag--kale,
+.c-tag--red
+) .c-tag--remove {
   background-image: var(--zd-tag--color__remove-background-image);
 }
 
