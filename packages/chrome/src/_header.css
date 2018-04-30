@@ -23,7 +23,7 @@
     box-shadow .1s ease-in-out,
     color .1s ease-in-out;
   --zd-chrome__body__header__item-active-color: var(--zd-color-kale-700);
-  --zd-chrome__body__header__item-focused-box-shadow-color: color(var(--zd-chrome-accent-color) alpha(40%));
+  --zd-chrome__body__header__item-focused-box-shadow-color: color(var(--zd-chrome-accent-color) alpha(35%));
   --zd-chrome__body__header__item-focused-box-shadow:
     0 0 0 3px
     var(--zd-chrome__body__header__item-focused-box-shadow-color);
