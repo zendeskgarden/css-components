@@ -5,7 +5,7 @@
   --zd-backdrop-z-index: 400;
   --zd-backdrop__dialog-box-shadow:
     0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0
-    color(var(--zd-color-grey-800) alpha(32%));
+    color(var(--zd-color-grey-800) alpha(35%));
   --zd-backdrop--center__dialog-margin: calc(var(--zd-dialog-margin) / 2);
   --zd-backdrop--center__dialog-max-height: calc(100vh - (2 * var(--zd-dialog-margin)));
 }
