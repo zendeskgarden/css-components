@@ -337,21 +337,21 @@
 }
 
 .c-btn--muted{
-  border-color:#68737d;
+  border-color:#87929d;
   background-color:transparent;
-  color:#68737d;
+  color:#87929d;
 }
 
 .c-btn.c-btn--muted.is-focused{
   outline:none;
   -webkit-box-shadow:none;
           box-shadow:none;
-  background-color:hsla(209,9%,45%,.15);
+  background-color:rgba(135,146,157,.15);
   color:#2f3941;
 }
 
 .c-btn.c-btn--muted.is-active.is-active,.c-btn.c-btn--muted.is-hovered.is-hovered,.c-btn.c-btn--muted:active:active,.c-btn.c-btn--muted:hover:hover{
-  border-color:#68737d;
+  border-color:#87929d;
   background-color:transparent;
   color:#2f3941;
 }

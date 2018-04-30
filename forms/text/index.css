@@ -58,17 +58,17 @@
 
 .c-txt__input::-webkit-input-placeholder{
   opacity:1;
-  color:#87929d;
+  color:#c2c8cc;
 }
 
 .c-txt__input:-ms-input-placeholder,.c-txt__input::-ms-input-placeholder{
   opacity:1;
-  color:#87929d;
+  color:#c2c8cc;
 }
 
 .c-txt__input::placeholder{
   opacity:1;
-  color:#87929d;
+  color:#c2c8cc;
 }
 
 .c-txt__input:invalid{ -webkit-box-shadow:none; box-shadow:none; }

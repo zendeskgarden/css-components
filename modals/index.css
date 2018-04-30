@@ -43,8 +43,8 @@
           animation-delay:.01s;
   margin:48px;
   border-color:transparent;
-  -webkit-box-shadow:0 20px 28px 0 rgba(47,57,65,.32);
-          box-shadow:0 20px 28px 0 rgba(47,57,65,.32);
+  -webkit-box-shadow:0 20px 28px 0 rgba(47,57,65,.35);
+          box-shadow:0 20px 28px 0 rgba(47,57,65,.35);
   max-height:calc(100vh - 96px);
   overflow:auto;
 }
@@ -124,7 +124,7 @@
 .c-dialog__header{
   display:block;
   margin:0;
-  border-bottom:1px solid hsla(200,8%,86%,.5);
+  border-bottom:1px solid #e9ebed;
   padding:20px 40px;
   line-height:1.42857;
   color:#2f3941;
@@ -171,7 +171,7 @@
 
 .c-dialog__close:before{
   opacity:1;
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23C2C8CC'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2387929D'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
 }
 
 .c-dialog__close:after{
@@ -221,7 +221,7 @@
 }
 
 .c-dialog--large .c-dialog__footer{
-  border-top:1px solid hsla(200,8%,86%,.5);
+  border-top:1px solid #e9ebed;
   padding:32px 40px;
 }
 

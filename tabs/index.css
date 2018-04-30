@@ -168,7 +168,7 @@
 .c-tab__list__item.c-tab__list__item.is-disabled,.c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab__list__item.c-tab__list__item[disabled]{
   border-color:transparent;
   cursor:default;
-  color:#87929d;
+  color:#c2c8cc;
 }
 
 .c-tab__list__item.c-tab__list__item.is-disabled a,.c-tab__list__item.c-tab__list__item[aria-disabled=true] a,.c-tab__list__item.c-tab__list__item[disabled] a{

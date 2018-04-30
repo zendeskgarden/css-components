@@ -18,7 +18,7 @@
   border:0;
   border-radius:2px;
   background-color:#e9ebed;
-  padding:0 .83333em;
+  padding:0 .66667em;
   max-width:100%;
   height:20px;
   overflow:hidden;
@@ -121,12 +121,13 @@
 
 .c-tag--lg{
   border-radius:4px;
+  padding:0 1em;
   height:30px;
   line-height:2.5;
 }
 
 .c-tag--sm{
-  padding:0 .6em;
+  padding:0 .4em;
   height:15px;
   line-height:1.5;
   font-size:10px;
@@ -206,7 +207,7 @@
   display:none;
 }
 
-.c-tag.c-tag--blue .c-tag__remove,.c-tag.c-tag--green .c-tag__remove,.c-tag.c-tag--grey .c-tag__remove,.c-tag.c-tag--kale .c-tag__remove,.c-tag.c-tag--red .c-tag__remove{
+.c-tag.c-tag--blue .c-tag--remove,.c-tag.c-tag--green .c-tag--remove,.c-tag.c-tag--grey .c-tag--remove,.c-tag.c-tag--kale .c-tag--remove,.c-tag.c-tag--red .c-tag--remove{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
 }
 
