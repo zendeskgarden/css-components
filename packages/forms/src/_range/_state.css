@@ -3,7 +3,6 @@
 
 :root {
   --zd-range-active-thumb-background-color: var(--zd-color-blue-700);
-  --zd-range-active-track-background-color: var(--zd-color-grey-300);
   --zd-range-disabled-lower-background-color: var(--zd-color-grey-300);
   --zd-range-disabled-thumb-background-color: var(--zd-range-disabled-lower-background-color);
   --zd-range-disabled-thumb-border-color: var(--zd-range-disabled-thumb-background-color);
@@ -19,10 +18,6 @@
 
 .c-range__input:--range-focused::range-thumb {
   box-shadow: var(--zd-forms-focused-box-shadow);
-}
-
-.c-range__input:--range-active::range-track {
-  background-color: var(--zd-range-active-track-background-color);
 }
 
 .c-range__input:--range-active::range-thumb {

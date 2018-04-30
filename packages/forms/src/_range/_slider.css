@@ -81,11 +81,6 @@
   box-shadow: var(--zd-forms-focused-box-shadow);
 }
 
-.c-range__slider:active .c-range__slider__track,
-.c-range__slider.is-active .c-range__slider__track {
-  background-color: var(--zd-range-active-track-background-color);
-}
-
 .c-range__slider:not(.is-disabled) .c-range__slider__track__rail__thumb:active,
 .c-range__slider.is-active .c-range__slider__track__rail__thumb:first-of-type {
   background-color: var(--zd-range-active-thumb-background-color);
