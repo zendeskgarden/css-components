@@ -1,16 +1,11 @@
 $(document).ready(function() {
   Garden.customClasses.push('.c-menu');
+  Garden.darkClasses.push('.c-menu');
   Garden.smClasses.push('.c-menu');
   Garden.rtlClasses.push('.c-menu');
 
   $('.c-menu__item').mouseup(function() {
     $(this).blur();
-  });
-
-  $(document).on('click', '.c-menu__item', function(event) {
-    if (event.target === event.currentTarget) {
-      $(this).find('.c-chk__input').click();
-    }
   });
 
   $(document).on('click', '.c-menu__item:not(.is-disabled):not(.c-menu__item--header):not(.c-ctl .c-menu__item)', function() {

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  Garden.darkClasses.push('.c-dialog');
   Garden.rtlClasses.push('.c-dialog');
   Garden.handleFocus('.c-dialog__close');
 

@@ -18,11 +18,11 @@
   display:block;
   margin-top:0;
   margin-bottom:20px;
-  border-bottom:1px solid #d8dcde;
+  border-bottom:1px solid #ddd;
   padding:0;
   line-height:20px;
   white-space:nowrap;
-  color:#68737d;
+  color:#999;
   font-size:14px;
 }
 
@@ -35,6 +35,7 @@
   border-bottom-style:solid;
   border-bottom-color:transparent;
   cursor:pointer;
+  padding:10px 28px 6px;
   overflow:hidden;
   vertical-align:top;
   -webkit-user-select:none;
@@ -42,18 +43,16 @@
       -ms-user-select:none;
           user-select:none;
   text-align:center;
-  text-overflow:ellipsis;
-}
-
-.c-tab__list__item,.c-tab__list__item a{
-  padding:10px 28px 6px;
   text-decoration:none;
+  text-overflow:ellipsis;
   color:inherit;
 }
 
 .c-tab__list__item a{
   display:block;
   margin:-10px -28px -6px;
+  padding:10px 28px 6px;
+  color:inherit;
 }
 
 .c-tab__panel{
@@ -113,8 +112,17 @@
   margin-right:32px;
 }
 
+.c-tab--dark .c-tab__list{
+  border-color:#56777a;
+  color:#819a9e;
+}
+
+.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item.is-disabled,.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab--dark.c-tab--dark .c-tab__list__item.c-tab__list__item[disabled]{
+  color:#56777a;
+}
+
 .c-tab__list__item.is-hovered,.c-tab__list__item:hover{
-  color:#1f73b7;
+  color:#30aabc;
 }
 
 .c-tab__list__item a:hover{
@@ -127,7 +135,7 @@
 }
 
 .c-tab__list__item.is-focused,.c-tab__list__item:focus{
-  color:#1f73b7;
+  color:#30aabc;
 }
 
 .c-tab__list__item:before{
@@ -144,15 +152,15 @@
   right:24px;
   left:24px;
   border-radius:4px;
-  -webkit-box-shadow:inset 0 0 0 2px rgba(31,115,183,.35);
-          box-shadow:inset 0 0 0 2px rgba(31,115,183,.35);
+  -webkit-box-shadow:inset 0 0 0 2px rgba(48,170,188,.4);
+          box-shadow:inset 0 0 0 2px rgba(48,170,188,.4);
   height:20px;
   pointer-events:none;
 }
 
 .c-tab__list__item.c-tab__list__item.is-active,.c-tab__list__item.c-tab__list__item:active{
   border-color:currentColor;
-  color:#1f73b7;
+  color:#30aabc;
 }
 
 .c-tab__list__item.c-tab__list__item.is-active:before,.c-tab__list__item.c-tab__list__item:active:before{
@@ -162,13 +170,13 @@
 
 .c-tab__list__item.c-tab__list__item.is-selected{
   border-color:currentColor;
-  color:#1f73b7;
+  color:#30aabc;
 }
 
 .c-tab__list__item.c-tab__list__item.is-disabled,.c-tab__list__item.c-tab__list__item[aria-disabled=true],.c-tab__list__item.c-tab__list__item[disabled]{
   border-color:transparent;
   cursor:default;
-  color:#a4acb5;
+  color:#ddd;
 }
 
 .c-tab__list__item.c-tab__list__item.is-disabled a,.c-tab__list__item.c-tab__list__item[aria-disabled=true] a,.c-tab__list__item.c-tab__list__item[disabled] a{

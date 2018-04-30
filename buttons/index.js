@@ -1,5 +1,6 @@
 $(document).ready(function() {
   Garden.customClasses.push('.c-btn');
+  Garden.darkClasses.push('.c-btn');
   Garden.smClasses.push('.c-btn');
   Garden.rtlClasses.push('.l-btn-group');
   Garden.handleFocus('.c-btn');

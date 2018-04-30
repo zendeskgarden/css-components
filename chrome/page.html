@@ -257,6 +257,7 @@
   <script src="index.js"></script>
   <script>
   $(document).ready(function() {
+    $('.c-chrome').toggleClass('c-chrome--dark', Garden.parameters.mode === 'dark');
     $('.c-chrome').toggleClass('is-rtl', Garden.parameters.dir === 'rtl');
     updateNavColor($('.c-chrome__nav'), Garden.parameters.color);
   });

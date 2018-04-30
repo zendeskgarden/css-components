@@ -11,6 +11,10 @@
   <style>
   .c-arrow.u-visibility-visible:before,
   .c-arrow.u-visibility-visible:after { display: inline-block !important; }
+
+
+  .c-main .c-menu:not(.c-menu--dark) { background-color: #fbfbfb; }
+
   .u-z-index-0 { z-index: 0 !important; }
   </style>
 </head>
@@ -39,6 +43,12 @@
           </svg>
         </a>
         <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
           <li class="c-menu__item" role="menuitem">
             <fieldset class="c-chk">
               <input checked class="c-chk__input js-border" id="nav.ctl.border" type="checkbox">
@@ -147,7 +157,7 @@
           <h2 class="u-zeta u-semibold u-mb">BOTTOM LEFT</h2>
           <code class="c-code">.c-arrow.c-arrow--bl</code>
           <div class="u-mt u-position-relative u-z-index-0">
-            <ul class="c-menu c-arrow c-arrow--bl u-bc-blue-600 u-bg-grey-100 u-opacity-opaque u-visibility-visible">
+            <ul class="c-menu c-arrow c-arrow--bl u-bc-pelorous u-opacity-opaque u-visibility-visible">
               <li class="c-menu__item">Item 1</li>
               <li class="c-menu__item">Item 2</li>
               <li class="c-menu__item">Item 3</li>
@@ -158,7 +168,7 @@
           <h2 class="u-zeta u-semibold u-mb">BOTTOM</h2>
           <code class="c-code">.c-arrow.c-arrow--b</code>
           <div class="u-mt u-position-relative u-z-index-0">
-            <ul class="c-menu c-arrow c-arrow--b u-bc-blue-600 u-bg-grey-100 u-opacity-opaque u-visibility-visible">
+            <ul class="c-menu c-arrow c-arrow--b u-bc-pelorous u-opacity-opaque u-visibility-visible">
               <li class="c-menu__item">Item 1</li>
               <li class="c-menu__item">Item 2</li>
               <li class="c-menu__item">Item 3</li>
@@ -169,7 +179,7 @@
           <h2 class="u-zeta u-semibold u-mb">BOTTOM RIGHT</h2>
           <code class="c-code">.c-arrow.c-arrow--br</code>
           <div class="u-mt u-position-relative u-z-index-0">
-            <ul class="c-menu c-arrow c-arrow--br u-bc-blue-600 u-bg-grey-100 u-opacity-opaque u-visibility-visible">
+            <ul class="c-menu c-arrow c-arrow--br u-bc-pelorous u-opacity-opaque u-visibility-visible">
               <li class="c-menu__item">Item 1</li>
               <li class="c-menu__item">Item 2</li>
               <li class="c-menu__item">Item 3</li>
@@ -183,7 +193,7 @@
           <h2 class="u-zeta u-semibold u-mb">CENTER LEFT</h2>
           <code class="c-code">.c-arrow.c-arrow--l</code>
           <div class="u-mt u-position-relative u-z-index-0">
-            <ul class="c-menu c-arrow c-arrow--l u-bc-blue-600 u-bg-grey-100 u-opacity-opaque u-visibility-visible">
+            <ul class="c-menu c-arrow c-arrow--l u-bc-pelorous u-opacity-opaque u-visibility-visible">
               <li class="c-menu__item">Item 1</li>
               <li class="c-menu__item">Item 2</li>
               <li class="c-menu__item">Item 3</li>
@@ -196,7 +206,7 @@
           <h2 class="u-zeta u-semibold u-mb">CENTER RIGHT</h2>
           <code class="c-code">.c-arrow.c-arrow--r</code>
           <div class="u-mt u-position-relative u-z-index-0">
-            <ul class="c-menu c-arrow c-arrow--r u-bc-blue-600 u-bg-grey-100 u-opacity-opaque u-visibility-visible">
+            <ul class="c-menu c-arrow c-arrow--r u-bc-pelorous u-opacity-opaque u-visibility-visible">
               <li class="c-menu__item">Item 1</li>
               <li class="c-menu__item">Item 2</li>
               <li class="c-menu__item">Item 3</li>
@@ -209,7 +219,7 @@
           <h2 class="u-zeta u-semibold u-mb">TOP LEFT</h2>
           <code class="c-code">.c-arrow.c-arrow--tl</code>
           <div class="u-mt u-position-relative u-z-index-0">
-            <ul class="c-menu c-arrow c-arrow--tl u-bc-blue-600 u-bg-grey-100 u-opacity-opaque u-visibility-visible">
+            <ul class="c-menu c-arrow c-arrow--tl u-bc-pelorous u-opacity-opaque u-visibility-visible">
               <li class="c-menu__item">Item 1</li>
               <li class="c-menu__item">Item 2</li>
               <li class="c-menu__item">Item 3</li>
@@ -220,7 +230,7 @@
           <h2 class="u-zeta u-semibold u-mb">TOP</h2>
           <code class="c-code">.c-arrow.c-arrow--t</code>
           <div class="u-mt u-position-relative u-z-index-0">
-            <ul class="c-menu c-arrow c-arrow--t u-bc-blue-600 u-bg-grey-100 u-opacity-opaque u-visibility-visible">
+            <ul class="c-menu c-arrow c-arrow--t u-bc-pelorous u-opacity-opaque u-visibility-visible">
               <li class="c-menu__item">Item 1</li>
               <li class="c-menu__item">Item 2</li>
               <li class="c-menu__item">Item 3</li>
@@ -231,7 +241,7 @@
           <h2 class="u-zeta u-semibold u-mb">TOP RIGHT</h2>
           <code class="c-code">.c-arrow.c-arrow--tr</code>
           <div class="u-mt u-position-relative u-z-index-0">
-            <ul class="c-menu c-arrow c-arrow--tr u-bc-blue-600 u-bg-grey-100 u-opacity-opaque u-visibility-visible">
+            <ul class="c-menu c-arrow c-arrow--tr u-bc-pelorous u-opacity-opaque u-visibility-visible">
               <li class="c-menu__item">Item 1</li>
               <li class="c-menu__item">Item 2</li>
               <li class="c-menu__item">Item 3</li>

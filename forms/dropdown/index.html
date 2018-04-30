@@ -10,6 +10,8 @@
   <link href="../custom.css" rel="stylesheet">
   <link href="../../utilities/index.css" rel="stylesheet">
   <style>
+  .c-tag.c-tag--dark { color: #fff; }
+
   .c-main .c-menu {
     width: 370px;
     bottom: 47px;
@@ -48,6 +50,12 @@
           </svg>
         </a>
         <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
           <li class="c-menu__item" role="menuitem">
             <fieldset class="c-chk">
               <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">

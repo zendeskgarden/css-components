@@ -1,5 +1,11 @@
 $(document).ready(function() {
   Garden.customClasses.push('.c-txt__input');
+  Garden.darkClasses.push(
+    '.c-txt__input',
+    '.c-txt__label',
+    '.c-txt__hint',
+    '.c-txt__message'
+  );
   Garden.rtlClasses.push(
     '.c-txt',
     '.c-txt__input',

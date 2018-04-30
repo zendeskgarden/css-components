@@ -9,6 +9,9 @@
   <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <link href="../utilities/index.css" rel="stylesheet">
+  <style>
+  .is-dark .u-fg-grey-800 { color: #fff !important; }
+  </style>
 </head>
 <body>
   <header class="c-header">
@@ -26,8 +29,8 @@
     <ul class="c-ctl c-ctl--header">
       <li class="c-ctl__item">
         <fieldset class="c-chk">
-          <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-          <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
+          <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+          <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
         </fieldset>
       </li>
     </ul>
@@ -48,26 +51,26 @@
           <div class="l-grid__item u-1/3">
           </div
           ><div class="l-grid__item u-1/3">
-            <div class="c-tooltip c-arrow c-arrow--b"><span dir="ltr">.c-tooltip.c-arrow.c-arrow--b</span></div>
+            <div class="c-tooltip c-arrow c-arrow--b">.c-tooltip.c-arrow.c-arrow--b</div>
           </div
           ><div class="l-grid__item u-1/3">
           </div>
         </div>
         <div class="l-grid u-mb">
           <div class="l-grid__item u-1/3">
-            <div class="c-tooltip c-arrow c-arrow--r"><span dir="ltr">.c-tooltip.c-arrow.c-arrow--r</span></div>
+            <div class="c-tooltip c-arrow c-arrow--r">.c-tooltip.c-arrow.c-arrow--r</div>
           </div
           ><div class="l-grid__item u-1/3">
           </div
           ><div class="l-grid__item u-1/3">
-            <div class="c-tooltip c-arrow c-arrow--l"><span dir="ltr">.c-tooltip.c-arrow.c-arrow--l</span></div>
+            <div class="c-tooltip c-arrow c-arrow--l">.c-tooltip.c-arrow.c-arrow--l</div>
           </div>
         </div>
         <div class="l-grid u-mb-lg">
           <div class="l-grid__item u-1/3">
           </div
           ><div class="l-grid__item u-1/3">
-            <div class="c-tooltip c-arrow c-arrow--t"><span dir="ltr">.c-tooltip.c-arrow.c-arrow--t</span></div>
+            <div class="c-tooltip c-arrow c-arrow--t">.c-tooltip.c-arrow.c-arrow--t</div>
           </div
           ><div class="l-grid__item u-1/3">
           </div>
@@ -76,49 +79,43 @@
         <p class="u-mb">Use the
           <code class="c-code">.c-tooltip--light</code>
           modifier to style with a lighter background color.</p>
-        <div class="c-tooltip c-tooltip--light c-arrow c-arrow--t u-mb-lg"><span dir="ltr">.c-tooltip.c-tooltip--light</span></div>
+        <div class="c-tooltip c-tooltip--light c-arrow c-arrow--t u-mb-lg">.c-tooltip.c-tooltip--light</div>
         <p class="u-mb">The
           <code class="c-code">.c-tooltip--medium</code>
           class provides affordance for tooltips that exceed one line, but are
           still relatively short (max-width is 140px).</p>
         <div class="l-grid u-mb-lg">
           <div class="l-grid__item u-1/2">
-            <div class="c-tooltip c-tooltip--light c-tooltip--medium c-arrow c-arrow--t"><span dir="ltr">.c-tooltip<br>
+            <div class="c-tooltip c-tooltip--light c-tooltip--medium c-arrow c-arrow--t">.c-tooltip<br>
               .c-tooltip--light<br>
-              .c-tooltip--medium</span></div>
+              .c-tooltip--medium</div>
           </div
           ><div class="l-grid__item u-1/2">
-            <div class="c-tooltip c-tooltip--medium c-arrow c-arrow--t"><span dir="ltr">.c-tooltip<br>
-              .c-tooltip--medium</span></div>
+            <div class="c-tooltip c-tooltip--medium c-arrow c-arrow--t">.c-tooltip<br>
+              .c-tooltip--medium</div>
           </div>
         </div>
         <p class="u-mb">Use
           <code class="c-code">.c-tooltip--large</code>
           for multi-line tooltips that are headed by a title (max-width is
-          270px). Both large and extra-large tooltips may contain
-          <code class="c-code">.c-tooltip__title</code> and
-          <code class="c-code">.c-tooltip__paragraph</code> child elements.</p>
+          270px).</p>
         <div class="l-grid u-mb-lg">
           <div class="l-grid__item u-1/2">
             <div class="c-tooltip c-tooltip--light c-tooltip--large c-arrow c-arrow--t">
-              <strong class="c-tooltip__title"><span dir="ltr">.c-tooltip__title</span></strong>
-              <p class="c-tooltip__paragraph">
-                <code class="c-code" dir="ltr">.c-tooltip__paragraph</code>
-                Every day carry blog man bun, disrupt fap etsy street art +1
+              <strong class="u-fg-grey-800 u-regular u-display-block u-mb-sm">Tipster Title</strong>
+              <p>Everyday carry blog man bun, disrupt fap etsy street art +1
                 poutine twee. Plaid umami PBR&B etsy, narwhal ramps chillwave
-                bespoke butcher cronut. Taxidermy kale chips asymmetrical
-                cardigan, authentic normcore DIY chillwave.</p>
+                bespoke butcher cronut. Taxidermy kale chips asymmetrical cardigan,
+                authentic normcore DIY chillwave.</p>
             </div>
           </div
           ><div class="l-grid__item u-1/2">
             <div class="c-tooltip c-tooltip--large c-arrow c-arrow--t">
-              <strong class="c-tooltip__title"><span dir="ltr">.c-tooltip__title</span></strong>
-              <p class="c-tooltip__paragraph">
-                <code class="c-code" dir="ltr">.c-tooltip__paragraph</code>
-                Every day carry blog man bun, disrupt fap etsy street art +1
+              <strong class="u-fg-white u-regular u-display-block u-mb-sm">Tipster Title</strong>
+              <p>Everyday carry blog man bun, disrupt fap etsy street art +1
                 poutine twee. Plaid umami PBR&B etsy, narwhal ramps chillwave
-                bespoke butcher cronut. Taxidermy kale chips asymmetrical
-                cardigan, authentic normcore DIY chillwave.</p>
+                bespoke butcher cronut. Taxidermy kale chips asymmetrical cardigan,
+                authentic normcore DIY chillwave.</p>
             </div>
           </div>
         </div>
@@ -127,19 +124,20 @@
           class when a tooltip contains multiple lines and element types
           (max-width 460px).</p>
         <div class="c-tooltip c-tooltip--light c-tooltip--extra-large">
-          <strong class="c-tooltip__title"><span class="c-tag c-tag--blue">Badge</span><span class="u-mh-sm">Tipster Title</span></strong>
-          <p class="c-tooltip__paragraph">Everyday carry blog man bun,
-            disrupt fap etsy street art +1 poutine twee. Plaid umami PBR&B
-            etsy, narwhal ramps chillwave bespoke butcher cronut. Taxidermy
-            kale chips asymmetrical cardigan, authentic normcore DIY
-            chillwave.</p>
-          <hr class="u-fg-grey-200 u-mt-sm">
-          <p class="c-tooltip__paragraph">Flannel gluten-free slow-carb butcher
-            actually. Polaroid irony celiac man braid, narwhal venmo iPhone
-            8-bit cronut cold-pressed keytar. Thundercats street art polaroid
-            banjo mixtape. Humblebrag pickled quinoa occupy. Meggings craft
-            beer organic tilde skateboard, cronut freegan normcore franzen
-            farm-to-table cred ugh.</p>
+          <div class="u-mb">
+            <span class="c-tag">Badge</span>
+            <strong class="u-fg-grey-800 u-regular u-ml-sm">Tipster Title</strong>
+          </div>
+          <p class="u-mb">Everyday carry blog man bun, disrupt fap etsy street art +1
+            poutine twee. Plaid umami PBR&B etsy, narwhal ramps chillwave
+            bespoke butcher cronut. Taxidermy kale chips asymmetrical cardigan,
+            authentic normcore DIY chillwave.</p>
+          <hr class="u-fg-grey-100 u-mb">
+          <p>Flannel gluten-free slow-carb butcher actually. Polaroid irony
+            celiac man braid, narwhal venmo iPhone 8-bit cronut cold-pressed
+            keytar. Thundercats street art polaroid banjo mixtape. Humblebrag
+            pickled quinoa occupy. Meggings craft beer organic tilde skateboard,
+            cronut freegan normcore franzen farm-to-table cred ugh.</p>
         </div>
       </div>
       <section id="playground">

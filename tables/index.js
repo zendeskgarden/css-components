@@ -1,5 +1,6 @@
 $(document).ready(function() {
   Garden.customClasses.push('.c-table');
+  Garden.darkClasses.push('.c-table');
   Garden.rtlClasses.push('.c-table');
 
   $(document).on('click', '.c-table__row--header .c-chk__input', function() {

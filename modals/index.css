@@ -15,7 +15,7 @@
   bottom:0;
   left:0;
   z-index:400;
-  background-color:rgba(47,57,65,.85);
+  background-color:rgba(0,0,0,.65);
   overflow:auto;
   -webkit-overflow-scrolling:touch;
 }
@@ -43,8 +43,8 @@
           animation-delay:.01s;
   margin:48px;
   border-color:transparent;
-  -webkit-box-shadow:0 20px 28px 0 rgba(47,57,65,.32);
-          box-shadow:0 20px 28px 0 rgba(47,57,65,.32);
+  -webkit-box-shadow:0 20px 30px 0 rgba(0,0,0,.32);
+          box-shadow:0 20px 30px 0 rgba(0,0,0,.32);
   max-height:calc(100vh - 96px);
   overflow:auto;
 }
@@ -89,12 +89,12 @@
       -ms-flex-direction:column;
           flex-direction:column;
   margin-bottom:48px;
-  border:1px solid #d8dcde;
+  border:1px solid #eee;
   border-radius:4px;
   -webkit-box-sizing:border-box;
           box-sizing:border-box;
-  -webkit-box-shadow:0 20px 28px 0 rgba(4,68,77,.15);
-          box-shadow:0 20px 28px 0 rgba(4,68,77,.15);
+  -webkit-box-shadow:0 20px 30px 0 rgba(36,83,107,.15);
+          box-shadow:0 20px 30px 0 rgba(36,83,107,.15);
   background-color:#fff;
   width:544px;
   min-height:60px;
@@ -124,10 +124,10 @@
 .c-dialog__header{
   display:block;
   margin:0;
-  border-bottom:1px solid hsla(200,8%,86%,.5);
+  border-bottom:1px solid #eee;
   padding:20px 40px;
   line-height:1.42857;
-  color:#2f3941;
+  color:#555;
   font-size:14px;
   font-weight:600;
 }
@@ -171,12 +171,12 @@
 
 .c-dialog__close:before{
   opacity:1;
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23CBCFD2'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23CCC'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
 }
 
 .c-dialog__close:after{
   opacity:0;
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%232F3941'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23555'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
 }
 
 .c-dialog__close.is-focused:before,.c-dialog__close.is-hovered:before,.c-dialog__close:hover:before{
@@ -189,7 +189,7 @@
 
 .c-dialog__close.is-focused,.c-dialog__close:focus{
   outline:none;
-  background-color:hsla(209,9%,45%,.15);
+  background-color:#eee;
 }
 
 .c-dialog__close.is-active,.c-dialog__close:active{
@@ -206,7 +206,7 @@
   margin:0;
   padding:20px 40px 40px;
   line-height:1.42857;
-  color:#2f3941;
+  color:#777;
   font-size:14px;
 }
 
@@ -221,12 +221,44 @@
 }
 
 .c-dialog--large .c-dialog__footer{
-  border-top:1px solid hsla(200,8%,86%,.5);
+  border-top:1px solid #eee;
   padding:32px 40px;
 }
 
 .c-dialog.is-rtl .c-dialog__footer{
   text-align:left;
+}
+
+.c-dialog--dark{
+  border-color:transparent;
+  -webkit-box-shadow:0 20px 30px 0 rgba(0,0,0,.15);
+          box-shadow:0 20px 30px 0 rgba(0,0,0,.15);
+  background-color:#03363d;
+}
+
+.c-dialog--dark .c-dialog__body{
+  color:#819a9e;
+}
+
+.c-dialog--dark .c-dialog__close:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%2356777A'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+}
+
+.c-dialog--dark .c-dialog__close:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23819A9E'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+}
+
+.c-dialog--dark .c-dialog__close.is-focused{
+  background-color:#04444d;
+}
+
+.c-dialog--dark .c-dialog__header{
+  border-bottom-color:#04444d;
+  color:#fff;
+}
+
+.c-dialog--dark.c-dialog--large .c-dialog__footer{
+  border-top-color:#04444d;
 }
 
 @-webkit-keyframes zd-backdrop-visible{

@@ -28,8 +28,6 @@
   -webkit-transform:rotate(45deg);
           transform:rotate(45deg);
   background-color:inherit;
-  -webkit-box-sizing:inherit;
-          box-sizing:inherit;
   width:.85714em;
   height:.85714em;
   content:"";

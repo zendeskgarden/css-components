@@ -67,6 +67,12 @@
         <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
           <li class="c-menu__item" role="menuitem">
             <fieldset class="c-chk">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk">
               <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
               <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
             </fieldset>
@@ -202,6 +208,8 @@
         <p class="u-mb">Use the main settings menu to modify styling for the
           menus displayed throughout the page.</p>
         <ul class="u-list-style-disc">
+          <li class="u-mb-sm">Toggle "Dark Mode" to view
+            <code class="c-code">.c-menu--dark</code> styling.</li>
           <li class="u-mb-sm">Toggle "RTL" to add the
             <code class="c-code">.is-rtl</code> menu class.</li>
           <li class="u-mb-sm">Toggle "Custom" to view the
@@ -221,8 +229,8 @@
               <li class="c-menu__item c-menu__item--header"><span dir="ltr">.c-menu__item--header</span></li>
               <li class="c-menu__separator">
               <li class="c-menu__item c-menu__item--header">
-                <svg class="c-menu__item--header__icon u-fg-grey-700">
-                  <use xlink:href="../index.svg#zd-svg-icon-14-info">
+                <svg class="c-menu__item--header__icon u-fg-white u-bg-grey-300 u-br-sm">
+                  <use xlink:href="../index.svg#zd-svg-icon-14-person">
                 </svg>
                 <span dir="ltr">&gt; .c-menu__item--header__icon</span>
               </li>
@@ -235,7 +243,7 @@
               </li>
               <li class="c-menu__separator">
               <li class="c-menu__item c-menu__item--media" tabindex="0">
-                <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/2F3941">
+                <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/555555">
                 <div class="c-menu__item--media__body">
                   <span dir="ltr">.c-menu__item--media</span>
                   <span class="c-menu__item__meta" dir="ltr">.c-menu__item__meta</span>
@@ -256,15 +264,15 @@
               <li class="c-menu__separator">
               <li class="c-menu__item is-focused" tabindex="0"><span dir="ltr">.is-focused</span></li>
               <li class="c-menu__separator">
-              <li class="c-menu__item is-disabled"><span dir="ltr">.is-disabled</span></li>
+              <li class="c-menu__item is-disabled" tabindex="0"><span dir="ltr">.is-disabled</span></li>
               <li class="c-menu__separator">
-              <li class="c-menu__item is-checked is-disabled"><span dir="ltr">.is-checked.is-disabled</span></li>
+              <li class="c-menu__item is-checked is-disabled" tabindex="0"><span dir="ltr">.is-checked.is-disabled</span></li>
               <li class="c-menu__separator">
-              <li class="c-menu__item c-menu__item--next is-disabled"><span dir="ltr">.c-menu__item--next.is-disabled</span></li>
+              <li class="c-menu__item c-menu__item--next is-disabled" tabindex="0"><span dir="ltr">.c-menu__item--next.is-disabled</span></li>
               <li class="c-menu__separator">
-              <li class="c-menu__item c-menu__item--previous is-disabled"><span dir="ltr">.c-menu__item--previous.is-disabled</span></li>
+              <li class="c-menu__item c-menu__item--previous is-disabled" tabindex="0"><span dir="ltr">.c-menu__item--previous.is-disabled</span></li>
               <li class="c-menu__separator">
-              <li class="c-menu__item c-menu__item--add is-disabled"><span dir="ltr">.c-menu__item--add.is-disabled</span></li>
+              <li class="c-menu__item c-menu__item--add is-disabled" tabindex="0"><span dir="ltr">.c-menu__item--add.is-disabled</span></li>
             </ul>
           </div>
         </div>

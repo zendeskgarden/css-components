@@ -1,5 +1,10 @@
 $(document).ready(function() {
   Garden.customClasses.push('.c-chk__label');
+  Garden.darkClasses.push(
+    '.c-chk__label',
+    '.c-chk__hint',
+    '.c-chk__message'
+  );
   Garden.rtlClasses.push(
     '.c-chk__label',
     '.c-chk__hint',

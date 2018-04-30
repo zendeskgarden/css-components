@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  Garden.rtlClasses.push('.c-tooltip');
+  Garden.darkClasses.push('.c-tooltip');
 });
