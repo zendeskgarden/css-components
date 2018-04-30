@@ -2,6 +2,6 @@
 
 :root {
   --zd-tab-accent-color: var(--zd-color-blue-600);
-  --zd-tab-disabled-color: var(--zd-color-grey-500);
+  --zd-tab-disabled-color: var(--zd-color-grey-400);
   --zd-tab-focused-box-shadow: inset 0 0 0 2px;
 }
