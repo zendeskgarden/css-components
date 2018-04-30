@@ -4,16 +4,18 @@
   --zd-tag--lg-border-radius: 4px;
   --zd-tag--lg-height: var(--zd-spacing-lg);
   --zd-tag--lg-line-height: calc(30 / 12);
+  --zd-tag--lg-padding: 0 1em;
   --zd-tag--sm-font-size: var(--zd-font-size-micro);
   --zd-tag--sm-height: 15px;
   --zd-tag--sm-line-height: calc(15 / 10);
-  --zd-tag--sm-padding: 0 calc(6 / 10 * 1em);
+  --zd-tag--sm-padding: 0 calc(4 / 10 * 1em);
   --zd-tag--round--lg-min-width: 30px;
   --zd-tag--round--sm-min-width: 15px;
 }
 
 .c-tag--lg {
   border-radius: var(--zd-tag--lg-border-radius);
+  padding: var(--zd-tag--lg-padding);
   height: var(--zd-tag--lg-height);
   line-height: var(--zd-tag--lg-line-height);
 }

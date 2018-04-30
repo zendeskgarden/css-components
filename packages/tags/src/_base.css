@@ -10,7 +10,7 @@
   --zd-tag-font-weight: var(--zd-font-weight-semibold);
   --zd-tag-height: var(--zd-spacing);
   --zd-tag-line-height: calc(20 / 12);
-  --zd-tag-padding: 0 calc(10 / 12 * 1em);
+  --zd-tag-padding: 0 calc(8 / 12 * 1em);
   --zd-tag-transition: box-shadow .1s ease-in-out;
 }
 
