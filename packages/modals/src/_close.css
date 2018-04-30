@@ -1,7 +1,7 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-dialog__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-400));
+  --zd-dialog__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-500));
   --zd-dialog__close-right: var(--zd-spacing);
   --zd-dialog__close-size: var(--zd-spacing-xl);
   --zd-dialog__close-top: var(--zd-spacing-sm);
