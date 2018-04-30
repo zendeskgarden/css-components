@@ -1,5 +1,6 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-tag-accent-color: var(--zd-color-pelorous);
+  --zd-tag-accent-color: var(--zd-color-grey-200);
+  --zd-tag-focused-box-shadow: 0 0 0 2px;
 }

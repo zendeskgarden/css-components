@@ -2,19 +2,21 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-tag__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag-color));
+  --zd-tag__remove-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-700));
   --zd-tag__remove-background:
     no-repeat
     center
     var(--zd-tag__remove-background-image)
     transparent; /* [1] */
   --zd-tag__remove-margin: calc(var(--zd-spacing-sm) * -1);
-  --zd-tag__remove-opacity: .7;
+  --zd-tag__remove-opacity: .8;
   --zd-tag__remove-size: var(--zd-spacing);
   --zd-tag__remove-transition: opacity .25s ease-in-out;
+  --zd-tag__remove-hovered-opacity: .9;
   --zd-tag--lg__remove-background-size: var(--zd-font-size-delta);
   --zd-tag--lg__remove-size: var(--zd-spacing-lg);
-  --zd-tag--light__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag--light-color));
+  --zd-tag--color__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag--color-color));
+  --zd-tag--yellow__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag--yellow-color));
   --zd-tag--sm__remove-background-size: var(--zd-font-size-milli);
   --zd-tag--sm__remove-margin: calc(var(--zd-tag__remove-margin) / 2);
   --zd-tag--sm__remove-size: 15px;
@@ -45,15 +47,11 @@
   :hover;
 
 .c-tag__remove:--tag-hovered {
-  opacity: 1;
+  opacity: var(--zd-tag__remove-hovered-opacity);
 }
 
 .c-tag__remove:focus {
   outline: none;
-}
-
-.c-tag--light .c-tag__remove {
-  background-image: var(--zd-tag--light__remove-background-image);
 }
 
 .c-tag--lg .c-tag__remove {
@@ -75,6 +73,20 @@
 
 .c-tag--round .c-tag__remove {
   display: none;
+}
+
+.c-tag:matches(
+.c-tag--blue,
+.c-tag--green,
+.c-tag--grey,
+.c-tag--kale,
+.c-tag--red
+) .c-tag--remove {
+  background-image: var(--zd-tag--color__remove-background-image);
+}
+
+.c-tag.c-tag--yellow .c-tag__remove {
+  background-image: var(--zd-tag--yellow__remove-background-image);
 }
 
 .c-tag.is-rtl .c-tag__remove {

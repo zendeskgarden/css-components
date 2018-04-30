@@ -3,14 +3,15 @@
 :root {
   /* stylelint-disable max-line-length */
   --zd-tooltip--light-background-color: var(--zd-color-white);
-  --zd-tooltip--light-border: 1px solid var(--zd-color-platinum);
+  --zd-tooltip--light-border: 1px solid var(--zd-color-grey-300);
   --zd-tooltip--light-box-shadow:
-    0 10px 20px 0
-    color(var(--zd-color-chathams-blue) alpha(15%));
-  --zd-tooltip--light-color: var(--zd-color-monsoon);
+    0 12px 20px 0
+    color(var(--zd-color-kale-600) alpha(15%));
+  --zd-tooltip--light-color: var(--zd-color-grey-700);
   --zd-tooltip--light__arrow-font-size: calc(var(--zd-tooltip__arrow-font-size) + 2px);
   --zd-tooltip--light--large__arrow-font-size: calc(var(--zd-tooltip--large__arrow-font-size) + 2px);
   --zd-tooltip--light--extra-large__arrow-font-size: calc(var(--zd-tooltip--extra-large__arrow-font-size) + 2px);
+  --zd-tooltip--light__title-color: var(--zd-color-grey-800);
   /* stylelint-enable max-line-length */
 }
 
@@ -34,4 +35,8 @@
 .c-tooltip--light.c-tooltip--extra-large.c-arrow::before,
 .c-tooltip--light.c-tooltip--extra-large.c-arrow::after {
   font-size: var(--zd-tooltip--light--extra-large__arrow-font-size);
+}
+
+.c-tooltip--light .c-tooltip__title {
+  color: var(--zd-tooltip--light__title-color);
 }

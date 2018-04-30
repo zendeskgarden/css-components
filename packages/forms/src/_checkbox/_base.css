@@ -3,7 +3,7 @@
 
 :root {
   --zd-chk-background-color: var(--zd-color-white);
-  --zd-chk-border: 1px solid var(--zd-color-gainsboro);
+  --zd-chk-border: 1px solid var(--zd-forms-border-color);
   --zd-chk-border-radius: 4px;
   --zd-chk-size: var(--zd-font-size-epsilon);
   --zd-chk-transition:
@@ -71,10 +71,6 @@
   content: '';
 }
 
-.c-chk__label--dark {
-  color: var(--zd-input__label--dark-color);
-}
-
 .c-chk__label--regular {
   font-weight: var(--zd-chk__label--regular-font-weight);
 }
@@ -84,10 +80,6 @@
   line-height: var(--zd-chk__hint-line-height);
   color: var(--zd-input__hint-color);
   font-size: var(--zd-input__hint-font-size);
-}
-
-.c-chk__hint--dark {
-  color: var(--zd-input__hint--dark-color);
 }
 
 .c-chk__message {
@@ -108,20 +100,17 @@
 
 .c-chk__message--error {
   background-image: var(--zd-input__message--error-background-image);
-  color: var(--zd-forms-error-color);
+  color: var(--zd-input__message--error-color);
 }
 
 .c-chk__message--success {
   background-image: var(--zd-input__message--success-background-image);
-  color: var(--zd-forms-success-color);
+  color: var(--zd-input__message--success-color);
 }
 
 .c-chk__message--warning {
   background-image: var(--zd-input__message--warning-background-image);
-}
-
-.c-chk__message--warning.c-chk__message--dark {
-  color: var(--zd-forms-warning-color);
+  color: var(--zd-input__message--warning-color);
 }
 
 .c-chk__label.is-hidden {

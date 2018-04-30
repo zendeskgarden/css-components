@@ -24,8 +24,8 @@
 * [ ] :globe_with_meridians: component demo is up-to-date (`yarn start`)
 * [ ] :white_check_mark: all component states are represented
   (`.is-hovered`, `.is-focused`, etc.)
-* [ ] :black_circle: renders as expected in "dark" mode
 * [ ] :arrow_left: renders as expected with reversed (RTL) direction
+* [ ] :metal: renders as expected sans Bedrock (`?bedrock=false`)
 * [ ] :nail_care: provides `custom.css` example for modifying the
   primary accent color
 * [ ] :memo: tested in Chrome, Firefox, Safari, Edge, and IE11

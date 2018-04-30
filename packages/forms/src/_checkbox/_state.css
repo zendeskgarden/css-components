@@ -4,7 +4,7 @@
 @import '_selectors';
 
 :root {
-  --zd-chk-active-background-color: color(var(--zd-color-black) alpha(5%));
+  --zd-chk-active-background-color: var(--zd-color-blue-200);
   --zd-chk-active-border-color: var(--zd-forms-accent-color);
   --zd-chk-active-transition:
     border-color .1s ease-in-out,
@@ -14,13 +14,11 @@
   --zd-chk-checked-background-color: var(--zd-forms-accent-color);
   --zd-chk-checked-background-image: svg-load('14/checkmark.svg', color: var(--zd-color-white));
   --zd-chk-checked-border-color: var(--zd-chk-checked-background-color);
-  --zd-chk-checked-active-background-color: color(var(--zd-chk-checked-background-color) blackness(+10%));
+  --zd-chk-checked-active-background-color: var(--zd-color-blue-700);
   --zd-chk-checked-active-border-color: var(--zd-chk-checked-active-background-color);
-  --zd-chk-disabled-background-color: var(--zd-forms-disabled-background-color);
+  --zd-chk-disabled-background-color: var(--zd-color-grey-200);
   --zd-chk-focused-border-color: var(--zd-forms-accent-color);
-  --zd-chk-focused-box-shadow:
-    0 0 0 3px
-    color(var(--zd-chk-focused-border-color) alpha(40%));
+  --zd-chk-focused-box-shadow: var(--zd-forms-focused-box-shadow);
   --zd-chk-hovered-border-color: var(--zd-chk-focused-border-color);
   --zd-chk-indeterminate-background-image: svg-load('14/dash.svg', color: var(--zd-color-white));
 }

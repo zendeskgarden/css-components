@@ -5,7 +5,7 @@
   --zd-chrome__nav--dark__item-current-background-color: color(var(--zd-color-white) alpha(30%));
   --zd-chrome__nav--dark__item--logo-color: var(--zd-color-white);
   --zd-chrome__nav--light-background-color: var(--zd-color-white);
-  --zd-chrome__nav--light-color: var(--zd-color-oil);
+  --zd-chrome__nav--light-color: var(--zd-color-grey-800);
   --zd-chrome__nav--light__item-current-background-color: color(var(--zd-color-black) alpha(30%));
   --zd-chrome__nav--light__item-focused-box-shadow:
     inset 0 0 0 3px

@@ -4,23 +4,12 @@
 @import '_selectors';
 
 :root {
-  --zd-btn-active-background-color: color(var(--zd-btn-color) blackness(+10%));
   --zd-btn-active-color: var(--zd-color-white);
   --zd-btn-active-transition:
     border-color .1s ease-in-out,
     background-color .1s ease-in-out,
     color .1s ease-in-out;
-  --zd-btn-disabled-color: var(--zd-color-aluminum);
-  --zd-btn-focused-box-shadow:
-    0 0 0 3px
-    color(var(--zd-btn-color) alpha(40%));
-  --zd-btn-hovered-background-color: color(var(--zd-btn-color) lightness(+10%) saturation(var(--zd-btn-hovered-background-color-saturation)));
   --zd-btn-hovered-color: var(--zd-color-white);
-  --zd-btn--danger-active-background-color: color(var(--zd-btn--danger-color) blackness(+10%));
-  --zd-btn--danger-focused-box-shadow:
-    0 0 0 3px
-    color(var(--zd-btn--danger-color) alpha(40%));
-  --zd-btn--danger-hovered-background-color: color(var(--zd-btn--danger-color) lightness(+10%) saturation(+10%));
 }
 
 /* 1. Anchor tag reset. */

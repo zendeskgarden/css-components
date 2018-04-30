@@ -1,12 +1,12 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-tooltip-background-color: var(--zd-color-algae);
+  --zd-tooltip-background-color: var(--zd-color-kale-700);
   --zd-tooltip-border-radius: 2px;
   --zd-tooltip-box-shadow:
     0 4px 8px 0
-    color(var(--zd-color-chathams-blue) alpha(15%));
-  --zd-tooltip-color: var(--zd-color-gainsboro);
+    color(var(--zd-color-kale-600) alpha(15%));
+  --zd-tooltip-color: var(--zd-color-white);
   --zd-tooltip-font-size: var(--zd-font-size-zeta);
   --zd-tooltip-font-weight: var(--zd-font-weight-regular);
   --zd-tooltip-line-height: calc(20 / 12);
@@ -14,11 +14,13 @@
   --zd-tooltip__arrow-font-size: 7px;
   --zd-tooltip--extra-large-border-radius: 4px;
   --zd-tooltip--extra-large-font-size: var(--zd-font-size-epsilon);
+  --zd-tooltip--extra-large-line-height: calc(20 / 14);
   --zd-tooltip--extra-large-max-width: 460px;
   --zd-tooltip--extra-large-padding: var(--zd-spacing-xl);
   --zd-tooltip--extra-large__arrow-font-size: var(--zd-font-size-delta);
   --zd-tooltip--large-border-radius: var(--zd-tooltip--extra-large-border-radius);
   --zd-tooltip--large-font-size: var(--zd-tooltip--extra-large-font-size);
+  --zd-tooltip--large-line-height: var(--zd-tooltip--extra-large-line-height);
   --zd-tooltip--large-max-width: 270px;
   --zd-tooltip--large-padding: var(--zd-spacing);
   --zd-tooltip--large__arrow-font-size: var(--zd-font-size-zeta);
@@ -26,6 +28,7 @@
   --zd-tooltip--medium-line-height: calc(16 / 12);
   --zd-tooltip--medium-max-width: 140px;
   --zd-tooltip--medium-padding: 1em;
+  --zd-tooltip__title-font-weight: var(--zd-font-weight-semibold);
 }
 
 .c-tooltip {
@@ -54,6 +57,7 @@
   padding: var(--zd-tooltip--extra-large-padding);
   max-width: var(--zd-tooltip--extra-large-max-width);
   overflow-wrap: break-word;
+  line-height: var(--zd-tooltip--extra-large-line-height);
   white-space: normal;
   font-size: var(--zd-tooltip--extra-large-font-size);
 }
@@ -68,6 +72,7 @@
   padding: var(--zd-tooltip--large-padding);
   max-width: var(--zd-tooltip--large-max-width);
   overflow-wrap: break-word;
+  line-height: var(--zd-tooltip--large-line-height);
   white-space: normal;
   font-size: var(--zd-tooltip--large-font-size);
 }
@@ -84,4 +89,31 @@
   overflow-wrap: break-word;
   line-height: var(--zd-tooltip--medium-line-height);
   white-space: normal;
+}
+
+.c-tooltip__paragraph {
+  margin: 0;
+}
+
+.c-tooltip__title {
+  display: none;
+  margin: 0;
+  font-weight: var(--zd-tooltip__title-font-weight);
+}
+
+.c-tooltip--large .c-tooltip__paragraph {
+  margin-top: 8px;
+}
+
+.c-tooltip--extra-large .c-tooltip__paragraph {
+  margin-top: 10px;
+}
+
+.c-tooltip--large .c-tooltip__title,
+.c-tooltip--extra-large .c-tooltip__title {
+  display: block;
+}
+
+.c-tooltip.is-rtl {
+  direction: rtl;
 }

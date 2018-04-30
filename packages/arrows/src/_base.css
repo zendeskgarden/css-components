@@ -36,6 +36,7 @@
   position: absolute;
   transform: var(--zd-arrow-transform);
   background-color: inherit;
+  box-sizing: inherit;
   width: var(--zd-arrow-size);
   height: var(--zd-arrow-size);
   content: '';

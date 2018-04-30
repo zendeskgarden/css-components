@@ -1,5 +1,5 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-pagination-accent-color: var(--zd-color-pelorous);
+  --zd-pagination-accent-color: var(--zd-color-blue-600);
 }

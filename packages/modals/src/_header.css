@@ -1,8 +1,8 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-dialog__header-border-bottom: 1px solid var(--zd-color-platinum);
-  --zd-dialog__header-color: var(--zd-color-dark-gray);
+  --zd-dialog__header-border-bottom: 1px solid var(--zd-color-grey-200);
+  --zd-dialog__header-color: var(--zd-color-grey-800);
   --zd-dialog__header-font-size: var(--zd-font-size-epsilon);
   --zd-dialog__header-font-weight: var(--zd-font-weight-semibold);
   --zd-dialog__header-line-height: calc(20 / 14);

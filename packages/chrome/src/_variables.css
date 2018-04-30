@@ -2,8 +2,8 @@
 
 /* stylelint-disable custom-property-empty-line-before */
 :root {
-  --zd-chrome-accent-color: var(--zd-color-pelorous);
-  --zd-chrome__nav-background-color: var(--zd-color-algae);
+  --zd-chrome-accent-color: var(--zd-color-kale-400);
+  --zd-chrome__nav-background-color: var(--zd-color-kale-700);
   --zd-chrome__nav-color: var(--zd-color-white);
 
   --zd-chrome__nav-order: -1;

@@ -1,14 +1,23 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-callout__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-silver-sand));
+  --zd-callout__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-500));
   --zd-callout__close-position: 4px;
   --zd-callout__close-size: var(--zd-font-size-mega);
   --zd-callout__close-transition: background-color .1s ease-in-out;
-  --zd-callout__close-focused-background-color: color(var(--zd-color-black) alpha(7%));
-  --zd-callout__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-dark-gray));
+  --zd-callout__close-focused-background-color: color(var(--zd-color-grey-600) alpha(15%));
+  --zd-callout__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-800));
   --zd-callout__close__icon-background-size: var(--zd-font-size-gamma);
   --zd-callout__close__icon-transition: opacity .25s ease-in-out;
+  --zd-callout--error__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-red-500));
+  --zd-callout--error__close-focused-background-color: color(var(--zd-color-red-600) alpha(15%));
+  --zd-callout--error__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-red-800));
+  --zd-callout--success__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-green-500));
+  --zd-callout--success__close-focused-background-color: color(var(--zd-color-green-600) alpha(15%));
+  --zd-callout--success__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-green-800));
+  --zd-callout--warning__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-yellow-600));
+  --zd-callout--warning__close-focused-background-color: color(var(--zd-color-yellow-600) alpha(15%));
+  --zd-callout--warning__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-yellow-800));
 }
 
 /* 1. Reset for <button> element.
@@ -80,17 +89,51 @@
   background-color: var(--zd-callout__close-focused-background-color);
 }
 
-@custom-selector :--callout-active
-  .is-active,
-  :active;
-
-/* stylelint-disable selector-max-specificity */
-.c-callout .c-callout__close.c-callout__close:--callout-active {
-  background-color: transparent;
-}
-/* stylelint-enable selector-max-specificity */
-
 .c-callout.is-rtl .c-callout__close {
   right: auto;
   left: var(--zd-callout__close-position);
 }
+
+.c-callout--error:not(.c-callout--dialog) .c-callout__close::before {
+  background-image: var(--zd-callout--error__close-background-image);
+}
+
+.c-callout--error:not(.c-callout--dialog) .c-callout__close::after {
+  background-image: var(--zd-callout--error__close-hovered-background-image);
+}
+
+.c-callout--success:not(.c-callout--dialog) .c-callout__close::before {
+  background-image: var(--zd-callout--success__close-background-image);
+}
+
+.c-callout--success:not(.c-callout--dialog) .c-callout__close::after {
+  background-image: var(--zd-callout--success__close-hovered-background-image);
+}
+
+.c-callout--warning:not(.c-callout--dialog) .c-callout__close::before {
+  background-image: var(--zd-callout--warning__close-background-image);
+}
+
+.c-callout--warning:not(.c-callout--dialog) .c-callout__close::after {
+  background-image: var(--zd-callout--warning__close-hovered-background-image);
+}
+
+/* stylelint-disable selector-max-specificity, max-line-length */
+
+.c-callout--error:not(.c-callout--dialog) .c-callout__close:--callout-focused {
+  background-color: var(--zd-callout--error__close-focused-background-color);
+}
+
+.c-callout--success:not(.c-callout--dialog) .c-callout__close:--callout-focused {
+  background-color: var(--zd-callout--success__close-focused-background-color);
+}
+
+.c-callout--warning:not(.c-callout--dialog) .c-callout__close:--callout-focused {
+  background-color: var(--zd-callout--warning__close-focused-background-color);
+}
+
+.c-callout .c-callout__close:--callout-focused:active {
+  background-color: transparent;
+}
+
+/* stylelint-enable selector-max-specificity, max-line-length */

@@ -1,7 +1,7 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-dialog__body-color: var(--zd-color-monsoon);
+  --zd-dialog__body-color: var(--zd-color-grey-800);
   --zd-dialog__body-font-size: var(--zd-font-size-epsilon);
   --zd-dialog__body-line-height: calc(20 / 14);
   --zd-dialog__body-padding: var(--zd-spacing) var(--zd-spacing-xl) var(--zd-spacing-xl);

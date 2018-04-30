@@ -6,15 +6,16 @@
   --zd-menu-hidden-transition:
     opacity .2s ease-in-out,
     .2s visibility 0s linear;
-  --zd-menu__item-disabled-color: var(--zd-color-aluminum);
+  --zd-menu__item-disabled-color: var(--zd-color-grey-400);
   --zd-menu__item-disabled--add-background-image: svg-load('14/plus.svg', color: var(--zd-menu__item-disabled-color));
   --zd-menu__item-disabled--checked-background-image: svg-load('14/checkmark-lg.svg', color: var(--zd-menu__item-disabled-color));
   --zd-menu__item-disabled--next-background-image: svg-load('14/next.svg', color: var(--zd-menu__item-disabled-color));
   --zd-menu__item-disabled--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu__item-disabled-color));
+  --zd-menu__item-focused-box-shadow-color: color(var(--zd-menu-accent-color) alpha(35%));
   --zd-menu__item-focused-box-shadow:
-    inset 0 3px 0 color(var(--zd-color-gainsboro) alpha(40%)),
-    inset 0 -3px 0 color(var(--zd-color-gainsboro) alpha(40%));
-  --zd-menu__item--hovered-background-color: var(--zd-color-white-smoke);
+    inset 0 3px 0 var(--zd-menu__item-focused-box-shadow-color),
+    inset 0 -3px 0 var(--zd-menu__item-focused-box-shadow-color);
+  --zd-menu__item-hovered-background-color: var(--zd-menu-accent-color-hovered);
 }
 
 /* 1. Bump stacking context in order to prevent sibling menu items from
@@ -23,24 +24,32 @@
 
 .c-menu__item:--menu-hovered,
 .c-menu__item:--menu-focused {
-  background-color: var(--zd-menu__item--hovered-background-color);
+  background-color: var(--zd-menu__item-hovered-background-color);
+  text-decoration: none;
 }
 
 .c-menu__item:--menu-focused {
   outline: none;
   box-shadow: var(--zd-menu__item-focused-box-shadow);
-  text-decoration: none;
-}
-
-.c-menu__item:--menu-active:--menu-focused {
-  box-shadow: none;
 }
 
 /* stylelint-disable selector-max-specificity */
-.c-menu .c-menu__item:--menu-disabled:--menu-disabled {
-  background-color: inherit;
+.c-menu .c-menu__item:--menu-active:--menu-focused {
+  box-shadow: none;
+}
+
+.c-menu .c-menu__item:--menu-disabled {
   cursor: default;
   color: var(--zd-menu__item-disabled-color);
+}
+
+.c-menu .c-menu__item:--menu-disabled:--menu-hovered,
+.c-menu .c-menu__item:--menu-disabled:--menu-focused {
+  background-color: inherit;
+}
+
+.c-menu .c-menu__item:--menu-disabled:--menu-focused {
+  box-shadow: none;
 }
 
 .c-menu .c-menu__item:--menu-checked:--menu-disabled::before {

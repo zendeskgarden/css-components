@@ -1,8 +1,7 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-anchor-color: var(--zd-color-pelorous);
-  --zd-anchor-color-hover: var(--zd-anchor-color);
+  --zd-anchor-color: var(--zd-color-blue-600);
   --zd-html-background-color: var(--zd-color-white);
   --zd-html-box-sizing: border-box;
   --zd-html-font-family: var(--zd-font-family-system);
@@ -10,7 +9,7 @@
   --zd-html-font-kerning: normal;
   --zd-html-font-size: 14px;
   --zd-html-line-height: var(--zd-spacing);
-  --zd-html-text-color: var(--zd-color-dark-gray);
+  --zd-html-text-color: var(--zd-color-grey-800);
   --zd-html-text-rendering: optimizeLegibility;
 }
 
@@ -46,7 +45,7 @@ u { text-decoration: none; }
 a:hover,
 a:focus {
   text-decoration: underline;
-  color: var(--zd-anchor-color-hover);
+  color: var(--zd-anchor-color);
 }
 
 a:focus { outline: none; }

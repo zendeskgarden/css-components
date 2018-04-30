@@ -3,7 +3,7 @@
 @import '_variables';
 
 :root {
-  --zd-menu__item-color: var(--zd-color-dark-gray);
+  --zd-menu__item-color: var(--zd-color-grey-800);
   --zd-menu__item-line-height: calc(20 / 14);
   --zd-menu__item-padding-horizontal: 24px;
   --zd-menu__item-padding-vertical: 10px;
@@ -26,7 +26,7 @@
   --zd-menu__item--media--icon-height: calc(var(--zd-menu__item--media__figure-size) + 22px);
   --zd-menu__item--media__figure-margin: 8px;
   --zd-menu__item--media__figure-size: 32px;
-  --zd-menu__item--next-background-image: svg-load('14/next.svg', color: var(--zd-menu-accent-color));
+  --zd-menu__item--next-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-600));
   --zd-menu__item--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu-accent-color));
   --zd-menu--sm__item-padding-horizontal: 20px;
   --zd-menu--sm__item-padding-vertical: 6px;
@@ -39,7 +39,7 @@
   --zd-menu--sm__item--media__figure-size: 24px;
   --zd-menu--sm__item--media__figure-margin: calc(var(--zd-menu__item--media__figure-margin) / 2);
   --zd-menu--sm__item--media--icon-height: calc(var(--zd-menu--sm__item--media__figure-size) + calc(var(--zd-menu--sm__item-padding-vertical) * 2));
-  --zd-menu__item__meta-color: var(--zd-color-aluminum);
+  --zd-menu__item__meta-color: var(--zd-color-grey-600);
   --zd-menu__item__meta-font-size: var(--zd-font-size-zeta);
   --zd-menu__item__meta-line-height: calc(16 / 12);
 }
@@ -54,6 +54,7 @@
   z-index: 0; /* [2] */
   cursor: pointer;
   padding: var(--zd-menu__item-padding);
+  text-decoration: none;
   line-height: var(--zd-menu__item-line-height);
   word-wrap: break-word;
   user-select: none;

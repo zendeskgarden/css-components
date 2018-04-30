@@ -2,18 +2,12 @@
 @import '_selectors';
 
 :root {
-  --zd-range-active-thumb-background-color: color(var(--zd-range-thumb-background-color) blackness(+10%));
-  --zd-range-active-track-background-color: var(--zd-color-gainsboro);
-  --zd-range-disabled-lower-background-color: var(--zd-forms-disabled-background-color);
+  --zd-range-active-thumb-background-color: var(--zd-color-blue-700);
+  --zd-range-disabled-lower-background-color: var(--zd-color-grey-300);
   --zd-range-disabled-thumb-background-color: var(--zd-range-disabled-lower-background-color);
   --zd-range-disabled-thumb-border-color: var(--zd-range-disabled-thumb-background-color);
   --zd-range-disabled-track-background-color: var(--zd-range-track-background-color);
   --zd-range-disabled-track-background-image: linear-gradient(var(--zd-range-disabled-thumb-background-color), var(--zd-range-disabled-thumb-background-color));
-  --zd-range-focused-box-shadow-spread-radius: 3px;
-  --zd-range-focused-box-shadow:
-    var(--zd-range-thumb-box-shadow),
-    0 0 0 var(--zd-range-focused-box-shadow-spread-radius)
-    color(var(--zd-range-thumb-background-color) alpha(40%));
 }
 
 .c-range__input:--range-disabled {
@@ -23,11 +17,7 @@
 /* stylelint-disable selector-pseudo-element-no-unknown */
 
 .c-range__input:--range-focused::range-thumb {
-  box-shadow: var(--zd-range-focused-box-shadow);
-}
-
-.c-range__input:--range-active::range-track {
-  background-color: var(--zd-range-active-track-background-color);
+  box-shadow: var(--zd-forms-focused-box-shadow);
 }
 
 .c-range__input:--range-active::range-thumb {

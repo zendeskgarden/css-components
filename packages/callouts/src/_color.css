@@ -6,45 +6,59 @@
   --zd-callout--alert-background-position-y: calc(var(--zd-spacing) + 3px);
   --zd-callout--alert-background-position: var(--zd-callout--alert-background-position-x) var(--zd-callout--alert-background-position-y);
   --zd-callout--alert-background-position-rtl: calc(100% - var(--zd-callout--alert-background-position-x)) var(--zd-callout--alert-background-position-y);
-  --zd-callout--dialog-background-color: var(--zd-color-white);
-  --zd-callout--dialog-border-color: var(--zd-color-platinum);
+  --zd-callout--dialog-background-color: var(--zd-callout-background-color);
   --zd-callout--dialog-box-shadow:
-    0 var(--zd-spacing) var(--zd-spacing-lg) 0
-    color(var(--zd-color-chathams-blue) alpha(15%));
-  --zd-callout--error-background-color: color(var(--zd-callout--error-color) alpha(10%));
-  --zd-callout--error-background-image: svg-load('14/error-fill.svg', color: var(--zd-callout--error-color));
-  --zd-callout--error-color: var(--zd-color-flamingo);
-  --zd-callout--recessed-background-color: var(--zd-color-snow);
-  --zd-callout--recessed-border-color: var(--zd-color-gainsboro);
-  --zd-callout--success-background-color: color(var(--zd-callout--success-color) alpha(10%));
-  --zd-callout--success-background-image: svg-load('14/checkmark-fill.svg', color: var(--zd-callout--success-color));
-  --zd-callout--success-color: var(--zd-color-chateau-green);
-  --zd-callout--warning-background-color: color(var(--zd-callout--warning-color) alpha(10%));
-  --zd-callout--warning-background-image: svg-load('14/error-fill.svg', color: var(--zd-callout--warning-color));
-  --zd-callout--warning-color: var(--zd-color-marigold);
+    0 20px 28px 0
+    color(var(--zd-color-kale-600) alpha(15%));
+  --zd-callout--dialog--alert-border-color: var(--zd-callout-border-color);
+  --zd-callout--dialog--alert-color: var(--zd-color-grey-700);
+  --zd-callout--dialog--error-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-red-500));
+  --zd-callout--dialog--error__title-color: var(--zd-color-red-600);
+  --zd-callout--dialog--success-background-image: svg-load('14/checkmark-fill.svg', color: var(--zd-color-green-500));
+  --zd-callout--dialog--success__title-color: var(--zd-color-green-600);
+  --zd-callout--dialog--warning-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-yellow-500));
+  --zd-callout--dialog--warning__title-color: var(--zd-color-yellow-700);
+  --zd-callout--error-background-color: var(--zd-color-red-100);
+  --zd-callout--error-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-red-600));
+  --zd-callout--error-border-color: var(--zd-color-red-300);
+  --zd-callout--error-color: var(--zd-color-red-700);
+  --zd-callout--error__title-color: var(--zd-color-red-800);
+  --zd-callout--recessed-background-color: var(--zd-color-grey-100);
+  --zd-callout--success-background-color: var(--zd-color-green-100);
+  --zd-callout--success-background-image: svg-load('14/checkmark-fill.svg', color: var(--zd-color-green-600));
+  --zd-callout--success-border-color: var(--zd-color-green-300);
+  --zd-callout--success-color: var(--zd-color-green-700);
+  --zd-callout--success__title-color: var(--zd-color-green-800);
+  --zd-callout--warning-background-color: var(--zd-color-yellow-100);
+  --zd-callout--warning-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-yellow-600));
+  --zd-callout--warning-border-color: var(--zd-color-yellow-300);
+  --zd-callout--warning-color: var(--zd-color-yellow-700);
+  --zd-callout--warning__title-color: var(--zd-color-yellow-800);
 }
 
 .c-callout--recessed {
-  border-color: var(--zd-callout--recessed-border-color);
   background-color: var(--zd-callout--recessed-background-color);
 }
 
 .c-callout--error {
-  border-color: var(--zd-callout--error-color);
+  border-color: var(--zd-callout--error-border-color);
   background-color: var(--zd-callout--error-background-color);
   background-image: var(--zd-callout--error-background-image);
+  color: var(--zd-callout--error-color);
 }
 
 .c-callout--success {
-  border-color: var(--zd-callout--success-color);
+  border-color: var(--zd-callout--success-border-color);
   background-color: var(--zd-callout--success-background-color);
   background-image: var(--zd-callout--success-background-image);
+  color: var(--zd-callout--success-color);
 }
 
 .c-callout--warning {
-  border-color: var(--zd-callout--warning-color);
+  border-color: var(--zd-callout--warning-border-color);
   background-color: var(--zd-callout--warning-background-color);
   background-image: var(--zd-callout--warning-background-image);
+  color: var(--zd-callout--warning-color);
 }
 
 .c-callout--error,
@@ -56,22 +70,51 @@
 }
 
 .c-callout--dialog {
-  border-color: var(--zd-callout--dialog-border-color);
   box-shadow: var(--zd-callout--dialog-box-shadow);
 }
 
 .c-callout--dialog.c-callout--error,
 .c-callout--dialog.c-callout--success,
 .c-callout--dialog.c-callout--warning {
+  border-color: var(--zd-callout--dialog--alert-border-color);
   background-color: var(--zd-callout--dialog-background-color);
+  color: var(--zd-callout--dialog--alert-color);
+}
+
+.c-callout--dialog.c-callout--error {
+  background-image: var(--zd-callout--dialog--error-background-image);
+}
+
+.c-callout--dialog.c-callout--success {
+  background-image: var(--zd-callout--dialog--success-background-image);
+}
+
+.c-callout--dialog.c-callout--warning {
+  background-image: var(--zd-callout--dialog--warning-background-image);
+}
+
+.c-callout--error .c-callout__title {
+  color: var(--zd-callout--error__title-color);
+}
+
+.c-callout--success .c-callout__title {
+  color: var(--zd-callout--success__title-color);
+}
+
+.c-callout--warning .c-callout__title {
+  color: var(--zd-callout--warning__title-color);
 }
 
 .c-callout--dialog.c-callout--error .c-callout__title {
-  color: var(--zd-callout--error-color);
+  color: var(--zd-callout--dialog--error__title-color);
 }
 
 .c-callout--dialog.c-callout--success .c-callout__title {
-  color: var(--zd-callout--success-color);
+  color: var(--zd-callout--dialog--success__title-color);
+}
+
+.c-callout--dialog.c-callout--warning .c-callout__title {
+  color: var(--zd-callout--dialog--warning__title-color);
 }
 
 .c-callout--error.is-rtl,

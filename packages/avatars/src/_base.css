@@ -6,7 +6,7 @@
   --zd-avatar-size: 34px;
   --zd-avatar-transition: background-color .3s;
   --zd-avatar__img-background-color: var(--zd-color-white);
-  --zd-avatar__img-border: 1px solid var(--zd-color-gainsboro) solid;
+  --zd-avatar__img-border: 1px solid var(--zd-color-grey-300) solid;
   --zd-avatar__img-border-radius: 50%;
   --zd-avatar__img-transition: all .3s;
 }

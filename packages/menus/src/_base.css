@@ -3,11 +3,11 @@
 
 :root {
   --zd-menu-background-color: var(--zd-color-white);
-  --zd-menu-border: 1px solid var(--zd-color-platinum);
+  --zd-menu-border: 1px solid var(--zd-color-grey-300);
   --zd-menu-border-radius: 4px;
   --zd-menu-box-shadow:
     0 20px 30px 0
-    color(var(--zd-color-chathams-blue) alpha(15%));
+    color(var(--zd-color-kale-600) alpha(15%));
   --zd-menu-font-size: var(--zd-font-size-epsilon);
   --zd-menu-font-weight: var(--zd-font-weight-regular);
   --zd-menu-min-width: 180px;

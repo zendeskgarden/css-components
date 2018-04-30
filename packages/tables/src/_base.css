@@ -1,23 +1,22 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-table-font-color: var(--zd-color-dark-gray);
+  --zd-table-font-color: var(--zd-color-grey-800);
   --zd-table-font-size: var(--zd-font-size-epsilon);
   --zd-table-line-height: calc(20 / 14);
   --zd-table__row-border: 1px solid;
-  --zd-table__row-border-bottom: var(--zd-table__row-border) var(--zd-color-platinum);
+  --zd-table__row-border-bottom: var(--zd-table__row-border) var(--zd-color-grey-200);
   --zd-table__row-height: 40px;
   --zd-table__row-transition: background-color .1s ease-in-out;
-  --zd-table__row--group-color: var(--zd-color-monsoon);
   --zd-table__row--group-font-size: var(--zd-font-size-zeta);
   --zd-table__row--group-height: 32px;
   --zd-table__row--group-line-height: calc(20 / 12);
   --zd-table__row--group__cell-padding: 6px 10px;
-  --zd-table__row--header-border-color: var(--zd-color-gainsboro);
+  --zd-table__row--header-border-color: var(--zd-color-grey-300);
   --zd-table__row--header-font-weight: var(--zd-font-weight-semibold);
   --zd-table__row--header-height: 48px;
   --zd-table__row--header__cell-padding: 14px;
-  --zd-table__row--stripe-background-color: var(--zd-color-snow);
+  --zd-table__row--stripe-background-color: var(--zd-color-grey-100);
   --zd-table__row__cell-padding-horizontal: 12px;
   --zd-table__row__cell-padding-vertical: 10px;
   --zd-table__row__cell-padding: var(--zd-table__row__cell-padding-vertical) var(--zd-table__row__cell-padding-horizontal);
@@ -58,7 +57,6 @@
 .c-table__row--group {
   height: var(--zd-table__row--group-height);
   line-height: var(--zd-table__row--group-line-height);
-  color: var(--zd-table__row--group-color);
   font-size: var(--zd-table__row--group-font-size);
 }
 

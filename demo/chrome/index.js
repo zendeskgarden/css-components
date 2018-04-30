@@ -18,7 +18,6 @@ $(document).ready(function() {
   ].forEach(Garden.handleFocus);
 
   Garden.customClasses.push('.c-chrome');
-  Garden.darkClasses.push('.c-chrome');
   Garden.rtlClasses.push('.c-chrome');
 
   $('.js-color').change(function() {

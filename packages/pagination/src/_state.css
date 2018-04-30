@@ -3,20 +3,26 @@
 @import '_selectors';
 
 :root {
-  --zd-pagination__page-active-background-color: var(--zd-color-platinum);
-  --zd-pagination__page-current-background-color: var(--zd-color-anti-flash-white);
-  --zd-pagination__page-current-color: var(--zd-color-dark-gray);
+  --zd-pagination__page-active-background-color: color(var(--zd-color-grey-600) alpha(25%));
+  --zd-pagination__page-current-background-color: color(var(--zd-color-grey-600) alpha(15%));
+  --zd-pagination__page-current-color: var(--zd-color-grey-800);
   --zd-pagination__page-current-font-weight: var(--zd-font-weight-semibold);
   --zd-pagination__page-focused-box-shadow:
     inset 0 0 0 3px
-    color(var(--zd-pagination-accent-color) alpha(40%));
+    color(var(--zd-pagination-accent-color) alpha(35%));
   --zd-pagination__page-hovered-background-color: var(--zd-pagination__page-current-background-color);
-  --zd-pagination__page--next-hovered-background-image: svg-load('14/next.svg', color: var(--zd-color-dark-gray));
-  --zd-pagination__page--previous-hovered-background-image: svg-load('14/previous.svg', color: var(--zd-color-dark-gray));
+  --zd-pagination__page-hovered-color: var(--zd-pagination__page-current-color);
+  --zd-pagination__page--next-hovered-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-800));
+  --zd-pagination__page--previous-hovered-background-image: svg-load('14/previous.svg', color: var(--zd-color-grey-800));
 }
 
 .c-pagination__page:--page-hovered {
   background-color: var(--zd-pagination__page-hovered-background-color);
+  color: var(--zd-pagination__page-hovered-color);
+}
+
+.c-pagination__page a:hover {
+  text-decoration: none;
 }
 
 .c-pagination__page:--page-focused {
@@ -50,6 +56,12 @@
   visibility: hidden;
 }
 
+.c-pagination__page--next:--page-focused,
+.c-pagination__page--previous:--page-focused {
+  box-shadow: none;
+  background-color: var(--zd-pagination__page-hovered-background-color);
+}
+
 .c-pagination__page--gap:--page-hovered,
 .c-pagination__page--gap:--page-active,
 .c-pagination__page--next:--page-hovered,
@@ -57,20 +69,25 @@
 .c-pagination__page--previous:--page-hovered,
 .c-pagination__page--previous:--page-active {
   background-color: transparent;
+  color: transparent;
 }
 
 /* stylelint-disable selector-max-specificity */
 .c-pagination__page--next:--page-hovered,
+.c-pagination__page--next:--page-focused,
 .c-pagination__page--next:--page-active,
 .c-pagination.is-rtl .c-pagination__page--previous:--page-hovered,
+.c-pagination.is-rtl .c-pagination__page--previous:--page-focused,
 .c-pagination.is-rtl .c-pagination__page--previous:--page-active {
   background-image: var(--zd-pagination__page--next-hovered-background-image);
 }
 
 /* stylelint-disable no-descending-specificity */
 .c-pagination__page--previous:--page-hovered,
+.c-pagination__page--previous:--page-focused,
 .c-pagination__page--previous:--page-active,
 .c-pagination.is-rtl .c-pagination__page--next:--page-hovered,
+.c-pagination.is-rtl .c-pagination__page--next:--page-focused,
 .c-pagination.is-rtl .c-pagination__page--next:--page-active {
   background-image: var(--zd-pagination__page--previous-hovered-background-image);
 }

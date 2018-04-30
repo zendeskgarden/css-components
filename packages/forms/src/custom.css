@@ -17,7 +17,6 @@
     0 0 0 3px
     color(var(--zd-forms--custom-accent-color) alpha(40%));
   --zd-range--custom-track-background-image: linear-gradient(var(--zd-forms--custom-accent-color), var(--zd-forms--custom-accent-color));
-  --zd-txt--custom__input--select__chevron-open-background-image: svg-load('14/chevron.svg', color: var(--zd-forms--custom-accent-color));
 }
 
 :--chk-checked-enabled.c-chk__label--custom::before,
@@ -97,10 +96,6 @@
 
 .c-txt__input--custom:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning):--txt-focused:not(.c-txt__input--bare) {
   box-shadow: var(--zd-forms--custom-box-shadow);
-}
-
-.c-txt__input--custom.c-txt__input--select:--txt--select-open::before {
-  background-image: var(--zd-txt--custom__input--select__chevron-open-background-image);
 }
 
 /* stylelint-enable max-line-length, selector-max-specificity */

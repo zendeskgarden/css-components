@@ -1,6 +1,5 @@
 $(document).ready(function() {
   Garden.customClasses.push('.c-tab');
-  Garden.darkClasses.push('.c-tab');
   Garden.rtlClasses.push('.c-tab');
 
   $('.c-tab__list__item').click(function() {
