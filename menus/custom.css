@@ -24,3 +24,12 @@
 .c-menu--custom .c-menu__item.c-menu__item--previous:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23EB4962'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 11L5 7l4-4'/%3E%3C/svg%3E");
 }
+
+.c-menu--custom .c-menu__item.is-focused,.c-menu--custom .c-menu__item.is-hovered,.c-menu--custom .c-menu__item:not(.c-menu__item--header):focus,.c-menu--custom .c-menu__item:not(.c-menu__item--header):hover{
+  background-color:rgba(235,73,98,.15);
+}
+
+.c-menu--custom .c-menu__item.is-focused,.c-menu--custom .c-menu__item:not(.c-menu__item--header):focus{
+  -webkit-box-shadow:inset 0 3px 0 rgba(235,73,98,.35),inset 0 -3px 0 rgba(235,73,98,.35);
+          box-shadow:inset 0 3px 0 rgba(235,73,98,.35),inset 0 -3px 0 rgba(235,73,98,.35);
+}

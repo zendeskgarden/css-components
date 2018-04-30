@@ -167,7 +167,7 @@ html{
   overflow-y:scroll;
   text-rendering:optimizeLegibility;
   line-height:20px;
-  color:#555;
+  color:#2f3941;
   -webkit-font-feature-settings:"kern","kern";
           font-feature-settings:"kern","kern";
   -webkit-font-kerning:normal;
@@ -180,13 +180,13 @@ html{
 
 *,:after,:before{ -webkit-box-sizing:inherit; box-sizing:inherit; }
 
-a{ color:#30aabc; }
+a{ color:#1f73b7; }
 
 a,ins,u{ text-decoration:none; }
 
 a:focus,a:hover{
   text-decoration:underline;
-  color:#30aabc;
+  color:#1f73b7;
 }
 
 a:focus{ outline:none; }
