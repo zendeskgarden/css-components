@@ -73,9 +73,17 @@
   right: var(--zd-arrow-size);
 }
 
-.c-arrow--r::before {
+.c-arrow--r::before,
+.c-arrow--rt::before,
+.c-arrow--rb::before {
   border-bottom-left-radius: 100%; /* [1] */
   clip-path: var(--zd-arrow--r-clip-path); /* [2] */
+}
+
+.c-arrow--rt:--around {
+  /* Positions an arrow at the right(h) top(v) of the parent element */
+  top: var(--zd-arrow-size);
+  right: var(--zd-arrow-position);
 }
 
 .c-arrow--r:--around {
@@ -85,9 +93,23 @@
   margin-top: var(--zd-arrow-position);
 }
 
-.c-arrow--l::before {
+.c-arrow--rb:--around {
+  /* Positions an arrow at the right(h) bottom(v) of the parent element */
+  right: var(--zd-arrow-position);
+  bottom: var(--zd-arrow-size);
+}
+
+.c-arrow--l::before,
+.c-arrow--lt::before,
+.c-arrow--lb::before {
   border-top-right-radius: 100%; /* [1] */
   clip-path: var(--zd-arrow--l-clip-path); /* [2] */
+}
+
+.c-arrow--lt:--around {
+  /* Positions an arrow at the left(h) top(v) of the parent element */
+  top: var(--zd-arrow-size);
+  left: var(--zd-arrow-position);
 }
 
 .c-arrow--l:--around {
@@ -95,6 +117,12 @@
   top: 50%;
   left: var(--zd-arrow-position);
   margin-top: var(--zd-arrow-position);
+}
+
+.c-arrow--lb:--around {
+  /* Positions an arrow at the left(h) bottom(v) of the parent element */
+  bottom: var(--zd-arrow-size);
+  left: var(--zd-arrow-position);
 }
 
 .c-arrow--b::before,
