@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.0.1"></a>
+## [6.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@6.0.0...@zendeskgarden/css-forms@6.0.1) (2018-05-02)
+
+
+### Bug Fixes
+
+* **forms:** update radio `[checked]` for improved scannability ([#58](https://github.com/zendeskgarden/css-components/issues/58)) ([daffd4b](https://github.com/zendeskgarden/css-components/commit/daffd4b))
+
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@5.0.3...@zendeskgarden/css-forms@6.0.0) (2018-04-30)
 
