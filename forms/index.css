@@ -191,7 +191,7 @@
 }
 
 .c-chk__input:checked~.c-chk__label.c-chk__label--radio:before,.c-chk__label.is-checked.c-chk__label--radio:before{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' color='%23FFF'%3E%3Ccircle cx='7' cy='7' r='4.5' fill='currentColor'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' color='%23FFF'%3E%3Ccircle cx='6' cy='6' r='2' fill='currentColor'/%3E%3C/svg%3E");
 }
 
 .c-chk__hint--toggle,.c-chk__label--toggle,.c-chk__message--toggle{
