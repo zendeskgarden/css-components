@@ -106,10 +106,13 @@
 
 .c-txt.is-rtl,
 .c-txt__input.is-rtl,
-.c-txt__input.is-rtl::-webkit-datetime-edit,
 .c-txt__label.is-rtl,
 .c-txt__hint.is-rtl,
 .c-txt__message.is-rtl {
+  direction: rtl;
+}
+
+.c-txt__input.is-rtl::-webkit-datetime-edit {
   direction: rtl;
 }
 

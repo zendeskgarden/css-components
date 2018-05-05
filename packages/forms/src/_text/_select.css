@@ -26,7 +26,8 @@
 
 /* 1. Select reset.
  * 2. Button reset.
- * 3. Calendar picker reset. */
+ * 3. Calendar picker reset (standalone ruleset prevents non-Chrome parsing
+ *    errors). */
 
 .c-txt__input--select {
   appearance: none; /* [1] */
@@ -35,11 +36,11 @@
   text-align: left; /* [2] */
 }
 
-.c-txt__input--select:not(select)::before,
-.c-txt__input--select::-webkit-calendar-picker-indicator {
+.c-txt__input--select:not(select)::before {
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
   width: var(--zd-txt__input--select__chevron-width);
   height: var(--zd-txt__input-height);
   content: '';
@@ -69,9 +70,16 @@ select.c-txt__input--select:-moz-focusring {
 }
 
 .c-txt__input--select::-webkit-calendar-picker-indicator {
-  background-color: transparent; /* [2] */
-  padding: 0; /* [2] */
-  color: transparent; /* [2] */
+  position: absolute; /* [3] */
+  top: 0; /* [3] */
+  right: 0; /* [3] */
+  background-color: transparent; /* [3] */
+  cursor: pointer; /* [3] */
+  padding: 0; /* [3] */
+  width: var(--zd-txt__input--select__chevron-width); /* [3] */
+  height: var(--zd-txt__input-height); /* [3] */
+  color: transparent; /* [3] */
+  content: ''; /* [3] */
 }
 
 .c-txt__input--select:--txt-hovered:not(select)::before,
@@ -99,10 +107,14 @@ select.c-txt__input--select[disabled] {
   text-align: right;
 }
 
-.is-rtl.c-txt__input--select:not(select)::before,
-.is-rtl.c-txt__input--select::-webkit-calendar-picker-indicator {
+.is-rtl.c-txt__input--select:not(select)::before {
   right: auto;
   left: 0;
+}
+
+.is-rtl.c-txt__input--select::-webkit-calendar-picker-indicator {
+  right: auto; /* [3] */
+  left: 0; /* [3] */
 }
 
 .is-rtl.c-txt__input--select:not(select)::before,
