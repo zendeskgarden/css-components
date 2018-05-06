@@ -22,6 +22,16 @@
   --zd-txt-rtl__input--select__chevron-transform:
     rotate(-180deg)
     translateY(-1px);
+
+  --zd-txt__input--select__chevron: {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: var(--zd-txt__input--select__chevron-width);
+    height: var(--zd-txt__input-height);
+    content: '';
+  }
 }
 
 /* 1. Select reset.
@@ -37,13 +47,7 @@
 }
 
 .c-txt__input--select:not(select)::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  width: var(--zd-txt__input--select__chevron-width);
-  height: var(--zd-txt__input-height);
-  content: '';
+  @apply --zd-txt__input--select__chevron;
 }
 
 .c-txt__input--select:not(select)::before,
@@ -70,16 +74,10 @@ select.c-txt__input--select:-moz-focusring {
 }
 
 .c-txt__input--select::-webkit-calendar-picker-indicator {
-  position: absolute; /* [3] */
-  top: 0; /* [3] */
-  right: 0; /* [3] */
   background-color: transparent; /* [3] */
-  cursor: pointer; /* [3] */
   padding: 0; /* [3] */
-  width: var(--zd-txt__input--select__chevron-width); /* [3] */
-  height: var(--zd-txt__input-height); /* [3] */
   color: transparent; /* [3] */
-  content: ''; /* [3] */
+  @apply --zd-txt__input--select__chevron; /* [3] */
 }
 
 .c-txt__input--select:--txt-hovered:not(select)::before,
