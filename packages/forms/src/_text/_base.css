@@ -57,15 +57,14 @@
   .c-txt__input { font-family: sans-serif; } /* [4] */
 }
 
-.c-txt__input::-ms-clear,
-.c-txt__input::-ms-reveal,
-.c-txt__input::-ms-value {
-  display: none; /* [5] */
-}
-
 .c-txt__input::-ms-browse {
   border-radius: calc(var(--zd-txt__input-border-radius) / 2);
   font-size: var(--zd-font-size-zeta);
+}
+
+.c-txt__input::-ms-clear,
+.c-txt__input::-ms-reveal {
+  display: none; /* [5] */
 }
 
 .c-txt__input::-webkit-clear-button,
@@ -97,6 +96,10 @@
 
 .c-txt__input[type='file'] {
   line-height: 1;
+}
+
+.c-txt__input[type='file']::-ms-value {
+  display: none; /* [5] */
 }
 
 /* stylelint-disable-next-line */
