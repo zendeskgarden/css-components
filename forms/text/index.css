@@ -39,13 +39,13 @@
   .c-txt__input{ font-family:sans-serif; }
 }
 
-.c-txt__input::-ms-clear,.c-txt__input::-ms-reveal,.c-txt__input::-ms-value{
-  display:none;
-}
-
 .c-txt__input::-ms-browse{
   border-radius:2px;
   font-size:12px;
+}
+
+.c-txt__input::-ms-clear,.c-txt__input::-ms-reveal{
+  display:none;
 }
 
 .c-txt__input::-webkit-clear-button,.c-txt__input::-webkit-inner-spin-button,.c-txt__input::-webkit-search-cancel-button,.c-txt__input::-webkit-search-results-button{
@@ -81,11 +81,19 @@
   line-height:1;
 }
 
+.c-txt__input[type=file]::-ms-value{
+  display:none;
+}
+
 @media screen and (min--moz-device-pixel-ratio:0){
   .c-txt__input[type=number]{ -webkit-appearance:textfield; -moz-appearance:textfield; appearance:textfield; }
 }
 
-.c-txt.is-rtl,.c-txt__hint.is-rtl,.c-txt__input.is-rtl,.c-txt__input.is-rtl::-webkit-datetime-edit,.c-txt__label.is-rtl,.c-txt__message.is-rtl{
+.c-txt.is-rtl,.c-txt__hint.is-rtl,.c-txt__input.is-rtl,.c-txt__label.is-rtl,.c-txt__message.is-rtl{
+  direction:rtl;
+}
+
+.c-txt__input.is-rtl::-webkit-datetime-edit{
   direction:rtl;
 }
 
@@ -145,10 +153,11 @@
   text-align:left;
 }
 
-.c-txt__input--select::-webkit-calendar-picker-indicator,.c-txt__input--select:not(select):before{
+.c-txt__input--select:not(select):before{
   position:absolute;
   top:0;
   right:0;
+  cursor:pointer;
   width:48px;
   height:40px;
   content:"";
@@ -184,6 +193,13 @@ select.c-txt__input--select:-moz-focusring{
   background-color:transparent;
   padding:0;
   color:transparent;
+  position:absolute;
+  top:0;
+  right:0;
+  cursor:pointer;
+  width:48px;
+  height:40px;
+  content:"";
 }
 
 .c-txt__input--select.is-focused:not(.is-disabled):not([disabled]):not(select):before,.c-txt__input--select.is-hovered:not(.is-disabled):not([disabled]):not(select):before,.c-txt__input--select:focus:not(.is-disabled):not([disabled]):not(select):before,.c-txt__input--select:hover:not(.is-disabled):not([disabled]):not(select):before,select.c-txt__input--select.is-focused:not(.is-disabled):not([disabled]),select.c-txt__input--select.is-hovered:not(.is-disabled):not([disabled]),select.c-txt__input--select:focus:not(.is-disabled):not([disabled]),select.c-txt__input--select:hover:not(.is-disabled):not([disabled]){
@@ -205,7 +221,12 @@ select.c-txt__input--select:-moz-focusring{
   text-align:right;
 }
 
-.is-rtl.c-txt__input--select::-webkit-calendar-picker-indicator,.is-rtl.c-txt__input--select:not(select):before{
+.is-rtl.c-txt__input--select:not(select):before{
+  right:auto;
+  left:0;
+}
+
+.is-rtl.c-txt__input--select::-webkit-calendar-picker-indicator{
   right:auto;
   left:0;
 }
