@@ -26,14 +26,12 @@
 /* 1. Prevent flex shrink */
 
 .c-tag__avatar {
-  display: inline-block;
   flex-shrink: 0;
   margin: var(--zd-tag__avatar-margin);
   border-radius: var(--zd-tag__avatar-border-radius);
   width: var(--zd-tag__avatar-size);
   min-width: var(--zd-tag__avatar-size); /* [1] */
   height: var(--zd-tag__avatar-size);
-  vertical-align: middle;
   font-size: 0;
 }
 

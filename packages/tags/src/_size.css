@@ -15,18 +15,18 @@
   --zd-tag--round--sm-min-width: 15px;
 }
 
-.c-tag--lg {
-  border-radius: var(--zd-tag--lg-border-radius);
-  padding: var(--zd-tag--lg-padding);
-  height: var(--zd-tag--lg-height);
-  line-height: var(--zd-tag--lg-line-height);
-}
-
 .c-tag--sm {
   padding: var(--zd-tag--sm-padding);
   height: var(--zd-tag--sm-height);
   line-height: var(--zd-tag--sm-line-height);
   font-size: var(--zd-tag--sm-font-size);
+}
+
+.c-tag--lg {
+  border-radius: var(--zd-tag--lg-border-radius);
+  padding: var(--zd-tag--lg-padding);
+  height: var(--zd-tag--lg-height);
+  line-height: var(--zd-tag--lg-line-height);
 }
 
 .c-tag--round.c-tag--sm,

@@ -27,7 +27,6 @@
  * 2. Reset for text content. */
 
 .c-tag__remove {
-  display: inline-block;
   flex-shrink: 0;
   transition: var(--zd-tag__remove-transition);
   opacity: var(--zd-tag__remove-opacity);
@@ -39,7 +38,6 @@
   padding: 0; /* [1] */
   width: var(--zd-tag__remove-size);
   height: var(--zd-tag__remove-size);
-  vertical-align: middle;
   font-size: 0; /* [2] */
 }
 

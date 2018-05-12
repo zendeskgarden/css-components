@@ -21,6 +21,7 @@
 .c-tag {
   display: inline-flex;
   flex-wrap: nowrap;
+  align-items: center;
   transition: var(--zd-tag-transition);
   border: 0; /* [1] */
   border-radius: var(--zd-tag-border-radius);
