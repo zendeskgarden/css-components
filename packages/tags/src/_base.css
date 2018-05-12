@@ -10,7 +10,8 @@
   --zd-tag-font-weight: var(--zd-font-weight-semibold);
   --zd-tag-height: var(--zd-spacing);
   --zd-tag-line-height: calc(20 / 12);
-  --zd-tag-padding: 0 calc(8 / 12 * 1em);
+  --zd-tag-padding-horizontal: 8px;
+  --zd-tag-padding: 0 var(--zd-tag-padding-horizontal);
   --zd-tag-transition: box-shadow .1s ease-in-out;
 }
 
@@ -48,6 +49,10 @@
     color(var(--zd-color-grey-600) alpha(35%));
   text-decoration: none; /* [2] */
   color: var(--zd-tag-color); /* [2] */
+}
+
+.c-tag:any-link:hover {
+  cursor: pointer;
 }
 
 .c-tag.is-rtl {

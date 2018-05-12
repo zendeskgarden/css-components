@@ -2,7 +2,7 @@
 
 :root {
   --zd-tag__avatar-border-radius: var(--zd-tag-border-radius);
-  --zd-tag__avatar-margin-left: -7.9px;
+  --zd-tag__avatar-margin-left: calc(var(--zd-tag__avatar-margin-vertical) - var(--zd-tag-padding-horizontal));
   --zd-tag__avatar-margin-right: 5px;
   --zd-tag__avatar-margin-vertical: 2px;
   --zd-tag__avatar-margin:
@@ -12,7 +12,7 @@
     var(--zd-tag__avatar-margin-left);
   --zd-tag__avatar-size: calc(var(--zd-tag-height) - (var(--zd-tag__avatar-margin-vertical) * 2));
   --zd-tag--lg__avatar-border-radius: calc(var(--zd-tag--lg-border-radius) - 1px);
-  --zd-tag--lg__avatar-margin-left: -6.9px;
+  --zd-tag--lg__avatar-margin-left: calc(var(--zd-tag--lg__avatar-margin-vertical) - var(--zd-tag--lg-padding-horizontal));
   --zd-tag--lg__avatar-margin-right: 10px;
   --zd-tag--lg__avatar-margin-vertical: 3px;
   --zd-tag--lg__avatar-margin:
