@@ -6,7 +6,7 @@ It includes:
 
 * Zendesk specific gutter sizing
 * RTL locale support with the `.is-rtl` class
-* Debug styling support with the `.debug` class
+* Debug styling support with the `.is-debug` class
 
 All classes are consistent with the
 [Bootstrap Grid Documentation](https://getbootstrap.com/docs/4.0/layout/grid/).

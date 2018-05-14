@@ -3,7 +3,6 @@
 <head>
   <title>Grid / CSS Components / Zendesk Garden</title>
   <link href="../bedrock/index.css" rel="stylesheet">
-  <link href="../menus/index.css" rel="stylesheet">
   <link href="../forms/checkbox/index.css" rel="stylesheet">
   <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
@@ -23,24 +22,11 @@
       <span>/ Grid</span>
     </h1>
     <ul class="c-ctl c-ctl--header">
-      <li class="c-ctl__item u-position-relative">
-        <a class="c-menu-ctl js-menu" href="#settings">
-          <svg>
-            <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill" />
-          </svg>
-          <span>Settings</span>
-          <svg>
-            <use xlink:href="../index.svg#zd-svg-icon-14-chevron" />
-          </svg>
-        </a>
-        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
-            </fieldset>
-          </li>
-        </ul>
+      <li class="c-ctl__item">
+        <fieldset class="c-chk">
+          <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+          <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
+        </fieldset>
       </li>
     </ul>
   </header>
@@ -51,27 +37,13 @@
         All classes are consistent with the
         <a href="https://getbootstrap.com/docs/4.0/layout/grid/">Bootstrap Grid Documentation.</a>
       </p>
-      <h2 class="u-gamma u-mb">Mobile-Responsive Columns</h2>
-      <div class="container-fluid debug u-mb-xl">
-        <div class="row">
-          <div class="col-md">
-            one of three columns
-          </div>
-          <div class="col-md">
-            two of three columns
-          </div>
-          <div class="col-md">
-            three of three columns
-          </div>
-        </div>
-      </div>
-      <h2 class="u-gamma u-mb">RTL Locales</h2>
       <p class="u-mb">
         You can enable RTL layouts by using the <code class="c-code">.is-rtl</code> class with the
         <code class="c-code">.container</code> or <code class="c-code">.container-fluid</code>
         wrapper classes</a>.
       </p>
-      <div class="container-fluid is-rtl debug u-mb-xl">
+      <h2 class="u-gamma u-mb">Mobile-Responsive Columns</h2>
+      <div class="container-fluid is-debug u-mb-xl">
         <div class="row">
           <div class="col-md">
             one of three columns
@@ -85,7 +57,7 @@
         </div>
       </div>
       <h2 class="u-gamma u-mb">Setting One Column Width</h2>
-      <div class="container-fluid debug u-mb-xl">
+      <div class="container-fluid is-debug u-mb-xl">
         <div class="row">
           <div class="col">
             1 of 3
@@ -110,7 +82,7 @@
         </div>
       </div>
       <h2 class="u-gamma u-mb">Variable Width Content</h2>
-      <div class="container-fluid debug u-mb-xl">
+      <div class="container-fluid is-debug u-mb-xl">
         <div class="row justify-content-md-center">
           <div class="col col-lg-2">
             1 of 3
@@ -138,8 +110,7 @@
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-<textarea class="c-playground__code">
-<div class="container-fluid debug">
+<textarea class="c-playground__code"><div class="container-fluid is-debug">
   <div class="row">
     <div class="col-md-4">
       one of three
@@ -151,8 +122,7 @@
       three of three
     </div>
   </div>
-</div>
-</textarea>
+</div></textarea>
         </div>
       </section>
     </div>
