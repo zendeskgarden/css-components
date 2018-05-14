@@ -15,7 +15,7 @@
     "src"
   ],
   "scripts": {
-    "build": "node-sass --include-path ../../node_modules --include-path node_modules --output-style compressed --output dist src/index.scss",
+    "build": "node-sass --include-path ../../node_modules --include-path node_modules --output dist src/index.scss",
     "format": "prettier-package-json --write",
     "lint": "stylelint $(find src -name '*.scss')",
     "prepack": "cp ../../LICENSE.md .",
