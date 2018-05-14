@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@4.0.0...@zendeskgarden/css-tags@4.0.1) (2018-05-14)
+
+
+### Bug Fixes
+
+* **tags:** correct base-4 element margins and repair `remove` styling for color tags ([#61](https://github.com/zendeskgarden/css-components/issues/61)) ([0c369d6](https://github.com/zendeskgarden/css-components/commit/0c369d6))
+
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@3.0.3...@zendeskgarden/css-tags@4.0.0) (2018-04-30)
 
