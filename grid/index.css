@@ -1134,7 +1134,7 @@ html {
 /**
  * Debug styling for columns
  */
-.is-debug .row > .col, .is-debug .row > [class^='col-'] {
+.is-debug .row > [class*='col'] {
   border: 1px solid rgba(82, 147, 199, 0.35);
   background-color: rgba(206, 226, 242, 0.35);
   padding-top: .75rem;
