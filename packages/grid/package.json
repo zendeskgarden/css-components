@@ -35,6 +35,5 @@
   ],
   "publishConfig": {
     "access": "public"
-  },
-  "style": "src/index.css"
+  }
 }

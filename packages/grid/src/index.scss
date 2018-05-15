@@ -21,7 +21,7 @@ $grid-gutter-width: 20px !default;
  * Debug styling for columns
  */
 .is-debug {
-  .row > .col, .row > [class^='col-'] {
+  .row > [class*='col'] {
     border: 1px solid rgba($zd-color-blue-400, .35);
     background-color: rgba($zd-color-blue-200, .35);
     padding-top: .75rem;
