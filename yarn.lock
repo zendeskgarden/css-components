@@ -197,9 +197,9 @@
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@zendeskgarden/stylelint-config/-/stylelint-config-8.0.2.tgz#6fa41674e09e289e25e6ffb1c44a281a0381ae06"
 
-"@zendeskgarden/svg-icons@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/svg-icons/-/svg-icons-4.0.0.tgz#a89e033dd221644f9c6812cffb75af1ced2b622a"
+"@zendeskgarden/svg-icons@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/svg-icons/-/svg-icons-4.0.1.tgz#7b4dadc2dead8625974e5e70589199e37567589e"
 
 JSONStream@^1.0.4:
   version "1.3.2"
@@ -775,9 +775,9 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, can
   version "1.0.30000819"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000819.tgz#aabee5fd15a080febab6ae5d30c9ea15f4c6d4e2"
 
-caniuse-lite@^1.0.30000830:
-  version "1.0.30000830"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000830.tgz#cb96b8a2dd3cbfe04acea2af3c4e894249095328"
+caniuse-lite@^1.0.30000840:
+  version "1.0.30000840"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000840.tgz#344513f8f843536cf99694964c09811277eee395"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -1657,9 +1657,9 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
-eslint-plugin-notice@^0.6.7:
-  version "0.6.7"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-notice/-/eslint-plugin-notice-0.6.7.tgz#e909b66f1b2f4f5e902aa952b7d99eaedcbbb592"
+eslint-plugin-notice@^0.7.7:
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-notice/-/eslint-plugin-notice-0.7.7.tgz#cc47d5b52b5907a23b1dcc008e69ab5607ee8789"
   dependencies:
     find-root "^1.1.0"
     lodash ">=2.4.0"
@@ -2531,12 +2531,13 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@^1.0.0-rc.2:
-  version "1.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-1.0.0-rc.2.tgz#a105a26927f7b95aef7d21a305f3cb30a9387fde"
+husky@^1.0.0-rc.6:
+  version "1.0.0-rc.6"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-1.0.0-rc.6.tgz#000f5ffe671015ae8c48da5c52b3390bbba9770d"
   dependencies:
     cosmiconfig "^4.0.0"
     execa "^0.9.0"
+    find-up "^2.1.0"
     is-ci "^1.1.0"
     pkg-dir "^2.0.0"
     pupa "^1.0.0"
@@ -4912,8 +4913,8 @@ replace-ext@1.0.0:
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
 
 request@2:
-  version "2.85.0"
-  resolved "https://registry.yarnpkg.com/request/-/request-2.85.0.tgz#5a03615a47c61420b3eb99b7dba204f83603e1fa"
+  version "2.86.0"
+  resolved "https://registry.yarnpkg.com/request/-/request-2.86.0.tgz#2b9497f449b0a32654c081a5cf426bbfb5bf5b69"
   dependencies:
     aws-sign2 "~0.7.0"
     aws4 "^1.6.0"
@@ -4933,7 +4934,6 @@ request@2:
     performance-now "^2.1.0"
     qs "~6.5.1"
     safe-buffer "^5.1.1"
-    stringstream "~0.0.5"
     tough-cookie "~2.3.3"
     tunnel-agent "^0.6.0"
     uuid "^3.1.0"
@@ -5446,7 +5446,7 @@ stringify-entities@^1.0.1:
     is-alphanumerical "^1.0.0"
     is-hexadecimal "^1.0.0"
 
-stringstream@~0.0.4, stringstream@~0.0.5:
+stringstream@~0.0.4:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.5.tgz#4e484cd4de5a0bbbee18e46307710a8a81621878"
 
