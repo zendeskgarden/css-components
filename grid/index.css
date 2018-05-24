@@ -10,24 +10,9 @@
  * Use of this source code is governed under the Apache License, Version 2.0
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
-/*!
- * Bootstrap Grid v4.1.1 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+/**
+ * Bootstrap grid imports
  */
-@-ms-viewport {
-  width: device-width; }
-
-html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
 .container {
   width: 100%;
   padding-right: 10px;
@@ -1124,6 +1109,19 @@ html {
     align-self: baseline !important; }
   .align-self-xl-stretch {
     align-self: stretch !important; } }
+
+.container, .container-fluid {
+  box-sizing: inherit; }
+  .container ::before,
+  .container ::after, .container-fluid ::before,
+  .container-fluid ::after {
+    box-sizing: inherit; }
+  .container *,
+  .container *::before,
+  .container *::after, .container-fluid *,
+  .container-fluid *::before,
+  .container-fluid *::after {
+    box-sizing: inherit; }
 
 /**
  * RTL locale styling
