@@ -8,7 +8,33 @@
 $grid-gutter-width: 20px !default;
 
 @import '@zendeskgarden/css-variables/dist/index.scss';
-@import 'bootstrap/scss/bootstrap-grid';
+
+/**
+ * Bootstrap grid imports
+ */
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins/breakpoints';
+@import 'bootstrap/scss/mixins/grid-framework';
+@import 'bootstrap/scss/mixins/grid';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/utilities/display';
+@import 'bootstrap/scss/utilities/flex';
+
+.container, .container-fluid {
+  box-sizing: inherit;
+
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
 
 /**
  * RTL locale styling
