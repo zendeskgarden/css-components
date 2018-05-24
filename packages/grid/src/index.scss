@@ -22,11 +22,11 @@ $grid-gutter-width: 20px !default;
 @import 'bootstrap/scss/utilities/flex';
 
 .container, .container-fluid {
-  box-sizing: inherit;
+  box-sizing: border-box;
 
-  ::before,
-  ::after {
-    box-sizing: inherit;
+  &::before,
+  &::after {
+    box-sizing: border-box;
   }
 
   *,
