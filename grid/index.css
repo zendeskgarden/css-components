@@ -1111,11 +1111,9 @@
     align-self: stretch !important; } }
 
 .container, .container-fluid {
-  box-sizing: inherit; }
-  .container ::before,
-  .container ::after, .container-fluid ::before,
-  .container-fluid ::after {
-    box-sizing: inherit; }
+  box-sizing: border-box; }
+  .container::before, .container::after, .container-fluid::before, .container-fluid::after {
+    box-sizing: border-box; }
   .container *,
   .container *::before,
   .container *::after, .container-fluid *,
