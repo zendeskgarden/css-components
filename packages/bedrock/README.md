@@ -1,4 +1,4 @@
-# @zendeskgarden/css-bedrock
+# @zendeskgarden/css-bedrock [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-bedrock.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-bedrock)
 
 This package provides a mostly reasonable CSS reset layered on top of
 [Normalize.css](http://necolas.github.io/normalize.css/).

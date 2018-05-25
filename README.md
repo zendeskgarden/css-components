@@ -21,6 +21,7 @@ Package | Version | Dependencies
 [`@zendeskgarden/css-callouts`](packages/callouts) | [![npm version][callouts npm version]][callouts npm link] | [![Dependency Status][callouts dependency status]][callouts dependency link]
 [`@zendeskgarden/css-chrome`](packages/chrome) | [![npm version][chrome npm version]][chrome npm link] | [![Dependency Status][chrome dependency status]][chrome dependency link]
 [`@zendeskgarden/css-forms`](packages/forms) | [![npm version][forms npm version]][forms npm link] | [![Dependency Status][forms dependency status]][forms dependency link]
+[`@zendeskgarden/css-grid`](packages/grid) | [![npm version][grid npm version]][grid npm link] | [![Dependency Status][grid dependency status]][grid dependency link]
 [`@zendeskgarden/css-menus`](packages/menus) | [![npm version][menus npm version]][menus npm link] | [![Dependency Status][menus dependency status]][menus dependency link]
 [`@zendeskgarden/css-modals`](packages/modals) | [![npm version][modals npm version]][modals npm link] | [![Dependency Status][modals dependency status]][modals dependency link]
 [`@zendeskgarden/css-pagination`](packages/pagination) | [![npm version][pagination npm version]][pagination npm link] | [![Dependency Status][pagination dependency status]][pagination dependency link]
@@ -59,6 +60,10 @@ Package | Version | Dependencies
 [forms npm link]: https://www.npmjs.com/package/@zendeskgarden/css-forms
 [forms dependency status]: https://img.shields.io/david/zendeskgarden/css-components.svg?path=packages/forms&style=flat-square
 [forms dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/forms
+[grid npm version]: https://img.shields.io/npm/v/@zendeskgarden/css-grid.svg?style=flat-square
+[grid npm link]: https://www.npmjs.com/package/@zendeskgarden/css-grid
+[grid dependency status]: https://img.shields.io/david/zendeskgarden/css-components.svg?path=packages/grid&style=flat-square
+[grid dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/grid
 [menus npm version]: https://img.shields.io/npm/v/@zendeskgarden/css-menus.svg?style=flat-square
 [menus npm link]: https://www.npmjs.com/package/@zendeskgarden/css-menus
 [menus dependency status]: https://img.shields.io/david/zendeskgarden/css-components.svg?path=packages/menus&style=flat-square

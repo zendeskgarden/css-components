@@ -1,4 +1,5 @@
-# @zendeskgarden/css-{{component}}
+# @zendeskgarden/css-{{component}} [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-{{component}}.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-{{component}})
+
 
 This package contains ...
 

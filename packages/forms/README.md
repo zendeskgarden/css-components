@@ -1,4 +1,4 @@
-# @zendeskgarden/css-forms
+# @zendeskgarden/css-forms [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-forms.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-forms)
 
 This package is intended to provide consistent styling for form fields
 used throughout Zendesk products.

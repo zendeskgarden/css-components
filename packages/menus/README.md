@@ -1,4 +1,4 @@
-# @zendeskgarden/css-menus
+# @zendeskgarden/css-menus [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-menus.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-menus)
 
 This package is intended to provide consistent menu styling for use
 across Zendesk products. Menus can be used along with

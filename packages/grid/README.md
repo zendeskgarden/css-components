@@ -1,4 +1,4 @@
-# @zendeskgarden/css-grid
+# @zendeskgarden/css-grid [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-grid.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-grid)
 
 This package contains an opinionated version of the Bootstrap v4 flexbox grid.
 

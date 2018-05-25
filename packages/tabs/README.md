@@ -1,4 +1,4 @@
-# @zendeskgarden/css-tabs
+# @zendeskgarden/css-tabs [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-tabs.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-tabs)
 
 This package provides styling for tab components.
 

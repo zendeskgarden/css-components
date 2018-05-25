@@ -1,4 +1,4 @@
-# @zendeskgarden/css-avatars
+# @zendeskgarden/css-avatars [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-avatars.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-avatars)
 
 This component contains basic `.c-avatar` component styling.
 

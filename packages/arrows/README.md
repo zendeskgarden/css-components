@@ -1,4 +1,4 @@
-# @zendeskgarden/css-arrows
+# @zendeskgarden/css-arrows [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-arrows.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-arrows)
 
 This package contains styling and positioning classes for `.c-arrow`.
 

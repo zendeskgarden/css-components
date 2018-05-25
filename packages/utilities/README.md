@@ -1,4 +1,4 @@
-# @zendeskgarden/css-utilities
+# @zendeskgarden/css-utilities [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-utilities.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-utilities)
 
 This package contains override styling via a collection of utility
 classes.
