@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.1"></a>
+## [3.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.0.0...@zendeskgarden/css-tables@3.0.1) (2018-05-25)
+
+
+
+
+**Note:** Version bump only for package @zendeskgarden/css-tables
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@2.0.3...@zendeskgarden/css-tables@3.0.0) (2018-04-30)
 
