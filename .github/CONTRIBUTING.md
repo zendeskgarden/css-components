@@ -25,6 +25,10 @@ includes:
 * `└── demo/` – HTML pages used to test and demonstrate CSS component
   styling.
 
+Garden CSS source is transformed via PostCSS. This allows us to leverage
+future CSS syntax (via the [PostCSS-cssnext](http://cssnext.io/)
+plugin), yet publish browser-compatible CSS distributions.
+
 Garden CSS selectors use a form of BEM (Block Element Modifier) naming.
 The naming convention follows a pattern:
 
