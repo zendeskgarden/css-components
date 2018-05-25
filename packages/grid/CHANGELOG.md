@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-grid@0.1.2...@zendeskgarden/css-grid@0.1.3) (2018-05-25)
+
+
+### Bug Fixes
+
+* **grid:** apply border-box sizing to containers ([#68](https://github.com/zendeskgarden/css-components/issues/68)) ([986da1c](https://github.com/zendeskgarden/css-components/commit/986da1c))
+
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-grid@0.1.1...@zendeskgarden/css-grid@0.1.2) (2018-05-24)
 
