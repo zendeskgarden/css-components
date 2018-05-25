@@ -1,4 +1,4 @@
-# @zendeskgarden/css-tooltips
+# @zendeskgarden/css-tooltips [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-tooltips.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-tooltips)
 
 This package contains styling for various `.c-tooltip` treatments.
 

@@ -1,4 +1,4 @@
-# @zendeskgarden/css-tables
+# @zendeskgarden/css-tables [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-tables.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-tables)
 
 This package contains a variety of classes that apply consistent styling
 to tables, rows, and columns.

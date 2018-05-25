@@ -1,4 +1,4 @@
-# @zendeskgarden/css-callouts
+# @zendeskgarden/css-callouts [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-callouts.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-callouts)
 
 This package contains styling for a selection of callout containers.
 

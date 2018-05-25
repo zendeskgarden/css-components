@@ -1,4 +1,4 @@
-# @zendeskgarden/css-pagination
+# @zendeskgarden/css-pagination [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-pagination.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-pagination)
 
 This package provides component styling for page navigation.
 

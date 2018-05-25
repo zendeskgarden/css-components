@@ -1,4 +1,4 @@
-# @zendeskgarden/css-tags
+# @zendeskgarden/css-tags [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-tags.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-tags)
 
 This package provides styling for tag components needed to support
 badges, pills, and labels.

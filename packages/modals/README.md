@@ -1,4 +1,4 @@
-# @zendeskgarden/css-modals
+# @zendeskgarden/css-modals [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-modals.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-modals)
 
 This package package provides styling for dialogs and the associated
 backdrop layouts needed to present a modal dialog treatment.

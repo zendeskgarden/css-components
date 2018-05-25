@@ -1,4 +1,4 @@
-# @zendeskgarden/css-chrome
+# @zendeskgarden/css-chrome [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-chrome.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-chrome)
 
 This package contains a variety of classes for handling consistent
 product page navigation, headers, and layout.
