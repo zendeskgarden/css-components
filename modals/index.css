@@ -229,6 +229,15 @@
   text-align:left;
 }
 
+.c-dialog__footer .c-btn{
+  margin-left:20px;
+}
+
+.c-dialog.is-rtl .c-dialog__footer .c-btn{
+  margin-right:20px;
+  margin-left:0;
+}
+
 @-webkit-keyframes zd-backdrop-visible{
   0%{
     opacity:0;
