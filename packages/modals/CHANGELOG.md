@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.1.0"></a>
+# [6.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.0.1...@zendeskgarden/css-modals@6.1.0) (2018-06-05)
+
+
+### Features
+
+* **modals:** add `.c-dialog__footer__items` class for handling footer button/item layout ([#71](https://github.com/zendeskgarden/css-components/issues/71)) ([4015cd4](https://github.com/zendeskgarden/css-components/commit/4015cd4))
+
+
+
+
 <a name="6.0.1"></a>
 ## [6.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.0.0...@zendeskgarden/css-modals@6.0.1) (2018-05-25)
 
