@@ -154,6 +154,10 @@
           user-select:none;
 }
 
+.c-dialog__close::-moz-focus-inner{
+  border:0;
+}
+
 .c-dialog__close:after,.c-dialog__close:before{
   display:block;
   position:absolute;
@@ -225,15 +229,15 @@
   padding:32px 40px;
 }
 
+.c-dialog__footer__item{
+  margin-left:20px;
+}
+
 .c-dialog.is-rtl .c-dialog__footer{
   text-align:left;
 }
 
-.c-dialog__footer .c-btn{
-  margin-left:20px;
-}
-
-.c-dialog.is-rtl .c-dialog__footer .c-btn{
+.c-dialog.is-rtl .c-dialog__footer__item{
   margin-right:20px;
   margin-left:0;
 }
