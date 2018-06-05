@@ -19,6 +19,7 @@
 }
 
 .c-dialog__footer__item {
+  display: inline-block;
   margin-left: var(--zd-dialog__footer__btn-margin);
 }
 
