@@ -18,17 +18,15 @@
   padding: var(--zd-dialog--large__footer-padding);
 }
 
+.c-dialog__footer__item {
+  margin-left: var(--zd-dialog__footer__btn-margin);
+}
+
 .c-dialog.is-rtl .c-dialog__footer {
   text-align: left;
 }
 
-.c-dialog__footer .c-btn {
-  margin-left: var(--zd-dialog__footer__btn-margin);
-}
-
-/* stylelint-disable selector-max-specificity */
-.c-dialog.is-rtl .c-dialog__footer .c-btn {
+.c-dialog.is-rtl .c-dialog__footer__item {
   margin-right: var(--zd-dialog__footer__btn-margin);
   margin-left: 0;
 }
-/* stylelint-enable selector-max-specificity */
