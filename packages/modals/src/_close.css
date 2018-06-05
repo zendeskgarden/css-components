@@ -14,6 +14,7 @@
 
 /* 1. Reset for <button> element.
  * 2. Reset for <a>nchor element.
+ * 3. Reset for FF.
  */
 .c-dialog__close {
   display: block;
@@ -31,6 +32,10 @@
   text-decoration: none; /* [2] */
   font-size: 0; /* [2] */
   user-select: none;
+}
+
+.c-dialog__close::-moz-focus-inner {
+  border: 0; /* [3] */
 }
 
 .c-dialog__close::before,
