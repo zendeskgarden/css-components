@@ -1,3 +1,15 @@
+let _JSON = {};
+let _COLOR;
+let _FRAME;
+let _bX;
+let _bY;
+let _rX;
+let _rY;
+let _yX;
+let _yY;
+let _TX;
+let _TY;
+
 (typeof navigator !== "undefined") && (function(root, factory) {
     if (typeof define === "function" && define.amd) {
         define(function() {
@@ -687,7 +699,8 @@ var Matrix = (function(){
         var _e = roundMatrixProperty(props[12]);
         var _f = roundMatrixProperty(props[13]);
         var retVal = "matrix(" + _a + ',' + _b + ',' + _c + ',' + _d + ',' + _e + ',' + _f + ")";
-        console.log(retVal);
+        _TX = _e;
+        _TY = _f;
         return retVal;
     }
 
@@ -5637,7 +5650,6 @@ BaseRenderer.prototype.checkLayers = function(num){
 };
 
 BaseRenderer.prototype.createItem = function(layer){
-    console.log(layer);
     switch(layer.ty){
         case 2:
             return this.createImage(layer);
@@ -6718,7 +6730,6 @@ var SVGElementsRenderer = (function() {
 	        itemData.transform.container.setAttribute('opacity',itemData.transform.op.v);
 	    }
 	    if(isFirstFrame || itemData.transform.mProps._mdf){
-        console.log(itemData.transform);
 	        itemData.transform.container.setAttribute('transform',itemData.transform.mProps.v.to2dCSS());
 	    }
 	}
@@ -7132,7 +7143,44 @@ SVGBaseElement.prototype = {
     },
     renderElement: function() {
         if (this.finalTransform._matMdf) {
+            let color = this.baseElement.firstElementChild.firstElementChild.getAttribute('fill');
+            var matrix = this.finalTransform.mat.to2dCSS();
             this.transformedElement.setAttribute('transform', this.finalTransform.mat.to2dCSS());
+
+            if (color) {
+              if (color.indexOf('255,0,0') > 0) {
+                _COLOR = 'red';
+                _TX = _rX - _TX;
+                _TY = _rY - _TY;
+              } else if (color.indexOf('0,82,255') > 0) {
+                _COLOR = 'blue';
+                _TX = _bX - _TX;
+                _TY = _bY - _TY;
+              } else {
+                _COLOR = 'yellow';
+                _TX = _yX - _TX;
+                _TY = _yY - _TY;
+              }
+            } else {
+              if (_bX === undefined) {
+                _bX = _TX;
+                _bY = _TY;
+                _JSON['blue'] = {};
+              } else if (_rX === undefined) {
+                _rX = _TX;
+                _rY = _TY;
+                _JSON['red'] = {};
+              } else {
+                _yX = _TX;
+                _yY = _TY;
+                _JSON['yellow'] = {};
+              }
+            }
+
+            if (_COLOR) {
+              // console.log(_FRAME, _COLOR, Math.round(_TX), Math.round(_TY));
+              _JSON[_COLOR][_FRAME] = `translate(${Math.round(_TX)}, ${Math.round(_TY)})`;
+            }
         }
         if (this.finalTransform._opMdf) {
             this.transformedElement.setAttribute('opacity', this.finalTransform.mProp.o.v);
@@ -8985,6 +9033,7 @@ AnimationItem.prototype.renderFrame = function () {
     if(this.isLoaded === false){
         return;
     }
+    _FRAME = Math.round(this.currentFrame);
     this.renderer.renderFrame(this.currentFrame + this.firstFrame);
 };
 
@@ -9089,6 +9138,7 @@ AnimationItem.prototype.advanceTime = function (value) {
         this.setCurrentRawFrameValue(nextValue);
         this.pause();
         this.trigger('complete');
+        console.log(_JSON);
     }
 };
 

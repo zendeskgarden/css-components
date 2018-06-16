@@ -1,0 +1,60 @@
+svg path,
+svg circle {
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+svg circle:nth-child(1) {
+  animation-name: zd-ltr;
+}
+
+/*
+svg :nth-child(2) {
+  animation-name: zd-red;
+}
+*/
+
+svg path:nth-child(3) {
+  animation-name: zd-blue;
+}
+
+@keyframes zd-blue {
+  38% { transform: translate(0, 3px) }
+  48% { transform: translate(0, 22px) }
+  50% { transform: translate(-1px, 6px) }
+  52% { transform: translate(-8px, -52px) }
+  60% { transform: translate(-48px, -132px) }
+  68% { transform: translate(-88px, -150px) }
+  77% { transform: translate(-127px, -132px) }
+  87% { transform: translate(-175px) }
+  88% { transform: translate(-175px, 23px) }
+  99% { transform: translate(-175px, 2px) }
+}
+
+@keyframes zd-red {
+  38% { transform: translate(-175px) }
+  87% { transform: translate(-175px) }
+  99% { transform: translate(-175px, 24px) }
+}
+
+@keyframes zd-ltr {
+  0% { transform: translate(0, 25px) }
+  5% { transform: translate(25px, -100px) }
+  10% { transform: translate(47px, -130px) }
+  15% { transform: translate(70px, -145px) }
+  20% { transform: translate(95px, -150px) }
+  25% { transform: translate(120px, -140px) }
+  30% { transform: translate(140px, -115px) }
+  35% { transform: translate(165px, -55px) }
+  40% { transform: translate(175px, 20px) }
+  50% { transform: translate(175px) }
+  70% { transform: translate(330px) }
+  80% { transform: translate(345px) }
+  85% { transform: translate(350px) }
+  100% { transform: translate(350px) }
+}
+
+@keyframes zd-rtl {
+  40% { transform: translate(0, 25px) }
+}
