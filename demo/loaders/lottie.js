@@ -9139,7 +9139,7 @@ AnimationItem.prototype.advanceTime = function (value) {
         this.setCurrentRawFrameValue(nextValue);
         this.pause();
         this.trigger('complete');
-        console.log(_JSON);
+      // console.log(_JSON);
     }
 };
 
