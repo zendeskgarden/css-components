@@ -1,0 +1,10 @@
+@import '@zendeskgarden/css-variables';
+
+.c-loaders {
+  font-size: var(--zd-font-size-giga);
+  font-weight: var(--zd-font-weight-light);
+}
+
+.c-loaders.is-rtl {
+  direction: rtl;
+}
