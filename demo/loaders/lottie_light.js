@@ -1,1 +1,0 @@
-../../node_modules/lottie-web/build/player/lottie_light.js

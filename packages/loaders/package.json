@@ -25,6 +25,9 @@
   "dependencies": {
     "@zendeskgarden/css-variables": "^4.1.3"
   },
+  "devDependencies": {
+    "lottie-web": "^5.1.17"
+  },
   "keywords": [
     "components",
     "css",

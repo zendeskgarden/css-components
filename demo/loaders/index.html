@@ -11,10 +11,9 @@
   <title>Loaders / CSS Components / Zendesk Garden</title>
   <link href="../bedrock/index.css" rel="stylesheet">
   <link href="../menus/index.css" rel="stylesheet">
-  <link href="../forms/checkbox/index.css" rel="stylesheet">
+  <link href="../forms/index.css" rel="stylesheet">
   <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
-  <link href="custom.css" rel="stylesheet">
   <link href="../utilities/index.css" rel="stylesheet">
 </head>
 <body>
@@ -44,14 +43,20 @@
         <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
           <li class="c-menu__item" role="menuitem">
             <fieldset class="c-chk">
-              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
+              <input checked class="c-chk__input js-animate" id="nav.ctl.animate" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.animate">Animate</label>
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
+            <fieldset class="c-range c-range--inline">
+              <label class="c-range__label u-mr u-regular" for="id.nav.ctl.size">Size</label>
+              <input class="c-range__input js-size" id="nav.ctl.size" min="10" max="400" type="range" value="80" style="width: 170px">
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-range c-range--inline">
+              <label class="c-range__label u-mr u-regular" for="id.nav.ctl.speed">Speed</label>
+              <input class="c-range__input js-speed" id="nav.ctl.speed" min="-1" max="1" step=".1" type="range" value="0" style="width: 160px">
             </fieldset>
           </li>
         </ul>
@@ -59,22 +64,19 @@
     </ul>
   </header>
   <main class="c-main c-main--page">
+    <!--
     <a href="https://github.com/zendeskgarden/css-components/tree/master/packages/loaders"><img class="u-float-right u-ml-sm u-mt-sm" src="../github.svg"></a>
     <a href="https://www.npmjs.com/package/@zendeskgarden/css-loaders"><img class="u-float-right u-mt-sm" src="https://img.shields.io/npm/v/@zendeskgarden/css-loaders.svg?style=flat-square"></a>
+    -->
     <h1 class="c-main__title">Loaders</h1>
     <div class="c-main__body">
-      <div id="dots" style="width: 80px"></div>
-      <div class="lottie"
-        data-anim-autoplay="true"
-        data-animation-path="."
-        data-anim-loop="true"
-        data-anim-type="svg"
-        style="width: 300px">
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" style="width: 300px" width="476" height="403" focusable="false" viewBox="0 0 476 403">
-        <circle fill="yellow" cx="63" cy="201" r="50"/>
-        <path class="red" fill="#f00" d="M238.147 251.5c-27.595.08-50.066-22.259-50.147-49.853-.08-27.595 22.259-50.066 49.853-50.147 27.595-.08 50.066 22.259 50.147 49.853.08 27.595-22.259 50.066-49.853 50.147z"/>
-        <path class="blue" fill="#0052FF" d="M413.147 251.5c-27.595.08-50.066-22.259-50.147-49.853-.08-27.595 22.259-50.066 49.853-50.147 27.595-.08 50.066 22.259 50.147 49.853.08 27.595-22.259 50.066-49.853 50.147z"/>
+      <h2 class="c-main__subtitle u-gamma u-mb">Original</h2>
+      <div class="js-lottie u-mb-lg" style="width: 80px"></div>
+      <h2 class="c-main__subtitle u-gamma u-mb">Remake</h2>
+      <svg class="js-dots" xmlns="http://www.w3.org/2000/svg" width="80" height="72" focusable="false" viewBox="0 0 80 72">
+        <circle fill="yellow" cx="9" cy="36" r="9"/>
+        <circle fill="red" cx="40" cy="36" r="9"/>
+        <circle fill="blue" cx="71" cy="36" r="9"/>
       </svg>
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
@@ -88,7 +90,8 @@
   <script src="//zendeskgarden.github.io/index.js"></script>
   <script src="../menus/index.js"></script>
   <script src="../forms/checkbox/index.js"></script>
+  <script src="../forms/range/index.js"></script>
+  <script src="lottie.js"></script>
   <script src="index.js"></script>
-  <script src="lottie_light.js"></script>
 </body>
 </html>
