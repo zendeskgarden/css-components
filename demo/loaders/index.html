@@ -50,13 +50,25 @@
           <li class="c-menu__item" role="menuitem">
             <fieldset class="c-range c-range--inline">
               <label class="c-range__label u-mr u-regular" for="id.nav.ctl.size">Size</label>
-              <input class="c-range__input js-size" id="nav.ctl.size" min="10" max="400" type="range" value="80" style="width: 170px">
+              <input class="c-range__input js-size" id="nav.ctl.size" min="10" max="400" step="10" type="range" value="80" style="width: 170px">
             </fieldset>
           </li>
           <li class="c-menu__item" role="menuitem">
             <fieldset class="c-range c-range--inline">
               <label class="c-range__label u-mr u-regular" for="id.nav.ctl.speed">Speed</label>
               <input class="c-range__input js-speed" id="nav.ctl.speed" min="-1" max="1" step=".1" type="range" value="0" style="width: 160px">
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-txt c-txt--inline">
+              <label class="c-txt__label u-mr u-regular" for="id.nav.ctl.color">Color</label>
+              <input class="c-txt__input js-color u-ta-right" id="id.nav.ctl.color" type="color" style="width:170px">
+            </fieldset>
+          </li>
+          <li class="c-menu__item" role="menuitem">
+            <fieldset class="c-chk">
+              <input class="c-chk__input js-dark" id="nav.ctl.dark" type="checkbox">
+              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.dark">Dark Mode</label>
             </fieldset>
           </li>
         </ul>
@@ -74,9 +86,9 @@
       <div class="js-lottie u-mb-lg" style="width: 80px"></div>
       <h2 class="c-main__subtitle u-gamma u-mb">Remake</h2>
       <svg class="js-dots" xmlns="http://www.w3.org/2000/svg" width="80" height="72" focusable="false" viewBox="0 0 80 72">
-        <circle fill="yellow" cx="9" cy="36" r="9"/>
-        <circle fill="red" cx="40" cy="36" r="9"/>
-        <circle fill="blue" cx="71" cy="36" r="9"/>
+        <circle fill="currentColor" cx="9" cy="36" r="9"/>
+        <circle fill="currentColor" cx="40" cy="36" r="9"/>
+        <circle fill="currentColor" cx="71" cy="36" r="9"/>
       </svg>
       <section id="playground">
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
@@ -88,10 +100,11 @@
     </div>
   </main>
   <script src="//zendeskgarden.github.io/index.js"></script>
+  <script src="tinycolor.js"></script>
+  <script src="lottie.js"></script>
   <script src="../menus/index.js"></script>
   <script src="../forms/checkbox/index.js"></script>
   <script src="../forms/range/index.js"></script>
-  <script src="lottie.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

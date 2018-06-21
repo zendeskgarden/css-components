@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.js-animate').click(function() {
     const isChecked = $(this).is(':checked');
 
-    $('.js-dots').toggleClass('i-loader-dots', isChecked);
+    $('.js-dots').toggleClass('o-loader-dots', isChecked);
 
     if (isChecked) {
       lottie.play();
@@ -11,11 +11,21 @@ $(document).ready(function() {
     }
   });
 
+  $('.js-color').change(function() {
+    const value = $(this).val();
+
+    if (value) {
+      const color = tinycolor(value);
+
+      $('.o-loader-dots').css('color', value);
+    }
+  });
+
   $('.js-size').on('change input', function() {
     const size = $(this).val();
 
     $('.js-lottie').css('width', size);
-    $('.js-dots').attr({
+    $('.js-dots').css({
       width: size,
       height: size * .9
     });
