@@ -2,7 +2,7 @@
 
 :root {
   --zd-tag--lg-border-radius: 4px;
-  --zd-tag--lg-height: var(--zd-spacing-lg);
+  --zd-tag--lg-height: 30px;
   --zd-tag--lg-line-height: calc(30 / 12);
   --zd-tag--lg-padding-horizontal: 12px;
   --zd-tag--lg-padding: 0 var(--zd-tag--lg-padding-horizontal);
