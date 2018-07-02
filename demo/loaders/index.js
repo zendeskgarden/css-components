@@ -15,8 +15,6 @@ $(document).ready(function() {
     const value = $(this).val();
 
     if (value) {
-      const color = tinycolor(value);
-
       $('.o-loader-dots').css('color', value);
     }
   });
@@ -77,7 +75,7 @@ $(document).ready(function() {
     if (KEYFRAMES[name].Y === 0) {
       if (name === 'yellow' && y !== 0) {
         // Compensate for lower starting dot.
-        y -= 4.375;
+        y -= 5;
       }
 
       KEYFRAMES[name].Y = y;

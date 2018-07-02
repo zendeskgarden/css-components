@@ -5,7 +5,7 @@
 
 .o-loader-dots circle {
   animation-duration: 1s;
-  animation-timing-function: linear;
+  animation-timing-function: step-start;
   animation-iteration-count: infinite;
 }
 
