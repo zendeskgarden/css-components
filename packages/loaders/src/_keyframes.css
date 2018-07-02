@@ -2,20 +2,15 @@
 @keyframes zd-loader-dots-one {
   0% { transform: translate(0, 5px); }
   3% { transform: translate(1px, -5px); }
-  4% { transform: translate(3px, -12px); }
   6% { transform: translate(3px, -15px); }
   8% { transform: translate(5px, -18px); }
   9% { transform: translate(7px, -21px); }
   11% { transform: translate(8px, -22px); }
   13% { transform: translate(9px, -23px); }
-  14% { transform: translate(11px, -25px); }
   16% { transform: translate(12px, -25px); }
   18% { transform: translate(13px, -26px); }
-  19% { transform: translate(15px, -26px); }
-  21% { transform: translate(16px, -26px); }
   23% { transform: translate(18px, -26px); }
   24% { transform: translate(19px, -25px); }
-  26% { transform: translate(20px, -24px); }
   28% { transform: translate(22px, -23px); }
   31% { transform: translate(24px, -21px); }
   33% { transform: translate(26px, -18px); }
@@ -31,7 +26,6 @@
   66% { transform: translate(53px); }
   68% { transform: translate(55px); }
   69% { transform: translate(57px); }
-  73% { transform: translate(57px); }
   76% { transform: translate(60px); }
   81% { transform: translate(61px); }
   83% { transform: translate(62px); }
@@ -53,15 +47,11 @@
   23% { transform: translate(-27px); }
   24% { transform: translate(-28px); }
   26% { transform: translate(-29px); }
-  28% { transform: translate(-29px); }
   29% { transform: translate(-30px); }
-  31% { transform: translate(-30px); }
   33% { transform: translate(-31px); }
   89% { transform: translate(-31px); }
   91% { transform: translate(-31px, 1px); }
-  93% { transform: translate(-31px, 1px); }
   94% { transform: translate(-31px, 2px); }
-  96% { transform: translate(-31px, 2px); }
   98% { transform: translate(-31px, 3px); }
   99% { transform: translate(-31px, 4px); }
   100% { transform: translate(-31px, 5px); }
@@ -83,14 +73,9 @@
   63% { transform: translate(-9px, -24px); }
   64% { transform: translate(-11px, -25px); }
   66% { transform: translate(-12px, -26px); }
-  68% { transform: translate(-13px, -26px); }
-  69% { transform: translate(-15px, -26px); }
-  71% { transform: translate(-16px, -26px); }
-  73% { transform: translate(-18px, -26px); }
   74% { transform: translate(-19px, -26px); }
   76% { transform: translate(-20px, -25px); }
   78% { transform: translate(-22px, -24px); }
-  79% { transform: translate(-24px, -22px); }
   81% { transform: translate(-24px, -21px); }
   83% { transform: translate(-26px, -19px); }
   84% { transform: translate(-28px, -15px); }
@@ -100,9 +85,7 @@
   91% { transform: translate(-31px, 4px); }
   93% { transform: translate(-31px, 3px); }
   94% { transform: translate(-31px, 2px); }
-  96% { transform: translate(-31px, 2px); }
   98% { transform: translate(-31px, 1px); }
-  99% { transform: translate(-31px, 1px); }
   100% { transform: translate(-31px); }
 }
 /* stylelint-enable rule-empty-line-before */
