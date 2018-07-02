@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@2.1.4...@zendeskgarden/css-utilities@3.0.0) (2018-07-02)
+
+
+### Features
+
+* **variables, utilities:** update with base-4 spacing ([#75](https://github.com/zendeskgarden/css-components/issues/75)) ([fc32093](https://github.com/zendeskgarden/css-components/commit/fc32093))
+
+
+### BREAKING CHANGES
+
+* **variables, utilities:** several spacing variables updated with base-4 (vs. previous base-10) pixel units.
+
+| BEFORE | AFTER |
+| -------- | ------- |
+| `--zd-spacing-xxs: 2px` | `--zd-spacing--xxs: 4px` |
+| `--zd-spacing--xs: 5px` | `--zd-spacing--xs: 8px` |
+| `--zd-spacing--sm: 10px` | `--zd-spacing--sm: 12px` |
+| `--zd-spacing: 20px` | `--zd-spacing: 20px` |
+| `--zd-spacing--lg: 30px` | `--zd-spacing--lg: 32px` |
+| `--zd-spacing--xl: 40px` | `--zd-spacing--xl: 40px` |
+| NA | `--zd-spacing--xxl: 48px` |
+
+All `.u-m[*]` and `.u-p[*]` spacing utilities are updated accordingly with additions for XXL.
+
+
+
+
 <a name="2.1.4"></a>
 ## [2.1.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@2.1.3...@zendeskgarden/css-utilities@2.1.4) (2018-05-25)
 
