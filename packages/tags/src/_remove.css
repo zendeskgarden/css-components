@@ -14,7 +14,7 @@
   --zd-tag__remove-transition: opacity .25s ease-in-out;
   --zd-tag__remove-hovered-opacity: .9;
   --zd-tag--lg__remove-background-size: var(--zd-font-size-delta);
-  --zd-tag--lg__remove-size: var(--zd-spacing-lg);
+  --zd-tag--lg__remove-size: 30px;
   --zd-tag--lg__remove-margin: calc(var(--zd-tag--lg-padding-horizontal) * -1);
   --zd-tag--color__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag--color-color));
   --zd-tag--yellow__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag--yellow-color));
