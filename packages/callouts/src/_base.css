@@ -10,7 +10,7 @@
   --zd-callout-line-height: calc(20 / 14);
   --zd-callout-padding-horizontal: var(--zd-spacing-xl);
   --zd-callout-padding: var(--zd-spacing) var(--zd-callout-padding-horizontal);
-  --zd-callout__paragraph-margin: var(--zd-spacing-sm) 0 0;
+  --zd-callout__paragraph-margin: 10px 0 0;
   --zd-callout__title-color: var(--zd-color-grey-800);
   --zd-callout__title-font-weight: var(--zd-font-weight-semibold);
 }

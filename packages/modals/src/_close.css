@@ -4,7 +4,7 @@
   --zd-dialog__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-500));
   --zd-dialog__close-right: var(--zd-spacing);
   --zd-dialog__close-size: var(--zd-spacing-xl);
-  --zd-dialog__close-top: var(--zd-spacing-sm);
+  --zd-dialog__close-top: 10px;
   --zd-dialog__close-transition: background-color .1s ease-in-out;
   --zd-dialog__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-800));
   --zd-dialog__close-focused-background-color: color(var(--zd-color-grey-600) alpha(15%));

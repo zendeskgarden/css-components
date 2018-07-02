@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/css-components/issues"
   },
-  "version": "4.0.2",
+  "version": "4.0.3",
   "main": "dist/index.css",
   "files": [
     "dist",
@@ -23,7 +23,7 @@
     "watch": "yarn build --watch"
   },
   "dependencies": {
-    "@zendeskgarden/css-variables": "^4.1.4"
+    "@zendeskgarden/css-variables": "^5.0.0"
   },
   "peerDependencies": {
     "@zendeskgarden/css-arrows": "^3.1.0"

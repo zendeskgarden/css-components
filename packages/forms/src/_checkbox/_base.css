@@ -15,7 +15,7 @@
   --zd-chk__label-line-height: calc(20 / 14);
   --zd-chk__label-padding: calc(var(--zd-chk-size) + var(--zd-chk__label-spacing));
   --zd-chk__label-spacing: 8px;
-  --zd-chk__label-top: var(--zd-spacing-sm);
+  --zd-chk__label-top: 10px;
   --zd-chk__label--regular-font-weight: var(--zd-font-weight-regular);
   --zd-chk__hint-line-height: calc(20 / 14);
   --zd-chk__message-line-height: calc(16 / 12);
