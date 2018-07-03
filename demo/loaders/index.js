@@ -36,12 +36,12 @@ $(document).ready(function() {
     const duration = parseFloat(1 / (speed + 1));
 
     if (isFinite(duration)) {
-      $('.js-dots *').css({
+      $('.js-dots circle').css({
         animationDuration: duration + 's',
         animationPlayState: 'running'
       });
     } else {
-      $('.js-dots *').css('animationPlayState', 'paused');
+      $('.js-dots circle').css('animationPlayState', 'paused');
     }
   });
 

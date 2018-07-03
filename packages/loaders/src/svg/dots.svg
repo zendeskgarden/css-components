@@ -1,5 +1,7 @@
-<svg class="o-loader o-loader--dots" xmlns="http://www.w3.org/2000/svg" width="80" height="72" focusable="false" viewBox="0 0 80 72">
-  <circle fill="currentColor" cx="9" cy="36" r="9"/>
-  <circle fill="currentColor" cx="40" cy="36" r="9"/>
-  <circle fill="currentColor" cx="71" cy="36" r="9"/>
+<svg xmlns="http://www.w3.org/2000/svg" class="o-loader o-loader--dots" width="80" height="72" focusable="false" viewBox="0 0 80 72">
+  <g fill="currentColor">
+    <circle cx="9" cy="36" r="9"/>
+    <circle cx="40" cy="36" r="9"/>
+    <circle cx="71" cy="36" r="9"/>
+  </g>
 </svg>
