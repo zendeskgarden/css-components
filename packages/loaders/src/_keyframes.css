@@ -1,5 +1,5 @@
 /* stylelint-disable rule-empty-line-before */
-@keyframes zd-loader-dots-one {
+@keyframes zd-loader--dots__one {
   0% { transform: translate(0, 5px); }
   3% { transform: translate(1px, -5px); }
   6% { transform: translate(3px, -15px); }
@@ -32,7 +32,7 @@
   100% { transform: translate(62px); }
 }
 
-@keyframes zd-loader-dots-two {
+@keyframes zd-loader--dots__two {
   4% { transform: translate(0); }
   6% { transform: translate(-1px); }
   8% { transform: translate(-2px); }
@@ -57,7 +57,7 @@
   100% { transform: translate(-31px, 5px); }
 }
 
-@keyframes zd-loader-dots-three {
+@keyframes zd-loader--dots__three {
   39% { transform: translate(0); }
   44% { transform: translate(0, 1px); }
   46% { transform: translate(0, 2px); }

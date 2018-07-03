@@ -1,24 +1,28 @@
-.o-loader-dots {
-  width: 80px;
-  height: 72px;
+.o-loader {
+  width: 1em;
+  height: 1em;
 }
 
-.o-loader-dots circle {
-  animation-duration: 1s;
+.o-loader--dots {
+  height: .9em;
+}
+
+.o-loader--dots circle {
+  animation-duration: 1250ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 /* stylelint-disable no-unknown-animations */
-.o-loader-dots :nth-child(1) {
-  animation-name: zd-loader-dots-one;
+.o-loader--dots circle:nth-child(1) {
+  animation-name: zd-loader--dots__one;
 }
 
-.o-loader-dots :nth-child(2) {
-  animation-name: zd-loader-dots-two;
+.o-loader--dots circle:nth-child(2) {
+  animation-name: zd-loader--dots__two;
 }
 
-.o-loader-dots :nth-child(3) {
-  animation-name: zd-loader-dots-three;
+.o-loader--dots circle:nth-child(3) {
+  animation-name: zd-loader--dots__three;
 }
 /* stylelint-enable no-unknown-animations */
