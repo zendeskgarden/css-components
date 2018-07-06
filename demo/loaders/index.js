@@ -128,7 +128,7 @@ $(document).ready(function() {
       }
     }
 
-    animation.addEventListener('DOMLoaded', () => {
+    animation.addEventListener('DOMLoaded', function() {
       $('.js-animate').triggerHandler('click');
     });
   } else {
