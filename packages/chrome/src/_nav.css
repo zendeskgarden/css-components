@@ -60,6 +60,7 @@
 
 .c-chrome__nav__item {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   order: var(--zd-chrome__nav__item-order);
