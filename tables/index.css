@@ -115,8 +115,10 @@
   border:none;
   background-color:transparent;
   cursor:pointer;
+  padding:0;
   height:100%;
   text-decoration:none;
+  font-size:inherit;
 }
 
 .c-table__row__cell__overflow,.c-table__row__cell__overflow:after,.c-table__row__cell__overflow:before{
