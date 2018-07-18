@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.3"></a>
+## [3.0.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.0.2...@zendeskgarden/css-chrome@3.0.3) (2018-07-17)
+
+
+### Bug Fixes
+
+* **chrome:** prevent shrinking nav items ([#78](https://github.com/zendeskgarden/css-components/issues/78)) ([bd94dc1](https://github.com/zendeskgarden/css-components/commit/bd94dc1))
+
+
+
+
 <a name="3.0.2"></a>
 ## [3.0.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.0.1...@zendeskgarden/css-chrome@3.0.2) (2018-07-02)
 

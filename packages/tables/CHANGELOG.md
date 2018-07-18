@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.3"></a>
+## [3.0.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.0.2...@zendeskgarden/css-tables@3.0.3) (2018-07-18)
+
+
+### Bug Fixes
+
+* **tables:** `.c-table__row__cell__overflow` styling applied to `<button>` element ([9ae0572](https://github.com/zendeskgarden/css-components/commit/9ae0572))
+
+
+
+
 <a name="3.0.2"></a>
 ## [3.0.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.0.1...@zendeskgarden/css-tables@3.0.2) (2018-07-02)
 
