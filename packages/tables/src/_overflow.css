@@ -36,8 +36,10 @@
   border: none; /* [1] */
   background-color: transparent; /* [1] */
   cursor: pointer;
+  padding: 0; /* [1] */
   height: 100%;
   text-decoration: none; /* [2] */
+  font-size: inherit; /* [1] */
 }
 
 .c-table__row__cell__overflow::before,
