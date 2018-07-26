@@ -148,7 +148,7 @@
       -ms-flex-order:1;
           order:1;
   position:absolute;
-  clip:rect(1px,1px,1px,1px);
+  clip:rect(1px, 1px, 1px, 1px);
   width:1px;
   height:1px;
   overflow:hidden;
@@ -174,8 +174,9 @@
   transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   border:none;
   border-radius:100px;
-  -webkit-box-shadow:0 6px 12px 0 rgba(4,68,77,.15);
-          box-shadow:0 6px 12px 0 rgba(4,68,77,.15);
+  -webkit-box-shadow:0 6px 12px 0
+    rgba(4, 68, 77, .15);
+          box-shadow:0 6px 12px 0 rgba(4, 68, 77, .15);
   background-color:#56777a;
   cursor:pointer;
   width:60px;
@@ -229,7 +230,7 @@
 }
 
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-hovered,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):hover{
-  background-color:rgba(0,0,0,.1);
+  background-color:rgba(0, 0, 0, .1);
 }
 
 .c-chrome__nav__fab.is-hovered,.c-chrome__nav__fab:hover{
@@ -237,17 +238,21 @@
 }
 
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-focused{
-  -webkit-box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
-          box-shadow:inset 0 0 0 3px hsla(0,0%,100%,.2);
+  -webkit-box-shadow:inset 0 0 0 3px
+    hsla(0, 0%, 100%, .2);
+          box-shadow:inset 0 0 0 3px hsla(0, 0%, 100%, .2);
 }
 
 .c-chrome__nav__fab.is-focused{
-  -webkit-box-shadow:0 6px 12px 0 rgba(4,68,77,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
-          box-shadow:0 6px 12px 0 rgba(4,68,77,.15),inset 0 0 0 3px hsla(0,0%,100%,.2);
+  -webkit-box-shadow:0 6px 12px 0
+    rgba(4, 68, 77, .15),
+    inset 0 0 0 3px
+    hsla(0, 0%, 100%, .2);
+          box-shadow:0 6px 12px 0 rgba(4, 68, 77, .15),inset 0 0 0 3px hsla(0, 0%, 100%, .2);
 }
 
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
-  background-color:hsla(0,0%,100%,.1);
+  background-color:hsla(0, 0%, 100%, .1);
 }
 
 .c-chrome__nav__fab.is-active,.c-chrome__nav__fab:active{
@@ -260,8 +265,9 @@
 }
 
 .c-chrome__nav__fab:active.is-focused,.c-chrome__nav__item:not(.c-chrome__nav__item--logo):active.is-focused{
-  -webkit-box-shadow:0 6px 12px 0 rgba(4,68,77,.15);
-          box-shadow:0 6px 12px 0 rgba(4,68,77,.15);
+  -webkit-box-shadow:0 6px 12px 0
+    rgba(4, 68, 77, .15);
+          box-shadow:0 6px 12px 0 rgba(4, 68, 77, .15);
 }
 
 .c-chrome.is-rtl .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo){
@@ -323,20 +329,21 @@
 }
 
 .c-chrome__subnav__item.is-hovered,.c-chrome__subnav__item:hover{
-  background-color:rgba(0,0,0,.1);
+  background-color:rgba(0, 0, 0, .1);
 }
 
 .c-chrome__subnav__item.is-focused{
-  -webkit-box-shadow:0 0 0 3px hsla(0,0%,100%,.2);
-          box-shadow:0 0 0 3px hsla(0,0%,100%,.2);
+  -webkit-box-shadow:0 0 0 3px
+    hsla(0, 0%, 100%, .2);
+          box-shadow:0 0 0 3px hsla(0, 0%, 100%, .2);
 }
 
 .c-chrome__subnav__item.is-active,.c-chrome__subnav__item:active{
-  background-color:hsla(0,0%,100%,.03);
+  background-color:hsla(0, 0%, 100%, .03);
 }
 
 .c-chrome__subnav__item.is-current,.c-chrome__subnav__item[aria-current=true]{
-  background-color:hsla(0,0%,100%,.1);
+  background-color:hsla(0, 0%, 100%, .1);
 }
 
 .c-chrome__subnav__item:first-child{
@@ -374,8 +381,9 @@
 }
 
 .c-chrome__body__header--standalone{
-  -webkit-box-shadow:0 0 10px 0 rgba(4,68,77,.15);
-          box-shadow:0 0 10px 0 rgba(4,68,77,.15);
+  -webkit-box-shadow:0 0 10px 0
+    rgba(4, 68, 77, .15);
+          box-shadow:0 0 10px 0 rgba(4, 68, 77, .15);
 }
 
 .c-chrome__body__header__item{
@@ -419,8 +427,9 @@
 }
 
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-focused{
-  -webkit-box-shadow:0 0 0 3px rgba(86,119,122,.35);
-          box-shadow:0 0 0 3px rgba(86,119,122,.35);
+  -webkit-box-shadow:0 0 0 3px
+    rgba(86, 119, 122, .35);
+          box-shadow:0 0 0 3px rgba(86, 119, 122, .35);
 }
 
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active.is-focused{
@@ -470,8 +479,11 @@
 }
 
 .c-chrome__body__header__item.c-chrome__body__header__item--max-y.is-focused{
-  -webkit-box-shadow:inset 0 3px 0 0 rgba(86,119,122,.35),3px 0 0 0 rgba(86,119,122,.35),inset 0 -3px 0 0 rgba(86,119,122,.35),-3px 0 0 0 rgba(86,119,122,.35);
-          box-shadow:inset 0 3px 0 0 rgba(86,119,122,.35),3px 0 0 0 rgba(86,119,122,.35),inset 0 -3px 0 0 rgba(86,119,122,.35),-3px 0 0 0 rgba(86,119,122,.35);
+  -webkit-box-shadow:inset 0 3px 0 0 rgba(86, 119, 122, .35),
+    3px 0 0 0 rgba(86, 119, 122, .35),
+    inset 0 -3px 0 0 rgba(86, 119, 122, .35),
+    -3px 0 0 0 rgba(86, 119, 122, .35);
+          box-shadow:inset 0 3px 0 0 rgba(86, 119, 122, .35),3px 0 0 0 rgba(86, 119, 122, .35),inset 0 -3px 0 0 rgba(86, 119, 122, .35),-3px 0 0 0 rgba(86, 119, 122, .35);
 }
 
 .c-chrome__body__header__item__icon{
@@ -508,7 +520,7 @@ img.c-chrome__body__header__item__icon{
 .c-chrome__body__header__item--logo .c-chrome__body__header__item__text,.c-chrome__body__header__item__text.is-clipped{
   margin:0;
   position:absolute;
-  clip:rect(1px,1px,1px,1px);
+  clip:rect(1px, 1px, 1px, 1px);
   width:1px;
   height:1px;
   overflow:hidden;
@@ -552,11 +564,11 @@ img.c-chrome__body__header__item__icon{
 }
 
 .c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
-  background-color:rgba(0,0,0,.1);
+  background-color:rgba(0, 0, 0, .1);
 }
 
 .c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav--dark .c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
-  background-color:hsla(0,0%,100%,.3);
+  background-color:hsla(0, 0%, 100%, .3);
 }
 
 .c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,.c-chrome__nav--dark .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{
@@ -569,16 +581,17 @@ img.c-chrome__body__header__item__icon{
 }
 
 .c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-focused{
-  -webkit-box-shadow:inset 0 0 0 3px rgba(0,0,0,.2);
-          box-shadow:inset 0 0 0 3px rgba(0,0,0,.2);
+  -webkit-box-shadow:inset 0 0 0 3px
+    rgba(0, 0, 0, .2);
+          box-shadow:inset 0 0 0 3px rgba(0, 0, 0, .2);
 }
 
 .c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-active,.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active{
-  background-color:rgba(0,0,0,.1);
+  background-color:rgba(0, 0, 0, .1);
 }
 
 .c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo).is-current,.c-chrome__nav--light .c-chrome__nav__item:not(.c-chrome__nav__item--logo)[aria-current=true]{
-  background-color:rgba(0,0,0,.3);
+  background-color:rgba(0, 0, 0, .3);
 }
 
 .c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--connect,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--explore,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--guide,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--message,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--support,.c-chrome__nav--light .c-chrome__nav__item--logo.c-chrome__nav__item--logo--talk{

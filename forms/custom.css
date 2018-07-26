@@ -16,8 +16,9 @@
 
 .c-chk__input:enabled~.c-chk__label.is-focused:not(.is-disabled).c-chk__label--custom:before{
   border-color:#eb4962;
-  -webkit-box-shadow:0 0 0 3px rgba(235,73,98,.4);
-          box-shadow:0 0 0 3px rgba(235,73,98,.4);
+  -webkit-box-shadow:0 0 0 3px
+    rgba(235, 73, 98, .4);
+          box-shadow:0 0 0 3px rgba(235, 73, 98, .4);
 }
 
 .c-chk__input:enabled~.c-chk__label.is-active:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label:not(.is-disabled):active.c-chk__label--custom:before{
@@ -30,21 +31,21 @@
 }
 
 .c-range__input--custom::-moz-range-track{
-  background-image:linear-gradient(#eb4962,#eb4962);
+  background-image:linear-gradient(#eb4962, #eb4962);
 }
 
 .c-range__input--custom::-ms-track{
-  background-image:linear-gradient(#eb4962,#eb4962);
+  background-image:linear-gradient(#eb4962, #eb4962);
 }
 
 .c-range__input--custom::-webkit-slider-runnable-track{
-  background-image:-webkit-gradient(linear,left top,left bottom,from(#eb4962),to(#eb4962));
-  background-image:linear-gradient(#eb4962,#eb4962);
+  background-image:-webkit-gradient(linear, left top, left bottom, from(#eb4962), to(#eb4962));
+  background-image:linear-gradient(#eb4962, #eb4962);
 }
 
 .c-range__slider--custom .c-range__slider__track{
-  background-image:-webkit-gradient(linear,left top,left bottom,from(#eb4962),to(#eb4962));
-  background-image:linear-gradient(#eb4962,#eb4962);
+  background-image:-webkit-gradient(linear, left top, left bottom, from(#eb4962), to(#eb4962));
+  background-image:linear-gradient(#eb4962, #eb4962);
 }
 
 .c-range__input--custom::-moz-range-thumb{
@@ -76,21 +77,23 @@
 }
 
 .c-range__input--custom.is-focused:not(.is-disabled):not([disabled])::-moz-range-thumb{
-  box-shadow:0 0 0 3px rgba(235,73,98,.4);
+  box-shadow:0 0 0 3px rgba(235, 73, 98, .4);
 }
 
 .c-range__input--custom.is-focused:not(.is-disabled):not([disabled])::-ms-thumb{
-  box-shadow:0 0 0 3px rgba(235,73,98,.4);
+  box-shadow:0 0 0 3px rgba(235, 73, 98, .4);
 }
 
 .c-range__input--custom.is-focused:not(.is-disabled):not([disabled])::-webkit-slider-thumb{
-  -webkit-box-shadow:0 0 0 3px rgba(235,73,98,.4);
-          box-shadow:0 0 0 3px rgba(235,73,98,.4);
+  -webkit-box-shadow:0 0 0 3px
+    rgba(235, 73, 98, .4);
+          box-shadow:0 0 0 3px rgba(235, 73, 98, .4);
 }
 
 .c-range__slider--custom:not(.is-disabled) .c-range__slider__track__rail__thumb.is-focused{
-  -webkit-box-shadow:0 0 0 3px rgba(235,73,98,.4);
-          box-shadow:0 0 0 3px rgba(235,73,98,.4);
+  -webkit-box-shadow:0 0 0 3px
+    rgba(235, 73, 98, .4);
+          box-shadow:0 0 0 3px rgba(235, 73, 98, .4);
 }
 
 .c-range__input--custom.is-active:not(.is-disabled):not([disabled])::-moz-range-thumb,.c-range__input--custom:active:not(.is-disabled):not([disabled])::-moz-range-thumb{
@@ -114,6 +117,7 @@
 }
 
 .c-txt__input--custom:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning).is-focused:not(.is-disabled):not([disabled]):not(.c-txt__input--bare),.c-txt__input--custom:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning):focus:not(.is-disabled):not([disabled]):not(.c-txt__input--bare){
-  -webkit-box-shadow:0 0 0 3px rgba(235,73,98,.4);
-          box-shadow:0 0 0 3px rgba(235,73,98,.4);
+  -webkit-box-shadow:0 0 0 3px
+    rgba(235, 73, 98, .4);
+          box-shadow:0 0 0 3px rgba(235, 73, 98, .4);
 }

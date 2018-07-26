@@ -10,8 +10,7 @@
 }
 
 .c-arrow:before{
-  border-width:inherit;
-  border-style:inherit;
+  border:inherit;
   border-color:transparent;
   background-clip:content-box;
 }
@@ -37,8 +36,8 @@
 
 .c-arrow--t:before,.c-arrow--tl:before,.c-arrow--tr:before{
   border-bottom-right-radius:100%;
-  -webkit-clip-path:polygon(100% 0,100% 1px,1px 100%,0 100%,0 0);
-          clip-path:polygon(100% 0,100% 1px,1px 100%,0 100%,0 0);
+  -webkit-clip-path:polygon(100% 0, 100% 1px, 1px 100%, 0 100%, 0 0);
+          clip-path:polygon(100% 0, 100% 1px, 1px 100%, 0 100%, 0 0);
 }
 
 .c-arrow--t:after,.c-arrow--t:before{
@@ -59,8 +58,8 @@
 
 .c-arrow--r:before,.c-arrow--rb:before,.c-arrow--rt:before{
   border-bottom-left-radius:100%;
-  -webkit-clip-path:polygon(100% 0,100% 100%,calc(100% - 1px) 100%,0 1px,0 0);
-          clip-path:polygon(100% 0,100% 100%,calc(100% - 1px) 100%,0 1px,0 0);
+  -webkit-clip-path:polygon(100% 0, 100% 100%, calc(100% - 1px) 100%, 0 1px, 0 0);
+          clip-path:polygon(100% 0, 100% 100%, calc(100% - 1px) 100%, 0 1px, 0 0);
 }
 
 .c-arrow--rt:after,.c-arrow--rt:before{
@@ -81,8 +80,8 @@
 
 .c-arrow--l:before,.c-arrow--lb:before,.c-arrow--lt:before{
   border-top-right-radius:100%;
-  -webkit-clip-path:polygon(0 100%,100% 100%,100% calc(100% - 1px),1px 0,0 0);
-          clip-path:polygon(0 100%,100% 100%,100% calc(100% - 1px),1px 0,0 0);
+  -webkit-clip-path:polygon(0 100%, 100% 100%, 100% calc(100% - 1px), 1px 0, 0 0);
+          clip-path:polygon(0 100%, 100% 100%, 100% calc(100% - 1px), 1px 0, 0 0);
 }
 
 .c-arrow--lt:after,.c-arrow--lt:before{
@@ -103,8 +102,8 @@
 
 .c-arrow--b:before,.c-arrow--bl:before,.c-arrow--br:before{
   border-top-left-radius:100%;
-  -webkit-clip-path:polygon(100% 0,calc(100% - 1px) 0,0 calc(100% - 1px),0 100%,100% 100%);
-          clip-path:polygon(100% 0,calc(100% - 1px) 0,0 calc(100% - 1px),0 100%,100% 100%);
+  -webkit-clip-path:polygon(100% 0, calc(100% - 1px) 0, 0 calc(100% - 1px), 0 100%, 100% 100%);
+          clip-path:polygon(100% 0, calc(100% - 1px) 0, 0 calc(100% - 1px), 0 100%, 100% 100%);
 }
 
 .c-arrow--b:after,.c-arrow--b:before{
