@@ -13,7 +13,7 @@ const fs = require('fs');
 const notice = require('@zendeskgarden/eslint-config/plugins/notice');
 const path = require('path');
 const postcss = require('postcss');
-const cssnano = require('cssnano');
+const cssnano = require('cssnano')({ preset: ['default', { cssDeclarationSorter: false }] });
 const cssVariables = require('../src/index');
 
 /**

@@ -24,10 +24,10 @@
   },
   "dependencies": {
     "@zendeskgarden/css-variables": "^5.0.0",
-    "bootstrap": "^4.1.1"
+    "bootstrap": "^4.1.2"
   },
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.2"
   },
   "keywords": [
     "components",
