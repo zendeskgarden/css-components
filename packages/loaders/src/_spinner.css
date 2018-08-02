@@ -1,0 +1,10 @@
+/* stylelint-disable no-unknown-animations */
+.o-loader--spinner circle {
+  transform: translateZ(0); /* trigger GPU acceleration */
+  transform-origin: center;
+  animation-name: zd-loader--spinner;
+  animation-duration: 1250ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/* stylelint-enable no-unknown-animations */

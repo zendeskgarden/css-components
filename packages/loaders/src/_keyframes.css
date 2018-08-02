@@ -88,4 +88,67 @@
   98% { transform: translate(-31px, 1px); }
   100% { transform: translate(-31px); }
 }
-/* stylelint-enable rule-empty-line-before */
+
+/* stylelint-disable declaration-block-single-line-max-declarations */
+@keyframes zd-loader--spinner {
+  0% { stroke-dasharray: 0 250; transform: rotate(-90deg); }
+  1% { stroke-dasharray: 0 250; transform: rotate(-90deg); }
+  3% { stroke-dasharray: 0 250; transform: rotate(-88deg); }
+  8% { stroke-dasharray: 0 250; transform: rotate(-80deg); }
+  9% { stroke-dasharray: 1 250; transform: rotate(-76deg); }
+  11% { stroke-dasharray: 1 250; transform: rotate(-75deg); }
+  13% { stroke-dasharray: 2 250; transform: rotate(-70deg); }
+  14% { stroke-dasharray: 2 250; transform: rotate(-65deg); }
+  16% { stroke-dasharray: 3 250; transform: rotate(-63deg); }
+  18% { stroke-dasharray: 4 250; transform: rotate(-57deg); }
+  19% { stroke-dasharray: 6 250; transform: rotate(-51deg); }
+  21% { stroke-dasharray: 7 250; transform: rotate(-48deg); }
+  23% { stroke-dasharray: 8 250; transform: rotate(-41deg); }
+  24% { stroke-dasharray: 11 250; transform: rotate(-33deg); }
+  26% { stroke-dasharray: 12 250; transform: rotate(-29deg); }
+  28% { stroke-dasharray: 15 250; transform: rotate(-20deg); }
+  29% { stroke-dasharray: 19 250; transform: rotate(-10deg); }
+  31% { stroke-dasharray: 21 250; transform: rotate(-4deg); }
+  33% { stroke-dasharray: 25 250; transform: rotate(8deg); }
+  34% { stroke-dasharray: 30 250; transform: rotate(21deg); }
+  36% { stroke-dasharray: 33 250; transform: rotate(28deg); }
+  38% { stroke-dasharray: 39 250; transform: rotate(43deg); }
+  39% { stroke-dasharray: 45 250; transform: rotate(59deg); }
+  41% { stroke-dasharray: 49 250; transform: rotate(67deg); }
+  43% { stroke-dasharray: 55 250; transform: rotate(84deg); }
+  44% { stroke-dasharray: 61 250; transform: rotate(99deg); }
+  46% { stroke-dasharray: 64 250; transform: rotate(106deg); }
+  48% { stroke-dasharray: 69 250; transform: rotate(120deg); }
+  49% { stroke-dasharray: 73 250; transform: rotate(133deg); }
+  51% { stroke-dasharray: 74 250; transform: rotate(139deg); }
+  53% { stroke-dasharray: 77 250; transform: rotate(150deg); }
+  54% { stroke-dasharray: 79 250; transform: rotate(161deg); }
+  59% { stroke-dasharray: 80 250; transform: rotate(165deg); }
+  61% { stroke-dasharray: 81 250; transform: rotate(186deg); }
+  63% { stroke-dasharray: 80 250; transform: rotate(193deg); }
+  64% { stroke-dasharray: 79 250; transform: rotate(200deg); }
+  66% { stroke-dasharray: 78 250; transform: rotate(203deg); }
+  68% { stroke-dasharray: 75 250; transform: rotate(209deg); }
+  69% { stroke-dasharray: 71 250; transform: rotate(215deg); }
+  71% { stroke-dasharray: 69 250; transform: rotate(217deg); }
+  73% { stroke-dasharray: 63 250; transform: rotate(222deg); }
+  74% { stroke-dasharray: 56 250; transform: rotate(227deg); }
+  76% { stroke-dasharray: 52 250; transform: rotate(229deg); }
+  78% { stroke-dasharray: 42 250; transform: rotate(233deg); }
+  79% { stroke-dasharray: 33 250; transform: rotate(238deg); }
+  81% { stroke-dasharray: 28 250; transform: rotate(239deg); }
+  83% { stroke-dasharray: 21 250; transform: rotate(243deg); }
+  84% { stroke-dasharray: 15 250; transform: rotate(247deg); }
+  86% { stroke-dasharray: 13 250; transform: rotate(248deg); }
+  88% { stroke-dasharray: 9 250; transform: rotate(251deg); }
+  89% { stroke-dasharray: 6 250; transform: rotate(255deg); }
+  91% { stroke-dasharray: 5 250; transform: rotate(256deg); }
+  93% { stroke-dasharray: 4 250; transform: rotate(259deg); }
+  94% { stroke-dasharray: 2 250; transform: rotate(261deg); }
+  96% { stroke-dasharray: 2 250; transform: rotate(263deg); }
+  98% { stroke-dasharray: 1 250; transform: rotate(265deg); }
+  100% { stroke-dasharray: 0 250; transform: rotate(270deg); }
+}
+/* stylelint-enable
+    rule-empty-line-before,
+    declaration-block-single-line-max-declarations */
