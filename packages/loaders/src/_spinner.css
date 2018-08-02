@@ -1,6 +1,6 @@
 /* stylelint-disable no-unknown-animations */
 .o-loader--spinner circle {
-  transform: translateZ(0); /* trigger GPU acceleration */
+  transform: rotate(-90deg) translateZ(0); /* trigger GPU acceleration */
   transform-origin: center;
   animation-name: zd-loader--spinner;
   animation-duration: 1250ms;

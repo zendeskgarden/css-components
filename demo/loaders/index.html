@@ -81,7 +81,8 @@
     <h1 class="c-main__title">Loaders</h1>
     <div class="c-main__body">
       <h2 class="c-main__subtitle u-gamma u-mb">Original</h2>
-      <div class="js-lottie u-mb-lg" style="width: 80px"></div>
+      <div class="js-lottie u-mb-lg" data-path="bodymovin/dots.json" style="width: 80px"></div>
+      <div class="js-lottie u-mb-lg" data-path="bodymovin/spinner.json" style="width: 80px"></div>
       <h2 class="c-main__subtitle u-gamma u-mb">Remake</h2>
       <div>
         <svg class="js-dots o-loader" style="font-size: 80px" xmlns="http://www.w3.org/2000/svg" width="80" height="72" focusable="false" viewBox="0 0 80 72">
@@ -101,13 +102,20 @@
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-<textarea class="c-playground__code"><svg class="o-loader o-loader--dots u-giga u-fg-blue-600" width="80" height="72" focusable="false" viewBox="0 0 80 72">
-  <g fill="currentColor">
-    <circle cx="9" cy="36" r="9"/>
-    <circle cx="40" cy="36" r="9"/>
-    <circle cx="71" cy="36" r="9"/>
-  </g>
-</svg></textarea>
+<textarea class="c-playground__code"><div>
+  <svg class="o-loader o-loader--dots u-giga u-fg-blue-600" width="80" height="72" focusable="false" viewBox="0 0 80 72">
+    <g fill="currentColor">
+      <circle cx="9" cy="36" r="9"/>
+      <circle cx="40" cy="36" r="9"/>
+      <circle cx="71" cy="36" r="9"/>
+    </g>
+  </svg>
+</div>
+<div>
+  <svg class="o-loader o-loader--spinner u-giga u-fg-blue-600" width="80" height="80" focusable="false" viewBox="0 0 80 80">
+    <circle cx="40" cy="40" r="37" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" />
+  </svg>
+</div></textarea>
         </div>
       </section>
     </div>
