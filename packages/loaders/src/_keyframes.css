@@ -147,42 +147,11 @@
   0% { transform: rotate(-90deg); }
   3% { transform: rotate(-89deg); }
   8% { transform: rotate(-81deg); }
-  9% { transform: rotate(-78deg); }
-  11% { transform: rotate(-76deg); }
-  13% { transform: rotate(-73deg); }
-  14% { transform: rotate(-69deg); }
-  16% { transform: rotate(-68deg); }
-  18% { transform: rotate(-64deg); }
-  19% { transform: rotate(-61deg); }
-  21% { transform: rotate(-59deg); }
-  23% { transform: rotate(-56deg); }
-  24% { transform: rotate(-52deg); }
-  26% { transform: rotate(-50deg); }
-  28% { transform: rotate(-46deg); }
-  29% { transform: rotate(-42deg); }
-  31% { transform: rotate(-40deg); }
-  33% { transform: rotate(-36deg); }
-  34% { transform: rotate(-32deg); }
   36% { transform: rotate(-30deg); }
-  38% { transform: rotate(-25deg); }
-  39% { transform: rotate(-20deg); }
   43% { transform: rotate(-18deg); }
   44% { transform: rotate(-8deg); }
-  46% { transform: rotate(-5deg); }
   48% { transform: rotate(0deg); }
-  49% { transform: rotate(6deg); }
-  51% { transform: rotate(9deg); }
-  53% { transform: rotate(15deg); }
-  54% { transform: rotate(22deg); }
-  56% { transform: rotate(26deg); }
-  58% { transform: rotate(33deg); }
-  59% { transform: rotate(40deg); }
-  61% { transform: rotate(44deg); }
   63% { transform: rotate(53deg); }
-  64% { transform: rotate(62deg); }
-  66% { transform: rotate(67deg); }
-  68% { transform: rotate(78deg); }
-  69% { transform: rotate(90deg); }
   71% { transform: rotate(97deg); }
   73% { transform: rotate(112deg); }
   74% { transform: rotate(129deg); }
@@ -194,13 +163,6 @@
   84% { transform: rotate(221deg); }
   86% { transform: rotate(226deg); }
   88% { transform: rotate(235deg); }
-  89% { transform: rotate(243deg); }
-  91% { transform: rotate(247deg); }
-  93% { transform: rotate(252deg); }
-  94% { transform: rotate(257deg); }
-  96% { transform: rotate(260deg); }
-  98% { transform: rotate(264deg); }
-  99% { transform: rotate(267deg); }
   100% { transform: rotate(270deg); }
 }
 
