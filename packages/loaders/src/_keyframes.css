@@ -93,64 +93,34 @@
   0% { stroke-dasharray: 0 250; }
   9% { stroke-dasharray: 1 250; }
   13% { stroke-dasharray: 2 250; }
-  14% { stroke-dasharray: 3 250; }
-  18% { stroke-dasharray: 5 250; }
-  19% { stroke-dasharray: 6 250; }
-  21% { stroke-dasharray: 7 250; }
-  23% { stroke-dasharray: 9 250; }
-  24% { stroke-dasharray: 12 250; }
   26% { stroke-dasharray: 13 250; }
-  28% { stroke-dasharray: 17 250; }
-  29% { stroke-dasharray: 21 250; }
-  31% { stroke-dasharray: 23 250; }
-  33% { stroke-dasharray: 28 250; }
-  34% { stroke-dasharray: 33 250; }
-  36% { stroke-dasharray: 37 250; }
-  38% { stroke-dasharray: 43 250; }
-  39% { stroke-dasharray: 50 250; }
-  43% { stroke-dasharray: 54 250; }
-  44% { stroke-dasharray: 68 250; }
-  46% { stroke-dasharray: 71 250; }
-  48% { stroke-dasharray: 76 250; }
-  49% { stroke-dasharray: 81 250; }
-  51% { stroke-dasharray: 83 250; }
   53% { stroke-dasharray: 86 250; }
-  54% { stroke-dasharray: 88 250; }
-  56% { stroke-dasharray: 89 250; }
   58% { stroke-dasharray: 90 250; }
-  63% { stroke-dasharray: 89 250; }
-  64% { stroke-dasharray: 88 250; }
   66% { stroke-dasharray: 86 250; }
   68% { stroke-dasharray: 83 250; }
   69% { stroke-dasharray: 79 250; }
-  71% { stroke-dasharray: 76 250; }
   73% { stroke-dasharray: 70 250; }
   74% { stroke-dasharray: 62 250; }
   76% { stroke-dasharray: 58 250; }
   78% { stroke-dasharray: 47 250; }
   79% { stroke-dasharray: 37 250; }
-  81% { stroke-dasharray: 31 250; }
   83% { stroke-dasharray: 23 250; }
   84% { stroke-dasharray: 16 250; }
-  86% { stroke-dasharray: 14 250; }
   88% { stroke-dasharray: 10 250; }
   89% { stroke-dasharray: 7 250; }
-  91% { stroke-dasharray: 6 250; }
-  93% { stroke-dasharray: 4 250; }
-  94% { stroke-dasharray: 3 250; }
-  96% { stroke-dasharray: 2 250; }
   98% { stroke-dasharray: 1 250; }
   100% { stroke-dasharray: 0 250; }
 }
 
 @keyframes zd-loader--spinner__rotation {
   0% { transform: rotate(-90deg); }
-  3% { transform: rotate(-89deg); }
   8% { transform: rotate(-81deg); }
   36% { transform: rotate(-30deg); }
-  43% { transform: rotate(-18deg); }
+  41% { transform: rotate(-18deg); }
+  43% { transform: rotate(-13deg); }
   44% { transform: rotate(-8deg); }
   48% { transform: rotate(0deg); }
+  55% { transform: rotate(22deg); }
   63% { transform: rotate(53deg); }
   71% { transform: rotate(97deg); }
   73% { transform: rotate(112deg); }
@@ -163,6 +133,7 @@
   84% { transform: rotate(221deg); }
   86% { transform: rotate(226deg); }
   88% { transform: rotate(235deg); }
+  90% { transform: rotate(243deg); }
   100% { transform: rotate(270deg); }
 }
 
