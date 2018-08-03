@@ -91,7 +91,6 @@
 
 @keyframes zd-loader--spinner__length {
   0% { stroke-dasharray: 0 250; }
-  9% { stroke-dasharray: 1 250; }
   13% { stroke-dasharray: 2 250; }
   26% { stroke-dasharray: 13 250; }
   53% { stroke-dasharray: 86 250; }
