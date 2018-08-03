@@ -344,6 +344,7 @@
 
 .c-chrome__subnav__item.is-current,.c-chrome__subnav__item[aria-current=true]{
   background-color:hsla(0, 0%, 100%, .1);
+  cursor:default;
 }
 
 .c-chrome__subnav__item:first-child{
