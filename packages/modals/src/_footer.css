@@ -8,9 +8,10 @@
 }
 
 .c-dialog__footer {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   padding: var(--zd-dialog__footer-padding);
-  text-align: right;
 }
 
 .c-dialog--large .c-dialog__footer {
@@ -20,10 +21,6 @@
 
 .c-dialog__footer__item {
   margin-left: var(--zd-dialog__footer__btn-margin);
-}
-
-.c-dialog.is-rtl .c-dialog__footer {
-  text-align: left;
 }
 
 .c-dialog.is-rtl .c-dialog__footer__item {
