@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.2.0"></a>
+# [6.2.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.1.2...@zendeskgarden/css-modals@6.2.0) (2018-08-06)
+
+
+### Features
+
+* **modals:** increase flexibility of footer alignment ([#87](https://github.com/zendeskgarden/css-components/issues/87)) ([0014845](https://github.com/zendeskgarden/css-components/commit/0014845))
+
+
+
+
 <a name="6.1.2"></a>
 ## [6.1.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.1.1...@zendeskgarden/css-modals@6.1.2) (2018-07-26)
 
