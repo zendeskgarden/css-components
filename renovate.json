@@ -1,5 +1,11 @@
 {
   "extends": [
     "config:base"
+  ],
+  "rebaseStalePrs": true,
+  "reviewers": [
+    "austin94",
+    "ryanseddon",
+    "jzempel"
   ]
 }
