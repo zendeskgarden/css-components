@@ -221,9 +221,16 @@
 }
 
 .c-dialog__footer{
-  display:block;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:end;
+      -ms-flex-pack:end;
+          justify-content:flex-end;
   padding:0 40px 32px;
-  text-align:right;
 }
 
 .c-dialog--large .c-dialog__footer{
@@ -233,10 +240,6 @@
 
 .c-dialog__footer__item{
   margin-left:20px;
-}
-
-.c-dialog.is-rtl .c-dialog__footer{
-  text-align:left;
 }
 
 .c-dialog.is-rtl .c-dialog__footer__item{
