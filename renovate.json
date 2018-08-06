@@ -3,6 +3,28 @@
     "config:base"
   ],
   "rebaseStalePrs": true,
+  "packageRules": [
+    {
+      "paths": ["package.json"],
+      "minor": {
+        "groupName": "shared non-major dependencies",
+        "groupSlug": "shared-minor-patch"
+      }
+    },
+    {
+      "paths": ["packages/**"],
+      "groupName": "css packages",
+      "minor": {
+        "groupName": "css package non-major dependencies",
+        "groupSlug": "packages-minor-patch"
+      }
+    },
+    {
+      "packagePatterns": ["^@zendeskgarden/css"],
+      "groupName": "internal dependencies",
+      "enabled": false
+    }
+  ],
   "reviewers": [
     "austin94",
     "ryanseddon",
