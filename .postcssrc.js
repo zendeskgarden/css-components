@@ -11,11 +11,14 @@ module.exports = {
       path: path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')
     },
     'cssnano': {
-      autoprefixer: false,
-      core: false,
-      discardComments: { removeAllButFirst: true },
-      reduceIdents: false,
-      zindex: false
+      preset: [
+        'default',
+        {
+          cssDeclarationSorter: false,
+          discardComments: { removeAllButFirst: true },
+          normalizeWhitespace: false
+        }
+      ]
     }
   }
 };

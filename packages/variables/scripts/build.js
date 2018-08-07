@@ -13,7 +13,7 @@ const fs = require('fs');
 const notice = require('@zendeskgarden/eslint-config/plugins/notice');
 const path = require('path');
 const postcss = require('postcss');
-const cssnano = require('cssnano');
+const cssnano = require('cssnano')({ preset: ['default', { cssDeclarationSorter: false }] });
 const cssVariables = require('../src/index');
 
 /**
@@ -63,7 +63,7 @@ function toProperties(variables) {
  * @returns {String} The value converted to camelCase.
  */
 function toCamelCase(value) {
-  return value.replace(/-([a-z0-9])/g, (_, c) => {
+  return value.replace(/-([a-z0-9])/gu, (_, c) => {
     return c.toUpperCase();
   });
 }
@@ -86,7 +86,7 @@ postcss([cssnano])
         const value = declaration.value;
 
         jsItems.push(`${toCamelCase(key)}: '${value}'`);
-        jsonItems.push(`"${key}": "${value.replace(/"/g, '\'')}"`);
+        jsonItems.push(`"${key}": "${value.replace(/"/gu, '\'')}"`);
         scssItems.push(`$${key}: ${value};`);
       });
     });

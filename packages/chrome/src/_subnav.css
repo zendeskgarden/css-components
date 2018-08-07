@@ -85,6 +85,7 @@
 
 .c-chrome__subnav__item:--chrome-current {
   background-color: var(--zd-chrome__subnav__item-current-background-color);
+  cursor: default;
 }
 
 .c-chrome__subnav__item:first-child {

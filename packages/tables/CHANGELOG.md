@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.7"></a>
+## [3.0.7](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.0.6...@zendeskgarden/css-tables@3.0.7) (2018-08-07)
+
+
+
+
+**Note:** Version bump only for package @zendeskgarden/css-tables
+
+<a name="3.0.6"></a>
+## [3.0.6](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.0.5...@zendeskgarden/css-tables@3.0.6) (2018-08-07)
+
+
+
+
+**Note:** Version bump only for package @zendeskgarden/css-tables
+
+<a name="3.0.5"></a>
+## [3.0.5](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.0.4...@zendeskgarden/css-tables@3.0.5) (2018-07-26)
+
+
+
+
+**Note:** Version bump only for package @zendeskgarden/css-tables
+
+<a name="3.0.4"></a>
+## [3.0.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.0.3...@zendeskgarden/css-tables@3.0.4) (2018-07-18)
+
+
+### Bug Fixes
+
+* **tables:** specify width of row overflow button ([#81](https://github.com/zendeskgarden/css-components/issues/81)) ([e3277a2](https://github.com/zendeskgarden/css-components/commit/e3277a2))
+
+
+
+
 <a name="3.0.3"></a>
 ## [3.0.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.0.2...@zendeskgarden/css-tables@3.0.3) (2018-07-18)
 

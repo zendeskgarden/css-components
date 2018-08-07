@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/css-components/issues"
   },
-  "version": "5.0.0",
+  "version": "5.0.3",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -26,10 +26,10 @@
     "watch": "watch 'yarn build' src --interval=.1"
   },
   "devDependencies": {
-    "jsonlint": "^1.6.3",
-    "postcss": "^6.0.20",
-    "stylelint-scss": "^2.5.0",
-    "watch": "^1.0.2"
+    "jsonlint": "1.6.3",
+    "postcss": "7.0.2",
+    "stylelint-scss": "3.2.0",
+    "watch": "1.0.2"
   },
   "keywords": [
     "components",

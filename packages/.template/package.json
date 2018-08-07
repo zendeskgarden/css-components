@@ -23,7 +23,7 @@
     "watch": "yarn build --watch"
   },
   "dependencies": {
-    "@zendeskgarden/css-variables": "^5.0.0"
+    "@zendeskgarden/css-variables": "^5.0.1"
   },
   "keywords": [
     "components",
