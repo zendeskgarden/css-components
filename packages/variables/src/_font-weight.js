@@ -6,7 +6,7 @@
  */
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping */
-let retVal = {
+const retVal = {
   regular: 400,
   semibold: 600
 };
