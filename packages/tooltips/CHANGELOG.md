@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.6"></a>
+## [4.0.6](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tooltips@4.0.5...@zendeskgarden/css-tooltips@4.0.6) (2018-08-07)
+
+
+
+
+**Note:** Version bump only for package @zendeskgarden/css-tooltips
+
 <a name="4.0.5"></a>
 ## [4.0.5](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tooltips@4.0.4...@zendeskgarden/css-tooltips@4.0.5) (2018-08-07)
 
