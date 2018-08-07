@@ -97,9 +97,9 @@
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@zendeskgarden/stylelint-config/-/stylelint-config-9.0.1.tgz#dbb339225d949f1394512d253646d9e2a64b44ab"
 
-"@zendeskgarden/svg-icons@^4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/svg-icons/-/svg-icons-4.4.0.tgz#6d1b953f2680f98cf356794fe3e41364e3e51819"
+"@zendeskgarden/svg-icons@^4.4.1":
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/svg-icons/-/svg-icons-4.4.1.tgz#7f44ada724e8308a6707123b7cdc1aac5d5290cb"
 
 JSONStream@^1.0.4:
   version "1.3.3"
