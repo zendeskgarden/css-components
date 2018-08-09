@@ -269,6 +269,7 @@
   <script>
   $(document).ready(function() {
     $('.c-chrome').toggleClass('is-rtl', Garden.parameters.dir === 'rtl');
+    $('.c-chrome__nav').toggleClass('c-chrome__nav--expanded', Garden.parameters.expanded === 'true');
     updateNavColor($('.c-chrome__nav'), Garden.parameters.color);
   });
   </script>
