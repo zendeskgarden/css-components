@@ -26,6 +26,9 @@
   --zd-chrome__nav__fab__text-margin: 0 4px;
   --zd-chrome__nav__item-height: 50px;
   --zd-chrome__nav__item-opacity: .6;
+  --zd-chrome__nav__item-padding-horizontal: calc(calc(var(--zd-chrome__nav-width) - var(--zd-chrome__nav__item__icon-size)) / 4);
+  --zd-chrome__nav__item-padding-vertical: calc(calc(var(--zd-chrome__nav__item-height) - var(--zd-chrome__nav__item__icon-size)) / 2);
+  --zd-chrome__nav__item-padding: var(--zd-chrome__nav__item-padding-vertical) var(--zd-chrome__nav__item-padding-horizontal);
   --zd-chrome__nav__item-transition:
     box-shadow .1s ease-in-out,
     background-color .1s ease-in-out,
@@ -38,9 +41,9 @@
   --zd-chrome__nav__item-hovered-background-color: color(var(--zd-color-black) alpha(10%));
   --zd-chrome__nav__item__icon-border-radius: 4px;
   --zd-chrome__nav__item__icon-size: 26px;
+  --zd-chrome__nav__item__text-line-height: calc(20 / 14);
   --zd-chrome__nav--expanded-width: 200px;
-  --zd-chrome__nav--expanded__item-padding: 0 calc(calc(var(--zd-chrome__nav-width) - var(--zd-chrome__nav__item__icon-size)) / 4);
-  --zd-chrome__nav--expanded__item__-margin: var(--zd-chrome__nav--expanded__item-padding);
+  --zd-chrome__nav--expanded__item__-margin: 0 var(--zd-chrome__nav__item-padding-horizontal);
 }
 
 /* 1. Button reset.
@@ -69,7 +72,8 @@
   border: none; /* [1] */
   background: transparent; /* [1] */
   cursor: pointer;
-  height: var(--zd-chrome__nav__item-height);
+  padding: var(--zd-chrome__nav__item-padding);
+  min-height: var(--zd-chrome__nav__item-height);
   font-size: inherit; /* [1] */
 }
 
@@ -98,6 +102,7 @@
 }
 
 .c-chrome__nav__item__icon {
+  align-self: flex-start;
   order: var(--zd-chrome__nav__item__icon-order);
   border-radius: var(--zd-chrome__nav__item__icon-border-radius);
   width: var(--zd-chrome__nav__item__icon-size);
@@ -106,7 +111,12 @@
 
 .c-chrome__nav__item__text {
   order: var(--zd-chrome__nav__item__text-order);
+  line-height: var(--zd-chrome__nav__item__text-line-height);
   @apply --zd-chrome__item__text-clipped;
+}
+
+.c-chrome__nav__item__text--wrap {
+  white-space: normal;
 }
 
 .c-chrome__nav__fab {
@@ -151,7 +161,6 @@
 
 .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo) {
   justify-content: start;
-  padding: var(--zd-chrome__nav--expanded__item-padding);
   text-align: left;
 }
 
