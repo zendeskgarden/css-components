@@ -9,8 +9,8 @@
   --zd-chrome__subnav-min-width: 180px;
   --zd-chrome__subnav-padding: 30px 20px;
   --zd-chrome__subnav__item-border-radius: 4px;
-  --zd-chrome__subnav__item-line-height: calc(30 / 14);
   --zd-chrome__subnav__item-margin: 8px;
+  --zd-chrome__subnav__item-min-height: 30px;
   --zd-chrome__subnav__item-opacity: .6;
   --zd-chrome__subnav__item-padding: 0 8px;
   --zd-chrome__subnav__item-transition:
@@ -23,6 +23,8 @@
     0 0 0 3px
     color(var(--zd-color-white) alpha(20%));
   --zd-chrome__subnav__item-hovered-background-color: color(var(--zd-color-black) alpha(10%));
+  --zd-chrome__subnav__item__text-line-height: calc(20 / 14);
+  --zd-chrome__subnav__item__text-margin: calc(calc(var(--zd-chrome__subnav__item-min-height) - 20px) / 2) 0;
 }
 
 .c-chrome__subnav {
@@ -40,6 +42,7 @@
 
 .c-chrome__subnav__item {
   display: flex;
+  align-items: center;
   transition: var(--zd-chrome__subnav__item-transition);
   opacity: var(--zd-chrome__subnav__item-opacity);
   margin-top: var(--zd-chrome__subnav__item-margin);
@@ -49,8 +52,7 @@
   cursor: pointer; /* [2] */
   padding: var(--zd-chrome__subnav__item-padding);
   width: 100%; /* [2] */
-  line-height: var(--zd-chrome__subnav__item-line-height);
-  white-space: nowrap;
+  min-height: var(--zd-chrome__subnav__item-min-height);
   font-size: inherit; /* [2] */
 }
 
@@ -97,6 +99,13 @@
 }
 
 .c-chrome__subnav__item__text {
+  margin: var(--zd-chrome__subnav__item__text-margin);
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: var(--zd-chrome__subnav__item__text-line-height);
+  white-space: nowrap;
+}
+
+.c-chrome__subnav__item__text--wrap {
+  white-space: normal;
 }
