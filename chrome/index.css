@@ -109,7 +109,8 @@
   border:none;
   background:transparent;
   cursor:pointer;
-  height:50px;
+  padding:12px 8.5px;
+  min-height:50px;
   font-size:inherit;
 }
 
@@ -121,13 +122,6 @@
   cursor:default;
 }
 
-.c-chrome__nav__item--brandmark{
-  -webkit-box-ordinal-group:2;
-      -ms-flex-order:1;
-          order:1;
-  margin-top:auto;
-}
-
 .c-chrome__nav__item,.c-chrome__nav__item:focus,.c-chrome__nav__item:hover{
   text-decoration:none;
   color:inherit;
@@ -137,11 +131,13 @@
   outline:none;
 }
 
-.c-chrome__nav__item--logo:not(.c-chrome__nav__item--brandmark),.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark).is-current,.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark).is-focused,.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark).is-hovered,.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark):hover,.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark)[aria-current=true]{
+.c-chrome__nav__item--logo,.c-chrome__nav__item.is-current,.c-chrome__nav__item.is-focused,.c-chrome__nav__item.is-hovered,.c-chrome__nav__item:hover,.c-chrome__nav__item[aria-current=true]{
   opacity:1;
 }
 
 .c-chrome__nav__item__icon{
+  -ms-flex-item-align:start;
+      align-self:flex-start;
   -webkit-box-ordinal-group:1;
       -ms-flex-order:0;
           order:0;
@@ -154,12 +150,17 @@
   -webkit-box-ordinal-group:2;
       -ms-flex-order:1;
           order:1;
+  line-height:1.42857;
   position:absolute;
   clip:rect(1px, 1px, 1px, 1px);
   width:1px;
   height:1px;
   overflow:hidden;
   white-space:nowrap;
+}
+
+.c-chrome__nav__item__text--wrap{
+  white-space:normal;
 }
 
 .c-chrome__nav__fab{
@@ -217,7 +218,6 @@
   -webkit-box-pack:start;
       -ms-flex-pack:start;
           justify-content:start;
-  padding:0 8.5px;
   text-align:left;
 }
 
@@ -305,6 +305,9 @@
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
   -webkit-transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out;
@@ -317,8 +320,7 @@
   cursor:pointer;
   padding:0 8px;
   width:100%;
-  line-height:2.14286;
-  white-space:nowrap;
+  min-height:30px;
   font-size:inherit;
 }
 
@@ -364,8 +366,15 @@
 }
 
 .c-chrome__subnav__item__text{
+  margin:5px 0;
   overflow:hidden;
   text-overflow:ellipsis;
+  line-height:1.42857;
+  white-space:nowrap;
+}
+
+.c-chrome__subnav__item__text--wrap{
+  white-space:normal;
 }
 
 .c-chrome__body__header{
