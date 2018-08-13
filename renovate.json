@@ -1,7 +1,6 @@
 {
   "extends": [
-    "config:base",
-    "schedule:weekends"
+    "config:base"
   ],
   "rebaseStalePrs": true,
   "packageRules": [
@@ -30,5 +29,6 @@
     "austin94",
     "ryanseddon",
     "jzempel"
-  ]
+  ],
+  "schedule": ["on Thursday"]
 }
