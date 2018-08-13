@@ -1,1 +1,1 @@
-../../node_modules/tinycolor2/dist/tinycolor-min.js
+../../packages/chrome/node_modules/tinycolor2/dist/tinycolor-min.js
