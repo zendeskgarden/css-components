@@ -5,20 +5,20 @@
   "scripts": {
     "build": "lerna run build --stream",
     "format": "prettier-package-json --write && lerna run format --stream",
-    "postinstall": "lerna bootstrap --stream",
+    "postinstall": "lerna bootstrap",
     "lint": "eslint scripts/*.js && lerna run lint --stream",
     "new": "scripts/new.js",
     "prepare": "yarn build",
     "start": "lerna run watch --parallel --stream & live-server demo",
-    "tag": "lerna publish --conventional-commits",
+    "tag": "lerna version --conventional-commits",
     "test": "lerna run test --stream"
   },
   "devDependencies": {
-    "@zendeskgarden/eslint-config": "7.0.1",
-    "@zendeskgarden/stylelint-config": "9.0.1",
-    "@zendeskgarden/svg-icons": "4.4.1",
+    "@zendeskgarden/eslint-config": "7.0.2",
+    "@zendeskgarden/stylelint-config": "9.0.2",
+    "@zendeskgarden/svg-icons": "4.4.2",
     "babel-eslint": "8.2.6",
-    "caniuse-lite": "1.0.30000874",
+    "caniuse-lite": "1.0.30000876",
     "chalk": "2.4.1",
     "cssnano": "4.0.5",
     "eslint": "5.3.0",
@@ -27,7 +27,7 @@
     "handlebars": "4.0.11",
     "husky": "1.0.0-rc.13",
     "klaw-sync": "4.0.0",
-    "lerna": "2.11.0",
+    "lerna": "3.0.3",
     "live-server": "1.2.0",
     "ncp": "2.0.0",
     "postcss-cli": "6.0.0",
@@ -35,10 +35,10 @@
     "postcss-import": "12.0.0",
     "postcss-inline-svg": "3.1.1",
     "postcss-input-range": "4.0.0",
-    "prettier-package-json": "1.6.0",
+    "prettier-package-json": "2.0.0",
     "rimraf": "2.6.2",
     "stylelint": "9.4.0",
-    "stylelint-order": "0.8.1"
+    "stylelint-order": "1.0.0"
   },
   "husky": {
     "hooks": {

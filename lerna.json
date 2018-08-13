@@ -1,11 +1,9 @@
 {
-  "lerna": "2.11.0",
   "npmClient": "yarn",
   "version": "independent",
-  "hoist": true,
-  "commands": {
-    "publish": {
-      "skipNpm": "true",
+  "command": {
+    "version": {
+      "push": "false",
       "allowBranch": "master",
       "message": "chore(release): publish"
     }
