@@ -53,7 +53,7 @@
       <svg class="c-chrome__nav__item__icon">
         <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill" />
       </svg>
-      <span class="c-chrome__nav__item__text">Settings</span>
+      <span class="c-chrome__nav__item__text c-chrome__nav__item__text--wrap">Administrative Settings</span>
     </a>
     <button class="c-chrome__nav__fab">
       <svg class="c-chrome__nav__fab__icon">
@@ -268,6 +268,7 @@
   <script>
   $(document).ready(function() {
     $('.c-chrome').toggleClass('is-rtl', Garden.parameters.dir === 'rtl');
+    $('.c-chrome__nav').toggleClass('c-chrome__nav--expanded', Garden.parameters.expanded === 'true');
     updateNavColor($('.c-chrome__nav'), Garden.parameters.color);
   });
   </script>

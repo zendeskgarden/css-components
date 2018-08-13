@@ -109,7 +109,8 @@
   border:none;
   background:transparent;
   cursor:pointer;
-  height:50px;
+  padding:12px 8.5px;
+  min-height:50px;
   font-size:inherit;
 }
 
@@ -135,6 +136,8 @@
 }
 
 .c-chrome__nav__item__icon{
+  -ms-flex-item-align:start;
+      align-self:flex-start;
   -webkit-box-ordinal-group:1;
       -ms-flex-order:0;
           order:0;
@@ -147,12 +150,17 @@
   -webkit-box-ordinal-group:2;
       -ms-flex-order:1;
           order:1;
+  line-height:1.42857;
   position:absolute;
   clip:rect(1px, 1px, 1px, 1px);
   width:1px;
   height:1px;
   overflow:hidden;
   white-space:nowrap;
+}
+
+.c-chrome__nav__item__text--wrap{
+  white-space:normal;
 }
 
 .c-chrome__nav__fab{
@@ -210,7 +218,6 @@
   -webkit-box-pack:start;
       -ms-flex-pack:start;
           justify-content:start;
-  padding:0 8.5px;
   text-align:left;
 }
 
@@ -298,6 +305,9 @@
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
   -webkit-transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   transition:background-color .1s ease-in-out,opacity .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out;
@@ -310,8 +320,7 @@
   cursor:pointer;
   padding:0 8px;
   width:100%;
-  line-height:2.14286;
-  white-space:nowrap;
+  min-height:30px;
   font-size:inherit;
 }
 
@@ -357,8 +366,15 @@
 }
 
 .c-chrome__subnav__item__text{
+  margin:5px 0;
   overflow:hidden;
   text-overflow:ellipsis;
+  line-height:1.42857;
+  white-space:nowrap;
+}
+
+.c-chrome__subnav__item__text--wrap{
+  white-space:normal;
 }
 
 .c-chrome__body__header{
