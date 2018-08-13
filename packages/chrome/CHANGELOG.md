@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.0.8...@zendeskgarden/css-chrome@3.1.0) (2018-08-13)
+
+
+### Features
+
+* **chrome:** update nav elements with option to wrap text ([#92](https://github.com/zendeskgarden/css-components/issues/92)) ([4d70aef](https://github.com/zendeskgarden/css-components/commit/4d70aef))
+
+
+
+
+
 <a name="3.0.8"></a>
 ## [3.0.8](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.0.7...@zendeskgarden/css-chrome@3.0.8) (2018-08-13)
 
