@@ -892,7 +892,6 @@
           <li class="u-mb-sm"><code class="c-code">.c-chrome--dark</code> – toggles "dark mode" styling (via settings menu).</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome.is-rtl</code> – toggles RTL layout (via settings menu).</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome--custom</code> – toggles accent overrides (via settings menu).</li>
-          <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item--brandmark</code> – combine with <code class="c-code">.c-chrome__nav__item--logo</code> to style a brandmark at the bottom of the nav (note that additional navigation items may appear beneath this item if the product design calls for it).</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item--logo</code> – style the product logo shown as the top item in the nav.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item.is-current</code> – indicate which item is current in the nav.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item__text--wrap</code> – use to wrap long text in the nav.</li>
@@ -956,7 +955,7 @@
         <h1 class="c-main__subtitle u-alpha u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-<textarea class="c-playground__code"><div class="c-chrome" style="height: 350px">
+<textarea class="c-playground__code"><div class="c-chrome c-chrome--demo">
   <nav class="c-chrome__nav">
     <div class="c-chrome__nav__item c-chrome__nav__item--logo c-chrome__nav__item--logo--connect" title="Zendesk Connect">
       <svg class="c-chrome__nav__item__icon">
@@ -988,12 +987,11 @@
       </svg>
       <span class="c-chrome__nav__item__text">Settings</span>
     </a>
-    <div class="c-chrome__nav__item c-chrome__nav__item--logo c-chrome__nav__item--brandmark" title="Zendesk">
-      <svg class="c-chrome__nav__item__icon">
-        <use xlink:href="../index.svg#zd-svg-icon-26-zendesk" />
+    <button class="c-chrome__nav__fab">
+      <svg class="c-chrome__nav__fab__icon">
+        <use xlink:href="../index.svg#zd-svg-icon-14-plus" />
       </svg>
-      <span class="c-chrome__nav__item__text">Zendesk</span>
-    </div>
+    </button>
   </nav>
   <!--
   <nav class="c-chrome__subnav">
