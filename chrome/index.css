@@ -122,6 +122,13 @@
   cursor:default;
 }
 
+.c-chrome__nav__item--brandmark{
+  -webkit-box-ordinal-group:2;
+      -ms-flex-order:1;
+          order:1;
+  margin-top:auto;
+}
+
 .c-chrome__nav__item,.c-chrome__nav__item:focus,.c-chrome__nav__item:hover{
   text-decoration:none;
   color:inherit;
@@ -131,7 +138,7 @@
   outline:none;
 }
 
-.c-chrome__nav__item--logo,.c-chrome__nav__item.is-current,.c-chrome__nav__item.is-focused,.c-chrome__nav__item.is-hovered,.c-chrome__nav__item:hover,.c-chrome__nav__item[aria-current=true]{
+.c-chrome__nav__item--logo:not(.c-chrome__nav__item--brandmark),.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark).is-current,.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark).is-focused,.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark).is-hovered,.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark):hover,.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark)[aria-current=true]{
   opacity:1;
 }
 
