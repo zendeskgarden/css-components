@@ -218,7 +218,7 @@
   -webkit-box-pack:start;
       -ms-flex-pack:start;
           justify-content:start;
-  text-align:left;
+  text-align:inherit;
 }
 
 .c-chrome__nav--expanded .c-chrome__nav__item__icon,.c-chrome__nav--expanded .c-chrome__nav__item__text{
@@ -277,10 +277,6 @@
           box-shadow:0 6px 12px 0 rgba(4, 68, 77, .15);
 }
 
-.c-chrome.is-rtl .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo){
-  text-align:right;
-}
-
 .c-chrome.is-rtl .c-chrome__nav__fab{
   right:auto;
   left:-30px;
@@ -321,6 +317,7 @@
   padding:0 8px;
   width:100%;
   min-height:30px;
+  text-align:inherit;
   font-size:inherit;
 }
 
