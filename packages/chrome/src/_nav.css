@@ -161,7 +161,7 @@
 
 .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo) {
   justify-content: start;
-  text-align: left;
+  text-align: inherit;
 }
 
 .c-chrome__nav--expanded .c-chrome__nav__item__icon,
@@ -213,10 +213,6 @@
 .c-chrome__nav__item:not(.c-chrome__nav__item--logo):active:--chrome-focused,
 .c-chrome__nav__fab:active:--chrome-focused {
   box-shadow: var(--zd-chrome__nav__fab-box-shadow);
-}
-
-.c-chrome.is-rtl .c-chrome__nav--expanded .c-chrome__nav__item:not(.c-chrome__nav__item--logo) {
-  text-align: right;
 }
 /* stylelint-enable max-line-length, selector-max-specificity */
 
