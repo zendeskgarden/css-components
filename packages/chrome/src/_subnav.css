@@ -53,6 +53,7 @@
   padding: var(--zd-chrome__subnav__item-padding);
   width: 100%; /* [2] */
   min-height: var(--zd-chrome__subnav__item-min-height);
+  text-align: inherit; /* [2] */
   font-size: inherit; /* [2] */
 }
 
