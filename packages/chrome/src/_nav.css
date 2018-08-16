@@ -44,6 +44,7 @@
   --zd-chrome__nav__item__text-line-height: calc(20 / 14);
   --zd-chrome__nav--expanded-width: 200px;
   --zd-chrome__nav--expanded__item__-margin: 0 var(--zd-chrome__nav__item-padding-horizontal);
+  --zd-chrome__nav__item--brandmark-opacity: .3;
 }
 
 /* 1. Button reset.
@@ -85,6 +86,7 @@
 
 .c-chrome__nav__item--brandmark {
   order: var(--zd-chrome__nav__item-order);
+  opacity: var(--zd-chrome__nav__item--brandmark-opacity);
   margin-top: auto;
 }
 
