@@ -25,9 +25,6 @@
   "dependencies": {
     "@zendeskgarden/css-variables": "^5.0.4"
   },
-  "devDependencies": {
-    "tinycolor2": "1.4.1"
-  },
   "keywords": [
     "components",
     "css",

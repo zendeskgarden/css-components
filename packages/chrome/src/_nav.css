@@ -44,6 +44,7 @@
   --zd-chrome__nav__item__text-line-height: calc(20 / 14);
   --zd-chrome__nav--expanded-width: 200px;
   --zd-chrome__nav--expanded__item__-margin: 0 var(--zd-chrome__nav__item-padding-horizontal);
+  --zd-chrome__nav__item--brandmark-opacity: .3;
 }
 
 /* 1. Button reset.
@@ -83,6 +84,12 @@
   cursor: default;
 }
 
+.c-chrome__nav__item--brandmark {
+  order: var(--zd-chrome__nav__item-order);
+  opacity: var(--zd-chrome__nav__item--brandmark-opacity);
+  margin-top: auto;
+}
+
 .c-chrome__nav__item,
 .c-chrome__nav__item:hover,
 .c-chrome__nav__item:focus {
@@ -94,10 +101,10 @@
   outline: none; /* [2] */
 }
 
-.c-chrome__nav__item--logo,
-.c-chrome__nav__item:--chrome-hovered,
-.c-chrome__nav__item:--chrome-focused,
-.c-chrome__nav__item:--chrome-current {
+.c-chrome__nav__item--logo:not(.c-chrome__nav__item--brandmark),
+.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark):--chrome-hovered,
+.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark):--chrome-focused,
+.c-chrome__nav__item:not(.c-chrome__nav__item--brandmark):--chrome-current {
   opacity: 1;
 }
 
