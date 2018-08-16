@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.1"></a>
+## [3.1.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.1.0...@zendeskgarden/css-chrome@3.1.1) (2018-08-15)
+
+
+### Bug Fixes
+
+* **chrome:** add subnav styling resets ([#100](https://github.com/zendeskgarden/css-components/issues/100)) ([9d2c80d](https://github.com/zendeskgarden/css-components/commit/9d2c80d))
+
+
+
+
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.0.8...@zendeskgarden/css-chrome@3.1.0) (2018-08-13)
 
