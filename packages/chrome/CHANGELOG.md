@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.1.1...@zendeskgarden/css-chrome@3.2.0) (2018-08-16)
+
+
+### Features
+
+* **chrome:** add brandmark element styling ([#98](https://github.com/zendeskgarden/css-components/issues/98)) ([1cab4e8](https://github.com/zendeskgarden/css-components/commit/1cab4e8))
+
+
+
+
+
 <a name="3.1.1"></a>
 ## [3.1.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.1.0...@zendeskgarden/css-chrome@3.1.1) (2018-08-15)
 
