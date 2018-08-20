@@ -8,7 +8,7 @@
   --zd-dialog-box-shadow-blur-radius: 28px;
   --zd-dialog-box-shadow:
     0 var(--zd-dialog-box-shadow-offset-y) var(--zd-dialog-box-shadow-blur-radius) 0
-    color(var(--zd-color-kale-600) alpha(15%));
+    color-mod(var(--zd-color-kale-600) alpha(15%));
   --zd-dialog-margin: 48px;
   --zd-dialog-min-height: calc(var(--zd-dialog__close-size) + (2 * var(--zd-dialog__close-top)));
   --zd-dialog-width: 544px;

@@ -8,7 +8,7 @@
   --zd-chrome__nav__fab-background-color: var(--zd-color-kale-400);
   --zd-chrome__nav__fab-box-shadow:
     0 6px 12px 0
-    color(var(--zd-color-kale-600) alpha(15%));
+    color-mod(var(--zd-color-kale-600) alpha(15%));
   --zd-chrome__nav__fab-bottom: 22px;
   --zd-chrome__nav__fab-font-weight: var(--zd-font-weight-semibold);
   --zd-chrome__nav__fab-height: 40px;
@@ -21,7 +21,7 @@
   --zd-chrome__nav__fab-focused-box-shadow:
     var(--zd-chrome__nav__fab-box-shadow),
     var(--zd-chrome__nav__item-focused-box-shadow);
-  --zd-chrome__nav__fab-hovered-background-color: color(var(--zd-chrome__nav__fab-background-color) lightness(+10%));
+  --zd-chrome__nav__fab-hovered-background-color: color-mod(var(--zd-chrome__nav__fab-background-color) lightness(+10%));
   --zd-chrome__nav__fab__icon-size: 20px;
   --zd-chrome__nav__fab__text-margin: 0 4px;
   --zd-chrome__nav__item-height: 50px;
@@ -33,12 +33,12 @@
     box-shadow .1s ease-in-out,
     background-color .1s ease-in-out,
     opacity .1s ease-in-out;
-  --zd-chrome__nav__item-active-background-color: color(var(--zd-color-white) alpha(10%));
+  --zd-chrome__nav__item-active-background-color: color-mod(var(--zd-color-white) alpha(10%));
   --zd-chrome__nav__item-current-background-color: var(--zd-chrome-accent-color);
   --zd-chrome__nav__item-focused-box-shadow:
     inset 0 0 0 3px
-    color(var(--zd-color-white) alpha(20%));
-  --zd-chrome__nav__item-hovered-background-color: color(var(--zd-color-black) alpha(10%));
+    color-mod(var(--zd-color-white) alpha(20%));
+  --zd-chrome__nav__item-hovered-background-color: color-mod(var(--zd-color-black) alpha(10%));
   --zd-chrome__nav__item__icon-border-radius: 4px;
   --zd-chrome__nav__item__icon-size: 26px;
   --zd-chrome__nav__item__text-line-height: calc(20 / 14);

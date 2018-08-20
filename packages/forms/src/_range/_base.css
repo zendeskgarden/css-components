@@ -9,7 +9,7 @@
   --zd-range-thumb-border-radius: 100%;
   --zd-range-thumb-box-shadow:
     0 4px 8px 0
-    color(var(--zd-color-grey-800) alpha(24%));
+    color-mod(var(--zd-color-grey-800) alpha(24%));
   --zd-range-thumb-margin: calc(var(--zd-range-margin) * -1) 0;
   --zd-range-thumb-size: var(--zd-spacing);
   --zd-range-track-background-color: var(--zd-color-grey-200);

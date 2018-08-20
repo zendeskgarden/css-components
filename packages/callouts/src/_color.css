@@ -9,7 +9,7 @@
   --zd-callout--dialog-background-color: var(--zd-callout-background-color);
   --zd-callout--dialog-box-shadow:
     0 20px 28px 0
-    color(var(--zd-color-kale-600) alpha(15%));
+    color-mod(var(--zd-color-kale-600) alpha(15%));
   --zd-callout--dialog--alert-border-color: var(--zd-callout-border-color);
   --zd-callout--dialog--alert-color: var(--zd-color-grey-700);
   --zd-callout--dialog--error-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-red-500));

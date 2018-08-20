@@ -2,7 +2,7 @@
 @import '_variables';
 
 :root {
-  --zd-btn--muted-background-color: color(var(--zd-btn--muted-color) alpha(15%));
+  --zd-btn--muted-background-color: color-mod(var(--zd-btn--muted-color) alpha(15%));
   --zd-btn--muted-color-active: var(--zd-color-grey-800);
 }
 

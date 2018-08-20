@@ -6,7 +6,7 @@
   --zd-btn-active-background-color: var(--zd-color-blue-700);
   --zd-btn-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-btn-color) alpha(35%));
+    color-mod(var(--zd-btn-color) alpha(35%));
   --zd-btn-hovered-background-color: var(--zd-btn-border-color);
   --zd-btn-disabled-background-color: var(--zd-color-grey-200);
   --zd-btn-disabled-color: var(--zd-color-grey-400);
@@ -16,7 +16,7 @@
   --zd-btn--danger-active-background-color: var(--zd-color-red-700);
   --zd-btn--danger-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-btn--danger-color) alpha(35%));
+    color-mod(var(--zd-btn--danger-color) alpha(35%));
   --zd-btn--danger-hovered-background-color: var(--zd-btn--danger-border-color);
   --zd-btn--muted-color: var(--zd-color-grey-500);
 }

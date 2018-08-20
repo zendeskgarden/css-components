@@ -5,7 +5,7 @@
   --zd-table__row__cell__overflow-transition:
     opacity .25s ease-in-out,
     background-color .1s ease-in-out;
-  --zd-table__row__cell__overflow-focused-background-color: color(var(--zd-color-grey-600) alpha(15%));
+  --zd-table__row__cell__overflow-focused-background-color: color-mod(var(--zd-color-grey-600) alpha(15%));
   --zd-table__row__cell__overflow-hovered-background-image: svg-load('26/ellipsis.svg', color: var(--zd-color-grey-800));
   --zd-table__row--header__cell__overflow-top: calc(calc(var(--zd-table__row--header-height) / 2) - 1em);
   --zd-table--lg__row__cell__overflow-top: calc(calc(var(--zd-table--lg__row-height) / 2) - 1em);

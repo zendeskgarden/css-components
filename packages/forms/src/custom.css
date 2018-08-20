@@ -12,10 +12,10 @@
 
 :root {
   --zd-forms--custom-accent-color: var(--zd-color-mandy);
-  --zd-forms--custom-accent-color-active: color(var(--zd-forms--custom-accent-color) blackness(+10%));
+  --zd-forms--custom-accent-color-active: color-mod(var(--zd-forms--custom-accent-color) blackness(+10%));
   --zd-forms--custom-box-shadow:
     0 0 0 3px
-    color(var(--zd-forms--custom-accent-color) alpha(40%));
+    color-mod(var(--zd-forms--custom-accent-color) alpha(40%));
   --zd-range--custom-track-background-image: linear-gradient(var(--zd-forms--custom-accent-color), var(--zd-forms--custom-accent-color));
 }
 

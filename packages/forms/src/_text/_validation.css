@@ -4,15 +4,15 @@
   --zd-txt--error-focused-border-color: var(--zd-color-red-600);
   --zd-txt--error-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-txt--error-focused-border-color) alpha(35%));
+    color-mod(var(--zd-txt--error-focused-border-color) alpha(35%));
   --zd-txt--success-focused-border-color: var(--zd-color-green-600);
   --zd-txt--success-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-txt--success-focused-border-color) alpha(35%));
+    color-mod(var(--zd-txt--success-focused-border-color) alpha(35%));
   --zd-txt--warning-focused-border-color: var(--zd-color-yellow-600);
   --zd-txt--warning-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-txt--warning-focused-border-color) alpha(35%));
+    color-mod(var(--zd-txt--warning-focused-border-color) alpha(35%));
 }
 
 /* stylelint-disable selector-max-specificity */

@@ -7,7 +7,7 @@
   --zd-menu-border-radius: 4px;
   --zd-menu-box-shadow:
     0 20px 30px 0
-    color(var(--zd-color-kale-600) alpha(15%));
+    color-mod(var(--zd-color-kale-600) alpha(15%));
   --zd-menu-font-size: var(--zd-font-size-epsilon);
   --zd-menu-font-weight: var(--zd-font-weight-regular);
   --zd-menu-min-width: 180px;

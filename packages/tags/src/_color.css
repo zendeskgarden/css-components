@@ -13,22 +13,22 @@
   --zd-tag--yellow-color: var(--zd-color-yellow-800);
   --zd-tag--blue-focused-box-shadow:
     var(--zd-tag-focused-box-shadow)
-    color(var(--zd-tag--blue-background-color) alpha(35%));
+    color-mod(var(--zd-tag--blue-background-color) alpha(35%));
   --zd-tag--green-focused-box-shadow:
     var(--zd-tag-focused-box-shadow)
-    color(var(--zd-tag--green-background-color) alpha(35%));
+    color-mod(var(--zd-tag--green-background-color) alpha(35%));
   --zd-tag--grey-focused-box-shadow:
     var(--zd-tag-focused-box-shadow)
-    color(var(--zd-tag--grey-background-color) alpha(35%));
+    color-mod(var(--zd-tag--grey-background-color) alpha(35%));
   --zd-tag--kale-focused-box-shadow:
     var(--zd-tag-focused-box-shadow)
-    color(var(--zd-tag--kale-background-color) alpha(35%));
+    color-mod(var(--zd-tag--kale-background-color) alpha(35%));
   --zd-tag--red-focused-box-shadow:
     var(--zd-tag-focused-box-shadow)
-    color(var(--zd-tag--red-background-color) alpha(35%));
+    color-mod(var(--zd-tag--red-background-color) alpha(35%));
   --zd-tag--yellow-focused-box-shadow:
     var(--zd-tag-focused-box-shadow)
-    color(var(--zd-tag--yellow-background-color) alpha(35%));
+    color-mod(var(--zd-tag--yellow-background-color) alpha(35%));
 }
 
 .c-tag.c-tag--blue {

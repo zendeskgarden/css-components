@@ -16,7 +16,7 @@
   --zd-tab--custom__list__item-disabled-color: var(--zd-tab-disabled-color);
   --zd-tab--custom__list__item-focused-box-shadow:
     var(--zd-tab-focused-box-shadow)
-    color(var(--zd-tab--custom-accent-color) alpha(35%));
+    color-mod(var(--zd-tab--custom-accent-color) alpha(35%));
   --zd-tab--custom__list__item-focused-border-radius: 4px;
   --zd-tab--custom__list__item-focused-color: var(--zd-tab--custom-accent-color);
   --zd-tab--custom__list__item-hovered-color: var(--zd-tab--custom-accent-color);
