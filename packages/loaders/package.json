@@ -23,10 +23,7 @@
     "watch": "yarn build --watch"
   },
   "dependencies": {
-    "@zendeskgarden/css-variables": "^5.0.0"
-  },
-  "devDependencies": {
-    "lottie-web": "^5.2.0"
+    "@zendeskgarden/css-variables": "^5.0.4"
   },
   "keywords": [
     "components",
