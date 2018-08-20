@@ -3,7 +3,7 @@
 }
 
 .o-loader--dots circle {
-  transform: translateZ(0); /* trigger GPU acceleration */
+  will-change: transform;
   animation-duration: 1250ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
