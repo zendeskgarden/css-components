@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.1.1...@zendeskgarden/css-chrome@3.2.0) (2018-08-16)
+
+
+### Features
+
+* **chrome:** add brandmark element styling ([#98](https://github.com/zendeskgarden/css-components/issues/98)) ([1cab4e8](https://github.com/zendeskgarden/css-components/commit/1cab4e8))
+
+
+
+
+
+<a name="3.1.1"></a>
+## [3.1.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.1.0...@zendeskgarden/css-chrome@3.1.1) (2018-08-15)
+
+
+### Bug Fixes
+
+* **chrome:** add subnav styling resets ([#100](https://github.com/zendeskgarden/css-components/issues/100)) ([9d2c80d](https://github.com/zendeskgarden/css-components/commit/9d2c80d))
+
+
+
+
+
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.0.8...@zendeskgarden/css-chrome@3.1.0) (2018-08-13)
+
+
+### Features
+
+* **chrome:** update nav elements with option to wrap text ([#92](https://github.com/zendeskgarden/css-components/issues/92)) ([4d70aef](https://github.com/zendeskgarden/css-components/commit/4d70aef))
+
+
+
+
+
+<a name="3.0.8"></a>
+## [3.0.8](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.0.7...@zendeskgarden/css-chrome@3.0.8) (2018-08-13)
+
+**Note:** Version bump only for package @zendeskgarden/css-chrome
+
+
+
+
+
 <a name="3.0.7"></a>
 ## [3.0.7](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.0.6...@zendeskgarden/css-chrome@3.0.7) (2018-08-07)
 

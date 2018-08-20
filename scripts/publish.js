@@ -11,7 +11,7 @@ const path = require('path');
 const childProcess = require('child_process');
 const lernaBin = path.resolve(__dirname, '..', 'node_modules', '.bin', 'lerna');
 const lernaConfig = require(path.resolve(__dirname, '..', 'lerna.json'));
-const PUBLISH_COMMIT_MESSAGE = lernaConfig.commands.publish.message;
+const PUBLISH_COMMIT_MESSAGE = lernaConfig.command.version.message;
 
 if (process.env.TRAVIS_COMMIT_MESSAGE &&
     process.env.TRAVIS_COMMIT_MESSAGE.startsWith(PUBLISH_COMMIT_MESSAGE)) {
