@@ -11,7 +11,7 @@
   --zd-menu__item-disabled--checked-background-image: svg-load('14/checkmark-lg.svg', color: var(--zd-menu__item-disabled-color));
   --zd-menu__item-disabled--next-background-image: svg-load('14/next.svg', color: var(--zd-menu__item-disabled-color));
   --zd-menu__item-disabled--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu__item-disabled-color));
-  --zd-menu__item-focused-box-shadow-color: color(var(--zd-menu-accent-color) alpha(35%));
+  --zd-menu__item-focused-box-shadow-color: color-mod(var(--zd-menu-accent-color) alpha(35%));
   --zd-menu__item-focused-box-shadow:
     inset 0 3px 0 var(--zd-menu__item-focused-box-shadow-color),
     inset 0 -3px 0 var(--zd-menu__item-focused-box-shadow-color);

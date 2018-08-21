@@ -5,7 +5,7 @@
   --zd-tooltip-border-radius: 2px;
   --zd-tooltip-box-shadow:
     0 4px 8px 0
-    color(var(--zd-color-kale-600) alpha(15%));
+    color-mod(var(--zd-color-kale-600) alpha(15%));
   --zd-tooltip-color: var(--zd-color-white);
   --zd-tooltip-font-size: var(--zd-font-size-zeta);
   --zd-tooltip-font-weight: var(--zd-font-weight-regular);

@@ -47,7 +47,7 @@
   outline: 0;
   box-shadow:
     var(--zd-tag-focused-box-shadow)
-    color(var(--zd-color-grey-600) alpha(35%));
+    color-mod(var(--zd-color-grey-600) alpha(35%));
   text-decoration: none; /* [2] */
   color: var(--zd-tag-color); /* [2] */
 }

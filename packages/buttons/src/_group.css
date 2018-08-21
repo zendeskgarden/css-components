@@ -5,7 +5,7 @@
   --zd-btn-group--light-border-color: var(--zd-color-grey-100);
   --zd-btn-group--primary-focused-box-shadow:
     inset 0 0 0 3px
-    color(var(--zd-color-white) alpha(35%));
+    color-mod(var(--zd-color-white) alpha(35%));
   --zd-btn-group--primary-line-height: var(--zd-btn--icon-size);
   --zd-btn-group--primary--sm-line-height: var(--zd-btn--icon--sm-size);
   --zd-btn-group--primary--lg-line-height: var(--zd-btn--icon--lg-size);

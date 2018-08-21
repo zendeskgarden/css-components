@@ -3,13 +3,13 @@
 @import '_selectors';
 
 :root {
-  --zd-pagination__page-active-background-color: color(var(--zd-color-grey-600) alpha(25%));
-  --zd-pagination__page-current-background-color: color(var(--zd-color-grey-600) alpha(15%));
+  --zd-pagination__page-active-background-color: color-mod(var(--zd-color-grey-600) alpha(25%));
+  --zd-pagination__page-current-background-color: color-mod(var(--zd-color-grey-600) alpha(15%));
   --zd-pagination__page-current-color: var(--zd-color-grey-800);
   --zd-pagination__page-current-font-weight: var(--zd-font-weight-semibold);
   --zd-pagination__page-focused-box-shadow:
     inset 0 0 0 3px
-    color(var(--zd-pagination-accent-color) alpha(35%));
+    color-mod(var(--zd-pagination-accent-color) alpha(35%));
   --zd-pagination__page-hovered-background-color: var(--zd-pagination__page-current-background-color);
   --zd-pagination__page-hovered-color: var(--zd-pagination__page-current-color);
   --zd-pagination__page--next-hovered-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-800));

@@ -17,12 +17,12 @@
     box-shadow .1s ease-in-out,
     background-color .1s ease-in-out,
     opacity .1s ease-in-out;
-  --zd-chrome__subnav__item-active-background-color: color(var(--zd-color-white) alpha(3%));
-  --zd-chrome__subnav__item-current-background-color: color(var(--zd-color-white) alpha(10%));
+  --zd-chrome__subnav__item-active-background-color: color-mod(var(--zd-color-white) alpha(3%));
+  --zd-chrome__subnav__item-current-background-color: color-mod(var(--zd-color-white) alpha(10%));
   --zd-chrome__subnav__item-focused-box-shadow:
     0 0 0 3px
-    color(var(--zd-color-white) alpha(20%));
-  --zd-chrome__subnav__item-hovered-background-color: color(var(--zd-color-black) alpha(10%));
+    color-mod(var(--zd-color-white) alpha(20%));
+  --zd-chrome__subnav__item-hovered-background-color: color-mod(var(--zd-color-black) alpha(10%));
   --zd-chrome__subnav__item__text-line-height: calc(20 / 14);
   --zd-chrome__subnav__item__text-margin: calc(calc(var(--zd-chrome__subnav__item-min-height) - 20px) / 2) 0;
 }

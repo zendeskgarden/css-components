@@ -15,11 +15,11 @@
   --zd-menu--custom__item--icon-background-image: svg-load('14/checkmark-lg.svg', color: var(--zd-menu--custom-accent-color));
   --zd-menu--custom__item--next-background-image: svg-load('14/next.svg', color: var(--zd-menu--custom-accent-color));
   --zd-menu--custom__item--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu--custom-accent-color));
-  --zd-menu--custom__item-focused-box-shadow-color: color(var(--zd-menu--custom-accent-color) alpha(35%));
+  --zd-menu--custom__item-focused-box-shadow-color: color-mod(var(--zd-menu--custom-accent-color) alpha(35%));
   --zd-menu--custom__item-focused-box-shadow:
     inset 0 3px 0 var(--zd-menu--custom__item-focused-box-shadow-color),
     inset 0 -3px 0 var(--zd-menu--custom__item-focused-box-shadow-color);
-  --zd-menu--custom__item-hovered-background-color: color(var(--zd-menu--custom-accent-color) alpha(15%));
+  --zd-menu--custom__item-hovered-background-color: color-mod(var(--zd-menu--custom-accent-color) alpha(15%));
 }
 
 .c-menu--custom .c-menu__item::before {
