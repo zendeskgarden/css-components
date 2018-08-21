@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.0.9"></a>
+## [6.0.9](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@6.0.8...@zendeskgarden/css-forms@6.0.9) (2018-08-21)
+
+**Note:** Version bump only for package @zendeskgarden/css-forms
+
+
+
+
+
 <a name="6.0.8"></a>
 ## [6.0.8](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@6.0.7...@zendeskgarden/css-forms@6.0.8) (2018-08-13)
 
