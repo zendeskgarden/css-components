@@ -29,7 +29,6 @@
 .c-tab__list__item{
   display:inline-block;
   position:relative;
-  -webkit-transition:color .25s ease-in-out;
   transition:color .25s ease-in-out;
   border-bottom:solid transparent;
   border-width:3px;
@@ -130,10 +129,7 @@
 }
 
 .c-tab__list__item:before{
-  -webkit-transition:-webkit-box-shadow .1s ease-in-out;
-  transition:-webkit-box-shadow .1s ease-in-out;
   transition:box-shadow .1s ease-in-out;
-  transition:box-shadow .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   content:"";
 }
 
@@ -143,9 +139,7 @@
   right:24px;
   left:24px;
   border-radius:4px;
-  -webkit-box-shadow:inset 0 0 0 2px
-    rgba(31, 115, 183, .35);
-          box-shadow:inset 0 0 0 2px rgba(31, 115, 183, .35);
+  box-shadow:inset 0 0 0 2px rgba(31, 115, 183, .35);
   height:20px;
   pointer-events:none;
 }
@@ -156,8 +150,7 @@
 }
 
 .c-tab__list__item.c-tab__list__item.is-active:before,.c-tab__list__item.c-tab__list__item:active:before{
-  -webkit-box-shadow:none;
-          box-shadow:none;
+  box-shadow:none;
 }
 
 .c-tab__list__item.c-tab__list__item.is-selected{

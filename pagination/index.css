@@ -6,12 +6,8 @@
  */
 
 .c-pagination{
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-pack:center;
-      -ms-flex-pack:center;
-          justify-content:center;
+  justify-content:center;
   margin-top:0;
   padding:0;
   white-space:nowrap;
@@ -19,10 +15,7 @@
 
 .c-pagination__page{
   display:inline-block;
-  -webkit-transition:background .25s ease-in-out,color .25s ease-in-out,-webkit-box-shadow .1s ease-in-out;
-  transition:background .25s ease-in-out,color .25s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   transition:background .25s ease-in-out,box-shadow .1s ease-in-out,color .25s ease-in-out;
-  transition:background .25s ease-in-out,box-shadow .1s ease-in-out,color .25s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   margin-left:4px;
   border-radius:4px;
   cursor:pointer;
@@ -106,9 +99,7 @@
 
 .c-pagination__page.is-focused{
   outline:none;
-  -webkit-box-shadow:inset 0 0 0 3px
-    rgba(31, 115, 183, .35);
-          box-shadow:inset 0 0 0 3px rgba(31, 115, 183, .35);
+  box-shadow:inset 0 0 0 3px rgba(31, 115, 183, .35);
 }
 
 .c-pagination__page:focus,.c-pagination__page a:focus{
@@ -117,8 +108,7 @@
 }
 
 .c-pagination__page.is-active,.c-pagination__page:active{
-  -webkit-box-shadow:none;
-          box-shadow:none;
+  box-shadow:none;
   background-color:rgba(104, 115, 125, .25);
 }
 
@@ -137,8 +127,7 @@
 }
 
 .c-pagination__page--next.is-focused,.c-pagination__page--previous.is-focused{
-  -webkit-box-shadow:none;
-          box-shadow:none;
+  box-shadow:none;
   background-color:rgba(104, 115, 125, .15);
 }
 

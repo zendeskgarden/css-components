@@ -7,12 +7,9 @@
 
 .c-tooltip{
   display:inline-block;
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
+  box-sizing:border-box;
   border-radius:2px;
-  -webkit-box-shadow:0 4px 8px 0
-    rgba(4, 68, 77, .15);
-          box-shadow:0 4px 8px 0 rgba(4, 68, 77, .15);
+  box-shadow:0 4px 8px 0 rgba(4, 68, 77, .15);
   background-color:#03363d;
   padding:0 1em;
   line-height:1.66667;
@@ -91,9 +88,7 @@
 
 .c-tooltip--light{
   border:1px solid #d8dcde;
-  -webkit-box-shadow:0 12px 20px 0
-    rgba(4, 68, 77, .15);
-          box-shadow:0 12px 20px 0 rgba(4, 68, 77, .15);
+  box-shadow:0 12px 20px 0 rgba(4, 68, 77, .15);
   background-color:#fff;
   color:#49545c;
 }

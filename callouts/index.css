@@ -36,7 +36,6 @@
   position:absolute;
   top:4px;
   right:4px;
-  -webkit-transition:background-color .1s ease-in-out;
   transition:background-color .1s ease-in-out;
   border:none;
   border-radius:50%;
@@ -60,7 +59,6 @@
   right:0;
   bottom:0;
   left:0;
-  -webkit-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
   background-repeat:no-repeat;
   background-position:50%;
@@ -168,9 +166,7 @@
 }
 
 .c-callout--dialog{
-  -webkit-box-shadow:0 20px 28px 0
-    rgba(4, 68, 77, .15);
-          box-shadow:0 20px 28px 0 rgba(4, 68, 77, .15);
+  box-shadow:0 20px 28px 0 rgba(4, 68, 77, .15);
 }
 
 .c-callout--dialog.c-callout--error,.c-callout--dialog.c-callout--success,.c-callout--dialog.c-callout--warning{

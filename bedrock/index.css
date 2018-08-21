@@ -20,8 +20,7 @@ h1{
 }
 
 hr{
-  -webkit-box-sizing:content-box;
-          box-sizing:content-box;
+  box-sizing:content-box;
   height:0;
   overflow:visible;
 }
@@ -106,8 +105,7 @@ fieldset{
 }
 
 legend{
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
+  box-sizing:border-box;
   color:inherit;
   display:table;
   max-width:100%;
@@ -124,8 +122,7 @@ textarea{
 }
 
 [type=checkbox],[type=radio]{
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
+  box-sizing:border-box;
   padding:0;
 }
 
@@ -162,8 +159,7 @@ summary{
 html{
   background-color:#fff;
   min-height:100%;
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
+  box-sizing:border-box;
   overflow-y:scroll;
   text-rendering:optimizeLegibility;
   line-height:20px;
@@ -178,7 +174,7 @@ html{
 
 *{ font-weight:inherit; }
 
-*,:after,:before{ -webkit-box-sizing:inherit; box-sizing:inherit; }
+*,:after,:before{ box-sizing:inherit; }
 
 a{ color:#1f73b7; }
 

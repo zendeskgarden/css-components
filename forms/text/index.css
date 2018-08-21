@@ -15,10 +15,7 @@
   -webkit-appearance:none;
      -moz-appearance:none;
           appearance:none;
-  -webkit-transition:border-color .25s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-box-shadow .1s ease-in-out;
-  transition:border-color .25s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
-  transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   outline:none;
   border:1px solid #d8dcde;
   border-radius:4px;
@@ -26,8 +23,7 @@
   padding:.71429em 1.14286em;
   width:100%;
   min-height:40px;
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
+  box-sizing:border-box;
   vertical-align:middle;
   line-height:1.28571;
   color:#2f3941;
@@ -76,7 +72,7 @@
   color:#c2c8cc;
 }
 
-.c-txt__input:invalid{ -webkit-box-shadow:none; box-shadow:none; }
+.c-txt__input:invalid{ box-shadow:none; }
 
 .c-txt__input[type=date],.c-txt__input[type=datetime-local],.c-txt__input[type=file],.c-txt__input[type=month],.c-txt__input[type=time],.c-txt__input[type=week]{
   max-height:40px;
@@ -169,10 +165,9 @@
 }
 
 .c-txt__input--select:not(select):before,select.c-txt__input--select{
-  -webkit-transition:background-image .25s ease-in-out,border-color .25s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out,-webkit-box-shadow .1s ease-in-out;
-  transition:background-image .25s ease-in-out,border-color .25s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:background-image .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out;
   transition:background-image .25s ease-in-out,transform .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
-  transition:background-image .25s ease-in-out,transform .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out,-webkit-box-shadow .1s ease-in-out;
+  transition:background-image .25s ease-in-out,transform .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out;
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%2368737D'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 6l3 3 3-3'/%3E%3C/svg%3E");
   background-repeat:no-repeat;
   background-position:right 1.21429em center;
@@ -188,22 +183,21 @@ select.c-txt__input--select::-ms-value{
 }
 
 select.c-txt__input--select:-moz-focusring{
-  -webkit-transition:none;
   transition:none;
   text-shadow:0 0 0 #2f3941;
   color:transparent;
 }
 
 .c-txt__input--select::-webkit-calendar-picker-indicator{
-  background-color:transparent;
-  padding:0;
-  color:transparent;
   position:absolute;
   top:0;
   right:0;
+  background-color:transparent;
   cursor:pointer;
+  padding:0;
   width:48px;
   height:40px;
+  color:transparent;
   content:"";
 }
 
@@ -254,11 +248,8 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt__input.c-txt__input--tag{
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -ms-flex-wrap:wrap;
-      flex-wrap:wrap;
+  flex-wrap:wrap;
   padding:2px 8px;
 }
 
@@ -286,15 +277,12 @@ select.c-txt__input--select:-moz-focusring{
 
 .c-txt__input.is-focused:not(.is-disabled):not([disabled]),.c-txt__input:focus:not(.is-disabled):not([disabled]){
   border-color:#1f73b7;
-  -webkit-box-shadow:0 0 0 3px
-    rgba(31, 115, 183, .35);
-          box-shadow:0 0 0 3px rgba(31, 115, 183, .35);
+  box-shadow:0 0 0 3px rgba(31, 115, 183, .35);
 }
 
 .c-txt__input.is-disabled,.c-txt__input[disabled]{
   border-color:#e9ebed;
-  -webkit-box-shadow:none;
-          box-shadow:none;
+  box-shadow:none;
   background-color:#f8f9f9;
   cursor:default;
   color:#c2c8cc;
@@ -321,9 +309,7 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt__input--error.is-focused:not(.is-disabled):not([disabled]),.c-txt__input--error:focus:not(.is-disabled):not([disabled]){
-  -webkit-box-shadow:0 0 0 3px
-    rgba(204, 51, 64, .35);
-          box-shadow:0 0 0 3px rgba(204, 51, 64, .35);
+  box-shadow:0 0 0 3px rgba(204, 51, 64, .35);
 }
 
 .c-txt__input.c-txt__input--success:not(.is-disabled):not([disabled]){
@@ -331,9 +317,7 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt__input--success.is-focused:not(.is-disabled):not([disabled]),.c-txt__input--success:focus:not(.is-disabled):not([disabled]){
-  -webkit-box-shadow:0 0 0 3px
-    rgba(3, 129, 83, .35);
-          box-shadow:0 0 0 3px rgba(3, 129, 83, .35);
+  box-shadow:0 0 0 3px rgba(3, 129, 83, .35);
 }
 
 .c-txt__input.c-txt__input--warning:not(.is-disabled):not([disabled]){
@@ -341,9 +325,7 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt__input--warning.is-focused:not(.is-disabled):not([disabled]),.c-txt__input--warning:focus:not(.is-disabled):not([disabled]){
-  -webkit-box-shadow:0 0 0 3px
-    rgba(237, 150, 28, .35);
-          box-shadow:0 0 0 3px rgba(237, 150, 28, .35);
+  box-shadow:0 0 0 3px rgba(237, 150, 28, .35);
 }
 
 .c-txt__input--sm{
@@ -403,8 +385,7 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt__input.is-focused:not(.is-disabled):not([disabled]).c-txt__input--bare,.c-txt__input:focus:not(.is-disabled):not([disabled]).c-txt__input--bare{
-  -webkit-box-shadow:none;
-          box-shadow:none;
+  box-shadow:none;
 }
 
 .c-txt__input.is-disabled.c-txt__input--bare,.c-txt__input[disabled].c-txt__input--bare{
@@ -412,20 +393,14 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt__input--media{
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-align:baseline;
-      -ms-flex-align:baseline;
-          align-items:baseline;
+  align-items:baseline;
   padding-right:0;
   padding-left:0;
 }
 
 .c-txt__input--media__body{
-  -webkit-box-flex:1;
-      -ms-flex-positive:1;
-          flex-grow:1;
+  flex-grow:1;
 }
 
 .c-txt__input--media__figure{

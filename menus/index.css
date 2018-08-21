@@ -9,13 +9,10 @@
   display:inline-block;
   position:absolute;
   margin:0;
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
+  box-sizing:border-box;
   border:1px solid #d8dcde;
   border-radius:4px;
-  -webkit-box-shadow:0 20px 30px 0
-    rgba(4, 68, 77, .15);
-          box-shadow:0 20px 30px 0 rgba(4, 68, 77, .15);
+  box-shadow:0 20px 30px 0 rgba(4, 68, 77, .15);
   background-color:#fff;
   cursor:default;
   padding:8px 0;
@@ -84,10 +81,7 @@
 .c-menu__item{
   display:block;
   position:relative;
-  -webkit-transition:-webkit-box-shadow .1s ease-in-out;
-  transition:-webkit-box-shadow .1s ease-in-out;
   transition:box-shadow .1s ease-in-out;
-  transition:box-shadow .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;
   z-index:0;
   cursor:pointer;
   padding:10px 24px;
@@ -104,7 +98,6 @@
   position:absolute;
   top:0;
   left:0;
-  -webkit-transition:opacity .1s ease-in-out;
   transition:opacity .1s ease-in-out;
   opacity:0;
   background:no-repeat
@@ -277,14 +270,11 @@
 
 .c-menu__item.is-focused,.c-menu__item:not(.c-menu__item--header):focus{
   outline:none;
-  -webkit-box-shadow:inset 0 3px 0 rgba(31, 115, 183, .35),
-    inset 0 -3px 0 rgba(31, 115, 183, .35);
-          box-shadow:inset 0 3px 0 rgba(31, 115, 183, .35),inset 0 -3px 0 rgba(31, 115, 183, .35);
+  box-shadow:inset 0 3px 0 rgba(31, 115, 183, .35),inset 0 -3px 0 rgba(31, 115, 183, .35);
 }
 
 .c-menu .c-menu__item.is-active.is-focused,.c-menu .c-menu__item.is-active:not(.c-menu__item--header):focus,.c-menu .c-menu__item:active.is-focused,.c-menu .c-menu__item:active:not(.c-menu__item--header):focus{
-  -webkit-box-shadow:none;
-          box-shadow:none;
+  box-shadow:none;
 }
 
 .c-menu .c-menu__item.is-disabled,.c-menu .c-menu__item[aria-disabled=true],.c-menu .c-menu__item[disabled]{
@@ -297,8 +287,7 @@
 }
 
 .c-menu .c-menu__item.is-disabled.is-focused,.c-menu .c-menu__item.is-disabled:not(.c-menu__item--header):focus,.c-menu .c-menu__item[aria-disabled=true].is-focused,.c-menu .c-menu__item[aria-disabled=true]:not(.c-menu__item--header):focus,.c-menu .c-menu__item[disabled].is-focused,.c-menu .c-menu__item[disabled]:not(.c-menu__item--header):focus{
-  -webkit-box-shadow:none;
-          box-shadow:none;
+  box-shadow:none;
 }
 
 .c-menu .c-menu__item.is-checked.is-disabled:before,.c-menu .c-menu__item.is-checked[aria-disabled=true]:before,.c-menu .c-menu__item.is-checked[disabled]:before,.c-menu .c-menu__item[aria-checked=true].is-disabled:before,.c-menu .c-menu__item[aria-checked=true][aria-disabled=true]:before,.c-menu .c-menu__item[aria-checked=true][disabled]:before{
@@ -323,7 +312,6 @@
 
 .c-menu.is-hidden,.c-menu[aria-hidden=true]{
   display:inline-block;
-  -webkit-transition:opacity .2s ease-in-out,visibility .2s linear 0s;
   transition:opacity .2s ease-in-out,visibility .2s linear 0s;
   visibility:hidden;
   opacity:0;

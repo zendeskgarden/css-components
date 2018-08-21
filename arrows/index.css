@@ -18,8 +18,7 @@
 .c-arrow:after{
   z-index:-1;
   border:inherit;
-  -webkit-box-shadow:inherit;
-          box-shadow:inherit;
+  box-shadow:inherit;
 }
 
 .c-arrow:after,.c-arrow:before{
@@ -27,8 +26,7 @@
   -webkit-transform:rotate(45deg);
           transform:rotate(45deg);
   background-color:inherit;
-  -webkit-box-sizing:inherit;
-          box-sizing:inherit;
+  box-sizing:inherit;
   width:.85714em;
   height:.85714em;
   content:"";

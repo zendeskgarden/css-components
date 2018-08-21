@@ -6,8 +6,6 @@
  */
 
 .l-backdrop{
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
   position:fixed;
   top:0;
@@ -21,12 +19,8 @@
 }
 
 .l-backdrop--center{
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
-  -webkit-box-pack:center;
-      -ms-flex-pack:center;
-          justify-content:center;
+  align-items:center;
+  justify-content:center;
 }
 
 .l-backdrop.is-rtl{
@@ -43,9 +37,7 @@
           animation-delay:.01s;
   margin:48px;
   border-color:transparent;
-  -webkit-box-shadow:0 20px 28px 0
-    rgba(47, 57, 65, .35);
-          box-shadow:0 20px 28px 0 rgba(47, 57, 65, .35);
+  box-shadow:0 20px 28px 0 rgba(47, 57, 65, .35);
   max-height:calc(100vh - 96px);
   overflow:auto;
 }
@@ -81,22 +73,14 @@
 }
 
 .c-dialog{
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
   position:fixed;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-      -ms-flex-direction:column;
-          flex-direction:column;
+  flex-direction:column;
   margin-bottom:48px;
   border:1px solid #d8dcde;
   border-radius:4px;
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
-  -webkit-box-shadow:0 20px 28px 0
-    rgba(4, 68, 77, .15);
-          box-shadow:0 20px 28px 0 rgba(4, 68, 77, .15);
+  box-sizing:border-box;
+  box-shadow:0 20px 28px 0 rgba(4, 68, 77, .15);
   background-color:#fff;
   width:544px;
   min-height:60px;
@@ -139,7 +123,6 @@
   position:absolute;
   top:10px;
   right:20px;
-  -webkit-transition:background-color .1s ease-in-out;
   transition:background-color .1s ease-in-out;
   border:none;
   border-radius:50%;
@@ -167,7 +150,6 @@
   right:0;
   bottom:0;
   left:0;
-  -webkit-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
   background-repeat:no-repeat;
   background-position:50%;
@@ -221,15 +203,9 @@
 }
 
 .c-dialog__footer{
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
-  -webkit-box-pack:end;
-      -ms-flex-pack:end;
-          justify-content:flex-end;
+  align-items:center;
+  justify-content:flex-end;
   padding:0 40px 32px;
 }
 
