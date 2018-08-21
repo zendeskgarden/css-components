@@ -4,11 +4,15 @@ module.exports = {
   plugins: {
     'postcss-import': {},
     'postcss-input-range': {},
-    'postcss-cssnext': {
-      features: { fontFamilySystemUi: false }
-    },
     'postcss-inline-svg': {
       path: path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')
+    },
+    'postcss-preset-env': {
+      stage: 1,
+      features: {
+        'custom-properties': { preserve: false },
+        'system-ui-font-family': false
+      }
     },
     'cssnano': {
       preset: [
