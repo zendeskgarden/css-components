@@ -1,0 +1,8 @@
+@import '@zendeskgarden/css-variables';
+
+.c-scrollbar {
+  position: relative;
+  overflow: hidden;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+}
