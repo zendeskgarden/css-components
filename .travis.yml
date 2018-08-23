@@ -24,7 +24,7 @@ deploy:
       branch: master
 
   - provider: script
-    script: scripts/publish.js
+    script: yarn lerna publish from-git --no-verify-access --yes
     skip_cleanup: true
     on:
       branch: master
