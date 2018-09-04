@@ -1,0 +1,8 @@
+@custom-selector :--scrollbar-active
+  :hover,
+  .is-active,
+  .ps--clicking;
+
+@custom-selector :--scrollbar-focused
+  :focus,
+  .is-focused;

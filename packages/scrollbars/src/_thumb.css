@@ -1,1 +1,48 @@
 @import '@zendeskgarden/css-variables';
+@import '_selectors';
+@import '_variables';
+
+:root {
+  --zd-scrollbar__thumb-background-color: var(--zd-color-grey-800);
+  --zd-scrollbar__thumb-transition:
+    background-color .2s linear,
+    height .2s ease-in-out;
+  --zd-scrollbar__thumb--active-background-color: var(--zd-color-grey-600);
+}
+
+.c-scrollbar__thumb,
+.ps__thumb-x,
+.ps__thumb-y {
+  position: absolute;
+  transition: var(--zd-scrollbar__thumb-transition);
+  border-radius: var(--zd-scrollbar__thumb-size);
+  background-color: var(--zd-scrollbar__thumb-background-color);
+}
+
+.c-scrollbar__track--horizontal .c-scrollbar__thumb,
+.ps__thumb-x {
+  bottom: var(--zd-scrollbar__thumb-position);
+  height: var(--zd-scrollbar__thumb-size);
+}
+
+.c-scrollbar__track--vertical .c-scrollbar__thumb,
+.ps__thumb-y {
+  right: var(--zd-scrollbar__thumb-position);
+  width: var(--zd-scrollbar__thumb-size);
+}
+
+.c-scrollbar__track:--scrollbar-active .c-scrollbar__thumb,
+.ps__rail-x:--scrollbar-active .ps__thumb-x,
+.ps__rail-y:--scrollbar-active .ps__thumb-y {
+  background-color: var(--zd-scrollbar__thumb--active-background-color);
+}
+
+.c-scrollbar__track--horizontal:--scrollbar-active .c-scrollbar__thumb,
+.ps__rail-x:--scrollbar-active .ps__thumb-x {
+  height: var(--zd-scrollbar__thumb--active-size);
+}
+
+.c-scrollbar__track--vertical:--scrollbar-active .c-scrollbar__thumb,
+.ps__rail-y:--scrollbar-active .ps__thumb-y {
+  width: var(--zd-scrollbar__thumb--active-size);
+}

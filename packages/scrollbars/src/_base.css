@@ -4,5 +4,5 @@
   position: relative;
   overflow: hidden;
   overflow-anchor: none;
-  -ms-overflow-style: none;
+  touch-action: auto;
 }
