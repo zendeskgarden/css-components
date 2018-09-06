@@ -4,15 +4,15 @@
 :root {
   --zd-scrollbar__track-background-color: var(--zd-color-grey-200);
   --zd-scrollbar__track-opacity: .6;
-  --zd-scrollbar__track-opacity-active: .9;
   --zd-scrollbar__track-transition:
     background-color .2s linear,
     opacity .2s linear;
+  --zd-scrollbar__track--active-opacity: .9;
 }
 
 .c-scrollbar__track,
-.ps__rail-x,
-.ps__rail-y {
+.c-scrollbar .ps__rail-x,
+.c-scrollbar .ps__rail-y {
   display: block;
   position: absolute;
   transition: var(--zd-scrollbar__track-transition);
@@ -20,13 +20,13 @@
 }
 
 .c-scrollbar__track--horizontal,
-.ps__rail-x {
+.c-scrollbar .ps__rail-x {
   bottom: 0;
   height: var(--zd-scrollbar__track-size);
 }
 
 .c-scrollbar__track--vertical,
-.ps__rail-y {
+.c-scrollbar .ps__rail-y {
   right: 0;
   width: var(--zd-scrollbar__track-size);
 }
@@ -46,6 +46,6 @@
 .c-scrollbar__track:--scrollbar-active,
 .c-scrollbar .ps__rail-x:--scrollbar-active,
 .c-scrollbar .ps__rail-y:--scrollbar-active {
-  opacity: var(--zd-scrollbar__track-opacity-active);
+  opacity: var(--zd-scrollbar__track--active-opacity);
   background-color: var(--zd-scrollbar__track-background-color);
 }
