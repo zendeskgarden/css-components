@@ -9,7 +9,7 @@
 
 /* stylelint-disable declaration-no-important */
 
-/* Font sizes */
+/* Font Sizes */
 
 .u-fs-sm { font-size: var(--zd-font-size-sm) !important; }
 
@@ -23,7 +23,7 @@
 
 .u-fs-xxxl { font-size: var(--zd-font-size-xxxl) !important; }
 
-/* Font sizes (deprecated) */
+/* Font Sizes (deprecated) */
 
 .u-giga { font-size: var(--zd-font-size-giga) !important; }
 

@@ -1,0 +1,25 @@
+/*!
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@import '@zendeskgarden/css-variables';
+
+/* stylelint-disable declaration-no-important */
+
+/* Line Heights (to be paired with corresponding font sizes) */
+
+.u-lh-sm { line-height: var(--zd-line-height-sm) !important; }
+
+.u-lh-md { line-height: var(--zd-line-height-md) !important; }
+
+.u-lh-lg { line-height: var(--zd-line-height-lg) !important; }
+
+.u-lh-xl { line-height: var(--zd-line-height-xl) !important; }
+
+.u-lh-xxl { line-height: var(--zd-line-height-xxl) !important; }
+
+.u-lh-xxxl { line-height: var(--zd-line-height-xxxl) !important; }
+/* stylelint-enable declaration-no-important */
