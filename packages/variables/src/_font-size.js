@@ -5,9 +5,17 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-/* csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
- * www.modularscale.com/?14&px&1.125 */
-const retVal = {
+let retVal = {
+  sm: '12px',
+  md: '14px',
+  lg: '18px',
+  xl: '22px',
+  xxl: '26px',
+  xxxl: '36px'
+};
+
+/* Deprecated sizes */
+retVal = Object.assign(retVal, {
   /* Larger than H1 */
   giga: '36px',
   mega: '28px',
@@ -25,6 +33,6 @@ const retVal = {
   milli: '11px',
   micro: '10px',
   nano: '9px'
-};
+});
 
 module.exports = retVal;
