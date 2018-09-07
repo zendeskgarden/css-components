@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.0"></a>
+# [3.3.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.2.1...@zendeskgarden/css-chrome@3.3.0) (2018-09-07)
+
+
+### Features
+
+* **variables|utilities:** add support for updated typography ([#109](https://github.com/zendeskgarden/css-components/issues/109)) ([248b14a](https://github.com/zendeskgarden/css-components/commit/248b14a))
+
+
+
+
+
 <a name="3.2.1"></a>
 ## [3.2.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.2.0...@zendeskgarden/css-chrome@3.2.1) (2018-08-21)
 
