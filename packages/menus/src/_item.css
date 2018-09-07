@@ -19,7 +19,7 @@
   --zd-menu__item--header-font-weight: var(--zd-font-weight-semibold);
   --zd-menu__item--header__icon-top: calc(calc(var(--zd-menu__item--icon-height) - var(--zd-menu__item--icon-background-size)) / 2);
   --zd-menu__item--header__icon-left: calc(calc(var(--zd-menu__item--icon-width) - var(--zd-menu__item--icon-background-size)) / 2);
-  --zd-menu__item--icon-background-size: var(--zd-font-size-epsilon);
+  --zd-menu__item--icon-background-size: var(--zd-font-size-md);
   --zd-menu__item--icon-height: calc(20px + calc(var(--zd-menu__item-padding-vertical) * 2));
   --zd-menu__item--icon-width: var(--zd-menu__item-padding-horizontal);
   --zd-menu__item--icon-transition: opacity .1s ease-in-out;
@@ -40,7 +40,7 @@
   --zd-menu--sm__item--media__figure-margin: calc(var(--zd-menu__item--media__figure-margin) / 2);
   --zd-menu--sm__item--media--icon-height: calc(var(--zd-menu--sm__item--media__figure-size) + calc(var(--zd-menu--sm__item-padding-vertical) * 2));
   --zd-menu__item__meta-color: var(--zd-color-grey-600);
-  --zd-menu__item__meta-font-size: var(--zd-font-size-zeta);
+  --zd-menu__item__meta-font-size: var(--zd-font-size-sm);
   --zd-menu__item__meta-line-height: calc(16 / 12);
 }
 

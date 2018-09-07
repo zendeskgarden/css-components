@@ -7,23 +7,23 @@
     0 4px 8px 0
     color-mod(var(--zd-color-kale-600) alpha(15%));
   --zd-tooltip-color: var(--zd-color-white);
-  --zd-tooltip-font-size: var(--zd-font-size-zeta);
+  --zd-tooltip-font-size: var(--zd-font-size-sm);
   --zd-tooltip-font-weight: var(--zd-font-weight-regular);
   --zd-tooltip-line-height: calc(20 / 12);
   --zd-tooltip-padding: 0 1em;
   --zd-tooltip__arrow-font-size: 7px;
   --zd-tooltip--extra-large-border-radius: 4px;
-  --zd-tooltip--extra-large-font-size: var(--zd-font-size-epsilon);
+  --zd-tooltip--extra-large-font-size: var(--zd-font-size-md);
   --zd-tooltip--extra-large-line-height: calc(20 / 14);
   --zd-tooltip--extra-large-max-width: 460px;
   --zd-tooltip--extra-large-padding: var(--zd-spacing-xl);
-  --zd-tooltip--extra-large__arrow-font-size: var(--zd-font-size-delta);
+  --zd-tooltip--extra-large__arrow-font-size: 16px;
   --zd-tooltip--large-border-radius: var(--zd-tooltip--extra-large-border-radius);
   --zd-tooltip--large-font-size: var(--zd-tooltip--extra-large-font-size);
   --zd-tooltip--large-line-height: var(--zd-tooltip--extra-large-line-height);
   --zd-tooltip--large-max-width: 270px;
   --zd-tooltip--large-padding: var(--zd-spacing);
-  --zd-tooltip--large__arrow-font-size: var(--zd-font-size-zeta);
+  --zd-tooltip--large__arrow-font-size: var(--zd-font-size-sm);
   --zd-tooltip--medium-border-radius: var(--zd-tooltip--large-border-radius);
   --zd-tooltip--medium-line-height: calc(16 / 12);
   --zd-tooltip--medium-max-width: 140px;
