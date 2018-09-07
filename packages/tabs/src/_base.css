@@ -4,7 +4,7 @@
   --zd-tab__list-border-color: var(--zd-color-grey-300);
   --zd-tab__list-border-width: 1px;
   --zd-tab__list-color: var(--zd-color-grey-600);
-  --zd-tab__list-font-size: var(--zd-font-size-epsilon);
+  --zd-tab__list-font-size: var(--zd-font-size-md);
   --zd-tab__list-line-height: 20px;
   --zd-tab__list-margin-bottom: var(--zd-spacing);
   --zd-tab__list__item-border-width: 3px;

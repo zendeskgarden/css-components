@@ -6,7 +6,7 @@
   --zd-callout-border: 1px solid var(--zd-callout-border-color);
   --zd-callout-border-radius: 4px;
   --zd-callout-color: var(--zd-color-grey-600);
-  --zd-callout-font-size: var(--zd-font-size-epsilon);
+  --zd-callout-font-size: var(--zd-font-size-md);
   --zd-callout-line-height: calc(20 / 14);
   --zd-callout-padding-horizontal: var(--zd-spacing-xl);
   --zd-callout-padding: var(--zd-spacing) var(--zd-callout-padding-horizontal);

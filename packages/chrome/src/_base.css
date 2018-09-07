@@ -6,7 +6,7 @@
   --zd-chrome-min-height: 100vh;
   --zd-chrome__body-color: var(--zd-color-grey-100);
   --zd-chrome__body__content-color: var(--zd-color-grey-800);
-  --zd-chrome__body__content-font-size: var(--zd-font-size-epsilon);
+  --zd-chrome__body__content-font-size: var(--zd-font-size-md);
   --zd-chrome__body__content-height: calc(100% - var(--zd-chrome__body__header-height));
   --zd-chrome__body__content-line-height: calc(20 / 14);
   --zd-chrome__body__content__main-background-color: var(--zd-color-white);

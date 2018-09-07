@@ -7,7 +7,7 @@
   --zd-callout__close-transition: background-color .1s ease-in-out;
   --zd-callout__close-focused-background-color: color-mod(var(--zd-color-grey-600) alpha(15%));
   --zd-callout__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-800));
-  --zd-callout__close__icon-background-size: var(--zd-font-size-gamma);
+  --zd-callout__close__icon-background-size: 18px;
   --zd-callout__close__icon-transition: opacity .25s ease-in-out;
   --zd-callout--error__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-red-500));
   --zd-callout--error__close-focused-background-color: color-mod(var(--zd-color-red-600) alpha(15%));

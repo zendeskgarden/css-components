@@ -9,6 +9,7 @@ const color = require('./_color');
 const fontFamily = require('./_font-family');
 const fontSize = require('./_font-size');
 const fontWeight = require('./_font-weight');
+const lineHeight = require('./_line-height');
 const spacing = require('./_spacing');
 
 module.exports = {
@@ -16,5 +17,6 @@ module.exports = {
   'font-family': fontFamily,
   'font-size': fontSize,
   'font-weight': fontWeight,
+  'line-height': lineHeight,
   spacing
 };
