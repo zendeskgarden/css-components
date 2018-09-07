@@ -872,7 +872,17 @@
 
 .u-font-family-system{ font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif !important; }
 
-.u-giga{ font-size:36px !important; }
+.u-fs-sm{ font-size:12px !important; }
+
+.u-fs-md{ font-size:14px !important; }
+
+.u-fs-lg{ font-size:18px !important; }
+
+.u-fs-xl{ font-size:22px !important; }
+
+.u-fs-xxl{ font-size:26px !important; }
+
+.u-fs-xxxl,.u-giga{ font-size:36px !important; }
 
 .u-mega{ font-size:28px !important; }
 
@@ -950,6 +960,18 @@
 .u-jitterfix--extrabold:after{ font-weight:800; }
 
 .u-jitterfix--black:after{ font-weight:900; }
+
+.u-lh-sm{ line-height:16px !important; }
+
+.u-lh-md{ line-height:20px !important; }
+
+.u-lh-lg{ line-height:24px !important; }
+
+.u-lh-xl{ line-height:28px !important; }
+
+.u-lh-xxl{ line-height:32px !important; }
+
+.u-lh-xxxl{ line-height:44px !important; }
 
 .u-list-style-circle{ list-style:circle inside !important; }
 
