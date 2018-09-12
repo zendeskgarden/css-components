@@ -4,6 +4,7 @@
 
 :root {
   --zd-scrollbar__thumb-background-color: var(--zd-color-grey-800);
+  --zd-scrollbar__thumb-min-length: var(--zd-scrollbar__track-size);
   --zd-scrollbar__thumb-transition:
     background-color .2s linear,
     box-shadow .1s ease-in-out,
@@ -24,6 +25,7 @@
 .c-scrollbar__track--horizontal .c-scrollbar__thumb,
 .c-scrollbar .ps__thumb-x {
   bottom: var(--zd-scrollbar__thumb-position);
+  min-width: var(--zd-scrollbar__thumb-min-length);
   height: var(--zd-scrollbar__thumb-size);
 }
 
@@ -31,6 +33,7 @@
 .c-scrollbar .ps__thumb-y {
   right: var(--zd-scrollbar__thumb-position);
   width: var(--zd-scrollbar__thumb-size);
+  min-height: var(--zd-scrollbar__thumb-min-length);
 }
 
 /* stylelint-disable selector-max-specificity */

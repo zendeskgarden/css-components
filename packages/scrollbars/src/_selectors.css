@@ -2,7 +2,3 @@
   :hover,
   .is-active,
   .ps--clicking;
-
-@custom-selector :--scrollbar-focused
-  :focus,
-  .is-focused;

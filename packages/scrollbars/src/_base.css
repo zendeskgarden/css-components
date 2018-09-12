@@ -6,3 +6,7 @@
   overflow-anchor: none;
   touch-action: auto;
 }
+
+.c-scrollbar.is-rtl {
+  direction: rtl;
+}

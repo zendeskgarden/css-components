@@ -29,6 +29,7 @@
     "lerna": "3.1.4",
     "live-server": "1.2.0",
     "ncp": "2.0.0",
+    "perfect-scrollbar": "1.4.0",
     "postcss-cli": "6.0.0",
     "postcss-import": "12.0.0",
     "postcss-inline-svg": "3.1.1",

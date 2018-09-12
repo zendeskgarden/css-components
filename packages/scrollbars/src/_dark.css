@@ -1,0 +1,29 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-scrollbar--dark__thumb-background-color: var(--zd-color-grey-400);
+  --zd-scrollbar--dark__thumb--active-background-color: var(--zd-color-grey-500);
+  --zd-scrollbar--dark__track-background-color: var(--zd-color-grey-800);
+}
+
+.c-scrollbar--dark .c-scrollbar__track:--scrollbar-active,
+.c-scrollbar--dark .ps__rail-x:--scrollbar-active,
+.c-scrollbar--dark .ps__rail-y:--scrollbar-active {
+  background-color: var(--zd-scrollbar--dark__track-background-color);
+}
+
+.c-scrollbar--dark .c-scrollbar__thumb,
+.c-scrollbar--dark .ps__thumb-x,
+.c-scrollbar--dark .ps__thumb-y {
+  background-color: var(--zd-scrollbar--dark__thumb-background-color);
+}
+
+/* stylelint-disable selector-max-specificity */
+
+.c-scrollbar--dark .c-scrollbar__track:--scrollbar-active .c-scrollbar__thumb,
+.c-scrollbar--dark .ps__rail-x:--scrollbar-active .ps__thumb-x,
+.c-scrollbar--dark .ps__rail-y:--scrollbar-active .ps__thumb-y {
+  background-color: var(--zd-scrollbar--dark__thumb--active-background-color);
+}
+
+/* stylelint-enable selector-max-specificity */

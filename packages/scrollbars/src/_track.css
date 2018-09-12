@@ -22,17 +22,20 @@
 .c-scrollbar__track--horizontal,
 .c-scrollbar .ps__rail-x {
   bottom: 0;
+  left: 0;
+  width: 100%;
   height: var(--zd-scrollbar__track-size);
 }
 
 .c-scrollbar__track--vertical,
 .c-scrollbar .ps__rail-y {
+  top: 0;
   right: 0;
   width: var(--zd-scrollbar__track-size);
+  height: 100%;
 }
 
 .c-scrollbar__track.is-scrolling,
-.c-scrollbar__track:--scrollbar-focused,
 .c-scrollbar.ps--scrolling-x .ps__rail-x,
 .c-scrollbar.ps--scrolling-y .ps__rail-y,
 .c-scrollbar.ps--focus .ps__rail-x,
@@ -45,4 +48,16 @@
 .c-scrollbar .ps__rail-y:--scrollbar-active {
   opacity: var(--zd-scrollbar__track--active-opacity);
   background-color: var(--zd-scrollbar__track-background-color);
+}
+
+.c-scrollbar.is-rtl .c-scrollbar__track--horizontal,
+.c-scrollbar.is-rtl .ps__rail-x {
+  right: 0;
+  left: auto;
+}
+
+.c-scrollbar.is-rtl .c-scrollbar__track--vertical,
+.c-scrollbar.is-rtl .ps__rail-y {
+  right: auto;
+  left: 0;
 }
