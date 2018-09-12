@@ -14,7 +14,6 @@
   <link href="../forms/checkbox/index.css" rel="stylesheet">
   <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
-  <link href="custom.css" rel="stylesheet">
   <link href="../utilities/index.css" rel="stylesheet">
 </head>
 <body>
@@ -31,30 +30,11 @@
       <span>/ Scrollbars</span>
     </h1>
     <ul class="c-ctl c-ctl--header">
-      <li class="c-ctl__item u-position-relative">
-        <a class="c-menu-ctl js-menu" href="#settings">
-          <svg>
-            <use xlink:href="../index.svg#zd-svg-icon-26-settings-fill" />
-          </svg>
-          <span>Settings</span>
-          <svg>
-            <use xlink:href="../index.svg#zd-svg-icon-14-chevron" />
-          </svg>
-        </a>
-        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
-            </fieldset>
-          </li>
-        </ul>
+      <li class="c-ctl__item">
+        <fieldset class="c-chk">
+          <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+          <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
+        </fieldset>
       </li>
     </ul>
   </header>
@@ -65,7 +45,7 @@
     <div class="c-main__body">
       <div class="u-mb-lg">
         <div class="c-scrollbar" style="width:600px; height:400px">
-          <img src="https://via.placeholder.com/1280x720/CEE2F2/49545C" style="display:block; max-width:none">
+          <img class="u-display-block" src="https://via.placeholder.com/1280x720/CEE2F2/49545C" style="max-width:none">
         </div>
       </div>
       <section id="playground">
@@ -73,7 +53,7 @@
         <div class="c-playground">
           <div class="c-playground__preview"></div>
 <textarea class="c-playground__code"><div class="c-scrollbar" style="width:600px; height:400px">
-  <img src="https://via.placeholder.com/1280x720/CEE2F2/49545C" style="display:block; max-width:none">
+  <img class="u-display-block" src="https://via.placeholder.com/1280x720/CEE2F2/49545C" style="max-width:none">
 </div></textarea>
         </div>
       </section>
