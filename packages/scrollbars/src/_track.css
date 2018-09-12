@@ -50,14 +50,12 @@
   background-color: var(--zd-scrollbar__track-background-color);
 }
 
-.c-scrollbar.is-rtl .c-scrollbar__track--horizontal,
-.c-scrollbar.is-rtl .ps__rail-x {
+.c-scrollbar.is-rtl .c-scrollbar__track--horizontal {
   right: 0;
   left: auto;
 }
 
-.c-scrollbar.is-rtl .c-scrollbar__track--vertical,
-.c-scrollbar.is-rtl .ps__rail-y {
+.c-scrollbar.is-rtl .c-scrollbar__track--vertical {
   right: auto;
   left: 0;
 }

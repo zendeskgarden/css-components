@@ -26,7 +26,10 @@ $(document).ready(function() {
     $('.c-scrollbar:not(.js-not):not(.c-playground .c-scrollbar)').each(function () {
       $(this).data('scrollbar').destroy();
       $(this).data('scrollbar', null);
-      new PerfectScrollbar($(this)[0]);
+
+      var scrollbar = new PerfectScrollbar($(this)[0]);
+
+      $(this).data('scrollbar', scrollbar);
     });
   });
 
