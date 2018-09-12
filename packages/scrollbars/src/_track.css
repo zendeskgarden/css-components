@@ -32,12 +32,9 @@
 }
 
 .c-scrollbar__track.is-scrolling,
-.c-scrollbar.ps--scrolling-x .ps__rail-x,
-.c-scrollbar.ps--scrolling-y .ps__rail-y {
-  opacity: var(--zd-scrollbar__track-opacity);
-}
-
 .c-scrollbar__track:--scrollbar-focused,
+.c-scrollbar.ps--scrolling-x .ps__rail-x,
+.c-scrollbar.ps--scrolling-y .ps__rail-y,
 .c-scrollbar.ps--focus .ps__rail-x,
 .c-scrollbar.ps--focus .ps__rail-y {
   opacity: var(--zd-scrollbar__track-opacity);

@@ -10,9 +10,6 @@
     height .2s ease-in-out,
     width .2s ease-in-out;
   --zd-scrollbar__thumb--active-background-color: var(--zd-color-grey-600);
-  --zd-scrollbar__thumb--focused-box-shadow:
-    inset 0 0 0 3px
-    var(--zd-scrollbar__thumb--active-background-color);
 }
 
 .c-scrollbar__thumb,
@@ -44,29 +41,19 @@
   outline: none;
 }
 
-.c-scrollbar__track:--scrollbar-focused .c-scrollbar__thumb,
-.c-scrollbar.ps--focus .ps__thumb-x:focus,
-.c-scrollbar.ps--focus .ps__thumb-y:focus {
-  box-shadow: var(--zd-scrollbar__thumb--focused-box-shadow);
-}
-
 .c-scrollbar__track:--scrollbar-active .c-scrollbar__thumb,
 .c-scrollbar .ps__rail-x:--scrollbar-active .ps__thumb-x,
 .c-scrollbar .ps__rail-y:--scrollbar-active .ps__thumb-y {
   background-color: var(--zd-scrollbar__thumb--active-background-color);
 }
 
-.c-scrollbar__track--horizontal:--scrollbar-focused .c-scrollbar__thumb,
 .c-scrollbar__track--horizontal:--scrollbar-active .c-scrollbar__thumb,
-.c-scrollbar .ps__rail-x:--scrollbar-active .ps__thumb-x,
-.c-scrollbar.ps--focus .ps__thumb-x:focus {
+.c-scrollbar .ps__rail-x:--scrollbar-active .ps__thumb-x {
   height: var(--zd-scrollbar__thumb--active-size);
 }
 
-.c-scrollbar__track--vertical:--scrollbar-focused .c-scrollbar__thumb,
 .c-scrollbar__track--vertical:--scrollbar-active .c-scrollbar__thumb,
-.c-scrollbar .ps__rail-y:--scrollbar-active .ps__thumb-y,
-.c-scrollbar.ps--focus .ps__thumb-y:focus {
+.c-scrollbar .ps__rail-y:--scrollbar-active .ps__thumb-y {
   width: var(--zd-scrollbar__thumb--active-size);
 }
 
