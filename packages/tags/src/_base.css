@@ -6,7 +6,7 @@
   --zd-tag-background-color: var(--zd-color-grey-200);
   --zd-tag-border-radius: 2px;
   --zd-tag-color: var(--zd-color-grey-700);
-  --zd-tag-font-size: var(--zd-font-size-zeta);
+  --zd-tag-font-size: var(--zd-font-size-sm);
   --zd-tag-font-weight: var(--zd-font-weight-semibold);
   --zd-tag-height: var(--zd-spacing);
   --zd-tag-line-height: calc(20 / 12);

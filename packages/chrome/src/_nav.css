@@ -4,7 +4,7 @@
 
 :root {
   --zd-chrome__nav-width: 60px;
-  --zd-chrome__nav-font-size: var(--zd-font-size-epsilon);
+  --zd-chrome__nav-font-size: var(--zd-font-size-md);
   --zd-chrome__nav__fab-background-color: var(--zd-color-kale-400);
   --zd-chrome__nav__fab-box-shadow:
     0 6px 12px 0

@@ -7,7 +7,7 @@
   --zd-chrome__body__header-border-color: var(--zd-color-grey-300);
   --zd-chrome__body__header-border-bottom: 1px solid var(--zd-chrome__body__header-border-color);
   --zd-chrome__body__header-color: var(--zd-color-grey-600);
-  --zd-chrome__body__header-font-size: var(--zd-font-size-epsilon);
+  --zd-chrome__body__header-font-size: var(--zd-font-size-md);
   --zd-chrome__body__header-height: var(--zd-chrome__nav__item-height);
   --zd-chrome__body__header-padding-horizontal: 4px;
   --zd-chrome__body__header-padding: 0 var(--zd-chrome__body__header-padding-horizontal);

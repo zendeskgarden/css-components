@@ -6,7 +6,7 @@
   --zd-txt__input-border-radius: 4px;
   --zd-txt__input-color: var(--zd-color-grey-800);
   --zd-txt__input-color-placeholder: var(--zd-color-grey-400);
-  --zd-txt__input-font-size: var(--zd-font-size-epsilon);
+  --zd-txt__input-font-size: var(--zd-font-size-md);
   --zd-txt__input-line-height: calc(18 / 14);
   --zd-txt__input-height: var(--zd-spacing-xl);
   --zd-txt__input-padding-horizontal: calc(16 / 14 * 1em);
@@ -59,7 +59,7 @@
 
 .c-txt__input::-ms-browse {
   border-radius: calc(var(--zd-txt__input-border-radius) / 2);
-  font-size: var(--zd-font-size-zeta);
+  font-size: var(--zd-font-size-sm);
 }
 
 .c-txt__input::-ms-clear,

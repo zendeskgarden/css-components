@@ -5,28 +5,47 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@import '@zendeskgarden/css-variables';
+
 /* stylelint-disable declaration-no-important */
-.u-giga { font-size: 36px !important; }
 
-.u-mega { font-size: 28px !important; }
+/* Font Sizes */
 
-.u-kilo { font-size: 25px !important; }
+.u-fs-sm { font-size: var(--zd-font-size-sm) !important; }
 
-.u-alpha { font-size: 22px !important; }
+.u-fs-md { font-size: var(--zd-font-size-md) !important; }
 
-.u-beta { font-size: 20px !important; }
+.u-fs-lg { font-size: var(--zd-font-size-lg) !important; }
 
-.u-gamma { font-size: 18px !important; }
+.u-fs-xl { font-size: var(--zd-font-size-xl) !important; }
 
-.u-delta { font-size: 16px !important; }
+.u-fs-xxl { font-size: var(--zd-font-size-xxl) !important; }
 
-.u-epsilon { font-size: 14px !important; }
+.u-fs-xxxl { font-size: var(--zd-font-size-xxxl) !important; }
 
-.u-zeta { font-size: 12px !important; }
+/* Font Sizes (deprecated) */
 
-.u-milli { font-size: 11px !important; }
+.u-giga { font-size: var(--zd-font-size-giga) !important; }
 
-.u-micro { font-size: 10px !important; }
+.u-mega { font-size: var(--zd-font-size-mega) !important; }
 
-.u-nano { font-size: 9px !important; }
+.u-kilo { font-size: var(--zd-font-size-kilo) !important; }
+
+.u-alpha { font-size: var(--zd-font-size-alpha) !important; }
+
+.u-beta { font-size: var(--zd-font-size-beta) !important; }
+
+.u-gamma { font-size: var(--zd-font-size-gamma) !important; }
+
+.u-delta { font-size: var(--zd-font-size-delta) !important; }
+
+.u-epsilon { font-size: var(--zd-font-size-epsilon) !important; }
+
+.u-zeta { font-size: var(--zd-font-size-zeta) !important; }
+
+.u-milli { font-size: var(--zd-font-size-milli) !important; }
+
+.u-micro { font-size: var(--zd-font-size-micro) !important; }
+
+.u-nano { font-size: var(--zd-font-size-nano) !important; }
 /* stylelint-enable declaration-no-important */

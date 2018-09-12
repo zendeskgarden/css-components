@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.3.0"></a>
+# [6.3.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.2.4...@zendeskgarden/css-modals@6.3.0) (2018-09-07)
+
+
+### Features
+
+* **variables|utilities:** add support for updated typography ([#109](https://github.com/zendeskgarden/css-components/issues/109)) ([248b14a](https://github.com/zendeskgarden/css-components/commit/248b14a))
+
+
+
+
+
 <a name="6.2.4"></a>
 ## [6.2.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.2.3...@zendeskgarden/css-modals@6.2.4) (2018-08-21)
 

@@ -2,13 +2,13 @@
 
 :root {
   --zd-table-font-color: var(--zd-color-grey-800);
-  --zd-table-font-size: var(--zd-font-size-epsilon);
+  --zd-table-font-size: var(--zd-font-size-md);
   --zd-table-line-height: calc(20 / 14);
   --zd-table__row-border: 1px solid;
   --zd-table__row-border-bottom: var(--zd-table__row-border) var(--zd-color-grey-200);
   --zd-table__row-height: 40px;
   --zd-table__row-transition: background-color .1s ease-in-out;
-  --zd-table__row--group-font-size: var(--zd-font-size-zeta);
+  --zd-table__row--group-font-size: var(--zd-font-size-sm);
   --zd-table__row--group-height: 32px;
   --zd-table__row--group-line-height: calc(20 / 12);
   --zd-table__row--group__cell-padding: 6px 10px;

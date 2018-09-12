@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tooltips@4.0.8...@zendeskgarden/css-tooltips@4.1.0) (2018-09-07)
+
+
+### Features
+
+* **variables|utilities:** add support for updated typography ([#109](https://github.com/zendeskgarden/css-components/issues/109)) ([248b14a](https://github.com/zendeskgarden/css-components/commit/248b14a))
+
+
+
+
+
 <a name="4.0.8"></a>
 ## [4.0.8](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tooltips@4.0.7...@zendeskgarden/css-tooltips@4.0.8) (2018-08-21)
 

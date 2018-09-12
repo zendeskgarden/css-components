@@ -2,7 +2,7 @@
 @import '_variables';
 
 :root {
-  --zd-btn-font-size: var(--zd-font-size-epsilon);
+  --zd-btn-font-size: var(--zd-font-size-md);
   --zd-btn-font-weight: var(--zd-font-weight-regular);
   --zd-btn-background-color: transparent;
   --zd-btn-border-radius: 4px;
@@ -15,12 +15,12 @@
     box-shadow .1s ease-in-out,
     background-color .25s ease-in-out,
     color .25s ease-in-out;
-  --zd-btn--lg-font-size: var(--zd-font-size-epsilon);
+  --zd-btn--lg-font-size: var(--zd-font-size-md);
   --zd-btn--lg-line-height: 46px;
   --zd-btn--lg-padding: calc(27 / 14 * 1em);
   --zd-btn--lg-min-width: calc(calc(86 / 14 * 1em) + calc(var(--zd-btn--lg-padding) * 2));
   --zd-btn--pill-border-radius: 100px;
-  --zd-btn--sm-font-size: var(--zd-font-size-zeta);
+  --zd-btn--sm-font-size: var(--zd-font-size-sm);
   --zd-btn--sm-line-height: 30px;
   --zd-btn--sm-padding: calc(27 / 12 * 1em);
   --zd-btn--sm-min-width: calc(calc(46 / 12 * 1em) + calc(var(--zd-btn--sm-padding) * 2));
