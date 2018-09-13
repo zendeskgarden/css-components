@@ -1,7 +1,8 @@
 # @zendeskgarden/css-scrollbars [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-scrollbars.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-scrollbars)
 
 
-This package contains ...
+This package contains a set of classes for styling vertical and
+horizontal custom scrollbars (tracks and thumbs).
 
 ## Installation
 
