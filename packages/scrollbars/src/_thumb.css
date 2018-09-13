@@ -1,0 +1,63 @@
+@import '@zendeskgarden/css-variables';
+@import '_selectors';
+@import '_variables';
+
+:root {
+  --zd-scrollbar__thumb-background-color: var(--zd-color-grey-800);
+  --zd-scrollbar__thumb-min-length: var(--zd-scrollbar__track-size);
+  --zd-scrollbar__thumb-transition:
+    background-color .2s linear,
+    box-shadow .1s ease-in-out,
+    height .2s ease-in-out,
+    width .2s ease-in-out;
+  --zd-scrollbar__thumb--active-background-color: var(--zd-color-grey-600);
+}
+
+.c-scrollbar__thumb,
+.c-scrollbar .ps__thumb-x,
+.c-scrollbar .ps__thumb-y {
+  position: absolute;
+  transition: var(--zd-scrollbar__thumb-transition);
+  border-radius: var(--zd-scrollbar__thumb-size);
+  background-color: var(--zd-scrollbar__thumb-background-color);
+}
+
+.c-scrollbar__track--horizontal .c-scrollbar__thumb,
+.c-scrollbar .ps__thumb-x {
+  bottom: var(--zd-scrollbar__thumb-position);
+  min-width: var(--zd-scrollbar__thumb-min-length);
+  height: var(--zd-scrollbar__thumb-size);
+}
+
+.c-scrollbar__track--vertical .c-scrollbar__thumb,
+.c-scrollbar .ps__thumb-y {
+  right: var(--zd-scrollbar__thumb-position);
+  width: var(--zd-scrollbar__thumb-size);
+  min-height: var(--zd-scrollbar__thumb-min-length);
+}
+
+/* stylelint-disable selector-max-specificity */
+
+.c-scrollbar__thumb:focus,
+.c-scrollbar .ps__thumb-x:focus,
+.c-scrollbar .ps__thumb-y:focus {
+  outline: none;
+}
+
+.c-scrollbar__track:--scrollbar-active .c-scrollbar__thumb,
+.c-scrollbar .ps__rail-x:--scrollbar-active .ps__thumb-x,
+.c-scrollbar .ps__rail-y:--scrollbar-active .ps__thumb-y {
+  background-color: var(--zd-scrollbar__thumb--active-background-color);
+}
+
+.c-scrollbar__track--horizontal:--scrollbar-active .c-scrollbar__thumb,
+.c-scrollbar .ps__rail-x:--scrollbar-active .ps__thumb-x {
+  height: var(--zd-scrollbar__thumb--active-size);
+}
+
+.c-scrollbar__track--vertical:--scrollbar-active .c-scrollbar__thumb,
+.c-scrollbar .ps__rail-y:--scrollbar-active .ps__thumb-y {
+  width: var(--zd-scrollbar__thumb--active-size);
+}
+
+/* stylelint-enable selector-max-specificity */

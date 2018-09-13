@@ -25,6 +25,7 @@ Package | Version | Dependencies
 [`@zendeskgarden/css-menus`](packages/menus) | [![npm version][menus npm version]][menus npm link] | [![Dependency Status][menus dependency status]][menus dependency link]
 [`@zendeskgarden/css-modals`](packages/modals) | [![npm version][modals npm version]][modals npm link] | [![Dependency Status][modals dependency status]][modals dependency link]
 [`@zendeskgarden/css-pagination`](packages/pagination) | [![npm version][pagination npm version]][pagination npm link] | [![Dependency Status][pagination dependency status]][pagination dependency link]
+[`@zendeskgarden/css-scrollbars`](packages/scrollbars) | [![npm version][scrollbars npm version]][scrollbars npm link] | [![Dependency Status][scrollbars dependency status]][scrollbars dependency link]
 [`@zendeskgarden/css-tables`](packages/tables) | [![npm version][tables npm version]][tables npm link] | [![Dependency Status][tables dependency status]][tables dependency link]
 [`@zendeskgarden/css-tabs`](packages/tabs) | [![npm version][tabs npm version]][tabs npm link] | [![Dependency Status][tabs dependency status]][tabs dependency link]
 [`@zendeskgarden/css-tags`](packages/tags) | [![npm version][tags npm version]][tags npm link] | [![Dependency Status][tags dependency status]][tags dependency link]
@@ -76,6 +77,10 @@ Package | Version | Dependencies
 [pagination npm link]: https://www.npmjs.com/package/@zendeskgarden/css-pagination
 [pagination dependency status]: https://img.shields.io/david/zendeskgarden/css-components.svg?path=packages/pagination&style=flat-square
 [pagination dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/pagination
+[scrollbars npm version]: https://img.shields.io/npm/v/@zendeskgarden/css-scrollbars.svg?style=flat-square
+[scrollbars npm link]: https://www.npmjs.com/package/@zendeskgarden/css-scrollbars
+[scrollbars dependency status]: https://img.shields.io/david/zendeskgarden/css-components.svg?path=packages/scrollbars&style=flat-square
+[scrollbars dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/scrollbars
 [tables npm version]: https://img.shields.io/npm/v/@zendeskgarden/css-tables.svg?style=flat-square
 [tables npm link]: https://www.npmjs.com/package/@zendeskgarden/css-tables
 [tables dependency status]: https://img.shields.io/david/zendeskgarden/css-components.svg?path=packages/tables&style=flat-square
