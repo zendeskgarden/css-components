@@ -7,7 +7,7 @@
 
 .c-scrollbar{
   position:relative;
-  overflow:hidden;
+  overflow:hidden !important;
   overflow-anchor:none;
   touch-action:auto;
 }
