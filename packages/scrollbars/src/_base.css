@@ -2,7 +2,8 @@
 
 .c-scrollbar {
   position: relative;
-  overflow: hidden;
+  /* stylelint-disable-next-line declaration-no-important */
+  overflow: hidden !important;
   overflow-anchor: none;
   touch-action: auto;
 }
