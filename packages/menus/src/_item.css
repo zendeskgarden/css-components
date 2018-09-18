@@ -5,7 +5,7 @@
 :root {
   --zd-menu__item-color: var(--zd-color-grey-800);
   --zd-menu__item-line-height: calc(20 / 14);
-  --zd-menu__item-padding-horizontal: 24px;
+  --zd-menu__item-padding-horizontal: 32px;
   --zd-menu__item-padding-vertical: 10px;
   --zd-menu__item-padding: var(--zd-menu__item-padding-vertical) var(--zd-menu__item-padding-horizontal);
   --zd-menu__item-transition: box-shadow .1s ease-in-out;
@@ -17,8 +17,9 @@
     calc(50% + var(--zd-menu__item--checked-background-offset)) / 10px
     svg-load('14/checkmark-lg.svg', color: var(--zd-menu-accent-color));
   --zd-menu__item--header-font-weight: var(--zd-font-weight-semibold);
+  --zd-menu__item--header-padding-horizontal: 16px;
   --zd-menu__item--header__icon-top: calc(calc(var(--zd-menu__item--icon-height) - var(--zd-menu__item--icon-background-size)) / 2);
-  --zd-menu__item--header__icon-left: calc(calc(var(--zd-menu__item--icon-width) - var(--zd-menu__item--icon-background-size)) / 2);
+  --zd-menu__item--header__icon-left: 14px;
   --zd-menu__item--icon-background-size: var(--zd-font-size-md);
   --zd-menu__item--icon-height: calc(20px + calc(var(--zd-menu__item-padding-vertical) * 2));
   --zd-menu__item--icon-width: var(--zd-menu__item-padding-horizontal);
@@ -28,12 +29,13 @@
   --zd-menu__item--media__figure-size: 32px;
   --zd-menu__item--next-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-600));
   --zd-menu__item--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu-accent-color));
-  --zd-menu--sm__item-padding-horizontal: 20px;
+  --zd-menu--sm__item-padding-horizontal: 24px;
   --zd-menu--sm__item-padding-vertical: 6px;
   --zd-menu--sm__item-padding: var(--zd-menu--sm__item-padding-vertical) var(--zd-menu--sm__item-padding-horizontal);
   --zd-menu--sm__item--checked-background-size: 9px;
+  --zd-menu--sm__item--header-padding-horizontal: 12px;
   --zd-menu--sm__item--header__icon-top: calc(calc(var(--zd-menu--sm__item--icon-height) - var(--zd-menu__item--icon-background-size)) / 2);
-  --zd-menu--sm__item--header__icon-left: calc(calc(var(--zd-menu--sm__item--icon-width) - var(--zd-menu__item--icon-background-size)) / 2);
+  --zd-menu--sm__item--header__icon-left: 6px;
   --zd-menu--sm__item--icon-height: calc(20px + calc(var(--zd-menu--sm__item-padding-vertical) * 2));
   --zd-menu--sm__item--icon-width: var(--zd-menu--sm__item-padding-horizontal);
   --zd-menu--sm__item--media__figure-size: 24px;
@@ -99,7 +101,12 @@
   font-weight: var(--zd-menu__item--header-font-weight);
 }
 
-.c-menu__item .c-menu__item--header__icon {
+.c-menu__item.c-menu__item--header:not(.c-menu__item--header--icon) {
+  padding-right: var(--zd-menu__item--header-padding-horizontal);
+  padding-left: var(--zd-menu__item--header-padding-horizontal);
+}
+
+.c-menu__item--header--icon .c-menu__item--header__icon {
   position: absolute;
   top: var(--zd-menu__item--header__icon-top);
   left: var(--zd-menu__item--header__icon-left);
@@ -107,24 +114,27 @@
   height: var(--zd-menu__item--icon-background-size);
 }
 
-.c-menu--sm .c-menu__item .c-menu__item--header__icon {
+.c-menu--sm .c-menu__item--header:not(.c-menu__item--header--icon) {
+  padding-right: var(--zd-menu--sm__item--header-padding-horizontal);
+  padding-left: var(--zd-menu--sm__item--header-padding-horizontal);
+}
+
+.c-menu--sm .c-menu__item--header--icon .c-menu__item--header__icon {
   top: var(--zd-menu--sm__item--header__icon-top);
   left: var(--zd-menu--sm__item--header__icon-left);
 }
 
-.c-menu.is-rtl .c-menu__item--header__icon {
+/* stylelint-disable selector-max-specificity */
+.c-menu.is-rtl .c-menu__item--header--icon .c-menu__item--header__icon {
   right: var(--zd-menu__item--header__icon-left);
   left: auto;
 }
 
-.c-menu--sm.is-rtl .c-menu__item--header__icon {
+.c-menu--sm.is-rtl .c-menu__item--header--icon .c-menu__item--header__icon {
   right: var(--zd-menu--sm__item--header__icon-left);
   left: auto;
 }
-
-.c-menu__item.c-menu__item--previous {
-  text-align: center;
-}
+/* stylelint-enable selector-max-specificity */
 
 .c-menu__item:--menu-checked::before,
 .c-menu__item.c-menu__item--add::before,
