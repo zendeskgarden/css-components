@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.0.0"></a>
+# [8.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@7.1.0...@zendeskgarden/css-menus@8.0.0) (2018-09-20)
+
+
+### Bug Fixes
+
+* **menus:** update menuitem indentation ([#113](https://github.com/zendeskgarden/css-components/issues/113)) ([0683758](https://github.com/zendeskgarden/css-components/commit/0683758))
+
+
+### BREAKING CHANGES
+
+* **menus:** `.c-menu__item--header--icon` is now needed to prepare the header element for receiving a child `.c-menu__item--header__icon` element.
+
+* Updated: increased horizontal padding for `.c-menu__item` from 24px to 32px (small sized menu items increase from 20px to 24px).
+* Updated: `.c-menu__item--header__icon` position adjusted accordingly.
+
+
+
+
+
 <a name="7.1.0"></a>
 # [7.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@7.0.8...@zendeskgarden/css-menus@7.1.0) (2018-09-07)
 
