@@ -564,9 +564,9 @@
     inquirer "^6.2.0"
     npmlog "^4.1.2"
 
-"@lerna/publish@^3.3.2":
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/@lerna/publish/-/publish-3.3.2.tgz#bfd54183dbbc3d8d3fdfcb8860af5dd1d7906689"
+"@lerna/publish@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@lerna/publish/-/publish-3.4.0.tgz#d2665f7b16eb3b2b8962c47fcf31fe901ff9a288"
   dependencies:
     "@lerna/batch-packages" "^3.1.2"
     "@lerna/check-working-tree" "^3.3.0"
@@ -575,6 +575,7 @@
     "@lerna/command" "^3.3.0"
     "@lerna/describe-ref" "^3.3.0"
     "@lerna/get-npm-exec-opts" "^3.0.0"
+    "@lerna/npm-conf" "^3.0.0"
     "@lerna/npm-dist-tag" "^3.3.0"
     "@lerna/npm-publish" "^3.3.1"
     "@lerna/output" "^3.0.0"
@@ -584,7 +585,9 @@
     "@lerna/validation-error" "^3.0.0"
     "@lerna/version" "^3.3.2"
     fs-extra "^7.0.0"
+    libnpmaccess "^3.0.0"
     npm-package-arg "^6.0.0"
+    npm-registry-fetch "^3.8.0"
     npmlog "^4.1.2"
     p-finally "^1.0.0"
     p-map "^1.2.0"
@@ -721,7 +724,7 @@
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/@zendeskgarden/svg-icons/-/svg-icons-4.4.5.tgz#53000ded0abc53670a4ccd6522c46b6b86815bd7"
 
-JSONStream@^1.0.4:
+JSONStream@^1.0.4, JSONStream@^1.3.4:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.3.4.tgz#615bb2adb0cd34c8f4c447b5f6512fa1d8f16a2e"
   dependencies:
@@ -848,6 +851,10 @@ apache-md5@^1.0.6:
 aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
+
+aproba@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/aproba/-/aproba-2.0.0.tgz#52520b8ae5b569215b354efc0caa3fe1e45a8adc"
 
 are-we-there-yet@~1.1.2:
   version "1.1.5"
@@ -1454,7 +1461,7 @@ commander@^2.18.0:
   version "2.18.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.18.0.tgz#2bf063ddee7c7891176981a2cc798e5754bc6970"
 
-commander@^2.9.0, commander@~2.17.1:
+commander@~2.17.1:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
@@ -2370,6 +2377,10 @@ figgy-pudding@^3.1.0, figgy-pudding@^3.2.0, figgy-pudding@^3.2.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.4.1.tgz#af66da1991fa2f94ff7f33b545a38ea4b3869696"
 
+figgy-pudding@^3.4.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
+
 figures@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
@@ -2520,14 +2531,6 @@ from2@^2.1.0:
 from@~0:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/from/-/from-0.1.7.tgz#83c60afc58b9c56997007ed1a768b3ab303a44fe"
-
-fs-extra@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-3.0.1.tgz#3794f378c58b342ea7dbbb23095109c4b3b62291"
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^3.0.0"
-    universalify "^0.1.0"
 
 fs-extra@^7.0.0:
   version "7.0.0"
@@ -2713,6 +2716,17 @@ glob-to-regexp@^0.3.0:
 glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.4"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
+glob@^7.1.3:
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -3482,12 +3496,6 @@ json5@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
 
-jsonfile@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-3.0.1.tgz#a5ecc6f65f53f662c4415c7675a0331d0992ec66"
-  optionalDependencies:
-    graceful-fs "^4.1.6"
-
 jsonfile@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
@@ -3547,9 +3555,9 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-lerna@3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/lerna/-/lerna-3.3.2.tgz#c5df2744007a0c8b8b0efb60dc45368db86a5fac"
+lerna@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-3.4.0.tgz#c1403852b4b3fa986072de11d7f549604fd41775"
   dependencies:
     "@lerna/add" "^3.3.2"
     "@lerna/bootstrap" "^3.3.2"
@@ -3563,7 +3571,7 @@ lerna@3.3.2:
     "@lerna/init" "^3.3.0"
     "@lerna/link" "^3.3.0"
     "@lerna/list" "^3.3.2"
-    "@lerna/publish" "^3.3.2"
+    "@lerna/publish" "^3.4.0"
     "@lerna/run" "^3.3.2"
     "@lerna/version" "^3.3.2"
     import-local "^1.0.0"
@@ -3575,6 +3583,15 @@ levn@^0.3.0, levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+libnpmaccess@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/libnpmaccess/-/libnpmaccess-3.0.0.tgz#33cc9c8a5cb53e87d06bf2e547c2eba974f619af"
+  dependencies:
+    aproba "^2.0.0"
+    get-stream "^4.0.0"
+    npm-package-arg "^6.1.0"
+    npm-registry-fetch "^3.8.0"
 
 live-server@1.2.0:
   version "1.2.0"
@@ -4178,6 +4195,17 @@ npm-registry-fetch@^3.0.0:
   dependencies:
     bluebird "^3.5.1"
     figgy-pudding "^3.2.0"
+    lru-cache "^4.1.3"
+    make-fetch-happen "^4.0.1"
+    npm-package-arg "^6.1.0"
+
+npm-registry-fetch@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/npm-registry-fetch/-/npm-registry-fetch-3.8.0.tgz#aa7d9a7c92aff94f48dba0984bdef4bd131c88cc"
+  dependencies:
+    JSONStream "^1.3.4"
+    bluebird "^3.5.1"
+    figgy-pudding "^3.4.1"
     lru-cache "^4.1.3"
     make-fetch-happen "^4.0.1"
     npm-package-arg "^6.1.0"
@@ -5249,13 +5277,13 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier-package-json@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/prettier-package-json/-/prettier-package-json-2.0.0.tgz#b520a4a246a7c4814884f32934bc56b9139dbd14"
+prettier-package-json@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/prettier-package-json/-/prettier-package-json-2.0.1.tgz#73ac83a1b5ef5a40874d58279da91627b0676877"
   dependencies:
-    commander "^2.9.0"
-    fs-extra "^3.0.1"
-    glob "^7.1.2"
+    commander "^2.18.0"
+    fs-extra "^7.0.0"
+    glob "^7.1.3"
     minimatch "^3.0.4"
     parse-author "^2.0.0"
     sort-object-keys "^1.1.2"
