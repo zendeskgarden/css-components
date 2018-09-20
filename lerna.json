@@ -2,6 +2,9 @@
   "npmClient": "yarn",
   "version": "independent",
   "command": {
+    "publish": {
+      "registry": "https://registry.npmjs.org/"
+    },
     "version": {
       "push": false,
       "allowBranch": "master",
