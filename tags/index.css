@@ -125,47 +125,28 @@
 
 .c-tag--sm{
   padding:0 4px;
-  height:16px;
-  line-height:1.6;
+  height:15px;
+  line-height:1.5;
   font-size:10px;
 }
 
 .c-tag--lg{
   border-radius:4px;
   padding:0 12px;
-  height:32px;
-  line-height:2.66667;
-}
-
-.c-tag--pill.c-tag--sm{
-  padding:0 8px;
-  min-width:24px;
-}
-
-.c-tag--pill.c-tag--sm>*{
-  min-width:8px;
-}
-
-.c-tag--pill.c-tag--lg{
-  min-width:48px;
-}
-
-.c-tag--pill.c-tag--lg>*{
-  min-width:var(--zd-tag--pill--lg__-min-width);
+  height:30px;
+  line-height:2.5;
 }
 
 .c-tag--round.c-tag--sm,.c-tag--round.c-tag--sm>*{
-  min-width:16px;
+  min-width:15px;
 }
 
 .c-tag--round.c-tag--lg,.c-tag--round.c-tag--lg>*{
-  min-width:32px;
+  min-width:30px;
 }
 
 .c-tag--pill{
-  justify-content:center;
   border-radius:100px;
-  min-width:30px;
 }
 
 .c-tag--round{
@@ -173,11 +154,6 @@
   border-radius:50%;
   padding:0;
   min-width:20px;
-}
-
-.c-tag--pill>*{
-  min-width:14px;
-  text-align:center;
 }
 
 .c-tag--round>*{
@@ -214,15 +190,15 @@
 .c-tag--lg .c-tag__remove{
   margin-right:-12px;
   background-size:16px;
-  width:32px;
-  height:32px;
+  width:30px;
+  height:30px;
 }
 
 .c-tag--sm .c-tag__remove{
   margin-right:-4px;
   background-size:11px;
-  width:16px;
-  height:16px;
+  width:15px;
+  height:15px;
 }
 
 .c-tag--pill .c-tag__remove{
@@ -268,9 +244,9 @@
 .c-tag--lg .c-tag__avatar{
   margin:3px 10px 3px -9px;
   border-radius:3px;
-  width:26px;
-  min-width:26px;
-  height:26px;
+  width:24px;
+  min-width:24px;
+  height:24px;
 }
 
 .c-tag--pill .c-tag__avatar{
