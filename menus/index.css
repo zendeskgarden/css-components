@@ -84,7 +84,7 @@
   transition:box-shadow .1s ease-in-out;
   z-index:0;
   cursor:pointer;
-  padding:10px 24px;
+  padding:10px 32px;
   text-decoration:none;
   line-height:1.42857;
   word-wrap:break-word;
@@ -103,18 +103,18 @@
   background:no-repeat
     60% / 10px
     url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%231F73B7'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M1 7.92L5.08 12 13 1.92'/%3E%3C/svg%3E");
-  width:24px;
+  width:32px;
   height:40px;
   content:"";
 }
 
 .c-menu--sm .c-menu__item{
-  padding:6px 20px;
+  padding:6px 24px;
 }
 
 .c-menu--sm .c-menu__item:before{
   background-size:9px;
-  width:20px;
+  width:24px;
   height:32px;
 }
 
@@ -134,31 +134,37 @@
   font-weight:600;
 }
 
-.c-menu__item .c-menu__item--header__icon{
+.c-menu__item.c-menu__item--header:not(.c-menu__item--header--icon){
+  padding-right:16px;
+  padding-left:16px;
+}
+
+.c-menu__item--header--icon .c-menu__item--header__icon{
   position:absolute;
   top:13px;
-  left:5px;
+  left:14px;
   width:14px;
   height:14px;
 }
 
-.c-menu--sm .c-menu__item .c-menu__item--header__icon{
+.c-menu--sm .c-menu__item--header:not(.c-menu__item--header--icon){
+  padding-right:12px;
+  padding-left:12px;
+}
+
+.c-menu--sm .c-menu__item--header--icon .c-menu__item--header__icon{
   top:9px;
-  left:3px;
+  left:6px;
 }
 
-.c-menu.is-rtl .c-menu__item--header__icon{
-  right:5px;
+.c-menu.is-rtl .c-menu__item--header--icon .c-menu__item--header__icon{
+  right:14px;
   left:auto;
 }
 
-.c-menu--sm.is-rtl .c-menu__item--header__icon{
-  right:3px;
+.c-menu--sm.is-rtl .c-menu__item--header--icon .c-menu__item--header__icon{
+  right:6px;
   left:auto;
-}
-
-.c-menu__item.c-menu__item--previous{
-  text-align:center;
 }
 
 .c-menu__item.c-menu__item--add:before,.c-menu__item.c-menu__item--next:before,.c-menu__item.c-menu__item--previous:before,.c-menu__item.is-checked:before,.c-menu__item[aria-checked=true]:before{
