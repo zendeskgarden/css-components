@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.1"></a>
+## [3.1.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.1.0...@zendeskgarden/css-tables@3.1.1) (2018-09-24)
+
+
+### Bug Fixes
+
+* **tables:** adjust `.c-table__row__cell__overflow` trigger size ([#118](https://github.com/zendeskgarden/css-components/issues/118)) ([fc22efa](https://github.com/zendeskgarden/css-components/commit/fc22efa))
+
+
+
+
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@3.0.9...@zendeskgarden/css-tables@3.1.0) (2018-09-07)
 
