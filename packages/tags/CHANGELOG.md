@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.1"></a>
+## [4.1.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@4.1.0...@zendeskgarden/css-tags@4.1.1) (2018-09-24)
+
+
+### Bug Fixes
+
+* **tags:** minimum widths for pill styled tags ([#112](https://github.com/zendeskgarden/css-components/issues/112)) ([5d54d90](https://github.com/zendeskgarden/css-components/commit/5d54d90))
+
+
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@4.0.8...@zendeskgarden/css-tags@4.1.0) (2018-09-07)
 
