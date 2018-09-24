@@ -81,9 +81,15 @@
       <section class="u-mb-lg">
         <h1 class="c-main__subtitle u-fs-xl u-mb">Shapes</h1>
         <p class="u-mb">Use pill or round class modifiers to shape a tag.
-        Round tags are intended to contain a minimal number of characters.</p>
+          Round tags are intended to contain a minimal number of characters.
+          For example, you may want to use a round tag to show numbers 1-9 in a
+          notification badge and then programmatically switch to a pill
+          treatment for displaying 10+ notifications.</p>
         <div class="u-mb">
           <div class="c-tag c-tag--pill"><span dir="ltr">.c-tag.c-tag--pill</span></div>
+        </div>
+        <div class="u-mb">
+          <div class="c-tag c-tag--pill"><span>T</span></div>
         </div>
         <div class="u-mb">
           <div class="c-tag c-tag--round"><span>8</span></div>
@@ -95,24 +101,30 @@
         <p class="u-mb">Tags may be sized small or large. Note that small tags
         will not display the <i>avatar</i> element (shown below).</p>
         <div class="l-grid u-mb">
-          <div class="l-grid__item u-1/3">
+          <div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--sm"><span dir="ltr">.c-tag.c-tag--sm</span></div>
           </div
-          ><div class="l-grid__item u-1/3">
+          ><div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--pill c-tag--sm"><span dir="ltr">.c-tag.c-tag--pill.c-tag--sm</span></div>
           </div
-          ><div class="l-grid__item u-1/3">
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--pill c-tag--sm"><span>T</span></div>
+          </div
+          ><div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--round c-tag--sm"><span>8</span></div>
           </div>
         </div>
         <div class="l-grid u-mb">
-          <div class="l-grid__item u-1/3">
+          <div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--lg"><span dir="ltr">.c-tag.c-tag--lg</span></div>
           </div
-          ><div class="l-grid__item u-1/3">
+          ><div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--pill c-tag--lg"><span dir="ltr">.c-tag.c-tag--pill.c-tag--lg</span></div>
           </div
-          ><div class="l-grid__item u-1/3">
+          ><div class="l-grid__item u-1/4">
+            <div class="c-tag c-tag--pill c-tag--lg"><span>T</span></div>
+          </div
+          ><div class="l-grid__item u-1/4">
             <div class="c-tag c-tag--round c-tag--lg"><span>100</span></div>
           </div>
         </div>
