@@ -4,15 +4,16 @@ module.exports = {
   plugins: {
     'postcss-import': {},
     'postcss-input-range': {},
-    'postcss-inline-svg': {
-      path: path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')
-    },
     'postcss-preset-env': {
       stage: 1,
       features: {
+        'color-mod-function': true,
         'custom-properties': { preserve: false },
         'system-ui-font-family': false
       }
+    },
+    'postcss-inline-svg': {
+      path: path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')
     },
     'cssnano': {
       preset: [
