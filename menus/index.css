@@ -81,7 +81,6 @@
 .c-menu__item{
   display:block;
   position:relative;
-  transition:box-shadow .1s ease-in-out;
   z-index:0;
   cursor:pointer;
   padding:10px 32px;
