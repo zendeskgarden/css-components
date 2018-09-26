@@ -8,7 +8,6 @@
   --zd-menu__item-padding-horizontal: 32px;
   --zd-menu__item-padding-vertical: 10px;
   --zd-menu__item-padding: var(--zd-menu__item-padding-vertical) var(--zd-menu__item-padding-horizontal);
-  --zd-menu__item-transition: box-shadow .1s ease-in-out;
   --zd-menu__item--add-background-image: svg-load('14/plus.svg', color: var(--zd-menu-accent-color));
   --zd-menu__item--add-color: var(--zd-menu-accent-color);
   --zd-menu__item--checked-background-offset: 10%;
@@ -52,7 +51,6 @@
 .c-menu__item {
   display: block;
   position: relative; /* [1] */
-  transition: var(--zd-menu__item-transition);
   z-index: 0; /* [2] */
   cursor: pointer;
   padding: var(--zd-menu__item-padding);
