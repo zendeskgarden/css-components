@@ -11,10 +11,6 @@
   --zd-menu__item-disabled--checked-background-image: svg-load('14/checkmark-lg.svg', color: var(--zd-menu__item-disabled-color));
   --zd-menu__item-disabled--next-background-image: svg-load('14/next.svg', color: var(--zd-menu__item-disabled-color));
   --zd-menu__item-disabled--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu__item-disabled-color));
-  --zd-menu__item-focused-box-shadow-color: color-mod(var(--zd-menu-accent-color) alpha(35%));
-  --zd-menu__item-focused-box-shadow:
-    inset 0 3px 0 var(--zd-menu__item-focused-box-shadow-color),
-    inset 0 -3px 0 var(--zd-menu__item-focused-box-shadow-color);
   --zd-menu__item-hovered-background-color: var(--zd-menu-accent-color-hovered);
 }
 
@@ -30,14 +26,9 @@
 
 .c-menu__item:--menu-focused {
   outline: none;
-  box-shadow: var(--zd-menu__item-focused-box-shadow);
 }
 
 /* stylelint-disable selector-max-specificity */
-.c-menu .c-menu__item:--menu-active:--menu-focused {
-  box-shadow: none;
-}
-
 .c-menu .c-menu__item:--menu-disabled {
   cursor: default;
   color: var(--zd-menu__item-disabled-color);
@@ -46,10 +37,6 @@
 .c-menu .c-menu__item:--menu-disabled:--menu-hovered,
 .c-menu .c-menu__item:--menu-disabled:--menu-focused {
   background-color: inherit;
-}
-
-.c-menu .c-menu__item:--menu-disabled:--menu-focused {
-  box-shadow: none;
 }
 
 .c-menu .c-menu__item:--menu-checked:--menu-disabled::before {
