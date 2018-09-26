@@ -6,8 +6,8 @@
   --zd-chrome__subnav-background-color: var(--zd-color-kale-800);
   --zd-chrome__subnav-color: var(--zd-color-white);
   --zd-chrome__subnav-font-size: var(--zd-font-size-md);
-  --zd-chrome__subnav-min-width: 180px;
-  --zd-chrome__subnav-padding: 30px 20px;
+  --zd-chrome__subnav-min-width: 220px;
+  --zd-chrome__subnav-padding: 24px 20px;
   --zd-chrome__subnav__item-border-radius: 4px;
   --zd-chrome__subnav__item-margin: 8px;
   --zd-chrome__subnav__item-min-height: 30px;
