@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="8.0.1"></a>
+## [8.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@8.0.0...@zendeskgarden/css-menus@8.0.1) (2018-09-27)
+
+
+### Bug Fixes
+
+* **menus:** remove `box-shadow` on `.c-menu__item.is-focused` ([#119](https://github.com/zendeskgarden/css-components/issues/119)) ([bd1d3e5](https://github.com/zendeskgarden/css-components/commit/bd1d3e5))
+
+
+
+
+
 <a name="8.0.0"></a>
 # [8.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@7.1.0...@zendeskgarden/css-menus@8.0.0) (2018-09-20)
 
