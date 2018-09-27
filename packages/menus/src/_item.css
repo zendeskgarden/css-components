@@ -27,7 +27,7 @@
   --zd-menu__item--media__figure-margin: 8px;
   --zd-menu__item--media__figure-size: 32px;
   --zd-menu__item--next-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-600));
-  --zd-menu__item--previous-background-image: svg-load('14/previous.svg', color: var(--zd-menu-accent-color));
+  --zd-menu__item--previous-background-image: svg-load('14/previous.svg', color: var(--zd-color-grey-600));
   --zd-menu--sm__item-padding-horizontal: 24px;
   --zd-menu--sm__item-padding-vertical: 6px;
   --zd-menu--sm__item-padding: var(--zd-menu--sm__item-padding-vertical) var(--zd-menu--sm__item-padding-horizontal);
