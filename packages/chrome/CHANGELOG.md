@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.3.0...@zendeskgarden/css-chrome@3.3.1) (2018-10-08)
+
+**Note:** Version bump only for package @zendeskgarden/css-chrome
+
+
+
+
+
 <a name="3.3.0"></a>
 # [3.3.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.2.1...@zendeskgarden/css-chrome@3.3.0) (2018-09-07)
 
