@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.3.0...@zendeskgarden/css-modals@6.3.1) (2018-10-08)
+
+**Note:** Version bump only for package @zendeskgarden/css-modals
+
+
+
+
+
 <a name="6.3.0"></a>
 # [6.3.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.2.4...@zendeskgarden/css-modals@6.3.0) (2018-09-07)
 
