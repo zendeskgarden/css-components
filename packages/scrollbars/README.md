@@ -21,7 +21,7 @@ Once installed, scrollbars CSS can be accessed via `postcss-import`.
 Component CSS provides styling for the following basic scrollbar structure.
 
 ```html
-<div class="c-scrollbar>
+<div class="c-scrollbar">
   <div>YOUR SCROLLABLE CONTENT HERE</div>
   <div class="c-scrollbar__track c-scrollbar__track--vertical">
     <div class="c-scrollbar__thumb"></div>
