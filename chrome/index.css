@@ -73,6 +73,7 @@
   transition:box-shadow .1s ease-in-out,background-color .1s ease-in-out,opacity .1s ease-in-out;
   opacity:.6;
   border:none;
+  box-sizing:border-box;
   background:transparent;
   cursor:pointer;
   padding:12px 8.5px;
@@ -254,6 +255,7 @@
   margin-top:8px;
   border:none;
   border-radius:4px;
+  box-sizing:border-box;
   background:transparent;
   cursor:pointer;
   padding:0 8px;
