@@ -70,6 +70,7 @@
   margin-top: var(--zd-chrome__subnav__item-margin);
   border: none; /* [2] */
   border-radius: var(--zd-chrome__subnav__item-border-radius);
+  box-sizing: border-box;
   background: transparent; /* [2] */
   cursor: pointer; /* [2] */
   padding: var(--zd-chrome__subnav__item-padding);

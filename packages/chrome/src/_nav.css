@@ -71,6 +71,7 @@
   transition: var(--zd-chrome__nav__item-transition);
   opacity: var(--zd-chrome__nav__item-opacity);
   border: none; /* [1] */
+  box-sizing: border-box;
   background: transparent; /* [1] */
   cursor: pointer;
   padding: var(--zd-chrome__nav__item-padding);
