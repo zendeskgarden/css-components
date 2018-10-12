@@ -5,11 +5,11 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-.c-menu--custom .c-menu__item:before{
+.c-menu--custom .c-menu__item.is-checked:before,.c-menu--custom .c-menu__item[aria-checked=true]:before{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%23EB4962'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M1 7.92L5.08 12 13 1.92'/%3E%3C/svg%3E");
 }
 
-.c-menu--custom .c-menu__item.c-menu__item--add{
+.c-menu--custom .c-menu__item--add:not(.is-disabled):not([disabled]):not([aria-disabled=true]){
   color:#eb4962;
 }
 
@@ -17,18 +17,6 @@
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%23EB4962'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M7 11V3M3 7h8'/%3E%3C/svg%3E");
 }
 
-.c-menu--custom .c-menu__item.c-menu__item--next:before{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%23EB4962'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 11l4-4-4-4'/%3E%3C/svg%3E");
-}
-
-.c-menu--custom .c-menu__item.c-menu__item--previous:before{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%23EB4962'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 11L5 7l4-4'/%3E%3C/svg%3E");
-}
-
 .c-menu--custom .c-menu__item.is-focused,.c-menu--custom .c-menu__item.is-hovered,.c-menu--custom .c-menu__item:not(.c-menu__item--header):focus,.c-menu--custom .c-menu__item:not(.c-menu__item--header):hover{
   background-color:rgba(235, 73, 98, .15);
-}
-
-.c-menu--custom .c-menu__item.is-focused,.c-menu--custom .c-menu__item:not(.c-menu__item--header):focus{
-  box-shadow:inset 0 3px 0 rgba(235, 73, 98, .35),inset 0 -3px 0 rgba(235, 73, 98, .35);
 }
