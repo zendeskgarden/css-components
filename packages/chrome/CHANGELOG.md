@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.3.2...@zendeskgarden/css-chrome@3.4.0) (2018-10-12)
+
+
+### Features
+
+* **chrome:** add secondary navigation to subnav ([#128](https://github.com/zendeskgarden/css-components/issues/128)) ([e3e990a](https://github.com/zendeskgarden/css-components/commit/e3e990a))
+
+
+
+
+
 ## [3.3.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.3.1...@zendeskgarden/css-chrome@3.3.2) (2018-10-08)
 
 **Note:** Version bump only for package @zendeskgarden/css-chrome
