@@ -419,9 +419,17 @@
                 <a class="c-chrome__subnav__item" href>
                   <span class="c-chrome__subnav__item__text">Account</span>
                 </a>
-                <a class="c-chrome__subnav__item" href>
+                <button class="c-chrome__subnav__item c-chrome__subnav__item--header">
                   <span class="c-chrome__subnav__item__text">Channels</span>
-                </a>
+                </button>
+                <div class="c-chrome__subnav__panel is-hidden" style="max-height: 76px">
+                  <a class="c-chrome__subnav__item" href>
+                    <span class="c-chrome__subnav__item__text">Facebook</span>
+                  </a>
+                  <a class="c-chrome__subnav__item" href>
+                    <span class="c-chrome__subnav__item__text">Twitter</span>
+                  </a>
+                </div>
                 <a class="c-chrome__subnav__item" href>
                   <span class="c-chrome__subnav__item__text c-chrome__subnav__item__text--wrap">Experimental Product Features</span>
                 </a>
@@ -996,7 +1004,7 @@
     </div>
   </nav>
   <!--
-  <nav class="c-chrome__subnav">
+  <nav class="c-chrome__subnav" style="max-width: 220px">
     <a class="c-chrome__subnav__item is-current" href>
       <span class="c-chrome__subnav__item__text">Item One</span>
     </a>
