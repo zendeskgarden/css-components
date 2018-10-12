@@ -81,6 +81,7 @@
 .c-menu__item{
   display:block;
   position:relative;
+  transition:box-shadow .1s ease-in-out;
   z-index:0;
   cursor:pointer;
   padding:10px 32px;
@@ -186,7 +187,7 @@
 }
 
 .c-menu__item.c-menu__item--previous:before{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%2368737D'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 11L5 7l4-4'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%231F73B7'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 11L5 7l4-4'/%3E%3C/svg%3E");
 }
 
 .c-menu.is-rtl .c-menu__item:before{
@@ -275,6 +276,11 @@
 
 .c-menu__item.is-focused,.c-menu__item:not(.c-menu__item--header):focus{
   outline:none;
+  box-shadow:inset 0 3px 0 rgba(31, 115, 183, .35),inset 0 -3px 0 rgba(31, 115, 183, .35);
+}
+
+.c-menu .c-menu__item.is-active.is-focused,.c-menu .c-menu__item.is-active:not(.c-menu__item--header):focus,.c-menu .c-menu__item:active.is-focused,.c-menu .c-menu__item:active:not(.c-menu__item--header):focus{
+  box-shadow:none;
 }
 
 .c-menu .c-menu__item.is-disabled,.c-menu .c-menu__item[aria-disabled=true],.c-menu .c-menu__item[disabled]{
@@ -284,6 +290,10 @@
 
 .c-menu .c-menu__item.is-disabled.is-focused,.c-menu .c-menu__item.is-disabled.is-hovered,.c-menu .c-menu__item.is-disabled:not(.c-menu__item--header):focus,.c-menu .c-menu__item.is-disabled:not(.c-menu__item--header):hover,.c-menu .c-menu__item[aria-disabled=true].is-focused,.c-menu .c-menu__item[aria-disabled=true].is-hovered,.c-menu .c-menu__item[aria-disabled=true]:not(.c-menu__item--header):focus,.c-menu .c-menu__item[aria-disabled=true]:not(.c-menu__item--header):hover,.c-menu .c-menu__item[disabled].is-focused,.c-menu .c-menu__item[disabled].is-hovered,.c-menu .c-menu__item[disabled]:not(.c-menu__item--header):focus,.c-menu .c-menu__item[disabled]:not(.c-menu__item--header):hover{
   background-color:inherit;
+}
+
+.c-menu .c-menu__item.is-disabled.is-focused,.c-menu .c-menu__item.is-disabled:not(.c-menu__item--header):focus,.c-menu .c-menu__item[aria-disabled=true].is-focused,.c-menu .c-menu__item[aria-disabled=true]:not(.c-menu__item--header):focus,.c-menu .c-menu__item[disabled].is-focused,.c-menu .c-menu__item[disabled]:not(.c-menu__item--header):focus{
+  box-shadow:none;
 }
 
 .c-menu .c-menu__item.is-checked.is-disabled:before,.c-menu .c-menu__item.is-checked[aria-disabled=true]:before,.c-menu .c-menu__item.is-checked[disabled]:before,.c-menu .c-menu__item[aria-checked=true].is-disabled:before,.c-menu .c-menu__item[aria-checked=true][aria-disabled=true]:before,.c-menu .c-menu__item[aria-checked=true][disabled]:before{
