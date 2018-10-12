@@ -75,7 +75,9 @@
       <a href="page.html" target="_blank"><i>Open full page Chrome in a separate window</i></a>.
       Remember to apply the proper set of
       <a href="//zendeskgarden.github.io/favicons/">Garden Favicons</a> to your
-      specific product pages.</p>
+      specific product pages. See the Garden React
+      <a href="//zendeskgarden.github.io/react-components/chrome/">chrome</a>
+      package for enhanced keyboard and event behavior.</p>
 
       <div class="u-mb-lg">
         <h2 class="c-main__subtitle u-fs-lg u-mb">Basic Structure</h2>
@@ -412,23 +414,50 @@
                   <span class="c-chrome__nav__fab__text">0</span>
                 </button>
               </nav>
-              <nav class="c-chrome__subnav" style="max-width:180px">
+              <nav class="c-chrome__subnav" style="max-width:220px">
                 <a class="c-chrome__subnav__item is-current" href>
                   <span class="c-chrome__subnav__item__text">Personal</span>
                 </a>
                 <a class="c-chrome__subnav__item" href>
                   <span class="c-chrome__subnav__item__text">Account</span>
                 </a>
-                <a class="c-chrome__subnav__item" href>
+                <button class="c-chrome__subnav__item c-chrome__subnav__item--header">
                   <span class="c-chrome__subnav__item__text">Channels</span>
-                </a>
+                </button>
+                <div class="c-chrome__subnav__panel is-hidden" style="max-height: 76px">
+                  <a class="c-chrome__subnav__item" href>
+                    <span class="c-chrome__subnav__item__text">Facebook</span>
+                  </a>
+                  <a class="c-chrome__subnav__item" href>
+                    <span class="c-chrome__subnav__item__text">Twitter</span>
+                  </a>
+                </div>
                 <a class="c-chrome__subnav__item" href>
-                  <span class="c-chrome__subnav__item__text c-chrome__subnav__item__text--wrap">Experimental Features</span>
+                  <span class="c-chrome__subnav__item__text c-chrome__subnav__item__text--wrap">Experimental Product Features</span>
                 </a>
               </nav>
             </div>
           </div>
         </div>
+        <p class="u-mb">The accordion pattern seen in the final navigation
+        example's subnav is accomplished using the following structure. See
+        class modifiers below for controlling accordion expand/collapse.</p>
+        <ul class="u-list-style-disc u-mb">
+          <li>
+            <code>&lt;button class="</code><code class="c-code">c-chrome__subnav__item c-chrome__subnav__item--header</code><code>"&gt;</code>
+            <ul class="u-list-style-disc">
+              <li>
+                <code>&lt;div class="</code><code class="c-code">c-chrome__subnav__panel is-hidden</code><code>"&gt;</code>
+                <ul class="u-list-style-disc">
+                  <li>
+                    <code>&lt;a class="</code><code class="c-code">c-chrome__subnav__item</code><code>"&gt;</code>
+                  </li>
+                  <li>etc.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
 
       <div class="u-mb-xl">
@@ -896,7 +925,9 @@
           <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item--logo</code> – style the product logo shown as the top item in the nav.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item.is-current</code> – indicate which item is current in the nav.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__nav__item__text--wrap</code> – use to wrap long text in the nav.</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__subnav__item--header.is-expanded</code> – toggle to indicate accordion expansion.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__subnav__item__text--wrap</code> – combine with max-width on the <code class="c-code">.c-chrome__subnav</code> container to wrap long text.</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__subnav__panel.is-hidden</code> – remove in conjunction with the associated <code class="c-code">.c-chrome__subnav__item--header</code> expansion to reveal the accordion panel. Note that in order to achieve the intended animation, a <code class="c-code">max-height</code> should be manually applied to the panel for the full height of the expanded container.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--logo</code> – style the product logo shown as the first item in the header (only displayed in standalone).</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--max-x</code> – horizontally maximize a flex item in the header to take as much space as possible (i.e. breadcrumb container or an empty element separating starting items from ending items).</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--max-y</code> – vertically maximize the height for a header item (i.e. contains a search input).</li>
@@ -996,7 +1027,7 @@
     </div>
   </nav>
   <!--
-  <nav class="c-chrome__subnav">
+  <nav class="c-chrome__subnav" style="max-width: 220px">
     <a class="c-chrome__subnav__item is-current" href>
       <span class="c-chrome__subnav__item__text">Item One</span>
     </a>

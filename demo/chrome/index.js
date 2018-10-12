@@ -51,11 +51,18 @@ $(document).ready(function() {
   });
 
   $(document).on('click', '.c-chrome__subnav__item', function() {
-    var $parent = $(this).parent('.c-chrome__subnav');
+    var $this = $(this);
 
-    if ($parent.length) {
-      $parent.children('.c-chrome__subnav__item').removeClass('is-current');
-      $(this).addClass('is-current');
+    if ($this.hasClass('c-chrome__subnav__item--header')) {
+      $this.toggleClass('is-expanded');
+      $this.next('.c-chrome__subnav__panel').toggleClass('is-hidden', !$this.hasClass('is-expanded'));
+    } else {
+      var $parent = $this.closest('.c-chrome__subnav');
+
+      if ($parent.length) {
+        $parent.find('.c-chrome__subnav__item').removeClass('is-current');
+        $this.addClass('is-current');
+      }
     }
 
     return false;
