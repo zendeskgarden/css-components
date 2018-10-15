@@ -2,7 +2,7 @@
 
 :root {
   --zd-dialog__footer-padding: 0 var(--zd-spacing-xl) 32px;
-  --zd-dialog__footer__btn-margin: 20px;
+  --zd-dialog__footer__item-margin: 20px;
   --zd-dialog--large__footer-padding: 32px var(--zd-spacing-xl);
   --zd-dialog--large__footer-border-top: var(--zd-dialog__header-border-bottom);
 }
@@ -20,10 +20,22 @@
 }
 
 .c-dialog__footer__item {
-  margin-left: var(--zd-dialog__footer__btn-margin);
+  display: flex;
+  margin-left: var(--zd-dialog__footer__item-margin);
+  min-width: 0;
+}
+
+.c-dialog__footer__item:first-child {
+  margin-left: 0;
 }
 
 .c-dialog.is-rtl .c-dialog__footer__item {
-  margin-right: var(--zd-dialog__footer__btn-margin);
+  margin-right: var(--zd-dialog__footer__item-margin);
   margin-left: 0;
 }
+
+/* stylelint-disable selector-max-specificity */
+.c-dialog.is-rtl .c-dialog__footer__item:first-child {
+  margin-right: 0;
+}
+/* stylelint-enable selector-max-specificity */
