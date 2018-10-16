@@ -215,12 +215,22 @@
 }
 
 .c-dialog__footer__item{
+  display:flex;
   margin-left:20px;
+  min-width:0;
+}
+
+.c-dialog__footer__item:first-child{
+  margin-left:0;
 }
 
 .c-dialog.is-rtl .c-dialog__footer__item{
   margin-right:20px;
   margin-left:0;
+}
+
+.c-dialog.is-rtl .c-dialog__footer__item:first-child{
+  margin-right:0;
 }
 
 @-webkit-keyframes zd-backdrop-visible{

@@ -15,10 +15,11 @@
   cursor:pointer;
   padding:0 1.92857em;
   min-width:8.57143em;
-  overflow:visible;
+  overflow:hidden;
   vertical-align:middle;
   text-align:center;
   text-decoration:none;
+  text-overflow:ellipsis;
   line-height:38px;
   white-space:nowrap;
   color:#1f73b7;
