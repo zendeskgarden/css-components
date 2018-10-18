@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.3.2...@zendeskgarden/css-modals@6.3.3) (2018-10-18)
+
+
+### Bug Fixes
+
+* **modals:** header/footer remain fixed as body content scrolls ([#132](https://github.com/zendeskgarden/css-components/issues/132)) ([c7ef6a7](https://github.com/zendeskgarden/css-components/commit/c7ef6a7))
+
+
+
+
+
 ## [6.3.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.3.1...@zendeskgarden/css-modals@6.3.2) (2018-10-16)
 
 
