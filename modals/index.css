@@ -193,6 +193,8 @@
   display:block;
   margin:0;
   padding:20px 40px 40px;
+  height:100%;
+  overflow:auto;
   line-height:1.42857;
   color:#2f3941;
   font-size:14px;
