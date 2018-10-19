@@ -23,7 +23,7 @@
 }
 
 .c-dialog__body:last-child {
-  padding-bottom: 40px;
+  padding-bottom: var(--zd-dialog__body--last-child-padding);
 }
 
 .c-dialog--large .c-dialog__body {
