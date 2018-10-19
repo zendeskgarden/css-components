@@ -4,7 +4,8 @@
   --zd-dialog__body-color: var(--zd-color-grey-800);
   --zd-dialog__body-font-size: var(--zd-font-size-md);
   --zd-dialog__body-line-height: calc(20 / 14);
-  --zd-dialog__body-padding: var(--zd-spacing) var(--zd-spacing-xl) var(--zd-spacing-xl);
+  --zd-dialog__body-padding: var(--zd-spacing) var(--zd-spacing-xl) 0;
+  --zd-dialog__body--last-child-padding: var(--zd-dialog__footer-padding-top);
   --zd-dialog--large__body-padding: var(--zd-spacing) var(--zd-spacing-xl);
 }
 
@@ -19,6 +20,10 @@
   line-height: var(--zd-dialog__body-line-height);
   color: var(--zd-dialog__body-color);
   font-size: var(--zd-dialog__body-font-size);
+}
+
+.c-dialog__body:last-child {
+  padding-bottom: var(--zd-dialog__body--last-child-padding);
 }
 
 .c-dialog--large .c-dialog__body {
