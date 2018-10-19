@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.3.3...@zendeskgarden/css-modals@6.3.4) (2018-10-19)
+
+
+### Bug Fixes
+
+* **modals:** prevent body content from overlapping footer ([#133](https://github.com/zendeskgarden/css-components/issues/133)) ([05580c7](https://github.com/zendeskgarden/css-components/commit/05580c7))
+
+
+
+
+
 ## [6.3.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.3.2...@zendeskgarden/css-modals@6.3.3) (2018-10-18)
 
 
