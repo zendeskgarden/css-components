@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.5](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.3.4...@zendeskgarden/css-modals@6.3.5) (2018-10-20)
+
+
+### Bug Fixes
+
+* **modals:** correct padding for various header/body/footer layouts ([#134](https://github.com/zendeskgarden/css-components/issues/134)) ([794182c](https://github.com/zendeskgarden/css-components/commit/794182c))
+
+
+
+
+
 ## [6.3.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-modals@6.3.3...@zendeskgarden/css-modals@6.3.4) (2018-10-19)
 
 
