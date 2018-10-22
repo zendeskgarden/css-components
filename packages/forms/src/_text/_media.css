@@ -28,10 +28,12 @@
 .c-txt__input--media__figure:first-child,
 .is-rtl .c-txt__input--media__figure:last-child {
   margin-right: var(--zd-txt__input--media__figure-margin);
+  margin-left: 0;
 }
 
 .c-txt__input--media__figure:last-child,
 .is-rtl .c-txt__input--media__figure:first-child {
+  margin-right: 0;
   margin-left: var(--zd-txt__input--media__figure-margin);
 }
 /* stylelint-enable no-descending-specificity */
