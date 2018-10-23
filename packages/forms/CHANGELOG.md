@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@6.1.2...@zendeskgarden/css-forms@6.1.3) (2018-10-23)
+
+
+### Bug Fixes
+
+* **forms:** correct margins for `.c-txt__input--media` RTL layout ([#136](https://github.com/zendeskgarden/css-components/issues/136)) ([7fab6b5](https://github.com/zendeskgarden/css-components/commit/7fab6b5))
+
+
+
+
+
 ## [6.1.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@6.1.1...@zendeskgarden/css-forms@6.1.2) (2018-10-22)
 
 
