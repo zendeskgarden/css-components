@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tabs@5.1.1...@zendeskgarden/css-tabs@5.1.2) (2018-10-25)
+
+**Note:** Version bump only for package @zendeskgarden/css-tabs
+
+
+
+
+
 ## [5.1.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tabs@5.1.0...@zendeskgarden/css-tabs@5.1.1) (2018-10-08)
 
 **Note:** Version bump only for package @zendeskgarden/css-tabs
