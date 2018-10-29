@@ -151,7 +151,7 @@
 }
 
 .c-tag--pill.c-tag--lg>*{
-  min-width:var(--zd-tag--pill--lg__-min-width);
+  min-width:24px;
 }
 
 .c-tag--round.c-tag--sm,.c-tag--round.c-tag--sm>*{
