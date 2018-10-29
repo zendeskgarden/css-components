@@ -15,7 +15,7 @@
   --zd-tag--pill--sm-min-width: 24px;
   --zd-tag--pill--sm-padding-horizontal: 8px;
   --zd-tag--pill--sm-padding: 0 var(--zd-tag--pill--sm-padding-horizontal);
-  --zd-tag--pill--lg__-min-widht: calc(var(--zd-tag--pill--lg-min-width) - calc(var(--zd-tag--lg-padding-horizontal) * 2));
+  --zd-tag--pill--lg__-min-width: calc(var(--zd-tag--pill--lg-min-width) - calc(var(--zd-tag--lg-padding-horizontal) * 2));
   --zd-tag--pill--sm__-min-width: calc(var(--zd-tag--pill--sm-min-width) - calc(var(--zd-tag--pill--sm-padding-horizontal) * 2));
   --zd-tag--round--lg-min-width: var(--zd-tag--lg-height);
   --zd-tag--round--sm-min-width: var(--zd-tag--sm-height);
