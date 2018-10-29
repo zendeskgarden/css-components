@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@4.1.3...@zendeskgarden/css-tags@4.1.4) (2018-10-29)
+
+
+### Bug Fixes
+
+* **tags:** correct misspelled variable name ([#139](https://github.com/zendeskgarden/css-components/issues/139)) ([e224c6c](https://github.com/zendeskgarden/css-components/commit/e224c6c))
+
+
+
+
+
 ## [4.1.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@4.1.2...@zendeskgarden/css-tags@4.1.3) (2018-10-25)
 
 **Note:** Version bump only for package @zendeskgarden/css-tags
