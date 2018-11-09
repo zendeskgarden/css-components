@@ -58,12 +58,23 @@ let retVal = {
   'white': { r: 255, g: 255, b: 255 }
 };
 
+/* Product colors */
+retVal = Object.assign(retVal, {
+  'chat-orange': { r: 247, g: 154, b: 62 },
+  'connect-red': { r: 235, g: 102, b: 81 },
+  'explore-blue': { r: 48, g: 170, b: 188 },
+  'guide-pink': { r: 235, g: 73, b: 98 },
+  'message-green': { r: 55, g: 184, b: 175 },
+  'sell-gold': { r: 212, g: 174, b: 94 },
+  'support-green': { r: 120, g: 163, b: 0 },
+  'talk-yellow': { r: 239, g: 201, b: 61 }
+});
+
 /* Deprecated colors */
 retVal = Object.assign(retVal, {
   'affair': { r: 115, g: 73, b: 136 },
   'aluminum': { r: 153, g: 153, b: 153 },
   'anti-flash-white': { r: 243, g: 243, b: 243 },
-  'apple-green': { r: 120, g: 163, b: 0 },
   'apricot': { r: 255, g: 202, b: 179 },
   'blue-chalk': { r: 229, g: 214, b: 237 },
   'buff': { r: 246, g: 222, b: 134 },
@@ -85,9 +96,8 @@ retVal = Object.assign(retVal, {
   'denim': { r: 20, g: 110, b: 170 },
   'east-side': { r: 176, g: 131, b: 200 },
   'festival': { r: 242, g: 206, b: 74 },
-  'flamingo': { r: 235, g: 102, b: 81 },
   'gainsboro': { r: 221, g: 221, b: 221 },
-  'golden-dream': { r: 239, g: 201, b: 61 },
+  'inbox-orange': { r: 255, g: 109, b: 90 },
   'indian-red': { r: 207, g: 100, b: 92 },
   'iron': { r: 204, g: 204, b: 204 },
   'jonquil': { r: 255, g: 221, b: 95 },
@@ -99,7 +109,6 @@ retVal = Object.assign(retVal, {
   'mabel': { r: 204, g: 227, b: 236 },
   'magic-mint': { r: 170, g: 243, b: 196 },
   'malibu': { r: 94, g: 187, b: 222 },
-  'mandy': { r: 235, g: 73, b: 98 },
   'marigold': { r: 255, g: 200, b: 0 },
   'maya-blue': { r: 97, g: 184, b: 255 },
   'monsoon': { r: 119, g: 119, b: 119 },
@@ -113,11 +122,9 @@ retVal = Object.assign(retVal, {
   'palatinate-blue': { r: 20, g: 56, b: 247 },
   'pale-turquoise': { r: 175, g: 243, b: 238 },
   'patterns-blue': { r: 210, g: 238, b: 249 },
-  'pelorous': { r: 48, g: 170, b: 188 },
   'perano': { r: 166, g: 179, b: 255 },
   'perfume': { r: 202, g: 172, b: 218 },
   'persian-green': { r: 3, g: 179, b: 167 },
-  'persimmon': { r: 255, g: 109, b: 90 },
   'petite-orchid': { r: 223, g: 151, b: 146 },
   'picasso': { r: 255, g: 232, b: 148 },
   'pink-orange': { r: 255, g: 148, b: 102 },
@@ -127,7 +134,6 @@ retVal = Object.assign(retVal, {
   'regent-st-blue': { r: 154, g: 199, b: 216 },
   'remy': { r: 247, g: 206, b: 203 },
   'saffron-mango': { r: 250, g: 193, b: 87 },
-  'sea-buckthorn': { r: 247, g: 154, b: 62 },
   'shamrock': { r: 69, g: 217, b: 123 },
   'silver-sand': { r: 187, g: 187, b: 187 },
   'sky-blue': { r: 120, g: 205, b: 236 },
@@ -137,33 +143,28 @@ retVal = Object.assign(retVal, {
   'terra-cotta': { r: 232, g: 108, b: 100 },
   'titan-white': { r: 220, g: 209, b: 225 },
   'ultramarine-blue': { r: 94, g: 118, b: 255 },
-  'verdigris': { r: 55, g: 184, b: 175 },
   'viking': { r: 95, g: 212, b: 204 },
   'wewak': { r: 239, g: 157, b: 151 },
   'white-smoke': { r: 248, g: 248, b: 248 }
 });
 
-/* Aliases */
-retVal = Object.assign(retVal, {
-  'chat-orange': retVal['sea-buckthorn'],
-  'connect-red': retVal['flamingo'],
-  'explore-blue': retVal['pelorous'],
-  'guide-pink': retVal['mandy'],
-  'inbox-orange': retVal['persimmon'],
-  'message-green': retVal['verdigris'],
-  'support-green': retVal['apple-green'],
-  'talk-yellow': retVal['golden-dream']
-});
-
 /* Deprecated aliases */
 retVal = Object.assign(retVal, {
   'algae': retVal['kale-700'],
+  'apple-green': retVal['support-green'],
   'breaker-bay': retVal['kale-400'],
   'daintree': retVal['kale-800'],
+  'flamingo': retVal['connect-red'],
+  'golden-dream': retVal['talk-yellow'],
+  'mandy': retVal['guide-pink'],
+  'pelorous': retVal['explore-blue'],
+  'persimmon': retVal['inbox-orange'],
   'promo-orange': retVal['orange-peel'],
+  'sea-buckthorn': retVal['chat-orange'],
   'sherpa-blue': retVal['kale-600'],
   'submarine': retVal['kale-300'],
-  'zendesk-green': retVal['apple-green']
+  'verdigris': retVal['message-green'],
+  'zendesk-green': retVal['support-green']
 });
 
 module.exports = retVal;
