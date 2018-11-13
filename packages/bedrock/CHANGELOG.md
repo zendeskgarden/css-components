@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.11](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@7.0.10...@zendeskgarden/css-bedrock@7.0.11) (2018-11-13)
+
+**Note:** Version bump only for package @zendeskgarden/css-bedrock
+
+
+
+
+
 ## [7.0.10](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@7.0.9...@zendeskgarden/css-bedrock@7.0.10) (2018-10-25)
 
 **Note:** Version bump only for package @zendeskgarden/css-bedrock
