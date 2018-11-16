@@ -1,0 +1,14 @@
+@import '@zendeskgarden/css-variables';
+
+/* 1. <ol> reset. */
+
+.c-breadcrumb {
+  display: flex; /* [1] */
+  margin: 0; /* [1] */
+  padding: 0; /* [1] */
+  list-style: none; /* [1] */
+}
+
+.c-breadcrumb.is-rtl {
+  direction: rtl;
+}

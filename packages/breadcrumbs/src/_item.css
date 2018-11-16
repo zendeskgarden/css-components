@@ -1,0 +1,24 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-breadcrumb__item-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-400));
+  --zd-breadcrumb__item-background-size: 1em;
+  --zd-breadcrumb__item-color: var(--zd-color-grey-600);
+  --zd-breadcrumb__item-font-size: 14px;
+  --zd-breadcrumb__item-line-height: calc(20 / 14);
+}
+
+.c-breadcrumb__item {
+  line-height: var(--zd-breadcrumb__item-line-height);
+  color: var(--zd-breadcrumb__item-color);
+  font-size: var(--zd-breadcrumb__item-font-size);
+}
+
+.c-breadcrumb__item + .c-breadcrumb__item::before {
+  display: inline-block;
+  background-image: var(--zd-breadcrumb__item-background-image);
+  width: var(--zd-breadcrumb__item-background-size);
+  height: var(--zd-breadcrumb__item-background-size);
+  vertical-align: middle;
+  content: '';
+}
