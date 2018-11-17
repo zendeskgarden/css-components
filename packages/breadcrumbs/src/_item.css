@@ -12,8 +12,6 @@
 }
 
 .c-breadcrumb__item {
-  overflow: hidden;
-  text-overflow: ellipsis;
   line-height: var(--zd-breadcrumb__item-line-height);
   white-space: nowrap;
   color: var(--zd-breadcrumb__item-color);
