@@ -1,5 +1,9 @@
 @import '@zendeskgarden/css-variables';
 
+:root {
+  --zd-breadcrumb__item-font-size: 14px;
+}
+
 /* 1. <ol> reset. */
 
 .c-breadcrumb {
@@ -7,6 +11,7 @@
   margin: 0; /* [1] */
   padding: 0; /* [1] */
   list-style: none; /* [1] */
+  font-size: var(--zd-breadcrumb__item-font-size);
 }
 
 .c-breadcrumb.is-rtl {
