@@ -1,0 +1,9 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-breadcrumb__item--current-color: var(--zd-color-grey-600);
+}
+
+.c-breadcrumb__item.is-current {
+  color: var(--zd-breadcrumb__item--current-color);
+}

@@ -15,6 +15,9 @@
   <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <link href="../utilities/index.css" rel="stylesheet">
+  <style>
+  .u-list-style-disc { padding-left: 20px; }
+  </style>
 </head>
 <body>
   <header class="c-header">
@@ -43,11 +46,54 @@
     <a href="https://www.npmjs.com/package/@zendeskgarden/css-breadcrumbs"><img class="u-float-right u-mt-sm" src="https://img.shields.io/npm/v/@zendeskgarden/css-breadcrumbs.svg?style=flat-square"></a>
     <h1 class="c-main__title">Breadcrumbs</h1>
     <div class="c-main__body">
-      <ol class="c-breadcrumb">
-        <li class="c-breadcrumb__item"><a href>One</a></li>
-        <li class="c-breadcrumb__item"><a href>Two</a></li>
-        <li class="c-breadcrumb__item">Three</li>
-      </ol>
+      <p class="u-mb-lg">The <code class="c-code">.c-breadcrumb</code>
+        component classes are used to style breadcrumb navigation. Use
+        <a href="//zendeskgarden.github.io/css-components/bedrock/">Bedrock CSS</a>
+        to reset styling for embedded anchor tags.</p>
+      <div class="u-mb-lg">
+        <h2 class="c-main__subtitle u-fs-lg u-mb">Basic Structure</h2>
+        <p class="u-mb">The breadcrumb CSS classes correspond with the
+          following canonical structure.</p>
+        <ul class="u-list-style-disc u-mb">
+          <li>
+            <code>&lt;ol class="</code><code class="c-code">c-breadcrumb</code><code>"&gt;</code>
+            <ul class="u-list-style-disc">
+              <li>
+                <code>&lt;li class="</code><code class="c-code">c_breadcrumb__item</code><code>"&gt;</code>
+                <ul class="u-list-style-disc">
+                  <li>
+                    <code>&lt;a href="..."&gt;Link</code>
+                  </li>
+                </ul>
+              </li>
+              <li>etc.</li>
+              <li>
+                <code>&lt;li class="</code><code class="c-code">c_breadcrumb__item is-current</code><code>"&gt;Current</code>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="u-mb-lg">
+        <h2 class="c-main__subtitle u-fs-lg u-mb">Demo</h2>
+        <p class="u-mb">Using <code class="c-code">ol</code> &gt;
+          <code class="c-code">li</code> &gt;
+          <code class="c-code">a</code> tags:</p>
+        <ol class="c-breadcrumb u-mb">
+          <li class="c-breadcrumb__item"><a href>Home</a></li>
+          <li class="c-breadcrumb__item"><a href>Resources</a></li>
+          <li class="c-breadcrumb__item"><a href>Events</a></li>
+          <li class="c-breadcrumb__item is-current">Locations</li>
+        </ol>
+        <p class="u-mb">Using <code class="c-code">nav</code> &gt;
+          <code class="c-code">a</code> tags:</p>
+        <nav class="c-breadcrumb">
+          <a class="c-breadcrumb__item" href>Home</a>
+          <a class="c-breadcrumb__item" href>Resources</a>
+          <a class="c-breadcrumb__item" href>Events</a>
+          <span class="c-breadcrumb__item is-current">Locations</li>
+        </nav>
+      </div>
       <section id="playground">
         <h1 class="c-main__subtitle u-fs-xl u-mb">Playground</h1>
         <div class="c-playground">
@@ -55,7 +101,7 @@
 <textarea class="c-playground__code"><ol class="c-breadcrumb">
   <li class="c-breadcrumb__item"><a href>One</a></li>
   <li class="c-breadcrumb__item"><a href>Two</a></li>
-  <li class="c-breadcrumb__item">Three</li>
+  <li class="c-breadcrumb__item is-current">Three</li>
 </ol></textarea>
         </div>
       </section>

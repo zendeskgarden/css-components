@@ -7,14 +7,12 @@
   --zd-breadcrumb__item-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-400));
   --zd-breadcrumb__item-background-margin: 0 calc(8 / 14 * 1em);
   --zd-breadcrumb__item-background-size: 1em;
-  --zd-breadcrumb__item-color: var(--zd-color-grey-600);
   --zd-breadcrumb__item-line-height: calc(20 / 14);
 }
 
 .c-breadcrumb__item {
   line-height: var(--zd-breadcrumb__item-line-height);
   white-space: nowrap;
-  color: var(--zd-breadcrumb__item-color);
   font-size: inherit;
 }
 
