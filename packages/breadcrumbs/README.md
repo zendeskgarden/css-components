@@ -18,7 +18,8 @@ Once installed, breadcrumbs CSS can be accessed via `postcss-import`.
 @import '@zendeskgarden/css-breadcrumbs';
 ```
 
-Component CSS provides styling for the following basic breadcrumb structure.
+Component CSS provides styling for the following basic breadcrumb
+structure.
 
 ```html
 <ol class="c-breadcrumb">
