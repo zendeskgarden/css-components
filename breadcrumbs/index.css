@@ -39,6 +39,6 @@
           transform:rotate(180deg);
 }
 
-.c-breadcrumb__item.is-current{
+.c-breadcrumb__item.is-current,.c-breadcrumb__item[aria-current=true]{
   color:#68737d;
 }
