@@ -4,6 +4,10 @@
   --zd-breadcrumb__item--current-color: var(--zd-color-grey-600);
 }
 
-.c-breadcrumb__item.is-current {
+@custom-selector :--breadcrumb-current
+  .is-current,
+  [aria-current='true'];
+
+.c-breadcrumb__item:--breadcrumb-current {
   color: var(--zd-breadcrumb__item--current-color);
 }

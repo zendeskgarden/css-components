@@ -68,41 +68,37 @@
               </li>
               <li>etc.</li>
               <li>
-                <code>&lt;li class="</code><code class="c-code">c_breadcrumb__item is-current</code><code>"&gt;Current</code>
+                <code>&lt;li aria-current="true" class="</code><code class="c-code">c_breadcrumb__item is-current</code><code>"&gt;Current</code>
               </li>
             </ul>
           </li>
         </ul>
+        <p>WAI-ARIA authoring practices indicate that this breadcrumb trail
+          should be contained within a labeled navigation landmark region. See
+          the playground example below for details.</p>
       </div>
       <div class="u-mb-lg">
         <h2 class="c-main__subtitle u-fs-lg u-mb">Demo</h2>
-        <p class="u-mb">Using <code class="c-code">ol</code> &gt;
-          <code class="c-code">li</code> &gt;
-          <code class="c-code">a</code> tags:</p>
-        <ol class="c-breadcrumb u-mb">
-          <li class="c-breadcrumb__item"><a href>Home</a></li>
-          <li class="c-breadcrumb__item"><a href>Resources</a></li>
-          <li class="c-breadcrumb__item"><a href>Events</a></li>
-          <li class="c-breadcrumb__item is-current">Locations</li>
-        </ol>
-        <p class="u-mb">Using <code class="c-code">nav</code> &gt;
-          <code class="c-code">a</code> tags:</p>
-        <nav class="c-breadcrumb">
-          <a class="c-breadcrumb__item" href>Home</a>
-          <a class="c-breadcrumb__item" href>Resources</a>
-          <a class="c-breadcrumb__item" href>Events</a>
-          <span class="c-breadcrumb__item is-current">Locations</li>
+        <nav aria-label="Breadcrumb" class="u-mb">
+          <ol class="c-breadcrumb">
+            <li class="c-breadcrumb__item"><a href>Home</a></li>
+            <li class="c-breadcrumb__item"><a href>Resources</a></li>
+            <li class="c-breadcrumb__item"><a href>Events</a></li>
+            <li aria-current="true" class="c-breadcrumb__item is-current">Locations</li>
+          </ol>
         </nav>
       </div>
       <section id="playground">
         <h1 class="c-main__subtitle u-fs-xl u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-<textarea class="c-playground__code"><ol class="c-breadcrumb">
-  <li class="c-breadcrumb__item"><a href>One</a></li>
-  <li class="c-breadcrumb__item"><a href>Two</a></li>
-  <li class="c-breadcrumb__item is-current">Three</li>
-</ol></textarea>
+<textarea class="c-playground__code"><nav aria-label="Breadcrumb">
+  <ol class="c-breadcrumb">
+    <li class="c-breadcrumb__item"><a href>One</a></li>
+    <li class="c-breadcrumb__item"><a href>Two</a></li>
+    <li aria-current="true" class="c-breadcrumb__item is-current">Three</li>
+  </ol>
+</nav></textarea>
         </div>
       </section>
     </div>
