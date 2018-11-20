@@ -1,7 +1,7 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-breadcrumb__item-font-size: 14px;
+  --zd-breadcrumb__item-font-size: var(--zd-font-size-md);
 }
 
 /* 1. <ol> reset. */
