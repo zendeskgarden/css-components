@@ -4,10 +4,6 @@
   --zd-breadcrumb__item--current-color: var(--zd-color-grey-600);
 }
 
-@custom-selector :--breadcrumb-current
-  .is-current,
-  [aria-current='page'];
-
-.c-breadcrumb__item:--breadcrumb-current {
+.c-breadcrumb__item.is-current {
   color: var(--zd-breadcrumb__item--current-color);
 }
