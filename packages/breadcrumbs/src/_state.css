@@ -6,7 +6,7 @@
 
 @custom-selector :--breadcrumb-current
   .is-current,
-  [aria-current='true'];
+  [aria-current='page'];
 
 .c-breadcrumb__item:--breadcrumb-current {
   color: var(--zd-breadcrumb__item--current-color);
