@@ -62,31 +62,6 @@
       <span class="c-chrome__nav__item__text">Zendesk</span>
     </div>
   </nav>
-  <nav class="c-chrome__subnav" style="display:none; max-width: 220px">
-    <a class="c-chrome__subnav__item is-current" href>
-      <span class="c-chrome__subnav__item__text">Account</span>
-    </a>
-    <a class="c-chrome__subnav__item" href>
-      <span class="c-chrome__subnav__item__text">Apps</span>
-    </a>
-    <button class="c-chrome__subnav__item c-chrome__subnav__item--header">
-      <span class="c-chrome__subnav__item__text">Channels</span>
-    </button>
-    <div class="c-chrome__subnav__panel is-hidden" style="max-height: 114px">
-      <a class="c-chrome__subnav__item" href>
-        <span class="c-chrome__subnav__item__text">Email</span>
-      </a>
-      <a class="c-chrome__subnav__item" href>
-        <span class="c-chrome__subnav__item__text">Chat</span>
-      </a>
-      <a class="c-chrome__subnav__item" href>
-        <span class="c-chrome__subnav__item__text">Talk</span>
-      </a>
-    </div>
-    <a class="c-chrome__subnav__item" href>
-      <span class="c-chrome__subnav__item__text">Sandbox</span>
-    </a>
-  </nav>
   <div class="c-chrome__body">
     <header class="c-chrome__body__header">
       <button class="c-chrome__body__header__item">
@@ -296,9 +271,6 @@
     $('.c-chrome').toggleClass('is-rtl', Garden.parameters.dir === 'rtl');
     $('.c-chrome__nav').toggleClass('c-chrome__nav--expanded', Garden.parameters.expanded === 'true');
     updateNavColor($('.c-chrome__nav'), Garden.parameters.color);
-    $('.c-chrome__nav__item').click(function() {
-      $('.c-chrome__subnav').toggle($(this).attr('title') === 'Settings');
-    });
   });
   </script>
 </body>

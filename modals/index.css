@@ -192,20 +192,21 @@
 .c-dialog__body{
   display:block;
   margin:0;
-  padding:20px 40px;
-  height:100%;
-  overflow:auto;
+  padding:20px 40px 40px;
   line-height:1.42857;
   color:#2f3941;
   font-size:14px;
 }
 
+.c-dialog--large .c-dialog__body{
+  padding:20px 40px;
+}
+
 .c-dialog__footer{
   display:flex;
-  flex-shrink:0;
   align-items:center;
   justify-content:flex-end;
-  padding:20px 40px 32px;
+  padding:0 40px 32px;
 }
 
 .c-dialog--large .c-dialog__footer{
@@ -214,22 +215,12 @@
 }
 
 .c-dialog__footer__item{
-  display:flex;
   margin-left:20px;
-  min-width:0;
-}
-
-.c-dialog__footer__item:first-child{
-  margin-left:0;
 }
 
 .c-dialog.is-rtl .c-dialog__footer__item{
   margin-right:20px;
   margin-left:0;
-}
-
-.c-dialog.is-rtl .c-dialog__footer__item:first-child{
-  margin-right:0;
 }
 
 @-webkit-keyframes zd-backdrop-visible{

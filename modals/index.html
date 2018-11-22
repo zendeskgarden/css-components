@@ -11,7 +11,7 @@
   <title>Modals / CSS Components / Zendesk Garden</title>
   <link href="../bedrock/index.css" rel="stylesheet">
   <link href="../buttons/index.css" rel="stylesheet">
-  <link href="../forms/index.css" rel="stylesheet">
+  <link href="../forms/checkbox/index.css" rel="stylesheet">
   <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <link href="../utilities/index.css" rel="stylesheet">
@@ -115,27 +115,6 @@
           Dialog with
           <code class="c-code">.l-backdrop.l-backdrop--center</code>
           Backdrop</a>
-      </div>
-      <h2 class="u-fs-lg u-mb-sm">Various Dialog Layouts</h2>
-      <div class="u-mb">
-        <a class="c-btn js-dialog js-backdrop js-backdrop--center"
-           href="#zd-layout-x-footer-dialog"
-           role="button">Open Dialog with No Footer</a>
-      </div>
-      <div class="u-mb">
-        <a class="c-btn js-dialog js-backdrop js-backdrop--center"
-           href="#zd-layout-form-dialog"
-           role="button">Open Dialog with Form Content</a>
-      </div>
-      <div class="u-mb">
-        <a class="c-btn js-dialog js-backdrop js-backdrop--center"
-           href="#zd-layout-overflow-dialog"
-           role="button">Open Dialog with Overflowing Body Content</a>
-      </div>
-      <div class="u-mb-lg">
-        <a class="c-btn js-dialog js-backdrop js-backdrop--center"
-           href="#zd-layout-overflow-large-dialog"
-           role="button">Open Large Dialog with Overflowing Body Content</a>
       </div>
       <h2 class="u-fs-lg u-mb-sm">Close button states</h2>
       <section class="c-dialog u-position-relative">
@@ -265,7 +244,7 @@
     porttitor aliquet risus, tincidunt pulvinar odio sodales id. Maecenas ut
     ipsum ultrices, condimentum purus a, dignissim risus. Quisque in lorem ut
     metus pharetra pharetra.</p>
-    <p>Nunc ut diam ut diam ultrices venenatis in at risus.
+    <p class="u-mb-sm">Nunc ut diam ut diam ultrices venenatis in at risus.
     Quisque nisl nibh, interdum eu purus eget, faucibus faucibus magna. Sed
     posuere, tellus vitae bibendum pretium, elit turpis ullamcorper leo, sit
     amet mollis eros est at urna. Aenean placerat sapien sed libero lobortis
@@ -279,12 +258,7 @@
     tincidunt id purus vel posuere.</p>
   </div>
   <footer class="c-dialog__footer">
-    <div class="c-dialog__footer__item">
-      <button class="c-btn c-btn--basic js-close">Cancel</button>
-    </div>
-    <div class="c-dialog__footer__item">
-      <button class="c-btn c-btn--primary js-close">OK</button>
-    </div>
+    <button class="c-dialog__footer__item c-btn c-btn--primary js-close">OK</button>
   </footer>
 </section></textarea>
         </div>
@@ -311,12 +285,8 @@
     gastropub. Austin quinoa butcher, everyday carry echo park sartorial
     VHS.</p>
     <footer class="c-dialog__footer">
-      <div class="c-dialog__footer__item">
-        <code class="c-code" dir="ltr">.c-dialog__footer</code>
-      </div>
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--primary js-close">OK</button>
-      </div>
+      <code class="c-dialog__footer__item c-code" dir="ltr">.c-dialog__footer</code
+      ><button class="c-dialog__footer__item c-btn c-btn--primary js-close">OK</button>
     </footer>
   </section>
 
@@ -355,12 +325,8 @@
       mlkshk hexagon.</p>
     </div>
     <footer class="c-dialog__footer">
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--basic js-close">Cancel</button>
-      </div>
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--primary js-close">OK</button>
-      </div>
+      <button class="c-dialog__footer__item c-btn c-btn--basic js-close">Cancel</button
+      ><button class="c-dialog__footer__item c-btn c-btn--primary js-close">OK</button>
     </footer>
   </section>
 
@@ -382,12 +348,8 @@
     bitters, blog letterpress pinterest vegan dreamcatcher. Selvage meh lomo
     90's, crucifix banjo seitan knausgaard kitsch salvia actually bespoke.</p>
     <footer class="c-dialog__footer">
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--basic js-close">Cancel</button>
-      </div>
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--primary js-close">OK</button>
-      </div>
+      <button class="c-dialog__footer__item c-btn c-btn--basic js-close">Cancel</button
+      ><button class="c-dialog__footer__item c-btn c-btn--primary js-close">OK</button>
     </footer>
   </section>
 
@@ -425,295 +387,14 @@
       mlkshk hexagon.</p>
     </div>
     <footer class="c-dialog__footer">
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--basic js-close">Cancel</button>
-      </div>
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--primary js-close">OK</button>
-      </div>
-    </footer>
-  </section>
-
-  <section aria-hidden="true"
-           class="c-dialog"
-           id="zd-layout-x-footer-dialog"
-           role="dialog"
-           style="display:none"
-           tabindex="-1">
-    <header>
-      <h1 class="c-dialog__header">Dialog Title</h1>
-      <button aria-label="close" class="c-dialog__close"></button>
-    </header>
-    <div class="c-dialog__body">
-      <p class="u-mb-sm">Semiotics meh helvetica scenester lomo stumptown
-      kinfolk copper mug butcher kitsch kogi flexitarian pop-up umami. XOXO
-      vice master cleanse, single-origin coffee wayfarers twee whatever
-      truffaut 90's hot chicken pickled tousled. Hashtag tumblr celiac vegan,
-      DIY vinyl ugh migas. Echo park mumblecore blog kogi single-origin coffee
-      letterpress aesthetic. Keytar listicle 90's post-ironic thundercats
-      master cleanse narwhal four dollar toast. Farm-to-table bitters 90's wolf
-      irony mixtape literally banh mi lo-fi deep v. Plaid fanny pack retro
-      meditation cred, godard franzen.</p>
-      <p class="u-mb-sm">Copper mug art party single-origin coffee keytar, fingerstache
-      chicharrones kinfolk 8-bit 90's twee. PBR&B health goth yr, disrupt
-      subway tile hoodie gentrify ramps put a bird on it fanny pack. Street art
-      marfa trust fund seitan, 90's blue bottle tote bag selfies. Readymade art
-      party gluten-free kale chips fixie dreamcatcher quinoa cliche distillery
-      lomo occupy kombucha health goth air plant.</p>
-      <p>Shaman air plant flannel YOLO chia polaroid tacos typewriter.
-      Typewriter four dollar toast keffiyeh street art drinking vinegar vegan
-      actually wayfarers scenester sustainable occupy direct trade. Fanny pack
-      cardigan biodiesel put a bird on it asymmetrical stumptown. PBR&B twee
-      mlkshk hexagon.</p>
-    </div>
-  </section>
-
-  <section aria-hidden="true"
-           class="c-dialog"
-           id="zd-layout-form-dialog"
-           role="dialog"
-           style="display:none"
-           tabindex="-1">
-    <header>
-      <h1 class="c-dialog__header">Dialog Title</h1>
-      <button aria-label="close" class="c-dialog__close"></button>
-    </header>
-    <div class="c-dialog__body">
-      <div class="c-txt u-mb-sm">
-        <label class="c-txt__label" for="zd-dialog-field-email">Email</label>
-        <input class="c-txt__input" id="zd-dialog-field-email" type="email">
-      </div>
-      <div class="c-txt">
-        <label class="c-txt__label" for="zd-dialog-field-password">Password</label>
-        <input class="c-txt__input" id="zd-dialog-field-password" type="password">
-      </div>
-    </div>
-    <footer class="c-dialog__footer">
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--basic js-close">Cancel</button>
-      </div>
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--primary js-close">OK</button>
-      </div>
-    </footer>
-  </section>
-
-  <section aria-hidden="true"
-           class="c-dialog"
-           id="zd-layout-overflow-dialog"
-           role="dialog"
-           style="display:none"
-           tabindex="-1">
-    <header>
-      <h1 class="c-dialog__header">Dialog Title</h1>
-      <button aria-label="close" class="c-dialog__close"></button>
-    </header>
-    <div class="c-dialog__body">
-      <p class="u-mb-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Fusce et elementum risus. Etiam rutrum nibh nulla, condimentum aliquam
-      ligula suscipit et. Nunc quis ornare ipsum. Integer a odio sed tortor
-      imperdiet scelerisque. Integer non est consequat justo fringilla malesuada
-      at quis nulla. Aenean id ornare ligula, quis mattis ante. Ut faucibus mi
-      nisl, vel lobortis arcu mollis vel. Aenean dapibus lacus sit amet ligula
-      pellentesque euismod. Cras sed purus sollicitudin, varius metus vel,
-      maximus tortor.  Praesent eget dolor vel odio vulputate sagittis eget vel
-      quam. Fusce hendrerit neque lacus, et ultricies massa maximus aliquam.
-      Curabitur vel augue a eros posuere vulputate ac a enim.</p>
-      <p class="u-mb-sm">Cras pellentesque lectus et purus cursus pellentesque.
-      Ut pulvinar bibendum felis, eget consectetur ex auctor quis. Nunc volutpat
-      leo et mauris mattis pharetra. Fusce ac dolor et odio faucibus dignissim.
-      Curabitur ac vestibulum ante, lobortis tincidunt nulla. In purus metus,
-      rhoncus in sapien id, dignissim commodo velit. Integer at molestie turpis.
-      Nullam tempor luctus nibh, vel mollis ante posuere sit amet. Vivamus tempus
-      egestas egestas. Phasellus purus metus, malesuada in malesuada a, bibendum
-      at est. Pellentesque interdum dictum massa, sed blandit dolor hendrerit
-      quis.</p>
-      <p class="u-mb-sm">Mauris viverra ultricies euismod. Sed porta ipsum erat,
-      id cursus dolor facilisis eget. Proin at viverra ex. Quisque vitae
-      consequat ante. Fusce gravida neque tellus, ut eleifend augue consectetur
-      nec. Ut nec rhoncus odio, vel ornare est. Sed nec leo orci. Curabitur
-      euismod euismod odio sed gravida. Integer mattis ex non finibus vestibulum.
-      Suspendisse placerat, arcu eu euismod convallis, enim ex imperdiet dui,
-      pellentesque tempus ante lectus in lorem. Vivamus volutpat gravida
-      tincidunt. Curabitur eu tristique dolor. Sed scelerisque hendrerit magna,
-      at rutrum nibh rhoncus quis.  Vivamus laoreet quis mi ac sagittis.</p>
-      <p class="u-mb-sm">Morbi quis leo faucibus, interdum dolor non, lacinia
-      justo. In consequat purus et nunc scelerisque luctus. Ut feugiat ante vel
-      tristique fermentum. Duis posuere, magna ut consequat sollicitudin, lectus
-      felis finibus nibh, quis accumsan leo risus sit amet enim. Curabitur
-      pharetra lobortis lectus. Aenean id vestibulum elit. Maecenas finibus dolor
-      vitae nunc suscipit molestie id ut nibh. Ut ultrices ligula massa, eu
-      pulvinar est ornare et. Fusce consectetur tellus ut ipsum molestie
-      tincidunt. Fusce porta lacinia felis, quis pellentesque eros sagittis vel.
-      Curabitur eget leo pellentesque, ornare ex sit amet, blandit sem. Vivamus
-      sodales diam vitae turpis euismod, eget varius eros sollicitudin. In hac
-      habitasse platea dictumst. Donec id hendrerit libero, a sollicitudin magna.
-      Nulla mattis eros sit amet lacus aliquet, vel interdum felis iaculis.</p>
-      <p class="u-mb-sm">Vestibulum porttitor, massa eu bibendum sagittis, nibh
-      lorem sollicitudin felis, egestas condimentum odio nulla in nunc. Fusce a
-      purus luctus, egestas est vitae, eleifend mauris. Donec nec orci non sem
-      congue cursus vitae rutrum metus. Suspendisse consectetur sed metus ac
-      imperdiet. In ac velit ac ligula accumsan pharetra nec quis eros.
-      Pellentesque quis urna rhoncus sapien aliquet finibus. Integer in volutpat
-      tortor. Maecenas molestie consectetur viverra. Aenean purus purus, mollis
-      vel ante et, consequat congue libero. In ex nisi, faucibus eu libero ut,
-      bibendum volutpat lectus. Aenean sapien sapien, faucibus ac tempus ac,
-      mollis nec eros. Curabitur quis lobortis turpis. Pellentesque suscipit ante
-      dui, vitae ullamcorper quam commodo vel.</p>
-      <p class="u-mb-sm">Quisque maximus, elit a dictum rutrum, mauris tortor
-      consectetur sem, vitae aliquet mauris quam ullamcorper augue. Quisque
-      imperdiet, sem et vestibulum varius, lorem mauris tincidunt ex, in
-      porttitor ipsum eros nec eros. Morbi euismod eleifend elit id accumsan.
-      Aenean venenatis nisl sit amet quam maximus, non volutpat nulla vehicula.
-      Maecenas porta sapien sit amet ex viverra maximus. Sed a ex cursus,
-      vulputate lorem et, aliquet nunc. Cras porta, sem eget efficitur
-      pellentesque, leo massa scelerisque dolor, id feugiat elit eros et risus.
-      Aliquam erat volutpat. Donec fringilla lacinia velit volutpat faucibus.
-      Morbi vestibulum arcu ac diam ultricies rhoncus. Aliquam sollicitudin
-      gravida suscipit. Sed pellentesque commodo ex eget gravida. Suspendisse nec
-      ex ex. Aenean vitae nunc eget velit finibus finibus.</p>
-      <p class="u-mb-sm">Morbi a tempor lacus. Sed rhoncus euismod suscipit.
-      Proin blandit faucibus quam nec porttitor. Sed egestas pharetra nibh, id
-      volutpat justo. Phasellus laoreet tortor et iaculis vulputate. Sed viverra
-      elit velit, ut consectetur lectus viverra id. Suspendisse sapien enim,
-      rutrum sit amet viverra eu, eleifend ut massa. Aenean id ultrices lorem. In
-      aliquet odio et eros bibendum, sed porta nisl sollicitudin. Mauris
-      porttitor aliquet risus, tincidunt pulvinar odio sodales id. Maecenas ut
-      ipsum ultrices, condimentum purus a, dignissim risus. Quisque in lorem ut
-      metus pharetra pharetra.</p>
-      <p>Nunc ut diam ut diam ultrices venenatis in at risus.
-      Quisque nisl nibh, interdum eu purus eget, faucibus faucibus magna. Sed
-      posuere, tellus vitae bibendum pretium, elit turpis ullamcorper leo, sit
-      amet mollis eros est at urna. Aenean placerat sapien sed libero lobortis
-      sagittis. Donec sed lobortis nunc. Pellentesque ligula metus, tempor et
-      egestas non, ullamcorper ac lectus. Curabitur eget aliquet arcu. Vivamus
-      blandit, libero eget pulvinar sagittis, augue leo luctus neque, commodo
-      molestie nibh lacus dictum lacus. Vestibulum malesuada nec eros nec
-      maximus. Mauris sollicitudin lacinia fermentum. Nunc feugiat felis odio,
-      nec ornare sapien accumsan at. Fusce a nunc ullamcorper, accumsan justo
-      nec, posuere magna. Nulla iaculis rhoncus ante eget elementum. Mauris
-      tincidunt id purus vel posuere.</p>
-    </div>
-    <footer class="c-dialog__footer">
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--basic js-close">Cancel</button>
-      </div>
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--primary js-close">OK</button>
-      </div>
-    </footer>
-  </section>
-
-  <section aria-hidden="true"
-           class="c-dialog c-dialog--large"
-           id="zd-layout-overflow-large-dialog"
-           role="dialog"
-           style="display:none"
-           tabindex="-1">
-    <header>
-      <h1 class="c-dialog__header">Dialog Title</h1>
-      <button aria-label="close" class="c-dialog__close"></button>
-    </header>
-    <div class="c-dialog__body">
-      <p class="u-mb-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Fusce et elementum risus. Etiam rutrum nibh nulla, condimentum aliquam
-      ligula suscipit et. Nunc quis ornare ipsum. Integer a odio sed tortor
-      imperdiet scelerisque. Integer non est consequat justo fringilla malesuada
-      at quis nulla. Aenean id ornare ligula, quis mattis ante. Ut faucibus mi
-      nisl, vel lobortis arcu mollis vel. Aenean dapibus lacus sit amet ligula
-      pellentesque euismod. Cras sed purus sollicitudin, varius metus vel,
-      maximus tortor.  Praesent eget dolor vel odio vulputate sagittis eget vel
-      quam. Fusce hendrerit neque lacus, et ultricies massa maximus aliquam.
-      Curabitur vel augue a eros posuere vulputate ac a enim.</p>
-      <p class="u-mb-sm">Cras pellentesque lectus et purus cursus pellentesque.
-      Ut pulvinar bibendum felis, eget consectetur ex auctor quis. Nunc volutpat
-      leo et mauris mattis pharetra. Fusce ac dolor et odio faucibus dignissim.
-      Curabitur ac vestibulum ante, lobortis tincidunt nulla. In purus metus,
-      rhoncus in sapien id, dignissim commodo velit. Integer at molestie turpis.
-      Nullam tempor luctus nibh, vel mollis ante posuere sit amet. Vivamus tempus
-      egestas egestas. Phasellus purus metus, malesuada in malesuada a, bibendum
-      at est. Pellentesque interdum dictum massa, sed blandit dolor hendrerit
-      quis.</p>
-      <p class="u-mb-sm">Mauris viverra ultricies euismod. Sed porta ipsum erat,
-      id cursus dolor facilisis eget. Proin at viverra ex. Quisque vitae
-      consequat ante. Fusce gravida neque tellus, ut eleifend augue consectetur
-      nec. Ut nec rhoncus odio, vel ornare est. Sed nec leo orci. Curabitur
-      euismod euismod odio sed gravida. Integer mattis ex non finibus vestibulum.
-      Suspendisse placerat, arcu eu euismod convallis, enim ex imperdiet dui,
-      pellentesque tempus ante lectus in lorem. Vivamus volutpat gravida
-      tincidunt. Curabitur eu tristique dolor. Sed scelerisque hendrerit magna,
-      at rutrum nibh rhoncus quis.  Vivamus laoreet quis mi ac sagittis.</p>
-      <p class="u-mb-sm">Morbi quis leo faucibus, interdum dolor non, lacinia
-      justo. In consequat purus et nunc scelerisque luctus. Ut feugiat ante vel
-      tristique fermentum. Duis posuere, magna ut consequat sollicitudin, lectus
-      felis finibus nibh, quis accumsan leo risus sit amet enim. Curabitur
-      pharetra lobortis lectus. Aenean id vestibulum elit. Maecenas finibus dolor
-      vitae nunc suscipit molestie id ut nibh. Ut ultrices ligula massa, eu
-      pulvinar est ornare et. Fusce consectetur tellus ut ipsum molestie
-      tincidunt. Fusce porta lacinia felis, quis pellentesque eros sagittis vel.
-      Curabitur eget leo pellentesque, ornare ex sit amet, blandit sem. Vivamus
-      sodales diam vitae turpis euismod, eget varius eros sollicitudin. In hac
-      habitasse platea dictumst. Donec id hendrerit libero, a sollicitudin magna.
-      Nulla mattis eros sit amet lacus aliquet, vel interdum felis iaculis.</p>
-      <p class="u-mb-sm">Vestibulum porttitor, massa eu bibendum sagittis, nibh
-      lorem sollicitudin felis, egestas condimentum odio nulla in nunc. Fusce a
-      purus luctus, egestas est vitae, eleifend mauris. Donec nec orci non sem
-      congue cursus vitae rutrum metus. Suspendisse consectetur sed metus ac
-      imperdiet. In ac velit ac ligula accumsan pharetra nec quis eros.
-      Pellentesque quis urna rhoncus sapien aliquet finibus. Integer in volutpat
-      tortor. Maecenas molestie consectetur viverra. Aenean purus purus, mollis
-      vel ante et, consequat congue libero. In ex nisi, faucibus eu libero ut,
-      bibendum volutpat lectus. Aenean sapien sapien, faucibus ac tempus ac,
-      mollis nec eros. Curabitur quis lobortis turpis. Pellentesque suscipit ante
-      dui, vitae ullamcorper quam commodo vel.</p>
-      <p class="u-mb-sm">Quisque maximus, elit a dictum rutrum, mauris tortor
-      consectetur sem, vitae aliquet mauris quam ullamcorper augue. Quisque
-      imperdiet, sem et vestibulum varius, lorem mauris tincidunt ex, in
-      porttitor ipsum eros nec eros. Morbi euismod eleifend elit id accumsan.
-      Aenean venenatis nisl sit amet quam maximus, non volutpat nulla vehicula.
-      Maecenas porta sapien sit amet ex viverra maximus. Sed a ex cursus,
-      vulputate lorem et, aliquet nunc. Cras porta, sem eget efficitur
-      pellentesque, leo massa scelerisque dolor, id feugiat elit eros et risus.
-      Aliquam erat volutpat. Donec fringilla lacinia velit volutpat faucibus.
-      Morbi vestibulum arcu ac diam ultricies rhoncus. Aliquam sollicitudin
-      gravida suscipit. Sed pellentesque commodo ex eget gravida. Suspendisse nec
-      ex ex. Aenean vitae nunc eget velit finibus finibus.</p>
-      <p class="u-mb-sm">Morbi a tempor lacus. Sed rhoncus euismod suscipit.
-      Proin blandit faucibus quam nec porttitor. Sed egestas pharetra nibh, id
-      volutpat justo. Phasellus laoreet tortor et iaculis vulputate. Sed viverra
-      elit velit, ut consectetur lectus viverra id. Suspendisse sapien enim,
-      rutrum sit amet viverra eu, eleifend ut massa. Aenean id ultrices lorem. In
-      aliquet odio et eros bibendum, sed porta nisl sollicitudin. Mauris
-      porttitor aliquet risus, tincidunt pulvinar odio sodales id. Maecenas ut
-      ipsum ultrices, condimentum purus a, dignissim risus. Quisque in lorem ut
-      metus pharetra pharetra.</p>
-      <p>Nunc ut diam ut diam ultrices venenatis in at risus.
-      Quisque nisl nibh, interdum eu purus eget, faucibus faucibus magna. Sed
-      posuere, tellus vitae bibendum pretium, elit turpis ullamcorper leo, sit
-      amet mollis eros est at urna. Aenean placerat sapien sed libero lobortis
-      sagittis. Donec sed lobortis nunc. Pellentesque ligula metus, tempor et
-      egestas non, ullamcorper ac lectus. Curabitur eget aliquet arcu. Vivamus
-      blandit, libero eget pulvinar sagittis, augue leo luctus neque, commodo
-      molestie nibh lacus dictum lacus. Vestibulum malesuada nec eros nec
-      maximus. Mauris sollicitudin lacinia fermentum. Nunc feugiat felis odio,
-      nec ornare sapien accumsan at. Fusce a nunc ullamcorper, accumsan justo
-      nec, posuere magna. Nulla iaculis rhoncus ante eget elementum. Mauris
-      tincidunt id purus vel posuere.</p>
-    </div>
-    <footer class="c-dialog__footer">
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--basic js-close">Cancel</button>
-      </div>
-      <div class="c-dialog__footer__item">
-        <button class="c-btn c-btn--primary js-close">OK</button>
-      </div>
+      <button class="c-dialog__footer__item c-btn c-btn--basic js-close">Cancel</button
+      ><button class="c-dialog__footer__item c-btn c-btn--primary js-close">OK</button>
     </footer>
   </section>
 
   <script src="//zendeskgarden.github.io/index.js"></script>
   <script src="../buttons/index.js"></script>
   <script src="../forms/checkbox/index.js"></script>
-  <script src="../forms/text/index.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
