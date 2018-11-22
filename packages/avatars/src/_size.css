@@ -2,17 +2,23 @@
 
 :root {
   --zd-avatar--large-border-width: 2px;
-  --zd-avatar--large-size: 52px;
-  --zd-avatar--small-size: 26px;
+  --zd-avatar--xs-size: 24px;
+  --zd-avatar--sm-size: 32px;
+  --zd-avatar--lg-size: 48px;
 }
 
-.c-avatar--large {
+.c-avatar--lg {
   border-width: var(--zd-avatar--large-border-width);
-  width: var(--zd-avatar--large-size);
-  height: var(--zd-avatar--large-size);
+  width: var(--zd-avatar--lg-size);
+  height: var(--zd-avatar--lg-size);
 }
 
-.c-avatar--small {
-  width: var(--zd-avatar--small-size);
-  height: var(--zd-avatar--small-size);
+.c-avatar--sm {
+  width: var(--zd-avatar--sm-size);
+  height: var(--zd-avatar--sm-size);
+}
+
+.c-avatar--xs {
+  width: var(--zd-avatar--xs-size);
+  height: var(--zd-avatar--xs-size);
 }
