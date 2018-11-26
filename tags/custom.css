@@ -1,0 +1,23 @@
+/*!
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+.c-tag--custom{
+  background-color:#eb4962;
+  color:#fff;
+}
+
+.c-tag--custom.is-focused,.c-tag--custom:focus,.c-tag--custom:hover{
+  color:#fff;
+}
+
+.c-tag--custom.is-focused,.c-tag--custom:focus{
+  box-shadow:0 0 0 2px rgba(235, 73, 98, .4);
+}
+
+.c-tag--custom .c-tag__remove{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%23FFF'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+}

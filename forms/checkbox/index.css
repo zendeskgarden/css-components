@@ -143,7 +143,7 @@
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%23FFF'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4.25 7h5.5'/%3E%3C/svg%3E");
 }
 
-.c-chk__input:checked:enabled~.c-chk__label:not(.is-disabled):before,.c-chk__input:enabled~.c-chk__label.is-checked:not(.is-disabled):before,.c-chk__input:enabled~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate:not(.is-disabled):before,.c-chk__input:indeterminate:enabled~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle):not(.is-disabled):before{
+.c-chk__input:checked:enabled~.c-chk__label:not(.is-disabled):before,.c-chk__input:enabled~.c-chk__label.is-checked:not(.is-disabled):before,.c-chk__input :enabled~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) .is-indeterminate :not(.is-disabled):before,.c-chk__input :indeterminate :enabled~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) :not(.is-disabled):before{
   border-color:#1f73b7;
   background-color:#1f73b7;
 }
@@ -164,7 +164,7 @@
   background-color:#cee2f2;
 }
 
-.c-chk__input:enabled:checked~.c-chk__label.is-active:not(.is-disabled):before,.c-chk__input:enabled:checked~.c-chk__label:not(.is-disabled):active:before,.c-chk__input:enabled:indeterminate~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-active:not(.is-disabled):before,.c-chk__input:enabled:indeterminate~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle):not(.is-disabled):active:before,.c-chk__input:enabled~.c-chk__label.is-checked.is-active:not(.is-disabled):before,.c-chk__input:enabled~.c-chk__label.is-checked:not(.is-disabled):active:before,.c-chk__input:enabled~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate.is-active:not(.is-disabled):before,.c-chk__input:enabled~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate:not(.is-disabled):active:before{
+.c-chk__input:enabled:checked~.c-chk__label.is-active:not(.is-disabled):before,.c-chk__input:enabled:checked~.c-chk__label:not(.is-disabled):active:before,.c-chk__input :enabled :indeterminate~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) .is-active :not(.is-disabled):before,.c-chk__input :enabled :indeterminate~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) :not(.is-disabled) :active:before,.c-chk__input:enabled~.c-chk__label.is-checked.is-active:not(.is-disabled):before,.c-chk__input:enabled~.c-chk__label.is-checked:not(.is-disabled):active:before,.c-chk__input :enabled~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) .is-indeterminate .is-active :not(.is-disabled):before,.c-chk__input :enabled~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) .is-indeterminate :not(.is-disabled) :active:before{
   border-color:#144a75;
   background-color:#144a75;
 }

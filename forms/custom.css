@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-.c-chk__input:checked:enabled~.c-chk__label:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label.is-checked:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:indeterminate:enabled~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle):not(.is-disabled).c-chk__label--custom:before{
+.c-chk__input:checked:enabled~.c-chk__label:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label.is-checked:not(.is-disabled).c-chk__label--custom:before,.c-chk__input :enabled~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) .is-indeterminate :not(.is-disabled).c-chk__label--custom:before,.c-chk__input :indeterminate :enabled~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) :not(.is-disabled).c-chk__label--custom:before{
   border-color:#eb4962;
   background-color:#eb4962;
 }
@@ -23,7 +23,7 @@
   border-color:#eb4962;
 }
 
-.c-chk__input:enabled:checked~.c-chk__label.is-active:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled:checked~.c-chk__label:not(.is-disabled):active.c-chk__label--custom:before,.c-chk__input:enabled:indeterminate~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-active:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled:indeterminate~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle):not(.is-disabled):active.c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label.is-checked.is-active:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label.is-checked:not(.is-disabled):active.c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate.is-active:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label:not(.c-chk__label--radio):not(.c-chk__label--toggle).is-indeterminate:not(.is-disabled):active.c-chk__label--custom:before{
+.c-chk__input:enabled:checked~.c-chk__label.is-active:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled:checked~.c-chk__label:not(.is-disabled):active.c-chk__label--custom:before,.c-chk__input :enabled :indeterminate~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) .is-active :not(.is-disabled).c-chk__label--custom:before,.c-chk__input :enabled :indeterminate~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) :not(.is-disabled) :active.c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label.is-checked.is-active:not(.is-disabled).c-chk__label--custom:before,.c-chk__input:enabled~.c-chk__label.is-checked:not(.is-disabled):active.c-chk__label--custom:before,.c-chk__input :enabled~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) .is-indeterminate .is-active :not(.is-disabled).c-chk__label--custom:before,.c-chk__input :enabled~.c-chk__label :not(.c-chk__label--radio) :not(.c-chk__label--toggle) .is-indeterminate :not(.is-disabled) :active.c-chk__label--custom:before{
   border-color:#d2495e;
   background-color:#d2495e;
 }

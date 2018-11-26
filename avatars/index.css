@@ -11,8 +11,8 @@
   margin:0;
   border:1px solid transparent;
   border-radius:50%;
-  width:40px;
-  height:40px;
+  width:34px;
+  height:34px;
   box-sizing:border-box;
 }
 
@@ -28,20 +28,15 @@
   vertical-align:bottom;
 }
 
-.c-avatar--lg{
+.c-avatar--large{
   border-width:2px;
-  width:48px;
-  height:48px;
+  width:52px;
+  height:52px;
 }
 
-.c-avatar--sm{
-  width:32px;
-  height:32px;
-}
-
-.c-avatar--xs{
-  width:24px;
-  height:24px;
+.c-avatar--small{
+  width:26px;
+  height:26px;
 }
 
 .c-avatar.is-disabled{
