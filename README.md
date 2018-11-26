@@ -17,6 +17,7 @@ Package | Version | Dependencies
 [`@zendeskgarden/css-arrows`](packages/arrows) | [![npm version][arrows npm version]][arrows npm link] | [![Dependency Status][arrows dependency status]][arrows dependency link]
 [`@zendeskgarden/css-avatars`](packages/avatars) | [![npm version][avatars npm version]][avatars npm link] | [![Dependency Status][avatars dependency status]][avatars dependency link]
 [`@zendeskgarden/css-bedrock`](packages/bedrock) | [![npm version][bedrock npm version]][bedrock npm link] | [![Dependency Status][bedrock dependency status]][bedrock dependency link]
+[`@zendeskgarden/css-breadcrumbs`](packages/breadcrumbs) | [![npm version][breadcrumbs npm version]][breadcrumbs npm link] | [![Dependency Status][breadcrumbs dependency status]][breadcrumbs dependency link]
 [`@zendeskgarden/css-buttons`](packages/buttons) | [![npm version][buttons npm version]][buttons npm link] | [![Dependency Status][buttons dependency status]][buttons dependency link]
 [`@zendeskgarden/css-callouts`](packages/callouts) | [![npm version][callouts npm version]][callouts npm link] | [![Dependency Status][callouts dependency status]][callouts dependency link]
 [`@zendeskgarden/css-chrome`](packages/chrome) | [![npm version][chrome npm version]][chrome npm link] | [![Dependency Status][chrome dependency status]][chrome dependency link]
@@ -45,6 +46,10 @@ Package | Version | Dependencies
 [bedrock npm link]: https://www.npmjs.com/package/@zendeskgarden/css-bedrock
 [bedrock dependency status]: https://img.shields.io/david/zendeskgarden/css-components.svg?path=packages/bedrock&style=flat-square
 [bedrock dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/bedrock
+[breadcrumbs npm version]: https://img.shields.io/npm/v/@zendeskgarden/css-breadcrumbs.svg?style=flat-square
+[breadcrumbs npm link]: https://www.npmjs.com/package/@zendeskgarden/css-breadcrumbs
+[breadcrumbs dependency status]: https://img.shields.io/david/zendeskgarden/css-components.svg?path=packages/breadcrumbs&style=flat-square
+[breadcrumbs dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/breadcrumbs
 [buttons npm version]: https://img.shields.io/npm/v/@zendeskgarden/css-buttons.svg?style=flat-square
 [buttons npm link]: https://www.npmjs.com/package/@zendeskgarden/css-buttons
 [buttons dependency status]: https://img.shields.io/david/zendeskgarden/css-components.svg?path=packages/buttons&style=flat-square
