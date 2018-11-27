@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@3.0.11...@zendeskgarden/css-avatars@4.0.0) (2018-11-27)
+
+
+### Features
+
+* **avatars:** Add new 40px size and rename other sizes ([#149](https://github.com/zendeskgarden/css-components/issues/149)) ([d7783d9](https://github.com/zendeskgarden/css-components/commit/d7783d9))
+
+
+### BREAKING CHANGES
+
+* **avatars:** Default size is now 40px and names and sizes have changed to match new base-4 numbering.
+
+### New sizes
+| Size      | px   |
+|-----------|------|
+| xs        | 24px |
+| sm        | 32px |
+| default   | 40px |
+| lg        | 48px |
+
+### Name changes
+| Old    | New |
+|--------|-----|
+|        | xs  |
+| small  | sm  |
+| large  | lg  |
+
+
+
+
+
 ## [3.0.11](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@3.0.10...@zendeskgarden/css-avatars@3.0.11) (2018-11-13)
 
 **Note:** Version bump only for package @zendeskgarden/css-avatars
