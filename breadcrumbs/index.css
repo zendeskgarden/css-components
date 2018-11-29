@@ -29,8 +29,8 @@
   background:no-repeat 50% / 1em
     url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%23C2C8CC'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 11l4-4-4-4'/%3E%3C/svg%3E");
   width:1em;
-  height:1em;
-  vertical-align:middle;
+  height:100%;
+  vertical-align:top;
   content:"";
 }
 
