@@ -6,7 +6,7 @@
     var(--zd-breadcrumb__item-background-image);
   --zd-breadcrumb__item-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-400));
   --zd-breadcrumb__item-background-margin: 0 calc(8 / 14 * 1em);
-  --zd-breadcrumb__item-background-size: 1em;
+  --zd-breadcrumb__item-background-width: 1em;
   --zd-breadcrumb__item-line-height: calc(20 / 14);
 }
 
@@ -20,9 +20,9 @@
   display: inline-block;
   margin: var(--zd-breadcrumb__item-background-margin);
   background: var(--zd-breadcrumb__item-background);
-  width: var(--zd-breadcrumb__item-background-size);
-  height: var(--zd-breadcrumb__item-background-size);
-  vertical-align: middle;
+  width: var(--zd-breadcrumb__item-background-width);
+  height: 100%;
+  vertical-align: top;
   content: '';
 }
 
