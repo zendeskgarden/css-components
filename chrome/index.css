@@ -25,7 +25,7 @@
 
 .c-chrome__body__content{
   display:flex;
-  height:calc(100% - 50px);
+  height:calc(100% - 52px);
   line-height:1.42857;
   color:#2f3941;
   font-size:14px;
@@ -76,8 +76,8 @@
   box-sizing:border-box;
   background:transparent;
   cursor:pointer;
-  padding:12px 8.5px;
-  min-height:50px;
+  padding:13px 8.5px;
+  min-height:52px;
   font-size:inherit;
 }
 
@@ -372,7 +372,7 @@
   border-bottom:1px solid #d8dcde;
   background-color:#fff;
   padding:0 4px;
-  height:50px;
+  height:52px;
   color:#68737d;
   font-size:14px;
 }
