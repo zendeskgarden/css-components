@@ -24,7 +24,7 @@
   --zd-chrome__nav__fab-hovered-background-color: color-mod(var(--zd-chrome__nav__fab-background-color) lightness(+10%));
   --zd-chrome__nav__fab__icon-size: 20px;
   --zd-chrome__nav__fab__text-margin: 0 4px;
-  --zd-chrome__nav__item-height: 50px;
+  --zd-chrome__nav__item-height: 52px;
   --zd-chrome__nav__item-opacity: .6;
   --zd-chrome__nav__item-padding-horizontal: calc(calc(var(--zd-chrome__nav-width) - var(--zd-chrome__nav__item__icon-size)) / 4);
   --zd-chrome__nav__item-padding-vertical: calc(calc(var(--zd-chrome__nav__item-height) - var(--zd-chrome__nav__item__icon-size)) / 2);
