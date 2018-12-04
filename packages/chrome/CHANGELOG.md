@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.4.3...@zendeskgarden/css-chrome@3.5.0) (2018-12-04)
+
+
+### Features
+
+* **chrome:** bump `c-chrome__nav__item` height to 52px ([#152](https://github.com/zendeskgarden/css-components/issues/152)) ([16882d6](https://github.com/zendeskgarden/css-components/commit/16882d6))
+
+
+
+
+
 ## [3.4.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@3.4.2...@zendeskgarden/css-chrome@3.4.3) (2018-11-30)
 
 **Note:** Version bump only for package @zendeskgarden/css-chrome
