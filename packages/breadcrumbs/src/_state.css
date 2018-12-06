@@ -7,3 +7,7 @@
 .c-breadcrumb__item.is-current {
   color: var(--zd-breadcrumb__item--current-color);
 }
+
+.c-breadcrumb__item.is-current > :any-link {
+  color: inherit;
+}
