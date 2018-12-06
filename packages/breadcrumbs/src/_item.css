@@ -26,6 +26,10 @@
   content: '';
 }
 
+.c-breadcrumb__item > :any-link {
+  white-space: inherit;
+}
+
 .c-breadcrumb.is-rtl .c-breadcrumb__item::before {
   transform: rotate(180deg);
 }
