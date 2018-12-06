@@ -34,6 +34,22 @@
   content:"";
 }
 
+.c-breadcrumb__item>:link,.c-breadcrumb__item>:visited{
+  white-space:inherit;
+}
+
+.c-breadcrumb__item>:-webkit-any-link{
+  white-space:inherit;
+}
+
+.c-breadcrumb__item>:-moz-any-link{
+  white-space:inherit;
+}
+
+.c-breadcrumb__item>:any-link{
+  white-space:inherit;
+}
+
 .c-breadcrumb.is-rtl .c-breadcrumb__item:before{
   -webkit-transform:rotate(180deg);
           transform:rotate(180deg);
@@ -41,4 +57,20 @@
 
 .c-breadcrumb__item.is-current{
   color:#68737d;
+}
+
+.c-breadcrumb__item.is-current>:link,.c-breadcrumb__item.is-current>:visited{
+  color:inherit;
+}
+
+.c-breadcrumb__item.is-current>:-webkit-any-link{
+  color:inherit;
+}
+
+.c-breadcrumb__item.is-current>:-moz-any-link{
+  color:inherit;
+}
+
+.c-breadcrumb__item.is-current>:any-link{
+  color:inherit;
 }
