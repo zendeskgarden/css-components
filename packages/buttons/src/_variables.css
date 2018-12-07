@@ -18,5 +18,5 @@
     0 0 0 3px
     color-mod(var(--zd-btn--danger-color) alpha(35%));
   --zd-btn--danger-hovered-background-color: var(--zd-btn--danger-border-color);
-  --zd-btn--muted-color: var(--zd-color-grey-500);
+  --zd-btn--muted-color: var(--zd-color-grey-600);
 }
