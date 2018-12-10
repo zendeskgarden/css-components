@@ -31,8 +31,9 @@
   background-image: var(--zd-chk-indeterminate-background-image);
 }
 
-:--chk-checked-enabled::before,
-:--chk-indeterminate-enabled::before {
+/* HACK [jtz] until postcss/postcss-custom-selectors#40 is fixed */
+/* stylelint-disable-next-line selector-list-comma-space-after */
+:--chk-checked-enabled::before,:--chk-indeterminate-enabled::before {
   border-color: var(--zd-chk-checked-border-color);
   background-color: var(--zd-chk-checked-background-color);
 }
@@ -53,8 +54,9 @@
   background-color: var(--zd-chk-active-background-color);
 }
 
-:--chk-checked-active::before,
-:--chk-indeterminate-active::before {
+/* HACK [jtz] until postcss/postcss-custom-selectors#40 is fixed */
+/* stylelint-disable-next-line selector-list-comma-space-after */
+:--chk-checked-active::before,:--chk-indeterminate-active::before {
   border-color: var(--zd-chk-checked-active-border-color);
   background-color: var(--zd-chk-checked-active-background-color);
 }

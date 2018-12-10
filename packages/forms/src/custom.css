@@ -19,8 +19,9 @@
   --zd-range--custom-track-background-image: linear-gradient(var(--zd-forms--custom-accent-color), var(--zd-forms--custom-accent-color));
 }
 
-:--chk-checked-enabled.c-chk__label--custom::before,
-:--chk-indeterminate-enabled.c-chk__label--custom::before {
+/* HACK [jtz] until postcss/postcss-custom-selectors#40 is fixed */
+/* stylelint-disable selector-list-comma-space-after, max-line-length */
+:--chk-checked-enabled.c-chk__label--custom::before,:--chk-indeterminate-enabled.c-chk__label--custom::before {
   border-color: var(--zd-forms--custom-accent-color);
   background-color: var(--zd-forms--custom-accent-color);
 }
@@ -38,11 +39,12 @@
   border-color: var(--zd-forms--custom-accent-color);
 }
 
-:--chk-checked-active.c-chk__label--custom::before,
-:--chk-indeterminate-active.c-chk__label--custom::before {
+/* HACK [jtz] until postcss/postcss-custom-selectors#40 is fixed */
+:--chk-checked-active.c-chk__label--custom::before,:--chk-indeterminate-active.c-chk__label--custom::before {
   border-color: var(--zd-forms--custom-accent-color-active);
   background-color: var(--zd-forms--custom-accent-color-active);
 }
+/* stylelint-enable selector-list-comma-space-after, max-line-length */
 
 /* stylelint-disable selector-pseudo-element-no-unknown */
 
