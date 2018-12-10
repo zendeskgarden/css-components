@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.8](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@6.1.7...@zendeskgarden/css-forms@6.1.8) (2018-12-10)
+
+
+### Bug Fixes
+
+* **forms:** checkbox workaround for invalid `postcss-custom-selectors` transform spacing ([#155](https://github.com/zendeskgarden/css-components/issues/155)) ([ac14942](https://github.com/zendeskgarden/css-components/commit/ac14942))
+
+
+
+
+
 ## [6.1.7](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@6.1.6...@zendeskgarden/css-forms@6.1.7) (2018-12-06)
 
 **Note:** Version bump only for package @zendeskgarden/css-forms
