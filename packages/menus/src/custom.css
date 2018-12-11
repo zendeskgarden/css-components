@@ -11,8 +11,8 @@
 :root {
   --zd-menu--custom-accent-color: var(--zd-color-mandy);
   --zd-menu--custom__item--add-color: var(--zd-menu--custom-accent-color);
-  --zd-menu--custom__item--add-background-image: svg-load('14/plus.svg', color: var(--zd-menu--custom-accent-color));
-  --zd-menu--custom__item--icon-background-image: svg-load('14/checkmark-lg.svg', color: var(--zd-menu--custom-accent-color));
+  --zd-menu--custom__item--add-background-image: svg-load('16/plus-stroke.svg', color: var(--zd-menu--custom-accent-color));
+  --zd-menu--custom__item--icon-background-image: svg-load('16/check-lg-stroke.svg', color: var(--zd-menu--custom-accent-color));
   --zd-menu--custom__item-hovered-background-color: color-mod(var(--zd-menu--custom-accent-color) alpha(15%));
 }
 
