@@ -6,7 +6,17 @@
   --zd-dialog__header-font-size: var(--zd-font-size-md);
   --zd-dialog__header-font-weight: var(--zd-font-weight-semibold);
   --zd-dialog__header-line-height: calc(20 / 14);
-  --zd-dialog__header-padding: var(--zd-spacing) var(--zd-spacing-xl);
+  --zd-dialog__header-padding-horizontal: 40px;
+  --zd-dialog__header-padding-vertical: 20px;
+  --zd-dialog__header-padding: var(--zd-dialog__header-padding-vertical) var(--zd-dialog__header-padding-horizontal);
+  --zd-dialog__header--danger-color: var(--zd-color-red-600);
+  --zd-dialog__header--danger--icon-background:
+    no-repeat
+    50% / var(--zd-dialog__header--danger--icon-size)
+    svg-load('16/alert-error-stroke.svg' color: var(--zd-dialog__header--danger-color));
+  --zd-dialog__header--danger--icon-horizontal: 16px;
+  --zd-dialog__header--danger--icon-size: 16px;
+  --zd-dialog__header--danger--icon-top: calc(var(--zd-dialog__header-padding-vertical) + calc(calc(20px - var(--zd-dialog__header--danger--icon-size)) / 2));
 }
 
 /* 1. Reset for <h1>, etc. */
@@ -20,4 +30,24 @@
   color: var(--zd-dialog__header-color);
   font-size: var(--zd-dialog__header-font-size);
   font-weight: var(--zd-dialog__header-font-weight);
+}
+
+.c-dialog__header--danger {
+  position: relative;
+  color: var(--zd-dialog__header--danger-color);
+}
+
+.c-dialog__header--danger::before {
+  position: absolute;
+  top: var(--zd-dialog__header--danger--icon-top);
+  left: var(--zd-dialog__header--danger--icon-horizontal);
+  background: var(--zd-dialog__header--danger--icon-background);
+  width: var(--zd-dialog__header--danger--icon-size);
+  height: var(--zd-dialog__header--danger--icon-size);
+  content: '';
+}
+
+.c-dialog.is-rtl .c-dialog__header--danger::before {
+  right: var(--zd-dialog__header--danger--icon-horizontal);
+  left: auto;
 }
