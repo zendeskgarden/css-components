@@ -116,6 +116,7 @@
 
 .c-chk__label.is-hidden {
   padding-left: var(--zd-chk-size);
+  text-indent: -100%;
   font-size: 0;
 }
 
