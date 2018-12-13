@@ -96,7 +96,7 @@
 .c-chk__message--success,
 .c-chk__message--warning {
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center left;
 }
 
 .c-chk__message--error {
@@ -144,7 +144,7 @@
 .is-rtl.c-chk__message--error,
 .is-rtl.c-chk__message--success,
 .is-rtl.c-chk__message--warning {
-  background-position: top right;
+  background-position: center right;
   padding-left: 0;
 }
 
