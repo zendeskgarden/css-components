@@ -56,7 +56,6 @@
 }
 
 .c-table__row__cell__overflow::before {
-  opacity: 1;
   background-image: var(--zd-table__row__cell__overflow-background-image);
 }
 
