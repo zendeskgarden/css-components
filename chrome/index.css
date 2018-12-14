@@ -393,7 +393,7 @@
   border:none;
   border-radius:4px;
   background:transparent;
-  padding:0 4px;
+  padding:0 3.5px;
   min-width:30px;
   height:30px;
   line-height:2.14286;
@@ -459,9 +459,9 @@
   transition:-webkit-transform .25s ease-in-out;
   transition:transform .25s ease-in-out;
   transition:transform .25s ease-in-out,-webkit-transform .25s ease-in-out;
-  margin:0 4px;
-  width:14px;
-  height:14px;
+  margin:0 3.5px;
+  width:16px;
+  height:16px;
 }
 
 .c-chrome__body__header__item--logo .c-chrome__body__header__item__icon{
@@ -482,7 +482,7 @@ img.c-chrome__body__header__item__icon{
 }
 
 .c-chrome__body__header__item__text{
-  margin:0 4px;
+  margin:0 3.5px;
 }
 
 .c-chrome__body__header__item--logo .c-chrome__body__header__item__text,.c-chrome__body__header__item__text.is-clipped{

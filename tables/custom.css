@@ -18,20 +18,20 @@
   background-color:rgba(235, 73, 98, .35);
 }
 
+.c-table--custom .c-table__row__cell__sortable:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23EB4962' fill='%23EB4962'%3E%3Cpath fill='currentColor' d='M10 5H2a.5.5 0 0 1-.46-.31.47.47 0 0 1 .11-.54L5.29.5A1 1 0 0 1 6.7.5l3.65 3.65a.49.49 0 0 1 .11.54A.51.51 0 0 1 10 5z'/%3E%3Cpath d='M2 7a.5.5 0 0 0-.46.31.47.47 0 0 0 .11.54L5.3 11.5a1 1 0 0 0 1.41 0l3.65-3.65a.49.49 0 0 0 .11-.54A.53.53 0 0 0 10 7z'/%3E%3C/svg%3E");
+}
+
 .c-table--custom .c-table__row__cell__sortable.is-focused,.c-table--custom .c-table__row__cell__sortable.is-hovered,.c-table--custom .c-table__row__cell__sortable:focus,.c-table--custom .c-table__row__cell__sortable:hover{
   color:#eb4962;
 }
 
-.c-table--custom .c-table__row__cell__sortable.is-focused:before,.c-table--custom .c-table__row__cell__sortable.is-hovered:before,.c-table--custom .c-table__row__cell__sortable:focus:before,.c-table--custom .c-table__row__cell__sortable:hover:before{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%23EB4962' fill='%23EB4962'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
+.c-table--custom .c-table__row__cell__sortable.is-ascending:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23EB4962' fill='rgba(235, 73, 98, 0.35)'%3E%3Cpath fill='currentColor' d='M10 5H2a.5.5 0 0 1-.46-.31.47.47 0 0 1 .11-.54L5.29.5A1 1 0 0 1 6.7.5l3.65 3.65a.49.49 0 0 1 .11.54A.51.51 0 0 1 10 5z'/%3E%3Cpath d='M2 7a.5.5 0 0 0-.46.31.47.47 0 0 0 .11.54L5.3 11.5a1 1 0 0 0 1.41 0l3.65-3.65a.49.49 0 0 0 .11-.54A.53.53 0 0 0 10 7z'/%3E%3C/svg%3E");
 }
 
-.c-table--custom .c-table__row__cell__sortable.is-ascending.is-focused:before,.c-table--custom .c-table__row__cell__sortable.is-ascending.is-hovered:before,.c-table--custom .c-table__row__cell__sortable.is-ascending:focus:before,.c-table--custom .c-table__row__cell__sortable.is-ascending:hover:before{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%23EB4962' fill='rgba(235, 73, 98, 0.35)'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
-}
-
-.c-table--custom .c-table__row__cell__sortable.is-descending.is-focused:before,.c-table--custom .c-table__row__cell__sortable.is-descending.is-hovered:before,.c-table--custom .c-table__row__cell__sortable.is-descending:focus:before,.c-table--custom .c-table__row__cell__sortable.is-descending:hover:before{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='rgba(235, 73, 98, 0.35)' fill='%23EB4962'%3E%3Cpath fill='currentColor' d='M3.65 5.188l2.96-3.7a.5.5 0 0 1 .78 0l2.96 3.7A.5.5 0 0 1 9.96 6H4.04a.5.5 0 0 1-.39-.812z'/%3E%3Cpath d='M3.65 8.812l2.96 3.7a.5.5 0 0 0 .78 0l2.96-3.7A.5.5 0 0 0 9.96 8H4.04a.5.5 0 0 0-.39.812z'/%3E%3C/svg%3E");
+.c-table--custom .c-table__row__cell__sortable.is-descending:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='rgba(235, 73, 98, 0.35)' fill='%23EB4962'%3E%3Cpath fill='currentColor' d='M10 5H2a.5.5 0 0 1-.46-.31.47.47 0 0 1 .11-.54L5.29.5A1 1 0 0 1 6.7.5l3.65 3.65a.49.49 0 0 1 .11.54A.51.51 0 0 1 10 5z'/%3E%3Cpath d='M2 7a.5.5 0 0 0-.46.31.47.47 0 0 0 .11.54L5.3 11.5a1 1 0 0 0 1.41 0l3.65-3.65a.49.49 0 0 0 .11-.54A.53.53 0 0 0 10 7z'/%3E%3C/svg%3E");
 }
 
 .c-table--custom.is-rtl .c-table__row:not(.c-table__row--header):not(.c-table__row--group).is-focused .c-table__row__cell:first-of-type,.c-table--custom.is-rtl .c-table__row:not(.c-table__row--header):not(.c-table__row--group):focus .c-table__row__cell:first-of-type{
