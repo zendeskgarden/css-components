@@ -3,7 +3,7 @@
 @import '_selectors';
 
 :root {
-  --zd-txt__input--select-padding-unit: 48;
+  --zd-txt__input--select-padding-unit: 40;
   --zd-txt__input--select-padding-right: calc(var(--zd-txt__input--select-padding-unit) / 14 * 1em);
   --zd-txt__input--select-transition:
     background-image .25s ease-in-out,

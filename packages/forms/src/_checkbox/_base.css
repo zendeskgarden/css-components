@@ -5,7 +5,7 @@
   --zd-chk-background-color: var(--zd-color-white);
   --zd-chk-background-size: 12px;
   --zd-chk-border: 1px solid var(--zd-forms-border-color);
-  --zd-chk-border-radius: 3px;
+  --zd-chk-border-radius: 4px;
   --zd-chk-size: 16px;
   --zd-chk-transition:
     border-color .25s ease-in-out,

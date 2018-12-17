@@ -2,7 +2,7 @@
 
 :root {
   --zd-chk--toggle-background-color: var(--zd-color-grey-500);
-  --zd-chk--toggle-background-image: svg-load('12/circle-fill.svg', color: var(--zd-color-white));
+  --zd-chk--toggle-background-image: svg-load('16/circle-fill.svg', color: var(--zd-color-white));
   --zd-chk--toggle-background-size: 14px;
   --zd-chk--toggle-active-background-color: var(--zd-color-grey-600);
   --zd-chk--toggle-checked-active-background-color: var(--zd-chk-checked-active-background-color);
