@@ -41,7 +41,7 @@ $(document).ready(function() {
     if ($this.is('.is-ascending')) {
       $this.removeClass('is-ascending').addClass('is-descending');
     } else if ($this.is('.is-descending')) {
-      $this.removeClass('is-descending');
+      $this.removeClass('is-descending').addClass('is-ascending');
     } else {
       $this.addClass('is-ascending');
     }
