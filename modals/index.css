@@ -118,6 +118,28 @@
   font-weight:600;
 }
 
+.c-dialog__header--danger{
+  position:relative;
+  color:#cc3340;
+}
+
+.c-dialog__header--danger:before{
+  position:absolute;
+  top:22px;
+  left:16px;
+  background:no-repeat
+    50% / 16px
+    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%23CC3340'%3E%3Cg fill='none' stroke='currentColor'%3E%3Ccircle cx='7.5' cy='8.5' r='7'/%3E%3Cpath stroke-linecap='round' d='M7.5 4.5V9'/%3E%3C/g%3E%3Ccircle cx='7.5' cy='12' r='1' fill='currentColor'/%3E%3C/svg%3E");
+  width:16px;
+  height:16px;
+  content:"";
+}
+
+.c-dialog.is-rtl .c-dialog__header--danger:before{
+  right:16px;
+  left:auto;
+}
+
 .c-dialog__close{
   display:block;
   position:absolute;
@@ -153,18 +175,18 @@
   transition:opacity .25s ease-in-out;
   background-repeat:no-repeat;
   background-position:50%;
-  background-size:20px;
+  background-size:16px;
   content:"";
 }
 
 .c-dialog__close:before{
   opacity:1;
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%2387929D'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%2368737D'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 13L13 3m0 10L3 3'/%3E%3C/svg%3E");
 }
 
 .c-dialog__close:after{
   opacity:0;
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' color='%232F3941'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M4 10l6-6M4 4l6 6'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%232F3941'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 13L13 3m0 10L3 3'/%3E%3C/svg%3E");
 }
 
 .c-dialog__close.is-focused:before,.c-dialog__close.is-hovered:before,.c-dialog__close:hover:before{
