@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@8.0.7...@zendeskgarden/css-menus@8.1.0) (2018-12-18)
+
+
+### Features
+
+* update SVG icons ([#159](https://github.com/zendeskgarden/css-components/issues/159)) ([67fd074](https://github.com/zendeskgarden/css-components/commit/67fd074))
+
+
+
+
+
 ## [8.0.7](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@8.0.6...@zendeskgarden/css-menus@8.0.7) (2018-12-17)
 
 **Note:** Version bump only for package @zendeskgarden/css-menus

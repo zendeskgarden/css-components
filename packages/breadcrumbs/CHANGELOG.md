@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-breadcrumbs@0.1.4...@zendeskgarden/css-breadcrumbs@0.2.0) (2018-12-18)
+
+
+### Features
+
+* update SVG icons ([#159](https://github.com/zendeskgarden/css-components/issues/159)) ([67fd074](https://github.com/zendeskgarden/css-components/commit/67fd074))
+
+
+
+
+
 ## [0.1.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-breadcrumbs@0.1.3...@zendeskgarden/css-breadcrumbs@0.1.4) (2018-12-17)
 
 **Note:** Version bump only for package @zendeskgarden/css-breadcrumbs
