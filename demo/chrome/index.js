@@ -14,7 +14,7 @@ $(document).ready(function() {
     '.c-chrome__body__header__item',
     '.c-chrome__nav__fab',
     '.c-chrome__nav__item',
-    '.c-chrome__subnav__item',
+    '.c-chrome__subnav__item'
   ].forEach(Garden.handleFocus);
 
   Garden.customClasses.push('.c-chrome');
@@ -24,7 +24,12 @@ $(document).ready(function() {
     var value = $(this).val();
     var $nav = $('.c-chrome__nav:not(.c-playground .c-chrome__nav)');
 
-    if (value.toUpperCase() === $(this).attr('value').toUpperCase()) {
+    if (
+      value.toUpperCase() ===
+      $(this)
+        .attr('value')
+        .toUpperCase()
+    ) {
       $nav.removeClass('c-chrome__nav--dark c-chrome__nav--light').css('backgroundColor', '');
     } else {
       updateNavColor($nav, value);
@@ -36,7 +41,9 @@ $(document).ready(function() {
   });
 
   $('.js-standalone').click(function() {
-    $('.c-chrome__body__header:not(.c-playground .c-chrome__body__header)').toggleClass('c-chrome__body__header--standalone');
+    $('.c-chrome__body__header:not(.c-playground .c-chrome__body__header)').toggleClass(
+      'c-chrome__body__header--standalone'
+    );
   });
 
   $(document).on('click', '.c-chrome__nav__item:not(.c-chrome__nav__item--logo)', function() {
@@ -55,7 +62,9 @@ $(document).ready(function() {
 
     if ($this.hasClass('c-chrome__subnav__item--header')) {
       $this.toggleClass('is-expanded');
-      $this.next('.c-chrome__subnav__panel').toggleClass('is-hidden', !$this.hasClass('is-expanded'));
+      $this
+        .next('.c-chrome__subnav__panel')
+        .toggleClass('is-hidden', !$this.hasClass('is-expanded'));
     } else {
       var $parent = $this.closest('.c-chrome__subnav');
 
@@ -71,6 +80,10 @@ $(document).ready(function() {
   $(document).on('click', '.c-chrome__body__header__item', function() {
     var $this = $(this);
     var $menu = $this.find('.c-menu');
+    var $icon = $this.find('svg, img');
+    var $container = $menu.parent('.menu-container');
+    var $offset = $icon.is('img') ? -3 : 5;
+    var y = $icon.outerHeight() + $offset;
 
     if ($menu.length) {
       if ($menu.hasClass('is-open')) {
@@ -80,6 +93,8 @@ $(document).ready(function() {
         $menu.addClass('is-open').attr('aria-hidden', false);
         $this.addClass('is-active');
       }
+
+      $container.css('transform', 'translate3d(0, ' + y + 'px, 0)');
 
       return false;
     }

@@ -21,6 +21,11 @@
   <link href="../utilities/index.css" rel="stylesheet">
   <style>
   .c-chrome { min-height: 300px; }
+
+  .menu-container {
+    transform: translateZ(0);
+    position: absolute;
+  }
   </style>
 </head>
 <body class="c-chrome">
@@ -94,51 +99,55 @@
           <use xlink:href="../index.svg#zd-svg-icon-14-menu-tray" />
         </svg>
         <span class="c-chrome__body__header__item__text is-clipped">Products</span>
-        <ul aria-hidden="true" class="c-menu c-menu--down c-arrow c-arrow--tr" style="top:calc(100% + 4px);right:-4px">
-          <li class="c-menu__item c-menu__item--media u-fg-apple-green" role="menuitem">
-            <svg class="c-menu__item--media__figure">
-              <use xlink:href="../index.svg#zd-svg-icon-26-relationshape-support" />
-            </svg>
-            <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Support</div>
-          </li>
-          <li class="c-menu__item c-menu__item--media u-fg-mandy" role="menuitem">
-            <svg class="c-menu__item--media__figure">
-              <use xlink:href="../index.svg#zd-svg-icon-26-relationshape-guide" />
-            </svg>
-            <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Guide</div>
-          </li>
-          <li class="c-menu__item c-menu__item--media u-fg-sea-buckthorn" role="menuitem">
-            <svg class="c-menu__item--media__figure">
-              <use xlink:href="../index.svg#zd-svg-icon-26-relationshape-chat" />
-            </svg>
-            <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Chat</div>
-          </li>
-          <li class="c-menu__item c-menu__item--media u-fg-golden-dream" role="menuitem">
-            <svg class="c-menu__item--media__figure">
-              <use xlink:href="../index.svg#zd-svg-icon-26-relationshape-talk" />
-            </svg>
-            <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Talk</div>
-          </li>
-        </ul>
+        <div class="menu-container u-1/1">
+          <ul aria-hidden="true" class="c-menu c-menu--down c-arrow c-arrow--tr" style="right:-4px">
+            <li class="c-menu__item c-menu__item--media u-fg-apple-green" role="menuitem">
+              <svg class="c-menu__item--media__figure">
+                <use xlink:href="../index.svg#zd-svg-icon-26-relationshape-support" />
+              </svg>
+              <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Support</div>
+            </li>
+            <li class="c-menu__item c-menu__item--media u-fg-mandy" role="menuitem">
+              <svg class="c-menu__item--media__figure">
+                <use xlink:href="../index.svg#zd-svg-icon-26-relationshape-guide" />
+              </svg>
+              <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Guide</div>
+            </li>
+            <li class="c-menu__item c-menu__item--media u-fg-sea-buckthorn" role="menuitem">
+              <svg class="c-menu__item--media__figure">
+                <use xlink:href="../index.svg#zd-svg-icon-26-relationshape-chat" />
+              </svg>
+              <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Chat</div>
+            </li>
+            <li class="c-menu__item c-menu__item--media u-fg-golden-dream" role="menuitem">
+              <svg class="c-menu__item--media__figure">
+                <use xlink:href="../index.svg#zd-svg-icon-26-relationshape-talk" />
+              </svg>
+              <div class="c-menu__item--media__body u-mt-sm u-fg-dark-gray">Talk</div>
+            </li>
+          </ul>
+        </div>
       </button>
       <button class="c-chrome__body__header__item c-chrome__body__header__item--round">
         <img alt="Helpy Helperton" class="c-chrome__body__header__item__icon" src="http://placeskull.com/22/22/03363D/41/0">
         <span class="c-chrome__body__header__item__text is-clipped">User</span>
-        <ul aria-hidden="true" class="c-menu c-menu--down c-arrow c-arrow--tr" style="top:calc(100% + 4px);right:-4px">
-          <li class="c-menu__item c-menu__item--media" role="menuitem">
-            <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/03363D/41/0">
-            <div class="c-menu__item--media__body">
-              <div class="u-truncate" title="Helpy Helperton">Helpy Helperton</div>
-              <span class="c-menu__item__meta">View profile</span>
-            </div>
-          </li>
-          <li class="c-menu__separator" role="separator">
-          <li class="c-menu__item" role="menuitem">Help</li>
-          <li class="c-menu__item" role="menuitem">Settings</li>
-          <li class="c-menu__item" role="menuitem">About</li>
-          <li class="c-menu__separator" role="separator">
-          <li class="c-menu__item" role="menuitem">Sign out</li>
-        </ul>
+        <div class="menu-container u-1/1">
+          <ul aria-hidden="true" class="c-menu c-menu--down c-arrow c-arrow--tr" style="right:-4px">
+            <li class="c-menu__item c-menu__item--media" role="menuitem">
+              <img class="c-menu__item--media__figure u-br-50%" src="http://placeskull.com/32/32/03363D/41/0">
+              <div class="c-menu__item--media__body">
+                <div class="u-truncate" title="Helpy Helperton">Helpy Helperton</div>
+                <span class="c-menu__item__meta">View profile</span>
+              </div>
+            </li>
+            <li class="c-menu__separator" role="separator">
+            <li class="c-menu__item" role="menuitem">Help</li>
+            <li class="c-menu__item" role="menuitem">Settings</li>
+            <li class="c-menu__item" role="menuitem">About</li>
+            <li class="c-menu__separator" role="separator">
+            <li class="c-menu__item" role="menuitem">Sign out</li>
+          </ul>
+        </div>
       </button>
     </header>
     <div class="c-chrome__body__content">
