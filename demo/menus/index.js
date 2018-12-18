@@ -33,20 +33,51 @@ $(document).ready(function() {
 
     if ($menu.hasClass('c-menu--right')) {
       var x = $width + 2;
-      $popper.css('transform', 'translate3d(' + x + 'px, -89px, 0)');
+
+      if (!$popper.closest('.c-table__row__cell--overflow').length) {
+        $popper.css('transform', 'translate3d(' + x + 'px, -89px, 0)');
+      }
     }
     if ($menu.hasClass('c-menu--left')) {
       var x = $menuWidth + 2;
-      $popper.css('transform', 'translate3d(' + -x + 'px, -89px, 0)');
+
+      if (!$popper.closest('.c-table__row__cell--overflow').length) {
+        $popper.css('transform', 'translate3d(' + -x + 'px, -89px, 0)');
+      }
     }
     if ($menu.hasClass('c-menu--up')) {
       var x = $width / 2 - $menuWidth / 2;
       var y = $menu.outerHeight() + $this.outerHeight() + 2;
-      $popper.css('transform', 'translate3d(' + x + 'px, ' + -y + 'px, 0)');
+
+      if ($this.hasClass('js-menu--split')) {
+        x = 0;
+        y = $menu.outerHeight() + $this.outerHeight() + 4;
+      }
+
+      if (!$popper.closest('.c-table__row__cell--overflow').length) {
+        $popper.css('transform', 'translate3d(' + x + 'px, ' + -y + 'px, 0)');
+      }
     }
     if ($menu.hasClass('c-menu--down')) {
-      var x = $width / 2 - $menuWidth / 2;
-      $popper.css('transform', 'translate3d(' + x + 'px, 0, 0)');
+      var x = Math.max($width / 2 - $menuWidth / 2, 0); // Avoid negative numbers
+
+      if (!$popper.closest('.c-table__row__cell--overflow').length) {
+        $popper.css('transform', 'translate3d(' + x + 'px, 0, 0)');
+      } else {
+        // Same as css calc(2em + 1px)
+        var y = $this.outerHeight() + 1;
+
+        // Special treatment here for overflow button in tables
+        // since the icon is a pseudo element we need to hint to
+        // the menu what the "real" y position is and clean up
+        // on animationend so as not to mess with table styles
+        if (!$menu.hasClass('is-open')) {
+          $popper.css('transform', 'translateY(' + y + 'px)');
+          $popper.one('animationend', function() {
+            $popper.css('transform', '');
+          });
+        }
+      }
     }
 
     if ($menu.hasClass('is-open')) {
