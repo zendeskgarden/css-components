@@ -4,9 +4,8 @@
   --zd-btn--icon-size: calc(var(--zd-btn-line-height) + 2px);
   --zd-btn--icon--sm-size: calc(var(--zd-btn--sm-line-height) + 2px);
   --zd-btn--icon--lg-size: calc(var(--zd-btn--lg-line-height) + 2px);
-  --zd-btn__icon-size: 18px;
+  --zd-btn__icon-size: 16px;
   --zd-btn__icon-transition: transform .25s ease-in-out;
-  --zd-btn--sm__icon-size: 14px;
   --zd-btn--lg__icon-size: 24px;
 }
 
@@ -33,11 +32,6 @@
   width: var(--zd-btn__icon-size);
   height: var(--zd-btn__icon-size);
   vertical-align: middle;
-}
-
-.c-btn--sm .c-btn__icon {
-  width: var(--zd-btn--sm__icon-size);
-  height: var(--zd-btn--sm__icon-size);
 }
 
 .c-btn--lg .c-btn__icon {

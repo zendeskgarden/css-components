@@ -30,7 +30,8 @@
   padding-left: var(--zd-table__row__cell__sortable-padding);
 }
 
-.c-table.is-rtl .c-table__row__cell__sortable::before {
+.c-table.is-rtl .c-table__row__cell__sortable::before,
+.c-table.is-rtl .c-table__row__cell__sortable::after {
   right: auto;
   left: 0;
 }

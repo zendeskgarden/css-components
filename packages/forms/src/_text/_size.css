@@ -2,10 +2,11 @@
   --zd-txt--sm__input-padding-horizontal: calc(12 / 14 * 1em);
   --zd-txt--sm__input-padding: calc(6 / 14 * 1em) var(--zd-txt--sm__input-padding-horizontal);
   --zd-txt--sm__input-height: 32px;
-  --zd-txt--sm__input--select-padding-unit: 40;
+  --zd-txt--sm__input--select-padding-unit: 32;
   --zd-txt--sm__input--select-padding-right: calc(var(--zd-txt--sm__input--select-padding-unit) / 14 * 1em);
-  --zd-txt--sm__input--select__chevron-background-position-x: calc((var(--zd-txt--sm__input--select-padding-unit) / 2 - 8 + 1) / 14 * 1em);
+  --zd-txt--sm__input--select__chevron-background-position-x: calc((var(--zd-txt--sm__input--select-padding-unit) / 2 - 6) / 14 * 1em);
   --zd-txt--sm__input--select__chevron-background-position: right var(--zd-txt--sm__input--select__chevron-background-position-x) center;
+  --zd-txt--sm__input--select__chevron-background-size: 12px;
   --zd-txt--sm__input--select__chevron-width: calc(var(--zd-txt--sm__input--select-padding-unit) * 1px);
   --zd-txt-rtl--sm__input--select__chevron-background-position: left var(--zd-txt--sm__input--select__chevron-background-position-x) center;
   --zd-txt--sm__media-start-margin: var(--zd-txt--sm__input-padding-horizontal);
@@ -46,6 +47,7 @@
 .c-txt__input--sm.c-txt__input--select:not(select)::before,
 select.c-txt__input--sm.c-txt__input--select {
   background-position: var(--zd-txt--sm__input--select__chevron-background-position);
+  background-size: var(--zd-txt--sm__input--select__chevron-background-size);
   height: var(--zd-txt--sm__input-height);
 }
 

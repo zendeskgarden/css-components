@@ -12,8 +12,8 @@
     color-mod(var(--zd-pagination-accent-color) alpha(35%));
   --zd-pagination__page-hovered-background-color: var(--zd-pagination__page-current-background-color);
   --zd-pagination__page-hovered-color: var(--zd-pagination__page-current-color);
-  --zd-pagination__page--next-hovered-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-800));
-  --zd-pagination__page--previous-hovered-background-image: svg-load('14/previous.svg', color: var(--zd-color-grey-800));
+  --zd-pagination__page--next-hovered-background-image: svg-load('16/chevron-right-stroke.svg', color: var(--zd-color-grey-800));
+  --zd-pagination__page--previous-hovered-background-image: svg-load('16/chevron-left-stroke.svg', color: var(--zd-color-grey-800));
 }
 
 .c-pagination__page:--page-hovered {

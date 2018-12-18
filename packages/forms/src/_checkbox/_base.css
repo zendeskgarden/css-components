@@ -3,9 +3,10 @@
 
 :root {
   --zd-chk-background-color: var(--zd-color-white);
+  --zd-chk-background-size: 12px;
   --zd-chk-border: 1px solid var(--zd-forms-border-color);
   --zd-chk-border-radius: 4px;
-  --zd-chk-size: var(--zd-font-size-md);
+  --zd-chk-size: 16px;
   --zd-chk-transition:
     border-color .25s ease-in-out,
     box-shadow .1s ease-in-out,
@@ -63,7 +64,7 @@
   background-color: var(--zd-chk-background-color);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: var(--zd-chk-background-size);
   width: var(--zd-chk-size);
   height: var(--zd-chk-size);
   box-sizing: border-box;
@@ -95,7 +96,7 @@
 .c-chk__message--success,
 .c-chk__message--warning {
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center left;
 }
 
 .c-chk__message--error {
@@ -115,6 +116,7 @@
 
 .c-chk__label.is-hidden {
   padding-left: var(--zd-chk-size);
+  text-indent: -100%;
   font-size: 0;
 }
 
@@ -142,7 +144,7 @@
 .is-rtl.c-chk__message--error,
 .is-rtl.c-chk__message--success,
 .is-rtl.c-chk__message--warning {
-  background-position: top right;
+  background-position: center right;
   padding-left: 0;
 }
 

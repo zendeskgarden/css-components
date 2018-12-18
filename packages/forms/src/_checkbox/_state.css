@@ -12,7 +12,7 @@
     background-image .1s ease-in-out,
     color .1s ease-in-out;
   --zd-chk-checked-background-color: var(--zd-forms-accent-color);
-  --zd-chk-checked-background-image: svg-load('14/checkmark.svg', color: var(--zd-color-white));
+  --zd-chk-checked-background-image: svg-load('12/check-sm-fill.svg', color: var(--zd-color-white));
   --zd-chk-checked-border-color: var(--zd-chk-checked-background-color);
   --zd-chk-checked-active-background-color: var(--zd-color-blue-700);
   --zd-chk-checked-active-border-color: var(--zd-chk-checked-active-background-color);
@@ -20,7 +20,7 @@
   --zd-chk-focused-border-color: var(--zd-forms-accent-color);
   --zd-chk-focused-box-shadow: var(--zd-forms-focused-box-shadow);
   --zd-chk-hovered-border-color: var(--zd-chk-focused-border-color);
-  --zd-chk-indeterminate-background-image: svg-load('14/dash.svg', color: var(--zd-color-white));
+  --zd-chk-indeterminate-background-image: svg-load('12/dash-fill.svg', color: var(--zd-color-white));
 }
 
 :--chk-checked::before {

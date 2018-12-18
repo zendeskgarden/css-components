@@ -29,7 +29,7 @@
     var(--zd-chrome__body__header__item-focused-box-shadow-color);
   --zd-chrome__body__header__item-hovered-color: var(--zd-chrome__body__header__item-active-color);
   --zd-chrome__body__header__item__icon-margin: var(--zd-chrome__body__header__item-padding);
-  --zd-chrome__body__header__item__icon-size: 14px;
+  --zd-chrome__body__header__item__icon-size: 16px;
   --zd-chrome__body__header__item__icon-transition: transform .25s ease-in-out;
   --zd-chrome__body__header__item--img__icon-border-radius: calc(var(--zd-chrome__body__header__item-border-radius) - 1px);
   --zd-chrome__body__header__item--img__icon-size: 22px;

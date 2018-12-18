@@ -20,10 +20,10 @@
   --zd-input__label-font-weight: var(--zd-font-weight-semibold);
   --zd-input__message-color: var(--zd-color-grey-700);
   --zd-input__message-font-size: var(--zd-font-size-sm);
-  --zd-input__message--error-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-red-500));
+  --zd-input__message--error-background-image: svg-load('16/alert-error-stroke.svg', color: var(--zd-color-red-600));
   --zd-input__message--error-color: var(--zd-color-red-600);
-  --zd-input__message--success-background-image: svg-load('14/checkmark-fill.svg', color: var(--zd-color-green-500));
+  --zd-input__message--success-background-image: svg-load('16/check-circle-stroke.svg', color: var(--zd-color-green-600));
   --zd-input__message--success-color: var(--zd-color-green-600);
-  --zd-input__message--warning-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-yellow-500));
+  --zd-input__message--warning-background-image: svg-load('16/alert-warning-stroke.svg', color: var(--zd-color-yellow-700));
   --zd-input__message--warning-color: var(--zd-color-yellow-700);
 }

@@ -47,7 +47,7 @@
 .c-range__message--success,
 .c-range__message--warning {
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center left;
   padding-left: var(--zd-range__message-padding);
 }
 
@@ -69,7 +69,7 @@
 .is-rtl.c-range__message--error,
 .is-rtl.c-range__message--success,
 .is-rtl.c-range__message--warning {
-  background-position: top right;
+  background-position: center right;
   padding-right: var(--zd-range__message-padding);
   padding-left: 0;
 }

@@ -2,21 +2,25 @@
 @import '_selectors';
 
 :root {
-  --zd-table__row__cell__sortable-padding: 17px;
-  --zd-table__row__cell__sortable-transition: opacity .25s ease-in-out;
+  --zd-table__row__cell__sortable-background-image: svg-load('12/sort-stroke.svg', color: var(--zd-color-grey-600));
+  --zd-table__row__cell__sortable-padding: 16px;
+  --zd-table__row__cell__sortable-transition:
+    color .25s ease-in-out,
+    opacity .25s ease-in-out;
   --zd-table__row__cell__sortable-font-weight: var(--zd-font-weight-semibold);
-  --zd-table__row__cell__sortable-ascending-background-image: svg-load('14/sort.svg', color: var(--zd-color-grey-600), fill: var(--zd-color-grey-500));
-  --zd-table__row__cell__sortable-descending-background-image: svg-load('14/sort.svg', color: var(--zd-color-grey-500), fill: var(--zd-color-grey-600));
-  --zd-table__row__cell__sortable-hover-background-image: svg-load('14/sort.svg', color: var(--zd-color-blue-500), fill: var(--zd-color-blue-500));
+  --zd-table__row__cell__sortable-ascending-background-image: svg-load('12/sort-fill.svg', color: var(--zd-color-grey-600), fill: var(--zd-color-grey-400));
+  --zd-table__row__cell__sortable-descending-background-image: svg-load('12/sort-fill.svg', color: var(--zd-color-grey-400), fill: var(--zd-color-grey-600));
+  --zd-table__row__cell__sortable-hover-background-image: svg-load('12/sort-fill.svg', color: var(--zd-table-color), fill: var(--zd-table-color));
   --zd-table__row__cell__sortable-hover-color: var(--zd-table-color);
-  --zd-table__row__cell__sortable-hover-ascending-background-image: svg-load('14/sort.svg', color: var(--zd-table-color), fill: color-mod(var(--zd-table-color) alpha(50%)));
-  --zd-table__row__cell__sortable-hover-descending-background-image: svg-load('14/sort.svg', color: color-mod(var(--zd-table-color) alpha(50%)), fill: var(--zd-table-color));
+  --zd-table__row__cell__sortable-hover-ascending-background-image: svg-load('12/sort-fill.svg', color: var(--zd-table-color), fill: color-mod(var(--zd-table-color) alpha(25%)));
+  --zd-table__row__cell__sortable-hover-descending-background-image: svg-load('12/sort-fill.svg', color: color-mod(var(--zd-table-color) alpha(25%)), fill: var(--zd-table-color));
 }
 
 /* 1. Reset for <button> element.
  * 2. Reset for <a>nchor element.  */
 .c-table__row__cell__sortable {
   position: relative;
+  transition: var(--zd-table__row__cell__sortable-transition);
   border: none; /* [1] */
   background-color: transparent; /* [1] */
   cursor: pointer;
@@ -29,12 +33,12 @@
   font-weight: var(--zd-table__row__cell__sortable-font-weight);
 }
 
-.c-table__row__cell__sortable::before {
+.c-table__row__cell__sortable::before,
+.c-table__row__cell__sortable::after {
   position: absolute;
   top: 0;
   right: 0;
   transition: var(--zd-table__row__cell__sortable-transition);
-  opacity: 0;
   background-repeat: no-repeat;
   background-position: center;
   width: var(--zd-table-font-size);
@@ -42,14 +46,29 @@
   content: '';
 }
 
+.c-table__row__cell__sortable::before {
+  background-image: var(--zd-table__row__cell__sortable-background-image);
+}
+
+.c-table__row__cell__sortable::after {
+  opacity: 0;
+  background-image: var(--zd-table__row__cell__sortable-hover-background-image);
+}
+
 .c-table__row__cell__sortable.is-ascending::before {
-  opacity: 1;
   background-image: var(--zd-table__row__cell__sortable-ascending-background-image);
 }
 
+.c-table__row__cell__sortable.is-ascending::after {
+  background-image: var(--zd-table__row__cell__sortable-hover-ascending-background-image);
+}
+
 .c-table__row__cell__sortable.is-descending::before {
-  opacity: 1;
   background-image: var(--zd-table__row__cell__sortable-descending-background-image);
+}
+
+.c-table__row__cell__sortable.is-descending::after {
+  background-image: var(--zd-table__row__cell__sortable-hover-descending-background-image);
 }
 
 .c-table__row__cell--truncate .c-table__row__cell__sortable {
@@ -67,22 +86,9 @@
   color: var(--zd-table__row__cell__sortable-hover-color);
 }
 
-.c-table__row__cell__sortable:--table__row__cell__sortable-hovered::before,
-.c-table__row__cell__sortable:--table__row__cell__sortable-focused::before {
+.c-table__row__cell__sortable:--table__row__cell__sortable-hovered::after,
+.c-table__row__cell__sortable:--table__row__cell__sortable-focused::after {
   opacity: 1;
-  background-image: var(--zd-table__row__cell__sortable-hover-background-image);
-}
-
-/* stylelint-disable max-line-length */
-
-.c-table__row__cell__sortable.is-ascending:--table__row__cell__sortable-hovered::before,
-.c-table__row__cell__sortable.is-ascending:--table__row__cell__sortable-focused::before {
-  background-image: var(--zd-table__row__cell__sortable-hover-ascending-background-image);
-}
-
-.c-table__row__cell__sortable.is-descending:--table__row__cell__sortable-hovered::before,
-.c-table__row__cell__sortable.is-descending:--table__row__cell__sortable-focused::before {
-  background-image: var(--zd-table__row__cell__sortable-hover-descending-background-image);
 }
 
 /* stylelint-disable no-descending-specificity */
@@ -96,4 +102,4 @@
   text-decoration: underline;
 }
 
-/* stylelint-enable max-line-length, no-descending-specificity */
+/* stylelint-enable no-descending-specificity */

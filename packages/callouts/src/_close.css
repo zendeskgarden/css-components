@@ -1,23 +1,23 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-callout__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-500));
+  --zd-callout__close-background-image: svg-load('12/x-stroke.svg', color: var(--zd-color-grey-600));
   --zd-callout__close-position: 4px;
-  --zd-callout__close-size: var(--zd-font-size-mega);
+  --zd-callout__close-size: 28px;
   --zd-callout__close-transition: background-color .1s ease-in-out;
   --zd-callout__close-focused-background-color: color-mod(var(--zd-color-grey-600) alpha(15%));
-  --zd-callout__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-grey-800));
-  --zd-callout__close__icon-background-size: 18px;
+  --zd-callout__close-hovered-background-image: svg-load('12/x-stroke.svg', color: var(--zd-color-grey-800));
+  --zd-callout__close__icon-background-size: 12px;
   --zd-callout__close__icon-transition: opacity .25s ease-in-out;
-  --zd-callout--error__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-red-500));
+  --zd-callout--error__close-background-image: svg-load('12/x-stroke.svg', color: var(--zd-color-red-500));
   --zd-callout--error__close-focused-background-color: color-mod(var(--zd-color-red-600) alpha(15%));
-  --zd-callout--error__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-red-800));
-  --zd-callout--success__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-green-500));
+  --zd-callout--error__close-hovered-background-image: svg-load('12/x-stroke.svg', color: var(--zd-color-red-800));
+  --zd-callout--success__close-background-image: svg-load('12/x-stroke.svg', color: var(--zd-color-green-500));
   --zd-callout--success__close-focused-background-color: color-mod(var(--zd-color-green-600) alpha(15%));
-  --zd-callout--success__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-green-800));
-  --zd-callout--warning__close-background-image: svg-load('14/remove.svg', color: var(--zd-color-yellow-600));
-  --zd-callout--warning__close-focused-background-color: color-mod(var(--zd-color-yellow-600) alpha(15%));
-  --zd-callout--warning__close-hovered-background-image: svg-load('14/remove.svg', color: var(--zd-color-yellow-800));
+  --zd-callout--success__close-hovered-background-image: svg-load('12/x-stroke.svg', color: var(--zd-color-green-800));
+  --zd-callout--warning__close-background-image: svg-load('12/x-stroke.svg', color: var(--zd-color-yellow-700));
+  --zd-callout--warning__close-focused-background-color: color-mod(var(--zd-color-yellow-700) alpha(15%));
+  --zd-callout--warning__close-hovered-background-image: svg-load('12/x-stroke.svg', color: var(--zd-color-yellow-800));
 }
 
 /* 1. Reset for <button> element.

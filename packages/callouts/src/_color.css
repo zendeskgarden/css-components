@@ -2,8 +2,8 @@
 
 :root {
   --zd-callout--alert-padding: 50px;
-  --zd-callout--alert-background-position-x: var(--zd-spacing);
-  --zd-callout--alert-background-position-y: calc(var(--zd-spacing) + 3px);
+  --zd-callout--alert-background-position-x: 24px;
+  --zd-callout--alert-background-position-y: 22px;
   --zd-callout--alert-background-position: var(--zd-callout--alert-background-position-x) var(--zd-callout--alert-background-position-y);
   --zd-callout--alert-background-position-rtl: calc(100% - var(--zd-callout--alert-background-position-x)) var(--zd-callout--alert-background-position-y);
   --zd-callout--dialog-background-color: var(--zd-callout-background-color);
@@ -12,25 +12,22 @@
     color-mod(var(--zd-color-kale-600) alpha(15%));
   --zd-callout--dialog--alert-border-color: var(--zd-callout-border-color);
   --zd-callout--dialog--alert-color: var(--zd-color-grey-700);
-  --zd-callout--dialog--error-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-red-500));
   --zd-callout--dialog--error__title-color: var(--zd-color-red-600);
-  --zd-callout--dialog--success-background-image: svg-load('14/checkmark-fill.svg', color: var(--zd-color-green-500));
   --zd-callout--dialog--success__title-color: var(--zd-color-green-600);
-  --zd-callout--dialog--warning-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-yellow-500));
   --zd-callout--dialog--warning__title-color: var(--zd-color-yellow-700);
   --zd-callout--error-background-color: var(--zd-color-red-100);
-  --zd-callout--error-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-red-600));
+  --zd-callout--error-background-image: svg-load('16/alert-error-stroke.svg', color: var(--zd-color-red-600));
   --zd-callout--error-border-color: var(--zd-color-red-300);
   --zd-callout--error-color: var(--zd-color-red-700);
   --zd-callout--error__title-color: var(--zd-color-red-800);
   --zd-callout--recessed-background-color: var(--zd-color-grey-100);
   --zd-callout--success-background-color: var(--zd-color-green-100);
-  --zd-callout--success-background-image: svg-load('14/checkmark-fill.svg', color: var(--zd-color-green-600));
+  --zd-callout--success-background-image: svg-load('16/check-circle-stroke.svg', color: var(--zd-color-green-600));
   --zd-callout--success-border-color: var(--zd-color-green-300);
   --zd-callout--success-color: var(--zd-color-green-700);
   --zd-callout--success__title-color: var(--zd-color-green-800);
   --zd-callout--warning-background-color: var(--zd-color-yellow-100);
-  --zd-callout--warning-background-image: svg-load('14/error-fill.svg', color: var(--zd-color-yellow-600));
+  --zd-callout--warning-background-image: svg-load('16/alert-warning-stroke.svg', color: var(--zd-color-yellow-700));
   --zd-callout--warning-border-color: var(--zd-color-yellow-300);
   --zd-callout--warning-color: var(--zd-color-yellow-700);
   --zd-callout--warning__title-color: var(--zd-color-yellow-800);
@@ -79,18 +76,6 @@
   border-color: var(--zd-callout--dialog--alert-border-color);
   background-color: var(--zd-callout--dialog-background-color);
   color: var(--zd-callout--dialog--alert-color);
-}
-
-.c-callout--dialog.c-callout--error {
-  background-image: var(--zd-callout--dialog--error-background-image);
-}
-
-.c-callout--dialog.c-callout--success {
-  background-image: var(--zd-callout--dialog--success-background-image);
-}
-
-.c-callout--dialog.c-callout--warning {
-  background-image: var(--zd-callout--dialog--warning-background-image);
 }
 
 .c-callout--error .c-callout__title {

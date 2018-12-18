@@ -10,7 +10,7 @@
   --zd-txt__hint--sm-margin-top: 4px;
   --zd-txt__message-line-height: calc(16 / 12);
   --zd-txt__message-margin-top: 8px;
-  --zd-txt__message-padding: var(--zd-spacing);
+  --zd-txt__message-padding: 20px;
 }
 
 /* 1. Support label inline with input layout. */
@@ -49,7 +49,7 @@
 .c-txt__message--success,
 .c-txt__message--warning {
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center left;
   padding-left: var(--zd-txt__message-padding);
 }
 
@@ -71,7 +71,7 @@
 .is-rtl.c-txt__message--error,
 .is-rtl.c-txt__message--success,
 .is-rtl.c-txt__message--warning {
-  background-position: top right;
+  background-position: center right;
   padding-right: var(--zd-txt__message-padding);
   padding-left: 0;
 }

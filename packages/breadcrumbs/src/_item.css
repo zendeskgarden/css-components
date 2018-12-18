@@ -4,7 +4,7 @@
   --zd-breadcrumb__item-background:
     no-repeat center / 1em
     var(--zd-breadcrumb__item-background-image);
-  --zd-breadcrumb__item-background-image: svg-load('14/next.svg', color: var(--zd-color-grey-400));
+  --zd-breadcrumb__item-background-image: svg-load('16/chevron-right-stroke.svg', color: var(--zd-color-grey-600));
   --zd-breadcrumb__item-background-margin: 0 calc(8 / 14 * 1em);
   --zd-breadcrumb__item-background-width: 1em;
   --zd-breadcrumb__item-line-height: calc(20 / 14);

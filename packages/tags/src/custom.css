@@ -15,7 +15,7 @@
   --zd-tag--custom-focused-box-shadow:
     0 0 0 2px
     color-mod(var(--zd-tag--custom-background-color) alpha(40%));
-  --zd-tag--custom__remove-background-image: svg-load('14/remove.svg', color: var(--zd-tag--custom-color));
+  --zd-tag--custom__remove-background-image: svg-load('12/x-stroke.svg', color: var(--zd-tag--custom-color));
 }
 
 .c-tag--custom {
