@@ -13,7 +13,6 @@
   --zd-tag__remove-size: var(--zd-spacing);
   --zd-tag__remove-transition: opacity .25s ease-in-out;
   --zd-tag__remove-hovered-opacity: .9;
-  --zd-tag--lg__remove-background-size: 16px;
   --zd-tag--lg__remove-size: var(--zd-tag--lg-height);
   --zd-tag--lg__remove-margin: calc(var(--zd-tag--lg-padding-horizontal) * -1);
   --zd-tag--color__remove-background-image: svg-load('12/x-stroke.svg', color: var(--zd-tag--color-color));
@@ -54,7 +53,6 @@
 
 .c-tag--lg .c-tag__remove {
   margin-right: var(--zd-tag--lg__remove-margin);
-  background-size: var(--zd-tag--lg__remove-background-size);
   width: var(--zd-tag--lg__remove-size);
   height: var(--zd-tag--lg__remove-size);
 }
