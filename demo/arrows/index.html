@@ -19,6 +19,11 @@
   .c-arrow.u-visibility-visible:before,
   .c-arrow.u-visibility-visible:after { display: inline-block !important; }
   .u-z-index-0 { z-index: 0 !important; }
+
+  .menu-container {
+    transform: translateZ(0);
+    position: absolute;
+  }
   </style>
 </head>
 <body>
@@ -45,20 +50,22 @@
             <use xlink:href="../index.svg#zd-svg-icon-14-chevron">
           </svg>
         </a>
-        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input checked class="c-chk__input js-border" id="nav.ctl.border" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.border">Show Border</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input checked class="c-chk__input js-box-shadow" id="nav.ctl.box-shadow" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.box-shadow">Show Box Shadow</label>
-            </fieldset>
-          </li>
-        </ul>
+        <div class="menu-container u-1/1">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input checked class="c-chk__input js-border" id="nav.ctl.border" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.border">Show Border</label>
+              </fieldset>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input checked class="c-chk__input js-box-shadow" id="nav.ctl.box-shadow" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.box-shadow">Show Box Shadow</label>
+              </fieldset>
+            </li>
+          </ul>
+        </div>
       </li>
     </ul>
   </header>

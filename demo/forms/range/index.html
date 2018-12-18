@@ -17,6 +17,11 @@
   <link href="../../utilities/index.css" rel="stylesheet">
   <style>
   .l-wrapper--400 { max-width: 400px; }
+
+  .menu-container {
+    transform: translateZ(0);
+    position: absolute;
+  }
   </style>
 </head>
 <body>
@@ -43,47 +48,49 @@
             <use xlink:href="../../index.svg#zd-svg-icon-14-chevron">
           </svg>
         </a>
-        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-          <li class="c-menu__item" role="menuitem">
-            <div class="c-chk">
-              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
-            </div>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <div class="c-chk">
-              <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.size">Size</label>
-            </div>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <div class="u-mb">Validation</div>
-            <div class="u-ml">
+        <div class="menu-container u-1/1">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">
               <div class="c-chk">
-                <input class="c-chk__input js-validation" id="nav.ctl.validation.none" name="nav.ctl.validation" checked type="radio" value="">
-                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.none">None</label>
+                <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
               </div>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
+              </fieldset>
+            </li>
+            <li class="c-menu__item" role="menuitem">
               <div class="c-chk">
-                <input class="c-chk__input js-validation" id="nav.ctl.validation.success" name="nav.ctl.validation" type="radio" value="success">
-                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.success">Success</label>
+                <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.size">Size</label>
               </div>
-              <div class="c-chk">
-                <input class="c-chk__input js-validation" id="nav.ctl.validation.warning" name="nav.ctl.validation" type="radio" value="warning">
-                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.warning">Warning</label>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <div class="u-mb">Validation</div>
+              <div class="u-ml">
+                <div class="c-chk">
+                  <input class="c-chk__input js-validation" id="nav.ctl.validation.none" name="nav.ctl.validation" checked type="radio" value="">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.none">None</label>
+                </div>
+                <div class="c-chk">
+                  <input class="c-chk__input js-validation" id="nav.ctl.validation.success" name="nav.ctl.validation" type="radio" value="success">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.success">Success</label>
+                </div>
+                <div class="c-chk">
+                  <input class="c-chk__input js-validation" id="nav.ctl.validation.warning" name="nav.ctl.validation" type="radio" value="warning">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.warning">Warning</label>
+                </div>
+                <div class="c-chk">
+                  <input class="c-chk__input js-validation" id="nav.ctl.validation.error" name="nav.ctl.validation" type="radio" value="error">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.error">Error</label>
+                </div>
               </div>
-              <div class="c-chk">
-                <input class="c-chk__input js-validation" id="nav.ctl.validation.error" name="nav.ctl.validation" type="radio" value="error">
-                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.error">Error</label>
-              </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </li>
     </ul>
   </header>
