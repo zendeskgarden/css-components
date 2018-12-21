@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@8.1.0...@zendeskgarden/css-menus@8.1.1) (2018-12-21)
+
+
+### Bug Fixes
+
+* **menus:** Support top & left animations ([#158](https://github.com/zendeskgarden/css-components/issues/158)) ([f433307](https://github.com/zendeskgarden/css-components/commit/f433307))
+
+
+
+
+
 # [8.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@8.0.7...@zendeskgarden/css-menus@8.1.0) (2018-12-18)
 
 
