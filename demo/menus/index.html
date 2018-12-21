@@ -18,33 +18,24 @@
   <link href="custom.css" rel="stylesheet">
   <link href="../utilities/index.css" rel="stylesheet">
   <style>
-  .c-arrow--b,
-  .c-arrow--t {
-    left: calc(50% - 90px);
-  }
-
   .c-arrow--b {
-    bottom: calc(100% + 2px);
+    margin-bottom: 2px;
   }
 
   .c-arrow--t {
-    top: calc(100% + 2px);
-  }
-
-  .c-arrow--l,
-  .c-arrow--r {
-    top: -52px;
-  }
-
-  .c-arrow--l {
-    left: calc(100% + 2px);
-  }
-
-  .c-arrow--r {
-    right: calc(100% + 2px);
+    margin-top: 2px;
   }
 
   .u-mb-xxl { margin-bottom: 140px !important; }
+
+  .menu-container .c-menu {
+    position: relative;
+  }
+
+  .menu-container {
+    transform: translateZ(0);
+    position: absolute;
+  }
   </style>
 </head>
 <body>
@@ -71,26 +62,28 @@
             <use xlink:href="../index.svg#zd-svg-icon-16-chevron-down-stroke">
           </svg>
         </a>
-        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.size">Size</label>
-            </fieldset>
-          </li>
-        </ul>
+        <div class="menu-container u-1/1">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
+              </fieldset>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
+              </fieldset>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.size">Size</label>
+              </fieldset>
+            </li>
+          </ul>
+        </div>
       </li>
     </ul>
   </header>
@@ -149,11 +142,13 @@
                 <button class="c-btn c-btn--full js-menu">
                   <code class="c-code">.c-menu.c-menu--down</code>
                 </button>
-                <ul aria-hidden="true" class="c-arrow c-arrow--t c-menu c-menu--down">
-                  <li class="c-menu__item">One</li>
-                  <li class="c-menu__item">Two</li>
-                  <li class="c-menu__item">Three</li>
-                </ul>
+                <div class="menu-container">
+                  <ul aria-hidden="true" class="c-arrow c-arrow--t c-menu c-menu--down">
+                    <li class="c-menu__item">One</li>
+                    <li class="c-menu__item">Two</li>
+                    <li class="c-menu__item">Three</li>
+                  </ul>
+                </div>
               </div>
             </div
             ><div class="l-grid__item u-1/3"></div>
@@ -164,11 +159,13 @@
                 <button class="c-btn c-btn--full js-menu">
                   <code class="c-code">.c-menu.c-menu--right</code>
                 </button>
-                <ul aria-hidden="true" class="c-arrow c-arrow--l c-menu c-menu--right">
-                  <li class="c-menu__item">One</li>
-                  <li class="c-menu__item">Two</li>
-                  <li class="c-menu__item">Three</li>
-                </ul>
+                <div class="menu-container">
+                  <ul aria-hidden="true" class="c-arrow c-arrow--l c-menu c-menu--right">
+                    <li class="c-menu__item">One</li>
+                    <li class="c-menu__item">Two</li>
+                    <li class="c-menu__item">Three</li>
+                  </ul>
+                </div>
               </div>
             </div
             ><div class="l-grid__item u-1/3"></div
@@ -177,11 +174,13 @@
                 <button class="c-btn c-btn--full js-menu">
                   <code class="c-code">.c-menu.c-menu--left</code>
                 </button>
-                <ul aria-hidden="true" class="c-arrow c-arrow--r c-menu c-menu--left">
-                  <li class="c-menu__item">One</li>
-                  <li class="c-menu__item">Two</li>
-                  <li class="c-menu__item">Three</li>
-                </ul>
+                <div class="menu-container">
+                  <ul aria-hidden="true" class="c-arrow c-arrow--r c-menu c-menu--left">
+                    <li class="c-menu__item">One</li>
+                    <li class="c-menu__item">Two</li>
+                    <li class="c-menu__item">Three</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -192,11 +191,13 @@
                 <button class="c-btn c-btn--full js-menu">
                   <code class="c-code">.c-menu.c-menu--up</code>
                 </button>
-                <ul aria-hidden="true" class="c-arrow c-arrow--b c-menu c-menu--up">
-                  <li class="c-menu__item">One</li>
-                  <li class="c-menu__item">Two</li>
-                  <li class="c-menu__item">Three</li>
-                </ul>
+                <div class="menu-container">
+                  <ul aria-hidden="true" class="c-arrow c-arrow--b c-menu c-menu--up">
+                    <li class="c-menu__item">One</li>
+                    <li class="c-menu__item">Two</li>
+                    <li class="c-menu__item">Three</li>
+                  </ul>
+                </div>
               </div>
             </div
             ><div class="l-grid__item u-1/3"></div>

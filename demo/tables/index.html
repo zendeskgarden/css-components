@@ -24,6 +24,14 @@
     height: 1em;
     vertical-align: middle;
   }
+
+  .menu-container {
+    transform: translateZ(0);
+    position: absolute;
+  }
+  .c-table .menu-container {
+    top: 0;
+  }
   </style>
 </head>
 <body>
@@ -50,43 +58,45 @@
             <use xlink:href="../index.svg#zd-svg-icon-16-chevron-down-stroke" />
           </svg>
         </a>
-        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <div class="u-mb">Display Density</div>
-            <div class="u-ml">
-              <fieldset class="c-chk c-chk--radio">
-                <input class="c-chk__input js-display" id="nav.ctl.display.small" name="nav.ctl.display" type="radio" value="sm">
-                <label class="c-chk__label" for="nav.ctl.display.small">Cozy</label>
+        <div class="menu-container u-1/1">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
               </fieldset>
-              <fieldset class="c-chk c-chk--radio">
-                <input class="c-chk__input js-display" id="nav.ctl.display.default" name="nav.ctl.display" checked type="radio" value="">
-                <label class="c-chk__label" for="nav.ctl.display.default">Comfortable</label>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
               </fieldset>
-              <fieldset class="c-chk c-chk--radio">
-                <input class="c-chk__input js-display" id="nav.ctl.display.large" name="nav.ctl.display" type="radio" value="lg">
-                <label class="c-chk__label" for="nav.ctl.display.large">Airy</label>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <div class="u-mb">Display Density</div>
+              <div class="u-ml">
+                <fieldset class="c-chk c-chk--radio">
+                  <input class="c-chk__input js-display" id="nav.ctl.display.small" name="nav.ctl.display" type="radio" value="sm">
+                  <label class="c-chk__label" for="nav.ctl.display.small">Cozy</label>
+                </fieldset>
+                <fieldset class="c-chk c-chk--radio">
+                  <input class="c-chk__input js-display" id="nav.ctl.display.default" name="nav.ctl.display" checked type="radio" value="">
+                  <label class="c-chk__label" for="nav.ctl.display.default">Comfortable</label>
+                </fieldset>
+                <fieldset class="c-chk c-chk--radio">
+                  <input class="c-chk__input js-display" id="nav.ctl.display.large" name="nav.ctl.display" type="radio" value="lg">
+                  <label class="c-chk__label" for="nav.ctl.display.large">Airy</label>
+                </fieldset>
+              </div>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input class="c-chk__input js-stripes" id="nav.ctl.stripes" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.stripes">Zebra Stripes</label>
               </fieldset>
-            </div>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-stripes" id="nav.ctl.stripes" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.stripes">Zebra Stripes</label>
-            </fieldset>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
   </header>
   <main class="c-main c-main--page">
     <a href="https://github.com/zendeskgarden/css-components/tree/master/packages/tables"><img class="u-float-right u-ml-sm u-mt-sm" src="../github.svg"></a>
@@ -214,11 +224,13 @@
               probably haven't heard of them.</td>
             <td class="c-table__row__cell c-table__row__cell--overflow">
               <div class="c-table__row__cell__overflow js-menu" tabindex="0">
-                <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-                  <li class="c-menu__item" role="menuitem">One</li>
-                  <li class="c-menu__item" role="menuitem">Two</li>
-                  <li class="c-menu__item" role="menuitem">Three</li>
-                </ul>
+                <div class="menu-container">
+                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                    <li class="c-menu__item" role="menuitem">One</li>
+                    <li class="c-menu__item" role="menuitem">Two</li>
+                    <li class="c-menu__item" role="menuitem">Three</li>
+                  </ul>
+                </div>
               </div>
             </td>
           </tr>
@@ -229,11 +241,13 @@
               vegan paleo occupy you probably haven't heard of them.</td>
             <td class="c-table__row__cell c-table__row__cell--overflow">
               <div class="c-table__row__cell__overflow js-menu" tabindex="0">
-                <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-                  <li class="c-menu__item" role="menuitem">One</li>
-                  <li class="c-menu__item" role="menuitem">Two</li>
-                  <li class="c-menu__item" role="menuitem">Three</li>
-                </ul>
+                <div class="menu-container">
+                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                    <li class="c-menu__item" role="menuitem">One</li>
+                    <li class="c-menu__item" role="menuitem">Two</li>
+                    <li class="c-menu__item" role="menuitem">Three</li>
+                  </ul>
+                </div>
               </div>
             </td>
           </tr>
@@ -334,11 +348,13 @@
               <th class="c-table__row__cell">TH, C4</th>
               <th class="c-table__row__cell c-table__row__cell--overflow">
                 <div class="c-table__row__cell__overflow js-menu" tabindex="0">
-                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-                    <li class="c-menu__item" role="menuitem">One</li>
-                    <li class="c-menu__item" role="menuitem">Two</li>
-                    <li class="c-menu__item" role="menuitem">Three</li>
-                  </ul>
+                  <div class="menu-container">
+                    <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                      <li class="c-menu__item" role="menuitem">One</li>
+                      <li class="c-menu__item" role="menuitem">Two</li>
+                      <li class="c-menu__item" role="menuitem">Three</li>
+                    </ul>
+                  </div>
                 </div>
               </th>
             </tr>
@@ -352,11 +368,13 @@
               <td class="c-table__row__cell">R0, C4</td>
               <td class="c-table__row__cell c-table__row__cell--overflow">
                 <div class="c-table__row__cell__overflow js-menu" tabindex="0">
-                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-                    <li class="c-menu__item" role="menuitem">One</li>
-                    <li class="c-menu__item" role="menuitem">Two</li>
-                    <li class="c-menu__item" role="menuitem">Three</li>
-                  </ul>
+                  <div class="menu-container">
+                    <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                      <li class="c-menu__item" role="menuitem">One</li>
+                      <li class="c-menu__item" role="menuitem">Two</li>
+                      <li class="c-menu__item" role="menuitem">Three</li>
+                    </ul>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -368,11 +386,13 @@
               <td class="c-table__row__cell">R1, C4</td>
               <td class="c-table__row__cell c-table__row__cell--overflow">
                 <div class="c-table__row__cell__overflow js-menu" tabindex="0">
-                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-                    <li class="c-menu__item" role="menuitem">One</li>
-                    <li class="c-menu__item" role="menuitem">Two</li>
-                    <li class="c-menu__item" role="menuitem">Three</li>
-                  </ul>
+                  <div class="menu-container">
+                    <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                      <li class="c-menu__item" role="menuitem">One</li>
+                      <li class="c-menu__item" role="menuitem">Two</li>
+                      <li class="c-menu__item" role="menuitem">Three</li>
+                    </ul>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -384,11 +404,13 @@
               <td class="c-table__row__cell">R2, C4</td>
               <td class="c-table__row__cell c-table__row__cell--overflow">
                 <div class="c-table__row__cell__overflow js-menu" tabindex="0">
-                  <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-                    <li class="c-menu__item" role="menuitem">One</li>
-                    <li class="c-menu__item" role="menuitem">Two</li>
-                    <li class="c-menu__item" role="menuitem">Three</li>
-                  </ul>
+                  <div class="menu-container">
+                    <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+                      <li class="c-menu__item" role="menuitem">One</li>
+                      <li class="c-menu__item" role="menuitem">Two</li>
+                      <li class="c-menu__item" role="menuitem">Three</li>
+                    </ul>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -545,11 +567,13 @@
       <th class="c-table__row__cell c-table__row__cell--truncate">Header 3</th>
       <th class="c-table__row__cell c-table__row__cell--overflow">
         <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
-          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li class="c-menu__item" role="menuitem">Two</li>
-            <li class="c-menu__item" role="menuitem">Three</li>
-          </ul>
+          <div class="menu-container">
+            <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
         </button>
       </th>
     </tr>
@@ -570,11 +594,13 @@
       <td class="c-table__row__cell">Row 1, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
         <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
-          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li class="c-menu__item" role="menuitem">Two</li>
-            <li class="c-menu__item" role="menuitem">Three</li>
-          </ul>
+          <div class="menu-container">
+            <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
         </button>
       </td>
     </tr>
@@ -590,11 +616,13 @@
       <td class="c-table__row__cell">Row 2, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
         <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
-          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li class="c-menu__item" role="menuitem">Two</li>
-            <li class="c-menu__item" role="menuitem">Three</li>
-          </ul>
+          <div class="menu-container">
+            <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
         </button>
       </td>
     </tr>
@@ -613,11 +641,13 @@
       <td class="c-table__row__cell">Row 3, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
         <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
-          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li class="c-menu__item" role="menuitem">Two</li>
-            <li class="c-menu__item" role="menuitem">Three</li>
-          </ul>
+          <div class="menu-container">
+            <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
         </button>
       </td>
     </tr>
@@ -633,11 +663,13 @@
       <td class="c-table__row__cell">Row 4, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
         <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
-          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li class="c-menu__item" role="menuitem">Two</li>
-            <li class="c-menu__item" role="menuitem">Three</li>
-          </ul>
+          <div class="menu-container">
+            <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
         </button>
       </td>
     </tr>
@@ -653,11 +685,13 @@
       <td class="c-table__row__cell">Row 5, Column 3</td>
       <td class="c-table__row__cell c-table__row__cell--overflow">
         <button aria-haspopup="true" class="c-table__row__cell__overflow js-menu" type="button">
-          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li class="c-menu__item" role="menuitem">Two</li>
-            <li class="c-menu__item" role="menuitem">Three</li>
-          </ul>
+          <div class="menu-container">
+            <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+              <li class="c-menu__item" role="menuitem">One</li>
+              <li class="c-menu__item" role="menuitem">Two</li>
+              <li class="c-menu__item" role="menuitem">Three</li>
+            </ul>
+          </div>
         </button>
       </td>
     </tr>

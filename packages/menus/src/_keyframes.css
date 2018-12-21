@@ -5,11 +5,11 @@
 
 @keyframes zd-menu--up-open {
   0% {
-    margin-bottom: var(--zd-menu-open-margin);
+    bottom: var(--zd-menu-open-margin);
   }
 
   100% {
-    margin-bottom: 0;
+    bottom: 0;
   }
 }
 
@@ -21,11 +21,11 @@
 
 @keyframes zd-menu--right-open {
   0% {
-    margin-left: var(--zd-menu-open-margin);
+    left: var(--zd-menu-open-margin);
   }
 
   100% {
-    margin-left: 0;
+    left: 0;
   }
 }
 
@@ -37,11 +37,11 @@
 
 @keyframes zd-menu--down-open {
   0% {
-    margin-top: var(--zd-menu-open-margin);
+    top: var(--zd-menu-open-margin);
   }
 
   100% {
-    margin-top: 0;
+    top: 0;
   }
 }
 
@@ -53,11 +53,11 @@
 
 @keyframes zd-menu--left-open {
   0% {
-    margin-right: var(--zd-menu-open-margin);
+    right: var(--zd-menu-open-margin);
   }
 
   100% {
-    margin-right: 0;
+    right: 0;
   }
 }
 
