@@ -19,6 +19,17 @@
   <link href="grid/index.css" rel="stylesheet">
   <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="utilities/index.css" rel="stylesheet">
+  <style>
+  .menu-container {
+    transform: translateZ(0);
+    position: absolute;
+  }
+  .is-responsive .c-ctl--header .c-ctl__item a:not(.c-menu__item) {
+    float: none !important;
+    height: calc(100% - 5px);
+    margin-left: calc(100% - 60px);
+  }
+  </style>
 </head>
 <body class="is-responsive u-bg-relationshapes">
   <nav class="c-nav">
@@ -59,17 +70,19 @@
             <use xlink:href="index.svg#zd-svg-icon-16-menu-stroke">
           </svg>
         </a>
-        <ul aria-hidden="true" class="c-menu c-menu--down c-menu--sm" role="menu">
-          <a href="//zendeskgarden.github.io/assets/" class="c-menu__item" role="menuitem">
-            Assets
-          </a>
-          <a href="/css-components" class="c-menu__item" role="menuitem">
-            CSS Components
-          </a>
-          <a href="//zendeskgarden.github.io/react-components/" class="c-menu__item" role="menuitem">
-            React Components
-          </a>
-        </ul>
+        <div class="menu-container u-1/1">
+          <ul aria-hidden="true" class="c-menu c-menu--down c-menu--sm" role="menu">
+            <a href="//zendeskgarden.github.io/assets/" class="c-menu__item" role="menuitem">
+              Assets
+            </a>
+            <a href="/css-components" class="c-menu__item" role="menuitem">
+              CSS Components
+            </a>
+            <a href="//zendeskgarden.github.io/react-components/" class="c-menu__item" role="menuitem">
+              React Components
+            </a>
+          </ul>
+        </div>
       </li>
     </ul>
   </header>

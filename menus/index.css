@@ -317,21 +317,21 @@
 
 @-webkit-keyframes zd-menu--up-open{
   0%{
-    margin-bottom:-20px;
+    bottom:-20px;
   }
 
   to{
-    margin-bottom:0;
+    bottom:0;
   }
 }
 
 @keyframes zd-menu--up-open{
   0%{
-    margin-bottom:-20px;
+    bottom:-20px;
   }
 
   to{
-    margin-bottom:0;
+    bottom:0;
   }
 }
 
@@ -349,21 +349,21 @@
 
 @-webkit-keyframes zd-menu--right-open{
   0%{
-    margin-left:-20px;
+    left:-20px;
   }
 
   to{
-    margin-left:0;
+    left:0;
   }
 }
 
 @keyframes zd-menu--right-open{
   0%{
-    margin-left:-20px;
+    left:-20px;
   }
 
   to{
-    margin-left:0;
+    left:0;
   }
 }
 
@@ -381,21 +381,21 @@
 
 @-webkit-keyframes zd-menu--down-open{
   0%{
-    margin-top:-20px;
+    top:-20px;
   }
 
   to{
-    margin-top:0;
+    top:0;
   }
 }
 
 @keyframes zd-menu--down-open{
   0%{
-    margin-top:-20px;
+    top:-20px;
   }
 
   to{
-    margin-top:0;
+    top:0;
   }
 }
 
@@ -413,21 +413,21 @@
 
 @-webkit-keyframes zd-menu--left-open{
   0%{
-    margin-right:-20px;
+    right:-20px;
   }
 
   to{
-    margin-right:0;
+    right:0;
   }
 }
 
 @keyframes zd-menu--left-open{
   0%{
-    margin-right:-20px;
+    right:-20px;
   }
 
   to{
-    margin-right:0;
+    right:0;
   }
 }
 

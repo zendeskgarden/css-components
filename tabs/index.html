@@ -16,6 +16,12 @@
   <link href="index.css" rel="stylesheet">
   <link href="custom.css" rel="stylesheet">
   <link href="../utilities/index.css" rel="stylesheet">
+  <style>
+  .menu-container {
+    transform: translateZ(0);
+    position: absolute;
+  }
+  </style>
 </head>
 <body>
   <header class="c-header">
@@ -41,20 +47,22 @@
             <use xlink:href="../index.svg#zd-svg-icon-16-chevron-down-stroke">
           </svg>
         </a>
-        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
-            </fieldset>
-          </li>
-        </ul>
+        <div class="menu-container u-1/1">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
+              </fieldset>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <fieldset class="c-chk">
+                <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
+              </fieldset>
+            </li>
+          </ul>
+        </div>
       </li>
     </ul>
   </header>

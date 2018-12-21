@@ -19,15 +19,22 @@
   <style>
   .c-main .c-menu {
     width: 370px;
-    bottom: 47px;
-  }
-
-  .c-main .c-txt + .c-menu {
-    top: calc(100% + 5px);
-    bottom: auto;
   }
 
   .l-wrapper--370 { max-width: 370px; }
+
+  .menu-container--up {
+    position: absolute;
+    top: calc(1em + 4px);
+  }
+  .menu-container {
+    transform: translateZ(0);
+    position: absolute;
+    margin-top: 5px;
+  }
+  .menu-container .c-menu--up {
+    bottom: 0;
+  }
   </style>
 </head>
 <body>
@@ -54,47 +61,49 @@
             <use xlink:href="../../index.svg#zd-svg-icon-16-chevron-down-stroke">
           </svg>
         </a>
-        <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <fieldset class="c-chk">
-              <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
-              <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.size">Size</label>
-            </fieldset>
-          </li>
-          <li class="c-menu__item" role="menuitem">
-            <div class="u-mb">Validation</div>
-            <div class="u-ml">
+        <div class="menu-container u-1/1">
+          <ul aria-hidden="true" class="c-menu c-menu--down" role="menu">
+            <li class="c-menu__item" role="menuitem">
               <fieldset class="c-chk">
-                <input class="c-chk__input js-validation" id="nav.ctl.validation.none" name="nav.ctl.validation" checked type="radio" value="">
-                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.none">None</label>
+                <input class="c-chk__input js-rtl" id="nav.ctl.rtl" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.rtl">RTL</label>
               </fieldset>
+            </li>
+            <li class="c-menu__item" role="menuitem">
               <fieldset class="c-chk">
-                <input class="c-chk__input js-validation" id="nav.ctl.validation.success" name="nav.ctl.validation" type="radio" value="success">
-                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.success">Success</label>
+                <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
               </fieldset>
+            </li>
+            <li class="c-menu__item" role="menuitem">
               <fieldset class="c-chk">
-                <input class="c-chk__input js-validation" id="nav.ctl.validation.warning" name="nav.ctl.validation" type="radio" value="warning">
-                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.warning">Warning</label>
+                <input class="c-chk__input js-size" id="nav.ctl.size" type="checkbox">
+                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.size">Size</label>
               </fieldset>
-              <fieldset class="c-chk">
-                <input class="c-chk__input js-validation" id="nav.ctl.validation.error" name="nav.ctl.validation" type="radio" value="error">
-                <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.error">Error</label>
-              </fieldset>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="c-menu__item" role="menuitem">
+              <div class="u-mb">Validation</div>
+              <div class="u-ml">
+                <fieldset class="c-chk">
+                  <input class="c-chk__input js-validation" id="nav.ctl.validation.none" name="nav.ctl.validation" checked type="radio" value="">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.none">None</label>
+                </fieldset>
+                <fieldset class="c-chk">
+                  <input class="c-chk__input js-validation" id="nav.ctl.validation.success" name="nav.ctl.validation" type="radio" value="success">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.success">Success</label>
+                </fieldset>
+                <fieldset class="c-chk">
+                  <input class="c-chk__input js-validation" id="nav.ctl.validation.warning" name="nav.ctl.validation" type="radio" value="warning">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.warning">Warning</label>
+                </fieldset>
+                <fieldset class="c-chk">
+                  <input class="c-chk__input js-validation" id="nav.ctl.validation.error" name="nav.ctl.validation" type="radio" value="error">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.validation.error">Error</label>
+                </fieldset>
+              </div>
+            </li>
+          </ul>
+        </div>
       </li>
     </ul>
   </header>
@@ -120,18 +129,24 @@
             <label class="c-txt__label" for="select-0">A &lt;button&gt; Dropdown</label>
             <button class="c-txt__input c-txt__input--select" id="select-0"><span dir="ltr">.c-txt__input--select<span></button>
           </div>
-          <ul aria-hidden="true" class="c-menu c-menu--down">
-            <li class="c-menu__item">item</li>
-            <li class="c-menu__item is-checked"><span dir="ltr">.c-txt__input--select</span></li>
-            <li class="c-menu__item">item</li>
-          </ul>
+          <div class="menu-container u-1/1">
+            <ul aria-hidden="true" class="c-menu c-menu--down">
+              <li class="c-menu__item">item</li>
+              <li class="c-menu__item is-checked"><span dir="ltr">.c-txt__input--select</span></li>
+              <li class="c-menu__item">item</li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="u-mb-lg u-position-relative">
-          <ul aria-hidden="true" class="c-menu c-menu--up">
-            <li class="c-menu__item">one</li>
-            <li class="c-menu__item is-checked">two</li>
-            <li class="c-menu__item">three</li>
-          </ul>
+          <div class="menu-container--up">
+            <div class="menu-container u-1/1">
+              <ul aria-hidden="true" class="c-menu c-menu--up">
+                <li class="c-menu__item">one</li>
+                <li class="c-menu__item is-checked">two</li>
+                <li class="c-menu__item">three</li>
+              </ul>
+            </div>
+          </div>
           <div class="c-txt">
             <label class="c-txt__label" for="select-1">A ContentEditable &lt;div&gt; Dropdown</label>
             <div class="c-txt__input c-txt__input--select" contenteditable="true" id="select-1" tabindex="0">two</div>
@@ -158,12 +173,14 @@
               </div>
             </div>
           </div>
-          <ul aria-hidden="true" class="c-menu c-menu--down">
-            <li class="c-menu__item">Tag Zero</li>
-            <li class="c-menu__item is-checked">Tag One</li>
-            <li class="c-menu__item is-checked">Tag Two</li>
-            <li class="c-menu__item is-checked">Tag Three</li>
-          </ul>
+          <div class="menu-container u-1/1">
+            <ul aria-hidden="true" class="c-menu c-menu--down">
+              <li class="c-menu__item">Tag Zero</li>
+              <li class="c-menu__item is-checked">Tag One</li>
+              <li class="c-menu__item is-checked">Tag Two</li>
+              <li class="c-menu__item is-checked">Tag Three</li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="u-mb-lg">
           <div class="c-txt">

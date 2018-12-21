@@ -1,27 +1,32 @@
 $(document).ready(function() {
-  $('.c-txt__input--select').click(function() {
-    var $this = $(this);
-    var $menu = $(this).parent().siblings('.c-menu');
+  $('.c-txt__input--select')
+    .click(function() {
+      var $this = $(this);
+      var $parent = $this.closest('.u-position-relative');
+      var $menu = $parent.find('.c-menu');
 
-    $this.toggleClass('is-open');
-    $menu.toggleClass('is-open', $this.hasClass('is-open'));
+      $this.toggleClass('is-open');
+      $menu.toggleClass('is-open', $this.hasClass('is-open'));
 
-    if ($menu.hasClass('is-open')) {
-      $menu.parent('.u-position-relative').css('zIndex', 1);
-      $menu.attr('aria-hidden', false);
-    } else {
-      $menu.attr('aria-hidden', true);
-      $menu.parent('.u-position-relative').css('zIndex', '');
-    }
+      if ($menu.hasClass('is-open')) {
+        $parent.css('zIndex', 1);
+        $menu.attr('aria-hidden', false);
+      } else {
+        $menu.attr('aria-hidden', true);
+        $parent.css('zIndex', '');
+      }
 
-    return false;
-  }).blur(function() {
-    var $menu = $(this).parent().siblings('.c-menu');
+      return false;
+    })
+    .blur(function() {
+      var $this = $(this);
+      var $parent = $this.closest('.u-position-relative');
+      var $menu = $parent.find('.c-menu');
 
-    $(this).removeClass('is-open');
-    $menu.removeClass('is-open').attr('aria-hidden', true);
-    $menu.parent('.u-position-relative').css('zIndex', '');
-  });
+      $this.removeClass('is-open');
+      $menu.removeClass('is-open').attr('aria-hidden', true);
+      $parent.css('zIndex', '');
+    });
 
   $('.c-txt__input--select[contenteditable]').focus(function() {
     var $this = $(this);
