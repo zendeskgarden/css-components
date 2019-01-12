@@ -8,6 +8,10 @@
   color: var(--zd-breadcrumb__item--current-color);
 }
 
-.c-breadcrumb__item.is-current > :any-link {
+/* stylelint-disable selector-max-specificity */
+.c-breadcrumb__item.is-current > :any-link,
+.c-breadcrumb__item.is-current > :any-link:hover,
+.c-breadcrumb__item.is-current > :any-link:focus {
   color: inherit;
 }
+/* stylelint-enable selector-max-specificity */
