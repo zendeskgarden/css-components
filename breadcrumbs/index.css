@@ -59,18 +59,18 @@
   color:#68737d;
 }
 
-.c-breadcrumb__item.is-current>:link,.c-breadcrumb__item.is-current>:visited{
+.c-breadcrumb__item.is-current>:link,.c-breadcrumb__item.is-current>:link:focus,.c-breadcrumb__item.is-current>:link:hover,.c-breadcrumb__item.is-current>:visited,.c-breadcrumb__item.is-current>:visited:focus,.c-breadcrumb__item.is-current>:visited:hover{
   color:inherit;
 }
 
-.c-breadcrumb__item.is-current>:-webkit-any-link{
+.c-breadcrumb__item.is-current>:-webkit-any-link,.c-breadcrumb__item.is-current>:-webkit-any-link:focus,.c-breadcrumb__item.is-current>:-webkit-any-link:hover{
   color:inherit;
 }
 
-.c-breadcrumb__item.is-current>:-moz-any-link{
+.c-breadcrumb__item.is-current>:-moz-any-link,.c-breadcrumb__item.is-current>:-moz-any-link:focus,.c-breadcrumb__item.is-current>:-moz-any-link:hover{
   color:inherit;
 }
 
-.c-breadcrumb__item.is-current>:any-link{
+.c-breadcrumb__item.is-current>:any-link,.c-breadcrumb__item.is-current>:any-link:focus,.c-breadcrumb__item.is-current>:any-link:hover{
   color:inherit;
 }
