@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-breadcrumbs@0.2.1...@zendeskgarden/css-breadcrumbs@0.2.2) (2019-01-14)
+
+
+### Bug Fixes
+
+* **breadcrumbs:** inherit current link color on hover/focus ([#164](https://github.com/zendeskgarden/css-components/issues/164)) ([6b08b8f](https://github.com/zendeskgarden/css-components/commit/6b08b8f))
+
+
+
+
+
 ## [0.2.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-breadcrumbs@0.2.0...@zendeskgarden/css-breadcrumbs@0.2.1) (2019-01-09)
 
 **Note:** Version bump only for package @zendeskgarden/css-breadcrumbs
