@@ -76,6 +76,7 @@
   box-shadow: inset var(--zd-btn--custom-focused-box-shadow);
 }
 
+.c-btn--custom.c-btn--muted:--btn-focused,
 .c-btn--custom.c-btn--anchor:--btn-focused {
   box-shadow: none;
 }

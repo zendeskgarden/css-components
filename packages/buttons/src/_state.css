@@ -34,12 +34,21 @@
   box-shadow: var(--zd-btn-focused-box-shadow);
 }
 
+.c-btn.c-btn--danger:--btn-focused {
+  box-shadow: var(--zd-btn--danger-focused-box-shadow);
+}
+
 .c-btn--focus-inset:--btn-focused {
   box-shadow: inset var(--zd-btn-focused-box-shadow);
 }
 
-.c-btn.c-btn--danger:--btn-focused {
-  box-shadow: var(--zd-btn--danger-focused-box-shadow);
+.c-btn--focus-inset.c-btn--danger:--btn-focused {
+  box-shadow: inset var(--zd-btn--danger-focused-box-shadow);
+}
+
+.c-btn--focus-inset:--btn-hovered:--btn-focused,
+.c-btn--focus-inset:--btn-primary:--btn-focused {
+  box-shadow: var(--zd-btn-group--primary-focused-box-shadow);
 }
 
 .c-btn:--btn-active {
