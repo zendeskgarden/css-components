@@ -8,6 +8,7 @@
   --zd-txt-disabled-color: var(--zd-forms-disabled-color);
   --zd-txt-focused-border-color: var(--zd-forms-accent-color);
   --zd-txt-focused-box-shadow: var(--zd-forms-focused-box-shadow);
+  --zd-txt-focused-box-shadow-inset: var(--zd-forms-focused-box-shadow-inset);
   --zd-txt-hovered-border-color: var(--zd-forms-hovered-border-color);
 }
 
@@ -22,6 +23,10 @@
 .c-txt__input:--txt-focused {
   border-color: var(--zd-txt-focused-border-color);
   box-shadow: var(--zd-txt-focused-box-shadow);
+}
+
+.c-txt__input--focus-inset:--txt-focused {
+  box-shadow: var(--zd-txt-focused-box-shadow-inset);
 }
 
 .c-txt__input:--txt-disabled {
