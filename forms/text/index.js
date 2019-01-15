@@ -17,6 +17,10 @@ $(document).ready(function() {
     $('.c-txt__input:not(.c-playground .c-txt__input):not(.c-txt__input--media__body)').toggleClass('c-txt__input--bare');
   });
 
+  $('.js-inset').change(function() {
+    $('.c-txt__input:not(.c-playground .c-txt__input):not(.c-txt__input--media__body)').toggleClass('c-txt__input--focus-inset');
+  });
+
   $('.js-validation').change(function() {
     var value = $(this).val();
 

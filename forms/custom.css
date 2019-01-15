@@ -111,3 +111,7 @@
 .c-txt__input--custom:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning).is-focused:not(.is-disabled):not([disabled]):not(.c-txt__input--bare),.c-txt__input--custom:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning):focus:not(.is-disabled):not([disabled]):not(.c-txt__input--bare){
   box-shadow:0 0 0 3px rgba(235, 73, 98, .4);
 }
+
+.c-txt__input--custom.c-txt__input--focus-inset:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning).is-focused:not(.is-disabled):not([disabled]):not(.c-txt__input--bare),.c-txt__input--custom.c-txt__input--focus-inset:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning):focus:not(.is-disabled):not([disabled]):not(.c-txt__input--bare){
+  box-shadow:inset 0 0 0 3px rgba(235, 73, 98, .4);
+}
