@@ -16,6 +16,7 @@
   --zd-forms--custom-box-shadow:
     0 0 0 3px
     color-mod(var(--zd-forms--custom-accent-color) alpha(40%));
+  --zd-forms--custom-box-shadow-inset: inset var(--zd-forms--custom-box-shadow);
   --zd-range--custom-track-background-image: linear-gradient(var(--zd-forms--custom-accent-color), var(--zd-forms--custom-accent-color));
 }
 
@@ -98,6 +99,10 @@
 
 .c-txt__input--custom:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning):--txt-focused:not(.c-txt__input--bare) {
   box-shadow: var(--zd-forms--custom-box-shadow);
+}
+
+.c-txt__input--custom.c-txt__input--focus-inset:not(.c-txt__input--error):not(.c-txt__input--success):not(.c-txt__input--warning):--txt-focused:not(.c-txt__input--bare) {
+  box-shadow: var(--zd-forms--custom-box-shadow-inset);
 }
 
 /* stylelint-enable max-line-length, selector-max-specificity */

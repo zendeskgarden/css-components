@@ -71,6 +71,12 @@
   color: var(--zd-btn--custom--anchor-disabled-color);
 }
 
+.c-btn--custom.c-btn--focus-inset:--btn-focused,
 .l-btn-group .c-btn--custom:--btn-focused {
   box-shadow: inset var(--zd-btn--custom-focused-box-shadow);
+}
+
+.c-btn--custom.c-btn--muted:--btn-focused,
+.c-btn--custom.c-btn--anchor:--btn-focused {
+  box-shadow: none;
 }
