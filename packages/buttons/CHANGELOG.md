@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@6.2.1...@zendeskgarden/css-buttons@6.3.0) (2019-01-16)
+
+
+### Features
+
+* **buttons|forms:** add `--focus-inset` styling variant ([#165](https://github.com/zendeskgarden/css-components/issues/165)) ([12afce8](https://github.com/zendeskgarden/css-components/commit/12afce8))
+
+
+
+
+
 ## [6.2.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@6.2.0...@zendeskgarden/css-buttons@6.2.1) (2019-01-09)
 
 **Note:** Version bump only for package @zendeskgarden/css-buttons
