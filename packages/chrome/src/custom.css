@@ -9,7 +9,7 @@
 @import '_selectors';
 
 :root {
-  --zd-chrome--custom-accent-color: var(--zd-color-mandy);
+  --zd-chrome--custom-accent-color: var(--zd-color-guide-pink);
   --zd-chrome--custom__body__header__item-focused-box-shadow-color: color-mod(var(--zd-chrome--custom-accent-color) alpha(40%));
   --zd-chrome--custom__body__header__item-focused-box-shadow:
     0 0 0 3px

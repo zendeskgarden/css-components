@@ -9,7 +9,7 @@
 @import '_selectors';
 
 :root {
-  --zd-tag--custom-accent-color: var(--zd-color-mandy);
+  --zd-tag--custom-accent-color: var(--zd-color-guide-pink);
   --zd-tag--custom-background-color: var(--zd-tag--custom-accent-color);
   --zd-tag--custom-color: var(--zd-color-white);
   --zd-tag--custom-focused-box-shadow:

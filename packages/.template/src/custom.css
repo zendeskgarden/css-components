@@ -8,5 +8,5 @@
 @import '@zendeskgarden/css-variables';
 
 .c-{{component}}--custom {
-  color: var(--zd-color-mandy);
+  color: var(--zd-color-guide-pink);
 }
