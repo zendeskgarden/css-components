@@ -22,30 +22,4 @@
 .u-fs-xxl { font-size: var(--zd-font-size-xxl) !important; }
 
 .u-fs-xxxl { font-size: var(--zd-font-size-xxxl) !important; }
-
-/* Font Sizes (deprecated) */
-
-.u-giga { font-size: var(--zd-font-size-giga) !important; }
-
-.u-mega { font-size: var(--zd-font-size-mega) !important; }
-
-.u-kilo { font-size: var(--zd-font-size-kilo) !important; }
-
-.u-alpha { font-size: var(--zd-font-size-alpha) !important; }
-
-.u-beta { font-size: var(--zd-font-size-beta) !important; }
-
-.u-gamma { font-size: var(--zd-font-size-gamma) !important; }
-
-.u-delta { font-size: var(--zd-font-size-delta) !important; }
-
-.u-epsilon { font-size: var(--zd-font-size-epsilon) !important; }
-
-.u-zeta { font-size: var(--zd-font-size-zeta) !important; }
-
-.u-milli { font-size: var(--zd-font-size-milli) !important; }
-
-.u-micro { font-size: var(--zd-font-size-micro) !important; }
-
-.u-nano { font-size: var(--zd-font-size-nano) !important; }
 /* stylelint-enable declaration-no-important */
