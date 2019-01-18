@@ -1,7 +1,7 @@
 @import '@zendeskgarden/css-variables';
 
 .c-{{component}} {
-  font-size: var(--zd-font-size-giga);
+  font-size: var(--zd-font-size-xxxl);
   font-weight: var(--zd-font-weight-light);
 }
 
