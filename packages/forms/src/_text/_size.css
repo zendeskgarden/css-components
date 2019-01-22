@@ -28,7 +28,7 @@
 }
 
 .c-txt__input--sm::-ms-browse {
-  font-size: var(--zd-font-size-milli);
+  font-size: 11px;
 }
 
 .c-txt__input--sm.c-txt__input--media {

@@ -9,7 +9,7 @@
 @import '_selectors';
 
 :root {
-  --zd-pagination--custom-accent-color: var(--zd-color-mandy);
+  --zd-pagination--custom-accent-color: var(--zd-color-guide-pink);
   --zd-pagination--custom__page-focused-box-shadow:
     inset 0 0 0 3px
     color-mod(var(--zd-pagination--custom-accent-color) alpha(35%));

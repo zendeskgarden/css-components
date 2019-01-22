@@ -11,7 +11,7 @@
 @import '_text/_selectors';
 
 :root {
-  --zd-forms--custom-accent-color: var(--zd-color-mandy);
+  --zd-forms--custom-accent-color: var(--zd-color-guide-pink);
   --zd-forms--custom-accent-color-active: color-mod(var(--zd-forms--custom-accent-color) blackness(+10%));
   --zd-forms--custom-box-shadow:
     0 0 0 3px

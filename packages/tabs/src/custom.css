@@ -10,7 +10,7 @@
 @import '_selectors';
 
 :root {
-  --zd-tab--custom-accent-color: var(--zd-color-mandy);
+  --zd-tab--custom-accent-color: var(--zd-color-guide-pink);
   --zd-tab--custom__list__item-active-color: var(--zd-tab--custom-accent-color);
   --zd-tab--custom__list__item-active-border-color: var(--zd-tab--custom-accent-color);
   --zd-tab--custom__list__item-disabled-color: var(--zd-tab-disabled-color);

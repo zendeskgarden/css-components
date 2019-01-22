@@ -10,7 +10,7 @@
 @import '_variables';
 
 :root {
-  --zd-btn--custom-color: var(--zd-color-mandy);
+  --zd-btn--custom-color: var(--zd-color-guide-pink);
   --zd-btn--custom-active-background-color: color-mod(var(--zd-btn--custom-color) blackness(+10%));
   --zd-btn--custom-disabled-background-color: var(--zd-btn-disabled-background-color);
   --zd-btn--custom-focused-box-shadow:

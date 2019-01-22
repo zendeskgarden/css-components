@@ -9,7 +9,7 @@
 @import '_selectors';
 
 :root {
-  --zd-table--custom-color: var(--zd-color-mandy);
+  --zd-table--custom-color: var(--zd-color-guide-pink);
   --zd-table--custom__row-focused-box-shadow:
     inset 3px 0 0 0
     var(--zd-table--custom-color);
