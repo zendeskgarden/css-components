@@ -80,10 +80,6 @@ $(document).ready(function() {
   $(document).on('click', '.c-chrome__body__header__item', function() {
     var $this = $(this);
     var $menu = $this.find('.c-menu');
-    var $icon = $this.find('svg, img');
-    var $container = $menu.parent('.menu-container');
-    var $offset = $icon.is('img') ? -3 : 5;
-    var y = $icon.outerHeight() + $offset;
 
     if ($menu.length) {
       if ($menu.hasClass('is-open')) {
@@ -93,8 +89,6 @@ $(document).ready(function() {
         $menu.addClass('is-open').attr('aria-hidden', false);
         $this.addClass('is-active');
       }
-
-      $container.css('transform', 'translate3d(0, ' + y + 'px, 0)');
 
       return false;
     }
