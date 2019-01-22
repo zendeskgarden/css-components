@@ -27,8 +27,8 @@
   },
   "devDependencies": {
     "jsonlint": "1.6.3",
-    "postcss": "7.0.8",
-    "stylelint-scss": "3.4.4",
+    "postcss": "7.0.14",
+    "stylelint-scss": "3.5.1",
     "watch": "1.0.2"
   },
   "keywords": [
