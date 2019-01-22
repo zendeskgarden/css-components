@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@8.1.2...@zendeskgarden/css-menus@9.0.0) (2019-01-22)
+
+
+### chore
+
+* remove deprecated colors and font sizes ([#169](https://github.com/zendeskgarden/css-components/issues/169)) ([666e510](https://github.com/zendeskgarden/css-components/commit/666e510))
+
+
+### BREAKING CHANGES
+
+* remove long-deprecated color names and font sizes from `css-variables` and `css-utilities`.
+
+
+
+
+
 ## [8.1.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@8.1.1...@zendeskgarden/css-menus@8.1.2) (2019-01-09)
 
 **Note:** Version bump only for package @zendeskgarden/css-menus

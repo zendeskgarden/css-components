@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@6.3.0...@zendeskgarden/css-buttons@7.0.0) (2019-01-22)
+
+
+### chore
+
+* remove deprecated colors and font sizes ([#169](https://github.com/zendeskgarden/css-components/issues/169)) ([666e510](https://github.com/zendeskgarden/css-components/commit/666e510))
+
+
+### BREAKING CHANGES
+
+* remove long-deprecated color names and font sizes from `css-variables` and `css-utilities`.
+
+
+
+
+
 # [6.3.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@6.2.1...@zendeskgarden/css-buttons@6.3.0) (2019-01-16)
 
 

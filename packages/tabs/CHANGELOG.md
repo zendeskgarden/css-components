@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tabs@5.1.7...@zendeskgarden/css-tabs@6.0.0) (2019-01-22)
+
+
+### chore
+
+* remove deprecated colors and font sizes ([#169](https://github.com/zendeskgarden/css-components/issues/169)) ([666e510](https://github.com/zendeskgarden/css-components/commit/666e510))
+
+
+### BREAKING CHANGES
+
+* remove long-deprecated color names and font sizes from `css-variables` and `css-utilities`.
+
+
+
+
+
 ## [5.1.7](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tabs@5.1.6...@zendeskgarden/css-tabs@5.1.7) (2019-01-09)
 
 **Note:** Version bump only for package @zendeskgarden/css-tabs

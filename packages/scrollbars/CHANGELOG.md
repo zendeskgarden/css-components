@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.9](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-scrollbars@0.1.8...@zendeskgarden/css-scrollbars@0.1.9) (2019-01-22)
+
+**Note:** Version bump only for package @zendeskgarden/css-scrollbars
+
+
+
+
+
 ## [0.1.8](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-scrollbars@0.1.7...@zendeskgarden/css-scrollbars@0.1.8) (2019-01-09)
 
 **Note:** Version bump only for package @zendeskgarden/css-scrollbars
