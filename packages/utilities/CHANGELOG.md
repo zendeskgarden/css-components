@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@4.0.0...@zendeskgarden/css-utilities@4.1.0) (2019-01-25)
+
+
+### Features
+
+* **variables|utilities:** add secondary colors ([#170](https://github.com/zendeskgarden/css-components/issues/170)) ([e9d40c2](https://github.com/zendeskgarden/css-components/commit/e9d40c2))
+
+
+
+
+
 # [4.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@3.2.4...@zendeskgarden/css-utilities@4.0.0) (2019-01-22)
 
 
