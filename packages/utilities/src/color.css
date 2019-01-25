@@ -107,6 +107,52 @@
 
 .u-bg-yellow-800 { background-color: var(--zd-color-yellow-800) !important; }
 
+/* Background Colors (secondary) */
+
+.u-bg-azure-400 { background-color: var(--zd-color-secondary-azure-400) !important; }
+
+.u-bg-azure-600 { background-color: var(--zd-color-secondary-azure-600) !important; }
+
+.u-bg-crimson-400 { background-color: var(--zd-color-secondary-crimson-400) !important; }
+
+.u-bg-crimson-600 { background-color: var(--zd-color-secondary-crimson-600) !important; }
+
+.u-bg-fuschia-400 { background-color: var(--zd-color-secondary-fuschia-400) !important; }
+
+.u-bg-fuschia-600 { background-color: var(--zd-color-secondary-fuschia-600) !important; }
+
+.u-bg-lemon-400 { background-color: var(--zd-color-secondary-lemon-400) !important; }
+
+.u-bg-lemon-600 { background-color: var(--zd-color-secondary-lemon-600) !important; }
+
+.u-bg-lime-400 { background-color: var(--zd-color-secondary-lime-400) !important; }
+
+.u-bg-lime-600 { background-color: var(--zd-color-secondary-lime-600) !important; }
+
+.u-bg-mint-400 { background-color: var(--zd-color-secondary-mint-400) !important; }
+
+.u-bg-mint-600 { background-color: var(--zd-color-secondary-mint-600) !important; }
+
+.u-bg-orange-400 { background-color: var(--zd-color-secondary-orange-400) !important; }
+
+.u-bg-orange-600 { background-color: var(--zd-color-secondary-orange-600) !important; }
+
+.u-bg-pink-400 { background-color: var(--zd-color-secondary-pink-400) !important; }
+
+.u-bg-pink-600 { background-color: var(--zd-color-secondary-pink-600) !important; }
+
+.u-bg-purple-400 { background-color: var(--zd-color-secondary-purple-400) !important; }
+
+.u-bg-purple-600 { background-color: var(--zd-color-secondary-purple-600) !important; }
+
+.u-bg-royal-400 { background-color: var(--zd-color-secondary-royal-400) !important; }
+
+.u-bg-royal-600 { background-color: var(--zd-color-secondary-royal-600) !important; }
+
+.u-bg-teal-400 { background-color: var(--zd-color-secondary-teal-400) !important; }
+
+.u-bg-teal-600 { background-color: var(--zd-color-secondary-teal-600) !important; }
+
 /* Background Colors (standard) */
 
 .u-bg-black { background-color: var(--zd-color-black) !important; }
@@ -235,6 +281,52 @@
 
 .u-fg-yellow-800 { color: var(--zd-color-yellow-800) !important; }
 
+/* Foreground Colors (secondary) */
+
+.u-fg-azure-400 { color: var(--zd-color-secondary-azure-400) !important; }
+
+.u-fg-azure-600 { color: var(--zd-color-secondary-azure-600) !important; }
+
+.u-fg-crimson-400 { color: var(--zd-color-secondary-crimson-400) !important; }
+
+.u-fg-crimson-600 { color: var(--zd-color-secondary-crimson-600) !important; }
+
+.u-fg-fuschia-400 { color: var(--zd-color-secondary-fuschia-400) !important; }
+
+.u-fg-fuschia-600 { color: var(--zd-color-secondary-fuschia-600) !important; }
+
+.u-fg-lemon-400 { color: var(--zd-color-secondary-lemon-400) !important; }
+
+.u-fg-lemon-600 { color: var(--zd-color-secondary-lemon-600) !important; }
+
+.u-fg-lime-400 { color: var(--zd-color-secondary-lime-400) !important; }
+
+.u-fg-lime-600 { color: var(--zd-color-secondary-lime-600) !important; }
+
+.u-fg-mint-400 { color: var(--zd-color-secondary-mint-400) !important; }
+
+.u-fg-mint-600 { color: var(--zd-color-secondary-mint-600) !important; }
+
+.u-fg-orange-400 { color: var(--zd-color-secondary-orange-400) !important; }
+
+.u-fg-orange-600 { color: var(--zd-color-secondary-orange-600) !important; }
+
+.u-fg-pink-400 { color: var(--zd-color-secondary-pink-400) !important; }
+
+.u-fg-pink-600 { color: var(--zd-color-secondary-pink-600) !important; }
+
+.u-fg-purple-400 { color: var(--zd-color-secondary-purple-400) !important; }
+
+.u-fg-purple-600 { color: var(--zd-color-secondary-purple-600) !important; }
+
+.u-fg-royal-400 { color: var(--zd-color-secondary-royal-400) !important; }
+
+.u-fg-royal-600 { color: var(--zd-color-secondary-royal-600) !important; }
+
+.u-fg-teal-400 { color: var(--zd-color-secondary-teal-400) !important; }
+
+.u-fg-teal-600 { color: var(--zd-color-secondary-teal-600) !important; }
+
 /* Foreground Colors (standard) */
 
 .u-fg-black { color: var(--zd-color-black) !important; }
@@ -360,6 +452,52 @@
 .u-bc-yellow-700 { border-color: var(--zd-color-yellow-700) !important; }
 
 .u-bc-yellow-800 { border-color: var(--zd-color-yellow-800) !important; }
+
+/* Border Colors (secondary) */
+
+.u-bc-azure-400 { border-color: var(--zd-color-secondary-azure-400) !important; }
+
+.u-bc-azure-600 { border-color: var(--zd-color-secondary-azure-600) !important; }
+
+.u-bc-crimson-400 { border-color: var(--zd-color-secondary-crimson-400) !important; }
+
+.u-bc-crimson-600 { border-color: var(--zd-color-secondary-crimson-600) !important; }
+
+.u-bc-fuschia-400 { border-color: var(--zd-color-secondary-fuschia-400) !important; }
+
+.u-bc-fuschia-600 { border-color: var(--zd-color-secondary-fuschia-600) !important; }
+
+.u-bc-lemon-400 { border-color: var(--zd-color-secondary-lemon-400) !important; }
+
+.u-bc-lemon-600 { border-color: var(--zd-color-secondary-lemon-600) !important; }
+
+.u-bc-lime-400 { border-color: var(--zd-color-secondary-lime-400) !important; }
+
+.u-bc-lime-600 { border-color: var(--zd-color-secondary-lime-600) !important; }
+
+.u-bc-mint-400 { border-color: var(--zd-color-secondary-mint-400) !important; }
+
+.u-bc-mint-600 { border-color: var(--zd-color-secondary-mint-600) !important; }
+
+.u-bc-orange-400 { border-color: var(--zd-color-secondary-orange-400) !important; }
+
+.u-bc-orange-600 { border-color: var(--zd-color-secondary-orange-600) !important; }
+
+.u-bc-pink-400 { border-color: var(--zd-color-secondary-pink-400) !important; }
+
+.u-bc-pink-600 { border-color: var(--zd-color-secondary-pink-600) !important; }
+
+.u-bc-purple-400 { border-color: var(--zd-color-secondary-purple-400) !important; }
+
+.u-bc-purple-600 { border-color: var(--zd-color-secondary-purple-600) !important; }
+
+.u-bc-royal-400 { border-color: var(--zd-color-secondary-royal-400) !important; }
+
+.u-bc-royal-600 { border-color: var(--zd-color-secondary-royal-600) !important; }
+
+.u-bc-teal-400 { border-color: var(--zd-color-secondary-teal-400) !important; }
+
+.u-bc-teal-600 { border-color: var(--zd-color-secondary-teal-600) !important; }
 
 /* Border Colors (standard) */
 

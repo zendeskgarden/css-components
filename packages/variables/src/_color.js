@@ -58,6 +58,32 @@ let retVal = {
   'white': { r: 255, g: 255, b: 255 }
 };
 
+/* Secondary colors */
+retVal = Object.assign(retVal, {
+  'secondary-azure-400': { r: 48, g: 145, b: 236 },
+  'secondary-azure-600': { r: 19, g: 113, b: 214 },
+  'secondary-crimson-400': { r: 227, g: 79, b: 50 },
+  'secondary-crimson-600': { r: 199, g: 42, b: 28 },
+  'secondary-fuschia-400': { r: 214, g: 83, b: 194 },
+  'secondary-fuschia-600': { r: 168, g: 24, b: 151 },
+  'secondary-lemon-400': { r: 255, g: 212, b: 36 },
+  'secondary-lemon-600': { r: 255, g: 187, b: 16 },
+  'secondary-lime-400': { r: 67, g: 179, b: 36 },
+  'secondary-lime-600': { r: 46, g: 130, b: 0 },
+  'secondary-mint-400': { r: 0, g: 166, b: 86 },
+  'secondary-mint-600': { r: 5, g: 133, b: 65 },
+  'secondary-orange-400': { r: 222, g: 112, b: 29 },
+  'secondary-orange-600': { r: 191, g: 80, b: 0 },
+  'secondary-pink-400': { r: 236, g: 77, b: 99 },
+  'secondary-pink-600': { r: 212, g: 32, b: 84 },
+  'secondary-purple-400': { r: 181, g: 82, b: 226 },
+  'secondary-purple-600': { r: 106, g: 39, b: 184 },
+  'secondary-royal-400': { r: 93, g: 125, b: 245 },
+  'secondary-royal-600': { r: 51, g: 83, b: 226 },
+  'secondary-teal-400': { r: 2, g: 161, b: 145 },
+  'secondary-teal-600': { r: 2, g: 128, b: 121 }
+});
+
 /* Product colors */
 retVal = Object.assign(retVal, {
   'chat-orange': { r: 247, g: 154, b: 62 },
