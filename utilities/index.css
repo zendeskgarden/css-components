@@ -318,6 +318,50 @@
 
 .u-bg-yellow-800{ background-color:#703b15 !important; }
 
+.u-bg-azure-400{ background-color:#3091ec !important; }
+
+.u-bg-azure-600{ background-color:#1371d6 !important; }
+
+.u-bg-crimson-400{ background-color:#e34f32 !important; }
+
+.u-bg-crimson-600{ background-color:#c72a1c !important; }
+
+.u-bg-fuschia-400{ background-color:#d653c2 !important; }
+
+.u-bg-fuschia-600{ background-color:#a81897 !important; }
+
+.u-bg-lemon-400{ background-color:#ffd424 !important; }
+
+.u-bg-lemon-600{ background-color:#ffbb10 !important; }
+
+.u-bg-lime-400{ background-color:#43b324 !important; }
+
+.u-bg-lime-600{ background-color:#2e8200 !important; }
+
+.u-bg-mint-400{ background-color:#00a656 !important; }
+
+.u-bg-mint-600{ background-color:#058541 !important; }
+
+.u-bg-orange-400{ background-color:#de701d !important; }
+
+.u-bg-orange-600{ background-color:#bf5000 !important; }
+
+.u-bg-pink-400{ background-color:#ec4d63 !important; }
+
+.u-bg-pink-600{ background-color:#d42054 !important; }
+
+.u-bg-purple-400{ background-color:#b552e2 !important; }
+
+.u-bg-purple-600{ background-color:#6a27b8 !important; }
+
+.u-bg-royal-400{ background-color:#5d7df5 !important; }
+
+.u-bg-royal-600{ background-color:#3353e2 !important; }
+
+.u-bg-teal-400{ background-color:#02a191 !important; }
+
+.u-bg-teal-600{ background-color:#028079 !important; }
+
 .u-bg-black{ background-color:#000 !important; }
 
 .u-bg-current-color{ background-color:currentColor !important; }
@@ -440,6 +484,50 @@
 
 .u-fg-yellow-800{ color:#703b15 !important; }
 
+.u-fg-azure-400{ color:#3091ec !important; }
+
+.u-fg-azure-600{ color:#1371d6 !important; }
+
+.u-fg-crimson-400{ color:#e34f32 !important; }
+
+.u-fg-crimson-600{ color:#c72a1c !important; }
+
+.u-fg-fuschia-400{ color:#d653c2 !important; }
+
+.u-fg-fuschia-600{ color:#a81897 !important; }
+
+.u-fg-lemon-400{ color:#ffd424 !important; }
+
+.u-fg-lemon-600{ color:#ffbb10 !important; }
+
+.u-fg-lime-400{ color:#43b324 !important; }
+
+.u-fg-lime-600{ color:#2e8200 !important; }
+
+.u-fg-mint-400{ color:#00a656 !important; }
+
+.u-fg-mint-600{ color:#058541 !important; }
+
+.u-fg-orange-400{ color:#de701d !important; }
+
+.u-fg-orange-600{ color:#bf5000 !important; }
+
+.u-fg-pink-400{ color:#ec4d63 !important; }
+
+.u-fg-pink-600{ color:#d42054 !important; }
+
+.u-fg-purple-400{ color:#b552e2 !important; }
+
+.u-fg-purple-600{ color:#6a27b8 !important; }
+
+.u-fg-royal-400{ color:#5d7df5 !important; }
+
+.u-fg-royal-600{ color:#3353e2 !important; }
+
+.u-fg-teal-400{ color:#02a191 !important; }
+
+.u-fg-teal-600{ color:#028079 !important; }
+
 .u-fg-black{ color:#000 !important; }
 
 .u-fg-inherit{ color:inherit !important; }
@@ -559,6 +647,50 @@
 .u-bc-yellow-700{ border-color:#ad5e18 !important; }
 
 .u-bc-yellow-800{ border-color:#703b15 !important; }
+
+.u-bc-azure-400{ border-color:#3091ec !important; }
+
+.u-bc-azure-600{ border-color:#1371d6 !important; }
+
+.u-bc-crimson-400{ border-color:#e34f32 !important; }
+
+.u-bc-crimson-600{ border-color:#c72a1c !important; }
+
+.u-bc-fuschia-400{ border-color:#d653c2 !important; }
+
+.u-bc-fuschia-600{ border-color:#a81897 !important; }
+
+.u-bc-lemon-400{ border-color:#ffd424 !important; }
+
+.u-bc-lemon-600{ border-color:#ffbb10 !important; }
+
+.u-bc-lime-400{ border-color:#43b324 !important; }
+
+.u-bc-lime-600{ border-color:#2e8200 !important; }
+
+.u-bc-mint-400{ border-color:#00a656 !important; }
+
+.u-bc-mint-600{ border-color:#058541 !important; }
+
+.u-bc-orange-400{ border-color:#de701d !important; }
+
+.u-bc-orange-600{ border-color:#bf5000 !important; }
+
+.u-bc-pink-400{ border-color:#ec4d63 !important; }
+
+.u-bc-pink-600{ border-color:#d42054 !important; }
+
+.u-bc-purple-400{ border-color:#b552e2 !important; }
+
+.u-bc-purple-600{ border-color:#6a27b8 !important; }
+
+.u-bc-royal-400{ border-color:#5d7df5 !important; }
+
+.u-bc-royal-600{ border-color:#3353e2 !important; }
+
+.u-bc-teal-400{ border-color:#02a191 !important; }
+
+.u-bc-teal-600{ border-color:#028079 !important; }
 
 .u-bc-black{ border-color:#000 !important; }
 
