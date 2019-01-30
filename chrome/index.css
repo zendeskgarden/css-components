@@ -31,6 +31,10 @@
   font-size:14px;
 }
 
+.c-chrome__body--footer .c-chrome__body__content{
+  height:calc(100% - 132px);
+}
+
 .c-chrome__body__content__main{
   flex:1;
   order:1;
@@ -497,6 +501,21 @@ img.c-chrome__body__header__item__icon{
 
 .c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-active .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo).is-hovered .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):active .c-chrome__body__header__item__text,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__icon,.c-chrome__body__header__item:not(.c-chrome__body__header__item--logo):hover .c-chrome__body__header__item__text{
   color:#03363d;
+}
+
+.c-chrome__body__footer{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  box-sizing:border-box;
+  border-top:1px solid #d8dcde;
+  background-color:#fff;
+  padding:0 36px;
+  height:80px;
+}
+
+.c-chrome__body__footer__item{
+  margin:0 4px;
 }
 
 .c-chrome__body__header__item--logo.c-chrome__body__header__item--logo--chat,.c-chrome__nav__item--logo.c-chrome__nav__item--logo--chat{
