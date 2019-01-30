@@ -5,6 +5,7 @@
   --zd-chrome-font-family: var(--zd-font-family-system);
   --zd-chrome-min-height: 100vh;
   --zd-chrome__body-color: var(--zd-color-grey-100);
+  --zd-chrome__body--footer__content-height: calc(100% - calc(var(--zd-chrome__body__header-height) + var(--zd-chrome__body__footer-height)));
   --zd-chrome__body__content-color: var(--zd-color-grey-800);
   --zd-chrome__body__content-font-size: var(--zd-font-size-md);
   --zd-chrome__body__content-height: calc(100% - var(--zd-chrome__body__header-height));
@@ -40,6 +41,10 @@
   line-height: var(--zd-chrome__body__content-line-height);
   color: var(--zd-chrome__body__content-color);
   font-size: var(--zd-chrome__body__content-font-size);
+}
+
+.c-chrome__body--footer .c-chrome__body__content {
+  height: var(--zd-chrome__body--footer__content-height);
 }
 
 .c-chrome__body__content__main {

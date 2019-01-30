@@ -11,6 +11,7 @@
   <title>Chrome / CSS Components / Zendesk Garden</title>
   <link href="../bedrock/index.css" rel="stylesheet">
   <link href="../arrows/index.css" rel="stylesheet">
+  <link href="../buttons/index.css" rel="stylesheet">
   <link href="../menus/index.css" rel="stylesheet">
   <link href="../forms/index.css" rel="stylesheet">
   <link href="../breadcrumbs/index.css" rel="stylesheet">
@@ -169,6 +170,16 @@
                       </li>
                     </ul>
                   </li>
+                  <li>
+                    <code>&lt;footer class="</code><code class="c-code">c-chrome__body__footer</code><code>"&gt;</code>
+                    <span>(optional)</span>
+                  </li>
+                  <ul class="u-list-style-disc">
+                    <li>
+                      <code>&lt;div class="</code><code class="c-code">c-chrome__body__footer__item</code><code>"&gt;</code>
+                    </li>
+                    <li>etc.</li>
+                  </ul>
                 </ul>
               </li>
             </ul>
@@ -940,6 +951,30 @@
         </div>
       </div>
 
+      <div class="u-mb-xl">
+        <h2 class="c-main__subtitle u-fs-lg u-mb">Footer</h2>
+        <p class="u-mb">The <code class="c-code">.c-chrome__body__footer</code>
+          element contains footer items – typically "Save" and "Cancel" action
+          buttons – within individual <code class="c-code">.c-chrome__body__footer__item</code>
+          children used to provide consistent item spacing.</p>
+
+        <div class="u-mb">
+          <div class="c-chrome c-chrome--demo u-mb">
+            <div class="c-chrome__body c-chrome__body--footer">
+              <header class="c-chrome__body__header c-chrome__body__header--standalone">
+                <div class="c-chrome__body__header__item">Header</div>
+                <div class="c-chrome__body__header__item c-chrome__body__header__item--max-x"></div>
+              </header>
+              <div class="c-chrome__body__content"></div>
+              <footer class="c-chrome__body__footer">
+                <div class="c-chrome__body__footer__item"><button class="c-btn c-btn--basic">Cancel</button></div>
+                <div class="c-chrome__body__footer__item"><button class="c-btn c-btn--primary">Save</button></div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="u-mb-lg">
         <h2 class="c-main__subtitle u-fs-lg u-mb">Modification</h2>
         <p class="u-mb">In addition to the navigation and header modifiers
@@ -956,6 +991,7 @@
           <li class="u-mb-sm"><code class="c-code">.c-chrome__subnav__item--header.is-expanded</code> – toggle to indicate accordion expansion.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__subnav__item__text--wrap</code> – combine with max-width on the <code class="c-code">.c-chrome__subnav</code> container to wrap long text.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__subnav__panel.is-hidden</code> – remove in conjunction with the associated <code class="c-code">.c-chrome__subnav__item--header</code> expansion to reveal the accordion panel. Note that in order to achieve the intended animation, a <code class="c-code">max-height</code> should be manually applied to the panel for the full height of the expanded container.</li>
+          <li class="u-mb-sm"><code class="c-code">.c-chrome__body--footer</code> – set the body content height to allow space for a <code class="c-code">.c-chrome__body__footer</code> child element; otherwise, the footer will be pushed out of view.</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--logo</code> – style the product logo shown as the first item in the header (only displayed in standalone).</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--max-x</code> – horizontally maximize a flex item in the header to take as much space as possible (i.e. breadcrumb container or an empty element separating starting items from ending items).</li>
           <li class="u-mb-sm"><code class="c-code">.c-chrome__body__header__item--max-y</code> – vertically maximize the height for a header item (i.e. contains a search input).</li>
@@ -1136,6 +1172,7 @@
   </main>
   <script src="//zendeskgarden.github.io/index.js"></script>
   <script src="tinycolor.js"></script>
+  <script src="../buttons/index.js"></script>
   <script src="../menus/index.js"></script>
   <script src="../forms/checkbox/index.js"></script>
   <script src="../forms/text/index.js"></script>
