@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@4.0.1...@zendeskgarden/css-chrome@4.1.0) (2019-01-30)
+
+
+### Features
+
+* **chrome:** add new `.c-chrome__body__footer` bottom action bar. ([#171](https://github.com/zendeskgarden/css-components/issues/171)) ([0af2dd8](https://github.com/zendeskgarden/css-components/commit/0af2dd8))
+
+
+
+
+
 ## [4.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@4.0.0...@zendeskgarden/css-chrome@4.0.1) (2019-01-25)
 
 **Note:** Version bump only for package @zendeskgarden/css-chrome
