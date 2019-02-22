@@ -63,7 +63,7 @@ function toProperties(variables) {
  * @returns {String} The value converted to camelCase.
  */
 function toCamelCase(value) {
-  return value.replace(/-([a-z0-9])/gu, (_, c) => {
+  return value.replace(/-([\w\d])/gu, (_, c) => {
     return c.toUpperCase();
   });
 }
