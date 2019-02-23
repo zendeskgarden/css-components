@@ -51,6 +51,11 @@ select.c-txt__input--sm.c-txt__input--select {
   height: var(--zd-txt--sm__input-height);
 }
 
+.c-txt__input--sm.c-txt__input--select::-webkit-calendar-picker-indicator {
+  width: var(--zd-txt--sm__input--select__chevron-width);
+  height: var(--zd-txt--sm__input-height);
+}
+
 .is-rtl.c-txt__input--sm.c-txt__input--select {
   padding-right: var(--zd-txt--sm__input-padding-horizontal);
   padding-left: var(--zd-txt--sm__input--select-padding-right);
