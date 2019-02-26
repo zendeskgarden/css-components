@@ -8,6 +8,7 @@
 .c-txt__input--media {
   display: flex;
   align-items: baseline;
+  cursor: text;
 }
 
 .c-txt__input--media__body {
