@@ -45,4 +45,8 @@ $(document).ready(function() {
   }).on('blur', '.c-txt__input--media input', function() {
     $(this).parent().removeClass('is-focused');
   });
+
+  $(document).on('click', '.c-txt__input--media', function() {
+    $(this).children('input').focus();
+  });
 });
