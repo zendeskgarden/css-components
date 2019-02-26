@@ -1,3 +1,10 @@
+:root {
+  --zd-txt__input--select--bare-height: calc(var(--zd-txt__input-line-height) * 1em);
+}
+
+/* 1. Calendar picker reset (standalone ruleset prevents non-Chrome parsing
+ *    errors). */
+
 .c-txt__input.c-txt__input--bare {
   border: none;
   border-radius: 0;
@@ -12,4 +19,12 @@
 
 .c-txt__input:--txt-disabled.c-txt__input--bare {
   background-color: transparent;
+}
+
+.c-txt__input--select.c-txt__input--bare:not(select)::before {
+  height: var(--zd-txt__input--select--bare-height);
+}
+
+.c-txt__input--select.c-txt__input--bare::-webkit-calendar-picker-indicator {
+  height: var(--zd-txt__input--select--bare-height); /* [1] */
 }
