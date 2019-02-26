@@ -56,13 +56,13 @@ select.is-rtl.c-txt__input--sm.c-txt__input--select {
   background-position: var(--zd-txt-rtl--sm__input--select__chevron-background-position);
 }
 
-.c-txt__input--sm .c-txt__input--media__figure:first-of-type,
-.is-rtl.c-txt__input--sm .c-txt__input--media__figure:last-of-type {
+.c-txt__input--sm .c-txt__input--media__figure:first-child,
+.is-rtl.c-txt__input--sm .c-txt__input--media__figure:last-child {
   margin: auto var(--zd-txt--sm__media-end-margin) auto 0;
 }
 
-.c-txt__input--sm .c-txt__input--media__figure:last-of-type,
-.is-rtl.c-txt__input--sm .c-txt__input--media__figure:first-of-type {
+.c-txt__input--sm .c-txt__input--media__figure:last-child,
+.is-rtl.c-txt__input--sm .c-txt__input--media__figure:first-child {
   margin: auto 0 auto var(--zd-txt--sm__media-end-margin);
 }
 /* stylelint-enable no-descending-specificity, selector-max-specificity */
