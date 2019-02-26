@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@7.0.2...@zendeskgarden/css-forms@7.0.3) (2019-02-26)
+
+
+### Bug Fixes
+
+* **forms:** bare-styled select chevron sizing ([#175](https://github.com/zendeskgarden/css-components/issues/175)) ([7377064](https://github.com/zendeskgarden/css-components/commit/7377064))
+* **forms:** padding/margin for small `.c-txt__input--media` element ([#176](https://github.com/zendeskgarden/css-components/issues/176)) ([2e98b3e](https://github.com/zendeskgarden/css-components/commit/2e98b3e))
+
+
+
+
+
 ## [7.0.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@7.0.1...@zendeskgarden/css-forms@7.0.2) (2019-02-08)
 
 **Note:** Version bump only for package @zendeskgarden/css-forms
