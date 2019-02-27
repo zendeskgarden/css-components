@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.8](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@4.0.7...@zendeskgarden/css-avatars@4.0.8) (2019-02-27)
+
+**Note:** Version bump only for package @zendeskgarden/css-avatars
+
+
+
+
+
 ## [4.0.7](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@4.0.6...@zendeskgarden/css-avatars@4.0.7) (2019-02-08)
 
 **Note:** Version bump only for package @zendeskgarden/css-avatars

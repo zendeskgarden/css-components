@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@6.1.1...@zendeskgarden/css-variables@6.2.0) (2019-02-27)
+
+
+### Features
+
+* **variables|utilities:** add muted secondary colors ([#173](https://github.com/zendeskgarden/css-components/issues/173)) ([21fb6bd](https://github.com/zendeskgarden/css-components/commit/21fb6bd))
+
+
+
+
+
 ## [6.1.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@6.1.0...@zendeskgarden/css-variables@6.1.1) (2019-02-08)
 
 **Note:** Version bump only for package @zendeskgarden/css-variables
