@@ -84,6 +84,32 @@ retVal = Object.assign(retVal, {
   'secondary-teal-600': { r: 2, g: 128, b: 121 }
 });
 
+/* Muted secondary colors */
+retVal = Object.assign(retVal, {
+  'secondary-azure-M400': { r: 95, g: 141, b: 207 },
+  'secondary-azure-M600': { r: 58, g: 112, b: 178 },
+  'secondary-crimson-M400': { r: 204, g: 108, b: 91 },
+  'secondary-crimson-M600': { r: 178, g: 74, b: 60 },
+  'secondary-fuschia-M400': { r: 207, g: 98, b: 168 },
+  'secondary-fuschia-M600': { r: 168, g: 69, b: 140 },
+  'secondary-lemon-M400': { r: 231, g: 165, b: 0 },
+  'secondary-lemon-M600': { r: 195, g: 143, b: 0 },
+  'secondary-lime-M400': { r: 81, g: 158, b: 45 },
+  'secondary-lime-M600': { r: 71, g: 120, b: 44 },
+  'secondary-mint-M400': { r: 41, g: 156, b: 102 },
+  'secondary-mint-M600': { r: 46, g: 128, b: 87 },
+  'secondary-orange-M400': { r: 212, g: 119, b: 44 },
+  'secondary-orange-M600': { r: 179, g: 88, b: 39 },
+  'secondary-pink-M400': { r: 213, g: 114, b: 135 },
+  'secondary-pink-M600': { r: 178, g: 58, b: 93 },
+  'secondary-purple-M400': { r: 176, g: 114, b: 204 },
+  'secondary-purple-M600': { r: 147, g: 88, b: 176 },
+  'secondary-royal-M400': { r: 121, g: 134, b: 216 },
+  'secondary-royal-M600': { r: 75, g: 97, b: 195 },
+  'secondary-teal-M400': { r: 45, g: 158, b: 143 },
+  'secondary-teal-M600': { r: 60, g: 120, b: 115 }
+});
+
 /* Product colors */
 retVal = Object.assign(retVal, {
   'chat-orange': { r: 247, g: 154, b: 62 },
