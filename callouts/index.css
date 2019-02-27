@@ -138,6 +138,10 @@
   background-color:#f8f9f9;
 }
 
+.c-callout--info{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%2368737D'%3E%3Cg stroke='currentColor'%3E%3Ccircle cx='7.5' cy='8.5' r='7' fill='none' stroke-linejoin='round'/%3E%3Cpath stroke-linecap='round' d='M7.5 12.5V8'/%3E%3C/g%3E%3Ccircle cx='7.5' cy='5' r='1' fill='currentColor'/%3E%3C/svg%3E");
+}
+
 .c-callout--error{
   border-color:#f5b5ba;
   background-color:#fff0f1;
@@ -159,7 +163,7 @@
   color:#ad5e18;
 }
 
-.c-callout--error,.c-callout--success,.c-callout--warning{
+.c-callout--error,.c-callout--info,.c-callout--success,.c-callout--warning{
   background-repeat:no-repeat;
   background-position:24px 22px;
   padding-left:50px;
@@ -199,7 +203,7 @@
   color:#ad5e18;
 }
 
-.c-callout--error.is-rtl,.c-callout--success.is-rtl,.c-callout--warning.is-rtl{
+.c-callout--error.is-rtl,.c-callout--info.is-rtl,.c-callout--success.is-rtl,.c-callout--warning.is-rtl{
   background-position:calc(100% - 24px) 22px;
   padding-right:50px;
   padding-left:40px;
