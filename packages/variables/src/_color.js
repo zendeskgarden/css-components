@@ -95,7 +95,7 @@ retVal = Object.assign(retVal, {
   'secondary-lemon-M400': { r: 231, g: 165, b: 0 },
   'secondary-lemon-M600': { r: 195, g: 143, b: 0 },
   'secondary-lime-M400': { r: 81, g: 158, b: 45 },
-  'secondary-lime-M600': { r: 54, g: 130, b: 33 },
+  'secondary-lime-M600': { r: 71, g: 120, b: 44 },
   'secondary-mint-M400': { r: 41, g: 156, b: 102 },
   'secondary-mint-M600': { r: 46, g: 128, b: 87 },
   'secondary-orange-M400': { r: 212, g: 119, b: 44 },
