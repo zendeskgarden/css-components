@@ -20,6 +20,7 @@
   --zd-callout--error-border-color: var(--zd-color-red-300);
   --zd-callout--error-color: var(--zd-color-red-700);
   --zd-callout--error__title-color: var(--zd-color-red-800);
+  --zd-callout--info-background-image: svg-load('16/info-stroke.svg', color: var(--zd-color-grey-600));
   --zd-callout--recessed-background-color: var(--zd-color-grey-100);
   --zd-callout--success-background-color: var(--zd-color-green-100);
   --zd-callout--success-background-image: svg-load('16/check-circle-stroke.svg', color: var(--zd-color-green-600));
@@ -35,6 +36,10 @@
 
 .c-callout--recessed {
   background-color: var(--zd-callout--recessed-background-color);
+}
+
+.c-callout--info {
+  background-image: var(--zd-callout--info-background-image);
 }
 
 .c-callout--error {
@@ -58,6 +63,7 @@
   color: var(--zd-callout--warning-color);
 }
 
+.c-callout--info,
 .c-callout--error,
 .c-callout--success,
 .c-callout--warning {
@@ -102,6 +108,7 @@
   color: var(--zd-callout--dialog--warning__title-color);
 }
 
+.c-callout--info.is-rtl,
 .c-callout--error.is-rtl,
 .c-callout--success.is-rtl,
 .c-callout--warning.is-rtl {

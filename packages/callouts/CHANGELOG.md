@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-callouts@3.2.4...@zendeskgarden/css-callouts@3.3.0) (2019-02-27)
+
+
+### Features
+
+* **callouts:** add info styling ([#174](https://github.com/zendeskgarden/css-components/issues/174)) ([1eb6cf8](https://github.com/zendeskgarden/css-components/commit/1eb6cf8))
+
+
+
+
+
 ## [3.2.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-callouts@3.2.3...@zendeskgarden/css-callouts@3.2.4) (2019-02-08)
 
 **Note:** Version bump only for package @zendeskgarden/css-callouts
