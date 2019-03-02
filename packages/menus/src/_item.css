@@ -4,7 +4,7 @@
 
 :root {
   --zd-menu__item-color: var(--zd-color-grey-800);
-  --zd-menu__item-line-height: calc(20 / 14);
+  --zd-menu__item-line-height: 20px;
   --zd-menu__item-padding-horizontal: 32px;
   --zd-menu__item-padding-vertical: 10px;
   --zd-menu__item-padding: var(--zd-menu__item-padding-vertical) var(--zd-menu__item-padding-horizontal);
@@ -41,7 +41,7 @@
   --zd-menu--sm__item--media--icon-height: calc(var(--zd-menu--sm__item--media__figure-size) + calc(var(--zd-menu--sm__item-padding-vertical) * 2));
   --zd-menu__item__meta-color: var(--zd-color-grey-600);
   --zd-menu__item__meta-font-size: var(--zd-font-size-sm);
-  --zd-menu__item__meta-line-height: calc(16 / 12);
+  --zd-menu__item__meta-line-height: 16px;
 }
 
 /* 1. Allows an item to contain a positioned sub-menu.
