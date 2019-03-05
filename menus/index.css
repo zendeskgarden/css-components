@@ -85,7 +85,7 @@
   cursor:pointer;
   padding:10px 32px;
   text-decoration:none;
-  line-height:1.42857;
+  line-height:20px;
   word-wrap:break-word;
   -webkit-user-select:none;
      -moz-user-select:none;
@@ -203,7 +203,7 @@
 
 .c-menu__item__meta{
   display:block;
-  line-height:1.33333;
+  line-height:16px;
   color:#68737d;
   font-size:12px;
 }
