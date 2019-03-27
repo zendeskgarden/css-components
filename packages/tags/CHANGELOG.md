@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@5.0.4...@zendeskgarden/css-tags@5.1.0) (2019-03-27)
+
+
+### Features
+
+* **tags:** add secondary color styling modifiers ([#181](https://github.com/zendeskgarden/css-components/issues/181)) ([200218b](https://github.com/zendeskgarden/css-components/commit/200218b))
+
+
+
+
+
 ## [5.0.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@5.0.3...@zendeskgarden/css-tags@5.0.4) (2019-02-28)
 
 **Note:** Version bump only for package @zendeskgarden/css-tags
