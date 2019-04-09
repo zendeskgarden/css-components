@@ -896,6 +896,12 @@
 
 .u-fs-xxxl{ font-size:36px !important; }
 
+.u-fs-sm.u-font-family-monospace,.u-fs-sm .u-font-family-monospace{ font-size:11px !important; }
+
+.u-fs-md.u-font-family-monospace,.u-fs-md .u-font-family-monospace{ font-size:13px !important; }
+
+.u-fs-lg.u-font-family-monospace,.u-fs-lg .u-font-family-monospace{ font-size:17px !important; }
+
 .u-thin{ font-weight:100 !important; }
 
 .u-extralight{ font-weight:200 !important; }
