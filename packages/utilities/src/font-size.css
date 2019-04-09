@@ -25,10 +25,13 @@
 
 /* Monospace Font Sizes */
 
-.u-fs-sm-monospace { font-size: var(--zd-font-size-sm-monospace) !important; }
+.u-fs-sm.u-font-family-monospace,
+.u-fs-sm .u-font-family-monospace { font-size: var(--zd-font-size-sm-monospace) !important; }
 
-.u-fs-md-monospace { font-size: var(--zd-font-size-md-monospace) !important; }
+.u-fs-md.u-font-family-monospace,
+.u-fs-md .u-font-family-monospace { font-size: var(--zd-font-size-md-monospace) !important; }
 
-.u-fs-lg-monospace { font-size: var(--zd-font-size-lg-monospace) !important; }
+.u-fs-lg.u-font-family-monospace,
+.u-fs-lg .u-font-family-monospace { font-size: var(--zd-font-size-lg-monospace) !important; }
 
 /* stylelint-enable declaration-no-important */
