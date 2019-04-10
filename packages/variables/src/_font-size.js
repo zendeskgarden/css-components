@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-const retVal = {
+let retVal = {
   sm: '12px',
   md: '14px',
   lg: '18px',
@@ -13,5 +13,12 @@ const retVal = {
   xxl: '26px',
   xxxl: '36px'
 };
+
+/* Monospace font sizes */
+retVal = Object.assign(retVal, {
+  'sm-monospace': '11px',
+  'md-monospace': '13px',
+  'lg-monospace': '17px'
+});
 
 module.exports = retVal;
