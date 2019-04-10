@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@4.2.1...@zendeskgarden/css-utilities@4.3.0) (2019-04-10)
+
+
+### Features
+
+* **variables|utilities:** add font sizes for monospace typography ([#182](https://github.com/zendeskgarden/css-components/issues/182)) ([0025459](https://github.com/zendeskgarden/css-components/commit/0025459))
+
+
+
+
+
 ## [4.2.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@4.2.0...@zendeskgarden/css-utilities@4.2.1) (2019-02-28)
 
 **Note:** Version bump only for package @zendeskgarden/css-utilities
