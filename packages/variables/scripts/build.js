@@ -31,9 +31,11 @@ function toProperties(variables) {
     if (category === 'color') {
       retVal = `rgb(${value.r}, ${value.g}, ${value.b})`;
     } else if (category === 'font-family') {
-      retVal = value.map(font => {
-        return font.indexOf(' ') === -1 ? font : `'${font}'`;
-      }).join(', ');
+      retVal = value
+        .map(font => {
+          return font.indexOf(' ') === -1 ? font : `'${font}'`;
+        })
+        .join(', ');
     } else {
       retVal = value;
     }
@@ -63,7 +65,7 @@ function toProperties(variables) {
  * @returns {String} The value converted to camelCase.
  */
 function toCamelCase(value) {
-  return value.replace(/-([\w\d])/gu, (_, c) => {
+  return value.replace(/-(?<character>[\w\d])/gu, (_, c) => {
     return c.toUpperCase();
   });
 }
@@ -86,7 +88,7 @@ postcss([cssnano])
         const value = declaration.value;
 
         jsItems.push(`${toCamelCase(key)}: '${value}'`);
-        jsonItems.push(`"${key}": "${value.replace(/"/gu, '\'')}"`);
+        jsonItems.push(`"${key}": "${value.replace(/"/gu, "'")}"`);
         scssItems.push(`$${key}: ${value};`);
       });
     });
