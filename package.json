@@ -37,7 +37,7 @@
     "postcss-preset-env": "6.6.0",
     "prettier-package-json": "2.1.0",
     "rimraf": "2.6.3",
-    "stylelint": "9.10.1",
+    "stylelint": "10.0.1",
     "stylelint-order": "2.2.1",
     "tinycolor2": "1.4.1"
   }
