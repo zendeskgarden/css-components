@@ -749,6 +749,11 @@
   color:#c2c8cc;
 }
 
+.c-txt__input::-moz-placeholder{
+  opacity:1;
+  color:#c2c8cc;
+}
+
 .c-txt__input:-ms-input-placeholder{
   opacity:1;
   color:#c2c8cc;
@@ -985,6 +990,10 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt__input.is-disabled::-webkit-input-placeholder,.c-txt__input[disabled]::-webkit-input-placeholder{
+  color:#c2c8cc;
+}
+
+.c-txt__input.is-disabled::-moz-placeholder,.c-txt__input[disabled]::-moz-placeholder{
   color:#c2c8cc;
 }
 
