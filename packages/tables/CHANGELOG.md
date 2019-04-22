@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.6](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@4.0.5...@zendeskgarden/css-tables@4.0.6) (2019-04-16)
+
+**Note:** Version bump only for package @zendeskgarden/css-tables
+
+
+
+
+
+## [4.0.5](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@4.0.4...@zendeskgarden/css-tables@4.0.5) (2019-04-10)
+
+**Note:** Version bump only for package @zendeskgarden/css-tables
+
+
+
+
+
 ## [4.0.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tables@4.0.3...@zendeskgarden/css-tables@4.0.4) (2019-02-28)
 
 **Note:** Version bump only for package @zendeskgarden/css-tables
