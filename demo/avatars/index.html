@@ -15,6 +15,51 @@
   <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <link href="../utilities/index.css" rel="stylesheet">
+  <style>
+    .c-avatar--online {
+      box-shadow: 0 0 0 2px #00A656;
+      position: relative;
+    }
+
+    .c-avatar--online::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: calc(100% - 12px);
+      left: calc(100% - 12px);
+      height: 12px;
+      width: 12px;
+      background-color: #00A656;
+      box-sizing: content-box;
+      border: 2px solid #FFF;
+      border-radius: 50%;
+    }
+
+    .c-avatar--xs.c-avatar--online::before {
+      top: calc(100% - 8px);
+      left: calc(100% - 8px);
+      height: 8px;
+      width: 8px;
+    }
+
+    .c-avatar--sm.c-avatar--online::before {
+      top: calc(100% - 10px);
+      left: calc(100% - 10px);
+      height: 10px;
+      width: 10px;
+    }
+
+    .c-avatar--lg.c-avatar--online::before {
+      top: calc(100% - 14px);
+      left: calc(100% - 14px);
+      height: 14px;
+      width: 14px;
+    }
+
+    .c-chrome__body__header__item .c-avatar {
+      display: inline-flex;
+    }
+  </style>
 </head>
 <body>
   <header class="c-header">
@@ -281,11 +326,35 @@
       <h1 class="c-main__subtitle u-fs-xl u-mb">Playground</h1>
       <div class="c-playground">
         <div class="c-playground__preview"></div>
-<textarea class="c-playground__code"><button class="c-chrome__body__header__item">
-  <figure class="c-avatar c-avatar--borderless">
+<textarea class="c-playground__code"><div class="u-mb">
+  <figure class="c-avatar c-avatar--xs u-mr">
     <img alt="user" src="images/jz.png">
   </figure>
-</button></textarea>
+  <figure class="c-avatar c-avatar--sm u-mr">
+    <img alt="user" src="images/jz.png">
+  </figure>
+  <figure class="c-avatar u-mr">
+    <img alt="user" src="images/jz.png">
+  </figure>
+  <figure class="c-avatar c-avatar--lg u-mr">
+    <img alt="user" src="images/jz.png">
+  </figure>
+</div>
+
+<div class="c-chrome__body">
+  <header class="c-chrome__body__header">
+    <button class="c-chrome__body__header__item">
+      <svg class="c-chrome__body__header__item__icon">
+        <use xlink:href="../index.svg#zd-svg-icon-16-grid-2x2-stroke" />
+      </svg>
+    </button>
+    <button class="c-chrome__body__header__item c-chrome__body__header__item--round">
+      <figure class="c-avatar c-avatar--xs">
+        <img alt="user" src="images/jz.png">
+      </figure>
+    </button>
+  </header>
+</div></textarea>
       </div>
     </section>
   </main>
