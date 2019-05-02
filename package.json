@@ -24,7 +24,7 @@
     "eslint-plugin-notice": "0.7.8",
     "gh-pages": "2.0.1",
     "handlebars": "4.1.2",
-    "husky": "2.1.0",
+    "husky": "2.2.0",
     "klaw-sync": "6.0.0",
     "lerna": "3.13.4",
     "live-server": "1.2.1",
