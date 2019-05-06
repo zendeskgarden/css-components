@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.6](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-callouts@3.3.5...@zendeskgarden/css-callouts@3.3.6) (2019-05-06)
+
+**Note:** Version bump only for package @zendeskgarden/css-callouts
+
+
+
+
+
 ## [3.3.5](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-callouts@3.3.4...@zendeskgarden/css-callouts@3.3.5) (2019-04-26)
 
 **Note:** Version bump only for package @zendeskgarden/css-callouts
