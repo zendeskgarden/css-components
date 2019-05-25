@@ -6,11 +6,6 @@
   --zd-avatar--system__img-border-radius: 3px;
 }
 
-.c-avatar--borderless .c-avatar__img,
-.c-avatar--borderless > img {
-  border-color: transparent;
-}
-
 .c-avatar--system {
   border-radius: var(--zd-avatar--system-border-radius);
 }
@@ -19,6 +14,7 @@
   border-radius: var(--zd-avatar--system--large-border-radius);
 }
 
+.c-avatar--system::before,
 .c-avatar--system .c-avatar__img,
 .c-avatar--system > img {
   border-radius: var(--zd-avatar--system__img-border-radius);

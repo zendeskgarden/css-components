@@ -1,0 +1,5 @@
+@keyframes zd-avatar__badge-scale {
+  50% {
+    transform: scale(1.5);
+  }
+}

@@ -1,29 +1,94 @@
 @import '@zendeskgarden/css-variables';
 
-/* stylelint-disable no-unsupported-browser-features */
 :root {
-  --zd-avatar-disabled-background-color: var(--zd-color-grey-300);
-  --zd-avatar-disabled-filter-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="grayscale"><feColorMatrix values=".3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 0 0 0 1 0"/></filter></svg>#grayscale');
-  --zd-avatar-disabled-opacity: .5;
+  --zd-avatar-box-shadow: 0 0 0 2px;
+  --zd-avatar--active-color: var(--zd-color-red-400);
+  --zd-avatar--away-color: var(--zd-color-yellow-400);
+  --zd-avatar--online-color: var(--zd-color-secondary-mint-400);
+  --zd-avatar--online__badge-animation: zd-avatar__badge-scale var(--zd-avatar-transition-duration) ease-in-out var(--zd-avatar__badge-transition-duration);
+  --zd-avatar--online__badge-position: calc(var(--zd-avatar-size) - var(--zd-avatar--online__badge-size) - 1px);
+  --zd-avatar--lg--online__badge-position: calc(var(--zd-avatar--lg-size) - var(--zd-avatar--lg--online__badge-size) - 1px);
+  --zd-avatar--sm--online__badge-position: calc(var(--zd-avatar--sm-size) - var(--zd-avatar--sm--online__badge-size) - 1px);
+  --zd-avatar--xs--online__badge-position: calc(var(--zd-avatar--xs-size) - var(--zd-avatar--xs--online__badge-size) - 1px);
 }
-/* stylelint-enable, no-unsupported-browser-features */
 
-.c-avatar.is-disabled {
-  background-color: var(--zd-avatar-disabled-background-color);
+.c-avatar.is-active,
+.c-avatar.is-away,
+.c-avatar.is-online {
+  color: var(--zd-color-white);
 }
 
-/* stylelint-disable declaration-block-no-duplicate-properties,
-                     order/properties-order,
-                     color-named,
-                     property-no-vendor-prefix,
-                     no-unsupported-browser-features */
-.c-avatar.is-disabled .c-avatar__img,
-.c-avatar.is-disabled > img {
-  transform: translateZ(0); /* Fix CSS3 filter blur for retina */
-  filter: var(--zd-avatar-disabled-filter-url); /* Support for Firefox 10+ */
-  filter: gray; /* Support for IE 6-9 (IE 10 dropped DX filter support) */
-  -webkit-filter: grayscale(100%);
-  border-color: transparent;
-  opacity: var(--zd-avatar-disabled-opacity);
+.c-avatar.is-active {
+  box-shadow: var(--zd-avatar-box-shadow) var(--zd-avatar--active-color);
 }
-/* stylelint-enable */
+
+.c-avatar.is-away {
+  box-shadow: var(--zd-avatar-box-shadow) var(--zd-avatar--away-color);
+}
+
+.c-avatar.is-online {
+  box-shadow: var(--zd-avatar-box-shadow) var(--zd-avatar--online-color);
+}
+
+.c-avatar.is-active::after {
+  background-color: var(--zd-color-red-600);
+}
+
+.c-avatar.is-online::after {
+  background-color: var(--zd-avatar--online-color);
+}
+
+.c-avatar.is-active::after,
+.c-avatar.is-online::after {
+  top: var(--zd-avatar--online__badge-position);
+  left: var(--zd-avatar--online__badge-position);
+  animation: var(--zd-avatar--online__badge-animation);
+  opacity: 1;
+  width: var(--zd-avatar--online__badge-size);
+  height: var(--zd-avatar--online__badge-size);
+}
+
+.c-avatar--xs.is-active::after,
+.c-avatar--xs.is-online::after {
+  top: var(--zd-avatar--xs--online__badge-position);
+  left: var(--zd-avatar--xs--online__badge-position);
+  width: var(--zd-avatar--xs--online__badge-size);
+  height: var(--zd-avatar--xs--online__badge-size);
+}
+
+.c-avatar--sm.is-active::after,
+.c-avatar--sm.is-online::after {
+  top: var(--zd-avatar--sm--online__badge-position);
+  left: var(--zd-avatar--sm--online__badge-position);
+  width: var(--zd-avatar--sm--online__badge-size);
+  height: var(--zd-avatar--sm--online__badge-size);
+}
+
+.c-avatar--lg.is-active::after,
+.c-avatar--lg.is-online::after {
+  top: var(--zd-avatar--lg--online__badge-position);
+  left: var(--zd-avatar--lg--online__badge-position);
+  width: var(--zd-avatar--lg--online__badge-size);
+  height: var(--zd-avatar--lg--online__badge-size);
+}
+
+.c-avatar.is-active.is-rtl::after,
+.c-avatar.is-online.is-rtl::after {
+  right: var(--zd-avatar--online__badge-position);
+  left: auto;
+}
+
+.c-avatar--xs.is-active.is-rtl::after,
+.c-avatar--xs.is-online.is-rtl::after {
+  right: var(--zd-avatar--xs--online__badge-position);
+}
+
+.c-avatar--sm.is-active.is-rtl::after,
+.c-avatar--sm.is-online.is-rtl::after {
+  right: var(--zd-avatar--sm--online__badge-position);
+}
+
+.c-avatar--lg.is-active.is-rtl::after,
+.c-avatar--lg.is-online.is-rtl::after {
+  right: var(--zd-avatar--lg--online__badge-position);
+}

@@ -1,38 +1,111 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-avatar-border: 1px transparent solid;
   --zd-avatar-border-radius: 50%;
-  --zd-avatar-transition: background-color .3s;
+  --zd-avatar-transition-duration: .25s;
+  --zd-avatar-transition: var(--zd-avatar-transition-duration) ease-in-out;
   --zd-avatar-size: 40px;
+  --zd-avatar--online__badge-position-initial: calc(var(--zd-avatar-size) - calc(var(--zd-avatar--online__badge-size) / 2) - 1px);
+  --zd-avatar--online__badge-size: 12px;
+  --zd-avatar--lg--online__badge-position-initial: calc(var(--zd-avatar--lg-size) - calc(var(--zd-avatar--lg--online__badge-size) / 2) - 1px);
+  --zd-avatar--lg--online__badge-size: calc(var(--zd-avatar--online__badge-size) + 2px);
+  --zd-avatar--sm--online__badge-position-initial: calc(var(--zd-avatar--sm-size) - calc(var(--zd-avatar--sm--online__badge-size) / 2) - 1px);
+  --zd-avatar--sm--online__badge-size: calc(var(--zd-avatar--online__badge-size) - 2px);
+  --zd-avatar--xs--online__badge-position-initial: calc(var(--zd-avatar--xs-size) - calc(var(--zd-avatar--xs--online__badge-size) / 2) - 1px);
+  --zd-avatar--xs--online__badge-size: calc(var(--zd-avatar--online__badge-size) - 4px);
+  --zd-avatar__badge-transition-duration: calc(var(--zd-avatar-transition-duration) / 2);
+  --zd-avatar__badge-transition: var(--zd-avatar__badge-transition-duration) ease-in-out;
   --zd-avatar__img-background-color: var(--zd-color-white);
-  --zd-avatar__img-border: 1px solid var(--zd-color-grey-300) solid;
   --zd-avatar__img-border-radius: 50%;
-  --zd-avatar__img-transition: all .3s;
 }
 
-/* 1. Reset for <figure> element. */
+/* 1. Reset for <figure> element.
+   2. Use `color` to manipulate inner box shadow and badge. */
 
 .c-avatar {
   display: inline-block;
-  transition: var(--zd-avatar-transition);
+  position: relative;
+  transition: box-shadow var(--zd-avatar-transition);
   margin: 0; /* [1] */
-  border: var(--zd-avatar-border);
   border-radius: var(--zd-avatar-border-radius);
   width: var(--zd-avatar-size);
   height: var(--zd-avatar-size);
   box-sizing: border-box;
+  color: transparent; /* [2] */
+}
+
+/* inner ring */
+.c-avatar::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: box-shadow var(--zd-avatar-transition);
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 2px; /* [2] */
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+
+/* badge */
+.c-avatar::after {
+  display: inline-block;
+  position: absolute;
+  top: var(--zd-avatar--online__badge-position-initial);
+  left: var(--zd-avatar--online__badge-position-initial);
+  transition: all var(--zd-avatar__badge-transition);
+  opacity: 0;
+  border: 2px solid; /* [2] */
+  border-radius: 50%;
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  box-sizing: content-box;
+  content: '';
+}
+
+.c-avatar--xs::after {
+  top: var(--zd-avatar--xs--online__badge-position-initial);
+  left: var(--zd-avatar--xs--online__badge-position-initial);
+}
+
+.c-avatar--sm::after {
+  top: var(--zd-avatar--sm--online__badge-position-initial);
+  left: var(--zd-avatar--sm--online__badge-position-initial);
+}
+
+.c-avatar--lg::after {
+  top: var(--zd-avatar--lg--online__badge-position-initial);
+  left: var(--zd-avatar--lg--online__badge-position-initial);
 }
 
 .c-avatar__img,
 .c-avatar > img {
-  transition: var(--zd-avatar__img-transition);
-  border: var(--zd-avatar__img-border);
-  border-radius: var(--zd-avatar__img-border-radius);
-  background-clip: content-box;
+  border-radius: inherit;
   background-color: var(--zd-avatar__img-background-color);
   width: 100%;
   height: 100%;
   box-sizing: inherit;
   vertical-align: bottom;
+}
+
+.c-avatar.is-rtl {
+  direction: rtl;
+}
+
+.c-avatar.is-rtl::after {
+  right: var(--zd-avatar--online__badge-position-initial);
+  left: auto;
+}
+
+.c-avatar--xs.is-rtl::after {
+  right: var(--zd-avatar--xs--online__badge-position-initial);
+}
+
+.c-avatar--sm.is-rtl::after {
+  right: var(--zd-avatar--sm--online__badge-position-initial);
+}
+
+.c-avatar--lg.is-rtl::after {
+  right: var(--zd-avatar--lg--online__badge-position-initial);
 }
