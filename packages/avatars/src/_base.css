@@ -5,7 +5,7 @@
   --zd-avatar-transition-duration: .25s;
   --zd-avatar-transition:
     box-shadow var(--zd-avatar-transition-duration) ease-in-out,
-    color var(--zd-avatar-transition-duration) ease-in-out;
+    color calc(var(--zd-avatar-transition-duration) * .4) ease-in-out;
   --zd-avatar-size: 40px;
   --zd-avatar__img-background-color: var(--zd-color-white);
   --zd-avatar__img-border-radius: 50%;

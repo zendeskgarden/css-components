@@ -8,7 +8,9 @@
   --zd-avatar__badge-font-weight: var(--zd-font-weight-semibold);
   --zd-avatar__badge-position: calc(var(--zd-avatar--online__badge-size) / 2 + var(--zd-avatar--online__badge-position));
   --zd-avatar__badge-transition-duration: var(--zd-avatar-transition-duration);
-  --zd-avatar__badge-transition: all var(--zd-avatar__badge-transition-duration) ease-in-out;
+  --zd-avatar__badge-transition:
+    all var(--zd-avatar__badge-transition-duration) ease-in-out,
+    color 0s;
   --zd-avatar--active__badge-min-width: var(--zd-avatar__badge-font-size);
   --zd-avatar--active__badge-padding: 0 5px;
   --zd-avatar--active__badge-position: -4px;

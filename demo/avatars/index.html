@@ -9,7 +9,9 @@
     gtag('config', 'UA-970836-25');
   </script>
   <title>Avatars / CSS Components / Zendesk Garden</title>
+  <link href="../arrows/index.css" rel="stylesheet">
   <link href="../bedrock/index.css" rel="stylesheet">
+  <link href="../buttons/index.css" rel="stylesheet">
   <link href="../chrome/index.css" rel="stylesheet">
   <link href="../forms/index.css" rel="stylesheet">
   <link href="../menus/index.css" rel="stylesheet">
@@ -24,6 +26,18 @@
     .is-dark .c-avatar.is-online {
       color: #012b30;
     }
+
+    .c-menu__item .c-avatar.is-active,
+    .c-menu__item .c-avatar.is-away,
+    .c-menu__item .c-avatar.is-online { 
+       color: white;
+    }
+
+    .c-menu__item:hover .c-avatar.is-active,
+    .c-menu__item:hover .c-avatar.is-away,
+    .c-menu__item:hover .c-avatar.is-online { 
+       color: #EDF7FF;
+     }
 
     .is-dark .c-chk__label { color: white; }
   </style>
@@ -104,7 +118,7 @@
     <div class="c-main__body">
       <p class="u-mb">Component classes for styling your avatars.</p>
       <h2 class="u-fs-lg u-mb-sm">Types</h2>
-      <ul class="u-mb">
+      <ul class="u-mb-lg">
         <li class="l-flag u-mb-sm">
           <div class="l-flag__figure">
             <figure class="c-avatar" role="alert">
@@ -127,7 +141,7 @@
         </li>
       </ul>
       <h2 class="u-fs-lg u-mb-sm">Sizes</h2>
-      <ul class="u-mb">
+      <ul class="u-mb-lg">
         <li class="l-grid u-mb-sm">
           <div class="l-flag l-grid__item u-1/2">
             <div class="l-flag__figure">
@@ -195,6 +209,93 @@
           </div>
         </li>
       </ul>
+      <h2 class="u-fs-lg u-mb-sm">Context</h2>
+      <ul class="l-grid u-mb-lg">
+        <li class="l-grid__item u-1/2">
+          <div class="u-position-relative">
+            <button class="c-btn js-menu">Default Menu</button>
+            <div class="menu-container">
+              <ul aria-hidden="true" class="c-arrow c-arrow--b c-menu c-menu--up">
+                <li class="c-menu__item c-menu__item--media" role="menuitem">
+                  <div class="c-menu__item--media__figure">
+                    <figure class="c-avatar c-avatar--sm">
+                      <img alt="user" src="images/ma.png">
+                    </figure>
+                  </div>
+                  <div class="c-menu__item--media__body">
+                    <span>Linden</span>
+                    <span class="c-menu__item__meta">linden@zendesk.garden</span>
+                  </div>
+                </li>
+                <li class="c-menu__item c-menu__item--media" role="menuitem">
+                  <div class="c-menu__item--media__figure">
+                    <figure class="c-avatar c-avatar--sm">
+                      <img alt="user" src="images/ma.png">
+                    </figure>
+                  </div>
+                  <div class="c-menu__item--media__body">
+                    <span>Reed</span>
+                    <span class="c-menu__item__meta">reed@zendesk.garden</span>
+                  </div>
+                </li>
+                <li class="c-menu__item c-menu__item--media" role="menuitem">
+                  <div class="c-menu__item--media__figure">
+                    <figure class="c-avatar c-avatar--sm">
+                      <img alt="user" src="images/ma.png">
+                    </figure>
+                  </div>
+                  <div class="c-menu__item--media__body">
+                    <span>Sage</span>
+                    <span class="c-menu__item__meta">sage@zendesk.garden</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li
+        ><li class="l-grid__item u-1/2">
+          <div class="u-position-relative">
+            <button class="c-btn js-menu">Small Menu</button>
+            <div class="menu-container">
+              <ul aria-hidden="true" class="c-arrow c-arrow--b c-menu c-menu--sm c-menu--up">
+                <li class="c-menu__item c-menu__item--media" role="menuitem">
+                  <div class="c-menu__item--media__figure">
+                    <figure class="c-avatar c-avatar--xs">
+                      <img alt="user" src="images/ma.png">
+                    </figure>
+                  </div>
+                  <div class="c-menu__item--media__body">
+                    <span>Clove</span>
+                    <span class="c-menu__item__meta">clove@zendesk.garden</span>
+                  </div>
+                </li>
+                <li class="c-menu__item c-menu__item--media" role="menuitem">
+                  <div class="c-menu__item--media__figure">
+                    <figure class="c-avatar c-avatar--xs">
+                      <img alt="user" src="images/ma.png">
+                    </figure>
+                  </div>
+                  <div class="c-menu__item--media__body">
+                    <span>Fennel</span>
+                    <span class="c-menu__item__meta">fennel@zendesk.garden</span>
+                  </div>
+                </li>
+                <li class="c-menu__item c-menu__item--media" role="menuitem">
+                  <div class="c-menu__item--media__figure">
+                    <figure class="c-avatar c-avatar--xs">
+                      <img alt="user" src="images/ma.png">
+                    </figure>
+                  </div>
+                  <div class="c-menu__item--media__body">
+                    <span>Rue</span>
+                    <span class="c-menu__item__meta">rue@zendesk.garden</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
     <section id="playground">
       <h1 class="c-main__subtitle u-fs-xl u-mb">Playground</h1>
@@ -233,6 +334,7 @@
     </section>
   </main>
   <script src="//zendeskgarden.github.io/index.js"></script>
+  <script src="../buttons/index.js"></script>
   <script src="../chrome/index.js"></script>
   <script src="../forms/checkbox/index.js"></script>
   <script src="../forms/range/index.js"></script>
