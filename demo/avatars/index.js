@@ -20,7 +20,10 @@ $(document).ready(function() {
         data = '9+';
       }
 
-      $('.c-avatar:not(.c-playground .c-avatar)').attr('data-badge', data);
+      $('.c-avatar:not(.c-playground .c-avatar)').attr({
+        'data-badge': data,
+        role: 'alert'
+      });
     })
     .click(function() {
       return false;
