@@ -15,7 +15,8 @@
     left var(--zd-avatar__badge-transition-duration) ease-in-out,
     background-color var(--zd-avatar__badge-transition-duration) ease-in-out,
     height var(--zd-avatar__badge-transition-duration) ease-in-out,
-    width var(--zd-avatar__badge-transition-duration) ease-in-out;
+    min-width var(--zd-avatar__badge-transition-duration) ease-in-out,
+    padding var(--zd-avatar__badge-transition-duration) ease-in-out;
   --zd-avatar--active__badge-min-width: calc(var(--zd-avatar--active__badge-size) - calc(var(--zd-avatar--active__badge-padding-horizontal) * 2));
   --zd-avatar--active__badge-padding: 0 var(--zd-avatar--active__badge-padding-horizontal);
   --zd-avatar--active__badge-padding-horizontal: 3px;
@@ -51,7 +52,8 @@
   border: 2px solid; /* [1] */
   border-radius: var(--zd-avatar__badge-border-radius);
   background-color: transparent;
-  width: 0;
+  padding: 0;
+  min-width: 0;
   height: 0;
   box-sizing: content-box;
   text-align: center;
@@ -93,7 +95,6 @@ _:-ms-input-placeholder, .c-avatar::after {
   bottom: var(--zd-avatar--active__badge-position);
   background-color: var(--zd-color-red-600);
   padding: var(--zd-avatar--active__badge-padding);
-  width: auto;
   min-width: var(--zd-avatar--active__badge-min-width);
   height: var(--zd-avatar--active__badge-size);
   line-height: var(--zd-avatar--active__badge-size);
@@ -103,7 +104,7 @@ _:-ms-input-placeholder, .c-avatar::after {
   right: var(--zd-avatar--online__badge-position);
   bottom: var(--zd-avatar--online__badge-position);
   background-color: var(--zd-avatar--online-color);
-  width: var(--zd-avatar--online__badge-size);
+  min-width: var(--zd-avatar--online__badge-size);
   height: var(--zd-avatar--online__badge-size);
 }
 
@@ -114,7 +115,7 @@ _:-ms-input-placeholder, .c-avatar::after {
 }
 
 .c-avatar--xs.is-online::after {
-  width: var(--zd-avatar--xs--online__badge-size);
+  min-width: var(--zd-avatar--xs--online__badge-size);
   height: var(--zd-avatar--xs--online__badge-size);
 }
 
@@ -125,7 +126,7 @@ _:-ms-input-placeholder, .c-avatar::after {
 }
 
 .c-avatar--sm.is-online::after {
-  width: var(--zd-avatar--sm--online__badge-size);
+  min-width: var(--zd-avatar--sm--online__badge-size);
   height: var(--zd-avatar--sm--online__badge-size);
 }
 
@@ -135,7 +136,7 @@ _:-ms-input-placeholder, .c-avatar::after {
 }
 
 .c-avatar--lg.is-online::after {
-  width: var(--zd-avatar--lg--online__badge-size);
+  min-width: var(--zd-avatar--lg--online__badge-size);
   height: var(--zd-avatar--lg--online__badge-size);
 }
 
