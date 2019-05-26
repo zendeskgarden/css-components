@@ -21,8 +21,9 @@ $(document).ready(function() {
       }
 
       $('.c-avatar:not(.c-playground .c-avatar)').attr({
-        'data-badge': data,
-        role: 'alert'
+        'aria-atomic': 'true',
+        'aria-live': 'polite',
+        'data-badge': data
       });
     })
     .click(function() {
