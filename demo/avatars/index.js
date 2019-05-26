@@ -33,6 +33,7 @@ $(document).ready(function() {
 
     if (status.length > 0) {
       $('.c-avatar:not(.c-playground .c-avatar)').addClass('is-' + status);
+      $('.js-count').change();
     }
 
     $('.js-count').prop('disabled', status !== 'active');
