@@ -116,7 +116,13 @@
     <a href="https://www.npmjs.com/package/@zendeskgarden/css-avatars"><img class="u-float-right u-mt-sm" src="https://img.shields.io/npm/v/@zendeskgarden/css-avatars.svg?style=flat-square"></a>
     <h1 class="c-main__title">Avatars</h1>
     <div class="c-main__body">
-      <p class="u-mb">Component classes for styling your avatars.</p>
+      <p class="u-mb">Component classes for styling your avatars. Use the
+      settings menu controls to apply various layout and status styling
+      treatments. Note that a foreground <code class="c-code">color</code>
+      style override should be used on <code class="c-code">.c-avatar</code>
+      elements to ensure internal status rings match the current background
+      color. This page applies avatar status color overrides for dark mode
+      and on menu item hover.</p>
       <h2 class="u-fs-lg u-mb-sm">Types</h2>
       <ul class="u-mb-lg">
         <li class="l-flag u-mb-sm">
@@ -146,7 +152,7 @@
           <div class="l-flag l-grid__item u-1/2">
             <div class="l-flag__figure">
               <figure class="c-avatar c-avatar--xs">
-                <img alt="user" src="images/ma.png">
+                <img alt="user" src="images/user.svg">
               </figure>
             </div>
             <div class="l-flag__body">
@@ -168,7 +174,7 @@
           <div class="l-flag l-grid__item u-1/2">
             <div class="l-flag__figure">
               <figure class="c-avatar c-avatar--sm">
-                <img alt="user" src="images/ma.png">
+                <img alt="user" src="images/user.svg">
               </figure>
             </div>
             <div class="l-flag__body">
@@ -190,7 +196,7 @@
           <div class="l-flag l-grid__item u-1/2">
             <div class="l-flag__figure">
               <figure class="c-avatar c-avatar--lg">
-                <img alt="user" src="images/ma.png">
+                <img alt="user" src="images/user.svg">
               </figure>
             </div>
             <div class="l-flag__body">
@@ -219,7 +225,7 @@
                 <li class="c-menu__item c-menu__item--media" role="menuitem">
                   <div class="c-menu__item--media__figure">
                     <figure class="c-avatar c-avatar--sm">
-                      <img alt="user" src="images/ma.png">
+                      <img alt="user" src="images/user.svg">
                     </figure>
                   </div>
                   <div class="c-menu__item--media__body">
@@ -230,7 +236,7 @@
                 <li class="c-menu__item c-menu__item--media" role="menuitem">
                   <div class="c-menu__item--media__figure">
                     <figure class="c-avatar c-avatar--sm">
-                      <img alt="user" src="images/ma.png">
+                      <img alt="user" src="images/user.svg">
                     </figure>
                   </div>
                   <div class="c-menu__item--media__body">
@@ -241,7 +247,7 @@
                 <li class="c-menu__item c-menu__item--media" role="menuitem">
                   <div class="c-menu__item--media__figure">
                     <figure class="c-avatar c-avatar--sm">
-                      <img alt="user" src="images/ma.png">
+                      <img alt="user" src="images/user.svg">
                     </figure>
                   </div>
                   <div class="c-menu__item--media__body">
@@ -261,7 +267,7 @@
                 <li class="c-menu__item c-menu__item--media" role="menuitem">
                   <div class="c-menu__item--media__figure">
                     <figure class="c-avatar c-avatar--xs">
-                      <img alt="user" src="images/ma.png">
+                      <img alt="user" src="images/user.svg">
                     </figure>
                   </div>
                   <div class="c-menu__item--media__body">
@@ -272,7 +278,7 @@
                 <li class="c-menu__item c-menu__item--media" role="menuitem">
                   <div class="c-menu__item--media__figure">
                     <figure class="c-avatar c-avatar--xs">
-                      <img alt="user" src="images/ma.png">
+                      <img alt="user" src="images/user.svg">
                     </figure>
                   </div>
                   <div class="c-menu__item--media__body">
@@ -283,7 +289,7 @@
                 <li class="c-menu__item c-menu__item--media" role="menuitem">
                   <div class="c-menu__item--media__figure">
                     <figure class="c-avatar c-avatar--xs">
-                      <img alt="user" src="images/ma.png">
+                      <img alt="user" src="images/user.svg">
                     </figure>
                   </div>
                   <div class="c-menu__item--media__body">
@@ -316,6 +322,21 @@
   </figure>
 </div>
 
+<div class="u-mb">
+  <figure class="c-avatar c-avatar--lg is-active u-mr" data-badge="3">
+    <img alt="user" src="images/jz.png">
+  </figure>
+  <figure class="c-avatar is-online u-mr">
+    <img alt="user" src="images/jz.png">
+  </figure>
+  <figure class="c-avatar c-avatar--sm is-away u-mr">
+    <img alt="user" src="images/jz.png">
+  </figure>
+  <figure class="c-avatar c-avatar--xs u-mr">
+    <img alt="user" src="images/jz.png">
+  </figure>
+</div>
+
 <div class="c-chrome__body">
   <header class="c-chrome__body__header">
     <button class="c-chrome__body__header__item">
@@ -324,7 +345,7 @@
       </svg>
     </button>
     <button class="c-chrome__body__header__item c-chrome__body__header__item--round">
-      <figure class="c-avatar c-avatar--xs">
+      <figure class="c-avatar c-avatar--xs is-online u-fg-white">
         <img alt="user" src="images/jz.png">
       </figure>
     </button>
