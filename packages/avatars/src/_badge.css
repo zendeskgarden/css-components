@@ -1,0 +1,169 @@
+@import '@zendeskgarden/css-variables';
+
+:root {
+  --zd-avatar__badge-animation: zd-avatar__badge-scale var(--zd-avatar-transition-duration) ease-in-out var(--zd-avatar__badge-transition-duration);
+  --zd-avatar__badge-border-radius: 100px;
+  --zd-avatar__badge-color: var(--zd-color-white);
+  --zd-avatar__badge-font-size: 10px;
+  --zd-avatar__badge-font-weight: var(--zd-font-weight-semibold);
+  --zd-avatar__badge-position: calc(var(--zd-avatar--online__badge-size) / 2 + var(--zd-avatar--online__badge-position));
+  --zd-avatar__badge-transition-duration: calc(var(--zd-avatar-transition-duration) / 2);
+  --zd-avatar__badge-transition:
+    opacity var(--zd-avatar__badge-transition-duration) ease-in-out,
+    right var(--zd-avatar__badge-transition-duration) ease-in-out,
+    bottom var(--zd-avatar__badge-transition-duration) ease-in-out,
+    left var(--zd-avatar__badge-transition-duration) ease-in-out,
+    background-color var(--zd-avatar__badge-transition-duration) ease-in-out,
+    height var(--zd-avatar__badge-transition-duration) ease-in-out,
+    width var(--zd-avatar__badge-transition-duration) ease-in-out;
+  --zd-avatar--active__badge-min-width: calc(var(--zd-avatar--active__badge-size) - calc(var(--zd-avatar--active__badge-padding-horizontal) * 2));
+  --zd-avatar--active__badge-padding: 0 var(--zd-avatar--active__badge-padding-horizontal);
+  --zd-avatar--active__badge-padding-horizontal: 3px;
+  --zd-avatar--active__badge-position: -4px;
+  --zd-avatar--active__badge-size: 20px;
+  --zd-avatar--online__badge-position: -3px;
+  --zd-avatar--online__badge-size: 12px;
+  --zd-avatar--lg__badge-position: calc(var(--zd-avatar--lg--online__badge-size) / 2 + var(--zd-avatar--online__badge-position));
+  --zd-avatar--lg--active__badge-min-width: var(--zd-avatar__badge-font-size);
+  --zd-avatar--lg--active__badge-padding: 0 8px;
+  --zd-avatar--lg--online__badge-size: calc(var(--zd-avatar--online__badge-size) + 2px);
+  --zd-avatar--sm--active__badge-min-width: calc(var(--zd-avatar--sm--active__badge-size) - calc(var(--zd-avatar--active__badge-padding-horizontal) * 2));
+  --zd-avatar--sm--active__badge-size: calc(var(--zd-avatar--active__badge-size) - 4px);
+  --zd-avatar--sm--online__badge-size: calc(var(--zd-avatar--online__badge-size) - 2px);
+  --zd-avatar--sm__badge-position: calc(var(--zd-avatar--sm--online__badge-size) / 2 + var(--zd-avatar--online__badge-position));
+  --zd-avatar--xs--active__badge-min-width: calc(var(--zd-avatar--xs--active__badge-size) - calc(var(--zd-avatar--active__badge-padding-horizontal) * 2));
+  --zd-avatar--xs--active__badge-size: 8px;
+  --zd-avatar--xs--online__badge-size: calc(var(--zd-avatar--online__badge-size) - 4px);
+  --zd-avatar--xs__badge-position: calc(var(--zd-avatar--xs--online__badge-size) / 2 + var(--zd-avatar--online__badge-position));
+}
+
+/* 1. Use `color` to manipulate inner box shadow and badge.
+   2. Set text color without altering border.
+   3. Fallback for IE 11 (which will set border). */
+
+.c-avatar::after {
+  display: inline-block;
+  position: absolute;
+  right: var(--zd-avatar__badge-position);
+  bottom: var(--zd-avatar__badge-position);
+  transition: var(--zd-avatar__badge-transition);
+  opacity: 0;
+  border: 2px solid; /* [1] */
+  border-radius: var(--zd-avatar__badge-border-radius);
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  box-sizing: content-box;
+  text-align: center;
+  font-size: var(--zd-avatar__badge-font-size);
+  font-weight: var(--zd-avatar__badge-font-weight);
+  -webkit-text-fill-color: var(--zd-avatar__badge-color); /* [2] */
+  content: '';
+}
+
+/* stylelint-disable selector-type-no-unknown, selector-no-vendor-prefix */
+_:-ms-input-placeholder, .c-avatar::after {
+  color: var(--zd-avatar__badge-color); /* [3] */
+}
+/* stylelint-enable selector-type-no-unknown, selector-no-vendor-prefix */
+
+.c-avatar--lg::after {
+  right: var(--zd-avatar--lg__badge-position);
+  bottom: var(--zd-avatar--lg__badge-position);
+}
+
+.c-avatar--sm::after {
+  right: var(--zd-avatar--sm__badge-position);
+  bottom: var(--zd-avatar--sm__badge-position);
+}
+
+.c-avatar--xs::after {
+  right: var(--zd-avatar--xs__badge-position);
+  bottom: var(--zd-avatar--xs__badge-position);
+}
+
+.c-avatar.is-active::after,
+.c-avatar.is-online::after {
+  animation: var(--zd-avatar__badge-animation);
+  opacity: 1;
+}
+
+.c-avatar.is-active::after {
+  right: var(--zd-avatar--active__badge-position);
+  bottom: var(--zd-avatar--active__badge-position);
+  background-color: var(--zd-color-red-600);
+  padding: var(--zd-avatar--active__badge-padding);
+  width: auto;
+  min-width: var(--zd-avatar--active__badge-min-width);
+  height: var(--zd-avatar--active__badge-size);
+  line-height: var(--zd-avatar--active__badge-size);
+}
+
+.c-avatar.is-online::after {
+  right: var(--zd-avatar--online__badge-position);
+  bottom: var(--zd-avatar--online__badge-position);
+  background-color: var(--zd-avatar--online-color);
+  width: var(--zd-avatar--online__badge-size);
+  height: var(--zd-avatar--online__badge-size);
+}
+
+.c-avatar--xs.is-active::after {
+  min-width: var(--zd-avatar--xs--active__badge-min-width);
+  height: var(--zd-avatar--xs--active__badge-size);
+  line-height: var(--zd-avatar--xs--active__badge-size);
+}
+
+.c-avatar--xs.is-online::after {
+  width: var(--zd-avatar--xs--online__badge-size);
+  height: var(--zd-avatar--xs--online__badge-size);
+}
+
+.c-avatar--sm.is-active::after {
+  min-width: var(--zd-avatar--sm--active__badge-min-width);
+  height: var(--zd-avatar--sm--active__badge-size);
+  line-height: var(--zd-avatar--sm--active__badge-size);
+}
+
+.c-avatar--sm.is-online::after {
+  width: var(--zd-avatar--sm--online__badge-size);
+  height: var(--zd-avatar--sm--online__badge-size);
+}
+
+.c-avatar--lg.is-active::after {
+  padding: var(--zd-avatar--lg--active__badge-padding);
+  min-width: var(--zd-avatar--lg--active__badge-min-width);
+}
+
+.c-avatar--lg.is-online::after {
+  width: var(--zd-avatar--lg--online__badge-size);
+  height: var(--zd-avatar--lg--online__badge-size);
+}
+
+.c-avatar.is-rtl::after {
+  right: auto;
+  left: var(--zd-avatar__badge-position);
+}
+
+.c-avatar--lg.is-rtl::after {
+  left: var(--zd-avatar--lg__badge-position);
+}
+
+.c-avatar--sm.is-rtl::after {
+  left: var(--zd-avatar--sm__badge-position);
+}
+
+.c-avatar--xs.is-rtl::after {
+  left: var(--zd-avatar--xs__badge-position);
+}
+
+.c-avatar.is-active.is-rtl::after {
+  left: var(--zd-avatar--active__badge-position);
+}
+
+.c-avatar.is-online.is-rtl::after {
+  left: var(--zd-avatar--online__badge-position);
+}
+
+.c-avatar:not(.c-avatar--xs).is-active::after {
+  content: attr(data-badge);
+}
