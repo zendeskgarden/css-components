@@ -1,16 +1,22 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-avatar--large-border-width: 2px;
   --zd-avatar--xs-size: 24px;
+  --zd-avatar--xs__img-font-size: var(--zd-font-size-sm);
   --zd-avatar--sm-size: 32px;
+  --zd-avatar--sm__img-font-size: var(--zd-font-size-md);
   --zd-avatar--lg-size: 48px;
+  --zd-avatar--lg__img-font-size: var(--zd-font-size-xl);
 }
 
 .c-avatar--lg {
-  border-width: var(--zd-avatar--large-border-width);
   width: var(--zd-avatar--lg-size);
   height: var(--zd-avatar--lg-size);
+}
+
+.c-avatar--lg .c-avatar__img {
+  line-height: var(--zd-avatar--lg-size);
+  font-size: var(--zd-avatar--lg__img-font-size);
 }
 
 .c-avatar--sm {
@@ -18,7 +24,17 @@
   height: var(--zd-avatar--sm-size);
 }
 
+.c-avatar--sm .c-avatar__img {
+  line-height: var(--zd-avatar--sm-size);
+  font-size: var(--zd-avatar--sm__img-font-size);
+}
+
 .c-avatar--xs {
   width: var(--zd-avatar--xs-size);
   height: var(--zd-avatar--xs-size);
+}
+
+.c-avatar--xs .c-avatar__img {
+  line-height: var(--zd-avatar--xs-size);
+  font-size: var(--zd-avatar--xs__img-font-size);
 }
