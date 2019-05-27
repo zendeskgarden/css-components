@@ -32,9 +32,10 @@
 
 /* 1. Use `color` to manipulate inner box shadow and badge.
    2. Set text color without altering border.
-   3. Fallback for IE 11 (which will set border). */
+   3. Fallback for IE 11 (which will set border).
+   4. Improve animation easing. */
 
-.c-avatar::after {
+.c-avatar__badge {
   display: inline-block;
   position: absolute;
   right: var(--zd-avatar__badge-position);
@@ -52,37 +53,40 @@
   font-size: 0;
   font-weight: var(--zd-avatar__badge-font-weight);
   -webkit-text-fill-color: var(--zd-avatar__badge-color); /* [2] */
-  content: '';
 }
 
 /* stylelint-disable selector-type-no-unknown, selector-no-vendor-prefix */
-_:-ms-input-placeholder, .c-avatar::after {
+_:-ms-input-placeholder, .c-avatar__badge {
   color: var(--zd-avatar__badge-color); /* [3] */
 }
 /* stylelint-enable selector-type-no-unknown, selector-no-vendor-prefix */
 
-.c-avatar--lg::after {
+.c-avatar--lg .c-avatar__badge {
   right: var(--zd-avatar--lg__badge-position);
   bottom: var(--zd-avatar--lg__badge-position);
 }
 
-.c-avatar--sm::after {
+.c-avatar--sm .c-avatar__badge {
   right: var(--zd-avatar--sm__badge-position);
   bottom: var(--zd-avatar--sm__badge-position);
 }
 
-.c-avatar--xs::after {
+.c-avatar--xs .c-avatar__badge {
   right: var(--zd-avatar--xs__badge-position);
   bottom: var(--zd-avatar--xs__badge-position);
 }
 
-.c-avatar.is-active::after,
-.c-avatar.is-online::after {
+.c-avatar.is-active .c-avatar__badge,
+.c-avatar.is-online .c-avatar__badge {
   animation: var(--zd-avatar__badge-animation);
   opacity: 1;
 }
 
-.c-avatar.is-active::after {
+.c-avatar.is-away .c-avatar__badge {
+  line-height: 1px; /* [4] */
+}
+
+.c-avatar.is-active .c-avatar__badge {
   right: var(--zd-avatar--active__badge-position);
   bottom: var(--zd-avatar--active__badge-position);
   background-color: var(--zd-color-red-600);
@@ -90,74 +94,79 @@ _:-ms-input-placeholder, .c-avatar::after {
   min-width: var(--zd-avatar--active__badge-min-width);
   height: var(--zd-avatar--active__badge-size);
   line-height: var(--zd-avatar--active__badge-size);
-  font-size: var(--zd-avatar__badge-font-size);
 }
 
-.c-avatar.is-online::after {
+.c-avatar.is-online .c-avatar__badge {
   right: var(--zd-avatar--online__badge-position);
   bottom: var(--zd-avatar--online__badge-position);
   background-color: var(--zd-avatar--online-color);
   min-width: var(--zd-avatar--online__badge-size);
   height: var(--zd-avatar--online__badge-size);
+  line-height: var(--zd-avatar--online__badge-size); /* [4] */
 }
 
-.c-avatar--xs.is-active::after {
+.c-avatar--xs.is-active .c-avatar__badge {
   padding: 0;
   min-width: var(--zd-avatar--xs--active__badge-min-width);
   height: var(--zd-avatar--xs--active__badge-size);
   line-height: var(--zd-avatar--xs--active__badge-size);
 }
 
-.c-avatar--xs.is-online::after {
+.c-avatar--xs.is-online .c-avatar__badge {
   min-width: var(--zd-avatar--xs--online__badge-size);
   height: var(--zd-avatar--xs--online__badge-size);
+  line-height: var(--zd-avatar--xs--online__badge-size); /* [4] */
 }
 
-.c-avatar--sm.is-active::after {
+.c-avatar--sm.is-active .c-avatar__badge {
   padding: var(--zd-avatar--sm--active__badge-padding);
   height: var(--zd-avatar--sm--active__badge-size);
   line-height: var(--zd-avatar--sm--active__badge-size);
 }
 
-.c-avatar--sm.is-online::after {
+.c-avatar--sm.is-online .c-avatar__badge {
   min-width: var(--zd-avatar--sm--online__badge-size);
   height: var(--zd-avatar--sm--online__badge-size);
+  line-height: var(--zd-avatar--sm--online__badge-size); /* [4] */
 }
 
-.c-avatar--lg.is-active::after {
+.c-avatar--lg.is-active .c-avatar__badge {
   padding: var(--zd-avatar--lg--active__badge-padding);
 }
 
-.c-avatar--lg.is-online::after {
+.c-avatar--lg.is-online .c-avatar__badge {
   min-width: var(--zd-avatar--lg--online__badge-size);
   height: var(--zd-avatar--lg--online__badge-size);
+  line-height: var(--zd-avatar--lg--online__badge-size); /* [4] */
 }
 
-.c-avatar.is-rtl::after {
+.c-avatar.is-rtl .c-avatar__badge {
   right: auto;
   left: var(--zd-avatar__badge-position);
 }
 
-.c-avatar--lg.is-rtl::after {
+.c-avatar--lg.is-rtl .c-avatar__badge {
   left: var(--zd-avatar--lg__badge-position);
 }
 
-.c-avatar--sm.is-rtl::after {
+.c-avatar--sm.is-rtl .c-avatar__badge {
   left: var(--zd-avatar--sm__badge-position);
 }
 
-.c-avatar--xs.is-rtl::after {
+.c-avatar--xs.is-rtl .c-avatar__badge {
   left: var(--zd-avatar--xs__badge-position);
 }
 
-.c-avatar.is-active.is-rtl::after {
+/* stylelint-disable selector-max-specificity */
+
+.c-avatar.is-active.is-rtl .c-avatar__badge {
   left: var(--zd-avatar--active__badge-position);
 }
 
-.c-avatar.is-online.is-rtl::after {
+.c-avatar.is-online.is-rtl .c-avatar__badge {
   left: var(--zd-avatar--online__badge-position);
 }
 
-.c-avatar:not(.c-avatar--xs).is-active::after {
-  content: attr(data-badge);
+.c-avatar:not(.c-avatar--xs).is-active .c-avatar__badge {
+  font-size: var(--zd-avatar__badge-font-size);
 }

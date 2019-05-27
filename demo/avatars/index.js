@@ -14,17 +14,13 @@ $(document).ready(function() {
   $('.js-count')
     .on('change input', function() {
       var count = $(this).val();
-      var data = count > 0 ? count : '';
+      var text = count > 0 ? count : '';
 
       if (count > 9) {
-        data = '9+';
+        text = '9+';
       }
 
-      $('.c-avatar:not(.c-playground .c-avatar)').attr({
-        'aria-atomic': 'true',
-        'aria-live': 'polite',
-        'data-badge': data
-      });
+      $('.c-avatar:not(.c-playground .c-avatar) .c-avatar__badge').text(text);
     })
     .click(function() {
       return false;
