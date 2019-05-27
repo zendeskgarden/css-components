@@ -18,7 +18,7 @@
   --zd-chrome__body__header__item-line-height: calc(30 / 14);
   --zd-chrome__body__header__item-margin: 0 12px;
   --zd-chrome__body__header__item-size: 30px;
-  --zd-chrome__body__header__item-padding: 0 calc(calc(var(--zd-chrome__body__header__item-size) - var(--zd-chrome__body__header__item__icon-size)) / 4);
+  --zd-chrome__body__header__item-padding: 0 4px;
   --zd-chrome__body__header__item-transition:
     box-shadow .1s ease-in-out,
     color .1s ease-in-out;
