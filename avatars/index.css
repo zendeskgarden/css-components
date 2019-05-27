@@ -22,26 +22,39 @@
   top:0;
   left:0;
   transition:box-shadow .25s ease-in-out;
+  border-radius:inherit;
   box-shadow:inset 0 0 0 2px;
+  width:100%;
+  height:100%;
   content:"";
 }
 
-.c-avatar:before,.c-avatar>img,.c-avatar__img{
-  border-radius:inherit;
-  width:100%;
-  height:100%;
+.c-avatar__img{
+  display:inline-block;
+  overflow:hidden;
+  text-align:center;
+  line-height:40px;
+  white-space:nowrap;
+  color:#fff;
+  font-size:18px;
 }
 
 .c-avatar>img,.c-avatar__img{
-  background-color:#fff;
+  border-radius:inherit;
+  width:100%;
+  height:100%;
   box-sizing:inherit;
   vertical-align:bottom;
 }
 
 .c-avatar--lg{
-  border-width:2px;
   width:48px;
   height:48px;
+}
+
+.c-avatar--lg .c-avatar__img{
+  line-height:48px;
+  font-size:22px;
 }
 
 .c-avatar--sm{
@@ -49,9 +62,19 @@
   height:32px;
 }
 
+.c-avatar--sm .c-avatar__img{
+  line-height:32px;
+  font-size:14px;
+}
+
 .c-avatar--xs{
   width:24px;
   height:24px;
+}
+
+.c-avatar--xs .c-avatar__img{
+  line-height:24px;
+  font-size:12px;
 }
 
 .c-avatar.is-active,.c-avatar.is-away,.c-avatar.is-online{
