@@ -120,6 +120,7 @@
   height:0;
   box-sizing:content-box;
   text-align:center;
+  line-height:1px;
   font-size:0;
   font-weight:600;
   -webkit-text-fill-color:#fff;
@@ -148,10 +149,6 @@
   -webkit-animation:zd-avatar__badge-scale .3s ease-in-out;
           animation:zd-avatar__badge-scale .3s ease-in-out;
   opacity:1;
-}
-
-.c-avatar.is-away .c-avatar__badge{
-  line-height:1px;
 }
 
 .c-avatar.is-active .c-avatar__badge{
