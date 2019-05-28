@@ -168,5 +168,9 @@ _:-ms-input-placeholder, .c-avatar__badge {
 }
 
 .c-avatar:not(.c-avatar--xs).is-active .c-avatar__badge {
+  max-width: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: var(--zd-avatar__badge-font-size);
 }
