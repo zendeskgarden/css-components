@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.9](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@4.1.8...@zendeskgarden/css-chrome@4.1.9) (2019-05-28)
+
+
+### Bug Fixes
+
+* **chrome:** correct header item padding ([#197](https://github.com/zendeskgarden/css-components/issues/197)) ([379b635](https://github.com/zendeskgarden/css-components/commit/379b635))
+
+
+
+
+
 ## [4.1.8](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@4.1.7...@zendeskgarden/css-chrome@4.1.8) (2019-05-28)
 
 
