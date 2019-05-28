@@ -50,6 +50,7 @@
   height: 0;
   box-sizing: content-box;
   text-align: center;
+  line-height: 1px; /* [4] */
   font-size: 0;
   font-weight: var(--zd-avatar__badge-font-weight);
   -webkit-text-fill-color: var(--zd-avatar__badge-color); /* [2] */
@@ -80,10 +81,6 @@ _:-ms-input-placeholder, .c-avatar__badge {
 .c-avatar.is-online .c-avatar__badge {
   animation: var(--zd-avatar__badge-animation);
   opacity: 1;
-}
-
-.c-avatar.is-away .c-avatar__badge {
-  line-height: 1px; /* [4] */
 }
 
 .c-avatar.is-active .c-avatar__badge {
