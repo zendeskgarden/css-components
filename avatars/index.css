@@ -146,14 +146,14 @@
 }
 
 .c-avatar.is-active .c-avatar__badge,.c-avatar.is-online .c-avatar__badge{
-  -webkit-animation:zd-avatar__badge-scale .3s ease-in-out;
-          animation:zd-avatar__badge-scale .3s ease-in-out;
   opacity:1;
 }
 
 .c-avatar.is-active .c-avatar__badge{
   right:-4px;
   bottom:-4px;
+  -webkit-animation:zd-avatar--active__badge .375s ease-in-out;
+          animation:zd-avatar--active__badge .375s ease-in-out;
   background-color:#cc3340;
   padding:0 5px;
   min-width:10px;
@@ -231,28 +231,16 @@
   font-size:10px;
 }
 
-@-webkit-keyframes zd-avatar__badge-scale{
+@-webkit-keyframes zd-avatar--active__badge{
   0%{
-    -webkit-transform:scale(0);
-            transform:scale(0);
-  }
-
-  66%{
-    -webkit-transform:scale(1.4);
-            transform:scale(1.4);
-    opacity:1;
+    -webkit-transform:scale(.1);
+            transform:scale(.1);
   }
 }
 
-@keyframes zd-avatar__badge-scale{
+@keyframes zd-avatar--active__badge{
   0%{
-    -webkit-transform:scale(0);
-            transform:scale(0);
-  }
-
-  66%{
-    -webkit-transform:scale(1.4);
-            transform:scale(1.4);
-    opacity:1;
+    -webkit-transform:scale(.1);
+            transform:scale(.1);
   }
 }
