@@ -1,10 +1,5 @@
-@keyframes zd-avatar__badge-scale {
+@keyframes zd-avatar--active__badge {
   0% {
-    transform: scale(0);
-  }
-
-  66% {
-    transform: scale(1.4);
-    opacity: 1;
+    transform: scale(.1);
   }
 }

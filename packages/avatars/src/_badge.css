@@ -1,7 +1,6 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-avatar__badge-animation: zd-avatar__badge-scale calc(var(--zd-avatar-transition-duration) * 1.2) ease-in-out;
   --zd-avatar__badge-border-radius: 100px;
   --zd-avatar__badge-color: var(--zd-color-white);
   --zd-avatar__badge-font-size: 10px;
@@ -11,6 +10,7 @@
   --zd-avatar__badge-transition:
     all var(--zd-avatar__badge-transition-duration) ease-in-out,
     color 0s;
+  --zd-avatar--active__badge-animation: zd-avatar--active__badge calc(var(--zd-avatar-transition-duration) * 1.5) ease-in-out;
   --zd-avatar--active__badge-min-width: var(--zd-avatar__badge-font-size);
   --zd-avatar--active__badge-padding: 0 5px;
   --zd-avatar--active__badge-position: -4px;
@@ -79,13 +79,13 @@ _:-ms-input-placeholder, .c-avatar__badge {
 
 .c-avatar.is-active .c-avatar__badge,
 .c-avatar.is-online .c-avatar__badge {
-  animation: var(--zd-avatar__badge-animation);
   opacity: 1;
 }
 
 .c-avatar.is-active .c-avatar__badge {
   right: var(--zd-avatar--active__badge-position);
   bottom: var(--zd-avatar--active__badge-position);
+  animation: var(--zd-avatar--active__badge-animation);
   background-color: var(--zd-color-red-600);
   padding: var(--zd-avatar--active__badge-padding);
   min-width: var(--zd-avatar--active__badge-min-width);
