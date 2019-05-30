@@ -107,7 +107,7 @@
 }
 
 .c-avatar.is-active{
-  box-shadow:0 0 0 2px #e35b66;
+  box-shadow:0 0 0 2px #e34f32;
 }
 
 .c-avatar.is-away{
@@ -122,11 +122,11 @@
   border-radius:4px;
 }
 
-.c-avatar--system.c-avatar--large{
+.c-avatar--system.c-avatar--lg{
   border-radius:5px;
 }
 
-.c-avatar--system .c-avatar__img,.c-avatar--system:before,.c-avatar--system>img{
+.c-avatar--system.c-avatar--sm{
   border-radius:3px;
 }
 
@@ -179,7 +179,7 @@
   bottom:-4px;
   -webkit-animation:zd-avatar--active__badge .375s ease-in-out;
           animation:zd-avatar--active__badge .375s ease-in-out;
-  background-color:#cc3340;
+  background-color:#e34f32;
   padding:0 5px;
   min-width:10px;
   height:20px;
