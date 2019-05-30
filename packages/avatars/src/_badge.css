@@ -86,7 +86,7 @@ _:-ms-input-placeholder, .c-avatar__badge {
   right: var(--zd-avatar--active__badge-position);
   bottom: var(--zd-avatar--active__badge-position);
   animation: var(--zd-avatar--active__badge-animation);
-  background-color: var(--zd-color-red-600);
+  background-color: var(--zd-avatar--active-color);
   padding: var(--zd-avatar--active__badge-padding);
   min-width: var(--zd-avatar--active__badge-min-width);
   height: var(--zd-avatar--active__badge-size);

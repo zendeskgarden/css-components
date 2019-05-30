@@ -2,7 +2,7 @@
 
 :root {
   --zd-avatar-box-shadow: 0 0 0 2px;
-  --zd-avatar--active-color: var(--zd-color-red-400);
+  --zd-avatar--active-color: var(--zd-color-secondary-crimson-400);
   --zd-avatar--away-color: var(--zd-color-yellow-400);
   --zd-avatar--online-color: var(--zd-color-secondary-mint-400);
 }
