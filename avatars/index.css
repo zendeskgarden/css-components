@@ -6,13 +6,16 @@
  */
 
 .c-avatar{
-  display:inline-block;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   position:relative;
   transition:box-shadow .25s ease-in-out,color .1s ease-in-out;
   margin:0;
   border-radius:50%;
   width:40px;
   height:40px;
+  vertical-align:middle;
   box-sizing:border-box;
   color:transparent;
 }
@@ -30,13 +33,15 @@
 }
 
 .c-avatar__img{
-  display:inline-block;
   overflow:hidden;
   text-align:center;
   line-height:40px;
   white-space:nowrap;
-  color:#fff;
   font-size:18px;
+}
+
+.c-avatar>svg,.c-avatar__img{
+  color:#fff;
 }
 
 .c-avatar>img,.c-avatar__img{
@@ -45,6 +50,11 @@
   height:100%;
   box-sizing:inherit;
   vertical-align:bottom;
+}
+
+.c-avatar>svg{
+  width:22px;
+  height:22px;
 }
 
 .c-avatar--lg{
@@ -57,6 +67,11 @@
   font-size:22px;
 }
 
+.c-avatar--lg>svg{
+  width:26px;
+  height:26px;
+}
+
 .c-avatar--sm{
   width:32px;
   height:32px;
@@ -67,6 +82,11 @@
   font-size:14px;
 }
 
+.c-avatar--sm>svg{
+  width:18px;
+  height:18px;
+}
+
 .c-avatar--xs{
   width:24px;
   height:24px;
@@ -75,6 +95,11 @@
 .c-avatar--xs .c-avatar__img{
   line-height:24px;
   font-size:12px;
+}
+
+.c-avatar--xs>svg{
+  width:12px;
+  height:12px;
 }
 
 .c-avatar.is-active,.c-avatar.is-away,.c-avatar.is-online{
