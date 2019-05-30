@@ -8,21 +8,25 @@
     color calc(var(--zd-avatar-transition-duration) * .4) ease-in-out;
   --zd-avatar-size: 40px;
   --zd-avatar__img-border-radius: 50%;
-  --zd-avatar__img-color: var(--zd-color-white);
-  --zd-avatar__img-font-size: var(--zd-font-size-lg);
+  --zd-avatar__svg-size: 22px;
+  --zd-avatar__txt-color: var(--zd-color-white);
+  --zd-avatar__txt-font-size: var(--zd-font-size-lg);
 }
 
 /* 1. Reset for <figure> element.
    2. Use `color` to manipulate inner box shadow and badge. */
 
 .c-avatar {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
   transition: var(--zd-avatar-transition);
   margin: 0; /* [1] */
   border-radius: var(--zd-avatar-border-radius);
   width: var(--zd-avatar-size);
   height: var(--zd-avatar-size);
+  vertical-align: middle;
   box-sizing: border-box;
   color: transparent; /* [2] */
 }
@@ -40,16 +44,6 @@
   content: '';
 }
 
-.c-avatar__img {
-  display: inline-block;
-  overflow: hidden;
-  text-align: center;
-  line-height: var(--zd-avatar-size);
-  white-space: nowrap;
-  color: var(--zd-avatar__img-color);
-  font-size: var(--zd-avatar__img-font-size);
-}
-
 .c-avatar__img,
 .c-avatar > img {
   border-radius: inherit;
@@ -57,4 +51,24 @@
   height: 100%;
   box-sizing: inherit;
   vertical-align: bottom;
+}
+
+.c-avatar__txt {
+  overflow: hidden;
+  text-align: center;
+  line-height: var(--zd-avatar-size);
+  white-space: nowrap;
+  font-size: var(--zd-avatar__txt-font-size);
+}
+
+.c-avatar__txt,
+.c-avatar__svg,
+.c-avatar > svg {
+  color: var(--zd-avatar__txt-color);
+}
+
+.c-avatar__svg,
+.c-avatar > svg {
+  width: var(--zd-avatar__svg-size);
+  height: var(--zd-avatar__svg-size);
 }
