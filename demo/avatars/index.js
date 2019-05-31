@@ -29,7 +29,7 @@ $(document).ready(function() {
   $('.js-status').change(function() {
     var status = $(this).val();
 
-    $('.c-avatar:not(.c-playground .c-avatar)').removeClass('is-online is-away is-active');
+    $('.c-avatar:not(.c-playground .c-avatar)').removeClass('is-available is-away is-active');
 
     if (status.length > 0) {
       $('.c-avatar:not(.c-playground .c-avatar)').addClass('is-' + status);

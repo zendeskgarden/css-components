@@ -4,12 +4,12 @@
   --zd-avatar-box-shadow: 0 0 0 2px;
   --zd-avatar--active-color: var(--zd-color-secondary-crimson-400);
   --zd-avatar--away-color: var(--zd-color-yellow-400);
-  --zd-avatar--online-color: var(--zd-color-secondary-mint-400);
+  --zd-avatar--available-color: var(--zd-color-secondary-mint-400);
 }
 
 .c-avatar.is-active,
 .c-avatar.is-away,
-.c-avatar.is-online {
+.c-avatar.is-available {
   color: var(--zd-color-white);
 }
 
@@ -21,6 +21,6 @@
   box-shadow: var(--zd-avatar-box-shadow) var(--zd-avatar--away-color);
 }
 
-.c-avatar.is-online {
-  box-shadow: var(--zd-avatar-box-shadow) var(--zd-avatar--online-color);
+.c-avatar.is-available {
+  box-shadow: var(--zd-avatar-box-shadow) var(--zd-avatar--available-color);
 }

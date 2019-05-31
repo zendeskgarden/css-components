@@ -21,21 +21,23 @@
   <style>
     .c-chrome__body__header__item .c-avatar { display: inline-flex; }
 
+    .is-dark .c-range__label { color: white; }
+
     .is-dark .c-avatar.is-active,
     .is-dark .c-avatar.is-away,
-    .is-dark .c-avatar.is-online {
+    .is-dark .c-avatar.is-available {
       color: #012b30;
     }
 
     .c-menu__item .c-avatar.is-active,
     .c-menu__item .c-avatar.is-away,
-    .c-menu__item .c-avatar.is-online { 
+    .c-menu__item .c-avatar.is-available { 
        color: white;
     }
 
     .c-menu__item:hover .c-avatar.is-active,
     .c-menu__item:hover .c-avatar.is-away,
-    .c-menu__item:hover .c-avatar.is-online { 
+    .c-menu__item:hover .c-avatar.is-available { 
        color: #EDF7FF;
      }
 
@@ -88,16 +90,16 @@
                   <label class="c-chk__label c-chk__label--radio" for="nav.ctl.status.none">None</label>
                 </div>
                 <div class="c-chk">
-                  <input class="c-chk__input js-status" id="nav.ctl.status.online" name="nav.ctl.status" type="radio" value="online">
-                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.status.online"><code class="c-code">.is-online</code></label>
-                </div>
-                <div class="c-chk">
-                  <input class="c-chk__input js-status" id="nav.ctl.status.away" name="nav.ctl.status" type="radio" value="away">
-                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.status.away"><code class="c-code">.is-away</code></label>
+                  <input class="c-chk__input js-status" id="nav.ctl.status.available" name="nav.ctl.status" type="radio" value="available">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.status.available"><code class="c-code">.is-available</code></label>
                 </div>
                 <div class="c-chk">
                   <input class="c-chk__input js-status" id="nav.ctl.status.active" name="nav.ctl.status" type="radio" value="active">
                   <label class="c-chk__label c-chk__label--radio" for="nav.ctl.status.active"><code class="c-code">.is-active</code></label>
+                </div>
+                <div class="c-chk">
+                  <input class="c-chk__input js-status" id="nav.ctl.status.away" name="nav.ctl.status" type="radio" value="away">
+                  <label class="c-chk__label c-chk__label--radio" for="nav.ctl.status.away"><code class="c-code">.is-away</code></label>
                 </div>
               </div>
             </li>
@@ -570,7 +572,7 @@
     <img alt="user" src="images/ma.png">
     <figcaption class="c-avatar__badge">3</figcaption>
   </figure>
-  <figure class="c-avatar is-online u-mr">
+  <figure class="c-avatar is-available u-mr">
     <img alt="user" src="images/ma.png">
     <figcaption class="c-avatar__badge"></figcaption>
   </figure>
