@@ -1,16 +1,31 @@
 @import '@zendeskgarden/css-variables';
 
 :root {
-  --zd-avatar--large-border-width: 2px;
   --zd-avatar--xs-size: 24px;
+  --zd-avatar--xs__svg-size: 12px;
+  --zd-avatar--xs__txt-font-size: var(--zd-font-size-sm);
   --zd-avatar--sm-size: 32px;
+  --zd-avatar--sm__svg-size: 18px;
+  --zd-avatar--sm__txt-font-size: var(--zd-font-size-md);
   --zd-avatar--lg-size: 48px;
+  --zd-avatar--lg__svg-size: 26px;
+  --zd-avatar--lg__txt-font-size: var(--zd-font-size-xl);
 }
 
 .c-avatar--lg {
-  border-width: var(--zd-avatar--large-border-width);
   width: var(--zd-avatar--lg-size);
   height: var(--zd-avatar--lg-size);
+}
+
+.c-avatar--lg .c-avatar__txt {
+  line-height: var(--zd-avatar--lg-size);
+  font-size: var(--zd-avatar--lg__txt-font-size);
+}
+
+.c-avatar--lg .c-avatar__svg,
+.c-avatar--lg > svg {
+  width: var(--zd-avatar--lg__svg-size);
+  height: var(--zd-avatar--lg__svg-size);
 }
 
 .c-avatar--sm {
@@ -18,7 +33,29 @@
   height: var(--zd-avatar--sm-size);
 }
 
+.c-avatar--sm .c-avatar__txt {
+  line-height: var(--zd-avatar--sm-size);
+  font-size: var(--zd-avatar--sm__txt-font-size);
+}
+
+.c-avatar--sm .c-avatar__svg,
+.c-avatar--sm > svg {
+  width: var(--zd-avatar--sm__svg-size);
+  height: var(--zd-avatar--sm__svg-size);
+}
+
 .c-avatar--xs {
   width: var(--zd-avatar--xs-size);
   height: var(--zd-avatar--xs-size);
+}
+
+.c-avatar--xs .c-avatar__txt {
+  line-height: var(--zd-avatar--xs-size);
+  font-size: var(--zd-avatar--xs__txt-font-size);
+}
+
+.c-avatar--xs .c-avatar__svg,
+.c-avatar--xs > svg {
+  width: var(--zd-avatar--xs__svg-size);
+  height: var(--zd-avatar--xs__svg-size);
 }

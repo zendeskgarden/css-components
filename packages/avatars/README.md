@@ -20,19 +20,18 @@ Use avatar CSS to style user and system images.
 
 ```html
 <figure class="c-avatar">
-  <img alt="user avatar" src="images/user.png">
+  <img alt="user avatar" src="images/user.png" />
 </figure>
 
 <figure class="c-avatar c-avatar--system">
-  <img alt="system avatar" src="images/system.png">
+  <img alt="system avatar" src="images/system.png" />
 </figure>
 ```
 
 ### Modifications
 
-Avatar classes retain affordance for indicating state. See
-http://zendeskgarden.github.io/css-avatars for various modification
-classes.
+Avatar classes can be used to indicate state. See
+http://zendeskgarden.github.io/css-avatars for various modification classes.
 
 ### Behavior
 

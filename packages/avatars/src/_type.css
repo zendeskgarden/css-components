@@ -2,24 +2,18 @@
 
 :root {
   --zd-avatar--system-border-radius: 4px;
-  --zd-avatar--system--large-border-radius: 5px;
-  --zd-avatar--system__img-border-radius: 3px;
-}
-
-.c-avatar--borderless .c-avatar__img,
-.c-avatar--borderless > img {
-  border-color: transparent;
+  --zd-avatar--system--lg-border-radius: 5px;
+  --zd-avatar--system--sm-border-radius: 3px;
 }
 
 .c-avatar--system {
   border-radius: var(--zd-avatar--system-border-radius);
 }
 
-.c-avatar--system.c-avatar--large {
-  border-radius: var(--zd-avatar--system--large-border-radius);
+.c-avatar--system.c-avatar--lg {
+  border-radius: var(--zd-avatar--system--lg-border-radius);
 }
 
-.c-avatar--system .c-avatar__img,
-.c-avatar--system > img {
-  border-radius: var(--zd-avatar--system__img-border-radius);
+.c-avatar--system.c-avatar--sm {
+  border-radius: var(--zd-avatar--system--sm-border-radius);
 }
