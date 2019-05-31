@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@4.0.14...@zendeskgarden/css-avatars@5.0.0) (2019-05-31)
+
+
+### Features
+
+* **avatars:** presence status ([#195](https://github.com/zendeskgarden/css-components/issues/195)) ([42cb767](https://github.com/zendeskgarden/css-components/commit/42cb767))
+
+
+### BREAKING CHANGES
+
+* **avatars:** removed
+* `.c-avatar--borderless` – avatars no longer have a default single pixel border; images now expand to the full size of the container.
+* `.c-avatar.is-disabled` – this state is not reflected in product and doesn't retain strong semantic value.
+
+Added:
+* Status modifications:
+    * `.c-avatar.is-active`
+    * `.c-avatar.is-away`
+    * `.c-avatar.is-available`
+* `.c-avatar .c-avatar__badge` child element to pair with active/available status.
+* `.c-avatar.is-rtl` for alternate badge positioning.
+* `.c-avatar .c-avatar__txt` child for text avatar styling.
+* `.c-avatar .c-avatar__svg` child for icon avatar styling.
+
+
+
+
+
 ## [4.0.14](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@4.0.13...@zendeskgarden/css-avatars@4.0.14) (2019-05-31)
 
 **Note:** Version bump only for package @zendeskgarden/css-avatars
