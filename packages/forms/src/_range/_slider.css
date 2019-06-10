@@ -90,7 +90,7 @@
   box-shadow: none;
 }
 
-.c-range__slider.is-disabled .c-range__slider {
+.c-range__slider.is-disabled {
   cursor: default;
 }
 
