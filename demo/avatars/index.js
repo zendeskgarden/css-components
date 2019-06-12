@@ -14,13 +14,13 @@ $(document).ready(function() {
   $('.js-count')
     .on('change input', function() {
       var count = $(this).val();
-      var text = count > 0 ? count : '';
+      var data = count > 0 ? count : '';
 
       if (count > 9) {
-        text = '9+';
+        data = '9+';
       }
 
-      $('.c-avatar:not(.c-playground .c-avatar) .c-avatar__badge').text(text);
+      $('.c-avatar:not(.c-playground .c-avatar)').attr('data-badge', data);
     })
     .click(function() {
       return false;
