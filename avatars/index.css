@@ -130,7 +130,7 @@
   border-radius:3px;
 }
 
-.c-avatar__badge{
+.c-avatar:after{
   display:inline-block;
   position:absolute;
   right:2px;
@@ -149,32 +149,33 @@
   font-size:0;
   font-weight:600;
   -webkit-text-fill-color:#fff;
+  content:"";
 }
 
-.c-avatar__badge,_:-ms-input-placeholder{
+.c-avatar:after,_:-ms-input-placeholder{
   color:#fff;
 }
 
-.c-avatar--lg .c-avatar__badge{
+.c-avatar--lg:after{
   right:3px;
   bottom:3px;
 }
 
-.c-avatar--sm .c-avatar__badge{
+.c-avatar--sm:after{
   right:1px;
   bottom:1px;
 }
 
-.c-avatar--xs .c-avatar__badge{
+.c-avatar--xs:after{
   right:0;
   bottom:0;
 }
 
-.c-avatar.is-active .c-avatar__badge,.c-avatar.is-available .c-avatar__badge{
+.c-avatar.is-active:after,.c-avatar.is-available:after{
   opacity:1;
 }
 
-.c-avatar.is-active .c-avatar__badge{
+.c-avatar.is-active:after{
   right:-4px;
   bottom:-4px;
   -webkit-animation:zd-avatar--active__badge .375s ease-in-out;
@@ -186,7 +187,7 @@
   line-height:20px;
 }
 
-.c-avatar.is-available .c-avatar__badge{
+.c-avatar.is-available:after{
   right:-4px;
   bottom:-4px;
   background-color:#00a656;
@@ -195,65 +196,66 @@
   line-height:12px;
 }
 
-.c-avatar--xs.is-active .c-avatar__badge{
+.c-avatar--xs.is-active:after{
   padding:0;
 }
 
-.c-avatar--xs.is-active .c-avatar__badge,.c-avatar--xs.is-available .c-avatar__badge{
+.c-avatar--xs.is-active:after,.c-avatar--xs.is-available:after{
   min-width:8px;
   height:8px;
   line-height:8px;
 }
 
-.c-avatar--sm.is-active .c-avatar__badge{
+.c-avatar--sm.is-active:after{
   padding:0 3px;
   height:16px;
   line-height:16px;
 }
 
-.c-avatar--sm.is-available .c-avatar__badge{
+.c-avatar--sm.is-available:after{
   min-width:10px;
   height:10px;
   line-height:10px;
 }
 
-.c-avatar--lg.is-active .c-avatar__badge{
+.c-avatar--lg.is-active:after{
   padding:0 5px;
 }
 
-.c-avatar--lg.is-available .c-avatar__badge{
+.c-avatar--lg.is-available:after{
   min-width:14px;
   height:14px;
   line-height:14px;
 }
 
-.c-avatar.is-rtl .c-avatar__badge{
+.c-avatar.is-rtl:after{
   right:auto;
   left:2px;
 }
 
-.c-avatar--lg.is-rtl .c-avatar__badge{
+.c-avatar--lg.is-rtl:after{
   left:3px;
 }
 
-.c-avatar--sm.is-rtl .c-avatar__badge{
+.c-avatar--sm.is-rtl:after{
   left:1px;
 }
 
-.c-avatar--xs.is-rtl .c-avatar__badge{
+.c-avatar--xs.is-rtl:after{
   left:0;
 }
 
-.c-avatar.is-active.is-rtl .c-avatar__badge,.c-avatar.is-available.is-rtl .c-avatar__badge{
+.c-avatar.is-active.is-rtl:after,.c-avatar.is-available.is-rtl:after{
   left:-4px;
 }
 
-.c-avatar:not(.c-avatar--xs).is-active .c-avatar__badge{
+.c-avatar:not(.c-avatar--xs).is-active:after{
   max-width:2em;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
   font-size:10px;
+  content:attr(data-badge);
 }
 
 @-webkit-keyframes zd-avatar--active__badge{
