@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@5.0.1...@zendeskgarden/css-avatars@6.0.0) (2019-06-13)
+
+
+### Bug Fixes
+
+* **avatars:** use `::after` psuedo for status badge information ([#202](https://github.com/zendeskgarden/css-components/issues/202)) ([e5ac0aa](https://github.com/zendeskgarden/css-components/commit/e5ac0aa))
+
+
+### BREAKING CHANGES
+
+* **avatars:** removes .c-avatar__badge element in favor of expressing badge information via data-badge attribute.
+
+
+
+
+
 ## [5.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@5.0.0...@zendeskgarden/css-avatars@5.0.1) (2019-06-10)
 
 **Note:** Version bump only for package @zendeskgarden/css-avatars
