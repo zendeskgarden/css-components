@@ -35,7 +35,7 @@
    3. Fallback for IE 11 (which will set border).
    4. Improve animation easing. */
 
-.c-avatar__badge {
+.c-avatar::after {
   display: inline-block;
   position: absolute;
   right: var(--zd-avatar__badge-position);
@@ -54,35 +54,36 @@
   font-size: 0;
   font-weight: var(--zd-avatar__badge-font-weight);
   -webkit-text-fill-color: var(--zd-avatar__badge-color); /* [2] */
+  content: '';
 }
 
 /* stylelint-disable selector-type-no-unknown, selector-no-vendor-prefix */
-_:-ms-input-placeholder, .c-avatar__badge {
+_:-ms-input-placeholder, .c-avatar::after {
   color: var(--zd-avatar__badge-color); /* [3] */
 }
 /* stylelint-enable selector-type-no-unknown, selector-no-vendor-prefix */
 
-.c-avatar--lg .c-avatar__badge {
+.c-avatar--lg::after {
   right: var(--zd-avatar--lg__badge-position);
   bottom: var(--zd-avatar--lg__badge-position);
 }
 
-.c-avatar--sm .c-avatar__badge {
+.c-avatar--sm::after {
   right: var(--zd-avatar--sm__badge-position);
   bottom: var(--zd-avatar--sm__badge-position);
 }
 
-.c-avatar--xs .c-avatar__badge {
+.c-avatar--xs::after {
   right: var(--zd-avatar--xs__badge-position);
   bottom: var(--zd-avatar--xs__badge-position);
 }
 
-.c-avatar.is-active .c-avatar__badge,
-.c-avatar.is-available .c-avatar__badge {
+.c-avatar.is-active::after,
+.c-avatar.is-available::after {
   opacity: 1;
 }
 
-.c-avatar.is-active .c-avatar__badge {
+.c-avatar.is-active::after {
   right: var(--zd-avatar--active__badge-position);
   bottom: var(--zd-avatar--active__badge-position);
   animation: var(--zd-avatar--active__badge-animation);
@@ -93,7 +94,7 @@ _:-ms-input-placeholder, .c-avatar__badge {
   line-height: var(--zd-avatar--active__badge-size);
 }
 
-.c-avatar.is-available .c-avatar__badge {
+.c-avatar.is-available::after {
   right: var(--zd-avatar--available__badge-position);
   bottom: var(--zd-avatar--available__badge-position);
   background-color: var(--zd-avatar--available-color);
@@ -102,72 +103,71 @@ _:-ms-input-placeholder, .c-avatar__badge {
   line-height: var(--zd-avatar--available__badge-size); /* [4] */
 }
 
-.c-avatar--xs.is-active .c-avatar__badge {
+.c-avatar--xs.is-active::after {
   padding: 0;
   min-width: var(--zd-avatar--xs--active__badge-min-width);
   height: var(--zd-avatar--xs--active__badge-size);
   line-height: var(--zd-avatar--xs--active__badge-size);
 }
 
-.c-avatar--xs.is-available .c-avatar__badge {
+.c-avatar--xs.is-available::after {
   min-width: var(--zd-avatar--xs--available__badge-size);
   height: var(--zd-avatar--xs--available__badge-size);
   line-height: var(--zd-avatar--xs--available__badge-size); /* [4] */
 }
 
-.c-avatar--sm.is-active .c-avatar__badge {
+.c-avatar--sm.is-active::after {
   padding: var(--zd-avatar--sm--active__badge-padding);
   height: var(--zd-avatar--sm--active__badge-size);
   line-height: var(--zd-avatar--sm--active__badge-size);
 }
 
-.c-avatar--sm.is-available .c-avatar__badge {
+.c-avatar--sm.is-available::after {
   min-width: var(--zd-avatar--sm--available__badge-size);
   height: var(--zd-avatar--sm--available__badge-size);
   line-height: var(--zd-avatar--sm--available__badge-size); /* [4] */
 }
 
-.c-avatar--lg.is-active .c-avatar__badge {
+.c-avatar--lg.is-active::after {
   padding: var(--zd-avatar--lg--active__badge-padding);
 }
 
-.c-avatar--lg.is-available .c-avatar__badge {
+.c-avatar--lg.is-available::after {
   min-width: var(--zd-avatar--lg--available__badge-size);
   height: var(--zd-avatar--lg--available__badge-size);
   line-height: var(--zd-avatar--lg--available__badge-size); /* [4] */
 }
 
-.c-avatar.is-rtl .c-avatar__badge {
+.c-avatar.is-rtl::after {
   right: auto;
   left: var(--zd-avatar__badge-position);
 }
 
-.c-avatar--lg.is-rtl .c-avatar__badge {
+.c-avatar--lg.is-rtl::after {
   left: var(--zd-avatar--lg__badge-position);
 }
 
-.c-avatar--sm.is-rtl .c-avatar__badge {
+.c-avatar--sm.is-rtl::after {
   left: var(--zd-avatar--sm__badge-position);
 }
 
-.c-avatar--xs.is-rtl .c-avatar__badge {
+.c-avatar--xs.is-rtl::after {
   left: var(--zd-avatar--xs__badge-position);
 }
 
-/* stylelint-disable selector-max-specificity */
-
-.c-avatar.is-active.is-rtl .c-avatar__badge {
+.c-avatar.is-active.is-rtl::after {
   left: var(--zd-avatar--active__badge-position);
 }
 
-.c-avatar.is-available.is-rtl .c-avatar__badge {
+.c-avatar.is-available.is-rtl::after {
   left: var(--zd-avatar--available__badge-position);
 }
 
-.c-avatar:not(.c-avatar--xs).is-active .c-avatar__badge {
+.c-avatar:not(.c-avatar--xs).is-active::after {
   max-width: 2em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: var(--zd-avatar__badge-font-size);
+  content: attr(data-badge);
 }
