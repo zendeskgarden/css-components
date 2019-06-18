@@ -53,8 +53,9 @@
 }
 
 .c-avatar>svg,.c-avatar__svg{
-  width:22px;
-  height:22px;
+  width:1em;
+  height:1em;
+  font-size:16px;
 }
 
 .c-avatar--lg{
@@ -68,8 +69,7 @@
 }
 
 .c-avatar--lg .c-avatar__svg,.c-avatar--lg>svg{
-  width:26px;
-  height:26px;
+  font-size:24px;
 }
 
 .c-avatar--sm{
@@ -83,8 +83,7 @@
 }
 
 .c-avatar--sm .c-avatar__svg,.c-avatar--sm>svg{
-  width:18px;
-  height:18px;
+  font-size:12px;
 }
 
 .c-avatar--xs{
@@ -98,8 +97,7 @@
 }
 
 .c-avatar--xs .c-avatar__svg,.c-avatar--xs>svg{
-  width:12px;
-  height:12px;
+  font-size:12px;
 }
 
 .c-avatar.is-active,.c-avatar.is-available,.c-avatar.is-away{
