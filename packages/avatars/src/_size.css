@@ -5,10 +5,10 @@
   --zd-avatar--xs__svg-size: 12px;
   --zd-avatar--xs__txt-font-size: var(--zd-font-size-sm);
   --zd-avatar--sm-size: 32px;
-  --zd-avatar--sm__svg-size: 18px;
+  --zd-avatar--sm__svg-size: 12px;
   --zd-avatar--sm__txt-font-size: var(--zd-font-size-md);
   --zd-avatar--lg-size: 48px;
-  --zd-avatar--lg__svg-size: 26px;
+  --zd-avatar--lg__svg-size: 24px;
   --zd-avatar--lg__txt-font-size: var(--zd-font-size-xl);
 }
 
@@ -24,8 +24,7 @@
 
 .c-avatar--lg .c-avatar__svg,
 .c-avatar--lg > svg {
-  width: var(--zd-avatar--lg__svg-size);
-  height: var(--zd-avatar--lg__svg-size);
+  font-size: var(--zd-avatar--lg__svg-size);
 }
 
 .c-avatar--sm {
@@ -40,8 +39,7 @@
 
 .c-avatar--sm .c-avatar__svg,
 .c-avatar--sm > svg {
-  width: var(--zd-avatar--sm__svg-size);
-  height: var(--zd-avatar--sm__svg-size);
+  font-size: var(--zd-avatar--sm__svg-size);
 }
 
 .c-avatar--xs {
@@ -56,6 +54,5 @@
 
 .c-avatar--xs .c-avatar__svg,
 .c-avatar--xs > svg {
-  width: var(--zd-avatar--xs__svg-size);
-  height: var(--zd-avatar--xs__svg-size);
+  font-size: var(--zd-avatar--xs__svg-size);
 }

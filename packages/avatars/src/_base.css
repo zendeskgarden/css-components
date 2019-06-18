@@ -8,7 +8,7 @@
     color calc(var(--zd-avatar-transition-duration) * .4) ease-in-out;
   --zd-avatar-size: 40px;
   --zd-avatar__img-border-radius: 50%;
-  --zd-avatar__svg-size: 22px;
+  --zd-avatar__svg-size: 16px;
   --zd-avatar__txt-color: var(--zd-color-white);
   --zd-avatar__txt-font-size: var(--zd-font-size-lg);
 }
@@ -69,6 +69,7 @@
 
 .c-avatar__svg,
 .c-avatar > svg {
-  width: var(--zd-avatar__svg-size);
-  height: var(--zd-avatar__svg-size);
+  width: 1em;
+  height: 1em;
+  font-size: var(--zd-avatar__svg-size);
 }
