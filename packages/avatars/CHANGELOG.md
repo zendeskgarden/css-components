@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.0...@zendeskgarden/css-avatars@6.0.1) (2019-06-20)
+
+
+### Bug Fixes
+
+* **avatars:** adjust SVG sizing ([#204](https://github.com/zendeskgarden/css-components/issues/204)) ([3bc0018](https://github.com/zendeskgarden/css-components/commit/3bc0018))
+
+
+
+
+
 # [6.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@5.0.1...@zendeskgarden/css-avatars@6.0.0) (2019-06-13)
 
 
