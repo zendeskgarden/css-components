@@ -13,9 +13,9 @@ module.exports = {
       }
     },
     'postcss-inline-svg': {
-      path: path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')
+      paths: [path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')]
     },
-    'cssnano': {
+    cssnano: {
       preset: [
         'default',
         {
