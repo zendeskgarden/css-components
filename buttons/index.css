@@ -307,9 +307,7 @@
 }
 
 .c-btn__icon{
-  transition:-webkit-transform .25s ease-in-out;
   transition:transform .25s ease-in-out;
-  transition:transform .25s ease-in-out,-webkit-transform .25s ease-in-out;
   margin-top:-2px;
   width:16px;
   height:16px;
@@ -322,13 +320,11 @@
 }
 
 .c-btn__icon.is-rotated{
-  -webkit-transform:rotate(180deg);
-          transform:rotate(180deg);
+  transform:rotate(180deg);
 }
 
 .is-rtl .c-btn__icon.is-rotated{
-  -webkit-transform:rotate(-180deg);
-          transform:rotate(-180deg);
+  transform:rotate(-180deg);
 }
 
 .c-btn--muted{

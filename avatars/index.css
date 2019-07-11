@@ -258,14 +258,12 @@
 
 @-webkit-keyframes zd-avatar--active__badge{
   0%{
-    -webkit-transform:scale(.1);
-            transform:scale(.1);
+    transform:scale(.1);
   }
 }
 
 @keyframes zd-avatar--active__badge{
   0%{
-    -webkit-transform:scale(.1);
-            transform:scale(.1);
+    transform:scale(.1);
   }
 }
