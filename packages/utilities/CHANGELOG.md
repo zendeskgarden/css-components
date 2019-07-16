@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@4.3.5...@zendeskgarden/css-utilities@4.4.0) (2019-07-16)
+
+
+### Features
+
+* **utilities:** update `.u-list-style-*` styling ([#213](https://github.com/zendeskgarden/css-components/issues/213)) ([1e3d62b](https://github.com/zendeskgarden/css-components/commit/1e3d62b))
+
+
+
+
+
 ## [4.3.5](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@4.3.4...@zendeskgarden/css-utilities@4.3.5) (2019-06-10)
 
 **Note:** Version bump only for package @zendeskgarden/css-utilities
