@@ -969,25 +969,68 @@
 
 .u-lh-xxxl{ line-height:44px !important; }
 
-.u-list-style-circle{ list-style:circle inside !important; }
+.u-list-style-circle{
+  list-style:circle outside !important;
+}
 
-.u-list-style-decimal{ list-style:decimal inside !important; }
+.u-list-style-decimal{
+  list-style:decimal outside !important;
+}
 
-.u-list-style-decimal-leading-zero{ list-style:decimal-leading-zero inside !important; }
+.u-list-style-decimal-leading-zero{
+  list-style:decimal-leading-zero outside !important;
+}
 
-.u-list-style-disc{ list-style:disc inside !important; }
+.u-list-style-disc{
+  list-style:disc outside !important;
+}
 
-.u-list-style-lower-alpha{ list-style:lower-alpha inside !important; }
+.u-list-style-lower-alpha{
+  list-style:lower-alpha outside !important;
+}
 
-.u-list-style-lower-roman{ list-style:lower-roman inside !important; }
+.u-list-style-lower-roman{
+  list-style:lower-roman outside !important;
+}
 
-.u-list-style-none{ list-style:none inside !important; }
+.u-list-style-none{
+  list-style:none outside !important;
+}
 
-.u-list-style-square{ list-style:square inside !important; }
+.u-list-style-square{
+  list-style:square outside !important;
+}
 
-.u-list-style-upper-alpha{ list-style:upper-alpha inside !important; }
+.u-list-style-upper-alpha{
+  list-style:upper-alpha outside !important;
+}
 
-.u-list-style-upper-roman{ list-style:upper-roman inside !important; }
+.u-list-style-upper-roman{
+  list-style:upper-roman outside !important;
+}
+
+[class^=u-list-style-]{
+  margin-left:24px;
+  padding:0;
+}
+
+[class^=u-list-style-].is-rtl{
+  direction:rtl;
+  margin-right:24px;
+  margin-left:0;
+}
+
+.u-list-style-decimal-leading-zero>li,.u-list-style-decimal>li,.u-list-style-lower-alpha>li,.u-list-style-lower-roman>li,.u-list-style-upper-alpha>li,.u-list-style-upper-roman>li{
+  margin-left:-4px;
+  padding-left:4px;
+}
+
+.u-list-style-decimal-leading-zero.is-rtl>li,.u-list-style-decimal.is-rtl>li,.u-list-style-lower-alpha.is-rtl>li,.u-list-style-lower-roman.is-rtl>li,.u-list-style-upper-alpha.is-rtl>li,.u-list-style-upper-roman.is-rtl>li{
+  margin-right:-4px;
+  margin-left:0;
+  padding-right:4px;
+  padding-left:0;
+}
 
 .u-opacity-opaque{ opacity:1 !important; }
 

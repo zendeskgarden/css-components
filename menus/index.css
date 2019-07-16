@@ -197,7 +197,8 @@
 }
 
 .c-menu.is-rtl .c-menu__item.c-menu__item--next:before,.c-menu.is-rtl .c-menu__item.c-menu__item--previous:before{
-  transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+          transform:rotate(180deg);
 }
 
 .c-menu__item__meta{

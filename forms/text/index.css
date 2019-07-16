@@ -170,7 +170,9 @@
 }
 
 .c-txt__input--select:not(select):before,select.c-txt__input--select{
+  transition:background-image .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out;
   transition:background-image .25s ease-in-out,transform .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
+  transition:background-image .25s ease-in-out,transform .25s ease-in-out,border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out,-webkit-transform .25s ease-in-out;
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%2368737D'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' d='M4 6.5l3.6 3.6c.2.2.5.2.7 0L12 6.5'/%3E%3C/svg%3E");
   background-repeat:no-repeat;
   background-position:right .85714em center;
@@ -209,7 +211,9 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .c-txt__input--select.is-open:not(.is-disabled):not([disabled]):not(select):before{
-  transform:rotate(180deg)
+  -webkit-transform:rotate(180deg)
+    translateY(-1px);
+          transform:rotate(180deg)
     translateY(-1px);
 }
 
@@ -238,7 +242,9 @@ select.c-txt__input--select:-moz-focusring{
 }
 
 .is-rtl.c-txt__input--select.is-open:not(.is-disabled):not([disabled]):not(select):before{
-  transform:rotate(-180deg)
+  -webkit-transform:rotate(-180deg)
+    translateY(-1px);
+          transform:rotate(-180deg)
     translateY(-1px);
 }
 

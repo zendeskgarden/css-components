@@ -121,7 +121,8 @@
   top:0;
   right:0;
   left:0;
-  transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+          transform:rotate(90deg);
   transition:opacity .25s ease-in-out,background-color .1s ease-in-out;
   border-radius:50%;
   background-repeat:no-repeat;

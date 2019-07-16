@@ -51,7 +51,8 @@
 }
 
 .c-breadcrumb.is-rtl .c-breadcrumb__item:before{
-  transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+          transform:rotate(180deg);
 }
 
 .c-breadcrumb__item.is-current{
