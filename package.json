@@ -16,7 +16,7 @@
   "devDependencies": {
     "@zendeskgarden/eslint-config": "7.2.2",
     "@zendeskgarden/stylelint-config": "10.0.0",
-    "@zendeskgarden/svg-icons": "6.3.0",
+    "@zendeskgarden/svg-icons": "6.3.1",
     "babel-eslint": "10.0.2",
     "chalk": "2.4.2",
     "cssnano": "4.1.10",
@@ -24,7 +24,7 @@
     "eslint-plugin-notice": "0.8.8",
     "gh-pages": "2.0.1",
     "handlebars": "4.1.2",
-    "husky": "3.0.0",
+    "husky": "3.0.1",
     "klaw-sync": "6.0.0",
     "lerna": "3.15.0",
     "live-server": "1.2.1",
