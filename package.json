@@ -26,7 +26,7 @@
     "handlebars": "4.1.2",
     "husky": "3.0.1",
     "klaw-sync": "6.0.0",
-    "lerna": "3.16.1",
+    "lerna": "3.16.4",
     "live-server": "1.2.1",
     "ncp": "2.0.0",
     "perfect-scrollbar": "1.4.0",
