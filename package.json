@@ -36,7 +36,7 @@
     "postcss-input-range": "4.0.0",
     "postcss-preset-env": "6.7.0",
     "prettier-package-json": "2.1.0",
-    "rimraf": "2.6.3",
+    "rimraf": "2.7.1",
     "stylelint": "10.1.0",
     "stylelint-order": "3.0.1",
     "tinycolor2": "1.4.1"
