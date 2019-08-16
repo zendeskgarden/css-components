@@ -115,6 +115,7 @@ retVal = Object.assign(retVal, {
   'chat-orange': { r: 247, g: 154, b: 62 },
   'connect-red': { r: 235, g: 102, b: 81 },
   'explore-blue': { r: 48, g: 170, b: 188 },
+  'gather-pink': { r: 231, g: 175, b: 162 },
   'guide-pink': { r: 235, g: 73, b: 98 },
   'message-green': { r: 55, g: 184, b: 175 },
   'sell-gold': { r: 212, g: 174, b: 94 },

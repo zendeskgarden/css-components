@@ -219,6 +219,8 @@
 
 .u-bg-explore-blue { background-color: var(--zd-color-explore-blue) !important; }
 
+.u-bg-gather-pink { background-color: var(--zd-color-gather-pink) !important; }
+
 .u-bg-guide-pink { background-color: var(--zd-color-guide-pink) !important; }
 
 .u-bg-message-green { background-color: var(--zd-color-message-green) !important; }
@@ -436,6 +438,8 @@
 .u-fg-connect-red { color: var(--zd-color-connect-red) !important; }
 
 .u-fg-explore-blue { color: var(--zd-color-explore-blue) !important; }
+
+.u-fg-gather-pink { color: var(--zd-color-gather-pink) !important; }
 
 .u-fg-guide-pink { color: var(--zd-color-guide-pink) !important; }
 
@@ -656,6 +660,8 @@
 .u-bc-connect-red { border-color: var(--zd-color-connect-red) !important; }
 
 .u-bc-explore-blue { border-color: var(--zd-color-explore-blue) !important; }
+
+.u-bc-gather-pink { border-color: var(--zd-color-gather-pink) !important; }
 
 .u-bc-guide-pink { border-color: var(--zd-color-guide-pink) !important; }
 
