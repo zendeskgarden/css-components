@@ -11,14 +11,13 @@
   --zd-menu-font-size: var(--zd-font-size-md);
   --zd-menu-font-weight: var(--zd-font-weight-regular);
   --zd-menu-min-width: 180px;
-  --zd-menu-padding: 8px 0;
+  --zd-menu-padding: 8px;
 }
 
 /* 1. Positioned relative to controlling item.
  * 2. Opt out of browser default list margin.
  * 3. Prevent controlling item cursor inheritance.
- * 4. Vertically, add extra space;
- *    horizontally, opt out of browser default list padding.
+ * 4. Opt out of browser default list padding.
  * 5. Prevent controlling item whitespace inheritance.
  */
 .c-menu {
@@ -31,8 +30,9 @@
   box-shadow: var(--zd-menu-box-shadow);
   background-color: var(--zd-menu-background-color);
   cursor: default; /* [3] */
-  padding: var(--zd-menu-padding); /* [4] */
+  padding: 0; /* [4] */
   min-width: var(--zd-menu-min-width);
+  overflow-y: auto;
   text-align: left;
   white-space: normal; /* [5] */
   font-size: var(--zd-menu-font-size);

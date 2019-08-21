@@ -274,27 +274,37 @@
         <p class="u-mb">By default, a menu will expand to accommodate the width
         of it's items. Override the menu's <code class="c-code">min-width</code>
         to increase the container size. Overriding <code class="c-code">max-width</code>
-        can force longer items to wrap.</p>
+        can force longer items to wrap. Override <code class="c-code">max-height</code>
+        in order to scroll menu items.</p>
         <div class="l-grid">
-          <div class="l-grid__item u-1/3">
+          <div class="l-grid__item u-1/4">
             <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static">
               <li class="c-menu__item c-menu__item--header">Standard Menu</li>
               <li class="c-menu__separator">
               <li class="c-menu__item">...with a very, very, very long menu item</li>
             </ul>
           </div
-          ><div class="l-grid__item u-1/3">
+          ><div class="l-grid__item u-1/4">
             <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static" style="min-width:270px">
               <li class="c-menu__item c-menu__item--header">Override min-width</li>
               <li class="c-menu__separator">
               <li class="c-menu__item">short item</li>
             </ul>
           </div
-          ><div class="l-grid__item u-1/3">
+          ><div class="l-grid__item u-1/4">
             <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static" style="max-width:200px">
               <li class="c-menu__item c-menu__item--header">Override max-width</li>
               <li class="c-menu__separator">
               <li class="c-menu__item">...in order to force a very long item to wrap</li>
+            </ul>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static" style="max-height:120px">
+              <li class="c-menu__item c-menu__item--header">Override max-height</li>
+              <li class="c-menu__separator">
+              <li class="c-menu__item">scroll to</li>
+              <li class="c-menu__item">view additional</li>
+              <li class="c-menu__item">menu items</li>
             </ul>
           </div>
         </div>
