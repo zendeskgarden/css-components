@@ -32,7 +32,6 @@
   cursor: default; /* [3] */
   padding: 0; /* [4] */
   min-width: var(--zd-menu-min-width);
-  overflow-y: auto;
   text-align: left;
   white-space: normal; /* [5] */
   font-size: var(--zd-menu-font-size);
