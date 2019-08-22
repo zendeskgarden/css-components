@@ -15,7 +15,7 @@
   box-shadow:0 20px 30px 0 rgba(4, 68, 77, .15);
   background-color:#fff;
   cursor:default;
-  padding:0;
+  padding:8px 0;
   min-width:180px;
   text-align:left;
   white-space:normal;
@@ -91,14 +91,6 @@
      -moz-user-select:none;
       -ms-user-select:none;
           user-select:none;
-}
-
-.c-menu__item:first-child{
-  margin-top:8px;
-}
-
-.c-menu__item:last-child{
-  margin-bottom:8px;
 }
 
 .c-menu__item:before{
