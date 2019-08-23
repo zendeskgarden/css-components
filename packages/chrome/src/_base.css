@@ -33,6 +33,7 @@
   flex: 1;
   order: var(--zd-chrome__body-order);
   background-color: var(--zd-chrome__body-color);
+  min-width: 0;
 }
 
 .c-chrome__body__content {
