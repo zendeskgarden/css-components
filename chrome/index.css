@@ -21,6 +21,7 @@
   flex:1;
   order:1;
   background-color:#f8f9f9;
+  min-width:0;
 }
 
 .c-chrome__body__content{
@@ -459,6 +460,7 @@
   transition:transform .25s ease-in-out;
   margin:0 3px;
   width:16px;
+  min-width:16px;
   height:16px;
 }
 
