@@ -152,6 +152,7 @@
   transition: var(--zd-chrome__body__header__item__icon-transition);
   margin: var(--zd-chrome__body__header__item__icon-margin);
   width: var(--zd-chrome__body__header__item__icon-size);
+  min-width: var(--zd-chrome__body__header__item__icon-size);
   height: var(--zd-chrome__body__header__item__icon-size);
 }
 
