@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.13](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@4.1.12...@zendeskgarden/css-chrome@4.1.13) (2019-08-23)
+
+
+### Bug Fixes
+
+* **chrome:** prevent body overflow due to wide header item ([#228](https://github.com/zendeskgarden/css-components/issues/228)) ([252ce93](https://github.com/zendeskgarden/css-components/commit/252ce93))
+
+
+
+
+
 ## [4.1.12](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@4.1.11...@zendeskgarden/css-chrome@4.1.12) (2019-07-16)
 
 **Note:** Version bump only for package @zendeskgarden/css-chrome

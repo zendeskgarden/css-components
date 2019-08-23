@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.13](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@9.0.12...@zendeskgarden/css-menus@9.0.13) (2019-08-23)
+
+
+### Bug Fixes
+
+* **menus:** prevent menu padding from clipping scrolled items ([#224](https://github.com/zendeskgarden/css-components/issues/224)) ([3bdc940](https://github.com/zendeskgarden/css-components/commit/3bdc940))
+
+
+
+
+
 ## [9.0.12](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@9.0.11...@zendeskgarden/css-menus@9.0.12) (2019-07-16)
 
 **Note:** Version bump only for package @zendeskgarden/css-menus
