@@ -272,29 +272,46 @@
       <div class="u-mb-lg">
         <h2 class="c-main__subtitle u-fs-lg u-mb">Sizing</h2>
         <p class="u-mb">By default, a menu will expand to accommodate the width
-        of it's items. Override the menu's <code class="c-code">min-width</code>
+        of its items. Override the menu's <code class="c-code">min-width</code>
         to increase the container size. Overriding <code class="c-code">max-width</code>
-        can force longer items to wrap.</p>
+        can force longer items to wrap. The override for <code class="c-code">max-height</code>
+        is a bit different. In order for the menu to support its optional
+        <code class="c-code">.c-arrow</code> treatment, it must not hide overflow content.
+        The solution is to apply both <code class="c-code">max-height</code> and
+        <code class="c-code">overflow-y: auto</code> to a child
+        <code class="c-code">&lt;div&gt;</code> that contains the menu items to scroll. See the
+        source code for the following menu examples for details.</p>
         <div class="l-grid">
-          <div class="l-grid__item u-1/3">
+          <div class="l-grid__item u-1/4">
             <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static">
               <li class="c-menu__item c-menu__item--header">Standard Menu</li>
               <li class="c-menu__separator">
               <li class="c-menu__item">...with a very, very, very long menu item</li>
             </ul>
           </div
-          ><div class="l-grid__item u-1/3">
+          ><div class="l-grid__item u-1/4">
             <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static" style="min-width:270px">
               <li class="c-menu__item c-menu__item--header">Override min-width</li>
               <li class="c-menu__separator">
               <li class="c-menu__item">short item</li>
             </ul>
           </div
-          ><div class="l-grid__item u-1/3">
+          ><div class="l-grid__item u-1/4">
             <ul class="c-menu u-opacity-opaque u-visibility-visible u-position-static" style="max-width:200px">
               <li class="c-menu__item c-menu__item--header">Override max-width</li>
               <li class="c-menu__separator">
               <li class="c-menu__item">...in order to force a very long item to wrap</li>
+            </ul>
+          </div
+          ><div class="l-grid__item u-1/4">
+            <ul class="c-menu c-arrow c-arrow--t u-opacity-opaque u-visibility-visible u-position-relative">
+              <div style="max-height: 120px; overflow-y: auto">
+                <li class="c-menu__item c-menu__item--header">Override max-height</li>
+                <li class="c-menu__separator">
+                <li class="c-menu__item">scroll to</li>
+                <li class="c-menu__item">view additional</li>
+                <li class="c-menu__item">menu items</li>
+              </div>
             </ul>
           </div>
         </div>
