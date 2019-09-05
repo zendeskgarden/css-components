@@ -1054,10 +1054,10 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
-"@zendeskgarden/eslint-config@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-8.0.0.tgz#e81d09d511c79dbecef02a0a6442ca32f7caaf68"
-  integrity sha512-ASutc2nGI364sTsef5f5M45+MFTw+n/guF1RmPtL5BIEGKdmnIlXG7NI3d4iSVotp/3+QGDlTe83B+cabv795Q==
+"@zendeskgarden/eslint-config@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-9.0.0.tgz#f506b86d2b53dc860a58a7f0d8b6303b2858cfbb"
+  integrity sha512-8u3ZD/cvnkWKXHTTOuNI8RFSJMolAlfORJ5fxzCLXRWQc0pNKzEEUENnScNSsufXysOWQiiY6DY7d9jH/vgmRg==
 
 "@zendeskgarden/stylelint-config@10.0.0":
   version "10.0.0"
