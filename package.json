@@ -23,7 +23,7 @@
     "eslint": "6.3.0",
     "eslint-plugin-notice": "0.8.9",
     "gh-pages": "2.1.1",
-    "handlebars": "4.1.2",
+    "handlebars": "4.2.0",
     "husky": "3.0.5",
     "klaw-sync": "6.0.0",
     "lerna": "3.16.4",
