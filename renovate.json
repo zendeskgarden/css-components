@@ -5,14 +5,14 @@
     {
       "paths": ["package.json"],
       "minor": {
-        "groupName": "shared non-major dependencies",
+        "groupName": "non-major shared dependencies",
         "groupSlug": "shared-minor-patch"
       }
     },
     {
       "paths": ["packages/**"],
       "minor": {
-        "groupName": "package non-major dependencies",
+        "groupName": "non-major package dependencies",
         "groupSlug": "packages-minor-patch"
       }
     },
@@ -22,5 +22,5 @@
     }
   ],
   "reviewers": ["team:maintainers"],
-  "schedule": ["every four weeks on Friday"]
+  "schedule": ["every 4 weeks on Friday"]
 }
