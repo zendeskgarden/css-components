@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "rebaseStalePrs": true,
   "packageRules": [
     {
@@ -13,22 +11,16 @@
     },
     {
       "paths": ["packages/**"],
-      "groupName": "css packages",
       "minor": {
-        "groupName": "css package non-major dependencies",
+        "groupName": "package non-major dependencies",
         "groupSlug": "packages-minor-patch"
       }
     },
     {
       "packagePatterns": ["^@zendeskgarden/css"],
-      "groupName": "internal dependencies",
       "enabled": false
     }
   ],
-  "reviewers": [
-    "austin94",
-    "ryanseddon",
-    "jzempel"
-  ],
-  "schedule": ["on Thursday"]
+  "reviewers": ["team:maintainers"],
+  "schedule": ["every four weeks on Wednesday"]
 }
