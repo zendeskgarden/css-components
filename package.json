@@ -20,7 +20,7 @@
     "babel-eslint": "10.0.3",
     "chalk": "2.4.2",
     "cssnano": "4.1.10",
-    "eslint": "6.3.0",
+    "eslint": "6.4.0",
     "eslint-plugin-notice": "0.8.9",
     "gh-pages": "2.1.1",
     "handlebars": "4.2.0",
@@ -38,7 +38,7 @@
     "prettier-package-json": "2.1.0",
     "rimraf": "3.0.0",
     "stylelint": "10.1.0",
-    "stylelint-order": "3.1.0",
+    "stylelint-order": "3.1.1",
     "tinycolor2": "1.4.1"
   }
 }
