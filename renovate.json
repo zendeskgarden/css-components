@@ -21,5 +21,5 @@
       "enabled": false
     }
   ],
-  "schedule": ["every 4 weeks on Friday"]
+  "schedule": ["on Friday every 4 weeks of the year starting on the 4th week"]
 }
