@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@6.3.8...@zendeskgarden/css-variables@6.4.0) (2019-10-03)
+
+
+### Features
+
+* add `gather-pink` variable and color utilities ([#240](https://github.com/zendeskgarden/css-components/issues/240)) ([742a9b0](https://github.com/zendeskgarden/css-components/commit/742a9b0))
+
+
+
+
+
 ## [6.3.8](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@6.3.7...@zendeskgarden/css-variables@6.3.8) (2019-09-23)
 
 **Note:** Version bump only for package @zendeskgarden/css-variables

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.5.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@4.4.2...@zendeskgarden/css-utilities@4.5.0) (2019-10-03)
+
+
+### Features
+
+* add `gather-pink` variable and color utilities ([#240](https://github.com/zendeskgarden/css-components/issues/240)) ([742a9b0](https://github.com/zendeskgarden/css-components/commit/742a9b0))
+
+
+
+
+
 ## [4.4.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@4.4.1...@zendeskgarden/css-utilities@4.4.2) (2019-09-23)
 
 **Note:** Version bump only for package @zendeskgarden/css-utilities

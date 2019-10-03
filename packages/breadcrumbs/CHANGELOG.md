@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.17](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-breadcrumbs@0.2.16...@zendeskgarden/css-breadcrumbs@0.2.17) (2019-10-03)
+
+**Note:** Version bump only for package @zendeskgarden/css-breadcrumbs
+
+
+
+
+
 ## [0.2.16](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-breadcrumbs@0.2.15...@zendeskgarden/css-breadcrumbs@0.2.16) (2019-09-23)
 
 **Note:** Version bump only for package @zendeskgarden/css-breadcrumbs
