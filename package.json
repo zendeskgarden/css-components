@@ -16,7 +16,7 @@
   "devDependencies": {
     "@zendeskgarden/eslint-config": "10.0.0",
     "@zendeskgarden/stylelint-config": "11.0.0",
-    "@zendeskgarden/svg-icons": "6.3.1",
+    "@zendeskgarden/svg-icons": "6.6.0",
     "babel-eslint": "10.0.3",
     "chalk": "2.4.2",
     "cssnano": "4.1.10",
