@@ -139,7 +139,7 @@
 }
 
 .c-callout--info{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%2368737D'%3E%3Cg stroke='currentColor'%3E%3Ccircle cx='7.5' cy='8.5' r='7' fill='none' stroke-linejoin='round'/%3E%3Cpath stroke-linecap='round' d='M7.5 12.5V8'/%3E%3C/g%3E%3Ccircle cx='7.5' cy='5' r='1' fill='currentColor'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%2368737D'%3E%3Cg stroke='currentColor'%3E%3Ccircle cx='7.5' cy='8.5' r='7' fill='none'/%3E%3Cpath stroke-linecap='round' d='M7.5 12.5V8'/%3E%3C/g%3E%3Ccircle cx='7.5' cy='5' r='1' fill='currentColor'/%3E%3C/svg%3E");
 }
 
 .c-callout--error{
