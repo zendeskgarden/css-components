@@ -14,17 +14,17 @@
     "test": "lerna run test --stream"
   },
   "devDependencies": {
-    "@zendeskgarden/eslint-config": "7.2.2",
-    "@zendeskgarden/stylelint-config": "10.0.0",
+    "@zendeskgarden/eslint-config": "10.0.0",
+    "@zendeskgarden/stylelint-config": "11.0.0",
     "@zendeskgarden/svg-icons": "6.3.1",
-    "babel-eslint": "10.0.2",
+    "babel-eslint": "10.0.3",
     "chalk": "2.4.2",
     "cssnano": "4.1.10",
-    "eslint": "6.1.0",
-    "eslint-plugin-notice": "0.8.8",
+    "eslint": "6.4.0",
+    "eslint-plugin-notice": "0.8.9",
     "gh-pages": "2.1.1",
-    "handlebars": "4.1.2",
-    "husky": "3.0.3",
+    "handlebars": "4.2.0",
+    "husky": "3.0.5",
     "klaw-sync": "6.0.0",
     "lerna": "3.16.4",
     "live-server": "1.2.1",
@@ -37,8 +37,8 @@
     "postcss-preset-env": "6.7.0",
     "prettier-package-json": "2.1.0",
     "rimraf": "3.0.0",
-    "stylelint": "10.1.0",
-    "stylelint-order": "3.0.1",
+    "stylelint": "11.0.0",
+    "stylelint-order": "3.1.1",
     "tinycolor2": "1.4.1"
   }
 }

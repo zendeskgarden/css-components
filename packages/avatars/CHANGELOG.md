@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.3...@zendeskgarden/css-avatars@6.0.4) (2019-09-23)
+
+
+### Bug Fixes
+
+* **avatars:** force `content-box` sizing for the badge ([#238](https://github.com/zendeskgarden/css-components/issues/238)) ([5671c3f](https://github.com/zendeskgarden/css-components/commit/5671c3f))
+
+
+
+
+
+## [6.0.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.2...@zendeskgarden/css-avatars@6.0.3) (2019-08-23)
+
+**Note:** Version bump only for package @zendeskgarden/css-avatars
+
+
+
+
+
 ## [6.0.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.1...@zendeskgarden/css-avatars@6.0.2) (2019-07-16)
 
 **Note:** Version bump only for package @zendeskgarden/css-avatars

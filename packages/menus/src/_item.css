@@ -59,6 +59,14 @@
   user-select: none;
 }
 
+.c-menu__item:first-child {
+  margin-top: var(--zd-menu-padding);
+}
+
+.c-menu__item:last-child {
+  margin-bottom: var(--zd-menu-padding);
+}
+
 .c-menu__item::before {
   position: absolute;
   top: 0;

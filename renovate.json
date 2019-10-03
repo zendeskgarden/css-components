@@ -1,34 +1,25 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "rebaseStalePrs": true,
   "packageRules": [
     {
       "paths": ["package.json"],
       "minor": {
-        "groupName": "shared non-major dependencies",
+        "groupName": "non-major shared dependencies",
         "groupSlug": "shared-minor-patch"
       }
     },
     {
       "paths": ["packages/**"],
-      "groupName": "css packages",
       "minor": {
-        "groupName": "css package non-major dependencies",
+        "groupName": "non-major package dependencies",
         "groupSlug": "packages-minor-patch"
       }
     },
     {
       "packagePatterns": ["^@zendeskgarden/css"],
-      "groupName": "internal dependencies",
       "enabled": false
     }
   ],
-  "reviewers": [
-    "austin94",
-    "ryanseddon",
-    "jzempel"
-  ],
-  "schedule": ["on Thursday"]
+  "schedule": ["on Friday every 4 weeks of the year starting on the 4th week"]
 }
