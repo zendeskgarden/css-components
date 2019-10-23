@@ -98,6 +98,7 @@ select.c-txt__input--select:--txt-focused {
 .c-txt__input--select:--txt-disabled:not(select)::before,
 select.c-txt__input--select[disabled] {
   background-image: var(--zd-txt__input--select__chevron-disabled-background-image);
+  cursor: default;
 }
 /* stylelint-enable selector-no-qualifying-type */
 
