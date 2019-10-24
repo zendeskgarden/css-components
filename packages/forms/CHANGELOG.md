@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.16](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@7.0.15...@zendeskgarden/css-forms@7.0.16) (2019-10-24)
+
+
+### Bug Fixes
+
+* **forms:** apply default cursor to disabled select chevron ([#244](https://github.com/zendeskgarden/css-components/issues/244)) ([e30ee25](https://github.com/zendeskgarden/css-components/commit/e30ee25))
+
+
+
+
+
 ## [7.0.15](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@7.0.14...@zendeskgarden/css-forms@7.0.15) (2019-10-03)
 
 **Note:** Version bump only for package @zendeskgarden/css-forms

@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/css-components/issues"
   },
-  "version": "7.0.30",
+  "version": "7.0.31",
   "main": "dist/index.css",
   "files": [
     "dist",
@@ -23,7 +23,7 @@
     "watch": "yarn build --watch"
   },
   "dependencies": {
-    "@zendeskgarden/css-variables": "^6.4.0",
+    "@zendeskgarden/css-variables": "^6.4.1",
     "normalize.css": "^8.0.0"
   },
   "keywords": [

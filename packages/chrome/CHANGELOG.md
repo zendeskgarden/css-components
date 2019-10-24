@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.16](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@4.1.15...@zendeskgarden/css-chrome@4.1.16) (2019-10-24)
+
+**Note:** Version bump only for package @zendeskgarden/css-chrome
+
+
+
+
+
 ## [4.1.15](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-chrome@4.1.14...@zendeskgarden/css-chrome@4.1.15) (2019-10-03)
 
 **Note:** Version bump only for package @zendeskgarden/css-chrome

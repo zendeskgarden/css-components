@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@6.4.0...@zendeskgarden/css-variables@6.4.1) (2019-10-24)
+
+**Note:** Version bump only for package @zendeskgarden/css-variables
+
+
+
+
+
 # [6.4.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@6.3.8...@zendeskgarden/css-variables@6.4.0) (2019-10-03)
 
 
