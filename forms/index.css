@@ -907,6 +907,7 @@ select.c-txt__input--select:-moz-focusring{
 
 .c-txt__input--select.is-disabled:not(select):before,.c-txt__input--select[disabled]:not(select):before,select.c-txt__input--select[disabled]{
   background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%23C2C8CC'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' d='M4 6.5l3.6 3.6c.2.2.5.2.7 0L12 6.5'/%3E%3C/svg%3E");
+  cursor:default;
 }
 
 .is-rtl.c-txt__input--select{
