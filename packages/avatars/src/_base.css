@@ -51,6 +51,7 @@
   height: 100%;
   box-sizing: inherit;
   vertical-align: bottom;
+  object-fit: cover;
 }
 
 .c-avatar__txt {
