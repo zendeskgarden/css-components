@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.7](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.6...@zendeskgarden/css-avatars@6.0.7) (2019-11-07)
+
+
+### Bug Fixes
+
+* **avatars:** add object-fit cover to prevent broken image ratios ([#249](https://github.com/zendeskgarden/css-components/issues/249)) ([4c7975b](https://github.com/zendeskgarden/css-components/commit/4c7975b))
+
+
+
+
+
 ## [6.0.6](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.5...@zendeskgarden/css-avatars@6.0.6) (2019-10-24)
 
 **Note:** Version bump only for package @zendeskgarden/css-avatars
