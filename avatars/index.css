@@ -38,6 +38,8 @@
 .c-avatar>img,.c-avatar__img{
   box-sizing:inherit;
   vertical-align:bottom;
+  -o-object-fit:cover;
+     object-fit:cover;
 }
 
 .c-avatar__txt{
