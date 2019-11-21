@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.20](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-breadcrumbs@0.2.19...@zendeskgarden/css-breadcrumbs@0.2.20) (2019-11-21)
+
+
+### Bug Fixes
+
+* **breadcrumbs:** update breadcrumb icon size ([#250](https://github.com/zendeskgarden/css-components/issues/250)) ([f5bfd9c](https://github.com/zendeskgarden/css-components/commit/f5bfd9c))
+
+
+
+
+
 ## [0.2.19](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-breadcrumbs@0.2.18...@zendeskgarden/css-breadcrumbs@0.2.19) (2019-11-07)
 
 **Note:** Version bump only for package @zendeskgarden/css-breadcrumbs
