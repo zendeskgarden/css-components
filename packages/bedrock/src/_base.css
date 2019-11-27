@@ -7,7 +7,7 @@
   --zd-html-font-family: var(--zd-font-family-system);
   --zd-html-font-feature-settings: 'kern';
   --zd-html-font-kerning: normal;
-  --zd-html-font-size: 14px;
+  --zd-html-font-size: var(--zd-font-size-md);
   --zd-html-line-height: var(--zd-spacing);
   --zd-html-text-color: var(--zd-color-grey-800);
 }
