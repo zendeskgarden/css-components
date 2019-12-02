@@ -165,7 +165,6 @@ html{
   min-height:100%;
   box-sizing:border-box;
   overflow-y:scroll;
-  text-rendering:optimizeLegibility;
   line-height:20px;
   color:#2f3941;
   -webkit-font-feature-settings:"kern", "kern";
