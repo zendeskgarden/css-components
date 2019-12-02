@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.33](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@7.0.32...@zendeskgarden/css-bedrock@7.0.33) (2019-12-02)
+
+
+### Bug Fixes
+
+* **bedrock:** remove text-rendering property ([#251](https://github.com/zendeskgarden/css-components/issues/251)) ([f670758](https://github.com/zendeskgarden/css-components/commit/f670758))
+
+
+
+
+
 ## [7.0.32](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@7.0.31...@zendeskgarden/css-bedrock@7.0.32) (2019-11-07)
 
 **Note:** Version bump only for package @zendeskgarden/css-bedrock
