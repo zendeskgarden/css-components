@@ -7,10 +7,9 @@
   --zd-html-font-family: var(--zd-font-family-system);
   --zd-html-font-feature-settings: 'kern';
   --zd-html-font-kerning: normal;
-  --zd-html-font-size: 14px;
+  --zd-html-font-size: var(--zd-font-size-md);
   --zd-html-line-height: var(--zd-spacing);
   --zd-html-text-color: var(--zd-color-grey-800);
-  --zd-html-text-rendering: optimizeLegibility;
 }
 
 /* 1. Ensure the page always fills at least the entire viewport height.
@@ -21,7 +20,6 @@ html {
   min-height: 100%; /* [1] */
   box-sizing: var(--zd-html-box-sizing);
   overflow-y: scroll; /* [2] */
-  text-rendering: var(--zd-html-text-rendering);
   line-height: var(--zd-html-line-height);
   color: var(--zd-html-text-color);
   font-feature-settings: var(--zd-html-font-feature-settings);

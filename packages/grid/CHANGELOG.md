@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.36](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-grid@0.1.35...@zendeskgarden/css-grid@0.1.36) (2019-12-02)
+
+**Note:** Version bump only for package @zendeskgarden/css-grid
+
+
+
+
+
 ## [0.1.35](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-grid@0.1.34...@zendeskgarden/css-grid@0.1.35) (2019-11-07)
 
 **Note:** Version bump only for package @zendeskgarden/css-grid
