@@ -765,10 +765,10 @@
     inquirer "^6.2.0"
     npmlog "^4.1.2"
 
-"@lerna/publish@3.20.1":
-  version "3.20.1"
-  resolved "https://registry.yarnpkg.com/@lerna/publish/-/publish-3.20.1.tgz#740acc4af52ec69eb603b46b476eab093a72e95b"
-  integrity sha512-F0Eb2lyIkwMiucGVzOq91RyhJSkJsuh/9xKnKgm6VK8tuVbLDD8cNE7dLRIIDtBYWPtEmujTW+nBg/aDdJBjWg==
+"@lerna/publish@3.20.2":
+  version "3.20.2"
+  resolved "https://registry.yarnpkg.com/@lerna/publish/-/publish-3.20.2.tgz#a45d29813099b3249657ea913d0dc3f8ebc5cc2e"
+  integrity sha512-N7Y6PdhJ+tYQPdI1tZum8W25cDlTp4D6brvRacKZusweWexxaopbV8RprBaKexkEX/KIbncuADq7qjDBdQHzaA==
   dependencies:
     "@evocateur/libnpmaccess" "^3.1.2"
     "@evocateur/npm-registry-fetch" "^4.0.0"
@@ -791,7 +791,7 @@
     "@lerna/run-lifecycle" "3.16.2"
     "@lerna/run-topologically" "3.18.5"
     "@lerna/validation-error" "3.13.0"
-    "@lerna/version" "3.20.1"
+    "@lerna/version" "3.20.2"
     figgy-pudding "^3.5.1"
     fs-extra "^8.1.0"
     npm-package-arg "^6.1.0"
@@ -904,10 +904,10 @@
   dependencies:
     npmlog "^4.1.2"
 
-"@lerna/version@3.20.1":
-  version "3.20.1"
-  resolved "https://registry.yarnpkg.com/@lerna/version/-/version-3.20.1.tgz#1b6b7f30705ecb37af5c796ae2ef7f24f81d073e"
-  integrity sha512-MY80FV4uqdjxHNl6WaZ5k9hr0IGeQXo1+bKTKzMUudpr3HlTS0c0PoAwSGB2KHafGFpoyb9WHBhb1uDyhL+OfQ==
+"@lerna/version@3.20.2":
+  version "3.20.2"
+  resolved "https://registry.yarnpkg.com/@lerna/version/-/version-3.20.2.tgz#3709141c0f537741d9bc10cb24f56897bcb30428"
+  integrity sha512-ckBJMaBWc+xJen0cMyCE7W67QXLLrc0ELvigPIn8p609qkfNM0L0CF803MKxjVOldJAjw84b8ucNWZLvJagP/Q==
   dependencies:
     "@lerna/check-working-tree" "3.16.5"
     "@lerna/child-process" "3.16.5"
@@ -1083,15 +1083,15 @@
   resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-11.0.1.tgz#8db33d935bfa18a6577f51ff07e59964810dcacc"
   integrity sha512-nigEvn8Kct+FUsbKn74lOle0GVrStM2TbAVcGqOIROCD39AbDxtLUSGJ5Mc3N8FGP9IYyjPx1mZ1y/TxGYmlEA==
 
-"@zendeskgarden/stylelint-config@12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/stylelint-config/-/stylelint-config-12.0.0.tgz#2dbb94b3f822c708562ac5d2e7a29d2e562f86f7"
-  integrity sha512-iRRgA8/VpwGcFW+JcxBtORKG+zWb6UqZdDpKn4R0UbbpO5Q3h/Ux1DS+gaSbWw/Rxwq+xr5Acvc4mzfbCkqexw==
+"@zendeskgarden/stylelint-config@12.0.1":
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/stylelint-config/-/stylelint-config-12.0.1.tgz#5c5ac38a5fa6d3be6b47d7613703c2b971d1dedf"
+  integrity sha512-Jy0cvAZ/q8RZ1SLtQndvgRs3sstTKgFAICQ927xltJKm2K9nnXOSWchLKFyI7oSfty8enYCVG+wMXR7qLw+dRg==
 
-"@zendeskgarden/svg-icons@6.9.0":
-  version "6.9.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/svg-icons/-/svg-icons-6.9.0.tgz#1834e854f821d927848f7915a89780392fc1b68f"
-  integrity sha512-4fotHxqgjuIS3Zjn5zx9AajbPdfNv+6xJSxA5LJGsF5EXN2fUVi3VcAv36kPvwWivwqygCw/f9VcawwVetooYA==
+"@zendeskgarden/svg-icons@6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/svg-icons/-/svg-icons-6.10.0.tgz#cb50b0f93a70cd11b79cf83526c122a1fcf053f0"
+  integrity sha512-lytNS9gsuiIPX5cmAP/L+DUZH9UdVyvUmaUoPsq1e+b82hVcA2sUj6S82WTtDeh/Kzu897duENiNRkthdt4Cow==
 
 "@zkochan/cmd-shim@^3.1.0":
   version "3.1.0"
@@ -3339,19 +3339,17 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-gh-pages@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/gh-pages/-/gh-pages-2.1.1.tgz#5be70a92f9cb70404bafabd8bb149c0e9a8c264b"
-  integrity sha512-yNW2SFp9xGRP/8Sk2WXuLI/Gn92oOL4HBgudn6PsqAnuWT90Y1tozJoTfX1WdrDSW5Rb90kLVOf5mm9KJ/2fDw==
+gh-pages@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gh-pages/-/gh-pages-2.2.0.tgz#74ebeaca8d2b9a11279dcbd4a39ddfff3e6caa24"
+  integrity sha512-c+yPkNOPMFGNisYg9r4qvsMIjVYikJv7ImFOhPIVPt0+AcRUamZ7zkGRLHz7FKB0xrlZ+ddSOJsZv9XAFVXLmA==
   dependencies:
     async "^2.6.1"
     commander "^2.18.0"
     email-addresses "^3.0.1"
     filenamify-url "^1.0.0"
-    fs-extra "^7.0.0"
+    fs-extra "^8.1.0"
     globby "^6.1.0"
-    graceful-fs "^4.1.11"
-    rimraf "^2.6.2"
 
 git-raw-commits@2.0.0:
   version "2.0.0"
@@ -3533,10 +3531,10 @@ graceful-fs@^4.2.0:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.0.tgz#8d8fdc73977cb04104721cb53666c1ca64cd328b"
   integrity sha512-jpSvDPV4Cq/bgtpndIWbI5hmYxhQGHPC4d4cqBPb4DLniCfhJokdXhwhaDuLBGLQdvvRum/UiX6ECVIPvDXqdg==
 
-handlebars@4.5.3:
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.3.tgz#5cf75bd8714f7605713511a56be7c349becb0482"
-  integrity sha512-3yPecJoJHK/4c6aZhSvxOyG4vJKDshV36VHp0iVCDVh7o9w2vwi3NSnL2MMPj3YdduqaBcu7cGbggJQM0br9xA==
+handlebars@4.7.2:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.2.tgz#01127b3840156a0927058779482031afe0e730d7"
+  integrity sha512-4PwqDL2laXtTWZghzzCtunQUTLbo31pcCJrd/B/9JP8XbhVzpS5ZXuKqlOzsd1rtcaLo4KqAn8nl8mkknS4MHw==
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
@@ -4415,10 +4413,10 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-lerna@3.20.1:
-  version "3.20.1"
-  resolved "https://registry.yarnpkg.com/lerna/-/lerna-3.20.1.tgz#68d42768fc1a243db144558a10d4191c9337646a"
-  integrity sha512-TUS6aSyVdOoXLF1CMwUsT0zCGwgO1LvRUP9zUqWRYdvZP8NofSEzd4ChkRXZWGwXyQ8ozA9bIfwWxMck2QpfIA==
+lerna@3.20.2:
+  version "3.20.2"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-3.20.2.tgz#abf84e73055fe84ee21b46e64baf37b496c24864"
+  integrity sha512-bjdL7hPLpU3Y8CBnw/1ys3ynQMUjiK6l9iDWnEGwFtDy48Xh5JboR9ZJwmKGCz9A/sarVVIGwf1tlRNKUG9etA==
   dependencies:
     "@lerna/add" "3.20.0"
     "@lerna/bootstrap" "3.20.0"
@@ -4433,9 +4431,9 @@ lerna@3.20.1:
     "@lerna/init" "3.18.5"
     "@lerna/link" "3.18.5"
     "@lerna/list" "3.20.0"
-    "@lerna/publish" "3.20.1"
+    "@lerna/publish" "3.20.2"
     "@lerna/run" "3.20.0"
-    "@lerna/version" "3.20.1"
+    "@lerna/version" "3.20.2"
     import-local "^2.0.0"
     npmlog "^4.1.2"
 
@@ -5709,10 +5707,10 @@ pause-stream@0.0.11:
   dependencies:
     through "~2.3"
 
-perfect-scrollbar@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-1.4.0.tgz#5d014ef9775e1f43058a1dbae9ed1daf0e7091f1"
-  integrity sha512-/2Sk/khljhdrsamjJYS5NjrH+GKEHEwh7zFSiYyxROyYKagkE4kSn2zDQDRTOMo8mpT2jikxx6yI1dG7lNP/hw==
+perfect-scrollbar@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-1.5.0.tgz#821d224ed8ff61990c23f26db63048cdc75b6b83"
+  integrity sha512-NrNHJn5mUGupSiheBTy6x+6SXCFbLlm8fVZh9moIzw/LgqElN5q4ncR4pbCBCYuCJ8Kcl9mYM0NgDxvW+b4LxA==
 
 performance-now@^2.1.0:
   version "2.1.0"
