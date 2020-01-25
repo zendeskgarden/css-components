@@ -6,8 +6,10 @@
  */
 
 .c-pagination{
+  display:-webkit-box;
   display:flex;
-  justify-content:center;
+  -webkit-box-pack:center;
+          justify-content:center;
   margin-top:0;
   padding:0;
   white-space:nowrap;
@@ -15,6 +17,7 @@
 
 .c-pagination__page{
   display:inline-block;
+  -webkit-transition:background .25s ease-in-out,box-shadow .1s ease-in-out,color .25s ease-in-out;
   transition:background .25s ease-in-out,box-shadow .1s ease-in-out,color .25s ease-in-out;
   margin-left:4px;
   border-radius:4px;

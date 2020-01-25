@@ -6,9 +6,12 @@
  */
 
 .c-tag{
+  display:-webkit-inline-box;
   display:inline-flex;
   flex-wrap:nowrap;
-  align-items:center;
+  -webkit-box-align:center;
+          align-items:center;
+  -webkit-transition:box-shadow .1s ease-in-out;
   transition:box-shadow .1s ease-in-out;
   border:0;
   border-radius:2px;
@@ -262,13 +265,16 @@
 }
 
 .c-tag--pill{
-  justify-content:center;
   border-radius:100px;
   min-width:30px;
 }
 
+.c-tag--pill,.c-tag--round{
+  -webkit-box-pack:center;
+          justify-content:center;
+}
+
 .c-tag--round{
-  justify-content:center;
   border-radius:50%;
   padding:0;
   min-width:20px;
@@ -286,6 +292,7 @@
 
 .c-tag__remove{
   flex-shrink:0;
+  -webkit-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
   opacity:.8;
   margin-right:-8px;
@@ -339,7 +346,9 @@
 }
 
 .c-tag.is-rtl .c-tag__remove{
-  flex-direction:row-reverse;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:reverse;
+          flex-direction:row-reverse;
   margin-right:0;
   margin-left:-8px;
 }

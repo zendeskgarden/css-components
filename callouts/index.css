@@ -36,6 +36,7 @@
   position:absolute;
   top:4px;
   right:4px;
+  -webkit-transition:background-color .1s ease-in-out;
   transition:background-color .1s ease-in-out;
   border:none;
   border-radius:50%;
@@ -59,6 +60,7 @@
   right:0;
   bottom:0;
   left:0;
+  -webkit-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
   background-repeat:no-repeat;
   background-position:50%;

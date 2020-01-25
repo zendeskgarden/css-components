@@ -23,7 +23,8 @@
 
 .c-arrow:after,.c-arrow:before{
   position:absolute;
-  transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+          transform:rotate(45deg);
   background-color:inherit;
   box-sizing:inherit;
   width:.85714em;

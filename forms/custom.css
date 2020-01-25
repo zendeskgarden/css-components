@@ -37,10 +37,12 @@
 }
 
 .c-range__input--custom::-webkit-slider-runnable-track{
+  background-image:-webkit-gradient(linear, left top, left bottom, from(#eb4962), to(#eb4962));
   background-image:linear-gradient(#eb4962, #eb4962);
 }
 
 .c-range__slider--custom .c-range__slider__track{
+  background-image:-webkit-gradient(linear, left top, left bottom, from(#eb4962), to(#eb4962));
   background-image:linear-gradient(#eb4962, #eb4962);
 }
 

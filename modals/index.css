@@ -6,6 +6,7 @@
  */
 
 .l-backdrop{
+  display:-webkit-box;
   display:flex;
   position:fixed;
   top:0;
@@ -19,8 +20,10 @@
 }
 
 .l-backdrop--center{
-  align-items:center;
-  justify-content:center;
+  -webkit-box-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+          justify-content:center;
 }
 
 .l-backdrop.is-rtl{
@@ -73,9 +76,12 @@
 }
 
 .c-dialog{
+  display:-webkit-box;
   display:flex;
   position:fixed;
-  flex-direction:column;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+          flex-direction:column;
   margin-bottom:48px;
   border:1px solid #d8dcde;
   border-radius:4px;
@@ -145,6 +151,7 @@
   position:absolute;
   top:10px;
   right:20px;
+  -webkit-transition:background-color .1s ease-in-out;
   transition:background-color .1s ease-in-out;
   border:none;
   border-radius:50%;
@@ -172,6 +179,7 @@
   right:0;
   bottom:0;
   left:0;
+  -webkit-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
   background-repeat:no-repeat;
   background-position:50%;
@@ -223,10 +231,13 @@
 }
 
 .c-dialog__footer{
+  display:-webkit-box;
   display:flex;
   flex-shrink:0;
-  align-items:center;
-  justify-content:flex-end;
+  -webkit-box-align:center;
+          align-items:center;
+  -webkit-box-pack:end;
+          justify-content:flex-end;
   padding:20px 40px 32px;
 }
 
@@ -236,6 +247,7 @@
 }
 
 .c-dialog__footer__item{
+  display:-webkit-box;
   display:flex;
   margin-left:20px;
   min-width:0;
@@ -276,12 +288,14 @@
 
 @-webkit-keyframes zd-dialog-open{
   0%{
-    transform:scale(0);
+    -webkit-transform:scale(0);
+            transform:scale(0);
     opacity:0;
   }
 
   50%{
-    transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+            transform:scale(1.05);
   }
 
   to{
@@ -291,12 +305,14 @@
 
 @keyframes zd-dialog-open{
   0%{
-    transform:scale(0);
+    -webkit-transform:scale(0);
+            transform:scale(0);
     opacity:0;
   }
 
   50%{
-    transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+            transform:scale(1.05);
   }
 
   to{

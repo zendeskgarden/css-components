@@ -7,6 +7,7 @@
 
 .c-btn{
   display:inline-block;
+  -webkit-transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
   transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
   margin:0;
   border:1px solid #5293c7;
@@ -204,6 +205,7 @@
 }
 
 .c-btn.is-active.is-active,.c-btn:active:active{
+  -webkit-transition:border-color .1s ease-in-out,background-color .1s ease-in-out,color .1s ease-in-out;
   transition:border-color .1s ease-in-out,background-color .1s ease-in-out,color .1s ease-in-out;
   border-color:transparent;
   background-color:#144a75;
@@ -307,7 +309,10 @@
 }
 
 .c-btn__icon{
+  -webkit-transition:-webkit-transform .25s ease-in-out;
+  transition:-webkit-transform .25s ease-in-out;
   transition:transform .25s ease-in-out;
+  transition:transform .25s ease-in-out,-webkit-transform .25s ease-in-out;
   margin-top:-2px;
   width:16px;
   height:16px;
@@ -320,11 +325,13 @@
 }
 
 .c-btn__icon.is-rotated{
-  transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+          transform:rotate(180deg);
 }
 
 .is-rtl .c-btn__icon.is-rotated{
-  transform:rotate(-180deg);
+  -webkit-transform:rotate(-180deg);
+          transform:rotate(-180deg);
 }
 
 .c-btn--muted{
