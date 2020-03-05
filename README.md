@@ -113,8 +113,8 @@ to install.
 [utilities dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/utilities
 [variables npm version]: https://flat.badgen.net/npm/v/@zendeskgarden/css-variables
 [variables npm link]: https://www.npmjs.com/package/@zendeskgarden/css-variables
-[variables dependency status]: https://flat.badgen.net/david/dev/zendeskgarden/css-components/packages/variables?label=dependencies
-[variables dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/variables&type=dev
+[variables dependency status]: https://flat.badgen.net/david/dep/zendeskgarden/css-components/packages/variables?label=dependencies
+[variables dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/variables
 
 ## Usage
 
