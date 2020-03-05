@@ -1,4 +1,7 @@
-# @zendeskgarden/css-tags [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-tags.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-tags)
+# @zendeskgarden/css-tags [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-tags
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-tags
 
 This package provides styling for tag components needed to support
 badges, pills, and labels.
@@ -30,7 +33,7 @@ tag component modification classes.
 
 #### Remove
 
-Use the following HTML to support the addition of a *remove* icon. Note
+Use the following HTML to support the addition of a _remove_ icon. Note
 the use of `tabindex` to allow the tag to receive keyboard focus, but
 prevent tabbing to the remove button.
 
@@ -47,7 +50,7 @@ that is visible to screen readers.
 
 #### Avatar
 
-Use the following HTML to support the addition of a tag *avatar*.
+Use the following HTML to support the addition of a tag _avatar_.
 
 ```html
 <div class="c-tag">

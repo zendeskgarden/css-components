@@ -1,4 +1,7 @@
-# @zendeskgarden/css-chrome [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-chrome.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-chrome)
+# @zendeskgarden/css-chrome [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-chrome
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-chrome
 
 This package contains a variety of classes for handling consistent
 product page navigation, headers, and layout.
@@ -49,7 +52,7 @@ standalone headers, branded nav, etc.
 Use the following checklist to ensure the chrome follows accessibility
 best practice.
 
-* Make sure all nav and header items are keyboard tabbable.
-* Be sure to use `a` elements for navigational items and `button`
+- Make sure all nav and header items are keyboard tabbable.
+- Be sure to use `a` elements for navigational items and `button`
   elements for action items (i.e. menus).
-* Use `aria-current` to indicate the current item in the nav.
+- Use `aria-current` to indicate the current item in the nav.

@@ -1,4 +1,7 @@
-# @zendeskgarden/css-pagination [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-pagination.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-pagination)
+# @zendeskgarden/css-pagination [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-pagination
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-pagination
 
 This package provides component styling for page navigation.
 
@@ -20,7 +23,9 @@ Pagination CSS classes are used to style the following canonical markup.
 
 ```html
 <ul class="c-pagination" role="navigation">
-  <li class="c-pagination__page c-pagination__page--previous" aria-hidden="true"><a href>previous</a></li>
+  <li class="c-pagination__page c-pagination__page--previous" aria-hidden="true">
+    <a href>previous</a>
+  </li>
   <li class="c-pagination__page" aria-current="true"><a href>1</a></li>
   <li class="c-pagination__page"><a href>2</a></li>
   <li class="c-pagination__page"><a href>3</a></li>
