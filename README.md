@@ -12,27 +12,27 @@ repository.
 See the individual package README for the CSS component you would like
 to install.
 
-Package | Version | Dependencies
-------- | ------- | ------------
-[`@zendeskgarden/css-arrows`](packages/arrows) | [![npm version][arrows npm version]][arrows npm link] | [![Dependency Status][arrows dependency status]][arrows dependency link]
-[`@zendeskgarden/css-avatars`](packages/avatars) | [![npm version][avatars npm version]][avatars npm link] | [![Dependency Status][avatars dependency status]][avatars dependency link]
-[`@zendeskgarden/css-bedrock`](packages/bedrock) | [![npm version][bedrock npm version]][bedrock npm link] | [![Dependency Status][bedrock dependency status]][bedrock dependency link]
-[`@zendeskgarden/css-breadcrumbs`](packages/breadcrumbs) | [![npm version][breadcrumbs npm version]][breadcrumbs npm link] | [![Dependency Status][breadcrumbs dependency status]][breadcrumbs dependency link]
-[`@zendeskgarden/css-buttons`](packages/buttons) | [![npm version][buttons npm version]][buttons npm link] | [![Dependency Status][buttons dependency status]][buttons dependency link]
-[`@zendeskgarden/css-callouts`](packages/callouts) | [![npm version][callouts npm version]][callouts npm link] | [![Dependency Status][callouts dependency status]][callouts dependency link]
-[`@zendeskgarden/css-chrome`](packages/chrome) | [![npm version][chrome npm version]][chrome npm link] | [![Dependency Status][chrome dependency status]][chrome dependency link]
-[`@zendeskgarden/css-forms`](packages/forms) | [![npm version][forms npm version]][forms npm link] | [![Dependency Status][forms dependency status]][forms dependency link]
-[`@zendeskgarden/css-grid`](packages/grid) | [![npm version][grid npm version]][grid npm link] | [![Dependency Status][grid dependency status]][grid dependency link]
-[`@zendeskgarden/css-menus`](packages/menus) | [![npm version][menus npm version]][menus npm link] | [![Dependency Status][menus dependency status]][menus dependency link]
-[`@zendeskgarden/css-modals`](packages/modals) | [![npm version][modals npm version]][modals npm link] | [![Dependency Status][modals dependency status]][modals dependency link]
-[`@zendeskgarden/css-pagination`](packages/pagination) | [![npm version][pagination npm version]][pagination npm link] | [![Dependency Status][pagination dependency status]][pagination dependency link]
-[`@zendeskgarden/css-scrollbars`](packages/scrollbars) | [![npm version][scrollbars npm version]][scrollbars npm link] | [![Dependency Status][scrollbars dependency status]][scrollbars dependency link]
-[`@zendeskgarden/css-tables`](packages/tables) | [![npm version][tables npm version]][tables npm link] | [![Dependency Status][tables dependency status]][tables dependency link]
-[`@zendeskgarden/css-tabs`](packages/tabs) | [![npm version][tabs npm version]][tabs npm link] | [![Dependency Status][tabs dependency status]][tabs dependency link]
-[`@zendeskgarden/css-tags`](packages/tags) | [![npm version][tags npm version]][tags npm link] | [![Dependency Status][tags dependency status]][tags dependency link]
-[`@zendeskgarden/css-tooltips`](packages/tooltips) | [![npm version][tooltips npm version]][tooltips npm link] | [![Dependency Status][tooltips dependency status]][tooltips dependency link]
-[`@zendeskgarden/css-utilities`](packages/utilities) | [![npm version][utilities npm version]][utilities npm link] | [![Dependency Status][utilities dependency status]][utilities dependency link]
-[`@zendeskgarden/css-variables`](packages/variables) | [![npm version][variables npm version]][variables npm link] | [![Dependency Status][variables dependency status]][variables dependency link]
+| Package                                                  | Version                                                         | Dependencies                                                                       |
+| -------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| [`@zendeskgarden/css-arrows`](packages/arrows)           | [![npm version][arrows npm version]][arrows npm link]           | [![Dependency Status][arrows dependency status]][arrows dependency link]           |
+| [`@zendeskgarden/css-avatars`](packages/avatars)         | [![npm version][avatars npm version]][avatars npm link]         | [![Dependency Status][avatars dependency status]][avatars dependency link]         |
+| [`@zendeskgarden/css-bedrock`](packages/bedrock)         | [![npm version][bedrock npm version]][bedrock npm link]         | [![Dependency Status][bedrock dependency status]][bedrock dependency link]         |
+| [`@zendeskgarden/css-breadcrumbs`](packages/breadcrumbs) | [![npm version][breadcrumbs npm version]][breadcrumbs npm link] | [![Dependency Status][breadcrumbs dependency status]][breadcrumbs dependency link] |
+| [`@zendeskgarden/css-buttons`](packages/buttons)         | [![npm version][buttons npm version]][buttons npm link]         | [![Dependency Status][buttons dependency status]][buttons dependency link]         |
+| [`@zendeskgarden/css-callouts`](packages/callouts)       | [![npm version][callouts npm version]][callouts npm link]       | [![Dependency Status][callouts dependency status]][callouts dependency link]       |
+| [`@zendeskgarden/css-chrome`](packages/chrome)           | [![npm version][chrome npm version]][chrome npm link]           | [![Dependency Status][chrome dependency status]][chrome dependency link]           |
+| [`@zendeskgarden/css-forms`](packages/forms)             | [![npm version][forms npm version]][forms npm link]             | [![Dependency Status][forms dependency status]][forms dependency link]             |
+| [`@zendeskgarden/css-grid`](packages/grid)               | [![npm version][grid npm version]][grid npm link]               | [![Dependency Status][grid dependency status]][grid dependency link]               |
+| [`@zendeskgarden/css-menus`](packages/menus)             | [![npm version][menus npm version]][menus npm link]             | [![Dependency Status][menus dependency status]][menus dependency link]             |
+| [`@zendeskgarden/css-modals`](packages/modals)           | [![npm version][modals npm version]][modals npm link]           | [![Dependency Status][modals dependency status]][modals dependency link]           |
+| [`@zendeskgarden/css-pagination`](packages/pagination)   | [![npm version][pagination npm version]][pagination npm link]   | [![Dependency Status][pagination dependency status]][pagination dependency link]   |
+| [`@zendeskgarden/css-scrollbars`](packages/scrollbars)   | [![npm version][scrollbars npm version]][scrollbars npm link]   | [![Dependency Status][scrollbars dependency status]][scrollbars dependency link]   |
+| [`@zendeskgarden/css-tables`](packages/tables)           | [![npm version][tables npm version]][tables npm link]           | [![Dependency Status][tables dependency status]][tables dependency link]           |
+| [`@zendeskgarden/css-tabs`](packages/tabs)               | [![npm version][tabs npm version]][tabs npm link]               | [![Dependency Status][tabs dependency status]][tabs dependency link]               |
+| [`@zendeskgarden/css-tags`](packages/tags)               | [![npm version][tags npm version]][tags npm link]               | [![Dependency Status][tags dependency status]][tags dependency link]               |
+| [`@zendeskgarden/css-tooltips`](packages/tooltips)       | [![npm version][tooltips npm version]][tooltips npm link]       | [![Dependency Status][tooltips dependency status]][tooltips dependency link]       |
+| [`@zendeskgarden/css-utilities`](packages/utilities)     | [![npm version][utilities npm version]][utilities npm link]     | [![Dependency Status][utilities dependency status]][utilities dependency link]     |
+| [`@zendeskgarden/css-variables`](packages/variables)     | [![npm version][variables npm version]][variables npm link]     | [![Dependency Status][variables dependency status]][variables dependency link]     |
 
 [arrows npm version]: https://img.shields.io/npm/v/@zendeskgarden/css-arrows.svg?style=flat-square
 [arrows npm link]: https://www.npmjs.com/package/@zendeskgarden/css-arrows
@@ -135,6 +135,6 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 
-Copyright 2019 Zendesk
+Copyright 2020 Zendesk
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md)
