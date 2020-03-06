@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.19](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@9.0.18...@zendeskgarden/css-menus@9.0.19) (2020-03-06)
+
+**Note:** Version bump only for package @zendeskgarden/css-menus
+
+
+
+
+
 ## [9.0.18](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-menus@9.0.17...@zendeskgarden/css-menus@9.0.18) (2019-12-02)
 
 **Note:** Version bump only for package @zendeskgarden/css-menus
