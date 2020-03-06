@@ -1,5 +1,7 @@
-# @zendeskgarden/css-breadcrumbs [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-breadcrumbs.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-breadcrumbs)
+# @zendeskgarden/css-breadcrumbs [![npm version][npm version badge]][npm version link]
 
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-breadcrumbs
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-breadcrumbs
 
 This package contains a set of classes for styling breadcrumb
 navigation.

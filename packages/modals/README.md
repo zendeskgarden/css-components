@@ -1,4 +1,7 @@
-# @zendeskgarden/css-modals [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-modals.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-modals)
+# @zendeskgarden/css-modals [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-modals
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-modals
 
 This package package provides styling for dialogs and the associated
 backdrop layouts needed to present a modal dialog treatment.
@@ -20,12 +23,14 @@ Once installed, modal CSS can be accessed via `postcss-import`.
 Canonical markup for a dialog is structured as follows.
 
 ```html
-<section aria-labelledby="dialog-title"
-         aria-hidden="true"
-         class="c-dialog"
-         role="dialog"
-         style="display: none;"
-         tabindex="-1">
+<section
+  aria-labelledby="dialog-title"
+  aria-hidden="true"
+  class="c-dialog"
+  role="dialog"
+  style="display: none;"
+  tabindex="-1"
+>
   <header>
     <h1 class="c-dialog__header" id="dialog-title">Dialog Title</h1>
     <button aria-label="close" class="c-dialog__close"></button>
@@ -45,9 +50,7 @@ Use the backdrop layout class to give a dialog a modal treatment.
 
 ```html
 <div class="l-backdrop">
-  <section class="c-dialog c-dialog--center"
-           ...>
-  </section>
+  <section class="c-dialog c-dialog--center" ...></section>
 </div>
 ```
 
@@ -62,15 +65,12 @@ The sample HTML incorporates `aria-*` and `role` attributes expected by
 assistive technology. The use of `tabindex` supports focus and keyboard
 navigation.
 
-
 #### RTL
 
 Use the following state class to support RTL text direction:
 
 ```html
-<section class="c-dialog is-rtl"
-         ...>
-</section>
+<section class="c-dialog is-rtl" ...></section>
 ```
 
 #### Animation
@@ -79,9 +79,7 @@ Add the following state class on open for a modal "pop" intended by the
 design:
 
 ```html
-<section class="c-dialog is-open"
-         ...>
-</section>
+<section class="c-dialog is-open" ...></section>
 ```
 
 Remember to remove `.is-open` when the dialog is closed.

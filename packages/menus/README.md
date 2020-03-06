@@ -1,4 +1,7 @@
-# @zendeskgarden/css-menus [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-menus.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-menus)
+# @zendeskgarden/css-menus [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-menus
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-menus
 
 This package is intended to provide consistent menu styling for use
 across Zendesk products. Menus can be used along with
@@ -23,18 +26,11 @@ Menu CSS provides styling for the following basic structure ([W3
 example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-2/menubar-2.html)).
 
 ```html
-<ul aria-hidden="true"
-    class="c-menu"
-    role="menu">
-  <li class="c-menu__item"
-      role="menuitem">Item</li>
-  <li aria-disabled="true"
-      class="c-menu__item is-disabled"
-      role="menuitem">Disabled Item</li>
-  <li class="c-menu__separator"
-      role="separator"></li>
-  <li class="c-menu__item"
-      role="menuitem">Another Item</li>
+<ul aria-hidden="true" class="c-menu" role="menu">
+  <li class="c-menu__item" role="menuitem">Item</li>
+  <li aria-disabled="true" class="c-menu__item is-disabled" role="menuitem">Disabled Item</li>
+  <li class="c-menu__separator" role="separator"></li>
+  <li class="c-menu__item" role="menuitem">Another Item</li>
 </ul>
 ```
 
@@ -43,18 +39,12 @@ options (i.e. a `<select>` dropdown). The component CSS also supports
 a menu that presents a list of navigation actions ([W3
 example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-1/menubar-1.html)).
 
-
 ```html
-<nav aria-hidden="true"
-     class="c-menu"
-     role="menu">
-  <a class="c-menu__item"
-     href="/one">Link One</a>
-  <a class="c-menu__item"
-     href="/two">Link Two</a>
+<nav aria-hidden="true" class="c-menu" role="menu">
+  <a class="c-menu__item" href="/one">Link One</a>
+  <a class="c-menu__item" href="/two">Link Two</a>
   <span class="c-menu__separator"></span>
-  <a class="c-menu__item"
-     href="/three">Link Three</a>
+  <a class="c-menu__item" href="/three">Link Three</a>
 </nav>
 ```
 
@@ -68,9 +58,7 @@ Use `.is-open` to apply easing animations to the menu (and
 it's arrow, if included) when a menu is shown.
 
 ```html
-<ul aria-hidden="false"
-    class="c-arrow c-arrow--t c-menu c-menu--down is-open"
-    role="menu">
+<ul aria-hidden="false" class="c-arrow c-arrow--t c-menu c-menu--down is-open" role="menu">
   ...
 </ul>
 ```

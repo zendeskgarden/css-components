@@ -1,12 +1,15 @@
-# @zendeskgarden/css-grid [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-grid.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-grid)
+# @zendeskgarden/css-grid [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-grid
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-grid
 
 This package contains an opinionated version of the Bootstrap v4 flexbox grid.
 
 It includes:
 
-* Zendesk specific gutter sizing
-* RTL locale support with the `.is-rtl` class
-* Debug styling support with the `.is-debug` class
+- Zendesk specific gutter sizing
+- RTL locale support with the `.is-rtl` class
+- Debug styling support with the `.is-debug` class
 
 All classes are consistent with the
 [Bootstrap Grid Documentation](https://getbootstrap.com/docs/4.0/layout/grid/).

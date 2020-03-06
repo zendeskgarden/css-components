@@ -25,11 +25,13 @@
     "gh-pages": "2.2.0",
     "handlebars": "4.7.3",
     "husky": "4.2.3",
+    "jsonlint": "1.6.3",
     "klaw-sync": "6.0.0",
     "lerna": "3.20.2",
     "live-server": "1.2.1",
     "ncp": "2.0.0",
     "perfect-scrollbar": "1.5.0",
+    "postcss": "7.0.27",
     "postcss-cli": "7.1.0",
     "postcss-import": "12.0.1",
     "postcss-inline-svg": "4.1.0",
@@ -39,6 +41,8 @@
     "rimraf": "3.0.2",
     "stylelint": "13.2.0",
     "stylelint-order": "4.0.0",
-    "tinycolor2": "1.4.1"
+    "stylelint-scss": "3.14.2",
+    "tinycolor2": "1.4.1",
+    "watch": "1.0.2"
   }
 }

@@ -1,4 +1,7 @@
-# @zendeskgarden/css-buttons [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-buttons.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-buttons)
+# @zendeskgarden/css-buttons [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-buttons
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-buttons
 
 This package contains basic `.c-btn` component styling.
 

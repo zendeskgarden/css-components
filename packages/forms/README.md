@@ -1,4 +1,7 @@
-# @zendeskgarden/css-forms [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-forms.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-forms)
+# @zendeskgarden/css-forms [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-forms
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-forms
 
 This package is intended to provide consistent styling for form fields
 used throughout Zendesk products.
@@ -24,7 +27,7 @@ the following.
 
 ```html
 <div class="c-chk">
-  <input class="c-chk__input" id="box-id" type="checkbox">
+  <input class="c-chk__input" id="box-id" type="checkbox" />
   <label class="c-chk__label" for="box-id">Label</label>
 </div>
 ```
@@ -50,15 +53,15 @@ Use the `.c-chk--radio` modifier to style for radio button form fields.
 
 ```html
 <div class="c-chk c-chk--radio">
-  <input class="c-chk__input" id="rdo-1" name="level" type="radio">
+  <input class="c-chk__input" id="rdo-1" name="level" type="radio" />
   <label class="c-chk__label" for="rdo-1">Beginner</label>
 </div>
 <div class="c-chk c-chk--radio">
-  <input class="c-chk__input" id="rdo-2" name="level" type="radio">
+  <input class="c-chk__input" id="rdo-2" name="level" type="radio" />
   <label class="c-chk__label" for="rdo-2">Intermediate</label>
 </div>
 <div class="c-chk c-chk--radio">
-  <input class="c-chk__input" id="rdo-3" name="level" type="radio">
+  <input class="c-chk__input" id="rdo-3" name="level" type="radio" />
   <label class="c-chk__label" for="rdo-3">Advanced</label>
 </div>
 ```
@@ -82,7 +85,7 @@ the following.
 <div class="c-range">
   <label class="c-range__label" for="range-id">Label</label>
   <small class="c-range__hint">Optional hint.</small>
-  <input class="c-range__input" id="range-id" type="range">
+  <input class="c-range__input" id="range-id" type="range" />
 </div>
 ```
 
@@ -123,7 +126,7 @@ the following.
 <div class="c-txt">
   <label class="c-txt__label" for="text-id">Label</label>
   <small class="c-txt__hint">Optional hint.</small>
-  <input class="c-txt__input" id="text-id" placeholder="[placeholder]" type="text">
+  <input class="c-txt__input" id="text-id" placeholder="[placeholder]" type="text" />
 </div>
 ```
 
@@ -169,13 +172,18 @@ to support dropdown fields:
       aria-owns="menu-id"
       class="c-txt__input c-txt__input--select"
       id="select-id"
-      role="combobox">VALUE</button>
+      role="combobox"
+    >
+      VALUE
+    </button>
   </div>
-  <ul aria-hidden="true"
-      aria-labelledby="select-id"
-      class="c-menu c-menu--down"
-      id="menu-id"
-      role="listbox">
+  <ul
+    aria-hidden="true"
+    aria-labelledby="select-id"
+    class="c-menu c-menu--down"
+    id="menu-id"
+    role="listbox"
+  >
     <li class="c-menu__item" role="option">item</li>
     <li class="c-menu__item is-selected" role="option">VALUE</li>
     <li class="c-menu__item" role="option">item</li>

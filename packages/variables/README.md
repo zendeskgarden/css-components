@@ -1,4 +1,7 @@
-# @zendeskgarden/css-variables [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-variables.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-variables)
+# @zendeskgarden/css-variables [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-variables
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-variables
 
 This package contains common variables used by the rest of the
 CSS component framework.

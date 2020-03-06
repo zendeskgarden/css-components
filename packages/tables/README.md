@@ -1,4 +1,7 @@
-# @zendeskgarden/css-tables [![npm version](https://img.shields.io/npm/v/@zendeskgarden/css-tables.svg?style=flat-square)](https://www.npmjs.com/package/@zendeskgarden/css-tables)
+# @zendeskgarden/css-tables [![npm version][npm version badge]][npm version link]
+
+[npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-tables
+[npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-tables
 
 This package contains a variety of classes that apply consistent styling
 to tables, rows, and columns.
@@ -21,7 +24,9 @@ Component CSS provides styling for the following basic table structure.
 
 ```html
 <table class="c-table">
-  <caption class="c-table__caption">Table Caption</caption>
+  <caption class="c-table__caption">
+    Table Caption
+  </caption>
   <thead>
     <tr class="c-table__row c-table__row--header">
       <th class="c-table__row__cell">...</th>
@@ -51,12 +56,12 @@ overflow, support for RTL, etc.
 Use the following checklist to ensure your tables follow accessibility
 best practice.
 
-* Every table must include a `<caption>` element with the title of the
+- Every table must include a `<caption>` element with the title of the
   table as its first descendant. The `.c-table__caption` BEM component
   provides minimal styling (along with support for RTL) and is meant to
   be enhanced with custom CSS for individual table designs.
-* Use `aria-sort` to indicate column sort order.
-* Use a `button` to handle keyboard toggle for a
+- Use `aria-sort` to indicate column sort order.
+- Use a `button` to handle keyboard toggle for a
   `.c-table__row__cell__sortable` component. Combined with the previous
   point, the HTML would look something like this:
 
@@ -66,7 +71,7 @@ best practice.
 </th>
 ```
 
-* Use a `button` with `aria-haspopup` to handle
+- Use a `button` with `aria-haspopup` to handle
   `.c-table__row__cell__overflow` components. Again, the HTML would be
   similar to:
 

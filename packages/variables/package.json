@@ -25,12 +25,6 @@
     "test": "yarn build && yarn lint",
     "watch": "watch 'yarn build' src --interval=.1"
   },
-  "devDependencies": {
-    "jsonlint": "1.6.3",
-    "postcss": "7.0.27",
-    "stylelint-scss": "3.14.2",
-    "watch": "1.0.2"
-  },
   "keywords": [
     "components",
     "css",
