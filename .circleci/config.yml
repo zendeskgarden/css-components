@@ -48,7 +48,7 @@ jobs:
     steps:
       - *attach_workspace
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-      - run: yarn lerna publish from-git --no-verify-access --yes
+      - run: yarn lerna publish from-git --ignore-scripts --no-verify-access --yes
 
 workflows:
   main:
