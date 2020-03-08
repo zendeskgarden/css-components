@@ -47,7 +47,6 @@ jobs:
     executor: node/default
     steps:
       - *attach_workspace
-      - run: yarn lerna run prepack # add LICENSE.md
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
       - run: yarn lerna publish from-git --ignore-scripts --no-verify-access --yes
 
