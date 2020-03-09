@@ -54,7 +54,6 @@ workflows:
       - test:
           requires:
             - build
-          <<: *filters_tags
       - deploy:
           requires:
             - test
