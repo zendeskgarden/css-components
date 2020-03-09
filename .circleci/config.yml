@@ -23,7 +23,9 @@ jobs:
           cache-key: yarn.lock
           dir: ~/.cache/yarn
           steps:
-            - run: yarn --frozen-lockfile
+            - run: yarn --frozen-lockfile --ignore-scripts
+            - run: yarn lerna bootstrap
+            - run: yarn lerna run build --concurrency=2
       - persist_to_workspace:
           root: *workspace_root
           paths: .
@@ -47,7 +49,6 @@ jobs:
     executor: node/default
     steps:
       - *attach_workspace
-      - run: yarn lerna run prepack # add LICENSE.md
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
       - run: yarn lerna publish from-git --ignore-scripts --no-verify-access --yes
 
