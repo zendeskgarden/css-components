@@ -32,8 +32,9 @@ function toProperties(variables) {
       retVal = `rgb(${value.r}, ${value.g}, ${value.b})`;
     } else if (category === 'font-family') {
       retVal = value
+        .split(',')
         .map(font => {
-          return font.indexOf(' ') === -1 ? font : `'${font}'`;
+          return font.replace(/"/gu, "'");
         })
         .join(', ');
     } else {
