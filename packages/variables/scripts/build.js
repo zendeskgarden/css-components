@@ -29,7 +29,7 @@ function toProperties(variables) {
     let retVal;
 
     if (category === 'color') {
-      retVal = `rgb(${value.r}, ${value.g}, ${value.b})`;
+      retVal = value.r ? `rgb(${value.r}, ${value.g}, ${value.b})` : value;
     } else if (category === 'font-family') {
       retVal = value
         .split(',')
