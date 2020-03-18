@@ -28,9 +28,7 @@ function toProperties(variables) {
   const valueOf = (category, value) => {
     let retVal;
 
-    if (category === 'color') {
-      retVal = value.r ? `rgb(${value.r}, ${value.g}, ${value.b})` : value;
-    } else if (category === 'font-family') {
+    if (category === 'font-family') {
       retVal = value
         .split(',')
         .map(font => {
