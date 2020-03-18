@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.5](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@4.5.4...@zendeskgarden/css-utilities@4.5.5) (2020-03-18)
+
+**Note:** Version bump only for package @zendeskgarden/css-utilities
+
+
+
+
+
 ## [4.5.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-utilities@4.5.3...@zendeskgarden/css-utilities@4.5.4) (2020-03-06)
 
 **Note:** Version bump only for package @zendeskgarden/css-utilities
