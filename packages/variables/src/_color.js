@@ -117,7 +117,7 @@ retVal = Object.assign(retVal, {
   'chat-orange': palette.product.chat,
   'connect-red': palette.product.connect,
   'explore-blue': palette.product.explore,
-  'gather-pink': { r: 231, g: 175, b: 162 },
+  'gather-pink': palette.product.gather,
   'guide-pink': palette.product.guide,
   'message-green': palette.product.message,
   'sell-gold': palette.product.sell,

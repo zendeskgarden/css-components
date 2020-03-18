@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@zendeskgarden/eslint-config": "11.0.1",
-    "@zendeskgarden/react-theming": "8.2.0",
+    "@zendeskgarden/react-theming": "8.3.0",
     "@zendeskgarden/stylelint-config": "12.0.1",
     "@zendeskgarden/svg-icons": "6.12.0",
     "babel-eslint": "10.0.3",
