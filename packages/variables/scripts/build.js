@@ -28,12 +28,11 @@ function toProperties(variables) {
   const valueOf = (category, value) => {
     let retVal;
 
-    if (category === 'color') {
-      retVal = `rgb(${value.r}, ${value.g}, ${value.b})`;
-    } else if (category === 'font-family') {
+    if (category === 'font-family') {
       retVal = value
+        .split(',')
         .map(font => {
-          return font.indexOf(' ') === -1 ? font : `'${font}'`;
+          return font.replace(/"/gu, "'");
         })
         .join(', ');
     } else {

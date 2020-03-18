@@ -5,15 +5,16 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-const base = 20;
+const space = require('@zendeskgarden/react-theming').DEFAULT_THEME.space;
+
 const retVal = {
-  'xxs': `${base * 0.2}px`,
-  'xs': `${base * 0.4}px`,
-  'sm': `${base * 0.6}px`,
-  '': `${base}px`,
-  'lg': `${base * 1.6}px`,
-  'xl': `${base * 2}px`,
-  'xxl': `${base * 2.4}px`
+  'xxs': space.xxs,
+  'xs': space.xs,
+  'sm': space.sm,
+  '': space.md,
+  'lg': space.lg,
+  'xl': space.xl,
+  'xxl': space.xxl
 };
 
 module.exports = retVal;
