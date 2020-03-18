@@ -300,7 +300,7 @@
   border-radius:2px;
   background:no-repeat
     50%
-    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%2368737D'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E")
+    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%2368737d'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E")
     transparent;
   cursor:pointer;
   padding:0;
@@ -338,11 +338,11 @@
 }
 
 .c-tag.c-tag--azure .c-tag__remove,.c-tag.c-tag--blue .c-tag__remove,.c-tag.c-tag--crimson .c-tag__remove,.c-tag.c-tag--fuschia .c-tag__remove,.c-tag.c-tag--green .c-tag__remove,.c-tag.c-tag--grey .c-tag__remove,.c-tag.c-tag--kale .c-tag__remove,.c-tag.c-tag--lime .c-tag__remove,.c-tag.c-tag--mint .c-tag__remove,.c-tag.c-tag--orange .c-tag__remove,.c-tag.c-tag--pink .c-tag__remove,.c-tag.c-tag--purple .c-tag__remove,.c-tag.c-tag--red .c-tag__remove,.c-tag.c-tag--royal .c-tag__remove,.c-tag.c-tag--teal .c-tag__remove{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23FFF'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23fff'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
 }
 
 .c-tag.c-tag--lemon .c-tag__remove,.c-tag.c-tag--yellow .c-tag__remove{
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23703B15'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23703b15'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 9l6-6m0 6L3 3'/%3E%3C/svg%3E");
 }
 
 .c-tag.is-rtl .c-tag__remove{

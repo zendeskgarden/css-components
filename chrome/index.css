@@ -316,7 +316,7 @@
   transition:-webkit-transform .25s ease-in-out;
   transition:transform .25s ease-in-out;
   transition:transform .25s ease-in-out,-webkit-transform .25s ease-in-out;
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23FFF'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' d='M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' color='%23fff'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' d='M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5'/%3E%3C/svg%3E");
   background-repeat:no-repeat;
   background-position:50%;
   width:28px;
