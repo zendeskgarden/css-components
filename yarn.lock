@@ -122,7 +122,7 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.8.4":
+"@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.8.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.7.tgz#8fefce9802db54881ba59f90bb28719b4996324d"
   integrity sha512-+AATMUFppJDw6aiR5NVPHqIQBlV/Pj8wY/EZH+lmvRdUo9xBaz/rF3alAwFJQavvKfeOlPE7oaaDHVbcySbCsg==
@@ -5898,7 +5898,14 @@ please-upgrade-node@^3.2.0:
   dependencies:
     semver-compare "^1.0.0"
 
-polished@3.4.4, polished@^3.4.4:
+polished@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-3.5.0.tgz#bffb0db79025c61d1f735f9bb77a379f5fc46345"
+  integrity sha512-TujkqjczBuuG8ObaNeq+zCCu46tTdaWxqtMxCGTxsV5NYTr9pL08H1P0jgy1V4PXLWm2UlIj+icSEwAZv7I8TA==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+
+polished@^3.4.4:
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/polished/-/polished-3.4.4.tgz#ac8cd6e704887398f3b802718f9d389b9ea4307b"
   integrity sha512-x9PKeExyI9AhWrJP3Q57I1k7GInujjiVBJMPFmycj9hX1yCOo/X9eu9eZwxgOziiXge3WbFQ5XOmkzunOntBSA==
