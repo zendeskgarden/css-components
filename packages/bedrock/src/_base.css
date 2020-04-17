@@ -48,6 +48,8 @@ a:focus {
 
 a:focus { outline: none; }
 
+b { font-weight: var(--zd-font-weight-semibold); }
+
 button {
   cursor: pointer;
   padding: 0;
@@ -68,6 +70,8 @@ code,
 kbd,
 pre,
 samp { font-family: var(--zd-font-family-monospace); }
+
+em { font-style: inherit; }
 
 fieldset,
 iframe { border: 0; }
@@ -108,6 +112,8 @@ ol,
 ul { list-style: none; }
 
 img { max-width: 100%; }
+
+strong { font-weight: inherit; }
 
 svg { max-height: 100%; }
 
