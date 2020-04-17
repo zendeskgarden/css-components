@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@7.0.35...@zendeskgarden/css-bedrock@8.0.0) (2020-04-17)
+
+### Features
+
+* apply opinionated semantic vs stylistic text markup defaults ([#281](https://github.com/zendeskgarden/css-components/pull/281)) ([e5738a2](https://github.com/zendeskgarden/css-components/commit/e5738a2))
+
+### BREAKING_CHANGES
+
+updates the following HTML elements:
+- `<b>` from  ** bold** to semibold `font-weight`
+- `<em>` from _italic_ to normal/inherit `font-style`
+- `<strong>` from **bold** to regular/inherit `font-weight`
+
+`<i>` continues to render _italic_ `font-style`
+
+
+
+
+
 ## [7.0.35](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@7.0.34...@zendeskgarden/css-bedrock@7.0.35) (2020-03-18)
 
 **Note:** Version bump only for package @zendeskgarden/css-bedrock
