@@ -189,8 +189,6 @@ a:focus,a:hover{
 
 a:focus{ outline:none; }
 
-b{ font-weight:600; }
-
 button{
   cursor:pointer;
   padding:0;
@@ -204,8 +202,6 @@ button,input,optgroup,select,textarea{
 code{ font-size:.95em; }
 
 code,kbd,pre,samp{ font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace; }
-
-em{ font-style:inherit; }
 
 fieldset,iframe{ border:0; }
 
@@ -224,8 +220,6 @@ hr{
 ol,ul{ list-style:none; }
 
 img{ max-width:100%; }
-
-strong{ font-weight:inherit; }
 
 svg{ max-height:100%; }
 
