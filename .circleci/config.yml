@@ -37,7 +37,7 @@ jobs:
     steps:
       - *attach_workspace
       - run: find demo -type l | xargs sed -i '' || true # convert symlinks to regular files
-      - run: scripts/gh-pages.js
+      - run: scripts/deploy.js
 
   publish:
     executor: node/default
@@ -57,9 +57,6 @@ workflows:
           requires:
             - test
           context: maintainer
-          filters:
-            branches:
-              only: master
       - publish:
           requires:
             - test
