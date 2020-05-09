@@ -52,5 +52,8 @@
     "stylelint-scss": "3.17.0",
     "tinycolor2": "1.4.1",
     "watch": "1.0.2"
+  },
+  "dependencies": {
+    "focus-visible": "^5.1.0"
   }
 }

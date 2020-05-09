@@ -1,8 +1,5 @@
 $(document).ready(function() {
-  Garden.customClasses.push('.c-btn');
-  Garden.smClasses.push('.c-btn');
-  Garden.rtlClasses.push('.l-btn-group');
-  Garden.handleFocus('.c-btn');
+  Garden.rtlClasses.push('.c-btn');
 
   $('.js-inset').change(function() {
     $('.c-btn').toggleClass('c-btn--focus-inset');
