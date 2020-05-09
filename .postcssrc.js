@@ -9,11 +9,12 @@ module.exports = {
       features: {
         'color-mod-function': true,
         'custom-properties': { preserve: false },
-        'system-ui-font-family': false
-      }
+        'system-ui-font-family': false,
+      },
     },
+    'postcss-focus-visible': { preserve: false },
     'postcss-inline-svg': {
-      paths: [path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')]
+      paths: [path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')],
     },
     cssnano: {
       preset: [
@@ -21,9 +22,9 @@ module.exports = {
         {
           cssDeclarationSorter: false,
           discardComments: { removeAllButFirst: true },
-          normalizeWhitespace: false
-        }
-      ]
-    }
-  }
+          normalizeWhitespace: false,
+        },
+      ],
+    },
+  },
 };

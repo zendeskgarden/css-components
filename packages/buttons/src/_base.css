@@ -1,30 +1,5 @@
 @import '@zendeskgarden/css-variables';
-@import '_variables';
-
-:root {
-  --zd-btn-font-size: var(--zd-font-size-md);
-  --zd-btn-font-weight: var(--zd-font-weight-regular);
-  --zd-btn-background-color: transparent;
-  --zd-btn-border-radius: 4px;
-  --zd-btn-border-width: 1px;
-  --zd-btn-line-height: 38px;
-  --zd-btn-padding: calc(27 / 14 * 1em);
-  --zd-btn-min-width: calc(calc(66 / 14 * 1em) + calc(var(--zd-btn-padding) * 2));
-  --zd-btn-transition:
-    border-color .25s ease-in-out,
-    box-shadow .1s ease-in-out,
-    background-color .25s ease-in-out,
-    color .25s ease-in-out;
-  --zd-btn--lg-font-size: var(--zd-font-size-md);
-  --zd-btn--lg-line-height: 46px;
-  --zd-btn--lg-padding: calc(27 / 14 * 1em);
-  --zd-btn--lg-min-width: calc(calc(86 / 14 * 1em) + calc(var(--zd-btn--lg-padding) * 2));
-  --zd-btn--pill-border-radius: 100px;
-  --zd-btn--sm-font-size: var(--zd-font-size-sm);
-  --zd-btn--sm-line-height: 30px;
-  --zd-btn--sm-padding: calc(27 / 12 * 1em);
-  --zd-btn--sm-min-width: calc(calc(46 / 12 * 1em) + calc(var(--zd-btn--sm-padding) * 2));
-}
+@import '_selectors';
 
 /* 1. Anchor tag reset.
  * 2. Override for <input> & <button> elements.
@@ -32,59 +7,86 @@
 
 .c-btn {
   display: inline-block;
-  transition: var(--zd-btn-transition);
+  /* prettier-ignore */
+  transition:
+    border-color .25s ease-in-out,
+    box-shadow .1s ease-in-out,
+    background-color .25s ease-in-out,
+    color .25s ease-in-out;
   margin: 0;
-  border: var(--zd-btn-border-width) solid var(--zd-btn-border-color);
-  border-radius: var(--zd-btn-border-radius);
-  background-color: var(--zd-btn-background-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
   cursor: pointer;
-  padding: 0 var(--zd-btn-padding);
-  min-width: var(--zd-btn-min-width);
   overflow: hidden;
   vertical-align: middle;
   text-align: center;
   text-decoration: none; /* [1] */
   text-overflow: ellipsis;
-  line-height: var(--zd-btn-line-height);
   white-space: nowrap;
-  color: var(--zd-btn-color);
   font-family: inherit; /* [2] */
-  font-size: var(--zd-btn-font-size);
-  font-weight: var(--zd-btn-font-weight);
+  font-weight: var(--zd-font-weight-regular);
   -webkit-font-smoothing: subpixel-antialiased;
   box-sizing: border-box;
   user-select: none;
   -webkit-touch-callout: none;
 }
 
-.c-btn::-moz-focus-inner { /* [3] */
+.c-btn--pill {
+  border-radius: 100px;
+}
+
+.c-btn--anchor {
+  display: inline;
+  border: none;
+  border-radius: 0;
+  vertical-align: baseline;
+  white-space: normal;
+  font-weight: inherit;
+}
+
+.c-btn::-moz-focus-inner {
+  /* [3] */
   border: 0;
   padding: 0;
 }
 
-.c-btn--pill { border-radius: var(--zd-btn--pill-border-radius); }
-
-.c-btn--sm {
-  padding: 0 var(--zd-btn--sm-padding);
-  min-width: var(--zd-btn--sm-min-width);
-  line-height: var(--zd-btn--sm-line-height);
-  font-size: var(--zd-btn--sm-font-size);
+.c-btn:--btn-hover {
+  text-decoration: none; /* [1] */
 }
 
-.c-btn--lg {
-  padding: 0 var(--zd-btn--lg-padding);
-  min-width: var(--zd-btn--lg-min-width);
-  line-height: var(--zd-btn--lg-line-height);
-  font-size: var(--zd-btn--lg-font-size);
+.c-btn--anchor:--btn-hover {
+  text-decoration: underline;
 }
 
-.c-btn--full {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.c-btn:focus {
+  outline: none;
 }
 
-.c-btn.c-btn--danger {
-  border-color: var(--zd-btn--danger-border-color);
-  color: var(--zd-btn--danger-color);
+.c-btn:--btn-focus {
+  text-decoration: none; /* [1] */
+}
+
+.c-btn--anchor:--btn-focus {
+  text-decoration: underline;
+}
+
+.c-btn:--btn-active {
+  /* prettier-ignore */
+  transition:
+    border-color .1s ease-in-out,
+    background-color .1s ease-in-out,
+    color .1s ease-in-out;
+  text-decoration: none; /* [1] */
+}
+
+.c-btn--anchor:--btn-active {
+  text-decoration: underline;
+}
+
+.c-btn:--btn-disabled {
+  cursor: default;
+}
+
+.c-btn--anchor:--btn-disabled {
+  text-decoration: none;
 }
