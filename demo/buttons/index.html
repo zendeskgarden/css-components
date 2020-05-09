@@ -14,7 +14,6 @@
   <link href="../forms/checkbox/index.css" rel="stylesheet">
   <link href="//zendeskgarden.github.io/index.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
-  <link href="custom.css" rel="stylesheet">
   <link href="../utilities/index.css" rel="stylesheet">
 </head>
 <body>
@@ -50,12 +49,6 @@
               </fieldset>
             </li>
             <li class="c-menu__item" role="menuitem">
-              <fieldset class="c-chk">
-                <input class="c-chk__input js-custom" id="nav.ctl.custom" type="checkbox">
-                <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.custom">Custom</label>
-              </fieldset>
-            </li>
-            <li class="c-menu__item" role="menuitem">
               <div class="c-chk">
                 <input class="c-chk__input js-inset" id="nav.ctl.inset" type="checkbox">
                 <label class="c-chk__label c-chk__label--toggle" for="nav.ctl.inset">Inset Focus</label>
@@ -81,7 +74,6 @@
         <li class="u-mb-sm"><button class="c-btn c-btn--primary">.c-btn.c-btn--primary</button></li>
         <li class="u-mb-sm"><button class="c-btn c-btn--pill">.c-btn.c-btn--pill</button></li>
         <li class="u-mb-sm"><button class="c-btn c-btn--basic">.c-btn.c-btn--basic</button></li>
-        <li class="u-mb-sm"><button class="c-btn c-btn--muted">.c-btn.c-btn--muted</button></li>
         <li class="u-mb-sm"><button class="c-btn c-btn--anchor">.c-btn.c-btn--anchor</button></li>
       </ul>
       <h2 class="u-fs-lg u-mb-sm">Colors</h2>
@@ -104,31 +96,25 @@
       </ul>
       <h2 class="u-fs-lg u-mb-sm">States</h2>
       <div class="l-grid u-mb" style="min-width:1380px">
-        <ul class="l-grid__item u-1/5">
+        <ul class="l-grid__item u-1/4">
           <li class="u-mb-sm"><button class="c-btn is-disabled" disabled>.c-btn.is-disabled</button></li>
           <li class="u-mb-sm"><button class="c-btn is-focused">.c-btn.is-focused</button></li>
           <li class="u-mb-sm"><button class="c-btn is-hovered">.c-btn.is-hovered</button></li>
           <li class="u-mb-sm"><button class="c-btn is-active">.c-btn.is-active</button></li>
         </ul
-        ><ul class="l-grid__item u-1/5">
+        ><ul class="l-grid__item u-1/4">
           <li class="u-mb-sm"><button class="c-btn c-btn--primary is-disabled" disabled>.c-btn.c-btn--primary.is-disabled</button></li>
           <li class="u-mb-sm"><button class="c-btn c-btn--primary is-focused">.c-btn.c-btn--primary.is-focused</button></li>
           <li class="u-mb-sm"><button class="c-btn c-btn--primary is-hovered">.c-btn.c-btn--primary.is-hovered</button></li>
           <li class="u-mb-sm"><button class="c-btn c-btn--primary is-active">.c-btn.c-btn--primary.is-active</button></li>
         </ul
-        ><ul class="l-grid__item u-1/5">
+        ><ul class="l-grid__item u-1/4">
           <li class="u-mb-sm"><button class="c-btn c-btn--basic is-disabled" disabled>.c-btn.c-btn--basic.is-disabled</button></li>
           <li class="u-mb-sm"><button class="c-btn c-btn--basic is-focused">.c-btn.c-btn--basic.is-focused</button></li>
           <li class="u-mb-sm"><button class="c-btn c-btn--basic is-hovered">.c-btn.c-btn--basic.is-hovered</button></li>
           <li class="u-mb-sm"><button class="c-btn c-btn--basic is-active">.c-btn.c-btn--basic.is-active</button></li>
         </ul
-        ><ul class="l-grid__item u-1/5">
-          <li class="u-mb-sm"><button class="c-btn c-btn--muted is-disabled" disabled>.c-btn.c-btn--muted.is-disabled</button></li>
-          <li class="u-mb-sm"><button class="c-btn c-btn--muted is-focused">.c-btn.c-btn--muted.is-focused</button></li>
-          <li class="u-mb-sm"><button class="c-btn c-btn--muted is-hovered">.c-btn.c-btn--muted.is-hovered</button></li>
-          <li class="u-mb-sm"><button class="c-btn c-btn--muted is-active">.c-btn.c-btn--muted.is-active</button></li>
-        </ul
-        ><ul class="l-grid__item u-1/5">
+        ><ul class="l-grid__item u-1/4">
           <li class="u-mb-sm"><button class="c-btn c-btn--anchor is-disabled u-mb-sm" disabled>.c-btn.c-btn--anchor.is-disabled</button></li>
           <li class="u-mb-sm"><button class="c-btn c-btn--anchor is-focused u-mb-sm">.c-btn.c-btn--anchor.is-focused</button></li>
           <li class="u-mb-sm"><button class="c-btn c-btn--anchor is-hovered u-mb-sm">.c-btn.c-btn--anchor.is-hovered</button></li>
@@ -176,7 +162,7 @@
         </ul>
       </div>
       <p class="u-mb-sm">The
-        <code class="c-code">.c-btn--muted.c-btn--basic.c-btn--pill</code>
+        <code class="c-code">.c-btn--basic.c-btn--pill</code>
         modifier can be used to create muted icons.
       </p>
       <div class="l-grid u-mb">
@@ -202,57 +188,28 @@
           </button>
         </ul>
       </div>
-      <h2 class="u-fs-lg u-mb-sm">Groups</h2>
-      <p class="u-mb-sm">The
-        <code class="c-code">.l-btn-group</code>
-        layout class can be used as a container for grouped buttons. Use
-        <code class="c-code">.is-selected</code>
-        to indicate item selection. (See the corresponding Garden React
-        <a href="//zendeskgarden.github.io/react-components/buttons/#!/ButtonGroup"><code class="c-code">&lt;ButtonGroup&gt;</code></a>
-        component.)
-      </p>
-      <div class="l-btn-group u-mb" role="tablist">
-        <button class="c-btn is-selected" role="tab"><span dir="ltr">.c-btn One</span></button
-        ><button class="c-btn" role="tab"><span dir="ltr">.c-btn Two</span></button
-        ><button class="c-btn" role="tab"><span dir="ltr">.c-btn Three</span></button>
-      </div>
-      <p class="u-mb-sm">Use the group to combine a button with an icon button
-        to support a split button as shown. The icon button should gain
-        <code class="c-code">.is-active</code>
-        styling while the menu is open. Icon rotation is achieved by adding
-        <code class="c-code">.is-rotated</code> to the
-        <code class="c-code">.c-btn__icon</code> element. (See the corresponding
-        Garden React
-        <a href="//zendeskgarden.github.io/react-components/buttons/#!/SplitButton"><code class="c-code">&lt;SplitButton&gt;</code></a>
-        component.)
-      </p>
-      <div class="l-btn-group u-mb-lg">
-        <button class="c-btn">Split Button</button
-        ><button class="c-btn c-btn--icon js-menu js-menu--split">
+      <div class="u-mb">
+        <p class="u-mb-sm">Click the following icon button to apply rotation.
+          Icon rotation is achieved by adding
+          <code class="c-code">.is-rotated</code> to the
+          <code class="c-code">.c-btn__icon</code> element.
+        </p>
+        <button class="c-btn c-btn--icon js-rotate">
           <svg class="c-btn__icon">
             <use xlink:href="../index.svg#zd-svg-icon-16-chevron-down-stroke">
           </svg>
         </button>
-        <div class="menu-container u-1/1">
-          <ul aria-hidden="true" class="c-menu c-menu--up" role="menu">
-            <li class="c-menu__item" role="menuitem">One</li>
-            <li class="c-menu__item is-selected" role="menuitem">Two</li>
-            <li class="c-menu__item" role="menuitem">Three</li>
-          </ul>
-        </div>
       </div>
       <section id="playground">
         <h1 class="c-main__subtitle u-fs-xl u-mb">Playground</h1>
         <div class="c-playground">
           <div class="c-playground__preview"></div>
-<textarea class="c-playground__code"><div class="l-btn-group">
-  <button class="c-btn c-btn--sm c-btn--pill c-btn--primary">Submit As <strong class="u-semibold">Pending</strong></button
-  ><button class="c-btn c-btn--icon c-btn--sm c-btn--pill c-btn--primary" title="more">
-    <svg class="c-btn__icon">
-      <use xlink:href="../index.svg#zd-svg-icon-16-chevron-down-stroke">
-    </svg>
-  </button>
-</div></textarea>
+<textarea class="c-playground__code"><button class="c-btn c-btn--sm c-btn--primary">Submit As <b class="u-semibold">Pending</b></button>
+<button class="c-btn c-btn--icon c-btn--sm c-btn--primary" title="more">
+  <svg class="c-btn__icon">
+    <use xlink:href="../index.svg#zd-svg-icon-16-chevron-down-stroke">
+  </svg>
+</button></textarea>
         </div>
       </section>
     </div>
