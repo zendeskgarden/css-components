@@ -9,10 +9,10 @@ module.exports = {
       features: {
         'color-mod-function': true,
         'custom-properties': { preserve: false },
+        'focus-visible-pseudo-class': { preserve: false },
         'system-ui-font-family': false
       }
     },
-    'postcss-focus-visible': { preserve: false },
     'postcss-inline-svg': {
       paths: [path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')]
     },
