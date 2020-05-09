@@ -5,9 +5,11 @@
   --zd-btn-color: var(--zd-color-blue-600);
   --zd-btn-color_hover: var(--zd-color-blue-700);
   --zd-btn-color_active: var(--zd-color-blue-800);
+  --zd-btn-box-shadow: 0 0 0 3px color-mod(var(--zd-btn-color) alpha(35%));
   --zd-btn--danger-color: var(--zd-color-red-600);
   --zd-btn--danger-color_hover: var(--zd-color-red-700);
   --zd-btn--danger-color_active: var(--zd-color-red-800);
+  --zd-btn--danger-box-shadow: 0 0 0 3px color-mod(var(--zd-btn--danger-color) alpha(35%));
 }
 
 .c-btn {
@@ -36,6 +38,7 @@
 }
 
 .c-btn--basic.c-btn--icon {
+  border: none;
   color: var(--zd-color-grey-600);
 }
 
@@ -79,14 +82,26 @@
 }
 
 .c-btn:--btn-focus {
-  box-shadow: 0 0 0 3px color-mod(var(--zd-btn-color) alpha(35%));
+  box-shadow: var(--zd-btn-box-shadow);
+}
+
+.c-btn--focus-inset:--btn-focus {
+  box-shadow: inset var(--zd-btn-box-shadow);
 }
 
 .c-btn--danger:--btn-focus {
-  box-shadow: 0 0 0 3px color-mod(var(--zd-btn--danger-color) alpha(35%));
+  box-shadow: var(--zd-btn--danger-box-shadow);
 }
 
-.c-btn--anchor:--btn-focus {
+.c-btn--danger.c-btn--focus-inset:--btn-focus {
+  box-shadow: inset var(--zd-btn--danger-box-shadow);
+}
+
+.c-btn--primary.c-btn--focus-inset:--btn-focus {
+  box-shadow: inset 0 0 0 3px color-mod(var(--zd-color-white) alpha(35%));
+}
+
+.c-btn--anchor.c-btn--anchor:--btn-focus {
   box-shadow: none;
 }
 
