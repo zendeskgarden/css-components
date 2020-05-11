@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@7.0.19...@zendeskgarden/css-buttons@8.0.0) (2020-05-11)
+
+
+* feat!: updated button styling (#286) ([de554a5](https://github.com/zendeskgarden/css-components/commit/de554a500f9780ed5c229c6b468cce3cfd4be47d)), closes [#286](https://github.com/zendeskgarden/css-components/issues/286)
+
+
+### BREAKING CHANGES
+
+* - removal of `.c-btn--muted`; use `.c-btn--icon.c-btn--basic` instead
+- removal of `.l-btn-group`; use react-components [`<ButtonGroup>`](https://garden.zendesk.com/react-components/buttons/#buttongroup) or [`<SplitButton>`](https://garden.zendesk.com/react-components/buttons/#splitbutton) for required accessibility logic
+- removal of `custom.css`; Garden css-components will no longer bundle custom color demos – use react-components and [Theming](https://garden.zendesk.com/react-components/theming/) when custom styling is needed
+
+Features/improvements include:
+- added support for [`:focus-visible` polyfill](https://github.com/WICG/focus-visible); demonstrated in the example page
+- applied [react-components API](https://github.com/zendeskgarden/react-components/blob/master/docs/api.md#view-components) property ordering best-practice for simplified specificity and drastically reduced size.
+
+
+
+
+
 ## [7.0.19](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@7.0.18...@zendeskgarden/css-buttons@7.0.19) (2020-03-18)
 
 **Note:** Version bump only for package @zendeskgarden/css-buttons
