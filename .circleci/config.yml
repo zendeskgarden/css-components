@@ -56,7 +56,7 @@ workflows:
       - deploy:
           requires:
             - test
-          context: maintainer
+          context: writer
       - publish:
           requires:
             - test
