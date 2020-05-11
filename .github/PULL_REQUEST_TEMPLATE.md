@@ -26,6 +26,4 @@
   (`.is-hovered`, `.is-focused`, etc.)
 * [ ] :arrow_left: renders as expected with reversed (RTL) direction
 * [ ] :metal: renders as expected sans Bedrock (`?bedrock=false`)
-* [ ] :nail_care: provides `custom.css` example for modifying the
-  primary accent color
 * [ ] :memo: tested in Chrome, Firefox, Safari, Edge, and IE11

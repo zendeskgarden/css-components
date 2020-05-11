@@ -1,42 +1,14 @@
-@import '@zendeskgarden/css-variables';
-
-:root {
-  --zd-btn--icon-size: calc(var(--zd-btn-line-height) + 2px);
-  --zd-btn--icon--sm-size: calc(var(--zd-btn--sm-line-height) + 2px);
-  --zd-btn--icon--lg-size: calc(var(--zd-btn--lg-line-height) + 2px);
-  --zd-btn__icon-size: 16px;
-  --zd-btn__icon-transition: transform .25s ease-in-out;
-  --zd-btn--lg__icon-size: 24px;
-}
-
-.c-btn--icon {
-  padding: 0;
-  width: var(--zd-btn--icon-size);
-  min-width: 0;
-  height: var(--zd-btn--icon-size);
-}
-
-.c-btn--icon.c-btn--sm {
-  width: var(--zd-btn--icon--sm-size);
-  height: var(--zd-btn--icon--sm-size);
-}
-
-.c-btn--icon.c-btn--lg {
-  width: var(--zd-btn--icon--lg-size);
-  height: var(--zd-btn--icon--lg-size);
-}
-
 .c-btn__icon {
-  transition: var(--zd-btn__icon-transition);
-  margin-top: -2px;
-  width: var(--zd-btn__icon-size);
-  height: var(--zd-btn__icon-size);
+  /* prettier-ignore */
+  transition: transform .25s ease-in-out;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
 }
 
 .c-btn--lg .c-btn__icon {
-  width: var(--zd-btn--lg__icon-size);
-  height: var(--zd-btn--lg__icon-size);
+  width: 24px;
+  height: 24px;
 }
 
 .c-btn__icon.is-rotated {

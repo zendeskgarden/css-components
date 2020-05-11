@@ -6,10 +6,6 @@
  */
 
 @import '_base';
-@import '_basic';
-@import '_group';
-@import '_state';
-@import '_anchor';
-@import '_primary';
+@import '_size';
+@import '_color';
 @import '_icon';
-@import '_muted';
