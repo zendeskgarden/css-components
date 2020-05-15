@@ -23,7 +23,7 @@
     "chalk": "4.0.0",
     "cssnano": "4.1.10",
     "envalid": "6.0.1",
-    "eslint": "6.8.0",
+    "eslint": "7.0.0",
     "eslint-plugin-notice": "0.9.10",
     "focus-visible": "5.1.0",
     "handlebars": "4.7.6",
