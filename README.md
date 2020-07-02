@@ -1,7 +1,7 @@
 # Garden CSS Components [![Build Status][build status badge]][build status link] [![Dependency Status][dependency status badge]][dependency status link]
 
-[build status badge]: https://flat.badgen.net/circleci/github/zendeskgarden/css-components/master?label=build
-[build status link]: https://circleci.com/gh/zendeskgarden/css-components/tree/master
+[build status badge]: https://flat.badgen.net/circleci/github/zendeskgarden/css-components/main?label=build
+[build status link]: https://circleci.com/gh/zendeskgarden/css-components/tree/main
 [dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/css-components?label=dependencies
 [dependency status link]: https://david-dm.org/zendeskgarden/css-components?type=dev
 
