@@ -9,7 +9,7 @@
   display:inline-block;
   box-sizing:border-box;
   border-radius:2px;
-  box-shadow:0 4px 8px 0 rgba(4, 68, 77, .15);
+  box-shadow:0 4px 8px 0 rgba(23, 73, 77, .15);
   background-color:#03363d;
   padding:0 1em;
   line-height:1.66667;
@@ -88,7 +88,7 @@
 
 .c-tooltip--light{
   border:1px solid #d8dcde;
-  box-shadow:0 12px 20px 0 rgba(4, 68, 77, .15);
+  box-shadow:0 12px 20px 0 rgba(23, 73, 77, .15);
   background-color:#fff;
   color:#49545c;
 }
