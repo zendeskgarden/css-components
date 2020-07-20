@@ -1,8 +1,13 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node@3.0.1
 
 references:
+  executor: &executor
+    executor:
+      name: node/default
+      tag: lts
+
   workspace_root: &workspace_root ~/project
 
   attach_workspace: &attach_workspace
@@ -11,27 +16,26 @@ references:
 
 jobs:
   build:
-    executor: node/default
+    <<: *executor
     steps:
       - checkout
-      - node/with-cache:
-          cache-key: yarn.lock
-          steps:
-            - run: yarn --frozen-lockfile --ignore-scripts
-            - run: yarn lerna bootstrap
-            - run: yarn lerna run build --concurrency=2 # prevent out-of-memory
+      - node/install-packages:
+          pkg-manager: yarn
+      - run: yarn --frozen-lockfile --ignore-scripts
+      - run: yarn lerna bootstrap
+      - run: yarn lerna run build --concurrency=2 # prevent out-of-memory
       - persist_to_workspace:
           root: *workspace_root
           paths: .
 
   test:
-    executor: node/default
+    <<: *executor
     steps:
       - *attach_workspace
       - run: yarn test
 
   deploy:
-    executor: node/default
+    <<: *executor
     environment:
       NODE_DEBUG: gh-pages
     steps:
@@ -40,7 +44,7 @@ jobs:
       - run: scripts/deploy.js
 
   publish:
-    executor: node/default
+    <<: *executor
     steps:
       - *attach_workspace
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
