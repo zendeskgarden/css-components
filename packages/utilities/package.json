@@ -33,5 +33,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "style": "src/index.css"
+  "style": "dist/index.css"
 }
