@@ -6,7 +6,7 @@
  */
 
 .c-tag--custom{
-  background-color:#eb4962;
+  background-color:#ff6224;
   color:#fff;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .c-tag--custom.is-focused,.c-tag--custom:focus{
-  box-shadow:0 0 0 2px rgba(235, 73, 98, .4);
+  box-shadow:0 0 0 2px rgba(255, 98, 36, .4);
 }
 
 .c-tag--custom .c-tag__remove{
