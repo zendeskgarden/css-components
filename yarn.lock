@@ -1411,10 +1411,10 @@
   resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-15.0.0.tgz#b05982801029e1b1d5ec5a435d7e95dc8733dda3"
   integrity sha512-NfHIJgd/7G4UtR0SSFThp8rOtr85DZDWnFbhSDPeUF3c8qVAhcAy46+Unl5LJteBgQwTNOgM/puw3VCUdl9EMQ==
 
-"@zendeskgarden/react-theming@8.22.0":
-  version "8.22.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/react-theming/-/react-theming-8.22.0.tgz#5bb3bcdb251b2a45b37288c58168eb5ef2775cd7"
-  integrity sha512-Wjg30Xim8GzQA9W7TeNSO82ER1iCi19wwjhxm99Jf58CgUy3GOTGxXc0IWBnk/05x35X6GW+RqENsU3N8xJjkA==
+"@zendeskgarden/react-theming@8.24.0":
+  version "8.24.0"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/react-theming/-/react-theming-8.24.0.tgz#f3d0657715779d5216239ee41722301b39098ce4"
+  integrity sha512-UVDMCdycN5ewiglqD9MfE5HehlafGydQAcng4zBDC8zqqvpCxtVFDWNE249M9BtRdgq9QaIQphsnI9xjN88o8A==
   dependencies:
     "@zendeskgarden/container-focusvisible" "^0.4.3"
     "@zendeskgarden/container-utilities" "^0.5.1"
