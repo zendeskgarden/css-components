@@ -39,7 +39,7 @@
     "postcss": "8.1.6",
     "postcss-cli": "8.2.0",
     "postcss-import": "13.0.0",
-    "postcss-inline-svg": "4.1.0",
+    "postcss-inline-svg": "5.0.0",
     "postcss-input-range": "4.0.0",
     "postcss-preset-env": "6.7.0",
     "prettier-package-json": "2.1.3",
