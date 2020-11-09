@@ -135,7 +135,7 @@
   left:16px;
   background:no-repeat
     50% / 16px
-    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%23cc3340'%3E%3Cg fill='none' stroke='currentColor'%3E%3Ccircle cx='7.5' cy='8.5' r='7'/%3E%3Cpath stroke-linecap='round' d='M7.5 4.5V9'/%3E%3C/g%3E%3Ccircle cx='7.5' cy='12' r='1' fill='currentColor'/%3E%3C/svg%3E");
+    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' focusable='false' viewBox='0 0 16 16' color='%23cc3340'%3E %3Cg fill='none' stroke='currentColor'%3E %3Ccircle cx='7.5' cy='8.5' r='7'/%3E %3Cpath stroke-linecap='round' d='M7.5 4.5V9'/%3E %3C/g%3E %3Ccircle cx='7.5' cy='12' r='1' fill='currentColor'/%3E %3C/svg%3E");
   width:16px;
   height:16px;
   content:"";
@@ -189,12 +189,12 @@
 
 .c-dialog__close:before{
   opacity:1;
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%2368737d'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 13L13 3m0 10L3 3'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' focusable='false' viewBox='0 0 16 16' color='%2368737d'%3E %3Cpath stroke='currentColor' stroke-linecap='round' d='M3 13L13 3m0 10L3 3'/%3E %3C/svg%3E");
 }
 
 .c-dialog__close:after{
   opacity:0;
-  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='%232f3941'%3E%3Cpath stroke='currentColor' stroke-linecap='round' d='M3 13L13 3m0 10L3 3'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' focusable='false' viewBox='0 0 16 16' color='%232f3941'%3E %3Cpath stroke='currentColor' stroke-linecap='round' d='M3 13L13 3m0 10L3 3'/%3E %3C/svg%3E");
 }
 
 .c-dialog__close.is-focused:before,.c-dialog__close.is-hovered:before,.c-dialog__close:hover:before{
