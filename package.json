@@ -5,7 +5,7 @@
   "scripts": {
     "build": "lerna run build --stream",
     "format": "prettier-package-json --write && lerna run format --stream",
-    "postinstall": "lerna bootstrap",
+    "postinstall": "husky install && lerna bootstrap",
     "lint": "eslint scripts/*.js && lerna run lint --stream",
     "new": "scripts/new.js",
     "prepare": "yarn build",
@@ -28,7 +28,7 @@
     "eslint-plugin-notice": "0.9.10",
     "focus-visible": "5.2.0",
     "handlebars": "4.7.6",
-    "husky": "5.0.9",
+    "husky": "5",
     "jsonlint": "1.6.3",
     "klaw-sync": "6.0.0",
     "lerna": "3.22.1",
