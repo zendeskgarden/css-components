@@ -17,7 +17,7 @@
     "@zendeskgarden/eslint-config": "19.0.0",
     "@zendeskgarden/react-theming": "8.31.1",
     "@zendeskgarden/scripts": "0.1.11",
-    "@zendeskgarden/stylelint-config": "14.0.0",
+    "@zendeskgarden/stylelint-config": "15.0.0",
     "@zendeskgarden/svg-icons": "6.28.0",
     "babel-eslint": "10.1.0",
     "chalk": "4.1.0",
