@@ -14,7 +14,7 @@
     "test": "lerna run test --stream"
   },
   "devDependencies": {
-    "@zendeskgarden/eslint-config": "15.0.0",
+    "@zendeskgarden/eslint-config": "19.0.0",
     "@zendeskgarden/react-theming": "8.31.1",
     "@zendeskgarden/scripts": "0.1.11",
     "@zendeskgarden/stylelint-config": "14.0.0",
