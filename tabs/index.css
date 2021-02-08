@@ -29,7 +29,6 @@
 .c-tab__list__item{
   display:inline-block;
   position:relative;
-  -webkit-transition:color .25s ease-in-out;
   transition:color .25s ease-in-out;
   border-bottom:solid transparent;
   border-width:3px;
@@ -130,7 +129,6 @@
 }
 
 .c-tab__list__item:before{
-  -webkit-transition:box-shadow .1s ease-in-out;
   transition:box-shadow .1s ease-in-out;
   content:"";
 }

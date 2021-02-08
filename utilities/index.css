@@ -858,7 +858,7 @@
 
 .u-display-block{ display:block !important; }
 
-.u-display-flex{ display:-webkit-box !important; display:flex !important; }
+.u-display-flex{ display:flex !important; }
 
 .u-display-inherit{ display:inherit !important; }
 
@@ -866,7 +866,7 @@
 
 .u-display-inline-block{ display:inline-block !important; }
 
-.u-display-inline-flex{ display:-webkit-inline-box !important; display:inline-flex !important; }
+.u-display-inline-flex{ display:inline-flex !important; }
 
 .u-display-list-item{ display:list-item !important; }
 

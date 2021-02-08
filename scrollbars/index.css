@@ -19,7 +19,6 @@
 .c-scrollbar .ps__rail-x,.c-scrollbar .ps__rail-y,.c-scrollbar__track{
   display:block;
   position:absolute;
-  -webkit-transition:background-color .2s linear,opacity .2s linear;
   transition:background-color .2s linear,opacity .2s linear;
   opacity:0;
 }
@@ -59,7 +58,6 @@
 
 .c-scrollbar .ps__thumb-x,.c-scrollbar .ps__thumb-y,.c-scrollbar__thumb{
   position:absolute;
-  -webkit-transition:background-color .2s linear,box-shadow .1s ease-in-out,height .2s ease-in-out,width .2s ease-in-out;
   transition:background-color .2s linear,box-shadow .1s ease-in-out,height .2s ease-in-out,width .2s ease-in-out;
   border-radius:7px;
   background-color:#2f3941;

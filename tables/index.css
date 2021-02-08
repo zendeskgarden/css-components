@@ -24,7 +24,6 @@
 
 .c-table__row{
   display:table-row;
-  -webkit-transition:background-color .1s ease-in-out;
   transition:background-color .1s ease-in-out;
   border-bottom:1px solid #e9ebed;
   height:40px;
@@ -51,7 +50,6 @@
 
 .c-table__row__cell{
   display:table-cell;
-  -webkit-transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out;
   transition:border-color .25s ease-in-out,box-shadow .1s ease-in-out;
   padding:10px 12px;
   box-sizing:border-box;
@@ -105,6 +103,7 @@
 .c-table__row__cell__overflow{
   display:block;
   position:relative;
+  transition:opacity .25s ease-in-out,background-color .1s ease-in-out;
   z-index:0;
   margin-top:calc(20px - 1em);
   border:none;
@@ -112,14 +111,9 @@
   cursor:pointer;
   padding:0;
   width:100%;
+  height:2em;
   text-decoration:none;
   font-size:inherit;
-}
-
-.c-table__row__cell__overflow,.c-table__row__cell__overflow:after,.c-table__row__cell__overflow:before{
-  -webkit-transition:opacity .25s ease-in-out,background-color .1s ease-in-out;
-  transition:opacity .25s ease-in-out,background-color .1s ease-in-out;
-  height:2em;
 }
 
 .c-table__row__cell__overflow:after,.c-table__row__cell__overflow:before{
@@ -127,12 +121,13 @@
   top:0;
   right:0;
   left:0;
-  -webkit-transform:rotate(90deg);
-          transform:rotate(90deg);
+  transform:rotate(90deg);
+  transition:opacity .25s ease-in-out,background-color .1s ease-in-out;
   border-radius:50%;
   background-repeat:no-repeat;
   background-position:50%;
   width:2em;
+  height:2em;
   content:"";
 }
 
@@ -203,6 +198,7 @@
 
 .c-table__row__cell__sortable{
   position:relative;
+  transition:color .25s ease-in-out,opacity .25s ease-in-out;
   border:none;
   background-color:transparent;
   cursor:pointer;
@@ -214,15 +210,11 @@
   font-weight:600;
 }
 
-.c-table__row__cell__sortable,.c-table__row__cell__sortable:after,.c-table__row__cell__sortable:before{
-  -webkit-transition:color .25s ease-in-out,opacity .25s ease-in-out;
-  transition:color .25s ease-in-out,opacity .25s ease-in-out;
-}
-
 .c-table__row__cell__sortable:after,.c-table__row__cell__sortable:before{
   position:absolute;
   top:0;
   right:0;
+  transition:color .25s ease-in-out,opacity .25s ease-in-out;
   background-repeat:no-repeat;
   background-position:50%;
   width:14px;
