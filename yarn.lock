@@ -1326,14 +1326,15 @@
   resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-19.0.0.tgz#cb8be4761a7fe86b756ebbb978f4a1816739c620"
   integrity sha512-+G3WhkG8OGePbCSwJxcMuYdPXvz+KH4QB+cT/HUt6FeXVItPXPPbzgkzUuxl8GOCT2X6vUH6iyOvNG6hKrHCEw==
 
-"@zendeskgarden/react-theming@8.31.1":
-  version "8.31.1"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/react-theming/-/react-theming-8.31.1.tgz#fcce2c6c4cf89ad00bea6f7e9616b8575ec9aa66"
-  integrity sha512-fXee4OGNsYnVzALJFF3ud75CNxvCt+Sde8hWTV+4ts+SUnPSYubwqq1mxQae7+MgrtdS+Gy6cVkVmpHceu19RA==
+"@zendeskgarden/react-theming@8.32.1":
+  version "8.32.1"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/react-theming/-/react-theming-8.32.1.tgz#68e7045e2067e78b1742490156e1b81d14d228d5"
+  integrity sha512-5bz2gGy+5zF5WGuR7zADjLug1nd+rLnTm0Ni9bpzWx2pwQPWk7R6bI8Jv4qjiea7KUR+Wol2D9qHsLCz92mYpA==
   dependencies:
     "@zendeskgarden/container-focusvisible" "^0.4.6"
     "@zendeskgarden/container-utilities" "^0.5.5"
     polished "^4.0.0"
+    prop-types "^15.5.7"
 
 "@zendeskgarden/scripts@0.1.11":
   version "0.1.11"
@@ -7832,7 +7833,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-prop-types@15.7.2:
+prop-types@^15.5.7:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
