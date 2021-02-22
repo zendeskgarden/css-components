@@ -40,7 +40,7 @@ jobs:
       NODE_DEBUG: gh-pages
     steps:
       - *attach_workspace
-      - run: find demo -type l | xargs sed -i '' || true # convert symlinks to regular files
+      - run: yarn build:demo
       - run: scripts/deploy.js
 
   publish:
