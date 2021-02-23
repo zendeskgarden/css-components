@@ -1,0 +1,298 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { ReactComponent as UserIcon } from '@zendeskgarden/svg-icons/src/16/user-solo-stroke.svg';
+import UserImage from './images/avatar.png';
+import SystemImage from './images/system.png';
+import '../dist/index.css';
+
+<Meta title="Components/Avatars" />
+
+# Avatars
+
+Component classes for styling your avatars.
+
+## Types
+
+<div class="container">
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar">
+        <img alt="user" src={UserImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system">
+        <img alt="system" src={SystemImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Sizes
+
+<div class="container">
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--xs">
+        <img alt="user" src={UserImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--xs</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--xs c-avatar--system">
+        <img alt="user" src={SystemImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--xs.c-avatar--system</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--sm">
+        <img alt="user" src={UserImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--sm</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--sm c-avatar--system">
+        <img alt="user" src={SystemImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--sm.c-avatar--system</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar">
+        <img alt="user" src={UserImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system">
+        <img alt="user" src={SystemImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--lg">
+        <img alt="user" src={UserImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--lg</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--lg c-avatar--system">
+        <img alt="user" src={SystemImage} />
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--lg.c-avatar--system</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Variants
+
+Along with a child `<img>`, avatars also support the display of text and SVG
+icons. In both of these cases, the background color of the `.c-avatar` must
+be overridden from its "transparent" default. Optionally, the foreground
+color (default "white") of the child text or SVG may be overridden.
+
+<div class="container">
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--xs u-bg-fuschia-600">
+        <span class="c-avatar__txt">G</span>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--xs .c-avatar__txt</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system c-avatar--xs u-bg-fuschia-600">
+        <span class="c-avatar__txt">ZD</span>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system.c-avatar--xs .c-avatar__txt</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--sm u-bg-purple-600">
+        <span class="c-avatar__txt">A</span>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--sm .c-avatar__txt</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system c-avatar--sm u-bg-purple-600">
+        <span class="c-avatar__txt">ZD</span>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system.c-avatar--sm .c-avatar__txt</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar u-bg-royal-600">
+        <span class="c-avatar__txt">R</span>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar .c-avatar__txt</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system u-bg-royal-600">
+        <span class="c-avatar__txt">ZD</span>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system .c-avatar__txt</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--lg u-bg-azure-600">
+        <span class="c-avatar__txt">DN</span>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--lg .c-avatar__txt</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system c-avatar--lg u-bg-azure-600">
+        <span class="c-avatar__txt">ZD</span>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system.c-avatar--lg .c-avatar__txt</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container u-mt">
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--xs u-bg-grey-600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16">
+          <g fill="none" stroke="currentColor">
+            <circle cx="8" cy="5" r="3.5"/>
+            <path stroke-linecap="round" d="M2.5 15.5c.3-2.8 2.6-5 5.5-5s5.2 2.2 5.5 5"/>
+          </g>
+        </svg>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--xs > svg</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system c-avatar--xs u-bg-kale-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+          <path fill="currentColor" d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"/>
+        </svg>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system.c-avatar--xs > svg</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--sm u-bg-grey-600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16">
+          <g fill="none" stroke="currentColor">
+            <circle cx="8" cy="5" r="3.5"/>
+            <path stroke-linecap="round" d="M2.5 15.5c.3-2.8 2.6-5 5.5-5s5.2 2.2 5.5 5"/>
+          </g>
+        </svg>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--sm > svg</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system c-avatar--sm u-bg-kale-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+          <path fill="currentColor" d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"/>
+        </svg>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system.c-avatar--sm > svg</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar u-bg-grey-600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16">
+          <g fill="none" stroke="currentColor">
+            <circle cx="8" cy="5" r="3.5"/>
+            <path stroke-linecap="round" d="M2.5 15.5c.3-2.8 2.6-5 5.5-5s5.2 2.2 5.5 5"/>
+          </g>
+        </svg>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar > svg</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system u-bg-kale-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+          <path fill="currentColor" d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"/>
+        </svg>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system > svg</code>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--lg u-bg-grey-600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16">
+          <g fill="none" stroke="currentColor">
+            <circle cx="8" cy="5" r="3.5"/>
+            <path stroke-linecap="round" d="M2.5 15.5c.3-2.8 2.6-5 5.5-5s5.2 2.2 5.5 5"/>
+          </g>
+        </svg>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--lg > svg</code>
+      </div>
+    </div>
+    <div class="col u-mt">
+      <figure class="c-avatar c-avatar--system c-avatar--lg u-bg-kale-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+          <path fill="currentColor" d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"/>
+        </svg>
+      </figure>
+      <div class="u-mt-xs">
+        <code>.c-avatar.c-avatar--system.c-avatar--lg > svg</code>
+      </div>
+    </div>
+  </div>
+</div>
