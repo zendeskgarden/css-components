@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
 import '../dist/index.css';
 
 <Meta title="Components/Bedrock" />
@@ -9,50 +9,53 @@ In addition to setting up the base font and stripping page margins, Bedrock
 CSS adds the following element resets on top of
 [Normalize.css](http://necolas.github.io/normalize.css/).
 
-<div class="u-mb">
-  <a href="">&lt;a&gt;</a>
-</div>
-
-<div class="u-mb">
-  <b>&lt;b&gt;</b>
-  <em>&lt;em&gt;</em>
-  <ins>&lt;ins&gt;</ins>
-  <i>&lt;i&gt;</i>
-  <strong>&lt;strong&gt;</strong>
-  <u>&lt;u&gt;</u>
-</div>
-
-<div class="u-mb">
-  <button>&lt;button&gt;</button>
-</div>
-
-<div class="u-mb">
-  <h1>&lt;h1&gt;</h1>
-  <h2>&lt;h2&gt;</h2>
-  <h3>&lt;h3&gt;</h3>
-  <h4>&lt;h4&gt;</h4>
-  <h5>&lt;h5&gt;</h5>
-  <h6>&lt;h6&gt;</h6>
-</div>
-
-<div class="u-mb">
-  <ul class="u-mb-sm"><li>&lt;ul&gt;</li></ul>
-  <ol class="u-mb-sm"><li>&lt;ol&gt;</li></ol>
-  <dl class="u-mb-sm">
-    <li>&lt;dl&gt;</li>
-    <li>&lt;dl&gt;</li>
-  </dl>
-  <dd class="u-mb-sm">
-    <li>&lt;dd&gt;</li>
-    <li>&lt;dd&gt;</li>
-  </dd>
-</div>
-
-<div class="u-mb">
-  <p>&lt;p&gt;</p>
-  <blockquote>&lt;blockquote&gt;</blockquote>
-  <pre>&lt;pre&gt;</pre>
-  <code>&lt;code&gt;</code>
-  <fieldset>&lt;fieldset&gt;</fieldset>
-  <figure>&lt;figure&gt;</figure>
-</div>
+<Canvas>
+  <Story name="Bedrock">
+    <div class="u-mb">
+      <a href="">&lt;a&gt;</a>
+    </div>
+    <div class="u-mb">
+      <b>&lt;b&gt;</b>
+      <em>&lt;em&gt;</em>
+      <ins>&lt;ins&gt;</ins>
+      <i>&lt;i&gt;</i>
+      <strong>&lt;strong&gt;</strong>
+      <u>&lt;u&gt;</u>
+    </div>
+    <div class="u-mb">
+      <button>&lt;button&gt;</button>
+    </div>
+    <div class="u-mb">
+      <h1>&lt;h1&gt;</h1>
+      <h2>&lt;h2&gt;</h2>
+      <h3>&lt;h3&gt;</h3>
+      <h4>&lt;h4&gt;</h4>
+      <h5>&lt;h5&gt;</h5>
+      <h6>&lt;h6&gt;</h6>
+    </div>
+    <div class="u-mb">
+      <ul class="u-mb-sm">
+        <li>&lt;ul&gt;</li>
+      </ul>
+      <ol class="u-mb-sm">
+        <li>&lt;ol&gt;</li>
+      </ol>
+      <dl class="u-mb-sm">
+        <li>&lt;dl&gt;</li>
+        <li>&lt;dl&gt;</li>
+      </dl>
+      <dd class="u-mb-sm">
+        <li>&lt;dd&gt;</li>
+        <li>&lt;dd&gt;</li>
+      </dd>
+    </div>
+    <div class="u-mb">
+      <p>&lt;p&gt;</p>
+      <blockquote>&lt;blockquote&gt;</blockquote>
+      <pre>&lt;pre&gt;</pre>
+      <code>&lt;code&gt;</code>
+      <fieldset>&lt;fieldset&gt;</fieldset>
+      <figure>&lt;figure&gt;</figure>
+    </div>
+  </Story>
+</Canvas>

@@ -10,15 +10,17 @@ import { create } from '@storybook/theming/create';
 import '../packages/grid/dist/index.css';
 import '../packages/utilities/dist/index.css';
 
-export const decorators = [(Story, context) => {
-  if (context.globals.bedrock === 'enabled') {
-    document.querySelector('link[href$="bedrock/index.css"]').removeAttribute('disabled');
-  } else {
-    document.querySelector('link[href$="bedrock/index.css"]').setAttribute('disabled', true);
-  }
+export const decorators = [
+  (Story, context) => {
+    if (context.globals.bedrock === 'enabled') {
+      document.querySelector('link[href$="bedrock/index.css"]').removeAttribute('disabled');
+    } else {
+      document.querySelector('link[href$="bedrock/index.css"]').setAttribute('disabled', true);
+    }
 
-  return Story();
-}];
+    return Story();
+  }
+];
 
 export const globalTypes = {
   bedrock: {
