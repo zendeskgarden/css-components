@@ -18,6 +18,8 @@ export const decorators = [
       document.querySelector('link[href$="bedrock/index.css"]').setAttribute('disabled', true);
     }
 
+    require('focus-visible');
+
     return Story();
   }
 ];
