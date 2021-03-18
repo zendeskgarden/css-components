@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  stories: ['../packages/**/demo/*.stories.mdx'],
+  stories: ['./*.stories.mdx', '../packages/**/demo/*.stories.mdx'],
   addons: [
     { name: '@storybook/addon-essentials', options: { actions: false } },
     {
