@@ -44,6 +44,7 @@ export const parameters = {
     default: DEFAULT_THEME.colors.base,
     grid: { disable: true }
   },
+  controls: { hideNoControlsWarning: true },
   docs: {
     theme: create({
       base: DEFAULT_THEME.colors.base
