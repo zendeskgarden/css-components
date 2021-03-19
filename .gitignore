@@ -1,5 +1,5 @@
 .env
-./demo
+demo
 node_modules
 packages/**/dist
 packages/**/LICENSE.md

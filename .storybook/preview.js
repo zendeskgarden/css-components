@@ -32,8 +32,8 @@ export const globalTypes = {
     toolbar: {
       icon: 'paintbrush',
       items: [
-        { value: 'disabled', title: 'Bedrock disabled' },
-        { value: 'enabled', title: 'Bedrock enabled' }
+        { value: 'enabled', title: 'Bedrock enabled' },
+        { value: 'disabled', title: 'Bedrock disabled' }
       ]
     }
   }
