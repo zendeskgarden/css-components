@@ -25,7 +25,6 @@ to install.
 | [`@zendeskgarden/css-callouts`](packages/callouts)   | [![npm version][callouts npm version]][callouts npm link]   | [![Dependency Status][callouts dependency status]][callouts dependency link]   |
 | [`@zendeskgarden/css-forms`](packages/forms)         | [![npm version][forms npm version]][forms npm link]         | [![Dependency Status][forms dependency status]][forms dependency link]         |
 | [`@zendeskgarden/css-tags`](packages/tags)           | [![npm version][tags npm version]][tags npm link]           | [![Dependency Status][tags dependency status]][tags dependency link]           |
-| [`@zendeskgarden/css-utilities`](packages/utilities) | [![npm version][utilities npm version]][utilities npm link] | [![Dependency Status][utilities dependency status]][utilities dependency link] |
 | [`@zendeskgarden/css-variables`](packages/variables) | [![npm version][variables npm version]][variables npm link] | [![Dependency Status][variables dependency status]][variables dependency link] |
 
 [avatars npm version]: https://flat.badgen.net/npm/v/@zendeskgarden/css-avatars
@@ -52,10 +51,6 @@ to install.
 [tags npm link]: https://www.npmjs.com/package/@zendeskgarden/css-tags
 [tags dependency status]: https://flat.badgen.net/david/dep/zendeskgarden/css-components/packages/tags
 [tags dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/tags
-[utilities npm version]: https://flat.badgen.net/npm/v/@zendeskgarden/css-utilities
-[utilities npm link]: https://www.npmjs.com/package/@zendeskgarden/css-utilities
-[utilities dependency status]: https://flat.badgen.net/david/dep/zendeskgarden/css-components/packages/utilities
-[utilities dependency link]: https://david-dm.org/zendeskgarden/css-components?path=packages/utilities
 [variables npm version]: https://flat.badgen.net/npm/v/@zendeskgarden/css-variables
 [variables npm link]: https://www.npmjs.com/package/@zendeskgarden/css-variables
 [variables dependency status]: https://flat.badgen.net/david/dep/zendeskgarden/css-components/packages/variables?label=dependencies

@@ -34,10 +34,5 @@ Use avatar CSS to style user and system images.
 ### Modifications
 
 Avatar classes can be used to indicate state. See
-http://zendeskgarden.github.io/css-avatars for various modification classes.
-
-### Behavior
-
-See the
-[&lt;Avatar&gt;](http://zendeskgarden.github.io/react-components/#!/Avatar)
-component for supported props and behavior.
+http://zendeskgarden.github.io/css-components/?path=/story/components-avatars
+for various modification classes.
