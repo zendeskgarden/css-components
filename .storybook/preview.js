@@ -13,9 +13,9 @@ import '../packages/utilities/dist/index.css';
 export const decorators = [
   (Story, context) => {
     if (context.globals.bedrock === 'enabled') {
-      document.querySelector('link[href$="bedrock/index.css"]').removeAttribute('disabled');
+      document.querySelector('link[href="index.css"]').removeAttribute('disabled');
     } else {
-      document.querySelector('link[href$="bedrock/index.css"]').setAttribute('disabled', true);
+      document.querySelector('link[href="index.css"]').setAttribute('disabled', true);
     }
 
     require('focus-visible');
@@ -28,7 +28,6 @@ export const globalTypes = {
   bedrock: {
     name: 'bedrock',
     description: 'CSS Bedrock',
-    defaultValue: 'disabled',
     toolbar: {
       icon: 'paintbrush',
       items: [
