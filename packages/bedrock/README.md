@@ -31,5 +31,6 @@ Bedrock includes:
 - Headings (1-6) reset to inherit `font-size`.
 - Browser `margin` and `padding` stripped from block elements.
 
-See https://zendeskgarden.github.io/css-components/bedrock/ for a
-demonstration of the resets provided by this package.
+See
+https://zendeskgarden.github.io/css-components?path=/story/components-bedrock
+for a demonstration of the resets provided by this package.

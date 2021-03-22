@@ -1,0 +1,365 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import '../dist/text.css';
+
+<Meta title="Components/Forms/Text" />
+
+# Text
+
+Component classes for your text fields. Child component classes are shown
+below. The unmodified `.c-txt` parent occupies 100% of the width of its
+container.
+
+<Canvas>
+  <Story
+    name="Default"
+    argTypes={{
+      hasHint: {
+        name: 'hint',
+        control: { type: 'boolean' }
+      },
+      hasMessage: {
+        name: 'message',
+        control: { type: 'boolean' }
+      },
+      isCompact: {
+        name: 'compact',
+        control: { type: 'boolean' }
+      },
+      state: {
+        control: {
+          type: 'inline-check',
+          options: ['is-hovered', 'is-focused', 'is-disabled']
+        }
+      },
+      validation: {
+        control: {
+          type: 'inline-radio',
+          options: [undefined, 'success', 'warning', 'error']
+        }
+      }
+    }}
+    args={{ hasHint: true, hasMessage: true }}
+  >
+    {({ hasHint, hasMessage, isBare, isCompact, state, validation }) => (
+      <div class="container">
+        <div class="row">
+          <div class="col u-mt">
+            <div class="c-txt">
+              <label class={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} for="text">
+                .c-txt__label
+              </label>
+              {hasHint && (
+                <span class={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
+              )}
+              <input
+                class={`c-txt__input ${isCompact && 'c-txt__input--sm'} ${
+                  isBare && 'c-txt__input--bare'
+                } c-txt__input--${validation} ${state && state.join(' ')}`}
+                disabled={state && state.includes('is-disabled')}
+                id="text"
+                placeholder=".c-txt__input"
+                type="text"
+              />
+              {hasMessage && (
+                <small class={`c-txt__message c-txt__message--${validation}`}>
+                  .c-txt__message
+                </small>
+              )}
+            </div>
+          </div>
+          <div class="col u-mt">
+            <div class="c-txt u-mb-sm">
+              <label class={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} for="textarea">
+                .c-txt__label
+              </label>
+              {hasHint && (
+                <span class={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
+              )}
+              <textarea
+                class={`c-txt__input c-txt__input--area is-resizable ${
+                  isCompact && 'c-txt__input--sm'
+                } ${isBare && 'c-txt__input--bare'} c-txt__input--${validation} ${
+                  state && state.join(' ')
+                }`}
+                disabled={state && state.includes('is-disabled')}
+                id="textarea"
+                placeholder=".c-txt__input.c-txt__input--area"
+                rows="1"
+              ></textarea>
+              {hasMessage && (
+                <small class={`c-txt__message c-txt__message--${validation}`}>
+                  .c-txt__message
+                </small>
+              )}
+            </div>
+          </div>
+          {/* <div class="col u-mt">
+            <div class="c-txt">
+              <label class={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} for="media">
+                .c-txt__label
+              </label>
+              {hasHint && (
+                <span class={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
+              )}
+              <div
+                class={`c-txt__input c-txt__input--media ${isCompact && 'c-txt__input--sm'} ${
+                  isBare && 'c-txt__input--bare'
+                } c-txt__input--${validation} ${state && state.join(' ')}`}
+              >
+                <div class="c-txt__input--media__figure">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    focusable="false"
+                    viewBox="0 0 16 16"
+                  >
+                    <rect
+                      width="15"
+                      height="11"
+                      x=".5"
+                      y="2.5"
+                      fill="none"
+                      stroke="currentColor"
+                      rx=".5"
+                      ry=".5"
+                    ></rect>
+                    <path fill="currentColor" d="M.5 5h15v2H.5z"></path>
+                  </svg>
+                </div>
+                <input
+                  class="c-txt__input c-txt__input--bare c-txt__input--media__body"
+                  disabled={state && state.includes('is-disabled')}
+                  id="media"
+                  placeholder=".c-txt__input.c-txt__input--media"
+                  type="text"
+                />
+                <div class="c-txt__input--media__figure">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    focusable="false"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linejoin="round"
+                      d="M4.5 2.5H2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5h-2.5m-6.95 2C4.25 2.42 5.883.5 8 .5s3.75 1.92 3.45 4h-6.9z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              {hasMessage && (
+                <small class={`c-txt__message c-txt__message--${validation}`}>
+                  .c-txt__message
+                </small>
+              )}
+            </div>
+          </div> */}
+          <div class="col u-mt">
+            <div class="c-txt">
+              <label class={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} for="select">
+                .c-txt__label
+              </label>
+              {hasHint && (
+                <span class={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
+              )}
+              <select
+                class={`c-txt__input c-txt__input--select ${isCompact && 'c-txt__input--sm'} ${
+                  isBare && 'c-txt__input--bare'
+                } c-txt__input--${validation} ${state && state.join(' ')}`}
+                disabled={state && state.includes('is-disabled')}
+                id="select"
+              >
+                <option>.c-txt__input.c-txt__input--select</option>
+                <option>foo</option>
+                <option>bar</option>
+              </select>
+              {hasMessage && (
+                <small class={`c-txt__message c-txt__message--${validation}`}>
+                  .c-txt__message
+                </small>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+## Types
+
+The fields shown below demonstrate how `.c-txt__input` works in combination
+with various input types. In general, we attempt to knock out non-standard
+browser features (spinners, clear buttons, etc). Styling from the
+`.c-txt__input--select` dropdown modifier is added to fields that support
+native calendar pickers.
+
+<Canvas>
+  <Story name="Types">
+    <form>
+      <div class="container">
+        <div class="row">
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-color">
+              Color
+            </label>
+            <input
+              class="c-txt__input"
+              id="txt-type-color"
+              placeholder="color"
+              required
+              type="color"
+            />
+          </div>
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-date">
+              Date
+            </label>
+            <input
+              class="c-txt__input c-txt__input--select"
+              id="txt-type-date"
+              placeholder="date"
+              required
+              type="date"
+            />
+          </div>
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-datetime">
+              Datetime-Local
+            </label>
+            <input
+              class="c-txt__input c-txt__input--select"
+              id="txt-type-datetime"
+              placeholder="datetime-local"
+              required
+              type="datetime-local"
+            />
+          </div>
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-email">
+              Email
+            </label>
+            <input
+              class="c-txt__input"
+              id="txt-type-email"
+              placeholder="email"
+              required
+              type="email"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-file">
+              File
+            </label>
+            <input
+              class="c-txt__input"
+              id="txt-type-file"
+              placeholder="file"
+              required
+              type="file"
+            />
+          </div>
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-month">
+              Month
+            </label>
+            <input
+              class="c-txt__input c-txt__input--select"
+              id="txt-type-month"
+              placeholder="month"
+              required
+              type="month"
+            />
+          </div>
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-number">
+              Number
+            </label>
+            <input
+              class="c-txt__input"
+              id="txt-type-number"
+              placeholder="number"
+              required
+              type="number"
+            />
+          </div>
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-password">
+              Password
+            </label>
+            <input
+              class="c-txt__input"
+              id="txt-type-password"
+              placeholder="password"
+              required
+              type="password"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-search">
+              Search
+            </label>
+            <input
+              class="c-txt__input"
+              id="txt-type-search"
+              placeholder="search"
+              required
+              type="search"
+            />
+          </div>
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-tel">
+              Tel
+            </label>
+            <input class="c-txt__input" id="txt-type-tel" placeholder="tel" required type="tel" />
+          </div>
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-time">
+              Time
+            </label>
+            <input
+              class="c-txt__input"
+              id="txt-type-time"
+              placeholder="time"
+              required
+              type="time"
+            />
+          </div>
+          <div class="col u-mt">
+            <label class="c-txt__label" for="txt-type-url">
+              URL
+            </label>
+            <input class="c-txt__input" id="txt-type-url" placeholder="url" required type="url" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-3 u-mt">
+            <label class="c-txt__label" for="txt-type-week">
+              Week
+            </label>
+            <input
+              class="c-txt__input c-txt__input--select"
+              id="txt-type-week"
+              placeholder="week"
+              required
+              type="week"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col u-mt">
+            <button type="submit">Test</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </Story>
+</Canvas>

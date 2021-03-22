@@ -1,0 +1,131 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import UserImage from './images/avatar.png';
+import SystemImage from './images/system.png';
+import '../dist/index.css';
+
+<Meta title="Components/Avatars" />
+
+# Avatars
+
+Component classes for styling your avatars.
+
+<Canvas>
+  <Story
+    name="Types"
+    argTypes={{
+      size: {
+        control: {
+          type: 'inline-radio',
+          options: [undefined, 'c-avatar--xs', 'c-avatar--sm', 'c-avatar--lg']
+        }
+      }
+    }}
+  >
+    {({ size }) => (
+      <div class="container">
+        <div class="row">
+          <div class="col u-mt">
+            <figure class={`c-avatar ${size}`}>
+              <img alt="user" src={UserImage} />
+            </figure>
+            <div class="u-mt-xs">
+              <code>.c-avatar{size && `.${size}`}</code>
+            </div>
+          </div>
+          <div class="col u-mt">
+            <figure class={`c-avatar c-avatar--system ${size}`}>
+              <img alt="system" src={SystemImage} />
+            </figure>
+            <div class="u-mt-xs">
+              <code>.c-avatar.c-avatar--system{size && `.${size}`}</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>
+
+## Variants
+
+Along with a child `<img>`, avatars also support the display of text and SVG
+icons. In both of these cases, the background color of the `.c-avatar` must
+be overridden from its "transparent" default. Optionally, the foreground
+color (default "white") of the child text or SVG may be overridden.
+
+<Canvas>
+  <Story
+    name="Variants"
+    argTypes={{
+      size: {
+        control: {
+          type: 'inline-radio',
+          options: [undefined, 'c-avatar--xs', 'c-avatar--sm', 'c-avatar--lg']
+        }
+      }
+    }}
+  >
+    {({ size }) => (
+      <div class="container">
+        <div class="row">
+          <div class="col u-mt">
+            <figure class={`c-avatar ${size} u-bg-royal-600`}>
+              <span class="c-avatar__txt">G</span>
+            </figure>
+            <div class="u-mt-xs">
+              <code>.c-avatar{size && `.${size}`} .c-avatar__txt</code>
+            </div>
+          </div>
+          <div class="col u-mt">
+            <figure class={`c-avatar c-avatar--system ${size} u-bg-royal-600`}>
+              <span class="c-avatar__txt">ZD</span>
+            </figure>
+            <div class="u-mt-xs">
+              <code>.c-avatar.c-avatar--system{size && `.${size}`} .c-avatar__txt</code>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col u-mt">
+            <figure class={`c-avatar ${size} u-bg-grey-600`}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                focusable="false"
+                viewBox="0 0 16 16"
+              >
+                <g fill="none" stroke="currentColor">
+                  <circle cx="8" cy="5" r="3.5" />
+                  <path stroke-linecap="round" d="M2.5 15.5c.3-2.8 2.6-5 5.5-5s5.2 2.2 5.5 5" />
+                </g>
+              </svg>
+            </figure>
+            <div class="u-mt-xs">
+              <code>.c-avatar{size && `.${size}`} > svg</code>
+            </div>
+          </div>
+          <div class="col u-mt">
+            <figure class={`c-avatar c-avatar--system ${size} u-bg-kale-800`}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                focusable="false"
+                viewBox="0 0 26 26"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"
+                />
+              </svg>
+            </figure>
+            <div class="u-mt-xs">
+              <code>.c-avatar.c-avatar--system{size && `.${size}`} > svg</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+  </Story>
+</Canvas>

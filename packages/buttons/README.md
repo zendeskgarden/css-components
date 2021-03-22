@@ -44,11 +44,6 @@ disabled button should not be able to receive focus.
 
 ### Modifications
 
-See http://zendeskgarden.github.io/css-components/buttons/ for various
-button modification classes.
-
-### Behavior
-
-See the
-[&lt;Button&gt;](http://zendeskgarden.github.io/react-components/#!/Button)
-component for intended keyboard & blur-on-mouseup behavior.
+See
+http://zendeskgarden.github.io/css-components/?path=/story/components-buttons
+for various button modification classes.

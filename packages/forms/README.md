@@ -34,17 +34,16 @@ the following.
 
 #### Modifications
 
-See http://zendeskgarden.github.io/css-components/forms/checkbox/ for
-checkbox component usage and modification classes.
+See
+http://zendeskgarden.github.io/css-components/?path=/story/components-forms-toggle
+for checkbox component usage and modification classes.
 
 ##### Toggle
 
 Use the `.c-chk--toggle` modifier to style the checkbox as a toggle.
 
 ```html
-<div class="c-chk c-chk--toggle">
-  ...
-</div>
+<div class="c-chk c-chk--toggle">...</div>
 ```
 
 ##### Radio
@@ -71,9 +70,7 @@ Use the `.c-chk--radio` modifier to style for radio button form fields.
 Use the following state class to support RTL text direction:
 
 ```html
-<div class="c-chk is-rtl">
-  ...
-</div>
+<div class="c-chk is-rtl">...</div>
 ```
 
 ### Range
@@ -91,17 +88,16 @@ the following.
 
 #### Modifications
 
-See http://zendeskgarden.github.io/css-components/forms/range/ for
-range component usage and modification classes.
+See
+http://zendeskgarden.github.io/css-components/?path=/story/components-forms-range
+for range component usage and modification classes.
 
 ##### Inline
 
 Use the following modifier class to support inline range fields:
 
 ```html
-<div class="c-range c-range--inline">
-  ...
-</div>
+<div class="c-range c-range--inline">...</div>
 ```
 
 ##### RTL
@@ -112,9 +108,7 @@ Bidirectionality](https://material.google.com/usability/bidirectionality.html)
 when using a range slider to model directional elements (i.e. playback).
 
 ```html
-<div class="c-range is-rtl">
-  ...
-</div>
+<div class="c-range is-rtl">...</div>
 ```
 
 ### Text
@@ -132,17 +126,16 @@ the following.
 
 #### Modifications
 
-See http://zendeskgarden.github.io/css-components/forms/text/ for
-text component usage and modification classes.
+See
+http://zendeskgarden.github.io/css-components/?path=/story/components-forms-text
+for text component usage and modification classes.
 
 ##### Inline
 
 Use the following modifier class to support inline text fields:
 
 ```html
-<div class="c-txt c-txt--inline">
-  ...
-</div>
+<div class="c-txt c-txt--inline">...</div>
 ```
 
 ##### Area
@@ -155,39 +148,17 @@ Use the following modifier class to support `textarea` fields:
 </div>
 ```
 
-##### Dropdown
+##### Select
 
-Use the following `select` modifier along with a
-[`menu`](http://zendeskgarden.github.io/css-components/menus/) component
-to support dropdown fields:
+Use the following `select` modifier to support dropdown fields:
 
 ```html
-<div>
-  <div class="c-txt">
-    <label class="c-txt__label" for="select-id">Select</label>
-    <button
-      aria-autocomplete="list"
-      aria-expanded="false"
-      aria-haspopup="true"
-      aria-owns="menu-id"
-      class="c-txt__input c-txt__input--select"
-      id="select-id"
-      role="combobox"
-    >
-      VALUE
-    </button>
-  </div>
-  <ul
-    aria-hidden="true"
-    aria-labelledby="select-id"
-    class="c-menu c-menu--down"
-    id="menu-id"
-    role="listbox"
-  >
-    <li class="c-menu__item" role="option">item</li>
-    <li class="c-menu__item is-selected" role="option">VALUE</li>
-    <li class="c-menu__item" role="option">item</li>
-  </ul>
+<div class="c-txt">
+  <select class="c-txt__input c-txt__input--select" id="select">
+    <option>foo</option>
+    <option>bar</option>
+    <option>baz</option>
+  </select>
 </div>
 ```
 
@@ -196,13 +167,5 @@ to support dropdown fields:
 Use the following state class to support RTL text direction:
 
 ```html
-<div class="c-txt is-rtl">
-  ...
-</div>
+<div class="c-txt is-rtl">...</div>
 ```
-
-## Behavior
-
-See the
-[React Components](http://zendeskgarden.github.io/react-components/)
-for a rich set of component behaviors applied to form input controls.
