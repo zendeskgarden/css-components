@@ -5,7 +5,7 @@
 [dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/css-components?label=dependencies
 [dependency status link]: https://david-dm.org/zendeskgarden/css-components?type=dev
 
-> :seedling: Garden is a design system for Zendesk
+> :seedling: Garden is the design system by Zendesk
 
 Garden CSS provides consistent styling for Garden components. Component
 CSS is maintained following a multi-package approach where components
@@ -80,6 +80,6 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 
 ## License
 
-Copyright 2020 Zendesk
+Copyright 2021 Zendesk
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md)
