@@ -37,7 +37,7 @@
     "husky": "5.2.0",
     "jsonlint": "1.6.3",
     "klaw-sync": "6.0.0",
-    "lerna": "3.22.1",
+    "lerna": "4.0.0",
     "ncp": "2.0.0",
     "perfect-scrollbar": "1.5.0",
     "polished": "4.1.1",
