@@ -37,26 +37,26 @@ text should only receive paragraph styling when it wraps to multiple lines.
     }}
   >
     {({ isDialog, isRecessed, type }) => (
-      <div class="container">
-        <div class="row">
-          <div class="col u-mt">
+      <div className="container">
+        <div className="row">
+          <div className="col u-mt">
             <div
-              class={`c-callout ${isDialog && 'c-callout--dialog'} ${
+              className={`c-callout ${isDialog && 'c-callout--dialog'} ${
                 isRecessed && 'c-callout--recessed'
               } ${type}`}
             >
-              <strong class="c-callout__title">Callout (one-line)</strong>
+              <strong className="c-callout__title">Callout (one-line)</strong>
               <p>Paleo gochujang heirloom salvia subway tile letterpress retro.</p>
             </div>
           </div>
-          <div class="col u-mt">
+          <div className="col u-mt">
             <div
-              class={`c-callout ${isDialog && 'c-callout--dialog'} ${
+              className={`c-callout ${isDialog && 'c-callout--dialog'} ${
                 isRecessed && 'c-callout--recessed'
               } ${type}`}
             >
-              <strong class="c-callout__title">Callout (multi-line)</strong>
-              <p class="c-callout__paragraph">
+              <strong className="c-callout__title">Callout (multi-line)</strong>
+              <p className="c-callout__paragraph">
                 Chicharrones brooklyn cardigan marfa pour-over craft beer dreamcatcher cold-pressed
                 brunch meggings. Live-edge disrupt narwhal irony neutra single-origin coffee,
                 biodiesel before they sold out roof party venmo farm-to-table direct trade poke

@@ -36,57 +36,57 @@ shown below.
     args={{ hasHint: true, hasMessage: true }}
   >
     {({ hasHint, hasMessage, state, validation }) => (
-      <div class="container">
-        <div class="row">
-          <div class="col u-mt">
-            <div class="c-chk">
-              <input class="c-chk__input" id="checkbox" type="checkbox" />
-              <label class={`c-chk__label ${state && state.join(' ')}`} for="checkbox">
+      <div className="container">
+        <div className="row">
+          <div className="col u-mt">
+            <div className="c-chk">
+              <input className="c-chk__input" id="checkbox" type="checkbox" />
+              <label className={`c-chk__label ${state && state.join(' ')}`} htmlFor="checkbox">
                 .c-chk__label
               </label>
-              {hasHint && <span class="c-chk__hint">.c-chk__hint</span>}
+              {hasHint && <span className="c-chk__hint">.c-chk__hint</span>}
               {hasMessage && (
-                <small class={`c-chk__message c-chk__message--${validation}`}>
+                <small className={`c-chk__message c-chk__message--${validation}`}>
                   .c-chk__message
                 </small>
               )}
             </div>
           </div>
-          <div class="col u-mt">
-            <div class="c-chk">
-              <input class="c-chk__input" id="toggle" type="checkbox" />
+          <div className="col u-mt">
+            <div className="c-chk">
+              <input className="c-chk__input" id="toggle" type="checkbox" />
               <label
-                class={`c-chk__label c-chk__label--toggle ${state && state.join(' ')}`}
-                for="toggle"
+                className={`c-chk__label c-chk__label--toggle ${state && state.join(' ')}`}
+                htmlFor="toggle"
               >
                 .c-chk__label.c-chk__label--toggle
               </label>
               {hasHint && (
-                <span class="c-chk__hint c-chk__hint--toggle">
+                <span className="c-chk__hint c-chk__hint--toggle">
                   .c-chk__hint.c-chk__hint--toggle
                 </span>
               )}
               {hasMessage && (
                 <small
-                  class={`c-chk__message c-chk__message--toggle c-chk__message--${validation}`}
+                  className={`c-chk__message c-chk__message--toggle c-chk__message--${validation}`}
                 >
                   .c-chk__message.c-chk__message--toggle
                 </small>
               )}
             </div>
           </div>
-          <div class="col u-mt">
-            <div class="c-chk">
-              <input class="c-chk__input" id="radio" type="radio" />
+          <div className="col u-mt">
+            <div className="c-chk">
+              <input className="c-chk__input" id="radio" type="radio" />
               <label
-                class={`c-chk__label c-chk__label--radio ${state && state.join(' ')}`}
-                for="radio"
+                className={`c-chk__label c-chk__label--radio ${state && state.join(' ')}`}
+                htmlFor="radio"
               >
                 .c-chk__label.c-chk__label--radio
               </label>
-              {hasHint && <span class="c-chk__hint">.c-chk__hint</span>}
+              {hasHint && <span className="c-chk__hint">.c-chk__hint</span>}
               {hasMessage && (
-                <small class={`c-chk__message c-chk__message--${validation}`}>
+                <small className={`c-chk__message c-chk__message--${validation}`}>
                   .c-chk__message
                 </small>
               )}
@@ -106,46 +106,55 @@ in order to logically display under a label heading.
 <Canvas>
   <Story name="Groups">
     {() => (
-      <div class="container">
-        <div class="row">
-          <div class="col u-mt">
-            <legend class="c-txt__label">Checkbox group</legend>
-            <div class="c-chk u-mb-xs">
-              <input class="c-chk__input" id="chk-01" type="checkbox" />
-              <label class="c-chk__label c-chk__label--regular" for="chk-01">
+      <div className="container">
+        <div className="row">
+          <div className="col u-mt">
+            <legend className="c-txt__label">Checkbox group</legend>
+            <div className="c-chk u-mb-xs">
+              <input className="c-chk__input" id="chk-01" type="checkbox" />
+              <label className="c-chk__label c-chk__label--regular" htmlFor="chk-01">
                 .c-chk__label.c-chk__label--regular
               </label>
             </div>
-            <div class="c-chk u-mb-xs">
-              <input class="c-chk__input" id="chk-02" type="checkbox" />
-              <label class="c-chk__label c-chk__label--regular" for="chk-02">
+            <div className="c-chk u-mb-xs">
+              <input className="c-chk__input" id="chk-02" type="checkbox" />
+              <label className="c-chk__label c-chk__label--regular" htmlFor="chk-02">
                 .c-chk__label.c-chk__label--regular
               </label>
             </div>
-            <div class="c-chk">
-              <input class="c-chk__input" id="chk-03" type="checkbox" />
-              <label class="c-chk__label c-chk__label--regular" for="chk-03">
+            <div className="c-chk">
+              <input className="c-chk__input" id="chk-03" type="checkbox" />
+              <label className="c-chk__label c-chk__label--regular" htmlFor="chk-03">
                 .c-chk__label.c-chk__label--regular
               </label>
             </div>
           </div>
-          <div class="col u-mt">
-            <legend class="c-txt__label">Radio group</legend>
-            <div class="c-chk u-mb-xs">
-              <input class="c-chk__input" id="rdo-01" name="rdo-0" type="radio" />
-              <label class="c-chk__label c-chk__label--radio c-chk__label--regular" for="rdo-01">
+          <div className="col u-mt">
+            <legend className="c-txt__label">Radio group</legend>
+            <div className="c-chk u-mb-xs">
+              <input className="c-chk__input" id="rdo-01" name="rdo-0" type="radio" />
+              <label
+                className="c-chk__label c-chk__label--radio c-chk__label--regular"
+                htmlFor="rdo-01"
+              >
                 .c-chk__label.c-chk__label--radio.c-chk__label--regular
               </label>
             </div>
-            <div class="c-chk u-mb-xs">
-              <input class="c-chk__input" id="rdo-02" name="rdo-0" type="radio" />
-              <label class="c-chk__label c-chk__label--radio c-chk__label--regular" for="rdo-02">
+            <div className="c-chk u-mb-xs">
+              <input className="c-chk__input" id="rdo-02" name="rdo-0" type="radio" />
+              <label
+                className="c-chk__label c-chk__label--radio c-chk__label--regular"
+                htmlFor="rdo-02"
+              >
                 .c-chk__label.c-chk__label--radio.c-chk__label--regular
               </label>
             </div>
-            <div class="c-chk">
-              <input class="c-chk__input" id="rdo-03" name="rdo-0" type="radio" />
-              <label class="c-chk__label c-chk__label--radio c-chk__label--regular" for="rdo-03">
+            <div className="c-chk">
+              <input className="c-chk__input" id="rdo-03" name="rdo-0" type="radio" />
+              <label
+                className="c-chk__label c-chk__label--radio c-chk__label--regular"
+                htmlFor="rdo-03"
+              >
                 .c-chk__label.c-chk__label--radio.c-chk__label--regular
               </label>
             </div>

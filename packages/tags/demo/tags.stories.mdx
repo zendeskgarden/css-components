@@ -54,13 +54,13 @@ for displaying 10+ notifications. The tag may also contain a child
     }}
   >
     {({ hasAvatar, color, size }) => (
-      <div class="container">
-        <div class="row">
-          <div class="col u-mt">
-            <div class={`c-tag ${size} ${color}`}>
+      <div className="container">
+        <div className="row">
+          <div className="col u-mt">
+            <div className={`c-tag ${size} ${color}`}>
               {hasAvatar && (
                 <svg
-                  class="c-tag__avatar u-bg-grey-600 u-fg-white"
+                  className="c-tag__avatar u-bg-grey-600 u-fg-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
                   height="26"
@@ -79,11 +79,11 @@ for displaying 10+ notifications. The tag may also contain a child
               </span>
             </div>
           </div>
-          <div class="col u-mt">
-            <div class={`c-tag c-tag--pill ${size} ${color}`}>
+          <div className="col u-mt">
+            <div className={`c-tag c-tag--pill ${size} ${color}`}>
               {hasAvatar && (
                 <svg
-                  class="c-tag__avatar u-bg-grey-600 u-fg-white"
+                  className="c-tag__avatar u-bg-grey-600 u-fg-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
                   height="26"
@@ -102,11 +102,11 @@ for displaying 10+ notifications. The tag may also contain a child
               </span>
             </div>
           </div>
-          <div class="col u-mt">
-            <div class={`c-tag c-tag--pill ${size} ${color}`}>T</div>
+          <div className="col u-mt">
+            <div className={`c-tag c-tag--pill ${size} ${color}`}>T</div>
           </div>
-          <div class="col u-mt">
-            <div class={`c-tag c-tag--round ${size} ${color}`}>
+          <div className="col u-mt">
+            <div className={`c-tag c-tag--round ${size} ${color}`}>
               {size === 'c-tag--lg' ? 100 : 8}
             </div>
           </div>

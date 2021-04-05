@@ -34,18 +34,20 @@ together with the
     }}
   >
     {({ size, state, style }) => (
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col u-mt">
-            <button class={`c-btn ${size} ${style && style.join(' ')} ${state && state.join(' ')}`}>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col u-mt">
+            <button
+              className={`c-btn ${size} ${style && style.join(' ')} ${state && state.join(' ')}`}
+            >
               .c-btn{size && `.${size}`}
               {style && style.length > 0 && `.${style.join('.')}`}
               {state && state.length > 0 && `.${state.join('.')}`}
             </button>
           </div>
-          <div class="col u-mt">
+          <div className="col u-mt">
             <button
-              class={`c-btn c-btn--pill ${size} ${style && style.join(' ')} ${
+              className={`c-btn c-btn--pill ${size} ${style && style.join(' ')} ${
                 state && state.join(' ')
               }`}
             >
@@ -54,9 +56,9 @@ together with the
               {state && state.length > 0 && `.${state.join('.')}`}
             </button>
           </div>
-          <div class="col u-mt">
+          <div className="col u-mt">
             <button
-              class={`c-btn c-btn--basic ${size} ${style && style.join(' ')} ${
+              className={`c-btn c-btn--basic ${size} ${style && style.join(' ')} ${
                 state && state.join(' ')
               }`}
             >
@@ -65,9 +67,9 @@ together with the
               {state && state.length > 0 && `.${state.join('.')}`}
             </button>
           </div>
-          <div class="col u-mt">
+          <div className="col u-mt">
             <button
-              class={`c-btn c-btn--anchor ${size} ${style && style.join(' ')} ${
+              className={`c-btn c-btn--anchor ${size} ${style && style.join(' ')} ${
                 state && state.join(' ')
               }`}
             >
@@ -111,12 +113,12 @@ image using the `.c-btn__icon class`. Icon rotation is achieved by adding
     }}
   >
     {({ isRotated, size, style }) => (
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col u-mt">
-            <button class={`c-btn c-btn--icon ${size} ${style && style.join(' ')}`}>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col u-mt">
+            <button className={`c-btn c-btn--icon ${size} ${style && style.join(' ')}`}>
               <svg
-                class={`c-btn__icon ${isRotated && 'is-rotated'}`}
+                className={`c-btn__icon ${isRotated && 'is-rotated'}`}
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
                 height="26"
@@ -130,10 +132,10 @@ image using the `.c-btn__icon class`. Icon rotation is achieved by adding
               </svg>
             </button>
           </div>
-          <div class="col u-mt">
-            <button class={`c-btn c-btn--icon ${size} ${style && style.join(' ')}`}>
+          <div className="col u-mt">
+            <button className={`c-btn c-btn--icon ${size} ${style && style.join(' ')}`}>
               <svg
-                class={`c-btn__icon ${isRotated && 'is-rotated'}`}
+                className={`c-btn__icon ${isRotated && 'is-rotated'}`}
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"

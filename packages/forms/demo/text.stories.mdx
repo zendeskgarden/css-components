@@ -41,18 +41,20 @@ container.
     args={{ hasHint: true, hasMessage: true }}
   >
     {({ hasHint, hasMessage, isBare, isCompact, state, validation }) => (
-      <div class="container">
-        <div class="row">
-          <div class="col u-mt">
-            <div class="c-txt">
-              <label class={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} for="text">
+      <div className="container">
+        <div className="row">
+          <div className="col u-mt">
+            <div className="c-txt">
+              <label className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} htmlFor="text">
                 .c-txt__label
               </label>
               {hasHint && (
-                <span class={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
+                <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>
+                  .c-txt__hint
+                </span>
               )}
               <input
-                class={`c-txt__input ${isCompact && 'c-txt__input--sm'} ${
+                className={`c-txt__input ${isCompact && 'c-txt__input--sm'} ${
                   isBare && 'c-txt__input--bare'
                 } c-txt__input--${validation} ${state && state.join(' ')}`}
                 disabled={state && state.includes('is-disabled')}
@@ -61,22 +63,27 @@ container.
                 type="text"
               />
               {hasMessage && (
-                <small class={`c-txt__message c-txt__message--${validation}`}>
+                <small className={`c-txt__message c-txt__message--${validation}`}>
                   .c-txt__message
                 </small>
               )}
             </div>
           </div>
-          <div class="col u-mt">
-            <div class="c-txt u-mb-sm">
-              <label class={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} for="textarea">
+          <div className="col u-mt">
+            <div className="c-txt u-mb-sm">
+              <label
+                className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`}
+                htmlFor="textarea"
+              >
                 .c-txt__label
               </label>
               {hasHint && (
-                <span class={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
+                <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>
+                  .c-txt__hint
+                </span>
               )}
               <textarea
-                class={`c-txt__input c-txt__input--area is-resizable ${
+                className={`c-txt__input c-txt__input--area is-resizable ${
                   isCompact && 'c-txt__input--sm'
                 } ${isBare && 'c-txt__input--bare'} c-txt__input--${validation} ${
                   state && state.join(' ')
@@ -87,26 +94,26 @@ container.
                 rows="1"
               ></textarea>
               {hasMessage && (
-                <small class={`c-txt__message c-txt__message--${validation}`}>
+                <small className={`c-txt__message c-txt__message--${validation}`}>
                   .c-txt__message
                 </small>
               )}
             </div>
           </div>
-          {/* <div class="col u-mt">
-            <div class="c-txt">
-              <label class={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} for="media">
+          {/* <div className="col u-mt">
+            <div className="c-txt">
+              <label className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} htmlFor="media">
                 .c-txt__label
               </label>
               {hasHint && (
-                <span class={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
+                <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
               )}
               <div
-                class={`c-txt__input c-txt__input--media ${isCompact && 'c-txt__input--sm'} ${
+                className={`c-txt__input c-txt__input--media ${isCompact && 'c-txt__input--sm'} ${
                   isBare && 'c-txt__input--bare'
                 } c-txt__input--${validation} ${state && state.join(' ')}`}
               >
-                <div class="c-txt__input--media__figure">
+                <div className="c-txt__input--media__figure">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -128,13 +135,13 @@ container.
                   </svg>
                 </div>
                 <input
-                  class="c-txt__input c-txt__input--bare c-txt__input--media__body"
+                  className="c-txt__input c-txt__input--bare c-txt__input--media__body"
                   disabled={state && state.includes('is-disabled')}
                   id="media"
                   placeholder=".c-txt__input.c-txt__input--media"
                   type="text"
                 />
-                <div class="c-txt__input--media__figure">
+                <div className="c-txt__input--media__figure">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -152,22 +159,24 @@ container.
                 </div>
               </div>
               {hasMessage && (
-                <small class={`c-txt__message c-txt__message--${validation}`}>
+                <small className={`c-txt__message c-txt__message--${validation}`}>
                   .c-txt__message
                 </small>
               )}
             </div>
           </div> */}
-          <div class="col u-mt">
-            <div class="c-txt">
-              <label class={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} for="select">
+          <div className="col u-mt">
+            <div className="c-txt">
+              <label className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} htmlFor="select">
                 .c-txt__label
               </label>
               {hasHint && (
-                <span class={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
+                <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>
+                  .c-txt__hint
+                </span>
               )}
               <select
-                class={`c-txt__input c-txt__input--select ${isCompact && 'c-txt__input--sm'} ${
+                className={`c-txt__input c-txt__input--select ${isCompact && 'c-txt__input--sm'} ${
                   isBare && 'c-txt__input--bare'
                 } c-txt__input--${validation} ${state && state.join(' ')}`}
                 disabled={state && state.includes('is-disabled')}
@@ -178,7 +187,7 @@ container.
                 <option>bar</option>
               </select>
               {hasMessage && (
-                <small class={`c-txt__message c-txt__message--${validation}`}>
+                <small className={`c-txt__message c-txt__message--${validation}`}>
                   .c-txt__message
                 </small>
               )}
@@ -201,50 +210,50 @@ native calendar pickers.
 <Canvas>
   <Story name="Types">
     <form>
-      <div class="container">
-        <div class="row">
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-color">
+      <div className="container">
+        <div className="row">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-color">
               Color
             </label>
             <input
-              class="c-txt__input"
+              className="c-txt__input"
               id="txt-type-color"
               placeholder="color"
               required
               type="color"
             />
           </div>
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-date">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-date">
               Date
             </label>
             <input
-              class="c-txt__input c-txt__input--select"
+              className="c-txt__input c-txt__input--select"
               id="txt-type-date"
               placeholder="date"
               required
               type="date"
             />
           </div>
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-datetime">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-datetime">
               Datetime-Local
             </label>
             <input
-              class="c-txt__input c-txt__input--select"
+              className="c-txt__input c-txt__input--select"
               id="txt-type-datetime"
               placeholder="datetime-local"
               required
               type="datetime-local"
             />
           </div>
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-email">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-email">
               Email
             </label>
             <input
-              class="c-txt__input"
+              className="c-txt__input"
               id="txt-type-email"
               placeholder="email"
               required
@@ -252,49 +261,49 @@ native calendar pickers.
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-file">
+        <div className="row">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-file">
               File
             </label>
             <input
-              class="c-txt__input"
+              className="c-txt__input"
               id="txt-type-file"
               placeholder="file"
               required
               type="file"
             />
           </div>
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-month">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-month">
               Month
             </label>
             <input
-              class="c-txt__input c-txt__input--select"
+              className="c-txt__input c-txt__input--select"
               id="txt-type-month"
               placeholder="month"
               required
               type="month"
             />
           </div>
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-number">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-number">
               Number
             </label>
             <input
-              class="c-txt__input"
+              className="c-txt__input"
               id="txt-type-number"
               placeholder="number"
               required
               type="number"
             />
           </div>
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-password">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-password">
               Password
             </label>
             <input
-              class="c-txt__input"
+              className="c-txt__input"
               id="txt-type-password"
               placeholder="password"
               required
@@ -302,51 +311,63 @@ native calendar pickers.
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-search">
+        <div className="row">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-search">
               Search
             </label>
             <input
-              class="c-txt__input"
+              className="c-txt__input"
               id="txt-type-search"
               placeholder="search"
               required
               type="search"
             />
           </div>
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-tel">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-tel">
               Tel
             </label>
-            <input class="c-txt__input" id="txt-type-tel" placeholder="tel" required type="tel" />
+            <input
+              className="c-txt__input"
+              id="txt-type-tel"
+              placeholder="tel"
+              required
+              type="tel"
+            />
           </div>
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-time">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-time">
               Time
             </label>
             <input
-              class="c-txt__input"
+              className="c-txt__input"
               id="txt-type-time"
               placeholder="time"
               required
               type="time"
             />
           </div>
-          <div class="col u-mt">
-            <label class="c-txt__label" for="txt-type-url">
+          <div className="col u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-url">
               URL
             </label>
-            <input class="c-txt__input" id="txt-type-url" placeholder="url" required type="url" />
+            <input
+              className="c-txt__input"
+              id="txt-type-url"
+              placeholder="url"
+              required
+              type="url"
+            />
           </div>
         </div>
-        <div class="row">
-          <div class="col col-3 u-mt">
-            <label class="c-txt__label" for="txt-type-week">
+        <div className="row">
+          <div className="col col-3 u-mt">
+            <label className="c-txt__label" htmlFor="txt-type-week">
               Week
             </label>
             <input
-              class="c-txt__input c-txt__input--select"
+              className="c-txt__input c-txt__input--select"
               id="txt-type-week"
               placeholder="week"
               required
@@ -354,8 +375,8 @@ native calendar pickers.
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col u-mt">
+        <div className="row">
+          <div className="col u-mt">
             <button type="submit">Test</button>
           </div>
         </div>

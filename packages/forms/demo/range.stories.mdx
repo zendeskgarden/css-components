@@ -56,15 +56,17 @@ CSS whose size should be manipulated via JavaScript whenever the range
         return `${max ? (100 * (value - min)) / (max - min) : value}%`;
       };
       return (
-        <div class="c-range">
-          <label class={`c-range__label ${isCompact && 'c-range__label--sm'}`} for="range">
+        <div className="c-range">
+          <label className={`c-range__label ${isCompact && 'c-range__label--sm'}`} htmlFor="range">
             .c-range__label
           </label>
           {hasHint && (
-            <span class={`c-range__hint ${isCompact && 'c-range__hint--sm'}`}>.c-range__hint</span>
+            <span className={`c-range__hint ${isCompact && 'c-range__hint--sm'}`}>
+              .c-range__hint
+            </span>
           )}
           <input
-            class={`c-range__input ${isCompact && 'c-range__input--sm'} ${
+            className={`c-range__input ${isCompact && 'c-range__input--sm'} ${
               state && state.join(' ')
             }`}
             disabled={state && state.includes('is-disabled')}
@@ -80,7 +82,7 @@ CSS whose size should be manipulated via JavaScript whenever the range
             }}
           />
           {hasMessage && (
-            <small class={`c-range__message c-range__message--${validation}`}>
+            <small className={`c-range__message c-range__message--${validation}`}>
               .c-range__message
             </small>
           )}

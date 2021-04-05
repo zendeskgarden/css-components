@@ -28,7 +28,7 @@ the following.
 ```html
 <div class="c-chk">
   <input class="c-chk__input" id="box-id" type="checkbox" />
-  <label class="c-chk__label" for="box-id">Label</label>
+  <label class="c-chk__label" htmlFor="box-id">Label</label>
 </div>
 ```
 
@@ -53,15 +53,15 @@ Use the `.c-chk--radio` modifier to style for radio button form fields.
 ```html
 <div class="c-chk c-chk--radio">
   <input class="c-chk__input" id="rdo-1" name="level" type="radio" />
-  <label class="c-chk__label" for="rdo-1">Beginner</label>
+  <label class="c-chk__label" htmlFor="rdo-1">Beginner</label>
 </div>
 <div class="c-chk c-chk--radio">
   <input class="c-chk__input" id="rdo-2" name="level" type="radio" />
-  <label class="c-chk__label" for="rdo-2">Intermediate</label>
+  <label class="c-chk__label" htmlFor="rdo-2">Intermediate</label>
 </div>
 <div class="c-chk c-chk--radio">
   <input class="c-chk__input" id="rdo-3" name="level" type="radio" />
-  <label class="c-chk__label" for="rdo-3">Advanced</label>
+  <label class="c-chk__label" htmlFor="rdo-3">Advanced</label>
 </div>
 ```
 
@@ -80,7 +80,7 @@ the following.
 
 ```html
 <div class="c-range">
-  <label class="c-range__label" for="range-id">Label</label>
+  <label class="c-range__label" htmlFor="range-id">Label</label>
   <small class="c-range__hint">Optional hint.</small>
   <input class="c-range__input" id="range-id" type="range" />
 </div>
@@ -118,7 +118,7 @@ the following.
 
 ```html
 <div class="c-txt">
-  <label class="c-txt__label" for="text-id">Label</label>
+  <label class="c-txt__label" htmlFor="text-id">Label</label>
   <small class="c-txt__hint">Optional hint.</small>
   <input class="c-txt__input" id="text-id" placeholder="[placeholder]" type="text" />
 </div>

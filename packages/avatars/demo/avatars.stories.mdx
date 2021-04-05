@@ -22,21 +22,21 @@ Component classes for styling your avatars.
     }}
   >
     {({ size }) => (
-      <div class="container">
-        <div class="row">
-          <div class="col u-mt">
-            <figure class={`c-avatar ${size}`}>
+      <div className="container">
+        <div className="row">
+          <div className="col u-mt">
+            <figure className={`c-avatar ${size}`}>
               <img alt="user" src={UserImage} />
             </figure>
-            <div class="u-mt-xs">
+            <div className="u-mt-xs">
               <code>.c-avatar{size && `.${size}`}</code>
             </div>
           </div>
-          <div class="col u-mt">
-            <figure class={`c-avatar c-avatar--system ${size}`}>
+          <div className="col u-mt">
+            <figure className={`c-avatar c-avatar--system ${size}`}>
               <img alt="system" src={SystemImage} />
             </figure>
-            <div class="u-mt-xs">
+            <div className="u-mt-xs">
               <code>.c-avatar.c-avatar--system{size && `.${size}`}</code>
             </div>
           </div>
@@ -66,28 +66,28 @@ color (default "white") of the child text or SVG may be overridden.
     }}
   >
     {({ size }) => (
-      <div class="container">
-        <div class="row">
-          <div class="col u-mt">
-            <figure class={`c-avatar ${size} u-bg-royal-600`}>
-              <span class="c-avatar__txt">G</span>
+      <div className="container">
+        <div className="row">
+          <div className="col u-mt">
+            <figure className={`c-avatar ${size} u-bg-royal-600`}>
+              <span className="c-avatar__txt">G</span>
             </figure>
-            <div class="u-mt-xs">
+            <div className="u-mt-xs">
               <code>.c-avatar{size && `.${size}`} .c-avatar__txt</code>
             </div>
           </div>
-          <div class="col u-mt">
-            <figure class={`c-avatar c-avatar--system ${size} u-bg-royal-600`}>
-              <span class="c-avatar__txt">ZD</span>
+          <div className="col u-mt">
+            <figure className={`c-avatar c-avatar--system ${size} u-bg-royal-600`}>
+              <span className="c-avatar__txt">ZD</span>
             </figure>
-            <div class="u-mt-xs">
+            <div className="u-mt-xs">
               <code>.c-avatar.c-avatar--system{size && `.${size}`} .c-avatar__txt</code>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col u-mt">
-            <figure class={`c-avatar ${size} u-bg-grey-600`}>
+        <div className="row">
+          <div className="col u-mt">
+            <figure className={`c-avatar ${size} u-bg-grey-600`}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -97,16 +97,16 @@ color (default "white") of the child text or SVG may be overridden.
               >
                 <g fill="none" stroke="currentColor">
                   <circle cx="8" cy="5" r="3.5" />
-                  <path stroke-linecap="round" d="M2.5 15.5c.3-2.8 2.6-5 5.5-5s5.2 2.2 5.5 5" />
+                  <path strokeLinecap="round" d="M2.5 15.5c.3-2.8 2.6-5 5.5-5s5.2 2.2 5.5 5" />
                 </g>
               </svg>
             </figure>
-            <div class="u-mt-xs">
+            <div className="u-mt-xs">
               <code>.c-avatar{size && `.${size}`} > svg</code>
             </div>
           </div>
-          <div class="col u-mt">
-            <figure class={`c-avatar c-avatar--system ${size} u-bg-kale-800`}>
+          <div className="col u-mt">
+            <figure className={`c-avatar c-avatar--system ${size} u-bg-kale-800`}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -120,7 +120,7 @@ color (default "white") of the child text or SVG may be overridden.
                 />
               </svg>
             </figure>
-            <div class="u-mt-xs">
+            <div className="u-mt-xs">
               <code>.c-avatar.c-avatar--system{size && `.${size}`} > svg</code>
             </div>
           </div>
