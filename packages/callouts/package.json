@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/css-components/issues"
   },
-  "version": "3.3.17",
+  "version": "3.3.18",
   "main": "dist/index.css",
   "files": [
     "dist",

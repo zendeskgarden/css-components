@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@8.0.1...@zendeskgarden/css-bedrock@9.0.0) (2021-04-27)
+
+
+* chore(bedrock)!: update normalize (#335) ([89c4f28](https://github.com/zendeskgarden/css-components/commit/89c4f28dc772119a928dcf3db0414f0f8c638b5d)), closes [#335](https://github.com/zendeskgarden/css-components/issues/335)
+
+
+### BREAKING CHANGES
+
+* replace `normalize.css` with `modern-normalize`.
+
+
+
+
+
 ## [8.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@8.0.0...@zendeskgarden/css-bedrock@8.0.1) (2020-05-11)
 
 **Note:** Version bump only for package @zendeskgarden/css-bedrock

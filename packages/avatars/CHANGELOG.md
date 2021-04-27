@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.11](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.10...@zendeskgarden/css-avatars@6.0.11) (2021-04-27)
+
+**Note:** Version bump only for package @zendeskgarden/css-avatars
+
+
+
+
+
 ## [6.0.10](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.9...@zendeskgarden/css-avatars@6.0.10) (2020-03-18)
 
 **Note:** Version bump only for package @zendeskgarden/css-avatars
