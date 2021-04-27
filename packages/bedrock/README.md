@@ -4,7 +4,7 @@
 [npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-bedrock
 
 This package provides a mostly reasonable CSS reset layered on top of
-[Normalize.css](http://necolas.github.io/normalize.css/).
+[modern-normalize](https://www.npmjs.com/package/modern-normalize).
 
 ## Installation
 
