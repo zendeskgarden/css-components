@@ -1,5 +1,6 @@
 {
   "name": "@zendeskgarden/css-grid",
+  "version": "0.1.39",
   "description": "Garden component CSS",
   "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",
@@ -8,7 +9,6 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/css-components/issues"
   },
-  "version": "0.1.39",
   "main": "dist/index.css",
   "files": [
     "dist",
