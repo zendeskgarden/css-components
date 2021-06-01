@@ -16,9 +16,9 @@
   },
   "devDependencies": {
     "@babel/core": "7.13.14",
-    "@storybook/addon-essentials": "6.2.3",
+    "@storybook/addon-essentials": "6.2.9",
     "@storybook/addon-postcss": "2.0.0",
-    "@storybook/react": "6.2.3",
+    "@storybook/react": "6.2.9",
     "@zendeskgarden/eslint-config": "19.0.0",
     "@zendeskgarden/react-theming": "8.35.0",
     "@zendeskgarden/scripts": "0.1.11",
