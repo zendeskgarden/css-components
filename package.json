@@ -19,7 +19,7 @@
     "@storybook/addon-essentials": "6.2.9",
     "@storybook/addon-postcss": "2.0.0",
     "@storybook/react": "6.2.9",
-    "@zendeskgarden/eslint-config": "19.0.0",
+    "@zendeskgarden/eslint-config": "20.0.0",
     "@zendeskgarden/react-theming": "8.37.1",
     "@zendeskgarden/scripts": "0.1.11",
     "@zendeskgarden/stylelint-config": "16.0.1",
