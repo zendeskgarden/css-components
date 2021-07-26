@@ -15,7 +15,7 @@
     "test": "lerna run test --stream"
   },
   "devDependencies": {
-    "@babel/core": "7.14.3",
+    "@babel/core": "7.14.8",
     "@storybook/addon-essentials": "6.2.9",
     "@storybook/addon-postcss": "2.0.0",
     "@storybook/react": "6.2.9",
