@@ -34,7 +34,7 @@
     "eslint-plugin-notice": "0.9.10",
     "focus-visible": "5.2.0",
     "handlebars": "4.7.7",
-    "husky": "6.0.0",
+    "husky": "7.0.1",
     "jsonlint": "1.6.3",
     "klaw-sync": "6.0.0",
     "lerna": "4.0.0",
