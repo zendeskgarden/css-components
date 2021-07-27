@@ -16,11 +16,11 @@
   },
   "devDependencies": {
     "@babel/core": "7.14.8",
-    "@storybook/addon-essentials": "6.2.9",
+    "@storybook/addon-essentials": "6.3.6",
     "@storybook/addon-postcss": "2.0.0",
-    "@storybook/react": "6.2.9",
+    "@storybook/react": "6.3.6",
     "@zendeskgarden/eslint-config": "20.0.0",
-    "@zendeskgarden/react-theming": "8.37.1",
+    "@zendeskgarden/react-theming": "8.39.0",
     "@zendeskgarden/scripts": "0.1.11",
     "@zendeskgarden/stylelint-config": "16.0.1",
     "@zendeskgarden/svg-icons": "6.30.2",
@@ -29,7 +29,7 @@
     "chalk": "4.1.1",
     "cssnano": "5.0.7",
     "envalid": "7.1.1",
-    "eslint": "7.27.0",
+    "eslint": "7.31.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-notice": "0.9.10",
     "focus-visible": "5.2.0",
@@ -55,7 +55,7 @@
     "styled-components": "5.3.0",
     "stylelint": "13.13.1",
     "stylelint-order": "4.1.0",
-    "stylelint-scss": "3.19.0",
+    "stylelint-scss": "3.20.1",
     "tinycolor2": "1.4.2",
     "watch": "1.0.2"
   }
