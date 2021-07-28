@@ -1,4 +1,4 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
 import '../dist/index.css';
 
 <Meta title="Components/Callouts" />
@@ -24,15 +24,15 @@ text should only receive paragraph styling when it wraps to multiple lines.
       },
       type: {
         control: {
-          type: 'inline-radio',
-          options: [
-            undefined,
-            'c-callout--info',
-            'c-callout--success',
-            'c-callout--warning',
-            'c-callout--error'
-          ]
-        }
+          type: 'inline-radio'
+        },
+        options: [
+          undefined,
+          'c-callout--info',
+          'c-callout--success',
+          'c-callout--warning',
+          'c-callout--error'
+        ]
       }
     }}
   >

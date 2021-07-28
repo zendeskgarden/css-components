@@ -1,4 +1,4 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
 import '../dist/index.css';
 
 <Meta title="Components/Tags" />
@@ -22,38 +22,38 @@ for displaying 10+ notifications. The tag may also contain a child
       },
       size: {
         control: {
-          type: 'inline-radio',
-          options: [undefined, 'c-tag--sm', 'c-tag--lg']
-        }
+          type: 'inline-radio'
+        },
+        options: [undefined, 'c-tag--sm', 'c-tag--lg']
       },
       color: {
         control: {
-          type: 'select',
-          options: [
-            undefined,
-            'c-tag--azure',
-            'c-tag--blue',
-            'c-tag--crimson',
-            'c-tag--fuschia',
-            'c-tag--green',
-            'c-tag--grey',
-            'c-tag--kale',
-            'c-tag--lemon',
-            'c-tag--lime',
-            'c-tag--mint',
-            'c-tag--orange',
-            'c-tag--pink',
-            'c-tag--purple',
-            'c-tag--red',
-            'c-tag--royal',
-            'c-tag--teal',
-            'c-tag--yellow'
-          ]
-        }
+          type: 'select'
+        },
+        options: [
+          undefined,
+          'c-tag--azure',
+          'c-tag--blue',
+          'c-tag--crimson',
+          'c-tag--fuschia',
+          'c-tag--green',
+          'c-tag--grey',
+          'c-tag--kale',
+          'c-tag--lemon',
+          'c-tag--lime',
+          'c-tag--mint',
+          'c-tag--orange',
+          'c-tag--pink',
+          'c-tag--purple',
+          'c-tag--red',
+          'c-tag--royal',
+          'c-tag--teal',
+          'c-tag--yellow'
+        ]
       }
     }}
   >
-    {({ hasAvatar, color, size }) => (
+    {({ hasAvatar = false, color = false, size = false }) => (
       <div class="container">
         <div class="row">
           <div class="col u-mt">

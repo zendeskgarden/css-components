@@ -1,4 +1,4 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
 import '../dist/text.css';
 
 <Meta title="Components/Forms/Text" />
@@ -27,15 +27,15 @@ container.
       },
       state: {
         control: {
-          type: 'inline-check',
-          options: ['is-hovered', 'is-focused', 'is-disabled']
-        }
+          type: 'inline-check'
+        },
+        options: ['is-hovered', 'is-focused', 'is-disabled']
       },
       validation: {
         control: {
-          type: 'inline-radio',
-          options: [undefined, 'success', 'warning', 'error']
-        }
+          type: 'inline-radio'
+        },
+        options: [undefined, 'success', 'warning', 'error']
       }
     }}
     args={{ hasHint: true, hasMessage: true }}
