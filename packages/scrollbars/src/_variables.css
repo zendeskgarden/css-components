@@ -1,6 +1,0 @@
-:root {
-  --zd-scrollbar__thumb-position: 2px;
-  --zd-scrollbar__thumb-size: 7px;
-  --zd-scrollbar__thumb--active-size: 11px;
-  --zd-scrollbar__track-size: calc(var(--zd-scrollbar__thumb--active-size) + calc(var(--zd-scrollbar__thumb-position) * 2));
-}

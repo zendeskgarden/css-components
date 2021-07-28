@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
 import '../dist/range.css';
 
 <Meta title="Components/Forms/Range" />
@@ -33,16 +33,16 @@ CSS whose size should be manipulated via JavaScript whenever the range
       min: { control: { type: 'number' } },
       state: {
         control: {
-          type: 'inline-check',
-          options: ['is-focused', 'is-active', 'is-disabled']
-        }
+          type: 'inline-check'
+        },
+        options: ['is-focused', 'is-active', 'is-disabled']
       },
       step: { control: { type: 'number' } },
       validation: {
         control: {
-          type: 'inline-radio',
-          options: [undefined, 'success', 'warning', 'error']
-        }
+          type: 'inline-radio'
+        },
+        options: [undefined, 'success', 'warning', 'error']
       }
     }}
     args={{ hasHint: true, hasMessage: true }}

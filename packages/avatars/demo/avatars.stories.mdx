@@ -1,4 +1,4 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
 import UserImage from './images/avatar.png';
 import SystemImage from './images/system.png';
 import '../dist/index.css';
@@ -15,13 +15,13 @@ Component classes for styling your avatars.
     argTypes={{
       size: {
         control: {
-          type: 'inline-radio',
-          options: [undefined, 'c-avatar--xs', 'c-avatar--sm', 'c-avatar--lg']
-        }
+          type: 'inline-radio'
+        },
+        options: [undefined, 'c-avatar--xs', 'c-avatar--sm', 'c-avatar--lg']
       }
     }}
   >
-    {({ size }) => (
+    {({ size = false }) => (
       <div class="container">
         <div class="row">
           <div class="col u-mt">
@@ -59,13 +59,13 @@ color (default "white") of the child text or SVG may be overridden.
     argTypes={{
       size: {
         control: {
-          type: 'inline-radio',
-          options: [undefined, 'c-avatar--xs', 'c-avatar--sm', 'c-avatar--lg']
-        }
+          type: 'inline-radio'
+        },
+        options: [undefined, 'c-avatar--xs', 'c-avatar--sm', 'c-avatar--lg']
       }
     }}
   >
-    {({ size }) => (
+    {({ size = false }) => (
       <div class="container">
         <div class="row">
           <div class="col u-mt">

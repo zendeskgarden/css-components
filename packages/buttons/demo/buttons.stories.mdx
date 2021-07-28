@@ -1,4 +1,4 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
 import '../dist/index.css';
 
 <Meta title="Components/Buttons" />
@@ -15,25 +15,25 @@ together with the
     argTypes={{
       size: {
         control: {
-          type: 'inline-radio',
-          options: [undefined, 'c-btn--sm', 'c-btn--lg']
-        }
+          type: 'inline-radio'
+        },
+        options: [undefined, 'c-btn--sm', 'c-btn--lg']
       },
       state: {
         control: {
-          type: 'inline-check',
-          options: ['is-hovered', 'is-active', 'is-focused', 'is-disabled']
-        }
+          type: 'inline-check'
+        },
+        options: ['is-hovered', 'is-active', 'is-focused', 'is-disabled']
       },
       style: {
         control: {
-          type: 'inline-check',
-          options: ['c-btn--primary', 'c-btn--danger', 'c-btn--full']
-        }
+          type: 'inline-check'
+        },
+        options: ['c-btn--primary', 'c-btn--danger', 'c-btn--full']
       }
     }}
   >
-    {({ size, state, style }) => (
+    {({ size = false, state = false, style = false }) => (
       <div class="container">
         <div class="row align-items-center">
           <div class="col u-mt">
@@ -98,15 +98,15 @@ image using the `.c-btn__icon class`. Icon rotation is achieved by adding
       },
       size: {
         control: {
-          type: 'inline-radio',
-          options: [undefined, 'c-btn--sm', 'c-btn--lg']
-        }
+          type: 'inline-radio'
+        },
+        options: [undefined, 'c-btn--sm', 'c-btn--lg']
       },
       style: {
         control: {
-          type: 'inline-check',
-          options: ['c-btn--pill', 'c-btn--basic', 'c-btn--primary', 'c-btn--danger']
-        }
+          type: 'inline-check'
+        },
+        options: ['c-btn--pill', 'c-btn--basic', 'c-btn--primary', 'c-btn--danger']
       }
     }}
   >
