@@ -7,8 +7,8 @@
 
 import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
 import { create } from '@storybook/theming/create';
-import '../packages/grid/dist/index.css';
-import '../packages/utilities/dist/index.css';
+import '@zendeskgarden/css-grid';
+import '@zendeskgarden/css-utilities';
 
 export const decorators = [
   (Story, context) => {
