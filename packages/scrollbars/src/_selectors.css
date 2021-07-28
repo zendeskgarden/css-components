@@ -1,4 +1,0 @@
-@custom-selector :--scrollbar-active
-  :hover,
-  .is-active,
-  .ps--clicking;

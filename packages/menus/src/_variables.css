@@ -1,6 +1,0 @@
-@import '@zendeskgarden/css-variables';
-
-:root {
-  --zd-menu-accent-color: var(--zd-color-blue-600);
-  --zd-menu-accent-color-hovered: var(--zd-color-blue-100);
-}
