@@ -9,12 +9,15 @@ const fontSizes = require('@zendeskgarden/react-theming').DEFAULT_THEME.fontSize
 const math = require('polished').math;
 
 let retVal = { ...fontSizes };
+const small = math(`${fontSizes.sm} - 1px`);
+const medium = math(`${fontSizes.md} - 1px`);
+const large = math(`${fontSizes.lg} - 1px`);
 
 /* Monospace font sizes */
 retVal = Object.assign(retVal, {
-  'sm-monospace': math(`${fontSizes.sm} - 1px`),
-  'md-monospace': math(`${fontSizes.md} - 1px`),
-  'lg-monospace': math(`${fontSizes.lg} - 1px`)
+  'sm-monospace': small,
+  'md-monospace': medium,
+  'lg-monospace': large
 });
 
 module.exports = retVal;
