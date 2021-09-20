@@ -3,21 +3,19 @@
   "rebaseStalePrs": true,
   "packageRules": [
     {
-      "paths": ["package.json"],
-      "minor": {
-        "groupName": "non-major shared dependencies",
-        "groupSlug": "shared-minor-patch"
-      }
+      "matchFiles": ["package.json"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "non-major shared dependencies",
+      "groupSlug": "shared-minor-patch"
     },
     {
-      "paths": ["packages/**"],
-      "minor": {
-        "groupName": "non-major package dependencies",
-        "groupSlug": "packages-minor-patch"
-      }
+      "matchPaths": ["packages/**"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "non-major package dependencies",
+      "groupSlug": "packages-minor-patch"
     },
     {
-      "packagePatterns": ["^@zendeskgarden/css"],
+      "matchPackagePatterns": ["^@zendeskgarden/css"],
       "enabled": false
     }
   ],
