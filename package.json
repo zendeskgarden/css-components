@@ -21,7 +21,7 @@
     "@storybook/react": "6.3.6",
     "@zendeskgarden/css-grid": "0.1.39",
     "@zendeskgarden/css-utilities": "4.5.5",
-    "@zendeskgarden/eslint-config": "20.0.0",
+    "@zendeskgarden/eslint-config": "21.0.0",
     "@zendeskgarden/react-theming": "8.40.1",
     "@zendeskgarden/scripts": "1.2.1",
     "@zendeskgarden/stylelint-config": "16.0.1",
