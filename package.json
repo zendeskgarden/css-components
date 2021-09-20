@@ -28,7 +28,7 @@
     "@zendeskgarden/svg-icons": "6.30.2",
     "babel-eslint": "10.1.0",
     "chalk": "4.1.2",
-    "cssnano": "5.0.5",
+    "cssnano": "5.0.8",
     "envalid": "7.2.1",
     "eslint": "7.32.0",
     "eslint-plugin-node": "11.1.0",
