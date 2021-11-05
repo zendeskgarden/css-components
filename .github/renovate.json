@@ -1,6 +1,8 @@
 {
   "extends": ["config:base"],
   "rebaseStalePrs": true,
+  "schedule": ["on Monday every 9 weeks of the year starting on the 6th week"],
+  "postUpdateOptions": ["yarnDedupeHighest"],
   "packageRules": [
     {
       "matchFiles": ["package.json"],
@@ -18,6 +20,5 @@
       "matchPackagePatterns": ["^@zendeskgarden/css"],
       "enabled": false
     }
-  ],
-  "schedule": ["on Monday every 8 weeks of the year starting on the 6th week"]
+  ]
 }
