@@ -25,7 +25,7 @@
     "@zendeskgarden/eslint-config": "26.0.0",
     "@zendeskgarden/react-theming": "8.47.1",
     "@zendeskgarden/scripts": "1.4.0",
-    "@zendeskgarden/stylelint-config": "16.0.1",
+    "@zendeskgarden/stylelint-config": "17.0.0",
     "@zendeskgarden/svg-icons": "6.30.2",
     "chalk": "4.1.2",
     "cssnano": "5.0.14",
