@@ -27,7 +27,7 @@
     "@zendeskgarden/stylelint-config": "16.0.1",
     "@zendeskgarden/svg-icons": "6.30.2",
     "babel-eslint": "10.1.0",
-    "chalk": "4.1.2",
+    "chalk": "5.0.0",
     "cssnano": "5.0.14",
     "envalid": "7.2.2",
     "eslint": "7.32.0",
