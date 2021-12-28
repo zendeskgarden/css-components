@@ -54,7 +54,7 @@
     "rimraf": "3.0.2",
     "styled-components": "5.3.3",
     "stylelint": "13.13.1",
-    "stylelint-order": "4.1.0",
+    "stylelint-order": "5.0.0",
     "stylelint-scss": "3.21.0",
     "watch": "1.0.2"
   }
