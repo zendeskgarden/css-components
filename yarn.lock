@@ -5723,10 +5723,10 @@
   resolved "https://registry.yarnpkg.com/@zendeskgarden/css-variables/-/css-variables-6.4.5.tgz#b51a50046f42a11b8d1bfec46e100b02fd6fc1d9"
   integrity sha512-vX7vDJVQoyYFUshYXXX5QE2fL9M6K2bnxTeB2IVyEIaGRYEi20xjoY6cuO1uAQ7RaIRGCSyZFKgWW+/IrlQMKg==
 
-"@zendeskgarden/eslint-config@27.0.0":
-  version "27.0.0"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-27.0.0.tgz#bc635774f0f105c7b51ac905c1c740629c83cac8"
-  integrity sha512-6hGJzWpxe0MKzDMFS2Nw4L1LzPDCZPN/aewpku5tO8BnwS4fnPdKcDnpuF0w7LaBZePh8bCMSGQUlWmhk4+XZQ==
+"@zendeskgarden/eslint-config@28.0.0":
+  version "28.0.0"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-28.0.0.tgz#e8bf01853fab06b6ebc5c03d6c5dbee4659ebdb4"
+  integrity sha512-5UsrMXixuoBHTGnP823p6BnBB/MgSFS2sCSyoyns6SpbNrvFZMJWwJSgZODNwt5HSXKsw8Kp/226yb0LTtoHiQ==
 
 "@zendeskgarden/react-theming@8.48.1":
   version "8.48.1"
