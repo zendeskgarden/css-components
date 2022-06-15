@@ -38,7 +38,7 @@
     "husky": "8.0.1",
     "jsonlint": "1.6.3",
     "klaw-sync": "6.0.0",
-    "lerna": "4.0.0",
+    "lerna": "5.1.4",
     "ncp": "2.0.0",
     "polished": "4.2.2",
     "postcss": "8.4.14",
