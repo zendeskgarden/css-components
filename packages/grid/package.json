@@ -27,7 +27,7 @@
     "bootstrap": "^4.1.3"
   },
   "devDependencies": {
-    "node-sass": "4.9.3"
+    "node-sass": "7.0.1"
   },
   "keywords": [
     "components",
