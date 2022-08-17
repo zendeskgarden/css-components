@@ -28,8 +28,9 @@ hr{
 }
 
 abbr[title]{
-	-webkit-text-decoration:underline dotted;
-	        text-decoration:underline dotted;
+	text-decoration:underline;
+	-webkit-text-decoration:underline dotted currentColor;
+	        text-decoration:underline dotted currentColor;
 }
 
 b,strong{
