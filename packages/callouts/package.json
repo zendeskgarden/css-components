@@ -1,6 +1,6 @@
 {
   "name": "@zendeskgarden/css-callouts",
-  "version": "3.3.18",
+  "version": "3.3.19",
   "description": "Garden component CSS",
   "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",
@@ -22,7 +22,7 @@
     "watch": "yarn build --watch"
   },
   "dependencies": {
-    "@zendeskgarden/css-variables": "^6.4.5"
+    "@zendeskgarden/css-variables": "^6.4.6"
   },
   "keywords": [
     "components",
