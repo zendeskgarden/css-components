@@ -17,9 +17,11 @@
   "devDependencies": {
     "@babel/core": "7.19.3",
     "@babel/eslint-parser": "7.19.1",
-    "@storybook/addon-essentials": "6.5.12",
+    "@storybook/addon-essentials": "6.5.15",
     "@storybook/addon-postcss": "2.0.0",
-    "@storybook/react": "6.5.12",
+    "@storybook/builder-webpack5": "6.5.15",
+    "@storybook/manager-webpack5": "6.5.15",
+    "@storybook/react": "6.5.15",
     "@zendeskgarden/css-grid": "0.1.39",
     "@zendeskgarden/css-utilities": "4.5.5",
     "@zendeskgarden/eslint-config": "29.0.0",

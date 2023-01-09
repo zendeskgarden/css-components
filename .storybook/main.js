@@ -13,5 +13,13 @@ module.exports = {
       name: '@storybook/addon-postcss',
       options: { postcssLoaderOptions: { implementation: require('postcss') } }
     }
-  ]
+  ],
+  core: {
+    builder: 'webpack5'
+  },
+  webpackFinal: (config) => {
+    config.output.hashFunction = 'xxhash64';
+
+    return config;
+  }
 };
