@@ -17,8 +17,6 @@ includes:
   _This package will never be published to the registry._
 * `├── packages/` – the folder that contains individual `@zendeskgarden`
   packages which are published to the registry.<br>
-  `│   ├── .template/` – a special template package referenced by `yarn new`
-  to generate a component.<br>
   `│   ├── buttons/`<br>
   `│   ├── tabs/`<br>
   `│   └── etc.`
@@ -89,9 +87,6 @@ branches. After installation, the following commands are available:
   is run as a git `pre-commit` hook.
 - `yarn build`<sup>*</sup> to rebuild distributions across all packages.
   The build runs as part of the initial install.
-- `yarn new <component>` to generate a new CSS `component` based on a
-  package template. The new component demo page is launched upon
-  completion.
 
 <sup>*</sup> Operates as a facade over a Lerna command; operation may be
 modified using option [flags](https://github.com/lerna/lerna#flags)
