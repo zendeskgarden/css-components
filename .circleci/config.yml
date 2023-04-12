@@ -21,6 +21,7 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
+          cache-version: '{{ .Environment.CACHE_VERSION }}'
       - run: yarn --frozen-lockfile --ignore-scripts
       - run: yarn lerna bootstrap
       - run: yarn lerna run build --concurrency=2 # prevent out-of-memory
