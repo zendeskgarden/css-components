@@ -7,19 +7,28 @@
 
 module.exports = {
   stories: ['./*.stories.mdx', '../packages/**/demo/*.stories.mdx'],
-  addons: [
-    { name: '@storybook/addon-essentials', options: { actions: false } },
-    {
-      name: '@storybook/addon-postcss',
-      options: { postcssLoaderOptions: { implementation: require('postcss') } }
+  addons: [{
+    name: '@storybook/addon-essentials',
+    options: {
+      actions: false
     }
-  ],
-  core: {
-    builder: 'webpack5'
-  },
-  webpackFinal: (config) => {
+  }, {
+    name: '@storybook/addon-styling',
+    options: {
+      postCss: {
+        implementation: require('postcss')
+      }
+    }
+  }],
+  webpackFinal: config => {
     config.output.hashFunction = 'xxhash64';
-
     return config;
+  },
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {}
+  },
+  docs: {
+    autodocs: true
   }
 };

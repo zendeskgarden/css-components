@@ -1,6 +1,6 @@
-import { Meta, Description } from '@storybook/addon-docs';
-import README from '../README.md';
+import { Meta, Markdown } from '@storybook/blocks';
+import README from '../README.md?raw';
 
 <Meta title="README" />
 
-<Description>{README.substring(README.indexOf('>'))}</Description>
+<Markdown>{README.substring(README.indexOf('>'))}</Markdown>
