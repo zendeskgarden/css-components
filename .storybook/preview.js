@@ -57,7 +57,3 @@ export const parameters = {
     }
   }
 };
-
-export default {
-  globalTypes
-};
