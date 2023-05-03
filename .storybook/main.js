@@ -7,20 +7,23 @@
 
 module.exports = {
   stories: ['./*.stories.mdx', '../packages/**/demo/*.stories.mdx'],
-  addons: [{
-    name: '@storybook/addon-essentials',
-    options: {
-      actions: false
-    }
-  }, {
-    name: '@storybook/addon-styling',
-    options: {
-      postCss: {
-        implementation: require('postcss')
+  addons: [
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        actions: false
+      }
+    },
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        postCss: {
+          implementation: require('postcss')
+        }
       }
     }
-  }],
-  webpackFinal: config => {
+  ],
+  webpackFinal: (config) => {
     config.output.hashFunction = 'xxhash64';
     return config;
   },

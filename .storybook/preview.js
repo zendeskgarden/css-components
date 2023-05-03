@@ -30,6 +30,7 @@ export const globalTypes = {
     description: 'CSS Bedrock',
     defaultValue: 'enabled',
     toolbar: {
+      showName: false,
       icon: 'link',
       items: [
         { value: 'enabled', title: 'Bedrock enabled' },
@@ -55,4 +56,8 @@ export const parameters = {
       order: ['README']
     }
   }
+};
+
+export default {
+  globalTypes
 };
