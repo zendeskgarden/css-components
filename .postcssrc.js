@@ -9,7 +9,6 @@ module.exports = {
       features: {
         'color-mod-function': true,
         'custom-properties': { preserve: false },
-        'focus-visible-pseudo-class': { preserve: false },
         'system-ui-font-family': false
       }
     },
