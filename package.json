@@ -6,13 +6,16 @@
     "build": "lerna run build --stream",
     "build:demo": "build-storybook -s packages/bedrock/dist -o demo",
     "format": "prettier-package-json --write && lerna run format --stream",
-    "postinstall": "husky install && lerna bootstrap",
+    "postinstall": "husky install",
     "lint": "eslint scripts/*.js && lerna run lint --stream",
     "prepare": "yarn build",
     "start": "start-storybook -s packages/bedrock/dist -p 6006",
     "tag": "lerna version --conventional-commits",
     "test": "lerna run test --stream"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@babel/core": "7.22.5",
     "@babel/eslint-parser": "7.22.5",
@@ -36,7 +39,7 @@
     "focus-visible": "5.2.0",
     "husky": "8.0.3",
     "jsonlint": "1.6.3",
-    "lerna": "6.6.2",
+    "lerna": "7.0.2",
     "polished": "4.2.2",
     "postcss": "8.4.24",
     "postcss-cli": "10.1.0",
