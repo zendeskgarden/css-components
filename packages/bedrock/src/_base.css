@@ -34,24 +34,32 @@ html {
 *::before,
 *::after { box-sizing: inherit; }
 
-a { color: var(--zd-anchor-color); }
+a {
+  transition:
+    outline-color .1s ease-in-out,
+    color .25s ease-in-out;
+  outline: 2px solid transparent;
+  outline-offset: 1px;
+  border-radius: var(--zd-spacing-xxs);
+  color: var(--zd-anchor-color);
+}
 
 a,
 ins,
 u { text-decoration: none; }
 
-a:hover,
-a:focus {
+a:hover {
   text-decoration: underline;
   color: var(--zd-anchor-color);
 }
 
-a:focus { outline: none; }
+a:hover,
+a:active {
+  color: var(--zd-color-blue-800);
+}
 
 a:focus-visible {
-  outline: 2px solid var(--zd-anchor-color);
-  outline-offset: 1px;
-  border-radius: var(--zd-spacing-xxs);
+  outline-color: var(--zd-anchor-color);
   text-decoration: none;
 }
 
