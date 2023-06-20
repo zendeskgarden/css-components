@@ -49,7 +49,7 @@ a:focus {
 a:focus { outline: none; }
 
 a:focus-visible {
-  outline: calc(var(--zd-spacing-xxs) - 1px) solid var(--zd-color-blue-600);
+  outline: calc(var(--zd-spacing-xxs) - 2px) solid var(--zd-color-blue-600);
   outline-offset: calc(var(--zd-spacing-xxs) - 3px);
   border-radius: var(--zd-spacing-xxs);
   text-decoration: none;
