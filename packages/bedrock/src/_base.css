@@ -50,10 +50,9 @@ u { text-decoration: none; }
 
 a:hover {
   text-decoration: underline;
-  color: var(--zd-anchor-color);
+  color: var(--zd-color-blue-700);
 }
 
-a:hover,
 a:active {
   color: var(--zd-color-blue-800);
 }
