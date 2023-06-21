@@ -292,17 +292,36 @@ html{
 
 *,:after,:before{ box-sizing:inherit; }
 
-a{ color:#1f73b7; }
-
-a,ins,u{ -webkit-text-decoration:none; text-decoration:none; }
-
-a:focus,a:hover{
-  -webkit-text-decoration:underline;
-  text-decoration:underline;
+a{
+  transition:outline-color .1s ease-in-out,color .25s ease-in-out;
+  outline:2px solid transparent;
+  outline-offset:1px;
+  border-radius:4px;
   color:#1f73b7;
 }
 
-a:focus{ outline:none; }
+a,ins,u{ -webkit-text-decoration:none; text-decoration:none; }
+
+a:hover{
+  -webkit-text-decoration:underline;
+  text-decoration:underline;
+  color:#144a75;
+}
+
+a:active{
+  color:#0f3554;
+}
+
+a:focus-visible{
+  outline-color:#1f73b7;
+  -webkit-text-decoration:none;
+  text-decoration:none;
+}
+
+a:focus-visible:hover{
+  -webkit-text-decoration:underline;
+  text-decoration:underline;
+}
 
 b{ font-weight:600; }
 
