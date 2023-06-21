@@ -13,7 +13,7 @@
 }
 
 /* 1. Ensure the page always fills at least the entire viewport height.
- * 2. Force visible scrollbars to prevent awkard jumps when navigating between
+ * 2. Force visible scrollbars to prevent awkward jumps when navigating between
  * pages that do/don't have enough content to produce natural scrollbars. */
 html {
   background-color: var(--zd-html-background-color);
@@ -34,19 +34,37 @@ html {
 *::before,
 *::after { box-sizing: inherit; }
 
-a { color: var(--zd-anchor-color); }
+a {
+  transition:
+    outline-color .1s ease-in-out,
+    color .25s ease-in-out;
+  outline: 2px solid transparent;
+  outline-offset: 1px;
+  border-radius: var(--zd-spacing-xxs);
+  color: var(--zd-anchor-color);
+}
 
 a,
 ins,
 u { text-decoration: none; }
 
-a:hover,
-a:focus {
+a:hover {
   text-decoration: underline;
-  color: var(--zd-anchor-color);
+  color: var(--zd-color-blue-700);
 }
 
-a:focus { outline: none; }
+a:active {
+  color: var(--zd-color-blue-800);
+}
+
+a:focus-visible {
+  outline-color: var(--zd-anchor-color);
+  text-decoration: none;
+}
+
+a:focus-visible:hover {
+  text-decoration: underline;
+}
 
 b { font-weight: var(--zd-font-weight-semibold); }
 
