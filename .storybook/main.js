@@ -35,9 +35,5 @@ module.exports = {
     config.output.hashFunction = 'xxhash64';
 
     return config;
-  },
-  managerHead: (head) => `
-    ${head}
-    <link rel="icon" href="https://zendeskgarden.github.io/favicons/garden/favicon.ico" />
-  `
+  }
 };

@@ -26,11 +26,10 @@ export const decorators = [
 
 export const globalTypes = {
   bedrock: {
+    name: 'bedrock',
     description: 'CSS Bedrock',
     defaultValue: 'enabled',
     toolbar: {
-      // empty string to omit name from toolbar
-      title: '',
       icon: 'link',
       items: [
         { value: 'enabled', title: 'Bedrock enabled' },
