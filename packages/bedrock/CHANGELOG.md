@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@9.0.1...@zendeskgarden/css-bedrock@9.1.0) (2023-06-21)
+
+
+### Features
+
+* **bedrock:** add anchor focus styles ([#448](https://github.com/zendeskgarden/css-components/issues/448)) ([917eb05](https://github.com/zendeskgarden/css-components/commit/917eb054dd815bbbc1c2f91a15cc6ddc65cf01d8))
+
+
+
+
+
 ## [9.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@9.0.0...@zendeskgarden/css-bedrock@9.0.1) (2022-10-21)
 
 **Note:** Version bump only for package @zendeskgarden/css-bedrock
