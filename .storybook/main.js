@@ -7,16 +7,30 @@
 
 module.exports = {
   stories: ['./*.stories.mdx', '../packages/**/demo/*.stories.mdx'],
+  staticDirs: ['../packages/bedrock/dist'],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {}
+  },
+  docs: {
+    autodocs: true
+  },
   addons: [
-    { name: '@storybook/addon-essentials', options: { actions: false } },
     {
-      name: '@storybook/addon-postcss',
-      options: { postcssLoaderOptions: { implementation: require('postcss') } }
+      name: '@storybook/addon-essentials',
+      options: {
+        actions: false
+      }
+    },
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        postCss: {
+          implementation: require('postcss')
+        }
+      }
     }
   ],
-  core: {
-    builder: 'webpack5'
-  },
   webpackFinal: (config) => {
     config.output.hashFunction = 'xxhash64';
 
