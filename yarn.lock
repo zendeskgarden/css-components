@@ -12687,10 +12687,10 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-modern-normalize@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/modern-normalize/-/modern-normalize-1.1.0.tgz#da8e80140d9221426bd4f725c6e11283d34f90b7"
-  integrity sha512-2lMlY1Yc1+CUy0gw4H95uNN7vjbpoED7NNRSBHE25nWfLBdmMzFCsPshlzbxHz+gYMcBEUN8V4pU16prcdPSgA==
+modern-normalize@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/modern-normalize/-/modern-normalize-2.0.0.tgz#3d04ed01c81a3d4e0a0fd9ceba6abd1b16f5964b"
+  integrity sha512-CxBoEVKh5U4DH3XuNbc5ONLF6dQBc8dSc7pdZ1957FGbIO5JBqGqqchhET9dTexri8/pk9xBL6+5ceOtCIp1QA==
 
 modify-values@^1.0.1:
   version "1.0.1"
