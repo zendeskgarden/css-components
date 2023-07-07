@@ -54,7 +54,7 @@
     "react-is": "18.2.0",
     "storybook": "7.0.22",
     "styled-components": "5.3.11",
-    "stylelint": "14.16.1",
+    "stylelint": "15.10.1",
     "stylelint-order": "6.0.3",
     "stylelint-scss": "5.0.1",
     "watch": "1.0.2"
