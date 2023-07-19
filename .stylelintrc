@@ -1,3 +1,6 @@
 {
-  "extends": "@zendeskgarden/stylelint-config"
+  "extends": "@zendeskgarden/stylelint-config",
+  "rules": {
+    "no-unknown-custom-properties": null
+  }
 }
