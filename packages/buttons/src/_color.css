@@ -136,7 +136,7 @@
 }
 
 .c-btn--anchor:--btn-active {
-  border-color: none;
+  border-color: transparent;
   background-color: transparent;
 }
 

@@ -30,7 +30,7 @@
     "@zendeskgarden/eslint-config": "32.0.0",
     "@zendeskgarden/react-theming": "8.68.0",
     "@zendeskgarden/scripts": "1.4.1",
-    "@zendeskgarden/stylelint-config": "19.0.0",
+    "@zendeskgarden/stylelint-config": "20.0.0",
     "@zendeskgarden/svg-icons": "6.33.0",
     "cssnano": "6.0.1",
     "envalid": "7.3.1",
@@ -54,7 +54,7 @@
     "react-is": "18.2.0",
     "storybook": "7.0.22",
     "styled-components": "5.3.11",
-    "stylelint": "14.16.1",
+    "stylelint": "15.10.2",
     "stylelint-order": "6.0.3",
     "stylelint-scss": "5.0.1",
     "watch": "1.0.2"

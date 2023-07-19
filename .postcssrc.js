@@ -7,7 +7,6 @@ module.exports = {
     'postcss-preset-env': {
       stage: 1,
       features: {
-        'color-mod-function': true,
         'custom-properties': { preserve: false },
         'system-ui-font-family': false
       }
