@@ -7,9 +7,19 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-const envalid = require('envalid');
-const garden = require('@zendeskgarden/scripts');
-const path = require('path');
+import {
+  cmdDu,
+  githubBranch,
+  githubCommit,
+  githubDeploy,
+  githubPages,
+  githubRepository,
+  netlifyBandwidth,
+  netlifyDeploy
+} from '@zendeskgarden/scripts';
+import { dirname, resolve } from 'path';
+import envalid from 'envalid';
+import { fileURLToPath } from 'url';
 
 envalid.cleanEnv(process.env, {
   GITHUB_TOKEN: envalid.str(),
@@ -18,22 +28,23 @@ envalid.cleanEnv(process.env, {
 });
 
 (async () => {
-  const branch = await garden.githubBranch();
-  const dir = path.resolve(__dirname, '..', 'demo');
+  const branch = await githubBranch();
+  const currentDir = dirname(fileURLToPath(import.meta.url));
+  const dir = resolve(currentDir, '..', 'demo');
   let url;
 
   if (branch === 'main') {
-    url = await garden.githubPages({ dir });
+    url = await githubPages({ dir });
   } else {
-    const bandwidth = await garden.netlifyBandwidth();
-    const usage = await garden.cmdDu(dir);
+    const bandwidth = await netlifyBandwidth();
+    const usage = await cmdDu(dir);
 
     if (bandwidth.available > usage) {
-      const repository = await garden.githubRepository();
-      const commit = await garden.githubCommit();
+      const repository = await githubRepository();
+      const commit = await githubCommit();
       const message = `https://github.com/${repository.owner}/${repository.repo}/commit/${commit}`;
       const command = async () => {
-        const result = await garden.netlifyDeploy({
+        const result = await netlifyDeploy({
           dir,
           message
         });
@@ -41,7 +52,7 @@ envalid.cleanEnv(process.env, {
         return result;
       };
 
-      url = await garden.githubDeploy({ command });
+      url = await githubDeploy({ command });
     } else {
       /* prettier-ignore */
       /* eslint-disable-next-line max-len */
