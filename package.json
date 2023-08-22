@@ -17,7 +17,6 @@
     "packages/*"
   ],
   "resolutions": {
-    "node-fetch": "2.6.13",
     "string-width": "4.2.3",
     "wrap-ansi": "7.0.0"
   },
