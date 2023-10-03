@@ -20,10 +20,9 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: yarn
           cache-version: '{{ .Environment.CACHE_VERSION }}'
-      - run: yarn --frozen-lockfile --ignore-scripts
-      - run: yarn lerna run build --concurrency=2 # prevent out-of-memory
+      - run: npm ci --ignore-scripts
+      - run: npm exec lerna run build --concurrency=2 # prevent out-of-memory
       - persist_to_workspace:
           root: *workspace_root
           paths: .
@@ -32,7 +31,7 @@ jobs:
     <<: *executor
     steps:
       - *attach_workspace
-      - run: yarn test
+      - run: npm test
 
   deploy:
     <<: *executor
@@ -40,7 +39,7 @@ jobs:
       NODE_DEBUG: gh-pages
     steps:
       - *attach_workspace
-      - run: yarn build:demo
+      - run: npm run build:demo
       - run: scripts/deploy.mjs
 
   publish:
@@ -48,7 +47,7 @@ jobs:
     steps:
       - *attach_workspace
       - run: npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-      - run: yarn lerna publish from-git --ignore-scripts --no-verify-access --yes
+      - run: npm exec lerna publish from-git --ignore-scripts --no-verify-access --yes
 
 workflows:
   main:

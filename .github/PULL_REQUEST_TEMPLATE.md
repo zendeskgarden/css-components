@@ -19,10 +19,10 @@
 
 ## Checklist
 
-* [ ] :ok_hand: style updates are Garden Designer approved (add the
-  designer as a reviewer)
-* [ ] :globe_with_meridians: component demo is up-to-date (`yarn start`)
-* [ ] :white_check_mark: all component states are represented
-  (`.is-hovered`, `.is-focused`, etc.)
-* [ ] :metal: renders as expected sans Bedrock (`?bedrock=false`)
-* [ ] :memo: tested in Chrome, Firefox, Safari, Edge, and IE11
+- [ ] :ok_hand: style updates are Garden Designer approved (add the
+      designer as a reviewer)
+- [ ] :globe_with_meridians: component demo is up-to-date (`npm start`)
+- [ ] :white_check_mark: all component states are represented
+      (`.is-hovered`, `.is-focused`, etc.)
+- [ ] :metal: renders as expected sans Bedrock (`?bedrock=false`)
+- [ ] :memo: tested in Chrome, Firefox, Safari, Edge, and IE11

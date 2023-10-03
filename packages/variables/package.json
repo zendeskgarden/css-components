@@ -16,13 +16,13 @@
   "scripts": {
     "build": "scripts/build.js",
     "format": "prettier-package-json --write",
-    "lint": "yarn lint:css && yarn lint:js && yarn lint:json && yarn lint:sass",
+    "lint": "npm run lint:css && npm run lint:js && npm run lint:json && npm run lint:sass",
     "lint:css": "stylelint dist/index.css",
     "lint:js": "eslint scripts/*.js src/*.js dist/*.js",
     "lint:json": "jsonlint dist/index.json -q",
     "lint:sass": "stylelint --config .sasslintrc dist/index.scss",
-    "test": "yarn build && yarn lint",
-    "watch": "watch 'yarn build' src --interval=.1"
+    "test": "npm run build && npm run lint",
+    "watch": "watch 'npm run build' src --interval=.1"
   },
   "keywords": [
     "components",

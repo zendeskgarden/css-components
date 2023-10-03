@@ -8,7 +8,7 @@
     "format": "prettier-package-json --write && lerna run format --stream",
     "postinstall": "husky install",
     "lint": "eslint scripts/*.mjs && lerna run lint --stream",
-    "prepare": "yarn build",
+    "prepare": "npm run build",
     "start": "storybook dev -p 6006",
     "tag": "lerna version --conventional-commits",
     "test": "lerna run test --stream"
@@ -16,10 +16,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "resolutions": {
-    "string-width": "4.2.3",
-    "wrap-ansi": "7.0.0"
-  },
   "devDependencies": {
     "@babel/core": "7.23.2",
     "@babel/eslint-parser": "7.22.15",
