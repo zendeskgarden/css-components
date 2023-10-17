@@ -18,8 +18,8 @@
     "build": "postcss src/[a-z]*.css --dir dist",
     "format": "prettier-package-json --write",
     "lint": "stylelint $(find src -name '*.css')",
-    "test": "yarn lint",
-    "watch": "yarn build --watch"
+    "test": "npm run lint",
+    "watch": "npm run build -- --watch"
   },
   "dependencies": {
     "@zendeskgarden/css-variables": "^6.4.6",

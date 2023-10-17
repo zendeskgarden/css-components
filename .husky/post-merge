@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn --ignore-scripts --pure-lockfile
+npm ci --ignore-scripts
