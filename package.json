@@ -17,7 +17,7 @@
     "packages/*"
   ],
   "resolutions": {
-    "string-width": "4.2.3",
+    "string-width": "6.1.0",
     "wrap-ansi": "7.0.0"
   },
   "devDependencies": {
