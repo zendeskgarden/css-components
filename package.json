@@ -35,7 +35,7 @@
     "@zendeskgarden/react-theming": "8.69.8",
     "@zendeskgarden/scripts": "2.0.1",
     "@zendeskgarden/stylelint-config": "20.0.0",
-    "@zendeskgarden/svg-icons": "6.33.0",
+    "@zendeskgarden/svg-icons": "7.0.0",
     "cssnano": "6.0.1",
     "envalid": "7.3.1",
     "eslint": "8.47.0",
