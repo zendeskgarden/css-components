@@ -56,7 +56,7 @@
     "styled-components": "6.1.2",
     "stylelint": "15.11.0",
     "stylelint-order": "6.0.4",
-    "stylelint-scss": "5.3.2",
+    "stylelint-scss": "6.0.0",
     "watch": "1.0.2"
   }
 }
