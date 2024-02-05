@@ -6,7 +6,7 @@
     "build": "lerna run build --stream",
     "build:demo": "storybook build -o demo",
     "format": "prettier-package-json --write && lerna run format --stream",
-    "postinstall": "husky install",
+    "postinstall": "husky",
     "lint": "eslint scripts/*.mjs && lerna run lint --stream",
     "prepare": "npm run build",
     "start": "storybook dev -p 6006",
