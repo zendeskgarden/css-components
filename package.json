@@ -30,7 +30,7 @@
     "@zendeskgarden/eslint-config": "37.0.0",
     "@zendeskgarden/react-theming": "8.73.4",
     "@zendeskgarden/scripts": "2.0.4",
-    "@zendeskgarden/stylelint-config": "20.0.0",
+    "@zendeskgarden/stylelint-config": "21.0.0",
     "@zendeskgarden/svg-icons": "7.0.0",
     "cssnano": "6.0.2",
     "envalid": "8.0.0",
