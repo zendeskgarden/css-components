@@ -55,7 +55,6 @@ envalid.cleanEnv(process.env, {
       url = await githubDeploy({ command });
     } else {
       /* prettier-ignore */
-      /* eslint-disable-next-line max-len */
       throw new Error(`Insufficient Netlify bandwidth: ${bandwidth.available} bytes available, ${usage} bytes required.`);
     }
   }
