@@ -1,0 +1,18 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import '../dist/index.css';
+import * as TagsStories from './tags.stories';
+
+<Meta of={TagsStories} />
+
+# Tags
+
+Component classes for styling your tags. Use pill or round class modifiers to
+shape a tag. Round tags are intended to contain a minimal number of
+characters. For example, you may want to use a round tag to show numbers 1-9
+in a notification badge and then programmatically switch to a pill treatment
+for displaying 10+ notifications. The tag may also contain a child
+`.c-tag__avatar` element.
+
+<Canvas>
+  <Story of={TagsStories.Default} />
+</Canvas>

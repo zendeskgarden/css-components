@@ -1,3 +1,4 @@
+import { dirname, join } from 'path';
 /**
  * Copyright Zendesk, Inc.
  *
@@ -6,10 +7,10 @@
  */
 
 module.exports = {
-  stories: ['./*.stories.mdx', '../packages/**/demo/*.stories.mdx'],
+  stories: ['./*.mdx', '../packages/**/demo/*.stories.js'],
   staticDirs: ['../packages/bedrock/dist'],
   framework: {
-    name: '@storybook/react-webpack5',
+    name: getAbsolutePath('@storybook/react-webpack5'),
     options: {}
   },
   docs: {
@@ -29,7 +30,8 @@ module.exports = {
           implementation: require('postcss')
         }
       }
-    }
+    },
+    '@storybook/addon-webpack5-compiler-swc'
   ],
   webpackFinal: (config) => {
     config.output.hashFunction = 'xxhash64';
@@ -37,3 +39,7 @@ module.exports = {
     return config;
   }
 };
+
+function getAbsolutePath(value) {
+  return dirname(require.resolve(join(value, 'package.json')));
+}

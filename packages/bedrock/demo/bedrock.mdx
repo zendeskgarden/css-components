@@ -1,0 +1,14 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import * as BedrockStories from './bedrock.stories';
+
+<Meta of={BedrockStories} />
+
+# Bedrock
+
+In addition to setting up the base font and stripping page margins, Bedrock
+CSS adds the following element resets on top of
+[Normalize.css](http://necolas.github.io/normalize.css/).
+
+<Canvas>
+  <Story of={BedrockStories.Bedrock} />
+</Canvas>
