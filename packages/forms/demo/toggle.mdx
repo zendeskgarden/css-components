@@ -1,0 +1,23 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import '../dist/checkbox.css';
+import * as ToggleStories from './toggle.stories';
+
+<Meta of={ToggleStories} />
+
+# Checkbox, toggle, and radio
+
+Component classes for your toggle-type fields. Child component classes are
+shown below.
+
+<Canvas>
+  <Story of={ToggleStories.Types} />
+</Canvas>
+
+## Groups
+
+When checkboxes are grouped or muted, the label font weight may be overriden
+in order to logically display under a label heading.
+
+<Canvas>
+  <Story of={ToggleStories.Groups} />
+</Canvas>

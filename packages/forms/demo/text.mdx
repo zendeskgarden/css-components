@@ -1,0 +1,27 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import '../dist/text.css';
+import * as TextStories from './text.stories';
+
+<Meta of={TextStories} />
+
+# Text
+
+Component classes for your text fields. Child component classes are shown
+below. The unmodified `.c-txt` parent occupies 100% of the width of its
+container.
+
+<Canvas>
+  <Story of={TextStories.Default} />
+</Canvas>
+
+## Types
+
+The fields shown below demonstrate how `.c-txt__input` works in combination
+with various input types. In general, we attempt to knock out non-standard
+browser features (spinners, clear buttons, etc). Styling from the
+`.c-txt__input--select` dropdown modifier is added to fields that support
+native calendar pickers.
+
+<Canvas>
+  <Story of={TextStories.Types} />
+</Canvas>

@@ -1,0 +1,16 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import '../dist/index.css';
+import * as CalloutsStories from './callouts.stories';
+
+<Meta of={CalloutsStories} />
+
+# Callouts
+
+Component classes for styling your wells, alerts, and notifications. The
+callout expands to the width of it's parent block and may contain
+`.c-callout__title` and `.c-callout__paragraph` child elements. Callout body
+text should only receive paragraph styling when it wraps to multiple lines.
+
+<Canvas>
+  <Story of={CalloutsStories.Default} />
+</Canvas>

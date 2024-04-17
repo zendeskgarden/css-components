@@ -1,0 +1,19 @@
+import { useRef } from 'react';
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import '../dist/range.css';
+import * as RangeStories from './range.stories';
+
+<Meta of={RangeStories} />
+
+# Range
+
+Component classes for your range fields. Child component classes are shown
+below. The unmodified `.c-range` parent occupies 100% of the width of its
+container. Since WebKit browsers have no supporting pseudo-element for the
+lower range, the `.c-range__input` child contains corresponding background
+CSS whose size should be manipulated via JavaScript whenever the range
+"thumb" is moved.
+
+<Canvas>
+  <Story of={RangeStories.Default} />
+</Canvas>
