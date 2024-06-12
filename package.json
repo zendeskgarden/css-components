@@ -35,7 +35,7 @@
     "@zendeskgarden/scripts": "2.0.4",
     "@zendeskgarden/stylelint-config": "21.0.0",
     "@zendeskgarden/svg-icons": "7.0.0",
-    "cssnano": "6.1.2",
+    "cssnano": "7.0.2",
     "envalid": "8.0.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
