@@ -32,7 +32,7 @@
     "@zendeskgarden/css-utilities": "4.5.5",
     "@zendeskgarden/eslint-config": "39.0.1",
     "@zendeskgarden/react-theming": "8.76.3",
-    "@zendeskgarden/scripts": "2.0.4",
+    "@zendeskgarden/scripts": "2.1.0",
     "@zendeskgarden/stylelint-config": "21.0.0",
     "@zendeskgarden/svg-icons": "7.1.1",
     "cssnano": "7.0.2",
