@@ -37,7 +37,7 @@
     "@zendeskgarden/svg-icons": "7.1.1",
     "cssnano": "7.0.2",
     "envalid": "8.0.0",
-    "eslint": "8.57.0",
+    "eslint": "9.7.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-n": "17.8.1",
