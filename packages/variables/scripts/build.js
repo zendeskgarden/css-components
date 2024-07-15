@@ -9,9 +9,8 @@
 
 /* eslint-disable no-console */
 
-const fs = require('fs');
-const notice = require('@zendeskgarden/eslint-config/plugins/notice');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 const postcss = require('postcss');
 const cssnano = require('cssnano')({ preset: ['default', { cssDeclarationSorter: false }] });
 const cssVariables = require('../src/index');
@@ -31,7 +30,7 @@ function toProperties(variables) {
     if (category === 'font-family') {
       retVal = value
         .split(',')
-        .map(font => {
+        .map((font) => {
           return font.replace(/"/gu, "'");
         })
         .join(', ');
@@ -45,7 +44,7 @@ function toProperties(variables) {
   return categories.reduce((retVal, category) => {
     const keys = Object.keys(variables[category]);
 
-    keys.forEach(key => {
+    keys.forEach((key) => {
       const value = valueOf(category, variables[category][key]);
       const _key = key.length > 0 ? `${category}-${key}` : `${category}`;
 
@@ -69,20 +68,27 @@ function toCamelCase(value) {
   });
 }
 
-const HEADER = notice.rules['notice/notice'][1].template;
+const HEADER = `/**
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+`;
 const CSS = `${HEADER}:root {
   ${toProperties(cssVariables).join('\n  ')}
 }\n`;
 
 postcss([cssnano])
   .process(CSS, { from: undefined })
-  .then(result => {
+  .then((result) => {
     const jsItems = [];
     const jsonItems = [];
     const scssItems = [];
 
-    result.root.walkRules(rule => {
-      rule.walkDecls(declaration => {
+    result.root.walkRules((rule) => {
+      rule.walkDecls((declaration) => {
         const key = declaration.prop.replace('--', '');
         const value = declaration.value;
 

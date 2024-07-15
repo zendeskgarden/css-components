@@ -22,8 +22,8 @@ export const Types = {
             <label className={`c-chk__label ${state && state.join(' ')}`} htmlFor="checkbox">
               .c-chk__label
             </label>
-            {hasHint && <span className="c-chk__hint">.c-chk__hint</span>}
-            {hasMessage && (
+            {!!hasHint && <span className="c-chk__hint">.c-chk__hint</span>}
+            {!!hasMessage && (
               <small className={`c-chk__message c-chk__message--${validation}`}>
                 .c-chk__message
               </small>
@@ -39,12 +39,12 @@ export const Types = {
             >
               .c-chk__label.c-chk__label--toggle
             </label>
-            {hasHint && (
+            {!!hasHint && (
               <span className="c-chk__hint c-chk__hint--toggle">
                 .c-chk__hint.c-chk__hint--toggle
               </span>
             )}
-            {hasMessage && (
+            {!!hasMessage && (
               <small
                 className={`c-chk__message c-chk__message--toggle c-chk__message--${validation}`}
               >
@@ -62,8 +62,8 @@ export const Types = {
             >
               .c-chk__label.c-chk__label--radio
             </label>
-            {hasHint && <span className="c-chk__hint">.c-chk__hint</span>}
-            {hasMessage && (
+            {!!hasHint && <span className="c-chk__hint">.c-chk__hint</span>}
+            {!!hasMessage && (
               <small className={`c-chk__message c-chk__message--${validation}`}>
                 .c-chk__message
               </small>

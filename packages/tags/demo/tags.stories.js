@@ -18,7 +18,7 @@ export const Default = {
       <div className="row">
         <div className="col u-mt">
           <div className={`c-tag ${size} ${color}`}>
-            {hasAvatar && (
+            {!!hasAvatar && (
               <svg
                 className="c-tag__avatar u-bg-grey-600 u-fg-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,14 +34,14 @@ export const Default = {
               </svg>
             )}
             <span>
-              .c-tag{size && `.${size}`}
-              {color && `.${color}`}
+              .c-tag{!!size && `.${size}`}
+              {!!color && `.${color}`}
             </span>
           </div>
         </div>
         <div className="col u-mt">
           <div className={`c-tag c-tag--pill ${size} ${color}`}>
-            {hasAvatar && (
+            {!!hasAvatar && (
               <svg
                 className="c-tag__avatar u-bg-grey-600 u-fg-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,8 +57,8 @@ export const Default = {
               </svg>
             )}
             <span>
-              .c-tag.c-tag--pill{size && `.${size}`}
-              {color && `.${color}`}
+              .c-tag.c-tag--pill{!!size && `.${size}`}
+              {!!color && `.${color}`}
             </span>
           </div>
         </div>

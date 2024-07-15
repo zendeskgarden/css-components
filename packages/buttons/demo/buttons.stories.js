@@ -21,9 +21,9 @@ export const Types = {
             type="button"
             className={`c-btn ${size} ${style && style.join(' ')} ${state && state.join(' ')}`}
           >
-            .c-btn{size && `.${size}`}
-            {style && style.length > 0 && `.${style.join('.')}`}
-            {state && state.length > 0 && `.${state.join('.')}`}
+            .c-btn{!!size && `.${size}`}
+            {!!style && style.length > 0 && `.${style.join('.')}`}
+            {!!state && state.length > 0 && `.${state.join('.')}`}
           </button>
         </div>
         <div className="col u-mt">
@@ -33,9 +33,9 @@ export const Types = {
               state && state.join(' ')
             }`}
           >
-            .c-btn.c-btn--pill{size && `.${size}`}
-            {style && style.length > 0 && `.${style.join('.')}`}
-            {state && state.length > 0 && `.${state.join('.')}`}
+            .c-btn.c-btn--pill{!!size && `.${size}`}
+            {!!style && style.length > 0 && `.${style.join('.')}`}
+            {!!state && state.length > 0 && `.${state.join('.')}`}
           </button>
         </div>
         <div className="col u-mt">
@@ -45,9 +45,9 @@ export const Types = {
               state && state.join(' ')
             }`}
           >
-            .c-btn.c-btn--basic{size && `.${size}`}
-            {style && style.length > 0 && `.${style.join('.')}`}
-            {state && state.length > 0 && `.${state.join('.')}`}
+            .c-btn.c-btn--basic{!!size && `.${size}`}
+            {!!style && style.length > 0 && `.${style.join('.')}`}
+            {!!state && state.length > 0 && `.${state.join('.')}`}
           </button>
         </div>
         <div className="col u-mt">
@@ -57,9 +57,9 @@ export const Types = {
               state && state.join(' ')
             }`}
           >
-            .c-btn.c-btn--anchor{size && `.${size}`}
-            {style && style.length > 0 && `.${style.join('.')}`}
-            {state && state.length > 0 && `.${state.join('.')}`}
+            .c-btn.c-btn--anchor{!!size && `.${size}`}
+            {!!style && style.length > 0 && `.${style.join('.')}`}
+            {!!state && state.length > 0 && `.${state.join('.')}`}
           </button>
         </div>
       </div>

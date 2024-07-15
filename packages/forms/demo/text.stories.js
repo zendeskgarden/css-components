@@ -21,19 +21,19 @@ export const Default = {
             <label className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} htmlFor="text">
               .c-txt__label
             </label>
-            {hasHint && (
+            {!!hasHint && (
               <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
             )}
             <input
               className={`c-txt__input ${isCompact && 'c-txt__input--sm'} ${
                 isBare && 'c-txt__input--bare'
               } c-txt__input--${validation} ${state && state.join(' ')}`}
-              disabled={state && state.includes('is-disabled')}
+              disabled={!!state && state.includes('is-disabled')}
               id="text"
               placeholder=".c-txt__input"
               type="text"
             />
-            {hasMessage && (
+            {!!hasMessage && (
               <small className={`c-txt__message c-txt__message--${validation}`}>
                 .c-txt__message
               </small>
@@ -45,7 +45,7 @@ export const Default = {
             <label className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} htmlFor="textarea">
               .c-txt__label
             </label>
-            {hasHint && (
+            {!!hasHint && (
               <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
             )}
             <textarea
@@ -54,12 +54,12 @@ export const Default = {
               } ${isBare && 'c-txt__input--bare'} c-txt__input--${validation} ${
                 state && state.join(' ')
               }`}
-              disabled={state && state.includes('is-disabled')}
+              disabled={!!state && state.includes('is-disabled')}
               id="textarea"
               placeholder=".c-txt__input.c-txt__input--area"
               rows="1"
             />
-            {hasMessage && (
+            {!!hasMessage && (
               <small className={`c-txt__message c-txt__message--${validation}`}>
                 .c-txt__message
               </small>
@@ -71,21 +71,21 @@ export const Default = {
             <label className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} htmlFor="select">
               .c-txt__label
             </label>
-            {hasHint && (
+            {!!hasHint && (
               <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
             )}
             <select
               className={`c-txt__input c-txt__input--select ${isCompact && 'c-txt__input--sm'} ${
                 isBare && 'c-txt__input--bare'
               } c-txt__input--${validation} ${state && state.join(' ')}`}
-              disabled={state && state.includes('is-disabled')}
+              disabled={!!state && state.includes('is-disabled')}
               id="select"
             >
               <option>.c-txt__input.c-txt__input--select</option>
               <option>foo</option>
               <option>bar</option>
             </select>
-            {hasMessage && (
+            {!!hasMessage && (
               <small className={`c-txt__message c-txt__message--${validation}`}>
                 .c-txt__message
               </small>
