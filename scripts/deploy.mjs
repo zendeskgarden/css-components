@@ -17,9 +17,9 @@ import {
   netlifyBandwidth,
   netlifyDeploy
 } from '@zendeskgarden/scripts';
-import { dirname, resolve } from 'path';
+import { dirname, resolve } from 'node:path';
 import envalid from 'envalid';
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'node:url';
 
 envalid.cleanEnv(process.env, {
   GITHUB_TOKEN: envalid.str(),

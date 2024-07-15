@@ -41,14 +41,14 @@ const DefaultComponent = ({
       <label className={`c-range__label ${isCompact && 'c-range__label--sm'}`} htmlFor="range">
         .c-range__label
       </label>
-      {hasHint && (
+      {!!hasHint && (
         <span className={`c-range__hint ${isCompact && 'c-range__hint--sm'}`}>.c-range__hint</span>
       )}
       <input
         className={`c-range__input ${isCompact && 'c-range__input--sm'} ${
           state && state.join(' ')
         }`}
-        disabled={state && state.includes('is-disabled')}
+        disabled={!!state && state.includes('is-disabled')}
         id="range"
         type="range"
         max={max}
@@ -62,7 +62,7 @@ const DefaultComponent = ({
           event.target.style.backgroundSize = toPercent();
         }}
       />
-      {hasMessage && (
+      {!!hasMessage && (
         <small className={`c-range__message c-range__message--${validation}`}>
           .c-range__message
         </small>

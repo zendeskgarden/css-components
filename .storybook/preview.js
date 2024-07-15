@@ -5,22 +5,23 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
-import { create } from '@storybook/theming/create';
 import '@zendeskgarden/css-grid';
 import '@zendeskgarden/css-utilities';
+import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
+import { create } from '@storybook/theming/create';
 
 export const decorators = [
-  (Story, context) => {
+  (story, context) => {
     if (context.globals.bedrock === 'enabled') {
       document.querySelector('link[href="index.css"]').removeAttribute('disabled');
     } else {
       document.querySelector('link[href="index.css"]').setAttribute('disabled', true);
     }
 
+    /* eslint-disable-next-line n/global-require */
     require('focus-visible');
 
-    return Story();
+    return story();
   }
 ];
 

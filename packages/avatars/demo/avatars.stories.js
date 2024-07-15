@@ -23,7 +23,7 @@ export const Types = {
             <img alt="user" src={UserImage} />
           </figure>
           <div className="u-mt-xs">
-            <code>.c-avatar{size && `.${size}`}</code>
+            <code>.c-avatar{!!size && `.${size}`}</code>
           </div>
         </div>
         <div className="col u-mt">
@@ -31,7 +31,7 @@ export const Types = {
             <img alt="system" src={SystemImage} />
           </figure>
           <div className="u-mt-xs">
-            <code>.c-avatar.c-avatar--system{size && `.${size}`}</code>
+            <code>.c-avatar.c-avatar--system{!!size && `.${size}`}</code>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@ export const Variants = {
             <span className="c-avatar__txt">G</span>
           </figure>
           <div className="u-mt-xs">
-            <code>.c-avatar{size && `.${size}`}.c-avatar__txt</code>
+            <code>.c-avatar{!!size && `.${size}`}.c-avatar__txt</code>
           </div>
         </div>
         <div className="col u-mt">
@@ -66,7 +66,7 @@ export const Variants = {
             <span className="c-avatar__txt">ZD</span>
           </figure>
           <div className="u-mt-xs">
-            <code>.c-avatar.c-avatar--system{size && `.${size}`}.c-avatar__txt</code>
+            <code>.c-avatar.c-avatar--system{!!size && `.${size}`}.c-avatar__txt</code>
           </div>
         </div>
       </div>

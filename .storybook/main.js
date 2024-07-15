@@ -1,10 +1,15 @@
-import { dirname, join } from 'path';
 /**
  * Copyright Zendesk, Inc.
  *
  * Use of this source code is governed under the Apache License, Version 2.0
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
+
+import { dirname, join } from 'node:path';
+
+function getAbsolutePath(value) {
+  return dirname(require.resolve(join(value, 'package.json')));
+}
 
 module.exports = {
   stories: ['./*.mdx', '../packages/**/demo/*.stories.js'],
@@ -27,6 +32,7 @@ module.exports = {
       name: '@storybook/addon-styling',
       options: {
         postCss: {
+          /* eslint-disable-next-line n/global-require */
           implementation: require('postcss')
         }
       }
@@ -39,7 +45,3 @@ module.exports = {
     return config;
   }
 };
-
-function getAbsolutePath(value) {
-  return dirname(require.resolve(join(value, 'package.json')));
-}
