@@ -115,7 +115,7 @@
   background-image: var(--zd-callout--warning__close-hovered-background-image);
 }
 
-/* stylelint-disable selector-max-specificity, max-line-length */
+/* stylelint-disable selector-max-specificity */
 
 .c-callout--error:not(.c-callout--dialog) .c-callout__close:--callout-focused {
   background-color: var(--zd-callout--error__close-focused-background-color);
@@ -133,4 +133,4 @@
   background-color: transparent;
 }
 
-/* stylelint-enable selector-max-specificity, max-line-length */
+/* stylelint-enable selector-max-specificity */
