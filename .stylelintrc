@@ -1,6 +1,10 @@
 {
   "extends": "@zendeskgarden/stylelint-config",
   "rules": {
+    "function-no-unknown": [
+      true,
+      { "ignoreFunctions": ["alpha", "blackness", "color-mod", "svg-inline", "svg-load"] }
+    ],
     "no-unknown-custom-properties": null
   }
 }

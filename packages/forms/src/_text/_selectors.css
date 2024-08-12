@@ -1,5 +1,3 @@
-/* stylelint-disable at-rule-empty-line-before */
-
 @custom-selector :--txt-hovered
   .is-hovered:not(.is-disabled):not([disabled]),
   :hover:not(.is-disabled):not([disabled]);
@@ -14,5 +12,3 @@
 
 @custom-selector :--txt--select-open
   .is-open:not(.is-disabled):not([disabled]):not(select);
-
-/* stylelint-enable at-rule-empty-line-before */

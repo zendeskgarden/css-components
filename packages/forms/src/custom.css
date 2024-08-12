@@ -21,7 +21,6 @@
 }
 
 /* HACK [jtz] until postcss/postcss-custom-selectors#40 is fixed */
-/* stylelint-disable selector-list-comma-space-after, max-line-length */
 :--chk-checked-enabled.c-chk__label--custom::before,:--chk-indeterminate-enabled.c-chk__label--custom::before {
   border-color: var(--zd-forms--custom-accent-color);
   background-color: var(--zd-forms--custom-accent-color);
@@ -45,7 +44,6 @@
   border-color: var(--zd-forms--custom-accent-color-active);
   background-color: var(--zd-forms--custom-accent-color-active);
 }
-/* stylelint-enable selector-list-comma-space-after, max-line-length */
 
 /* stylelint-disable selector-pseudo-element-no-unknown */
 
@@ -75,7 +73,7 @@
   box-shadow: var(--zd-forms--custom-box-shadow);
 }
 
-/* stylelint-disable max-line-length, selector-max-specificity */
+/* stylelint-disable selector-max-specificity */
 
 .c-range__slider--custom:not(.is-disabled) .c-range__slider__track__rail__thumb.is-focused {
   box-shadow: var(--zd-forms--custom-box-shadow);
@@ -105,4 +103,4 @@
   box-shadow: var(--zd-forms--custom-box-shadow-inset);
 }
 
-/* stylelint-enable max-line-length, selector-max-specificity */
+/* stylelint-enable selector-max-specificity */

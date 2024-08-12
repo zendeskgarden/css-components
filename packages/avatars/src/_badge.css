@@ -58,11 +58,11 @@
   content: '';
 }
 
-/* stylelint-disable selector-type-no-unknown, selector-no-vendor-prefix */
+/* stylelint-disable selector-no-vendor-prefix */
 _:-ms-input-placeholder, .c-avatar::after {
   color: var(--zd-avatar__badge-color); /* [3] */
 }
-/* stylelint-enable selector-type-no-unknown, selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
 
 .c-avatar--lg::after {
   right: var(--zd-avatar--lg__badge-position);

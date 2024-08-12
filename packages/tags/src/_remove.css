@@ -1,4 +1,3 @@
-/* stylelint-disable no-unsupported-browser-features */
 @import '@zendeskgarden/css-variables';
 
 :root {
@@ -96,4 +95,3 @@
 .c-tag--sm.is-rtl .c-tag__remove {
   margin-left: var(--zd-tag--sm__remove-margin);
 }
-/* stylelint-enable no-unsupported-browser-features */

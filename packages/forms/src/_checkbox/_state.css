@@ -1,4 +1,3 @@
-/* stylelint-disable at-rule-empty-line-before, max-line-length, no-descending-specificity */
 @import '@zendeskgarden/css-variables';
 @import '../_variables';
 @import '_selectors';
@@ -32,7 +31,6 @@
 }
 
 /* HACK [jtz] until postcss/postcss-custom-selectors#40 is fixed */
-/* stylelint-disable-next-line selector-list-comma-space-after */
 :--chk-checked-enabled::before,:--chk-indeterminate-enabled::before {
   border-color: var(--zd-chk-checked-border-color);
   background-color: var(--zd-chk-checked-background-color);
@@ -55,7 +53,6 @@
 }
 
 /* HACK [jtz] until postcss/postcss-custom-selectors#40 is fixed */
-/* stylelint-disable-next-line selector-list-comma-space-after */
 :--chk-checked-active::before,:--chk-indeterminate-active::before {
   border-color: var(--zd-chk-checked-active-border-color);
   background-color: var(--zd-chk-checked-active-background-color);
@@ -70,5 +67,3 @@
   box-shadow: none;
   background-color: var(--zd-chk-disabled-background-color);
 }
-
-/* stylelint-enable at-rule-empty-line-before, max-line-length, no-descending-specificity */
