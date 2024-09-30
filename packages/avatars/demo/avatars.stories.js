@@ -87,7 +87,7 @@ export const Variants = {
             </svg>
           </figure>
           <div className="u-mt-xs">
-            <code>{`.c-avatar${size && `.${size}`} > svg`}</code>
+            <code>{`.c-avatar${size ? `.${size}` : ''} > svg`}</code>
           </div>
         </div>
         <div className="col u-mt">
@@ -106,7 +106,7 @@ export const Variants = {
             </svg>
           </figure>
           <div className="u-mt-xs">
-            <code>{`.c-avatar.c-avatar--system${size && `.${size}`} > svg`}</code>
+            <code>{`.c-avatar.c-avatar--system${size ? `.${size}` : ''} > svg`}</code>
           </div>
         </div>
       </div>

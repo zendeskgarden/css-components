@@ -11,3 +11,4 @@
 @import '_type';
 @import '_badge';
 @import '_keyframes';
+@tailwind utilities;

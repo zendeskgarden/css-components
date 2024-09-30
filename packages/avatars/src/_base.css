@@ -17,18 +17,17 @@
    2. Use `color` to manipulate inner box shadow and badge. */
 
 .c-avatar {
-  display: inline-flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
+  @apply inline-flex;
+  @apply relative;
+  @apply items-center;
+  @apply justify-center;
   transition: var(--zd-avatar-transition);
-  margin: 0; /* [1] */
-  border-radius: var(--zd-avatar-border-radius);
-  width: var(--zd-avatar-size);
-  height: var(--zd-avatar-size);
-  vertical-align: middle;
-  box-sizing: border-box;
-  color: transparent; /* [2] */
+  @apply m-0; /* [1] */
+  @apply rounded-full;
+  @apply size-10;
+  @apply align-middle;
+  @apply box-border;
+  @apply text-transparent; /* [2] */
 }
 
 /* inner ring */
