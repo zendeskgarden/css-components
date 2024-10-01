@@ -1,6 +1,7 @@
 {
   "extends": "@zendeskgarden/stylelint-config",
   "rules": {
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["apply", "tailwind"] }],
     "function-no-unknown": [
       true,
       { "ignoreFunctions": ["alpha", "blackness", "color-mod", "svg-inline", "svg-load"] }

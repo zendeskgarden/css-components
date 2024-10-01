@@ -21,6 +21,7 @@ module.exports = {
     'postcss-inline-svg': {
       paths: [path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')]
     },
+    tailwindcss: {},
     cssnano: {
       preset: [
         'default',
