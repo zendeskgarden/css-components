@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.18](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@5.1.17...@zendeskgarden/css-tags@5.1.18) (2024-10-02)
+
+**Note:** Version bump only for package @zendeskgarden/css-tags
+
+
+
+
+
 ## [5.1.17](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@5.1.16...@zendeskgarden/css-tags@5.1.17) (2022-10-21)
 
 **Note:** Version bump only for package @zendeskgarden/css-tags
