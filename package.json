@@ -28,7 +28,7 @@
     "@zendeskgarden/css-grid": "0.1.39",
     "@zendeskgarden/css-utilities": "4.5.5",
     "@zendeskgarden/eslint-config": "43.0.0",
-    "@zendeskgarden/react-theming": "8.76.6",
+    "@zendeskgarden/react-theming": "9.0.0-next.27",
     "@zendeskgarden/scripts": "2.4.1",
     "@zendeskgarden/stylelint-config": "22.0.0",
     "@zendeskgarden/svg-icons": "7.2.0",
