@@ -1,76 +1,32 @@
-@import '@zendeskgarden/css-variables';
-
-:root {
-  --zd-anchor-color: var(--zd-color-blue-600);
-  --zd-html-background-color: var(--zd-color-white);
-  --zd-html-box-sizing: border-box;
-  --zd-html-font-family: var(--zd-font-family-system);
-  --zd-html-font-feature-settings: 'kern';
-  --zd-html-font-kerning: normal;
-  --zd-html-font-size: var(--zd-font-size-md);
-  --zd-html-line-height: var(--zd-spacing);
-  --zd-html-text-color: var(--zd-color-grey-800);
-}
-
 /* 1. Ensure the page always fills at least the entire viewport height.
  * 2. Force visible scrollbars to prevent awkward jumps when navigating between
  * pages that do/don't have enough content to produce natural scrollbars. */
 html {
-  background-color: var(--zd-html-background-color);
-  min-height: 100%; /* [1] */
-  box-sizing: var(--zd-html-box-sizing);
-  overflow-y: scroll; /* [2] */
-  line-height: var(--zd-html-line-height);
-  color: var(--zd-html-text-color);
-  font-feature-settings: var(--zd-html-font-feature-settings);
-  font-kerning: var(--zd-html-font-kerning);
-  font-family: var(--zd-html-font-family);
-  font-size: var(--zd-html-font-size);
+  @apply bg-white;
+  @apply min-h-full; /* [1] */
+  @apply box-border;
+  @apply overflow-y-scroll; /* [2] */
+  @apply leading-md;
+  @apply text-grey-900;
+  font-feature-settings: 'kern';
+  font-kerning: normal;
+  @apply font-sans;
+  @apply text-base;
 }
 
-* { font-weight: inherit; }
+* { @apply font-[inherit]; }
 
 *,
 *::before,
 *::after { box-sizing: inherit; }
 
-a {
-  transition:
-    outline-color .1s ease-in-out,
-    color .25s ease-in-out;
-  outline: 2px solid transparent;
-  outline-offset: 1px;
-  border-radius: var(--zd-spacing-xxs);
-  color: var(--zd-anchor-color);
-}
+a { @apply text-blue-700; }
 
-a,
-ins,
-u { text-decoration: none; }
-
-a:hover {
-  text-decoration: underline;
-  color: var(--zd-color-blue-700);
-}
-
-a:active {
-  color: var(--zd-color-blue-800);
-}
-
-a:focus-visible {
-  outline-color: var(--zd-anchor-color);
-  text-decoration: none;
-}
-
-a:focus-visible:hover {
-  text-decoration: underline;
-}
-
-b { font-weight: var(--zd-font-weight-semibold); }
+b { @apply font-semibold; }
 
 button {
-  cursor: pointer;
-  padding: 0;
+  @apply cursor-pointer;
+  @apply p-0;
 }
 
 button,
@@ -78,28 +34,28 @@ input,
 optgroup,
 select,
 textarea {
-  line-height: inherit;
-  font-family: inherit;
+  @apply leading-[inherit];
+  @apply font-[inherit];
 }
 
-code { font-size: .95em; }
+code { @apply text-[.95em]; }
 
 code,
 kbd,
 pre,
-samp { font-family: var(--zd-font-family-monospace); }
+samp { @apply font-mono; }
 
 em { font-style: inherit; }
 
 fieldset,
-iframe { border: 0; }
+iframe { @apply border-0; }
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 { font-size: inherit; }
+h6 { @apply text-[inherit]; }
 
 h1,
 h2,
@@ -117,23 +73,27 @@ ul,
 fieldset,
 figure,
 hr {
-  margin: 0;
-  padding: 0;
+  @apply m-0;
+  @apply p-0;
 }
 
 hr {
-  border: none;
-  border-top: 1px solid;
+  @apply border-none;
+  @apply border-t;
+  @apply border-solid;
 }
 
+ins,
+u { @apply no-underline; }
+
 ol,
-ul { list-style: none; }
+ul { @apply list-none; }
 
-img { max-width: 100%; }
+img { @apply max-w-full; }
 
-strong { font-weight: inherit; }
+strong { @apply font-[inherit]; }
 
-svg { max-height: 100%; }
+svg { @apply max-h-full; }
 
 /* stylelint-disable-next-line declaration-no-important */
 [tabindex='-1']:focus { outline: none !important; }
