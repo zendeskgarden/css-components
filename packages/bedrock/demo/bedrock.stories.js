@@ -18,12 +18,24 @@ export const Bedrock = {
         <a href="#0">a</a>
       </div>
       <div className="u-mb">
-        <b>b</b>
-        <em>em</em>
-        <ins>ins</ins>
-        <i>i</i>
-        <strong>strong</strong>
-        <u>u</u>
+        <div>
+          <b>b</b>
+        </div>
+        <div>
+          <em>em</em>
+        </div>
+        <div>
+          <ins>ins</ins>
+        </div>
+        <div>
+          <i>i</i>
+        </div>
+        <div>
+          <strong>strong</strong>
+        </div>
+        <div>
+          <u>u</u>
+        </div>
       </div>
       <div className="u-mb">
         <button type="button">button</button>

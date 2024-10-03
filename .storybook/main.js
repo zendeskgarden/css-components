@@ -28,18 +28,9 @@ module.exports = {
         actions: false
       }
     },
-    {
-      name: '@storybook/addon-styling',
-      options: {
-        postCss: {
-          /* eslint-disable-next-line n/global-require */
-          implementation: require('postcss')
-        }
-      }
-    },
     '@storybook/addon-webpack5-compiler-swc'
   ],
-  webpackFinal: (config) => {
+  webpackFinal: config => {
     config.output.hashFunction = 'xxhash64';
 
     return config;
