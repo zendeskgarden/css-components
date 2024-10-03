@@ -14,7 +14,7 @@ html {
   @apply text-base;
 }
 
-* { @apply font-[inherit]; }
+* { font-weight: inherit; }
 
 *,
 *::before,
@@ -55,7 +55,7 @@ h2,
 h3,
 h4,
 h5,
-h6 { @apply text-[inherit]; }
+h6 { font-size: inherit; }
 
 h1,
 h2,
@@ -91,7 +91,7 @@ ul { @apply list-none; }
 
 img { @apply max-w-full; }
 
-strong { @apply font-[inherit]; }
+strong { font-weight: inherit; }
 
 svg { @apply max-h-full; }
 
