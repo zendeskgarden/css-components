@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@8.0.3...@zendeskgarden/css-buttons@8.0.4) (2024-10-02)
+
+**Note:** Version bump only for package @zendeskgarden/css-buttons
+
+
+
+
+
 ## [8.0.3](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@8.0.2...@zendeskgarden/css-buttons@8.0.3) (2023-07-20)
 
 **Note:** Version bump only for package @zendeskgarden/css-buttons

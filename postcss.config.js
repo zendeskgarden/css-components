@@ -10,6 +10,7 @@ const path = require('node:path');
 module.exports = {
   plugins: {
     'postcss-import': {},
+    tailwindcss: { config: path.join(__dirname, 'tailwind.config.js') },
     'postcss-input-range': {},
     'postcss-preset-env': {
       stage: 1,
@@ -21,7 +22,6 @@ module.exports = {
     'postcss-inline-svg': {
       paths: [path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')]
     },
-    tailwindcss: {},
     cssnano: {
       preset: [
         'default',

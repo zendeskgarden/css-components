@@ -39,7 +39,7 @@ module.exports = {
     },
     '@storybook/addon-webpack5-compiler-swc'
   ],
-  webpackFinal: (config) => {
+  webpackFinal: config => {
     config.output.hashFunction = 'xxhash64';
 
     return config;
