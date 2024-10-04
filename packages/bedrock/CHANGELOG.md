@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@9.1.2...@zendeskgarden/css-bedrock@10.0.0) (2024-10-04)
+
+
+* feat(bedrock)!: update to correspond with `react-components` v9 (#513) ([bfc890d](https://github.com/zendeskgarden/css-components/commit/bfc890dc9ca4f5d4321c1843020460197689fb80)), closes [#513](https://github.com/zendeskgarden/css-components/issues/513)
+
+
+### BREAKING CHANGES
+
+* removes bundled `css-variables` in favor of direct styling via tailwind. Import [@zendeskgarden/css-variables](https://www.npmjs.com/package/@zendeskgarden/css-variables) separately if those are required. Note that the variables will be updated with v9 [theming](https://garden.zendesk.com/components/theme-object) values under a follow-on PR. Also removes stateful `<a>` styling (`:hover`, `:active`, `:focus-visible`) as those tend to conflict with Garden's [Anchor](https://garden.zendesk.com/components/anchor) component – especially in v9 dark mode. If design system CSS styling is required, use [.c-btn.c-btn--anchor](https://zendeskgarden.github.io/css-components/?path=/story/components-buttons--types) classes from `css-buttons`.
+
+
+
+
+
+## [9.1.2](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@9.1.1...@zendeskgarden/css-bedrock@9.1.2) (2024-10-02)
+
+**Note:** Version bump only for package @zendeskgarden/css-bedrock
+
+
+
+
+
 ## [9.1.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@9.1.0...@zendeskgarden/css-bedrock@9.1.1) (2023-07-18)
 
 

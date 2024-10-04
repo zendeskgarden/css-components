@@ -21,13 +21,13 @@ Once installed, bedrock CSS can be accessed via `postcss-import`.
 ```
 
 The distribution for Bedrock CSS contains global styling rules to help
-projects get started with Garden designs. In addition to Normalize.css,
+projects get started with Garden designs. In addition to modern-normalize,
 Bedrock includes:
 
 - Garden's system font stack applied to page.
 - Base font size (14px) applied to the page.
 - Reset `box-sizing` to `border-box` for all elements.
-- A default treatment for anchor elements.
+- A default treatment for anchor and hr elements.
 - Headings (1-6) reset to inherit `font-size`.
 - Browser `margin` and `padding` stripped from block elements.
 
