@@ -1,19 +1,12 @@
-@import '@zendeskgarden/css-variables';
-
-:root {
-  --zd-avatar--system-border-radius: 4px;
-  --zd-avatar--system--lg-border-radius: 5px;
-  --zd-avatar--system--sm-border-radius: 3px;
-}
-
 .c-avatar--system {
-  border-radius: var(--zd-avatar--system-border-radius);
+  @apply rounded;
 }
 
 .c-avatar--system.c-avatar--lg {
-  border-radius: var(--zd-avatar--system--lg-border-radius);
+  @apply rounded-[5px];
 }
 
-.c-avatar--system.c-avatar--sm {
-  border-radius: var(--zd-avatar--system--sm-border-radius);
+.c-avatar--system.c-avatar--sm,
+.c-avatar--system.c-avatar--xs {
+  @apply rounded-[3px];
 }

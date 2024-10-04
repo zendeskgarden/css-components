@@ -1,18 +1,3 @@
-@import '@zendeskgarden/css-variables';
-
-:root {
-  --zd-avatar-border-radius: 50%;
-  --zd-avatar-transition-duration: .25s;
-  --zd-avatar-transition:
-    box-shadow var(--zd-avatar-transition-duration) ease-in-out,
-    color calc(var(--zd-avatar-transition-duration) * .4) ease-in-out;
-  --zd-avatar-size: 40px;
-  --zd-avatar__img-border-radius: 50%;
-  --zd-avatar__svg-size: 16px;
-  --zd-avatar__txt-color: var(--zd-color-white);
-  --zd-avatar__txt-font-size: var(--zd-font-size-lg);
-}
-
 /* 1. Reset for <figure> element. */
 
 .c-avatar {
@@ -29,31 +14,31 @@
 
 .c-avatar__img,
 .c-avatar > img {
-  border-radius: inherit;
-  width: 100%;
-  height: 100%;
+  @apply rounded-[inherit];
+  @apply w-full;
+  @apply h-full;
   box-sizing: inherit;
-  vertical-align: bottom;
-  object-fit: cover;
+  @apply align-bottom;
+  @apply object-cover;
 }
 
 .c-avatar__txt {
-  overflow: hidden;
-  text-align: center;
-  line-height: var(--zd-avatar-size);
-  white-space: nowrap;
-  font-size: var(--zd-avatar__txt-font-size);
+  @apply overflow-hidden;
+  @apply text-center;
+  @apply leading-[40px];
+  @apply whitespace-nowrap;
+  @apply text-lg;
 }
 
 .c-avatar__txt,
 .c-avatar__svg,
 .c-avatar > svg {
-  color: var(--zd-avatar__txt-color);
+  @apply text-white;
 }
 
 .c-avatar__svg,
 .c-avatar > svg {
-  width: 1em;
-  height: 1em;
-  font-size: var(--zd-avatar__svg-size);
+  @apply w-[1em];
+  @apply h-[1em];
+  @apply text-[16px];
 }

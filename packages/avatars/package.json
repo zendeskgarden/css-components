@@ -21,9 +21,6 @@
     "test": "npm run lint",
     "watch": "npm run build -- --watch"
   },
-  "dependencies": {
-    "@zendeskgarden/css-variables": "^6.4.7"
-  },
   "keywords": [
     "components",
     "css",
