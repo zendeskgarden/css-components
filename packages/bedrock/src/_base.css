@@ -78,9 +78,9 @@ hr {
 }
 
 hr {
-  @apply border-none;
-  @apply border-t;
-  @apply border-solid;
+  border: none;
+  border-top: 1px solid;
+  @apply border-grey-300;
 }
 
 ins,

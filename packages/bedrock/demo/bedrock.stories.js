@@ -37,6 +37,7 @@ export const Bedrock = {
           <u>u</u>
         </div>
       </div>
+      <hr className="u-mb" />
       <div className="u-mb">
         <button type="button">button</button>
       </div>
