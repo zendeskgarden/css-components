@@ -7,7 +7,6 @@
   @apply justify-center;
   @apply m-0; /* [1] */
   @apply rounded-full;
-  @apply size-10;
   @apply align-middle;
   @apply box-border;
 }
@@ -15,8 +14,7 @@
 .c-avatar__img,
 .c-avatar > img {
   @apply rounded-[inherit];
-  @apply w-full;
-  @apply h-full;
+  @apply size-full;
   box-sizing: inherit;
   @apply align-bottom;
   @apply object-cover;
@@ -25,9 +23,7 @@
 .c-avatar__txt {
   @apply overflow-hidden;
   @apply text-center;
-  @apply leading-[40px];
   @apply whitespace-nowrap;
-  @apply text-lg;
 }
 
 .c-avatar__txt,

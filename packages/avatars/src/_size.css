@@ -1,6 +1,21 @@
+.c-avatar {
+  @apply size-10;
+}
+
+.c-avatar__txt {
+  @apply leading-[40px];
+  @apply text-lg;
+}
+
+.c-avatar__svg,
+.c-avatar > svg {
+  @apply w-[1em];
+  @apply h-[1em];
+  @apply text-[16px];
+}
+
 .c-avatar--lg {
-  @apply w-12;
-  @apply h-12;
+  @apply size-12;
 }
 
 .c-avatar--lg .c-avatar__txt {
@@ -14,8 +29,7 @@
 }
 
 .c-avatar--sm {
-  @apply w-8;
-  @apply h-8;
+  @apply size-8;
 }
 
 .c-avatar--sm .c-avatar__txt {
@@ -29,8 +43,7 @@
 }
 
 .c-avatar--xs {
-  @apply w-6;
-  @apply h-6;
+  @apply size-6;
 }
 
 .c-avatar--xs .c-avatar__txt {
