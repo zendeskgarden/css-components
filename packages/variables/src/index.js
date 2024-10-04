@@ -10,6 +10,7 @@ const fontFamily = require('./_font-family');
 const fontSize = require('./_font-size');
 const fontWeight = require('./_font-weight');
 const lineHeight = require('./_line-height');
+const opacity = require('./_opacity');
 const spacing = require('./_spacing');
 
 module.exports = {
@@ -18,5 +19,6 @@ module.exports = {
   'font-size': fontSize,
   'font-weight': fontWeight,
   'line-height': lineHeight,
+  opacity,
   spacing
 };
