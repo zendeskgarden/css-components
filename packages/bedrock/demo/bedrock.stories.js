@@ -14,10 +14,10 @@ export default {
 export const Bedrock = {
   render: () => (
     <div>
-      <div className="u-mb">
+      <div className="mb-5">
         <a href="#0">a</a>
       </div>
-      <div className="u-mb">
+      <div className="mb-5">
         <div>
           <b>b</b>
         </div>
@@ -37,11 +37,11 @@ export const Bedrock = {
           <u>u</u>
         </div>
       </div>
-      <hr className="u-mb" />
-      <div className="u-mb">
+      <hr className="mb-5" />
+      <div className="mb-5">
         <button type="button">button</button>
       </div>
-      <div className="u-mb">
+      <div className="mb-5">
         <h1>h1</h1>
         <h2>h2</h2>
         <h3>h3</h3>
@@ -49,23 +49,23 @@ export const Bedrock = {
         <h5>h5</h5>
         <h6>h6</h6>
       </div>
-      <div className="u-mb">
-        <ul className="u-mb-sm">
+      <div className="mb-5">
+        <ul className="mb-3">
           <li>ul</li>
         </ul>
-        <ol className="u-mb-sm">
+        <ol className="mb-3">
           <li>ol</li>
         </ol>
-        <dl className="u-mb-sm">
+        <dl className="mb-3">
           <li>dl</li>
           <li>dl</li>
         </dl>
-        <dd className="u-mb-sm">
+        <dd className="mb-3">
           <li>dd</li>
           <li>dd</li>
         </dd>
       </div>
-      <div className="u-mb">
+      <div className="mb-5">
         <p>p</p>
         <blockquote>blockquote</blockquote>
         <pre>pre</pre>
