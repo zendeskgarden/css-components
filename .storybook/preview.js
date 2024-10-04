@@ -7,6 +7,7 @@
 
 import '@zendeskgarden/css-grid';
 import '@zendeskgarden/css-utilities';
+import './index.css';
 import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
 import { create } from '@storybook/theming/create';
 

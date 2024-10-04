@@ -8,7 +8,7 @@
 const gardenTailwindCSSPlugin = require('@zendeskgarden/tailwindcss');
 
 module.exports = {
-  content: ['./packages/*/src/**/*.css'],
+  content: ['./packages/*/src/**/*.css', './packages/*/demo/**/*.js'],
   theme: {
     extend: {}
   },

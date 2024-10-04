@@ -22,7 +22,6 @@
     "watch": "npm run build -- --watch"
   },
   "dependencies": {
-    "@zendeskgarden/css-variables": "^6.4.7",
     "modern-normalize": "^2.0.0"
   },
   "keywords": [
