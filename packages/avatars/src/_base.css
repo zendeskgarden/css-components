@@ -13,34 +13,18 @@
   --zd-avatar__txt-font-size: var(--zd-font-size-lg);
 }
 
-/* 1. Reset for <figure> element.
-   2. Use `color` to manipulate inner box shadow and badge. */
+/* 1. Reset for <figure> element. */
 
 .c-avatar {
   @apply inline-flex;
   @apply relative;
   @apply items-center;
   @apply justify-center;
-  transition: var(--zd-avatar-transition);
   @apply m-0; /* [1] */
   @apply rounded-full;
   @apply size-10;
   @apply align-middle;
   @apply box-border;
-  @apply text-transparent; /* [2] */
-}
-
-/* inner ring */
-.c-avatar::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: box-shadow var(--zd-avatar-transition-duration) ease-in-out;
-  border-radius: inherit;
-  box-shadow: inset 0 0 0 2px; /* [2] */
-  width: 100%;
-  height: 100%;
-  content: '';
 }
 
 .c-avatar__img,
