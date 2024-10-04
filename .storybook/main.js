@@ -29,7 +29,7 @@ module.exports = {
       }
     },
     {
-      name: '@storybook/addon-styling-webpack',
+      name: '@storybook/addon-styling',
       options: {
         postCss: {
           /* eslint-disable-next-line n/global-require */
