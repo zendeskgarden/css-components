@@ -6,6 +6,7 @@
  */
 
 import '../dist/index.css';
+import { Grid } from '@zendeskgarden/react-grid';
 import React from 'react';
 import SystemImage from './images/system.png';
 import UserImage from './images/avatar.png';
@@ -16,26 +17,26 @@ export default {
 
 export const Types = {
   render: ({ size = false }) => (
-    <div className="container">
-      <div className="row">
-        <div className="col u-mt">
+    <Grid>
+      <Grid.Row>
+        <Grid.Col className="mt-5">
           <figure className={`c-avatar ${size}`}>
             <img alt="user" src={UserImage} />
           </figure>
-          <div className="u-mt-xs">
+          <div className="mt-2">
             <code>.c-avatar{!!size && `.${size}`}</code>
           </div>
-        </div>
-        <div className="col u-mt">
+        </Grid.Col>
+        <Grid.Col className="mt-5">
           <figure className={`c-avatar c-avatar--system ${size}`}>
             <img alt="system" src={SystemImage} />
           </figure>
-          <div className="u-mt-xs">
+          <div className="mt-2">
             <code>.c-avatar.c-avatar--system{!!size && `.${size}`}</code>
           </div>
-        </div>
-      </div>
-    </div>
+        </Grid.Col>
+      </Grid.Row>
+    </Grid>
   ),
   name: 'Types',
   argTypes: {
@@ -51,28 +52,28 @@ export const Types = {
 
 export const Variants = {
   render: ({ size = false }) => (
-    <div className="container">
-      <div className="row">
-        <div className="col u-mt">
-          <figure className={`c-avatar ${size} u-bg-royal-600`}>
+    <Grid>
+      <Grid.Row>
+        <Grid.Col className="mt-5">
+          <figure className={`c-avatar ${size} bg-royal-700`}>
             <span className="c-avatar__txt">G</span>
           </figure>
-          <div className="u-mt-xs">
+          <div className="mt-2">
             <code>.c-avatar{!!size && `.${size}`}.c-avatar__txt</code>
           </div>
-        </div>
-        <div className="col u-mt">
-          <figure className={`c-avatar c-avatar--system ${size} u-bg-royal-600`}>
+        </Grid.Col>
+        <Grid.Col className="mt-5">
+          <figure className={`c-avatar c-avatar--system ${size} bg-royal-700`}>
             <span className="c-avatar__txt">ZD</span>
           </figure>
-          <div className="u-mt-xs">
+          <div className="mt-2">
             <code>.c-avatar.c-avatar--system{!!size && `.${size}`}.c-avatar__txt</code>
           </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col u-mt">
-          <figure className={`c-avatar ${size} u-bg-grey-600`}>
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row>
+        <Grid.Col className="mt-5">
+          <figure className={`c-avatar ${size} bg-grey-700`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -86,12 +87,12 @@ export const Variants = {
               </g>
             </svg>
           </figure>
-          <div className="u-mt-xs">
+          <div className="mt-2">
             <code>{`.c-avatar${size ? `.${size}` : ''} > svg`}</code>
           </div>
-        </div>
-        <div className="col u-mt">
-          <figure className={`c-avatar c-avatar--system ${size} u-bg-kale-800`}>
+        </Grid.Col>
+        <Grid.Col className="mt-5">
+          <figure className={`c-avatar c-avatar--system ${size} bg-kale-1000`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
@@ -105,12 +106,12 @@ export const Variants = {
               />
             </svg>
           </figure>
-          <div className="u-mt-xs">
+          <div className="mt-2">
             <code>{`.c-avatar.c-avatar--system${size ? `.${size}` : ''} > svg`}</code>
           </div>
-        </div>
-      </div>
-    </div>
+        </Grid.Col>
+      </Grid.Row>
+    </Grid>
   ),
   name: 'Variants',
   argTypes: {
