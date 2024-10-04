@@ -14,7 +14,7 @@ addons.setConfig({
     brandTitle: 'Zendesk Garden CSS Components',
     brandUrl: 'https://github.com/zendeskgarden/css-components',
     brandImage: null,
-    colorSecondary: DEFAULT_THEME.palette.blue[600],
+    colorSecondary: DEFAULT_THEME.palette.blue[700],
     fontBase: DEFAULT_THEME.fonts.system,
     fontCode: DEFAULT_THEME.fonts.mono
   })
