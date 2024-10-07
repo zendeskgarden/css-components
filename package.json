@@ -39,7 +39,6 @@
     "envalid": "8.0.0",
     "eslint": "9.9.0",
     "eslint-config-prettier": "9.1.0",
-    "focus-visible": "5.2.1",
     "husky": "9.1.4",
     "jsonlint": "1.6.3",
     "lerna": "8.1.8",
