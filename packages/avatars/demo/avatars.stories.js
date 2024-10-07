@@ -99,7 +99,11 @@ export const Variants = {
         </Grid.Row>
         <Grid.Row>
           <Grid.Col className="mt-5">
-            <figure className={`c-avatar ${isDark && 'c-avatar--dark'} ${size} bg-grey-700`}>
+            <figure
+              className={`c-avatar ${isDark && 'c-avatar--dark'} ${size} ${
+                isDark ? 'bg-grey-600' : 'bg-grey-700'
+              }`}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
