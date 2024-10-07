@@ -9,8 +9,7 @@
 
 .c-avatar__svg,
 .c-avatar > svg {
-  @apply w-[1em];
-  @apply h-[1em];
+  @apply size-[1em];
   @apply text-[16px];
 }
 

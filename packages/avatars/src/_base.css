@@ -25,16 +25,3 @@
   @apply text-center;
   @apply whitespace-nowrap;
 }
-
-.c-avatar__txt,
-.c-avatar__svg,
-.c-avatar > svg {
-  @apply text-white;
-}
-
-.c-avatar__svg,
-.c-avatar > svg {
-  @apply w-[1em];
-  @apply h-[1em];
-  @apply text-[16px];
-}
