@@ -6,48 +6,70 @@
  */
 
 import '../dist/index.css';
+import { Grid } from '@zendeskgarden/react-grid';
 import React from 'react';
 
 export default {
   title: 'Components/Buttons'
 };
 
+const toClassName = (base, size = false, style = false) => {
+  let retVal = base;
+
+  if (size) {
+    retVal += ` ${size}`;
+  }
+
+  if (style && style.length > 0) {
+    retVal += ` ${style.join(' ')}`;
+  }
+
+  return retVal;
+};
+
+const toClassSelector = (base, size = false, style = false) => {
+  let retVal = base;
+
+  if (size) {
+    retVal += `.${size}`;
+  }
+
+  if (style && style.length > 0) {
+    retVal += `.${style.join('.')}`;
+  }
+
+  return retVal;
+};
+
 export const Types = {
   render: ({ disabled, size = false, style = false }) => (
-    <div className="container">
-      <div className="row align-items-center">
-        <div className="col u-mt">
+    <Grid>
+      <Grid.Row>
+        <Grid.Col className="mt-5">
+          <button type="button" className={toClassName('c-btn', size, style)} disabled={disabled}>
+            {toClassSelector('.c-btn', size, style)}
+          </button>
+        </Grid.Col>
+        <Grid.Col className="mt-5">
           <button
             type="button"
-            className={`c-btn ${size} ${style && style.join(' ')}`}
+            className={toClassName('c-btn c-btn--pill', size, style)}
             disabled={disabled}
           >
-            .c-btn{!!size && `.${size}`}
-            {!!style && style.length > 0 && `.${style.join('.')}`}
+            {toClassSelector('.c-btn.c-btn--pill', size, style)}
           </button>
-        </div>
-        <div className="col u-mt">
+        </Grid.Col>
+        <Grid.Col className="mt-5">
           <button
             type="button"
-            className={`c-btn c-btn--pill ${size} ${style && style.join(' ')}`}
+            className={toClassName('c-btn c-btn--basic', size, style)}
             disabled={disabled}
           >
-            .c-btn.c-btn--pill{!!size && `.${size}`}
-            {!!style && style.length > 0 && `.${style.join('.')}`}
+            {toClassSelector('.c-btn.c-btn--basic', size, style)}
           </button>
-        </div>
-        <div className="col u-mt">
-          <button
-            type="button"
-            className={`c-btn c-btn--basic ${size} ${style && style.join(' ')}`}
-            disabled={disabled}
-          >
-            .c-btn.c-btn--basic{!!size && `.${size}`}
-            {!!style && style.length > 0 && `.${style.join('.')}`}
-          </button>
-        </div>
-      </div>
-    </div>
+        </Grid.Col>
+      </Grid.Row>
+    </Grid>
   ),
   name: 'Types',
   argTypes: {
@@ -57,29 +79,33 @@ export const Types = {
       },
       options: [undefined, 'c-btn--sm', 'c-btn--lg']
     },
-    disabled: {
-      name: 'disabled',
-      control: {
-        type: 'boolean'
-      }
-    },
     style: {
       control: {
         type: 'inline-check'
       },
       options: ['c-btn--primary', 'c-btn--danger', 'c-btn--full']
+    },
+    disabled: {
+      name: 'disabled',
+      control: {
+        type: 'boolean'
+      }
     }
   }
 };
 
 export const Icons = {
-  render: ({ isRotated, size, style }) => (
-    <div className="container">
-      <div className="row align-items-center">
-        <div className="col u-mt">
-          <button type="button" className={`c-btn c-btn--icon ${size} ${style && style.join(' ')}`}>
+  render: ({ disabled, size, style }) => (
+    <Grid>
+      <Grid.Row>
+        <Grid.Col className="mt-5">
+          <button
+            type="button"
+            className={toClassName('c-btn c-btn--icon', size, style)}
+            disabled={disabled}
+          >
             <svg
-              className={`c-btn__icon ${isRotated && 'is-rotated'}`}
+              className="c-btn__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="26"
               height="26"
@@ -92,11 +118,15 @@ export const Icons = {
               />
             </svg>
           </button>
-        </div>
-        <div className="col u-mt">
-          <button type="button" className={`c-btn c-btn--icon ${size} ${style && style.join(' ')}`}>
+        </Grid.Col>
+        <Grid.Col className="mt-5">
+          <button
+            type="button"
+            className={toClassName('c-btn c-btn--icon', size, style)}
+            disabled={disabled}
+          >
             <svg
-              className={`c-btn__icon ${isRotated && 'is-rotated'}`}
+              className="c-btn__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -109,18 +139,12 @@ export const Icons = {
               />
             </svg>
           </button>
-        </div>
-      </div>
-    </div>
+        </Grid.Col>
+      </Grid.Row>
+    </Grid>
   ),
   name: 'Icons',
   argTypes: {
-    isRotated: {
-      name: 'is-rotated',
-      control: {
-        type: 'boolean'
-      }
-    },
     size: {
       control: {
         type: 'inline-radio'
@@ -132,6 +156,12 @@ export const Icons = {
         type: 'inline-check'
       },
       options: ['c-btn--pill', 'c-btn--basic', 'c-btn--primary', 'c-btn--danger']
+    },
+    disabled: {
+      name: 'disabled',
+      control: {
+        type: 'boolean'
+      }
     }
   }
 };

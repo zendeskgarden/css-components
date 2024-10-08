@@ -12,10 +12,6 @@
   @apply active:border-blue-900;
   @apply active:bg-blue-700/16;
   @apply active:text-blue-900;
-
-  @apply disabled:border-transparent;
-  @apply disabled:bg-grey-700/8;
-  @apply disabled:text-grey-600;
 }
 
 .c-btn--danger {
@@ -68,4 +64,10 @@
   @apply hover:text-grey-800;
 
   @apply active:text-grey-900;
+}
+
+.c-btn.c-btn {
+  @apply disabled:border-transparent;
+  @apply disabled:bg-grey-700/8;
+  @apply disabled:text-grey-600;
 }
