@@ -9,6 +9,12 @@ const gardenTailwindCSSPlugin = require('@zendeskgarden/tailwindcss');
 
 module.exports = {
   content: ['./packages/*/src/**/*.css', './packages/*/demo/**/*.js'],
+  corePlugins: {
+    preflight: false,
+    backgroundOpacity: false,
+    borderOpacity: false,
+    textOpacity: false
+  },
   theme: {
     extend: {}
   },

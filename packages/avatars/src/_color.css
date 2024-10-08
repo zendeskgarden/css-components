@@ -1,0 +1,11 @@
+.c-avatar__txt,
+.c-avatar__svg,
+.c-avatar > svg {
+  @apply text-white;
+}
+
+.c-avatar--dark .c-avatar__txt,
+.c-avatar--dark .c-avatar__svg,
+.c-avatar--dark > svg {
+  @apply text-grey-1100;
+}

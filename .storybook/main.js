@@ -5,17 +5,11 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import { dirname, join } from 'node:path';
-
-function getAbsolutePath(value) {
-  return dirname(require.resolve(join(value, 'package.json')));
-}
-
 module.exports = {
   stories: ['./*.mdx', '../packages/**/demo/*.stories.js'],
   staticDirs: ['../packages/bedrock/dist'],
   framework: {
-    name: getAbsolutePath('@storybook/react-webpack5'),
+    name: '@storybook/react-webpack5',
     options: {}
   },
   docs: {
