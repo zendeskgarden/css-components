@@ -22,5 +22,6 @@
 - [ ] :ok_hand: style updates are Garden Designer approved (add the designer as a reviewer)
 - [ ] :globe_with_meridians: component demo is up-to-date (`npm start`)
 - [ ] :white_check_mark: all component states are represented (`:hover`, `:focus-visible`, etc.)
+- [ ] :black_circle: renders as expected in dark mode
 - [ ] :metal: renders as expected sans Bedrock (`?bedrock=false`)
 - [ ] :memo: tested in Chrome, Firefox, Safari, Edge, and IE11
