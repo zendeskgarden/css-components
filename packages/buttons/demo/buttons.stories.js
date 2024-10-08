@@ -21,7 +21,7 @@ const toClassName = (theme, base, size = false, style = []) => {
     retVal += ` ${size}`;
   }
 
-  if (style && style.length > 0) {
+  if (style.length > 0) {
     retVal += ` ${style.join(' ')}`;
   }
 
@@ -35,7 +35,7 @@ const toClassSelector = (theme, base, size = false, style = []) => {
     retVal += `.${size}`;
   }
 
-  if (style && style.length > 0) {
+  if (style.length > 0) {
     retVal += `.${style.join('.')}`;
   }
 
