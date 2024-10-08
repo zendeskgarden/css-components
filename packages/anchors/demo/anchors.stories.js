@@ -6,24 +6,51 @@
  */
 
 import '../dist/index.css';
+import { Grid } from '@zendeskgarden/react-grid';
 import React from 'react';
+import { useTheme } from 'styled-components';
 
 export default {
   title: 'Components/Anchors'
 };
 
+const toClassName = (theme, base, style = false) => {
+  let retVal = theme.colors.base === 'dark' ? `${base} c-anchor--dark` : base;
+
+  if (style && style.length > 0) {
+    retVal += ` ${style.join(' ')}`;
+  }
+
+  return retVal;
+};
+
+const toClassSelector = (theme, base, style = false) => {
+  let retVal = theme.colors.base === 'dark' ? `${base}.c-anchor--dark` : base;
+
+  if (style && style.length > 0) {
+    retVal += `.${style.join('.')}`;
+  }
+
+  return retVal;
+};
+
 export const Types = {
-  render: ({ style = false }) => (
-    <div className="container">
-      <div className="row align-items-center">
-        <div className="col u-mt">
-          <a href="#0" className={`c-anchor ${style && style.join(' ')}`}>
-            .c-anchor{!!style && style.length > 0 && `.${style.join('.')}`}
-          </a>
-        </div>
-      </div>
-    </div>
-  ),
+  render: ({ style = false }) => {
+    /* eslint-disable-next-line react-hooks/rules-of-hooks */
+    const theme = useTheme();
+
+    return (
+      <Grid>
+        <Grid.Row>
+          <Grid.Col className="u-mt">
+            <a href="#0" className={toClassName(theme, 'c-anchor', style)}>
+              {toClassSelector(theme, '.c-anchor', style)}
+            </a>
+          </Grid.Col>
+        </Grid.Row>
+      </Grid>
+    );
+  },
   name: 'Default',
   argTypes: {
     style: {
@@ -32,5 +59,6 @@ export const Types = {
       },
       options: ['c-anchor--danger']
     }
-  }
+  },
+  decorators: [Story => <Story />]
 };
