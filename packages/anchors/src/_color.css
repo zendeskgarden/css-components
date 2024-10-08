@@ -1,4 +1,5 @@
 .c-anchor {
+  transition: color 0.25s ease-in-out;
   @apply text-blue-700;
 
   @apply hover:text-blue-800;
@@ -14,4 +15,22 @@
   @apply hover:text-red-800;
 
   @apply active:text-red-900;
+}
+
+.c-anchor--dark {
+  @apply text-blue-500;
+
+  @apply hover:text-blue-400;
+
+  @apply focus-visible:outline-blue-500;
+
+  @apply active:text-blue-300;
+}
+
+.c-anchor--dark.c-anchor--danger {
+  @apply text-red-500;
+
+  @apply hover:text-red-400;
+
+  @apply active:text-red-300;
 }
