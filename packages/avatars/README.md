@@ -33,6 +33,6 @@ Use avatar CSS to style user and system images.
 
 ### Modifications
 
-Avatar classes can be used to indicate state. See
+See
 http://zendeskgarden.github.io/css-components/?path=/story/components-avatars
 for various modification classes.
