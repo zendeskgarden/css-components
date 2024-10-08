@@ -14,7 +14,7 @@ export default {
   title: 'Components/Buttons'
 };
 
-const toClassName = (theme, base, size = false, style = false) => {
+const toClassName = (theme, base, size = false, style = []) => {
   let retVal = theme.colors.base === 'dark' ? `${base} c-btn--dark` : base;
 
   if (size) {
@@ -28,7 +28,7 @@ const toClassName = (theme, base, size = false, style = false) => {
   return retVal;
 };
 
-const toClassSelector = (theme, base, size = false, style = false) => {
+const toClassSelector = (theme, base, size = false, style = []) => {
   let retVal = theme.colors.base === 'dark' ? `${base}.c-btn--dark` : base;
 
   if (size) {
@@ -43,7 +43,7 @@ const toClassSelector = (theme, base, size = false, style = false) => {
 };
 
 export const Types = {
-  render: ({ disabled, size = false, style = false }) => {
+  render: ({ disabled, size, style }) => {
     /* eslint-disable-next-line react-hooks/rules-of-hooks */
     const theme = useTheme();
 
