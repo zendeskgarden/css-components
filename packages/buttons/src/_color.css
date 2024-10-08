@@ -1,151 +1,71 @@
-@import '@zendeskgarden/css-variables';
-@import '_selectors';
-
-:root {
-  --zd-btn-color: var(--zd-color-blue-600);
-  --zd-btn-color_hover: var(--zd-color-blue-700);
-  --zd-btn-color_active: var(--zd-color-blue-800);
-  --zd-btn-box-shadow: 0 0 0 3px color-mod(var(--zd-btn-color) alpha(35%));
-  --zd-btn--danger-color: var(--zd-color-red-600);
-  --zd-btn--danger-color_hover: var(--zd-color-red-700);
-  --zd-btn--danger-color_active: var(--zd-color-red-800);
-  --zd-btn--danger-box-shadow: 0 0 0 3px color-mod(var(--zd-btn--danger-color) alpha(35%));
-}
-
 .c-btn {
-  border-color: var(--zd-btn-color);
-  background-color: transparent;
-  color: var(--zd-btn-color);
+  @apply border-blue-700;
+  @apply bg-transparent;
+  @apply text-blue-700;
+
+  @apply hover:border-blue-800;
+  @apply hover:bg-blue-700/8;
+  @apply hover:text-blue-800;
+
+  @apply focus-visible:shadow-outline;
+
+  @apply active:border-blue-900;
+  @apply active:bg-blue-700/16;
+  @apply active:text-blue-900;
+
+  @apply disabled:border-transparent;
+  @apply disabled:bg-grey-700/8;
+  @apply disabled:text-grey-600;
 }
 
 .c-btn--danger {
-  border-color: var(--zd-btn--danger-color);
-  color: var(--zd-btn--danger-color);
+  @apply border-red-700;
+  @apply text-red-700;
+
+  @apply hover:border-red-800;
+  @apply hover:bg-red-700/8;
+  @apply hover:text-red-800;
+
+  @apply active:border-red-900;
+  @apply active:bg-red-700/16;
+  @apply active:text-red-900;
 }
 
 .c-btn--primary {
-  border-color: transparent;
-  background-color: var(--zd-btn-color);
-  color: var(--zd-color-white);
+  @apply border-transparent;
+  @apply bg-blue-700;
+  @apply text-white;
+
+  @apply hover:border-transparent;
+  @apply hover:bg-blue-800;
+  @apply hover:text-white;
+
+  @apply active:border-transparent;
+  @apply active:bg-blue-900;
+  @apply active:text-white;
 }
 
 .c-btn--primary.c-btn--danger {
-  background-color: var(--zd-btn--danger-color);
+  @apply bg-red-700;
+
+  @apply hover:bg-red-800;
+
+  @apply active:bg-red-900;
 }
 
 .c-btn--basic {
-  border-color: transparent;
+  @apply border-transparent;
+
+  @apply hover:border-transparent;
+
+  @apply active:border-transparent;
 }
 
 .c-btn--basic.c-btn--icon {
   border: none;
-  color: var(--zd-color-grey-600);
-}
+  @apply text-grey-700;
 
-.c-btn--anchor {
-  border-color: transparent;
-}
+  @apply hover:text-grey-800;
 
-.c-btn:--btn-hover {
-  border-color: var(--zd-btn-color_hover);
-  background-color: color-mod(var(--zd-btn-color) alpha(8%));
-  color: var(--zd-btn-color_hover);
-}
-
-.c-btn--danger:--btn-hover {
-  border-color: var(--zd-btn--danger-color_hover);
-  background-color: color-mod(var(--zd-btn--danger-color) alpha(8%));
-  color: var(--zd-btn--danger-color_hover);
-}
-
-.c-btn--primary:--btn-hover {
-  border-color: transparent;
-  background-color: var(--zd-btn-color_hover);
-  color: var(--zd-color-white);
-}
-
-.c-btn--primary.c-btn--danger:--btn-hover {
-  background-color: var(--zd-btn--danger-color_hover);
-}
-
-.c-btn--basic:--btn-hover {
-  border-color: transparent;
-}
-
-.c-btn--basic.c-btn--icon:--btn-hover {
-  color: var(--zd-color-grey-700);
-}
-
-.c-btn--anchor:--btn-hover {
-  border-color: transparent;
-  background-color: transparent;
-}
-
-.c-btn:--btn-focus {
-  box-shadow: var(--zd-btn-box-shadow);
-}
-
-.c-btn--focus-inset:--btn-focus {
-  box-shadow: inset var(--zd-btn-box-shadow);
-}
-
-.c-btn--danger:--btn-focus {
-  box-shadow: var(--zd-btn--danger-box-shadow);
-}
-
-.c-btn--danger.c-btn--focus-inset:--btn-focus {
-  box-shadow: inset var(--zd-btn--danger-box-shadow);
-}
-
-.c-btn--primary.c-btn--focus-inset:--btn-focus {
-  box-shadow: inset 0 0 0 3px color-mod(var(--zd-color-white) alpha(35%));
-}
-
-.c-btn--anchor.c-btn--anchor:--btn-focus {
-  box-shadow: none;
-}
-
-.c-btn:--btn-active {
-  border-color: var(--zd-btn-color_active);
-  background-color: color-mod(var(--zd-btn-color) alpha(20%));
-  color: var(--zd-btn-color_active);
-}
-
-.c-btn--danger:--btn-active {
-  border-color: var(--zd-btn--danger-color_active);
-  background-color: color-mod(var(--zd-btn--danger-color) alpha(20%));
-  color: var(--zd-btn--danger-color_active);
-}
-
-.c-btn--primary:--btn-active {
-  border-color: transparent;
-  background-color: var(--zd-btn-color_active);
-  color: var(--zd-color-white);
-}
-
-.c-btn--primary.c-btn--danger:--btn-active {
-  background-color: var(--zd-btn--danger-color_active);
-}
-
-.c-btn--basic:--btn-active {
-  border-color: transparent;
-}
-
-.c-btn--basic.c-btn--icon:--btn-active {
-  color: var(--zd-color-grey-800);
-}
-
-.c-btn--anchor:--btn-active {
-  border-color: transparent;
-  background-color: transparent;
-}
-
-.c-btn:--btn-disabled {
-  border-color: transparent;
-  background-color: var(--zd-color-grey-200);
-  color: var(--zd-color-grey-400);
-}
-
-.c-btn--anchor:--btn-disabled {
-  background-color: transparent;
+  @apply active:text-grey-900;
 }

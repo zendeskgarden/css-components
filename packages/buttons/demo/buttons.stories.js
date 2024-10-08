@@ -13,53 +13,37 @@ export default {
 };
 
 export const Types = {
-  render: ({ size = false, state = false, style = false }) => (
+  render: ({ disabled, size = false, style = false }) => (
     <div className="container">
       <div className="row align-items-center">
         <div className="col u-mt">
           <button
             type="button"
-            className={`c-btn ${size} ${style && style.join(' ')} ${state && state.join(' ')}`}
+            className={`c-btn ${size} ${style && style.join(' ')}`}
+            disabled={disabled}
           >
             .c-btn{!!size && `.${size}`}
             {!!style && style.length > 0 && `.${style.join('.')}`}
-            {!!state && state.length > 0 && `.${state.join('.')}`}
           </button>
         </div>
         <div className="col u-mt">
           <button
             type="button"
-            className={`c-btn c-btn--pill ${size} ${style && style.join(' ')} ${
-              state && state.join(' ')
-            }`}
+            className={`c-btn c-btn--pill ${size} ${style && style.join(' ')}`}
+            disabled={disabled}
           >
             .c-btn.c-btn--pill{!!size && `.${size}`}
             {!!style && style.length > 0 && `.${style.join('.')}`}
-            {!!state && state.length > 0 && `.${state.join('.')}`}
           </button>
         </div>
         <div className="col u-mt">
           <button
             type="button"
-            className={`c-btn c-btn--basic ${size} ${style && style.join(' ')} ${
-              state && state.join(' ')
-            }`}
+            className={`c-btn c-btn--basic ${size} ${style && style.join(' ')}`}
+            disabled={disabled}
           >
             .c-btn.c-btn--basic{!!size && `.${size}`}
             {!!style && style.length > 0 && `.${style.join('.')}`}
-            {!!state && state.length > 0 && `.${state.join('.')}`}
-          </button>
-        </div>
-        <div className="col u-mt">
-          <button
-            type="button"
-            className={`c-btn c-btn--anchor ${size} ${style && style.join(' ')} ${
-              state && state.join(' ')
-            }`}
-          >
-            .c-btn.c-btn--anchor{!!size && `.${size}`}
-            {!!style && style.length > 0 && `.${style.join('.')}`}
-            {!!state && state.length > 0 && `.${state.join('.')}`}
           </button>
         </div>
       </div>
@@ -73,11 +57,11 @@ export const Types = {
       },
       options: [undefined, 'c-btn--sm', 'c-btn--lg']
     },
-    state: {
+    disabled: {
+      name: 'disabled',
       control: {
-        type: 'inline-check'
-      },
-      options: ['is-hovered', 'is-active', 'is-focused', 'is-disabled']
+        type: 'boolean'
+      }
     },
     style: {
       control: {
