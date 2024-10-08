@@ -14,20 +14,20 @@ export default {
   title: 'Components/Anchors'
 };
 
-const toClassName = (theme, base, style = false) => {
+const toClassName = (theme, base, style = []) => {
   let retVal = theme.colors.base === 'dark' ? `${base} c-anchor--dark` : base;
 
-  if (style && style.length > 0) {
+  if (style.length > 0) {
     retVal += ` ${style.join(' ')}`;
   }
 
   return retVal;
 };
 
-const toClassSelector = (theme, base, style = false) => {
+const toClassSelector = (theme, base, style = []) => {
   let retVal = theme.colors.base === 'dark' ? `${base}.c-anchor--dark` : base;
 
-  if (style && style.length > 0) {
+  if (style.length > 0) {
     retVal += `.${style.join('.')}`;
   }
 
