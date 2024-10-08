@@ -1,6 +1,6 @@
 .c-btn {
   @apply py-0;
-  @apply px-[calc(15/14*1em)];
+  @apply px-[calc((15/14)*1em)];
   @apply h-10;
   @apply leading-[38px];
   @apply text-base;
@@ -11,7 +11,7 @@
 }
 
 .c-btn--lg {
-  @apply px-[calc(19/14*1em)];
+  @apply px-[calc((19/14)*1em)];
   @apply h-12;
   @apply leading-[46px];
 }

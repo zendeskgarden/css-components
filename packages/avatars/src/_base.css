@@ -11,6 +11,19 @@
   @apply box-border;
 }
 
+.c-avatar--system {
+  @apply rounded;
+}
+
+.c-avatar--system.c-avatar--lg {
+  @apply rounded-[5px];
+}
+
+.c-avatar--system.c-avatar--sm,
+.c-avatar--system.c-avatar--xs {
+  @apply rounded-[3px];
+}
+
 .c-avatar__img,
 .c-avatar > img {
   @apply rounded-[inherit];
