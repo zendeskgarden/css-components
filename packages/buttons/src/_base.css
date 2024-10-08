@@ -1,92 +1,48 @@
-@import '@zendeskgarden/css-variables';
-@import '_selectors';
-
-/* 1. Anchor tag reset.
- * 2. Override for <input> & <button> elements.
- * 3. FF <input type="submit" fix. */
+/* 1. Override for <input> & <button> elements.
+ * 2. FF <input type="submit" fix. */
 
 .c-btn {
-  display: inline-block;
+  @apply inline-block;
   /* prettier-ignore */
   transition:
     border-color .25s ease-in-out,
     box-shadow .1s ease-in-out,
     background-color .25s ease-in-out,
     color .25s ease-in-out;
-  margin: 0;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  overflow: hidden;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none; /* [1] */
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-family: inherit; /* [2] */
-  font-weight: var(--zd-font-weight-regular);
-  -webkit-font-smoothing: subpixel-antialiased;
-  box-sizing: border-box;
-  user-select: none;
+  @apply m-0;
+  border: 1px solid;
+  @apply border-transparent;
+  @apply rounded;
+  @apply cursor-pointer;
+  @apply overflow-hidden;
+  @apply align-middle;
+  @apply text-center;
+  @apply text-ellipsis;
+  @apply whitespace-nowrap;
+  @apply font-[inherit]; /* [1] */
+  @apply font-normal;
+  @apply subpixel-antialiased;
+  @apply box-border;
+  @apply select-none;
   -webkit-touch-callout: none;
+
+  @apply disabled:cursor-default;
 }
 
 .c-btn--pill {
-  border-radius: 100px;
-}
-
-.c-btn--anchor {
-  display: inline;
-  border: none;
-  border-radius: 0;
-  vertical-align: baseline;
-  white-space: normal;
-  font-weight: inherit;
+  @apply rounded-full;
 }
 
 .c-btn::-moz-focus-inner {
-  /* [3] */
+  /* [2] */
   border: 0;
-  padding: 0;
-}
-
-.c-btn:--btn-hover {
-  text-decoration: none; /* [1] */
-}
-
-.c-btn--anchor:--btn-hover {
-  text-decoration: underline;
+  @apply p-0;
 }
 
 .c-btn:focus {
   outline: none;
 }
 
-.c-btn:--btn-focus {
-  text-decoration: none; /* [1] */
-}
-
-.c-btn--anchor:--btn-focus {
-  text-decoration: underline;
-}
-
-.c-btn:--btn-active {
-  /* prettier-ignore */
-  transition:
-    border-color .1s ease-in-out,
-    background-color .1s ease-in-out,
-    color .1s ease-in-out;
-  text-decoration: none; /* [1] */
-}
-
-.c-btn--anchor:--btn-active {
-  text-decoration: underline;
-}
-
-.c-btn:--btn-disabled {
-  cursor: default;
-}
-
-.c-btn--anchor:--btn-disabled {
-  text-decoration: none;
+.c-btn__icon {
+  @apply align-middle;
 }

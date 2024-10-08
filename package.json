@@ -34,7 +34,7 @@
     "@zendeskgarden/scripts": "2.4.1",
     "@zendeskgarden/stylelint-config": "22.0.0",
     "@zendeskgarden/svg-icons": "7.3.0",
-    "@zendeskgarden/tailwindcss": "4.0.0",
+    "@zendeskgarden/tailwindcss": "4.0.1",
     "cssnano": "7.0.5",
     "envalid": "8.0.0",
     "eslint": "9.9.0",
