@@ -1,0 +1,11 @@
+.c-anchor:focus {
+  outline: none;
+}
+
+.c-anchor {
+  @apply rounded;
+
+  @apply focus-visible:outline;
+  @apply focus-visible:outline-2;
+  @apply focus-visible:outline-offset-1;
+}
