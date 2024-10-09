@@ -3,9 +3,13 @@
   "rules": {
     "at-rule-empty-line-before": null,
     "at-rule-no-unknown": [true, { "ignoreAtRules": ["apply", "tailwind"] }],
+    "declaration-property-value-no-unknown": [
+      true,
+      { "ignoreProperties": { "background-image": "/svg-load/" } }
+    ],
     "function-no-unknown": [
       true,
-      { "ignoreFunctions": ["alpha", "blackness", "color-mod", "svg-inline", "svg-load"] }
+      { "ignoreFunctions": ["alpha", "blackness", "color-mod", "svg-inline", "svg-load", "theme"] }
     ],
     "no-unknown-custom-properties": null
   }
