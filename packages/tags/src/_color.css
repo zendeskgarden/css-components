@@ -2,3 +2,68 @@
   @apply bg-grey-200;
   @apply text-grey-900;
 }
+
+.c-tag--blue {
+  @apply bg-blue-700;
+  @apply text-white;
+}
+
+.c-tag--green {
+  @apply bg-green-700;
+  @apply text-white;
+}
+
+.c-tag--grey {
+  @apply bg-grey-700;
+  @apply text-white;
+}
+
+.c-tag--kale {
+  @apply bg-kale-800;
+  @apply text-white;
+}
+
+.c-tag--red {
+  @apply bg-red-700;
+  @apply text-white;
+}
+
+.c-tag--yellow {
+  @apply bg-yellow-400;
+  @apply text-yellow-900;
+}
+
+.c-tag--dark {
+  @apply bg-grey-800;
+  @apply text-grey-300;
+}
+
+.c-tag--dark.c-tag--blue {
+  @apply bg-blue-600;
+  @apply text-grey-1100;
+}
+
+.c-tag--dark.c-tag--green {
+  @apply bg-green-600;
+  @apply text-grey-1100;
+}
+
+.c-tag--dark.c-tag--grey {
+  @apply bg-grey-300;
+  @apply text-grey-1100;
+}
+
+.c-tag--dark.c-tag--kale {
+  @apply bg-kale-500;
+  @apply text-grey-1100;
+}
+
+.c-tag--dark.c-tag--red {
+  @apply bg-red-600;
+  @apply text-grey-1100;
+}
+
+.c-tag--dark.c-tag--yellow {
+  @apply bg-yellow-400;
+  @apply text-grey-1100;
+}
