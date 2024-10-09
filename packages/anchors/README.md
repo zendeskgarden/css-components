@@ -3,7 +3,7 @@
 [npm version badge]: https://flat.badgen.net/npm/v/@zendeskgarden/css-anchors
 [npm version link]: https://www.npmjs.com/package/@zendeskgarden/css-anchors
 
-This package contains basic `.c-btn` component styling.
+This package contains basic `.c-anchor` component styling.
 
 ## Installation
 
