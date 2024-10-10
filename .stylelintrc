@@ -5,7 +5,7 @@
     "at-rule-no-unknown": [true, { "ignoreAtRules": ["apply", "tailwind"] }],
     "declaration-property-value-no-unknown": [
       true,
-      { "ignoreProperties": { "background-image": "/svg-load/" } }
+      { "ignoreProperties": { "background-image": "/svg-load/", "background-size": "/theme/" } }
     ],
     "function-no-unknown": [
       true,

@@ -27,6 +27,8 @@
   @apply bg-no-repeat;
   @apply bg-[0];
   @apply align-middle;
+
+  @apply rtl:bg-[100%];
 }
 
 .c-txt__input {
@@ -43,10 +45,40 @@
   @apply box-border;
   @apply align-middle; /* [3] */
   @apply font-[inherit];
+
+  @apply disabled:cursor-default;
 }
 
-.c-txt__input:disabled {
-  @apply cursor-default;
+.c-txt__input::-webkit-calendar-picker-indicator {
+  @apply rounded-full;
+  @apply bg-center;
+
+  @apply enabled:cursor-pointer;
+
+  @apply focus-visible:outline-none;
+}
+
+.c-txt__input::-webkit-inner-spin-button,
+.c-txt__input::-webkit-outer-spin-button {
+  @apply appearance-none;
+}
+
+.c-txt__input::-webkit-color-swatch {
+  @apply border-none;
+}
+
+.c-txt__input::-moz-color-swatch {
+  @apply border-none;
+}
+
+.c-txt__input[type="color"],
+.c-txt__input[type="file"] {
+  @apply enabled:cursor-pointer;
+}
+
+.c-txt__input[type="number"] {
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -moz-appearance: textfield;
 }
 
 .c-txt__input--area {
@@ -55,5 +87,6 @@
 }
 
 .c-txt__input--select {
+  @apply enabled:cursor-pointer;
   @apply bg-no-repeat;
 }

@@ -21,11 +21,21 @@
   @apply focus-visible:shadow-outline;
   @apply focus-visible:border-blue-700;
 
-  @apply [&:not(select)]:read-only:bg-grey-700/8;
+  @apply [&:not(select)]:[&:not([type="color"])]:[&:not([type="file"])]:read-only:bg-grey-700/8;
 
   @apply disabled:border-grey-300 !important;
   @apply disabled:bg-grey-700/8 !important;
   @apply disabled:text-grey-600 !important;
+}
+
+.c-txt__input::-webkit-datetime-edit {
+  @apply text-grey-600;
+}
+
+.c-txt__input::-webkit-calendar-picker-indicator {
+  background-image: svg-load('16/chevron-down-stroke.svg', color: theme(colors.grey.700));
+
+  @apply focus-visible:shadow-outline;
 }
 
 .c-txt__input--select {
