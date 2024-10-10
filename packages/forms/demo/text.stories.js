@@ -6,95 +6,111 @@
  */
 
 import '../dist/text.css';
+import { Grid } from '@zendeskgarden/react-grid';
 import React from 'react';
+import { useTheme } from 'styled-components';
 
 export default {
   title: 'Components/Forms/Text'
 };
 
+const toClassName = (theme, base, size = [], validation = undefined) => {
+  let retVal = theme.colors.base === 'dark' ? `${base} c-txt--dark` : base;
+
+  if (size.length > 0) {
+    retVal += ` ${size.join(' ')}`;
+  }
+
+  if (validation) {
+    retVal += ` ${validation}`;
+  }
+
+  return retVal;
+};
+
+const toClassSelector = (theme, base, size = [], validation = undefined) => {
+  let retVal = theme.colors.base === 'dark' ? `${base}.c-txt--dark` : base;
+
+  if (size.length > 0) {
+    retVal += `.${size.join('.')}`;
+  }
+
+  if (validation) {
+    retVal += `.${validation}`;
+  }
+
+  return retVal;
+};
+
 export const Default = {
-  render: ({ hasHint, hasMessage, isBare, isCompact, state, validation }) => (
-    <div className="container">
-      <div className="row">
-        <div className="col u-mt">
-          <div className="c-txt">
-            <label className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} htmlFor="text">
-              .c-txt__label
-            </label>
-            {!!hasHint && (
-              <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
-            )}
-            <input
-              className={`c-txt__input ${isCompact && 'c-txt__input--sm'} ${
-                isBare && 'c-txt__input--bare'
-              } c-txt__input--${validation} ${state && state.join(' ')}`}
-              disabled={!!state && state.includes('is-disabled')}
-              id="text"
-              placeholder=".c-txt__input"
-              type="text"
-            />
-            {!!hasMessage && (
-              <small className={`c-txt__message c-txt__message--${validation}`}>
-                .c-txt__message
-              </small>
-            )}
-          </div>
-        </div>
-        <div className="col u-mt">
-          <div className="c-txt u-mb-sm">
-            <label className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} htmlFor="textarea">
-              .c-txt__label
-            </label>
-            {!!hasHint && (
-              <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
-            )}
-            <textarea
-              className={`c-txt__input c-txt__input--area is-resizable ${
-                isCompact && 'c-txt__input--sm'
-              } ${isBare && 'c-txt__input--bare'} c-txt__input--${validation} ${
-                state && state.join(' ')
-              }`}
-              disabled={!!state && state.includes('is-disabled')}
-              id="textarea"
-              placeholder=".c-txt__input.c-txt__input--area"
-              rows="1"
-            />
-            {!!hasMessage && (
-              <small className={`c-txt__message c-txt__message--${validation}`}>
-                .c-txt__message
-              </small>
-            )}
-          </div>
-        </div>
-        <div className="col u-mt">
-          <div className="c-txt">
-            <label className={`c-txt__label ${isCompact && 'c-txt__label--sm'}`} htmlFor="select">
-              .c-txt__label
-            </label>
-            {!!hasHint && (
-              <span className={`c-txt__hint ${isCompact && 'c-txt__hint--sm'}`}>.c-txt__hint</span>
-            )}
-            <select
-              className={`c-txt__input c-txt__input--select ${isCompact && 'c-txt__input--sm'} ${
-                isBare && 'c-txt__input--bare'
-              } c-txt__input--${validation} ${state && state.join(' ')}`}
-              disabled={!!state && state.includes('is-disabled')}
-              id="select"
-            >
-              <option>.c-txt__input.c-txt__input--select</option>
-              <option>foo</option>
-              <option>bar</option>
-            </select>
-            {!!hasMessage && (
-              <small className={`c-txt__message c-txt__message--${validation}`}>
-                .c-txt__message
-              </small>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  ),
+  render: ({ hasHint, hasMessage, size, validation, readonly, disabled }) => {
+    /* eslint-disable-next-line react-hooks/rules-of-hooks */
+    const theme = useTheme();
+
+    return (
+      <Grid>
+        <Grid.Row>
+          <Grid.Col className="mt-5">
+            <div className="mb-8 text-sm">
+              <code>{toClassSelector(theme, '.c-txt', size, validation)}</code>
+            </div>
+            <div className={toClassName(theme, 'c-txt', size, validation)}>
+              <label className="c-txt__label" htmlFor="text">
+                .c-txt__label
+              </label>
+              {!!hasHint && <span className="c-txt__hint">.c-txt__hint</span>}
+              <input
+                className="c-txt__input"
+                disabled={disabled}
+                id="text"
+                placeholder=".c-txt__input"
+                readOnly={readonly}
+                type="text"
+              />
+              {!!hasMessage && <small className="c-txt__message">.c-txt__message</small>}
+            </div>
+          </Grid.Col>
+          <Grid.Col className="mt-5">
+            <div className="mb-8 text-sm">
+              <code>{toClassSelector(theme, '.c-txt', size, validation)}</code>
+            </div>
+            <div className={toClassName(theme, 'c-txt', size, validation)}>
+              <label className="c-txt__label" htmlFor="textarea">
+                .c-txt__label
+              </label>
+              {!!hasHint && <span className="c-txt__hint">.c-txt__hint</span>}
+              <textarea
+                className="c-txt__input c-txt__input--area"
+                disabled={disabled}
+                id="textarea"
+                placeholder=".c-txt__input.c-txt__input--area"
+                readOnly={readonly}
+                rows="1"
+              />
+              {!!hasMessage && <small className="c-txt__message">.c-txt__message</small>}
+            </div>
+          </Grid.Col>
+          <Grid.Col className="mt-5">
+            <div className="mb-8 text-sm">
+              <code>{toClassSelector(theme, '.c-txt', size, validation)}</code>
+            </div>
+            <div className={toClassName(theme, 'c-txt', size, validation)}>
+              <label className="c-txt__label" htmlFor="select">
+                .c-txt__label
+              </label>
+              {!!hasHint && <span className="c-txt__hint">.c-txt__hint</span>}
+              <select className="c-txt__input c-txt__input--select" disabled={disabled} id="select">
+                <option>.c-txt__input.c-txt__input--select</option>
+                <option>foo</option>
+                <option>bar</option>
+              </select>
+              {!!hasMessage && <small className="c-txt__message">.c-txt__message</small>}
+            </div>
+          </Grid.Col>
+        </Grid.Row>
+      </Grid>
+    );
+  },
   name: 'Default',
   argTypes: {
     hasHint: {
@@ -109,29 +125,34 @@ export const Default = {
         type: 'boolean'
       }
     },
-    isCompact: {
-      name: 'compact',
-      control: {
-        type: 'boolean'
-      }
-    },
-    state: {
+    size: {
       control: {
         type: 'inline-check'
       },
-      options: ['is-hovered', 'is-focused', 'is-disabled']
+      options: ['c-txt--compact']
     },
     validation: {
       control: {
         type: 'inline-radio'
       },
-      options: [undefined, 'success', 'warning', 'error']
+      options: [undefined, 'c-txt--success', 'c-txt--warning', 'c-txt--error']
+    },
+    readonly: {
+      control: {
+        type: 'boolean'
+      }
+    },
+    disabled: {
+      control: {
+        type: 'boolean'
+      }
     }
   },
   args: {
     hasHint: true,
     hasMessage: true
-  }
+  },
+  decorators: [Story => <Story />]
 };
 
 export const Types = {
