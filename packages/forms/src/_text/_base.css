@@ -24,6 +24,8 @@
 .c-txt__message {
   @apply inline-block;
   @apply relative;
+  @apply bg-no-repeat;
+  @apply bg-[0];
   @apply align-middle;
 }
 

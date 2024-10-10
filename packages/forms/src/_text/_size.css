@@ -33,3 +33,26 @@
 .c-txt__input ~ .c-txt__message {
   @apply mt-2;
 }
+
+.c-txt--compact .c-txt__input {
+  @apply py-[calc(6/14*1em)];
+  @apply min-h-8;
+}
+
+.c-txt--compact {
+  .c-txt__label + .c-txt__input,
+  .c-txt__hint + .c-txt__input,
+  .c-txt__message + .c-txt__input,
+  .c-txt__input + .c-txt__hint,
+  .c-txt__input ~ .c-txt__message {
+    @apply mt-1;
+  }
+}
+
+.c-txt--success,
+.c-txt--warning,
+.c-txt--error {
+  .c-txt__message {
+    @apply ps-5;
+  }
+}

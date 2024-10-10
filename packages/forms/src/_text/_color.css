@@ -12,22 +12,66 @@
   @apply bg-white;
   @apply text-grey-900;
 
+  @apply placeholder:opacity-100;
+  @apply placeholder:text-grey-600;
+
   @apply hover:border-blue-700;
 
   @apply focus-visible:outline-none;
   @apply focus-visible:shadow-outline;
   @apply focus-visible:border-blue-700;
-}
 
-.c-txt__input::placeholder {
-  @apply opacity-100;
-  @apply text-grey-600;
+  @apply [&:not(select)]:read-only:bg-grey-700/8;
+
+  @apply disabled:border-grey-300 !important;
+  @apply disabled:bg-grey-700/8 !important;
+  @apply disabled:text-grey-600 !important;
 }
 
 .c-txt__input--select {
+  @apply opacity-100;
   background-image: svg-load('16/chevron-down-stroke.svg', color: theme(colors.grey.700));
 }
 
 .c-txt__input--select:hover {
   background-image: svg-load('16/chevron-down-stroke.svg', color: theme(colors.grey.800));
+}
+
+.c-txt--success {
+  .c-txt__input {
+    @apply border-green-700;
+
+    @apply focus-visible:shadow-[0_0_0_1px_theme(colors.white),0_0_0_3px_theme(colors.green.700)];
+  }
+
+  .c-txt__message {
+    background-image: svg-load('16/check-circle-stroke.svg', color: theme(colors.green.700));
+    @apply text-green-700;
+  }
+}
+
+.c-txt--warning {
+  .c-txt__input {
+    @apply border-yellow-700;
+
+    @apply focus-visible:shadow-[0_0_0_1px_theme(colors.white),0_0_0_3px_theme(colors.yellow.700)];
+  }
+
+  .c-txt__message {
+    background-image: svg-load('16/alert-warning-stroke.svg', color: theme(colors.yellow.700));
+    @apply text-yellow-700;
+  }
+}
+
+.c-txt--error {
+  .c-txt__input {
+    @apply border-red-700;
+
+    @apply focus-visible:shadow-[0_0_0_1px_theme(colors.white),0_0_0_3px_theme(colors.red.700)];
+  }
+
+  .c-txt__message {
+    background-image: svg-load('16/alert-error-stroke.svg', color: theme(colors.yellow.700));
+    @apply text-red-700;
+  }
 }
