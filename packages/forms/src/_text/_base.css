@@ -46,6 +46,8 @@
   @apply align-middle; /* [3] */
   @apply font-[inherit];
 
+  @apply focus-visible:outline-none;
+
   @apply disabled:cursor-default;
 }
 
