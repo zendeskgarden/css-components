@@ -13,7 +13,7 @@ module.exports = {
     tailwindcss: { config: path.join(__dirname, 'tailwind.config.js') },
     'postcss-input-range': {},
     'postcss-preset-env': {
-      stage: 1,
+      stage: 3,
       features: {
         'custom-properties': { preserve: false },
         'system-ui-font-family': false
