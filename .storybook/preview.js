@@ -47,6 +47,8 @@ const GlobalPreviewStyling = createGlobalStyle`
 
 export const decorators = [
   (story, context) => {
+    const rtl = context.globals.locale === 'rtl';
+
     if (context.globals.bedrock === 'enabled') {
       document.querySelector('link[href="index.css"]').removeAttribute('disabled');
     } else {
@@ -71,7 +73,7 @@ export const decorators = [
       colors.base = 'dark';
     }
 
-    const theme = { ...DEFAULT_THEME, colors };
+    const theme = { ...DEFAULT_THEME, colors, rtl };
 
     return (
       <ThemeProvider theme={theme}>
@@ -83,6 +85,18 @@ export const decorators = [
 ];
 
 export const globalTypes = {
+  locale: {
+    name: 'direction',
+    description: 'Locale direction',
+    defaultValue: 'ltr',
+    toolbar: {
+      icon: 'globe',
+      items: [
+        { value: 'ltr', title: 'LTR' },
+        { value: 'rtl', title: 'RTL' }
+      ]
+    }
+  },
   bedrock: {
     name: 'bedrock',
     description: 'CSS Bedrock',

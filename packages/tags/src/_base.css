@@ -1,68 +1,25 @@
-@import '@zendeskgarden/css-variables';
-@import '_variables';
-@import '_selectors';
-
-:root {
-  --zd-tag-background-color: var(--zd-color-grey-200);
-  --zd-tag-border-radius: 2px;
-  --zd-tag-color: var(--zd-color-grey-700);
-  --zd-tag-font-size: var(--zd-font-size-sm);
-  --zd-tag-font-weight: var(--zd-font-weight-semibold);
-  --zd-tag-height: var(--zd-spacing);
-  --zd-tag-line-height: calc(20 / 12);
-  --zd-tag-padding-horizontal: 8px;
-  --zd-tag-padding: 0 var(--zd-tag-padding-horizontal);
-  --zd-tag-transition: box-shadow .1s ease-in-out;
-}
-
-/* 1. Reset for <button> element.
- * 2. Reset for <a>nchor element. */
-
 .c-tag {
-  display: inline-flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  transition: var(--zd-tag-transition);
-  border: 0; /* [1] */
-  border-radius: var(--zd-tag-border-radius);
-  background-color: var(--zd-tag-background-color);
-  padding: var(--zd-tag-padding);
-  max-width: 100%;
-  height: var(--zd-tag-height);
-  overflow: hidden;
-  text-decoration: none; /* [2] */
-  line-height: var(--zd-tag-line-height);
-  color: var(--zd-tag-color);
-  font-size: var(--zd-tag-font-size);
-  font-weight: var(--zd-tag-font-weight);
+  @apply inline-flex;
+  @apply items-center;
+  @apply overflow-hidden;
+  @apply font-semibold;
 }
 
-.c-tag:hover {
-  cursor: default;
-  text-decoration: none; /* [2] */
-  color: var(--zd-tag-color); /* [2] */
-}
-
-.c-tag:--tag-focused {
-  outline: 0;
-  box-shadow:
-    var(--zd-tag-focused-box-shadow)
-    color-mod(var(--zd-color-grey-600) alpha(35%));
-  text-decoration: none; /* [2] */
-  color: var(--zd-tag-color); /* [2] */
-}
-
-.c-tag:any-link:hover {
-  cursor: pointer;
-}
-
-.c-tag.is-rtl {
-  direction: rtl;
+.c-tag--round {
+  @apply justify-center;
 }
 
 .c-tag > * {
-  min-width: 2em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  @apply overflow-hidden;
+  @apply text-ellipsis;
+  @apply whitespace-nowrap;
+}
+
+.c-tag--pill > *,
+.c-tag--round > * {
+  @apply text-center;
+}
+
+.c-tag__avatar {
+  @apply shrink-0;
 }

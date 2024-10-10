@@ -1,63 +1,102 @@
-@import '@zendeskgarden/css-variables';
-
-:root {
-  --zd-tag--lg-border-radius: 4px;
-  --zd-tag--lg-height: 32px;
-  --zd-tag--lg-line-height: calc(32 / 12);
-  --zd-tag--lg-padding-horizontal: 12px;
-  --zd-tag--lg-padding: 0 var(--zd-tag--lg-padding-horizontal);
-  --zd-tag--sm-font-size: 10px;
-  --zd-tag--sm-height: 16px;
-  --zd-tag--sm-line-height: calc(16 / 10);
-  --zd-tag--sm-padding-horizontal: 4px;
-  --zd-tag--sm-padding: 0 var(--zd-tag--sm-padding-horizontal);
-  --zd-tag--pill--lg-min-width: 48px;
-  --zd-tag--pill--sm-min-width: 24px;
-  --zd-tag--pill--sm-padding-horizontal: 6px;
-  --zd-tag--pill--sm-padding: 0 var(--zd-tag--pill--sm-padding-horizontal);
-  --zd-tag--pill--lg__-min-width: calc(var(--zd-tag--pill--lg-min-width) - calc(var(--zd-tag--lg-padding-horizontal) * 2));
-  --zd-tag--pill--sm__-min-width: calc(var(--zd-tag--pill--sm-min-width) - calc(var(--zd-tag--pill--sm-padding-horizontal) * 2));
-  --zd-tag--round--lg-min-width: var(--zd-tag--lg-height);
-  --zd-tag--round--sm-min-width: var(--zd-tag--sm-height);
+.c-tag {
+  @apply rounded-sm;
+  @apply max-w-full;
+  @apply min-w-[calc(1ch+16px)];
+  @apply py-0 px-2;
+  @apply h-5;
+  @apply leading-[calc(20/12)];
+  @apply text-sm;
 }
 
 .c-tag--sm {
-  padding: var(--zd-tag--sm-padding);
-  height: var(--zd-tag--sm-height);
-  line-height: var(--zd-tag--sm-line-height);
-  font-size: var(--zd-tag--sm-font-size);
+  @apply min-w-[calc(1ch+8px)];
+  @apply px-1;
+  @apply h-4;
+  @apply leading-[calc(16/10)];
+  @apply text-xs;
 }
 
 .c-tag--lg {
-  border-radius: var(--zd-tag--lg-border-radius);
-  padding: var(--zd-tag--lg-padding);
-  height: var(--zd-tag--lg-height);
-  line-height: var(--zd-tag--lg-line-height);
+  @apply rounded;
+  @apply min-w-[calc(1ch+24px)];
+  @apply px-3;
+  @apply h-8;
+  @apply leading-[calc(32/12)];
+}
+
+.c-tag--pill {
+  @apply rounded-full;
+  @apply min-w-[30px];
 }
 
 .c-tag--pill.c-tag--sm {
-  padding: var(--zd-tag--pill--sm-padding);
-  min-width: var(--zd-tag--pill--sm-min-width);
-}
-
-.c-tag--pill.c-tag--sm > * {
-  min-width: var(--zd-tag--pill--sm__-min-width);
+  @apply px-[6px];
+  @apply min-w-6;
 }
 
 .c-tag--pill.c-tag--lg {
-  min-width: var(--zd-tag--pill--lg-min-width);
+  @apply min-w-12;
+}
+
+.c-tag--round {
+  @apply rounded-[50%];
+  @apply min-w-5;
+  @apply p-0;
+}
+
+.c-tag--round.c-tag--sm {
+  @apply min-w-4;
+}
+
+.c-tag--round.c-tag--lg {
+  @apply min-w-8;
+}
+
+.c-tag > * {
+  @apply w-full;
+  @apply min-w-[1ch];
+}
+
+.c-tag--pill > * {
+  @apply min-w-[14px];
+}
+
+.c-tag--pill.c-tag--sm > * {
+  @apply min-w-3;
 }
 
 .c-tag--pill.c-tag--lg > * {
-  min-width: var(--zd-tag--pill--lg__-min-width);
+  @apply min-w-6;
 }
 
-.c-tag--round.c-tag--sm,
-.c-tag--round.c-tag--sm > * {
-  min-width: var(--zd-tag--round--sm-min-width);
+.c-tag--round > * {
+  @apply min-w-[inherit];
 }
 
-.c-tag--round.c-tag--lg,
-.c-tag--round.c-tag--lg > * {
-  min-width: var(--zd-tag--round--lg-min-width);
+/* 1. Prevent flex shrink */
+
+.c-tag__avatar {
+  @apply ms-[-6px];
+  @apply me-1;
+  @apply rounded-sm;
+  @apply size-4;
+  @apply min-w-4; /* [1] */
+  @apply text-[0];
+}
+
+.c-tag--lg .c-tag__avatar {
+  @apply -ms-2;
+  @apply me-2;
+  @apply rounded-[3px];
+  @apply size-6;
+  @apply min-w-6; /* [1] */
+}
+
+.c-tag--pill .c-tag__avatar {
+  @apply rounded-[50%];
+}
+
+.c-tag--round .c-tag__avatar,
+.c-tag--sm .c-tag__avatar {
+  @apply hidden;
 }
