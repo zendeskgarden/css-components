@@ -21,7 +21,6 @@ to install.
 | [`@zendeskgarden/css-avatars`](packages/avatars)     | [![npm version][avatars npm version]][avatars npm link]     |
 | [`@zendeskgarden/css-bedrock`](packages/bedrock)     | [![npm version][bedrock npm version]][bedrock npm link]     |
 | [`@zendeskgarden/css-buttons`](packages/buttons)     | [![npm version][buttons npm version]][buttons npm link]     |
-| [`@zendeskgarden/css-callouts`](packages/callouts)   | [![npm version][callouts npm version]][callouts npm link]   |
 | [`@zendeskgarden/css-forms`](packages/forms)         | [![npm version][forms npm version]][forms npm link]         |
 | [`@zendeskgarden/css-tags`](packages/tags)           | [![npm version][tags npm version]][tags npm link]           |
 | [`@zendeskgarden/css-variables`](packages/variables) | [![npm version][variables npm version]][variables npm link] |
@@ -34,8 +33,6 @@ to install.
 [bedrock npm link]: https://www.npmjs.com/package/@zendeskgarden/css-bedrock
 [buttons npm version]: https://flat.badgen.net/npm/v/@zendeskgarden/css-buttons
 [buttons npm link]: https://www.npmjs.com/package/@zendeskgarden/css-buttons
-[callouts npm version]: https://flat.badgen.net/npm/v/@zendeskgarden/css-callouts
-[callouts npm link]: https://www.npmjs.com/package/@zendeskgarden/css-callouts
 [forms npm version]: https://flat.badgen.net/npm/v/@zendeskgarden/css-forms
 [forms npm link]: https://www.npmjs.com/package/@zendeskgarden/css-forms
 [tags npm version]: https://flat.badgen.net/npm/v/@zendeskgarden/css-tags
