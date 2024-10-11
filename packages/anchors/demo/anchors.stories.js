@@ -44,7 +44,7 @@ export const Types = {
         <Grid.Row>
           <Grid.Col className="u-mt">
             <a href="#0" className={toClassName(theme, 'c-anchor', style)}>
-              {toClassSelector(theme, '.c-anchor', style)}
+              <span dir="ltr">{toClassSelector(theme, '.c-anchor', style)}</span>
             </a>
           </Grid.Col>
         </Grid.Row>

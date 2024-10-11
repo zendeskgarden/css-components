@@ -56,7 +56,7 @@ export const Types = {
               className={toClassName(theme, 'c-btn', size, style)}
               disabled={disabled}
             >
-              {toClassSelector(theme, '.c-btn', size, style)}
+              <span dir="ltr">{toClassSelector(theme, '.c-btn', size, style)}</span>
             </button>
           </Grid.Col>
           <Grid.Col className="mt-5">
@@ -65,7 +65,7 @@ export const Types = {
               className={toClassName(theme, 'c-btn c-btn--pill', size, style)}
               disabled={disabled}
             >
-              {toClassSelector(theme, '.c-btn.c-btn--pill', size, style)}
+              <span dir="ltr">{toClassSelector(theme, '.c-btn.c-btn--pill', size, style)}</span>
             </button>
           </Grid.Col>
           <Grid.Col className="mt-5">
@@ -74,7 +74,7 @@ export const Types = {
               className={toClassName(theme, 'c-btn c-btn--basic', size, style)}
               disabled={disabled}
             >
-              {toClassSelector(theme, '.c-btn.c-btn--basic', size, style)}
+              <span dir="ltr">{toClassSelector(theme, '.c-btn.c-btn--basic', size, style)}</span>
             </button>
           </Grid.Col>
         </Grid.Row>
@@ -133,6 +133,11 @@ export const Icons = {
                 />
               </svg>
             </button>
+            <div className="mt-2">
+              <code className="text-sm" dir="ltr">
+                {toClassSelector(theme, '.c-button.c-btn--icon', size, style)} .c-btn__icon
+              </code>
+            </div>
           </Grid.Col>
           <Grid.Col className="mt-5">
             <button
@@ -154,6 +159,11 @@ export const Icons = {
                 />
               </svg>
             </button>
+            <div className="mt-2">
+              <code className="text-sm" dir="ltr">
+                {toClassSelector(theme, '.c-button.c-btn--icon', size, style)} .c-btn__icon
+              </code>
+            </div>
           </Grid.Col>
         </Grid.Row>
       </Grid>
