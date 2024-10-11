@@ -5,17 +5,17 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import '../dist/text.css';
+import '../dist/input.css';
 import { Grid } from '@zendeskgarden/react-grid';
 import React from 'react';
 import { useTheme } from 'styled-components';
 
 export default {
-  title: 'Components/Forms/Text'
+  title: 'Components/Forms/Input'
 };
 
 const toClassName = (theme, base, size = [], validation = undefined) => {
-  let retVal = theme.colors.base === 'dark' ? `${base} c-txt--dark` : base;
+  let retVal = theme.colors.base === 'dark' ? `${base} c-field--dark` : base;
 
   if (size.length > 0) {
     retVal += ` ${size.join(' ')}`;
@@ -29,7 +29,7 @@ const toClassName = (theme, base, size = [], validation = undefined) => {
 };
 
 const toClassSelector = (theme, base, size = [], validation = undefined) => {
-  let retVal = theme.colors.base === 'dark' ? `${base}.c-txt--dark` : base;
+  let retVal = theme.colors.base === 'dark' ? `${base}.c-field--dark` : base;
 
   if (size.length > 0) {
     retVal += `.${size.join('.')}`;
@@ -52,81 +52,85 @@ export const Default = {
         <Grid.Row>
           <Grid.Col className="mt-5">
             <div className="mb-8 text-sm">
-              <code dir="ltr">{toClassSelector(theme, '.c-txt', size, validation)}</code>
+              <code dir="ltr">{toClassSelector(theme, '.c-field', size, validation)}</code>
             </div>
-            <div className={toClassName(theme, 'c-txt', size, validation)}>
-              <label className="c-txt__label" htmlFor="text">
-                <span dir="ltr">.c-txt__label</span>
+            <div className={toClassName(theme, 'c-field', size, validation)}>
+              <label className="c-field__label" htmlFor="text">
+                <span dir="ltr">.c-field__label</span>
               </label>
               {!!hasHint && (
-                <span className="c-txt__hint">
-                  <span dir="ltr">.c-txt__hint</span>
+                <span className="c-field__hint">
+                  <span dir="ltr">.c-field__hint</span>
                 </span>
               )}
               <input
-                className="c-txt__input"
+                className="c-field__input"
                 disabled={disabled}
                 id="text"
-                placeholder=".c-txt__input"
+                placeholder=".c-field__input"
                 readOnly={readonly}
                 type="text"
               />
               {!!hasMessage && (
-                <small className="c-txt__message">
-                  <span dir="ltr">.c-txt__message</span>
+                <small className="c-field__message">
+                  <span dir="ltr">.c-field__message</span>
                 </small>
               )}
             </div>
           </Grid.Col>
           <Grid.Col className="mt-5">
             <div className="mb-8 text-sm">
-              <code dir="ltr">{toClassSelector(theme, '.c-txt', size, validation)}</code>
+              <code dir="ltr">{toClassSelector(theme, '.c-field', size, validation)}</code>
             </div>
-            <div className={toClassName(theme, 'c-txt', size, validation)}>
-              <label className="c-txt__label" htmlFor="textarea">
-                <span dir="ltr">.c-txt__label</span>
+            <div className={toClassName(theme, 'c-field', size, validation)}>
+              <label className="c-field__label" htmlFor="textarea">
+                <span dir="ltr">.c-field__label</span>
               </label>
               {!!hasHint && (
-                <span className="c-txt__hint">
-                  <span dir="ltr">.c-txt__hint</span>
+                <span className="c-field__hint">
+                  <span dir="ltr">.c-field__hint</span>
                 </span>
               )}
               <textarea
-                className="c-txt__input c-txt__input--area"
+                className="c-field__input c-field__input--area"
                 disabled={disabled}
                 id="textarea"
-                placeholder=".c-txt__input.c-txt__input--area"
+                placeholder=".c-field__input.c-field__input--area"
                 readOnly={readonly}
                 rows="1"
               />
               {!!hasMessage && (
-                <small className="c-txt__message">
-                  <span dir="ltr">.c-txt__message</span>
+                <small className="c-field__message">
+                  <span dir="ltr">.c-field__message</span>
                 </small>
               )}
             </div>
           </Grid.Col>
           <Grid.Col className="mt-5">
             <div className="mb-8 text-sm">
-              <code>{toClassSelector(theme, '.c-txt', size, validation)}</code>
+              <code>{toClassSelector(theme, '.c-field', size, validation)}</code>
             </div>
-            <div className={toClassName(theme, 'c-txt', size, validation)}>
-              <label className="c-txt__label" htmlFor="select">
-                <span dir="ltr">.c-txt__label</span>
+            <div className={toClassName(theme, 'c-field', size, validation)}>
+              <label className="c-field__label" htmlFor="select">
+                <span dir="ltr">.c-field__label</span>
               </label>
               {!!hasHint && (
-                <span className="c-txt__hint">
-                  <span dir="ltr">.c-txt__hint</span>
+                <span className="c-field__hint">
+                  <span dir="ltr">.c-field__hint</span>
                 </span>
               )}
-              <select className="c-txt__input c-txt__input--select" disabled={disabled} id="select">
-                <option>.c-txt__input.c-txt__input--select</option>
+              <select
+                className="c-field__input c-field__input--select"
+                disabled={disabled}
+                id="select"
+              >
+                <option>.c-field__input.c-field__input--select</option>
                 <option>foo</option>
                 <option>bar</option>
               </select>
               {!!hasMessage && (
-                <small className="c-txt__message">
-                  <span dir="ltr">.c-txt__message</span>
+                <small className="c-field__message">
+                  <span dir="ltr">.c-field__message</span>
                 </small>
               )}
             </div>
@@ -153,13 +157,13 @@ export const Default = {
       control: {
         type: 'inline-check'
       },
-      options: ['c-txt--compact']
+      options: ['c-field--compact']
     },
     validation: {
       control: {
         type: 'inline-radio'
       },
-      options: [undefined, 'c-txt--success', 'c-txt--warning', 'c-txt--error']
+      options: [undefined, 'c-field--success', 'c-field--warning', 'c-field--error']
     },
     readonly: {
       control: {
@@ -189,14 +193,14 @@ export const Types = {
         <Grid dir={theme.rtl ? 'rtl' : 'ltr'}>
           <Grid.Row>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-color">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-color">
                   Color
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-color"
+                  id="field-type-color"
                   placeholder="color"
                   readOnly={readonly}
                   required
@@ -205,14 +209,14 @@ export const Types = {
               </div>
             </Grid.Col>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-date">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-date">
                   Date
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-date"
+                  id="field-type-date"
                   placeholder="date"
                   readOnly={readonly}
                   required
@@ -221,14 +225,14 @@ export const Types = {
               </div>
             </Grid.Col>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-datetime">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-datetime">
                   Datetime-Local
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-datetime"
+                  id="field-type-datetime"
                   placeholder="datetime-local"
                   readOnly={readonly}
                   required
@@ -237,14 +241,14 @@ export const Types = {
               </div>
             </Grid.Col>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-email">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-email">
                   Email
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-email"
+                  id="field-type-email"
                   placeholder="email"
                   readOnly={readonly}
                   required
@@ -255,14 +259,14 @@ export const Types = {
           </Grid.Row>
           <Grid.Row>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-file">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-file">
                   File
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-file"
+                  id="field-type-file"
                   placeholder="file"
                   readOnly={readonly}
                   required
@@ -271,14 +275,14 @@ export const Types = {
               </div>
             </Grid.Col>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-month">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-month">
                   Month
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-month"
+                  id="field-type-month"
                   placeholder="month"
                   readOnly={readonly}
                   required
@@ -287,14 +291,14 @@ export const Types = {
               </div>
             </Grid.Col>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-number">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-number">
                   Number
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-number"
+                  id="field-type-number"
                   placeholder="number"
                   readOnly={readonly}
                   required
@@ -303,14 +307,14 @@ export const Types = {
               </div>
             </Grid.Col>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-password">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-password">
                   Password
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-password"
+                  id="field-type-password"
                   placeholder="password"
                   readOnly={readonly}
                   required
@@ -321,14 +325,14 @@ export const Types = {
           </Grid.Row>
           <Grid.Row>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-search">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-search">
                   Search
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-search"
+                  id="field-type-search"
                   placeholder="search"
                   readOnly={readonly}
                   required
@@ -337,14 +341,14 @@ export const Types = {
               </div>
             </Grid.Col>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-tel">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-tel">
                   Tel
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-tel"
+                  id="field-type-tel"
                   placeholder="tel"
                   readOnly={readonly}
                   required
@@ -353,14 +357,14 @@ export const Types = {
               </div>
             </Grid.Col>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-time">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-time">
                   Time
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-time"
+                  id="field-type-time"
                   placeholder="time"
                   readOnly={readonly}
                   required
@@ -369,14 +373,14 @@ export const Types = {
               </div>
             </Grid.Col>
             <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-url">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-url">
                   URL
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-url"
+                  id="field-type-url"
                   placeholder="url"
                   readOnly={readonly}
                   required
@@ -387,14 +391,14 @@ export const Types = {
           </Grid.Row>
           <Grid.Row>
             <Grid.Col className="u-mt" sm={3}>
-              <div className={toClassName(theme, 'c-txt', size, validation)}>
-                <label className="c-txt__label" htmlFor="txt-type-week">
+              <div className={toClassName(theme, 'c-field', size, validation)}>
+                <label className="c-field__label" htmlFor="field-type-week">
                   Week
                 </label>
                 <input
-                  className="c-txt__input"
+                  className="c-field__input"
                   disabled={disabled}
-                  id="txt-type-week"
+                  id="field-type-week"
                   placeholder="week"
                   readOnly={readonly}
                   required
@@ -418,13 +422,13 @@ export const Types = {
       control: {
         type: 'inline-check'
       },
-      options: ['c-txt--compact']
+      options: ['c-field--compact']
     },
     validation: {
       control: {
         type: 'inline-radio'
       },
-      options: [undefined, 'c-txt--success', 'c-txt--warning', 'c-txt--error']
+      options: [undefined, 'c-field--success', 'c-field--warning', 'c-field--error']
     },
     readonly: {
       control: {

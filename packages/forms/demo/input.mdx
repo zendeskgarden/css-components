@@ -1,0 +1,24 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import * as InputStories from './input.stories';
+
+<Meta of={InputStories} />
+
+# Input
+
+Component classes for your input fields. Child component classes are shown
+below. The unmodified `.c-field` parent occupies 100% of the width of its
+container.
+
+<Canvas>
+  <Story of={InputStories.Default} />
+</Canvas>
+
+## Types
+
+The fields shown below demonstrate how `.c-field__input` works in combination
+with various input types. In general, we attempt to knock out non-standard
+browser features (spinners, clear buttons, etc).
+
+<Canvas>
+  <Story of={InputStories.Types} />
+</Canvas>

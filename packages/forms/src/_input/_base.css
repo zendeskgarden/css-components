@@ -1,0 +1,66 @@
+/* 1. Use 100% input width vs. block display label to limit label mouse
+ *    interaction area
+ * 2. Support label inline with input layout
+ * 3. Remove vertical scrollbar on <textarea> (IE). */
+
+.c-field__input {
+  @apply appearance-none;
+  transition: 
+    border-color 0.25s ease-in-out,
+    box-shadow 0.1s ease-in-out,
+    background-color 0.25s ease-in-out,
+    background-image 0.25s ease-in-out,
+    color 0.25s ease-in-out;
+  @apply border-solid;
+  @apply rounded;
+  @apply w-full; /* [1] */
+  @apply box-border;
+  @apply align-middle; /* [2] */
+  @apply font-[inherit];
+
+  @apply focus-visible:outline-none;
+
+  @apply disabled:cursor-default;
+}
+
+.c-field__input::-webkit-calendar-picker-indicator {
+  @apply rounded-full;
+  @apply bg-center;
+
+  @apply enabled:cursor-pointer;
+
+  @apply focus-visible:outline-none;
+}
+
+.c-field__input::-webkit-inner-spin-button,
+.c-field__input::-webkit-outer-spin-button {
+  @apply appearance-none;
+}
+
+.c-field__input::-webkit-color-swatch {
+  @apply border-none;
+}
+
+.c-field__input::-moz-color-swatch {
+  @apply border-none;
+}
+
+.c-field__input[type="color"],
+.c-field__input[type="file"] {
+  @apply enabled:cursor-pointer;
+}
+
+.c-field__input[type="number"] {
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -moz-appearance: textfield;
+}
+
+.c-field__input--area {
+  @apply resize-y;
+  @apply overflow-auto; /* [3] */
+}
+
+.c-field__input--select {
+  @apply enabled:cursor-pointer;
+  @apply bg-no-repeat;
+}

@@ -1,0 +1,28 @@
+/* 1. Reset for <fieldset> element. */
+
+.c-field {
+  /* [1] */
+  @apply m-0;
+  border: 0;
+  @apply p-0;
+}
+
+.c-field__label {
+  @apply align-middle;
+  @apply font-semibold;
+}
+
+.c-field__hint {
+  @apply block;
+  @apply align-middle;
+}
+
+.c-field__message {
+  @apply inline-block;
+  @apply relative;
+  @apply bg-no-repeat;
+  @apply bg-[0];
+  @apply align-middle;
+
+  @apply rtl:bg-[100%];
+}

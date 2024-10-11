@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import '../dist/range.css';
+// import '../dist/range.css';
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 
@@ -58,7 +58,7 @@ const DefaultComponent = ({
         style={{
           backgroundSize: toPercent()
         }}
-        onInput={(event) => {
+        onInput={event => {
           event.target.style.backgroundSize = toPercent();
         }}
       />
