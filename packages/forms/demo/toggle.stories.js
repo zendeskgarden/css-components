@@ -31,7 +31,7 @@ const Field = ({ children, size, id, validation, hasHint, hasMessage }) => {
         </span>
       )}
       {!!hasMessage && (
-        <small className="c-field__message">
+        <small className="c-field__message" role="alert">
           <span dir="ltr">.c-field__message</span>
         </small>
       )}
