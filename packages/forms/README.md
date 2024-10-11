@@ -43,7 +43,7 @@ Use the following `--area` modifier class to support `textarea` fields.
 </div>
 ```
 
-##### Select
+#### Select
 
 Use the following `--select` modifier to support `select` fields.
 
