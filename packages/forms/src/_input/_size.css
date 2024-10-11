@@ -1,5 +1,5 @@
 .c-field__input {
-  @apply border-[1px];
+  @apply border;
   @apply py-[calc(10/14*1em)] px-[calc(12/14*1em)];
   @apply min-h-10;
   @apply leading-[calc(18/14)];

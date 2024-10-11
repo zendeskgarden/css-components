@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import '../dist/input.css';
+import '../dist/index.css';
 import { toClassName, toClassSelector } from './utils';
 import { Grid } from '@zendeskgarden/react-grid';
 import PropTypes from 'prop-types';
@@ -77,11 +77,6 @@ export const Default = {
                 readOnly={readonly}
                 type="text"
               />
-              {!!hasMessage && (
-                <small className="c-field__message">
-                  <span dir="ltr">.c-field__message</span>
-                </small>
-              )}
             </Field>
           </Grid.Col>
           <Grid.Col className="mt-5" sm={4}>
@@ -100,11 +95,6 @@ export const Default = {
                 readOnly={readonly}
                 rows="1"
               />
-              {!!hasMessage && (
-                <small className="c-field__message">
-                  <span dir="ltr">.c-field__message</span>
-                </small>
-              )}
             </Field>
           </Grid.Col>
           <Grid.Col className="mt-5" sm={4}>
@@ -124,11 +114,6 @@ export const Default = {
                 <option>foo</option>
                 <option>bar</option>
               </select>
-              {!!hasMessage && (
-                <small className="c-field__message">
-                  <span dir="ltr">.c-field__message</span>
-                </small>
-              )}
             </Field>
           </Grid.Col>
         </Grid.Row>
