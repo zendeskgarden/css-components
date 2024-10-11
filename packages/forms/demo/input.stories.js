@@ -6,7 +6,9 @@
  */
 
 import '../dist/input.css';
+import { toClassName, toClassSelector } from './utils';
 import { Grid } from '@zendeskgarden/react-grid';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { useTheme } from 'styled-components';
 
@@ -14,32 +16,41 @@ export default {
   title: 'Components/Forms/Input'
 };
 
-const toClassName = (theme, base, size = [], validation = undefined) => {
-  let retVal = theme.colors.base === 'dark' ? `${base} c-field--dark` : base;
+const Field = ({ children, size, validation, id, hasHint, hasMessage }) => {
+  const theme = useTheme();
 
-  if (size.length > 0) {
-    retVal += ` ${size.join(' ')}`;
-  }
-
-  if (validation) {
-    retVal += ` ${validation}`;
-  }
-
-  return retVal;
+  return (
+    <>
+      <div className="mb-8 text-sm">
+        <code dir="ltr">{toClassSelector(theme, '.c-field', size, validation)}</code>
+      </div>
+      <div className={toClassName(theme, 'c-field', size, validation)}>
+        <label className="c-field__label" htmlFor={id}>
+          <span dir="ltr">.c-field__label</span>
+        </label>
+        {!!hasHint && (
+          <span className="c-field__hint">
+            <span dir="ltr">.c-field__hint</span>
+          </span>
+        )}
+        {children}
+        {!!hasMessage && (
+          <small className="c-field__message">
+            <span dir="ltr">.c-field__message</span>
+          </small>
+        )}
+      </div>
+    </>
+  );
 };
 
-const toClassSelector = (theme, base, size = [], validation = undefined) => {
-  let retVal = theme.colors.base === 'dark' ? `${base}.c-field--dark` : base;
-
-  if (size.length > 0) {
-    retVal += `.${size.join('.')}`;
-  }
-
-  if (validation) {
-    retVal += `.${validation}`;
-  }
-
-  return retVal;
+Field.propTypes = {
+  children: PropTypes.node,
+  size: PropTypes.array,
+  validation: PropTypes.string,
+  id: PropTypes.string,
+  hasHint: PropTypes.bool,
+  hasMessage: PropTypes.bool
 };
 
 export const Default = {
@@ -50,19 +61,14 @@ export const Default = {
     return (
       <Grid dir={theme.rtl ? 'rtl' : 'ltr'}>
         <Grid.Row>
-          <Grid.Col className="mt-5">
-            <div className="mb-8 text-sm">
-              <code dir="ltr">{toClassSelector(theme, '.c-field', size, validation)}</code>
-            </div>
-            <div className={toClassName(theme, 'c-field', size, validation)}>
-              <label className="c-field__label" htmlFor="text">
-                <span dir="ltr">.c-field__label</span>
-              </label>
-              {!!hasHint && (
-                <span className="c-field__hint">
-                  <span dir="ltr">.c-field__hint</span>
-                </span>
-              )}
+          <Grid.Col className="mt-5" sm={4}>
+            <Field
+              size={size}
+              validation={validation}
+              id="text"
+              hasHint={hasHint}
+              hasMessage={hasMessage}
+            >
               <input
                 className="c-field__input"
                 disabled={disabled}
@@ -76,21 +82,16 @@ export const Default = {
                   <span dir="ltr">.c-field__message</span>
                 </small>
               )}
-            </div>
+            </Field>
           </Grid.Col>
-          <Grid.Col className="mt-5">
-            <div className="mb-8 text-sm">
-              <code dir="ltr">{toClassSelector(theme, '.c-field', size, validation)}</code>
-            </div>
-            <div className={toClassName(theme, 'c-field', size, validation)}>
-              <label className="c-field__label" htmlFor="textarea">
-                <span dir="ltr">.c-field__label</span>
-              </label>
-              {!!hasHint && (
-                <span className="c-field__hint">
-                  <span dir="ltr">.c-field__hint</span>
-                </span>
-              )}
+          <Grid.Col className="mt-5" sm={4}>
+            <Field
+              size={size}
+              validation={validation}
+              id="textarea"
+              hasHint={hasHint}
+              hasMessage={hasMessage}
+            >
               <textarea
                 className="c-field__input c-field__input--area"
                 disabled={disabled}
@@ -104,21 +105,16 @@ export const Default = {
                   <span dir="ltr">.c-field__message</span>
                 </small>
               )}
-            </div>
+            </Field>
           </Grid.Col>
-          <Grid.Col className="mt-5">
-            <div className="mb-8 text-sm">
-              <code>{toClassSelector(theme, '.c-field', size, validation)}</code>
-            </div>
-            <div className={toClassName(theme, 'c-field', size, validation)}>
-              <label className="c-field__label" htmlFor="select">
-                <span dir="ltr">.c-field__label</span>
-              </label>
-              {!!hasHint && (
-                <span className="c-field__hint">
-                  <span dir="ltr">.c-field__hint</span>
-                </span>
-              )}
+          <Grid.Col className="mt-5" sm={4}>
+            <Field
+              size={size}
+              validation={validation}
+              id="select"
+              hasHint={hasHint}
+              hasMessage={hasMessage}
+            >
               <select
                 className="c-field__input c-field__input--select"
                 disabled={disabled}
@@ -133,7 +129,7 @@ export const Default = {
                   <span dir="ltr">.c-field__message</span>
                 </small>
               )}
-            </div>
+            </Field>
           </Grid.Col>
         </Grid.Row>
       </Grid>
@@ -183,6 +179,36 @@ export const Default = {
   decorators: [Story => <Story />]
 };
 
+const Input = ({ size, validation, type, disabled, readonly }) => {
+  const theme = useTheme();
+  const id = `type-${type}`;
+
+  return (
+    <div className={toClassName(theme, 'c-field', size, validation)}>
+      <label className="c-field__label" htmlFor={id}>
+        {type}
+      </label>
+      <input
+        className="c-field__input"
+        disabled={disabled}
+        id={id}
+        placeholder="color"
+        readOnly={readonly}
+        required
+        type={type}
+      />
+    </div>
+  );
+};
+
+Input.propTypes = {
+  size: PropTypes.array,
+  validation: PropTypes.string,
+  type: PropTypes.string,
+  disabled: PropTypes.bool,
+  readonly: PropTypes.bool
+};
+
 export const Types = {
   render: ({ size, validation, readonly, disabled }) => {
     /* eslint-disable-next-line react-hooks/rules-of-hooks */
@@ -192,223 +218,132 @@ export const Types = {
       <form>
         <Grid dir={theme.rtl ? 'rtl' : 'ltr'}>
           <Grid.Row>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-color">
-                  Color
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-color"
-                  placeholder="color"
-                  readOnly={readonly}
-                  required
-                  type="color"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="color"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-date">
-                  Date
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-date"
-                  placeholder="date"
-                  readOnly={readonly}
-                  required
-                  type="date"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="date"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-datetime">
-                  Datetime-Local
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-datetime"
-                  placeholder="datetime-local"
-                  readOnly={readonly}
-                  required
-                  type="datetime-local"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="datetime-local"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-email">
-                  Email
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-email"
-                  placeholder="email"
-                  readOnly={readonly}
-                  required
-                  type="email"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="email"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-file">
-                  File
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-file"
-                  placeholder="file"
-                  readOnly={readonly}
-                  required
-                  type="file"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="file"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-month">
-                  Month
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-month"
-                  placeholder="month"
-                  readOnly={readonly}
-                  required
-                  type="month"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="month"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-number">
-                  Number
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-number"
-                  placeholder="number"
-                  readOnly={readonly}
-                  required
-                  type="number"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="number"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-password">
-                  Password
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-password"
-                  placeholder="password"
-                  readOnly={readonly}
-                  required
-                  type="password"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="password"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-search">
-                  Search
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-search"
-                  placeholder="search"
-                  readOnly={readonly}
-                  required
-                  type="search"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="search"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-tel">
-                  Tel
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-tel"
-                  placeholder="tel"
-                  readOnly={readonly}
-                  required
-                  type="tel"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="tel"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-time">
-                  Time
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-time"
-                  placeholder="time"
-                  readOnly={readonly}
-                  required
-                  type="time"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="time"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
-            <Grid.Col className="u-mt">
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-url">
-                  URL
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-url"
-                  placeholder="url"
-                  readOnly={readonly}
-                  required
-                  type="url"
-                />
-              </div>
+            <Grid.Col className="mt-5">
+              <Input
+                size={size}
+                validation={validation}
+                type="url"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Col className="u-mt" sm={3}>
-              <div className={toClassName(theme, 'c-field', size, validation)}>
-                <label className="c-field__label" htmlFor="field-type-week">
-                  Week
-                </label>
-                <input
-                  className="c-field__input"
-                  disabled={disabled}
-                  id="field-type-week"
-                  placeholder="week"
-                  readOnly={readonly}
-                  required
-                  type="week"
-                />
-              </div>
+            <Grid.Col className="mt-5" sm={3}>
+              <Input
+                size={size}
+                validation={validation}
+                type="week"
+                disabled={disabled}
+                readonly={readonly}
+              />
             </Grid.Col>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Col className="u-mt">
+            <Grid.Col className="mt-5">
               <button type="submit">Test</button>
             </Grid.Col>
           </Grid.Row>
