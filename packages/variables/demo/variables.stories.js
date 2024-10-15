@@ -102,8 +102,7 @@ const Opacity = ({ variable }) => {
   if (theme.colors.base === 'dark') {
     color = variables.zdColorWhite;
   } else {
-    color =
-      parseFloat(variables[variable]) >= 0.5 ? variables.zdColorWhite : variables.zdColorBlack;
+    color = variables[variable] >= 0.5 ? variables.zdColorWhite : variables.zdColorBlack;
   }
 
   return (
