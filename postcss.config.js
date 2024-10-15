@@ -11,7 +11,6 @@ module.exports = {
   plugins: {
     'postcss-import': {},
     tailwindcss: { config: path.join(__dirname, 'tailwind.config.js') },
-    'postcss-input-range': {},
     'postcss-preset-env': {
       stage: 3,
       features: {
