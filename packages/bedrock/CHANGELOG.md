@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@10.0.0...@zendeskgarden/css-bedrock@10.0.1) (2024-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency modern-normalize to v3 ([#524](https://github.com/zendeskgarden/css-components/issues/524)) ([28cc118](https://github.com/zendeskgarden/css-components/commit/28cc118e2cb62dcb81acdaeb92b3ba88fc7d8058))
+
+
+
+
+
 # [10.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-bedrock@9.1.2...@zendeskgarden/css-bedrock@10.0.0) (2024-10-04)
 
 

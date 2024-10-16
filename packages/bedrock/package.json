@@ -1,6 +1,6 @@
 {
   "name": "@zendeskgarden/css-bedrock",
-  "version": "10.0.0",
+  "version": "10.0.1",
   "description": "Garden component CSS",
   "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",
