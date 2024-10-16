@@ -16,32 +16,51 @@ export default {
   title: 'Components/Avatars'
 };
 
+const toClassName = (theme, base, size = undefined) => {
+  let retVal = theme.colors.base === 'dark' ? `${base} c-avatar--dark` : base;
+
+  if (size) {
+    retVal += ` ${size}`;
+  }
+
+  return retVal;
+};
+
+const toClassSelector = (theme, base, size = undefined) => {
+  let retVal = theme.colors.base === 'dark' ? `${base}.c-avatar--dark` : base;
+
+  if (size) {
+    retVal += `.${size}`;
+  }
+
+  return retVal;
+};
+
 export const Types = {
-  render: ({ size = false }) => {
+  render: ({ size }) => {
     /* eslint-disable-next-line react-hooks/rules-of-hooks */
-    const isDark = useTheme().colors.base === 'dark';
+    const theme = useTheme();
 
     return (
       <Grid>
         <Grid.Row>
           <Grid.Col className="mt-5">
-            <figure className={`c-avatar ${isDark && 'c-avatar--dark'} ${size}`}>
+            <figure className={toClassName(theme, 'c-avatar', size)}>
               <img alt="user" src={UserImage} />
             </figure>
             <div className="mt-2">
-              <code>
-                .c-avatar{!!isDark && '.c-avatar--dark'}
-                {!!size && `.${size}`}
+              <code className="text-sm" dir="ltr">
+                {toClassSelector(theme, '.c-avatar', size)}
               </code>
             </div>
           </Grid.Col>
           <Grid.Col className="mt-5">
-            <figure className={`c-avatar ${isDark && 'c-avatar--dark'} c-avatar--system ${size}`}>
+            <figure className={toClassName(theme, 'c-avatar c-avatar--system', size)}>
               <img alt="system" src={SystemImage} />
             </figure>
             <div className="mt-2">
-              <code>
-                .c-avatar{!!isDark && '.c-avatar--dark'}.c-avatar--system{!!size && `.${size}`}
+              <code className="text-sm" dir="ltr">
+                {toClassSelector(theme, '.c-avatar.c-avatar--system', size)}
               </code>
             </div>
           </Grid.Col>
@@ -63,36 +82,30 @@ export const Types = {
 };
 
 export const Variants = {
-  render: ({ size = false }) => {
+  render: ({ size }) => {
     /* eslint-disable-next-line react-hooks/rules-of-hooks */
-    const isDark = useTheme().colors.base === 'dark';
+    const theme = useTheme();
 
     return (
       <Grid>
         <Grid.Row>
           <Grid.Col className="mt-5">
-            <figure className={`c-avatar ${isDark && 'c-avatar--dark'} ${size} bg-royal-700`}>
+            <figure className={toClassName(theme, 'c-avatar bg-royal-700', size)}>
               <span className="c-avatar__txt">G</span>
             </figure>
             <div className="mt-2">
-              <code>
-                .c-avatar{!!isDark && '.c-avatar--dark'}
-                {!!size && `.${size}`} .c-avatar__txt
+              <code className="text-sm" dir="ltr">
+                {toClassSelector(theme, '.c-avatar', size)} .c-avatar__txt
               </code>
             </div>
           </Grid.Col>
           <Grid.Col className="mt-5">
-            <figure
-              className={`c-avatar ${
-                isDark && 'c-avatar--dark'
-              } c-avatar--system ${size} bg-royal-700`}
-            >
+            <figure className={toClassName(theme, 'c-avatar c-avatar--system bg-royal-700', size)}>
               <span className="c-avatar__txt">ZD</span>
             </figure>
             <div className="mt-2">
-              <code>
-                .c-avatar{!!isDark && '.c-avatar--dark'}.c-avatar--system{!!size && `.${size}`}{' '}
-                .c-avatar__txt
+              <code className="text-sm" dir="ltr">
+                {toClassSelector(theme, '.c-avatar.c-avatar--system', size)} .c-avatar__txt
               </code>
             </div>
           </Grid.Col>
@@ -100,9 +113,11 @@ export const Variants = {
         <Grid.Row>
           <Grid.Col className="mt-5">
             <figure
-              className={`c-avatar ${isDark && 'c-avatar--dark'} ${size} ${
-                isDark ? 'bg-grey-600' : 'bg-grey-700'
-              }`}
+              className={toClassName(
+                theme,
+                `c-avatar bg-grey-${theme.colors.base === 'dark' ? '600' : '700'}`,
+                size
+              )}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,16 +133,20 @@ export const Variants = {
               </svg>
             </figure>
             <div className="mt-2">
-              <code>{`.c-avatar${isDark ? '.c-avatar--dark' : ''}${
-                size ? `.${size}` : ''
-              } > svg`}</code>
+              <code className="text-sm" dir="ltr">
+                {toClassSelector(theme, '.c-avatar', size)} &gt; svg
+              </code>
             </div>
           </Grid.Col>
           <Grid.Col className="mt-5">
             <figure
-              className={`c-avatar ${isDark && 'c-avatar--dark'} c-avatar--system ${size} ${
-                isDark ? 'bg-kale-500' : 'bg-kale-1000'
-              }`}
+              className={toClassName(
+                theme,
+                `c-avatar c-avatar--system bg-kale-${
+                  theme.colors.base === 'dark' ? '500' : '1000'
+                }`,
+                size
+              )}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,9 +162,9 @@ export const Variants = {
               </svg>
             </figure>
             <div className="mt-2">
-              <code>{`.c-avatar${isDark ? '.c-avatar--dark' : ''}.c-avatar--system${
-                size ? `.${size}` : ''
-              } > svg`}</code>
+              <code className="text-sm" dir="ltr">
+                {toClassSelector(theme, '.c-avatar.c-avatar--system', size)} &gt; svg
+              </code>
             </div>
           </Grid.Col>
         </Grid.Row>

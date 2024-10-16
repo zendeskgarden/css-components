@@ -92,8 +92,18 @@ postcss([cssnano])
         const key = declaration.prop.replace('--', '');
         const value = declaration.value;
 
-        jsItems.push(`${toCamelCase(key)}: '${value}'`);
-        jsonItems.push(`"${key}": "${value.replace(/"/gu, "'")}"`);
+        jsItems.push(
+          `${toCamelCase(key)}: ${
+            key.includes('opacity') || key.includes('weight') ? value : `'${value}'`
+          }`
+        );
+        jsonItems.push(
+          `"${key}": ${
+            key.includes('opacity') || key.includes('weight')
+              ? value
+              : `"${value.replace(/"/gu, "'")}"`
+          }`
+        );
         scssItems.push(`$${key}: ${value};`);
       });
     });
