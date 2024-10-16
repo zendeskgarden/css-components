@@ -16,6 +16,7 @@ module.exports = {
       stage: 3,
       features: {
         'custom-properties': { preserve: false },
+        'nesting-rules': true,
         'system-ui-font-family': false
       }
     },

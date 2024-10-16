@@ -1,0 +1,89 @@
+.c-field__input {
+  @apply border;
+  @apply py-[calc(10/14*1em)] px-[calc(12/14*1em)];
+  @apply min-h-10;
+  @apply leading-[calc(18/14)];
+  @apply text-base;
+
+  @apply [&[type="file"]]:leading-[1];
+}
+
+.c-field__input[type='date'],
+.c-field__input[type='datetime-local'],
+.c-field__input[type='file'],
+.c-field__input[type='month'],
+.c-field__input[type='time'],
+.c-field__input[type='week'] {
+  @apply max-h-10;
+}
+
+.c-field__input::-webkit-calendar-picker-indicator {
+  background-size: theme(size.4);
+  @apply p-0;
+  @apply size-5;
+}
+
+.c-field__input::-webkit-color-swatch-wrapper {
+  @apply p-0;
+}
+
+.c-field__input::-webkit-color-swatch {
+  @apply my-[-5px] mx-[-7px];
+  @apply rounded-sm;
+}
+
+.c-field__input::-moz-color-swatch {
+  @apply my-[-5px] mx-[-7px];
+  @apply rounded-sm;
+  @apply w-[calc(100%+14px)];
+  @apply h-7;
+}
+
+.c-field__input--select {
+  @apply pe-9;
+  @apply bg-[right_calc(12/14*1em)_center];
+
+  @apply rtl:bg-[left_calc(12/14*1em)_center];
+}
+
+.c-field__label + .c-field__input,
+.c-field__hint + .c-field__input,
+.c-field__message + .c-field__input,
+.c-field__input + .c-field__hint,
+.c-field__input ~ .c-field__message {
+  @apply mt-2;
+}
+
+.c-field--compact {
+  .c-field__input {
+    @apply py-[calc(6/14*1em)];
+    @apply min-h-8;
+  }
+
+  .c-field__input::-webkit-color-swatch {
+    @apply my-[-3px] mx-[-9px];
+  }
+
+  .c-field__input::-moz-color-swatch {
+    @apply my-[-3px] mx-[-9px];
+    @apply w-[calc(100%+18px)];
+    @apply h-6;
+  }
+
+  .c-field__input[type='date'],
+  .c-field__input[type='datetime-local'],
+  .c-field__input[type='file'],
+  .c-field__input[type='month'],
+  .c-field__input[type='time'],
+  .c-field__input[type='week'] {
+    @apply max-h-8;
+  }
+
+  .c-field__label + .c-field__input,
+  .c-field__hint + .c-field__input,
+  .c-field__message + .c-field__input,
+  .c-field__input + .c-field__hint,
+  .c-field__input ~ .c-field__message {
+    @apply mt-1;
+  }
+}

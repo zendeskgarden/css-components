@@ -1,0 +1,22 @@
+.c-field__label,
+.c-field__hint {
+  @apply leading-[calc(20/14)];
+  @apply text-base;
+}
+
+.c-field__message {
+  @apply leading-[calc(16/12)];
+  @apply text-sm;
+}
+
+.c-field__label + .c-field__message {
+  @apply mt-1;
+}
+
+.c-field--success,
+.c-field--warning,
+.c-field--error {
+  .c-field__message {
+    @apply ps-5;
+  }
+}

@@ -1,0 +1,37 @@
+.c-field__radio,
+.c-field__checkbox {
+  @apply size-4;
+}
+
+.c-field__radio + .c-field__label::before,
+.c-field__checkbox + .c-field__label::before {
+  @apply border;
+  @apply size-4;
+}
+
+.c-field__radio + .c-field__label::before {
+  @apply rounded-full;
+}
+
+.c-field__checkbox + .c-field__label::before {
+  @apply rounded;
+}
+
+.c-field__radio + .c-field__label,
+.c-field__radio ~ .c-field__hint,
+.c-field__radio ~ .c-field__message,
+.c-field__checkbox + .c-field__label,
+.c-field__checkbox ~ .c-field__hint,
+.c-field__checkbox ~ .c-field__message {
+  @apply ps-6;
+}
+
+.c-field__radio ~ .c-field__message,
+.c-field__checkbox ~ .c-field__message {
+  @apply mt-2;
+}
+
+.c-field--compact .c-field__radio ~ .c-field__message,
+.c-field--compact .c-field__checkbox ~ .c-field__message {
+  @apply mt-1;
+}
