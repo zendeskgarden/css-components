@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@5.1.18...@zendeskgarden/css-tags@6.0.0) (2024-10-16)
+
+
+* feat(tags)!: update to correspond with `react-components` v9  (#517) ([1a720de](https://github.com/zendeskgarden/css-components/commit/1a720de723ab2dbb1ff025459a3fbd5b4cd4ca6d)), closes [#517](https://github.com/zendeskgarden/css-components/issues/517)
+
+
+### BREAKING CHANGES
+
+* which includes the following...
+- styling now based on tailwindcss rather than `css-variables`
+- removes all focus/remove styling due to likely accessibility violations. Use Garden's [Tag](https://garden.zendesk.com/components/tags) component if this functionality is needed.
+- removes unsupported secondary color styling variants (i.e. `c-tag--azure`, etc)
+
+- adds `c-tag--dark` styling variant
+
+
+
+
+
 ## [5.1.18](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-tags@5.1.17...@zendeskgarden/css-tags@5.1.18) (2024-10-02)
 
 **Note:** Version bump only for package @zendeskgarden/css-tags

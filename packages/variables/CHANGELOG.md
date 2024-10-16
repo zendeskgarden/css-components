@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@6.4.7...@zendeskgarden/css-variables@7.0.0) (2024-10-16)
+
+
+* feat(variables)!: update with v9 theme color and opacity values (#512) ([da39de8](https://github.com/zendeskgarden/css-components/commit/da39de8d604778f2f733deb5d757cd506ba88788)), closes [#512](https://github.com/zendeskgarden/css-components/issues/512)
+
+
+### BREAKING CHANGES
+
+* replaces color variables with v9 [palette](https://garden.zendesk.com/design/color)
+
+- Adds opacity variables from the v9 [theme](https://garden.zendesk.com/components/theme-object#opacity)
+
+
+
+
+
 ## [6.4.7](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-variables@6.4.6...@zendeskgarden/css-variables@6.4.7) (2024-10-02)
 
 **Note:** Version bump only for package @zendeskgarden/css-variables

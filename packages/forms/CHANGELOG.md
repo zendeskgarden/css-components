@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@7.0.23...@zendeskgarden/css-forms@8.0.0) (2024-10-16)
+
+
+* feat(forms)!: update to correspond with `react-components` v9 (#518) ([0946df5](https://github.com/zendeskgarden/css-components/commit/0946df5a01c739f2b0ccb839dc9d1cc0f4f7f9ff)), closes [#518](https://github.com/zendeskgarden/css-components/issues/518)
+
+
+### BREAKING CHANGES
+
+* as detailed in the following...
+- replaces `c-txt`, `c-chk`, and `c-radio` with unified `c-field` styling. See updated [README](https://github.com/zendeskgarden/css-components/blob/f7c8f378dc3efbc26e12b859ae2671c6ec059e89/packages/forms/README.md) for usage instructions.
+- removes `c-range` and `c-toggle` styling due to implementation complexities and design restrictions. Use Garden's [Range](https://garden.zendesk.com/components/range) or [Toggle](https://garden.zendesk.com/components/toggle) components if this functionality is required.
+- styling now based on tailwindcss rather than `css-variables`
+
+New feature: adds `c-field--dark` styling variant
+
+
+
+
+
 ## [7.0.23](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@7.0.22...@zendeskgarden/css-forms@7.0.23) (2024-10-02)
 
 **Note:** Version bump only for package @zendeskgarden/css-forms

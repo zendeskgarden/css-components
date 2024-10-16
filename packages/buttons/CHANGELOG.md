@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@8.0.4...@zendeskgarden/css-buttons@9.0.0) (2024-10-16)
+
+
+* feat(buttons)!: update to corespond with `react-components` v9 (#515) ([6ac0e5b](https://github.com/zendeskgarden/css-components/commit/6ac0e5b01b3d193f23d554cd499672ff86dd629b)), closes [#515](https://github.com/zendeskgarden/css-components/issues/515)
+
+
+### BREAKING CHANGES
+
+* includes the following...
+- removed `c-btn--anchor` variant due to complex styling overrides. Garden will re-introduce a `css-anchors` package with dedicated `c-anchor` styling classes.
+- styling now based on tailwindcss rather than `css-variables`
+- all `is-*` state styling removed in favor of simplified native `:hover`, `:focus-visible`, `:active`, and `:disabled`
+
+Additionally, adds `c-btn--dark` styling variant.
+
+
+
+
+
 ## [8.0.4](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-buttons@8.0.3...@zendeskgarden/css-buttons@8.0.4) (2024-10-02)
 
 **Note:** Version bump only for package @zendeskgarden/css-buttons

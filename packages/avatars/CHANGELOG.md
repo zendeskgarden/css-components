@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.14...@zendeskgarden/css-avatars@7.0.0) (2024-10-16)
+
+
+* feat(avatars)!: update to correspond with `react-components` v9 (#514) ([1aed7bd](https://github.com/zendeskgarden/css-components/commit/1aed7bd05bc0a2ecba47da86b97a63f75f0dfe09)), closes [#514](https://github.com/zendeskgarden/css-components/issues/514)
+
+
+### BREAKING CHANGES
+
+* removed all stateful badge styling due to lack of accessibility. If required, use [Avatar](https://garden.zendesk.com/components/avatar#status) instead. Styling now based on tailwindcss rather than `css-variables`
+
+- adds `c-avatar--dark` styling variant
+
+
+
+
+
 ## [6.0.14](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-avatars@6.0.13...@zendeskgarden/css-avatars@6.0.14) (2024-10-02)
 
 **Note:** Version bump only for package @zendeskgarden/css-avatars
