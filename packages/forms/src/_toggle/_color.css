@@ -106,7 +106,7 @@
 
   .c-field__radio:disabled + .c-field__label::before,
   .c-field__checkbox:disabled + .c-field__label::before {
-    @apply bg-grey-500/24 !important;
+    @apply bg-white/24 !important;
   }
 
   /* stylelint-enable selector-max-specificity */
