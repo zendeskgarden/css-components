@@ -83,7 +83,7 @@
   @apply active:bg-blue-600/16;
   @apply active:text-blue-400;
 
-  @apply disabled:bg-grey-500/8 !important;
+  @apply disabled:bg-white/8 !important;
   @apply disabled:text-grey-700 !important;
 }
 

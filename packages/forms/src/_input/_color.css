@@ -71,7 +71,7 @@
     @apply [&:not(select)]:[&:not([type="color"])]:[&:not([type="file"])]:read-only:bg-grey-500/8;
 
     @apply disabled:border-grey-800 !important;
-    @apply disabled:bg-grey-500/8 !important;
+    @apply disabled:bg-white/8 !important;
     @apply disabled:text-grey-700 !important;
   }
 
