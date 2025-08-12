@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@8.0.0...@zendeskgarden/css-forms@8.0.1) (2025-08-12)
+
+
+### Bug Fixes
+
+* align dark mode neutral background contrast ([#540](https://github.com/zendeskgarden/css-components/issues/540)) ([015808d](https://github.com/zendeskgarden/css-components/commit/015808d0083f4899b6423be92679836c300cd5c1))
+
+
+
+
+
 # [8.0.0](https://github.com/zendeskgarden/css-components/compare/@zendeskgarden/css-forms@7.0.23...@zendeskgarden/css-forms@8.0.0) (2024-10-16)
 
 
