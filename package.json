@@ -28,7 +28,7 @@
     "@storybook/react-webpack5": "8.3.5",
     "@zendeskgarden/css-grid": "0.1.39",
     "@zendeskgarden/css-utilities": "4.5.5",
-    "@zendeskgarden/eslint-config": "44.0.1",
+    "@zendeskgarden/eslint-config": "46.0.0",
     "@zendeskgarden/react-grid": "9.0.0",
     "@zendeskgarden/react-theming": "9.0.0",
     "@zendeskgarden/scripts": "2.4.2",
