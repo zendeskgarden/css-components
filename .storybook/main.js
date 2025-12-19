@@ -22,13 +22,29 @@ module.exports = {
         actions: false
       }
     },
+    // https://github.com/storybookjs/addon-styling-webpack/blob/3a5aa2b130f78545552390aacf032ada0fdb714d/README.md#postcss
     {
-      name: '@storybook/addon-styling',
+      name: '@storybook/addon-styling-webpack',
       options: {
-        postCss: {
-          /* eslint-disable-next-line n/global-require */
-          implementation: require('postcss')
-        }
+        rules: [
+          {
+            // Replaces existing CSS rules to support PostCSS
+            test: /\.css$/u,
+            use: [
+              'style-loader',
+              {
+                loader: 'css-loader',
+                options: { importLoaders: 1 }
+              },
+              {
+                // Gets options from `postcss.config.js` in your project root
+                loader: 'postcss-loader',
+                // eslint-disable-next-line n/global-require
+                options: { implementation: require('postcss') }
+              }
+            ]
+          }
+        ]
       }
     },
     '@storybook/addon-webpack5-compiler-swc'
