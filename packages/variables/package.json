@@ -18,7 +18,7 @@
     "format": "prettier-package-json --write",
     "lint": "npm run lint:css && npm run lint:js && npm run lint:json && npm run lint:sass",
     "lint:css": "stylelint dist/index.css",
-    "lint:js": "eslint scripts/*.js src/*.js dist/*.js --max-warnings 0",
+    "lint:js": "eslint scripts/*.js src/*.js dist/*.js --max-warnings 0 --no-ignore",
     "lint:json": "jsonlint dist/index.json -q",
     "lint:sass": "stylelint --config .sasslintrc dist/index.scss",
     "test": "npm run build && npm run lint",
