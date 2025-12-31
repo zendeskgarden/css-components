@@ -42,7 +42,7 @@
     "eslint-config-prettier": "10.1.8",
     "husky": "9.1.7",
     "jsonlint": "1.6.3",
-    "lerna": "8.2.4",
+    "lerna": "9.0.3",
     "polished": "4.3.1",
     "postcss": "8.5.6",
     "postcss-cli": "11.0.1",
