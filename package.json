@@ -18,8 +18,8 @@
   ],
   "devDependencies": {
     "@babel/core": "7.28.5",
-    "@babel/preset-env": "7.28.5",
-    "@babel/preset-react": "7.28.5",
+    "@babel/preset-env": "7.29.14",
+    "@babel/preset-react": "7.29.7",
     "@storybook/addon-essentials": "8.6.19",
     "@storybook/addon-styling-webpack": "1.0.1",
     "@storybook/addon-webpack5-compiler-swc": "1.0.6",
@@ -29,16 +29,16 @@
     "@zendeskgarden/css-grid": "0.1.39",
     "@zendeskgarden/css-utilities": "4.5.5",
     "@zendeskgarden/eslint-config": "47.1.0",
-    "@zendeskgarden/react-grid": "9.12.6",
-    "@zendeskgarden/react-theming": "9.12.6",
+    "@zendeskgarden/react-grid": "9.16.1",
+    "@zendeskgarden/react-theming": "9.16.1",
     "@zendeskgarden/scripts": "2.5.4",
     "@zendeskgarden/stylelint-config": "23.0.0",
-    "@zendeskgarden/svg-icons": "8.1.0",
+    "@zendeskgarden/svg-icons": "8.4.0",
     "@zendeskgarden/tailwindcss": "4.0.2",
-    "css-loader": "7.1.2",
-    "cssnano": "7.1.2",
-    "envalid": "8.1.1",
-    "eslint": "9.39.2",
+    "css-loader": "7.1.5",
+    "cssnano": "7.1.9",
+    "envalid": "8.2.0",
+    "eslint": "9.39.5",
     "eslint-config-prettier": "10.1.8",
     "husky": "9.1.7",
     "jsonlint": "1.6.3",
@@ -46,10 +46,10 @@
     "polished": "4.3.1",
     "postcss": "8.5.6",
     "postcss-cli": "11.0.1",
-    "postcss-import": "16.1.1",
+    "postcss-import": "16.2.0",
     "postcss-inline-svg": "6.0.0",
-    "postcss-loader": "8.2.0",
-    "postcss-preset-env": "10.5.0",
+    "postcss-loader": "8.2.1",
+    "postcss-preset-env": "10.6.1",
     "prettier-package-json": "2.8.0",
     "prop-types": "15.8.1",
     "react": "18.3.1",
@@ -57,15 +57,15 @@
     "react-is": "18.3.1",
     "storybook": "8.6.19",
     "style-loader": "4.0.0",
-    "styled-components": "6.1.19",
+    "styled-components": "6.6.0",
     "stylelint": "16.26.1",
-    "stylelint-scss": "6.13.0",
+    "stylelint-scss": "6.14.0",
     "tailwindcss": "3.4.19",
     "watch": "1.0.2"
   },
   "overrides": {
     "nomnom": {
-      "underscore": "1.12.1"
+      "underscore": "1.13.8"
     }
   }
 }
